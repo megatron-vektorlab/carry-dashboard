@@ -103,6 +103,7 @@ export default function Home() {
   const days = paper ? (Date.now() - paper.state.start_ms) / 86_400_000 : 0;
   const ret = paper ? (paper.state.equity / paper.state.initial - 1) * 100 : 0;
   const book = paper?.state.book ?? {};
+
   const bookApy = useMemo(() => {
     if (!live) return null;
     const held = Object.entries(book);
@@ -116,6 +117,16 @@ export default function Home() {
     return n ? s / n : null;
   }, [live, book]);
 
+  // How stale is the bot's P&L file? (updates daily at 08:00)
+  const staleDays = useMemo(() => {
+    if (!paper?.history?.length) return null;
+    const last = paper.history[paper.history.length - 1].t; // "2026-06-23 06:00 UTC"
+    const ms = Date.parse(last.replace(" ", "T").replace(" UTC", "Z"));
+    return Number.isNaN(ms) ? null : (Date.now() - ms) / 86_400_000;
+  }, [paper]);
+
+  const perYear = bookApy != null && paper ? (paper.state.equity * bookApy) / 100 : null;
+
   return (
     <main className="wrap">
       <div className="header">
@@ -126,24 +137,73 @@ export default function Home() {
         </div>
       </div>
       <p className="sub">
-        Delta-neutralni funding carry — koliko te tržište <i>plaća da čekaš</i>, po burzama. Bez predikcija cijene.
+        Nadzorna ploča strategije <b>funding carry</b>: umjesto pogađanja hoće li cijena rasti ili padati, prati se{" "}
+        <b>kamata (funding)</b> koju burze isplaćuju svakih 1–8 sati. Zeleno = kamata se naplaćuje. Sve ispod je objašnjeno
+        običnim jezikom.
       </p>
+
+      {paper && (
+        <div className={`banner ${staleDays != null && staleDays > 2 ? "warn" : ""}`}>
+          {staleDays != null && staleDays > 2 ? (
+            <>
+              <b>⚠ Podaci bota nisu svježi.</b> P&L je zadnji put ažuriran prije {staleDays.toFixed(0)} dana — provjerite
+              je li računalo bilo upaljeno u 08:00 (zadatak "CryptoRotCarryPaper").
+            </>
+          ) : (
+            <>
+              <b>✓ Sve radi samo od sebe — ne trebate ništa napraviti.</b> Bot je nakon {days.toFixed(0)} dana na{" "}
+              <b className={ret >= 0 ? "pos" : "neg"}>{ret >= 0 ? "+" : ""}{ret.toFixed(2)}%</b>
+              {bookApy != null && (
+                <>
+                  , a pozicije koje drži trenutno plaćaju <b>≈ {bookApy.toFixed(1)}% godišnje</b>
+                  {perYear != null && <> (≈ ${perYear.toFixed(0)}/god na ovaj ulog)</>}
+                </>
+              )}
+              . Brojke se ažuriraju same: cijene svakih 60 s, P&L bota svako jutro u 08:00.
+            </>
+          )}
+        </div>
+      )}
 
       {err && !live && <p className="err">{err}</p>}
 
       <section className="panel">
         <h2>
-          Paper bot <span>· ${paper ? paper.state.initial.toFixed(0) : "1000"} start · rebalans mjesečno · read-only</span>
+          1 · Virtualni bot <span>· vježba s $1000 — prati stvarne kamate, ali ne šalje naloge i ne troši pravi novac</span>
         </h2>
         {paper ? (
           <>
             <div className="cards">
-              <div className="card"><div className="k">Kapital</div><div className="v">${paper.state.equity.toFixed(2)}</div></div>
-              <div className="card"><div className="k">Od početka</div><div className="v" style={{ color: ret >= 0 ? "#22c55e" : "#ef4444" }}>{ret >= 0 ? "+" : ""}{ret.toFixed(2)}%</div></div>
-              <div className="card"><div className="k">Funding</div><div className="v">${paper.state.cum_funding.toFixed(2)}</div></div>
-              <div className="card"><div className="k">Kolateral</div><div className="v">${paper.state.cum_coll.toFixed(2)}</div></div>
-              <div className="card"><div className="k">Troškovi</div><div className="v">-${paper.state.cum_cost.toFixed(2)}</div></div>
-              <div className="card"><div className="k">Radi</div><div className="v">{days.toFixed(0)} d</div></div>
+              <div className="card">
+                <div className="k">Kapital</div>
+                <div className="v">${paper.state.equity.toFixed(2)}</div>
+                <div className="d">koliko virtualnih $1000 vrijedi danas</div>
+              </div>
+              <div className="card">
+                <div className="k">Od početka</div>
+                <div className="v" style={{ color: ret >= 0 ? "#22c55e" : "#ef4444" }}>{ret >= 0 ? "+" : ""}{ret.toFixed(2)}%</div>
+                <div className="d">ukupna promjena od starta (15.6.)</div>
+              </div>
+              <div className="card">
+                <div className="k">Funding</div>
+                <div className="v">+${paper.state.cum_funding.toFixed(2)}</div>
+                <div className="d">zarađena kamata s burzi</div>
+              </div>
+              <div className="card">
+                <div className="k">Kolateral</div>
+                <div className="v">+${paper.state.cum_coll.toFixed(2)}</div>
+                <div className="d">kamata na USDC (~4,5% god.)</div>
+              </div>
+              <div className="card">
+                <div className="k">Troškovi</div>
+                <div className="v">-${paper.state.cum_cost.toFixed(2)}</div>
+                <div className="d">naknade za otvaranje pozicija</div>
+              </div>
+              <div className="card">
+                <div className="k">Radi</div>
+                <div className="v">{days.toFixed(0)} d</div>
+                <div className="d">automatski, bez nadzora</div>
+              </div>
             </div>
             <EquityChart history={paper.history} initial={paper.state.initial} />
             <div style={{ marginTop: 12 }}>
@@ -154,10 +214,21 @@ export default function Home() {
                   </span>
                 ))}
                 {bookApy != null && (
-                  <span className="chip">knjiga sad plaća ≈ <b>{bookApy.toFixed(1)}% APY</b></span>
+                  <span className="chip">
+                    ove pozicije sad plaćaju ≈ <b>{bookApy.toFixed(1)}% god.</b>
+                  </span>
                 )}
               </div>
             </div>
+            <details>
+              <summary>Kako čitati ovaj dio?</summary>
+              <ul>
+                <li><b>Zelena linija</b> = vrijednost virtualnog uloga kroz vrijeme; isprekidana crta = početnih $1000. Cilj: linija iznad crte, bez naglih padova.</li>
+                <li><b>Pločice ispod grafa</b> = što bot trenutno "drži" i na kojoj burzi naplaćuje kamatu (npr. "BTC @ Hyperliquid").</li>
+                <li>Zarada dolazi iz dva izvora: <b>funding</b> (kamata s burze) i <b>kolateral</b> (kamata na dolare). Troškovi se plaćaju samo pri izmjeni pozicija — zato bot mijenja pozicije najviše jednom mjesečno.</li>
+                <li>Bot je <b>delta-neutralan</b>: zaštićen je od pada cijene, pa i kad kripto padne, ova linija ne bi trebala padati s njim.</li>
+              </ul>
+            </details>
           </>
         ) : (
           <p className="mut">Učitavam P&L bota…</p>
@@ -166,8 +237,13 @@ export default function Home() {
 
       <section className="panel">
         <h2>
-          Živi funding po burzama <span>· godišnje (APY) · pozitivno = short-perp strana naplaćuje</span>
+          2 · Kamate uživo po burzama <span>· koje valute trenutno najviše plaćaju i gdje</span>
         </h2>
+        <p className="legend">
+          <span className="pos">■ zeleno</span> = burza <b>plaća</b> onome tko drži zaštićenu (short-perp) poziciju ·{" "}
+          <span className="neg">■ crveno</span> = ta strana <b>plaća</b> burzi (izbjegava se) ·{" "}
+          <span className="inbook">u knjizi</span> = bot to trenutno drži · brojke su godišnje (APY)
+        </p>
         {live ? (
           <div className="tablewrap">
             <table>
@@ -175,12 +251,12 @@ export default function Home() {
                 <tr>
                   <th>Coin</th>
                   <th style={{ textAlign: "right" }}>Cijena</th>
-                  <th style={{ textAlign: "right" }}>24 h</th>
-                  <th>7 dana</th>
+                  <th style={{ textAlign: "right" }} title="Promjena cijene u zadnja 24 sata — samo informativno, bot ne ovisi o njoj">24 h</th>
+                  <th title="Kretanje cijene u zadnjih 7 dana">7 dana</th>
                   <th style={{ textAlign: "right" }}>Binance</th>
                   <th style={{ textAlign: "right" }}>Bybit</th>
                   <th style={{ textAlign: "right" }}>Hyperliquid</th>
-                  <th>Najbolja</th>
+                  <th title="Burza koja trenutno plaća najveću kamatu za ovaj coin">Najbolja</th>
                   <th></th>
                 </tr>
               </thead>
@@ -216,16 +292,40 @@ export default function Home() {
         ) : (
           <p className="mut">Učitavam žive stope…</p>
         )}
+        <details>
+          <summary>Kako čitati ovu tablicu?</summary>
+          <ul>
+            <li><b>Što je funding?</b> Na burzama postoje "perpetual" ugovori. Da bi njihova cijena pratila stvarnu, jedna strana svakih 1–8 h plaća kamatu drugoj. Kad je tržište optimistično, plaćaju oni koji se klade na rast — a naplaćuje <b>zaštićena strana</b>, na kojoj je bot.</li>
+            <li><b>Tri stupca s postocima</b> = ista valuta često plaća različito na različitim burzama. Bot uvijek bira stupac s najvećim brojem — to je "Najbolja".</li>
+            <li><b>Primjer:</b> +11% kod BTC-a znači: tko drži zaštićenu BTC poziciju od $1000, prima ≈ $110 godišnje — bez obzira raste li BTC ili pada.</li>
+            <li><b>Kamate se stalno mijenjaju</b> — zato se tablica osvježava svake minute, a bot pozicije mijenja tek kad se isplati (najviše jednom mjesečno, da ne izgori na troškovima).</li>
+            <li>Tablica je poredana od valute koja plaća najviše prema onima koje plaćaju najmanje.</li>
+          </ul>
+        </details>
+      </section>
+
+      <section className="panel">
+        <h2>3 · Rječnik <span>· pojmovi na stranici, običnim jezikom</span></h2>
+        <div className="gloss">
+          <div><b>Funding (kamata)</b><span>naknada koju burza prebacuje između kupaca i prodavatelja svakih 1–8 h; jedini prihod koji je poznat unaprijed</span></div>
+          <div><b>Delta-neutralno</b><span>pozicija složena tako da pad ili rast cijene ne mijenja vrijednost — zarađuje se samo kamata</span></div>
+          <div><b>Short-perp</b><span>zaštitna strana perpetual ugovora; u optimističnom tržištu ona naplaćuje funding</span></div>
+          <div><b>Knjiga</b><span>popis pozicija koje bot trenutno drži (max 6 valuta, jednaki iznosi)</span></div>
+          <div><b>APY</b><span>godišnja stopa: +11% APY na $1000 ≈ $110 godišnje ako se stopa zadrži</span></div>
+          <div><b>Kolateral</b><span>dolari (USDC) koji stoje iza pozicija; i oni nose kamatu ~4,5% godišnje</span></div>
+          <div><b>Rebalans</b><span>mjesečna izmjena knjige: bot prebaci u valute/burze koje tada plaćaju najviše</span></div>
+          <div><b>Paper trading</b><span>vježba: sve stope i računice su stvarne, ali se ne šalju nalozi i ne riskira pravi novac</span></div>
+        </div>
       </section>
 
       <div className="note">
         <b>Zašto ovdje nema "vjerojatnosti rasta"?</b> Testirali smo ML-predikciju smjera pošteno (out-of-sample): nema
         stvarnog edgea — prikazivati takvu vjerojatnost bilo bi izmišljanje. Funding je suprotno: <b>poznat unaprijed</b> i
-        stvarno se isplaćuje svakih 1–8 h. Ovo je monitor, ne savjet za ulaganje; paper bot ne šalje naloge.
+        stvarno se isplaćuje svakih 1–8 h. Ovo je monitor, ne savjet za ulaganje; virtualni bot ne šalje naloge.
       </div>
 
       <p className="foot">
-        Izvori uživo: Binance USD-M · Bybit · Hyperliquid — osvježava se svakih 60 s. P&L bota ažurira se jednom dnevno.
+        Izvori uživo: Binance USD-M · Bybit · Hyperliquid — osvježava se svakih 60 s. P&L bota ažurira se jednom dnevno u 08:00.
       </p>
     </main>
   );

@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 const COINS = [
   "BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "LINK",
   "AVAX", "LTC", "DOT", "TRX", "BCH", "NEAR",
-  "SUI", "TON", "APT", "ARB", "OP", "FIL", "ATOM", "UNI",
+  "SUI", "APT", "ARB", "OP", "FIL", "ATOM", "UNI",
 ];
 
 async function j(url: string, init?: RequestInit) {
