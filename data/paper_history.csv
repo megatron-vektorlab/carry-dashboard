@@ -1,0 +1,23 @@
+time,equity,funding_pct,coll_pct,note,book
+2026-06-15 21:51 UTC,998.5,0.0,0.0,init,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-16 06:34 UTC,998.61,0.0062,0.0045,accrued 0.36d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-17 06:00 UTC,998.96,0.0236,0.012,accrued 0.98d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-18 06:00 UTC,999.32,0.0238,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-19 06:00 UTC,999.64,0.019,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-20 06:00 UTC,1000.02,0.0261,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-21 06:00 UTC,1000.42,0.0279,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-22 06:00 UTC,1000.73,0.0184,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-23 06:00 UTC,1001.11,0.0259,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-24 06:00 UTC,1001.37,0.0131,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-25 06:00 UTC,1001.46,-0.0031,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-26 06:00 UTC,1001.61,0.0027,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-27 06:00 UTC,1001.83,0.0095,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-28 06:00 UTC,1002.06,0.0112,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-29 06:00 UTC,1002.25,0.0068,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-06-30 06:00 UTC,1002.6,0.0224,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-07-01 06:00 UTC,1002.96,0.0234,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-07-02 06:00 UTC,1003.3,0.0216,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-07-03 06:00 UTC,1003.71,0.0285,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-07-04 06:00 UTC,1004.14,0.0307,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-07-05 06:00 UTC,1004.56,0.0292,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid
+2026-07-06 06:00 UTC,1004.98,0.03,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; BNB@hyperliquid

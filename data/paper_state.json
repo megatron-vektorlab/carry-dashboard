@@ -1,0 +1,26 @@
+{
+  "initial": 1000.0,
+  "equity": 1004.9847783356772,
+  "start_ms": 1781560318142,
+  "last_update_ms": 1783317606979,
+  "last_rebalance_ms": 1781560318142,
+  "book": {
+    "NEAR": "hyperliquid",
+    "LINK": "hyperliquid",
+    "LTC": "hyperliquid",
+    "ETH": "hyperliquid",
+    "BTC": "hyperliquid",
+    "BNB": "hyperliquid"
+  },
+  "book_apys": {
+    "NEAR": 0.12,
+    "LINK": 0.09,
+    "LTC": 0.07,
+    "ETH": 0.06,
+    "BTC": 0.06,
+    "BNB": 0.06
+  },
+  "cum_funding": 3.9730288859642156,
+  "cum_coll": 2.5117494497128656,
+  "cum_cost": 1.5
+}
