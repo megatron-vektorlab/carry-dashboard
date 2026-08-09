@@ -24,7 +24,15 @@ type Paper = {
     cum_cost: number;
   };
   history: { t: string; equity: number }[];
+  ml?: {
+    state: { equity: number; initial: number; symbol: string; trades: number; fees: number; started_at: string };
+    history: { t: string; equity: number }[];
+  } | null;
 };
+
+function parseUtc(t: string): number {
+  return Date.parse(t.replace(" UTC", "Z").replace(" ", "T"));
+}
 
 const VENUE_LABEL: Record<string, string> = { binance: "Binance", bybit: "Bybit", hyperliquid: "Hyperliquid" };
 
@@ -52,25 +60,48 @@ function Spark({ data }: { data: number[] }) {
   );
 }
 
-function EquityChart({ history, initial }: { history: { t: string; equity: number }[]; initial: number }) {
-  if (!history || history.length < 2) return null;
+function RaceChart({
+  carry,
+  ml,
+  initial,
+}: {
+  carry: { t: string; equity: number }[];
+  ml?: { t: string; equity: number }[] | null;
+  initial: number;
+}) {
+  if (!carry || carry.length < 2) return null;
   const w = 900, h = 190, padX = 6, padY = 12;
-  const vals = history.map((r) => r.equity);
-  const min = Math.min(...vals, initial), max = Math.max(...vals, initial);
+
+  const cPts = carry.map((r) => ({ ms: parseUtc(r.t), v: r.equity })).filter((p) => !Number.isNaN(p.ms));
+  const mPts = (ml ?? []).map((r) => ({ ms: parseUtc(r.t), v: r.equity })).filter((p) => !Number.isNaN(p.ms));
+
+  const allV = [...cPts.map((p) => p.v), ...mPts.map((p) => p.v), initial];
+  const min = Math.min(...allV), max = Math.max(...allV);
   const rng = max - min || 1;
-  const x = (i: number) => padX + (i * (w - 2 * padX)) / (history.length - 1);
+  const t0 = Math.min(...cPts.map((p) => p.ms), ...(mPts.length ? mPts.map((p) => p.ms) : [Infinity]));
+  const t1 = Math.max(...cPts.map((p) => p.ms), ...(mPts.length ? mPts.map((p) => p.ms) : [-Infinity]));
+  const tr = t1 - t0 || 1;
+
+  const x = (ms: number) => padX + ((ms - t0) / tr) * (w - 2 * padX);
   const y = (v: number) => h - padY - ((v - min) / rng) * (h - 2 * padY);
-  const line = vals.map((v, i) => `${x(i)},${y(v)}`).join(" ");
-  const area = `${padX},${h - padY} ${line} ${w - padX},${h - padY}`;
+  const toLine = (pts: { ms: number; v: number }[]) => pts.map((p) => `${x(p.ms)},${y(p.v)}`).join(" ");
+
+  const cLine = toLine(cPts);
+  const area = `${x(cPts[0].ms)},${h - padY} ${cLine} ${x(cPts[cPts.length - 1].ms)},${h - padY}`;
+
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} style={{ width: "100%", height: "auto" }} role="img" aria-label="Krivulja kapitala paper bota">
-      <polygon points={area} fill="rgba(34,197,94,0.08)" />
+    <svg viewBox={`0 0 ${w} ${h}`} style={{ width: "100%", height: "auto" }} role="img" aria-label="Utrka kapitala: carry bot i ML eksperiment">
+      <polygon points={area} fill="rgba(34,197,94,0.07)" />
       <line x1={padX} x2={w - padX} y1={y(initial)} y2={y(initial)} stroke="#8b93a7" strokeWidth="1" strokeDasharray="5 4" />
       <text x={w - padX - 4} y={y(initial) - 5} textAnchor="end" fontSize="11" fill="#8b93a7">
         start ${initial.toFixed(0)}
       </text>
-      <polyline points={line} fill="none" stroke="#22c55e" strokeWidth="2" />
-      <circle cx={x(vals.length - 1)} cy={y(vals[vals.length - 1])} r="3.5" fill="#22c55e" />
+      <polyline points={cLine} fill="none" stroke="#22c55e" strokeWidth="2" />
+      <circle cx={x(cPts[cPts.length - 1].ms)} cy={y(cPts[cPts.length - 1].v)} r="3.5" fill="#22c55e" />
+      {mPts.length >= 2 && <polyline points={toLine(mPts)} fill="none" stroke="#f59e0b" strokeWidth="2" />}
+      {mPts.length >= 1 && (
+        <circle cx={x(mPts[mPts.length - 1].ms)} cy={y(mPts[mPts.length - 1].v)} r="3.5" fill="#f59e0b" />
+      )}
     </svg>
   );
 }
@@ -159,7 +190,13 @@ export default function Home() {
                   {perYear != null && <> (≈ ${perYear.toFixed(0)}/god na ovaj ulog)</>}
                 </>
               )}
-              . Brojke se ažuriraju same: cijene svakih 60 s, P&L bota svako jutro u 08:00.
+              . Brojke se ažuriraju same: cijene svakih 60 s, P&L botova svako jutro u 08:00.
+              {paper.ml && (
+                <>
+                  {" "}Usporedno trči i <b style={{ color: "#f59e0b" }}>ML eksperiment</b>: $
+                  {paper.ml.state.equity.toFixed(2)}.
+                </>
+              )}
             </>
           )}
         </div>
@@ -169,7 +206,7 @@ export default function Home() {
 
       <section className="panel">
         <h2>
-          1 · Virtualni bot <span>· vježba s $1000 — prati stvarne kamate, ali ne šalje naloge i ne troši pravi novac</span>
+          1 · Utrka virtualnih botova <span>· dva pristupa, svaki sa svojih $1000 — ništa od ovoga nije pravi novac</span>
         </h2>
         {paper ? (
           <>
@@ -205,7 +242,22 @@ export default function Home() {
                 <div className="d">automatski, bez nadzora</div>
               </div>
             </div>
-            <EquityChart history={paper.history} initial={paper.state.initial} />
+            <p className="legend" style={{ marginTop: 10 }}>
+              <span style={{ color: "#22c55e" }}>━ Carry bot</span> (kamata, delta-neutralno) ·{" "}
+              <span style={{ color: "#f59e0b" }}>━ ML rotacija</span> (predviđanje vjerojatnosti — eksperiment)
+            </p>
+            <RaceChart carry={paper.history} ml={paper.ml?.history} initial={paper.state.initial} />
+            {paper.ml && (
+              <div className="mlstrip">
+                <b>ML rotacija (eksperiment):</b> ${paper.ml.state.equity.toFixed(2)} (
+                {(((paper.ml.state.equity / paper.ml.state.initial) - 1) * 100).toFixed(2)}%) · drži{" "}
+                {paper.ml.state.symbol.replace("/USDT", "")} · {paper.ml.state.trades} rotacija
+                <span className="mut">
+                  {" "}— isti model vjerojatnosti kao izvorni CryptoRot (68 featurea, svjež trening svakih 30 dana).
+                  Pošteni test je predvidio da će izgubiti od carryja — ovdje se uživo vidi hoćemo li imati sreće.
+                </span>
+              </div>
+            )}
             <div style={{ marginTop: 12 }}>
               <div className="chips">
                 {Object.entries(book).map(([c, v]) => (
@@ -223,7 +275,8 @@ export default function Home() {
             <details>
               <summary>Kako čitati ovaj dio?</summary>
               <ul>
-                <li><b>Zelena linija</b> = vrijednost virtualnog uloga kroz vrijeme; isprekidana crta = početnih $1000. Cilj: linija iznad crte, bez naglih padova.</li>
+                <li><b>Zelena linija</b> = carry bot (skuplja kamatu, zaštićen od pada cijena). <b>Narančasta linija</b> = ML eksperiment koji pokušava predvidjeti koje valute će rasti — kreće kasnije, pa mu je linija kraća. Isprekidana crta = početnih $1000 za oba.</li>
+                <li><b>Zašto utrka?</b> Pošten test na prošlosti kaže da predviđanje gubi od kamate. Umjesto da vjerujemo testu na riječ, pustili smo oba pristupa da se natječu uživo — pobjednika će pokazati graf, ne mišljenje.</li>
                 <li><b>Pločice ispod grafa</b> = što bot trenutno "drži" i na kojoj burzi naplaćuje kamatu (npr. "BTC @ Hyperliquid").</li>
                 <li>Zarada dolazi iz dva izvora: <b>funding</b> (kamata s burze) i <b>kolateral</b> (kamata na dolare). Troškovi se plaćaju samo pri izmjeni pozicija — zato bot mijenja pozicije najviše jednom mjesečno.</li>
                 <li>Bot je <b>delta-neutralan</b>: zaštićen je od pada cijene, pa i kad kripto padne, ova linija ne bi trebala padati s njim.</li>
