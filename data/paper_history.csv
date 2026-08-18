@@ -61,3 +61,4 @@ time,equity,funding_pct,coll_pct,note,book
 2026-08-15 06:00 UTC,1019.21,0.012,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; LTC@hyperliquid; BTC@hyperliquid; ETH@hyperliquid; BNB@hyperliquid
 2026-08-16 06:00 UTC,1018.98,0.0156,0.0123,accrued 1.00d; REBALANCED (2 legs changed),NEAR@hyperliquid; LINK@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; DOGE@hyperliquid; BNB@hyperliquid
 2026-08-17 06:00 UTC,1019.27,0.0154,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; DOGE@hyperliquid; BNB@hyperliquid
+2026-08-18 06:00 UTC,1019.55,0.0159,0.0123,accrued 1.00d,NEAR@hyperliquid; LINK@hyperliquid; ETH@hyperliquid; BTC@hyperliquid; DOGE@hyperliquid; BNB@hyperliquid
