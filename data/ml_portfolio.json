@@ -2,10 +2,10 @@
   "current_symbol": "BTC/USDT",
   "quantity": 0.015389821879740546,
   "initial_usd": 1000.0,
-  "current_value_usd": 1067.87,
+  "current_value_usd": 1160.28,
   "entry_price": 64978.01,
-  "pnl_usd": 67.87,
-  "pnl_pct": 6.79,
+  "pnl_usd": 160.28,
+  "pnl_pct": 16.03,
   "total_fees_paid": 0,
   "total_trades": 0,
   "started_at": "2026-08-09T11:34:09.019392+00:00",
@@ -74,6 +74,11 @@
     {
       "timestamp": "2026-08-20T06:01:14.955351+00:00",
       "value_usd": 1067.87,
+      "symbol": "BTC/USDT"
+    },
+    {
+      "timestamp": "2026-08-21T06:01:14.200953+00:00",
+      "value_usd": 1160.28,
       "symbol": "BTC/USDT"
     }
   ]
