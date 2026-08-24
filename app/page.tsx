@@ -280,6 +280,7 @@ export default function Home() {
                 <li><b>Pločice ispod grafa</b> = što bot trenutno "drži" i na kojoj burzi naplaćuje kamatu (npr. "BTC @ Hyperliquid").</li>
                 <li>Zarada dolazi iz dva izvora: <b>funding</b> (kamata s burze) i <b>kolateral</b> (kamata na dolare). Troškovi se plaćaju samo pri izmjeni pozicija — zato bot mijenja pozicije najviše jednom mjesečno.</li>
                 <li>Bot je <b>delta-neutralan</b>: zaštićen je od pada cijene, pa i kad kripto padne, ova linija ne bi trebala padati s njim.</li>
+                <li><b>Konzervativna napomena (TradeLab audit, 24.8.):</b> prikazani kolateralni prinos računa se na cijeli kapital — pošteni obračun (kolateral na ~50% osnove + trošak zatvaranja) daje ~0,4% manje na 70 dana. I s tom korekcijom bot ostaje u plusu (~+10% godišnjim tempom).</li>
               </ul>
             </details>
           </>
