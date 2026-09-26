@@ -1,0 +1,554 @@
+[
+ {
+  "id": "G-231",
+  "q_bks": "Što znači pojam „europska integracija”?",
+  "options_bks": [
+   "Time se misli na američke useljenike u Europi.",
+   "Pojam označava zaustavljanje useljavanja u Europu.",
+   "Time se misli na europske iseljenike u SAD-u.",
+   "Pojam označava udruživanje europskih država u EU."
+  ],
+  "expl_bks": "Europska integracija znači da se europske države sve tješnje povezuju i surađuju. Počelo je 1951. zajednicom za ugljen i čelik, 1957. slijedila je Europska ekonomska zajednica (EEZ), a 1993. nastala je Europska unija. Njemačka je od početka jedna od država osnivačica.",
+  "merksatz_de": "Europäische Integration: Europäische Staaten schließen sich zur EU zusammen."
+ },
+ {
+  "id": "G-232",
+  "q_bks": "Tko se bira na europskim izborima (Europawahl)?",
+  "options_bks": [
+   "Europska komisija",
+   "zemlje koje smiju pristupiti EU-u",
+   "zastupnici u Europskom parlamentu",
+   "europski ustav"
+  ],
+  "expl_bks": "Na europskim izborima građani država članica biraju zastupnike u Europskom parlamentu. Izbori se održavaju svakih pet godina, a prvi neposredni izbori bili su 1979. Europsku komisiju građani ne biraju izravno: članove predlažu države članice, a Europski parlament ih potvrđuje.",
+  "merksatz_de": "Bei der Europawahl wählt man die Abgeordneten des Europäischen Parlaments."
+ },
+ {
+  "id": "G-233",
+  "q_bks": "Koja je zemlja susjedna zemlja Njemačke?",
+  "options_bks": [
+   "Češka",
+   "Bugarska",
+   "Grčka",
+   "Portugal"
+  ],
+  "expl_bks": "Češka graniči s Njemačkom na jugoistoku, uz Bavarsku i Sasku. Njemačka ima ukupno devet susjednih zemalja: Dansku, Poljsku, Češku, Austriju, Švicarsku, Francusku, Luksemburg, Belgiju i Nizozemsku. Bugarska, Grčka i Portugal članice su EU-a, ali ne graniče s Njemačkom.",
+  "merksatz_de": "Deutschland hat neun Nachbarländer, zum Beispiel Tschechien."
+ },
+ {
+  "id": "G-234",
+  "q_bks": "Gdje je jedno od sjedišta Europskog parlamenta?",
+  "options_bks": [
+   "London",
+   "Pariz",
+   "Berlin",
+   "Strasbourg"
+  ],
+  "expl_bks": "Strasbourg (njem. Straßburg) nalazi se u Francuskoj, na Rajni, odmah uz njemačku granicu. Tamo se održava većina plenarnih sjednica Europskog parlamenta, na kojima zastupnici glasaju o europskim zakonima. Parlament radi i u Bruxellesu i Luksemburgu, ali ne u Londonu, Parizu ili Berlinu.",
+  "merksatz_de": "Das Europäische Parlament tagt in Straßburg."
+ },
+ {
+  "id": "G-235",
+  "q_bks": "Tadašnji francuski predsjednik François Mitterrand i tadašnji njemački savezni kancelar Helmut Kohl zajedno u Verdunu odaju počast poginulima iz oba svjetska rata. Koji cilj Europske unije postaje jasan na tom susretu?",
+  "options_bks": [
+   "prijateljstvo između Engleske i Njemačke",
+   "sloboda putovanja u sve zemlje EU-a",
+   "mir i sigurnost u zemljama EU-a",
+   "jednaki blagdani u svim zemljama EU-a"
+  ],
+  "expl_bks": "U bitci kod Verduna 1916., u Prvom svjetskom ratu, poginulo je ili ranjeno više stotina tisuća francuskih i njemačkih vojnika. Godine 1984. Mitterrand i Kohl ondje su se, držeći se za ruke, zajedno poklonili žrtvama. Ta slika pokazuje glavni cilj Europske unije: nekadašnji neprijatelji žive u miru i sigurnosti.",
+  "merksatz_de": "Ein wichtiges Ziel der EU ist Frieden und Sicherheit."
+ },
+ {
+  "id": "G-236",
+  "q_bks": "Koliko država članica danas ima EU?",
+  "options_bks": [
+   "21",
+   "23",
+   "25",
+   "27"
+  ],
+  "expl_bks": "Europska unija danas ima 27 država članica. Hrvatska je 2013. postala 28. članica, a Ujedinjeno Kraljevstvo izašlo je iz EU-a 2020. (Brexit), pa je broj ponovno pao na 27. Njemačka je jedna od šest država osnivačica Europske ekonomske zajednice iz 1957.",
+  "merksatz_de": "Die EU hat heute 27 Mitgliedstaaten."
+ },
+ {
+  "id": "G-237",
+  "q_bks": "Godine 2007. proslavljena je 50. obljetnica „Rimskih ugovora”. Što je bio sadržaj tih ugovora?",
+  "options_bks": [
+   "pristupanje Njemačke NATO-u",
+   "osnivanje Europske ekonomske zajednice (EEZ)",
+   "obveza Njemačke da plaća ratnu odštetu (reparacije)",
+   "utvrđivanje crte Odra–Nisa kao istočne granice"
+  ],
+  "expl_bks": "Rimski ugovori potpisani su 25. ožujka 1957. u Rimu. Njima je šest država – Savezna Republika Njemačka, Francuska, Italija, Belgija, Nizozemska i Luksemburg – osnovalo Europsku ekonomsku zajednicu (EEZ), iz koje je kasnije nastala Europska unija. U NATO je Njemačka ušla već 1955., na temelju drugih ugovora.",
+  "merksatz_de": "Die Römischen Verträge gründeten 1957 die EWG."
+ },
+ {
+  "id": "G-238",
+  "q_bks": "U kojim mjestima radi Europski parlament?",
+  "options_bks": [
+   "Pariz, London i Haag",
+   "Strasbourg, Luksemburg i Bruxelles",
+   "Rim, Bern i Beč",
+   "Bonn, Zürich i Milano"
+  ],
+  "expl_bks": "Europski parlament radi u tri grada. U Strasbourgu (Francuska) održava većinu plenarnih sjednica, u Bruxellesu (Brisel) sastaju se odbori i klubovi zastupnika, a u Luksemburgu je glavno tajništvo, odnosno uprava Parlamenta. Za pamćenje: sva tri grada nalaze se na zapadu, blizu Njemačke.",
+  "merksatz_de": "Das EU-Parlament arbeitet in Straßburg, Luxemburg und Brüssel."
+ },
+ {
+  "id": "G-239",
+  "q_bks": "Kojim se ugovorima Savezna Republika Njemačka s drugim državama udružila u Europsku ekonomsku zajednicu?",
+  "options_bks": [
+   "„Hamburškim ugovorima”",
+   "„Rimskim ugovorima”",
+   "„Pariškim ugovorima”",
+   "„Londonskim ugovorima”"
+  ],
+  "expl_bks": "Savezna Republika Njemačka potpisala je 1957. Rimske ugovore s Francuskom, Italijom, Belgijom, Nizozemskom i Luksemburgom. Tako je nastala Europska ekonomska zajednica (EEZ), preteča današnje Europske unije. Česta zamka su „Pariški ugovori”: Pariški ugovor iz 1951. osnovao je zajednicu za ugljen i čelik, a ne EEZ.",
+  "merksatz_de": "Mit den Römischen Verträgen entstand die EWG."
+ },
+ {
+  "id": "G-240",
+  "q_bks": "Otkad se u Njemačkoj gotovinom plaća eurima?",
+  "options_bks": [
+   "1995.",
+   "1998.",
+   "2002.",
+   "2005."
+  ],
+  "expl_bks": "Euro je u Njemačkoj bezgotovinski uveden 1999., a novčanice i kovanice u opticaju su od 1. siječnja 2002. Tada je euro zamijenio njemačku marku (D-Mark). Tečaj je bio fiksan: jedan euro vrijedio je 1,95583 marke, dakle otprilike dvije marke.",
+  "merksatz_de": "Seit 2002 bezahlt man in Deutschland mit Euro-Bargeld."
+ },
+ {
+  "id": "G-241",
+  "q_bks": "Gospođa Seger dobit će dijete. Što mora učiniti da bi dobila roditeljsku naknadu (Elterngeld)?",
+  "options_bks": [
+   "Mora pisati svojoj zdravstvenoj blagajni (Krankenkasse).",
+   "Mora podnijeti zahtjev uredu za roditeljsku naknadu (Elterngeldstelle).",
+   "Ne mora ništa učiniti jer roditeljsku naknadu dobiva automatski.",
+   "Mora zamoliti ured za rad (Arbeitsamt) za dopuštenje."
+  ],
+  "expl_bks": "Roditeljska naknada (Elterngeld) ne dobiva se automatski. Roditelji moraju podnijeti pisani zahtjev uredu za roditeljsku naknadu (Elterngeldstelle); koji je ured nadležan, ovisi o pokrajini i mjestu stanovanja. Zahtjev treba predati ubrzo nakon rođenja, jer se naknada unatrag isplaćuje samo za posljednja tri mjeseca.",
+  "merksatz_de": "Elterngeld muss man bei der Elterngeldstelle beantragen."
+ },
+ {
+  "id": "G-242",
+  "q_bks": "Tko odlučuje hoće li dijete u Njemačkoj ići u vrtić?",
+  "options_bks": [
+   "država",
+   "savezne pokrajine",
+   "roditelji/skrbnici",
+   "škole"
+  ],
+  "expl_bks": "U Njemačkoj u pravilu ne postoji obveza pohađanja vrtića. Roditelji ili skrbnici sami odlučuju hoće li dijete ići u vrtić. Dijete ima pravo na mjesto u vrtiću, ali to je pravo, a ne obveza. Obvezno školovanje počinje tek polaskom u školu.",
+  "merksatz_de": "Die Eltern entscheiden, ob ihr Kind in den Kindergarten geht."
+ },
+ {
+  "id": "G-243",
+  "q_bks": "Maik i Sybille žele s prijateljima u svom mjestu stanovanja u Njemačkoj održati demonstraciju na ulici. Što moraju učiniti prije toga?",
+  "options_bks": [
+   "Moraju prijaviti demonstraciju.",
+   "Ne moraju ništa učiniti. U Njemačkoj se smije demonstrirati uvijek i svugdje.",
+   "Ne mogu ništa učiniti jer su demonstracije u Njemačkoj načelno zabranjene.",
+   "Maik i Sybille moraju osnovati novu udrugu jer samo udruge smiju demonstrirati."
+  ],
+  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije najave. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
+  "merksatz_de": "Eine Demonstration im Freien muss man vorher anmelden."
+ },
+ {
+  "id": "G-244",
+  "q_bks": "Koju završnu školsku svjedodžbu obično treba imati da bi se u Njemačkoj počelo studirati na sveučilištu?",
+  "options_bks": [
+   "maturu (Abitur)",
+   "diplomu (Diplom)",
+   "prokuru (Prokura)",
+   "pomoćnički ispit u obrtu (Gesellenprüfung)"
+  ],
+  "expl_bks": "Abitur je matura koja se u pravilu polaže na kraju gimnazije, nakon 12 ili 13 godina škole. Ona daje opće pravo na studij na sveučilištu. Diploma je završetak studija, prokura je poslovna punomoć u tvrtki, a pomoćnički ispit (Gesellenprüfung) završava strukovno obrazovanje u obrtu.",
+  "merksatz_de": "Für ein Studium an der Universität braucht man meistens das Abitur."
+ },
+ {
+  "id": "G-245",
+  "q_bks": "Tko u Njemačkoj ne smije živjeti zajedno kao par?",
+  "options_bks": [
+   "Hans (20 godina) i Marie (19 godina)",
+   "Tom (20 godina) i Klaus (45 godina)",
+   "Sofie (35 godina) i Lisa (40 godina)",
+   "Anne (13 godina) i Tim (25 godina)"
+  ],
+  "expl_bks": "Anne ima tek 13 godina, dakle još je dijete. U Njemačkoj su djeca mlađa od 14 godina posebno zaštićena: seksualne radnje odrasle osobe s djetetom teško su kazneno djelo. Svi ostali parovi su punoljetni i smiju živjeti zajedno, bez obzira na razliku u godinama ili na spol.",
+  "merksatz_de": "Kinder unter 14 Jahren sind vom Gesetz besonders geschützt."
+ },
+ {
+  "id": "G-246",
+  "q_bks": "S koliko se godina u Njemačkoj postaje punoljetan?",
+  "options_bks": [
+   "16",
+   "18",
+   "19",
+   "21"
+  ],
+  "expl_bks": "U Njemačkoj se punoljetnost stječe s navršenih 18 godina. Od tada čovjek smije sam sklapati ugovore, na primjer ugovor o najmu, glasati na izborima za Bundestag i sklopiti brak. Roditelji više ne odlučuju umjesto njega.",
+  "merksatz_de": "In Deutschland ist man mit 18 Jahren volljährig."
+ },
+ {
+  "id": "G-247",
+  "q_bks": "Jedna je žena trudna. Kratko prije i nakon rođenja djeteta zakon je posebno štiti. Kako se zove ta zaštita?",
+  "options_bks": [
+   "roditeljski dopust (Elternzeit)",
+   "zaštita majčinstva (Mutterschutz)",
+   "priprema za porod (Geburtsvorbereitung)",
+   "babinje (Wochenbett)"
+  ],
+  "expl_bks": "Zaštita majčinstva (Mutterschutz) štiti trudnice i majke koje rade. Šest tjedana prije poroda žena ne mora raditi, a osam tjedana nakon poroda ne smije raditi; za to vrijeme prima naknadu. Od početka trudnoće do četiri mjeseca nakon poroda u pravilu joj se ne smije dati otkaz. Roditeljski dopust (Elternzeit) dolazi tek poslije.",
+  "merksatz_de": "Mutterschutz schützt Frauen kurz vor und nach der Geburt."
+ },
+ {
+  "id": "G-248",
+  "q_bks": "Odgoj djece u Njemačkoj prije svega je zadaća …",
+  "options_bks": [
+   "države.",
+   "roditelja.",
+   "baka i djedova.",
+   "škola."
+  ],
+  "expl_bks": "Prema Temeljnom zakonu (članak 6.) njega i odgoj djece prirodno su pravo roditelja i prije svega njihova dužnost. Država samo pazi da je dijete dobro zbrinuto i pomaže kad postoje problemi. Škole također odgajaju, ali glavnu odgovornost imaju roditelji.",
+  "merksatz_de": "Die Erziehung der Kinder ist vor allem Aufgabe der Eltern."
+ },
+ {
+  "id": "G-249",
+  "q_bks": "Tko je u Njemačkoj uglavnom odgovoran za odgoj djece?",
+  "options_bks": [
+   "država",
+   "roditelji",
+   "rodbina",
+   "škole"
+  ],
+  "expl_bks": "Za odgoj djece u Njemačkoj prvenstveno su odgovorni roditelji. Temeljni zakon (članak 6.) kaže da je to njihovo pravo i njihova dužnost. Škola, vrtić i rodbina mogu pomoći, a država se uključuje tek kad je dobrobit djeteta ugrožena, na primjer preko ureda za djecu i mlade (Jugendamt).",
+  "merksatz_de": "Hauptsächlich verantwortlich für die Kindererziehung sind die Eltern."
+ },
+ {
+  "id": "G-250",
+  "q_bks": "U Njemačkoj čovjek ima najbolje izglede za dobro plaćeno radno mjesto ako …",
+  "options_bks": [
+   "je katolik.",
+   "je dobro obrazovan.",
+   "je žena.",
+   "je član neke stranke."
+  ],
+  "expl_bks": "Na njemačkom tržištu rada najvažnije su kvalifikacije: završena škola, strukovno obrazovanje (Ausbildung) ili studij. Tko je dobro obrazovan, ima najbolje izglede za dobro plaćen posao. Vjera, spol ili članstvo u stranci ne smiju biti razlog za prednost ili zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.).",
+  "merksatz_de": "Eine gute Ausbildung bringt die besten Chancen auf gute Arbeit."
+ },
+ {
+  "id": "G-251",
+  "q_bks": "Ako netko u Njemačkoj udari dijete, …",
+  "options_bks": [
+   "to se nikoga ne tiče.",
+   "to se tiče samo obitelji.",
+   "za to ne može biti kažnjen.",
+   "za to može biti kažnjen."
+  ],
+  "expl_bks": "Od 2000. godine djeca u Njemačkoj imaju zakonsko pravo na odgoj bez nasilja (Građanski zakonik, § 1631). Tjelesno kažnjavanje, psihičko zlostavljanje i druge ponižavajuće mjere zabranjeni su, i u obitelji. Tko udari dijete, može biti kažnjen, na primjer zbog tjelesne ozljede.",
+  "merksatz_de": "Kinder haben ein Recht auf Erziehung ohne Gewalt."
+ },
+ {
+  "id": "G-252",
+  "q_bks": "U Njemačkoj …",
+  "options_bks": [
+   "čovjek smije u isto vrijeme biti u braku samo s jednim partnerom.",
+   "čovjek može istodobno imati više bračnih partnera.",
+   "čovjek se ne smije ponovno vjenčati ako je već jednom bio u braku.",
+   "žena se ne smije ponovno udati ako joj je muž umro."
+  ],
+  "expl_bks": "U Njemačkoj se može biti u braku samo s jednom osobom u isto vrijeme. Tko sklopi drugi brak dok prvi još traje, čini kazneno djelo bigamije. Nakon razvoda ili smrti bračnog partnera ponovno vjenčanje je dopušteno, i ženama i muškarcima.",
+  "merksatz_de": "Man darf nur mit einer Person gleichzeitig verheiratet sein."
+ },
+ {
+  "id": "G-253",
+  "q_bks": "Gdje se morate prijaviti kad se u Njemačkoj preselite?",
+  "options_bks": [
+   "u uredu za prijavu prebivališta (Einwohnermeldeamt)",
+   "u matičnom uredu (Standesamt)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt)",
+   "u obrtnom uredu (Gewerbeamt)"
+  ],
+  "expl_bks": "Nakon preseljenja novu adresu treba prijaviti u uredu za prijavu prebivališta (Einwohnermeldeamt); u mnogim gradovima to je građanski ured (Bürgeramt). Rok je u pravilu dva tjedna. Za prijavu trebate osobnu iskaznicu ili putovnicu i potvrdu stanodavca (Wohnungsgeberbestätigung).",
+  "merksatz_de": "Nach einem Umzug meldet man sich beim Einwohnermeldeamt an."
+ },
+ {
+  "id": "G-254",
+  "q_bks": "U Njemačkoj se bračni parovi smiju razvesti. Za to većinom moraju poštovati „godinu razdvojenosti” (Trennungsjahr). Što to znači?",
+  "options_bks": [
+   "Postupak razvoda traje godinu dana.",
+   "Supružnici su godinu dana u braku, a onda je razvod moguć.",
+   "Pravo na viđanje djece vrijedi godinu dana.",
+   "Supružnici najmanje godinu dana žive odvojeno, svatko svoj život. Nakon toga je razvod moguć."
+  ],
+  "expl_bks": "Godina razdvojenosti (Trennungsjahr) znači da supružnici najmanje godinu dana žive odvojeno i vode svaki svoj život. To je moguće čak i u istom stanu, ako više ne žive kao par i nemaju zajedničko kućanstvo. Tek nakon toga obiteljski sud u pravilu može izreći razvod.",
+  "merksatz_de": "Vor der Scheidung lebt das Ehepaar meistens ein Jahr getrennt."
+ },
+ {
+  "id": "G-255",
+  "q_bks": "Kod problema s odgojem roditelji u Njemačkoj mogu dobiti pomoć od …",
+  "options_bks": [
+   "komunalnog redarstvenog ureda (Ordnungsamt).",
+   "školskog ureda (Schulamt).",
+   "ureda za djecu i mlade (Jugendamt).",
+   "zdravstvenog ureda (Gesundheitsamt)."
+  ],
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) postoji u svakom okrugu (Landkreis) i u većim gradovima. On savjetuje roditelje kod problema s odgojem, na primjer kad dijete ne ide u školu ili je agresivno, i upućuje ih na obiteljska savjetovališta. Savjetovanje je besplatno i povjerljivo.",
+  "merksatz_de": "Bei Erziehungsproblemen hilft das Jugendamt."
+ },
+ {
+  "id": "G-256",
+  "q_bks": "Bračni par želi u Njemačkoj otvoriti restoran. Što mu je za to nužno potrebno?",
+  "options_bks": [
+   "dozvola policije",
+   "odobrenje neke stranke",
+   "odobrenje ureda za prijavu prebivališta (Einwohnermeldeamt)",
+   "dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis) od nadležnog ureda"
+  ],
+  "expl_bks": "Za otvaranje restorana, posebno ako se toči alkohol, potrebna je dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured općine, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt). Ured provjerava, na primjer, prostorije i pouzdanost vlasnika. Pojedinosti ovise o pokrajini.",
+  "merksatz_de": "Für ein Restaurant braucht man eine Gaststättenerlaubnis."
+ },
+ {
+  "id": "G-257",
+  "q_bks": "Odrasla žena želi u Njemačkoj naknadno položiti maturu (Abitur). To može učiniti …",
+  "options_bks": [
+   "na visokom učilištu (Hochschule).",
+   "u večernjoj gimnaziji (Abendgymnasium).",
+   "u Hauptschuli (niža srednja škola).",
+   "na privatnom sveučilištu."
+  ],
+  "expl_bks": "Večernja gimnazija (Abendgymnasium) namijenjena je odraslima koji rade. Nastava se održava navečer, pa se škola može uskladiti s poslom i obitelji. Na kraju se polaže matura (Abitur), s kojom se može studirati. Visoko učilište i privatno sveučilište traže Abitur već pri upisu.",
+  "merksatz_de": "Erwachsene können das Abitur am Abendgymnasium nachholen."
+ },
+ {
+  "id": "G-258",
+  "q_bks": "Što smije ured za djecu i mlade (Jugendamt) u Njemačkoj?",
+  "options_bks": [
+   "Odlučuje koju će školu dijete pohađati.",
+   "Može izdvojiti iz obitelji dijete koje tuku ili koje mora gladovati.",
+   "Isplaćuje roditeljima dječji doplatak (Kindergeld).",
+   "Kontrolira pohađa li dijete vrtić."
+  ],
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) štiti djecu. Ako je dijete u opasnosti, na primjer ako ga tuku ili gladuje, ured ga smije izdvojiti iz obitelji i privremeno smjestiti na sigurno mjesto. O dugoročnim mjerama odlučuje obiteljski sud. Dječji doplatak (Kindergeld) ne isplaćuje Jugendamt, nego obiteljska blagajna (Familienkasse).",
+  "merksatz_de": "Das Jugendamt kann gefährdete Kinder aus der Familie nehmen."
+ },
+ {
+  "id": "G-259",
+  "q_bks": "Centar za informiranje o zanimanjima BIZ pri Saveznoj agenciji za rad (Bundesagentur für Arbeit) u Njemačkoj pomaže pri …",
+  "options_bks": [
+   "izračunu mirovine.",
+   "traženju mjesta za stručno osposobljavanje (Lehrstelle).",
+   "poreznoj prijavi.",
+   "zdravstvenom osiguranju."
+  ],
+  "expl_bks": "Centar za informiranje o zanimanjima (Berufsinformationszentrum, BIZ) nalazi se pri Agenciji za rad (Agentur für Arbeit). Ondje mladi i odrasli besplatno dobivaju informacije o zanimanjima, strukovnom obrazovanju (Ausbildung) i studiju te pomoć pri traženju mjesta za stručno osposobljavanje. Za mirovinu, porez i zdravstveno osiguranje nadležni su drugi uredi.",
+  "merksatz_de": "Das BIZ hilft bei der Suche nach einer Lehrstelle."
+ },
+ {
+  "id": "G-260",
+  "q_bks": "U Njemačkoj dijete u školi ima …",
+  "options_bks": [
+   "pravo na neograničeno slobodno vrijeme.",
+   "slobodu izbora svih predmeta.",
+   "pravo na novac za školu (Schulgeld).",
+   "obvezu prisustvovanja nastavi."
+  ],
+  "expl_bks": "U Njemačkoj postoji obvezno školovanje (Schulpflicht). Djeca moraju redovito dolaziti na nastavu, a izostati smiju samo s opravdanim razlogom, na primjer zbog bolesti. Za to su odgovorni roditelji: za neopravdane izostanke mogu dobiti novčanu kaznu. Javne škole su besplatne.",
+  "merksatz_de": "Kinder müssen regelmäßig in die Schule gehen."
+ },
+ {
+  "id": "G-261",
+  "q_bks": "Muškarac od 30 godina želi u Njemačkoj naknadno položiti maturu (Abitur). Gdje to može učiniti? …",
+  "options_bks": [
+   "na visokom učilištu (Hochschule).",
+   "u večernjoj gimnaziji (Abendgymnasium).",
+   "u Hauptschuli (niža srednja škola).",
+   "na privatnom sveučilištu."
+  ],
+  "expl_bks": "Tko je već odrastao i radi, maturu (Abitur) može naknadno položiti u večernjoj gimnaziji (Abendgymnasium). Nastava je navečer, obično traje oko tri godine i u javnim školama je besplatna. Hauptschule je škola za djecu, a na visoko učilište ili sveučilište upisuje se tek s Abiturom.",
+  "merksatz_de": "Auch mit 30 kann man am Abendgymnasium Abitur machen."
+ },
+ {
+  "id": "G-262",
+  "q_bks": "Što u Njemačkoj znači načelo jednakog postupanja?",
+  "options_bks": [
+   "Nitko ne smije biti zapostavljen, npr. zbog invaliditeta.",
+   "Druge osobe smiju se zapostavljati ako za to postoje dovoljni osobni razlozi.",
+   "Nitko ne smije podnijeti tužbu protiv drugih ako je bio zapostavljen.",
+   "Za sve je zakonska obveza svake godine darivati novac zapostavljenim skupinama."
+  ],
+  "expl_bks": "Načelo jednakog postupanja proizlazi iz Temeljnog zakona (članak 3.): nitko ne smije biti zapostavljen zbog spola, podrijetla, vjere ili invaliditeta. Zaštitu osoba s invaliditetom Temeljni zakon izričito spominje od 1994. Opći zakon o jednakom postupanju (AGG) iz 2006. štiti od diskriminacije, na primjer na poslu ili pri traženju stana.",
+  "merksatz_de": "Niemand darf wegen einer Behinderung benachteiligt werden."
+ },
+ {
+  "id": "G-263",
+  "q_bks": "U Njemačkoj su mladi od 14 godina kazneno odgovorni. To znači: mladi koji imaju 14 ili više godina i prekrše kazneni zakon …",
+  "options_bks": [
+   "bit će kažnjeni.",
+   "tretiraju se kao odrasli.",
+   "dijele kaznu sa svojim roditeljima.",
+   "neće biti kažnjeni."
+  ],
+  "expl_bks": "Kazneno odgovoran znači da netko za kazneno djelo može odgovarati pred sudom. Mladi od 14 do 17 godina kažnjavaju se prema posebnom zakonu o sudovima za mladež (Jugendgerichtsgesetz), a ne kao odrasli. Kazne su prije svega odgojne, na primjer rad za opće dobro ili maloljetnički zatvor.",
+  "merksatz_de": "Ab 14 Jahren kann man in Deutschland bestraft werden."
+ },
+ {
+  "id": "G-264",
+  "q_bks": "Kojom prigodom ljudi u Njemačkoj nose šarene kostime i maske?",
+  "options_bks": [
+   "na Rosenmontag",
+   "na Praznik rada (1. svibnja)",
+   "na Oktoberfestu",
+   "na Duhove (Pfingsten)"
+  ],
+  "expl_bks": "Rosenmontag je vrhunac karnevala (Karneval, Fasching ili Fastnacht), neposredno prije korizme. Posebno u Kölnu, Düsseldorfu i Mainzu gradom prolaze velike povorke, a ljudi nose šarene kostime i maske. Datum ovisi o Uskrsu, pa je Rosenmontag svake godine drugačiji, uvijek u veljači ili početkom ožujka.",
+  "merksatz_de": "Am Rosenmontag tragen viele Menschen Kostüme und Masken."
+ },
+ {
+  "id": "G-265",
+  "q_bks": "Kamo u Njemačkoj najprije treba otići ako se netko želi vjenčati?",
+  "options_bks": [
+   "u ured za prijavu prebivališta (Einwohnermeldeamt)",
+   "u komunalni redarstveni ured (Ordnungsamt)",
+   "u Agenciju za rad (Agentur für Arbeit)",
+   "u matični ured (Standesamt)"
+  ],
+  "expl_bks": "U Njemačkoj je pravno valjan samo građanski brak, sklopljen pred matičarom. Zato par najprije u matičnom uredu (Standesamt) prijavljuje namjeru vjenčanja i predaje dokumente, na primjer rodni list i osobnu iskaznicu ili putovnicu. Vjersko vjenčanje moguće je dodatno, ali nema pravni učinak.",
+  "merksatz_de": "Wer heiraten möchte, geht zuerst zum Standesamt."
+ },
+ {
+  "id": "G-266",
+  "q_bks": "Kada u Njemačkoj počinje zakonski noćni mir?",
+  "options_bks": [
+   "kada sunce zađe",
+   "kada susjedi odu spavati",
+   "u 0 sati, u ponoć",
+   "u 22 sata"
+  ],
+  "expl_bks": "Noćni mir (Nachtruhe) u pravilu traje od 22 do 6 sati. U to vrijeme treba izbjegavati buku, na primjer glasnu glazbu, bušenje ili zabave. Pravila određuju propisi pokrajina i općina, a često i kućni red (Hausordnung) u zgradi, koji može propisati i podnevni mir.",
+  "merksatz_de": "Die Nachtruhe beginnt um 22 Uhr."
+ },
+ {
+  "id": "G-267",
+  "q_bks": "Mlada žena u Njemačkoj, stara 22 godine, živi sa svojim dečkom. Njezinim roditeljima to nije drago jer im se dečko ne sviđa. Što roditelji mogu učiniti?",
+  "options_bks": [
+   "Moraju poštovati odluku svoje punoljetne kćeri.",
+   "Imaju pravo vratiti kćer u roditeljski stan.",
+   "Mogu otići na policiju i prijaviti kćer.",
+   "Potražit će kćeri drugog muškarca."
+  ],
+  "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući ni prijaviti policiji, jer nije učinila ništa zabranjeno.",
+  "merksatz_de": "Erwachsene Kinder entscheiden selbst, mit wem sie zusammenleben."
+ },
+ {
+  "id": "G-268",
+  "q_bks": "Mlada žena želi položiti vozački ispit. Boji se ispita jer njemački nije njezin materinski jezik. Što je točno?",
+  "options_bks": [
+   "Mora živjeti u Njemačkoj najmanje deset godina prije nego što može polagati vozački ispit.",
+   "Ako ne zna njemački, ne smije imati vozačku dozvolu.",
+   "Mora polagati vozački ispit u zemlji u kojoj se govori njezin jezik.",
+   "Teorijski ispit možda može polagati na svom materinskom jeziku. Na izbor je više od deset jezika."
+  ],
+  "expl_bks": "U Njemačkoj se teorijski dio vozačkog ispita može polagati na njemačkom ili na više od deset stranih jezika, među njima i na hrvatskom. Za to nije potrebno dugo živjeti u Njemačkoj. Koji su jezici trenutno ponuđeni, može se pitati u autoškoli ili kod ispitne organizacije, npr. TÜV-a ili DEKRA-e.",
+  "merksatz_de": "Die Theorieprüfung kann man in vielen Sprachen machen."
+ },
+ {
+  "id": "G-269",
+  "q_bks": "U Njemačkoj djeca od treće godine do polaska u školu imaju pravo na …",
+  "options_bks": [
+   "mjesečni džeparac.",
+   "mjesto u sportskom klubu.",
+   "mjesto u vrtiću.",
+   "propusnicu za praznične aktivnosti (Ferienpass)."
+  ],
+  "expl_bks": "Od 1996. svako dijete od navršene treće godine do polaska u školu ima zakonsko pravo na mjesto u vrtiću (Kindergarten). Od 2013. to pravo vrijedi već od prve godine, u jaslicama ili kod dnevne dadilje. Pohađanje je dobrovoljno, a koliko roditelji plaćaju, ovisi o pokrajini i općini.",
+  "merksatz_de": "Ab drei Jahren hat ein Kind Anspruch auf einen Kindergartenplatz."
+ },
+ {
+  "id": "G-270",
+  "q_bks": "Pučko otvoreno učilište (Volkshochschule) u Njemačkoj ustanova je …",
+  "options_bks": [
+   "za vjeronauk.",
+   "samo za mlade.",
+   "za daljnje obrazovanje.",
+   "samo za umirovljenike."
+  ],
+  "expl_bks": "Pučko otvoreno učilište (Volkshochschule, VHS) nudi tečajeve za odrasle svih dobi: jezike, rad na računalu, kuhanje, zdravlje, a često i integracijske tečajeve. Tečajevi su najčešće povoljni, a VHS postoji gotovo u svakom gradu. Ondje se mogu naknadno steći i školske svjedodžbe.",
+  "merksatz_de": "Die Volkshochschule bietet Kurse zur Weiterbildung für Erwachsene."
+ },
+ {
+  "id": "G-271",
+  "q_bks": "Koji je u Njemačkoj običaj za Božić?",
+  "options_bks": [
+   "skrivati obojena jaja",
+   "okititi božićno drvce (jelu)",
+   "prerušiti se maskama i kostimima",
+   "stavljati bundeve pred vrata"
+  ],
+  "expl_bks": "Za Božić se u Njemačkoj u stanu kiti božićno drvce (jela), obično lampicama i kuglicama. Pokloni se najčešće daju na Badnju večer (Heiligabend), 24. prosinca. Skrivanje obojenih jaja običaj je za Uskrs, kostimi i maske za karneval, a bundeve za Noć vještica (Halloween).",
+  "merksatz_de": "Zu Weihnachten schmückt man einen Tannenbaum."
+ },
+ {
+  "id": "G-272",
+  "q_bks": "Koji oblik zajedničkog života u Njemačkoj nije dopušten?",
+  "options_bks": [
+   "Muškarac i žena su razvedeni i žive s novim partnerima.",
+   "Dvije žene žive zajedno.",
+   "Samohrani otac živi sa svoje dvoje djece.",
+   "Muškarac je u isto vrijeme u braku s dvije žene."
+  ],
+  "expl_bks": "U Njemačkoj je brak moguć samo između dvije osobe. Tko je istodobno u braku s dvije osobe, čini kazneno djelo bigamije. Ostali oblici života su dopušteni: razvedeni smiju živjeti s novim partnerima, istospolni parovi od 2017. smiju i sklopiti brak, a samohrani roditelj može sam živjeti s djecom.",
+  "merksatz_de": "Mehrere Ehepartner zur gleichen Zeit sind in Deutschland verboten."
+ },
+ {
+  "id": "G-273",
+  "q_bks": "Kod problema s odgojem u Njemačkoj idete …",
+  "options_bks": [
+   "liječniku.",
+   "u zdravstveni ured (Gesundheitsamt).",
+   "u ured za prijavu prebivališta (Einwohnermeldeamt).",
+   "u ured za djecu i mlade (Jugendamt)."
+  ],
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) pravo je mjesto kad roditelji imaju problema s odgojem. Ondje stručnjaci savjetuju obitelji, besplatno i povjerljivo, i mogu organizirati dodatnu pomoć, na primjer obiteljskog pomagača. Liječnik i zdravstveni ured nadležni su za zdravlje, a ne za odgoj.",
+  "merksatz_de": "Bei Problemen mit der Erziehung geht man zum Jugendamt."
+ },
+ {
+  "id": "G-274",
+  "q_bks": "U Njemačkoj ste namjerno otvorili pismo koje je naslovljeno na drugu osobu. Što niste poštovali?",
+  "options_bks": [
+   "pravo na šutnju (Schweigerecht)",
+   "tajnost pisama (Briefgeheimnis)",
+   "obvezu čuvanja tajne (Schweigepflicht)",
+   "slobodu mišljenja"
+  ],
+  "expl_bks": "Tajnost pisama (Briefgeheimnis) zaštićena je Temeljnim zakonom (članak 10.). Pismo naslovljeno na drugu osobu smije otvoriti samo ta osoba ili netko koga je ona za to ovlastila. Tko namjerno otvori tuđe zatvoreno pismo, može biti kažnjen. Obveza čuvanja tajne (Schweigepflicht) odnosi se, na primjer, na liječnike i odvjetnike.",
+  "merksatz_de": "Fremde Briefe darf man nicht öffnen: Das Briefgeheimnis gilt."
+ },
+ {
+  "id": "G-275",
+  "q_bks": "Što je u Njemačkoj potrebno za razvod braka?",
+  "options_bks": [
+   "pristanak roditelja",
+   "liječnička potvrda",
+   "pristanak djece",
+   "pomoć odvjetnika"
+  ],
+  "expl_bks": "O razvodu braka u Njemačkoj odlučuje obiteljski sud (Familiengericht). Zahtjev za razvod može podnijeti samo odvjetnik, pa barem onaj supružnik koji traži razvod mora imati odvjetnika. Pristanak roditelja ili djece nije potreban, kao ni liječnička potvrda.",
+  "merksatz_de": "Für eine Scheidung braucht man eine Anwältin oder einen Anwalt."
+ },
+ {
+  "id": "G-276",
+  "q_bks": "Što biste trebali učiniti ako se vaša kontaktna osoba u nekom njemačkom uredu loše odnosi prema vama?",
+  "options_bks": [
+   "Ne mogu ništa učiniti.",
+   "Moram trpjeti takvo postupanje.",
+   "Prijetim toj osobi.",
+   "Mogu se požaliti voditelju ureda."
+  ],
+  "expl_bks": "U uredima se prema svima mora postupati korektno i s poštovanjem. Ako vas netko loše tretira, možete se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Ostanite mirni: prijetnje nisu dopuštene i mogu biti kažnjive.",
+  "merksatz_de": "Bei schlechter Behandlung im Amt kann man sich beschweren."
+ }
+]

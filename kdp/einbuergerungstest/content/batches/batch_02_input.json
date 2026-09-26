@@ -1,0 +1,646 @@
+[
+ {
+  "id": "G-047",
+  "state": null,
+  "question_de": "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört nicht dazu?",
+  "options_de": [
+   "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
+   "Er zahlt Kindergeld.",
+   "Er unterstützt Museen.",
+   "Er fördert Sportlerinnen und Sportler."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-048",
+  "state": null,
+  "question_de": "Welches Organ gehört nicht zu den Verfassungsorganen Deutschlands?",
+  "options_de": [
+   "der Bundesrat",
+   "die Bundespräsidentin/der Bundespräsident",
+   "die Bürgerversammlung",
+   "die Regierung"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "die Bürgerversammlung",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-049",
+  "state": null,
+  "question_de": "Wer bestimmt in Deutschland die Schulpolitik?",
+  "options_de": [
+   "die Lehrer und Lehrerinnen",
+   "die Bundesländer",
+   "das Familienministerium",
+   "die Universitäten"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "die Bundesländer",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-050",
+  "state": null,
+  "question_de": "Die Wirtschaftsform in Deutschland nennt man ...",
+  "options_de": [
+   "freie Zentralwirtschaft.",
+   "soziale Marktwirtschaft.",
+   "gelenkte Zentralwirtschaft.",
+   "Planwirtschaft."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "soziale Marktwirtschaft.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-051",
+  "state": null,
+  "question_de": "Zu einem demokratischen Rechtsstaat gehört es nicht, dass ...",
+  "options_de": [
+   "Menschen sich kritisch über die Regierung äußern können.",
+   "Bürger friedlich demonstrieren gehen dürfen.",
+   "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
+   "jemand ein Verbrechen begeht und deshalb verhaftet wird."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-052",
+  "state": null,
+  "question_de": "Was bedeutet \"Volkssouveränität\"? Alle Staatsgewalt geht vom ...",
+  "options_de": [
+   "Volke aus.",
+   "Bundestag aus.",
+   "preußischen König aus.",
+   "Bundesverfassungsgericht aus."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Volke aus.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-053",
+  "state": null,
+  "question_de": "Was bedeutet \"Rechtsstaat\" in Deutschland?",
+  "options_de": [
+   "Der Staat hat Recht.",
+   "Es gibt nur rechte Parteien.",
+   "Die Bürgerinnen und Bürger entscheiden über Gesetze.",
+   "Der Staat muss die Gesetze einhalten."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Der Staat muss die Gesetze einhalten.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-054",
+  "state": null,
+  "question_de": "Was ist keine staatliche Gewalt in Deutschland?",
+  "options_de": [
+   "Legislative",
+   "Judikative",
+   "Exekutive",
+   "Direktive"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Direktive",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-055",
+  "state": null,
+  "question_de": "Was zeigt dieses Bild? © Deutscher Bundestag/Achim Melde",
+  "options_de": [
+   "den Bundestagssitz in Berlin",
+   "das Bundesverfassungsgericht in Karlsruhe",
+   "das Bundesratsgebäude in Berlin",
+   "das Bundeskanzleramt in Berlin"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "den Bundestagssitz in Berlin",
+  "image_note_bks": "Na slici je zgrada Reichstaga u Berlinu sa staklenom kupolom – u njoj zasjeda Bundestag."
+ },
+ {
+  "id": "G-056",
+  "state": null,
+  "question_de": "Welches Amt gehört in Deutschland zur Gemeindeverwaltung?",
+  "options_de": [
+   "Pfarramt",
+   "Ordnungsamt",
+   "Finanzamt",
+   "Auswärtiges Amt"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Ordnungsamt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-057",
+  "state": null,
+  "question_de": "Wer wird meistens zur Präsidentin/zum Präsidenten des Deutschen Bundestages gewählt?",
+  "options_de": [
+   "die/der älteste Abgeordnete im Parlament",
+   "die Ministerpräsidentin/der Ministerpräsident des größten Bundeslandes",
+   "eine ehemalige Bundeskanzlerin/ein ehemaliger Bundeskanzler",
+   "eine Abgeordnete/ein Abgeordneter der stärksten Fraktion"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "eine Abgeordnete/ein Abgeordneter der stärksten Fraktion",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-058",
+  "state": null,
+  "question_de": "Wer ernennt in Deutschland die Ministerinnen/die Minister der Bundesregierung?",
+  "options_de": [
+   "die Präsidentin/der Präsident des Bundesverfassungsgerichtes",
+   "die Bundespräsidentin/der Bundespräsident",
+   "die Bundesratspräsidentin/der Bundesratspräsident",
+   "die Bundestagspräsidentin/der Bundestagspräsident"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "die Bundespräsidentin/der Bundespräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-059",
+  "state": null,
+  "question_de": "Vor wie vielen Jahren gab es erstmals eine jüdische Gemeinde auf dem Gebiet des heutigen Deutschlands?",
+  "options_de": [
+   "vor etwa 300 Jahren",
+   "vor etwa 700 Jahren",
+   "vor etwa 1150 Jahren",
+   "vor etwa 1700 Jahren"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "vor etwa 1700 Jahren",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-060",
+  "state": null,
+  "question_de": "In Deutschland gehören der Bundestag und der Bundesrat zur ...",
+  "options_de": [
+   "Exekutive.",
+   "Legislative.",
+   "Direktive.",
+   "Judikative."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Legislative.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-061",
+  "state": null,
+  "question_de": "Was bedeutet \"Volkssouveränität\"?",
+  "options_de": [
+   "Die Königin/der König herrscht über das Volk.",
+   "Das Bundesverfassungsgericht steht über der Verfassung.",
+   "Die Interessenverbände üben die Souveränität zusammen mit der Regierung aus.",
+   "Die Staatsgewalt geht vom Volke aus."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Die Staatsgewalt geht vom Volke aus.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-062",
+  "state": null,
+  "question_de": "Wenn das Parlament eines deutschen Bundeslandes gewählt wird, nennt man das ...",
+  "options_de": [
+   "Kommunalwahl",
+   "Landtagswahl",
+   "Europawahl",
+   "Bundestagswahl"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Landtagswahl",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-063",
+  "state": null,
+  "question_de": "Was gehört in Deutschland nicht zur Exekutive?",
+  "options_de": [
+   "die Polizei",
+   "die Gerichte",
+   "das Finanzamt",
+   "die Ministerien"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "die Gerichte",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-064",
+  "state": null,
+  "question_de": "Die Bundesrepublik Deutschland ist heute gegliedert in ...",
+  "options_de": [
+   "vier Besatzungszonen.",
+   "einen Oststaat und einen Weststaat.",
+   "16 Kantone.",
+   "Bund, Länder und Kommunen."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Bund, Länder und Kommunen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-065",
+  "state": null,
+  "question_de": "Es gehört nicht zu den Aufgaben des Deutschen Bundestages, ...",
+  "options_de": [
+   "Gesetze zu entwerfen.",
+   "die Bundesregierung zu kontrollieren.",
+   "die Bundeskanzlerin/den Bundeskanzler zu wählen.",
+   "das Bundeskabinett zu bilden."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "das Bundeskabinett zu bilden.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-066",
+  "state": null,
+  "question_de": "Welche Städte haben die größten jüdischen Gemeinden in Deutschland?",
+  "options_de": [
+   "Berlin und München",
+   "Hamburg und Essen",
+   "Nürnberg und Stuttgart",
+   "Worms und Speyer"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Berlin und München",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-067",
+  "state": null,
+  "question_de": "Was ist in Deutschland vor allem eine Aufgabe der Bundesländer?",
+  "options_de": [
+   "Verteidigungspolitik",
+   "Außenpolitik",
+   "Wirtschaftspolitik",
+   "Schulpolitik"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Schulpolitik",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-068",
+  "state": null,
+  "question_de": "Warum kontrolliert der Staat in Deutschland das Schulwesen?",
+  "options_de": [
+   "weil es in Deutschland nur staatliche Schulen gibt",
+   "weil alle Schülerinnen und Schüler einen Schulabschluss haben müssen",
+   "weil es in den Bundesländern verschiedene Schulen gibt",
+   "weil es nach dem Grundgesetz seine Aufgabe ist"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "weil es nach dem Grundgesetz seine Aufgabe ist",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-069",
+  "state": null,
+  "question_de": "Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?",
+  "options_de": [
+   "Stadträte",
+   "Landräte",
+   "Gemeinden",
+   "Bezirksämter"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Gemeinden",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-070",
+  "state": null,
+  "question_de": "Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben der deutschen Bundespräsidentin/des deutschen Bundespräsidenten? © Bundesregierung/Engelbert Reineke",
+  "options_de": [
+   "Sie/Er führt die Regierungsgeschäfte.",
+   "Sie/Er kontrolliert die Regierungspartei.",
+   "Sie/Er wählt die Ministerinnen/Minister aus.",
+   "Sie/Er schlägt die Kanzlerin/den Kanzler zur Wahl vor."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Sie/Er schlägt die Kanzlerin/den Kanzler zur Wahl vor.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-071",
+  "state": null,
+  "question_de": "Wo hält sich die deutsche Bundeskanzlerin/der deutsche Bundeskanzler am häufigsten auf? Am häufigsten ist sie/er ...",
+  "options_de": [
+   "in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+   "auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.",
+   "auf Schloss Bellevue, dem Amtssitz der Bundespräsidentin/des Bundespräsidenten, um Staatsgäste zu empfangen.",
+   "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-072",
+  "state": null,
+  "question_de": "Wie heißt die jetzige Bundeskanzlerin/der jetzige Bundeskanzler von Deutschland?",
+  "options_de": [
+   "Gerhard Schröder",
+   "Angela Merkel",
+   "Ursula von der Leyen",
+   "Friedrich Merz"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Friedrich Merz",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-073",
+  "state": null,
+  "question_de": "Die beiden größten Fraktionen im Deutschen Bundestag heißen zurzeit ...",
+  "options_de": [
+   "CDU/CSU und AfD.",
+   "Die Linke und Bündnis 90/Die Grünen.",
+   "Bündnis 90/Die Grünen und SPD.",
+   "Die Linke und CDU/CSU."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "CDU/CSU und AfD.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-074",
+  "state": null,
+  "question_de": "Wie heißt das Parlament für ganz Deutschland?",
+  "options_de": [
+   "Bundesversammlung",
+   "Volkskammer",
+   "Bundestag",
+   "Bundesgerichtshof"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Bundestag",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-075",
+  "state": null,
+  "question_de": "Wie heißt Deutschlands heutiges Staatsoberhaupt?",
+  "options_de": [
+   "Frank-Walter Steinmeier",
+   "Bärbel Bas",
+   "Bodo Ramelow",
+   "Joachim Gauck"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Frank-Walter Steinmeier",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-076",
+  "state": null,
+  "question_de": "Was bedeutet die Abkürzung CDU in Deutschland?",
+  "options_de": [
+   "Christliche Deutsche Union",
+   "Club Deutscher Unternehmer",
+   "Christlicher Deutscher Umweltschutz",
+   "Christlich Demokratische Union"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Christlich Demokratische Union",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-077",
+  "state": null,
+  "question_de": "Was ist die Bundeswehr?",
+  "options_de": [
+   "die deutsche Polizei",
+   "ein deutscher Hafen",
+   "eine deutsche Bürgerinitiative",
+   "die deutsche Armee"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "die deutsche Armee",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-078",
+  "state": null,
+  "question_de": "Was bedeutet die Abkürzung SPD?",
+  "options_de": [
+   "Sozialistische Partei Deutschlands",
+   "Sozialpolitische Partei Deutschlands",
+   "Sozialdemokratische Partei Deutschlands",
+   "Sozialgerechte Partei Deutschlands"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Sozialdemokratische Partei Deutschlands",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-079",
+  "state": null,
+  "question_de": "Was bedeutet die Abkürzung FDP in Deutschland?",
+  "options_de": [
+   "Friedliche Demonstrative Partei",
+   "Freie Deutschland Partei",
+   "Führende Demokratische Partei",
+   "Freie Demokratische Partei"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Freie Demokratische Partei",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-080",
+  "state": null,
+  "question_de": "Welches Gericht in Deutschland ist zuständig für die Auslegung des Grundgesetzes?",
+  "options_de": [
+   "Oberlandesgericht",
+   "Amtsgericht",
+   "Bundesverfassungsgericht",
+   "Verwaltungsgericht"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Bundesverfassungsgericht",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-081",
+  "state": null,
+  "question_de": "Wer wählt die Bundeskanzlerin/den Bundeskanzler in Deutschland?",
+  "options_de": [
+   "der Bundesrat",
+   "die Bundesversammlung",
+   "das Volk",
+   "der Bundestag"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "der Bundestag",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-082",
+  "state": null,
+  "question_de": "Wer leitet das deutsche Bundeskabinett?",
+  "options_de": [
+   "die Bundestagspräsidentin/der Bundestagspräsident",
+   "die Bundespräsidentin/der Bundespräsident",
+   "die Bundesratspräsidentin/der Bundesratspräsident",
+   "die Bundeskanzlerin/der Bundeskanzler"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "die Bundeskanzlerin/der Bundeskanzler",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-083",
+  "state": null,
+  "question_de": "Wer wählt die deutsche Bundeskanzlerin/den deutschen Bundeskanzler?",
+  "options_de": [
+   "das Volk",
+   "die Bundesversammlung",
+   "der Bundestag",
+   "die Bundesregierung"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "der Bundestag",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-084",
+  "state": null,
+  "question_de": "Welche Hauptaufgabe hat die deutsche Bundespräsidentin/der deutsche Bundespräsident? Sie/Er ...",
+  "options_de": [
+   "regiert das Land.",
+   "entwirft die Gesetze.",
+   "repräsentiert das Land.",
+   "überwacht die Einhaltung der Gesetze."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "repräsentiert das Land.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-085",
+  "state": null,
+  "question_de": "Wer bildet den deutschen Bundesrat?",
+  "options_de": [
+   "die Abgeordneten des Bundestages",
+   "die Ministerinnen und Minister der Bundesregierung",
+   "die Regierungsvertreter der Bundesländer",
+   "die Parteimitglieder"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "die Regierungsvertreter der Bundesländer",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-086",
+  "state": null,
+  "question_de": "Wer wählt in Deutschland die Bundespräsidentin/den Bundespräsidenten?",
+  "options_de": [
+   "die Bundesversammlung",
+   "der Bundesrat",
+   "das Bundesparlament",
+   "das Bundesverfassungsgericht"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "die Bundesversammlung",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-087",
+  "state": null,
+  "question_de": "Wer ist das Staatsoberhaupt der Bundesrepublik Deutschland?",
+  "options_de": [
+   "die Bundeskanzlerin/der Bundeskanzler",
+   "die Bundespräsidentin/der Bundespräsident",
+   "die Bundesratspräsidentin/der Bundesratspräsident",
+   "die Bundestagspräsidentin/der Bundestagspräsident"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "die Bundespräsidentin/der Bundespräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-088",
+  "state": null,
+  "question_de": "Die parlamentarische Opposition im Deutschen Bundestag ...",
+  "options_de": [
+   "kontrolliert die Regierung.",
+   "entscheidet, wer Bundesministerin/Bundesminister wird.",
+   "bestimmt, wer im Bundesrat sitzt.",
+   "schlägt die Regierungschefinnen/Regierungschefs der Länder vor."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "kontrolliert die Regierung.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-089",
+  "state": null,
+  "question_de": "Wie nennt man in Deutschland die Vereinigung von Abgeordneten einer Partei im Parlament?",
+  "options_de": [
+   "Verband",
+   "Ältestenrat",
+   "Fraktion",
+   "Opposition"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Fraktion",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-090",
+  "state": null,
+  "question_de": "Die deutschen Bundesländer wirken an der Gesetzgebung des Bundes mit durch ...",
+  "options_de": [
+   "den Bundesrat.",
+   "die Bundesversammlung.",
+   "den Bundestag.",
+   "die Bundesregierung."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "den Bundesrat.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-091",
+  "state": null,
+  "question_de": "In Deutschland kann ein Regierungswechsel in einem Bundesland Auswirkungen auf die Bundespolitik haben. Das Regieren wird ...",
+  "options_de": [
+   "schwieriger, wenn sich dadurch die Mehrheit im Bundestag ändert.",
+   "leichter, wenn dadurch neue Parteien in den Bundesrat kommen.",
+   "schwieriger, wenn dadurch die Mehrheit im Bundesrat verändert wird.",
+   "leichter, wenn es sich um ein reiches Bundesland handelt."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "schwieriger, wenn dadurch die Mehrheit im Bundesrat verändert wird.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-092",
+  "state": null,
+  "question_de": "Was bedeutet die Abkürzung CSU in Deutschland?",
+  "options_de": [
+   "Christlich Sichere Union",
+   "Christlich Süddeutsche Union",
+   "Christlich Sozialer Unternehmerverband",
+   "Christlich Soziale Union"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Christlich Soziale Union",
+  "image_note_bks": null
+ }
+]

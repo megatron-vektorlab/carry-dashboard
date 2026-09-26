@@ -1,0 +1,554 @@
+[
+ {
+  "id": "BE-03",
+  "q_bks": "Na koliko se godina bira pokrajinski parlament u Berlinu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Pokrajinski parlament Berlina zove se Abgeordnetenhaus (Zastupnički dom). Građani Berlina biraju ga na pet godina, kao i parlamente u većini drugih saveznih pokrajina. Za usporedbu: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Das Berliner Abgeordnetenhaus wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "BE-04",
+  "q_bks": "S koliko godina se u Berlinu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštinu gradskog okruga (Bezirksverordnetenversammlung)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "Berlin je podijeljen na 12 gradskih okruga (Bezirke). Svaki okrug ima svoju skupštinu, Bezirksverordnetenversammlung (BVV). Na izborima za te skupštine smije se glasati već sa 16 godina. Glasati mogu i građani drugih zemalja Europske unije koji žive u Berlinu.",
+  "merksatz_de": "In Berlin wählt man die Bezirksverordnetenversammlung ab 16 Jahren."
+ },
+ {
+  "id": "BE-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Berlin?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "bijelo-crvena",
+   "zeleno-bijelo-crvena",
+   "crno-zlatna"
+  ],
+  "expl_bks": "Zastava Berlina je bijelo-crvena: gore i dolje ima po jednu crvenu prugu, a u sredini široku bijelu prugu s crnim medvjedom. Medvjed je simbol Berlina i nalazi se i na berlinskom grbu.",
+  "merksatz_de": "Berlins Flagge ist weiß-rot und zeigt einen Bären."
+ },
+ {
+  "id": "BE-06",
+  "q_bks": "Gdje se u Berlinu možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u Pokrajinskom centru za političko obrazovanje"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) postoji u svakoj saveznoj pokrajini. Nudi besplatne brošure, predavanja i seminare o demokraciji, politici i povijesti. Neutralan je i ne radi ni za jednu stranku. Savjetovalište za potrošače pomaže kod ugovora i kupovine, a ne kod političkih tema.",
+  "merksatz_de": "Politische Infos gibt es bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "BE-07",
+  "q_bks": "Koja savezna pokrajina je grad-pokrajina (Stadtstaat)?",
+  "options_bks": [
+   "Berlin",
+   "Saarland",
+   "Brandenburg",
+   "Hessen"
+  ],
+  "expl_bks": "Grad-pokrajina (Stadtstaat) je grad koji je ujedno i savezna pokrajina. U Njemačkoj postoje tri takve: Berlin, Hamburg i Bremen. Saarland, Brandenburg i Hessen su teritorijalne pokrajine (Flächenländer) s mnogo gradova i općina. Berlin je uz to i glavni grad Njemačke.",
+  "merksatz_de": "Berlin ist Stadt und Bundesland zugleich."
+ },
+ {
+  "id": "BE-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Berlin?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Berlin mali grad-pokrajina na istoku, potpuno okružen Brandenburgom. Berlin je glavni grad Njemačke i istodobno savezna pokrajina. Na karti ga prepoznajete kao malu površinu u sredini Brandenburga, nedaleko od granice s Poljskom.",
+  "merksatz_de": "Berlin liegt mitten in Brandenburg."
+ },
+ {
+  "id": "BE-09",
+  "q_bks": "Kako se zove šef vlade u Berlinu?",
+  "options_bks": [
+   "ministar predsjednik (Ministerpräsident)",
+   "gradonačelnik (Oberbürgermeister)",
+   "predsjednik Senata (Präsident des Senates)",
+   "vladajući gradonačelnik (Regierender Bürgermeister)"
+  ],
+  "expl_bks": "Berlin je istodobno grad i savezna pokrajina. Njegovu vladu čini Senat, a na čelu Senata je vladajući gradonačelnik (Regierender Bürgermeister). Naziv „Ministerpräsident” koristi se u većini drugih pokrajina, a „Präsident des Senates” u Bremenu.",
+  "merksatz_de": "Berlin wird vom Regierenden Bürgermeister regiert."
+ },
+ {
+  "id": "BE-10",
+  "q_bks": "Kojeg senatora Berlin nema?",
+  "options_bks": [
+   "senator za financije (Finanzsenator)",
+   "senator za unutarnje poslove (Innensenator)",
+   "senator za vanjske odnose (Senator für Außenbeziehungen)",
+   "senator za pravosuđe (Justizsenator)"
+  ],
+  "expl_bks": "Članovi berlinske vlade, Senata, zovu se senatori. Berlin ima senatore za financije, unutarnje poslove i pravosuđe, jer su to i zadaci pokrajine. Odnosi s drugim državama zadatak su savezne države (članak 32. Temeljnog zakona), pa Berlin nema senatora za vanjske odnose.",
+  "merksatz_de": "Außenpolitik macht der Bund, nicht das Land Berlin."
+ },
+ {
+  "id": "BB-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Brandenburg?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Brandenburga: crveni orao na bijelom štitu. Crveni orao već je stoljećima simbol Brandenburga. Isti grb nalazi se i u sredini crveno-bijele pokrajinske zastave. Pazite da ga ne zamijenite s Berlinom, čiji grb pokazuje medvjeda.",
+  "merksatz_de": "Brandenburgs Wappen zeigt einen roten Adler."
+ },
+ {
+  "id": "BB-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Brandenburgu?",
+  "options_bks": [
+   "Prignitz",
+   "Rhein-Sieg-Kreis",
+   "Vogtlandkreis",
+   "Amberg-Sulzbach"
+  ],
+  "expl_bks": "Prignitz je okrug (Landkreis) na sjeverozapadu Brandenburga, uz rijeku Elbu. Ostali okruzi nalaze se u drugim saveznim pokrajinama: Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji, Vogtlandkreis u Saskoj, a Amberg-Sulzbach u Bavarskoj. Brandenburg ukupno ima 14 okruga.",
+  "merksatz_de": "Prignitz ist ein Landkreis in Brandenburg."
+ },
+ {
+  "id": "BB-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Brandenburgu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Brandenburga bira se na pet godina. Sjedište mu je u glavnom gradu Potsdamu. Pet godina traje mandat i u većini drugih saveznih pokrajina, dok se Bundestag (savezni parlament) bira na četiri godine.",
+  "merksatz_de": "Der Landtag in Brandenburg wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "BB-04",
+  "q_bks": "S koliko godina se u Brandenburgu smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Brandenburgu se na lokalnim izborima (za općinska i gradska vijeća te okružne skupštine) smije glasati već sa 16 godina. Brandenburg je i jedna od pokrajina u kojima 16-godišnjaci biraju Landtag (pokrajinski parlament). Na izborima za Bundestag granica je 18 godina.",
+  "merksatz_de": "Kommunalwahl in Brandenburg: Man darf ab 16 Jahren wählen."
+ },
+ {
+  "id": "BB-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Brandenburg?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "crveno-bijela",
+   "zeleno-bijelo-crvena",
+   "crno-žuta"
+  ],
+  "expl_bks": "Zastava Brandenburga je crveno-bijela: gore je crvena, a dolje bijela pruga. U sredini se često nalazi pokrajinski grb s crvenim orlom. Boje su preuzete upravo iz grba – crveni orao na bijelom štitu.",
+  "merksatz_de": "Die Flagge von Brandenburg ist rot-weiß."
+ },
+ {
+  "id": "BB-06",
+  "q_bks": "Gdje se u Brandenburgu možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "Informacije o politici u Brandenburgu nudi Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Potsdamu. Tamo možete dobiti besplatne publikacije i posjetiti predavanja o izborima, demokraciji i povijesti. Komunalni redarstveni ured (Ordnungsamt) brine se o javnom redu, a ne o političkom obrazovanju.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung informiert neutral über Politik."
+ },
+ {
+  "id": "BB-07",
+  "q_bks": "Glavni grad pokrajine Brandenburg zove se …",
+  "options_bks": [
+   "Potsdam.",
+   "Cottbus.",
+   "Brandenburg.",
+   "Frankfurt na Odri."
+  ],
+  "expl_bks": "Glavni grad Brandenburga je Potsdam, u kojem su pokrajinska vlada i Landtag (pokrajinski parlament). Poznat je po dvorcu Sanssouci i Potsdamskoj konferenciji saveznika 1945. godine. Pazite: grad Brandenburg an der Havel ima isto ime kao pokrajina, ali nije njezin glavni grad.",
+  "merksatz_de": "Potsdam ist die Landeshauptstadt von Brandenburg."
+ },
+ {
+  "id": "BB-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Brandenburg?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Brandenburg pokrajina na istoku koja okružuje Berlin, uz granicu s Poljskom. Prepoznat ćete je po tome što se u njezinoj sredini nalazi mala površina – grad-pokrajina Berlin. Glavni grad Brandenburga je Potsdam.",
+  "merksatz_de": "Brandenburg liegt im Osten und umschließt Berlin."
+ },
+ {
+  "id": "BB-09",
+  "q_bks": "Kako se zove šef vlade u Brandenburgu?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Na čelu pokrajinske vlade u Brandenburgu je ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament). Isti naziv koristi se u većini saveznih pokrajina. Gradonačelnik (Bürgermeister) vodi grad ili općinu, a nazivi „Premierminister” i „Erster Minister” koriste se u nekim drugim državama.",
+  "merksatz_de": "In Brandenburg führt ein Ministerpräsident die Landesregierung."
+ },
+ {
+  "id": "BB-10",
+  "q_bks": "Kojeg ministra Brandenburg nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Vanjska politika zadatak je savezne države: odnose s drugim državama vodi savezna vlada (članak 32. Temeljnog zakona). Zato Brandenburg nema ministra vanjskih poslova. Pravosuđe, financije i unutarnji poslovi (npr. policija) jesu i zadaci pokrajine, pa za njih postoje pokrajinski ministri.",
+  "merksatz_de": "Brandenburg hat keinen Außenminister – Außenpolitik ist Sache des Bundes."
+ },
+ {
+  "id": "HB-01",
+  "q_bks": "Koji grb pripada Slobodnom hanzeatskom gradu Bremenu (Freie Hansestadt Bremen)?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Bremena: bijeli (srebrni) ključ na crvenom štitu, iznad štita kruna. Ključ je simbol svetog Petra, zaštitnika bremenske katedrale. Crvena i bijela boja grba ponavljaju se i na bremenskoj zastavi.",
+  "merksatz_de": "Bremens Wappen zeigt einen silbernen Schlüssel auf Rot."
+ },
+ {
+  "id": "HB-02",
+  "q_bks": "Koja je gradska četvrt (Stadtteil) u Bremenu?",
+  "options_bks": [
+   "Altona",
+   "Hemelingen",
+   "Pankow",
+   "Babelsberg"
+  ],
+  "expl_bks": "Hemelingen je gradska četvrt (Stadtteil) na istoku Bremena, uz rijeku Weser. Ostala imena pripadaju drugim gradovima: Altona je gradski okrug u Hamburgu, Pankow gradski okrug u Berlinu, a Babelsberg dio Potsdama, poznat po filmskim studijima.",
+  "merksatz_de": "Hemelingen ist ein Stadtteil von Bremen."
+ },
+ {
+  "id": "HB-03",
+  "q_bks": "Na koliko se godina bira pokrajinski parlament u Bremenu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Pokrajinski parlament Bremena zove se Bremische Bürgerschaft. Bira se na četiri godine, jednako kao Bundestag (savezni parlament). U većini drugih saveznih pokrajina parlament se bira na pet godina, pa je ovdje lako pogriješiti.",
+  "merksatz_de": "Die Bremische Bürgerschaft wird alle vier Jahre gewählt."
+ },
+ {
+  "id": "HB-04",
+  "q_bks": "S koliko godina se u Bremenu smije glasati na izborima za Bürgerschaft (pokrajinski parlament, Landtag)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Bremenu se Bürgerschaft, pokrajinski parlament, smije birati već sa 16 godina. Godine 2011. Bremen je kao prva savezna pokrajina dopustio 16-godišnjacima da glasaju za pokrajinski parlament. Na izborima za Bundestag (savezni parlament) granica je 18 godina.",
+  "merksatz_de": "In Bremen wählt man die Bürgerschaft ab 16 Jahren."
+ },
+ {
+  "id": "HB-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Bremen?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "crveno-bijela",
+   "zeleno-bijelo-crvena",
+   "crno-zlatna"
+  ],
+  "expl_bks": "Zastava Bremena je crveno-bijela. Ima više vodoravnih crvenih i bijelih pruga, a uz rub kod jarbola crveno-bijele kvadratiće. Zbog pruga je ljudi u šali zovu „Speckflagge” (zastava od slanine). Iste boje ima i bremenski grb: bijeli ključ na crvenom.",
+  "merksatz_de": "Bremens Flagge hat rote und weiße Streifen."
+ },
+ {
+  "id": "HB-06",
+  "q_bks": "Gdje se u Bremenu možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Bremenu nudi informacije o politici, izborima i demokraciji – besplatno i za sve građane. Ne zastupa nijednu stranku. Crkve se bave vjerom, a savjetovalište za potrošače pomaže kod ugovora i reklamacija.",
+  "merksatz_de": "Informationen über Politik bekommt man bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "HB-07",
+  "q_bks": "Što je njemačka grad-pokrajina (Stadtstaat)?",
+  "options_bks": [
+   "Bremen",
+   "München",
+   "Frankfurt",
+   "Erfurt"
+  ],
+  "expl_bks": "Grad-pokrajina (Stadtstaat) je grad koji je ujedno savezna pokrajina. Takve su Bremen, Hamburg i Berlin. Pokrajina Bremen sastoji se od dva grada: Bremena i Bremerhavena. München, Frankfurt i Erfurt veliki su gradovi, ali pripadaju pokrajinama Bavarskoj, Hessenu i Tiringiji.",
+  "merksatz_de": "Bremen ist ein Stadtstaat mit den Städten Bremen und Bremerhaven."
+ },
+ {
+  "id": "HB-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Bremen?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Bremen mali grad-pokrajina na sjeverozapadu, okružen Donjom Saskom (ima dva dijela: Bremen i Bremerhaven). Zato na karti vidite dvije male površine unutar Donje Saske. Bremerhaven leži na ušću rijeke Weser u Sjeverno more.",
+  "merksatz_de": "Bremen liegt im Nordwesten und ist von Niedersachsen umgeben."
+ },
+ {
+  "id": "HB-09",
+  "q_bks": "Kako se zove šef vlade u gradu-pokrajini Bremenu?",
+  "options_bks": [
+   "ministar predsjednik (Ministerpräsident)",
+   "prvi gradonačelnik (Erster Bürgermeister)",
+   "predsjednik Senata (Präsident des Senates)",
+   "vladajući gradonačelnik (Regierender Bürgermeister)"
+  ],
+  "expl_bks": "Bremen je grad-pokrajina. Njegovu vladu čini Senat, a na čelu Senata je predsjednik Senata (Präsident des Senates), koji je ujedno i gradonačelnik. Naziv „Regierender Bürgermeister” koristi se u Berlinu, „Erster Bürgermeister” u Hamburgu, a „Ministerpräsident” u većini drugih pokrajina.",
+  "merksatz_de": "In Bremen leitet der Präsident des Senates die Regierung."
+ },
+ {
+  "id": "HB-10",
+  "q_bks": "Kojeg senatora Bremen nema?",
+  "options_bks": [
+   "senator za vanjske odnose (Senator für Außenbeziehungen)",
+   "senator za financije (Finanzsenator)",
+   "senator za pravosuđe (Justizsenator)",
+   "senator za unutarnje poslove (Innensenator)"
+  ],
+  "expl_bks": "Članovi bremenske vlade (Senata) zovu se senatori. Svaki je zadužen za jedno područje, na primjer financije, pravosuđe ili unutarnje poslove. Odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona), zato Bremen nema senatora za vanjske odnose.",
+  "merksatz_de": "Bremen hat keinen Senator für Außenbeziehungen – das macht der Bund."
+ },
+ {
+  "id": "HH-01",
+  "q_bks": "Koji grb pripada Slobodnom i hanzeatskom gradu Hamburgu (Freie und Hansestadt Hamburg)?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Hamburga: bijeli dvorac s tri tornja i zatvorenim vratima na crvenom štitu. Isti dvorac nalazi se i na crvenoj hamburškoj zastavi. Pazite da ga ne zamijenite s Bremenom, čiji grb pokazuje ključ.",
+  "merksatz_de": "Hamburgs Wappen zeigt eine weiße Burg auf Rot."
+ },
+ {
+  "id": "HH-02",
+  "q_bks": "Koji je gradski okrug (Bezirk) Hamburga?",
+  "options_bks": [
+   "Altona",
+   "Hemelingen",
+   "Pankow",
+   "Mecklenburgische Seenplatte"
+  ],
+  "expl_bks": "Hamburg je podijeljen na sedam gradskih okruga (Bezirke), a Altona je jedan od njih. Leži zapadno od središta grada, uz rijeku Elbu. Hemelingen je gradska četvrt u Bremenu, Pankow okrug u Berlinu, a Mecklenburgische Seenplatte okrug (Landkreis) u Mecklenburgu-Zapadnom Pomorju.",
+  "merksatz_de": "Altona ist ein Bezirk von Hamburg."
+ },
+ {
+  "id": "HH-03",
+  "q_bks": "Na koliko se godina bira pokrajinski parlament u Hamburgu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Pokrajinski parlament Hamburga zove se Hamburgische Bürgerschaft. Bira se na pet godina, kao i parlamenti u većini drugih saveznih pokrajina. Za usporedbu: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Die Hamburgische Bürgerschaft wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "HH-04",
+  "q_bks": "S koliko godina se u Hamburgu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštine gradskih okruga (Bezirksversammlungen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "Hamburg ima sedam gradskih okruga (Bezirke), a svaki bira svoju skupštinu (Bezirksversammlung). Na tim izborima smije se glasati već sa 16 godina. Od 16 godina u Hamburgu se glasa i za Bürgerschaft, pokrajinski parlament.",
+  "merksatz_de": "In Hamburg wählt man die Bezirksversammlungen ab 16 Jahren."
+ },
+ {
+  "id": "HH-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Hamburg?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "bijelo-crvena",
+   "zeleno-bijelo-crvena",
+   "crno-žuta"
+  ],
+  "expl_bks": "Zastava Hamburga je bijelo-crvena: na crvenoj podlozi nalazi se bijeli dvorac s tri tornja. Isti dvorac vidi se i na hamburškom grbu. Crvena i bijela stare su boje hanzeatskih gradova, pa ih ima i Bremen.",
+  "merksatz_de": "Hamburgs Flagge ist rot mit einer weißen Burg."
+ },
+ {
+  "id": "HH-06",
+  "q_bks": "Gdje se u Hamburgu možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u crkvama",
+   "u Pokrajinskom centru za političko obrazovanje"
+  ],
+  "expl_bks": "U Hamburgu, kao i u svakoj saveznoj pokrajini, postoji Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung). Tamo možete besplatno dobiti knjige i brošure, a centar organizira i predavanja, na primjer prije izbora. Informacije su neutralne i ne služe nijednoj stranci.",
+  "merksatz_de": "Neutrale Infos zur Politik bietet die Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "HH-07",
+  "q_bks": "Koja savezna pokrajina je grad-pokrajina (Stadtstaat)?",
+  "options_bks": [
+   "Hamburg",
+   "Saska",
+   "Bavarska",
+   "Tiringija"
+  ],
+  "expl_bks": "Hamburg je grad-pokrajina (Stadtstaat): grad koji je ujedno i savezna pokrajina, kao Berlin i Bremen. Saska, Bavarska i Tiringija nose naziv slobodna država (Freistaat), ali to su velike pokrajine s mnogo gradova. „Freistaat” je samo poseban naziv i ne znači grad-pokrajinu.",
+  "merksatz_de": "Hamburg ist ein Stadtstaat – Stadt und Bundesland zugleich."
+ },
+ {
+  "id": "HH-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Hamburg?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Hamburg mali grad-pokrajina na sjeveru, na rijeci Elbi, između Schleswig-Holsteina i Donje Saske. Hamburg ima veliku luku i drugi je najveći grad Njemačke, poslije Berlina. Na karti ga prepoznajete kao malu površinu između dviju većih pokrajina.",
+  "merksatz_de": "Hamburg liegt im Norden an der Elbe."
+ },
+ {
+  "id": "HH-09",
+  "q_bks": "Kako se zove šef vlade u gradu-pokrajini Hamburgu?",
+  "options_bks": [
+   "ministar predsjednik (Ministerpräsident)",
+   "prvi gradonačelnik (Erster Bürgermeister)",
+   "vladajući senator (Regierender Senator)",
+   "gradonačelnik (Oberbürgermeister)"
+  ],
+  "expl_bks": "Hamburg je grad-pokrajina. Njegovu vladu čini Senat, a na čelu Senata je prvi gradonačelnik (Erster Bürgermeister). Bira ga Bürgerschaft, pokrajinski parlament Hamburga. Naziv „Oberbürgermeister” koristi se u velikim gradovima drugih pokrajina, a „Regierender Senator” ne postoji.",
+  "merksatz_de": "Hamburg wird vom Ersten Bürgermeister regiert."
+ },
+ {
+  "id": "HH-10",
+  "q_bks": "Kojeg senatora Hamburg nema?",
+  "options_bks": [
+   "senator za pravosuđe (Justizsenator)",
+   "senator za vanjske odnose (Senator für Außenbeziehungen)",
+   "senator za financije (Finanzsenator)",
+   "senator za unutarnje poslove (Innensenator)"
+  ],
+  "expl_bks": "Hamburška vlada (Senat) ima senatore za različita područja, npr. financije, pravosuđe i unutarnje poslove. Vanjska politika nije zadatak pokrajina: odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona). Zato Hamburg nema senatora za vanjske odnose, iako kao lučki grad ima mnogo međunarodnih kontakata.",
+  "merksatz_de": "Außenbeziehungen sind Aufgabe des Bundes, nicht Hamburgs."
+ },
+ {
+  "id": "HE-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Hessen?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Hessena: lav s crveno-bijelim prugama na plavom štitu, iznad štita kruna (bez zvjezdica – zvjezdice ima Tiringija). Taj „hesenski lav” star je više stoljeća. Crvena i bijela boja lava nalaze se i na pokrajinskoj zastavi Hessena.",
+  "merksatz_de": "Im hessischen Wappen ist ein rot-weiß gestreifter Löwe."
+ },
+ {
+  "id": "HE-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Hessenu?",
+  "options_bks": [
+   "Ammerland",
+   "Altötting",
+   "Prignitz",
+   "Main-Taunus-Kreis"
+  ],
+  "expl_bks": "Main-Taunus-Kreis je okrug (Landkreis) u Hessenu, između Frankfurta na Majni i Wiesbadena. Ime je dobio po rijeci Majni i gorju Taunus. Ostali okruzi su u drugim pokrajinama: Ammerland u Donjoj Saskoj, Altötting u Bavarskoj, a Prignitz u Brandenburgu.",
+  "merksatz_de": "Der Main-Taunus-Kreis liegt in Hessen."
+ },
+ {
+  "id": "HE-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Hessenu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Hesenski Landtag (pokrajinski parlament) zasjeda u Wiesbadenu, u nekadašnjem gradskom dvorcu. Građani ga biraju na pet godina. Nemojte ga zamijeniti s Bundestagom (savezni parlament), koji se bira na četiri godine.",
+  "merksatz_de": "Der Hessische Landtag wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "HE-04",
+  "q_bks": "S koliko godina se u Hessenu smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Hessenu se na lokalnim izborima (za općinska i gradska vijeća te okružne skupštine) glasa od 18 godina. U nekim drugim pokrajinama, npr. u Brandenburgu ili Hamburgu, granica je 16 godina. Zato je važno znati pravilo upravo za svoju pokrajinu.",
+  "merksatz_de": "In Hessen darf man ab 18 Jahren kommunal wählen."
+ },
+ {
+  "id": "HE-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Hessen?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "crveno-bijela",
+   "crno-zlatna",
+   "zeleno-bijelo-crvena"
+  ],
+  "expl_bks": "Zastava Hessena je crveno-bijela: gore je crvena, a dolje bijela pruga. Boje dolaze iz pokrajinskog grba. Lako se pamti: lav u hesenskom grbu ima iste, crveno-bijele pruge. Crveno-bijela je i zastava Brandenburga, ali tamo grb pokazuje orla.",
+  "merksatz_de": "Die hessische Flagge ist rot-weiß."
+ },
+ {
+  "id": "HE-06",
+  "q_bks": "Gdje se u Hessenu možete informirati o političkim temama?",
+  "options_bks": [
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u crkvama"
+  ],
+  "expl_bks": "Informacije o politici u Hessenu nudi Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Wiesbadenu. Tamo možete naručiti besplatne publikacije ili doći na seminare i izložbe. Centar je stranački neutralan. Ordnungsamt se brine o javnom redu, npr. parkiranju, a ne o političkim informacijama.",
+  "merksatz_de": "In Hessen informiert die Landeszentrale für politische Bildung über Politik."
+ },
+ {
+  "id": "HE-07",
+  "q_bks": "Glavni grad pokrajine Hessen zove se …",
+  "options_bks": [
+   "Kassel.",
+   "Darmstadt.",
+   "Frankfurt.",
+   "Wiesbaden."
+  ],
+  "expl_bks": "Glavni grad Hessena je Wiesbaden. Tamo su pokrajinska vlada i Landtag (pokrajinski parlament). Česta zamka je Frankfurt na Majni: to je najveći grad Hessena i važno bankarsko središte, ali nije glavni grad. Wiesbaden je poznat i po termalnim izvorima.",
+  "merksatz_de": "Wiesbaden ist Hessens Hauptstadt, nicht Frankfurt."
+ },
+ {
+  "id": "HE-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Hessen?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Hessen u sredini zapadnog dijela Njemačke (s Frankfurtom na Majni). Hessen nema izlaz na more ni granicu s drugim državama – okružen je samo njemačkim pokrajinama. Glavni grad mu je Wiesbaden.",
+  "merksatz_de": "Hessen liegt in der Mitte Deutschlands, mit Frankfurt am Main."
+ }
+]

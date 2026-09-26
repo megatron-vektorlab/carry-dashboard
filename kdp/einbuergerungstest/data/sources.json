@@ -1,0 +1,29 @@
+{
+  "note": "Three independent public copies of the BAMF Gesamtfragenkatalog. The BAMF site itself is not reachable from the build environment; re-check against the official PDF before every release.",
+  "sources": [
+    {
+      "key": "A",
+      "name": "JadRizk/einbuergerungstest-trainer",
+      "url": "https://github.com/JadRizk/einbuergerungstest-trainer",
+      "commit": "eb7078d670ae070a7e96206403441ec3b5597adb",
+      "file": "data/questions.json",
+      "claims": "BAMF Gesamtfragenkatalog dated 2025-05-26"
+    },
+    {
+      "key": "B",
+      "name": "Bhavesh-Nandurdikar/Leben_In_Deutschland",
+      "url": "https://github.com/Bhavesh-Nandurdikar/Leben_In_Deutschland",
+      "commit": "3e6a0656d5b4e4e69c3b45b553bd2124c2939da5",
+      "file": "public/data/bamf/questions.json",
+      "claims": "Built 2026-09-17 from the official BAMF PDF (sha256 edd3ed5e...) and the BAMF Online-Testcenter solutions"
+    },
+    {
+      "key": "C",
+      "name": "leben-in-deutschland/leben-in-deutschland-scrapper",
+      "url": "https://github.com/leben-in-deutschland/leben-in-deutschland-scrapper",
+      "commit": "264dc34ec17a318a47accb961fda4736d0386399",
+      "file": "data/question.json",
+      "claims": "Scraped from the BAMF Online-Testcenter; last sync 2026-09-23"
+    }
+  ]
+}

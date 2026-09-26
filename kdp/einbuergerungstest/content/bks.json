@@ -1,0 +1,3314 @@
+[
+ {
+  "id": "G-001",
+  "q_bks": "U Njemačkoj ljudi smiju otvoreno govoriti protiv vlade jer …",
+  "options_bks": [
+   "ovdje vrijedi sloboda vjeroispovijesti.",
+   "ljudi plaćaju poreze.",
+   "ljudi imaju biračko pravo.",
+   "ovdje vrijedi sloboda mišljenja."
+  ],
+  "expl_bks": "Sloboda mišljenja jedno je od temeljnih prava iz Temeljnog zakona (članak 5.). Svatko smije javno reći ili napisati svoje mišljenje i kritizirati vladu, a zbog toga ne smije biti kažnjen. Granice postoje samo kod kaznenih djela, na primjer uvrede ili poticanja na mržnju.",
+  "merksatz_de": "Meinungsfreiheit: Man darf die Regierung offen kritisieren."
+ },
+ {
+  "id": "G-002",
+  "q_bks": "U Njemačkoj roditelji mogu do 14. godine života svojeg djeteta odlučivati hoće li ono u školi sudjelovati u …",
+  "options_bks": [
+   "nastavi povijesti.",
+   "vjeronauku.",
+   "nastavi politike.",
+   "nastavi jezika."
+  ],
+  "expl_bks": "Temeljni zakon (njemački ustav) u članku 7. daje roditeljima pravo da odluče hoće li dijete pohađati vjeronauk. Od 14. godine dijete o tome odlučuje samo. Tko ne ide na vjeronauk, u mnogim pokrajinama umjesto toga ima etiku. Ostali predmeti obvezni su za sve učenike.",
+  "merksatz_de": "Bis 14 entscheiden die Eltern über den Religionsunterricht."
+ },
+ {
+  "id": "G-003",
+  "q_bks": "Njemačka je pravna država. Što se time misli?",
+  "options_bks": [
+   "Svi stanovnici i država moraju se pridržavati zakona.",
+   "Država se ne mora pridržavati zakona.",
+   "Samo Nijemci moraju poštovati zakone.",
+   "Sudovi donose zakone."
+  ],
+  "expl_bks": "U pravnoj državi zakoni vrijede za sve: za građane, za strance i za samu državu. I policija, uredi i vlada moraju poštovati zakone, a svatko se može obratiti neovisnom sudu. Sudovi ne donose zakone, nego ih primjenjuju; zakone donosi parlament.",
+  "merksatz_de": "Im Rechtsstaat müssen alle, auch der Staat, die Gesetze befolgen."
+ },
+ {
+  "id": "G-004",
+  "q_bks": "Koje pravo spada u temeljna prava u Njemačkoj?",
+  "options_bks": [
+   "posjedovanje oružja",
+   "pravo jačega",
+   "sloboda mišljenja",
+   "uzimanje pravde u svoje ruke"
+  ],
+  "expl_bks": "Sloboda mišljenja zaštićena je člankom 5. Temeljnog zakona (njemačkog ustava) i spada u temeljna prava. „Pravo jačega” i uzimanje pravde u svoje ruke u Njemačkoj su zabranjeni: sukobe rješavaju policija i sudovi. Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom i traži dozvolu.",
+  "merksatz_de": "Zu den Grundrechten gehört die Meinungsfreiheit."
+ },
+ {
+  "id": "G-005",
+  "q_bks": "Izbori u Njemačkoj su slobodni. Što to znači?",
+  "options_bks": [
+   "Smije se primiti novac ako se zbog toga glasa za određenog kandidata.",
+   "Glasati smiju samo osobe koje nikada nisu bile u zatvoru.",
+   "Na birača se na izborima ne smije utjecati niti ga se smije prisiliti da glasa na određeni način, a zbog izbora ne smije imati nikakve štete.",
+   "Sve osobe s biračkim pravom moraju glasati."
+  ],
+  "expl_bks": "Slobodni izbori znače da svaki birač sam odlučuje hoće li glasati i za koga. Nitko ga ne smije prisiljavati, ucjenjivati ni kupovati njegov glas, a zbog svojeg izbora ne smije imati štete, na primjer na poslu. U Njemačkoj nema obveze glasanja. Načela izbora navedena su u članku 38. Temeljnog zakona.",
+  "merksatz_de": "Bei freien Wahlen entscheidet jeder ohne Zwang und Druck."
+ },
+ {
+  "id": "G-006",
+  "q_bks": "Kako se zove njemački ustav?",
+  "options_bks": [
+   "narodni zakon (Volksgesetz)",
+   "savezni zakon (Bundesgesetz)",
+   "njemački zakon (Deutsches Gesetz)",
+   "Temeljni zakon (Grundgesetz)"
+  ],
+  "expl_bks": "Njemački ustav zove se Temeljni zakon (Grundgesetz). Proglašen je 23. svibnja 1949. u Zapadnoj Njemačkoj, a od ponovnog ujedinjenja Njemačke 1990. vrijedi za cijelu zemlju. Tada je zamišljen kao privremeno rješenje do ujedinjenja, pa se namjerno nije zvao „ustav”.",
+  "merksatz_de": "Die deutsche Verfassung heißt Grundgesetz."
+ },
+ {
+  "id": "G-007",
+  "q_bks": "Koje pravo spada u temeljna prava koja jamči njemački ustav? Pravo na …",
+  "options_bks": [
+   "slobodu vjere i savjesti",
+   "zabavu",
+   "rad",
+   "stan"
+  ],
+  "expl_bks": "Članak 4. Temeljnog zakona jamči slobodu vjere i savjesti: svatko smije slobodno izabrati vjeru, promijeniti je ili ne pripadati nijednoj vjeri. Nitko ne smije biti prisiljen djelovati protiv svoje savjesti. Pravo na rad, stan ili zabavu nije navedeno kao temeljno pravo u Temeljnom zakonu.",
+  "merksatz_de": "Das Grundgesetz garantiert Glaubens- und Gewissensfreiheit."
+ },
+ {
+  "id": "G-008",
+  "q_bks": "Što ne piše u Temeljnom zakonu Njemačke?",
+  "options_bks": [
+   "Ljudsko dostojanstvo je nepovredivo.",
+   "Svi trebaju imati jednako mnogo novca.",
+   "Svaki čovjek smije reći svoje mišljenje.",
+   "Svi su jednaki pred zakonom."
+  ],
+  "expl_bks": "Temeljni zakon ne obećava da će svi imati jednako mnogo novca. On jamči ljudsko dostojanstvo (članak 1.), jednakost pred zakonom (članak 3.) i slobodu mišljenja (članak 5.). Ljudi smiju različito zarađivati, a socijalna država pomaže onima kojima je pomoć potrebna.",
+  "merksatz_de": "Gleich viel Geld für alle steht nicht im Grundgesetz."
+ },
+ {
+  "id": "G-009",
+  "q_bks": "Koje temeljno pravo u Njemačkoj vrijedi samo za strance? Temeljno pravo na …",
+  "options_bks": [
+   "zaštitu obitelji",
+   "ljudsko dostojanstvo",
+   "azil",
+   "slobodu mišljenja"
+  ],
+  "expl_bks": "Pravo na azil (članak 16.a Temeljnog zakona) štiti politički progonjene osobe, na primjer ljude koje država u domovini progoni zbog mišljenja, vjere ili podrijetla. Njemački državljani ne trebaju azil u Njemačkoj, pa ovo pravo vrijedi samo za strance. Ljudsko dostojanstvo, sloboda mišljenja i zaštita obitelji vrijede za sve ljude.",
+  "merksatz_de": "Nur für Ausländer gilt das Grundrecht auf Asyl."
+ },
+ {
+  "id": "G-010",
+  "q_bks": "Što je u skladu s njemačkim Temeljnim zakonom?",
+  "options_bks": [
+   "kazna batinanjem",
+   "mučenje",
+   "smrtna kazna",
+   "novčana kazna"
+  ],
+  "expl_bks": "Novčana kazna je dopuštena: sud je može izreći, na primjer za manju krađu. Smrtna kazna ukinuta je člankom 102. Temeljnog zakona. Mučenje i tjelesne kazne povređuju ljudsko dostojanstvo iz članka 1. i zato su u Njemačkoj zabranjeni.",
+  "merksatz_de": "Eine Geldstrafe ist erlaubt, die Todesstrafe ist verboten."
+ },
+ {
+  "id": "G-011",
+  "q_bks": "Kako se zove ustav Savezne Republike Njemačke?",
+  "options_bks": [
+   "Temeljni zakon (Grundgesetz)",
+   "savezni ustav (Bundesverfassung)",
+   "zakonik (Gesetzbuch)",
+   "ustavni ugovor (Verfassungsvertrag)"
+  ],
+  "expl_bks": "Ustav Savezne Republike Njemačke zove se Temeljni zakon (Grundgesetz), skraćeno GG. Ima više od 140 članaka, a na početku su temeljna prava, na primjer ljudsko dostojanstvo u članku 1. Naziv „Bundesverfassung” koristi se u Švicarskoj, a ne u Njemačkoj.",
+  "merksatz_de": "Grundgesetz ist der Name der deutschen Verfassung."
+ },
+ {
+  "id": "G-012",
+  "q_bks": "Jedna stranka u njemačkom Bundestagu želi ukinuti slobodu tiska. Je li to moguće?",
+  "options_bks": [
+   "Da, ako je više od polovice zastupnika u Bundestagu za to.",
+   "Da, ali za to mora biti dvije trećine zastupnika u Bundestagu.",
+   "Ne, jer je sloboda tiska temeljno pravo. Ona se ne može ukinuti.",
+   "Ne, jer samo Bundesrat može ukinuti slobodu tiska."
+  ],
+  "expl_bks": "Sloboda tiska temeljno je pravo iz članka 5. Temeljnog zakona. Nijedna stranka i nijedna većina ne može je jednostavno ukinuti: članak 19. kaže da se temeljno pravo ni u kojem slučaju ne smije povrijediti u svojoj biti. Slobodni mediji važni su za demokraciju jer kontroliraju politiku.",
+  "merksatz_de": "Pressefreiheit ist ein Grundrecht und kann nicht abgeschafft werden."
+ },
+ {
+  "id": "G-013",
+  "q_bks": "U parlamentu pojam „opozicija” označava …",
+  "options_bks": [
+   "vladajuće stranke.",
+   "klub zastupnika (Fraktion) s najviše zastupnika.",
+   "sve stranke koje su na zadnjim izborima uspjele prijeći izborni prag od 5 %.",
+   "sve zastupnike koji ne pripadaju vladajućoj stranci/vladajućim strankama."
+  ],
+  "expl_bks": "Opozicija su svi zastupnici koji ne pripadaju vladajućoj stranci ili vladajućoj koaliciji. Njezin je zadatak kontrolirati i kritizirati vladu te predlagati druga rješenja. Opozicija je važan dio demokracije jer nakon sljedećih izbora i sama može preuzeti vlast.",
+  "merksatz_de": "Opposition sind alle Abgeordneten, die nicht zur Regierung gehören."
+ },
+ {
+  "id": "G-014",
+  "q_bks": "Sloboda mišljenja u Njemačkoj znači da ja …",
+  "options_bks": [
+   "smijem vrijeđati prolaznike na ulici.",
+   "mogu izraziti svoje mišljenje na internetu.",
+   "smijem javno nositi simbole nacista, Hamasa ili Islamske države.",
+   "smijem izraziti svoje mišljenje samo ako ne proturječim vladi."
+  ],
+  "expl_bks": "Sloboda mišljenja (članak 5. Temeljnog zakona) vrijedi i na internetu: svatko ondje smije napisati svoje mišljenje, pa i kritiku vlade. Ali i na internetu postoje granice: uvrede su kažnjive, a simboli zabranjenih organizacija, na primjer nacistički simboli, ne smiju se javno pokazivati.",
+  "merksatz_de": "Im Internet darf ich meine Meinung sagen."
+ },
+ {
+  "id": "G-015",
+  "q_bks": "Što zabranjuje njemački Temeljni zakon?",
+  "options_bks": [
+   "vojnu službu",
+   "prisilni rad",
+   "slobodan izbor zanimanja",
+   "rad u inozemstvu"
+  ],
+  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimka je samo rad u zatvoru nakon sudske odluke. Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
+  "merksatz_de": "Zwangsarbeit ist in Deutschland verboten."
+ },
+ {
+  "id": "G-016",
+  "q_bks": "Kada je sloboda mišljenja u Njemačkoj ograničena?",
+  "options_bks": [
+   "kod javnog širenja lažnih tvrdnji o pojedinim osobama",
+   "kod izražavanja mišljenja o saveznoj vladi",
+   "kod rasprava o religijama",
+   "kod kritike države"
+  ],
+  "expl_bks": "Tko javno širi neistinite tvrdnje o nekoj osobi, povređuje njezinu čast i ugled. To može biti kažnjivo, na primjer kao kleveta. Članak 5. Temeljnog zakona kaže da sloboda mišljenja ima granice u općim zakonima i u zaštiti osobne časti. Kritika vlade ili države, naprotiv, dopuštena je.",
+  "merksatz_de": "Lügen über andere Menschen schützt die Meinungsfreiheit nicht."
+ },
+ {
+  "id": "G-017",
+  "q_bks": "Njemački zakoni zabranjuju …",
+  "options_bks": [
+   "slobodu mišljenja stanovnika.",
+   "peticije građana.",
+   "slobodu okupljanja stanovnika.",
+   "nejednako postupanje države prema građanima."
+  ],
+  "expl_bks": "Država mora prema svim ljudima postupati jednako. Članak 3. Temeljnog zakona kaže da nitko ne smije biti zapostavljen ili povlašten zbog spola, podrijetla, jezika, vjere ili političkog mišljenja. Sloboda mišljenja, peticije i sloboda okupljanja nisu zabranjeni, nego su zaštićeni kao temeljna prava.",
+  "merksatz_de": "Der Staat muss alle Menschen gleich behandeln."
+ },
+ {
+  "id": "G-018",
+  "q_bks": "Koje je temeljno pravo zajamčeno u članku 1. Temeljnog zakona Savezne Republike Njemačke?",
+  "options_bks": [
+   "nepovredivost ljudskog dostojanstva",
+   "pravo na život",
+   "sloboda vjeroispovijesti",
+   "sloboda mišljenja"
+  ],
+  "expl_bks": "Članak 1. Temeljnog zakona počinje rečenicom: „Ljudsko dostojanstvo je nepovredivo.” Poštovati ga i štititi dužnost je sve državne vlasti. To je najvažnije načelo ustava i ne smije se promijeniti. Pravo na život nalazi se u članku 2., sloboda vjeroispovijesti u članku 4., a sloboda mišljenja u članku 5.",
+  "merksatz_de": "Artikel 1: Die Würde des Menschen ist unantastbar."
+ },
+ {
+  "id": "G-019",
+  "q_bks": "Što se u Njemačkoj podrazumijeva pod pravom na „Freizügigkeit”?",
+  "options_bks": [
+   "Svatko smije sam izabrati mjesto stanovanja.",
+   "Svatko može promijeniti zanimanje.",
+   "Svatko se smije odlučiti za drugu vjeru.",
+   "Svatko se u javnosti smije kretati samo oskudno odjeven."
+  ],
+  "expl_bks": "„Freizügigkeit” znači slobodu kretanja i nastanjivanja (članak 11. Temeljnog zakona). Čovjek smije sam odlučiti u kojem će gradu ili mjestu u Njemačkoj živjeti i preseliti se bez posebne dozvole. Pazite na zamku: riječ „freizügig” u svakodnevnom govoru znači i „oskudno odjeven”, ali ovo pravo nema veze s odjećom.",
+  "merksatz_de": "Freizügigkeit heißt: Man darf seinen Wohnort frei wählen."
+ },
+ {
+  "id": "G-020",
+  "q_bks": "Jedna stranka u Njemačkoj ima cilj uspostaviti diktaturu. Ona je onda …",
+  "options_bks": [
+   "tolerantna.",
+   "usmjerena na pravnu državu.",
+   "vjerna zakonima.",
+   "protuustavna."
+  ],
+  "expl_bks": "Temeljni zakon štiti slobodni demokratski poredak. Stranka koja želi uspostaviti diktaturu bori se protiv tog poretka i zato je protuustavna. Takvu stranku može zabraniti samo Savezni ustavni sud (članak 21.). U Saveznoj Republici Njemačkoj to se dogodilo dva puta, 1952. i 1956. godine.",
+  "merksatz_de": "Eine Partei, die eine Diktatur will, ist verfassungswidrig."
+ },
+ {
+  "id": "G-021",
+  "q_bks": "Koji je grb Savezne Republike Njemačke?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Savezne Republike Njemačke je savezni orao (Bundesadler): crni orao s crvenim kljunom, jezikom i kandžama na zlatnožutom štitu. Orao je već stoljećima simbol njemačkih država. Savezni orao vidi se, na primjer, na njemačkim kovanicama od 1 i 2 eura i u dvorani Bundestaga (saveznog parlamenta).",
+  "merksatz_de": "Das Bundeswappen zeigt einen schwarzen Adler auf goldgelbem Grund."
+ },
+ {
+  "id": "G-022",
+  "q_bks": "Kakav oblik države ima Njemačka?",
+  "options_bks": [
+   "monarhija",
+   "diktatura",
+   "republika",
+   "kneževina"
+  ],
+  "expl_bks": "Njemačka je republika: na čelu države nije kralj ni car, nego savezni predsjednik, kojeg Savezna skupština bira na pet godina. To stoji već u nazivu zemlje: Savezna Republika Njemačka. Članak 20. Temeljnog zakona kaže da je Njemačka demokratska i socijalna savezna država.",
+  "merksatz_de": "Deutschland ist eine Republik, keine Monarchie."
+ },
+ {
+  "id": "G-023",
+  "q_bks": "U Njemačkoj većina ljudi koji rade …",
+  "options_bks": [
+   "radi u malim obiteljskim tvrtkama.",
+   "volonterski radi za neku saveznu pokrajinu.",
+   "radi samostalno, u vlastitoj tvrtki.",
+   "zaposlena je u nekoj tvrtki ili nekom uredu (Behörde)."
+  ],
+  "expl_bks": "Većina ljudi u Njemačkoj radi kao zaposlenici: imaju ugovor o radu s nekom tvrtkom ili s javnom ustanovom, na primjer s općinom, školom ili uredom. Samostalnih poduzetnika s vlastitom tvrtkom ima znatno manje. Volonterski rad je važan, ali se za njega ne dobiva plaća.",
+  "merksatz_de": "Die meisten Menschen arbeiten bei einer Firma oder Behörde."
+ },
+ {
+  "id": "G-024",
+  "q_bks": "Koliko saveznih pokrajina ima Savezna Republika Njemačka?",
+  "options_bks": [
+   "14",
+   "15",
+   "16",
+   "17"
+  ],
+  "expl_bks": "Njemačka ima 16 saveznih pokrajina. Tri od njih su gradovi-pokrajine: Berlin, Hamburg i Bremen. Pri ponovnom ujedinjenju Njemačke 1990. zapadnim pokrajinama pridružilo se pet novih pokrajina iz bivšeg DDR-a (Istočne Njemačke), a Berlin je ponovno postao jedan grad.",
+  "merksatz_de": "Deutschland hat 16 Bundesländer."
+ },
+ {
+  "id": "G-025",
+  "q_bks": "Što nije savezna pokrajina Savezne Republike Njemačke?",
+  "options_bks": [
+   "Alzas-Lorena (Elsass-Lothringen)",
+   "Sjeverna Rajna-Vestfalija (Nordrhein-Westfalen)",
+   "Mecklenburg-Zapadno Pomorje (Mecklenburg-Vorpommern)",
+   "Saska-Anhalt (Sachsen-Anhalt)"
+  ],
+  "expl_bks": "Alzas-Lorena (Elsass-Lothringen) je područje na istoku Francuske. Od 1871. do 1918. pripadalo je Njemačkom Carstvu, ali danas je dio Francuske. Sjeverna Rajna-Vestfalija, Mecklenburg-Zapadno Pomorje i Saska-Anhalt jesu njemačke savezne pokrajine.",
+  "merksatz_de": "Elsass-Lothringen gehört heute zu Frankreich."
+ },
+ {
+  "id": "G-026",
+  "q_bks": "Njemačka je …",
+  "options_bks": [
+   "komunistička republika.",
+   "demokratska i socijalna savezna država.",
+   "kapitalistička i socijalna monarhija.",
+   "socijalna i socijalistička savezna država."
+  ],
+  "expl_bks": "Tako stoji u članku 20. Temeljnog zakona: Njemačka je demokratska i socijalna savezna država. Demokratska znači da vlast dolazi od naroda, socijalna da država pomaže ljudima u nevolji, a savezna da se zemlja sastoji od 16 saveznih pokrajina. Njemačka nije monarhija ni socijalistička država.",
+  "merksatz_de": "Deutschland ist ein demokratischer und sozialer Bundesstaat."
+ },
+ {
+  "id": "G-027",
+  "q_bks": "Njemačka je …",
+  "options_bks": [
+   "socijalistička država.",
+   "savezna država.",
+   "diktatura.",
+   "monarhija."
+  ],
+  "expl_bks": "Njemačka je savezna država (Bundesstaat). To znači da vlast dijele savez i 16 saveznih pokrajina. Svaka pokrajina ima vlastiti parlament i vladu, a na primjer škole i policija uglavnom su u nadležnosti pokrajina. Takvo uređenje zove se federalizam.",
+  "merksatz_de": "Als Bundesstaat besteht Deutschland aus 16 Ländern."
+ },
+ {
+  "id": "G-028",
+  "q_bks": "Tko u Njemačkoj bira zastupnike u Bundestag?",
+  "options_bks": [
+   "vojska",
+   "gospodarstvo",
+   "narod s biračkim pravom",
+   "uprava"
+  ],
+  "expl_bks": "Zastupnike u Bundestagu (saveznom parlamentu) bira narod, odnosno svi koji imaju biračko pravo. Na izborima za Bundestag smiju glasati njemački državljani od 18 godina. Izbori se održavaju svake četiri godine. Tako vrijedi načelo iz članka 20. Temeljnog zakona: sva vlast dolazi od naroda.",
+  "merksatz_de": "Das wahlberechtigte Volk wählt die Bundestagsabgeordneten."
+ },
+ {
+  "id": "G-029",
+  "q_bks": "Koja je životinja na grbu Savezne Republike Njemačke?",
+  "options_bks": [
+   "lav",
+   "orao",
+   "medvjed",
+   "konj"
+  ],
+  "expl_bks": "Na grbu Savezne Republike Njemačke nalazi se crni orao na zlatnožutom štitu, zvan savezni orao (Bundesadler). Orao je star simbol njemačkih država. Pazite na zamku: medvjed je na grbu Berlina, a lav se nalazi na grbovima nekih pokrajina, na primjer Bavarske.",
+  "merksatz_de": "Der Adler ist das Wappentier Deutschlands."
+ },
+ {
+  "id": "G-030",
+  "q_bks": "Što nije obilježje naše demokracije?",
+  "options_bks": [
+   "redoviti izbori",
+   "cenzura tiska",
+   "sloboda mišljenja",
+   "različite stranke"
+  ],
+  "expl_bks": "Cenzura znači da država prije objave provjerava tekstove i zabranjuje ih. U Njemačkoj je to zabranjeno: članak 5. Temeljnog zakona kaže „Cenzure nema”. Sloboda tiska pomaže građanima da se informiraju i kontroliraju politiku. Redoviti izbori, sloboda mišljenja i različite stranke dio su demokracije.",
+  "merksatz_de": "In Deutschland gibt es keine Zensur der Presse."
+ },
+ {
+  "id": "G-031",
+  "q_bks": "Suradnja stranaka radi sastavljanja vlade u Njemačkoj se zove …",
+  "options_bks": [
+   "jedinstvo.",
+   "koalicija.",
+   "ministarstvo.",
+   "klub zastupnika (Fraktion)."
+  ],
+  "expl_bks": "Kada nijedna stranka sama nema većinu u parlamentu, više stranaka se dogovori i zajedno sastavi vladu. Taj savez zove se koalicija. Stranke svoje zajedničke planove zapisuju u koalicijski ugovor. Klub zastupnika (Fraktion) je nešto drugo: to su zastupnici iste stranke u parlamentu.",
+  "merksatz_de": "Parteien bilden gemeinsam eine Regierung: Das heißt Koalition."
+ },
+ {
+  "id": "G-032",
+  "q_bks": "Što nije državna vlast u Njemačkoj?",
+  "options_bks": [
+   "zakonodavstvo",
+   "vlada",
+   "tisak",
+   "sudstvo"
+  ],
+  "expl_bks": "Državna vlast podijeljena je na tri dijela: zakonodavnu vlast (parlament), izvršnu vlast (vlada i uprava) i sudsku vlast (sudovi). To se zove podjela vlasti. Tisak nije dio države: slobodni mediji su neovisni i kritički prate rad države, pa ih ponekad zovu „četvrtom vlasti”.",
+  "merksatz_de": "Die Presse ist frei und keine staatliche Gewalt."
+ },
+ {
+  "id": "G-033",
+  "q_bks": "Koja je tvrdnja točna? U Njemačkoj …",
+  "options_bks": [
+   "država i vjerske zajednice međusobno su odvojene.",
+   "vjerske zajednice čine državu.",
+   "država ovisi o vjerskim zajednicama.",
+   "država i vjerske zajednice čine jedinstvo."
+  ],
+  "expl_bks": "Temeljni zakon (članak 140.) određuje da u Njemačkoj ne postoji državna crkva. Država je neutralna prema svim vjerama i nikome ne propisuje u što treba vjerovati. Vjerske zajednice same uređuju svoje poslove, a državni zakoni vrijede za sve jednako, bez obzira na vjeru.",
+  "merksatz_de": "Staat und Religion sind in Deutschland getrennt."
+ },
+ {
+  "id": "G-034",
+  "q_bks": "Što Njemačka nije?",
+  "options_bks": [
+   "demokracija",
+   "pravna država",
+   "monarhija",
+   "socijalna država"
+  ],
+  "expl_bks": "Njemačka nema kralja ni cara, nego je republika sa saveznim predsjednikom na čelu države. Monarhija je ukinuta 1918., kada je car Vilim II. nakon Prvog svjetskog rata morao otići s vlasti. Demokracija, pravna država i socijalna država temeljna su načela Temeljnog zakona.",
+  "merksatz_de": "Eine Monarchie ist Deutschland nicht, es hat keinen König."
+ },
+ {
+  "id": "G-035",
+  "q_bks": "Čime njemačka država financira socijalno osiguranje?",
+  "options_bks": [
+   "crkvenim porezom",
+   "socijalnim doprinosima",
+   "donacijama",
+   "članarinama udruga"
+  ],
+  "expl_bks": "Socijalno osiguranje uglavnom se financira socijalnim doprinosima. Zaposlenici i poslodavci svaki mjesec plaćaju doprinose za zdravstveno i mirovinsko osiguranje, osiguranje za njegu (Pflegeversicherung) i osiguranje za slučaj nezaposlenosti. Udio zaposlenika poslodavac odbija izravno od bruto plaće. Crkveni porez ide vjerskim zajednicama, a ne socijalnom osiguranju.",
+  "merksatz_de": "Sozialabgaben finanzieren die Sozialversicherung."
+ },
+ {
+  "id": "G-036",
+  "q_bks": "Koja mjera u Njemačkoj stvara socijalnu sigurnost?",
+  "options_bks": [
+   "zdravstveno osiguranje",
+   "osiguranje automobila",
+   "osiguranje zgrade",
+   "osiguranje od odgovornosti"
+  ],
+  "expl_bks": "Zdravstveno osiguranje dio je socijalnog osiguranja. Ono pomaže ljudima kada su bolesni: plaća liječnika, bolnicu i lijekove. U Njemačkoj svatko mora imati zdravstveno osiguranje. Osiguranje automobila, zgrade ili od odgovornosti štiti imovinu i nije dio socijalnog osiguranja.",
+  "merksatz_de": "Die Krankenversicherung gibt soziale Sicherheit."
+ },
+ {
+  "id": "G-037",
+  "q_bks": "Kako se zovu šefovi vlada većine saveznih pokrajina u Njemačkoj?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "senator (Senator)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "U 13 od 16 saveznih pokrajina na čelu pokrajinske vlade je ministar predsjednik (Ministerpräsident). U gradovima-pokrajinama nazivi su drukčiji: u Berlinu vladajući gradonačelnik (Regierender Bürgermeister), u Hamburgu prvi gradonačelnik (Erster Bürgermeister), a u Bremenu predsjednik Senata. Senator je član gradske vlade, a naziv „premijer” koristi se u drugim zemljama.",
+  "merksatz_de": "An der Spitze der meisten Länder steht ein Ministerpräsident."
+ },
+ {
+  "id": "G-038",
+  "q_bks": "Savezna Republika Njemačka je demokratska i socijalna …",
+  "options_bks": [
+   "zajednica država (Staatenverbund).",
+   "savezna država (Bundesstaat).",
+   "konfederacija (Staatenbund).",
+   "centralizirana država (Zentralstaat)."
+  ],
+  "expl_bks": "Ovo je rečenica iz članka 20. Temeljnog zakona. Savezna država znači da je Njemačka jedna država, sastavljena od 16 saveznih pokrajina s vlastitim parlamentima i vladama. Konfederacija (Staatenbund) samo je savez samostalnih država, a riječju „Staatenverbund” često se opisuje Europska unija.",
+  "merksatz_de": "Laut Grundgesetz ist Deutschland ein demokratischer und sozialer Bundesstaat."
+ },
+ {
+  "id": "G-039",
+  "q_bks": "Što ima svaka njemačka savezna pokrajina?",
+  "options_bks": [
+   "vlastitog ministra vanjskih poslova",
+   "vlastitu valutu",
+   "vlastitu vojsku",
+   "vlastitu vladu"
+  ],
+  "expl_bks": "Svaka savezna pokrajina ima vlastitu vladu i vlastiti parlament, u većini pokrajina Landtag (pokrajinski parlament). Pokrajinska vlada odlučuje, na primjer, o školama, policiji i kulturi. Vanjska politika i vojska zajedničke su za cijelu Njemačku, a novac je u cijeloj zemlji euro.",
+  "merksatz_de": "Jedes Bundesland hat eine eigene Regierung."
+ },
+ {
+  "id": "G-040",
+  "q_bks": "Kojim riječima počinje njemačka državna himna?",
+  "options_bks": [
+   "Völker, hört die Signale … (Narodi, čujte signale …)",
+   "Einigkeit und Recht und Freiheit … (Jedinstvo i pravo i sloboda …)",
+   "Freude schöner Götterfunken … (Radosti, lijepa iskro božanska …)",
+   "Deutschland einig Vaterland … (Njemačka, jedinstvena domovino …)"
+  ],
+  "expl_bks": "Njemačka himna je treća strofa „Pjesme Nijemaca” (Lied der Deutschen), koju je 1841. napisao August Heinrich Hoffmann von Fallersleben. Počinje riječima „Einigkeit und Recht und Freiheit” (jedinstvo i pravo i sloboda). Ostali stihovi potječu iz drugih pjesama, na primjer „Deutschland einig Vaterland” iz himne DDR-a (Istočne Njemačke).",
+  "merksatz_de": "Die Nationalhymne beginnt mit „Einigkeit und Recht und Freiheit”."
+ },
+ {
+  "id": "G-041",
+  "q_bks": "Zašto u demokraciji postoji više od jedne stranke?",
+  "options_bks": [
+   "jer se tako zastupaju različita mišljenja građana",
+   "da bi se ograničilo podmićivanje u politici",
+   "da bi se spriječile političke demonstracije",
+   "da bi se potaknulo gospodarsko natjecanje"
+  ],
+  "expl_bks": "Ljudi imaju različite interese i mišljenja, na primjer o porezima, okolišu ili obitelji. Različite stranke zastupaju te stavove u parlamentu. Na izborima građani biraju stranku koja najbolje odgovara njihovu mišljenju. Članak 21. Temeljnog zakona kaže da stranke sudjeluju u oblikovanju političke volje naroda.",
+  "merksatz_de": "Verschiedene Parteien vertreten die verschiedenen Meinungen der Bürger."
+ },
+ {
+  "id": "G-042",
+  "q_bks": "Tko u Njemačkoj donosi novi zakon?",
+  "options_bks": [
+   "vlada",
+   "parlament",
+   "sudovi",
+   "policija"
+  ],
+  "expl_bks": "Zakone donosi parlament. Za savezne zakone to je Bundestag (savezni parlament), a Bundesrat (savezno vijeće pokrajina) u tome sudjeluje. Vlada može predložiti zakon, ali o njemu glasaju zastupnici. Sudovi primjenjuju zakone, a policija se brine da se zakoni poštuju. To je podjela vlasti.",
+  "merksatz_de": "Neue Gesetze beschließt das Parlament."
+ },
+ {
+  "id": "G-043",
+  "q_bks": "Kada se u Njemačkoj može zabraniti stranka?",
+  "options_bks": [
+   "ako je njezina izborna kampanja preskupa",
+   "ako se bori protiv ustava",
+   "ako kritizira šefa države",
+   "ako njezin program predlaže novi smjer"
+  ],
+  "expl_bks": "Stranka može biti zabranjena ako se aktivno bori protiv slobodnog demokratskog poretka, dakle protiv ustava. O tome ne odlučuje vlada, nego samo Savezni ustavni sud (članak 21. Temeljnog zakona). Kritika šefa države i nove političke ideje dopuštene su i dio su demokracije.",
+  "merksatz_de": "Kämpft eine Partei gegen die Verfassung, kann man sie verbieten."
+ },
+ {
+  "id": "G-044",
+  "q_bks": "Koga građanin u Njemačkoj ne može izravno birati?",
+  "options_bks": [
+   "zastupnike u Europskom parlamentu",
+   "saveznog predsjednika",
+   "zastupnike u Landtagu (pokrajinskom parlamentu)",
+   "zastupnike u Bundestagu"
+  ],
+  "expl_bks": "Saveznog predsjednika ne biraju građani izravno, nego Savezna skupština (Bundesversammlung). Nju čine svi zastupnici Bundestaga i jednak broj članova koje biraju pokrajinski parlamenti. Predsjednik se bira na pet godina. Zastupnike u Bundestagu, Landtagu i Europskom parlamentu građani biraju izravno na izborima.",
+  "merksatz_de": "Den Bundespräsidenten wählt die Bundesversammlung, nicht das Volk."
+ },
+ {
+  "id": "G-045",
+  "q_bks": "U koje osiguranje spada osiguranje za njegu (Pflegeversicherung)?",
+  "options_bks": [
+   "socijalno osiguranje",
+   "osiguranje od nezgode",
+   "osiguranje kućanstva",
+   "osiguranje od odgovornosti i od požara"
+  ],
+  "expl_bks": "Osiguranje za njegu (Pflegeversicherung) jedan je od stupova socijalnog osiguranja, kao i zdravstveno i mirovinsko osiguranje. Uvedeno je 1995. godine. Ono plaća dio troškova kada netko, na primjer zbog starosti ili bolesti, trajno treba pomoć i njegu. Zaposlenima se doprinos odbija izravno od plaće.",
+  "merksatz_de": "Die Pflegeversicherung gehört zur Sozialversicherung."
+ },
+ {
+  "id": "G-046",
+  "q_bks": "Njemačka država ima mnogo zadataka. Koji od ovih zadataka spada u njih?",
+  "options_bks": [
+   "Gradi ceste i škole.",
+   "Prodaje hranu i odjeću.",
+   "Svim stanovnicima besplatno daje novine.",
+   "Proizvodi automobile i autobuse."
+  ],
+  "expl_bks": "Država, pokrajine i općine grade i održavaju ceste, mostove i škole. Za to koriste novac od poreza. Hranu, odjeću, automobile i novine proizvode i prodaju privatne tvrtke. Država se brine za ono što trebaju svi građani, na primjer za promet i obrazovanje.",
+  "merksatz_de": "Der Staat baut Straßen und Schulen."
+ },
+ {
+  "id": "G-185",
+  "q_bks": "Što je označavao izraz „željezna zavjesa”? Odvajanje …",
+  "options_bks": [
+   "Varšavskog pakta od Zapada",
+   "sjeverne Njemačke od južne Njemačke",
+   "nacističke Njemačke od saveznika",
+   "Europe od SAD-a"
+  ],
+  "expl_bks": "„Željezna zavjesa” bila je slika za strogo zatvorenu granicu između komunističkih zemalja istočne Europe, predvođenih Sovjetskim Savezom (Varšavski pakt), i država Zapada. Izraz je 1946. proslavio britanski političar Winston Churchill. Ta granica s bodljikavom žicom i minama prolazila je i kroz sredinu Njemačke.",
+  "merksatz_de": "Der Eiserne Vorhang trennte den Ostblock vom Westen."
+ },
+ {
+  "id": "G-186",
+  "q_bks": "Godine 1953. u DDR-u je izbio ustanak, na koji je u Saveznoj Republici Njemačkoj dugo podsjećao jedan praznik. Kada je to bilo?",
+  "options_bks": [
+   "1. svibnja (1. 5.)",
+   "17. lipnja (17. 6.)",
+   "20. srpnja (20. 7.)",
+   "9. studenoga (9. 11.)"
+  ],
+  "expl_bks": "Dana 17. lipnja 1953. radnici u DDR-u (Njemačka Demokratska Republika, Istočna Njemačka) stupili su u štrajk protiv viših radnih normi, a prosvjedi su prerasli u narodni ustanak. Sovjetski tenkovi ugušili su ga. U Zapadnoj Njemačkoj 17. lipnja bio je praznik sve do 1990., a danas se jedinstvo slavi 3. listopada.",
+  "merksatz_de": "Am 17. Juni 1953 gab es einen Aufstand in der DDR."
+ },
+ {
+  "id": "G-187",
+  "q_bks": "Koja je njemačka država imala crno-crveno-zlatnu zastavu s čekićem, šestarom i vijencem od klasja?",
+  "options_bks": [
+   "Pruska",
+   "Savezna Republika Njemačka",
+   "„Treći Reich”",
+   "DDR"
+  ],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) od 1959. imao je crno-crveno-zlatnu zastavu s grbom u sredini. Čekić je bio znak radnika, šestar znak inteligencije, a klasje znak seljaka. Savezna Republika Njemačka ima iste tri boje, ali bez tog znaka.",
+  "merksatz_de": "Die DDR-Flagge hatte Hammer, Zirkel und Ährenkranz."
+ },
+ {
+  "id": "G-188",
+  "q_bks": "Koje je godine izgrađen zid u Berlinu?",
+  "options_bks": [
+   "1953.",
+   "1956.",
+   "1959.",
+   "1961."
+  ],
+  "expl_bks": "Izgradnja Berlinskog zida počela je u noći 13. kolovoza 1961. Vlast DDR-a htjela je tako zaustaviti bijeg stanovnika na Zapad, jer je do tada iz DDR-a otišlo više od dva milijuna ljudi. Zid je dijelio grad 28 godina, sve do 9. studenoga 1989.",
+  "merksatz_de": "Die Berliner Mauer wurde 1961 gebaut."
+ },
+ {
+  "id": "G-189",
+  "q_bks": "Kada je DDR izgradio zid u Berlinu?",
+  "options_bks": [
+   "1919.",
+   "1933.",
+   "1961.",
+   "1990."
+  ],
+  "expl_bks": "DDR je Berlinski zid izgradio 1961., točnije 13. kolovoza. Zid je okružio Zapadni Berlin i spriječio ljude da bježe iz DDR-a na Zapad. Ostale godine pripadaju drugim događajima: 1933. nacisti su došli na vlast, a 1990. Njemačka je ponovno ujedinjena.",
+  "merksatz_de": "1961 baute die DDR die Mauer in Berlin."
+ },
+ {
+  "id": "G-190",
+  "q_bks": "Što znači kratica DDR?",
+  "options_bks": [
+   "Dritter Deutscher Rundfunk (Treći njemački radio)",
+   "Die Deutsche Republik (Njemačka Republika)",
+   "Dritte Deutsche Republik (Treća Njemačka Republika)",
+   "Deutsche Demokratische Republik (Njemačka Demokratska Republika)"
+  ],
+  "expl_bks": "DDR je kratica za Deutsche Demokratische Republik, u prijevodu Njemačka Demokratska Republika ili Istočna Njemačka. Ta je država postojala od 1949. do 1990. Iako u imenu ima riječ „demokratska”, DDR je bio diktatura: vladala je SED (vladajuća stranka u DDR-u), a slobodnih izbora nije bilo.",
+  "merksatz_de": "DDR heißt Deutsche Demokratische Republik."
+ },
+ {
+  "id": "G-191",
+  "q_bks": "Kada je zid u Berlinu otvoren za sve?",
+  "options_bks": [
+   "1987.",
+   "1989.",
+   "1992.",
+   "1995."
+  ],
+  "expl_bks": "Navečer 9. studenoga 1989. otvoreni su granični prijelazi u Berlinu i ljudi iz Istočnog Berlina mogli su slobodno prijeći na Zapad. Taj se događaj naziva pad Berlinskog zida. Prethodili su mu veliki mirni prosvjedi građana DDR-a. Godinu dana kasnije, 1990., Njemačka je ponovno ujedinjena.",
+  "merksatz_de": "Im November 1989 wurde die Mauer in Berlin geöffnet."
+ },
+ {
+  "id": "G-192",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options_bks": [
+   "Brandenburg",
+   "Bavarska",
+   "Saarland",
+   "Hessen"
+  ],
+  "expl_bks": "Brandenburg okružuje Berlin, a glavni grad mu je Potsdam. Nakon 1945. bio je u sovjetskoj okupacijskoj zoni, a od 1949. na području DDR-a. Bavarska, Saarland i Hessen pripadali su Zapadnoj Njemačkoj. Pet novih saveznih pokrajina su Brandenburg, Mecklenburg-Zapadno Pomorje, Saska, Saska-Anhalt i Tiringija.",
+  "merksatz_de": "Brandenburg gehörte früher zur DDR."
+ },
+ {
+  "id": "G-193",
+  "q_bks": "Od 1961. do 1989. Berlin je bio …",
+  "options_bks": [
+   "bez gradonačelnika.",
+   "zasebna država.",
+   "podijeljen zidom.",
+   "dostupan samo zrakoplovom."
+  ],
+  "expl_bks": "Od 13. kolovoza 1961. do 9. studenoga 1989. Berlinski zid dijelio je grad na Istočni i Zapadni Berlin. Mnoge obitelji bile su razdvojene, a više od stotinu ljudi poginulo je pri pokušaju bijega. Zapadni Berlin bio je dostupan i cestom i vlakom, ne samo zrakoplovom.",
+  "merksatz_de": "Von 1961 bis 1989 teilte eine Mauer Berlin."
+ },
+ {
+  "id": "G-194",
+  "q_bks": "Dana 3. listopada u Njemačkoj se slavi Dan …",
+  "options_bks": [
+   "njemačkog jedinstva.",
+   "njemačke nacije.",
+   "njemačkih saveznih pokrajina.",
+   "njemačkih gradova."
+  ],
+  "expl_bks": "Dan njemačkog jedinstva (Tag der Deutschen Einheit) slavi se 3. listopada. Na taj je dan 1990. DDR pristupio Saveznoj Republici Njemačkoj i zemlja je nakon 41 godine podjele ponovno ujedinjena. To je državni praznik i neradni dan u cijeloj Njemačkoj.",
+  "merksatz_de": "Am 3. Oktober feiert man den Tag der Deutschen Einheit."
+ },
+ {
+  "id": "G-195",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options_bks": [
+   "Hessen",
+   "Saska-Anhalt",
+   "Sjeverna Rajna-Vestfalija",
+   "Saarland"
+  ],
+  "expl_bks": "Saska-Anhalt (Sachsen-Anhalt) leži na istoku Njemačke, a glavni grad joj je Magdeburg. Od 1949. do 1990. njezino je područje bilo dio DDR-a. Hessen, Sjeverna Rajna-Vestfalija i Saarland pripadali su Zapadnoj Njemačkoj. Pet novih pokrajina: Brandenburg, Mecklenburg-Zapadno Pomorje, Saska, Saska-Anhalt i Tiringija.",
+  "merksatz_de": "Sachsen-Anhalt lag früher auf dem Gebiet der DDR."
+ },
+ {
+  "id": "G-196",
+  "q_bks": "Zašto se razdoblje u jesen 1989. u DDR-u naziva „Die Wende” (preokret)? U to se vrijeme DDR politički promijenio …",
+  "options_bks": [
+   "iz diktature u demokraciju.",
+   "iz liberalnog tržišnog gospodarstva u socijalizam.",
+   "iz monarhije u socijaldemokraciju.",
+   "iz vjerske države u komunističku državu."
+  ],
+  "expl_bks": "„Die Wende” znači preokret. U jesen 1989. mnogo je ljudi u DDR-u mirno prosvjedovalo, npr. na ponedjeljnim demonstracijama u Leipzigu. Vlast stranke SED (vladajuća stranka u DDR-u) se srušila, a u ožujku 1990. održani su prvi slobodni izbori. Tako je DDR iz diktature postao demokracija.",
+  "merksatz_de": "Die Wende 1989 führte die DDR von der Diktatur zur Demokratie."
+ },
+ {
+  "id": "G-197",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options_bks": [
+   "Tiringija",
+   "Hessen",
+   "Bavarska",
+   "Bremen"
+  ],
+  "expl_bks": "Tiringija (Thüringen) nalazi se u sredini Njemačke, a glavni grad joj je Erfurt. Poznati gradovi su i Weimar i Jena. Od 1949. do 1990. to je područje pripadalo DDR-u. Hessen, Bavarska i Bremen bili su u Zapadnoj Njemačkoj. Tiringija je jedna od pet novih saveznih pokrajina.",
+  "merksatz_de": "Thüringen war früher ein Teil der DDR."
+ },
+ {
+  "id": "G-198",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options_bks": [
+   "Bavarska",
+   "Donja Saska",
+   "Saska",
+   "Baden-Württemberg"
+  ],
+  "expl_bks": "Saska (Sachsen) leži na istoku Njemačke, a glavni grad joj je Dresden. U Leipzigu u Saskoj 1989. počele su velike ponedjeljne demonstracije protiv vlasti DDR-a. Pazite na sličan naziv: Donja Saska (Niedersachsen) nalazi se na sjeverozapadu i pripadala je Zapadnoj Njemačkoj.",
+  "merksatz_de": "Auch Sachsen lag früher auf dem Gebiet der DDR."
+ },
+ {
+  "id": "G-199",
+  "q_bks": "Kraticom „Stasi” u DDR-u se označavalo …",
+  "options_bks": [
+   "parlament.",
+   "Ministarstvo državne sigurnosti.",
+   "jednu vladajuću stranku.",
+   "Ministarstvo narodnog obrazovanja."
+  ],
+  "expl_bks": "„Stasi” je skraćenica od „Staatssicherheit” (državna sigurnost). Tako se zvalo Ministarstvo državne sigurnosti DDR-a. Stasi je bila tajna policija koja je nadzirala, prisluškivala i progonila vlastite građane. Parlament DDR-a zvao se Volkskammer, a vladajuća stranka bila je SED.",
+  "merksatz_de": "Die Stasi war das Ministerium für Staatssicherheit der DDR."
+ },
+ {
+  "id": "G-200",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options_bks": [
+   "Hessen",
+   "Schleswig-Holstein",
+   "Mecklenburg-Zapadno Pomorje",
+   "Saarland"
+  ],
+  "expl_bks": "Mecklenburg-Zapadno Pomorje (Mecklenburg-Vorpommern) leži na sjeveroistoku, uz Baltičko more, a glavni grad mu je Schwerin. To je područje od 1949. do 1990. pripadalo DDR-u. Schleswig-Holstein također leži na moru, ali je bio dio Zapadne Njemačke, kao i Hessen i Saarland.",
+  "merksatz_de": "Mecklenburg-Vorpommern gehörte früher zur DDR."
+ },
+ {
+  "id": "G-201",
+  "q_bks": "Koji popis sadrži samo savezne pokrajine koje su pripadale području bivšeg DDR-a?",
+  "options_bks": [
+   "Donja Saska, Sjeverna Rajna-Vestfalija, Hessen, Schleswig-Holstein, Brandenburg",
+   "Mecklenburg-Zapadno Pomorje, Brandenburg, Saska, Saska-Anhalt, Tiringija",
+   "Bavarska, Baden-Württemberg, Porajnje-Falačka, Tiringija, Saska",
+   "Saska, Tiringija, Hessen, Donja Saska, Brandenburg"
+  ],
+  "expl_bks": "Na području bivšeg DDR-a danas je pet saveznih pokrajina: Mecklenburg-Zapadno Pomorje, Brandenburg, Saska, Saska-Anhalt i Tiringija. Zovu se i „nove savezne pokrajine”. Svi ostali popisi sadrže barem jednu zapadnu pokrajinu, npr. Hessen, Bavarsku ili Donju Sasku.",
+  "merksatz_de": "Neue Bundesländer: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen."
+ },
+ {
+  "id": "G-202",
+  "q_bks": "Kome je DDR pripadao u „hladnom ratu”?",
+  "options_bks": [
+   "zapadnim silama",
+   "Varšavskom paktu",
+   "NATO-u",
+   "nesvrstanim državama"
+  ],
+  "expl_bks": "U hladnom ratu svijet je bio podijeljen u dva bloka. DDR je pripadao istočnom bloku predvođenom Sovjetskim Savezom i bio je član Varšavskog pakta. Savezna Republika Njemačka bila je u NATO-u, sa zapadnim silama. Nesvrstane države, među njima i Jugoslavija, nisu pripadale nijednom bloku.",
+  "merksatz_de": "Im Kalten Krieg gehörte die DDR zum Warschauer Pakt."
+ },
+ {
+  "id": "G-203",
+  "q_bks": "Kako se zvao gospodarski sustav DDR-a?",
+  "options_bks": [
+   "tržišno gospodarstvo",
+   "plansko gospodarstvo",
+   "ponuda i potražnja",
+   "kapitalizam"
+  ],
+  "expl_bks": "U DDR-u je država planirala gotovo cijelo gospodarstvo: što će tvornice proizvoditi, koliko i po kojoj cijeni. Planovi su se donosili najčešće za pet godina (petoljetka). Posljedica su bile česte nestašice robe. Savezna Republika Njemačka ima socijalno tržišno gospodarstvo.",
+  "merksatz_de": "Die DDR hatte eine Planwirtschaft."
+ },
+ {
+  "id": "G-204",
+  "q_bks": "Kako su Savezna Republika Njemačka i DDR postali jedna država?",
+  "options_bks": [
+   "Savezna Republika okupirala je DDR.",
+   "Današnjih pet istočnih saveznih pokrajina pristupilo je Saveznoj Republici Njemačkoj.",
+   "Zapadne savezne pokrajine pristupile su DDR-u.",
+   "DDR je okupirao Saveznu Republiku Njemačku."
+  ],
+  "expl_bks": "Nakon prvih slobodnih izbora 1990. parlament DDR-a odlučio je pristupiti Saveznoj Republici Njemačkoj prema članku 23. Temeljnog zakona (njemački ustav). Dana 3. listopada 1990. pet istočnih pokrajina postalo je dio Savezne Republike. Nije bilo okupacije: ujedinjenje je bilo mirno i dobrovoljno.",
+  "merksatz_de": "1990 traten die östlichen Bundesländer der Bundesrepublik bei."
+ },
+ {
+  "id": "G-205",
+  "q_bks": "Pristupanjem DDR-a Saveznoj Republici Njemačkoj nove savezne pokrajine sada pripadaju i …",
+  "options_bks": [
+   "Europskoj uniji.",
+   "Varšavskom paktu.",
+   "OPEC-u.",
+   "Europskoj obrambenoj zajednici."
+  ],
+  "expl_bks": "Savezna Republika Njemačka potpisala je 1957. Rimske ugovore i od početka je bila članica Europske ekonomske zajednice (EEZ), iz koje je nastala Europska unija. Kad su istočne pokrajine 1990. pristupile Saveznoj Republici, postale su i dio te zajednice. Varšavski pakt raspušten je 1991.",
+  "merksatz_de": "Durch die Einheit gehören die neuen Bundesländer auch zur EU."
+ },
+ {
+  "id": "G-206",
+  "q_bks": "Na što podsjećaju takozvani „Stolpersteine” (kamenčići spoticanja) u Njemačkoj?",
+  "options_bks": [
+   "na poznate njemačke političare",
+   "na žrtve nacionalsocijalizma",
+   "na poginule u prometu",
+   "na poznate židovske glazbenike"
+  ],
+  "expl_bks": "„Stolpersteine” su male mjedene pločice u pločniku ispred kuća u kojima su živjeli ljudi koje su nacisti progonili, deportirali ili ubili. Na pločici su ime, godina rođenja i sudbina te osobe. Umjetnik Gunter Demnig postavlja ih od 1990-ih godina, a danas ih ima u mnogim gradovima Europe.",
+  "merksatz_de": "Stolpersteine erinnern an die Opfer des Nationalsozialismus."
+ },
+ {
+  "id": "G-207",
+  "q_bks": "U kojem je vojnom savezu DDR bio član?",
+  "options_bks": [
+   "u NATO-u",
+   "u Rajnskom savezu",
+   "u Varšavskom paktu",
+   "u Europskom savezu"
+  ],
+  "expl_bks": "Varšavski pakt bio je vojni savez Sovjetskog Saveza i socijalističkih zemalja istočne Europe. Osnovan je 1955., a DDR je bio član od početka. Zapadna Njemačka iste je godine ušla u NATO. Rajnski savez (Rheinbund) postojao je mnogo ranije, u Napoleonovo doba.",
+  "merksatz_de": "Die DDR war Mitglied im Warschauer Pakt."
+ },
+ {
+  "id": "G-208",
+  "q_bks": "Što je bila „Stasi”?",
+  "options_bks": [
+   "tajna služba u „Trećem Reichu”",
+   "poznato njemačko spomen-mjesto",
+   "tajna služba DDR-a",
+   "njemački sportski klub tijekom Drugog svjetskog rata"
+  ],
+  "expl_bks": "Stasi (Ministarstvo državne sigurnosti) bila je tajna služba i tajna policija DDR-a. Imala je desetke tisuća zaposlenih i mnogo tajnih doušnika koji su uhodili susjede, kolege, pa čak i članove obitelji. Pazite na zamku: tajna policija u „Trećem Reichu” zvala se Gestapo, a ne Stasi.",
+  "merksatz_de": "Die Stasi war der Geheimdienst der DDR."
+ },
+ {
+  "id": "G-209",
+  "q_bks": "Koji je bio grb Njemačke Demokratske Republike?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb DDR-a: čekić i šestar na crvenoj podlozi, okruženi vijencem od klasja s crno-crveno-zlatnom trakom. Čekić je simbol radnika, šestar inteligencije, a klasje seljaka. Isti se znak od 1959. nalazio i na zastavi DDR-a. Grb Savezne Republike Njemačke je crni orao.",
+  "merksatz_de": "Das DDR-Wappen zeigte Hammer, Zirkel und Ährenkranz."
+ },
+ {
+  "id": "G-210",
+  "q_bks": "Što se dogodilo 17. lipnja 1953. u DDR-u?",
+  "options_bks": [
+   "svečano pristupanje Varšavskom paktu",
+   "štrajkovi u cijeloj zemlji i narodni ustanak",
+   "1. kongres stranke SED",
+   "prvi posjet Fidela Castra"
+  ],
+  "expl_bks": "Dana 17. lipnja 1953. radnici su štrajkali u cijelom DDR-u, a iz štrajkova se razvio narodni ustanak. Ljudi su tražili niže radne norme, slobodne izbore i ostavku vlade. Sovjetska vojska ugušila je ustanak tenkovima, a mnogi su ljudi ubijeni ili uhićeni.",
+  "merksatz_de": "Am 17. Juni 1953 streikten viele Menschen in der DDR."
+ },
+ {
+  "id": "G-211",
+  "q_bks": "Koji se političar povezuje s „istočnim ugovorima” (Ostverträge)?",
+  "options_bks": [
+   "Helmut Kohl",
+   "Willy Brandt",
+   "Mihail Gorbačov",
+   "Ludwig Erhard"
+  ],
+  "expl_bks": "Willy Brandt bio je savezni kancelar od 1969. do 1974. Njegova nova istočna politika donijela je od 1970. ugovore sa Sovjetskim Savezom, Poljskom, DDR-om i Čehoslovačkom. Poznato je njegovo klečanje pred spomenikom žrtvama Varšavskoga geta 1970. Za politiku pomirenja dobio je 1971. Nobelovu nagradu za mir.",
+  "merksatz_de": "Willy Brandt steht für die Ostverträge."
+ },
+ {
+  "id": "G-212",
+  "q_bks": "Kako glasi puni naziv Njemačke?",
+  "options_bks": [
+   "Savezna Država Njemačka",
+   "Savezne Pokrajine Njemačka",
+   "Savezna Republika Njemačka",
+   "Savezni Okrug Njemačka"
+  ],
+  "expl_bks": "Puni naziv države glasi Savezna Republika Njemačka (Bundesrepublik Deutschland). Taj naziv postoji od 1949., kad je stupio na snagu Temeljni zakon (njemački ustav). „Savezna” znači da se država sastoji od saveznih pokrajina, a „republika” da na čelu države nije kralj, nego savezni predsjednik.",
+  "merksatz_de": "Der volle Name ist Bundesrepublik Deutschland."
+ },
+ {
+  "id": "G-213",
+  "q_bks": "Koliko stanovnika ima Njemačka?",
+  "options_bks": [
+   "70 milijuna",
+   "78 milijuna",
+   "84 milijuna",
+   "90 milijuna"
+  ],
+  "expl_bks": "Njemačka ima oko 84 milijuna stanovnika i država je s najviše stanovnika u Europskoj uniji. Taj se broj s vremenom malo mijenja, a u katalogu pitanja naveden je iznos od 84 milijuna. Najviše ljudi živi u saveznoj pokrajini Sjeverna Rajna-Vestfalija.",
+  "merksatz_de": "In Deutschland leben etwa 84 Millionen Menschen."
+ },
+ {
+  "id": "G-214",
+  "q_bks": "Koje boje ima njemačka zastava?",
+  "options_bks": [
+   "crno-crveno-zlatne",
+   "crveno-bijelo-crne",
+   "crno-crveno-zelene",
+   "crno-žuto-crvene"
+  ],
+  "expl_bks": "Njemačka zastava ima tri vodoravne pruge: odozgo crnu, crvenu i zlatnu. To određuje članak 22. Temeljnog zakona (njemački ustav). Boje potječu iz borbe za jedinstvo i slobodu u 19. stoljeću, npr. s Hambaškog festivala 1832. Pazite na redoslijed: crna je gore, zlatna dolje.",
+  "merksatz_de": "Die deutsche Flagge ist schwarz-rot-gold."
+ },
+ {
+  "id": "G-215",
+  "q_bks": "Tko se naziva „kancelarom njemačkog jedinstva”?",
+  "options_bks": [
+   "Gerhard Schröder",
+   "Helmut Kohl",
+   "Konrad Adenauer",
+   "Helmut Schmidt"
+  ],
+  "expl_bks": "Helmut Kohl bio je savezni kancelar od 1982. do 1998. Nakon pada Berlinskog zida zalagao se za brzo ponovno ujedinjenje Njemačke, koje je ostvareno 3. listopada 1990. Zato ga nazivaju „kancelarom njemačkog jedinstva”. Konrad Adenauer bio je prvi savezni kancelar, od 1949.",
+  "merksatz_de": "Helmut Kohl gilt als Kanzler der Deutschen Einheit."
+ },
+ {
+  "id": "G-216",
+  "q_bks": "Koji se simbol vidi u plenarnoj dvorani njemačkog Bundestaga?",
+  "options_bks": [
+   "savezni orao (Bundesadler)",
+   "zastava grada Berlina",
+   "carski orao (Reichsadler)",
+   "carska kruna (Reichskrone)"
+  ],
+  "expl_bks": "Na zidu plenarne dvorane Bundestaga (savezni parlament) visi veliki savezni orao (Bundesadler). Orao je simbol Savezne Republike Njemačke i nalazi se na državnom grbu, kao i na njemačkim kovanicama eura. Zbog njegova oblika ga u šali zovu „debela kokoš” (fette Henne).",
+  "merksatz_de": "Im Plenarsaal des Bundestages hängt der Bundesadler."
+ },
+ {
+  "id": "G-217",
+  "q_bks": "U kojem je razdoblju postojala Njemačka Demokratska Republika (DDR)?",
+  "options_bks": [
+   "od 1919. do 1927.",
+   "od 1933. do 1945.",
+   "od 1945. do 1961.",
+   "od 1949. do 1990."
+  ],
+  "expl_bks": "DDR je osnovan 7. listopada 1949. na području sovjetske okupacijske zone, nekoliko mjeseci nakon Savezne Republike Njemačke. Prestao je postojati 3. listopada 1990., kad je pristupio Saveznoj Republici. Zamka: razdoblje od 1933. do 1945. vrijeme je nacionalsocijalizma.",
+  "merksatz_de": "Die DDR gab es von 1949 bis 1990."
+ },
+ {
+  "id": "G-218",
+  "q_bks": "Koliko je saveznih pokrajina pri ponovnom ujedinjenju 1990. pristupilo Saveznoj Republici Njemačkoj?",
+  "options_bks": [
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "expl_bks": "Godine 1990. Saveznoj Republici pridružilo se pet novih saveznih pokrajina: Brandenburg, Mecklenburg-Zapadno Pomorje, Saska, Saska-Anhalt i Tiringija. Istočni Berlin spojen je sa Zapadnim Berlinom u jednu pokrajinu. Od tada Njemačka ima 16 saveznih pokrajina.",
+  "merksatz_de": "1990 kamen fünf neue Bundesländer dazu."
+ },
+ {
+  "id": "G-219",
+  "q_bks": "Savezna Republika Njemačka ima današnje granice od …",
+  "options_bks": [
+   "1933.",
+   "1949.",
+   "1971.",
+   "1990."
+  ],
+  "expl_bks": "Današnje granice Njemačka ima od ponovnog ujedinjenja 3. listopada 1990. Iste je godine Ugovor „dva plus četiri” s četiri pobjedničke sile konačno potvrdio granice, i granicu s Poljskom na rijekama Odri i Nisi. Savezna Republika osnovana je 1949., ali tada samo na zapadu.",
+  "merksatz_de": "Seit 1990 hat Deutschland seine heutigen Grenzen."
+ },
+ {
+  "id": "G-220",
+  "q_bks": "27. siječnja u Njemačkoj je državni dan sjećanja. Na što podsjeća taj dan?",
+  "options_bks": [
+   "na kraj Drugog svjetskog rata",
+   "na donošenje Temeljnog zakona",
+   "na ponovno ujedinjenje Njemačke",
+   "na žrtve nacionalsocijalizma (dan oslobođenja logora smrti Auschwitz)"
+  ],
+  "expl_bks": "Sovjetska vojska oslobodila je 27. siječnja 1945. logor smrti Auschwitz, u kojem je ubijeno više od milijun ljudi, većinom Židova. Od 1996. taj je dan u Njemačkoj Dan sjećanja na žrtve nacionalsocijalizma. Rat u Europi završio je tek 8. svibnja 1945.",
+  "merksatz_de": "Am 27. Januar denkt man an die Opfer des Nationalsozialismus."
+ },
+ {
+  "id": "G-221",
+  "q_bks": "Njemačka je članica Schengenskog sporazuma. Što to znači?",
+  "options_bks": [
+   "Nijemci mogu putovati u mnoge zemlje Europe bez kontrole putovnica.",
+   "Svi ljudi mogu ući u Njemačku bez kontrole osoba.",
+   "Nijemci mogu putovati u svaku zemlju bez kontrole putovnica.",
+   "Nijemci mogu u svakoj zemlji plaćati eurom."
+  ],
+  "expl_bks": "Schengenski sporazum potpisan je 1985. u mjestu Schengen u Luksemburgu. Među državama članicama u pravilu nema stalnih graničnih kontrola, pa se putuje bez pokazivanja putovnice. To vrijedi za mnoge, ali ne za sve europske zemlje, a osobnu iskaznicu ili putovnicu ipak treba imati uza sebe.",
+  "merksatz_de": "Schengen bedeutet: ohne Passkontrolle in viele Länder Europas reisen."
+ },
+ {
+  "id": "G-222",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options_bks": [
+   "Mađarska",
+   "Portugal",
+   "Španjolska",
+   "Švicarska"
+  ],
+  "expl_bks": "Švicarska graniči s Njemačkom na jugu, uz Bodensko jezero i rijeku Rajnu. Njemačka ima devet susjednih zemalja: Dansku, Poljsku, Češku, Austriju, Švicarsku, Francusku, Luksemburg, Belgiju i Nizozemsku. Mađarska, Portugal i Španjolska nemaju zajedničku granicu s Njemačkom.",
+  "merksatz_de": "Die Schweiz ist ein Nachbarland von Deutschland."
+ },
+ {
+  "id": "G-223",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options_bks": [
+   "Rumunjska",
+   "Bugarska",
+   "Poljska",
+   "Grčka"
+  ],
+  "expl_bks": "Poljska je istočni susjed Njemačke. Granica ide većim dijelom rijekama Odrom i Nisom, pa se zove granica Odra–Nisa (Oder-Neiße-Grenze). Rumunjska, Bugarska i Grčka nalaze se u jugoistočnoj Europi i ne graniče s Njemačkom. Za pamćenje: Njemačka ima ukupno devet susjeda.",
+  "merksatz_de": "Polen grenzt im Osten an Deutschland."
+ },
+ {
+  "id": "G-224",
+  "q_bks": "Što znači kratica EU?",
+  "options_bks": [
+   "Europäische Unternehmen (europska poduzeća)",
+   "Europäische Union (Europska unija)",
+   "Einheitliche Union (jedinstvena unija)",
+   "Euro Union (euro-unija)"
+  ],
+  "expl_bks": "EU je kratica za Europäische Union, odnosno Europsku uniju. To je zajednica europskih država koje usko surađuju u gospodarstvu i politici. Njemačka je jedna od država osnivačica: 1957. potpisala je Rimske ugovore, iz kojih se kasnije razvila Europska unija.",
+  "merksatz_de": "EU ist die Abkürzung für Europäische Union."
+ },
+ {
+  "id": "G-225",
+  "q_bks": "U kojoj drugoj zemlji velik dio stanovništva govori njemački?",
+  "options_bks": [
+   "Češka",
+   "Norveška",
+   "Španjolska",
+   "Austrija"
+  ],
+  "expl_bks": "U Austriji velika većina ljudi govori njemački kao materinski jezik. Njemački se govori i u dijelovima Švicarske, u Lihtenštajnu, Luksemburgu, istočnoj Belgiji i u Južnom Tirolu u Italiji. Češka je doduše susjedna zemlja Njemačke, ali ondje se govori češki.",
+  "merksatz_de": "Auch in Österreich spricht man Deutsch."
+ },
+ {
+  "id": "G-226",
+  "q_bks": "Koja je zastava Europske unije?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Zastava Europske unije: dvanaest zlatnih zvjezdica u krugu na plavoj podlozi. Krug zvijezda simbolizira jedinstvo, solidarnost i sklad među narodima Europe. Broj zvijezda ne ovisi o broju država članica i uvijek ostaje dvanaest.",
+  "merksatz_de": "Die EU-Flagge zeigt zwölf goldene Sterne auf Blau."
+ },
+ {
+  "id": "G-227",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options_bks": [
+   "Finska",
+   "Danska",
+   "Norveška",
+   "Švedska"
+  ],
+  "expl_bks": "Danska je jedini susjed Njemačke na sjeveru. Granica prolazi na sjeveru savezne pokrajine Schleswig-Holstein. Švedska, Norveška i Finska također su na sjeveru Europe, ali nemaju kopnenu granicu s Njemačkom; do Švedske se putuje, na primjer, trajektom preko Baltičkog mora.",
+  "merksatz_de": "Dänemark ist der nördliche Nachbar Deutschlands."
+ },
+ {
+  "id": "G-228",
+  "q_bks": "Kako se općenito naziva pristupanje DDR-a Saveznoj Republici Njemačkoj 1990. godine?",
+  "options_bks": [
+   "proširenje NATO-a na istok",
+   "proširenje EU-a na istok",
+   "ponovno ujedinjenje Njemačke",
+   "Europska zajednica"
+  ],
+  "expl_bks": "Ponovno ujedinjenje Njemačke (Wiedervereinigung) dogodilo se 3. listopada 1990., kada je DDR pristupio Saveznoj Republici Njemačkoj. Nakon 41 godine podjele Njemačka je opet postala jedna država. Zato je 3. listopada Dan njemačkog jedinstva i državni praznik.",
+  "merksatz_de": "Der Beitritt der DDR 1990 heißt Wiedervereinigung."
+ },
+ {
+  "id": "G-229",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options_bks": [
+   "Španjolska",
+   "Bugarska",
+   "Norveška",
+   "Luksemburg"
+  ],
+  "expl_bks": "Luksemburg je mala država na zapadu i graniči sa saveznim pokrajinama Porajnje-Falačka i Saarland. U Luksemburgu se uz luksemburški i francuski govori i njemački. Španjolska, Bugarska i Norveška nemaju zajedničku granicu s Njemačkom.",
+  "merksatz_de": "Luxemburg grenzt im Westen an Deutschland."
+ },
+ {
+  "id": "G-230",
+  "q_bks": "Europski parlament bira se redovito, i to svakih …",
+  "options_bks": [
+   "5 godina.",
+   "6 godina.",
+   "7 godina.",
+   "8 godina."
+  ],
+  "expl_bks": "Građani Europske unije biraju Europski parlament svakih pet godina. Prvi neposredni izbori održani su 1979. U Njemačkoj mogu glasati i građani drugih država EU-a koji ovdje žive. Nemojte to pomiješati s Bundestagom (savezni parlament), koji se bira svake četiri godine.",
+  "merksatz_de": "Das Europäische Parlament wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "G-277",
+  "q_bks": "Žena koja ima dvogodišnje dijete prijavljuje se u Njemačkoj za posao. Što je primjer diskriminacije? Ne dobije posao samo zato što …",
+  "options_bks": [
+   "ne govori engleski.",
+   "traži previsoku plaću.",
+   "nema iskustva u tom zanimanju.",
+   "je majka."
+  ],
+  "expl_bks": "Diskriminacija znači da je netko lošije tretiran zbog osobine koja nema veze s poslom. Ako žena ne dobije posao samo zato što je majka, to je nepravedno i zabranjeno. Temeljni zakon (njemački ustav) jamči ravnopravnost žena i muškaraca, a majke još posebno štiti (članak 6.). Znanje jezika ili iskustvo, naprotiv, smiju biti razlozi pri odabiru.",
+  "merksatz_de": "Eine Frau darf nicht benachteiligt werden, weil sie Mutter ist."
+ },
+ {
+  "id": "G-278",
+  "q_bks": "Muškarac u invalidskim kolicima prijavio se za posao knjigovođe. Što je primjer diskriminacije? Ne dobije posao samo zato što …",
+  "options_bks": [
+   "sjedi u invalidskim kolicima.",
+   "nema iskustva.",
+   "traži previsoku plaću.",
+   "ne govori engleski."
+  ],
+  "expl_bks": "Temeljni zakon u članku 3. kaže: nitko ne smije biti zapostavljen zbog svog invaliditeta. Knjigovođa radi za stolom i na računalu, pa invalidska kolica za taj posao nisu važna. Ako muškarca odbiju samo zbog kolica, to je diskriminacija. Nedostatak iskustva, naprotiv, smije biti razlog za odbijanje.",
+  "merksatz_de": "Niemand darf wegen einer Behinderung benachteiligt werden."
+ },
+ {
+  "id": "G-279",
+  "q_bks": "U većini zgrada s iznajmljenim stanovima u Njemačkoj postoji „kućni red” (Hausordnung). Što piše u takvom „kućnom redu”? On navodi …",
+  "options_bks": [
+   "pravila za korištenje javnog prijevoza.",
+   "sve najmoprimce u zgradi.",
+   "pravila kojih se moraju pridržavati svi stanari.",
+   "adresu najbližeg komunalnog redarstvenog ureda (Ordnungsamt)."
+  ],
+  "expl_bks": "Kućni red (Hausordnung) sadrži pravila za zajednički život u zgradi. Tu često piše kada je noćni mir (obično od 22 do 6 sati), tko i kada čisti stubište i kako se odvaja otpad. Kućni red je najčešće dio ugovora o najmu, pa ga moraju poštovati svi stanari.",
+  "merksatz_de": "Die Hausordnung regelt das Zusammenleben aller Bewohner im Haus."
+ },
+ {
+  "id": "G-280",
+  "q_bks": "Ako se u Njemačkoj želite obraniti od pogrešnog poreznog rješenja, morate …",
+  "options_bks": [
+   "ne raditi ništa.",
+   "baciti rješenje.",
+   "uložiti prigovor (Einspruch).",
+   "čekati da stigne drugo rješenje."
+  ],
+  "expl_bks": "Porezno rješenje (Steuerbescheid) šalje porezna uprava (Finanzamt). Ako u njemu postoji greška, u roku od mjesec dana možete pisanim putem ili elektronički uložiti prigovor (Einspruch). Tada porezna uprava mora ponovno provjeriti rješenje. Ako ništa ne učinite, rješenje nakon isteka roka ostaje važeće.",
+  "merksatz_de": "Gegen einen falschen Steuerbescheid legt man Einspruch ein."
+ },
+ {
+  "id": "G-281",
+  "q_bks": "Dva prijatelja žele ući u javni bazen u Njemačkoj. Obojica imaju tamnu boju kože i zbog toga ih ne puste unutra. Koje je pravo u ovoj situaciji povrijeđeno? Pravo na …",
+  "options_bks": [
+   "slobodu mišljenja",
+   "jednako postupanje",
+   "slobodu okupljanja",
+   "slobodu kretanja i nastanjivanja"
+  ],
+  "expl_bks": "Pravo na jednako postupanje znači da se prema svim ljudima mora postupati jednako. Temeljni zakon (članak 3.) kaže da nitko ne smije biti zapostavljen zbog svog porijekla ili „rase”. Zabrana ulaska u bazen samo zbog boje kože zato je diskriminacija. Opći zakon o jednakom postupanju (AGG) to zabranjuje i u svakodnevnom životu.",
+  "merksatz_de": "Wegen der Hautfarbe darf niemand benachteiligt werden."
+ },
+ {
+  "id": "G-282",
+  "q_bks": "Koji volonterski rad (Ehrenamt) moraju preuzeti njemački državljani ako ih se na to pozove?",
+  "options_bks": [
+   "trener u udruzi",
+   "pomoćnik na izborima (Wahlhelfer)",
+   "nadzor u knjižnici",
+   "učitelj"
+  ],
+  "expl_bks": "Pomoćnici na izborima (Wahlhelfer) broje glasove i paze da izbori na biralištu teku ispravno. Za to je potrebno mnogo ljudi. Ako općina ne nađe dovoljno dobrovoljaca, može pozvati građane s biračkim pravom, a oni smiju odbiti samo iz važnog razloga, na primjer zbog bolesti. Za taj rad dobiva se mala naknada.",
+  "merksatz_de": "Wahlhelfer ist ein Ehrenamt, das man übernehmen muss."
+ },
+ {
+  "id": "G-283",
+  "q_bks": "Što učinite ako od nekog njemačkog ureda dobijete pogrešan račun?",
+  "options_bks": [
+   "Ostavim račun po strani.",
+   "Uložim prigovor (Widerspruch) tom uredu.",
+   "Pošaljem račun natrag uredu.",
+   "S računom odem u poreznu upravu (Finanzamt)."
+  ],
+  "expl_bks": "Protiv pogrešne odluke ili računa nekog ureda možete uložiti prigovor (Widerspruch). Prigovor se šalje pisanim putem istom uredu, obično u roku od mjesec dana. Ured tada mora još jednom provjeriti svoju odluku. Ako račun samo ignorirate ili ga vratite bez objašnjenja, on ostaje važeći.",
+  "merksatz_de": "Gegen einen falschen Bescheid einer Behörde legt man Widerspruch ein."
+ },
+ {
+  "id": "G-284",
+  "q_bks": "Ono što čovjek mora znati za posao ubuduće će se vrlo brzo mijenjati. Što se može učiniti?",
+  "options_bks": [
+   "Svejedno je što se uči.",
+   "Odrasli moraju i nakon završenog obrazovanja stalno dalje učiti.",
+   "Djeca u školi nauče sve što je važno za posao. Nakon škole ne treba dalje učiti.",
+   "Svi moraju ranije prestati raditi jer se sve mijenja."
+  ],
+  "expl_bks": "Tehnika i način rada stalno se mijenjaju, na primjer zbog računala i digitalizacije. Zato je važno učiti cijeli život (cjeloživotno učenje). U Njemačkoj za to postoje tečajevi usavršavanja (Weiterbildung), npr. na pučkim učilištima (Volkshochschule). Agencija za rad (Agentur für Arbeit) pod određenim uvjetima može pomoći u njihovu financiranju.",
+  "merksatz_de": "Auch Erwachsene müssen ihr ganzes Leben lang weiterlernen."
+ },
+ {
+  "id": "G-285",
+  "q_bks": "Gospođa Frost radi kao stalno zaposlena djelatnica u jednom uredu. Što ne mora plaćati iz svoje plaće?",
+  "options_bks": [
+   "porez na plaću (Lohnsteuer)",
+   "doprinose za osiguranje za slučaj nezaposlenosti",
+   "doprinose za mirovinsko i zdravstveno osiguranje",
+   "porez na dodanu vrijednost (Umsatzsteuer)"
+  ],
+  "expl_bks": "Porez na dodanu vrijednost (Umsatzsteuer, poznat i kao PDV) ne plaća se iz plaće. Njega obračunavaju poduzeća i obrtnici na robu i usluge koje prodaju. Kupci ga plaćaju samo neizravno, u cijeni proizvoda. Porez na plaću i doprinose za socijalno osiguranje poslodavac, naprotiv, odbija izravno od plaće.",
+  "merksatz_de": "Die Umsatzsteuer wird nicht vom Gehalt abgezogen."
+ },
+ {
+  "id": "G-286",
+  "q_bks": "Koja organizacija u poduzeću pomaže zaposlenicima kod problema s poslodavcem?",
+  "options_bks": [
+   "radničko vijeće (Betriebsrat)",
+   "porezni revizor (Betriebsprüfer)",
+   "skupina u poduzeću (Betriebsgruppe)",
+   "uprava poduzeća (Betriebsmanagement)"
+  ],
+  "expl_bks": "Radničko vijeće (Betriebsrat) biraju zaposlenici iz svojih redova. Ono zastupa njihove interese prema poslodavcu, na primjer kod radnog vremena, otkaza ili sukoba na poslu. Prije svakog otkaza poslodavac mora saslušati radničko vijeće. Ono se može osnovati u poduzećima s najmanje pet stalnih zaposlenika.",
+  "merksatz_de": "Der Betriebsrat vertritt die Interessen der Arbeitnehmer im Betrieb."
+ },
+ {
+  "id": "G-287",
+  "q_bks": "Želite prekinuti radni odnos s nekom firmom u Njemačkoj. Na što morate paziti?",
+  "options_bks": [
+   "isplate plaće",
+   "radno vrijeme",
+   "otkazni rok",
+   "obvezno osiguranje"
+  ],
+  "expl_bks": "Otkazni rok je vrijeme između predaje otkaza i posljednjeg radnog dana. Po zakonu za zaposlenike obično iznosi četiri tjedna, do 15. u mjesecu ili do kraja mjeseca, a ugovor o radu ili kolektivni ugovor mogu odrediti i drukčije. Otkaz mora biti pisan i vlastoručno potpisan; e-mail ili SMS nisu dovoljni.",
+  "merksatz_de": "Wer kündigt, muss die Kündigungsfrist beachten."
+ },
+ {
+  "id": "G-288",
+  "q_bks": "Na čemu se temelji posebna odgovornost Njemačke prema Izraelu?",
+  "options_bks": [
+   "na članstvu u Europskoj uniji (EU)",
+   "na nacionalsocijalističkim zločinima nad Židovima",
+   "na Temeljnom zakonu Savezne Republike Njemačke",
+   "na kršćanskoj tradiciji"
+  ],
+  "expl_bks": "Između 1933. i 1945. nacionalsocijalistički režim progonio je i ubio oko šest milijuna europskih Židova (holokaust). Iz te povijesti proizlazi posebna odgovornost Njemačke prema Židovima i prema državi Izrael, osnovanoj 1948. Diplomatski odnosi između dviju država postoje od 1965., a borba protiv antisemitizma u Njemačkoj je posebno važna.",
+  "merksatz_de": "Wegen des Holocausts hat Deutschland eine besondere Verantwortung für Israel."
+ },
+ {
+  "id": "G-289",
+  "q_bks": "Muškarac tamne boje kože prijavljuje se za posao konobara u jednom restoranu u Njemačkoj. Što je primjer diskriminacije? Ne dobije posao samo zato što …",
+  "options_bks": [
+   "je njegovo znanje njemačkog preslabo.",
+   "traži previsoku plaću.",
+   "ima tamnu kožu.",
+   "nema iskustva u tom poslu."
+  ],
+  "expl_bks": "Boja kože nema nikakve veze s time može li netko dobro raditi kao konobar. Ako poslodavac nekoga odbije samo zbog boje kože, to je diskriminacija. Temeljni zakon (članak 3.) i Opći zakon o jednakom postupanju (AGG) to zabranjuju. Znanje jezika i iskustvo, naprotiv, smiju biti važni pri odabiru.",
+  "merksatz_de": "Eine Absage nur wegen der Hautfarbe ist Diskriminierung."
+ },
+ {
+  "id": "G-290",
+  "q_bks": "U Njemačkoj ste kupili televizor. Kod kuće ga raspakirate, ali ne radi. Televizor je pokvaren. Što možete učiniti?",
+  "options_bks": [
+   "napisati prijavu (Anzeige)",
+   "uložiti reklamaciju za televizor",
+   "bez pitanja zamijeniti uređaj",
+   "produžiti jamstvo (garanciju)"
+  ],
+  "expl_bks": "Ako novi uređaj ne radi, možete ga reklamirati, tj. prijaviti kvar trgovini u kojoj ste ga kupili. Po zakonu prodavač u Njemačkoj dvije godine odgovara za nedostatke (Gewährleistung). Trgovina tada mora popraviti uređaj ili dati novi. Sačuvajte račun, jer on dokazuje kupnju.",
+  "merksatz_de": "Ein kaputtes neues Gerät kann man im Geschäft reklamieren."
+ },
+ {
+  "id": "G-291",
+  "q_bks": "Zašto u Njemačkoj u poreznoj prijavi treba navesti pripada li se nekoj crkvi ili ne? Zato što …",
+  "options_bks": [
+   "postoji crkveni porez koji je vezan uz porez na dohodak i porez na plaću.",
+   "je to važno za statistiku u Njemačkoj.",
+   "se plaća više poreza ako se ne pripada nijednoj crkvi.",
+   "je crkva odgovorna za poreznu prijavu."
+  ],
+  "expl_bks": "Članovi velikih crkava, npr. katoličke i evangeličke, plaćaju crkveni porez. On iznosi 8 % ili 9 % poreza na dohodak, odnosno poreza na plaću, ovisno o saveznoj pokrajini. Porezna uprava (Finanzamt) ga ubire za crkve i zato mora znati pripada li netko nekoj crkvi. Tko izađe iz crkve, ne plaća crkveni porez.",
+  "merksatz_de": "Kirchenmitglieder zahlen Kirchensteuer, das Finanzamt zieht sie ein."
+ },
+ {
+  "id": "G-292",
+  "q_bks": "Ljudi u Njemačkoj žive prema načelu vjerske tolerancije. Što to znači?",
+  "options_bks": [
+   "Ne smiju se graditi džamije.",
+   "Svi ljudi vjeruju u Boga.",
+   "Svatko može vjerovati u što želi.",
+   "Država odlučuje u kojeg Boga ljudi vjeruju."
+  ],
+  "expl_bks": "Vjerska tolerancija znači da poštujemo vjeru drugih ljudi. Temeljni zakon (članak 4.) jamči slobodu vjere i savjesti: svatko smije slobodno izabrati svoju vjeru, promijeniti je ili ne vjerovati ni u što. Država ne propisuje vjeru, pa u Njemačkoj postoje crkve, džamije, sinagoge i hramovi.",
+  "merksatz_de": "Religiöse Toleranz: Jeder darf glauben, was er möchte."
+ },
+ {
+  "id": "G-293",
+  "q_bks": "Koji je običaj u Njemačkoj za Uskrs?",
+  "options_bks": [
+   "stavljati bundeve pred vrata",
+   "kititi jelku",
+   "bojiti jaja",
+   "ispaljivati rakete u zrak"
+  ],
+  "expl_bks": "Za Uskrs se u Njemačkoj jaja boje i ukrašavaju, slično kao i u našim krajevima. Djeci se kaže da šarena jaja i slatkiše donosi uskrsni zec (Osterhase) i skriva ih u vrtu ili stanu. Bundeve su običaj za Noć vještica (Halloween), jelka za Božić, a rakete za doček Nove godine.",
+  "merksatz_de": "An Ostern bemalt man Eier."
+ },
+ {
+  "id": "G-294",
+  "q_bks": "Duhovi (Pfingsten) su …",
+  "options_bks": [
+   "kršćanski blagdan.",
+   "njemački dan sjećanja.",
+   "međunarodni dan žalosti.",
+   "bavarski običaj."
+  ],
+  "expl_bks": "Duhovi (Pfingsten) su kršćanski blagdan sedam tjedana nakon Uskrsa. Kršćani se tada sjećaju da je Duh Sveti sišao na apostole. Duhovski ponedjeljak (Pfingstmontag) u cijeloj je Njemačkoj zakonski praznik, pa većina ljudi tada ne radi.",
+  "merksatz_de": "Pfingsten ist ein christlicher Feiertag."
+ },
+ {
+  "id": "G-295",
+  "q_bks": "Koja je religija oblikovala europsku i njemačku kulturu?",
+  "options_bks": [
+   "hinduizam",
+   "kršćanstvo",
+   "budizam",
+   "islam"
+  ],
+  "expl_bks": "Kršćanstvo već više od tisuću godina oblikuje Europu i Njemačku. To se vidi u crkvama u gotovo svakom mjestu, u blagdanima poput Božića i Uskrsa te u tome što je nedjelja slobodan dan. Danas u Njemačkoj žive i ljudi drugih vjera te ljudi bez vjere.",
+  "merksatz_de": "Das Christentum hat die Kultur in Europa stark geprägt."
+ },
+ {
+  "id": "G-296",
+  "q_bks": "U Njemačkoj se posljednja četiri tjedna prije Božića nazivaju …",
+  "options_bks": [
+   "Dan pokore i molitve (Buß- und Bettag).",
+   "Dan zahvalnosti za plodove zemlje (Erntedankfest).",
+   "adventsko vrijeme (Adventszeit).",
+   "Svi sveti (Allerheiligen)."
+  ],
+  "expl_bks": "Adventsko vrijeme (došašće) počinje četvrtom nedjeljom prije Božića. Mnoge obitelji tada imaju adventski vijenac s četiri svijeće i svake nedjelje zapale jednu više. Djeca često dobiju adventski kalendar s 24 prozorčića, po jedan za svaki dan do Badnjaka.",
+  "merksatz_de": "Die vier Wochen vor Weihnachten heißen Adventszeit."
+ },
+ {
+  "id": "G-297",
+  "q_bks": "Iz koje je zemlje u Njemačku došlo najviše migranata?",
+  "options_bks": [
+   "Italija",
+   "Poljska",
+   "Maroko",
+   "Turska"
+  ],
+  "expl_bks": "Najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske. Mnogi su došli kao gastarbajteri nakon sporazuma o zapošljavanju iz 1961., a kasnije su doveli i svoje obitelji. Danas u Njemačkoj žive već treća i četvrta generacija tih obitelji.",
+  "merksatz_de": "Die meisten Migranten in Deutschland stammen aus der Türkei."
+ },
+ {
+  "id": "G-298",
+  "q_bks": "U DDR-u su živjeli uglavnom migranti iz …",
+  "options_bks": [
+   "Vijetnama, Poljske, Mozambika.",
+   "Francuske, Rumunjske, Somalije.",
+   "Čilea, Mađarske, Zimbabvea.",
+   "Sjeverne Koreje, Meksika, Egipta."
+  ],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) sklapala je ugovore o radu s drugim socijalističkim zemljama. Zato su onamo kao ugovorni radnici (Vertragsarbeiter) dolazili ljudi uglavnom iz Vijetnama, Poljske i Mozambika. Najčešće su živjeli u zasebnim domovima i smjeli su ostati samo nekoliko godina.",
+  "merksatz_de": "In der DDR arbeiteten viele Vertragsarbeiter aus Vietnam, Polen und Mosambik."
+ },
+ {
+  "id": "G-299",
+  "q_bks": "Strane radnike koje je Savezna Republika Njemačka 50-ih i 60-ih godina dovela na rad nazivali su …",
+  "options_bks": [
+   "radnicima na crno (Schwarzarbeiter).",
+   "gastarbajterima (Gastarbeiter).",
+   "radnicima preko agencije (Zeitarbeiter).",
+   "smjenskim radnicima (Schichtarbeiter)."
+  ],
+  "expl_bks": "Riječ „Gastarbeiter” znači „radnik gost”. Država je mislila da će ti radnici ostati samo kratko i onda se vratiti kući. Mnogi su ipak ostali i doveli obitelji. Od 1968. dolazili su i radnici iz Jugoslavije, pa je riječ „gastarbajter” ušla i u naš jezik.",
+  "merksatz_de": "Angeworbene ausländische Arbeitskräfte nannte man damals Gastarbeiter."
+ },
+ {
+  "id": "G-300",
+  "q_bks": "Iz koje su zemlje došli prvi gastarbajteri u Saveznu Republiku Njemačku?",
+  "options_bks": [
+   "Italija",
+   "Španjolska",
+   "Portugal",
+   "Turska"
+  ],
+  "expl_bks": "Prvi sporazum o zapošljavanju stranih radnika Savezna Republika Njemačka sklopila je 1955. s Italijom. Kasnije su slijedili sporazumi sa Španjolskom i Grčkom (1960.), Turskom (1961.), Portugalom (1964.) i Jugoslavijom (1968.). Talijani su tako bili prvi gastarbajteri.",
+  "merksatz_de": "Die ersten Gastarbeiter kamen 1955 aus Italien."
+ },
+ {
+  "id": "BW-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Baden-Württemberg?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Baden-Württemberga: tri crna lava jedan ispod drugoga na zlatnožutom štitu, iznad štita kruna. Lavovi potječu iz starog grba švapske vladarske obitelji Staufen (Hohenstaufen). Pomoć za pamćenje: pokrajina je nastala 1952. spajanjem triju pokrajina – a na grbu su tri lava.",
+  "merksatz_de": "Im Wappen von Baden-Württemberg sind drei schwarze Löwen."
+ },
+ {
+  "id": "BW-02",
+  "q_bks": "Koji je okrug (Landkreis) u Baden-Württembergu?",
+  "options_bks": [
+   "Mecklenburgische Seenplatte",
+   "Neckar-Odenwald-Kreis",
+   "Nordfriesland",
+   "Altötting"
+  ],
+  "expl_bks": "Neckar-Odenwald-Kreis leži na sjeveru Baden-Württemberga, između rijeke Neckar i gorja Odenwald. Sjedište okruga je grad Mosbach. Ostali okruzi nalaze se u drugim pokrajinama: Mecklenburgische Seenplatte u Mecklenburgu-Zapadnom Pomorju, Nordfriesland u Schleswig-Holsteinu, a Altötting u Bavarskoj.",
+  "merksatz_de": "Der Neckar-Odenwald-Kreis liegt in Baden-Württemberg."
+ },
+ {
+  "id": "BW-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Baden-Württembergu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) u Baden-Württembergu bira se svakih pet godina. Landtag donosi pokrajinske zakone, na primjer o školama i policiji, i bira ministra predsjednika (Ministerpräsident). Pazite na zamku: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Der Landtag in Baden-Württemberg wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "BW-04",
+  "q_bks": "Od koje dobi se u Baden-Württembergu smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "Na lokalnim izborima (Kommunalwahlen) u Baden-Württembergu smije se glasati od 16. godine. Tada se biraju npr. općinsko ili gradsko vijeće i skupština okruga. Pravo glasa imaju i državljani drugih zemalja Europske unije koji ondje žive. Za Bundestag se glasa tek od 18. godine.",
+  "merksatz_de": "Bei Kommunalwahlen in Baden-Württemberg darf man ab 16 wählen."
+ },
+ {
+  "id": "BW-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Baden-Württemberga?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "crno-zlatna",
+   "bijelo-plava",
+   "zeleno-bijelo-crvena"
+  ],
+  "expl_bks": "Zastava Baden-Württemberga ima dvije vodoravne pruge: gore crnu, dolje zlatnu (žutu). Iste boje vide se i na pokrajinskom grbu, gdje stoje tri crna lava na zlatnoj podlozi. Pazite na zamku: bijelo-plava je zastava Bavarske.",
+  "merksatz_de": "Die Landesflagge von Baden-Württemberg ist schwarz-gold."
+ },
+ {
+  "id": "BW-06",
+  "q_bks": "Gdje se u Baden-Württembergu možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u centru za zaštitu potrošača (Verbraucherzentrale)",
+   "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)",
+   "u crkvama"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) nudi informacije o politici, povijesti i demokraciji. Ima knjižice, predavanja, seminare i web-stranicu, a mnogo toga je besplatno. Njegov je zadatak informirati neutralno, bez stranačke politike. Takav centar postoji u svakoj saveznoj pokrajini.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung informiert über politische Themen."
+ },
+ {
+  "id": "BW-07",
+  "q_bks": "Glavni grad pokrajine Baden-Württemberg zove se …",
+  "options_bks": [
+   "Heidelberg.",
+   "Stuttgart.",
+   "Karlsruhe.",
+   "Mannheim."
+  ],
+  "expl_bks": "Glavni grad Baden-Württemberga je Stuttgart. Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Stuttgart je poznat po automobilskoj industriji, npr. po tvrtkama Mercedes-Benz i Porsche. Zamka: u Karlsruheu je Savezni ustavni sud, ali Karlsruhe nije glavni grad pokrajine.",
+  "merksatz_de": "Stuttgart ist die Landeshauptstadt von Baden-Württemberg."
+ },
+ {
+  "id": "BW-08",
+  "q_bks": "Koja savezna pokrajina je Baden-Württemberg?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Baden-Württemberg krajnji jugozapad Njemačke, uz granicu s Francuskom i Švicarskom. Na zapadu ga od Francuske dijeli rijeka Rajna, a na jugu leži Bodensko jezero. Istočni susjed Baden-Württemberga je Bavarska.",
+  "merksatz_de": "Baden-Württemberg liegt im Südwesten Deutschlands."
+ },
+ {
+  "id": "BW-09",
+  "q_bks": "Kako se zove šef vlade u Baden-Württembergu?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "U Baden-Württembergu, kao i u većini saveznih pokrajina, na čelu pokrajinske vlade stoji ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) nakon pokrajinskih izbora. Gradonačelnik (Bürgermeister) vodi samo jedan grad ili općinu, a naziv „premijer” za pokrajine u Njemačkoj se ne koristi.",
+  "merksatz_de": "Der Regierungschef in Baden-Württemberg heißt Ministerpräsident."
+ },
+ {
+  "id": "BW-10",
+  "q_bks": "Kojeg ministra Baden-Württemberg nema?",
+  "options_bks": [
+   "ministar financija",
+   "ministar pravosuđa",
+   "ministar unutarnjih poslova",
+   "ministar vanjskih poslova"
+  ],
+  "expl_bks": "Odnosi s drugim državama zadatak su savezne države, a ne pokrajina (Temeljni zakon, članak 32.). Zato ministar vanjskih poslova postoji samo u saveznoj vladi. Pokrajine poput Baden-Württemberga imaju vlastite ministre, npr. za financije, pravosuđe, unutarnje poslove i škole, jer za ta područja i same odgovaraju.",
+  "merksatz_de": "Außenpolitik ist Sache des Bundes, nicht der Bundesländer."
+ },
+ {
+  "id": "BY-01",
+  "q_bks": "Koji grb pripada slobodnoj državi (Freistaat) Bavarskoj?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Bavarske: bijelo-plavi rombovi (romboidni uzorak), iznad štita kruna. Taj uzorak Bavarci zovu „Rauten” i vide ga posvuda, npr. na zastavama i suvenirima. Bavarska se naziva slobodna država (Freistaat), što je samo stari njemački naziv za republiku, a ne posebna vrsta države.",
+  "merksatz_de": "Das bayerische Wappen zeigt weiß-blaue Rauten."
+ },
+ {
+  "id": "BY-02",
+  "q_bks": "Koji je okrug (Landkreis) u Bavarskoj?",
+  "options_bks": [
+   "Prignitz",
+   "Rhein-Sieg-Kreis",
+   "Nordfriesland",
+   "Altötting"
+  ],
+  "expl_bks": "Altötting je okrug (Landkreis) na jugoistoku Bavarske, uz granicu s Austrijom. Grad Altötting poznato je katoličko hodočasničko mjesto s Crnom Gospom u Kapelici milosti (Gnadenkapelle). Ostali okruzi su u drugim pokrajinama: Prignitz u Brandenburgu, Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji, Nordfriesland u Schleswig-Holsteinu.",
+  "merksatz_de": "Altötting ist ein Landkreis in Bayern."
+ },
+ {
+  "id": "BY-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Bavarskoj?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Bavarski Landtag (pokrajinski parlament) bira se svakih pet godina. Zasjeda u palači Maximilianeum u Münchenu. Landtag donosi pokrajinske zakone i bira ministra predsjednika (Ministerpräsident). Ne zamijenite to s Bundestagom (savezni parlament), koji se bira na četiri godine.",
+  "merksatz_de": "Der Bayerische Landtag wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "BY-04",
+  "q_bks": "Od koje dobi se u Bavarskoj smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Bavarskoj se na lokalnim izborima (Kommunalwahlen) smije glasati tek od 18. godine. Tada se biraju npr. gradonačelnik (Bürgermeister), općinsko ili gradsko vijeće i okružni poglavar (Landrat). Pazite: u nekim drugim pokrajinama, npr. u Baden-Württembergu, na lokalnim izborima glasa se već sa 16 godina.",
+  "merksatz_de": "In Bayern darf man ab 18 Jahren bei Kommunalwahlen wählen."
+ },
+ {
+  "id": "BY-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Bavarske?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "bijelo-plava",
+   "zeleno-bijelo-crvena",
+   "crno-žuta"
+  ],
+  "expl_bks": "Bavarske boje su bijela i plava. Postoje dvije pokrajinske zastave: jedna s dvije vodoravne pruge, gore bijelom i dolje plavom, a druga s bijelo-plavim rombovima. Te boje vide se posvuda, na primjer na grbu ili za vrijeme Oktoberfesta u Münchenu.",
+  "merksatz_de": "Die Farben von Bayern sind Weiß und Blau."
+ },
+ {
+  "id": "BY-06",
+  "q_bks": "Gdje se u Bavarskoj možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)",
+   "u centru za zaštitu potrošača (Verbraucherzentrale)",
+   "u crkvama"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) informira građane o politici, povijesti i demokraciji. U Bavarskoj se nalazi u Münchenu. Nudi besplatne brošure, predavanja i informacije na internetu, a mora ostati neutralan i ne smije raditi za neku stranku.",
+  "merksatz_de": "Politische Informationen bekommt man bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "BY-07",
+  "q_bks": "Glavni grad pokrajine Bavarske zove se …",
+  "options_bks": [
+   "Ingolstadt.",
+   "Regensburg.",
+   "Nürnberg.",
+   "München."
+  ],
+  "expl_bks": "München je glavni grad Bavarske i najveći grad u pokrajini. Ondje se nalaze bavarski Landtag (pokrajinski parlament) i pokrajinska vlada. Grad je poznat po Oktoberfestu, najvećoj pučkoj svetkovini na svijetu. Nürnberg je drugi po veličini bavarski grad, ali nije glavni grad.",
+  "merksatz_de": "München ist die Hauptstadt des Freistaats Bayern."
+ },
+ {
+  "id": "BY-08",
+  "q_bks": "Koja savezna pokrajina je Bavarska?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Bavarska velika pokrajina na jugoistoku Njemačke, uz granicu s Austrijom i Češkom. Po površini je najveća savezna pokrajina. Na jugu se nalaze Alpe s najvišim njemačkim vrhom, Zugspitze (2962 m).",
+  "merksatz_de": "Bayern ist das größte Bundesland und liegt im Südosten."
+ },
+ {
+  "id": "BY-09",
+  "q_bks": "Kako se zove šef vlade u Bavarskoj?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Bavarsku pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega nakon izbora bira bavarski Landtag (pokrajinski parlament), a on zatim, uz suglasnost Landtaga, imenuje ministre. Nazivi „premijer” i „prvi ministar” za pokrajine se u Njemačkoj ne koriste, a gradonačelnik (Bürgermeister) vodi samo grad ili općinu.",
+  "merksatz_de": "In Bayern leitet der Ministerpräsident die Staatsregierung."
+ },
+ {
+  "id": "BY-10",
+  "q_bks": "Kojeg ministra Bavarska nema?",
+  "options_bks": [
+   "ministar pravosuđa",
+   "ministar vanjskih poslova",
+   "ministar financija",
+   "ministar unutarnjih poslova"
+  ],
+  "expl_bks": "Odnose s drugim državama vodi savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministar vanjskih poslova postoji samo u saveznoj vladi u Berlinu. Bavarska ima vlastite ministre za pravosuđe, financije i unutarnje poslove; ondje se zovu državni ministri (Staatsminister).",
+  "merksatz_de": "Bayern hat keinen Außenminister, das ist Aufgabe des Bundes."
+ },
+ {
+  "id": "BE-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Berlin?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Berlina: crni medvjed s crvenim jezikom na bijelom štitu, iznad štita kruna. Medvjed je simbol grada već stoljećima i nalazi se i na berlinskoj zastavi, crveno-bijelo-crvenoj. Lako je zapamtiti: Berlin = medvjed (Bär).",
+  "merksatz_de": "Im Berliner Wappen ist ein schwarzer Bär."
+ },
+ {
+  "id": "BE-02",
+  "q_bks": "Koji je gradski kotar (Bezirk) Berlina?",
+  "options_bks": [
+   "Altona",
+   "Prignitz",
+   "Pankow",
+   "Mecklenburgische Seenplatte"
+  ],
+  "expl_bks": "Berlin je podijeljen na dvanaest gradskih kotara (Bezirke), a Pankow je jedan od njih, na sjeveru grada. Do 1990. Pankow je pripadao Istočnom Berlinu. Altona je gradski kotar Hamburga, Prignitz okrug u Brandenburgu, a Mecklenburgische Seenplatte okrug u Mecklenburgu-Zapadnom Pomorju.",
+  "merksatz_de": "Pankow ist einer der zwölf Bezirke von Berlin."
+ },
+ {
+  "id": "BE-03",
+  "q_bks": "Na koliko se godina bira pokrajinski parlament u Berlinu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Pokrajinski parlament Berlina zove se Abgeordnetenhaus (Zastupnički dom). Građani Berlina biraju ga na pet godina, kao i parlamente u većini drugih saveznih pokrajina. Za usporedbu: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Das Berliner Abgeordnetenhaus wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "BE-04",
+  "q_bks": "S koliko godina se u Berlinu smije glasati na lokalnim izborima (izborima za skupštinu gradskog okruga, Bezirksverordnetenversammlung)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "Berlin je podijeljen na 12 gradskih okruga (Bezirke). Svaki okrug ima svoju skupštinu, Bezirksverordnetenversammlung (BVV). Na izborima za te skupštine smije se glasati već sa 16 godina. Glasati mogu i građani drugih zemalja Europske unije koji žive u Berlinu.",
+  "merksatz_de": "In Berlin wählt man die Bezirksverordnetenversammlung ab 16 Jahren."
+ },
+ {
+  "id": "BE-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Berlin?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "bijelo-crvena",
+   "zeleno-bijelo-crvena",
+   "crno-zlatna"
+  ],
+  "expl_bks": "Zastava Berlina je bijelo-crvena: gore i dolje ima po jednu crvenu prugu, a u sredini široku bijelu prugu s crnim medvjedom. Medvjed je simbol Berlina i nalazi se i na berlinskom grbu.",
+  "merksatz_de": "Berlins Flagge ist weiß-rot und zeigt einen Bären."
+ },
+ {
+  "id": "BE-06",
+  "q_bks": "Gdje se u Berlinu možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u Pokrajinskom centru za političko obrazovanje"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) postoji u svakoj saveznoj pokrajini. Nudi besplatne brošure, predavanja i seminare o demokraciji, politici i povijesti. Neutralan je i ne radi ni za jednu stranku. Savjetovalište za potrošače pomaže kod ugovora i kupovine, a ne kod političkih tema.",
+  "merksatz_de": "Politische Infos gibt es bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "BE-07",
+  "q_bks": "Koja savezna pokrajina je grad-pokrajina (Stadtstaat)?",
+  "options_bks": [
+   "Berlin",
+   "Saarland",
+   "Brandenburg",
+   "Hessen"
+  ],
+  "expl_bks": "Grad-pokrajina (Stadtstaat) je grad koji je ujedno i savezna pokrajina. U Njemačkoj postoje tri takve: Berlin, Hamburg i Bremen. Saarland, Brandenburg i Hessen su teritorijalne pokrajine (Flächenländer) s mnogo gradova i općina. Berlin je uz to i glavni grad Njemačke.",
+  "merksatz_de": "Berlin ist Stadt und Bundesland zugleich."
+ },
+ {
+  "id": "BE-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Berlin?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Berlin mali grad-pokrajina na istoku, potpuno okružen Brandenburgom. Berlin je glavni grad Njemačke i istodobno savezna pokrajina. Na karti ga prepoznajete kao malu površinu u sredini Brandenburga, nedaleko od granice s Poljskom.",
+  "merksatz_de": "Berlin liegt mitten in Brandenburg."
+ },
+ {
+  "id": "BE-09",
+  "q_bks": "Kako se zove šef vlade u Berlinu?",
+  "options_bks": [
+   "ministar predsjednik (Ministerpräsident)",
+   "gradonačelnik (Oberbürgermeister)",
+   "predsjednik Senata (Präsident des Senates)",
+   "vladajući gradonačelnik (Regierender Bürgermeister)"
+  ],
+  "expl_bks": "Berlin je istodobno grad i savezna pokrajina. Njegovu vladu čini Senat, a na čelu Senata je vladajući gradonačelnik (Regierender Bürgermeister). Naziv „Ministerpräsident” koristi se u većini drugih pokrajina, a „Präsident des Senates” u Bremenu.",
+  "merksatz_de": "Berlin wird vom Regierenden Bürgermeister regiert."
+ },
+ {
+  "id": "BE-10",
+  "q_bks": "Kojeg senatora Berlin nema?",
+  "options_bks": [
+   "senator za financije (Finanzsenator)",
+   "senator za unutarnje poslove (Innensenator)",
+   "senator za vanjske odnose (Senator für Außenbeziehungen)",
+   "senator za pravosuđe (Justizsenator)"
+  ],
+  "expl_bks": "Članovi berlinske vlade, Senata, zovu se senatori. Berlin ima senatore za financije, unutarnje poslove i pravosuđe, jer su to i zadaci pokrajine. Odnosi s drugim državama zadatak su savezne države (članak 32. Temeljnog zakona), pa Berlin nema senatora za vanjske odnose.",
+  "merksatz_de": "Außenpolitik macht der Bund, nicht das Land Berlin."
+ },
+ {
+  "id": "BB-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Brandenburg?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Brandenburga: crveni orao na bijelom štitu. Crveni orao već je stoljećima simbol Brandenburga. Isti grb nalazi se i u sredini crveno-bijele pokrajinske zastave. Pazite da ga ne zamijenite s Berlinom, čiji grb pokazuje medvjeda.",
+  "merksatz_de": "Brandenburgs Wappen zeigt einen roten Adler."
+ },
+ {
+  "id": "BB-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Brandenburgu?",
+  "options_bks": [
+   "Prignitz",
+   "Rhein-Sieg-Kreis",
+   "Vogtlandkreis",
+   "Amberg-Sulzbach"
+  ],
+  "expl_bks": "Prignitz je okrug (Landkreis) na sjeverozapadu Brandenburga, uz rijeku Elbu. Ostali okruzi nalaze se u drugim saveznim pokrajinama: Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji, Vogtlandkreis u Saskoj, a Amberg-Sulzbach u Bavarskoj. Brandenburg ukupno ima 14 okruga.",
+  "merksatz_de": "Prignitz ist ein Landkreis in Brandenburg."
+ },
+ {
+  "id": "BB-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Brandenburgu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Brandenburga bira se na pet godina. Sjedište mu je u glavnom gradu Potsdamu. Pet godina traje mandat i u većini drugih saveznih pokrajina, dok se Bundestag (savezni parlament) bira na četiri godine.",
+  "merksatz_de": "Der Landtag in Brandenburg wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "BB-04",
+  "q_bks": "S koliko godina se u Brandenburgu smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Brandenburgu se na lokalnim izborima (za općinska i gradska vijeća te okružne skupštine) smije glasati već sa 16 godina. Brandenburg je i jedna od pokrajina u kojima 16-godišnjaci biraju Landtag (pokrajinski parlament). Na izborima za Bundestag granica je 18 godina.",
+  "merksatz_de": "Kommunalwahl in Brandenburg: Man darf ab 16 Jahren wählen."
+ },
+ {
+  "id": "BB-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Brandenburg?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "crveno-bijela",
+   "zeleno-bijelo-crvena",
+   "crno-žuta"
+  ],
+  "expl_bks": "Zastava Brandenburga je crveno-bijela: gore je crvena, a dolje bijela pruga. U sredini se često nalazi pokrajinski grb s crvenim orlom. Boje su preuzete upravo iz grba – crveni orao na bijelom štitu.",
+  "merksatz_de": "Die Flagge von Brandenburg ist rot-weiß."
+ },
+ {
+  "id": "BB-06",
+  "q_bks": "Gdje se u Brandenburgu možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "Informacije o politici u Brandenburgu nudi Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Potsdamu. Tamo možete dobiti besplatne publikacije i posjetiti predavanja o izborima, demokraciji i povijesti. Komunalni redarstveni ured (Ordnungsamt) brine se o javnom redu, a ne o političkom obrazovanju.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung informiert neutral über Politik."
+ },
+ {
+  "id": "BB-07",
+  "q_bks": "Glavni grad savezne pokrajine Brandenburg zove se …",
+  "options_bks": [
+   "Potsdam.",
+   "Cottbus.",
+   "Brandenburg.",
+   "Frankfurt na Odri."
+  ],
+  "expl_bks": "Glavni grad Brandenburga je Potsdam, u kojem su pokrajinska vlada i Landtag (pokrajinski parlament). Poznat je po dvorcu Sanssouci i Potsdamskoj konferenciji saveznika 1945. godine. Pazite: grad Brandenburg an der Havel ima isto ime kao pokrajina, ali nije njezin glavni grad.",
+  "merksatz_de": "Potsdam ist die Landeshauptstadt von Brandenburg."
+ },
+ {
+  "id": "BB-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Brandenburg?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Brandenburg pokrajina na istoku koja okružuje Berlin, uz granicu s Poljskom. Prepoznat ćete je po tome što se u njezinoj sredini nalazi mala površina – grad-pokrajina Berlin. Glavni grad Brandenburga je Potsdam.",
+  "merksatz_de": "Brandenburg liegt im Osten und umschließt Berlin."
+ },
+ {
+  "id": "BB-09",
+  "q_bks": "Kako se zove šef vlade u Brandenburgu?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Na čelu pokrajinske vlade u Brandenburgu je ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament). Isti naziv koristi se u većini saveznih pokrajina. Gradonačelnik (Bürgermeister) vodi grad ili općinu, a nazivi „Premierminister” i „Erster Minister” koriste se u nekim drugim državama.",
+  "merksatz_de": "In Brandenburg führt ein Ministerpräsident die Landesregierung."
+ },
+ {
+  "id": "BB-10",
+  "q_bks": "Kojeg ministra Brandenburg nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Vanjska politika zadatak je savezne države: odnose s drugim državama vodi savezna vlada (članak 32. Temeljnog zakona). Zato Brandenburg nema ministra vanjskih poslova. Pravosuđe, financije i unutarnji poslovi (npr. policija) jesu i zadaci pokrajine, pa za njih postoje pokrajinski ministri.",
+  "merksatz_de": "Brandenburg hat keinen Außenminister – Außenpolitik ist Sache des Bundes."
+ },
+ {
+  "id": "HB-01",
+  "q_bks": "Koji grb pripada Slobodnom hanzeatskom gradu Bremenu (Freie Hansestadt Bremen)?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Bremena: bijeli (srebrni) ključ na crvenom štitu, iznad štita kruna. Ključ je simbol svetog Petra, zaštitnika bremenske katedrale. Crvena i bijela boja grba ponavljaju se i na bremenskoj zastavi.",
+  "merksatz_de": "Bremens Wappen zeigt einen silbernen Schlüssel auf Rot."
+ },
+ {
+  "id": "HB-02",
+  "q_bks": "Koja je gradska četvrt (Stadtteil) u Bremenu?",
+  "options_bks": [
+   "Altona",
+   "Hemelingen",
+   "Pankow",
+   "Babelsberg"
+  ],
+  "expl_bks": "Hemelingen je gradska četvrt (Stadtteil) na istoku Bremena, uz rijeku Weser. Ostala imena pripadaju drugim gradovima: Altona je gradski okrug u Hamburgu, Pankow gradski okrug u Berlinu, a Babelsberg dio Potsdama, poznat po filmskim studijima.",
+  "merksatz_de": "Hemelingen ist ein Stadtteil von Bremen."
+ },
+ {
+  "id": "HB-03",
+  "q_bks": "Na koliko se godina bira pokrajinski parlament u Bremenu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Pokrajinski parlament Bremena zove se Bremische Bürgerschaft. Bira se na četiri godine, jednako kao Bundestag (savezni parlament). U većini drugih saveznih pokrajina parlament se bira na pet godina, pa je ovdje lako pogriješiti.",
+  "merksatz_de": "Die Bremische Bürgerschaft wird alle vier Jahre gewählt."
+ },
+ {
+  "id": "HB-04",
+  "q_bks": "S koliko godina se u Bremenu smije glasati na izborima za Bürgerschaft (pokrajinski parlament, Landtag)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Bremenu se Bürgerschaft, pokrajinski parlament, smije birati već sa 16 godina. Godine 2011. Bremen je kao prva savezna pokrajina dopustio 16-godišnjacima da glasaju za pokrajinski parlament. Na izborima za Bundestag (savezni parlament) granica je 18 godina.",
+  "merksatz_de": "In Bremen wählt man die Bürgerschaft ab 16 Jahren."
+ },
+ {
+  "id": "HB-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Bremen?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "crveno-bijela",
+   "zeleno-bijelo-crvena",
+   "crno-zlatna"
+  ],
+  "expl_bks": "Zastava Bremena je crveno-bijela. Ima više vodoravnih crvenih i bijelih pruga, a uz rub kod jarbola crveno-bijele kvadratiće. Zbog pruga je ljudi u šali zovu „Speckflagge” (zastava od slanine). Iste boje ima i bremenski grb: bijeli ključ na crvenom.",
+  "merksatz_de": "Bremens Flagge hat rote und weiße Streifen."
+ },
+ {
+  "id": "HB-06",
+  "q_bks": "Gdje se u Bremenu možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Bremenu nudi informacije o politici, izborima i demokraciji – besplatno i za sve građane. Ne zastupa nijednu stranku. Crkve se bave vjerom, a savjetovalište za potrošače pomaže kod ugovora i reklamacija.",
+  "merksatz_de": "Informationen über Politik bekommt man bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "HB-07",
+  "q_bks": "Što je njemačka grad-pokrajina (Stadtstaat)?",
+  "options_bks": [
+   "Bremen",
+   "München",
+   "Frankfurt",
+   "Erfurt"
+  ],
+  "expl_bks": "Grad-pokrajina (Stadtstaat) je grad koji je ujedno savezna pokrajina. Takve su Bremen, Hamburg i Berlin. Pokrajina Bremen sastoji se od dva grada: Bremena i Bremerhavena. München, Frankfurt i Erfurt veliki su gradovi, ali pripadaju pokrajinama Bavarskoj, Hessenu i Tiringiji.",
+  "merksatz_de": "Bremen ist ein Stadtstaat mit den Städten Bremen und Bremerhaven."
+ },
+ {
+  "id": "HB-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Bremen?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Bremen mali grad-pokrajina na sjeverozapadu, okružen Donjom Saskom (ima dva dijela: Bremen i Bremerhaven). Zato na karti vidite dvije male površine unutar Donje Saske. Bremerhaven leži na ušću rijeke Weser u Sjeverno more.",
+  "merksatz_de": "Bremen liegt im Nordwesten und ist von Niedersachsen umgeben."
+ },
+ {
+  "id": "HB-09",
+  "q_bks": "Kako se zove šef vlade u gradu-pokrajini Bremenu?",
+  "options_bks": [
+   "ministar predsjednik (Ministerpräsident)",
+   "prvi gradonačelnik (Erster Bürgermeister)",
+   "predsjednik Senata (Präsident des Senates)",
+   "vladajući gradonačelnik (Regierender Bürgermeister)"
+  ],
+  "expl_bks": "Bremen je grad-pokrajina. Njegovu vladu čini Senat, a na čelu Senata je predsjednik Senata (Präsident des Senates), koji je ujedno i gradonačelnik. Naziv „Regierender Bürgermeister” koristi se u Berlinu, „Erster Bürgermeister” u Hamburgu, a „Ministerpräsident” u većini drugih pokrajina.",
+  "merksatz_de": "In Bremen leitet der Präsident des Senates die Regierung."
+ },
+ {
+  "id": "HB-10",
+  "q_bks": "Kojeg senatora Bremen nema?",
+  "options_bks": [
+   "senator za vanjske odnose (Senator für Außenbeziehungen)",
+   "senator za financije (Finanzsenator)",
+   "senator za pravosuđe (Justizsenator)",
+   "senator za unutarnje poslove (Innensenator)"
+  ],
+  "expl_bks": "Članovi bremenske vlade (Senata) zovu se senatori. Svaki je zadužen za jedno područje, na primjer financije, pravosuđe ili unutarnje poslove. Odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona), zato Bremen nema senatora za vanjske odnose.",
+  "merksatz_de": "Bremen hat keinen Senator für Außenbeziehungen – das macht der Bund."
+ },
+ {
+  "id": "HH-01",
+  "q_bks": "Koji grb pripada Slobodnom i hanzeatskom gradu Hamburgu (Freie und Hansestadt Hamburg)?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Hamburga: bijeli dvorac s tri tornja i zatvorenim vratima na crvenom štitu. Isti dvorac nalazi se i na crvenoj hamburškoj zastavi. Pazite da ga ne zamijenite s Bremenom, čiji grb pokazuje ključ.",
+  "merksatz_de": "Hamburgs Wappen zeigt eine weiße Burg auf Rot."
+ },
+ {
+  "id": "HH-02",
+  "q_bks": "Koji je gradski okrug (Bezirk) Hamburga?",
+  "options_bks": [
+   "Altona",
+   "Hemelingen",
+   "Pankow",
+   "Mecklenburgische Seenplatte"
+  ],
+  "expl_bks": "Hamburg je podijeljen na sedam gradskih okruga (Bezirke), a Altona je jedan od njih. Leži zapadno od središta grada, uz rijeku Elbu. Hemelingen je gradska četvrt u Bremenu, Pankow okrug u Berlinu, a Mecklenburgische Seenplatte okrug (Landkreis) u Mecklenburgu-Zapadnom Pomorju.",
+  "merksatz_de": "Altona ist ein Bezirk von Hamburg."
+ },
+ {
+  "id": "HH-03",
+  "q_bks": "Na koliko se godina bira pokrajinski parlament u Hamburgu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Pokrajinski parlament Hamburga zove se Hamburgische Bürgerschaft. Bira se na pet godina, kao i parlamenti u većini drugih saveznih pokrajina. Za usporedbu: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Die Hamburgische Bürgerschaft wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "HH-04",
+  "q_bks": "S koliko godina se u Hamburgu smije glasati na lokalnim izborima (izborima za skupštine gradskih okruga, Bezirksversammlungen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "Hamburg ima sedam gradskih okruga (Bezirke), a svaki bira svoju skupštinu (Bezirksversammlung). Na tim izborima smije se glasati već sa 16 godina. Od 16 godina u Hamburgu se glasa i za Bürgerschaft, pokrajinski parlament.",
+  "merksatz_de": "In Hamburg wählt man die Bezirksversammlungen ab 16 Jahren."
+ },
+ {
+  "id": "HH-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Hamburg?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "bijelo-crvena",
+   "zeleno-bijelo-crvena",
+   "crno-žuta"
+  ],
+  "expl_bks": "Zastava Hamburga je bijelo-crvena: na crvenoj podlozi nalazi se bijeli dvorac s tri tornja. Isti dvorac vidi se i na hamburškom grbu. Crvena i bijela stare su boje hanzeatskih gradova, pa ih ima i Bremen.",
+  "merksatz_de": "Hamburgs Flagge ist rot mit einer weißen Burg."
+ },
+ {
+  "id": "HH-06",
+  "q_bks": "Gdje se u Hamburgu možete informirati o političkim temama?",
+  "options_bks": [
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u crkvama",
+   "u Pokrajinskom centru za političko obrazovanje"
+  ],
+  "expl_bks": "U Hamburgu, kao i u svakoj saveznoj pokrajini, postoji Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung). Tamo možete besplatno dobiti knjige i brošure, a centar organizira i predavanja, na primjer prije izbora. Informacije su neutralne i ne služe nijednoj stranci.",
+  "merksatz_de": "Neutrale Infos zur Politik bietet die Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "HH-07",
+  "q_bks": "Koja savezna pokrajina je grad-pokrajina (Stadtstaat)?",
+  "options_bks": [
+   "Hamburg",
+   "Saska",
+   "Bavarska",
+   "Tiringija"
+  ],
+  "expl_bks": "Hamburg je grad-pokrajina (Stadtstaat): grad koji je ujedno i savezna pokrajina, kao Berlin i Bremen. Saska, Bavarska i Tiringija nose naziv slobodna država (Freistaat), ali to su velike pokrajine s mnogo gradova. „Freistaat” je samo poseban naziv i ne znači grad-pokrajinu.",
+  "merksatz_de": "Hamburg ist ein Stadtstaat – Stadt und Bundesland zugleich."
+ },
+ {
+  "id": "HH-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Hamburg?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Hamburg mali grad-pokrajina na sjeveru, na rijeci Elbi, između Schleswig-Holsteina i Donje Saske. Hamburg ima veliku luku i drugi je najveći grad Njemačke, poslije Berlina. Na karti ga prepoznajete kao malu površinu između dviju većih pokrajina.",
+  "merksatz_de": "Hamburg liegt im Norden an der Elbe."
+ },
+ {
+  "id": "HH-09",
+  "q_bks": "Kako se zove šef vlade u gradu-pokrajini Hamburgu?",
+  "options_bks": [
+   "ministar predsjednik (Ministerpräsident)",
+   "prvi gradonačelnik (Erster Bürgermeister)",
+   "vladajući senator (Regierender Senator)",
+   "gradonačelnik (Oberbürgermeister)"
+  ],
+  "expl_bks": "Hamburg je grad-pokrajina. Njegovu vladu čini Senat, a na čelu Senata je prvi gradonačelnik (Erster Bürgermeister). Bira ga Bürgerschaft, pokrajinski parlament Hamburga. Naziv „Oberbürgermeister” koristi se u velikim gradovima drugih pokrajina, a „Regierender Senator” ne postoji.",
+  "merksatz_de": "Hamburg wird vom Ersten Bürgermeister regiert."
+ },
+ {
+  "id": "HH-10",
+  "q_bks": "Kojeg senatora Hamburg nema?",
+  "options_bks": [
+   "senator za pravosuđe (Justizsenator)",
+   "senator za vanjske odnose (Senator für Außenbeziehungen)",
+   "senator za financije (Finanzsenator)",
+   "senator za unutarnje poslove (Innensenator)"
+  ],
+  "expl_bks": "Hamburška vlada (Senat) ima senatore za različita područja, npr. financije, pravosuđe i unutarnje poslove. Vanjska politika nije zadatak pokrajina: odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona). Zato Hamburg nema senatora za vanjske odnose, iako kao lučki grad ima mnogo međunarodnih kontakata.",
+  "merksatz_de": "Außenbeziehungen sind Aufgabe des Bundes, nicht Hamburgs."
+ },
+ {
+  "id": "HE-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Hessen?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Hessena: lav s crveno-bijelim prugama na plavom štitu, iznad štita kruna (bez zvjezdica – zvjezdice ima Tiringija). Taj „hesenski lav” star je više stoljeća. Crvena i bijela boja lava nalaze se i na pokrajinskoj zastavi Hessena.",
+  "merksatz_de": "Im hessischen Wappen ist ein rot-weiß gestreifter Löwe."
+ },
+ {
+  "id": "HE-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Hessenu?",
+  "options_bks": [
+   "Ammerland",
+   "Altötting",
+   "Prignitz",
+   "Main-Taunus-Kreis"
+  ],
+  "expl_bks": "Main-Taunus-Kreis je okrug (Landkreis) u Hessenu, između Frankfurta na Majni i Wiesbadena. Ime je dobio po rijeci Majni i gorju Taunus. Ostali okruzi su u drugim pokrajinama: Ammerland u Donjoj Saskoj, Altötting u Bavarskoj, a Prignitz u Brandenburgu.",
+  "merksatz_de": "Der Main-Taunus-Kreis liegt in Hessen."
+ },
+ {
+  "id": "HE-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Hessenu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Hesenski Landtag (pokrajinski parlament) zasjeda u Wiesbadenu, u nekadašnjem gradskom dvorcu. Građani ga biraju na pet godina. Nemojte ga zamijeniti s Bundestagom (savezni parlament), koji se bira na četiri godine.",
+  "merksatz_de": "Der Hessische Landtag wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "HE-04",
+  "q_bks": "S koliko godina se u Hessenu smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Hessenu se na lokalnim izborima (za općinska i gradska vijeća te okružne skupštine) glasa od 18 godina. U nekim drugim pokrajinama, npr. u Brandenburgu ili Hamburgu, granica je 16 godina. Zato je važno znati pravilo upravo za svoju pokrajinu.",
+  "merksatz_de": "In Hessen darf man ab 18 Jahren kommunal wählen."
+ },
+ {
+  "id": "HE-05",
+  "q_bks": "Kakve je boje zastava savezne pokrajine Hessen?",
+  "options_bks": [
+   "plavo-bijelo-crvena",
+   "crveno-bijela",
+   "crno-zlatna",
+   "zeleno-bijelo-crvena"
+  ],
+  "expl_bks": "Zastava Hessena je crveno-bijela: gore je crvena, a dolje bijela pruga. Boje dolaze iz pokrajinskog grba. Lako se pamti: lav u hesenskom grbu ima iste, crveno-bijele pruge. Crveno-bijela je i zastava Brandenburga, ali tamo grb pokazuje orla.",
+  "merksatz_de": "Die hessische Flagge ist rot-weiß."
+ },
+ {
+  "id": "HE-06",
+  "q_bks": "Gdje se u Hessenu možete informirati o političkim temama?",
+  "options_bks": [
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u crkvama"
+  ],
+  "expl_bks": "Informacije o politici u Hessenu nudi Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Wiesbadenu. Tamo možete naručiti besplatne publikacije ili doći na seminare i izložbe. Centar je stranački neutralan. Ordnungsamt se brine o javnom redu, npr. parkiranju, a ne o političkim informacijama.",
+  "merksatz_de": "In Hessen informiert die Landeszentrale für politische Bildung über Politik."
+ },
+ {
+  "id": "HE-07",
+  "q_bks": "Glavni grad savezne pokrajine Hessen zove se …",
+  "options_bks": [
+   "Kassel.",
+   "Darmstadt.",
+   "Frankfurt.",
+   "Wiesbaden."
+  ],
+  "expl_bks": "Glavni grad Hessena je Wiesbaden. Tamo su pokrajinska vlada i Landtag (pokrajinski parlament). Česta zamka je Frankfurt na Majni: to je najveći grad Hessena i važno bankarsko središte, ali nije glavni grad. Wiesbaden je poznat i po termalnim izvorima.",
+  "merksatz_de": "Wiesbaden ist Hessens Hauptstadt, nicht Frankfurt."
+ },
+ {
+  "id": "HE-08",
+  "q_bks": "Koja od saveznih pokrajina na karti je Hessen?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Hessen u sredini zapadnog dijela Njemačke (s Frankfurtom na Majni). Hessen nema izlaz na more ni granicu s drugim državama – okružen je samo njemačkim pokrajinama. Glavni grad mu je Wiesbaden.",
+  "merksatz_de": "Hessen liegt in der Mitte Deutschlands, mit Frankfurt am Main."
+ },
+ {
+  "id": "HE-09",
+  "q_bks": "Kako se zove šef vlade u Hessenu?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "U Hessenu je na čelu pokrajinske vlade ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) u Wiesbadenu. Isti naziv koristi se u većini saveznih pokrajina. „Premijer” je naziv iz drugih država, a gradonačelnik vodi grad ili općinu, ne cijelu pokrajinu.",
+  "merksatz_de": "In Hessen heißt der Regierungschef Ministerpräsident."
+ },
+ {
+  "id": "HE-10",
+  "q_bks": "Kojeg ministra Hessen nema?",
+  "options_bks": [
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Vanjska politika zadaća je savezne države (Temeljni zakon, članak 32.). Zato ministra vanjskih poslova ima samo savezna vlada, a ne Hessen. Pokrajine imaju vlastite ministre pravosuđa, financija i unutarnjih poslova jer su odgovorne npr. za sudove, policiju i pokrajinski proračun.",
+  "merksatz_de": "Einen Außenminister hat nur der Bund, nicht Hessen."
+ },
+ {
+  "id": "MV-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Mecklenburg-Zapadna Pomeranija?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Mecklenburga-Zapadne Pomeranije: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi. Glava bika stari je znak Mecklenburga, a grifon znak Pomeranije. Tako grb pokazuje da je pokrajina nastala od dviju povijesnih regija.",
+  "merksatz_de": "Im Wappen von Mecklenburg-Vorpommern: Stierkopf und Greif."
+ },
+ {
+  "id": "MV-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "options_bks": [
+   "Prignitz",
+   "Mecklenburgische Seenplatte",
+   "Vogtlandkreis",
+   "Rhein-Sieg-Kreis"
+  ],
+  "expl_bks": "Mecklenburgische Seenplatte („Mecklenburško jezersko područje”) okrug je u Mecklenburgu-Zapadnoj Pomeraniji i površinom najveći okrug u Njemačkoj. Ondje je jezero Müritz, najveće jezero koje u cijelosti leži u Njemačkoj. Prignitz je u Brandenburgu, Vogtlandkreis u Saskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "merksatz_de": "Die Mecklenburgische Seenplatte ist ein Landkreis in Mecklenburg-Vorpommern."
+ },
+ {
+  "id": "MV-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag Mecklenburga-Zapadne Pomeranije bira se na pet godina. Zasjeda u dvorcu u Schwerinu. Zastupnici donose pokrajinske zakone i biraju ministra predsjednika. Pazite na zamku: Bundestag (savezni parlament) bira se na četiri godine, a Landtag ovdje na pet.",
+  "merksatz_de": "Der Landtag in Mecklenburg-Vorpommern wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "MV-04",
+  "q_bks": "Od koje dobi se u Mecklenburgu-Zapadnoj Pomeraniji smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Mecklenburgu-Zapadnoj Pomeraniji na lokalnim izborima smije se glasati s navršenih 16 godina. Na lokalnim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). Za izbore za Bundestag (savezni parlament) granica je 18 godina.",
+  "merksatz_de": "Bei Kommunalwahlen in Mecklenburg-Vorpommern darf man ab 16 wählen."
+ },
+ {
+  "id": "MV-05",
+  "q_bks": "Koje boje ima zastava savezne pokrajine Mecklenburg-Zapadna Pomeranija?",
+  "options_bks": [
+   "crna-crvena-zlatna",
+   "plava-bijela-žuta-crvena",
+   "zelena-bijela-crvena",
+   "crna-žuta"
+  ],
+  "expl_bks": "Zastava Mecklenburga-Zapadne Pomeranije ima vodoravne pruge u plavoj, bijeloj, žutoj i crvenoj boji. Plava, žuta i crvena stare su boje Mecklenburga, a plava i bijela boje Pomeranije. Crno-crveno-zlatna je savezna zastava Njemačke, a ne zastava ove pokrajine.",
+  "merksatz_de": "Die Flagge von Mecklenburg-Vorpommern ist blau-weiß-gelb-rot."
+ },
+ {
+  "id": "MV-06",
+  "q_bks": "Gdje se u Mecklenburgu-Zapadnoj Pomeraniji možete informirati o političkim temama?",
+  "options_bks": [
+   "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)",
+   "u crkvama",
+   "u općinskom komunalnom redarstvenom uredu (Ordnungsamt)",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) nudi besplatne brošure, knjige, predavanja i seminare o politici, povijesti i demokraciji. Stranački je neutralan i otvoren svim građanima. Ordnungsamt se brine za javni red, a Verbraucherzentrale savjetuje o kupnji i ugovorima.",
+  "merksatz_de": "Politische Informationen gibt es bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "MV-07",
+  "q_bks": "Glavni grad Mecklenburga-Zapadne Pomeranije zove se …",
+  "options_bks": [
+   "Greifswald.",
+   "Schwerin.",
+   "Rostock.",
+   "Wismar."
+  ],
+  "expl_bks": "Glavni grad Mecklenburga-Zapadne Pomeranije je Schwerin. Ondje su pokrajinska vlada i Landtag (pokrajinski parlament), koji zasjeda u poznatom dvorcu na jezeru. Česta zamka: Rostock je najveći grad pokrajine i važna luka, ali nije glavni grad.",
+  "merksatz_de": "Schwerin ist die Landeshauptstadt von Mecklenburg-Vorpommern."
+ },
+ {
+  "id": "MV-08",
+  "q_bks": "Koja savezna pokrajina je Mecklenburg-Zapadna Pomeranija?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Mecklenburg-Zapadna Pomeranija na sjeveroistoku, uz Baltičko more i granicu s Poljskom. Ovoj pokrajini pripada i Rügen, najveći njemački otok. Glavni grad je Schwerin, a najveći grad Rostock.",
+  "merksatz_de": "Mecklenburg-Vorpommern liegt im Nordosten an der Ostsee."
+ },
+ {
+  "id": "MV-09",
+  "q_bks": "Kako se zove šef vlade u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "U Mecklenburgu-Zapadnoj Pomeraniji pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega bira Landtag (pokrajinski parlament) u Schwerinu. Naziv „premijer” ne koristi se za njemačke pokrajine, a gradonačelnik je na čelu grada ili općine.",
+  "merksatz_de": "Regierungschef in Mecklenburg-Vorpommern ist der Ministerpräsident."
+ },
+ {
+  "id": "MV-10",
+  "q_bks": "Kojeg ministra Mecklenburg-Zapadna Pomeranija nema?",
+  "options_bks": [
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Za vanjsku politiku i odnose s drugim državama nadležna je savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministra vanjskih poslova ima samo savezna vlada. Mecklenburg-Zapadna Pomeranija ima ministre za pravosuđe, financije i unutarnje poslove, npr. za sudove i policiju.",
+  "merksatz_de": "Außenpolitik macht der Bund, deshalb gibt es keinen Landes-Außenminister."
+ },
+ {
+  "id": "NI-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Donja Saska?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Donje Saske: bijeli konj u skoku na crvenom štitu. Taj konj (Sachsenross, „saski konj”) star je simbol regije i nalazi se i na zastavi Donje Saske. Pazite: bijeli konj postoji i u grbu Sjeverne Rajne-Vestfalije, ali ondje je samo jedan od tri dijela grba.",
+  "merksatz_de": "Das Wappen von Niedersachsen zeigt ein weißes Pferd auf Rot."
+ },
+ {
+  "id": "NI-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Donjoj Saskoj?",
+  "options_bks": [
+   "Ammerland",
+   "Rhein-Sieg-Kreis",
+   "Nordfriesland",
+   "Vogtlandkreis"
+  ],
+  "expl_bks": "Ammerland je okrug na sjeverozapadu Donje Saske, blizu grada Oldenburga. Poznat je po velikim parkovima rododendrona. Ostali okruzi su u drugim pokrajinama: Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji, Nordfriesland u Schleswig-Holsteinu, a Vogtlandkreis u Saskoj.",
+  "merksatz_de": "Ammerland ist ein Landkreis in Niedersachsen."
+ },
+ {
+  "id": "NI-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Donjoj Saskoj?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag Donje Saske bira se na pet godina. Zasjeda u dvorcu Leineschloss u Hannoveru. Zastupnici donose pokrajinske zakone i biraju ministra predsjednika. Ne zamijenite to s Bundestagom (savezni parlament), koji se bira na četiri godine.",
+  "merksatz_de": "Niedersachsen wählt seinen Landtag alle fünf Jahre."
+ },
+ {
+  "id": "NI-04",
+  "q_bks": "Od koje dobi se u Donjoj Saskoj smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Donjoj Saskoj na lokalnim izborima smije se glasati s navršenih 16 godina. Donja Saska je 1996. bila prva savezna pokrajina koja je to uvela. Na lokalnim izborima biraju se npr. općinsko ili gradsko vijeće i gradonačelnik.",
+  "merksatz_de": "In Niedersachsen darf man bei Kommunalwahlen ab 16 wählen."
+ },
+ {
+  "id": "NI-05",
+  "q_bks": "Koje boje ima zastava savezne pokrajine Donja Saska?",
+  "options_bks": [
+   "bijela-plava",
+   "crna-crvena-zlatna",
+   "crna-žuta",
+   "plava-bijela-crvena"
+  ],
+  "expl_bks": "Zastava Donje Saske ima iste boje kao njemačka savezna zastava: crnu, crvenu i zlatnu. Razliku čini grb u sredini – bijeli konj na crvenom štitu. Po tom konju zastava Donje Saske lako se prepozna.",
+  "merksatz_de": "Niedersachsens Flagge: Schwarz-Rot-Gold mit weißem Pferd."
+ },
+ {
+  "id": "NI-06",
+  "q_bks": "Gdje se u Donjoj Saskoj možete informirati o političkim temama?",
+  "options_bks": [
+   "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)",
+   "u općinskom komunalnom redarstvenom uredu (Ordnungsamt)",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u crkvama"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Hannoveru informira građane o politici i demokraciji. Nudi besplatne materijale, predavanja i rasprave, a ne podržava nijednu stranku. Crkve, Ordnungsamt i Verbraucherzentrale imaju druge zadaće, npr. vjeru, javni red i zaštitu potrošača.",
+  "merksatz_de": "Über Politik informiert in Niedersachsen die Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "NI-07",
+  "q_bks": "Glavni grad Donje Saske zove se …",
+  "options_bks": [
+   "Hannover.",
+   "Braunschweig.",
+   "Wolfsburg.",
+   "Osnabrück."
+  ],
+  "expl_bks": "Glavni grad Donje Saske je Hannover. Ondje su pokrajinska vlada i Landtag (pokrajinski parlament). Hannover je poznat i po velikim sajmovima. Braunschweig, Wolfsburg (sjedište Volkswagena) i Osnabrück također su gradovi u Donjoj Saskoj, ali nisu glavni grad.",
+  "merksatz_de": "Hannover ist die Landeshauptstadt von Niedersachsen."
+ },
+ {
+  "id": "NI-08",
+  "q_bks": "Koja savezna pokrajina je Donja Saska?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Donja Saska velika pokrajina na sjeverozapadu, uz Sjeverno more i Nizozemsku (oko Bremena). Grad Bremen posebna je savezna pokrajina koju Donja Saska okružuje. Po površini je Donja Saska druga najveća pokrajina, nakon Bavarske.",
+  "merksatz_de": "Niedersachsen liegt im Nordwesten an der Nordsee."
+ },
+ {
+  "id": "NI-09",
+  "q_bks": "Kako se zove šef vlade u Donjoj Saskoj?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Na čelu pokrajinske vlade Donje Saske je ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) u Hannoveru, a on zatim imenuje ministre. Gradonačelnik vodi samo grad ili općinu, a „premijer” i „prvi ministar” nazivi su iz drugih država.",
+  "merksatz_de": "Niedersachsens Regierungschef heißt Ministerpräsident."
+ },
+ {
+  "id": "NI-10",
+  "q_bks": "Kojeg ministra Donja Saska nema?",
+  "options_bks": [
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Donja Saska nema ministra vanjskih poslova. Odnosi s drugim državama zadaća su savezne države (Temeljni zakon, članak 32.), pa ministarstvo vanjskih poslova postoji samo u saveznoj vladi. Pravosuđe, financije i unutarnji poslovi, npr. policija, dijelom su u nadležnosti pokrajina.",
+  "merksatz_de": "Niedersachsen hat keinen Außenminister – Außenpolitik ist Sache des Bundes."
+ },
+ {
+  "id": "NW-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Sjeverna Rajna-Vestfalija?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Sjeverne Rajne-Vestfalije: lijevo bijela valovita linija na zelenom (Rajna), desno bijeli konj na crvenom, dolje crvena ruža. Tri dijela predstavljaju tri regije od kojih je pokrajina nastala: Rajna znači Porajnje, konj Vestfaliju, a ruža nekadašnju zemlju Lippe.",
+  "merksatz_de": "Das Wappen von Nordrhein-Westfalen zeigt Rhein, Pferd und Rose."
+ },
+ {
+  "id": "NW-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Sjevernoj Rajni-Vestfaliji?",
+  "options_bks": [
+   "Ammerland",
+   "Rhein-Sieg-Kreis",
+   "Nordfriesland",
+   "Vogtlandkreis"
+  ],
+  "expl_bks": "Rhein-Sieg-Kreis je okrug u Sjevernoj Rajni-Vestfaliji, oko grada Bonna. Ime je dobio po dvjema rijekama, Rajni (Rhein) i Siegu. Ammerland je u Donjoj Saskoj, Nordfriesland u Schleswig-Holsteinu, a Vogtlandkreis u Saskoj.",
+  "merksatz_de": "Der Rhein-Sieg-Kreis liegt in Nordrhein-Westfalen."
+ },
+ {
+  "id": "NW-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Sjevernoj Rajni-Vestfaliji?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag Sjeverne Rajne-Vestfalije bira se na pet godina. Zgrada Landtaga nalazi se u Düsseldorfu, na obali Rajne. Zastupnici donose pokrajinske zakone i biraju ministra predsjednika. Pazite: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Nordrhein-Westfalen wählt den Landtag für fünf Jahre."
+ },
+ {
+  "id": "NW-04",
+  "q_bks": "Od koje dobi se u Sjevernoj Rajni-Vestfaliji smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Sjevernoj Rajni-Vestfaliji mladi smiju glasati na lokalnim izborima već s navršenih 16 godina. Tako biraju npr. gradsko ili općinsko vijeće i gradonačelnika. Za izbore za Bundestag (savezni parlament) potrebno je imati najmanje 18 godina.",
+  "merksatz_de": "Kommunalwahlen in Nordrhein-Westfalen: Wählen ab 16 Jahren."
+ },
+ {
+  "id": "NW-05",
+  "q_bks": "Koje boje ima zastava savezne pokrajine Sjeverna Rajna-Vestfalija?",
+  "options_bks": [
+   "crvena-bijela",
+   "zelena-bijela-crvena",
+   "crna-zlatna",
+   "plava-bijela-crvena"
+  ],
+  "expl_bks": "Zastava Sjeverne Rajne-Vestfalije ima tri vodoravne pruge: zelenu, bijelu i crvenu. Zelena i bijela stare su boje Porajnja, a bijela i crvena boje Vestfalije. Na nekim zastavama u sredini se nalazi i grb pokrajine.",
+  "merksatz_de": "Die Flagge von Nordrhein-Westfalen ist grün-weiß-rot."
+ },
+ {
+  "id": "NW-06",
+  "q_bks": "Gdje se u Sjevernoj Rajni-Vestfaliji možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u općinskom komunalnom redarstvenom uredu (Ordnungsamt)",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)"
+  ],
+  "expl_bks": "Za političke informacije u Sjevernoj Rajni-Vestfaliji postoji Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung). Nudi brošure, knjige, seminare i internetske materijale o demokraciji, izborima i povijesti, većinom besplatno. Centar je neutralan i ne radi za nijednu stranku.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung bietet kostenlose Infos zur Politik."
+ },
+ {
+  "id": "NW-07",
+  "q_bks": "Glavni grad Sjeverne Rajne-Vestfalije zove se …",
+  "options_bks": [
+   "Köln.",
+   "Bonn.",
+   "Düsseldorf.",
+   "Dortmund."
+  ],
+  "expl_bks": "Glavni grad Sjeverne Rajne-Vestfalije je Düsseldorf, na Rajni. Ondje su Landtag (pokrajinski parlament) i pokrajinska vlada. Česte zamke: Köln je najveći grad pokrajine, a Bonn je od 1949. do 1990. bio glavni grad Zapadne Njemačke, ali ne i pokrajine.",
+  "merksatz_de": "Düsseldorf ist die Landeshauptstadt von Nordrhein-Westfalen."
+ },
+ {
+  "id": "NW-08",
+  "q_bks": "Koja savezna pokrajina je Sjeverna Rajna-Vestfalija?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Sjeverna Rajna-Vestfalija na zapadu, uz granicu s Nizozemskom i Belgijom. To je pokrajina s najviše stanovnika u Njemačkoj. Ovdje su veliki gradovi kao Köln, Düsseldorf i Dortmund te industrijsko Porurje (Ruhrgebiet).",
+  "merksatz_de": "Nordrhein-Westfalen liegt im Westen an der Grenze zu den Niederlanden."
+ },
+ {
+  "id": "NW-09",
+  "q_bks": "Kako se zove šef vlade u Sjevernoj Rajni-Vestfaliji?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "I u Sjevernoj Rajni-Vestfaliji pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) u Düsseldorfu. Gradonačelnik je na čelu grada, npr. Kölna ili Dortmunda, a nazivi „premijer” i „prvi ministar” ne koriste se u njemačkim pokrajinama.",
+  "merksatz_de": "Auch in Nordrhein-Westfalen führt ein Ministerpräsident die Regierung."
+ },
+ {
+  "id": "NW-10",
+  "q_bks": "Kojeg ministra Sjeverna Rajna-Vestfalija nema?",
+  "options_bks": [
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Sjeverna Rajna-Vestfalija nema ministra vanjskih poslova, iako ima najviše stanovnika od svih pokrajina. Vanjska politika zadaća je savezne države (Temeljni zakon, članak 32.). Ministre pravosuđa, financija i unutarnjih poslova ima svaka pokrajina jer upravlja npr. sudovima, policijom i svojim proračunom.",
+  "merksatz_de": "Nordrhein-Westfalen hat keinen Außenminister."
+ },
+ {
+  "id": "RP-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Porajnje-Falačka?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Porajnja-Falačke: crveni križ na bijelom, bijeli kotač na crvenom i zlatni lav na crnom, iznad štita kruna. Ti znakovi podsjećaju na tri stare države ovog područja: križ na Trier, kotač na Mainz, a lav na Falačku (Pfalz).",
+  "merksatz_de": "Das Wappen von Rheinland-Pfalz zeigt Kreuz, Rad und Löwen."
+ },
+ {
+  "id": "RP-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Porajnju-Falačkoj?",
+  "options_bks": [
+   "Westerwaldkreis",
+   "Altötting",
+   "Emsland",
+   "Prignitz"
+  ],
+  "expl_bks": "Westerwaldkreis je okrug u Porajnju-Falačkoj, a sjedište mu je grad Montabaur. Ime je dobio po gorju Westerwald. Ostali okruzi su u drugim pokrajinama: Altötting u Bavarskoj, Emsland u Donjoj Saskoj, a Prignitz u Brandenburgu.",
+  "merksatz_de": "Der Westerwaldkreis ist ein Landkreis in Rheinland-Pfalz."
+ },
+ {
+  "id": "RP-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Porajnju-Falačkoj?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag Porajnja-Falačke bira se na pet godina i zasjeda u Mainzu. Zastupnici donose pokrajinske zakone, nadziru pokrajinsku vladu i biraju ministra predsjednika. Pazite: na četiri godine bira se Bundestag (savezni parlament), a ne ovaj Landtag.",
+  "merksatz_de": "Der Landtag von Rheinland-Pfalz wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "RP-04",
+  "q_bks": "Od koje dobi se u Porajnju-Falačkoj smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Porajnju-Falačkoj na lokalnim izborima smije se glasati tek s navršenih 18 godina. U nekim drugim pokrajinama, npr. u Donjoj Saskoj, granica je 16 godina, pa je ovdje lako pogriješiti. Pravila za lokalne izbore određuje svaka pokrajina sama.",
+  "merksatz_de": "In Rheinland-Pfalz wählt man bei Kommunalwahlen ab 18."
+ },
+ {
+  "id": "RP-05",
+  "q_bks": "Koje boje ima zastava savezne pokrajine Porajnje-Falačka?",
+  "options_bks": [
+   "bijela-crvena",
+   "crna-crvena-zlatna",
+   "crna-žuta",
+   "zelena-bijela-crvena"
+  ],
+  "expl_bks": "Zastava Porajnja-Falačke je crno-crveno-zlatna, a u gornjem lijevom kutu nalazi se grb pokrajine. Te boje imaju dugu povijest upravo ovdje: na skupu kod dvorca Hambach (Hambacher Fest) 1832. ljudi su nosili crno-crveno-zlatne zastave za slobodu i jedinstvo Njemačke.",
+  "merksatz_de": "Rheinland-Pfalz hat eine schwarz-rot-goldene Flagge mit Wappen."
+ },
+ {
+  "id": "RP-06",
+  "q_bks": "Gdje se u Porajnju-Falačkoj možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u općinskom komunalnom redarstvenom uredu (Ordnungsamt)",
+   "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)"
+  ],
+  "expl_bks": "O političkim temama informira Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Mainzu. Svatko može dobiti besplatne brošure ili doći na predavanja. Centar je stranački neutralan. Verbraucherzentrale pomaže kod kupnje i ugovora, a Ordnungsamt brine o javnom redu.",
+  "merksatz_de": "Informationen über Politik: Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "RP-07",
+  "q_bks": "Glavni grad Porajnja-Falačke zove se …",
+  "options_bks": [
+   "Mainz.",
+   "Kaiserslautern.",
+   "Ludwigshafen.",
+   "Koblenz."
+  ],
+  "expl_bks": "Glavni grad Porajnja-Falačke je Mainz, na Rajni. To je ujedno najveći grad pokrajine i sjedište Landtaga (pokrajinski parlament) i pokrajinske vlade. U Mainzu je sredinom 15. stoljeća Johannes Gutenberg razvio tisak s pomičnim slovima.",
+  "merksatz_de": "Mainz ist die Landeshauptstadt von Rheinland-Pfalz."
+ },
+ {
+  "id": "RP-08",
+  "q_bks": "Koja savezna pokrajina je Porajnje-Falačka?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Porajnje-Falačka na zapadu, uz granicu s Belgijom, Luksemburgom i Francuskom. Kroz pokrajinu teku Rajna i Mosel, a poznata je po vinogradima. Jugozapadno od nje nalazi se mali Saarland, a sjeverno Sjeverna Rajna-Vestfalija.",
+  "merksatz_de": "Rheinland-Pfalz grenzt an Belgien, Luxemburg und Frankreich."
+ },
+ {
+  "id": "RP-09",
+  "q_bks": "Kako se zove šef vlade u Porajnju-Falačkoj?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "U Porajnju-Falačkoj pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega bira Landtag (pokrajinski parlament) u Mainzu. Tako je u većini saveznih pokrajina; samo gradovi-pokrajine Berlin, Hamburg i Bremen imaju drukčije nazive, npr. „Erster Bürgermeister” u Hamburgu.",
+  "merksatz_de": "Chef der Landesregierung in Rheinland-Pfalz ist der Ministerpräsident."
+ },
+ {
+  "id": "RP-10",
+  "q_bks": "Kojeg ministra Porajnje-Falačka nema?",
+  "options_bks": [
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Porajnje-Falačka nema ministra vanjskih poslova. Prema Temeljnom zakonu (članak 32.), odnosi s drugim državama zadaća su savezne države, pa takvog ministra ima samo savezna vlada. Za pravosuđe, financije i unutarnje poslove, npr. sudove i policiju, pokrajina ima svoje ministre.",
+  "merksatz_de": "Außenminister gibt es nur beim Bund, nicht in Rheinland-Pfalz."
+ },
+ {
+  "id": "SL-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Saarland?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Saarlanda: štit u četiri polja – srebrni lav na plavom, crveni križ na bijelom, crvena kosa greda s tri mala bijela orla na zlatnom i zlatni lav na crnom. Četiri polja podsjećaju na četiri stare države od kojih je nastao Saarland.",
+  "merksatz_de": "Das Wappen des Saarlandes hat vier Felder."
+ },
+ {
+  "id": "SL-02",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Saarlandu?",
+  "options_bks": [
+   "Mecklenburgische Seenplatte",
+   "Altötting",
+   "Neunkirchen",
+   "Rhein-Sieg-Kreis"
+  ],
+  "expl_bks": "Neunkirchen je okrug u Saarlandu, a istoimeni grad jedan je od najvećih gradova te pokrajine. Saarland je mala pokrajina s malo okruga. Mecklenburgische Seenplatte je u Mecklenburgu-Zapadnoj Pomeraniji, Altötting u Bavarskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "merksatz_de": "Neunkirchen ist ein Landkreis im Saarland."
+ },
+ {
+  "id": "SL-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) Saarlanda?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag Saarlanda bira se na pet godina i zasjeda u glavnom gradu Saarbrückenu. Saarland je najmanja pokrajina koja nije grad-pokrajina, ali ima isto trajanje mandata kao većina drugih. Pazite: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Das Saarland wählt seinen Landtag für fünf Jahre."
+ },
+ {
+  "id": "SL-04",
+  "q_bks": "Od koje dobi se u Saarlandu smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Saarlandu se na lokalnim izborima smije glasati s navršenih 18 godina. Na tim izborima biraju se npr. općinsko vijeće i gradonačelnik. U nekim drugim pokrajinama, npr. u Sjevernoj Rajni-Vestfaliji, granica je 16 godina, ali ne u Saarlandu.",
+  "merksatz_de": "Im Saarland darf man bei Kommunalwahlen ab 18 wählen."
+ },
+ {
+  "id": "SL-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Saarlanda?",
+  "options_bks": [
+   "bijelo-plavo",
+   "crno-crveno-zlatno",
+   "crno-žuto",
+   "zeleno-bijelo-crveno"
+  ],
+  "expl_bks": "Zastava Saarlanda ima iste boje kao njemačka zastava: crno-crveno-zlatno, a u sredini je grb pokrajine. Saarland je jedina savezna pokrajina s tim bojama na zastavi. Saveznoj Republici Njemačkoj pridružio se 1. siječnja 1957., nakon referenduma održanog 1955. godine.",
+  "merksatz_de": "Die Flagge des Saarlandes ist schwarz-rot-gold mit Wappen."
+ },
+ {
+  "id": "SL-06",
+  "q_bks": "Gdje se u Saarlandu možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) informira građane o politici, demokraciji i izborima. Nudi brošure, predavanja i seminare, često besplatno. Centar je politički neutralan i ne zastupa nijednu stranku. Savjetovalište za potrošače pomaže kod kupnje i ugovora, a ne kod političkih tema.",
+  "merksatz_de": "Politische Informationen gibt es bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "SL-07",
+  "q_bks": "Glavni grad Saarlanda zove se …",
+  "options_bks": [
+   "Neunkirchen.",
+   "Homburg.",
+   "Saarbrücken.",
+   "Völklingen."
+  ],
+  "expl_bks": "Glavni grad Saarlanda je Saarbrücken. To je ujedno najveći grad pokrajine, a leži na rijeci Saar, blizu granice s Francuskom. U Saarbrückenu se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. I pokrajina i grad dobili su ime po rijeci Saar.",
+  "merksatz_de": "Saarbrücken ist die Landeshauptstadt des Saarlandes."
+ },
+ {
+  "id": "SL-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Saarland?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Saarland vrlo mala pokrajina na jugozapadu, uz granicu s Francuskom i Luksemburgom. Na sjeveru i istoku graniči s Porajnjem-Falačkom (Rheinland-Pfalz). Saarland je najmanja savezna pokrajina ako se ne računaju gradovi-pokrajine Berlin, Hamburg i Bremen.",
+  "merksatz_de": "Das Saarland liegt im Südwesten, an der Grenze zu Frankreich."
+ },
+ {
+  "id": "SL-09",
+  "q_bks": "Kako se zove šef vlade Saarlanda?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Na čelu pokrajinske vlade Saarlanda je ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament). Isti naziv koristi se u svim pokrajinama osim u gradovima-pokrajinama Berlinu, Hamburgu i Bremenu. Gradonačelnik vodi grad ili općinu, a ne pokrajinu.",
+  "merksatz_de": "Im Saarland heißt der Regierungschef Ministerpräsident."
+ },
+ {
+  "id": "SL-10",
+  "q_bks": "Kojeg ministra Saarland nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), a ne pokrajina. Zato ministra vanjskih poslova ima samo savezna vlada. Saarland, kao i druge pokrajine, ima ministre za pravosuđe, financije i unutarnje poslove, jer su pokrajine zadužene npr. za sudove, policiju i svoj proračun.",
+  "merksatz_de": "Außenpolitik macht der Bund, nicht das Bundesland."
+ },
+ {
+  "id": "SN-01",
+  "q_bks": "Koji grb pripada slobodnoj državi (Freistaat) Saskoj?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Saske: vodoravne crne i žute pruge preko kojih koso ide zeleni vijenac (Rautenkranz). Saska se naziva slobodnom državom (Freistaat), kao i Bavarska i Tiringija. To je samo povijesni naziv: Saska je savezna pokrajina kao i sve ostale.",
+  "merksatz_de": "Sachsens Wappen hat schwarz-gelbe Streifen und einen grünen Kranz."
+ },
+ {
+  "id": "SN-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Saskoj?",
+  "options_bks": [
+   "Vogtlandkreis",
+   "Altötting",
+   "Uckermark",
+   "Nordfriesland"
+  ],
+  "expl_bks": "Vogtlandkreis je okrug (Landkreis) na jugozapadu Saske, uz granicu s Bavarskom i Češkom. Sjedište okruga je grad Plauen. Ostali okruzi nalaze se u drugim pokrajinama: Altötting u Bavarskoj, Uckermark u Brandenburgu, a Nordfriesland u Schleswig-Holsteinu.",
+  "merksatz_de": "Der Vogtlandkreis ist ein Landkreis in Sachsen."
+ },
+ {
+  "id": "SN-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Saskoj?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) u Saskoj bira se na 5 godina, a sjedište mu je u Dresdenu. Landtag donosi pokrajinske zakone i bira ministra predsjednika (Ministerpräsident). Nemojte to zamijeniti s Bundestagom, saveznim parlamentom, koji se bira na 4 godine.",
+  "merksatz_de": "Der Sächsische Landtag wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "SN-04",
+  "q_bks": "Od koje dobi se u Saskoj smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Saskoj se na lokalnim izborima (Kommunalwahlen) smije glasati od 18. godine. Na tim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). U nekim drugim pokrajinama, primjerice u Saskoj-Anhalt i Tiringiji, na lokalnim izborima glasa se već od 16. godine.",
+  "merksatz_de": "In Sachsen wählt man bei Kommunalwahlen ab 18 Jahren."
+ },
+ {
+  "id": "SN-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Saske?",
+  "options_bks": [
+   "plavo-bijelo-crveno",
+   "bijelo-zeleno",
+   "zeleno-bijelo-crveno",
+   "crno-žuto"
+  ],
+  "expl_bks": "Zastava Saske ima dvije vodoravne pruge: gore bijelu, dolje zelenu. Crna i žuta boja nalaze se u saskom grbu, ali ne na zastavi, pa je to česta zamka. Zastava se koristi i s pokrajinskim grbom u sredini.",
+  "merksatz_de": "Die sächsische Flagge ist weiß-grün."
+ },
+ {
+  "id": "SN-06",
+  "q_bks": "Gdje se u Saskoj možete informirati o političkim temama?",
+  "options_bks": [
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "Saski Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) nalazi se u Dresdenu. Tamo možete dobiti brošure i knjige o politici, često besplatno, te posjetiti predavanja i rasprave. Centar je politički neutralan. Komunalni redarstveni ured (Ordnungsamt) brine se o javnom redu, a ne o političkom obrazovanju.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung informiert neutral über Politik."
+ },
+ {
+  "id": "SN-07",
+  "q_bks": "Glavni grad Saske zove se …",
+  "options_bks": [
+   "Leipzig.",
+   "Dresden.",
+   "Chemnitz.",
+   "Zwickau."
+  ],
+  "expl_bks": "Glavni grad Saske je Dresden, grad na rijeci Elbi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Dresden je poznat po crkvi Frauenkirche, koja je razorena 1945., a ponovno izgrađena do 2005. Leipzig je također velik i poznat grad, ali nije glavni grad.",
+  "merksatz_de": "Dresden ist die Hauptstadt von Sachsen."
+ },
+ {
+  "id": "SN-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Saska?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Saska na jugoistoku istočnog dijela Njemačke, uz granicu s Poljskom i Češkom. Unutar Njemačke graniči s Bavarskom, Tiringijom, Saskom-Anhalt i Brandenburgom. Glavni grad Saske je Dresden, grad na rijeci Elbi.",
+  "merksatz_de": "Sachsen liegt im Osten, an der Grenze zu Polen und Tschechien."
+ },
+ {
+  "id": "SN-09",
+  "q_bks": "Kako se zove šef vlade u Saskoj?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Šef pokrajinske vlade u Saskoj zove se ministar predsjednik (Ministerpräsident). Iako je Saska slobodna država (Freistaat), naziv je isti kao u većini drugih pokrajina. Bira ga Landtag (pokrajinski parlament). Naziv „premijer” koristi se u drugim državama, a gradonačelnik vodi grad ili općinu.",
+  "merksatz_de": "Sachsens Landesregierung wird vom Ministerpräsidenten geleitet."
+ },
+ {
+  "id": "SN-10",
+  "q_bks": "Kojeg ministra Saska nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Saska nema ministra vanjskih poslova. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), pa vanjsku politiku vodi savezna vlada. Pokrajine imaju vlastite ministre za pravosuđe, financije i unutarnje poslove, jer su zadužene npr. za sudove, policiju i svoj proračun.",
+  "merksatz_de": "Einen Außenminister hat nur die Bundesregierung."
+ },
+ {
+  "id": "ST-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Saskoj-Anhalt?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Saske-Anhalt: gore crno-žute pruge sa zelenim vijencem i mali crni orao, dolje crni medvjed na crvenom zidu. Medvjed je znak povijesne zemlje Anhalt. Pazite: i grb Saske ima crno-žute pruge sa zelenim vijencem, ali nema medvjeda.",
+  "merksatz_de": "Im Wappen von Sachsen-Anhalt steht ein schwarzer Bär auf einer Mauer."
+ },
+ {
+  "id": "ST-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Saskoj-Anhalt?",
+  "options_bks": [
+   "Ammerland",
+   "Altötting",
+   "Uckermark",
+   "Börde"
+  ],
+  "expl_bks": "Börde je okrug (Landkreis) u Saskoj-Anhalt, u okolici Magdeburga. Riječ „Börde” označava ravan kraj s vrlo plodnom zemljom, gdje se uzgajaju npr. šećerna repa i žitarice. Ammerland je u Donjoj Saskoj, Altötting u Bavarskoj, a Uckermark u Brandenburgu.",
+  "merksatz_de": "Der Landkreis Börde liegt in Sachsen-Anhalt."
+ },
+ {
+  "id": "ST-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Saskoj-Anhalt?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Saske-Anhalt bira se na 5 godina i zasjeda u Magdeburgu. Zastupnici donose pokrajinske zakone, odlučuju o proračunu i biraju ministra predsjednika (Ministerpräsident). Pet godina traje izborno razdoblje i u većini drugih pokrajina, a Bundestag (savezni parlament) bira se na 4 godine.",
+  "merksatz_de": "Sachsen-Anhalt wählt seinen Landtag für fünf Jahre."
+ },
+ {
+  "id": "ST-04",
+  "q_bks": "Od koje dobi se u Saskoj-Anhalt smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Saskoj-Anhalt mladi smiju glasati na lokalnim izborima (Kommunalwahlen) već sa 16 godina. Na tim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). Za izbore za Bundestag (savezni parlament) potrebno je imati 18 godina.",
+  "merksatz_de": "Bei Kommunalwahlen in Sachsen-Anhalt darf man ab 16 wählen."
+ },
+ {
+  "id": "ST-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Saske-Anhalt?",
+  "options_bks": [
+   "plavo-bijelo-crveno",
+   "žuto-crno",
+   "zeleno-bijelo-crveno",
+   "bijelo-crveno"
+  ],
+  "expl_bks": "Zastava Saske-Anhalt ima dvije vodoravne pruge: gore žutu, dolje crnu. Često se koristi i s pokrajinskim grbom u sredini. Iste boje, crna i žuta, nalaze se i u gornjem dijelu grba. Pazite na redoslijed: žuta je gore, crna dolje.",
+  "merksatz_de": "Die Flagge von Sachsen-Anhalt ist gelb-schwarz."
+ },
+ {
+  "id": "ST-06",
+  "q_bks": "Gdje se u Saskoj-Anhalt možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "U Saskoj-Anhalt o politici informira Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Magdeburgu. On organizira predavanja, izložbe i seminare te izdaje besplatne ili jeftine publikacije. Centar ne zastupa nijednu stranku. Crkve i savjetovališta za potrošače imaju druge zadaće.",
+  "merksatz_de": "Infos über Politik bekommt man bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "ST-07",
+  "q_bks": "Glavni grad Saske-Anhalt zove se …",
+  "options_bks": [
+   "Halle.",
+   "Dessau.",
+   "Magdeburg.",
+   "Wittenberg."
+  ],
+  "expl_bks": "Glavni grad Saske-Anhalt je Magdeburg, grad na rijeci Elbi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Halle, Dessau i Wittenberg također su poznati gradovi u pokrajini, ali nisu glavni grad. Wittenberg je poznat po Martinu Lutheru i reformaciji.",
+  "merksatz_de": "Magdeburg ist die Landeshauptstadt von Sachsen-Anhalt."
+ },
+ {
+  "id": "ST-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Saska-Anhalt?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Saska-Anhalt u sredini istočnog dijela Njemačke, između Donje Saske, Brandenburga, Saske i Tiringije. Kroz pokrajinu teče rijeka Elba (Elbe), a glavni grad je Magdeburg. Saska-Anhalt nema granicu ni s jednom drugom državom.",
+  "merksatz_de": "Sachsen-Anhalt liegt in der Mitte von Ostdeutschland."
+ },
+ {
+  "id": "ST-09",
+  "q_bks": "Kako se zove šef vlade u Saskoj-Anhalt?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "U Saskoj-Anhalt pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Nakon izbora bira ga Landtag (pokrajinski parlament) u Magdeburgu. Taj naziv imaju šefovi vlada u svim pokrajinama osim Berlina, Hamburga i Bremena. Naziv „premijer” ne koristi se za njemačke pokrajine.",
+  "merksatz_de": "Der Regierungschef von Sachsen-Anhalt heißt Ministerpräsident."
+ },
+ {
+  "id": "ST-10",
+  "q_bks": "Kojeg ministra Saska-Anhalt nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Saska-Anhalt, kao ni druge pokrajine, nema ministra vanjskih poslova. Vanjska politika je prema članku 32. Temeljnog zakona (njemačkog ustava) zadaća saveza (Bund), pa tog ministra ima samo savezna vlada. Ministri pravosuđa, financija i unutarnjih poslova postoje i u pokrajinama, jer one same vode sudove, policiju i svoj proračun.",
+  "merksatz_de": "Bundesländer haben keinen eigenen Außenminister."
+ },
+ {
+  "id": "SH-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Schleswig-Holstein?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Schleswig-Holsteina: lijevo dva plava lava na zlatnoj podlozi, desno bijeli list koprive na crvenoj podlozi. Lavovi predstavljaju povijesni kraj Schleswig, a list koprive kraj Holstein. Tako i ime i grb pokazuju da se pokrajina sastoji od dvaju povijesnih dijelova.",
+  "merksatz_de": "Schleswig-Holsteins Wappen: zwei blaue Löwen und ein Nesselblatt."
+ },
+ {
+  "id": "SH-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Schleswig-Holsteinu?",
+  "options_bks": [
+   "Ammerland",
+   "Mecklenburgische Seenplatte",
+   "Nordfriesland",
+   "Rhein-Sieg-Kreis"
+  ],
+  "expl_bks": "Nordfriesland je okrug (Landkreis) na obali Sjevernog mora, uz granicu s Danskom. Pripadaju mu i otoci Sylt, Föhr i Amrum, a sjedište okruga je Husum. Ammerland je u Donjoj Saskoj, Mecklenburgische Seenplatte u Mecklenburgu-Zapadnoj Pomeraniji, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "merksatz_de": "Nordfriesland ist ein Landkreis in Schleswig-Holstein."
+ },
+ {
+  "id": "SH-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Schleswig-Holsteinu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Schleswig-Holsteina bira se na 5 godina i zasjeda u Kielu. Landtag donosi pokrajinske zakone, odlučuje o proračunu i bira ministra predsjednika (Ministerpräsident). Za usporedbu: Bundestag (savezni parlament) bira se na 4 godine.",
+  "merksatz_de": "Der Landtag in Kiel wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "SH-04",
+  "q_bks": "Od koje dobi se u Schleswig-Holsteinu smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Schleswig-Holsteinu na lokalnim izborima (Kommunalwahlen) smije se glasati od 16. godine. Tada se biraju općinska i gradska vijeća te okružne skupštine (Kreistag). Na lokalnim izborima mogu glasati i građani drugih država Europske unije koji ovdje žive. Za Bundestag (savezni parlament) potrebno je 18 godina.",
+  "merksatz_de": "In Schleswig-Holstein wählt man bei Kommunalwahlen ab 16."
+ },
+ {
+  "id": "SH-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Schleswig-Holsteina?",
+  "options_bks": [
+   "bijelo-plavo",
+   "plavo-bijelo-crveno",
+   "bijelo-crveno",
+   "zeleno-bijelo-crveno"
+  ],
+  "expl_bks": "Zastava Schleswig-Holsteina ima tri vodoravne pruge, odozgo prema dolje: plavu, bijelu i crvenu. Te boje dolaze iz pokrajinskog grba, u kojem su plavi lavovi te bijeli list koprive na crvenoj podlozi. Bijelo-plava zastava pripada Bavarskoj.",
+  "merksatz_de": "Die Flagge von Schleswig-Holstein ist blau-weiß-rot."
+ },
+ {
+  "id": "SH-06",
+  "q_bks": "Gdje se u Schleswig-Holsteinu možete informirati o političkim temama?",
+  "options_bks": [
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "kod pokrajinskog povjerenika za političko obrazovanje",
+   "u crkvama"
+  ],
+  "expl_bks": "U Schleswig-Holsteinu tu zadaću ima pokrajinski povjerenik za političko obrazovanje (Landesbeauftragter für politische Bildung) u Kielu. On nudi informacije o politici i demokraciji, publikacije i događanja, a politički je neutralan. Komunalni redarstveni ured (Ordnungsamt) i savjetovalište za potrošače imaju druge zadaće.",
+  "merksatz_de": "In Schleswig-Holstein informiert der Landesbeauftragte für politische Bildung."
+ },
+ {
+  "id": "SH-07",
+  "q_bks": "Glavni grad Schleswig-Holsteina zove se …",
+  "options_bks": [
+   "Husum.",
+   "Flensburg.",
+   "Lübeck.",
+   "Kiel."
+  ],
+  "expl_bks": "Glavni grad Schleswig-Holsteina je Kiel, lučki grad na Baltičkom moru. Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Kiel je poznat po jedriličarskom festivalu Kieler Woche, koji se održava svake godine u lipnju. Lübeck, Flensburg i Husum poznati su gradovi, ali nisu glavni grad.",
+  "merksatz_de": "Kiel ist die Landeshauptstadt von Schleswig-Holstein."
+ },
+ {
+  "id": "SH-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Schleswig-Holstein?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Schleswig-Holstein najsjevernija pokrajina, između Sjevernog i Baltičkog mora, uz granicu s Danskom. Na jugu graniči s Hamburgom, Donjom Saskom i Mecklenburgom-Zapadnom Pomeranijom. Glavni grad pokrajine je Kiel.",
+  "merksatz_de": "Schleswig-Holstein ist das nördlichste Bundesland Deutschlands."
+ },
+ {
+  "id": "SH-09",
+  "q_bks": "Kako se zove šef vlade u Schleswig-Holsteinu?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Šef pokrajinske vlade u Schleswig-Holsteinu zove se ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) u Kielu. Isti naziv koristi se u 13 saveznih pokrajina; samo gradovi-pokrajine Berlin, Hamburg i Bremen imaju druge nazive. „Prvi ministar” i „premijer” nisu nazivi iz njemačkih pokrajina.",
+  "merksatz_de": "Die Landesregierung in Kiel leitet der Ministerpräsident."
+ },
+ {
+  "id": "SH-10",
+  "q_bks": "Kojeg ministra Schleswig-Holstein nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Schleswig-Holstein nema ministra vanjskih poslova. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), a ne pokrajina. I kad pokrajina surađuje sa susjednom Danskom, vanjsku politiku Njemačke vodi savezna vlada. Pokrajine imaju ministre za pravosuđe, financije i unutarnje poslove.",
+  "merksatz_de": "Für Außenpolitik ist in Deutschland der Bund zuständig."
+ },
+ {
+  "id": "TH-01",
+  "q_bks": "Koji grb pripada slobodnoj državi (Freistaat) Tiringiji?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Tiringije: lav s crveno-bijelim prugama na plavom štitu, oko njega osam bijelih zvjezdica. Sličan prugasti lav nalazi se i u grbu Hessena, ali Hessenov grb nema zvjezdice. Zato pri odgovoru pazite na osam zvjezdica oko lava.",
+  "merksatz_de": "Thüringens Wappen zeigt einen gestreiften Löwen und acht Sterne."
+ },
+ {
+  "id": "TH-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Tiringiji?",
+  "options_bks": [
+   "Ammerland",
+   "Altötting",
+   "Nordfriesland",
+   "Wartburgkreis"
+  ],
+  "expl_bks": "Wartburgkreis je okrug (Landkreis) na zapadu Tiringije. Ime je dobio po dvorcu Wartburg kod Eisenacha, gdje je Martin Luther 1521. i 1522. prevodio Novi zavjet na njemački. Ammerland je u Donjoj Saskoj, Altötting u Bavarskoj, a Nordfriesland u Schleswig-Holsteinu.",
+  "merksatz_de": "Der Wartburgkreis ist ein Landkreis in Thüringen."
+ },
+ {
+  "id": "TH-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Tiringiji?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Tiringije bira se na 5 godina i zasjeda u Erfurtu. Zastupnici donose zakone pokrajine, kontroliraju pokrajinsku vladu i biraju ministra predsjednika (Ministerpräsident). Za usporedbu: Bundestag (savezni parlament) bira se na 4 godine.",
+  "merksatz_de": "Alle fünf Jahre wählt Thüringen einen neuen Landtag."
+ },
+ {
+  "id": "TH-04",
+  "q_bks": "Od koje dobi se u Tiringiji smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Tiringiji se na lokalnim izborima (Kommunalwahlen) smije glasati od 16. godine. Tako i mladi mogu sudjelovati u izboru općinskog ili gradskog vijeća i okružne skupštine (Kreistag). Za izbore za Bundestag (savezni parlament) potrebno je imati 18 godina.",
+  "merksatz_de": "Thüringen: Bei Kommunalwahlen darf man ab 16 wählen."
+ },
+ {
+  "id": "TH-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Tiringije?",
+  "options_bks": [
+   "plavo-bijelo-crveno",
+   "bijelo-crveno",
+   "zeleno-bijelo-crveno",
+   "crno-zlatno"
+  ],
+  "expl_bks": "Zastava Tiringije ima dvije vodoravne pruge: gore bijelu, dolje crvenu. Iste boje ima i lav u tiringijskom grbu. Pazite na zamku: zastava susjednog Hessena ima obrnut redoslijed, crveno-bijelo. Tiringijska zastava koristi se i s grbom u sredini.",
+  "merksatz_de": "Die Landesflagge von Thüringen ist weiß-rot."
+ },
+ {
+  "id": "TH-06",
+  "q_bks": "Gdje se u Tiringiji možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine"
+  ],
+  "expl_bks": "U Tiringiji o politici informira Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Erfurtu. Svatko može dobiti brošure, knjige i informacije o izborima te sudjelovati na seminarima. Centar je politički neutralan i ne radi za stranke. Crkve, Ordnungsamt i savjetovalište za potrošače imaju druge zadaće.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung bietet Broschüren und Seminare an."
+ },
+ {
+  "id": "TH-07",
+  "q_bks": "Glavni grad Tiringije zove se …",
+  "options_bks": [
+   "Eisenach.",
+   "Erfurt.",
+   "Gera.",
+   "Jena."
+  ],
+  "expl_bks": "Glavni grad Tiringije je Erfurt, ujedno i najveći grad pokrajine. Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Erfurt je poznat po katedrali i starom mostu Krämerbrücke, na kojem stoje kuće. Jena, Gera i Eisenach poznati su tiringijski gradovi, ali nisu glavni grad.",
+  "merksatz_de": "Erfurt ist die Hauptstadt von Thüringen."
+ },
+ {
+  "id": "TH-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Tiringija?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Tiringija u sredini Njemačke, južno od Saske-Anhalt, između Hessena, Bavarske i Saske. Zbog mnogo šuma često se naziva „zeleno srce Njemačke” (das grüne Herz Deutschlands). Glavni grad pokrajine je Erfurt.",
+  "merksatz_de": "Thüringen liegt in der Mitte Deutschlands."
+ },
+ {
+  "id": "TH-09",
+  "q_bks": "Kako se zove šef vlade u Tiringiji?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Na čelu vlade Tiringije je ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) u Erfurtu, obično nakon pokrajinskih izbora. Tiringija je slobodna država (Freistaat), ali to je samo povijesni naziv i ne mijenja naziv šefa vlade. Gradonačelnik je šef grada ili općine.",
+  "merksatz_de": "Auch in Thüringen führt ein Ministerpräsident die Regierung."
+ },
+ {
+  "id": "TH-10",
+  "q_bks": "Kojeg ministra Tiringija nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Tiringija nema ministra vanjskih poslova, jer vanjska politika nije zadaća pokrajina. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnose s drugim državama vodi savez (Bund), odnosno savezna vlada i Ministarstvo vanjskih poslova (Auswärtiges Amt). Pokrajinski ministri brinu se npr. o pravosuđu, financijama i unutarnjim poslovima.",
+  "merksatz_de": "Thüringen hat Justiz-, Finanz- und Innenminister, aber keinen Außenminister."
+ }
+]

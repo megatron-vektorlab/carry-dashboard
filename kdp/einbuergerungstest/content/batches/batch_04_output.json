@@ -1,0 +1,554 @@
+[
+ {
+  "id": "G-139",
+  "q_bks": "Kada u Njemačkoj dolazi do sudskog procesa? Kada netko …",
+  "options_bks": [
+   "prijeđe na drugu vjeru.",
+   "počini kazneno djelo i bude optužen.",
+   "zastupa drugačije mišljenje od vlade.",
+   "pogrešno parkira automobil pa ga odveze pauk."
+  ],
+  "expl_bks": "Kazneni proces pred sudom počinje kad državni tužitelj optuži neku osobu za kazneno djelo, na primjer za krađu ili tjelesnu ozljedu. Promjena vjere i drugačije mišljenje od vlade zaštićeni su temeljnim pravima i nisu kažnjivi. Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, bez suđenja.",
+  "merksatz_de": "Ein Strafprozess beginnt, wenn jemand wegen einer Straftat angeklagt wird."
+ },
+ {
+  "id": "G-140",
+  "q_bks": "Što u Njemačkoj radi sudac porotnik (Schöffe)? On …",
+  "options_bks": [
+   "zajedno sa sucima odlučuje o krivnji i kazni.",
+   "daje građanima pravne savjete.",
+   "izdaje isprave.",
+   "brani optuženika."
+  ],
+  "expl_bks": "Sudac porotnik (Schöffe) je građanin bez pravnog obrazovanja koji tu dužnost obavlja volonterski. Sjedi uz profesionalne suce i s njima odlučuje je li optuženik kriv i kakva će biti kazna. Pritom ima isto pravo glasa kao profesionalni sudac. Optuženika brani odvjetnik, a ne sudac porotnik.",
+  "merksatz_de": "Schöffen entscheiden zusammen mit Richtern über Schuld und Strafe."
+ },
+ {
+  "id": "G-141",
+  "q_bks": "Tko u Njemačkoj savjetuje osobe o pravnim pitanjima i zastupa ih pred sudom?",
+  "options_bks": [
+   "odvjetnik (Rechtsanwalt)",
+   "sudac (Richter)",
+   "sudac porotnik (Schöffe)",
+   "državni tužitelj (Staatsanwalt)"
+  ],
+  "expl_bks": "Odvjetnik (advokat, na njemačkom Rechtsanwalt) savjetuje ljude o pravnim pitanjima i zastupa ih pred sudom, na primjer kod razvoda ili spora s poslodavcem. Sudac vodi postupak i donosi presudu, a državni tužitelj optužuje osobe za kaznena djela. Sudac porotnik sudi zajedno s profesionalnim sucima.",
+  "merksatz_de": "Ein Rechtsanwalt berät Menschen und vertritt sie vor Gericht."
+ },
+ {
+  "id": "G-142",
+  "q_bks": "Koji je glavni zadatak suca u Njemačkoj? Sudac …",
+  "options_bks": [
+   "zastupa građane pred sudom.",
+   "radi na sudu i donosi presude.",
+   "mijenja zakone.",
+   "brine se o mladima na sudu."
+  ],
+  "expl_bks": "Sudac radi na sudu: vodi postupak, sasluša obje strane i na kraju donosi presudu. Pritom je neovisan i podliježe samo zakonu, pa mu nitko, ni vlada, ne smije govoriti kako treba presuditi. Zakone ne mijenja sudac nego parlament, a građane pred sudom zastupa odvjetnik.",
+  "merksatz_de": "Richterinnen und Richter sprechen am Gericht Urteile."
+ },
+ {
+  "id": "G-143",
+  "q_bks": "Sudac u Njemačkoj pripada …",
+  "options_bks": [
+   "judikativi.",
+   "egzekutivi.",
+   "operativi.",
+   "legislativi."
+  ],
+  "expl_bks": "Državna vlast u Njemačkoj podijeljena je na tri dijela: legislativu (zakonodavna vlast, parlamenti), egzekutivu (izvršna vlast, vlada i uprava) i judikativu (sudska vlast). Suci i sudovi pripadaju judikativi. „Operativa” nije grana državne vlasti. Ta se podjela vlasti na njemačkom zove Gewaltenteilung.",
+  "merksatz_de": "Richter gehören zur Judikative, also zur rechtsprechenden Gewalt."
+ },
+ {
+  "id": "G-144",
+  "q_bks": "U Njemačkoj sudac pripada …",
+  "options_bks": [
+   "izvršnoj vlasti.",
+   "sudskoj vlasti.",
+   "planskoj vlasti.",
+   "zakonodavnoj vlasti."
+  ],
+  "expl_bks": "Prema članku 20. Temeljnog zakona (njemački ustav) državnu vlast vrše zakonodavna, izvršna i sudska vlast. Suci pripadaju sudskoj vlasti (rechtsprechende Gewalt): odlučuju u sporovima i kaznenim postupcima. Zakonodavna vlast donosi zakone, a izvršna ih provodi. „Planska vlast” ne postoji.",
+  "merksatz_de": "Zur rechtsprechenden Gewalt gehören Richterinnen und Richter."
+ },
+ {
+  "id": "G-145",
+  "q_bks": "U Njemačkoj je državna vlast podijeljena. Za koju granu državne vlasti radi sudac? Za …",
+  "options_bks": [
+   "judikativu",
+   "egzekutivu",
+   "tisak",
+   "legislativu"
+  ],
+  "expl_bks": "Podjela vlasti znači da nijedna institucija nema svu moć. Sudac radi za judikativu, to jest sudsku vlast, i neovisan je o vladi i parlamentu (članak 97. Temeljnog zakona). Tisak se često naziva „četvrtom vlašću” jer kontrolira politiku, ali nije dio državne vlasti.",
+  "merksatz_de": "Bei der Gewaltenteilung arbeiten Richter für die Judikative."
+ },
+ {
+  "id": "G-146",
+  "q_bks": "Kako se u Njemačkoj naziva postupak pred sudom?",
+  "options_bks": [
+   "program (Programm)",
+   "procedura (Prozedur)",
+   "protokol (Protokoll)",
+   "proces (Prozess)"
+  ],
+  "expl_bks": "Postupak pred sudom na njemačkom se zove „Prozess” (sudski proces, suđenje). Na primjer, kazneni proces počinje kad je netko optužen za kazneno djelo. „Protokoll” je zapisnik, „Prozedur” je općenito tijek neke radnje, a „Programm” je plan ili raspored.",
+  "merksatz_de": "Ein Verfahren vor Gericht heißt Prozess."
+ },
+ {
+  "id": "G-147",
+  "q_bks": "Koji je posao suca u Njemačkoj?",
+  "options_bks": [
+   "upravljati Njemačkom",
+   "izricati presude",
+   "izrađivati planove",
+   "donositi zakone"
+  ],
+  "expl_bks": "Sudac izriče presude (Recht sprechen): vodi postupak, primjenjuje zakone na konkretan slučaj i odlučuje tko je u pravu ili je li netko kriv. Suci su neovisni. Zemljom upravlja vlada (izvršna vlast), a zakone donosi parlament (zakonodavna vlast).",
+  "merksatz_de": "Die Aufgabe von Richtern ist es, Recht zu sprechen."
+ },
+ {
+  "id": "G-148",
+  "q_bks": "Što je jedan od zadataka policije u Njemačkoj?",
+  "options_bks": [
+   "braniti zemlju",
+   "prisluškivati građane",
+   "donositi zakone",
+   "nadzirati poštivanje zakona"
+  ],
+  "expl_bks": "Policija pazi da se ljudi pridržavaju zakona, štiti građane od opasnosti i istražuje kaznena djela. Primjer iz svakodnevice je kontrola brzine u prometu. Zemlju od napada izvana brani vojska (Bundeswehr), a zakone donose parlamenti, ne policija.",
+  "merksatz_de": "Die Polizei überwacht, dass alle die Gesetze einhalten."
+ },
+ {
+  "id": "G-149",
+  "q_bks": "Što je primjer antisemitskog ponašanja?",
+  "options_bks": [
+   "otići na židovsku proslavu",
+   "kritizirati izraelsku vladu",
+   "poricati holokaust",
+   "igrati nogomet protiv Židova"
+  ],
+  "expl_bks": "Antisemitizam je mržnja ili neprijateljstvo prema Židovima. Poricanje holokausta, odnosno tvrdnja da nacisti nisu ubili oko šest milijuna Židova, jasan je primjer antisemitizma i u Njemačkoj je kazneno djelo. Posjet židovskoj proslavi ili nogometna utakmica sa Židovima normalan su dio zajedničkog života.",
+  "merksatz_de": "Den Holocaust zu leugnen ist antisemitisch und strafbar."
+ },
+ {
+  "id": "G-150",
+  "q_bks": "Sudac porotnik (Gerichtsschöffe) u Njemačkoj je …",
+  "options_bks": [
+   "zamjenik gradonačelnika.",
+   "volonterski sudac.",
+   "član općinskog vijeća.",
+   "osoba koja je studirala pravo."
+  ],
+  "expl_bks": "Sudac porotnik (Gerichtsschöffe) je građanin koji zajedno s profesionalnim sucima sudi u kaznenim postupcima. Taj posao obavlja volonterski: ne dobiva plaću, nego samo naknadu troškova. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
+  "merksatz_de": "Ein Schöffe ist ein Richter im Ehrenamt."
+ },
+ {
+  "id": "G-151",
+  "q_bks": "Tko je izgradio zid u Berlinu?",
+  "options_bks": [
+   "Velika Britanija",
+   "DDR",
+   "Savezna Republika Njemačka",
+   "SAD"
+  ],
+  "expl_bks": "Berlinski zid izgradila je 13. kolovoza 1961. DDR (Njemačka Demokratska Republika, Istočna Njemačka). Vodstvo DDR-a htjelo je spriječiti da njezini građani bježe na Zapad. Zid je dijelio grad 28 godina, sve do pada Berlinskog zida 9. studenoga 1989.",
+  "merksatz_de": "Die DDR baute 1961 die Mauer in Berlin."
+ },
+ {
+  "id": "G-152",
+  "q_bks": "Kada su nacionalsocijalisti s Adolfom Hitlerom bili na vlasti u Njemačkoj?",
+  "options_bks": [
+   "od 1918. do 1923.",
+   "od 1932. do 1950.",
+   "od 1933. do 1945.",
+   "od 1945. do 1989."
+  ],
+  "expl_bks": "Adolf Hitler postao je kancelar Reicha (Reichskanzler) 30. siječnja 1933. Nacionalsocijalisti su zatim brzo ukinuli demokraciju i uspostavili diktaturu. Njihova vlast završila je u svibnju 1945. bezuvjetnom kapitulacijom Njemačke na kraju Drugog svjetskog rata. To je razdoblje trajalo dvanaest godina.",
+  "merksatz_de": "Hitler und die Nationalsozialisten regierten von 1933 bis 1945."
+ },
+ {
+  "id": "G-153",
+  "q_bks": "Što se dogodilo 8. svibnja 1945.?",
+  "options_bks": [
+   "smrt Adolfa Hitlera",
+   "početak izgradnje Berlinskog zida",
+   "izbor Konrada Adenauera za saveznog kancelara",
+   "kraj Drugog svjetskog rata u Europi"
+  ],
+  "expl_bks": "Dana 8. svibnja 1945. stupila je na snagu bezuvjetna kapitulacija njemačke vojske. Time je Drugi svjetski rat u Europi završio. Hitler je umro nekoliko dana ranije, 30. travnja 1945. Adenauer je izabran za kancelara tek 1949., a Berlinski zid izgrađen je 1961.",
+  "merksatz_de": "Am 8. Mai 1945 endete der Zweite Weltkrieg in Europa."
+ },
+ {
+  "id": "G-154",
+  "q_bks": "Kada je završio Drugi svjetski rat?",
+  "options_bks": [
+   "1933",
+   "1945",
+   "1949",
+   "1961"
+  ],
+  "expl_bks": "Drugi svjetski rat počeo je 1939. njemačkim napadom na Poljsku. U Europi je završio 8. svibnja 1945. bezuvjetnom kapitulacijom Njemačke, a u Aziji u rujnu 1945. kapitulacijom Japana. Godina 1949. je godina osnivanja Savezne Republike Njemačke, a 1961. izgrađen je Berlinski zid.",
+  "merksatz_de": "Der Zweite Weltkrieg war 1945 zu Ende."
+ },
+ {
+  "id": "G-155",
+  "q_bks": "Kada su nacionalsocijalisti bili na vlasti u Njemačkoj?",
+  "options_bks": [
+   "od 1888. do 1918.",
+   "od 1921. do 1934.",
+   "od 1933. do 1945.",
+   "od 1949. do 1963."
+  ],
+  "expl_bks": "Razdoblje nacionalsocijalizma trajalo je dvanaest godina: od 1933., kad je Hitler postao kancelar Reicha, do 1945., kad je Njemačka izgubila Drugi svjetski rat. Nacionalsocijalisti su svoju državu zvali „Treći Reich”. Od 1949. do 1963. savezni kancelar bio je Konrad Adenauer.",
+  "merksatz_de": "Die NS-Zeit dauerte zwölf Jahre: von 1933 bis 1945."
+ },
+ {
+  "id": "G-156",
+  "q_bks": "Koje je godine Hitler postao kancelar Reicha (Reichskanzler)?",
+  "options_bks": [
+   "1923",
+   "1927",
+   "1933",
+   "1936"
+  ],
+  "expl_bks": "Predsjednik Reicha Paul von Hindenburg imenovao je Adolfa Hitlera kancelarom Reicha 30. siječnja 1933. Taj se dan smatra početkom nacionalsocijalističke diktature. Godine 1923. Hitler je u Münchenu pokušao izvesti puč, ali tada nije uspio i završio je u zatvoru.",
+  "merksatz_de": "Hitler wurde im Januar 1933 Reichskanzler."
+ },
+ {
+  "id": "G-157",
+  "q_bks": "Nacionalsocijalisti s Adolfom Hitlerom uspostavili su 1933. u Njemačkoj …",
+  "options_bks": [
+   "diktaturu.",
+   "demokratsku državu.",
+   "monarhiju.",
+   "kneževinu."
+  ],
+  "expl_bks": "Nakon dolaska na vlast 1933. nacionalsocijalisti su vrlo brzo uspostavili diktaturu. Zabranili su druge stranke i sindikate, ukinuli slobodu tiska i progonili svoje protivnike. Sva je vlast bila u rukama Hitlera i njegove stranke NSDAP, a slobodnih izbora više nije bilo.",
+  "merksatz_de": "1933 errichteten die Nationalsozialisten eine Diktatur."
+ },
+ {
+  "id": "G-158",
+  "q_bks": "„Treći Reich” bio je …",
+  "options_bks": [
+   "diktatura.",
+   "demokracija.",
+   "monarhija.",
+   "republika vijeća (Räterepublik)."
+  ],
+  "expl_bks": "„Treći Reich” je naziv koji su nacionalsocijalisti dali svojoj državi od 1933. do 1945. Bila je to diktatura: Hitler i njegova stranka imali su svu vlast, bez slobodnih izbora i bez podjele vlasti. Kritičari režima bili su zatvarani u logore ili ubijani.",
+  "merksatz_de": "Das „Dritte Reich“ war eine Diktatur."
+ },
+ {
+  "id": "G-159",
+  "q_bks": "Čega u Njemačkoj nije bilo u vrijeme nacionalsocijalizma?",
+  "options_bks": [
+   "slobodnih izbora",
+   "cenzure tiska",
+   "proizvoljnih uhićenja",
+   "progona Židova"
+  ],
+  "expl_bks": "U nacionalsocijalističkoj diktaturi nije bilo slobodnih izbora. Od 1933. postojala je samo jedna dopuštena stranka, NSDAP, a glasanja su služila samo za prikaz podrške režimu. Cenzura tiska, proizvoljna uhićenja i progon Židova, naprotiv, bili su dio svakodnevice.",
+  "merksatz_de": "In der NS-Zeit gab es keine freien Wahlen."
+ },
+ {
+  "id": "G-160",
+  "q_bks": "Koji je rat trajao od 1939. do 1945.?",
+  "options_bks": [
+   "Prvi svjetski rat",
+   "Drugi svjetski rat",
+   "Vijetnamski rat",
+   "Zaljevski rat"
+  ],
+  "expl_bks": "Drugi svjetski rat počeo je 1. rujna 1939. njemačkim napadom na Poljsku. U Europi je završio 8. svibnja 1945. kapitulacijom Njemačke. Bio je to najveći rat u povijesti, s više od 60 milijuna mrtvih. Prvi svjetski rat trajao je od 1914. do 1918.",
+  "merksatz_de": "Der Zweite Weltkrieg dauerte von 1939 bis 1945."
+ },
+ {
+  "id": "G-161",
+  "q_bks": "Što je obilježavalo nacionalsocijalističku državu (NS-Staat)? Politika …",
+  "options_bks": [
+   "državnog rasizma",
+   "slobode mišljenja",
+   "opće slobode vjeroispovijesti",
+   "razvoja demokracije"
+  ],
+  "expl_bks": "U nacionalsocijalističkoj državi rasizam je bio dio zakona i državne politike. Nürnberškim zakonima iz 1935. Židovima su oduzeta građanska prava. Progon je završio holokaustom, u kojem je ubijeno oko šest milijuna europskih Židova. Progonjeni su bili i Sinti i Romi.",
+  "merksatz_de": "Der NS-Staat betrieb eine Politik des staatlichen Rassismus."
+ },
+ {
+  "id": "G-162",
+  "q_bks": "Claus Schenk Graf von Stauffenberg postao je poznat po …",
+  "options_bks": [
+   "zlatnoj medalji na Olimpijskim igrama 1936.",
+   "gradnji zgrade Reichstaga.",
+   "stvaranju Wehrmachta (njemačke vojske).",
+   "atentatu na Hitlera 20. srpnja 1944."
+  ],
+  "expl_bks": "Časnik Claus Schenk Graf von Stauffenberg podmetnuo je 20. srpnja 1944. bombu u aktovci na sastanku s Hitlerom. Hitler je preživio, a Stauffenberg je iste noći strijeljan u Berlinu. Danas je 20. srpnja u Njemačkoj dan sjećanja na otpor protiv nacionalsocijalizma.",
+  "merksatz_de": "Stauffenberg versuchte am 20. Juli 1944, Hitler zu töten."
+ },
+ {
+  "id": "G-163",
+  "q_bks": "Koje su godine nacionalsocijalisti u Njemačkoj uništavali sinagoge i židovske trgovine?",
+  "options_bks": [
+   "1925",
+   "1930",
+   "1938",
+   "1945"
+  ],
+  "expl_bks": "U noći s 9. na 10. studenoga 1938. nacionalsocijalisti i njihove pristaše palili su sinagoge i razbijali izloge židovskih trgovina diljem Njemačke. Mnogi Židovi su ubijeni ili odvedeni u koncentracijske logore. Na njemačkom se ti događaji nazivaju „Novemberpogrome” (pogromi u studenom 1938.).",
+  "merksatz_de": "1938 zerstörten Nationalsozialisten Synagogen und jüdische Geschäfte."
+ },
+ {
+  "id": "G-164",
+  "q_bks": "Što se dogodilo u Njemačkoj 9. studenoga 1938.?",
+  "options_bks": [
+   "Napadom na Poljsku počinje Drugi svjetski rat.",
+   "Nacionalsocijalisti gube izbore i raspuštaju Reichstag.",
+   "Nacionalsocijalisti i njihove pristaše uništavaju židovske trgovine i sinagoge.",
+   "Hitler postaje predsjednik Reicha i zabranjuje sve stranke."
+  ],
+  "expl_bks": "Dana 9. studenoga 1938. i sljedećih dana nacionalsocijalisti i njihove pristaše napadali su Židove u cijeloj Njemačkoj. Uništeno je više od 1.000 sinagoga i mnogo židovskih trgovina, a oko 30.000 židovskih muškaraca odvedeno je u koncentracijske logore. Rat je počeo tek 1. rujna 1939.",
+  "merksatz_de": "Am 9. November 1938 brannten in Deutschland Synagogen."
+ },
+ {
+  "id": "G-165",
+  "q_bks": "Kako se zvao prvi savezni kancelar Savezne Republike Njemačke?",
+  "options_bks": [
+   "Konrad Adenauer",
+   "Kurt Georg Kiesinger",
+   "Helmut Schmidt",
+   "Willy Brandt"
+  ],
+  "expl_bks": "Konrad Adenauer (CDU) izabran je 1949. za prvog saveznog kancelara i na toj je dužnosti ostao do 1963. Povezao je Saveznu Republiku sa Zapadom i započeo pomirenje s Francuskom. Kurt Georg Kiesinger, Willy Brandt i Helmut Schmidt bili su kancelari kasnije.",
+  "merksatz_de": "Konrad Adenauer war der erste Bundeskanzler."
+ },
+ {
+  "id": "G-166",
+  "q_bks": "Na kojim su demonstracijama u Njemačkoj ljudi uzvikivali „Mi smo narod” (Wir sind das Volk)?",
+  "options_bks": [
+   "tijekom radničkog ustanka 1953. u DDR-u",
+   "na demonstracijama 1968. u Saveznoj Republici Njemačkoj",
+   "na demonstracijama protiv nuklearnih elektrana 1985. u Saveznoj Republici Njemačkoj",
+   "na ponedjeljnim demonstracijama 1989. u DDR-u"
+  ],
+  "expl_bks": "U jesen 1989. ljudi u Leipzigu i drugim gradovima DDR-a svakog su ponedjeljka mirno demonstrirali. Uzvikivali su „Wir sind das Volk” („Mi smo narod”) i tražili slobodu i demokraciju. Te ponedjeljne demonstracije (Montagsdemonstrationen) doprinijele su padu Berlinskog zida 9. studenoga 1989.",
+  "merksatz_de": "Bei den Montagsdemonstrationen 1989 rief man: „Wir sind das Volk!“"
+ },
+ {
+  "id": "G-167",
+  "q_bks": "Koje su se zemlje nakon Drugog svjetskog rata u Njemačkoj nazivale „savezničke okupacijske sile”?",
+  "options_bks": [
+   "Sovjetski Savez, Velika Britanija, Poljska, Švedska",
+   "Francuska, Sovjetski Savez, Italija, Japan",
+   "SAD, Sovjetski Savez, Španjolska, Portugal",
+   "SAD, Sovjetski Savez, Velika Britanija, Francuska"
+  ],
+  "expl_bks": "Nakon pobjede nad Njemačkom 1945. četiri saveznika podijelila su zemlju na četiri okupacijske zone: SAD, Sovjetski Savez, Velika Britanija i Francuska. Svaka je sila upravljala jednom zonom. Italija i Japan borili su se u ratu na strani Njemačke, a Švedska, Španjolska i Portugal ostale su neutralne.",
+  "merksatz_de": "Die vier Besatzungsmächte waren USA, Sowjetunion, Großbritannien und Frankreich."
+ },
+ {
+  "id": "G-168",
+  "q_bks": "Koja zemlja nije bila „saveznička okupacijska sila” u Njemačkoj?",
+  "options_bks": [
+   "SAD",
+   "Sovjetski Savez",
+   "Francuska",
+   "Japan"
+  ],
+  "expl_bks": "Japan se u Drugom svjetskom ratu borio na strani Njemačke, dakle protiv saveznika. Zato nije mogao biti okupacijska sila u Njemačkoj. Nakon 1945. Njemačku su okupirale i podijelile na zone četiri savezničke sile: SAD, Sovjetski Savez, Velika Britanija i Francuska.",
+  "merksatz_de": "Japan war keine Besatzungsmacht in Deutschland."
+ },
+ {
+  "id": "G-169",
+  "q_bks": "Kada je osnovana Savezna Republika Njemačka?",
+  "options_bks": [
+   "1939",
+   "1945",
+   "1949",
+   "1951"
+  ],
+  "expl_bks": "Savezna Republika Njemačka osnovana je 23. svibnja 1949., kada je stupio na snagu Temeljni zakon (njemački ustav). Iste godine, 7. listopada 1949., u sovjetskoj zoni osnovana je i DDR. Godina 1945. označava kraj rata, a ne osnivanje nove države.",
+  "merksatz_de": "Die Bundesrepublik Deutschland wurde 1949 gegründet."
+ },
+ {
+  "id": "G-170",
+  "q_bks": "Što je postojalo u Njemačkoj u vrijeme nacionalsocijalizma?",
+  "options_bks": [
+   "zabrana stranaka",
+   "pravo na slobodan razvoj osobnosti",
+   "sloboda tiska",
+   "zaštita ljudskog dostojanstva"
+  ],
+  "expl_bks": "Nacionalsocijalisti su 1933. zabranili ili raspustili sve druge stranke. Od srpnja 1933. NSDAP je bila jedina dopuštena stranka. Sloboda tiska, zaštita ljudskog dostojanstva i slobodan razvoj osobnosti temeljna su prava koja danas jamči Temeljni zakon, ali u diktaturi nisu postojala.",
+  "merksatz_de": "In der NS-Zeit waren andere Parteien verboten."
+ },
+ {
+  "id": "G-171",
+  "q_bks": "Socijalna tržišna ekonomija (Soziale Marktwirtschaft) znači da se ekonomija …",
+  "options_bks": [
+   "upravlja sama, samo prema ponudi i potražnji.",
+   "planira i vodi od strane države, a ponuda i potražnja ne uzimaju se u obzir.",
+   "ravna prema potražnji u inozemstvu.",
+   "ravna prema ponudi i potražnji, ali država brine o socijalnoj ravnoteži."
+  ],
+  "expl_bks": "U socijalnoj tržišnoj ekonomiji cijene i proizvodnju uglavnom određuju ponuda i potražnja, kao na slobodnom tržištu. Država ipak pomaže slabijima, na primjer socijalnim osiguranjem, dječjim doplatkom (Kindergeld) i minimalnom plaćom. Ovaj model uveo je u Zapadnoj Njemačkoj Ludwig Erhard, počevši od 1948.",
+  "merksatz_de": "Soziale Marktwirtschaft: freier Markt mit sozialem Ausgleich durch den Staat."
+ },
+ {
+  "id": "G-172",
+  "q_bks": "U kojoj je okupacijskoj zoni osnovana DDR? U …",
+  "options_bks": [
+   "američkoj okupacijskoj zoni",
+   "francuskoj okupacijskoj zoni",
+   "britanskoj okupacijskoj zoni",
+   "sovjetskoj okupacijskoj zoni"
+  ],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) osnovana je 7. listopada 1949. na području sovjetske okupacijske zone. Tri zapadne zone, američka, britanska i francuska, iste su godine postale Savezna Republika Njemačka. Njemačka je tako do 1990. bila podijeljena na dvije države.",
+  "merksatz_de": "Die DDR entstand in der sowjetischen Besatzungszone."
+ },
+ {
+  "id": "G-173",
+  "q_bks": "Savezna Republika Njemačka je članica osnivačica …",
+  "options_bks": [
+   "Sjevernoatlantskog pakta (NATO).",
+   "Ujedinjenih naroda (UN).",
+   "Europske unije (EU).",
+   "Varšavskog pakta."
+  ],
+  "expl_bks": "Savezna Republika Njemačka bila je 1957. jedna od šest država koje su potpisale Rimske ugovore i osnovale Europsku ekonomsku zajednicu (EEZ), iz koje je nastala današnja Europska unija. U NATO je ušla tek 1955., a u UN 1973. Varšavskom paktu pripadala je DDR.",
+  "merksatz_de": "Deutschland gehört zu den Gründungsmitgliedern der Europäischen Union."
+ },
+ {
+  "id": "G-174",
+  "q_bks": "Kada je osnovana DDR?",
+  "options_bks": [
+   "1947",
+   "1949",
+   "1953",
+   "1956"
+  ],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) osnovana je 7. listopada 1949. u sovjetskoj okupacijskoj zoni, nekoliko mjeseci nakon Savezne Republike Njemačke. Tako su iste godine nastale dvije njemačke države. Godina 1953. poznata je po radničkom ustanku u DDR-u.",
+  "merksatz_de": "Die DDR wurde am 7. Oktober 1949 gegründet."
+ },
+ {
+  "id": "G-175",
+  "q_bks": "Koliko je okupacijskih zona bilo u Njemačkoj nakon Drugog svjetskog rata?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Nakon 1945. četiri pobjedničke sile podijelile su Njemačku na četiri okupacijske zone: američku, britansku, francusku i sovjetsku. I Berlin je bio podijeljen na četiri sektora. Iz tri zapadne zone nastala je 1949. Savezna Republika Njemačka, a iz sovjetske zone DDR.",
+  "merksatz_de": "Nach 1945 gab es vier Besatzungszonen in Deutschland."
+ },
+ {
+  "id": "G-176",
+  "q_bks": "Kako su nakon 1945. bile raspoređene okupacijske zone u Njemačkoj?",
+  "options_bks": [
+   "1 = Velika Britanija, 2 = Sovjetski Savez, 3 = Francuska, 4 = SAD",
+   "1 = Sovjetski Savez, 2 = Velika Britanija, 3 = SAD, 4 = Francuska",
+   "1 = Velika Britanija, 2 = Sovjetski Savez, 3 = SAD, 4 = Francuska",
+   "1 = Velika Britanija, 2 = SAD, 3 = Sovjetski Savez, 4 = Francuska"
+  ],
+  "expl_bks": "Na karti: 1 = sjeverozapad, 2 = istok (s Berlinom), 3 = jug (Bavarska i Hessen), 4 = jugozapad uz Francusku. Britanci su dobili sjeverozapad, Sovjetski Savez istok, SAD jug, a Francuska jugozapad uz svoju granicu. Dakle: 1 = Velika Britanija, 2 = Sovjetski Savez, 3 = SAD, 4 = Francuska.",
+  "merksatz_de": "Briten im Nordwesten, Sowjets im Osten, Amerikaner im Süden, Franzosen im Südwesten."
+ },
+ {
+  "id": "G-177",
+  "q_bks": "Koji je njemački grad nakon Drugog svjetskog rata bio podijeljen na četiri sektora?",
+  "options_bks": [
+   "München",
+   "Berlin",
+   "Dresden",
+   "Frankfurt na Odri (Frankfurt/Oder)"
+  ],
+  "expl_bks": "Berlin je ležao usred sovjetske zone, ali je kao glavni grad podijeljen na četiri sektora: američki, britanski, francuski i sovjetski. Tri zapadna sektora kasnije su činila Zapadni Berlin, a sovjetski sektor Istočni Berlin, glavni grad DDR-a.",
+  "merksatz_de": "Berlin wurde nach dem Krieg in vier Sektoren geteilt."
+ },
+ {
+  "id": "G-178",
+  "q_bks": "Od lipnja 1948. do svibnja 1949. građani Zapadnog Berlina opskrbljivani su zračnim mostom. Koja je okolnost bila razlog tome?",
+  "options_bks": [
+   "Za Francusku je opskrba stanovništva Zapadnog Berlina avionima bila jeftinija.",
+   "Američki vojnici bojali su se napada tijekom prijevoza kopnom.",
+   "Za Veliku Britaniju je opskrba zračnim mostom bila brža.",
+   "Sovjetski Savez prekinuo je sav promet kopnenim putem."
+  ],
+  "expl_bks": "Sovjetski Savez je u lipnju 1948. zatvorio sve ceste, željezničke pruge i vodene putove prema Zapadnom Berlinu (Berlinska blokada). Zato su SAD i Velika Britanija gotovo godinu dana dovozili hranu, ugljen i drugu robu avionima. Berlinčani su te avione zvali „bombarderi s grožđicama” (Rosinenbomber).",
+  "merksatz_de": "Die Sowjetunion blockierte 1948 alle Landwege nach West-Berlin."
+ },
+ {
+  "id": "G-179",
+  "q_bks": "Kako je formalno završio Drugi svjetski rat u Europi?",
+  "options_bks": [
+   "smrću Adolfa Hitlera",
+   "bezuvjetnom kapitulacijom Njemačke",
+   "povlačenjem Nijemaca s okupiranih područja",
+   "revolucijom u Njemačkoj"
+  ],
+  "expl_bks": "Njemačka vojska potpisala je bezuvjetnu kapitulaciju, koja je stupila na snagu 8. svibnja 1945. Time je rat u Europi završio. Hitler je umro već 30. travnja 1945., ali su se borbe nastavile još nekoliko dana. Revolucije u Njemačkoj 1945. nije bilo.",
+  "merksatz_de": "Der Krieg in Europa endete mit Deutschlands bedingungsloser Kapitulation."
+ },
+ {
+  "id": "G-180",
+  "q_bks": "Prvi savezni kancelar Savezne Republike Njemačke bio je …",
+  "options_bks": [
+   "Ludwig Erhard.",
+   "Willy Brandt.",
+   "Konrad Adenauer.",
+   "Gerhard Schröder."
+  ],
+  "expl_bks": "Prvi savezni kancelar bio je Konrad Adenauer, od 1949. do 1963. Poznat je po povezivanju Savezne Republike sa zapadnim saveznicima i po početku europske integracije. Ludwig Erhard bio je u njegovoj vladi zadužen za ekonomiju, a 1963. postao je drugi savezni kancelar.",
+  "merksatz_de": "Erster Bundeskanzler war Konrad Adenauer, von 1949 bis 1963."
+ },
+ {
+  "id": "G-181",
+  "q_bks": "Što je Willy Brandt želio izraziti klečanjem (Kniefall) 1970. u bivšem židovskom getu u Varšavi?",
+  "options_bks": [
+   "Pokorio se bivšim saveznicima.",
+   "Zamolio je Poljsku i poljske Židove za oprost.",
+   "Pokazao je poniznost pred Varšavskim paktom.",
+   "Izmolio je molitvu na grobu Neznanog vojnika."
+  ],
+  "expl_bks": "Savezni kancelar Willy Brandt kleknuo je 7. prosinca 1970. u Varšavi pred spomenikom žrtvama ustanka u židovskom getu. Tom gestom bez riječi zamolio je za oprost za zločine koje su Nijemci počinili nad Poljacima i Židovima. Ta je slika postala simbol pomirenja.",
+  "merksatz_de": "Brandts Kniefall 1970 war eine Bitte um Vergebung."
+ },
+ {
+  "id": "G-182",
+  "q_bks": "Kako se zove židovska bogomolja?",
+  "options_bks": [
+   "bazilika",
+   "džamija",
+   "sinagoga",
+   "crkva"
+  ],
+  "expl_bks": "Židovska bogomolja zove se sinagoga. U njoj se vjernici okupljaju na molitvu i čitaju Toru. Glavni židovski dan molitve i odmora je subota (šabat). Muslimani se mole u džamiji, a kršćani u crkvi; bazilika je posebna vrsta velike crkve.",
+  "merksatz_de": "Juden beten in der Synagoge."
+ },
+ {
+  "id": "G-183",
+  "q_bks": "Kada je u Saveznoj Republici Njemačkoj bilo „ekonomsko čudo” (Wirtschaftswunder)?",
+  "options_bks": [
+   "četrdesetih godina",
+   "pedesetih godina",
+   "sedamdesetih godina",
+   "osamdesetih godina"
+  ],
+  "expl_bks": "U pedesetim godinama Zapadna Njemačka brzo se oporavila od rata: ekonomija je snažno rasla, nezaposlenost je pala, a mnogi su si mogli priuštiti automobil. To se razdoblje naziva „ekonomsko čudo” (Wirtschaftswunder). Zbog manjka radnika Njemačka je 1955. potpisala prvi sporazum o zapošljavanju stranih radnika, s Italijom.",
+  "merksatz_de": "Das Wirtschaftswunder war in den 50er Jahren."
+ },
+ {
+  "id": "G-184",
+  "q_bks": "Na kojoj je pravnoj osnovi osnovana država Izrael?",
+  "options_bks": [
+   "rezolucija Ujedinjenih naroda",
+   "odluka cionističkog kongresa",
+   "prijedlog savezne vlade",
+   "prijedlog SSSR-a"
+  ],
+  "expl_bks": "Opća skupština Ujedinjenih naroda (UN) donijela je 29. studenoga 1947. rezoluciju 181 o podjeli Palestine na židovsku i arapsku državu. Na toj je osnovi David Ben-Gurion 14. svibnja 1948. proglasio državu Izrael. Savezna Republika Njemačka tada još nije postojala.",
+  "merksatz_de": "Israel wurde auf Grundlage einer UN-Resolution gegründet."
+ }
+]

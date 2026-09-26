@@ -1,0 +1,324 @@
+[
+ {
+  "id": "G-277",
+  "q_bks": "Žena koja ima dvogodišnje dijete prijavljuje se u Njemačkoj za posao. Što je primjer diskriminacije? Ne dobije posao samo zato što …",
+  "options_bks": ["ne govori engleski.", "traži previsoku plaću.", "nema iskustva u tom zanimanju.", "je majka."],
+  "expl_bks": "Diskriminacija znači da je netko lošije tretiran zbog osobine koja nema veze s poslom. Ako žena ne dobije posao samo zato što je majka, to je nepravedno i zabranjeno. Temeljni zakon (njemački ustav) jamči ravnopravnost žena i muškaraca, a majke još posebno štiti (članak 6.). Znanje jezika ili iskustvo, naprotiv, smiju biti razlozi pri odabiru.",
+  "merksatz_de": "Eine Frau darf nicht benachteiligt werden, weil sie Mutter ist."
+ },
+ {
+  "id": "G-278",
+  "q_bks": "Muškarac u invalidskim kolicima prijavio se za posao knjigovođe. Što je primjer diskriminacije? Ne dobije posao samo zato što …",
+  "options_bks": ["sjedi u invalidskim kolicima.", "nema iskustva.", "traži previsoku plaću.", "ne govori engleski."],
+  "expl_bks": "Temeljni zakon u članku 3. kaže: nitko ne smije biti zapostavljen zbog svog invaliditeta. Knjigovođa radi za stolom i na računalu, pa invalidska kolica za taj posao nisu važna. Ako muškarca odbiju samo zbog kolica, to je diskriminacija. Nedostatak iskustva, naprotiv, smije biti razlog za odbijanje.",
+  "merksatz_de": "Niemand darf wegen einer Behinderung benachteiligt werden."
+ },
+ {
+  "id": "G-279",
+  "q_bks": "U većini zgrada s iznajmljenim stanovima u Njemačkoj postoji „kućni red” (Hausordnung). Što piše u takvom „kućnom redu”? On navodi …",
+  "options_bks": ["pravila za korištenje javnog prijevoza.", "sve najmoprimce u zgradi.", "pravila kojih se moraju pridržavati svi stanari.", "adresu najbližeg komunalnog redarstvenog ureda (Ordnungsamt)."],
+  "expl_bks": "Kućni red (Hausordnung) sadrži pravila za zajednički život u zgradi. Tu često piše kada je noćni mir (obično od 22 do 6 sati), tko i kada čisti stubište i kako se odvaja otpad. Kućni red je najčešće dio ugovora o najmu, pa ga moraju poštovati svi stanari.",
+  "merksatz_de": "Die Hausordnung regelt das Zusammenleben aller Bewohner im Haus."
+ },
+ {
+  "id": "G-280",
+  "q_bks": "Ako se u Njemačkoj želite obraniti od pogrešnog poreznog rješenja, morate …",
+  "options_bks": ["ne raditi ništa.", "baciti rješenje.", "uložiti prigovor (Einspruch).", "čekati da stigne drugo rješenje."],
+  "expl_bks": "Porezno rješenje (Steuerbescheid) šalje porezna uprava (Finanzamt). Ako u njemu postoji greška, u roku od mjesec dana možete pisanim putem ili elektronički uložiti prigovor (Einspruch). Tada porezna uprava mora ponovno provjeriti rješenje. Ako ništa ne učinite, rješenje nakon isteka roka ostaje važeće.",
+  "merksatz_de": "Gegen einen falschen Steuerbescheid legt man Einspruch ein."
+ },
+ {
+  "id": "G-281",
+  "q_bks": "Dva prijatelja žele ući u javni bazen u Njemačkoj. Obojica imaju tamnu boju kože i zbog toga ih ne puste unutra. Koje je pravo u ovoj situaciji povrijeđeno? Pravo na …",
+  "options_bks": ["slobodu mišljenja", "jednako postupanje", "slobodu okupljanja", "slobodu kretanja i nastanjivanja"],
+  "expl_bks": "Pravo na jednako postupanje znači da se prema svim ljudima mora postupati jednako. Temeljni zakon (članak 3.) kaže da nitko ne smije biti zapostavljen zbog svog porijekla ili „rase”. Zabrana ulaska u bazen samo zbog boje kože zato je diskriminacija. Opći zakon o jednakom postupanju (AGG) to zabranjuje i u svakodnevnom životu.",
+  "merksatz_de": "Wegen der Hautfarbe darf niemand benachteiligt werden."
+ },
+ {
+  "id": "G-282",
+  "q_bks": "Koji volonterski rad (Ehrenamt) moraju preuzeti njemački državljani ako ih se na to pozove?",
+  "options_bks": ["trener u udruzi", "pomoćnik na izborima (Wahlhelfer)", "nadzor u knjižnici", "učitelj"],
+  "expl_bks": "Pomoćnici na izborima (Wahlhelfer) broje glasove i paze da izbori na biralištu teku ispravno. Za to je potrebno mnogo ljudi. Ako općina ne nađe dovoljno dobrovoljaca, može pozvati građane s biračkim pravom, a oni smiju odbiti samo iz važnog razloga, na primjer zbog bolesti. Za taj rad dobiva se mala naknada.",
+  "merksatz_de": "Wahlhelfer ist ein Ehrenamt, das man übernehmen muss."
+ },
+ {
+  "id": "G-283",
+  "q_bks": "Što učinite ako od nekog njemačkog ureda dobijete pogrešan račun?",
+  "options_bks": ["Ostavim račun po strani.", "Uložim prigovor (Widerspruch) tom uredu.", "Pošaljem račun natrag uredu.", "S računom odem u poreznu upravu (Finanzamt)."],
+  "expl_bks": "Protiv pogrešne odluke ili računa nekog ureda možete uložiti prigovor (Widerspruch). Prigovor se šalje pisanim putem istom uredu, obično u roku od mjesec dana. Ured tada mora još jednom provjeriti svoju odluku. Ako račun samo ignorirate ili ga vratite bez objašnjenja, on ostaje važeći.",
+  "merksatz_de": "Gegen einen falschen Bescheid einer Behörde legt man Widerspruch ein."
+ },
+ {
+  "id": "G-284",
+  "q_bks": "Ono što čovjek mora znati za posao ubuduće će se vrlo brzo mijenjati. Što se može učiniti?",
+  "options_bks": ["Svejedno je što se uči.", "Odrasli moraju i nakon završenog obrazovanja stalno dalje učiti.", "Djeca u školi nauče sve što je važno za posao. Nakon škole ne treba dalje učiti.", "Svi moraju ranije prestati raditi jer se sve mijenja."],
+  "expl_bks": "Tehnika i način rada stalno se mijenjaju, na primjer zbog računala i digitalizacije. Zato je važno učiti cijeli život (cjeloživotno učenje). U Njemačkoj za to postoje tečajevi usavršavanja (Weiterbildung), npr. na pučkim učilištima (Volkshochschule). Agencija za rad (Agentur für Arbeit) pod određenim uvjetima može pomoći u njihovu financiranju.",
+  "merksatz_de": "Auch Erwachsene müssen ihr ganzes Leben lang weiterlernen."
+ },
+ {
+  "id": "G-285",
+  "q_bks": "Gospođa Frost radi kao stalno zaposlena djelatnica u jednom uredu. Što ne mora plaćati iz svoje plaće?",
+  "options_bks": ["porez na plaću (Lohnsteuer)", "doprinose za osiguranje za slučaj nezaposlenosti", "doprinose za mirovinsko i zdravstveno osiguranje", "porez na dodanu vrijednost (Umsatzsteuer)"],
+  "expl_bks": "Porez na dodanu vrijednost (Umsatzsteuer, poznat i kao PDV) ne plaća se iz plaće. Njega obračunavaju poduzeća i obrtnici na robu i usluge koje prodaju. Kupci ga plaćaju samo neizravno, u cijeni proizvoda. Porez na plaću i doprinose za socijalno osiguranje poslodavac, naprotiv, odbija izravno od plaće.",
+  "merksatz_de": "Die Umsatzsteuer wird nicht vom Gehalt abgezogen."
+ },
+ {
+  "id": "G-286",
+  "q_bks": "Koja organizacija u poduzeću pomaže zaposlenicima kod problema s poslodavcem?",
+  "options_bks": ["radničko vijeće (Betriebsrat)", "porezni revizor (Betriebsprüfer)", "skupina u poduzeću (Betriebsgruppe)", "uprava poduzeća (Betriebsmanagement)"],
+  "expl_bks": "Radničko vijeće (Betriebsrat) biraju zaposlenici iz svojih redova. Ono zastupa njihove interese prema poslodavcu, na primjer kod radnog vremena, otkaza ili sukoba na poslu. Prije svakog otkaza poslodavac mora saslušati radničko vijeće. Ono se može osnovati u poduzećima s najmanje pet stalnih zaposlenika.",
+  "merksatz_de": "Der Betriebsrat vertritt die Interessen der Arbeitnehmer im Betrieb."
+ },
+ {
+  "id": "G-287",
+  "q_bks": "Želite prekinuti radni odnos s nekom firmom u Njemačkoj. Na što morate paziti?",
+  "options_bks": ["isplate plaće", "radno vrijeme", "otkazni rok", "obvezno osiguranje"],
+  "expl_bks": "Otkazni rok je vrijeme između predaje otkaza i posljednjeg radnog dana. Po zakonu za zaposlenike obično iznosi četiri tjedna, do 15. u mjesecu ili do kraja mjeseca, a ugovor o radu ili kolektivni ugovor mogu odrediti i drukčije. Otkaz mora biti pisan i vlastoručno potpisan; e-mail ili SMS nisu dovoljni.",
+  "merksatz_de": "Wer kündigt, muss die Kündigungsfrist beachten."
+ },
+ {
+  "id": "G-288",
+  "q_bks": "Na čemu se temelji posebna odgovornost Njemačke prema Izraelu?",
+  "options_bks": ["na članstvu u Europskoj uniji (EU)", "na nacionalsocijalističkim zločinima nad Židovima", "na Temeljnom zakonu Savezne Republike Njemačke", "na kršćanskoj tradiciji"],
+  "expl_bks": "Između 1933. i 1945. nacionalsocijalistički režim progonio je i ubio oko šest milijuna europskih Židova (holokaust). Iz te povijesti proizlazi posebna odgovornost Njemačke prema Židovima i prema državi Izrael, osnovanoj 1948. Diplomatski odnosi između dviju država postoje od 1965., a borba protiv antisemitizma u Njemačkoj je posebno važna.",
+  "merksatz_de": "Wegen des Holocausts hat Deutschland eine besondere Verantwortung für Israel."
+ },
+ {
+  "id": "G-289",
+  "q_bks": "Muškarac tamne boje kože prijavljuje se za posao konobara u jednom restoranu u Njemačkoj. Što je primjer diskriminacije? Ne dobije posao samo zato što …",
+  "options_bks": ["je njegovo znanje njemačkog preslabo.", "traži previsoku plaću.", "ima tamnu kožu.", "nema iskustva u tom poslu."],
+  "expl_bks": "Boja kože nema nikakve veze s time može li netko dobro raditi kao konobar. Ako poslodavac nekoga odbije samo zbog boje kože, to je diskriminacija. Temeljni zakon (članak 3.) i Opći zakon o jednakom postupanju (AGG) to zabranjuju. Znanje jezika i iskustvo, naprotiv, smiju biti važni pri odabiru.",
+  "merksatz_de": "Eine Absage nur wegen der Hautfarbe ist Diskriminierung."
+ },
+ {
+  "id": "G-290",
+  "q_bks": "U Njemačkoj ste kupili televizor. Kod kuće ga raspakirate, ali ne radi. Televizor je pokvaren. Što možete učiniti?",
+  "options_bks": ["napisati prijavu (Anzeige)", "uložiti reklamaciju za televizor", "bez pitanja zamijeniti uređaj", "produžiti jamstvo (garanciju)"],
+  "expl_bks": "Ako novi uređaj ne radi, možete ga reklamirati, tj. prijaviti kvar trgovini u kojoj ste ga kupili. Po zakonu prodavač u Njemačkoj dvije godine odgovara za nedostatke (Gewährleistung). Trgovina tada mora popraviti uređaj ili dati novi. Sačuvajte račun, jer on dokazuje kupnju.",
+  "merksatz_de": "Ein kaputtes neues Gerät kann man im Geschäft reklamieren."
+ },
+ {
+  "id": "G-291",
+  "q_bks": "Zašto u Njemačkoj u poreznoj prijavi treba navesti pripada li se nekoj crkvi ili ne? Zato što …",
+  "options_bks": ["postoji crkveni porez koji je vezan uz porez na dohodak i porez na plaću.", "je to važno za statistiku u Njemačkoj.", "se plaća više poreza ako se ne pripada nijednoj crkvi.", "je crkva odgovorna za poreznu prijavu."],
+  "expl_bks": "Članovi velikih crkava, npr. katoličke i evangeličke, plaćaju crkveni porez. On iznosi 8 % ili 9 % poreza na dohodak, odnosno poreza na plaću, ovisno o saveznoj pokrajini. Porezna uprava (Finanzamt) ga ubire za crkve i zato mora znati pripada li netko nekoj crkvi. Tko izađe iz crkve, ne plaća crkveni porez.",
+  "merksatz_de": "Kirchenmitglieder zahlen Kirchensteuer, das Finanzamt zieht sie ein."
+ },
+ {
+  "id": "G-292",
+  "q_bks": "Ljudi u Njemačkoj žive prema načelu vjerske tolerancije. Što to znači?",
+  "options_bks": ["Ne smiju se graditi džamije.", "Svi ljudi vjeruju u Boga.", "Svatko može vjerovati u što želi.", "Država odlučuje u kojeg Boga ljudi vjeruju."],
+  "expl_bks": "Vjerska tolerancija znači da poštujemo vjeru drugih ljudi. Temeljni zakon (članak 4.) jamči slobodu vjere i savjesti: svatko smije slobodno izabrati svoju vjeru, promijeniti je ili ne vjerovati ni u što. Država ne propisuje vjeru, pa u Njemačkoj postoje crkve, džamije, sinagoge i hramovi.",
+  "merksatz_de": "Religiöse Toleranz: Jeder darf glauben, was er möchte."
+ },
+ {
+  "id": "G-293",
+  "q_bks": "Koji je običaj u Njemačkoj za Uskrs?",
+  "options_bks": ["stavljati bundeve pred vrata", "kititi jelku", "bojiti jaja", "ispaljivati rakete u zrak"],
+  "expl_bks": "Za Uskrs se u Njemačkoj jaja boje i ukrašavaju, slično kao i u našim krajevima. Djeci se kaže da šarena jaja i slatkiše donosi uskrsni zec (Osterhase) i skriva ih u vrtu ili stanu. Bundeve su običaj za Noć vještica (Halloween), jelka za Božić, a rakete za doček Nove godine.",
+  "merksatz_de": "An Ostern bemalt man Eier."
+ },
+ {
+  "id": "G-294",
+  "q_bks": "Duhovi (Pfingsten) su …",
+  "options_bks": ["kršćanski blagdan.", "njemački dan sjećanja.", "međunarodni dan žalosti.", "bavarski običaj."],
+  "expl_bks": "Duhovi (Pfingsten) su kršćanski blagdan sedam tjedana nakon Uskrsa. Kršćani se tada sjećaju da je Duh Sveti sišao na apostole. Duhovski ponedjeljak (Pfingstmontag) u cijeloj je Njemačkoj zakonski praznik, pa većina ljudi tada ne radi.",
+  "merksatz_de": "Pfingsten ist ein christlicher Feiertag."
+ },
+ {
+  "id": "G-295",
+  "q_bks": "Koja je religija oblikovala europsku i njemačku kulturu?",
+  "options_bks": ["hinduizam", "kršćanstvo", "budizam", "islam"],
+  "expl_bks": "Kršćanstvo već više od tisuću godina oblikuje Europu i Njemačku. To se vidi u crkvama u gotovo svakom mjestu, u blagdanima poput Božića i Uskrsa te u tome što je nedjelja slobodan dan. Danas u Njemačkoj žive i ljudi drugih vjera te ljudi bez vjere.",
+  "merksatz_de": "Das Christentum hat die Kultur in Europa stark geprägt."
+ },
+ {
+  "id": "G-296",
+  "q_bks": "U Njemačkoj se posljednja četiri tjedna prije Božića nazivaju …",
+  "options_bks": ["Dan pokore i molitve (Buß- und Bettag).", "Dan zahvalnosti za plodove zemlje (Erntedankfest).", "adventsko vrijeme (Adventszeit).", "Svi sveti (Allerheiligen)."],
+  "expl_bks": "Adventsko vrijeme (došašće) počinje četvrtom nedjeljom prije Božića. Mnoge obitelji tada imaju adventski vijenac s četiri svijeće i svake nedjelje zapale jednu više. Djeca često dobiju adventski kalendar s 24 prozorčića, po jedan za svaki dan do Badnjaka.",
+  "merksatz_de": "Die vier Wochen vor Weihnachten heißen Adventszeit."
+ },
+ {
+  "id": "G-297",
+  "q_bks": "Iz koje je zemlje u Njemačku došlo najviše migranata?",
+  "options_bks": ["Italija", "Poljska", "Maroko", "Turska"],
+  "expl_bks": "Najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske. Mnogi su došli kao gastarbajteri nakon sporazuma o zapošljavanju iz 1961., a kasnije su doveli i svoje obitelji. Danas u Njemačkoj žive već treća i četvrta generacija tih obitelji.",
+  "merksatz_de": "Die meisten Migranten in Deutschland stammen aus der Türkei."
+ },
+ {
+  "id": "G-298",
+  "q_bks": "U DDR-u su živjeli uglavnom migranti iz …",
+  "options_bks": ["Vijetnama, Poljske, Mozambika.", "Francuske, Rumunjske, Somalije.", "Čilea, Mađarske, Zimbabvea.", "Sjeverne Koreje, Meksika, Egipta."],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) sklapala je ugovore o radu s drugim socijalističkim zemljama. Zato su onamo kao ugovorni radnici (Vertragsarbeiter) dolazili ljudi uglavnom iz Vijetnama, Poljske i Mozambika. Najčešće su živjeli u zasebnim domovima i smjeli su ostati samo nekoliko godina.",
+  "merksatz_de": "In der DDR arbeiteten viele Vertragsarbeiter aus Vietnam, Polen und Mosambik."
+ },
+ {
+  "id": "G-299",
+  "q_bks": "Strane radnike koje je Savezna Republika Njemačka 50-ih i 60-ih godina dovela na rad nazivali su …",
+  "options_bks": ["radnicima na crno (Schwarzarbeiter).", "gastarbajterima (Gastarbeiter).", "radnicima preko agencije (Zeitarbeiter).", "smjenskim radnicima (Schichtarbeiter)."],
+  "expl_bks": "Riječ „Gastarbeiter” znači „radnik gost”. Država je mislila da će ti radnici ostati samo kratko i onda se vratiti kući. Mnogi su ipak ostali i doveli obitelji. Od 1968. dolazili su i radnici iz Jugoslavije, pa je riječ „gastarbajter” ušla i u naš jezik.",
+  "merksatz_de": "Angeworbene ausländische Arbeitskräfte nannte man damals Gastarbeiter."
+ },
+ {
+  "id": "G-300",
+  "q_bks": "Iz koje su zemlje došli prvi gastarbajteri u Saveznu Republiku Njemačku?",
+  "options_bks": ["Italija", "Španjolska", "Portugal", "Turska"],
+  "expl_bks": "Prvi sporazum o zapošljavanju stranih radnika Savezna Republika Njemačka sklopila je 1955. s Italijom. Kasnije su slijedili sporazumi sa Španjolskom i Grčkom (1960.), Turskom (1961.), Portugalom (1964.) i Jugoslavijom (1968.). Talijani su tako bili prvi gastarbajteri.",
+  "merksatz_de": "Die ersten Gastarbeiter kamen 1955 aus Italien."
+ },
+ {
+  "id": "BW-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Baden-Württemberg?",
+  "options_bks": ["Slika 1", "Slika 2", "Slika 3", "Slika 4"],
+  "expl_bks": "Grb Baden-Württemberga: tri crna lava jedan ispod drugoga na zlatnožutom štitu, iznad štita kruna. Lavovi potječu iz starog grba švapske vladarske obitelji Staufen (Hohenstaufen). Pomoć za pamćenje: pokrajina je nastala 1952. spajanjem triju pokrajina – a na grbu su tri lava.",
+  "merksatz_de": "Im Wappen von Baden-Württemberg sind drei schwarze Löwen."
+ },
+ {
+  "id": "BW-02",
+  "q_bks": "Koji je okrug (Landkreis) u Baden-Württembergu?",
+  "options_bks": ["Mecklenburgische Seenplatte", "Neckar-Odenwald-Kreis", "Nordfriesland", "Altötting"],
+  "expl_bks": "Neckar-Odenwald-Kreis leži na sjeveru Baden-Württemberga, između rijeke Neckar i gorja Odenwald. Sjedište okruga je grad Mosbach. Ostali okruzi nalaze se u drugim pokrajinama: Mecklenburgische Seenplatte u Mecklenburgu-Zapadnom Pomorju, Nordfriesland u Schleswig-Holsteinu, a Altötting u Bavarskoj.",
+  "merksatz_de": "Der Neckar-Odenwald-Kreis liegt in Baden-Württemberg."
+ },
+ {
+  "id": "BW-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Baden-Württembergu?",
+  "options_bks": ["3", "4", "5", "6"],
+  "expl_bks": "Landtag (pokrajinski parlament) u Baden-Württembergu bira se svakih pet godina. Landtag donosi pokrajinske zakone, na primjer o školama i policiji, i bira ministra predsjednika (Ministerpräsident). Pazite na zamku: Bundestag (savezni parlament) bira se na četiri godine.",
+  "merksatz_de": "Der Landtag in Baden-Württemberg wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "BW-04",
+  "q_bks": "Od koje dobi se u Baden-Württembergu smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": ["14", "16", "18", "20"],
+  "expl_bks": "Na lokalnim izborima (Kommunalwahlen) u Baden-Württembergu smije se glasati od 16. godine. Tada se biraju npr. općinsko ili gradsko vijeće i skupština okruga. Pravo glasa imaju i državljani drugih zemalja Europske unije koji ondje žive. Za Bundestag se glasa tek od 18. godine.",
+  "merksatz_de": "Bei Kommunalwahlen in Baden-Württemberg darf man ab 16 wählen."
+ },
+ {
+  "id": "BW-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Baden-Württemberga?",
+  "options_bks": ["plavo-bijelo-crvena", "crno-zlatna", "bijelo-plava", "zeleno-bijelo-crvena"],
+  "expl_bks": "Zastava Baden-Württemberga ima dvije vodoravne pruge: gore crnu, dolje zlatnu (žutu). Iste boje vide se i na pokrajinskom grbu, gdje stoje tri crna lava na zlatnoj podlozi. Pazite na zamku: bijelo-plava je zastava Bavarske.",
+  "merksatz_de": "Die Landesflagge von Baden-Württemberg ist schwarz-gold."
+ },
+ {
+  "id": "BW-06",
+  "q_bks": "Gdje se u Baden-Württembergu možete informirati o političkim temama?",
+  "options_bks": ["u komunalnom redarstvenom uredu (Ordnungsamt) općine", "u centru za zaštitu potrošača (Verbraucherzentrale)", "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)", "u crkvama"],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) nudi informacije o politici, povijesti i demokraciji. Ima knjižice, predavanja, seminare i web-stranicu, a mnogo toga je besplatno. Njegov je zadatak informirati neutralno, bez stranačke politike. Takav centar postoji u svakoj saveznoj pokrajini.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung informiert über politische Themen."
+ },
+ {
+  "id": "BW-07",
+  "q_bks": "Glavni grad pokrajine Baden-Württemberg zove se …",
+  "options_bks": ["Heidelberg.", "Stuttgart.", "Karlsruhe.", "Mannheim."],
+  "expl_bks": "Glavni grad Baden-Württemberga je Stuttgart. Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Stuttgart je poznat po automobilskoj industriji, npr. po tvrtkama Mercedes-Benz i Porsche. Zamka: u Karlsruheu je Savezni ustavni sud, ali Karlsruhe nije glavni grad pokrajine.",
+  "merksatz_de": "Stuttgart ist die Landeshauptstadt von Baden-Württemberg."
+ },
+ {
+  "id": "BW-08",
+  "q_bks": "Koja savezna pokrajina je Baden-Württemberg?",
+  "options_bks": ["1", "2", "3", "4"],
+  "expl_bks": "Na karti je Baden-Württemberg krajnji jugozapad Njemačke, uz granicu s Francuskom i Švicarskom. Na zapadu ga od Francuske dijeli rijeka Rajna, a na jugu leži Bodensko jezero. Istočni susjed Baden-Württemberga je Bavarska.",
+  "merksatz_de": "Baden-Württemberg liegt im Südwesten Deutschlands."
+ },
+ {
+  "id": "BW-09",
+  "q_bks": "Kako se zove šef vlade u Baden-Württembergu?",
+  "options_bks": ["prvi ministar (Erster Minister)", "premijer (Premierminister)", "gradonačelnik (Bürgermeister)", "ministar predsjednik (Ministerpräsident)"],
+  "expl_bks": "U Baden-Württembergu, kao i u većini saveznih pokrajina, na čelu pokrajinske vlade stoji ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) nakon pokrajinskih izbora. Gradonačelnik (Bürgermeister) vodi samo jedan grad ili općinu, a naziv „premijer” za pokrajine u Njemačkoj se ne koristi.",
+  "merksatz_de": "Der Regierungschef in Baden-Württemberg heißt Ministerpräsident."
+ },
+ {
+  "id": "BW-10",
+  "q_bks": "Kojeg ministra Baden-Württemberg nema?",
+  "options_bks": ["ministar financija", "ministar pravosuđa", "ministar unutarnjih poslova", "ministar vanjskih poslova"],
+  "expl_bks": "Odnosi s drugim državama zadatak su savezne države, a ne pokrajina (Temeljni zakon, članak 32.). Zato ministar vanjskih poslova postoji samo u saveznoj vladi. Pokrajine poput Baden-Württemberga imaju vlastite ministre, npr. za financije, pravosuđe, unutarnje poslove i škole, jer za ta područja i same odgovaraju.",
+  "merksatz_de": "Außenpolitik ist Sache des Bundes, nicht der Bundesländer."
+ },
+ {
+  "id": "BY-01",
+  "q_bks": "Koji grb pripada slobodnoj državi (Freistaat) Bavarskoj?",
+  "options_bks": ["Slika 1", "Slika 2", "Slika 3", "Slika 4"],
+  "expl_bks": "Grb Bavarske: bijelo-plavi rombovi (romboidni uzorak), iznad štita kruna. Taj uzorak Bavarci zovu „Rauten” i vide ga posvuda, npr. na zastavama i suvenirima. Bavarska se naziva slobodna država (Freistaat), što je samo stari njemački naziv za republiku, a ne posebna vrsta države.",
+  "merksatz_de": "Das bayerische Wappen zeigt weiß-blaue Rauten."
+ },
+ {
+  "id": "BY-02",
+  "q_bks": "Koji je okrug (Landkreis) u Bavarskoj?",
+  "options_bks": ["Prignitz", "Rhein-Sieg-Kreis", "Nordfriesland", "Altötting"],
+  "expl_bks": "Altötting je okrug (Landkreis) na jugoistoku Bavarske, uz granicu s Austrijom. Grad Altötting poznato je katoličko hodočasničko mjesto s Crnom Gospom u Kapelici milosti (Gnadenkapelle). Ostali okruzi su u drugim pokrajinama: Prignitz u Brandenburgu, Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji, Nordfriesland u Schleswig-Holsteinu.",
+  "merksatz_de": "Altötting ist ein Landkreis in Bayern."
+ },
+ {
+  "id": "BY-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Bavarskoj?",
+  "options_bks": ["3", "4", "5", "6"],
+  "expl_bks": "Bavarski Landtag (pokrajinski parlament) bira se svakih pet godina. Zasjeda u palači Maximilianeum u Münchenu. Landtag donosi pokrajinske zakone i bira ministra predsjednika (Ministerpräsident). Ne zamijenite to s Bundestagom (savezni parlament), koji se bira na četiri godine.",
+  "merksatz_de": "Der Bayerische Landtag wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "BY-04",
+  "q_bks": "Od koje dobi se u Bavarskoj smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "options_bks": ["14", "16", "18", "20"],
+  "expl_bks": "U Bavarskoj se na lokalnim izborima (Kommunalwahlen) smije glasati tek od 18. godine. Tada se biraju npr. gradonačelnik (Bürgermeister), općinsko ili gradsko vijeće i okružni poglavar (Landrat). Pazite: u nekim drugim pokrajinama, npr. u Baden-Württembergu, na lokalnim izborima glasa se već sa 16 godina.",
+  "merksatz_de": "In Bayern darf man ab 18 Jahren bei Kommunalwahlen wählen."
+ },
+ {
+  "id": "BY-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Bavarske?",
+  "options_bks": ["plavo-bijelo-crvena", "bijelo-plava", "zeleno-bijelo-crvena", "crno-žuta"],
+  "expl_bks": "Bavarske boje su bijela i plava. Postoje dvije pokrajinske zastave: jedna s dvije vodoravne pruge, gore bijelom i dolje plavom, a druga s bijelo-plavim rombovima. Te boje vide se posvuda, na primjer na grbu ili za vrijeme Oktoberfesta u Münchenu.",
+  "merksatz_de": "Die Farben von Bayern sind Weiß und Blau."
+ },
+ {
+  "id": "BY-06",
+  "q_bks": "Gdje se u Bavarskoj možete informirati o političkim temama?",
+  "options_bks": ["u komunalnom redarstvenom uredu (Ordnungsamt) općine", "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)", "u centru za zaštitu potrošača (Verbraucherzentrale)", "u crkvama"],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) informira građane o politici, povijesti i demokraciji. U Bavarskoj se nalazi u Münchenu. Nudi besplatne brošure, predavanja i informacije na internetu, a mora ostati neutralan i ne smije raditi za neku stranku.",
+  "merksatz_de": "Politische Informationen bekommt man bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "BY-07",
+  "q_bks": "Glavni grad pokrajine Bavarske zove se …",
+  "options_bks": ["Ingolstadt.", "Regensburg.", "Nürnberg.", "München."],
+  "expl_bks": "München je glavni grad Bavarske i najveći grad u pokrajini. Ondje se nalaze bavarski Landtag (pokrajinski parlament) i pokrajinska vlada. Grad je poznat po Oktoberfestu, najvećoj pučkoj svetkovini na svijetu. Nürnberg je drugi po veličini bavarski grad, ali nije glavni grad.",
+  "merksatz_de": "München ist die Hauptstadt des Freistaats Bayern."
+ },
+ {
+  "id": "BY-08",
+  "q_bks": "Koja savezna pokrajina je Bavarska?",
+  "options_bks": ["1", "2", "3", "4"],
+  "expl_bks": "Na karti je Bavarska velika pokrajina na jugoistoku Njemačke, uz granicu s Austrijom i Češkom. Po površini je najveća savezna pokrajina. Na jugu se nalaze Alpe s najvišim njemačkim vrhom, Zugspitze (2962 m).",
+  "merksatz_de": "Bayern ist das größte Bundesland und liegt im Südosten."
+ },
+ {
+  "id": "BY-09",
+  "q_bks": "Kako se zove šef vlade u Bavarskoj?",
+  "options_bks": ["prvi ministar (Erster Minister)", "premijer (Premierminister)", "gradonačelnik (Bürgermeister)", "ministar predsjednik (Ministerpräsident)"],
+  "expl_bks": "Bavarsku pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega nakon izbora bira bavarski Landtag (pokrajinski parlament), a on zatim, uz suglasnost Landtaga, imenuje ministre. Nazivi „premijer” i „prvi ministar” za pokrajine se u Njemačkoj ne koriste, a gradonačelnik (Bürgermeister) vodi samo grad ili općinu.",
+  "merksatz_de": "In Bayern leitet der Ministerpräsident die Staatsregierung."
+ },
+ {
+  "id": "BY-10",
+  "q_bks": "Kojeg ministra Bavarska nema?",
+  "options_bks": ["ministar pravosuđa", "ministar vanjskih poslova", "ministar financija", "ministar unutarnjih poslova"],
+  "expl_bks": "Odnose s drugim državama vodi savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministar vanjskih poslova postoji samo u saveznoj vladi u Berlinu. Bavarska ima vlastite ministre za pravosuđe, financije i unutarnje poslove; ondje se zovu državni ministri (Staatsminister).",
+  "merksatz_de": "Bayern hat keinen Außenminister, das ist Aufgabe des Bundes."
+ },
+ {
+  "id": "BE-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Berlin?",
+  "options_bks": ["Slika 1", "Slika 2", "Slika 3", "Slika 4"],
+  "expl_bks": "Grb Berlina: crni medvjed s crvenim jezikom na bijelom štitu, iznad štita kruna. Medvjed je simbol grada već stoljećima i nalazi se i na berlinskoj zastavi, crveno-bijelo-crvenoj. Lako je zapamtiti: Berlin = medvjed (Bär).",
+  "merksatz_de": "Im Berliner Wappen ist ein schwarzer Bär."
+ },
+ {
+  "id": "BE-02",
+  "q_bks": "Koji je gradski kotar (Bezirk) Berlina?",
+  "options_bks": ["Altona", "Prignitz", "Pankow", "Mecklenburgische Seenplatte"],
+  "expl_bks": "Berlin je podijeljen na dvanaest gradskih kotara (Bezirke), a Pankow je jedan od njih, na sjeveru grada. Do 1990. Pankow je pripadao Istočnom Berlinu. Altona je gradski kotar Hamburga, Prignitz okrug u Brandenburgu, a Mecklenburgische Seenplatte okrug u Mecklenburgu-Zapadnom Pomorju.",
+  "merksatz_de": "Pankow ist einer der zwölf Bezirke von Berlin."
+ }
+]

@@ -1,0 +1,646 @@
+[
+ {
+  "id": "G-277",
+  "state": null,
+  "question_de": "Eine Frau, die ein zweijähriges Kind hat, bewirbt sich in Deutschland um eine Stelle. Was ist ein Beispiel für Diskriminierung? Sie bekommt die Stelle nur deshalb nicht, weil sie ...",
+  "options_de": [
+   "kein Englisch spricht.",
+   "zu hohe Gehaltsvorstellungen hat.",
+   "keine Erfahrungen in diesem Beruf hat.",
+   "Mutter ist."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Mutter ist.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-278",
+  "state": null,
+  "question_de": "Ein Mann im Rollstuhl hat sich auf eine Stelle als Buchhalter beworben. Was ist ein Beispiel für Diskriminierung? Er bekommt die Stelle nur deshalb nicht, weil er ...",
+  "options_de": [
+   "im Rollstuhl sitzt.",
+   "keine Erfahrung hat.",
+   "zu hohe Gehaltsvorstellungen hat.",
+   "kein Englisch spricht."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "im Rollstuhl sitzt.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-279",
+  "state": null,
+  "question_de": "In den meisten Mietshäusern in Deutschland gibt es eine \"Hausordnung\". Was steht in einer solchen \"Hausordnung\"? Sie nennt ...",
+  "options_de": [
+   "Regeln für die Benutzung öffentlicher Verkehrsmittel.",
+   "alle Mieterinnen und Mieter im Haus.",
+   "Regeln, an die sich alle Bewohnerinnen und Bewohner halten müssen.",
+   "die Adresse des nächsten Ordnungsamtes."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Regeln, an die sich alle Bewohnerinnen und Bewohner halten müssen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-280",
+  "state": null,
+  "question_de": "Wenn Sie sich in Deutschland gegen einen falschen Steuerbescheid wehren wollen, müssen Sie ...",
+  "options_de": [
+   "nichts machen.",
+   "den Bescheid wegwerfen.",
+   "Einspruch einlegen.",
+   "warten, bis ein anderer Bescheid kommt."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Einspruch einlegen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-281",
+  "state": null,
+  "question_de": "Zwei Freunde wollen in ein öffentliches Schwimmbad in Deutschland. Beide haben eine dunkle Hautfarbe und werden deshalb nicht hineingelassen. Welches Recht wird in dieser Situation verletzt? Das Recht auf ...",
+  "options_de": [
+   "Meinungsfreiheit",
+   "Gleichbehandlung",
+   "Versammlungsfreiheit",
+   "Freizügigkeit"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Gleichbehandlung",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-282",
+  "state": null,
+  "question_de": "Welches Ehrenamt müssen deutsche Staatsbürgerinnen und Staatsbürger übernehmen, wenn sie dazu aufgefordert werden?",
+  "options_de": [
+   "Vereinstrainerin/Vereinstrainer",
+   "Wahlhelferin/Wahlhelfer",
+   "Bibliotheksaufsicht",
+   "Lehrerin/Lehrer"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Wahlhelferin/Wahlhelfer",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-283",
+  "state": null,
+  "question_de": "Was tun Sie, wenn Sie eine falsche Rechnung von einer deutschen Behörde bekommen?",
+  "options_de": [
+   "Ich lasse die Rechnung liegen.",
+   "Ich lege Widerspruch bei der Behörde ein.",
+   "Ich schicke die Rechnung an die Behörde zurück.",
+   "Ich gehe mit der Rechnung zum Finanzamt."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Ich lege Widerspruch bei der Behörde ein.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-284",
+  "state": null,
+  "question_de": "Was man für die Arbeit können muss, ändert sich in Zukunft sehr schnell. Was kann man tun?",
+  "options_de": [
+   "Es ist egal, was man lernt.",
+   "Erwachsene müssen auch nach der Ausbildung immer weiter lernen.",
+   "Kinder lernen in der Schule alles, was im Beruf wichtig ist. Nach der Schule muss man nicht weiter lernen.",
+   "Alle müssen früher aufhören zu arbeiten, weil sich alles ändert."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Erwachsene müssen auch nach der Ausbildung immer weiter lernen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-285",
+  "state": null,
+  "question_de": "Frau Frost arbeitet als fest angestellte Mitarbeiterin in einem Büro. Was muss sie nicht von ihrem Gehalt bezahlen?",
+  "options_de": [
+   "Lohnsteuer",
+   "Beiträge zur Arbeitslosenversicherung",
+   "Beiträge zur Renten- und Krankenversicherung",
+   "Umsatzsteuer"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Umsatzsteuer",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-286",
+  "state": null,
+  "question_de": "Welche Organisation in einer Firma hilft den Arbeitnehmerinnen und Arbeitnehmern bei Problemen mit der Arbeitgeberin/dem Arbeitgeber?",
+  "options_de": [
+   "der Betriebsrat",
+   "die Betriebsprüferin/der Betriebsprüfer",
+   "die Betriebsgruppe",
+   "das Betriebsmanagement"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "der Betriebsrat",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-287",
+  "state": null,
+  "question_de": "Sie möchten bei einer Firma in Deutschland ihr Arbeitsverhältnis beenden. Was müssen Sie beachten?",
+  "options_de": [
+   "die Gehaltszahlungen",
+   "die Arbeitszeit",
+   "die Kündigungsfrist",
+   "die Versicherungspflicht"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "die Kündigungsfrist",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-288",
+  "state": null,
+  "question_de": "Woraus begründet sich Deutschlands besondere Verantwortung für Israel?",
+  "options_de": [
+   "aus der Mitgliedschaft in der Europäischen Union (EU)",
+   "aus den nationalsozialistischen Verbrechen gegen Juden",
+   "aus dem Grundgesetz der Bundesrepublik Deutschland",
+   "aus der christlichen Tradition"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "aus den nationalsozialistischen Verbrechen gegen Juden",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-289",
+  "state": null,
+  "question_de": "Ein Mann mit dunkler Hautfarbe bewirbt sich um eine Stelle als Kellner in einem Restaurant in Deutschland. Was ist ein Beispiel für Diskriminierung? Er bekommt die Stelle nur deshalb nicht, weil ...",
+  "options_de": [
+   "seine Deutschkenntnisse zu gering sind.",
+   "er zu hohe Gehaltsvorstellungen hat.",
+   "er eine dunkle Haut hat.",
+   "er keine Erfahrungen im Beruf hat."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "er eine dunkle Haut hat.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-290",
+  "state": null,
+  "question_de": "Sie haben in Deutschland einen Fernseher gekauft. Zu Hause packen Sie den Fernseher aus, doch er funktioniert nicht. Der Fernseher ist kaputt. Was können Sie machen?",
+  "options_de": [
+   "eine Anzeige schreiben",
+   "den Fernseher reklamieren",
+   "das Gerät ungefragt austauschen",
+   "die Garantie verlängern"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "den Fernseher reklamieren",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-291",
+  "state": null,
+  "question_de": "Warum muss man in Deutschland bei der Steuererklärung aufschreiben, ob man zu einer Kirche gehört oder nicht? Weil ...",
+  "options_de": [
+   "es eine Kirchensteuer gibt, die an die Einkommen- und Lohnsteuer geknüpft ist.",
+   "das für die Statistik in Deutschland wichtig ist.",
+   "man mehr Steuern zahlen muss, wenn man nicht zu einer Kirche gehört.",
+   "die Kirche für die Steuererklärung verantwortlich ist."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "es eine Kirchensteuer gibt, die an die Einkommen- und Lohnsteuer geknüpft ist.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-292",
+  "state": null,
+  "question_de": "Die Menschen in Deutschland leben nach dem Grundsatz der religiösen Toleranz. Was bedeutet das?",
+  "options_de": [
+   "Es dürfen keine Moscheen gebaut werden.",
+   "Alle Menschen glauben an Gott.",
+   "Jeder kann glauben, was er möchte.",
+   "Der Staat entscheidet, an welchen Gott die Menschen glauben."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Jeder kann glauben, was er möchte.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-293",
+  "state": null,
+  "question_de": "Was ist in Deutschland ein Brauch zu Ostern?",
+  "options_de": [
+   "Kürbisse vor die Tür stellen",
+   "einen Tannenbaum schmücken",
+   "Eier bemalen",
+   "Raketen in die Luft schießen"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Eier bemalen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-294",
+  "state": null,
+  "question_de": "Pfingsten ist ein ...",
+  "options_de": [
+   "christlicher Feiertag.",
+   "deutscher Gedenktag.",
+   "internationaler Trauertag.",
+   "bayerischer Brauch."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "christlicher Feiertag.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-295",
+  "state": null,
+  "question_de": "Welche Religion hat die europäische und deutsche Kultur geprägt?",
+  "options_de": [
+   "der Hinduismus",
+   "das Christentum",
+   "der Buddhismus",
+   "der Islam"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "das Christentum",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-296",
+  "state": null,
+  "question_de": "In Deutschland nennt man die letzten vier Wochen vor Weihnachten ...",
+  "options_de": [
+   "den Buß- und Bettag.",
+   "das Erntedankfest.",
+   "die Adventszeit.",
+   "Allerheiligen."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "die Adventszeit.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-297",
+  "state": null,
+  "question_de": "Aus welchem Land sind die meisten Migrantinnen und Migranten nach Deutschland gekommen?",
+  "options_de": [
+   "Italien",
+   "Polen",
+   "Marokko",
+   "Türkei"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Türkei",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-298",
+  "state": null,
+  "question_de": "In der DDR lebten vor allem Migrantinnen und Migranten aus ...",
+  "options_de": [
+   "Vietnam, Polen, Mosambik.",
+   "Frankreich, Rumänien, Somalia.",
+   "Chile, Ungarn, Simbabwe.",
+   "Nordkorea, Mexiko, Ägypten."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Vietnam, Polen, Mosambik.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-299",
+  "state": null,
+  "question_de": "Ausländische Arbeitnehmerinnen und Arbeitnehmer, die in den 50er und 60er Jahren von der Bundesrepublik Deutschland angeworben wurden, nannte man ...",
+  "options_de": [
+   "Schwarzarbeiterinnen/Schwarzarbeiter.",
+   "Gastarbeiterinnen/Gastarbeiter.",
+   "Zeitarbeiterinnen/Zeitarbeiter.",
+   "Schichtarbeiterinnen/Schichtarbeiter."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Gastarbeiterinnen/Gastarbeiter.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-300",
+  "state": null,
+  "question_de": "Aus welchem Land kamen die ersten Gastarbeiterinnen und Gastarbeiter in die Bundesrepublik Deutschland?",
+  "options_de": [
+   "Italien",
+   "Spanien",
+   "Portugal",
+   "Türkei"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Italien",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-01",
+  "state": "Baden-Württemberg",
+  "question_de": "Welches Wappen gehört zum Bundesland Baden-Württemberg?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Bild 1",
+  "image_note_bks": "Grb Baden-Württemberga: tri crna lava jedan ispod drugoga na zlatnožutom štitu, iznad štita kruna."
+ },
+ {
+  "id": "BW-02",
+  "state": "Baden-Württemberg",
+  "question_de": "Welches ist ein Landkreis in Baden-Württemberg?",
+  "options_de": [
+   "Mecklenburgische Seenplatte",
+   "Neckar-Odenwald-Kreis",
+   "Nordfriesland",
+   "Altötting"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Neckar-Odenwald-Kreis",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-03",
+  "state": "Baden-Württemberg",
+  "question_de": "Für wie viele Jahre wird der Landtag in Baden-Württemberg gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-04",
+  "state": "Baden-Württemberg",
+  "question_de": "Ab welchem Alter darf man in Baden-Württemberg bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "16",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-05",
+  "state": "Baden-Württemberg",
+  "question_de": "Welche Farben hat die Landesflagge von Baden-Württemberg?",
+  "options_de": [
+   "blau-weiß-rot",
+   "schwarz-gold",
+   "weiß-blau",
+   "grün-weiß-rot"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "schwarz-gold",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-06",
+  "state": "Baden-Württemberg",
+  "question_de": "Wo können Sie sich in Baden-Württemberg über politische Themen informieren?",
+  "options_de": [
+   "beim Ordnungsamt der Gemeinde",
+   "bei der Verbraucherzentrale",
+   "bei der Landeszentrale für politische Bildung",
+   "bei den Kirchen"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-07",
+  "state": "Baden-Württemberg",
+  "question_de": "Die Landeshauptstadt von Baden-Württemberg heißt ...",
+  "options_de": [
+   "Heidelberg.",
+   "Stuttgart.",
+   "Karlsruhe.",
+   "Mannheim."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Stuttgart.",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-08",
+  "state": "Baden-Württemberg",
+  "question_de": "Welches Bundesland ist Baden-Württemberg?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "2",
+  "image_note_bks": "Na karti je Baden-Württemberg krajnji jugozapad Njemačke, uz granicu s Francuskom i Švicarskom."
+ },
+ {
+  "id": "BW-09",
+  "state": "Baden-Württemberg",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Baden-Württemberg?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "BW-10",
+  "state": "Baden-Württemberg",
+  "question_de": "Welche Ministerin/welchen Minister hat Baden-Württemberg nicht?",
+  "options_de": [
+   "Finanzministerin/Finanzminister",
+   "Justizministerin/Justizminister",
+   "Innenministerin/Innenminister",
+   "Außenministerin/Außenminister"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-01",
+  "state": "Bayern",
+  "question_de": "Welches Wappen gehört zum Freistaat Bayern?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Bild 2",
+  "image_note_bks": "Grb Bavarske: bijelo-plavi rombovi (romboidni uzorak), iznad štita kruna."
+ },
+ {
+  "id": "BY-02",
+  "state": "Bayern",
+  "question_de": "Welches ist ein Landkreis in Bayern?",
+  "options_de": [
+   "Prignitz",
+   "Rhein-Sieg-Kreis",
+   "Nordfriesland",
+   "Altötting"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Altötting",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-03",
+  "state": "Bayern",
+  "question_de": "Für wie viele Jahre wird der Landtag in Bayern gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-04",
+  "state": "Bayern",
+  "question_de": "Ab welchem Alter darf man in Bayern bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "18",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-05",
+  "state": "Bayern",
+  "question_de": "Welche Farben hat die Landesflagge von Bayern?",
+  "options_de": [
+   "blau-weiß-rot",
+   "weiß-blau",
+   "grün-weiß-rot",
+   "schwarz-gelb"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "weiß-blau",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-06",
+  "state": "Bayern",
+  "question_de": "Wo können Sie sich in Bayern über politische Themen informieren?",
+  "options_de": [
+   "beim Ordnungsamt der Gemeinde",
+   "bei der Landeszentrale für politische Bildung",
+   "bei der Verbraucherzentrale",
+   "bei den Kirchen"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-07",
+  "state": "Bayern",
+  "question_de": "Die Landeshauptstadt von Bayern heißt ...",
+  "options_de": [
+   "Ingolstadt.",
+   "Regensburg.",
+   "Nürnberg.",
+   "München."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "München.",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-08",
+  "state": "Bayern",
+  "question_de": "Welches Bundesland ist Bayern?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "4",
+  "image_note_bks": "Na karti je Bavarska velika pokrajina na jugoistoku Njemačke, uz granicu s Austrijom i Češkom."
+ },
+ {
+  "id": "BY-09",
+  "state": "Bayern",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Bayern?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "BY-10",
+  "state": "Bayern",
+  "question_de": "Welche Ministerin/welchen Minister hat Bayern nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "BE-01",
+  "state": "Berlin",
+  "question_de": "Welches Wappen gehört zum Bundesland Berlin?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Bild 4",
+  "image_note_bks": "Grb Berlina: crni medvjed s crvenim jezikom na bijelom štitu, iznad štita kruna."
+ },
+ {
+  "id": "BE-02",
+  "state": "Berlin",
+  "question_de": "Welches ist ein Bezirk von Berlin?",
+  "options_de": [
+   "Altona",
+   "Prignitz",
+   "Pankow",
+   "Mecklenburgische Seenplatte"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Pankow",
+  "image_note_bks": null
+ }
+]

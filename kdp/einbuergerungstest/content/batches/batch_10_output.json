@@ -1,0 +1,554 @@
+[
+ {
+  "id": "SL-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Saarlanda?",
+  "options_bks": [
+   "bijelo-plavo",
+   "crno-crveno-zlatno",
+   "crno-žuto",
+   "zeleno-bijelo-crveno"
+  ],
+  "expl_bks": "Zastava Saarlanda ima iste boje kao njemačka zastava: crno-crveno-zlatno, a u sredini je grb pokrajine. Saarland je jedina savezna pokrajina s tim bojama na zastavi. Saveznoj Republici Njemačkoj pridružio se 1. siječnja 1957., nakon referenduma održanog 1955. godine.",
+  "merksatz_de": "Die Flagge des Saarlandes ist schwarz-rot-gold mit Wappen."
+ },
+ {
+  "id": "SL-06",
+  "q_bks": "Gdje se u Saarlandu možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine"
+  ],
+  "expl_bks": "Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) informira građane o politici, demokraciji i izborima. Nudi brošure, predavanja i seminare, često besplatno. Centar je politički neutralan i ne zastupa nijednu stranku. Savjetovalište za potrošače pomaže kod kupnje i ugovora, a ne kod političkih tema.",
+  "merksatz_de": "Politische Informationen gibt es bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "SL-07",
+  "q_bks": "Glavni grad Saarlanda zove se …",
+  "options_bks": [
+   "Neunkirchen.",
+   "Homburg.",
+   "Saarbrücken.",
+   "Völklingen."
+  ],
+  "expl_bks": "Glavni grad Saarlanda je Saarbrücken. To je ujedno najveći grad pokrajine, a leži na rijeci Saar, blizu granice s Francuskom. U Saarbrückenu se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. I pokrajina i grad dobili su ime po rijeci Saar.",
+  "merksatz_de": "Saarbrücken ist die Landeshauptstadt des Saarlandes."
+ },
+ {
+  "id": "SL-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Saarland?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Saarland vrlo mala pokrajina na jugozapadu, uz granicu s Francuskom i Luksemburgom. Na sjeveru i istoku graniči s Porajnjem-Falačkom (Rheinland-Pfalz). Saarland je najmanja savezna pokrajina ako se ne računaju gradovi-pokrajine Berlin, Hamburg i Bremen.",
+  "merksatz_de": "Das Saarland liegt im Südwesten, an der Grenze zu Frankreich."
+ },
+ {
+  "id": "SL-09",
+  "q_bks": "Kako se zove šef vlade Saarlanda?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Na čelu pokrajinske vlade Saarlanda je ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament). Isti naziv koristi se u svim pokrajinama osim u gradovima-pokrajinama Berlinu, Hamburgu i Bremenu. Gradonačelnik vodi grad ili općinu, a ne pokrajinu.",
+  "merksatz_de": "Im Saarland heißt der Regierungschef Ministerpräsident."
+ },
+ {
+  "id": "SL-10",
+  "q_bks": "Kojeg ministra Saarland nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), a ne pokrajina. Zato ministra vanjskih poslova ima samo savezna vlada. Saarland, kao i druge pokrajine, ima ministre za pravosuđe, financije i unutarnje poslove, jer su pokrajine zadužene npr. za sudove, policiju i svoj proračun.",
+  "merksatz_de": "Außenpolitik macht der Bund, nicht das Bundesland."
+ },
+ {
+  "id": "SN-01",
+  "q_bks": "Koji grb pripada slobodnoj državi (Freistaat) Saskoj?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Saske: vodoravne crne i žute pruge preko kojih koso ide zeleni vijenac (Rautenkranz). Saska se naziva slobodnom državom (Freistaat), kao i Bavarska i Tiringija. To je samo povijesni naziv: Saska je savezna pokrajina kao i sve ostale.",
+  "merksatz_de": "Sachsens Wappen hat schwarz-gelbe Streifen und einen grünen Kranz."
+ },
+ {
+  "id": "SN-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Saskoj?",
+  "options_bks": [
+   "Vogtlandkreis",
+   "Altötting",
+   "Uckermark",
+   "Nordfriesland"
+  ],
+  "expl_bks": "Vogtlandkreis je okrug (Landkreis) na jugozapadu Saske, uz granicu s Bavarskom i Češkom. Sjedište okruga je grad Plauen. Ostali okruzi nalaze se u drugim pokrajinama: Altötting u Bavarskoj, Uckermark u Brandenburgu, a Nordfriesland u Schleswig-Holsteinu.",
+  "merksatz_de": "Der Vogtlandkreis ist ein Landkreis in Sachsen."
+ },
+ {
+  "id": "SN-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Saskoj?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) u Saskoj bira se na 5 godina, a sjedište mu je u Dresdenu. Landtag donosi pokrajinske zakone i bira ministra predsjednika (Ministerpräsident). Nemojte to zamijeniti s Bundestagom, saveznim parlamentom, koji se bira na 4 godine.",
+  "merksatz_de": "Der Sächsische Landtag wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "SN-04",
+  "q_bks": "Od koje dobi se u Saskoj smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Saskoj se na lokalnim izborima (Kommunalwahlen) smije glasati od 18. godine. Na tim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). U nekim drugim pokrajinama, primjerice u Saskoj-Anhalt i Tiringiji, na lokalnim izborima glasa se već od 16. godine.",
+  "merksatz_de": "In Sachsen wählt man bei Kommunalwahlen ab 18 Jahren."
+ },
+ {
+  "id": "SN-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Saske?",
+  "options_bks": [
+   "plavo-bijelo-crveno",
+   "bijelo-zeleno",
+   "zeleno-bijelo-crveno",
+   "crno-žuto"
+  ],
+  "expl_bks": "Zastava Saske ima dvije vodoravne pruge: gore bijelu, dolje zelenu. Crna i žuta boja nalaze se u saskom grbu, ali ne na zastavi, pa je to česta zamka. Zastava se koristi i s pokrajinskim grbom u sredini.",
+  "merksatz_de": "Die sächsische Flagge ist weiß-grün."
+ },
+ {
+  "id": "SN-06",
+  "q_bks": "Gdje se u Saskoj možete informirati o političkim temama?",
+  "options_bks": [
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "Saski Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) nalazi se u Dresdenu. Tamo možete dobiti brošure i knjige o politici, često besplatno, te posjetiti predavanja i rasprave. Centar je politički neutralan. Komunalni redarstveni ured (Ordnungsamt) brine se o javnom redu, a ne o političkom obrazovanju.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung informiert neutral über Politik."
+ },
+ {
+  "id": "SN-07",
+  "q_bks": "Glavni grad Saske zove se …",
+  "options_bks": [
+   "Leipzig.",
+   "Dresden.",
+   "Chemnitz.",
+   "Zwickau."
+  ],
+  "expl_bks": "Glavni grad Saske je Dresden, grad na rijeci Elbi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Dresden je poznat po crkvi Frauenkirche, koja je razorena 1945., a ponovno izgrađena do 2005. Leipzig je također velik i poznat grad, ali nije glavni grad.",
+  "merksatz_de": "Dresden ist die Hauptstadt von Sachsen."
+ },
+ {
+  "id": "SN-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Saska?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Saska na jugoistoku istočnog dijela Njemačke, uz granicu s Poljskom i Češkom. Unutar Njemačke graniči s Bavarskom, Tiringijom, Saskom-Anhalt i Brandenburgom. Glavni grad Saske je Dresden, grad na rijeci Elbi.",
+  "merksatz_de": "Sachsen liegt im Osten, an der Grenze zu Polen und Tschechien."
+ },
+ {
+  "id": "SN-09",
+  "q_bks": "Kako se zove šef vlade u Saskoj?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Šef pokrajinske vlade u Saskoj zove se ministar predsjednik (Ministerpräsident). Iako je Saska slobodna država (Freistaat), naziv je isti kao u većini drugih pokrajina. Bira ga Landtag (pokrajinski parlament). Naziv „premijer” koristi se u drugim državama, a gradonačelnik vodi grad ili općinu.",
+  "merksatz_de": "Sachsens Landesregierung wird vom Ministerpräsidenten geleitet."
+ },
+ {
+  "id": "SN-10",
+  "q_bks": "Kojeg ministra Saska nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Saska nema ministra vanjskih poslova. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), pa vanjsku politiku vodi savezna vlada. Pokrajine imaju vlastite ministre za pravosuđe, financije i unutarnje poslove, jer su zadužene npr. za sudove, policiju i svoj proračun.",
+  "merksatz_de": "Einen Außenminister hat nur die Bundesregierung."
+ },
+ {
+  "id": "ST-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Saskoj-Anhalt?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Saske-Anhalt: gore crno-žute pruge sa zelenim vijencem i mali crni orao, dolje crni medvjed na crvenom zidu. Medvjed je znak povijesne zemlje Anhalt. Pazite: i grb Saske ima crno-žute pruge sa zelenim vijencem, ali nema medvjeda.",
+  "merksatz_de": "Im Wappen von Sachsen-Anhalt steht ein schwarzer Bär auf einer Mauer."
+ },
+ {
+  "id": "ST-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Saskoj-Anhalt?",
+  "options_bks": [
+   "Ammerland",
+   "Altötting",
+   "Uckermark",
+   "Börde"
+  ],
+  "expl_bks": "Börde je okrug (Landkreis) u Saskoj-Anhalt, u okolici Magdeburga. Riječ „Börde” označava ravan kraj s vrlo plodnom zemljom, gdje se uzgajaju npr. šećerna repa i žitarice. Ammerland je u Donjoj Saskoj, Altötting u Bavarskoj, a Uckermark u Brandenburgu.",
+  "merksatz_de": "Der Landkreis Börde liegt in Sachsen-Anhalt."
+ },
+ {
+  "id": "ST-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Saskoj-Anhalt?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Saske-Anhalt bira se na 5 godina i zasjeda u Magdeburgu. Zastupnici donose pokrajinske zakone, odlučuju o proračunu i biraju ministra predsjednika (Ministerpräsident). Pet godina traje izborno razdoblje i u većini drugih pokrajina, a Bundestag (savezni parlament) bira se na 4 godine.",
+  "merksatz_de": "Sachsen-Anhalt wählt seinen Landtag für fünf Jahre."
+ },
+ {
+  "id": "ST-04",
+  "q_bks": "Od koje dobi se u Saskoj-Anhalt smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Saskoj-Anhalt mladi smiju glasati na lokalnim izborima (Kommunalwahlen) već sa 16 godina. Na tim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). Za izbore za Bundestag (savezni parlament) potrebno je imati 18 godina.",
+  "merksatz_de": "Bei Kommunalwahlen in Sachsen-Anhalt darf man ab 16 wählen."
+ },
+ {
+  "id": "ST-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Saske-Anhalt?",
+  "options_bks": [
+   "plavo-bijelo-crveno",
+   "žuto-crno",
+   "zeleno-bijelo-crveno",
+   "bijelo-crveno"
+  ],
+  "expl_bks": "Zastava Saske-Anhalt ima dvije vodoravne pruge: gore žutu, dolje crnu. Često se koristi i s pokrajinskim grbom u sredini. Iste boje, crna i žuta, nalaze se i u gornjem dijelu grba. Pazite na redoslijed: žuta je gore, crna dolje.",
+  "merksatz_de": "Die Flagge von Sachsen-Anhalt ist gelb-schwarz."
+ },
+ {
+  "id": "ST-06",
+  "q_bks": "Gdje se u Saskoj-Anhalt možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)"
+  ],
+  "expl_bks": "U Saskoj-Anhalt o politici informira Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Magdeburgu. On organizira predavanja, izložbe i seminare te izdaje besplatne ili jeftine publikacije. Centar ne zastupa nijednu stranku. Crkve i savjetovališta za potrošače imaju druge zadaće.",
+  "merksatz_de": "Infos über Politik bekommt man bei der Landeszentrale für politische Bildung."
+ },
+ {
+  "id": "ST-07",
+  "q_bks": "Glavni grad Saske-Anhalt zove se …",
+  "options_bks": [
+   "Halle.",
+   "Dessau.",
+   "Magdeburg.",
+   "Wittenberg."
+  ],
+  "expl_bks": "Glavni grad Saske-Anhalt je Magdeburg, grad na rijeci Elbi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Halle, Dessau i Wittenberg također su poznati gradovi u pokrajini, ali nisu glavni grad. Wittenberg je poznat po Martinu Lutheru i reformaciji.",
+  "merksatz_de": "Magdeburg ist die Landeshauptstadt von Sachsen-Anhalt."
+ },
+ {
+  "id": "ST-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Saska-Anhalt?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Saska-Anhalt u sredini istočnog dijela Njemačke, između Donje Saske, Brandenburga, Saske i Tiringije. Kroz pokrajinu teče rijeka Elba (Elbe), a glavni grad je Magdeburg. Saska-Anhalt nema granicu ni s jednom drugom državom.",
+  "merksatz_de": "Sachsen-Anhalt liegt in der Mitte von Ostdeutschland."
+ },
+ {
+  "id": "ST-09",
+  "q_bks": "Kako se zove šef vlade u Saskoj-Anhalt?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "U Saskoj-Anhalt pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Nakon izbora bira ga Landtag (pokrajinski parlament) u Magdeburgu. Taj naziv imaju šefovi vlada u svim pokrajinama osim Berlina, Hamburga i Bremena. Naziv „premijer” ne koristi se za njemačke pokrajine.",
+  "merksatz_de": "Der Regierungschef von Sachsen-Anhalt heißt Ministerpräsident."
+ },
+ {
+  "id": "ST-10",
+  "q_bks": "Kojeg ministra Saska-Anhalt nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Saska-Anhalt, kao ni druge pokrajine, nema ministra vanjskih poslova. Vanjska politika je prema članku 32. Temeljnog zakona (njemačkog ustava) zadaća saveza (Bund), pa tog ministra ima samo savezna vlada. Ministri pravosuđa, financija i unutarnjih poslova postoje i u pokrajinama, jer one same vode sudove, policiju i svoj proračun.",
+  "merksatz_de": "Bundesländer haben keinen eigenen Außenminister."
+ },
+ {
+  "id": "SH-01",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Schleswig-Holstein?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Schleswig-Holsteina: lijevo dva plava lava na zlatnoj podlozi, desno bijeli list koprive na crvenoj podlozi. Lavovi predstavljaju povijesni kraj Schleswig, a list koprive kraj Holstein. Tako i ime i grb pokazuju da se pokrajina sastoji od dvaju povijesnih dijelova.",
+  "merksatz_de": "Schleswig-Holsteins Wappen: zwei blaue Löwen und ein Nesselblatt."
+ },
+ {
+  "id": "SH-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Schleswig-Holsteinu?",
+  "options_bks": [
+   "Ammerland",
+   "Mecklenburgische Seenplatte",
+   "Nordfriesland",
+   "Rhein-Sieg-Kreis"
+  ],
+  "expl_bks": "Nordfriesland je okrug (Landkreis) na obali Sjevernog mora, uz granicu s Danskom. Pripadaju mu i otoci Sylt, Föhr i Amrum, a sjedište okruga je Husum. Ammerland je u Donjoj Saskoj, Mecklenburgische Seenplatte u Mecklenburgu-Zapadnoj Pomeraniji, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "merksatz_de": "Nordfriesland ist ein Landkreis in Schleswig-Holstein."
+ },
+ {
+  "id": "SH-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Schleswig-Holsteinu?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Schleswig-Holsteina bira se na 5 godina i zasjeda u Kielu. Landtag donosi pokrajinske zakone, odlučuje o proračunu i bira ministra predsjednika (Ministerpräsident). Za usporedbu: Bundestag (savezni parlament) bira se na 4 godine.",
+  "merksatz_de": "Der Landtag in Kiel wird für fünf Jahre gewählt."
+ },
+ {
+  "id": "SH-04",
+  "q_bks": "Od koje dobi se u Schleswig-Holsteinu smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Schleswig-Holsteinu na lokalnim izborima (Kommunalwahlen) smije se glasati od 16. godine. Tada se biraju općinska i gradska vijeća te okružne skupštine (Kreistag). Na lokalnim izborima mogu glasati i građani drugih država Europske unije koji ovdje žive. Za Bundestag (savezni parlament) potrebno je 18 godina.",
+  "merksatz_de": "In Schleswig-Holstein wählt man bei Kommunalwahlen ab 16."
+ },
+ {
+  "id": "SH-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Schleswig-Holsteina?",
+  "options_bks": [
+   "bijelo-plavo",
+   "plavo-bijelo-crveno",
+   "bijelo-crveno",
+   "zeleno-bijelo-crveno"
+  ],
+  "expl_bks": "Zastava Schleswig-Holsteina ima tri vodoravne pruge, odozgo prema dolje: plavu, bijelu i crvenu. Te boje dolaze iz pokrajinskog grba, u kojem su plavi lavovi te bijeli list koprive na crvenoj podlozi. Bijelo-plava zastava pripada Bavarskoj.",
+  "merksatz_de": "Die Flagge von Schleswig-Holstein ist blau-weiß-rot."
+ },
+ {
+  "id": "SH-06",
+  "q_bks": "Gdje se u Schleswig-Holsteinu možete informirati o političkim temama?",
+  "options_bks": [
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine",
+   "kod pokrajinskog povjerenika za političko obrazovanje",
+   "u crkvama"
+  ],
+  "expl_bks": "U Schleswig-Holsteinu tu zadaću ima pokrajinski povjerenik za političko obrazovanje (Landesbeauftragter für politische Bildung) u Kielu. On nudi informacije o politici i demokraciji, publikacije i događanja, a politički je neutralan. Komunalni redarstveni ured (Ordnungsamt) i savjetovalište za potrošače imaju druge zadaće.",
+  "merksatz_de": "In Schleswig-Holstein informiert der Landesbeauftragte für politische Bildung."
+ },
+ {
+  "id": "SH-07",
+  "q_bks": "Glavni grad Schleswig-Holsteina zove se …",
+  "options_bks": [
+   "Husum.",
+   "Flensburg.",
+   "Lübeck.",
+   "Kiel."
+  ],
+  "expl_bks": "Glavni grad Schleswig-Holsteina je Kiel, lučki grad na Baltičkom moru. Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Kiel je poznat po jedriličarskom festivalu Kieler Woche, koji se održava svake godine u lipnju. Lübeck, Flensburg i Husum poznati su gradovi, ali nisu glavni grad.",
+  "merksatz_de": "Kiel ist die Landeshauptstadt von Schleswig-Holstein."
+ },
+ {
+  "id": "SH-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Schleswig-Holstein?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Schleswig-Holstein najsjevernija pokrajina, između Sjevernog i Baltičkog mora, uz granicu s Danskom. Na jugu graniči s Hamburgom, Donjom Saskom i Mecklenburgom-Zapadnom Pomeranijom. Glavni grad pokrajine je Kiel.",
+  "merksatz_de": "Schleswig-Holstein ist das nördlichste Bundesland Deutschlands."
+ },
+ {
+  "id": "SH-09",
+  "q_bks": "Kako se zove šef vlade u Schleswig-Holsteinu?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Šef pokrajinske vlade u Schleswig-Holsteinu zove se ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) u Kielu. Isti naziv koristi se u 13 saveznih pokrajina; samo gradovi-pokrajine Berlin, Hamburg i Bremen imaju druge nazive. „Prvi ministar” i „premijer” nisu nazivi iz njemačkih pokrajina.",
+  "merksatz_de": "Die Landesregierung in Kiel leitet der Ministerpräsident."
+ },
+ {
+  "id": "SH-10",
+  "q_bks": "Kojeg ministra Schleswig-Holstein nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Schleswig-Holstein nema ministra vanjskih poslova. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), a ne pokrajina. I kad pokrajina surađuje sa susjednom Danskom, vanjsku politiku Njemačke vodi savezna vlada. Pokrajine imaju ministre za pravosuđe, financije i unutarnje poslove.",
+  "merksatz_de": "Für Außenpolitik ist in Deutschland der Bund zuständig."
+ },
+ {
+  "id": "TH-01",
+  "q_bks": "Koji grb pripada slobodnoj državi (Freistaat) Tiringiji?",
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
+  "expl_bks": "Grb Tiringije: lav s crveno-bijelim prugama na plavom štitu, oko njega osam bijelih zvjezdica. Sličan prugasti lav nalazi se i u grbu Hessena, ali Hessenov grb nema zvjezdice. Zato pri odgovoru pazite na osam zvjezdica oko lava.",
+  "merksatz_de": "Thüringens Wappen zeigt einen gestreiften Löwen und acht Sterne."
+ },
+ {
+  "id": "TH-02",
+  "q_bks": "Koji se od ovih okruga (Landkreis) nalazi u Tiringiji?",
+  "options_bks": [
+   "Ammerland",
+   "Altötting",
+   "Nordfriesland",
+   "Wartburgkreis"
+  ],
+  "expl_bks": "Wartburgkreis je okrug (Landkreis) na zapadu Tiringije. Ime je dobio po dvorcu Wartburg kod Eisenacha, gdje je Martin Luther 1521. i 1522. prevodio Novi zavjet na njemački. Ammerland je u Donjoj Saskoj, Altötting u Bavarskoj, a Nordfriesland u Schleswig-Holsteinu.",
+  "merksatz_de": "Der Wartburgkreis ist ein Landkreis in Thüringen."
+ },
+ {
+  "id": "TH-03",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Tiringiji?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Landtag (pokrajinski parlament) Tiringije bira se na 5 godina i zasjeda u Erfurtu. Zastupnici donose zakone pokrajine, kontroliraju pokrajinsku vladu i biraju ministra predsjednika (Ministerpräsident). Za usporedbu: Bundestag (savezni parlament) bira se na 4 godine.",
+  "merksatz_de": "Alle fünf Jahre wählt Thüringen einen neuen Landtag."
+ },
+ {
+  "id": "TH-04",
+  "q_bks": "Od koje dobi se u Tiringiji smije glasati na lokalnim izborima?",
+  "options_bks": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "expl_bks": "U Tiringiji se na lokalnim izborima (Kommunalwahlen) smije glasati od 16. godine. Tako i mladi mogu sudjelovati u izboru općinskog ili gradskog vijeća i okružne skupštine (Kreistag). Za izbore za Bundestag (savezni parlament) potrebno je imati 18 godina.",
+  "merksatz_de": "Thüringen: Bei Kommunalwahlen darf man ab 16 wählen."
+ },
+ {
+  "id": "TH-05",
+  "q_bks": "Koje boje ima pokrajinska zastava Tiringije?",
+  "options_bks": [
+   "plavo-bijelo-crveno",
+   "bijelo-crveno",
+   "zeleno-bijelo-crveno",
+   "crno-zlatno"
+  ],
+  "expl_bks": "Zastava Tiringije ima dvije vodoravne pruge: gore bijelu, dolje crvenu. Iste boje ima i lav u tiringijskom grbu. Pazite na zamku: zastava susjednog Hessena ima obrnut redoslijed, crveno-bijelo. Tiringijska zastava koristi se i s grbom u sredini.",
+  "merksatz_de": "Die Landesflagge von Thüringen ist weiß-rot."
+ },
+ {
+  "id": "TH-06",
+  "q_bks": "Gdje se u Tiringiji možete informirati o političkim temama?",
+  "options_bks": [
+   "u crkvama",
+   "u savjetovalištu za potrošače (Verbraucherzentrale)",
+   "u Pokrajinskom centru za političko obrazovanje",
+   "u komunalnom redarstvenom uredu (Ordnungsamt) općine"
+  ],
+  "expl_bks": "U Tiringiji o politici informira Pokrajinski centar za političko obrazovanje (Landeszentrale für politische Bildung) u Erfurtu. Svatko može dobiti brošure, knjige i informacije o izborima te sudjelovati na seminarima. Centar je politički neutralan i ne radi za stranke. Crkve, Ordnungsamt i savjetovalište za potrošače imaju druge zadaće.",
+  "merksatz_de": "Die Landeszentrale für politische Bildung bietet Broschüren und Seminare an."
+ },
+ {
+  "id": "TH-07",
+  "q_bks": "Glavni grad Tiringije zove se …",
+  "options_bks": [
+   "Eisenach.",
+   "Erfurt.",
+   "Gera.",
+   "Jena."
+  ],
+  "expl_bks": "Glavni grad Tiringije je Erfurt, ujedno i najveći grad pokrajine. Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Erfurt je poznat po katedrali i starom mostu Krämerbrücke, na kojem stoje kuće. Jena, Gera i Eisenach poznati su tiringijski gradovi, ali nisu glavni grad.",
+  "merksatz_de": "Erfurt ist die Hauptstadt von Thüringen."
+ },
+ {
+  "id": "TH-08",
+  "q_bks": "Koja od ovih saveznih pokrajina je Tiringija?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Na karti je Tiringija u sredini Njemačke, južno od Saske-Anhalt, između Hessena, Bavarske i Saske. Zbog mnogo šuma često se naziva „zeleno srce Njemačke” (das grüne Herz Deutschlands). Glavni grad pokrajine je Erfurt.",
+  "merksatz_de": "Thüringen liegt in der Mitte Deutschlands."
+ },
+ {
+  "id": "TH-09",
+  "q_bks": "Kako se zove šef vlade u Tiringiji?",
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "gradonačelnik (Bürgermeister)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
+  "expl_bks": "Na čelu vlade Tiringije je ministar predsjednik (Ministerpräsident). Bira ga Landtag (pokrajinski parlament) u Erfurtu, obično nakon pokrajinskih izbora. Tiringija je slobodna država (Freistaat), ali to je samo povijesni naziv i ne mijenja naziv šefa vlade. Gradonačelnik je šef grada ili općine.",
+  "merksatz_de": "Auch in Thüringen führt ein Ministerpräsident die Regierung."
+ },
+ {
+  "id": "TH-10",
+  "q_bks": "Kojeg ministra Tiringija nema?",
+  "options_bks": [
+   "ministar pravosuđa (Justizminister)",
+   "ministar vanjskih poslova (Außenminister)",
+   "ministar financija (Finanzminister)",
+   "ministar unutarnjih poslova (Innenminister)"
+  ],
+  "expl_bks": "Tiringija nema ministra vanjskih poslova, jer vanjska politika nije zadaća pokrajina. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnose s drugim državama vodi savez (Bund), odnosno savezna vlada i Ministarstvo vanjskih poslova (Auswärtiges Amt). Pokrajinski ministri brinu se npr. o pravosuđu, financijama i unutarnjim poslovima.",
+  "merksatz_de": "Thüringen hat Justiz-, Finanz- und Innenminister, aber keinen Außenminister."
+ }
+]

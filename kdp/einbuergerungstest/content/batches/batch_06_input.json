@@ -1,0 +1,646 @@
+[
+ {
+  "id": "G-231",
+  "state": null,
+  "question_de": "Was bedeutet der Begriff \"europäische Integration\"?",
+  "options_de": [
+   "Damit sind amerikanische Einwanderinnen und Einwanderer in Europa gemeint.",
+   "Der Begriff meint den Einwanderungsstopp nach Europa.",
+   "Damit sind europäische Auswanderinnen und Auswanderer in den USA gemeint.",
+   "Der Begriff meint den Zusammenschluss europäischer Staaten zur EU."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Der Begriff meint den Zusammenschluss europäischer Staaten zur EU.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-232",
+  "state": null,
+  "question_de": "Wer wird bei der Europawahl gewählt?",
+  "options_de": [
+   "die Europäische Kommission",
+   "die Länder, die in die EU eintreten dürfen",
+   "die Abgeordneten des Europäischen Parlaments",
+   "die europäische Verfassung"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "die Abgeordneten des Europäischen Parlaments",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-233",
+  "state": null,
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": [
+   "Tschechien",
+   "Bulgarien",
+   "Griechenland",
+   "Portugal"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Tschechien",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-234",
+  "state": null,
+  "question_de": "Wo ist ein Sitz des Europäischen Parlaments?",
+  "options_de": [
+   "London",
+   "Paris",
+   "Berlin",
+   "Straßburg"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Straßburg",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-235",
+  "state": null,
+  "question_de": "Der damalige französische Staatspräsident François Mitterrand und der damalige deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich? © Bundesregierung/Richard Schulze-Vorberg",
+  "options_de": [
+   "Freundschaft zwischen England und Deutschland",
+   "Reisefreiheit in alle Länder der EU",
+   "Frieden und Sicherheit in den Ländern der EU",
+   "einheitliche Feiertage in den Ländern der EU"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Frieden und Sicherheit in den Ländern der EU",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-236",
+  "state": null,
+  "question_de": "Wie viele Mitgliedstaaten hat die EU heute?",
+  "options_de": [
+   "21",
+   "23",
+   "25",
+   "27"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "27",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-237",
+  "state": null,
+  "question_de": "2007 wurde das 50-jährige Jubiläum der \"Römischen Verträge\" gefeiert. Was war der Inhalt der Verträge?",
+  "options_de": [
+   "Beitritt Deutschlands zur NATO",
+   "Gründung der Europäischen Wirtschaftsgemeinschaft (EWG)",
+   "Verpflichtung Deutschlands zu Reparationsleistungen",
+   "Festlegung der Oder-Neiße-Linie als Ostgrenze"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Gründung der Europäischen Wirtschaftsgemeinschaft (EWG)",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-238",
+  "state": null,
+  "question_de": "An welchen Orten arbeitet das Europäische Parlament?",
+  "options_de": [
+   "Paris, London und Den Haag",
+   "Straßburg, Luxemburg und Brüssel",
+   "Rom, Bern und Wien",
+   "Bonn, Zürich und Mailand"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Straßburg, Luxemburg und Brüssel",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-239",
+  "state": null,
+  "question_de": "Durch welche Verträge schloss sich die Bundesrepublik Deutschland mit anderen Staaten zur Europäischen Wirtschaftsgemeinschaft zusammen?",
+  "options_de": [
+   "durch die \"Hamburger Verträge\"",
+   "durch die \"Römischen Verträge\"",
+   "durch die \"Pariser Verträge\"",
+   "durch die \"Londoner Verträge\""
+  ],
+  "correct_index": 1,
+  "correct_option_de": "durch die \"Römischen Verträge\"",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-240",
+  "state": null,
+  "question_de": "Seit wann bezahlt man in Deutschland mit dem Euro in bar?",
+  "options_de": [
+   "1995",
+   "1998",
+   "2002",
+   "2005"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "2002",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-241",
+  "state": null,
+  "question_de": "Frau Seger bekommt ein Kind. Was muss sie tun, um Elterngeld zu erhalten?",
+  "options_de": [
+   "Sie muss an ihre Krankenkasse schreiben.",
+   "Sie muss einen Antrag bei der Elterngeldstelle stellen.",
+   "Sie muss nichts tun, denn sie bekommt automatisch Elterngeld.",
+   "Sie muss das Arbeitsamt um Erlaubnis bitten."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Sie muss einen Antrag bei der Elterngeldstelle stellen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-242",
+  "state": null,
+  "question_de": "Wer entscheidet, ob ein Kind in Deutschland in den Kindergarten geht?",
+  "options_de": [
+   "der Staat",
+   "die Bundesländer",
+   "die Eltern/die Erziehungsberechtigten",
+   "die Schulen"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "die Eltern/die Erziehungsberechtigten",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-243",
+  "state": null,
+  "question_de": "Maik und Sybille wollen mit Freunden an ihrem deutschen Wohnort eine Demonstration auf der Straße abhalten. Was müssen sie vorher tun?",
+  "options_de": [
+   "Sie müssen die Demonstration anmelden.",
+   "Sie müssen nichts tun. Man darf in Deutschland jederzeit überall demonstrieren.",
+   "Sie können gar nichts tun, denn Demonstrationen sind in Deutschland grundsätzlich verboten.",
+   "Maik und Sybille müssen einen neuen Verein gründen, weil nur Vereine demonstrieren dürfen."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Sie müssen die Demonstration anmelden.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-244",
+  "state": null,
+  "question_de": "Welchen Schulabschluss braucht man normalerweise, um an einer Universität in Deutschland ein Studium zu beginnen?",
+  "options_de": [
+   "das Abitur",
+   "ein Diplom",
+   "die Prokura",
+   "eine Gesellenprüfung"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "das Abitur",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-245",
+  "state": null,
+  "question_de": "Wer darf in Deutschland nicht als Paar zusammenleben?",
+  "options_de": [
+   "Hans (20 Jahre) und Marie (19 Jahre)",
+   "Tom (20 Jahre) und Klaus (45 Jahre)",
+   "Sofie (35 Jahre) und Lisa (40 Jahre)",
+   "Anne (13 Jahre) und Tim (25 Jahre)"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Anne (13 Jahre) und Tim (25 Jahre)",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-246",
+  "state": null,
+  "question_de": "Ab welchem Alter ist man in Deutschland volljährig?",
+  "options_de": [
+   "16",
+   "18",
+   "19",
+   "21"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "18",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-247",
+  "state": null,
+  "question_de": "Eine Frau ist schwanger. Sie ist kurz vor und nach der Geburt ihres Kindes vom Gesetz besonders beschützt. Wie heißt dieser Schutz?",
+  "options_de": [
+   "Elternzeit",
+   "Mutterschutz",
+   "Geburtsvorbereitung",
+   "Wochenbett"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Mutterschutz",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-248",
+  "state": null,
+  "question_de": "Die Erziehung der Kinder ist in Deutschland vor allem Aufgabe ...",
+  "options_de": [
+   "des Staates.",
+   "der Eltern.",
+   "der Großeltern.",
+   "der Schulen."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "der Eltern.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-249",
+  "state": null,
+  "question_de": "Wer ist in Deutschland hauptsächlich verantwortlich für die Kindererziehung?",
+  "options_de": [
+   "der Staat",
+   "die Eltern",
+   "die Verwandten",
+   "die Schulen"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "die Eltern",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-250",
+  "state": null,
+  "question_de": "In Deutschland hat man die besten Chancen auf einen gut bezahlten Arbeitsplatz, wenn man ...",
+  "options_de": [
+   "katholisch ist.",
+   "gut ausgebildet ist.",
+   "eine Frau ist.",
+   "Mitglied einer Partei ist."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "gut ausgebildet ist.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-251",
+  "state": null,
+  "question_de": "Wenn man in Deutschland ein Kind schlägt, ...",
+  "options_de": [
+   "geht das niemanden etwas an.",
+   "geht das nur die Familie etwas an.",
+   "kann man dafür nicht bestraft werden.",
+   "kann man dafür bestraft werden."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "kann man dafür bestraft werden.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-252",
+  "state": null,
+  "question_de": "In Deutschland ...",
+  "options_de": [
+   "darf man zur gleichen Zeit nur mit einer Partnerin/einem Partner verheiratet sein.",
+   "kann man mehrere Ehepartnerinnen/Ehepartner gleichzeitig haben.",
+   "darf man nicht wieder heiraten, wenn man einmal verheiratet war.",
+   "darf eine Frau nicht wieder heiraten, wenn ihr Mann gestorben ist."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "darf man zur gleichen Zeit nur mit einer Partnerin/einem Partner verheiratet sein.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-253",
+  "state": null,
+  "question_de": "Wo müssen Sie sich anmelden, wenn Sie in Deutschland umziehen?",
+  "options_de": [
+   "beim Einwohnermeldeamt",
+   "beim Standesamt",
+   "beim Ordnungsamt",
+   "beim Gewerbeamt"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "beim Einwohnermeldeamt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-254",
+  "state": null,
+  "question_de": "In Deutschland dürfen Ehepaare sich scheiden lassen. Meistens müssen sie dazu das \"Trennungsjahr\" einhalten. Was bedeutet das?",
+  "options_de": [
+   "Der Scheidungsprozess dauert ein Jahr.",
+   "Die Ehegatten sind ein Jahr verheiratet, dann ist die Scheidung möglich.",
+   "Das Besuchsrecht für die Kinder gilt ein Jahr.",
+   "Die Ehegatten führen mindestens ein Jahr getrennt ihr eigenes Leben. Danach ist die Scheidung möglich."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Die Ehegatten führen mindestens ein Jahr getrennt ihr eigenes Leben. Danach ist die Scheidung möglich.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-255",
+  "state": null,
+  "question_de": "Bei Erziehungsproblemen können Eltern in Deutschland Hilfe erhalten vom ...",
+  "options_de": [
+   "Ordnungsamt.",
+   "Schulamt.",
+   "Jugendamt.",
+   "Gesundheitsamt."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Jugendamt.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-256",
+  "state": null,
+  "question_de": "Ein Ehepaar möchte in Deutschland ein Restaurant eröffnen. Was braucht es dazu unbedingt?",
+  "options_de": [
+   "eine Erlaubnis der Polizei",
+   "eine Genehmigung einer Partei",
+   "eine Genehmigung des Einwohnermeldeamts",
+   "eine Gaststättenerlaubnis von der zuständigen Behörde"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "eine Gaststättenerlaubnis von der zuständigen Behörde",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-257",
+  "state": null,
+  "question_de": "Eine erwachsene Frau möchte in Deutschland das Abitur nachholen. Das kann sie an ...",
+  "options_de": [
+   "einer Hochschule.",
+   "einem Abendgymnasium.",
+   "einer Hauptschule.",
+   "einer Privatuniversität."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "einem Abendgymnasium.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-258",
+  "state": null,
+  "question_de": "Was darf das Jugendamt in Deutschland?",
+  "options_de": [
+   "Es entscheidet, welche Schule das Kind besucht.",
+   "Es kann ein Kind, das geschlagen wird oder hungern muss, aus der Familie nehmen.",
+   "Es bezahlt das Kindergeld an die Eltern.",
+   "Es kontrolliert, ob das Kind einen Kindergarten besucht."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Es kann ein Kind, das geschlagen wird oder hungern muss, aus der Familie nehmen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-259",
+  "state": null,
+  "question_de": "Das Berufsinformationszentrum BIZ bei der Bundesagentur für Arbeit in Deutschland hilft bei der ...",
+  "options_de": [
+   "Rentenberechnung.",
+   "Lehrstellensuche.",
+   "Steuererklärung.",
+   "Krankenversicherung."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Lehrstellensuche.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-260",
+  "state": null,
+  "question_de": "In Deutschland hat ein Kind in der Schule ...",
+  "options_de": [
+   "Recht auf unbegrenzte Freizeit.",
+   "Wahlfreiheit für alle Fächer.",
+   "Anspruch auf Schulgeld.",
+   "Anwesenheitspflicht."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Anwesenheitspflicht.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-261",
+  "state": null,
+  "question_de": "Ein Mann möchte mit 30 Jahren in Deutschland sein Abitur nachholen. Wo kann er das tun? An ...",
+  "options_de": [
+   "einer Hochschule.",
+   "einem Abendgymnasium.",
+   "einer Hauptschule.",
+   "einer Privatuniversität."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "einem Abendgymnasium.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-262",
+  "state": null,
+  "question_de": "Was bedeutet in Deutschland der Grundsatz der Gleichbehandlung?",
+  "options_de": [
+   "Niemand darf z.B. wegen einer Behinderung benachteiligt werden.",
+   "Man darf andere Personen benachteiligen, wenn ausreichende persönliche Gründe hierfür vorliegen.",
+   "Niemand darf gegen Personen klagen, wenn sie benachteiligt wurden.",
+   "Es ist für alle Gesetz, benachteiligten Gruppen jährlich Geld zu spenden."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Niemand darf z.B. wegen einer Behinderung benachteiligt werden.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-263",
+  "state": null,
+  "question_de": "In Deutschland sind Jugendliche ab 14 Jahren strafmündig. Das bedeutet: Jugendliche, die 14 Jahre und älter sind und gegen Strafgesetze verstoßen, ...",
+  "options_de": [
+   "werden bestraft.",
+   "werden wie Erwachsene behandelt.",
+   "teilen die Strafe mit ihren Eltern.",
+   "werden nicht bestraft."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "werden bestraft.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-264",
+  "state": null,
+  "question_de": "Zu welchem Fest tragen Menschen in Deutschland bunte Kostüme und Masken?",
+  "options_de": [
+   "am Rosenmontag",
+   "am Maifeiertag",
+   "beim Oktoberfest",
+   "an Pfingsten"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "am Rosenmontag",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-265",
+  "state": null,
+  "question_de": "Wohin muss man in Deutschland zuerst gehen, wenn man heiraten möchte?",
+  "options_de": [
+   "zum Einwohnermeldeamt",
+   "zum Ordnungsamt",
+   "zur Agentur für Arbeit",
+   "zum Standesamt"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "zum Standesamt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-266",
+  "state": null,
+  "question_de": "Wann beginnt die gesetzliche Nachtruhe in Deutschland?",
+  "options_de": [
+   "wenn die Sonne untergeht",
+   "wenn die Nachbarn schlafen gehen",
+   "um 0 Uhr, Mitternacht",
+   "um 22 Uhr"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "um 22 Uhr",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-267",
+  "state": null,
+  "question_de": "Eine junge Frau in Deutschland, 22 Jahre alt, lebt mit ihrem Freund zusammen. Die Eltern der Frau finden das nicht gut, weil ihnen der Freund nicht gefällt. Was können die Eltern tun?",
+  "options_de": [
+   "Sie müssen die Entscheidung der volljährigen Tochter respektieren.",
+   "Sie haben das Recht, die Tochter in die elterliche Wohnung zurückzuholen.",
+   "Sie können zur Polizei gehen und die Tochter anzeigen.",
+   "Sie suchen einen anderen Mann für die Tochter."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Sie müssen die Entscheidung der volljährigen Tochter respektieren.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-268",
+  "state": null,
+  "question_de": "Eine junge Frau will den Führerschein machen. Sie hat Angst vor der Prüfung, weil ihre Muttersprache nicht Deutsch ist. Was ist richtig?",
+  "options_de": [
+   "Sie muss mindestens zehn Jahre in Deutschland leben, bevor sie den Führerschein machen kann.",
+   "Wenn sie kein Deutsch kann, darf sie keinen Führerschein haben.",
+   "Sie muss den Führerschein in dem Land machen, in dem man ihre Sprache spricht.",
+   "Sie kann die Theorie-Prüfung vielleicht in ihrer Muttersprache machen. Es gibt mehr als zehn Sprachen zur Auswahl."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Sie kann die Theorie-Prüfung vielleicht in ihrer Muttersprache machen. Es gibt mehr als zehn Sprachen zur Auswahl.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-269",
+  "state": null,
+  "question_de": "In Deutschland haben Kinder ab dem Alter von drei Jahren bis zur Ersteinschulung einen Anspruch auf ...",
+  "options_de": [
+   "monatliches Taschengeld.",
+   "einen Platz in einem Sportverein.",
+   "einen Kindergartenplatz.",
+   "einen Ferienpass."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "einen Kindergartenplatz.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-270",
+  "state": null,
+  "question_de": "Die Volkshochschule in Deutschland ist eine Einrichtung ...",
+  "options_de": [
+   "für den Religionsunterricht.",
+   "nur für Jugendliche.",
+   "zur Weiterbildung.",
+   "nur für Rentnerinnen und Rentner."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "zur Weiterbildung.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-271",
+  "state": null,
+  "question_de": "Was ist in Deutschland ein Brauch zu Weihnachten?",
+  "options_de": [
+   "bunte Eier verstecken",
+   "einen Tannenbaum schmücken",
+   "sich mit Masken und Kostümen verkleiden",
+   "Kürbisse vor die Tür stellen"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "einen Tannenbaum schmücken",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-272",
+  "state": null,
+  "question_de": "Welche Lebensform ist in Deutschland nicht erlaubt?",
+  "options_de": [
+   "Mann und Frau sind geschieden und leben mit neuen Partnern zusammen.",
+   "Zwei Frauen leben zusammen.",
+   "Ein alleinerziehender Vater lebt mit seinen zwei Kindern zusammen.",
+   "Ein Mann ist mit zwei Frauen zur selben Zeit verheiratet."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ein Mann ist mit zwei Frauen zur selben Zeit verheiratet.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-273",
+  "state": null,
+  "question_de": "Bei Erziehungsproblemen gehen Sie in Deutschland ...",
+  "options_de": [
+   "zur Ärztin/zum Arzt.",
+   "zum Gesundheitsamt.",
+   "zum Einwohnermeldeamt.",
+   "zum Jugendamt."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "zum Jugendamt.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-274",
+  "state": null,
+  "question_de": "Sie haben in Deutschland absichtlich einen Brief geöffnet, der an eine andere Person adressiert ist. Was haben Sie nicht beachtet?",
+  "options_de": [
+   "das Schweigerecht",
+   "das Briefgeheimnis",
+   "die Schweigepflicht",
+   "die Meinungsfreiheit"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "das Briefgeheimnis",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-275",
+  "state": null,
+  "question_de": "Was braucht man in Deutschland für eine Ehescheidung?",
+  "options_de": [
+   "die Einwilligung der Eltern",
+   "ein Attest einer Ärztin/eines Arztes",
+   "die Einwilligung der Kinder",
+   "die Unterstützung einer Anwältin/eines Anwalts"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "die Unterstützung einer Anwältin/eines Anwalts",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-276",
+  "state": null,
+  "question_de": "Was sollten Sie tun, wenn Sie von Ihrer Ansprechpartnerin/Ihrem Ansprechpartner in einer deutschen Behörde schlecht behandelt werden?",
+  "options_de": [
+   "Ich kann nichts tun.",
+   "Ich muss mir diese Behandlung gefallen lassen.",
+   "Ich drohe der Person.",
+   "Ich kann mich bei der Behördenleiterin/beim Behördenleiter beschweren."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ich kann mich bei der Behördenleiterin/beim Behördenleiter beschweren.",
+  "image_note_bks": null
+ }
+]

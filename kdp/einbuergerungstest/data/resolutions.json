@@ -1,0 +1,11 @@
+{
+  "G-005": "C lists an older option set with two candidate answers; A and B agree; answer (free and secret vote, no coercion) is correct.",
+  "G-014": "C carries an older option ('Leserbriefen' instead of 'Internet'); A and B agree on 'meine Meinung im Internet äußern kann.'",
+  "G-015": "C marks 'freie Berufswahl' - a scraping error; the Basic Law prohibits forced labour (Art. 12 Abs. 2/3 GG). A and B agree on 'Zwangsarbeit'.",
+  "G-199": "C contains a Cyrillic 'е' in 'fuеr' (encoding error); same answer (Ministerium für Staatssicherheit).",
+  "G-220": "C truncates the option text; same answer (27 January, victims of National Socialism).",
+  "G-249": "C has a case error ('der Eltern'); same answer (die Eltern).",
+  "BB-07": "C has empty option strings; A and B agree on Potsdam.",
+  "HE-07": "C has empty option strings; A and B agree on Wiesbaden.",
+  "HB-09": "C words the option differently ('des Senats'); same answer (Präsidentin/Präsident des Senates)."
+}
