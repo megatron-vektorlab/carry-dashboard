@@ -43,8 +43,14 @@ def main():
 
     def item(q):
         t = bks.get(q["id"], {})
-        opts = [dict(letter=LETTERS[i], de=pretty(o), bks=pretty(t["options_bks"][i]) if t else "[prijevod u izradi]",
-                     correct=(i == q["answer"])) for i, o in enumerate(q["options"])]
+        def tr(i, o):
+            if not t:
+                return "[prijevod u izradi]"
+            b = pretty(t["options_bks"][i])
+            same = re.sub(r"[\W_]+", "", b).lower() == re.sub(r"[\W_]+", "", pretty(o)).lower()
+            return "" if same else b  # names and numbers are not printed twice
+        opts = [dict(letter=LETTERS[i], de=pretty(o), bks=tr(i, o), correct=(i == q["answer"]))
+                for i, o in enumerate(q["options"])]
         label = str(q["num"]) if q["state"] is None else f"{q['state']} {q['num']}"
         return dict(id=q["id"], label=label, num=q["num"], q_de=pretty(q["question"]),
                     q_bks=pretty(t.get("q_bks", "[prijevod u izradi]")), options=opts,

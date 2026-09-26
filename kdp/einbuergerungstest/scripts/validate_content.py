@@ -10,7 +10,10 @@ import json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FORBIDDEN = re.compile(r"\b(offiziell\w*|amtlich\w*|službe\w*|garantira\w*|sigurno ćete)\b", re.I)
+# Promises are errors; "official" wording is only flagged, because the catalogue itself needs
+# terms like "Amtssprache" / "službeni jezik".
+FORBIDDEN = re.compile(r"\b(garantira\w*|zajamčen\w* prolaz|sigurno ćete)\b", re.I)
+OFFICIAL = re.compile(r"\b(offiziell\w*|amtlich\w*|službeno|službeni)\b", re.I)
 # German term in the question -> stem that must appear in the BKS question/options
 GLOSSARY_CHECKS = {
     "Bundestag": "Bundestag", "Bundesrat": "Bundesrat", "Grundgesetz": "Temeljn",
@@ -60,6 +63,8 @@ def main():
         blob = " ".join([t.get("q_bks", ""), t.get("expl_bks", ""), t.get("merksatz_de", "")] + list(opts))
         if FORBIDDEN.search(blob):
             errors.append(f"{qid}: forbidden word '{FORBIDDEN.search(blob).group(0)}'")
+        if OFFICIAL.search(blob):
+            warnings.append(f"{qid}: check wording '{OFFICIAL.search(blob).group(0)}' (must not describe this book)")
         if qid in notes and notes[qid][:25] not in t.get("expl_bks", ""):
             warnings.append(f"{qid}: picture note not quoted verbatim at the start of the explanation")
         bks_q = t.get("q_bks", "") + " " + " ".join(opts)

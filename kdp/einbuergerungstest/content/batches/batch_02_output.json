@@ -1,0 +1,554 @@
+[
+ {
+  "id": "G-047",
+  "q_bks": "Njemačka država ima mnogo zadaća. Koja od ovih zadaća nije njezina?",
+  "options_bks": [
+   "Plaća putovanja na odmor za sve državljane.",
+   "Isplaćuje dječji doplatak (Kindergeld).",
+   "Podupire muzeje.",
+   "Potiče sportaše."
+  ],
+  "expl_bks": "Država ne plaća privatna putovanja na odmor – godišnji odmor svatko sam organizira i plaća. Država ima druge zadaće: obiteljima isplaćuje dječji doplatak (Kindergeld), podupire kulturu, na primjer muzeje, i potiče sportaše. Novac za to dolazi uglavnom od poreza.",
+  "merksatz_de": "Urlaubsreisen bezahlt der Staat nicht, Kindergeld schon."
+ },
+ {
+  "id": "G-048",
+  "q_bks": "Koje tijelo ne spada među ustavna tijela Njemačke?",
+  "options_bks": [
+   "Bundesrat (savezno vijeće pokrajina)",
+   "savezni predsjednik",
+   "zbor građana (Bürgerversammlung)",
+   "vlada"
+  ],
+  "expl_bks": "Ustavna tijela najviša su državna tijela čije zadaće uređuje Temeljni zakon (njemački ustav). To su, na primjer, Bundestag, Bundesrat, savezni predsjednik, savezna vlada i Savezni ustavni sud. Zbor građana (Bürgerversammlung) samo je sastanak stanovnika jedne općine o lokalnim pitanjima i nije ustavno tijelo.",
+  "merksatz_de": "Die Bürgerversammlung ist kein Verfassungsorgan."
+ },
+ {
+  "id": "G-049",
+  "q_bks": "Tko u Njemačkoj određuje školsku politiku?",
+  "options_bks": [
+   "učitelji",
+   "savezne pokrajine",
+   "Ministarstvo obitelji",
+   "sveučilišta"
+  ],
+  "expl_bks": "U Njemačkoj školsku politiku određuju savezne pokrajine – to se zove kulturni suverenitet pokrajina (Kulturhoheit der Länder). Svaka pokrajina ima svoje ministarstvo obrazovanja i sama određuje vrste škola, nastavne planove i školske praznike. Zato se škole u Bavarskoj razlikuju od škola u Berlinu.",
+  "merksatz_de": "Schulpolitik ist Sache der Bundesländer."
+ },
+ {
+  "id": "G-050",
+  "q_bks": "Oblik gospodarstva u Njemačkoj zove se …",
+  "options_bks": [
+   "slobodno centralno gospodarstvo.",
+   "socijalno tržišno gospodarstvo.",
+   "usmjereno centralno gospodarstvo.",
+   "plansko gospodarstvo."
+  ],
+  "expl_bks": "Njemačka ima socijalno tržišno gospodarstvo (soziale Marktwirtschaft). Cijene i proizvodnju uglavnom određuje slobodno tržište, a država štiti slabije, na primjer socijalnim osiguranjem i minimalnom plaćom. Taj se model povezuje s Ludwigom Erhardom, prvim saveznim ministrom gospodarstva (od 1949.). Plansko gospodarstvo postojalo je u DDR-u.",
+  "merksatz_de": "In Deutschland gibt es die soziale Marktwirtschaft."
+ },
+ {
+  "id": "G-051",
+  "q_bks": "U demokratsku pravnu državu ne spada to da …",
+  "options_bks": [
+   "ljudi mogu kritički govoriti o vladi.",
+   "građani smiju mirno demonstrirati.",
+   "ljude bez razloga uhićuje privatna policija.",
+   "netko počini kazneno djelo i zato bude uhićen."
+  ],
+  "expl_bks": "U pravnoj državi nitko ne smije biti uhićen bez razloga. Uhićenja provodi državna policija, i to samo prema zakonu i uz opravdan razlog, na primjer sumnju na kazneno djelo. O duljem lišenju slobode odlučuje sudac (članak 104. Temeljnog zakona). Privatna policija koja proizvoljno uhićuje ljude ne postoji u demokratskoj pravnoj državi.",
+  "merksatz_de": "Niemand darf ohne Grund verhaftet werden."
+ },
+ {
+  "id": "G-052",
+  "q_bks": "Što znači „narodni suverenitet” (Volkssouveränität)? Sva državna vlast dolazi od …",
+  "options_bks": [
+   "naroda.",
+   "Bundestaga.",
+   "pruskog kralja.",
+   "Saveznog ustavnog suda."
+  ],
+  "expl_bks": "Narodni suverenitet (sva vlast dolazi od naroda) temeljno je načelo demokracije. Članak 20. Temeljnog zakona kaže: „Sva državna vlast dolazi od naroda.” Narod tu vlast ostvaruje na izborima i glasanjima, a provode je posebna tijela zakonodavne, izvršne i sudske vlasti.",
+  "merksatz_de": "Alle Staatsgewalt geht vom Volke aus."
+ },
+ {
+  "id": "G-053",
+  "q_bks": "Što u Njemačkoj znači „pravna država” (Rechtsstaat)?",
+  "options_bks": [
+   "Država je u pravu.",
+   "Postoje samo desne stranke.",
+   "Građani odlučuju o zakonima.",
+   "Država se mora pridržavati zakona."
+  ],
+  "expl_bks": "U pravnoj državi (Rechtsstaat) zakoni vrijede i za državu: vlada, uredi i policija moraju se pridržavati zakona i ustava. Ako neki ured donese pogrešnu odluku, građanin može uložiti prigovor (Widerspruch) ili se obratiti neovisnom sudu. Riječ „Recht” ovdje znači pravo i zakon, a ne „desno”.",
+  "merksatz_de": "Im Rechtsstaat muss auch der Staat die Gesetze einhalten."
+ },
+ {
+  "id": "G-054",
+  "q_bks": "Što u Njemačkoj nije državna vlast?",
+  "options_bks": [
+   "legislativa (Legislative)",
+   "judikativa (Judikative)",
+   "egzekutiva (Exekutive)",
+   "direktiva (Direktive)"
+  ],
+  "expl_bks": "Podjela vlasti u Njemačkoj ima tri grane: legislativu (zakonodavna vlast – Bundestag i Bundesrat), egzekutivu (izvršna vlast – vlada, uprava, policija) i judikativu (sudska vlast – sudovi). „Direktiva” nije državna vlast; ta riječ znači uputa ili smjernica.",
+  "merksatz_de": "Es gibt drei Gewalten: Legislative, Exekutive und Judikative."
+ },
+ {
+  "id": "G-055",
+  "q_bks": "Što prikazuje ova slika?",
+  "options_bks": [
+   "sjedište Bundestaga u Berlinu",
+   "Savezni ustavni sud u Karlsruheu",
+   "zgradu Bundesrata u Berlinu",
+   "Ured saveznog kancelara u Berlinu"
+  ],
+  "expl_bks": "Na slici je zgrada Reichstaga u Berlinu sa staklenom kupolom – u njoj zasjeda Bundestag. Bundestag (savezni parlament) ondje radi od 1999. godine. Na pročelju piše „Dem deutschen Volke” (Njemačkom narodu), a kupolu mogu posjetiti i građani.",
+  "merksatz_de": "Der Bundestag sitzt im Reichstagsgebäude in Berlin."
+ },
+ {
+  "id": "G-056",
+  "q_bks": "Koji ured u Njemačkoj pripada općinskoj upravi?",
+  "options_bks": [
+   "župni ured (Pfarramt)",
+   "komunalni redarstveni ured (Ordnungsamt)",
+   "porezna uprava (Finanzamt)",
+   "Ministarstvo vanjskih poslova (Auswärtiges Amt)"
+  ],
+  "expl_bks": "Komunalni redarstveni ured (Ordnungsamt) dio je gradske ili općinske uprave. Brine se za red i sigurnost u mjestu, na primjer kontrolira parkiranje i buku te izdaje neke dozvole. Porezna uprava (Finanzamt) pokrajinski je ured, Ministarstvo vanjskih poslova savezno je ministarstvo, a župni ured pripada crkvi.",
+  "merksatz_de": "Das Ordnungsamt gehört zur Verwaltung der Gemeinde."
+ },
+ {
+  "id": "G-057",
+  "q_bks": "Tko se najčešće bira za predsjednika njemačkog Bundestaga?",
+  "options_bks": [
+   "najstariji zastupnik u parlamentu",
+   "ministar predsjednik (Ministerpräsident) najveće savezne pokrajine",
+   "bivši savezni kancelar",
+   "zastupnik najjačeg kluba zastupnika (Fraktion)"
+  ],
+  "expl_bks": "Predsjednik Bundestaga po pravilu dolazi iz najjačeg kluba zastupnika (Fraktion). To nije propisano zakonom, nego je dugogodišnji parlamentarni običaj. Prvu sjednicu novog Bundestaga otvara takozvani Alterspräsident, a zatim zastupnici tajnim glasanjem biraju predsjednika. Predsjednik vodi sjednice i predstavlja Bundestag.",
+  "merksatz_de": "Der Bundestagspräsident kommt meist aus der stärksten Fraktion."
+ },
+ {
+  "id": "G-058",
+  "q_bks": "Tko u Njemačkoj imenuje ministre savezne vlade?",
+  "options_bks": [
+   "predsjednik Saveznog ustavnog suda (Präsident des Bundesverfassungsgerichtes)",
+   "savezni predsjednik (Bundespräsident)",
+   "predsjednik Bundesrata (Bundesratspräsident)",
+   "predsjednik Bundestaga (Bundestagspräsident)"
+  ],
+  "expl_bks": "Prema članku 64. Temeljnog zakona savezne ministre imenuje savezni predsjednik, i to na prijedlog saveznog kancelara. Kancelar dakle sam bira svoje ministre, a savezni predsjednik ih formalno imenuje i uručuje im ispravu o imenovanju. Na isti način ih i razrješuje.",
+  "merksatz_de": "Die Bundesminister ernennt der Bundespräsident auf Vorschlag des Kanzlers."
+ },
+ {
+  "id": "G-059",
+  "q_bks": "Prije koliko je godina na području današnje Njemačke prvi put postojala židovska zajednica?",
+  "options_bks": [
+   "prije otprilike 300 godina",
+   "prije otprilike 700 godina",
+   "prije otprilike 1150 godina",
+   "prije otprilike 1700 godina"
+  ],
+  "expl_bks": "Prva poznata židovska zajednica na području današnje Njemačke postojala je u Kölnu. Rimski car Konstantin 321. godine izdao je propis u kojem se spominju Židovi u tom gradu. To je prije otprilike 1700 godina, pa je 2021. obilježena obljetnica „1700 godina židovskog života u Njemačkoj”.",
+  "merksatz_de": "Jüdisches Leben in Deutschland gibt es seit etwa 1700 Jahren."
+ },
+ {
+  "id": "G-060",
+  "q_bks": "U Njemačkoj Bundestag i Bundesrat pripadaju …",
+  "options_bks": [
+   "egzekutivi (Exekutive).",
+   "legislativi (Legislative).",
+   "direktivi (Direktive).",
+   "judikativi (Judikative)."
+  ],
+  "expl_bks": "Bundestag (savezni parlament) i Bundesrat (savezno vijeće pokrajina) sudjeluju u donošenju saveznih zakona, pa pripadaju legislativi, tj. zakonodavnoj vlasti. Egzekutiva (vlada i uprava) provodi zakone, a judikativa (sudovi) sudi na temelju zakona. „Direktiva” uopće nije grana državne vlasti.",
+  "merksatz_de": "Bundestag und Bundesrat gehören zur Legislative."
+ },
+ {
+  "id": "G-061",
+  "q_bks": "Što znači „narodni suverenitet” (Volkssouveränität)?",
+  "options_bks": [
+   "Kralj vlada narodom.",
+   "Savezni ustavni sud stoji iznad ustava.",
+   "Interesne skupine zajedno s vladom izvršavaju suverenitet.",
+   "Državna vlast dolazi od naroda."
+  ],
+  "expl_bks": "Narodni suverenitet (sva vlast dolazi od naroda) znači da je narod izvor sve državne vlasti. Tako piše u članku 20. Temeljnog zakona. Građani tu vlast ostvaruju prije svega na izborima, kada biraju svoje zastupnike. Njemačka nema kralja, a i Savezni ustavni sud mora poštovati ustav.",
+  "merksatz_de": "Volkssouveränität heißt: Die Macht im Staat kommt vom Volk."
+ },
+ {
+  "id": "G-062",
+  "q_bks": "Kad se bira parlament njemačke savezne pokrajine, to se zove …",
+  "options_bks": [
+   "lokalni izbori (Kommunalwahl)",
+   "izbori za Landtag (Landtagswahl)",
+   "izbori za Europski parlament (Europawahl)",
+   "izbori za Bundestag (Bundestagswahl)"
+  ],
+  "expl_bks": "Parlament savezne pokrajine zove se Landtag (pokrajinski parlament), pa se izbori za njega zovu Landtagswahl. Svaka od 16 pokrajina bira svoj Landtag, najčešće svakih pet godina. U Berlinu se pokrajinski parlament zove Abgeordnetenhaus, a u Hamburgu i Bremenu Bürgerschaft.",
+  "merksatz_de": "Die Wahl zum Landesparlament heißt Landtagswahl."
+ },
+ {
+  "id": "G-063",
+  "q_bks": "Što u Njemačkoj ne pripada izvršnoj vlasti (Exekutive)?",
+  "options_bks": [
+   "policija",
+   "sudovi",
+   "porezna uprava (Finanzamt)",
+   "ministarstva"
+  ],
+  "expl_bks": "Sudovi pripadaju sudskoj vlasti (judikativi), a ne izvršnoj. Suci su neovisni i podložni samo zakonu (članak 97. Temeljnog zakona). Izvršna vlast (egzekutiva) provodi zakone u praksi – to su vlada i ministarstva, ali i uprave poput porezne uprave (Finanzamt) te policija.",
+  "merksatz_de": "Gerichte gehören zur Judikative, nicht zur Exekutive."
+ },
+ {
+  "id": "G-064",
+  "q_bks": "Savezna Republika Njemačka danas je podijeljena na …",
+  "options_bks": [
+   "četiri okupacijske zone.",
+   "jednu istočnu i jednu zapadnu državu.",
+   "16 kantona.",
+   "saveznu državu (Bund), savezne pokrajine i općine."
+  ],
+  "expl_bks": "Njemačka ima tri razine vlasti: saveznu državu (Bund), 16 saveznih pokrajina (Länder) i općine (Kommunen). Svaka razina ima svoje zadaće: Bund se brine na primjer za vanjsku politiku, pokrajine za škole, a općine za vrtiće ili odvoz smeća. Okupacijske zone postojale su nakon 1945., a kantone ima Švicarska.",
+  "merksatz_de": "Deutschland besteht aus Bund, Ländern und Kommunen."
+ },
+ {
+  "id": "G-065",
+  "q_bks": "Nije zadaća njemačkog Bundestaga …",
+  "options_bks": [
+   "izrađivati nacrte zakona.",
+   "nadzirati saveznu vladu.",
+   "birati saveznog kancelara.",
+   "sastaviti savezni kabinet."
+  ],
+  "expl_bks": "Savezni kabinet (Bundeskabinett) čine savezni kancelar i savezni ministri. Kabinet sastavlja kancelar: on predlaže ministre, a savezni predsjednik ih imenuje. Bundestag izrađuje i donosi zakone, bira kancelara i nadzire vladu, ali ne odlučuje tko će postati ministar.",
+  "merksatz_de": "Das Kabinett bildet der Bundeskanzler, nicht der Bundestag."
+ },
+ {
+  "id": "G-066",
+  "q_bks": "Koji gradovi imaju najveće židovske zajednice u Njemačkoj?",
+  "options_bks": [
+   "Berlin i München",
+   "Hamburg i Essen",
+   "Nürnberg i Stuttgart",
+   "Worms i Speyer"
+  ],
+  "expl_bks": "Najveće židovske zajednice u Njemačkoj danas su u Berlinu i Münchenu. Mnogi njihovi članovi doselili su se nakon 1990. iz zemalja bivšeg Sovjetskog Saveza. Worms i Speyer česta su zamka: u srednjem vijeku bili su važna židovska središta, ali danas ondje nema velikih židovskih zajednica.",
+  "merksatz_de": "Die größten jüdischen Gemeinden gibt es in Berlin und München."
+ },
+ {
+  "id": "G-067",
+  "q_bks": "Što je u Njemačkoj prije svega zadaća saveznih pokrajina?",
+  "options_bks": [
+   "obrambena politika",
+   "vanjska politika",
+   "gospodarska politika",
+   "školska politika"
+  ],
+  "expl_bks": "Školska politika prije svega je zadaća saveznih pokrajina (kulturni suverenitet pokrajina, Kulturhoheit der Länder). Pokrajine same određuju vrste škola, nastavne planove i školske praznike. Obrambena i vanjska politika zadaće su savezne države (Bund), a i gospodarsku politiku uglavnom vodi savezna razina.",
+  "merksatz_de": "Über die Schulen entscheiden die Bundesländer."
+ },
+ {
+  "id": "G-068",
+  "q_bks": "Zašto država u Njemačkoj nadzire školstvo?",
+  "options_bks": [
+   "jer u Njemačkoj postoje samo državne škole",
+   "jer svi učenici moraju imati završenu školu",
+   "jer u saveznim pokrajinama postoje različite škole",
+   "jer je to prema Temeljnom zakonu njezina zadaća"
+  ],
+  "expl_bks": "Članak 7. Temeljnog zakona (njemačkog ustava) kaže: „Cjelokupno školstvo nalazi se pod nadzorom države.” Zato država postavlja pravila i za privatne škole, na primjer za nastavne planove i obrazovanje učitelja. Privatne škole u Njemačkoj postoje, ali moraju ispunjavati državne uvjete.",
+  "merksatz_de": "Laut Grundgesetz steht das Schulwesen unter staatlicher Aufsicht."
+ },
+ {
+  "id": "G-069",
+  "q_bks": "Savezna Republika Njemačka ima upravni ustroj s tri razine. Kako se zove najniža politička razina?",
+  "options_bks": [
+   "gradska vijeća (Stadträte)",
+   "predstojnici okruga (Landräte)",
+   "općine (Gemeinden)",
+   "uredi gradskih četvrti (Bezirksämter)"
+  ],
+  "expl_bks": "Njemačka uprava ima tri razine: saveznu državu (Bund), savezne pokrajine i općine (Gemeinden). Općine su najniža razina i najbliže su građanima: brinu se, na primjer, za vrtiće, lokalne ceste i prijavu prebivališta. Gradska vijeća i Landrat (predstojnik okruga) nisu posebna razina, nego tijela i dužnosnici lokalne samouprave.",
+  "merksatz_de": "Die unterste politische Ebene sind die Gemeinden."
+ },
+ {
+  "id": "G-070",
+  "q_bks": "Savezni predsjednik Gustav Heinemann uručuje 1974. Helmutu Schmidtu ispravu o imenovanju za saveznog kancelara. Što spada u zadaće saveznog predsjednika?",
+  "options_bks": [
+   "Vodi poslove vlade.",
+   "Nadzire vladajuću stranku.",
+   "Bira ministre.",
+   "Predlaže kancelara za izbor."
+  ],
+  "expl_bks": "Prema članku 63. Temeljnog zakona savezni predsjednik predlaže Bundestagu kandidata za saveznog kancelara. Kad ga Bundestag izabere, predsjednik ga imenuje – kao na slici iz 1974. Vladu vodi kancelar, a ministre ne bira predsjednik, nego ih predlaže kancelar.",
+  "merksatz_de": "Der Bundespräsident schlägt den Kanzler zur Wahl vor."
+ },
+ {
+  "id": "G-071",
+  "q_bks": "Gdje njemački savezni kancelar najčešće boravi? Najčešće je …",
+  "options_bks": [
+   "u Bonnu, jer se ondje nalaze Ured saveznog kancelara i Bundestag.",
+   "u dvorcu Meseberg, gostinskoj kući savezne vlade, kako bi primao državne goste.",
+   "u dvorcu Bellevue, sjedištu saveznog predsjednika, kako bi primao državne goste.",
+   "u Berlinu, jer se ondje nalaze Ured saveznog kancelara i Bundestag."
+  ],
+  "expl_bks": "Ured saveznog kancelara (Bundeskanzleramt) i Bundestag nalaze se u Berlinu, u vladinoj četvrti blizu zgrade Reichstaga. Bundestag se 1999. preselio iz Bonna u Berlin, a s njim i kancelar. Dvorac Bellevue sjedište je saveznog predsjednika, a dvorac Meseberg kancelar koristi samo povremeno.",
+  "merksatz_de": "Kanzleramt und Bundestag sind in Berlin."
+ },
+ {
+  "id": "G-072",
+  "q_bks": "Kako se zove sadašnji savezni kancelar Njemačke?",
+  "options_bks": [
+   "Gerhard Schröder",
+   "Angela Merkel",
+   "Ursula von der Leyen",
+   "Friedrich Merz"
+  ],
+  "expl_bks": "Saveznog kancelara bira Bundestag (savezni parlament) nakon saveznih izbora, zato se odgovor na ovo pitanje s vremenom mijenja. Friedrich Merz (CDU) izabran je za kancelara u svibnju 2025. Gerhard Schröder (1998.–2005.) i Angela Merkel (2005.–2021.) bili su kancelari prije njega, a Ursula von der Leyen nikad nije bila kancelarka.",
+  "merksatz_de": "Friedrich Merz wurde im Mai 2025 Bundeskanzler."
+ },
+ {
+  "id": "G-073",
+  "q_bks": "Dva najveća kluba zastupnika (Fraktion) u njemačkom Bundestagu trenutno su …",
+  "options_bks": [
+   "CDU/CSU i AfD.",
+   "Die Linke i Bündnis 90/Die Grünen.",
+   "Bündnis 90/Die Grünen i SPD.",
+   "Die Linke i CDU/CSU."
+  ],
+  "expl_bks": "Na izborima za Bundestag u veljači 2025. najviše mandata osvojili su CDU/CSU, a druga po snazi bila je AfD. Zato su to trenutno dva najveća kluba zastupnika (Fraktion). CDU i CSU u Bundestagu imaju zajednički klub. Nakon sljedećih izbora redoslijed se može promijeniti.",
+  "merksatz_de": "Nach der Bundestagswahl 2025 sind CDU/CSU und AfD die größten Fraktionen."
+ },
+ {
+  "id": "G-074",
+  "q_bks": "Kako se zove parlament za cijelu Njemačku?",
+  "options_bks": [
+   "Savezna skupština (Bundesversammlung)",
+   "Narodna komora (Volkskammer)",
+   "Bundestag",
+   "Savezni sud (Bundesgerichtshof)"
+  ],
+  "expl_bks": "Bundestag (savezni parlament) jest parlament za cijelu Njemačku. Građani ga biraju svake četiri godine, a on donosi savezne zakone i bira saveznog kancelara. Savezna skupština (Bundesversammlung) sastaje se samo radi izbora saveznog predsjednika, a Volkskammer je bio parlament DDR-a.",
+  "merksatz_de": "Das Parlament für ganz Deutschland heißt Bundestag."
+ },
+ {
+  "id": "G-075",
+  "q_bks": "Kako se zove današnji šef države Njemačke?",
+  "options_bks": [
+   "Frank-Walter Steinmeier",
+   "Bärbel Bas",
+   "Bodo Ramelow",
+   "Joachim Gauck"
+  ],
+  "expl_bks": "Šef države u Njemačkoj je savezni predsjednik, a mandat mu traje pet godina. Frank-Walter Steinmeier izabran je na tu dužnost 2017., a ponovno 2022. godine. Joachim Gauck bio je savezni predsjednik prije njega (2012.–2017.), Bärbel Bas bila je predsjednica Bundestaga, a Bodo Ramelow bio je ministar predsjednik (Ministerpräsident) Tiringije.",
+  "merksatz_de": "Frank-Walter Steinmeier wurde 2017 Bundespräsident."
+ },
+ {
+  "id": "G-076",
+  "q_bks": "Što u Njemačkoj znači kratica CDU?",
+  "options_bks": [
+   "Christliche Deutsche Union (Kršćanska njemačka unija)",
+   "Club Deutscher Unternehmer (Klub njemačkih poduzetnika)",
+   "Christlicher Deutscher Umweltschutz (Kršćanska njemačka zaštita okoliša)",
+   "Christlich Demokratische Union (Kršćansko-demokratska unija)"
+  ],
+  "expl_bks": "CDU znači Christlich Demokratische Union (Kršćansko-demokratska unija). Stranka je osnovana 1945., a iz nje je došao prvi savezni kancelar Konrad Adenauer (1949.). Česta zamka: slovo D u kratici znači „demokratska”, a ne „njemačka”. CDU djeluje u svim pokrajinama osim Bavarske, gdje djeluje CSU.",
+  "merksatz_de": "CDU steht für Christlich Demokratische Union."
+ },
+ {
+  "id": "G-077",
+  "q_bks": "Što je Bundeswehr?",
+  "options_bks": [
+   "njemačka policija",
+   "njemačka luka",
+   "njemačka građanska inicijativa",
+   "njemačka vojska"
+  ],
+  "expl_bks": "Bundeswehr je njemačka vojska, osnovana 1955. godine. Ima, među ostalim, kopnenu vojsku, ratnu mornaricu i zrakoplovstvo. O slanju vojnika u oružane misije u inozemstvu odlučuje Bundestag (savezni parlament), zato se Bundeswehr zove i „parlamentarna vojska”. Za unutarnju sigurnost brine se policija.",
+  "merksatz_de": "Die Bundeswehr ist die Armee Deutschlands."
+ },
+ {
+  "id": "G-078",
+  "q_bks": "Što znači kratica SPD?",
+  "options_bks": [
+   "Sozialistische Partei Deutschlands (Socijalistička stranka Njemačke)",
+   "Sozialpolitische Partei Deutschlands (Socijalnopolitička stranka Njemačke)",
+   "Sozialdemokratische Partei Deutschlands (Socijaldemokratska stranka Njemačke)",
+   "Sozialgerechte Partei Deutschlands (Socijalno pravedna stranka Njemačke)"
+  ],
+  "expl_bks": "SPD znači Sozialdemokratische Partei Deutschlands (Socijaldemokratska stranka Njemačke). To je najstarija stranka u Njemačkoj: njezini počeci sežu u 1863. godinu. Iz SPD-a su dolazili savezni kancelari Willy Brandt, Helmut Schmidt, Gerhard Schröder i Olaf Scholz.",
+  "merksatz_de": "SPD ist die Sozialdemokratische Partei Deutschlands."
+ },
+ {
+  "id": "G-079",
+  "q_bks": "Što u Njemačkoj znači kratica FDP?",
+  "options_bks": [
+   "Friedliche Demonstrative Partei (Miroljubiva demonstrativna stranka)",
+   "Freie Deutschland Partei (Stranka slobodne Njemačke)",
+   "Führende Demokratische Partei (Vodeća demokratska stranka)",
+   "Freie Demokratische Partei (Slobodna demokratska stranka)"
+  ],
+  "expl_bks": "FDP znači Freie Demokratische Partei (Slobodna demokratska stranka). To je liberalna stranka, osnovana 1948. godine. U prošlosti je često bila koalicijski partner, i CDU-a/CSU-a i SPD-a. Pazite: slovo D ne znači „Deutschland”, nego „demokratska”.",
+  "merksatz_de": "Die Abkürzung FDP bedeutet Freie Demokratische Partei."
+ },
+ {
+  "id": "G-080",
+  "q_bks": "Koji je sud u Njemačkoj nadležan za tumačenje Temeljnog zakona?",
+  "options_bks": [
+   "Visoki pokrajinski sud (Oberlandesgericht)",
+   "općinski sud (Amtsgericht)",
+   "Savezni ustavni sud (Bundesverfassungsgericht)",
+   "upravni sud (Verwaltungsgericht)"
+  ],
+  "expl_bks": "Savezni ustavni sud (Bundesverfassungsgericht) u Karlsruheu tumači Temeljni zakon (njemački ustav) i provjerava jesu li zakoni u skladu s njim. Njegove odluke obvezuju sva državna tijela. Svaki građanin može podnijeti ustavnu tužbu (Verfassungsbeschwerde) ako smatra da su mu povrijeđena temeljna prava.",
+  "merksatz_de": "Das Bundesverfassungsgericht legt das Grundgesetz aus."
+ },
+ {
+  "id": "G-081",
+  "q_bks": "Tko u Njemačkoj bira saveznog kancelara?",
+  "options_bks": [
+   "Bundesrat (savezno vijeće pokrajina)",
+   "Savezna skupština (Bundesversammlung)",
+   "narod",
+   "Bundestag (savezni parlament)"
+  ],
+  "expl_bks": "Saveznog kancelara bira Bundestag (savezni parlament), na prijedlog saveznog predsjednika (članak 63. Temeljnog zakona). Potrebna je većina glasova svih zastupnika. Građani kancelara ne biraju izravno, nego glasaju za stranke i zastupnike. Savezna skupština bira saveznog predsjednika, a ne kancelara.",
+  "merksatz_de": "Der Bundestag wählt den Bundeskanzler."
+ },
+ {
+  "id": "G-082",
+  "q_bks": "Tko vodi njemački savezni kabinet?",
+  "options_bks": [
+   "predsjednik Bundestaga (Bundestagspräsident)",
+   "savezni predsjednik (Bundespräsident)",
+   "predsjednik Bundesrata (Bundesratspräsident)",
+   "savezni kancelar (Bundeskanzler)"
+  ],
+  "expl_bks": "Savezni kabinet (Bundeskabinett) čine savezni kancelar i savezni ministri. Kancelar vodi kabinet i određuje smjernice politike (članak 65. Temeljnog zakona). Unutar tih smjernica svaki ministar samostalno vodi svoje ministarstvo. Savezni predsjednik te predsjednici Bundestaga i Bundesrata nisu članovi vlade.",
+  "merksatz_de": "Das Bundeskabinett leitet der Bundeskanzler."
+ },
+ {
+  "id": "G-083",
+  "q_bks": "Tko bira njemačkog saveznog kancelara?",
+  "options_bks": [
+   "narod",
+   "Savezna skupština (Bundesversammlung)",
+   "Bundestag (savezni parlament)",
+   "savezna vlada"
+  ],
+  "expl_bks": "Kancelara bira Bundestag (savezni parlament) tajnim glasanjem, nakon što kandidata predloži savezni predsjednik. Narod ga ne bira izravno: građani na saveznim izborima biraju zastupnike, a oni zatim biraju kancelara. Savezna skupština (Bundesversammlung) bira saveznog predsjednika, a saveznu vladu kancelar sastavlja tek nakon izbora.",
+  "merksatz_de": "Den Kanzler wählen die Abgeordneten des Bundestages."
+ },
+ {
+  "id": "G-084",
+  "q_bks": "Koja je glavna zadaća njemačkog saveznog predsjednika? On …",
+  "options_bks": [
+   "vlada zemljom.",
+   "izrađuje nacrte zakona.",
+   "predstavlja zemlju.",
+   "nadzire poštovanje zakona."
+  ],
+  "expl_bks": "Savezni predsjednik je šef države i predstavlja Njemačku u zemlji i u inozemstvu: prima strane državnike, putuje u državne posjete i drži važne govore. Uz to potpisuje zakone te imenuje kancelara i ministre. Zemljom ne vlada on, nego savezna vlada sa saveznim kancelarom na čelu.",
+  "merksatz_de": "Der Bundespräsident repräsentiert Deutschland."
+ },
+ {
+  "id": "G-085",
+  "q_bks": "Tko čini njemački Bundesrat?",
+  "options_bks": [
+   "zastupnici Bundestaga",
+   "ministri savezne vlade",
+   "predstavnici vlada saveznih pokrajina",
+   "članovi stranaka"
+  ],
+  "expl_bks": "Bundesrat (savezno vijeće pokrajina) čine članovi vlada 16 saveznih pokrajina, na primjer ministri predsjednici i pokrajinski ministri. Građani ih ne biraju izravno u Bundesrat, nego ih šalju pokrajinske vlade. Veće pokrajine imaju više glasova (od 3 do 6), a svaka pokrajina glasa jedinstveno.",
+  "merksatz_de": "Im Bundesrat sitzen Vertreter der Landesregierungen."
+ },
+ {
+  "id": "G-086",
+  "q_bks": "Tko u Njemačkoj bira saveznog predsjednika?",
+  "options_bks": [
+   "Savezna skupština (Bundesversammlung)",
+   "Bundesrat (savezno vijeće pokrajina)",
+   "savezni parlament (Bundesparlament)",
+   "Savezni ustavni sud (Bundesverfassungsgericht)"
+  ],
+  "expl_bks": "Saveznog predsjednika bira Savezna skupština (Bundesversammlung), i to na pet godina. Čine je svi zastupnici Bundestaga i jednako toliko članova koje šalju pokrajinski parlamenti; među njima su ponekad i poznate osobe, na primjer sportaši ili glumci. Savezna skupština sastaje se samo radi tog izbora.",
+  "merksatz_de": "Die Bundesversammlung wählt den Bundespräsidenten."
+ },
+ {
+  "id": "G-087",
+  "q_bks": "Tko je šef države Savezne Republike Njemačke?",
+  "options_bks": [
+   "savezni kancelar (Bundeskanzler)",
+   "savezni predsjednik (Bundespräsident)",
+   "predsjednik Bundesrata (Bundesratspräsident)",
+   "predsjednik Bundestaga (Bundestagspräsident)"
+  ],
+  "expl_bks": "Šef države je savezni predsjednik. On predstavlja Njemačku, potpisuje zakone te imenuje saveznog kancelara i ministre. Savezni kancelar vodi vladu, pa je on šef vlade, a ne šef države. Sjedište saveznog predsjednika je dvorac Bellevue u Berlinu.",
+  "merksatz_de": "Staatsoberhaupt ist der Bundespräsident, nicht der Kanzler."
+ },
+ {
+  "id": "G-088",
+  "q_bks": "Parlamentarna opozicija u njemačkom Bundestagu …",
+  "options_bks": [
+   "nadzire vladu.",
+   "odlučuje tko postaje savezni ministar.",
+   "određuje tko sjedi u Bundesratu.",
+   "predlaže šefove vlada saveznih pokrajina."
+  ],
+  "expl_bks": "Opoziciju čine stranke u Bundestagu koje nisu u vladi. Njezina je glavna zadaća nadzirati i kritizirati vladu: postavlja pitanja ministrima, raspravlja o zakonima i predlaže drukčija rješenja. Tako vlada mora javno objašnjavati svoje odluke. Ministre ne bira opozicija, nego ih predlaže kancelar.",
+  "merksatz_de": "Die Opposition kontrolliert die Regierung."
+ },
+ {
+  "id": "G-089",
+  "q_bks": "Kako se u Njemačkoj zove udruženje zastupnika jedne stranke u parlamentu?",
+  "options_bks": [
+   "savez (Verband)",
+   "vijeće starješina (Ältestenrat)",
+   "klub zastupnika (Fraktion)",
+   "opozicija"
+  ],
+  "expl_bks": "Zastupnici iste stranke u Bundestagu udružuju se u klub zastupnika (Fraktion). Za klub je potrebno najmanje 5 % svih zastupnika. Klubovi zajedno pripremaju prijedloge, dogovaraju glasanje i imaju posebna prava u parlamentu. CDU i CSU u Bundestagu imaju zajednički klub.",
+  "merksatz_de": "Abgeordnete einer Partei bilden im Parlament eine Fraktion."
+ },
+ {
+  "id": "G-090",
+  "q_bks": "Njemačke savezne pokrajine sudjeluju u saveznom zakonodavstvu preko …",
+  "options_bks": [
+   "Bundesrata.",
+   "Savezne skupštine (Bundesversammlung).",
+   "Bundestaga.",
+   "savezne vlade."
+  ],
+  "expl_bks": "Prema članku 50. Temeljnog zakona pokrajine preko Bundesrata (savezno vijeće pokrajina) sudjeluju u saveznom zakonodavstvu. O svakom saveznom zakonu raspravlja se i u Bundesratu. Za zakone koji jako utječu na pokrajine, na primjer na njihove financije, potrebna je suglasnost Bundesrata.",
+  "merksatz_de": "Über den Bundesrat wirken die Länder bei Bundesgesetzen mit."
+ },
+ {
+  "id": "G-091",
+  "q_bks": "U Njemačkoj promjena vlade u jednoj saveznoj pokrajini može utjecati na saveznu politiku. Vladanje postaje …",
+  "options_bks": [
+   "teže ako se zbog toga promijeni većina u Bundestagu.",
+   "lakše ako zbog toga u Bundesrat uđu nove stranke.",
+   "teže ako se zbog toga promijeni većina u Bundesratu.",
+   "lakše ako se radi o bogatoj saveznoj pokrajini."
+  ],
+  "expl_bks": "Pokrajinska vlada šalje svoje predstavnike u Bundesrat (savezno vijeće pokrajina). Ako nakon izbora u pokrajini vladu preuzmu stranke koje su u Bundestagu u opoziciji, savezna vlada može izgubiti većinu u Bundesratu. Tada teže donosi zakone kojima je potrebna suglasnost Bundesrata. Većina u Bundestagu zbog toga se ne mijenja.",
+  "merksatz_de": "Landtagswahlen können die Mehrheit im Bundesrat verändern."
+ },
+ {
+  "id": "G-092",
+  "q_bks": "Što u Njemačkoj znači kratica CSU?",
+  "options_bks": [
+   "Christlich Sichere Union (Kršćanska sigurna unija)",
+   "Christlich Süddeutsche Union (Kršćanska južnonjemačka unija)",
+   "Christlich Sozialer Unternehmerverband (Kršćanski socijalni savez poduzetnika)",
+   "Christlich Soziale Union (Kršćansko-socijalna unija)"
+  ],
+  "expl_bks": "CSU znači Christlich Soziale Union (Kršćansko-socijalna unija); puno ime je „Christlich-Soziale Union in Bayern”. Ta stranka djeluje samo u Bavarskoj, a CDU u ostalih 15 pokrajina. U Bundestagu CDU i CSU imaju zajednički klub zastupnika (Fraktion), pa ih se često zove „Unija”.",
+  "merksatz_de": "Die CSU (Christlich Soziale Union) gibt es nur in Bayern."
+ }
+]

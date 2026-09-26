@@ -552,6 +552,1662 @@
   "merksatz_de": "Der Staat baut Straßen und Schulen."
  },
  {
+  "id": "G-047",
+  "q_bks": "Njemačka država ima mnogo zadaća. Koja od ovih zadaća nije njezina?",
+  "options_bks": [
+   "Plaća putovanja na odmor za sve državljane.",
+   "Isplaćuje dječji doplatak (Kindergeld).",
+   "Podupire muzeje.",
+   "Potiče sportaše."
+  ],
+  "expl_bks": "Država ne plaća privatna putovanja na odmor – godišnji odmor svatko sam organizira i plaća. Država ima druge zadaće: obiteljima isplaćuje dječji doplatak (Kindergeld), podupire kulturu, na primjer muzeje, i potiče sportaše. Novac za to dolazi uglavnom od poreza.",
+  "merksatz_de": "Urlaubsreisen bezahlt der Staat nicht, Kindergeld schon."
+ },
+ {
+  "id": "G-048",
+  "q_bks": "Koje tijelo ne spada među ustavna tijela Njemačke?",
+  "options_bks": [
+   "Bundesrat (savezno vijeće pokrajina)",
+   "savezni predsjednik",
+   "zbor građana (Bürgerversammlung)",
+   "vlada"
+  ],
+  "expl_bks": "Ustavna tijela najviša su državna tijela čije zadaće uređuje Temeljni zakon (njemački ustav). To su, na primjer, Bundestag, Bundesrat, savezni predsjednik, savezna vlada i Savezni ustavni sud. Zbor građana (Bürgerversammlung) samo je sastanak stanovnika jedne općine o lokalnim pitanjima i nije ustavno tijelo.",
+  "merksatz_de": "Die Bürgerversammlung ist kein Verfassungsorgan."
+ },
+ {
+  "id": "G-049",
+  "q_bks": "Tko u Njemačkoj određuje školsku politiku?",
+  "options_bks": [
+   "učitelji",
+   "savezne pokrajine",
+   "Ministarstvo obitelji",
+   "sveučilišta"
+  ],
+  "expl_bks": "U Njemačkoj školsku politiku određuju savezne pokrajine – to se zove kulturni suverenitet pokrajina (Kulturhoheit der Länder). Svaka pokrajina ima svoje ministarstvo obrazovanja i sama određuje vrste škola, nastavne planove i školske praznike. Zato se škole u Bavarskoj razlikuju od škola u Berlinu.",
+  "merksatz_de": "Schulpolitik ist Sache der Bundesländer."
+ },
+ {
+  "id": "G-050",
+  "q_bks": "Oblik gospodarstva u Njemačkoj zove se …",
+  "options_bks": [
+   "slobodno centralno gospodarstvo.",
+   "socijalno tržišno gospodarstvo.",
+   "usmjereno centralno gospodarstvo.",
+   "plansko gospodarstvo."
+  ],
+  "expl_bks": "Njemačka ima socijalno tržišno gospodarstvo (soziale Marktwirtschaft). Cijene i proizvodnju uglavnom određuje slobodno tržište, a država štiti slabije, na primjer socijalnim osiguranjem i minimalnom plaćom. Taj se model povezuje s Ludwigom Erhardom, prvim saveznim ministrom gospodarstva (od 1949.). Plansko gospodarstvo postojalo je u DDR-u.",
+  "merksatz_de": "In Deutschland gibt es die soziale Marktwirtschaft."
+ },
+ {
+  "id": "G-051",
+  "q_bks": "U demokratsku pravnu državu ne spada to da …",
+  "options_bks": [
+   "ljudi mogu kritički govoriti o vladi.",
+   "građani smiju mirno demonstrirati.",
+   "ljude bez razloga uhićuje privatna policija.",
+   "netko počini kazneno djelo i zato bude uhićen."
+  ],
+  "expl_bks": "U pravnoj državi nitko ne smije biti uhićen bez razloga. Uhićenja provodi državna policija, i to samo prema zakonu i uz opravdan razlog, na primjer sumnju na kazneno djelo. O duljem lišenju slobode odlučuje sudac (članak 104. Temeljnog zakona). Privatna policija koja proizvoljno uhićuje ljude ne postoji u demokratskoj pravnoj državi.",
+  "merksatz_de": "Niemand darf ohne Grund verhaftet werden."
+ },
+ {
+  "id": "G-052",
+  "q_bks": "Što znači „narodni suverenitet” (Volkssouveränität)? Sva državna vlast dolazi od …",
+  "options_bks": [
+   "naroda.",
+   "Bundestaga.",
+   "pruskog kralja.",
+   "Saveznog ustavnog suda."
+  ],
+  "expl_bks": "Narodni suverenitet (sva vlast dolazi od naroda) temeljno je načelo demokracije. Članak 20. Temeljnog zakona kaže: „Sva državna vlast dolazi od naroda.” Narod tu vlast ostvaruje na izborima i glasanjima, a provode je posebna tijela zakonodavne, izvršne i sudske vlasti.",
+  "merksatz_de": "Alle Staatsgewalt geht vom Volke aus."
+ },
+ {
+  "id": "G-053",
+  "q_bks": "Što u Njemačkoj znači „pravna država” (Rechtsstaat)?",
+  "options_bks": [
+   "Država je u pravu.",
+   "Postoje samo desne stranke.",
+   "Građani odlučuju o zakonima.",
+   "Država se mora pridržavati zakona."
+  ],
+  "expl_bks": "U pravnoj državi (Rechtsstaat) zakoni vrijede i za državu: vlada, uredi i policija moraju se pridržavati zakona i ustava. Ako neki ured donese pogrešnu odluku, građanin može uložiti prigovor (Widerspruch) ili se obratiti neovisnom sudu. Riječ „Recht” ovdje znači pravo i zakon, a ne „desno”.",
+  "merksatz_de": "Im Rechtsstaat muss auch der Staat die Gesetze einhalten."
+ },
+ {
+  "id": "G-054",
+  "q_bks": "Što u Njemačkoj nije državna vlast?",
+  "options_bks": [
+   "legislativa (Legislative)",
+   "judikativa (Judikative)",
+   "egzekutiva (Exekutive)",
+   "direktiva (Direktive)"
+  ],
+  "expl_bks": "Podjela vlasti u Njemačkoj ima tri grane: legislativu (zakonodavna vlast – Bundestag i Bundesrat), egzekutivu (izvršna vlast – vlada, uprava, policija) i judikativu (sudska vlast – sudovi). „Direktiva” nije državna vlast; ta riječ znači uputa ili smjernica.",
+  "merksatz_de": "Es gibt drei Gewalten: Legislative, Exekutive und Judikative."
+ },
+ {
+  "id": "G-055",
+  "q_bks": "Što prikazuje ova slika?",
+  "options_bks": [
+   "sjedište Bundestaga u Berlinu",
+   "Savezni ustavni sud u Karlsruheu",
+   "zgradu Bundesrata u Berlinu",
+   "Ured saveznog kancelara u Berlinu"
+  ],
+  "expl_bks": "Na slici je zgrada Reichstaga u Berlinu sa staklenom kupolom – u njoj zasjeda Bundestag. Bundestag (savezni parlament) ondje radi od 1999. godine. Na pročelju piše „Dem deutschen Volke” (Njemačkom narodu), a kupolu mogu posjetiti i građani.",
+  "merksatz_de": "Der Bundestag sitzt im Reichstagsgebäude in Berlin."
+ },
+ {
+  "id": "G-056",
+  "q_bks": "Koji ured u Njemačkoj pripada općinskoj upravi?",
+  "options_bks": [
+   "župni ured (Pfarramt)",
+   "komunalni redarstveni ured (Ordnungsamt)",
+   "porezna uprava (Finanzamt)",
+   "Ministarstvo vanjskih poslova (Auswärtiges Amt)"
+  ],
+  "expl_bks": "Komunalni redarstveni ured (Ordnungsamt) dio je gradske ili općinske uprave. Brine se za red i sigurnost u mjestu, na primjer kontrolira parkiranje i buku te izdaje neke dozvole. Porezna uprava (Finanzamt) pokrajinski je ured, Ministarstvo vanjskih poslova savezno je ministarstvo, a župni ured pripada crkvi.",
+  "merksatz_de": "Das Ordnungsamt gehört zur Verwaltung der Gemeinde."
+ },
+ {
+  "id": "G-057",
+  "q_bks": "Tko se najčešće bira za predsjednika njemačkog Bundestaga?",
+  "options_bks": [
+   "najstariji zastupnik u parlamentu",
+   "ministar predsjednik (Ministerpräsident) najveće savezne pokrajine",
+   "bivši savezni kancelar",
+   "zastupnik najjačeg kluba zastupnika (Fraktion)"
+  ],
+  "expl_bks": "Predsjednik Bundestaga po pravilu dolazi iz najjačeg kluba zastupnika (Fraktion). To nije propisano zakonom, nego je dugogodišnji parlamentarni običaj. Prvu sjednicu novog Bundestaga otvara takozvani Alterspräsident, a zatim zastupnici tajnim glasanjem biraju predsjednika. Predsjednik vodi sjednice i predstavlja Bundestag.",
+  "merksatz_de": "Der Bundestagspräsident kommt meist aus der stärksten Fraktion."
+ },
+ {
+  "id": "G-058",
+  "q_bks": "Tko u Njemačkoj imenuje ministre savezne vlade?",
+  "options_bks": [
+   "predsjednik Saveznog ustavnog suda (Präsident des Bundesverfassungsgerichtes)",
+   "savezni predsjednik (Bundespräsident)",
+   "predsjednik Bundesrata (Bundesratspräsident)",
+   "predsjednik Bundestaga (Bundestagspräsident)"
+  ],
+  "expl_bks": "Prema članku 64. Temeljnog zakona savezne ministre imenuje savezni predsjednik, i to na prijedlog saveznog kancelara. Kancelar dakle sam bira svoje ministre, a savezni predsjednik ih formalno imenuje i uručuje im ispravu o imenovanju. Na isti način ih i razrješuje.",
+  "merksatz_de": "Die Bundesminister ernennt der Bundespräsident auf Vorschlag des Kanzlers."
+ },
+ {
+  "id": "G-059",
+  "q_bks": "Prije koliko je godina na području današnje Njemačke prvi put postojala židovska zajednica?",
+  "options_bks": [
+   "prije otprilike 300 godina",
+   "prije otprilike 700 godina",
+   "prije otprilike 1150 godina",
+   "prije otprilike 1700 godina"
+  ],
+  "expl_bks": "Prva poznata židovska zajednica na području današnje Njemačke postojala je u Kölnu. Rimski car Konstantin 321. godine izdao je propis u kojem se spominju Židovi u tom gradu. To je prije otprilike 1700 godina, pa je 2021. obilježena obljetnica „1700 godina židovskog života u Njemačkoj”.",
+  "merksatz_de": "Jüdisches Leben in Deutschland gibt es seit etwa 1700 Jahren."
+ },
+ {
+  "id": "G-060",
+  "q_bks": "U Njemačkoj Bundestag i Bundesrat pripadaju …",
+  "options_bks": [
+   "egzekutivi (Exekutive).",
+   "legislativi (Legislative).",
+   "direktivi (Direktive).",
+   "judikativi (Judikative)."
+  ],
+  "expl_bks": "Bundestag (savezni parlament) i Bundesrat (savezno vijeće pokrajina) sudjeluju u donošenju saveznih zakona, pa pripadaju legislativi, tj. zakonodavnoj vlasti. Egzekutiva (vlada i uprava) provodi zakone, a judikativa (sudovi) sudi na temelju zakona. „Direktiva” uopće nije grana državne vlasti.",
+  "merksatz_de": "Bundestag und Bundesrat gehören zur Legislative."
+ },
+ {
+  "id": "G-061",
+  "q_bks": "Što znači „narodni suverenitet” (Volkssouveränität)?",
+  "options_bks": [
+   "Kralj vlada narodom.",
+   "Savezni ustavni sud stoji iznad ustava.",
+   "Interesne skupine zajedno s vladom izvršavaju suverenitet.",
+   "Državna vlast dolazi od naroda."
+  ],
+  "expl_bks": "Narodni suverenitet (sva vlast dolazi od naroda) znači da je narod izvor sve državne vlasti. Tako piše u članku 20. Temeljnog zakona. Građani tu vlast ostvaruju prije svega na izborima, kada biraju svoje zastupnike. Njemačka nema kralja, a i Savezni ustavni sud mora poštovati ustav.",
+  "merksatz_de": "Volkssouveränität heißt: Die Macht im Staat kommt vom Volk."
+ },
+ {
+  "id": "G-062",
+  "q_bks": "Kad se bira parlament njemačke savezne pokrajine, to se zove …",
+  "options_bks": [
+   "lokalni izbori (Kommunalwahl)",
+   "izbori za Landtag (Landtagswahl)",
+   "izbori za Europski parlament (Europawahl)",
+   "izbori za Bundestag (Bundestagswahl)"
+  ],
+  "expl_bks": "Parlament savezne pokrajine zove se Landtag (pokrajinski parlament), pa se izbori za njega zovu Landtagswahl. Svaka od 16 pokrajina bira svoj Landtag, najčešće svakih pet godina. U Berlinu se pokrajinski parlament zove Abgeordnetenhaus, a u Hamburgu i Bremenu Bürgerschaft.",
+  "merksatz_de": "Die Wahl zum Landesparlament heißt Landtagswahl."
+ },
+ {
+  "id": "G-063",
+  "q_bks": "Što u Njemačkoj ne pripada izvršnoj vlasti (Exekutive)?",
+  "options_bks": [
+   "policija",
+   "sudovi",
+   "porezna uprava (Finanzamt)",
+   "ministarstva"
+  ],
+  "expl_bks": "Sudovi pripadaju sudskoj vlasti (judikativi), a ne izvršnoj. Suci su neovisni i podložni samo zakonu (članak 97. Temeljnog zakona). Izvršna vlast (egzekutiva) provodi zakone u praksi – to su vlada i ministarstva, ali i uprave poput porezne uprave (Finanzamt) te policija.",
+  "merksatz_de": "Gerichte gehören zur Judikative, nicht zur Exekutive."
+ },
+ {
+  "id": "G-064",
+  "q_bks": "Savezna Republika Njemačka danas je podijeljena na …",
+  "options_bks": [
+   "četiri okupacijske zone.",
+   "jednu istočnu i jednu zapadnu državu.",
+   "16 kantona.",
+   "saveznu državu (Bund), savezne pokrajine i općine."
+  ],
+  "expl_bks": "Njemačka ima tri razine vlasti: saveznu državu (Bund), 16 saveznih pokrajina (Länder) i općine (Kommunen). Svaka razina ima svoje zadaće: Bund se brine na primjer za vanjsku politiku, pokrajine za škole, a općine za vrtiće ili odvoz smeća. Okupacijske zone postojale su nakon 1945., a kantone ima Švicarska.",
+  "merksatz_de": "Deutschland besteht aus Bund, Ländern und Kommunen."
+ },
+ {
+  "id": "G-065",
+  "q_bks": "Nije zadaća njemačkog Bundestaga …",
+  "options_bks": [
+   "izrađivati nacrte zakona.",
+   "nadzirati saveznu vladu.",
+   "birati saveznog kancelara.",
+   "sastaviti savezni kabinet."
+  ],
+  "expl_bks": "Savezni kabinet (Bundeskabinett) čine savezni kancelar i savezni ministri. Kabinet sastavlja kancelar: on predlaže ministre, a savezni predsjednik ih imenuje. Bundestag izrađuje i donosi zakone, bira kancelara i nadzire vladu, ali ne odlučuje tko će postati ministar.",
+  "merksatz_de": "Das Kabinett bildet der Bundeskanzler, nicht der Bundestag."
+ },
+ {
+  "id": "G-066",
+  "q_bks": "Koji gradovi imaju najveće židovske zajednice u Njemačkoj?",
+  "options_bks": [
+   "Berlin i München",
+   "Hamburg i Essen",
+   "Nürnberg i Stuttgart",
+   "Worms i Speyer"
+  ],
+  "expl_bks": "Najveće židovske zajednice u Njemačkoj danas su u Berlinu i Münchenu. Mnogi njihovi članovi doselili su se nakon 1990. iz zemalja bivšeg Sovjetskog Saveza. Worms i Speyer česta su zamka: u srednjem vijeku bili su važna židovska središta, ali danas ondje nema velikih židovskih zajednica.",
+  "merksatz_de": "Die größten jüdischen Gemeinden gibt es in Berlin und München."
+ },
+ {
+  "id": "G-067",
+  "q_bks": "Što je u Njemačkoj prije svega zadaća saveznih pokrajina?",
+  "options_bks": [
+   "obrambena politika",
+   "vanjska politika",
+   "gospodarska politika",
+   "školska politika"
+  ],
+  "expl_bks": "Školska politika prije svega je zadaća saveznih pokrajina (kulturni suverenitet pokrajina, Kulturhoheit der Länder). Pokrajine same određuju vrste škola, nastavne planove i školske praznike. Obrambena i vanjska politika zadaće su savezne države (Bund), a i gospodarsku politiku uglavnom vodi savezna razina.",
+  "merksatz_de": "Über die Schulen entscheiden die Bundesländer."
+ },
+ {
+  "id": "G-068",
+  "q_bks": "Zašto država u Njemačkoj nadzire školstvo?",
+  "options_bks": [
+   "jer u Njemačkoj postoje samo državne škole",
+   "jer svi učenici moraju imati završenu školu",
+   "jer u saveznim pokrajinama postoje različite škole",
+   "jer je to prema Temeljnom zakonu njezina zadaća"
+  ],
+  "expl_bks": "Članak 7. Temeljnog zakona (njemačkog ustava) kaže: „Cjelokupno školstvo nalazi se pod nadzorom države.” Zato država postavlja pravila i za privatne škole, na primjer za nastavne planove i obrazovanje učitelja. Privatne škole u Njemačkoj postoje, ali moraju ispunjavati državne uvjete.",
+  "merksatz_de": "Laut Grundgesetz steht das Schulwesen unter staatlicher Aufsicht."
+ },
+ {
+  "id": "G-069",
+  "q_bks": "Savezna Republika Njemačka ima upravni ustroj s tri razine. Kako se zove najniža politička razina?",
+  "options_bks": [
+   "gradska vijeća (Stadträte)",
+   "predstojnici okruga (Landräte)",
+   "općine (Gemeinden)",
+   "uredi gradskih četvrti (Bezirksämter)"
+  ],
+  "expl_bks": "Njemačka uprava ima tri razine: saveznu državu (Bund), savezne pokrajine i općine (Gemeinden). Općine su najniža razina i najbliže su građanima: brinu se, na primjer, za vrtiće, lokalne ceste i prijavu prebivališta. Gradska vijeća i Landrat (predstojnik okruga) nisu posebna razina, nego tijela i dužnosnici lokalne samouprave.",
+  "merksatz_de": "Die unterste politische Ebene sind die Gemeinden."
+ },
+ {
+  "id": "G-070",
+  "q_bks": "Savezni predsjednik Gustav Heinemann uručuje 1974. Helmutu Schmidtu ispravu o imenovanju za saveznog kancelara. Što spada u zadaće saveznog predsjednika?",
+  "options_bks": [
+   "Vodi poslove vlade.",
+   "Nadzire vladajuću stranku.",
+   "Bira ministre.",
+   "Predlaže kancelara za izbor."
+  ],
+  "expl_bks": "Prema članku 63. Temeljnog zakona savezni predsjednik predlaže Bundestagu kandidata za saveznog kancelara. Kad ga Bundestag izabere, predsjednik ga imenuje – kao na slici iz 1974. Vladu vodi kancelar, a ministre ne bira predsjednik, nego ih predlaže kancelar.",
+  "merksatz_de": "Der Bundespräsident schlägt den Kanzler zur Wahl vor."
+ },
+ {
+  "id": "G-071",
+  "q_bks": "Gdje njemački savezni kancelar najčešće boravi? Najčešće je …",
+  "options_bks": [
+   "u Bonnu, jer se ondje nalaze Ured saveznog kancelara i Bundestag.",
+   "u dvorcu Meseberg, gostinskoj kući savezne vlade, kako bi primao državne goste.",
+   "u dvorcu Bellevue, sjedištu saveznog predsjednika, kako bi primao državne goste.",
+   "u Berlinu, jer se ondje nalaze Ured saveznog kancelara i Bundestag."
+  ],
+  "expl_bks": "Ured saveznog kancelara (Bundeskanzleramt) i Bundestag nalaze se u Berlinu, u vladinoj četvrti blizu zgrade Reichstaga. Bundestag se 1999. preselio iz Bonna u Berlin, a s njim i kancelar. Dvorac Bellevue sjedište je saveznog predsjednika, a dvorac Meseberg kancelar koristi samo povremeno.",
+  "merksatz_de": "Kanzleramt und Bundestag sind in Berlin."
+ },
+ {
+  "id": "G-072",
+  "q_bks": "Kako se zove sadašnji savezni kancelar Njemačke?",
+  "options_bks": [
+   "Gerhard Schröder",
+   "Angela Merkel",
+   "Ursula von der Leyen",
+   "Friedrich Merz"
+  ],
+  "expl_bks": "Saveznog kancelara bira Bundestag (savezni parlament) nakon saveznih izbora, zato se odgovor na ovo pitanje s vremenom mijenja. Friedrich Merz (CDU) izabran je za kancelara u svibnju 2025. Gerhard Schröder (1998.–2005.) i Angela Merkel (2005.–2021.) bili su kancelari prije njega, a Ursula von der Leyen nikad nije bila kancelarka.",
+  "merksatz_de": "Friedrich Merz wurde im Mai 2025 Bundeskanzler."
+ },
+ {
+  "id": "G-073",
+  "q_bks": "Dva najveća kluba zastupnika (Fraktion) u njemačkom Bundestagu trenutno su …",
+  "options_bks": [
+   "CDU/CSU i AfD.",
+   "Die Linke i Bündnis 90/Die Grünen.",
+   "Bündnis 90/Die Grünen i SPD.",
+   "Die Linke i CDU/CSU."
+  ],
+  "expl_bks": "Na izborima za Bundestag u veljači 2025. najviše mandata osvojili su CDU/CSU, a druga po snazi bila je AfD. Zato su to trenutno dva najveća kluba zastupnika (Fraktion). CDU i CSU u Bundestagu imaju zajednički klub. Nakon sljedećih izbora redoslijed se može promijeniti.",
+  "merksatz_de": "Nach der Bundestagswahl 2025 sind CDU/CSU und AfD die größten Fraktionen."
+ },
+ {
+  "id": "G-074",
+  "q_bks": "Kako se zove parlament za cijelu Njemačku?",
+  "options_bks": [
+   "Savezna skupština (Bundesversammlung)",
+   "Narodna komora (Volkskammer)",
+   "Bundestag",
+   "Savezni sud (Bundesgerichtshof)"
+  ],
+  "expl_bks": "Bundestag (savezni parlament) jest parlament za cijelu Njemačku. Građani ga biraju svake četiri godine, a on donosi savezne zakone i bira saveznog kancelara. Savezna skupština (Bundesversammlung) sastaje se samo radi izbora saveznog predsjednika, a Volkskammer je bio parlament DDR-a.",
+  "merksatz_de": "Das Parlament für ganz Deutschland heißt Bundestag."
+ },
+ {
+  "id": "G-075",
+  "q_bks": "Kako se zove današnji šef države Njemačke?",
+  "options_bks": [
+   "Frank-Walter Steinmeier",
+   "Bärbel Bas",
+   "Bodo Ramelow",
+   "Joachim Gauck"
+  ],
+  "expl_bks": "Šef države u Njemačkoj je savezni predsjednik, a mandat mu traje pet godina. Frank-Walter Steinmeier izabran je na tu dužnost 2017., a ponovno 2022. godine. Joachim Gauck bio je savezni predsjednik prije njega (2012.–2017.), Bärbel Bas bila je predsjednica Bundestaga, a Bodo Ramelow bio je ministar predsjednik (Ministerpräsident) Tiringije.",
+  "merksatz_de": "Frank-Walter Steinmeier wurde 2017 Bundespräsident."
+ },
+ {
+  "id": "G-076",
+  "q_bks": "Što u Njemačkoj znači kratica CDU?",
+  "options_bks": [
+   "Christliche Deutsche Union (Kršćanska njemačka unija)",
+   "Club Deutscher Unternehmer (Klub njemačkih poduzetnika)",
+   "Christlicher Deutscher Umweltschutz (Kršćanska njemačka zaštita okoliša)",
+   "Christlich Demokratische Union (Kršćansko-demokratska unija)"
+  ],
+  "expl_bks": "CDU znači Christlich Demokratische Union (Kršćansko-demokratska unija). Stranka je osnovana 1945., a iz nje je došao prvi savezni kancelar Konrad Adenauer (1949.). Česta zamka: slovo D u kratici znači „demokratska”, a ne „njemačka”. CDU djeluje u svim pokrajinama osim Bavarske, gdje djeluje CSU.",
+  "merksatz_de": "CDU steht für Christlich Demokratische Union."
+ },
+ {
+  "id": "G-077",
+  "q_bks": "Što je Bundeswehr?",
+  "options_bks": [
+   "njemačka policija",
+   "njemačka luka",
+   "njemačka građanska inicijativa",
+   "njemačka vojska"
+  ],
+  "expl_bks": "Bundeswehr je njemačka vojska, osnovana 1955. godine. Ima, među ostalim, kopnenu vojsku, ratnu mornaricu i zrakoplovstvo. O slanju vojnika u oružane misije u inozemstvu odlučuje Bundestag (savezni parlament), zato se Bundeswehr zove i „parlamentarna vojska”. Za unutarnju sigurnost brine se policija.",
+  "merksatz_de": "Die Bundeswehr ist die Armee Deutschlands."
+ },
+ {
+  "id": "G-078",
+  "q_bks": "Što znači kratica SPD?",
+  "options_bks": [
+   "Sozialistische Partei Deutschlands (Socijalistička stranka Njemačke)",
+   "Sozialpolitische Partei Deutschlands (Socijalnopolitička stranka Njemačke)",
+   "Sozialdemokratische Partei Deutschlands (Socijaldemokratska stranka Njemačke)",
+   "Sozialgerechte Partei Deutschlands (Socijalno pravedna stranka Njemačke)"
+  ],
+  "expl_bks": "SPD znači Sozialdemokratische Partei Deutschlands (Socijaldemokratska stranka Njemačke). To je najstarija stranka u Njemačkoj: njezini počeci sežu u 1863. godinu. Iz SPD-a su dolazili savezni kancelari Willy Brandt, Helmut Schmidt, Gerhard Schröder i Olaf Scholz.",
+  "merksatz_de": "SPD ist die Sozialdemokratische Partei Deutschlands."
+ },
+ {
+  "id": "G-079",
+  "q_bks": "Što u Njemačkoj znači kratica FDP?",
+  "options_bks": [
+   "Friedliche Demonstrative Partei (Miroljubiva demonstrativna stranka)",
+   "Freie Deutschland Partei (Stranka slobodne Njemačke)",
+   "Führende Demokratische Partei (Vodeća demokratska stranka)",
+   "Freie Demokratische Partei (Slobodna demokratska stranka)"
+  ],
+  "expl_bks": "FDP znači Freie Demokratische Partei (Slobodna demokratska stranka). To je liberalna stranka, osnovana 1948. godine. U prošlosti je često bila koalicijski partner, i CDU-a/CSU-a i SPD-a. Pazite: slovo D ne znači „Deutschland”, nego „demokratska”.",
+  "merksatz_de": "Die Abkürzung FDP bedeutet Freie Demokratische Partei."
+ },
+ {
+  "id": "G-080",
+  "q_bks": "Koji je sud u Njemačkoj nadležan za tumačenje Temeljnog zakona?",
+  "options_bks": [
+   "Visoki pokrajinski sud (Oberlandesgericht)",
+   "općinski sud (Amtsgericht)",
+   "Savezni ustavni sud (Bundesverfassungsgericht)",
+   "upravni sud (Verwaltungsgericht)"
+  ],
+  "expl_bks": "Savezni ustavni sud (Bundesverfassungsgericht) u Karlsruheu tumači Temeljni zakon (njemački ustav) i provjerava jesu li zakoni u skladu s njim. Njegove odluke obvezuju sva državna tijela. Svaki građanin može podnijeti ustavnu tužbu (Verfassungsbeschwerde) ako smatra da su mu povrijeđena temeljna prava.",
+  "merksatz_de": "Das Bundesverfassungsgericht legt das Grundgesetz aus."
+ },
+ {
+  "id": "G-081",
+  "q_bks": "Tko u Njemačkoj bira saveznog kancelara?",
+  "options_bks": [
+   "Bundesrat (savezno vijeće pokrajina)",
+   "Savezna skupština (Bundesversammlung)",
+   "narod",
+   "Bundestag (savezni parlament)"
+  ],
+  "expl_bks": "Saveznog kancelara bira Bundestag (savezni parlament), na prijedlog saveznog predsjednika (članak 63. Temeljnog zakona). Potrebna je većina glasova svih zastupnika. Građani kancelara ne biraju izravno, nego glasaju za stranke i zastupnike. Savezna skupština bira saveznog predsjednika, a ne kancelara.",
+  "merksatz_de": "Der Bundestag wählt den Bundeskanzler."
+ },
+ {
+  "id": "G-082",
+  "q_bks": "Tko vodi njemački savezni kabinet?",
+  "options_bks": [
+   "predsjednik Bundestaga (Bundestagspräsident)",
+   "savezni predsjednik (Bundespräsident)",
+   "predsjednik Bundesrata (Bundesratspräsident)",
+   "savezni kancelar (Bundeskanzler)"
+  ],
+  "expl_bks": "Savezni kabinet (Bundeskabinett) čine savezni kancelar i savezni ministri. Kancelar vodi kabinet i određuje smjernice politike (članak 65. Temeljnog zakona). Unutar tih smjernica svaki ministar samostalno vodi svoje ministarstvo. Savezni predsjednik te predsjednici Bundestaga i Bundesrata nisu članovi vlade.",
+  "merksatz_de": "Das Bundeskabinett leitet der Bundeskanzler."
+ },
+ {
+  "id": "G-083",
+  "q_bks": "Tko bira njemačkog saveznog kancelara?",
+  "options_bks": [
+   "narod",
+   "Savezna skupština (Bundesversammlung)",
+   "Bundestag (savezni parlament)",
+   "savezna vlada"
+  ],
+  "expl_bks": "Kancelara bira Bundestag (savezni parlament) tajnim glasanjem, nakon što kandidata predloži savezni predsjednik. Narod ga ne bira izravno: građani na saveznim izborima biraju zastupnike, a oni zatim biraju kancelara. Savezna skupština (Bundesversammlung) bira saveznog predsjednika, a saveznu vladu kancelar sastavlja tek nakon izbora.",
+  "merksatz_de": "Den Kanzler wählen die Abgeordneten des Bundestages."
+ },
+ {
+  "id": "G-084",
+  "q_bks": "Koja je glavna zadaća njemačkog saveznog predsjednika? On …",
+  "options_bks": [
+   "vlada zemljom.",
+   "izrađuje nacrte zakona.",
+   "predstavlja zemlju.",
+   "nadzire poštovanje zakona."
+  ],
+  "expl_bks": "Savezni predsjednik je šef države i predstavlja Njemačku u zemlji i u inozemstvu: prima strane državnike, putuje u državne posjete i drži važne govore. Uz to potpisuje zakone te imenuje kancelara i ministre. Zemljom ne vlada on, nego savezna vlada sa saveznim kancelarom na čelu.",
+  "merksatz_de": "Der Bundespräsident repräsentiert Deutschland."
+ },
+ {
+  "id": "G-085",
+  "q_bks": "Tko čini njemački Bundesrat?",
+  "options_bks": [
+   "zastupnici Bundestaga",
+   "ministri savezne vlade",
+   "predstavnici vlada saveznih pokrajina",
+   "članovi stranaka"
+  ],
+  "expl_bks": "Bundesrat (savezno vijeće pokrajina) čine članovi vlada 16 saveznih pokrajina, na primjer ministri predsjednici i pokrajinski ministri. Građani ih ne biraju izravno u Bundesrat, nego ih šalju pokrajinske vlade. Veće pokrajine imaju više glasova (od 3 do 6), a svaka pokrajina glasa jedinstveno.",
+  "merksatz_de": "Im Bundesrat sitzen Vertreter der Landesregierungen."
+ },
+ {
+  "id": "G-086",
+  "q_bks": "Tko u Njemačkoj bira saveznog predsjednika?",
+  "options_bks": [
+   "Savezna skupština (Bundesversammlung)",
+   "Bundesrat (savezno vijeće pokrajina)",
+   "savezni parlament (Bundesparlament)",
+   "Savezni ustavni sud (Bundesverfassungsgericht)"
+  ],
+  "expl_bks": "Saveznog predsjednika bira Savezna skupština (Bundesversammlung), i to na pet godina. Čine je svi zastupnici Bundestaga i jednako toliko članova koje šalju pokrajinski parlamenti; među njima su ponekad i poznate osobe, na primjer sportaši ili glumci. Savezna skupština sastaje se samo radi tog izbora.",
+  "merksatz_de": "Die Bundesversammlung wählt den Bundespräsidenten."
+ },
+ {
+  "id": "G-087",
+  "q_bks": "Tko je šef države Savezne Republike Njemačke?",
+  "options_bks": [
+   "savezni kancelar (Bundeskanzler)",
+   "savezni predsjednik (Bundespräsident)",
+   "predsjednik Bundesrata (Bundesratspräsident)",
+   "predsjednik Bundestaga (Bundestagspräsident)"
+  ],
+  "expl_bks": "Šef države je savezni predsjednik. On predstavlja Njemačku, potpisuje zakone te imenuje saveznog kancelara i ministre. Savezni kancelar vodi vladu, pa je on šef vlade, a ne šef države. Sjedište saveznog predsjednika je dvorac Bellevue u Berlinu.",
+  "merksatz_de": "Staatsoberhaupt ist der Bundespräsident, nicht der Kanzler."
+ },
+ {
+  "id": "G-088",
+  "q_bks": "Parlamentarna opozicija u njemačkom Bundestagu …",
+  "options_bks": [
+   "nadzire vladu.",
+   "odlučuje tko postaje savezni ministar.",
+   "određuje tko sjedi u Bundesratu.",
+   "predlaže šefove vlada saveznih pokrajina."
+  ],
+  "expl_bks": "Opoziciju čine stranke u Bundestagu koje nisu u vladi. Njezina je glavna zadaća nadzirati i kritizirati vladu: postavlja pitanja ministrima, raspravlja o zakonima i predlaže drukčija rješenja. Tako vlada mora javno objašnjavati svoje odluke. Ministre ne bira opozicija, nego ih predlaže kancelar.",
+  "merksatz_de": "Die Opposition kontrolliert die Regierung."
+ },
+ {
+  "id": "G-089",
+  "q_bks": "Kako se u Njemačkoj zove udruženje zastupnika jedne stranke u parlamentu?",
+  "options_bks": [
+   "savez (Verband)",
+   "vijeće starješina (Ältestenrat)",
+   "klub zastupnika (Fraktion)",
+   "opozicija"
+  ],
+  "expl_bks": "Zastupnici iste stranke u Bundestagu udružuju se u klub zastupnika (Fraktion). Za klub je potrebno najmanje 5 % svih zastupnika. Klubovi zajedno pripremaju prijedloge, dogovaraju glasanje i imaju posebna prava u parlamentu. CDU i CSU u Bundestagu imaju zajednički klub.",
+  "merksatz_de": "Abgeordnete einer Partei bilden im Parlament eine Fraktion."
+ },
+ {
+  "id": "G-090",
+  "q_bks": "Njemačke savezne pokrajine sudjeluju u saveznom zakonodavstvu preko …",
+  "options_bks": [
+   "Bundesrata.",
+   "Savezne skupštine (Bundesversammlung).",
+   "Bundestaga.",
+   "savezne vlade."
+  ],
+  "expl_bks": "Prema članku 50. Temeljnog zakona pokrajine preko Bundesrata (savezno vijeće pokrajina) sudjeluju u saveznom zakonodavstvu. O svakom saveznom zakonu raspravlja se i u Bundesratu. Za zakone koji jako utječu na pokrajine, na primjer na njihove financije, potrebna je suglasnost Bundesrata.",
+  "merksatz_de": "Über den Bundesrat wirken die Länder bei Bundesgesetzen mit."
+ },
+ {
+  "id": "G-091",
+  "q_bks": "U Njemačkoj promjena vlade u jednoj saveznoj pokrajini može utjecati na saveznu politiku. Vladanje postaje …",
+  "options_bks": [
+   "teže ako se zbog toga promijeni većina u Bundestagu.",
+   "lakše ako zbog toga u Bundesrat uđu nove stranke.",
+   "teže ako se zbog toga promijeni većina u Bundesratu.",
+   "lakše ako se radi o bogatoj saveznoj pokrajini."
+  ],
+  "expl_bks": "Pokrajinska vlada šalje svoje predstavnike u Bundesrat (savezno vijeće pokrajina). Ako nakon izbora u pokrajini vladu preuzmu stranke koje su u Bundestagu u opoziciji, savezna vlada može izgubiti većinu u Bundesratu. Tada teže donosi zakone kojima je potrebna suglasnost Bundesrata. Većina u Bundestagu zbog toga se ne mijenja.",
+  "merksatz_de": "Landtagswahlen können die Mehrheit im Bundesrat verändern."
+ },
+ {
+  "id": "G-092",
+  "q_bks": "Što u Njemačkoj znači kratica CSU?",
+  "options_bks": [
+   "Christlich Sichere Union (Kršćanska sigurna unija)",
+   "Christlich Süddeutsche Union (Kršćanska južnonjemačka unija)",
+   "Christlich Sozialer Unternehmerverband (Kršćanski socijalni savez poduzetnika)",
+   "Christlich Soziale Union (Kršćansko-socijalna unija)"
+  ],
+  "expl_bks": "CSU znači Christlich Soziale Union (Kršćansko-socijalna unija); puno ime je „Christlich-Soziale Union in Bayern”. Ta stranka djeluje samo u Bavarskoj, a CDU u ostalih 15 pokrajina. U Bundestagu CDU i CSU imaju zajednički klub zastupnika (Fraktion), pa ih se često zove „Unija”.",
+  "merksatz_de": "Die CSU (Christlich Soziale Union) gibt es nur in Bayern."
+ },
+ {
+  "id": "G-093",
+  "q_bks": "Što više „drugih glasova” (Zweitstimmen) stranka dobije na izborima za Bundestag, to …",
+  "options_bks": [
+   "manje prvih glasova može imati.",
+   "više izravnih kandidata stranke ulazi u parlament.",
+   "veći je rizik da će morati sklopiti koaliciju.",
+   "više mjesta stranka dobiva u parlamentu."
+  ],
+  "expl_bks": "Drugi glas (Zweitstimme) daje se stranci, odnosno njezinoj listi. Prema udjelu drugih glasova određuje se koliko mjesta svaka stranka dobiva u Bundestagu (savezni parlament). Zato vrijedi: što više drugih glasova, to više mjesta. Prvim glasom bira se kandidat u izbornom okrugu.",
+  "merksatz_de": "Mehr Zweitstimmen bedeuten mehr Sitze im Bundestag."
+ },
+ {
+  "id": "G-094",
+  "q_bks": "Od koje se dobi u Njemačkoj smije sudjelovati na izborima za njemački Bundestag?",
+  "options_bks": [
+   "16",
+   "18",
+   "21",
+   "23"
+  ],
+  "expl_bks": "Na izborima za Bundestag (savezni parlament) smiju glasati njemački državljani koji na dan izbora imaju najmanje 18 godina. To određuje članak 38. Temeljnog zakona. U nekim saveznim pokrajinama na lokalnim izborima glasa se već sa 16 godina, ali za Bundestag granica je 18.",
+  "merksatz_de": "Für die Bundestagswahl muss man mindestens 18 Jahre alt sein."
+ },
+ {
+  "id": "G-095",
+  "q_bks": "Što vrijedi za većinu djece u Njemačkoj?",
+  "options_bks": [
+   "obveza glasanja",
+   "obvezno školovanje",
+   "obveza čuvanja tajne",
+   "vjerska obveza"
+  ],
+  "expl_bks": "U Njemačkoj postoji obvezno školovanje (Schulpflicht): djeca moraju ići u školu, obično od šeste godine, devet ili deset godina, ovisno o saveznoj pokrajini. Roditelji moraju paziti da dijete redovito ide na nastavu. Obveza glasanja u Njemačkoj ne postoji, a vjera je slobodan izbor.",
+  "merksatz_de": "In Deutschland gilt für Kinder die Schulpflicht."
+ },
+ {
+  "id": "G-096",
+  "q_bks": "Kako može biti kažnjen netko tko poriče holokaust?",
+  "options_bks": [
+   "smanjenjem socijalnih davanja",
+   "do 100 sati društveno korisnog rada",
+   "nikako, poricanje holokausta je dopušteno",
+   "kaznom zatvora do pet godina ili novčanom kaznom"
+  ],
+  "expl_bks": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo. Kazneni zakon (§ 130, poticanje na mržnju – Volksverhetzung) za to predviđa kaznu zatvora do pet godina ili novčanu kaznu. Tako se štiti sjećanje na žrtve i javni mir.",
+  "merksatz_de": "Holocaustleugnung ist in Deutschland eine Straftat."
+ },
+ {
+  "id": "G-097",
+  "q_bks": "Što se u Njemačkoj automatski plaća kad je netko stalno zaposlen?",
+  "options_bks": [
+   "socijalno osiguranje",
+   "socijalnu pomoć",
+   "dječji doplatak (Kindergeld)",
+   "doplatak za stanovanje (Wohngeld)"
+  ],
+  "expl_bks": "Tko je stalno zaposlen, automatski plaća doprinose za socijalno osiguranje: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti i osiguranje za njegu (Pflegeversicherung). Poslodavac taj iznos odbija izravno od bruto plaće i uplaćuje ga. Socijalna pomoć, dječji doplatak i doplatak za stanovanje davanja su koja se primaju, a ne plaćaju.",
+  "merksatz_de": "Mit fester Arbeit zahlt man automatisch in die Sozialversicherung."
+ },
+ {
+  "id": "G-098",
+  "q_bks": "Kad zastupnici u njemačkom Bundestagu promijene klub zastupnika (Fraktion), …",
+  "options_bks": [
+   "ne smiju više sudjelovati na sjednicama parlamenta.",
+   "vlada može izgubiti većinu.",
+   "savezni predsjednik mora prije toga dati svoj pristanak.",
+   "birači tih zastupnika smiju još jednom glasati."
+  ],
+  "expl_bks": "Savezna vlada treba većinu u Bundestagu (savezni parlament) da bi mogla donositi zakone. Ako zastupnici vladajućih stranaka prijeđu u drugi klub zastupnika (Fraktion), npr. u opoziciju, vlada može ostati bez većine. Promjena kluba je dopuštena, jer su zastupnici prema članku 38. Temeljnog zakona vezani samo svojom savješću.",
+  "merksatz_de": "Durch Fraktionswechsel kann die Regierung ihre Mehrheit verlieren."
+ },
+ {
+  "id": "G-099",
+  "q_bks": "Tko u Njemačkoj plaća socijalna osiguranja?",
+  "options_bks": [
+   "poslodavci i zaposlenici",
+   "samo zaposlenici",
+   "svi državljani",
+   "samo poslodavci"
+  ],
+  "expl_bks": "Socijalna osiguranja financiraju se doprinosima koje zajedno plaćaju poslodavci i zaposlenici, većinom otprilike pola-pola. Dio zaposlenika odbija se automatski od bruto plaće, a poslodavac dodaje svoj dio. Zaposlenikov dio vidi se na obračunu plaće (Lohnabrechnung).",
+  "merksatz_de": "Arbeitgeber und Arbeitnehmer zahlen zusammen die Sozialversicherung."
+ },
+ {
+  "id": "G-100",
+  "q_bks": "Što ne spada u zakonsko socijalno osiguranje?",
+  "options_bks": [
+   "životno osiguranje",
+   "zakonsko mirovinsko osiguranje",
+   "osiguranje za slučaj nezaposlenosti",
+   "osiguranje za njegu (Pflegeversicherung)"
+  ],
+  "expl_bks": "Zakonsko socijalno osiguranje ima pet grana: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti, osiguranje za njegu i osiguranje od nezgode. Životno osiguranje nije među njima. To je privatno osiguranje koje svatko može dobrovoljno sklopiti kod osiguravajuće kuće.",
+  "merksatz_de": "Die Lebensversicherung ist eine private, freiwillige Versicherung."
+ },
+ {
+  "id": "G-101",
+  "q_bks": "Sindikati su udruženja koja zastupaju interese …",
+  "options_bks": [
+   "mladih.",
+   "zaposlenika.",
+   "umirovljenika.",
+   "poslodavaca."
+  ],
+  "expl_bks": "Sindikati (Gewerkschaften) udruženja su zaposlenika. Pregovaraju s poslodavcima o plaćama, radnom vremenu i godišnjem odmoru te sklapaju kolektivne ugovore (Tarifverträge). Članstvo je dobrovoljno i plaća se članarina. Poslodavci imaju svoja posebna udruženja (Arbeitgeberverbände).",
+  "merksatz_de": "Gewerkschaften vertreten die Interessen der Arbeitnehmer."
+ },
+ {
+  "id": "G-102",
+  "q_bks": "Čime netko u Saveznoj Republici Njemačkoj može biti odlikovan ako je postigao posebna dostignuća na političkom, gospodarskom, kulturnom, duhovnom ili socijalnom području? …",
+  "options_bks": [
+   "saveznim križem za zasluge (Bundesverdienstkreuz)",
+   "saveznim orlom (Bundesadler)",
+   "domovinskim ordenom za zasluge (Vaterländischer Verdienstorden)",
+   "počasnom titulom „Heroj Njemačke Demokratske Republike”"
+  ],
+  "expl_bks": "Savezni križ za zasluge (Bundesverdienstkreuz) najpoznatije je odlikovanje Savezne Republike Njemačke, uvedeno 1951. godine. Dodjeljuje ga savezni predsjednik ljudima s posebnim zaslugama, često i za volonterski rad. Domovinski orden za zasluge i titula „Heroj DDR-a” bila su odlikovanja DDR-a (Njemačka Demokratska Republika, Istočna Njemačka), a savezni orao je državni simbol na grbu.",
+  "merksatz_de": "Für besondere Verdienste gibt es das Bundesverdienstkreuz."
+ },
+ {
+  "id": "G-103",
+  "q_bks": "Što se u Njemačkoj naziva „semaforskom koalicijom” (Ampelkoalition)? Suradnja …",
+  "options_bks": [
+   "klubova zastupnika CDU-a i CSU-a u Bundestagu",
+   "SPD-a, FDP-a i stranke Bündnis 90/Die Grünen u jednoj vladi",
+   "CSU-a, stranke Die LINKE i stranke Bündnis 90/Die Grünen u jednoj vladi",
+   "klubova zastupnika CDU-a i SPD-a u Bundestagu"
+  ],
+  "expl_bks": "Koalicije se često nazivaju prema bojama stranaka. Boja SPD-a je crvena, FDP-a žuta, a stranke Bündnis 90/Die Grünen zelena – kao tri svjetla na semaforu (Ampel). Zato se vlada tih triju stranaka zove „semaforska koalicija”. Koalicija CDU/CSU-a i SPD-a naziva se „velika koalicija”.",
+  "merksatz_de": "Eine Ampelkoalition bilden SPD, FDP und Grüne."
+ },
+ {
+  "id": "G-104",
+  "q_bks": "Žena u Njemačkoj izgubi posao. Što ne smije biti razlog za taj otkaz?",
+  "options_bks": [
+   "Žena je dugo bolesna i nesposobna za rad.",
+   "Žena je često kasnila na posao.",
+   "Žena za vrijeme radnog vremena obavlja privatne stvari.",
+   "Žena će dobiti dijete i njezin šef to zna."
+  ],
+  "expl_bks": "Trudnice i majke nakon poroda posebno su zaštićene Zakonom o zaštiti majčinstva (Mutterschutzgesetz). Od početka trudnoće do najmanje četiri mjeseca nakon poroda poslodavac ženi u pravilu ne smije dati otkaz. Duga bolest, česta kašnjenja ili privatni poslovi za vrijeme rada, naprotiv, pod određenim uvjetima mogu biti razlog za otkaz.",
+  "merksatz_de": "Schwangeren darf man in der Regel nicht kündigen."
+ },
+ {
+  "id": "G-105",
+  "q_bks": "Koji je jedan od zadataka izbornih pomagača (Wahlhelfer) u Njemačkoj?",
+  "options_bks": [
+   "Pomažu starijim osobama pri glasanju u glasačkoj kabini.",
+   "Pišu obavijesti o izborima (pozive na glasanje) prije izbora.",
+   "Prosljeđuju međurezultate medijima.",
+   "Broje glasove nakon završetka izbora."
+  ],
+  "expl_bks": "Izborni pomagači (Wahlhelfer) rade volonterski na biralištu. Paze da glasanje teče pravilno, a nakon zatvaranja birališta u 18 sati javno broje glasove. Glasanje je tajno, pa svaki birač u kabini u pravilu glasa sam. Obavijesti o izborima šalje općina, a rezultate objavljuju izborna tijela.",
+  "merksatz_de": "Wahlhelfer zählen nach der Wahl die Stimmen."
+ },
+ {
+  "id": "G-106",
+  "q_bks": "U Njemačkoj na izborima pomažu izborni pomagači (Wahlhelfer) koji rade volonterski. Koji je jedan od zadataka izbornih pomagača?",
+  "options_bks": [
+   "Pomažu djeci i starijim osobama pri glasanju.",
+   "Pišu dopisnice i pisma s podatkom o biralištu.",
+   "Prosljeđuju međurezultate novinarima.",
+   "Broje glasove nakon završetka izbora."
+  ],
+  "expl_bks": "Na svakom biralištu radi birački odbor (Wahlvorstand) od nekoliko volontera. Oni izdaju glasačke listiće i paze na red, a nakon zatvaranja birališta u 18 sati broje glasove. Brojenje je javno, svatko može gledati. Obavijesti o izborima ne pišu pomagači, nego ih šalje općina.",
+  "merksatz_de": "Nach Schließung der Wahllokale zählen Wahlhelfer die Stimmen."
+ },
+ {
+  "id": "G-107",
+  "q_bks": "Na koliko se godina u Njemačkoj bira Bundestag?",
+  "options_bks": [
+   "2 godine",
+   "4 godine",
+   "6 godina",
+   "8 godina"
+  ],
+  "expl_bks": "Bundestag (savezni parlament) bira se na četiri godine. To razdoblje zove se izborni period (Wahlperiode), a određeno je u članku 39. Temeljnog zakona. Raniji izbori mogući su samo u posebnim slučajevima, kad savezni predsjednik raspusti Bundestag.",
+  "merksatz_de": "Der Bundestag wird für vier Jahre gewählt."
+ },
+ {
+  "id": "G-108",
+  "q_bks": "Na izborima za Bundestag u Njemačkoj smije glasati svatko tko …",
+  "options_bks": [
+   "živi u Saveznoj Republici Njemačkoj i želi glasati.",
+   "je građanin Savezne Republike Njemačke i ima najmanje 18 godina.",
+   "živi u Saveznoj Republici Njemačkoj najmanje 3 godine.",
+   "je građanin Savezne Republike Njemačke i ima najmanje 21 godinu."
+  ],
+  "expl_bks": "Za izbore za Bundestag (savezni parlament) vrijede dva uvjeta: njemačko državljanstvo i najmanje 18 godina (članak 38. Temeljnog zakona). Sam boravak u Njemačkoj nije dovoljan, bez obzira na to koliko dugo netko ovdje živi. Nakon naturalizacije (stjecanja državljanstva) dobiva se i to pravo.",
+  "merksatz_de": "Wählen dürfen deutsche Staatsbürger ab 18 Jahren."
+ },
+ {
+  "id": "G-109",
+  "q_bks": "Koliko se često u Njemačkoj obično održavaju izbori za Bundestag?",
+  "options_bks": [
+   "svake tri godine",
+   "svake četiri godine",
+   "svakih pet godina",
+   "svakih šest godina"
+  ],
+  "expl_bks": "Izbori za Bundestag (savezni parlament) redovito se održavaju svake četiri godine, jer toliko traje izborni period prema članku 39. Temeljnog zakona. Iznimka su prijevremeni izbori: ako savezni predsjednik raspusti Bundestag, novi izbori održavaju se ranije, u roku od 60 dana.",
+  "merksatz_de": "Bundestagswahlen finden normalerweise alle vier Jahre statt."
+ },
+ {
+  "id": "G-110",
+  "q_bks": "Na koliko se godina u Njemačkoj bira Bundestag?",
+  "options_bks": [
+   "2 godine",
+   "3 godine",
+   "4 godine",
+   "5 godina"
+  ],
+  "expl_bks": "Mandat Bundestaga (savezni parlament) traje četiri godine, prema članku 39. Temeljnog zakona. U tom razdoblju zastupnici donose zakone i biraju saveznog kancelara. Pažnja, zamka: Europski parlament i većina pokrajinskih parlamenata (Landtag) biraju se na pet godina, a Bundestag na četiri.",
+  "merksatz_de": "Eine Wahlperiode des Bundestages dauert vier Jahre."
+ },
+ {
+  "id": "G-111",
+  "q_bks": "Koji su postupci u vezi s državom Izrael zabranjeni u Njemačkoj?",
+  "options_bks": [
+   "javno kritiziranje politike Izraela",
+   "vješanje izraelske zastave na privatnom zemljištu",
+   "rasprava o politici Izraela",
+   "javni poziv na uništenje Izraela"
+  ],
+  "expl_bks": "Javni poziv na uništenje Izraela u Njemačkoj je zabranjen i može se kazniti, jer potiče na mržnju i nasilje. Kritizirati politiku izraelske vlade i raspravljati o njoj dopušteno je; to je dio slobode mišljenja. Zbog svoje povijesti Njemačka posebno odlučno postupa protiv antisemitizma.",
+  "merksatz_de": "Zur Vernichtung Israels aufzurufen ist in Deutschland verboten."
+ },
+ {
+  "id": "G-112",
+  "q_bks": "Izbori u Njemačkoj su …",
+  "options_bks": [
+   "posebni.",
+   "tajni.",
+   "vezani uz zanimanje.",
+   "ovisni o spolu."
+  ],
+  "expl_bks": "Izbori u Njemačkoj su tajni: svatko glasa sam u glasačkoj kabini i nitko ne smije vidjeti ni provjeravati za koga je netko glasao. To je jedno od pet izbornih načela iz članka 38. Temeljnog zakona: izbori su opći, neposredni, slobodni, jednaki i tajni.",
+  "merksatz_de": "Wahlen in Deutschland sind geheim."
+ },
+ {
+  "id": "G-113",
+  "q_bks": "Izbore u Njemačkoj pobjeđuje stranka koja …",
+  "options_bks": [
+   "dobije najviše glasova.",
+   "dobije glasove većine muškaraca.",
+   "je dobila najviše glasova među radnicima.",
+   "je za svog kandidata za kancelara dobila najviše prvih glasova."
+  ],
+  "expl_bks": "Izbore pobjeđuje stranka koja dobije najviše glasova. Svaki glas vrijedi jednako, bez obzira na to glasa li muškarac ili žena, radnik ili poslodavac. Na izborima za Bundestag za raspodjelu mjesta presudan je drugi glas. Kancelara ne bira narod izravno, nego ga bira Bundestag.",
+  "merksatz_de": "Die Partei mit den meisten Stimmen gewinnt die Wahl."
+ },
+ {
+  "id": "G-114",
+  "q_bks": "Sudjelovati na demokratskim izborima u Njemačkoj je …",
+  "options_bks": [
+   "obveza.",
+   "pravo.",
+   "prisila.",
+   "teret."
+  ],
+  "expl_bks": "Glasanje je u Njemačkoj pravo, a ne obveza. Svaki birač sam odlučuje hoće li glasati; tko ne glasa, ne plaća kaznu. Ipak je sudjelovanje na izborima važno, jer tako građani utječu na to tko će ih predstavljati u parlamentu.",
+  "merksatz_de": "Wählen ist in Deutschland ein Recht, keine Pflicht."
+ },
+ {
+  "id": "G-115",
+  "q_bks": "Što u Njemačkoj znači „aktivno biračko pravo”?",
+  "options_bks": [
+   "Osoba može biti birana.",
+   "Osoba mora ići glasati.",
+   "Osoba može birati.",
+   "Osoba mora ići na brojenje glasova."
+  ],
+  "expl_bks": "Aktivno biračko pravo znači da osoba smije birati, tj. glasati na izborima. Pasivno biračko pravo znači da osoba može biti birana, na primjer kao zastupnik u parlamentu. Za izbore za Bundestag oba prava imaju njemački državljani od 18 godina. Obveza glasanja ne postoji.",
+  "merksatz_de": "Aktives Wahlrecht heißt: Ich darf wählen."
+ },
+ {
+  "id": "G-116",
+  "q_bks": "Ako smijete glasati na izborima za Bundestag u Njemačkoj, to se zove …",
+  "options_bks": [
+   "aktivna izborna kampanja (Wahlkampagne).",
+   "aktivni izborni postupak (Wahlverfahren).",
+   "aktivna predizborna borba (Wahlkampf).",
+   "aktivno biračko pravo (Wahlrecht)."
+  ],
+  "expl_bks": "Pravo da glasate zove se aktivno biračko pravo (aktives Wahlrecht). Na izborima za Bundestag (savezni parlament) imaju ga svi njemački državljani s najmanje 18 godina. Pravo da budete izabrani zove se pasivno biračko pravo. Kampanja i predizborna borba odnose se na stranke, a ne na birače.",
+  "merksatz_de": "Wer wählen darf, hat das aktive Wahlrecht."
+ },
+ {
+  "id": "G-117",
+  "q_bks": "Koliko najmanje posto drugih glasova stranke moraju dobiti da bi bile izabrane u njemački Bundestag?",
+  "options_bks": [
+   "3 %",
+   "4 %",
+   "5 %",
+   "6 %"
+  ],
+  "expl_bks": "Za Bundestag (savezni parlament) vrijedi izborni prag od 5 %: stranka mora dobiti najmanje 5 % svih drugih glasova u Njemačkoj da bi dobila mjesta prema svom udjelu. Tako parlament ne postaje rascjepkan na previše malih stranaka. Prag ne vrijedi za stranke nacionalnih manjina, npr. danske manjine.",
+  "merksatz_de": "Parteien brauchen mindestens fünf Prozent der Zweitstimmen."
+ },
+ {
+  "id": "G-118",
+  "q_bks": "Tko smije postati član jedne od otprilike 40 židovskih sportskih udruga Makkabi?",
+  "options_bks": [
+   "samo Nijemci",
+   "samo Izraelci",
+   "samo religiozni ljudi",
+   "svi ljudi"
+  ],
+  "expl_bks": "Udruge Makkabi imaju židovske korijene, ali su otvorene za sve ljude. Članom može postati svatko, bez obzira na vjeru, podrijetlo ili državljanstvo, a mnogi članovi nisu Židovi. Ime dolazi od Makabejaca, židovskih boraca iz antičkog vremena. U udrugama se treniraju nogomet, košarka, tenis i mnogi drugi sportovi.",
+  "merksatz_de": "Bei Makkabi-Sportvereinen dürfen alle Menschen Mitglied werden."
+ },
+ {
+  "id": "G-119",
+  "q_bks": "Izbori u Njemačkoj su slobodni. Što to znači?",
+  "options_bks": [
+   "Svi osuđeni počinitelji kaznenih djela ne smiju glasati.",
+   "Ako želim ići glasati, moj poslodavac mi mora dati slobodno.",
+   "Svaka osoba može bez prisile odlučiti hoće li glasati i za koga će glasati.",
+   "Mogu slobodno odlučiti gdje ću glasati."
+  ],
+  "expl_bks": "Slobodni izbori znače da nitko ne smije vršiti pritisak na birače: ni država, ni poslodavac, ni obitelj. Svatko sam i bez straha odlučuje hoće li uopće glasati i za koga. Zato u Njemačkoj nema obveze glasanja, a glasanje je tajno.",
+  "merksatz_de": "Freie Wahl: Niemand darf mich zum Wählen zwingen."
+ },
+ {
+  "id": "G-120",
+  "q_bks": "Izborni sustav u Njemačkoj je …",
+  "options_bks": [
+   "cenzusno biračko pravo (Zensuswahlrecht).",
+   "troklasno biračko pravo (Dreiklassenwahlrecht).",
+   "većinsko i razmjerno biračko pravo (Mehrheits- und Verhältniswahlrecht).",
+   "opće muško biračko pravo (allgemeines Männerwahlrecht)."
+  ],
+  "expl_bks": "Njemački sustav spaja dva načela. Prvim glasom bira se kandidat u izbornom okrugu po većinskom načelu (najviše glasova). Drugim glasom bira se stranka, a mjesta u Bundestagu (savezni parlament) dijele se razmjerno udjelu glasova. Cenzusno i troklasno biračko pravo davali su bogatijima veći utjecaj i danas ne postoje.",
+  "merksatz_de": "Das Wahlsystem verbindet Mehrheitswahl und Verhältniswahl."
+ },
+ {
+  "id": "G-121",
+  "q_bks": "Stranka želi ući u njemački Bundestag. Ali za to mora dobiti minimalni udio glasova birača. To se zove …",
+  "options_bks": [
+   "izborni prag od 5 % (5%-Hürde).",
+   "granica za prijem (Zulassungsgrenze).",
+   "osnovna vrijednost (Basiswert).",
+   "smjernica (Richtlinie)."
+  ],
+  "expl_bks": "Taj minimalni udio zove se izborni prag od 5 % (5%-Hürde). Stranka mora osvojiti najmanje 5 % drugih glasova u cijeloj Njemačkoj da bi dobila mjesta u Bundestagu (savezni parlament) prema svom udjelu. Stranka s, na primjer, 4,8 % drugih glasova u pravilu ne ulazi u Bundestag.",
+  "merksatz_de": "Den nötigen Mindestanteil an Stimmen nennt man 5%-Hürde."
+ },
+ {
+  "id": "G-122",
+  "q_bks": "Kojem načelu podliježu izbori u Njemačkoj? Izbori u Njemačkoj su …",
+  "options_bks": [
+   "slobodni, jednaki, tajni.",
+   "otvoreni, sigurni, slobodni.",
+   "zatvoreni, jednaki, sigurni.",
+   "sigurni, otvoreni, dobrovoljni."
+  ],
+  "expl_bks": "Članak 38. Temeljnog zakona određuje pet izbornih načela: izbori su opći, neposredni, slobodni, jednaki i tajni. Slobodni znači bez pritiska, jednaki znači da svaki glas vrijedi jednako, a tajni da nitko ne smije vidjeti za koga glasate. „Otvoreni” izbori bili bi suprotnost tajnosti.",
+  "merksatz_de": "Wahlen sind allgemein, unmittelbar, frei, gleich und geheim."
+ },
+ {
+  "id": "G-123",
+  "q_bks": "Što je u Njemačkoj „izborni prag od 5 %” (5%-Hürde)?",
+  "options_bks": [
+   "pravilo glasanja u Bundestagu za male stranke",
+   "provjera prisutnosti u Bundestagu kod glasanja",
+   "minimalni udio glasova birača da bi se ušlo u parlament",
+   "provjera prisutnosti u Bundesratu kod glasanja"
+  ],
+  "expl_bks": "Izborni prag od 5 % odnosi se na izbore, a ne na glasanja unutar parlamenta. Stranka mora dobiti najmanje 5 % drugih glasova da bi ušla u Bundestag (savezni parlament) s mjestima prema svom udjelu. Slično pravilo vrijedi i na izborima za pokrajinske parlamente (Landtag).",
+  "merksatz_de": "Die 5%-Hürde ist ein Mindestanteil an Wählerstimmen."
+ },
+ {
+  "id": "G-124",
+  "q_bks": "Izbori za Bundestag u Njemačkoj su izbori …",
+  "options_bks": [
+   "saveznog kancelara.",
+   "parlamenata pokrajina.",
+   "parlamenta za Njemačku.",
+   "saveznog predsjednika."
+  ],
+  "expl_bks": "Na izborima za Bundestag (savezni parlament) građani biraju parlament za cijelu Njemačku. Saveznog kancelara zatim bira Bundestag, a saveznog predsjednika Savezna skupština (Bundesversammlung). Pokrajinski parlamenti (Landtag) biraju se na posebnim pokrajinskim izborima.",
+  "merksatz_de": "Bei der Bundestagswahl wählt man das Parlament für Deutschland."
+ },
+ {
+  "id": "G-125",
+  "q_bks": "U demokraciji je jedna od funkcija redovitih izbora …",
+  "options_bks": [
+   "prisiliti građane da glasaju.",
+   "omogućiti promjenu vlade prema volji većine birača.",
+   "zadržati postojeće zakone u zemlji.",
+   "dati više moći siromašnima."
+  ],
+  "expl_bks": "Redoviti izbori omogućuju građanima da vladu potvrde ili je zamijene. Ako većina birača želi promjenu, nova većina u parlamentu može izabrati novu vladu, i to mirnim putem, bez nasilja. Zato se izbori održavaju u stalnim razmacima, za Bundestag svake četiri godine.",
+  "merksatz_de": "Durch Wahlen kann die Mehrheit die Regierung wechseln."
+ },
+ {
+  "id": "G-126",
+  "q_bks": "Što građani s biračkim pravom u Njemačkoj dobivaju prije izbora?",
+  "options_bks": [
+   "obavijest o izborima (poziv na glasanje) od općine",
+   "dopuštenje za glasanje od saveznog predsjednika",
+   "obavijest od Savezne skupštine (Bundesversammlung)",
+   "obavijest od župnog ureda (Pfarramt)"
+  ],
+  "expl_bks": "Prije izbora svaki birač dobiva poštom obavijest o izborima (Wahlbenachrichtigung) od svoje općine; za Bundestag najkasnije tri tjedna prije izbora. U njoj piše datum izbora, adresa birališta i kako se može zatražiti glasanje poštom. Na biralište je dobro ponijeti tu obavijest i osobnu iskaznicu ili putovnicu.",
+  "merksatz_de": "Vor der Wahl schickt die Gemeinde eine Wahlbenachrichtigung."
+ },
+ {
+  "id": "G-127",
+  "q_bks": "Zašto u izbornom zakonu Savezne Republike Njemačke postoji izborni prag od 5 %? Postoji zato što …",
+  "options_bks": [
+   "programi mnogih malih stranaka imaju mnogo zajedničkog.",
+   "građani se kod mnogo malih stranaka mogu teško snaći.",
+   "mnogo malih stranaka otežava stvaranje vlade.",
+   "male stranke nemaju dovoljno novca da plaćaju svoje političare."
+  ],
+  "expl_bks": "Izborni prag od 5 % posljedica je iskustva iz Weimarske Republike (1919. – 1933.). Tada je u parlamentu bilo mnogo malih stranaka, pa je bilo teško stvoriti stabilnu većinu i vladu. Prag sprječava takvo rascjepkanje parlamenta i olakšava stvaranje stabilne koalicije.",
+  "merksatz_de": "Viele kleine Parteien erschweren die Regierungsbildung."
+ },
+ {
+  "id": "G-128",
+  "q_bks": "Članovi parlamenta koje biraju građani nazivaju se …",
+  "options_bks": [
+   "zastupnici.",
+   "kancelari.",
+   "veleposlanici (ambasadori).",
+   "ministri predsjednici (Ministerpräsidenten)."
+  ],
+  "expl_bks": "Zastupnici (Abgeordnete) su predstavnici naroda koje građani biraju u parlament, na primjer u Bundestag (savezni parlament) ili u Landtag (pokrajinski parlament). Prema članku 38. Temeljnog zakona predstavljaju cijeli narod i vezani su samo svojom savješću. Kancelare i ministre predsjednike ne biraju građani izravno.",
+  "merksatz_de": "Gewählte Parlamentsmitglieder heißen Abgeordnete."
+ },
+ {
+  "id": "G-129",
+  "q_bks": "U Njemačkoj narod bira …",
+  "options_bks": [
+   "saveznog kancelara.",
+   "ministra predsjednika (Ministerpräsident) savezne pokrajine.",
+   "Bundestag.",
+   "saveznog predsjednika."
+  ],
+  "expl_bks": "Narod izravno bira parlament, na saveznoj razini Bundestag (savezni parlament). Saveznog kancelara bira Bundestag, ministra predsjednika pokrajinski parlament (Landtag), a saveznog predsjednika Savezna skupština (Bundesversammlung). To je parlamentarna demokracija: narod bira zastupnike, a oni biraju vladu.",
+  "merksatz_de": "Das Volk wählt den Bundestag direkt."
+ },
+ {
+  "id": "G-130",
+  "q_bks": "Koji bi glasački listić bio valjan na izborima za Bundestag?",
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "expl_bks": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati.",
+  "merksatz_de": "Pro Spalte darf man nur ein Kreuz machen."
+ },
+ {
+  "id": "G-131",
+  "q_bks": "U Njemačkoj je gradonačelnik (načelnik) …",
+  "options_bks": [
+   "ravnatelj škole.",
+   "šef banke.",
+   "čelnik općine.",
+   "predsjednik stranke."
+  ],
+  "expl_bks": "Gradonačelnik (Bürgermeister) je na čelu općine ili grada: vodi upravu i predstavlja općinu prema van. U većini saveznih pokrajina građani ga biraju izravno. U većim gradovima često se zove glavni gradonačelnik (Oberbürgermeister).",
+  "merksatz_de": "Der Bürgermeister leitet eine Gemeinde."
+ },
+ {
+  "id": "G-132",
+  "q_bks": "Mnogi ljudi u Njemačkoj u slobodno vrijeme preuzimaju „Ehrenamt” (doslovno: počasnu dužnost). Što to znači?",
+  "options_bks": [
+   "Rade kao vojnici.",
+   "Rade dobrovoljno i bez plaće u udrugama i organizacijama.",
+   "Rade u saveznoj vladi.",
+   "Rade u bolnici i za to dobivaju novac."
+  ],
+  "expl_bks": "„Ehrenamt” znači volonterski rad: ljudi rade dobrovoljno i bez plaće, na primjer kao treneri u sportskoj udruzi, u dobrovoljnom vatrogasnom društvu ili u pomoći starijima. Ponekad se dobiva mala naknada troškova, ali ne plaća. Takav rad vrlo je važan za društvo.",
+  "merksatz_de": "Ein Ehrenamt macht man freiwillig und ohne Bezahlung."
+ },
+ {
+  "id": "G-133",
+  "q_bks": "Što je dopušteno na izborima za Bundestag i za pokrajinske parlamente (Landtag) u Njemačkoj?",
+  "options_bks": [
+   "Muž glasa i za svoju ženu.",
+   "Može se glasati poštom (Briefwahl).",
+   "Na dan izbora može se glasati telefonom.",
+   "Djeca od 14 godina smiju glasati."
+  ],
+  "expl_bks": "Svaki birač može glasati poštom (Briefwahl), bez navođenja razloga. Kod općine se zatraže potvrda o pravu glasa (Wahlschein) i glasački listići, glasa se kod kuće i omotnica se pošalje poštom. Glas je osoban: nitko ne smije glasati umjesto drugoga, pa ni muž umjesto žene.",
+  "merksatz_de": "Man darf per Briefwahl wählen."
+ },
+ {
+  "id": "G-134",
+  "q_bks": "Želi se ukinuti autobusna linija kojom se uvijek vozite na posao. Što možete učiniti da se ta linija zadrži?",
+  "options_bks": [
+   "Sudjelujem u građanskoj inicijativi za očuvanje autobusne linije ili sam osnujem inicijativu.",
+   "Učlanim se u sportsku udrugu i treniram vožnju biciklom.",
+   "Obratim se poreznoj upravi (Finanzamt), jer kao porezni obveznik imam pravo na autobusnu liniju.",
+   "Napišem pismo šumarskom uredu (Forstamt) općine."
+  ],
+  "expl_bks": "Građanska inicijativa (Bürgerinitiative) skupina je ljudi koji se zajedno zalažu za konkretan cilj u svom mjestu, na primjer za autobusnu liniju, igralište ili semafor. Mogu skupljati potpise, predati peticiju općini i organizirati prosvjede. To je zakonit i demokratski način da građani utječu na odluke.",
+  "merksatz_de": "In einer Bürgerinitiative kann man sich für lokale Ziele einsetzen."
+ },
+ {
+  "id": "G-135",
+  "q_bks": "Koga u Njemačkoj zastupaju sindikati?",
+  "options_bks": [
+   "velika poduzeća",
+   "mala poduzeća",
+   "samozaposlene osobe",
+   "zaposlenike"
+  ],
+  "expl_bks": "Sindikati (Gewerkschaften) zastupaju zaposlenike, dakle ljude koji rade za poslodavca. Pregovaraju o plaćama i uvjetima rada i pomažu članovima kod problema na poslu. Najveći krovni savez je Njemački savez sindikata (DGB). Poduzeća i poslodavci imaju svoja vlastita udruženja.",
+  "merksatz_de": "Gewerkschaften vertreten Arbeitnehmerinnen und Arbeitnehmer."
+ },
+ {
+  "id": "G-136",
+  "q_bks": "U Njemačkoj idete na radni sud (Arbeitsgericht) u slučaju …",
+  "options_bks": [
+   "pogrešnog obračuna režijskih troškova (Nebenkostenabrechnung).",
+   "neopravdanog otkaza koji vam je dao šef.",
+   "problema sa susjedima.",
+   "poteškoća nakon prometne nesreće."
+  ],
+  "expl_bks": "Radni sud (Arbeitsgericht) odlučuje o sporovima između zaposlenika i poslodavca, na primjer o otkazu, neisplaćenoj plaći ili svjedodžbi o radu. Tužba protiv otkaza mora se podnijeti u roku od tri tjedna. Za sporove oko režija ili sa susjedima obično je nadležan općinski sud (Amtsgericht).",
+  "merksatz_de": "Bei einer ungerechten Kündigung hilft das Arbeitsgericht."
+ },
+ {
+  "id": "G-137",
+  "q_bks": "Koji je sud u Njemačkoj nadležan za sukobe u svijetu rada?",
+  "options_bks": [
+   "obiteljski sud (Familiengericht)",
+   "kazneni sud (Strafgericht)",
+   "radni sud (Arbeitsgericht)",
+   "općinski sud (Amtsgericht)"
+  ],
+  "expl_bks": "Za sukobe na poslu nadležan je radni sud (Arbeitsgericht), na primjer kod otkaza, neisplaćene plaće ili godišnjeg odmora. Tužiti mogu i zaposlenici i poslodavci. U vijeću uz profesionalnog suca sjede i dva suca laika: jedan iz redova zaposlenika i jedan iz redova poslodavaca.",
+  "merksatz_de": "Bei Streit am Arbeitsplatz ist das Arbeitsgericht zuständig."
+ },
+ {
+  "id": "G-138",
+  "q_bks": "Što mogu učiniti u Njemačkoj ako mi je poslodavac neopravdano dao otkaz?",
+  "options_bks": [
+   "nastaviti raditi i biti ljubazan prema šefu",
+   "pokrenuti postupak opomene (Mahnverfahren) protiv poslodavca",
+   "podnijeti tužbu za zaštitu od otkaza (Kündigungsschutzklage)",
+   "prijaviti poslodavca policiji"
+  ],
+  "expl_bks": "Protiv neopravdanog otkaza može se podnijeti tužba za zaštitu od otkaza (Kündigungsschutzklage) pred radnim sudom (Arbeitsgericht). Važan je rok: tužba se mora podnijeti u roku od tri tjedna nakon primitka pisanog otkaza. Postupak opomene služi za naplatu novčanih dugova, a ne za otkaz.",
+  "merksatz_de": "Gegen eine unfaire Kündigung kann man Kündigungsschutzklage erheben."
+ },
+ {
+  "id": "G-139",
+  "q_bks": "Kada u Njemačkoj dolazi do sudskog procesa? Kada netko …",
+  "options_bks": [
+   "prijeđe na drugu vjeru.",
+   "počini kazneno djelo i bude optužen.",
+   "zastupa drugačije mišljenje od vlade.",
+   "pogrešno parkira automobil pa ga odveze pauk."
+  ],
+  "expl_bks": "Kazneni proces pred sudom počinje kad državni tužitelj optuži neku osobu za kazneno djelo, na primjer za krađu ili tjelesnu ozljedu. Promjena vjere i drugačije mišljenje od vlade zaštićeni su temeljnim pravima i nisu kažnjivi. Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, bez suđenja.",
+  "merksatz_de": "Ein Strafprozess beginnt, wenn jemand wegen einer Straftat angeklagt wird."
+ },
+ {
+  "id": "G-140",
+  "q_bks": "Što u Njemačkoj radi sudac porotnik (Schöffe)? On …",
+  "options_bks": [
+   "zajedno sa sucima odlučuje o krivnji i kazni.",
+   "daje građanima pravne savjete.",
+   "izdaje isprave.",
+   "brani optuženika."
+  ],
+  "expl_bks": "Sudac porotnik (Schöffe) je građanin bez pravnog obrazovanja koji tu dužnost obavlja volonterski. Sjedi uz profesionalne suce i s njima odlučuje je li optuženik kriv i kakva će biti kazna. Pritom ima isto pravo glasa kao profesionalni sudac. Optuženika brani odvjetnik, a ne sudac porotnik.",
+  "merksatz_de": "Schöffen entscheiden zusammen mit Richtern über Schuld und Strafe."
+ },
+ {
+  "id": "G-141",
+  "q_bks": "Tko u Njemačkoj savjetuje osobe o pravnim pitanjima i zastupa ih pred sudom?",
+  "options_bks": [
+   "odvjetnik (Rechtsanwalt)",
+   "sudac (Richter)",
+   "sudac porotnik (Schöffe)",
+   "državni tužitelj (Staatsanwalt)"
+  ],
+  "expl_bks": "Odvjetnik (advokat, na njemačkom Rechtsanwalt) savjetuje ljude o pravnim pitanjima i zastupa ih pred sudom, na primjer kod razvoda ili spora s poslodavcem. Sudac vodi postupak i donosi presudu, a državni tužitelj optužuje osobe za kaznena djela. Sudac porotnik sudi zajedno s profesionalnim sucima.",
+  "merksatz_de": "Ein Rechtsanwalt berät Menschen und vertritt sie vor Gericht."
+ },
+ {
+  "id": "G-142",
+  "q_bks": "Koji je glavni zadatak suca u Njemačkoj? Sudac …",
+  "options_bks": [
+   "zastupa građane pred sudom.",
+   "radi na sudu i donosi presude.",
+   "mijenja zakone.",
+   "brine se o mladima na sudu."
+  ],
+  "expl_bks": "Sudac radi na sudu: vodi postupak, sasluša obje strane i na kraju donosi presudu. Pritom je neovisan i podliježe samo zakonu, pa mu nitko, ni vlada, ne smije govoriti kako treba presuditi. Zakone ne mijenja sudac nego parlament, a građane pred sudom zastupa odvjetnik.",
+  "merksatz_de": "Richterinnen und Richter sprechen am Gericht Urteile."
+ },
+ {
+  "id": "G-143",
+  "q_bks": "Sudac u Njemačkoj pripada …",
+  "options_bks": [
+   "judikativi.",
+   "egzekutivi.",
+   "operativi.",
+   "legislativi."
+  ],
+  "expl_bks": "Državna vlast u Njemačkoj podijeljena je na tri dijela: legislativu (zakonodavna vlast, parlamenti), egzekutivu (izvršna vlast, vlada i uprava) i judikativu (sudska vlast). Suci i sudovi pripadaju judikativi. „Operativa” nije grana državne vlasti. Ta se podjela vlasti na njemačkom zove Gewaltenteilung.",
+  "merksatz_de": "Richter gehören zur Judikative, also zur rechtsprechenden Gewalt."
+ },
+ {
+  "id": "G-144",
+  "q_bks": "U Njemačkoj sudac pripada …",
+  "options_bks": [
+   "izvršnoj vlasti.",
+   "sudskoj vlasti.",
+   "planskoj vlasti.",
+   "zakonodavnoj vlasti."
+  ],
+  "expl_bks": "Prema članku 20. Temeljnog zakona (njemački ustav) državnu vlast vrše zakonodavna, izvršna i sudska vlast. Suci pripadaju sudskoj vlasti (rechtsprechende Gewalt): odlučuju u sporovima i kaznenim postupcima. Zakonodavna vlast donosi zakone, a izvršna ih provodi. „Planska vlast” ne postoji.",
+  "merksatz_de": "Zur rechtsprechenden Gewalt gehören Richterinnen und Richter."
+ },
+ {
+  "id": "G-145",
+  "q_bks": "U Njemačkoj je državna vlast podijeljena. Za koju granu državne vlasti radi sudac? Za …",
+  "options_bks": [
+   "judikativu",
+   "egzekutivu",
+   "tisak",
+   "legislativu"
+  ],
+  "expl_bks": "Podjela vlasti znači da nijedna institucija nema svu moć. Sudac radi za judikativu, to jest sudsku vlast, i neovisan je o vladi i parlamentu (članak 97. Temeljnog zakona). Tisak se često naziva „četvrtom vlašću” jer kontrolira politiku, ali nije dio državne vlasti.",
+  "merksatz_de": "Bei der Gewaltenteilung arbeiten Richter für die Judikative."
+ },
+ {
+  "id": "G-146",
+  "q_bks": "Kako se u Njemačkoj naziva postupak pred sudom?",
+  "options_bks": [
+   "program (Programm)",
+   "procedura (Prozedur)",
+   "protokol (Protokoll)",
+   "proces (Prozess)"
+  ],
+  "expl_bks": "Postupak pred sudom na njemačkom se zove „Prozess” (sudski proces, suđenje). Na primjer, kazneni proces počinje kad je netko optužen za kazneno djelo. „Protokoll” je zapisnik, „Prozedur” je općenito tijek neke radnje, a „Programm” je plan ili raspored.",
+  "merksatz_de": "Ein Verfahren vor Gericht heißt Prozess."
+ },
+ {
+  "id": "G-147",
+  "q_bks": "Koji je posao suca u Njemačkoj?",
+  "options_bks": [
+   "upravljati Njemačkom",
+   "izricati presude",
+   "izrađivati planove",
+   "donositi zakone"
+  ],
+  "expl_bks": "Sudac izriče presude (Recht sprechen): vodi postupak, primjenjuje zakone na konkretan slučaj i odlučuje tko je u pravu ili je li netko kriv. Suci su neovisni. Zemljom upravlja vlada (izvršna vlast), a zakone donosi parlament (zakonodavna vlast).",
+  "merksatz_de": "Die Aufgabe von Richtern ist es, Recht zu sprechen."
+ },
+ {
+  "id": "G-148",
+  "q_bks": "Što je jedan od zadataka policije u Njemačkoj?",
+  "options_bks": [
+   "braniti zemlju",
+   "prisluškivati građane",
+   "donositi zakone",
+   "nadzirati poštivanje zakona"
+  ],
+  "expl_bks": "Policija pazi da se ljudi pridržavaju zakona, štiti građane od opasnosti i istražuje kaznena djela. Primjer iz svakodnevice je kontrola brzine u prometu. Zemlju od napada izvana brani vojska (Bundeswehr), a zakone donose parlamenti, ne policija.",
+  "merksatz_de": "Die Polizei überwacht, dass alle die Gesetze einhalten."
+ },
+ {
+  "id": "G-149",
+  "q_bks": "Što je primjer antisemitskog ponašanja?",
+  "options_bks": [
+   "otići na židovsku proslavu",
+   "kritizirati izraelsku vladu",
+   "poricati holokaust",
+   "igrati nogomet protiv Židova"
+  ],
+  "expl_bks": "Antisemitizam je mržnja ili neprijateljstvo prema Židovima. Poricanje holokausta, odnosno tvrdnja da nacisti nisu ubili oko šest milijuna Židova, jasan je primjer antisemitizma i u Njemačkoj je kazneno djelo. Posjet židovskoj proslavi ili nogometna utakmica sa Židovima normalan su dio zajedničkog života.",
+  "merksatz_de": "Den Holocaust zu leugnen ist antisemitisch und strafbar."
+ },
+ {
+  "id": "G-150",
+  "q_bks": "Porotnik (Gerichtsschöffe) u Njemačkoj je …",
+  "options_bks": [
+   "zamjenik gradonačelnika.",
+   "volonterski sudac.",
+   "član općinskog vijeća.",
+   "osoba koja je studirala pravo."
+  ],
+  "expl_bks": "Porotnik (Gerichtsschöffe) je građanin koji kao sudac porotnik zajedno s profesionalnim sucima sudi u kaznenim postupcima. Taj posao obavlja volonterski: ne dobiva plaću, nego samo naknadu troškova. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
+  "merksatz_de": "Ein Schöffe ist ein Richter im Ehrenamt."
+ },
+ {
+  "id": "G-151",
+  "q_bks": "Tko je izgradio zid u Berlinu?",
+  "options_bks": [
+   "Velika Britanija",
+   "DDR",
+   "Savezna Republika Njemačka",
+   "SAD"
+  ],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) izgradila je Berlinski zid 13. kolovoza 1961. Vodstvo DDR-a htjelo je spriječiti da njezini građani bježe na Zapad. Zid je dijelio grad 28 godina, sve do pada Berlinskog zida 9. studenoga 1989.",
+  "merksatz_de": "Die DDR baute 1961 die Mauer in Berlin."
+ },
+ {
+  "id": "G-152",
+  "q_bks": "Kada su nacionalsocijalisti s Adolfom Hitlerom bili na vlasti u Njemačkoj?",
+  "options_bks": [
+   "od 1918. do 1923.",
+   "od 1932. do 1950.",
+   "od 1933. do 1945.",
+   "od 1945. do 1989."
+  ],
+  "expl_bks": "Adolf Hitler postao je kancelar Reicha (Reichskanzler) 30. siječnja 1933. Nacionalsocijalisti su zatim brzo ukinuli demokraciju i uspostavili diktaturu. Njihova vlast završila je u svibnju 1945. bezuvjetnom kapitulacijom Njemačke na kraju Drugog svjetskog rata. To je razdoblje trajalo dvanaest godina.",
+  "merksatz_de": "Hitler und die Nationalsozialisten regierten von 1933 bis 1945."
+ },
+ {
+  "id": "G-153",
+  "q_bks": "Što se dogodilo 8. svibnja 1945.?",
+  "options_bks": [
+   "smrt Adolfa Hitlera",
+   "početak izgradnje Berlinskog zida",
+   "izbor Konrada Adenauera za saveznog kancelara",
+   "kraj Drugog svjetskog rata u Europi"
+  ],
+  "expl_bks": "Dana 8. svibnja 1945. stupila je na snagu bezuvjetna kapitulacija njemačke vojske. Time je Drugi svjetski rat u Europi završio. Hitler je umro nekoliko dana ranije, 30. travnja 1945. Adenauer je izabran za kancelara tek 1949., a Berlinski zid izgrađen je 1961.",
+  "merksatz_de": "Am 8. Mai 1945 endete der Zweite Weltkrieg in Europa."
+ },
+ {
+  "id": "G-154",
+  "q_bks": "Kada je završio Drugi svjetski rat?",
+  "options_bks": [
+   "1933",
+   "1945",
+   "1949",
+   "1961"
+  ],
+  "expl_bks": "Drugi svjetski rat počeo je 1939. njemačkim napadom na Poljsku. U Europi je završio 8. svibnja 1945. bezuvjetnom kapitulacijom Njemačke, a u Aziji u rujnu 1945. kapitulacijom Japana. Godina 1949. je godina osnivanja Savezne Republike Njemačke, a 1961. izgrađen je Berlinski zid.",
+  "merksatz_de": "Der Zweite Weltkrieg war 1945 zu Ende."
+ },
+ {
+  "id": "G-155",
+  "q_bks": "Kada su nacionalsocijalisti bili na vlasti u Njemačkoj?",
+  "options_bks": [
+   "od 1888. do 1918.",
+   "od 1921. do 1934.",
+   "od 1933. do 1945.",
+   "od 1949. do 1963."
+  ],
+  "expl_bks": "Razdoblje nacionalsocijalizma trajalo je dvanaest godina: od 1933., kad je Hitler postao kancelar Reicha, do 1945., kad je Njemačka izgubila Drugi svjetski rat. Nacionalsocijalisti su svoju državu zvali „Treći Reich”. Od 1949. do 1963. savezni kancelar bio je Konrad Adenauer.",
+  "merksatz_de": "Die NS-Zeit dauerte zwölf Jahre: von 1933 bis 1945."
+ },
+ {
+  "id": "G-156",
+  "q_bks": "Koje je godine Hitler postao kancelar Reicha (Reichskanzler)?",
+  "options_bks": [
+   "1923",
+   "1927",
+   "1933",
+   "1936"
+  ],
+  "expl_bks": "Predsjednik Reicha Paul von Hindenburg imenovao je Adolfa Hitlera kancelarom Reicha 30. siječnja 1933. Taj se dan smatra početkom nacionalsocijalističke diktature. Godine 1923. Hitler je u Münchenu pokušao izvesti puč, ali tada nije uspio i završio je u zatvoru.",
+  "merksatz_de": "Hitler wurde im Januar 1933 Reichskanzler."
+ },
+ {
+  "id": "G-157",
+  "q_bks": "Nacionalsocijalisti s Adolfom Hitlerom uspostavili su 1933. u Njemačkoj …",
+  "options_bks": [
+   "diktaturu.",
+   "demokratsku državu.",
+   "monarhiju.",
+   "kneževinu."
+  ],
+  "expl_bks": "Nakon dolaska na vlast 1933. nacionalsocijalisti su vrlo brzo uspostavili diktaturu. Zabranili su druge stranke i sindikate, ukinuli slobodu tiska i progonili svoje protivnike. Sva je vlast bila u rukama Hitlera i njegove stranke NSDAP, a slobodnih izbora više nije bilo.",
+  "merksatz_de": "1933 errichteten die Nationalsozialisten eine Diktatur."
+ },
+ {
+  "id": "G-158",
+  "q_bks": "„Treći Reich” bio je …",
+  "options_bks": [
+   "diktatura.",
+   "demokracija.",
+   "monarhija.",
+   "republika vijeća (Räterepublik)."
+  ],
+  "expl_bks": "„Treći Reich” je naziv koji su nacionalsocijalisti dali svojoj državi od 1933. do 1945. Bila je to diktatura: Hitler i njegova stranka imali su svu vlast, bez slobodnih izbora i bez podjele vlasti. Kritičari režima bili su zatvarani u logore ili ubijani.",
+  "merksatz_de": "Das „Dritte Reich“ war eine Diktatur."
+ },
+ {
+  "id": "G-159",
+  "q_bks": "Čega u Njemačkoj nije bilo u vrijeme nacionalsocijalizma?",
+  "options_bks": [
+   "slobodnih izbora",
+   "cenzure tiska",
+   "proizvoljnih uhićenja",
+   "progona Židova"
+  ],
+  "expl_bks": "U nacionalsocijalističkoj diktaturi nije bilo slobodnih izbora. Od 1933. postojala je samo jedna dopuštena stranka, NSDAP, a glasanja su služila samo za prikaz podrške režimu. Cenzura tiska, proizvoljna uhićenja i progon Židova, naprotiv, bili su dio svakodnevice.",
+  "merksatz_de": "In der NS-Zeit gab es keine freien Wahlen."
+ },
+ {
+  "id": "G-160",
+  "q_bks": "Koji je rat trajao od 1939. do 1945.?",
+  "options_bks": [
+   "Prvi svjetski rat",
+   "Drugi svjetski rat",
+   "Vijetnamski rat",
+   "Zaljevski rat"
+  ],
+  "expl_bks": "Drugi svjetski rat počeo je 1. rujna 1939. njemačkim napadom na Poljsku. U Europi je završio 8. svibnja 1945. kapitulacijom Njemačke. Bio je to najveći rat u povijesti, s više od 60 milijuna mrtvih. Prvi svjetski rat trajao je od 1914. do 1918.",
+  "merksatz_de": "Der Zweite Weltkrieg dauerte von 1939 bis 1945."
+ },
+ {
+  "id": "G-161",
+  "q_bks": "Što je obilježavalo nacionalsocijalističku državu (NS-Staat)? Politika …",
+  "options_bks": [
+   "državnog rasizma",
+   "slobode mišljenja",
+   "opće slobode vjeroispovijesti",
+   "razvoja demokracije"
+  ],
+  "expl_bks": "U nacionalsocijalističkoj državi rasizam je bio dio zakona i državne politike. Nürnberškim zakonima iz 1935. Židovima su oduzeta građanska prava. Progon je završio holokaustom, u kojem je ubijeno oko šest milijuna europskih Židova. Progonjeni su bili i Sinti i Romi.",
+  "merksatz_de": "Der NS-Staat betrieb eine Politik des staatlichen Rassismus."
+ },
+ {
+  "id": "G-162",
+  "q_bks": "Claus Schenk Graf von Stauffenberg postao je poznat po …",
+  "options_bks": [
+   "zlatnoj medalji na Olimpijskim igrama 1936.",
+   "gradnji zgrade Reichstaga.",
+   "stvaranju Wehrmachta (njemačke vojske).",
+   "atentatu na Hitlera 20. srpnja 1944."
+  ],
+  "expl_bks": "Časnik Claus Schenk Graf von Stauffenberg podmetnuo je 20. srpnja 1944. bombu u aktovci na sastanku s Hitlerom. Hitler je preživio, a Stauffenberg je iste noći strijeljan u Berlinu. Danas je 20. srpnja u Njemačkoj dan sjećanja na otpor protiv nacionalsocijalizma.",
+  "merksatz_de": "Stauffenberg versuchte am 20. Juli 1944, Hitler zu töten."
+ },
+ {
+  "id": "G-163",
+  "q_bks": "Koje su godine nacionalsocijalisti u Njemačkoj uništavali sinagoge i židovske trgovine?",
+  "options_bks": [
+   "1925",
+   "1930",
+   "1938",
+   "1945"
+  ],
+  "expl_bks": "U noći s 9. na 10. studenoga 1938. nacionalsocijalisti i njihove pristaše palili su sinagoge i razbijali izloge židovskih trgovina diljem Njemačke. Mnogi Židovi su ubijeni ili odvedeni u koncentracijske logore. Na njemačkom se ti događaji nazivaju „Novemberpogrome” (pogromi u studenom 1938.).",
+  "merksatz_de": "1938 zerstörten Nationalsozialisten Synagogen und jüdische Geschäfte."
+ },
+ {
+  "id": "G-164",
+  "q_bks": "Što se dogodilo u Njemačkoj 9. studenoga 1938.?",
+  "options_bks": [
+   "Napadom na Poljsku počinje Drugi svjetski rat.",
+   "Nacionalsocijalisti gube izbore i raspuštaju Reichstag.",
+   "Nacionalsocijalisti i njihove pristaše uništavaju židovske trgovine i sinagoge.",
+   "Hitler postaje predsjednik Reicha i zabranjuje sve stranke."
+  ],
+  "expl_bks": "Dana 9. studenoga 1938. i sljedećih dana nacionalsocijalisti i njihove pristaše napadali su Židove u cijeloj Njemačkoj. Uništeno je više od 1.000 sinagoga i mnogo židovskih trgovina, a oko 30.000 židovskih muškaraca odvedeno je u koncentracijske logore. Rat je počeo tek 1. rujna 1939.",
+  "merksatz_de": "Am 9. November 1938 brannten in Deutschland Synagogen."
+ },
+ {
+  "id": "G-165",
+  "q_bks": "Kako se zvao prvi savezni kancelar Savezne Republike Njemačke?",
+  "options_bks": [
+   "Konrad Adenauer",
+   "Kurt Georg Kiesinger",
+   "Helmut Schmidt",
+   "Willy Brandt"
+  ],
+  "expl_bks": "Konrad Adenauer (CDU) izabran je 1949. za prvog saveznog kancelara i na toj je dužnosti ostao do 1963. Povezao je Saveznu Republiku sa Zapadom i započeo pomirenje s Francuskom. Kurt Georg Kiesinger, Willy Brandt i Helmut Schmidt bili su kancelari kasnije.",
+  "merksatz_de": "Konrad Adenauer war der erste Bundeskanzler."
+ },
+ {
+  "id": "G-166",
+  "q_bks": "Na kojim su demonstracijama u Njemačkoj ljudi uzvikivali „Mi smo narod” (Wir sind das Volk)?",
+  "options_bks": [
+   "tijekom radničkog ustanka 1953. u DDR-u",
+   "na demonstracijama 1968. u Saveznoj Republici Njemačkoj",
+   "na demonstracijama protiv nuklearnih elektrana 1985. u Saveznoj Republici Njemačkoj",
+   "na ponedjeljnim demonstracijama 1989. u DDR-u"
+  ],
+  "expl_bks": "U jesen 1989. ljudi u Leipzigu i drugim gradovima DDR-a svakog su ponedjeljka mirno demonstrirali. Uzvikivali su „Wir sind das Volk” („Mi smo narod”) i tražili slobodu i demokraciju. Te ponedjeljne demonstracije (Montagsdemonstrationen) doprinijele su padu Berlinskog zida 9. studenoga 1989.",
+  "merksatz_de": "Bei den Montagsdemonstrationen 1989 rief man: „Wir sind das Volk!“"
+ },
+ {
+  "id": "G-167",
+  "q_bks": "Koje su se zemlje nakon Drugog svjetskog rata u Njemačkoj nazivale „savezničke okupacijske sile”?",
+  "options_bks": [
+   "Sovjetski Savez, Velika Britanija, Poljska, Švedska",
+   "Francuska, Sovjetski Savez, Italija, Japan",
+   "SAD, Sovjetski Savez, Španjolska, Portugal",
+   "SAD, Sovjetski Savez, Velika Britanija, Francuska"
+  ],
+  "expl_bks": "Nakon pobjede nad Njemačkom 1945. četiri saveznika podijelila su zemlju na četiri okupacijske zone: SAD, Sovjetski Savez, Velika Britanija i Francuska. Svaka je sila upravljala jednom zonom. Italija i Japan borili su se u ratu na strani Njemačke, a Švedska, Španjolska i Portugal ostale su neutralne.",
+  "merksatz_de": "Die vier Besatzungsmächte waren USA, Sowjetunion, Großbritannien und Frankreich."
+ },
+ {
+  "id": "G-168",
+  "q_bks": "Koja zemlja nije bila „saveznička okupacijska sila” u Njemačkoj?",
+  "options_bks": [
+   "SAD",
+   "Sovjetski Savez",
+   "Francuska",
+   "Japan"
+  ],
+  "expl_bks": "Japan se u Drugom svjetskom ratu borio na strani Njemačke, dakle protiv saveznika. Zato nije mogao biti okupacijska sila u Njemačkoj. Nakon 1945. Njemačku su okupirale i podijelile na zone četiri savezničke sile: SAD, Sovjetski Savez, Velika Britanija i Francuska.",
+  "merksatz_de": "Japan war keine Besatzungsmacht in Deutschland."
+ },
+ {
+  "id": "G-169",
+  "q_bks": "Kada je osnovana Savezna Republika Njemačka?",
+  "options_bks": [
+   "1939",
+   "1945",
+   "1949",
+   "1951"
+  ],
+  "expl_bks": "Savezna Republika Njemačka osnovana je 23. svibnja 1949., kada je stupio na snagu Temeljni zakon (njemački ustav). Iste godine, 7. listopada 1949., u sovjetskoj zoni osnovana je i DDR. Godina 1945. označava kraj rata, a ne osnivanje nove države.",
+  "merksatz_de": "Die Bundesrepublik Deutschland wurde 1949 gegründet."
+ },
+ {
+  "id": "G-170",
+  "q_bks": "Što je postojalo u Njemačkoj u vrijeme nacionalsocijalizma?",
+  "options_bks": [
+   "zabrana stranaka",
+   "pravo na slobodan razvoj osobnosti",
+   "sloboda tiska",
+   "zaštita ljudskog dostojanstva"
+  ],
+  "expl_bks": "Nacionalsocijalisti su 1933. zabranili ili raspustili sve druge stranke. Od srpnja 1933. NSDAP je bila jedina dopuštena stranka. Sloboda tiska, zaštita ljudskog dostojanstva i slobodan razvoj osobnosti temeljna su prava koja danas jamči Temeljni zakon, ali u diktaturi nisu postojala.",
+  "merksatz_de": "In der NS-Zeit waren andere Parteien verboten."
+ },
+ {
+  "id": "G-171",
+  "q_bks": "Socijalna tržišna ekonomija (Soziale Marktwirtschaft) znači da se ekonomija …",
+  "options_bks": [
+   "sama regulira, samo prema ponudi i potražnji.",
+   "planira i usmjerava odlukama države, a ponuda i potražnja ne uzimaju se u obzir.",
+   "ravna prema potražnji u inozemstvu.",
+   "ravna prema ponudi i potražnji, ali država brine o socijalnoj ravnoteži."
+  ],
+  "expl_bks": "U socijalnoj tržišnoj ekonomiji cijene i proizvodnju uglavnom određuju ponuda i potražnja, kao na slobodnom tržištu. Država ipak pomaže slabijima, na primjer socijalnim osiguranjem, dječjim doplatkom (Kindergeld) i minimalnom plaćom. Ovaj model uveo je u Zapadnoj Njemačkoj Ludwig Erhard, počevši od 1948.",
+  "merksatz_de": "Soziale Marktwirtschaft: freier Markt mit sozialem Ausgleich durch den Staat."
+ },
+ {
+  "id": "G-172",
+  "q_bks": "U kojoj je okupacijskoj zoni osnovana DDR? U …",
+  "options_bks": [
+   "američkoj okupacijskoj zoni",
+   "francuskoj okupacijskoj zoni",
+   "britanskoj okupacijskoj zoni",
+   "sovjetskoj okupacijskoj zoni"
+  ],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) osnovana je 7. listopada 1949. na području sovjetske okupacijske zone. Tri zapadne zone, američka, britanska i francuska, iste su godine postale Savezna Republika Njemačka. Njemačka je tako do 1990. bila podijeljena na dvije države.",
+  "merksatz_de": "Die DDR entstand in der sowjetischen Besatzungszone."
+ },
+ {
+  "id": "G-173",
+  "q_bks": "Savezna Republika Njemačka je članica osnivačica …",
+  "options_bks": [
+   "Sjevernoatlantskog pakta (NATO).",
+   "Ujedinjenih naroda (UN).",
+   "Europske unije (EU).",
+   "Varšavskog pakta."
+  ],
+  "expl_bks": "Savezna Republika Njemačka bila je 1957. jedna od šest država koje su potpisale Rimske ugovore i osnovale Europsku ekonomsku zajednicu (EEZ), iz koje je nastala današnja Europska unija. U NATO je ušla tek 1955., a u UN 1973. Varšavskom paktu pripadala je DDR.",
+  "merksatz_de": "Deutschland gehört zu den Gründungsmitgliedern der Europäischen Union."
+ },
+ {
+  "id": "G-174",
+  "q_bks": "Kada je osnovana DDR?",
+  "options_bks": [
+   "1947",
+   "1949",
+   "1953",
+   "1956"
+  ],
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) osnovana je 7. listopada 1949. u sovjetskoj okupacijskoj zoni, nekoliko mjeseci nakon Savezne Republike Njemačke. Tako su iste godine nastale dvije njemačke države. Godina 1953. poznata je po radničkom ustanku u DDR-u.",
+  "merksatz_de": "Die DDR wurde am 7. Oktober 1949 gegründet."
+ },
+ {
+  "id": "G-175",
+  "q_bks": "Koliko je okupacijskih zona bilo u Njemačkoj nakon Drugog svjetskog rata?",
+  "options_bks": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "expl_bks": "Nakon 1945. četiri pobjedničke sile podijelile su Njemačku na četiri okupacijske zone: američku, britansku, francusku i sovjetsku. I Berlin je bio podijeljen na četiri sektora. Iz tri zapadne zone nastala je 1949. Savezna Republika Njemačka, a iz sovjetske zone DDR.",
+  "merksatz_de": "Nach 1945 gab es vier Besatzungszonen in Deutschland."
+ },
+ {
+  "id": "G-176",
+  "q_bks": "Kako su nakon 1945. bile raspoređene okupacijske zone u Njemačkoj?",
+  "options_bks": [
+   "1 = Velika Britanija, 2 = Sovjetski Savez, 3 = Francuska, 4 = SAD",
+   "1 = Sovjetski Savez, 2 = Velika Britanija, 3 = SAD, 4 = Francuska",
+   "1 = Velika Britanija, 2 = Sovjetski Savez, 3 = SAD, 4 = Francuska",
+   "1 = Velika Britanija, 2 = SAD, 3 = Sovjetski Savez, 4 = Francuska"
+  ],
+  "expl_bks": "Na karti: 1 = sjeverozapad, 2 = istok (s Berlinom), 3 = jug (Bavarska i Hessen), 4 = jugozapad uz Francusku. Britanci su dobili sjeverozapad, Sovjetski Savez istok, SAD jug, a Francuska jugozapad uz svoju granicu. Dakle: 1 = Velika Britanija, 2 = Sovjetski Savez, 3 = SAD, 4 = Francuska.",
+  "merksatz_de": "Briten im Nordwesten, Sowjets im Osten, Amerikaner im Süden, Franzosen im Südwesten."
+ },
+ {
+  "id": "G-177",
+  "q_bks": "Koji je njemački grad nakon Drugog svjetskog rata bio podijeljen na četiri sektora?",
+  "options_bks": [
+   "München",
+   "Berlin",
+   "Dresden",
+   "Frankfurt na Odri (Frankfurt/Oder)"
+  ],
+  "expl_bks": "Berlin je ležao usred sovjetske zone, ali je kao glavni grad podijeljen na četiri sektora: američki, britanski, francuski i sovjetski. Tri zapadna sektora kasnije su činila Zapadni Berlin, a sovjetski sektor Istočni Berlin, glavni grad DDR-a.",
+  "merksatz_de": "Berlin wurde nach dem Krieg in vier Sektoren geteilt."
+ },
+ {
+  "id": "G-178",
+  "q_bks": "Od lipnja 1948. do svibnja 1949. građani Zapadnog Berlina opskrbljivani su zračnim mostom. Koja je okolnost bila razlog tome?",
+  "options_bks": [
+   "Za Francusku je opskrba stanovništva Zapadnog Berlina avionima bila jeftinija.",
+   "Američki vojnici bojali su se napada tijekom prijevoza kopnom.",
+   "Za Veliku Britaniju je opskrba zračnim mostom bila brža.",
+   "Sovjetski Savez prekinuo je sav promet kopnenim putem."
+  ],
+  "expl_bks": "Sovjetski Savez je u lipnju 1948. zatvorio sve ceste, željezničke pruge i vodene putove prema Zapadnom Berlinu (Berlinska blokada). Zato su SAD i Velika Britanija gotovo godinu dana dovozili hranu, ugljen i drugu robu avionima. Berlinčani su te avione zvali „bombarderi s grožđicama” (Rosinenbomber).",
+  "merksatz_de": "Die Sowjetunion blockierte 1948 alle Landwege nach West-Berlin."
+ },
+ {
+  "id": "G-179",
+  "q_bks": "Kako je formalno završio Drugi svjetski rat u Europi?",
+  "options_bks": [
+   "smrću Adolfa Hitlera",
+   "bezuvjetnom kapitulacijom Njemačke",
+   "povlačenjem Nijemaca s okupiranih područja",
+   "revolucijom u Njemačkoj"
+  ],
+  "expl_bks": "Njemačka vojska potpisala je bezuvjetnu kapitulaciju, koja je stupila na snagu 8. svibnja 1945. Time je rat u Europi završio. Hitler je umro već 30. travnja 1945., ali su se borbe nastavile još nekoliko dana. Revolucije u Njemačkoj 1945. nije bilo.",
+  "merksatz_de": "Der Krieg in Europa endete mit Deutschlands bedingungsloser Kapitulation."
+ },
+ {
+  "id": "G-180",
+  "q_bks": "Prvi savezni kancelar Savezne Republike Njemačke bio je …",
+  "options_bks": [
+   "Ludwig Erhard.",
+   "Willy Brandt.",
+   "Konrad Adenauer.",
+   "Gerhard Schröder."
+  ],
+  "expl_bks": "Prvi savezni kancelar bio je Konrad Adenauer, od 1949. do 1963. Poznat je po povezivanju Savezne Republike sa zapadnim saveznicima i po početku europske integracije. Ludwig Erhard bio je u njegovoj vladi zadužen za ekonomiju, a 1963. postao je drugi savezni kancelar.",
+  "merksatz_de": "Erster Bundeskanzler war Konrad Adenauer, von 1949 bis 1963."
+ },
+ {
+  "id": "G-181",
+  "q_bks": "Što je Willy Brandt želio izraziti klečanjem (Kniefall) 1970. u bivšem židovskom getu u Varšavi?",
+  "options_bks": [
+   "Pokorio se bivšim saveznicima.",
+   "Zamolio je Poljsku i poljske Židove za oprost.",
+   "Pokazao je poniznost pred Varšavskim paktom.",
+   "Izmolio je molitvu na grobu Neznanog vojnika."
+  ],
+  "expl_bks": "Savezni kancelar Willy Brandt kleknuo je 7. prosinca 1970. u Varšavi pred spomenikom žrtvama ustanka u židovskom getu. Tom gestom bez riječi zamolio je za oprost za zločine koje su Nijemci počinili nad Poljacima i Židovima. Ta je slika postala simbol pomirenja.",
+  "merksatz_de": "Brandts Kniefall 1970 war eine Bitte um Vergebung."
+ },
+ {
+  "id": "G-182",
+  "q_bks": "Kako se zove židovska bogomolja?",
+  "options_bks": [
+   "bazilika",
+   "džamija",
+   "sinagoga",
+   "crkva"
+  ],
+  "expl_bks": "Židovska bogomolja zove se sinagoga. U njoj se vjernici okupljaju na molitvu i čitaju Toru. Glavni židovski dan molitve i odmora je subota (šabat). Muslimani se mole u džamiji, a kršćani u crkvi; bazilika je posebna vrsta velike crkve.",
+  "merksatz_de": "Juden beten in der Synagoge."
+ },
+ {
+  "id": "G-183",
+  "q_bks": "Kada je u Saveznoj Republici Njemačkoj bilo „ekonomsko čudo” (Wirtschaftswunder)?",
+  "options_bks": [
+   "četrdesetih godina",
+   "pedesetih godina",
+   "sedamdesetih godina",
+   "osamdesetih godina"
+  ],
+  "expl_bks": "U pedesetim godinama Zapadna Njemačka brzo se oporavila od rata: ekonomija je snažno rasla, nezaposlenost je pala, a mnogi su si mogli priuštiti automobil. To se razdoblje naziva „ekonomsko čudo” (Wirtschaftswunder). Zbog manjka radnika Njemačka je 1955. potpisala prvi sporazum o zapošljavanju stranih radnika, s Italijom.",
+  "merksatz_de": "Das Wirtschaftswunder war in den 50er Jahren."
+ },
+ {
+  "id": "G-184",
+  "q_bks": "Na kojoj je pravnoj osnovi osnovana država Izrael?",
+  "options_bks": [
+   "rezolucija Ujedinjenih naroda",
+   "odluka cionističkog kongresa",
+   "prijedlog savezne vlade",
+   "prijedlog SSSR-a"
+  ],
+  "expl_bks": "Opća skupština Ujedinjenih naroda (UN) donijela je 29. studenoga 1947. rezoluciju 181 o podjeli Palestine na židovsku i arapsku državu. Na toj je osnovi David Ben-Gurion 14. svibnja 1948. proglasio državu Izrael. Savezna Republika Njemačka tada još nije postojala.",
+  "merksatz_de": "Israel wurde auf Grundlage einer UN-Resolution gegründet."
+ },
+ {
   "id": "G-185",
   "q_bks": "Što je označavao izraz „željezna zavjesa”? Odvajanje …",
   "options_bks": [
@@ -932,7 +2588,7 @@
    "carski orao (Reichsadler)",
    "carska kruna (Reichskrone)"
   ],
-  "expl_bks": "Na zidu plenarne dvorane Bundestaga (savezni parlament) visi veliki savezni orao (Bundesadler). Orao je simbol Savezne Republike Njemačke i nalazi se na državnom grbu, kao i na njemačkim kovanicama eura. Zbog njegova oblika ga u šali zovu „debela kokoš” (fette Henne).",
+  "expl_bks": "Na zidu plenarne dvorane Bundestaga (savezni parlament) visi veliki savezni orao (Bundesadler). Orao je simbol Savezne Republike Njemačke i nalazi se na državnom grbu, kao i na nekim njemačkim kovanicama eura. Zbog njegova oblika ga u šali zovu „debela kokoš” (fette Henne).",
   "merksatz_de": "Im Plenarsaal des Bundestages hängt der Bundesadler."
  },
  {
@@ -968,7 +2624,7 @@
    "1971.",
    "1990."
   ],
-  "expl_bks": "Današnje granice Njemačka ima od ponovnog ujedinjenja 3. listopada 1990. Iste je godine Ugovor „dva plus četiri” s četiri pobjedničke sile konačno potvrdio granice, i granicu s Poljskom na rijekama Odri i Nisi. Savezna Republika osnovana je 1949., ali tada samo na zapadu.",
+  "expl_bks": "Današnje granice Njemačka ima od ponovnog ujedinjenja 3. listopada 1990. Iste je godine Ugovor „dva plus četiri” s četiri pobjedničke sile konačno potvrdio granice, uključujući granicu s Poljskom na rijekama Odri i Nisi. Savezna Republika osnovana je 1949., ali tada samo na zapadu.",
   "merksatz_de": "Seit 1990 hat Deutschland seine heutigen Grenzen."
  },
  {
@@ -1088,7 +2744,7 @@
    "Norveška",
    "Luksemburg"
   ],
-  "expl_bks": "Luksemburg je mala država na zapadu i graniči sa saveznim pokrajinama Porajnje-Falačka i Saarland. U Luksemburgu se uz luksemburški i francuski govori i njemački. Španjolska, Bugarska i Norveška nemaju zajedničku granicu s Njemačkom.",
+  "expl_bks": "Luksemburg je mala država na zapadu Njemačke i graniči sa saveznim pokrajinama Porajnje-Falačka i Saarland. U Luksemburgu se uz luksemburški i francuski govori i njemački. Španjolska, Bugarska i Norveška nemaju zajedničku granicu s Njemačkom.",
   "merksatz_de": "Luxemburg grenzt im Westen an Deutschland."
  },
  {
@@ -1102,6 +2758,558 @@
   ],
   "expl_bks": "Građani Europske unije biraju Europski parlament svakih pet godina. Prvi neposredni izbori održani su 1979. U Njemačkoj mogu glasati i građani drugih država EU-a koji ovdje žive. Nemojte to pomiješati s Bundestagom (savezni parlament), koji se bira svake četiri godine.",
   "merksatz_de": "Das Europäische Parlament wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "G-231",
+  "q_bks": "Što znači pojam „europska integracija”?",
+  "options_bks": [
+   "Time se misli na američke useljenike u Europi.",
+   "Pojam označava zaustavljanje useljavanja u Europu.",
+   "Time se misli na europske iseljenike u SAD-u.",
+   "Pojam označava udruživanje europskih država u EU."
+  ],
+  "expl_bks": "Europska integracija znači da se europske države sve tješnje povezuju i surađuju. Počelo je 1951. zajednicom za ugljen i čelik, 1957. slijedila je Europska ekonomska zajednica (EEZ), a 1993. nastala je Europska unija. Njemačka je od početka jedna od država osnivačica.",
+  "merksatz_de": "Europäische Integration: Europäische Staaten schließen sich zur EU zusammen."
+ },
+ {
+  "id": "G-232",
+  "q_bks": "Tko se bira na europskim izborima (Europawahl)?",
+  "options_bks": [
+   "Europska komisija",
+   "zemlje koje smiju pristupiti EU-u",
+   "zastupnici u Europskom parlamentu",
+   "europski ustav"
+  ],
+  "expl_bks": "Na europskim izborima građani država članica biraju zastupnike u Europskom parlamentu. Izbori se održavaju svakih pet godina, a prvi neposredni izbori bili su 1979. Europsku komisiju građani ne biraju izravno: članove predlažu države članice, a Europski parlament ih potvrđuje.",
+  "merksatz_de": "Bei der Europawahl wählt man die Abgeordneten des Europäischen Parlaments."
+ },
+ {
+  "id": "G-233",
+  "q_bks": "Koja je zemlja susjedna zemlja Njemačke?",
+  "options_bks": [
+   "Češka",
+   "Bugarska",
+   "Grčka",
+   "Portugal"
+  ],
+  "expl_bks": "Češka graniči s Njemačkom na jugoistoku, uz Bavarsku i Sasku. Njemačka ima ukupno devet susjednih zemalja: Dansku, Poljsku, Češku, Austriju, Švicarsku, Francusku, Luksemburg, Belgiju i Nizozemsku. Bugarska, Grčka i Portugal članice su EU-a, ali ne graniče s Njemačkom.",
+  "merksatz_de": "Deutschland hat neun Nachbarländer, zum Beispiel Tschechien."
+ },
+ {
+  "id": "G-234",
+  "q_bks": "Gdje je jedno od sjedišta Europskog parlamenta?",
+  "options_bks": [
+   "London",
+   "Pariz",
+   "Berlin",
+   "Strasbourg"
+  ],
+  "expl_bks": "Strasbourg (njem. Straßburg) nalazi se u Francuskoj, na Rajni, odmah uz njemačku granicu. Tamo se održava većina plenarnih sjednica Europskog parlamenta, na kojima zastupnici glasaju o europskim zakonima. Parlament radi i u Bruxellesu i Luksemburgu, ali ne u Londonu, Parizu ili Berlinu.",
+  "merksatz_de": "Das Europäische Parlament tagt in Straßburg."
+ },
+ {
+  "id": "G-235",
+  "q_bks": "Tadašnji francuski predsjednik François Mitterrand i tadašnji njemački savezni kancelar Helmut Kohl zajedno u Verdunu odaju počast poginulima iz oba svjetska rata. Koji cilj Europske unije postaje jasan na tom susretu?",
+  "options_bks": [
+   "prijateljstvo između Engleske i Njemačke",
+   "sloboda putovanja u sve zemlje EU-a",
+   "mir i sigurnost u zemljama EU-a",
+   "jednaki blagdani u svim zemljama EU-a"
+  ],
+  "expl_bks": "U bitci kod Verduna 1916., u Prvom svjetskom ratu, poginulo je ili ranjeno više stotina tisuća francuskih i njemačkih vojnika. Godine 1984. Mitterrand i Kohl ondje su se, držeći se za ruke, zajedno poklonili žrtvama. Ta slika pokazuje glavni cilj Europske unije: nekadašnji neprijatelji žive u miru i sigurnosti.",
+  "merksatz_de": "Ein wichtiges Ziel der EU ist Frieden und Sicherheit."
+ },
+ {
+  "id": "G-236",
+  "q_bks": "Koliko država članica danas ima EU?",
+  "options_bks": [
+   "21",
+   "23",
+   "25",
+   "27"
+  ],
+  "expl_bks": "Europska unija danas ima 27 država članica. Hrvatska je 2013. postala 28. članica, a Ujedinjeno Kraljevstvo izašlo je iz EU-a 2020. (Brexit), pa je broj ponovno pao na 27. Njemačka je jedna od šest država osnivačica Europske ekonomske zajednice iz 1957.",
+  "merksatz_de": "Die EU hat heute 27 Mitgliedstaaten."
+ },
+ {
+  "id": "G-237",
+  "q_bks": "Godine 2007. proslavljena je 50. obljetnica „Rimskih ugovora”. Što je bio sadržaj tih ugovora?",
+  "options_bks": [
+   "pristupanje Njemačke NATO-u",
+   "osnivanje Europske ekonomske zajednice (EEZ)",
+   "obveza Njemačke da plaća ratnu odštetu (reparacije)",
+   "utvrđivanje crte Odra–Nisa kao istočne granice"
+  ],
+  "expl_bks": "Rimski ugovori potpisani su 25. ožujka 1957. u Rimu. Njima je šest država – Savezna Republika Njemačka, Francuska, Italija, Belgija, Nizozemska i Luksemburg – osnovalo Europsku ekonomsku zajednicu (EEZ), iz koje je kasnije nastala Europska unija. U NATO je Njemačka ušla već 1955., na temelju drugih ugovora.",
+  "merksatz_de": "Die Römischen Verträge gründeten 1957 die EWG."
+ },
+ {
+  "id": "G-238",
+  "q_bks": "U kojim mjestima radi Europski parlament?",
+  "options_bks": [
+   "Pariz, London i Haag",
+   "Strasbourg, Luksemburg i Bruxelles",
+   "Rim, Bern i Beč",
+   "Bonn, Zürich i Milano"
+  ],
+  "expl_bks": "Europski parlament radi u tri grada. U Strasbourgu (Francuska) održava većinu plenarnih sjednica, u Bruxellesu (Brisel) sastaju se odbori i klubovi zastupnika, a u Luksemburgu je glavno tajništvo, odnosno uprava Parlamenta. Za pamćenje: sva tri grada nalaze se na zapadu, blizu Njemačke.",
+  "merksatz_de": "Das EU-Parlament arbeitet in Straßburg, Luxemburg und Brüssel."
+ },
+ {
+  "id": "G-239",
+  "q_bks": "Kojim se ugovorima Savezna Republika Njemačka s drugim državama udružila u Europsku ekonomsku zajednicu?",
+  "options_bks": [
+   "„Hamburškim ugovorima”",
+   "„Rimskim ugovorima”",
+   "„Pariškim ugovorima”",
+   "„Londonskim ugovorima”"
+  ],
+  "expl_bks": "Savezna Republika Njemačka potpisala je 1957. Rimske ugovore s Francuskom, Italijom, Belgijom, Nizozemskom i Luksemburgom. Tako je nastala Europska ekonomska zajednica (EEZ), preteča današnje Europske unije. Česta zamka su „Pariški ugovori”: Pariški ugovor iz 1951. osnovao je zajednicu za ugljen i čelik, a ne EEZ.",
+  "merksatz_de": "Mit den Römischen Verträgen entstand die EWG."
+ },
+ {
+  "id": "G-240",
+  "q_bks": "Otkad se u Njemačkoj gotovinom plaća eurima?",
+  "options_bks": [
+   "1995.",
+   "1998.",
+   "2002.",
+   "2005."
+  ],
+  "expl_bks": "Euro je u Njemačkoj bezgotovinski uveden 1999., a novčanice i kovanice u opticaju su od 1. siječnja 2002. Tada je euro zamijenio njemačku marku (D-Mark). Tečaj je bio fiksan: jedan euro vrijedio je 1,95583 marke, dakle otprilike dvije marke.",
+  "merksatz_de": "Seit 2002 bezahlt man in Deutschland mit Euro-Bargeld."
+ },
+ {
+  "id": "G-241",
+  "q_bks": "Gospođa Seger dobit će dijete. Što mora učiniti da bi dobila roditeljsku naknadu (Elterngeld)?",
+  "options_bks": [
+   "Mora pisati svojoj zdravstvenoj blagajni (Krankenkasse).",
+   "Mora podnijeti zahtjev uredu za roditeljsku naknadu (Elterngeldstelle).",
+   "Ne mora ništa učiniti jer roditeljsku naknadu dobiva automatski.",
+   "Mora zamoliti ured za rad (Arbeitsamt) za dopuštenje."
+  ],
+  "expl_bks": "Roditeljska naknada (Elterngeld) ne dobiva se automatski. Roditelji moraju podnijeti pisani zahtjev uredu za roditeljsku naknadu (Elterngeldstelle); koji je ured nadležan, ovisi o pokrajini i mjestu stanovanja. Zahtjev treba predati ubrzo nakon rođenja, jer se naknada unatrag isplaćuje samo za posljednja tri mjeseca.",
+  "merksatz_de": "Elterngeld muss man bei der Elterngeldstelle beantragen."
+ },
+ {
+  "id": "G-242",
+  "q_bks": "Tko odlučuje hoće li dijete u Njemačkoj ići u vrtić?",
+  "options_bks": [
+   "država",
+   "savezne pokrajine",
+   "roditelji/skrbnici",
+   "škole"
+  ],
+  "expl_bks": "U Njemačkoj u pravilu ne postoji obveza pohađanja vrtića. Roditelji ili skrbnici sami odlučuju hoće li dijete ići u vrtić. Dijete ima pravo na mjesto u vrtiću, ali to je pravo, a ne obveza. Obvezno školovanje počinje tek polaskom u školu.",
+  "merksatz_de": "Die Eltern entscheiden, ob ihr Kind in den Kindergarten geht."
+ },
+ {
+  "id": "G-243",
+  "q_bks": "Maik i Sybille žele s prijateljima u svom mjestu stanovanja u Njemačkoj održati demonstraciju na ulici. Što moraju učiniti prije toga?",
+  "options_bks": [
+   "Moraju prijaviti demonstraciju.",
+   "Ne moraju ništa učiniti. U Njemačkoj se smije demonstrirati uvijek i svugdje.",
+   "Ne mogu ništa učiniti jer su demonstracije u Njemačkoj načelno zabranjene.",
+   "Maik i Sybille moraju osnovati novu udrugu jer samo udruge smiju demonstrirati."
+  ],
+  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije najave. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
+  "merksatz_de": "Eine Demonstration im Freien muss man vorher anmelden."
+ },
+ {
+  "id": "G-244",
+  "q_bks": "Koju završnu školsku svjedodžbu obično treba imati da bi se u Njemačkoj počelo studirati na sveučilištu?",
+  "options_bks": [
+   "maturu (Abitur)",
+   "diplomu (Diplom)",
+   "prokuru (Prokura)",
+   "pomoćnički ispit u obrtu (Gesellenprüfung)"
+  ],
+  "expl_bks": "Abitur je matura koja se u pravilu polaže na kraju gimnazije, nakon 12 ili 13 godina škole. Ona daje opće pravo na studij na sveučilištu. Diploma je završetak studija, prokura je poslovna punomoć u tvrtki, a pomoćnički ispit (Gesellenprüfung) završava strukovno obrazovanje u obrtu.",
+  "merksatz_de": "Für ein Studium an der Universität braucht man meistens das Abitur."
+ },
+ {
+  "id": "G-245",
+  "q_bks": "Tko u Njemačkoj ne smije živjeti zajedno kao par?",
+  "options_bks": [
+   "Hans (20 godina) i Marie (19 godina)",
+   "Tom (20 godina) i Klaus (45 godina)",
+   "Sofie (35 godina) i Lisa (40 godina)",
+   "Anne (13 godina) i Tim (25 godina)"
+  ],
+  "expl_bks": "Anne ima tek 13 godina, dakle još je dijete. U Njemačkoj su djeca mlađa od 14 godina posebno zaštićena: seksualne radnje odrasle osobe s djetetom teško su kazneno djelo. Svi ostali parovi su punoljetni i smiju živjeti zajedno, bez obzira na razliku u godinama ili na spol.",
+  "merksatz_de": "Kinder unter 14 Jahren sind vom Gesetz besonders geschützt."
+ },
+ {
+  "id": "G-246",
+  "q_bks": "S koliko se godina u Njemačkoj postaje punoljetan?",
+  "options_bks": [
+   "16",
+   "18",
+   "19",
+   "21"
+  ],
+  "expl_bks": "U Njemačkoj se punoljetnost stječe s navršenih 18 godina. Od tada čovjek smije sam sklapati ugovore, na primjer ugovor o najmu, glasati na izborima za Bundestag i sklopiti brak. Roditelji više ne odlučuju umjesto njega.",
+  "merksatz_de": "In Deutschland ist man mit 18 Jahren volljährig."
+ },
+ {
+  "id": "G-247",
+  "q_bks": "Jedna je žena trudna. Kratko prije i nakon rođenja djeteta zakon je posebno štiti. Kako se zove ta zaštita?",
+  "options_bks": [
+   "roditeljski dopust (Elternzeit)",
+   "zaštita majčinstva (Mutterschutz)",
+   "priprema za porod (Geburtsvorbereitung)",
+   "babinje (Wochenbett)"
+  ],
+  "expl_bks": "Zaštita majčinstva (Mutterschutz) štiti trudnice i majke koje rade. Šest tjedana prije poroda žena ne mora raditi, a osam tjedana nakon poroda ne smije raditi; za to vrijeme prima naknadu. Od početka trudnoće do četiri mjeseca nakon poroda u pravilu joj se ne smije dati otkaz. Roditeljski dopust (Elternzeit) dolazi tek poslije.",
+  "merksatz_de": "Mutterschutz schützt Frauen kurz vor und nach der Geburt."
+ },
+ {
+  "id": "G-248",
+  "q_bks": "Odgoj djece u Njemačkoj prije svega je zadaća …",
+  "options_bks": [
+   "države.",
+   "roditelja.",
+   "baka i djedova.",
+   "škola."
+  ],
+  "expl_bks": "Prema Temeljnom zakonu (članak 6.) njega i odgoj djece prirodno su pravo roditelja i prije svega njihova dužnost. Država samo pazi da je dijete dobro zbrinuto i pomaže kad postoje problemi. Škole također odgajaju, ali glavnu odgovornost imaju roditelji.",
+  "merksatz_de": "Die Erziehung der Kinder ist vor allem Aufgabe der Eltern."
+ },
+ {
+  "id": "G-249",
+  "q_bks": "Tko je u Njemačkoj uglavnom odgovoran za odgoj djece?",
+  "options_bks": [
+   "država",
+   "roditelji",
+   "rodbina",
+   "škole"
+  ],
+  "expl_bks": "Za odgoj djece u Njemačkoj prvenstveno su odgovorni roditelji. Temeljni zakon (članak 6.) kaže da je to njihovo pravo i njihova dužnost. Škola, vrtić i rodbina mogu pomoći, a država se uključuje tek kad je dobrobit djeteta ugrožena, na primjer preko ureda za djecu i mlade (Jugendamt).",
+  "merksatz_de": "Hauptsächlich verantwortlich für die Kindererziehung sind die Eltern."
+ },
+ {
+  "id": "G-250",
+  "q_bks": "U Njemačkoj čovjek ima najbolje izglede za dobro plaćeno radno mjesto ako …",
+  "options_bks": [
+   "je katolik.",
+   "je dobro obrazovan.",
+   "je žena.",
+   "je član neke stranke."
+  ],
+  "expl_bks": "Na njemačkom tržištu rada najvažnije su kvalifikacije: završena škola, strukovno obrazovanje (Ausbildung) ili studij. Tko je dobro obrazovan, ima najbolje izglede za dobro plaćen posao. Vjera, spol ili članstvo u stranci ne smiju biti razlog za prednost ili zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.).",
+  "merksatz_de": "Eine gute Ausbildung bringt die besten Chancen auf gute Arbeit."
+ },
+ {
+  "id": "G-251",
+  "q_bks": "Ako netko u Njemačkoj udari dijete, …",
+  "options_bks": [
+   "to se nikoga ne tiče.",
+   "to se tiče samo obitelji.",
+   "za to ne može biti kažnjen.",
+   "za to može biti kažnjen."
+  ],
+  "expl_bks": "Od 2000. godine djeca u Njemačkoj imaju zakonsko pravo na odgoj bez nasilja (Građanski zakonik, § 1631). Tjelesno kažnjavanje, psihičko zlostavljanje i druge ponižavajuće mjere zabranjeni su, i u obitelji. Tko udari dijete, može biti kažnjen, na primjer zbog tjelesne ozljede.",
+  "merksatz_de": "Kinder haben ein Recht auf Erziehung ohne Gewalt."
+ },
+ {
+  "id": "G-252",
+  "q_bks": "U Njemačkoj …",
+  "options_bks": [
+   "čovjek smije u isto vrijeme biti u braku samo s jednim partnerom.",
+   "čovjek može istodobno imati više bračnih partnera.",
+   "čovjek se ne smije ponovno vjenčati ako je već jednom bio u braku.",
+   "žena se ne smije ponovno udati ako joj je muž umro."
+  ],
+  "expl_bks": "U Njemačkoj se može biti u braku samo s jednom osobom u isto vrijeme. Tko sklopi drugi brak dok prvi još traje, čini kazneno djelo bigamije. Nakon razvoda ili smrti bračnog partnera ponovno vjenčanje je dopušteno, i ženama i muškarcima.",
+  "merksatz_de": "Man darf nur mit einer Person gleichzeitig verheiratet sein."
+ },
+ {
+  "id": "G-253",
+  "q_bks": "Gdje se morate prijaviti kad se u Njemačkoj preselite?",
+  "options_bks": [
+   "u uredu za prijavu prebivališta (Einwohnermeldeamt)",
+   "u matičnom uredu (Standesamt)",
+   "u komunalnom redarstvenom uredu (Ordnungsamt)",
+   "u obrtnom uredu (Gewerbeamt)"
+  ],
+  "expl_bks": "Nakon preseljenja novu adresu treba prijaviti u uredu za prijavu prebivališta (Einwohnermeldeamt); u mnogim gradovima to je građanski ured (Bürgeramt). Rok je u pravilu dva tjedna. Za prijavu trebate osobnu iskaznicu ili putovnicu i potvrdu stanodavca (Wohnungsgeberbestätigung).",
+  "merksatz_de": "Nach einem Umzug meldet man sich beim Einwohnermeldeamt an."
+ },
+ {
+  "id": "G-254",
+  "q_bks": "U Njemačkoj se bračni parovi smiju razvesti. Za to većinom moraju poštovati „godinu razdvojenosti” (Trennungsjahr). Što to znači?",
+  "options_bks": [
+   "Postupak razvoda traje godinu dana.",
+   "Supružnici su godinu dana u braku, a onda je razvod moguć.",
+   "Pravo na viđanje djece vrijedi godinu dana.",
+   "Supružnici najmanje godinu dana žive odvojeno, svatko svoj život. Nakon toga je razvod moguć."
+  ],
+  "expl_bks": "Godina razdvojenosti (Trennungsjahr) znači da supružnici najmanje godinu dana žive odvojeno i vode svaki svoj život. To je moguće čak i u istom stanu, ako više ne žive kao par i nemaju zajedničko kućanstvo. Tek nakon toga obiteljski sud u pravilu može izreći razvod.",
+  "merksatz_de": "Vor der Scheidung lebt das Ehepaar meistens ein Jahr getrennt."
+ },
+ {
+  "id": "G-255",
+  "q_bks": "Kod problema s odgojem roditelji u Njemačkoj mogu dobiti pomoć od …",
+  "options_bks": [
+   "komunalnog redarstvenog ureda (Ordnungsamt).",
+   "školskog ureda (Schulamt).",
+   "ureda za djecu i mlade (Jugendamt).",
+   "zdravstvenog ureda (Gesundheitsamt)."
+  ],
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) postoji u svakom okrugu (Landkreis) i u većim gradovima. On savjetuje roditelje kod problema s odgojem, na primjer kad dijete ne ide u školu ili je agresivno, i upućuje ih na obiteljska savjetovališta. Savjetovanje je besplatno i povjerljivo.",
+  "merksatz_de": "Bei Erziehungsproblemen hilft das Jugendamt."
+ },
+ {
+  "id": "G-256",
+  "q_bks": "Bračni par želi u Njemačkoj otvoriti restoran. Što mu je za to nužno potrebno?",
+  "options_bks": [
+   "dozvola policije",
+   "odobrenje neke stranke",
+   "odobrenje ureda za prijavu prebivališta (Einwohnermeldeamt)",
+   "dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis) od nadležnog ureda"
+  ],
+  "expl_bks": "Za otvaranje restorana, posebno ako se toči alkohol, potrebna je dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured općine, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt). Ured provjerava, na primjer, prostorije i pouzdanost vlasnika. Pojedinosti ovise o pokrajini.",
+  "merksatz_de": "Für ein Restaurant braucht man eine Gaststättenerlaubnis."
+ },
+ {
+  "id": "G-257",
+  "q_bks": "Odrasla žena želi u Njemačkoj naknadno položiti maturu (Abitur). To može učiniti …",
+  "options_bks": [
+   "na visokom učilištu (Hochschule).",
+   "u večernjoj gimnaziji (Abendgymnasium).",
+   "u Hauptschuli (niža srednja škola).",
+   "na privatnom sveučilištu."
+  ],
+  "expl_bks": "Večernja gimnazija (Abendgymnasium) namijenjena je odraslima koji rade. Nastava se održava navečer, pa se škola može uskladiti s poslom i obitelji. Na kraju se polaže matura (Abitur), s kojom se može studirati. Visoko učilište i privatno sveučilište traže Abitur već pri upisu.",
+  "merksatz_de": "Erwachsene können das Abitur am Abendgymnasium nachholen."
+ },
+ {
+  "id": "G-258",
+  "q_bks": "Što smije ured za djecu i mlade (Jugendamt) u Njemačkoj?",
+  "options_bks": [
+   "Odlučuje koju će školu dijete pohađati.",
+   "Može izdvojiti iz obitelji dijete koje tuku ili koje mora gladovati.",
+   "Isplaćuje roditeljima dječji doplatak (Kindergeld).",
+   "Kontrolira pohađa li dijete vrtić."
+  ],
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) štiti djecu. Ako je dijete u opasnosti, na primjer ako ga tuku ili gladuje, ured ga smije izdvojiti iz obitelji i privremeno smjestiti na sigurno mjesto. O dugoročnim mjerama odlučuje obiteljski sud. Dječji doplatak (Kindergeld) ne isplaćuje Jugendamt, nego obiteljska blagajna (Familienkasse).",
+  "merksatz_de": "Das Jugendamt kann gefährdete Kinder aus der Familie nehmen."
+ },
+ {
+  "id": "G-259",
+  "q_bks": "Centar za informiranje o zanimanjima BIZ pri Saveznoj agenciji za rad (Bundesagentur für Arbeit) u Njemačkoj pomaže pri …",
+  "options_bks": [
+   "izračunu mirovine.",
+   "traženju mjesta za stručno osposobljavanje (Lehrstelle).",
+   "poreznoj prijavi.",
+   "zdravstvenom osiguranju."
+  ],
+  "expl_bks": "Centar za informiranje o zanimanjima (Berufsinformationszentrum, BIZ) nalazi se pri Agenciji za rad (Agentur für Arbeit). Ondje mladi i odrasli besplatno dobivaju informacije o zanimanjima, strukovnom obrazovanju (Ausbildung) i studiju te pomoć pri traženju mjesta za stručno osposobljavanje. Za mirovinu, porez i zdravstveno osiguranje nadležni su drugi uredi.",
+  "merksatz_de": "Das BIZ hilft bei der Suche nach einer Lehrstelle."
+ },
+ {
+  "id": "G-260",
+  "q_bks": "U Njemačkoj dijete u školi ima …",
+  "options_bks": [
+   "pravo na neograničeno slobodno vrijeme.",
+   "slobodu izbora svih predmeta.",
+   "pravo na novac za školu (Schulgeld).",
+   "obvezu prisustvovanja nastavi."
+  ],
+  "expl_bks": "U Njemačkoj postoji obvezno školovanje (Schulpflicht). Djeca moraju redovito dolaziti na nastavu, a izostati smiju samo s opravdanim razlogom, na primjer zbog bolesti. Za to su odgovorni roditelji: za neopravdane izostanke mogu dobiti novčanu kaznu. Javne škole su besplatne.",
+  "merksatz_de": "Kinder müssen regelmäßig in die Schule gehen."
+ },
+ {
+  "id": "G-261",
+  "q_bks": "Muškarac od 30 godina želi u Njemačkoj naknadno položiti maturu (Abitur). Gdje to može učiniti? …",
+  "options_bks": [
+   "na visokom učilištu (Hochschule).",
+   "u večernjoj gimnaziji (Abendgymnasium).",
+   "u Hauptschuli (niža srednja škola).",
+   "na privatnom sveučilištu."
+  ],
+  "expl_bks": "Tko je već odrastao i radi, maturu (Abitur) može naknadno položiti u večernjoj gimnaziji (Abendgymnasium). Nastava je navečer, obično traje oko tri godine i u javnim školama je besplatna. Hauptschule je škola za djecu, a na visoko učilište ili sveučilište upisuje se tek s Abiturom.",
+  "merksatz_de": "Auch mit 30 kann man am Abendgymnasium Abitur machen."
+ },
+ {
+  "id": "G-262",
+  "q_bks": "Što u Njemačkoj znači načelo jednakog postupanja?",
+  "options_bks": [
+   "Nitko ne smije biti zapostavljen, npr. zbog invaliditeta.",
+   "Druge osobe smiju se zapostavljati ako za to postoje dovoljni osobni razlozi.",
+   "Nitko ne smije podnijeti tužbu protiv drugih ako je bio zapostavljen.",
+   "Za sve je zakonska obveza svake godine darivati novac zapostavljenim skupinama."
+  ],
+  "expl_bks": "Načelo jednakog postupanja proizlazi iz Temeljnog zakona (članak 3.): nitko ne smije biti zapostavljen zbog spola, podrijetla, vjere ili invaliditeta. Zaštitu osoba s invaliditetom Temeljni zakon izričito spominje od 1994. Opći zakon o jednakom postupanju (AGG) iz 2006. štiti od diskriminacije, na primjer na poslu ili pri traženju stana.",
+  "merksatz_de": "Niemand darf wegen einer Behinderung benachteiligt werden."
+ },
+ {
+  "id": "G-263",
+  "q_bks": "U Njemačkoj su mladi od 14 godina kazneno odgovorni. To znači: mladi koji imaju 14 ili više godina i prekrše kazneni zakon …",
+  "options_bks": [
+   "bit će kažnjeni.",
+   "tretiraju se kao odrasli.",
+   "dijele kaznu sa svojim roditeljima.",
+   "neće biti kažnjeni."
+  ],
+  "expl_bks": "Kazneno odgovoran znači da netko za kazneno djelo može odgovarati pred sudom. Mladi od 14 do 17 godina kažnjavaju se prema posebnom zakonu o sudovima za mladež (Jugendgerichtsgesetz), a ne kao odrasli. Kazne su prije svega odgojne, na primjer rad za opće dobro ili maloljetnički zatvor.",
+  "merksatz_de": "Ab 14 Jahren kann man in Deutschland bestraft werden."
+ },
+ {
+  "id": "G-264",
+  "q_bks": "Kojom prigodom ljudi u Njemačkoj nose šarene kostime i maske?",
+  "options_bks": [
+   "na Rosenmontag",
+   "na Praznik rada (1. svibnja)",
+   "na Oktoberfestu",
+   "na Duhove (Pfingsten)"
+  ],
+  "expl_bks": "Rosenmontag je vrhunac karnevala (Karneval, Fasching ili Fastnacht), neposredno prije korizme. Posebno u Kölnu, Düsseldorfu i Mainzu gradom prolaze velike povorke, a ljudi nose šarene kostime i maske. Datum ovisi o Uskrsu, pa je Rosenmontag svake godine drugačiji, uvijek u veljači ili početkom ožujka.",
+  "merksatz_de": "Am Rosenmontag tragen viele Menschen Kostüme und Masken."
+ },
+ {
+  "id": "G-265",
+  "q_bks": "Kamo u Njemačkoj najprije treba otići ako se netko želi vjenčati?",
+  "options_bks": [
+   "u ured za prijavu prebivališta (Einwohnermeldeamt)",
+   "u komunalni redarstveni ured (Ordnungsamt)",
+   "u Agenciju za rad (Agentur für Arbeit)",
+   "u matični ured (Standesamt)"
+  ],
+  "expl_bks": "U Njemačkoj je pravno valjan samo građanski brak, sklopljen pred matičarom. Zato par najprije u matičnom uredu (Standesamt) prijavljuje namjeru vjenčanja i predaje dokumente, na primjer rodni list i osobnu iskaznicu ili putovnicu. Vjersko vjenčanje moguće je dodatno, ali nema pravni učinak.",
+  "merksatz_de": "Wer heiraten möchte, geht zuerst zum Standesamt."
+ },
+ {
+  "id": "G-266",
+  "q_bks": "Kada u Njemačkoj počinje zakonski noćni mir?",
+  "options_bks": [
+   "kada sunce zađe",
+   "kada susjedi odu spavati",
+   "u 0 sati, u ponoć",
+   "u 22 sata"
+  ],
+  "expl_bks": "Noćni mir (Nachtruhe) u pravilu traje od 22 do 6 sati. U to vrijeme treba izbjegavati buku, na primjer glasnu glazbu, bušenje ili zabave. Pravila određuju propisi pokrajina i općina, a često i kućni red (Hausordnung) u zgradi, koji može propisati i podnevni mir.",
+  "merksatz_de": "Die Nachtruhe beginnt um 22 Uhr."
+ },
+ {
+  "id": "G-267",
+  "q_bks": "Mlada žena u Njemačkoj, stara 22 godine, živi sa svojim dečkom. Njezinim roditeljima to nije drago jer im se dečko ne sviđa. Što roditelji mogu učiniti?",
+  "options_bks": [
+   "Moraju poštovati odluku svoje punoljetne kćeri.",
+   "Imaju pravo vratiti kćer u roditeljski stan.",
+   "Mogu otići na policiju i prijaviti kćer.",
+   "Potražit će kćeri drugog muškarca."
+  ],
+  "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući ni prijaviti policiji, jer nije učinila ništa zabranjeno.",
+  "merksatz_de": "Erwachsene Kinder entscheiden selbst, mit wem sie zusammenleben."
+ },
+ {
+  "id": "G-268",
+  "q_bks": "Mlada žena želi položiti vozački ispit. Boji se ispita jer njemački nije njezin materinski jezik. Što je točno?",
+  "options_bks": [
+   "Mora živjeti u Njemačkoj najmanje deset godina prije nego što može polagati vozački ispit.",
+   "Ako ne zna njemački, ne smije imati vozačku dozvolu.",
+   "Mora polagati vozački ispit u zemlji u kojoj se govori njezin jezik.",
+   "Teorijski ispit možda može polagati na svom materinskom jeziku. Na izbor je više od deset jezika."
+  ],
+  "expl_bks": "U Njemačkoj se teorijski dio vozačkog ispita može polagati na njemačkom ili na više od deset stranih jezika. Za to nije potrebno dugo živjeti u Njemačkoj. Koji su jezici trenutno ponuđeni, može se pitati u autoškoli ili kod ispitne organizacije, npr. TÜV-a ili DEKRA-e.",
+  "merksatz_de": "Die Theorieprüfung kann man in vielen Sprachen machen."
+ },
+ {
+  "id": "G-269",
+  "q_bks": "U Njemačkoj djeca od treće godine do polaska u školu imaju pravo na …",
+  "options_bks": [
+   "mjesečni džeparac.",
+   "mjesto u sportskom klubu.",
+   "mjesto u vrtiću.",
+   "propusnicu za praznične aktivnosti (Ferienpass)."
+  ],
+  "expl_bks": "Od 1996. svako dijete od navršene treće godine do polaska u školu ima zakonsko pravo na mjesto u vrtiću (Kindergarten). Od 2013. to pravo vrijedi već od prve godine, u jaslicama ili kod dnevne dadilje. Pohađanje je dobrovoljno, a koliko roditelji plaćaju, ovisi o pokrajini i općini.",
+  "merksatz_de": "Ab drei Jahren hat ein Kind Anspruch auf einen Kindergartenplatz."
+ },
+ {
+  "id": "G-270",
+  "q_bks": "Pučko otvoreno učilište (Volkshochschule) u Njemačkoj ustanova je …",
+  "options_bks": [
+   "za vjeronauk.",
+   "samo za mlade.",
+   "za daljnje obrazovanje.",
+   "samo za umirovljenike."
+  ],
+  "expl_bks": "Pučko otvoreno učilište (Volkshochschule, VHS) nudi tečajeve za odrasle svih dobi: jezike, rad na računalu, kuhanje, zdravlje, a često i integracijske tečajeve. Tečajevi su najčešće povoljni, a VHS postoji gotovo u svakom gradu. Ondje se mogu naknadno steći i školske svjedodžbe.",
+  "merksatz_de": "Die Volkshochschule bietet Kurse zur Weiterbildung für Erwachsene."
+ },
+ {
+  "id": "G-271",
+  "q_bks": "Koji je u Njemačkoj običaj za Božić?",
+  "options_bks": [
+   "skrivati obojena jaja",
+   "okititi božićno drvce (jelu)",
+   "prerušiti se maskama i kostimima",
+   "stavljati bundeve pred vrata"
+  ],
+  "expl_bks": "Za Božić se u Njemačkoj u stanu kiti božićno drvce (jela), obično lampicama i kuglicama. Pokloni se najčešće daju na Badnju večer (Heiligabend), 24. prosinca. Skrivanje obojenih jaja običaj je za Uskrs, kostimi i maske za karneval, a bundeve za Noć vještica (Halloween).",
+  "merksatz_de": "Zu Weihnachten schmückt man einen Tannenbaum."
+ },
+ {
+  "id": "G-272",
+  "q_bks": "Koji oblik zajedničkog života u Njemačkoj nije dopušten?",
+  "options_bks": [
+   "Muškarac i žena su razvedeni i žive s novim partnerima.",
+   "Dvije žene žive zajedno.",
+   "Samohrani otac živi sa svoje dvoje djece.",
+   "Muškarac je u isto vrijeme u braku s dvije žene."
+  ],
+  "expl_bks": "U Njemačkoj je brak moguć samo između dvije osobe. Tko je istodobno u braku s dvije osobe, čini kazneno djelo bigamije. Ostali oblici života su dopušteni: razvedeni smiju živjeti s novim partnerima, istospolni parovi od 2017. smiju i sklopiti brak, a samohrani roditelj može sam živjeti s djecom.",
+  "merksatz_de": "Mehrere Ehepartner zur gleichen Zeit sind in Deutschland verboten."
+ },
+ {
+  "id": "G-273",
+  "q_bks": "Kod problema s odgojem u Njemačkoj idete …",
+  "options_bks": [
+   "liječniku.",
+   "u zdravstveni ured (Gesundheitsamt).",
+   "u ured za prijavu prebivališta (Einwohnermeldeamt).",
+   "u ured za djecu i mlade (Jugendamt)."
+  ],
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) pravo je mjesto kad roditelji imaju problema s odgojem. Ondje stručnjaci savjetuju obitelji, besplatno i povjerljivo, i mogu organizirati dodatnu pomoć, na primjer obiteljskog pomagača. Liječnik i zdravstveni ured nadležni su za zdravlje, a ne za odgoj.",
+  "merksatz_de": "Bei Problemen mit der Erziehung geht man zum Jugendamt."
+ },
+ {
+  "id": "G-274",
+  "q_bks": "U Njemačkoj ste namjerno otvorili pismo koje je naslovljeno na drugu osobu. Što niste poštovali?",
+  "options_bks": [
+   "pravo na šutnju (Schweigerecht)",
+   "tajnost pisama (Briefgeheimnis)",
+   "obvezu čuvanja tajne (Schweigepflicht)",
+   "slobodu mišljenja"
+  ],
+  "expl_bks": "Tajnost pisama (Briefgeheimnis) zaštićena je Temeljnim zakonom (članak 10.). Pismo naslovljeno na drugu osobu smije otvoriti samo ta osoba ili netko koga je ona za to ovlastila. Tko namjerno otvori tuđe zatvoreno pismo, može biti kažnjen. Obveza čuvanja tajne (Schweigepflicht) odnosi se, na primjer, na liječnike i odvjetnike.",
+  "merksatz_de": "Fremde Briefe darf man nicht öffnen: Das Briefgeheimnis gilt."
+ },
+ {
+  "id": "G-275",
+  "q_bks": "Što je u Njemačkoj potrebno za razvod braka?",
+  "options_bks": [
+   "pristanak roditelja",
+   "liječnička potvrda",
+   "pristanak djece",
+   "pomoć odvjetnika"
+  ],
+  "expl_bks": "O razvodu braka u Njemačkoj odlučuje obiteljski sud (Familiengericht). Zahtjev za razvod može podnijeti samo odvjetnik, pa barem onaj supružnik koji traži razvod mora imati odvjetnika. Pristanak roditelja ili djece nije potreban, kao ni liječnička potvrda.",
+  "merksatz_de": "Für eine Scheidung braucht man eine Anwältin oder einen Anwalt."
+ },
+ {
+  "id": "G-276",
+  "q_bks": "Što biste trebali učiniti ako se vaša kontaktna osoba u nekom njemačkom uredu loše odnosi prema vama?",
+  "options_bks": [
+   "Ne mogu ništa učiniti.",
+   "Moram trpjeti takvo postupanje.",
+   "Prijetim toj osobi.",
+   "Mogu se požaliti voditelju ureda."
+  ],
+  "expl_bks": "U uredima se prema svima mora postupati korektno i s poštovanjem. Ako vas netko loše tretira, možete se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Ostanite mirni: prijetnje nisu dopuštene i mogu biti kažnjive.",
+  "merksatz_de": "Bei schlechter Behandlung im Amt kann man sich beschweren."
  },
  {
   "id": "G-277",
@@ -1669,7 +3877,7 @@
  },
  {
   "id": "BE-04",
-  "q_bks": "S koliko godina se u Berlinu smije glasati na lokalnim izborima (izborima za skupštinu gradskog okruga, Bezirksverordnetenversammlung)?",
+  "q_bks": "S koliko godina se u Berlinu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštinu gradskog okruga (Bezirksverordnetenversammlung)?",
   "options_bks": [
    "14",
    "16",
@@ -1772,7 +3980,7 @@
    "Vogtlandkreis",
    "Amberg-Sulzbach"
   ],
-  "expl_bks": "Prignitz je okrug (Landkreis) na sjeverozapadu Brandenburga, uz rijeku Elbu. Ostali okruzi nalaze se u drugim saveznim pokrajinama: Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji, Vogtlandkreis u Saskoj, a Amberg-Sulzbach u Bavarskoj. Brandenburg ukupno ima 14 okruga.",
+  "expl_bks": "Prignitz je okrug (Landkreis) na sjeverozapadu Brandenburga, uz rijeku Labu. Ostali okruzi nalaze se u drugim saveznim pokrajinama: Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji, Vogtlandkreis u Saskoj, a Amberg-Sulzbach u Bavarskoj. Brandenburg ukupno ima 14 okruga.",
   "merksatz_de": "Prignitz ist ein Landkreis in Brandenburg."
  },
  {
@@ -1789,7 +3997,7 @@
  },
  {
   "id": "BB-04",
-  "q_bks": "S koliko godina se u Brandenburgu smije glasati na lokalnim izborima?",
+  "q_bks": "S koliko godina se u Brandenburgu smije glasati na lokalnim izborima (Kommunalwahlen)?",
   "options_bks": [
    "14",
    "16",
@@ -1825,7 +4033,7 @@
  },
  {
   "id": "BB-07",
-  "q_bks": "Glavni grad savezne pokrajine Brandenburg zove se …",
+  "q_bks": "Glavni grad pokrajine Brandenburg zove se …",
   "options_bks": [
    "Potsdam.",
    "Cottbus.",
@@ -2012,7 +4220,7 @@
    "Pankow",
    "Mecklenburgische Seenplatte"
   ],
-  "expl_bks": "Hamburg je podijeljen na sedam gradskih okruga (Bezirke), a Altona je jedan od njih. Leži zapadno od središta grada, uz rijeku Elbu. Hemelingen je gradska četvrt u Bremenu, Pankow okrug u Berlinu, a Mecklenburgische Seenplatte okrug (Landkreis) u Mecklenburgu-Zapadnom Pomorju.",
+  "expl_bks": "Hamburg je podijeljen na sedam gradskih okruga (Bezirke), a Altona je jedan od njih. Leži zapadno od središta grada, uz rijeku Labu. Hemelingen je gradska četvrt u Bremenu, Pankow okrug u Berlinu, a Mecklenburgische Seenplatte okrug (Landkreis) u Mecklenburgu-Zapadnom Pomorju.",
   "merksatz_de": "Altona ist ein Bezirk von Hamburg."
  },
  {
@@ -2029,7 +4237,7 @@
  },
  {
   "id": "HH-04",
-  "q_bks": "S koliko godina se u Hamburgu smije glasati na lokalnim izborima (izborima za skupštine gradskih okruga, Bezirksversammlungen)?",
+  "q_bks": "S koliko godina se u Hamburgu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštine gradskih okruga (Bezirksversammlungen)?",
   "options_bks": [
    "14",
    "16",
@@ -2084,7 +4292,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Hamburg mali grad-pokrajina na sjeveru, na rijeci Elbi, između Schleswig-Holsteina i Donje Saske. Hamburg ima veliku luku i drugi je najveći grad Njemačke, poslije Berlina. Na karti ga prepoznajete kao malu površinu između dviju većih pokrajina.",
+  "expl_bks": "Na karti je Hamburg mali grad-pokrajina na sjeveru, na rijeci Labi, između Schleswig-Holsteina i Donje Saske. Hamburg ima veliku luku i drugi je najveći grad Njemačke, poslije Berlina. Na karti ga prepoznajete kao malu površinu između dviju većih pokrajina.",
   "merksatz_de": "Hamburg liegt im Norden an der Elbe."
  },
  {
@@ -2149,7 +4357,7 @@
  },
  {
   "id": "HE-04",
-  "q_bks": "S koliko godina se u Hessenu smije glasati na lokalnim izborima?",
+  "q_bks": "S koliko godina se u Hessenu smije glasati na lokalnim izborima (Kommunalwahlen)?",
   "options_bks": [
    "14",
    "16",
@@ -2185,7 +4393,7 @@
  },
  {
   "id": "HE-07",
-  "q_bks": "Glavni grad savezne pokrajine Hessen zove se …",
+  "q_bks": "Glavni grad pokrajine Hessen zove se …",
   "options_bks": [
    "Kassel.",
    "Darmstadt.",
@@ -2233,67 +4441,67 @@
  },
  {
   "id": "MV-01",
-  "q_bks": "Koji grb pripada saveznoj pokrajini Mecklenburg-Zapadna Pomeranija?",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Mecklenburg-Zapadno Pomorje?",
   "options_bks": [
    "Slika 1",
    "Slika 2",
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Mecklenburga-Zapadne Pomeranije: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi. Glava bika stari je znak Mecklenburga, a grifon znak Pomeranije. Tako grb pokazuje da je pokrajina nastala od dviju povijesnih regija.",
+  "expl_bks": "Grb Mecklenburga-Zapadnog Pomorja: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi. Glava bika stari je znak Mecklenburga, a grifon znak Pomeranije. Tako grb pokazuje da je pokrajina nastala od dviju povijesnih regija.",
   "merksatz_de": "Im Wappen von Mecklenburg-Vorpommern: Stierkopf und Greif."
  },
  {
   "id": "MV-02",
-  "q_bks": "Koji je od ovih okruga (Landkreis) u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Mecklenburgu-Zapadnom Pomorju?",
   "options_bks": [
    "Prignitz",
    "Mecklenburgische Seenplatte",
    "Vogtlandkreis",
    "Rhein-Sieg-Kreis"
   ],
-  "expl_bks": "Mecklenburgische Seenplatte („Mecklenburško jezersko područje”) okrug je u Mecklenburgu-Zapadnoj Pomeraniji i površinom najveći okrug u Njemačkoj. Ondje je jezero Müritz, najveće jezero koje u cijelosti leži u Njemačkoj. Prignitz je u Brandenburgu, Vogtlandkreis u Saskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "expl_bks": "Mecklenburgische Seenplatte („Mecklenburško jezersko područje”) okrug je u Mecklenburgu-Zapadnom Pomorju i površinom najveći okrug u Njemačkoj. Ondje je jezero Müritz, najveće jezero koje u cijelosti leži u Njemačkoj. Prignitz je u Brandenburgu, Vogtlandkreis u Saskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
   "merksatz_de": "Die Mecklenburgische Seenplatte ist ein Landkreis in Mecklenburg-Vorpommern."
  },
  {
   "id": "MV-03",
-  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Mecklenburgu-Zapadnom Pomorju?",
   "options_bks": [
    "3",
    "4",
    "5",
    "6"
   ],
-  "expl_bks": "Landtag Mecklenburga-Zapadne Pomeranije bira se na pet godina. Zasjeda u dvorcu u Schwerinu. Zastupnici donose pokrajinske zakone i biraju ministra predsjednika. Pazite na zamku: Bundestag (savezni parlament) bira se na četiri godine, a Landtag ovdje na pet.",
+  "expl_bks": "Landtag Mecklenburga-Zapadnog Pomorja bira se na pet godina. Zasjeda u dvorcu u Schwerinu. Zastupnici donose pokrajinske zakone i biraju ministra predsjednika. Pazite na zamku: Bundestag (savezni parlament) bira se na četiri godine, a Landtag ovdje na pet.",
   "merksatz_de": "Der Landtag in Mecklenburg-Vorpommern wird für fünf Jahre gewählt."
  },
  {
   "id": "MV-04",
-  "q_bks": "Od koje dobi se u Mecklenburgu-Zapadnoj Pomeraniji smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "q_bks": "Od koje dobi se u Mecklenburgu-Zapadnom Pomorju smije glasati na lokalnim izborima (Kommunalwahlen)?",
   "options_bks": [
    "14",
    "16",
    "18",
    "20"
   ],
-  "expl_bks": "U Mecklenburgu-Zapadnoj Pomeraniji na lokalnim izborima smije se glasati s navršenih 16 godina. Na lokalnim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). Za izbore za Bundestag (savezni parlament) granica je 18 godina.",
+  "expl_bks": "U Mecklenburgu-Zapadnom Pomorju na lokalnim izborima smije se glasati s navršenih 16 godina. Na lokalnim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). Za izbore za Bundestag (savezni parlament) granica je 18 godina.",
   "merksatz_de": "Bei Kommunalwahlen in Mecklenburg-Vorpommern darf man ab 16 wählen."
  },
  {
   "id": "MV-05",
-  "q_bks": "Koje boje ima zastava savezne pokrajine Mecklenburg-Zapadna Pomeranija?",
+  "q_bks": "Koje boje ima zastava savezne pokrajine Mecklenburg-Zapadno Pomorje?",
   "options_bks": [
    "crna-crvena-zlatna",
    "plava-bijela-žuta-crvena",
    "zelena-bijela-crvena",
    "crna-žuta"
   ],
-  "expl_bks": "Zastava Mecklenburga-Zapadne Pomeranije ima vodoravne pruge u plavoj, bijeloj, žutoj i crvenoj boji. Plava, žuta i crvena stare su boje Mecklenburga, a plava i bijela boje Pomeranije. Crno-crveno-zlatna je savezna zastava Njemačke, a ne zastava ove pokrajine.",
+  "expl_bks": "Zastava Mecklenburga-Zapadnog Pomorja ima vodoravne pruge u plavoj, bijeloj, žutoj i crvenoj boji. Plava, žuta i crvena stare su boje Mecklenburga, a plava i bijela boje Pomeranije. Crno-crveno-zlatna je savezna zastava Njemačke, a ne zastava ove pokrajine.",
   "merksatz_de": "Die Flagge von Mecklenburg-Vorpommern ist blau-weiß-gelb-rot."
  },
  {
   "id": "MV-06",
-  "q_bks": "Gdje se u Mecklenburgu-Zapadnoj Pomeraniji možete informirati o političkim temama?",
+  "q_bks": "Gdje se u Mecklenburgu-Zapadnom Pomorju možete informirati o političkim temama?",
   "options_bks": [
    "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)",
    "u crkvama",
@@ -2305,50 +4513,50 @@
  },
  {
   "id": "MV-07",
-  "q_bks": "Glavni grad Mecklenburga-Zapadne Pomeranije zove se …",
+  "q_bks": "Glavni grad Mecklenburga-Zapadnog Pomorja zove se …",
   "options_bks": [
    "Greifswald.",
    "Schwerin.",
    "Rostock.",
    "Wismar."
   ],
-  "expl_bks": "Glavni grad Mecklenburga-Zapadne Pomeranije je Schwerin. Ondje su pokrajinska vlada i Landtag (pokrajinski parlament), koji zasjeda u poznatom dvorcu na jezeru. Česta zamka: Rostock je najveći grad pokrajine i važna luka, ali nije glavni grad.",
+  "expl_bks": "Glavni grad Mecklenburga-Zapadnog Pomorja je Schwerin. Ondje su pokrajinska vlada i Landtag (pokrajinski parlament), koji zasjeda u poznatom dvorcu na jezeru. Česta zamka: Rostock je najveći grad pokrajine i važna luka, ali nije glavni grad.",
   "merksatz_de": "Schwerin ist die Landeshauptstadt von Mecklenburg-Vorpommern."
  },
  {
   "id": "MV-08",
-  "q_bks": "Koja savezna pokrajina je Mecklenburg-Zapadna Pomeranija?",
+  "q_bks": "Koja savezna pokrajina je Mecklenburg-Zapadno Pomorje?",
   "options_bks": [
    "1",
    "2",
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Mecklenburg-Zapadna Pomeranija na sjeveroistoku, uz Baltičko more i granicu s Poljskom. Ovoj pokrajini pripada i Rügen, najveći njemački otok. Glavni grad je Schwerin, a najveći grad Rostock.",
+  "expl_bks": "Na karti je Mecklenburg-Zapadno Pomorje na sjeveroistoku, uz Baltičko more i granicu s Poljskom. Ovoj pokrajini pripada i Rügen, najveći njemački otok. Glavni grad je Schwerin, a najveći grad Rostock.",
   "merksatz_de": "Mecklenburg-Vorpommern liegt im Nordosten an der Ostsee."
  },
  {
   "id": "MV-09",
-  "q_bks": "Kako se zove šef vlade u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "q_bks": "Kako se zove šef vlade u Mecklenburgu-Zapadnom Pomorju?",
   "options_bks": [
    "prvi ministar (Erster Minister)",
    "premijer (Premierminister)",
    "gradonačelnik (Bürgermeister)",
    "ministar predsjednik (Ministerpräsident)"
   ],
-  "expl_bks": "U Mecklenburgu-Zapadnoj Pomeraniji pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega bira Landtag (pokrajinski parlament) u Schwerinu. Naziv „premijer” ne koristi se za njemačke pokrajine, a gradonačelnik je na čelu grada ili općine.",
+  "expl_bks": "U Mecklenburgu-Zapadnom Pomorju pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega bira Landtag (pokrajinski parlament) u Schwerinu. Naziv „premijer” ne koristi se za njemačke pokrajine, a gradonačelnik je na čelu grada ili općine.",
   "merksatz_de": "Regierungschef in Mecklenburg-Vorpommern ist der Ministerpräsident."
  },
  {
   "id": "MV-10",
-  "q_bks": "Kojeg ministra Mecklenburg-Zapadna Pomeranija nema?",
+  "q_bks": "Kojeg ministra Mecklenburg-Zapadno Pomorje nema?",
   "options_bks": [
    "ministra pravosuđa (Justizminister)",
    "ministra vanjskih poslova (Außenminister)",
    "ministra financija (Finanzminister)",
    "ministra unutarnjih poslova (Innenminister)"
   ],
-  "expl_bks": "Za vanjsku politiku i odnose s drugim državama nadležna je savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministra vanjskih poslova ima samo savezna vlada. Mecklenburg-Zapadna Pomeranija ima ministre za pravosuđe, financije i unutarnje poslove, npr. za sudove i policiju.",
+  "expl_bks": "Za vanjsku politiku i odnose s drugim državama nadležna je savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministra vanjskih poslova ima samo savezna vlada. Mecklenburg-Zapadno Pomorje ima ministre za pravosuđe, financije i unutarnje poslove, npr. za sudove i policiju.",
   "merksatz_de": "Außenpolitik macht der Bund, deshalb gibt es keinen Landes-Außenminister."
  },
  {
@@ -2732,7 +4940,7 @@
    "Neunkirchen",
    "Rhein-Sieg-Kreis"
   ],
-  "expl_bks": "Neunkirchen je okrug u Saarlandu, a istoimeni grad jedan je od najvećih gradova te pokrajine. Saarland je mala pokrajina s malo okruga. Mecklenburgische Seenplatte je u Mecklenburgu-Zapadnoj Pomeraniji, Altötting u Bavarskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "expl_bks": "Neunkirchen je okrug u Saarlandu, a istoimeni grad jedan je od najvećih gradova te pokrajine. Saarland je mala pokrajina s malo okruga. Mecklenburgische Seenplatte je u Mecklenburgu-Zapadnom Pomorju, Altötting u Bavarskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
   "merksatz_de": "Neunkirchen ist ein Landkreis im Saarland."
  },
  {
@@ -2912,7 +5120,7 @@
    "Chemnitz.",
    "Zwickau."
   ],
-  "expl_bks": "Glavni grad Saske je Dresden, grad na rijeci Elbi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Dresden je poznat po crkvi Frauenkirche, koja je razorena 1945., a ponovno izgrađena do 2005. Leipzig je također velik i poznat grad, ali nije glavni grad.",
+  "expl_bks": "Glavni grad Saske je Dresden, grad na rijeci Labi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Dresden je poznat po crkvi Frauenkirche, koja je razorena 1945., a ponovno izgrađena do 2005. Leipzig je također velik i poznat grad, ali nije glavni grad.",
   "merksatz_de": "Dresden ist die Hauptstadt von Sachsen."
  },
  {
@@ -2924,7 +5132,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Saska na jugoistoku istočnog dijela Njemačke, uz granicu s Poljskom i Češkom. Unutar Njemačke graniči s Bavarskom, Tiringijom, Saskom-Anhalt i Brandenburgom. Glavni grad Saske je Dresden, grad na rijeci Elbi.",
+  "expl_bks": "Na karti je Saska na jugoistoku istočnog dijela Njemačke, uz granicu s Poljskom i Češkom. Unutar Njemačke graniči s Bavarskom, Tiringijom, Saskom-Anhalt i Brandenburgom. Glavni grad Saske je Dresden, grad na rijeci Labi.",
   "merksatz_de": "Sachsen liegt im Osten, an der Grenze zu Polen und Tschechien."
  },
  {
@@ -3032,7 +5240,7 @@
    "Magdeburg.",
    "Wittenberg."
   ],
-  "expl_bks": "Glavni grad Saske-Anhalt je Magdeburg, grad na rijeci Elbi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Halle, Dessau i Wittenberg također su poznati gradovi u pokrajini, ali nisu glavni grad. Wittenberg je poznat po Martinu Lutheru i reformaciji.",
+  "expl_bks": "Glavni grad Saske-Anhalt je Magdeburg, grad na rijeci Labi (Elbe). Tamo se nalaze Landtag (pokrajinski parlament) i pokrajinska vlada. Halle, Dessau i Wittenberg također su poznati gradovi u pokrajini, ali nisu glavni grad. Wittenberg je poznat po Martinu Lutheru i reformaciji.",
   "merksatz_de": "Magdeburg ist die Landeshauptstadt von Sachsen-Anhalt."
  },
  {
@@ -3044,7 +5252,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Saska-Anhalt u sredini istočnog dijela Njemačke, između Donje Saske, Brandenburga, Saske i Tiringije. Kroz pokrajinu teče rijeka Elba (Elbe), a glavni grad je Magdeburg. Saska-Anhalt nema granicu ni s jednom drugom državom.",
+  "expl_bks": "Na karti je Saska-Anhalt u sredini istočnog dijela Njemačke, između Donje Saske, Brandenburga, Saske i Tiringije. Kroz pokrajinu teče rijeka Laba (Elbe), a glavni grad je Magdeburg. Saska-Anhalt nema granicu ni s jednom drugom državom.",
   "merksatz_de": "Sachsen-Anhalt liegt in der Mitte von Ostdeutschland."
  },
  {
@@ -3092,7 +5300,7 @@
    "Nordfriesland",
    "Rhein-Sieg-Kreis"
   ],
-  "expl_bks": "Nordfriesland je okrug (Landkreis) na obali Sjevernog mora, uz granicu s Danskom. Pripadaju mu i otoci Sylt, Föhr i Amrum, a sjedište okruga je Husum. Ammerland je u Donjoj Saskoj, Mecklenburgische Seenplatte u Mecklenburgu-Zapadnoj Pomeraniji, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "expl_bks": "Nordfriesland je okrug (Landkreis) na obali Sjevernog mora, uz granicu s Danskom. Pripadaju mu i otoci Sylt, Föhr i Amrum, a sjedište okruga je Husum. Ammerland je u Donjoj Saskoj, Mecklenburgische Seenplatte u Mecklenburgu-Zapadnom Pomorju, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
   "merksatz_de": "Nordfriesland ist ein Landkreis in Schleswig-Holstein."
  },
  {
@@ -3164,7 +5372,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Schleswig-Holstein najsjevernija pokrajina, između Sjevernog i Baltičkog mora, uz granicu s Danskom. Na jugu graniči s Hamburgom, Donjom Saskom i Mecklenburgom-Zapadnom Pomeranijom. Glavni grad pokrajine je Kiel.",
+  "expl_bks": "Na karti je Schleswig-Holstein najsjevernija pokrajina, između Sjevernog i Baltičkog mora, uz granicu s Danskom. Na jugu graniči s Hamburgom, Donjom Saskom i Mecklenburgom-Zapadnim Pomorjem. Glavni grad pokrajine je Kiel.",
   "merksatz_de": "Schleswig-Holstein ist das nördlichste Bundesland Deutschlands."
  },
  {

@@ -2,322 +2,552 @@
  {
   "id": "G-001",
   "q_bks": "U Njemačkoj ljudi smiju otvoreno govoriti protiv vlade jer …",
-  "options_bks": ["ovdje vrijedi sloboda vjeroispovijesti.", "ljudi plaćaju poreze.", "ljudi imaju biračko pravo.", "ovdje vrijedi sloboda mišljenja."],
+  "options_bks": [
+   "ovdje vrijedi sloboda vjeroispovijesti.",
+   "ljudi plaćaju poreze.",
+   "ljudi imaju biračko pravo.",
+   "ovdje vrijedi sloboda mišljenja."
+  ],
   "expl_bks": "Sloboda mišljenja jedno je od temeljnih prava iz Temeljnog zakona (članak 5.). Svatko smije javno reći ili napisati svoje mišljenje i kritizirati vladu, a zbog toga ne smije biti kažnjen. Granice postoje samo kod kaznenih djela, na primjer uvrede ili poticanja na mržnju.",
   "merksatz_de": "Meinungsfreiheit: Man darf die Regierung offen kritisieren."
  },
  {
   "id": "G-002",
   "q_bks": "U Njemačkoj roditelji mogu do 14. godine života svojeg djeteta odlučivati hoće li ono u školi sudjelovati u …",
-  "options_bks": ["nastavi povijesti.", "vjeronauku.", "nastavi politike.", "nastavi jezika."],
+  "options_bks": [
+   "nastavi povijesti.",
+   "vjeronauku.",
+   "nastavi politike.",
+   "nastavi jezika."
+  ],
   "expl_bks": "Temeljni zakon (njemački ustav) u članku 7. daje roditeljima pravo da odluče hoće li dijete pohađati vjeronauk. Od 14. godine dijete o tome odlučuje samo. Tko ne ide na vjeronauk, u mnogim pokrajinama umjesto toga ima etiku. Ostali predmeti obvezni su za sve učenike.",
   "merksatz_de": "Bis 14 entscheiden die Eltern über den Religionsunterricht."
  },
  {
   "id": "G-003",
   "q_bks": "Njemačka je pravna država. Što se time misli?",
-  "options_bks": ["Svi stanovnici i država moraju se pridržavati zakona.", "Država se ne mora pridržavati zakona.", "Samo Nijemci moraju poštovati zakone.", "Sudovi donose zakone."],
+  "options_bks": [
+   "Svi stanovnici i država moraju se pridržavati zakona.",
+   "Država se ne mora pridržavati zakona.",
+   "Samo Nijemci moraju poštovati zakone.",
+   "Sudovi donose zakone."
+  ],
   "expl_bks": "U pravnoj državi zakoni vrijede za sve: za građane, za strance i za samu državu. I policija, uredi i vlada moraju poštovati zakone, a svatko se može obratiti neovisnom sudu. Sudovi ne donose zakone, nego ih primjenjuju; zakone donosi parlament.",
   "merksatz_de": "Im Rechtsstaat müssen alle, auch der Staat, die Gesetze befolgen."
  },
  {
   "id": "G-004",
   "q_bks": "Koje pravo spada u temeljna prava u Njemačkoj?",
-  "options_bks": ["posjedovanje oružja", "pravo jačega", "sloboda mišljenja", "uzimanje pravde u svoje ruke"],
+  "options_bks": [
+   "posjedovanje oružja",
+   "pravo jačega",
+   "sloboda mišljenja",
+   "uzimanje pravde u svoje ruke"
+  ],
   "expl_bks": "Sloboda mišljenja zaštićena je člankom 5. Temeljnog zakona (njemačkog ustava) i spada u temeljna prava. „Pravo jačega” i uzimanje pravde u svoje ruke u Njemačkoj su zabranjeni: sukobe rješavaju policija i sudovi. Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom i traži dozvolu.",
   "merksatz_de": "Zu den Grundrechten gehört die Meinungsfreiheit."
  },
  {
   "id": "G-005",
   "q_bks": "Izbori u Njemačkoj su slobodni. Što to znači?",
-  "options_bks": ["Smije se primiti novac ako se zbog toga glasa za određenog kandidata.", "Glasati smiju samo osobe koje nikada nisu bile u zatvoru.", "Na birača se na izborima ne smije utjecati niti ga se smije prisiliti da glasa na određeni način, a zbog izbora ne smije imati nikakve štete.", "Sve osobe s biračkim pravom moraju glasati."],
+  "options_bks": [
+   "Smije se primiti novac ako se zbog toga glasa za određenog kandidata.",
+   "Glasati smiju samo osobe koje nikada nisu bile u zatvoru.",
+   "Na birača se na izborima ne smije utjecati niti ga se smije prisiliti da glasa na određeni način, a zbog izbora ne smije imati nikakve štete.",
+   "Sve osobe s biračkim pravom moraju glasati."
+  ],
   "expl_bks": "Slobodni izbori znače da svaki birač sam odlučuje hoće li glasati i za koga. Nitko ga ne smije prisiljavati, ucjenjivati ni kupovati njegov glas, a zbog svojeg izbora ne smije imati štete, na primjer na poslu. U Njemačkoj nema obveze glasanja. Načela izbora navedena su u članku 38. Temeljnog zakona.",
   "merksatz_de": "Bei freien Wahlen entscheidet jeder ohne Zwang und Druck."
  },
  {
   "id": "G-006",
   "q_bks": "Kako se zove njemački ustav?",
-  "options_bks": ["narodni zakon (Volksgesetz)", "savezni zakon (Bundesgesetz)", "njemački zakon (Deutsches Gesetz)", "Temeljni zakon (Grundgesetz)"],
+  "options_bks": [
+   "narodni zakon (Volksgesetz)",
+   "savezni zakon (Bundesgesetz)",
+   "njemački zakon (Deutsches Gesetz)",
+   "Temeljni zakon (Grundgesetz)"
+  ],
   "expl_bks": "Njemački ustav zove se Temeljni zakon (Grundgesetz). Proglašen je 23. svibnja 1949. u Zapadnoj Njemačkoj, a od ponovnog ujedinjenja Njemačke 1990. vrijedi za cijelu zemlju. Tada je zamišljen kao privremeno rješenje do ujedinjenja, pa se namjerno nije zvao „ustav”.",
   "merksatz_de": "Die deutsche Verfassung heißt Grundgesetz."
  },
  {
   "id": "G-007",
   "q_bks": "Koje pravo spada u temeljna prava koja jamči njemački ustav? Pravo na …",
-  "options_bks": ["slobodu vjere i savjesti", "zabavu", "rad", "stan"],
+  "options_bks": [
+   "slobodu vjere i savjesti",
+   "zabavu",
+   "rad",
+   "stan"
+  ],
   "expl_bks": "Članak 4. Temeljnog zakona jamči slobodu vjere i savjesti: svatko smije slobodno izabrati vjeru, promijeniti je ili ne pripadati nijednoj vjeri. Nitko ne smije biti prisiljen djelovati protiv svoje savjesti. Pravo na rad, stan ili zabavu nije navedeno kao temeljno pravo u Temeljnom zakonu.",
   "merksatz_de": "Das Grundgesetz garantiert Glaubens- und Gewissensfreiheit."
  },
  {
   "id": "G-008",
   "q_bks": "Što ne piše u Temeljnom zakonu Njemačke?",
-  "options_bks": ["Ljudsko dostojanstvo je nepovredivo.", "Svi trebaju imati jednako mnogo novca.", "Svaki čovjek smije reći svoje mišljenje.", "Svi su jednaki pred zakonom."],
+  "options_bks": [
+   "Ljudsko dostojanstvo je nepovredivo.",
+   "Svi trebaju imati jednako mnogo novca.",
+   "Svaki čovjek smije reći svoje mišljenje.",
+   "Svi su jednaki pred zakonom."
+  ],
   "expl_bks": "Temeljni zakon ne obećava da će svi imati jednako mnogo novca. On jamči ljudsko dostojanstvo (članak 1.), jednakost pred zakonom (članak 3.) i slobodu mišljenja (članak 5.). Ljudi smiju različito zarađivati, a socijalna država pomaže onima kojima je pomoć potrebna.",
   "merksatz_de": "Gleich viel Geld für alle steht nicht im Grundgesetz."
  },
  {
   "id": "G-009",
   "q_bks": "Koje temeljno pravo u Njemačkoj vrijedi samo za strance? Temeljno pravo na …",
-  "options_bks": ["zaštitu obitelji", "ljudsko dostojanstvo", "azil", "slobodu mišljenja"],
+  "options_bks": [
+   "zaštitu obitelji",
+   "ljudsko dostojanstvo",
+   "azil",
+   "slobodu mišljenja"
+  ],
   "expl_bks": "Pravo na azil (članak 16.a Temeljnog zakona) štiti politički progonjene osobe, na primjer ljude koje država u domovini progoni zbog mišljenja, vjere ili podrijetla. Njemački državljani ne trebaju azil u Njemačkoj, pa ovo pravo vrijedi samo za strance. Ljudsko dostojanstvo, sloboda mišljenja i zaštita obitelji vrijede za sve ljude.",
   "merksatz_de": "Nur für Ausländer gilt das Grundrecht auf Asyl."
  },
  {
   "id": "G-010",
   "q_bks": "Što je u skladu s njemačkim Temeljnim zakonom?",
-  "options_bks": ["kazna batinanjem", "mučenje", "smrtna kazna", "novčana kazna"],
+  "options_bks": [
+   "kazna batinanjem",
+   "mučenje",
+   "smrtna kazna",
+   "novčana kazna"
+  ],
   "expl_bks": "Novčana kazna je dopuštena: sud je može izreći, na primjer za manju krađu. Smrtna kazna ukinuta je člankom 102. Temeljnog zakona. Mučenje i tjelesne kazne povređuju ljudsko dostojanstvo iz članka 1. i zato su u Njemačkoj zabranjeni.",
   "merksatz_de": "Eine Geldstrafe ist erlaubt, die Todesstrafe ist verboten."
  },
  {
   "id": "G-011",
   "q_bks": "Kako se zove ustav Savezne Republike Njemačke?",
-  "options_bks": ["Temeljni zakon (Grundgesetz)", "savezni ustav (Bundesverfassung)", "zakonik (Gesetzbuch)", "ustavni ugovor (Verfassungsvertrag)"],
+  "options_bks": [
+   "Temeljni zakon (Grundgesetz)",
+   "savezni ustav (Bundesverfassung)",
+   "zakonik (Gesetzbuch)",
+   "ustavni ugovor (Verfassungsvertrag)"
+  ],
   "expl_bks": "Ustav Savezne Republike Njemačke zove se Temeljni zakon (Grundgesetz), skraćeno GG. Ima više od 140 članaka, a na početku su temeljna prava, na primjer ljudsko dostojanstvo u članku 1. Naziv „Bundesverfassung” koristi se u Švicarskoj, a ne u Njemačkoj.",
   "merksatz_de": "Grundgesetz ist der Name der deutschen Verfassung."
  },
  {
   "id": "G-012",
   "q_bks": "Jedna stranka u njemačkom Bundestagu želi ukinuti slobodu tiska. Je li to moguće?",
-  "options_bks": ["Da, ako je više od polovice zastupnika u Bundestagu za to.", "Da, ali za to mora biti dvije trećine zastupnika u Bundestagu.", "Ne, jer je sloboda tiska temeljno pravo. Ona se ne može ukinuti.", "Ne, jer samo Bundesrat može ukinuti slobodu tiska."],
+  "options_bks": [
+   "Da, ako je više od polovice zastupnika u Bundestagu za to.",
+   "Da, ali za to mora biti dvije trećine zastupnika u Bundestagu.",
+   "Ne, jer je sloboda tiska temeljno pravo. Ona se ne može ukinuti.",
+   "Ne, jer samo Bundesrat može ukinuti slobodu tiska."
+  ],
   "expl_bks": "Sloboda tiska temeljno je pravo iz članka 5. Temeljnog zakona. Nijedna stranka i nijedna većina ne može je jednostavno ukinuti: članak 19. kaže da se temeljno pravo ni u kojem slučaju ne smije povrijediti u svojoj biti. Slobodni mediji važni su za demokraciju jer kontroliraju politiku.",
   "merksatz_de": "Pressefreiheit ist ein Grundrecht und kann nicht abgeschafft werden."
  },
  {
   "id": "G-013",
   "q_bks": "U parlamentu pojam „opozicija” označava …",
-  "options_bks": ["vladajuće stranke.", "klub zastupnika (Fraktion) s najviše zastupnika.", "sve stranke koje su na zadnjim izborima uspjele prijeći izborni prag od 5 %.", "sve zastupnike koji ne pripadaju vladajućoj stranci/vladajućim strankama."],
+  "options_bks": [
+   "vladajuće stranke.",
+   "klub zastupnika (Fraktion) s najviše zastupnika.",
+   "sve stranke koje su na zadnjim izborima uspjele prijeći izborni prag od 5 %.",
+   "sve zastupnike koji ne pripadaju vladajućoj stranci/vladajućim strankama."
+  ],
   "expl_bks": "Opozicija su svi zastupnici koji ne pripadaju vladajućoj stranci ili vladajućoj koaliciji. Njezin je zadatak kontrolirati i kritizirati vladu te predlagati druga rješenja. Opozicija je važan dio demokracije jer nakon sljedećih izbora i sama može preuzeti vlast.",
   "merksatz_de": "Opposition sind alle Abgeordneten, die nicht zur Regierung gehören."
  },
  {
   "id": "G-014",
   "q_bks": "Sloboda mišljenja u Njemačkoj znači da ja …",
-  "options_bks": ["smijem vrijeđati prolaznike na ulici.", "mogu izraziti svoje mišljenje na internetu.", "smijem javno nositi simbole nacista, Hamasa ili Islamske države.", "smijem izraziti svoje mišljenje samo ako ne proturječim vladi."],
+  "options_bks": [
+   "smijem vrijeđati prolaznike na ulici.",
+   "mogu izraziti svoje mišljenje na internetu.",
+   "smijem javno nositi simbole nacista, Hamasa ili Islamske države.",
+   "smijem izraziti svoje mišljenje samo ako ne proturječim vladi."
+  ],
   "expl_bks": "Sloboda mišljenja (članak 5. Temeljnog zakona) vrijedi i na internetu: svatko ondje smije napisati svoje mišljenje, pa i kritiku vlade. Ali i na internetu postoje granice: uvrede su kažnjive, a simboli zabranjenih organizacija, na primjer nacistički simboli, ne smiju se javno pokazivati.",
   "merksatz_de": "Im Internet darf ich meine Meinung sagen."
  },
  {
   "id": "G-015",
   "q_bks": "Što zabranjuje njemački Temeljni zakon?",
-  "options_bks": ["vojnu službu", "prisilni rad", "slobodan izbor zanimanja", "rad u inozemstvu"],
+  "options_bks": [
+   "vojnu službu",
+   "prisilni rad",
+   "slobodan izbor zanimanja",
+   "rad u inozemstvu"
+  ],
   "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimka je samo rad u zatvoru nakon sudske odluke. Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
   "merksatz_de": "Zwangsarbeit ist in Deutschland verboten."
  },
  {
   "id": "G-016",
   "q_bks": "Kada je sloboda mišljenja u Njemačkoj ograničena?",
-  "options_bks": ["kod javnog širenja lažnih tvrdnji o pojedinim osobama", "kod izražavanja mišljenja o saveznoj vladi", "kod rasprava o religijama", "kod kritike države"],
+  "options_bks": [
+   "kod javnog širenja lažnih tvrdnji o pojedinim osobama",
+   "kod izražavanja mišljenja o saveznoj vladi",
+   "kod rasprava o religijama",
+   "kod kritike države"
+  ],
   "expl_bks": "Tko javno širi neistinite tvrdnje o nekoj osobi, povređuje njezinu čast i ugled. To može biti kažnjivo, na primjer kao kleveta. Članak 5. Temeljnog zakona kaže da sloboda mišljenja ima granice u općim zakonima i u zaštiti osobne časti. Kritika vlade ili države, naprotiv, dopuštena je.",
   "merksatz_de": "Lügen über andere Menschen schützt die Meinungsfreiheit nicht."
  },
  {
   "id": "G-017",
   "q_bks": "Njemački zakoni zabranjuju …",
-  "options_bks": ["slobodu mišljenja stanovnika.", "peticije građana.", "slobodu okupljanja stanovnika.", "nejednako postupanje države prema građanima."],
+  "options_bks": [
+   "slobodu mišljenja stanovnika.",
+   "peticije građana.",
+   "slobodu okupljanja stanovnika.",
+   "nejednako postupanje države prema građanima."
+  ],
   "expl_bks": "Država mora prema svim ljudima postupati jednako. Članak 3. Temeljnog zakona kaže da nitko ne smije biti zapostavljen ili povlašten zbog spola, podrijetla, jezika, vjere ili političkog mišljenja. Sloboda mišljenja, peticije i sloboda okupljanja nisu zabranjeni, nego su zaštićeni kao temeljna prava.",
   "merksatz_de": "Der Staat muss alle Menschen gleich behandeln."
  },
  {
   "id": "G-018",
   "q_bks": "Koje je temeljno pravo zajamčeno u članku 1. Temeljnog zakona Savezne Republike Njemačke?",
-  "options_bks": ["nepovredivost ljudskog dostojanstva", "pravo na život", "sloboda vjeroispovijesti", "sloboda mišljenja"],
+  "options_bks": [
+   "nepovredivost ljudskog dostojanstva",
+   "pravo na život",
+   "sloboda vjeroispovijesti",
+   "sloboda mišljenja"
+  ],
   "expl_bks": "Članak 1. Temeljnog zakona počinje rečenicom: „Ljudsko dostojanstvo je nepovredivo.” Poštovati ga i štititi dužnost je sve državne vlasti. To je najvažnije načelo ustava i ne smije se promijeniti. Pravo na život nalazi se u članku 2., sloboda vjeroispovijesti u članku 4., a sloboda mišljenja u članku 5.",
   "merksatz_de": "Artikel 1: Die Würde des Menschen ist unantastbar."
  },
  {
   "id": "G-019",
   "q_bks": "Što se u Njemačkoj podrazumijeva pod pravom na „Freizügigkeit”?",
-  "options_bks": ["Svatko smije sam izabrati mjesto stanovanja.", "Svatko može promijeniti zanimanje.", "Svatko se smije odlučiti za drugu vjeru.", "Svatko se u javnosti smije kretati samo oskudno odjeven."],
+  "options_bks": [
+   "Svatko smije sam izabrati mjesto stanovanja.",
+   "Svatko može promijeniti zanimanje.",
+   "Svatko se smije odlučiti za drugu vjeru.",
+   "Svatko se u javnosti smije kretati samo oskudno odjeven."
+  ],
   "expl_bks": "„Freizügigkeit” znači slobodu kretanja i nastanjivanja (članak 11. Temeljnog zakona). Čovjek smije sam odlučiti u kojem će gradu ili mjestu u Njemačkoj živjeti i preseliti se bez posebne dozvole. Pazite na zamku: riječ „freizügig” u svakodnevnom govoru znači i „oskudno odjeven”, ali ovo pravo nema veze s odjećom.",
   "merksatz_de": "Freizügigkeit heißt: Man darf seinen Wohnort frei wählen."
  },
  {
   "id": "G-020",
   "q_bks": "Jedna stranka u Njemačkoj ima cilj uspostaviti diktaturu. Ona je onda …",
-  "options_bks": ["tolerantna.", "usmjerena na pravnu državu.", "vjerna zakonima.", "protuustavna."],
+  "options_bks": [
+   "tolerantna.",
+   "usmjerena na pravnu državu.",
+   "vjerna zakonima.",
+   "protuustavna."
+  ],
   "expl_bks": "Temeljni zakon štiti slobodni demokratski poredak. Stranka koja želi uspostaviti diktaturu bori se protiv tog poretka i zato je protuustavna. Takvu stranku može zabraniti samo Savezni ustavni sud (članak 21.). U Saveznoj Republici Njemačkoj to se dogodilo dva puta, 1952. i 1956. godine.",
   "merksatz_de": "Eine Partei, die eine Diktatur will, ist verfassungswidrig."
  },
  {
   "id": "G-021",
   "q_bks": "Koji je grb Savezne Republike Njemačke?",
-  "options_bks": ["Slika 1", "Slika 2", "Slika 3", "Slika 4"],
+  "options_bks": [
+   "Slika 1",
+   "Slika 2",
+   "Slika 3",
+   "Slika 4"
+  ],
   "expl_bks": "Grb Savezne Republike Njemačke je savezni orao (Bundesadler): crni orao s crvenim kljunom, jezikom i kandžama na zlatnožutom štitu. Orao je već stoljećima simbol njemačkih država. Savezni orao vidi se, na primjer, na njemačkim kovanicama od 1 i 2 eura i u dvorani Bundestaga (saveznog parlamenta).",
   "merksatz_de": "Das Bundeswappen zeigt einen schwarzen Adler auf goldgelbem Grund."
  },
  {
   "id": "G-022",
   "q_bks": "Kakav oblik države ima Njemačka?",
-  "options_bks": ["monarhija", "diktatura", "republika", "kneževina"],
+  "options_bks": [
+   "monarhija",
+   "diktatura",
+   "republika",
+   "kneževina"
+  ],
   "expl_bks": "Njemačka je republika: na čelu države nije kralj ni car, nego savezni predsjednik, kojeg Savezna skupština bira na pet godina. To stoji već u nazivu zemlje: Savezna Republika Njemačka. Članak 20. Temeljnog zakona kaže da je Njemačka demokratska i socijalna savezna država.",
   "merksatz_de": "Deutschland ist eine Republik, keine Monarchie."
  },
  {
   "id": "G-023",
   "q_bks": "U Njemačkoj većina ljudi koji rade …",
-  "options_bks": ["radi u malim obiteljskim tvrtkama.", "volonterski radi za neku saveznu pokrajinu.", "radi samostalno, u vlastitoj tvrtki.", "zaposlena je u nekoj tvrtki ili nekom uredu (Behörde)."],
+  "options_bks": [
+   "radi u malim obiteljskim tvrtkama.",
+   "volonterski radi za neku saveznu pokrajinu.",
+   "radi samostalno, u vlastitoj tvrtki.",
+   "zaposlena je u nekoj tvrtki ili nekom uredu (Behörde)."
+  ],
   "expl_bks": "Većina ljudi u Njemačkoj radi kao zaposlenici: imaju ugovor o radu s nekom tvrtkom ili s javnom ustanovom, na primjer s općinom, školom ili uredom. Samostalnih poduzetnika s vlastitom tvrtkom ima znatno manje. Volonterski rad je važan, ali se za njega ne dobiva plaća.",
   "merksatz_de": "Die meisten Menschen arbeiten bei einer Firma oder Behörde."
  },
  {
   "id": "G-024",
   "q_bks": "Koliko saveznih pokrajina ima Savezna Republika Njemačka?",
-  "options_bks": ["14", "15", "16", "17"],
+  "options_bks": [
+   "14",
+   "15",
+   "16",
+   "17"
+  ],
   "expl_bks": "Njemačka ima 16 saveznih pokrajina. Tri od njih su gradovi-pokrajine: Berlin, Hamburg i Bremen. Pri ponovnom ujedinjenju Njemačke 1990. zapadnim pokrajinama pridružilo se pet novih pokrajina iz bivšeg DDR-a (Istočne Njemačke), a Berlin je ponovno postao jedan grad.",
   "merksatz_de": "Deutschland hat 16 Bundesländer."
  },
  {
   "id": "G-025",
   "q_bks": "Što nije savezna pokrajina Savezne Republike Njemačke?",
-  "options_bks": ["Alzas-Lorena (Elsass-Lothringen)", "Sjeverna Rajna-Vestfalija (Nordrhein-Westfalen)", "Mecklenburg-Zapadno Pomorje (Mecklenburg-Vorpommern)", "Saska-Anhalt (Sachsen-Anhalt)"],
+  "options_bks": [
+   "Alzas-Lorena (Elsass-Lothringen)",
+   "Sjeverna Rajna-Vestfalija (Nordrhein-Westfalen)",
+   "Mecklenburg-Zapadno Pomorje (Mecklenburg-Vorpommern)",
+   "Saska-Anhalt (Sachsen-Anhalt)"
+  ],
   "expl_bks": "Alzas-Lorena (Elsass-Lothringen) je područje na istoku Francuske. Od 1871. do 1918. pripadalo je Njemačkom Carstvu, ali danas je dio Francuske. Sjeverna Rajna-Vestfalija, Mecklenburg-Zapadno Pomorje i Saska-Anhalt jesu njemačke savezne pokrajine.",
   "merksatz_de": "Elsass-Lothringen gehört heute zu Frankreich."
  },
  {
   "id": "G-026",
   "q_bks": "Njemačka je …",
-  "options_bks": ["komunistička republika.", "demokratska i socijalna savezna država.", "kapitalistička i socijalna monarhija.", "socijalna i socijalistička savezna država."],
+  "options_bks": [
+   "komunistička republika.",
+   "demokratska i socijalna savezna država.",
+   "kapitalistička i socijalna monarhija.",
+   "socijalna i socijalistička savezna država."
+  ],
   "expl_bks": "Tako stoji u članku 20. Temeljnog zakona: Njemačka je demokratska i socijalna savezna država. Demokratska znači da vlast dolazi od naroda, socijalna da država pomaže ljudima u nevolji, a savezna da se zemlja sastoji od 16 saveznih pokrajina. Njemačka nije monarhija ni socijalistička država.",
   "merksatz_de": "Deutschland ist ein demokratischer und sozialer Bundesstaat."
  },
  {
   "id": "G-027",
   "q_bks": "Njemačka je …",
-  "options_bks": ["socijalistička država.", "savezna država.", "diktatura.", "monarhija."],
+  "options_bks": [
+   "socijalistička država.",
+   "savezna država.",
+   "diktatura.",
+   "monarhija."
+  ],
   "expl_bks": "Njemačka je savezna država (Bundesstaat). To znači da vlast dijele savez i 16 saveznih pokrajina. Svaka pokrajina ima vlastiti parlament i vladu, a na primjer škole i policija uglavnom su u nadležnosti pokrajina. Takvo uređenje zove se federalizam.",
   "merksatz_de": "Als Bundesstaat besteht Deutschland aus 16 Ländern."
  },
  {
   "id": "G-028",
   "q_bks": "Tko u Njemačkoj bira zastupnike u Bundestag?",
-  "options_bks": ["vojska", "gospodarstvo", "narod s biračkim pravom", "uprava"],
+  "options_bks": [
+   "vojska",
+   "gospodarstvo",
+   "narod s biračkim pravom",
+   "uprava"
+  ],
   "expl_bks": "Zastupnike u Bundestagu (saveznom parlamentu) bira narod, odnosno svi koji imaju biračko pravo. Na izborima za Bundestag smiju glasati njemački državljani od 18 godina. Izbori se održavaju svake četiri godine. Tako vrijedi načelo iz članka 20. Temeljnog zakona: sva vlast dolazi od naroda.",
   "merksatz_de": "Das wahlberechtigte Volk wählt die Bundestagsabgeordneten."
  },
  {
   "id": "G-029",
   "q_bks": "Koja je životinja na grbu Savezne Republike Njemačke?",
-  "options_bks": ["lav", "orao", "medvjed", "konj"],
+  "options_bks": [
+   "lav",
+   "orao",
+   "medvjed",
+   "konj"
+  ],
   "expl_bks": "Na grbu Savezne Republike Njemačke nalazi se crni orao na zlatnožutom štitu, zvan savezni orao (Bundesadler). Orao je star simbol njemačkih država. Pazite na zamku: medvjed je na grbu Berlina, a lav se nalazi na grbovima nekih pokrajina, na primjer Bavarske.",
   "merksatz_de": "Der Adler ist das Wappentier Deutschlands."
  },
  {
   "id": "G-030",
   "q_bks": "Što nije obilježje naše demokracije?",
-  "options_bks": ["redoviti izbori", "cenzura tiska", "sloboda mišljenja", "različite stranke"],
+  "options_bks": [
+   "redoviti izbori",
+   "cenzura tiska",
+   "sloboda mišljenja",
+   "različite stranke"
+  ],
   "expl_bks": "Cenzura znači da država prije objave provjerava tekstove i zabranjuje ih. U Njemačkoj je to zabranjeno: članak 5. Temeljnog zakona kaže „Cenzure nema”. Sloboda tiska pomaže građanima da se informiraju i kontroliraju politiku. Redoviti izbori, sloboda mišljenja i različite stranke dio su demokracije.",
   "merksatz_de": "In Deutschland gibt es keine Zensur der Presse."
  },
  {
   "id": "G-031",
   "q_bks": "Suradnja stranaka radi sastavljanja vlade u Njemačkoj se zove …",
-  "options_bks": ["jedinstvo.", "koalicija.", "ministarstvo.", "klub zastupnika (Fraktion)."],
+  "options_bks": [
+   "jedinstvo.",
+   "koalicija.",
+   "ministarstvo.",
+   "klub zastupnika (Fraktion)."
+  ],
   "expl_bks": "Kada nijedna stranka sama nema većinu u parlamentu, više stranaka se dogovori i zajedno sastavi vladu. Taj savez zove se koalicija. Stranke svoje zajedničke planove zapisuju u koalicijski ugovor. Klub zastupnika (Fraktion) je nešto drugo: to su zastupnici iste stranke u parlamentu.",
   "merksatz_de": "Parteien bilden gemeinsam eine Regierung: Das heißt Koalition."
  },
  {
   "id": "G-032",
   "q_bks": "Što nije državna vlast u Njemačkoj?",
-  "options_bks": ["zakonodavstvo", "vlada", "tisak", "sudstvo"],
+  "options_bks": [
+   "zakonodavstvo",
+   "vlada",
+   "tisak",
+   "sudstvo"
+  ],
   "expl_bks": "Državna vlast podijeljena je na tri dijela: zakonodavnu vlast (parlament), izvršnu vlast (vlada i uprava) i sudsku vlast (sudovi). To se zove podjela vlasti. Tisak nije dio države: slobodni mediji su neovisni i kritički prate rad države, pa ih ponekad zovu „četvrtom vlasti”.",
   "merksatz_de": "Die Presse ist frei und keine staatliche Gewalt."
  },
  {
   "id": "G-033",
   "q_bks": "Koja je tvrdnja točna? U Njemačkoj …",
-  "options_bks": ["država i vjerske zajednice međusobno su odvojene.", "vjerske zajednice čine državu.", "država ovisi o vjerskim zajednicama.", "država i vjerske zajednice čine jedinstvo."],
+  "options_bks": [
+   "država i vjerske zajednice međusobno su odvojene.",
+   "vjerske zajednice čine državu.",
+   "država ovisi o vjerskim zajednicama.",
+   "država i vjerske zajednice čine jedinstvo."
+  ],
   "expl_bks": "Temeljni zakon (članak 140.) određuje da u Njemačkoj ne postoji državna crkva. Država je neutralna prema svim vjerama i nikome ne propisuje u što treba vjerovati. Vjerske zajednice same uređuju svoje poslove, a državni zakoni vrijede za sve jednako, bez obzira na vjeru.",
   "merksatz_de": "Staat und Religion sind in Deutschland getrennt."
  },
  {
   "id": "G-034",
   "q_bks": "Što Njemačka nije?",
-  "options_bks": ["demokracija", "pravna država", "monarhija", "socijalna država"],
+  "options_bks": [
+   "demokracija",
+   "pravna država",
+   "monarhija",
+   "socijalna država"
+  ],
   "expl_bks": "Njemačka nema kralja ni cara, nego je republika sa saveznim predsjednikom na čelu države. Monarhija je ukinuta 1918., kada je car Vilim II. nakon Prvog svjetskog rata morao otići s vlasti. Demokracija, pravna država i socijalna država temeljna su načela Temeljnog zakona.",
   "merksatz_de": "Eine Monarchie ist Deutschland nicht, es hat keinen König."
  },
  {
   "id": "G-035",
   "q_bks": "Čime njemačka država financira socijalno osiguranje?",
-  "options_bks": ["crkvenim porezom", "socijalnim doprinosima", "donacijama", "članarinama udruga"],
+  "options_bks": [
+   "crkvenim porezom",
+   "socijalnim doprinosima",
+   "donacijama",
+   "članarinama udruga"
+  ],
   "expl_bks": "Socijalno osiguranje uglavnom se financira socijalnim doprinosima. Zaposlenici i poslodavci svaki mjesec plaćaju doprinose za zdravstveno i mirovinsko osiguranje, osiguranje za njegu (Pflegeversicherung) i osiguranje za slučaj nezaposlenosti. Udio zaposlenika poslodavac odbija izravno od bruto plaće. Crkveni porez ide vjerskim zajednicama, a ne socijalnom osiguranju.",
   "merksatz_de": "Sozialabgaben finanzieren die Sozialversicherung."
  },
  {
   "id": "G-036",
   "q_bks": "Koja mjera u Njemačkoj stvara socijalnu sigurnost?",
-  "options_bks": ["zdravstveno osiguranje", "osiguranje automobila", "osiguranje zgrade", "osiguranje od odgovornosti"],
+  "options_bks": [
+   "zdravstveno osiguranje",
+   "osiguranje automobila",
+   "osiguranje zgrade",
+   "osiguranje od odgovornosti"
+  ],
   "expl_bks": "Zdravstveno osiguranje dio je socijalnog osiguranja. Ono pomaže ljudima kada su bolesni: plaća liječnika, bolnicu i lijekove. U Njemačkoj svatko mora imati zdravstveno osiguranje. Osiguranje automobila, zgrade ili od odgovornosti štiti imovinu i nije dio socijalnog osiguranja.",
   "merksatz_de": "Die Krankenversicherung gibt soziale Sicherheit."
  },
  {
   "id": "G-037",
   "q_bks": "Kako se zovu šefovi vlada većine saveznih pokrajina u Njemačkoj?",
-  "options_bks": ["prvi ministar (Erster Minister)", "premijer (Premierminister)", "senator (Senator)", "ministar predsjednik (Ministerpräsident)"],
+  "options_bks": [
+   "prvi ministar (Erster Minister)",
+   "premijer (Premierminister)",
+   "senator (Senator)",
+   "ministar predsjednik (Ministerpräsident)"
+  ],
   "expl_bks": "U 13 od 16 saveznih pokrajina na čelu pokrajinske vlade je ministar predsjednik (Ministerpräsident). U gradovima-pokrajinama nazivi su drukčiji: u Berlinu vladajući gradonačelnik (Regierender Bürgermeister), u Hamburgu prvi gradonačelnik (Erster Bürgermeister), a u Bremenu predsjednik Senata. Senator je član gradske vlade, a naziv „premijer” koristi se u drugim zemljama.",
   "merksatz_de": "An der Spitze der meisten Länder steht ein Ministerpräsident."
  },
  {
   "id": "G-038",
   "q_bks": "Savezna Republika Njemačka je demokratska i socijalna …",
-  "options_bks": ["zajednica država (Staatenverbund).", "savezna država (Bundesstaat).", "konfederacija (Staatenbund).", "centralizirana država (Zentralstaat)."],
+  "options_bks": [
+   "zajednica država (Staatenverbund).",
+   "savezna država (Bundesstaat).",
+   "konfederacija (Staatenbund).",
+   "centralizirana država (Zentralstaat)."
+  ],
   "expl_bks": "Ovo je rečenica iz članka 20. Temeljnog zakona. Savezna država znači da je Njemačka jedna država, sastavljena od 16 saveznih pokrajina s vlastitim parlamentima i vladama. Konfederacija (Staatenbund) samo je savez samostalnih država, a riječju „Staatenverbund” često se opisuje Europska unija.",
   "merksatz_de": "Laut Grundgesetz ist Deutschland ein demokratischer und sozialer Bundesstaat."
  },
  {
   "id": "G-039",
   "q_bks": "Što ima svaka njemačka savezna pokrajina?",
-  "options_bks": ["vlastitog ministra vanjskih poslova", "vlastitu valutu", "vlastitu vojsku", "vlastitu vladu"],
+  "options_bks": [
+   "vlastitog ministra vanjskih poslova",
+   "vlastitu valutu",
+   "vlastitu vojsku",
+   "vlastitu vladu"
+  ],
   "expl_bks": "Svaka savezna pokrajina ima vlastitu vladu i vlastiti parlament, u većini pokrajina Landtag (pokrajinski parlament). Pokrajinska vlada odlučuje, na primjer, o školama, policiji i kulturi. Vanjska politika i vojska zajedničke su za cijelu Njemačku, a novac je u cijeloj zemlji euro.",
   "merksatz_de": "Jedes Bundesland hat eine eigene Regierung."
  },
  {
   "id": "G-040",
   "q_bks": "Kojim riječima počinje njemačka državna himna?",
-  "options_bks": ["Völker, hört die Signale … (Narodi, čujte signale …)", "Einigkeit und Recht und Freiheit … (Jedinstvo i pravo i sloboda …)", "Freude schöner Götterfunken … (Radosti, lijepa iskro božanska …)", "Deutschland einig Vaterland … (Njemačka, jedinstvena domovino …)"],
+  "options_bks": [
+   "Völker, hört die Signale … (Narodi, čujte signale …)",
+   "Einigkeit und Recht und Freiheit … (Jedinstvo i pravo i sloboda …)",
+   "Freude schöner Götterfunken … (Radosti, lijepa iskro božanska …)",
+   "Deutschland einig Vaterland … (Njemačka, jedinstvena domovino …)"
+  ],
   "expl_bks": "Njemačka himna je treća strofa „Pjesme Nijemaca” (Lied der Deutschen), koju je 1841. napisao August Heinrich Hoffmann von Fallersleben. Počinje riječima „Einigkeit und Recht und Freiheit” (jedinstvo i pravo i sloboda). Ostali stihovi potječu iz drugih pjesama, na primjer „Deutschland einig Vaterland” iz himne DDR-a (Istočne Njemačke).",
   "merksatz_de": "Die Nationalhymne beginnt mit „Einigkeit und Recht und Freiheit”."
  },
  {
   "id": "G-041",
   "q_bks": "Zašto u demokraciji postoji više od jedne stranke?",
-  "options_bks": ["jer se tako zastupaju različita mišljenja građana", "da bi se ograničilo podmićivanje u politici", "da bi se spriječile političke demonstracije", "da bi se potaknulo gospodarsko natjecanje"],
+  "options_bks": [
+   "jer se tako zastupaju različita mišljenja građana",
+   "da bi se ograničilo podmićivanje u politici",
+   "da bi se spriječile političke demonstracije",
+   "da bi se potaknulo gospodarsko natjecanje"
+  ],
   "expl_bks": "Ljudi imaju različite interese i mišljenja, na primjer o porezima, okolišu ili obitelji. Različite stranke zastupaju te stavove u parlamentu. Na izborima građani biraju stranku koja najbolje odgovara njihovu mišljenju. Članak 21. Temeljnog zakona kaže da stranke sudjeluju u oblikovanju političke volje naroda.",
   "merksatz_de": "Verschiedene Parteien vertreten die verschiedenen Meinungen der Bürger."
  },
  {
   "id": "G-042",
   "q_bks": "Tko u Njemačkoj donosi novi zakon?",
-  "options_bks": ["vlada", "parlament", "sudovi", "policija"],
+  "options_bks": [
+   "vlada",
+   "parlament",
+   "sudovi",
+   "policija"
+  ],
   "expl_bks": "Zakone donosi parlament. Za savezne zakone to je Bundestag (savezni parlament), a Bundesrat (savezno vijeće pokrajina) u tome sudjeluje. Vlada može predložiti zakon, ali o njemu glasaju zastupnici. Sudovi primjenjuju zakone, a policija se brine da se zakoni poštuju. To je podjela vlasti.",
   "merksatz_de": "Neue Gesetze beschließt das Parlament."
  },
  {
   "id": "G-043",
   "q_bks": "Kada se u Njemačkoj može zabraniti stranka?",
-  "options_bks": ["ako je njezina izborna kampanja preskupa", "ako se bori protiv ustava", "ako kritizira šefa države", "ako njezin program predlaže novi smjer"],
+  "options_bks": [
+   "ako je njezina izborna kampanja preskupa",
+   "ako se bori protiv ustava",
+   "ako kritizira šefa države",
+   "ako njezin program predlaže novi smjer"
+  ],
   "expl_bks": "Stranka može biti zabranjena ako se aktivno bori protiv slobodnog demokratskog poretka, dakle protiv ustava. O tome ne odlučuje vlada, nego samo Savezni ustavni sud (članak 21. Temeljnog zakona). Kritika šefa države i nove političke ideje dopuštene su i dio su demokracije.",
   "merksatz_de": "Kämpft eine Partei gegen die Verfassung, kann man sie verbieten."
  },
  {
   "id": "G-044",
   "q_bks": "Koga građanin u Njemačkoj ne može izravno birati?",
-  "options_bks": ["zastupnike u Europskom parlamentu", "saveznog predsjednika", "zastupnike u Landtagu (pokrajinskom parlamentu)", "zastupnike u Bundestagu"],
+  "options_bks": [
+   "zastupnike u Europskom parlamentu",
+   "saveznog predsjednika",
+   "zastupnike u Landtagu (pokrajinskom parlamentu)",
+   "zastupnike u Bundestagu"
+  ],
   "expl_bks": "Saveznog predsjednika ne biraju građani izravno, nego Savezna skupština (Bundesversammlung). Nju čine svi zastupnici Bundestaga i jednak broj članova koje biraju pokrajinski parlamenti. Predsjednik se bira na pet godina. Zastupnike u Bundestagu, Landtagu i Europskom parlamentu građani biraju izravno na izborima.",
   "merksatz_de": "Den Bundespräsidenten wählt die Bundesversammlung, nicht das Volk."
  },
  {
   "id": "G-045",
   "q_bks": "U koje osiguranje spada osiguranje za njegu (Pflegeversicherung)?",
-  "options_bks": ["socijalno osiguranje", "osiguranje od nezgode", "osiguranje kućanstva", "osiguranje od odgovornosti i od požara"],
+  "options_bks": [
+   "socijalno osiguranje",
+   "osiguranje od nezgode",
+   "osiguranje kućanstva",
+   "osiguranje od odgovornosti i od požara"
+  ],
   "expl_bks": "Osiguranje za njegu (Pflegeversicherung) jedan je od stupova socijalnog osiguranja, kao i zdravstveno i mirovinsko osiguranje. Uvedeno je 1995. godine. Ono plaća dio troškova kada netko, na primjer zbog starosti ili bolesti, trajno treba pomoć i njegu. Zaposlenima se doprinos odbija izravno od plaće.",
   "merksatz_de": "Die Pflegeversicherung gehört zur Sozialversicherung."
  },
  {
   "id": "G-046",
   "q_bks": "Njemačka država ima mnogo zadataka. Koji od ovih zadataka spada u njih?",
-  "options_bks": ["Gradi ceste i škole.", "Prodaje hranu i odjeću.", "Svim stanovnicima besplatno daje novine.", "Proizvodi automobile i autobuse."],
+  "options_bks": [
+   "Gradi ceste i škole.",
+   "Prodaje hranu i odjeću.",
+   "Svim stanovnicima besplatno daje novine.",
+   "Proizvodi automobile i autobuse."
+  ],
   "expl_bks": "Država, pokrajine i općine grade i održavaju ceste, mostove i škole. Za to koriste novac od poreza. Hranu, odjeću, automobile i novine proizvode i prodaju privatne tvrtke. Država se brine za ono što trebaju svi građani, na primjer za promet i obrazovanje.",
   "merksatz_de": "Der Staat baut Straßen und Schulen."
  }

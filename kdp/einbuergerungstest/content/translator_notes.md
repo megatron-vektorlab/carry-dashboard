@@ -41,3 +41,31 @@ Pitanja na koja su agenti koji su prevodili upozorili. Ključ odgovora nigdje ni
 - G-190, G-224: pitanja o kraticama imaju u opcijama njemački naziv i prijevod u zagradi.
 - G-186: mjeseci su navedeni i brojem, npr. „17. lipnja (17. 6.)”, zbog čitatelja iz BiH i Srbije.
 - Dosljednost: „DDR” je muškog roda („DDR je bio”), „Stasi” ženskog.
+
+## Paket 06 (G-231 – G-276)
+- G-256: potreba za dozvolom za ugostiteljski objekt (Gaststättenerlaubnis) razlikuje se po pokrajinama. Objašnjenje kaže „pojedinosti ovise o pokrajini”.
+- G-268: objašnjenje navodi da se teorijski dio vozačkog ispita može polagati i na hrvatskom. **Provjeriti** (popis jezika, FeV Anlage 7, može se promijeniti).
+- G-236: „27” vrijedi od Brexita 2020.; objašnjenje to navodi.
+- G-242: neke pokrajine uvode obvezni vrtić za djecu kojoj treba jezična potpora. Objašnjenje zato kaže „u pravilu” nema obveze.
+- G-257, G-261: „Hauptschule” = „Hauptschule (niža srednja škola)”.
+
+## Paket 04 (G-139 – G-184)
+- G-150: pojam „sudac porotnik” iz pojmovnika djelomično otkriva točan odgovor („volonterski sudac”). Pregledano pri završnoj provjeri (vidi review_report.md).
+- G-173: ključ kaže da je Njemačka osnivačica EU-a. Točnije: Zapadna Njemačka suosnovala je EEZ 1957., a EU je nastao kasnije. Objašnjenje ide redom: Rimski ugovori → EEZ → današnji EU.
+- G-184: ključ je povijesno sporan (Rezolucija UN-a 181 bila je preporuka). Objašnjenje je neutralno: rezolucija UN-a 1947., proglašenje Izraela 1948.
+- G-179: „offiziell” u pitanju preveden kao „formalno”.
+- G-143, G-145: judikativa, egzekutiva, legislativa i operativa ostaju kao posuđenice, jer se pitanje odnosi upravo na te pojmove.
+- Dosljednost: „Židov/židovski” (ne „Jevrej”), „državni odvjetnik” = Staatsanwalt (razlikuje se od „odvjetnik” = Rechtsanwalt), „socijalno tržišno gospodarstvo”, hrvatski nazivi mjeseci.
+
+## Paket 03 (G-093 – G-138)
+- G-132: „Ehrenamt” namjerno ostaje na njemačkom u pitanju: „Ehrenamt” (doslovno: počasna dužnost). Pojam „volonterski rad” stoji samo u objašnjenju, da ne otkrije odgovor.
+- G-108: „Bürger der BRD” preveden doslovno („građanin”); objašnjenje navodi da je stvarni uvjet državljanstvo.
+- G-111: objašnjenje kaže da je javno pozivanje na uništenje Izraela zabranjeno i kažnjivo, ali ne navodi članak Kaznenog zakona, jer ovisi o slučaju.
+- G-104: zaštita trudnica od otkaza opisana je „u pravilu”, bez pravnih pojedinosti.
+
+## Paket 02 (G-047 – G-092)
+- G-072, G-075: točan odgovor je osoba na dužnosti (Merz, Steinmeier). Objašnjenja i Merksätze su datirani („izabran u svibnju 2025.”, „wurde …”). Mandat Steinmeiera završava u ožujku 2027., pa će se **ključ promijeniti** – prije svakog novog izdanja provjerite katalog.
+- G-073: najveći klubovi zastupnika vezani su uz izbore u veljači 2025.; objašnjenje navodi da se redoslijed može promijeniti.
+- G-056: pojam „komunalni redarstveni ured (Ordnungsamt)” iz pojmovnika blago upućuje na „općinsku upravu”.
+- G-089: pojam „klub zastupnika (Fraktion)” ponavlja riječ „zastupnika” iz pitanja, pa je odgovor u prijevodu lakše prepoznati nego na njemačkom.
+- G-052, G-061, G-074, G-080, G-085, G-090: objašnjenja iz pojmovnika u zagradama izostavljena su iz pitanja i opcija, jer bi otkrila odgovor; puni oblik stoji u objašnjenju.

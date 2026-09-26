@@ -133,14 +133,14 @@
  },
  {
   "id": "G-150",
-  "q_bks": "Sudac porotnik (Gerichtsschöffe) u Njemačkoj je …",
+  "q_bks": "Porotnik (Gerichtsschöffe) u Njemačkoj je …",
   "options_bks": [
    "zamjenik gradonačelnika.",
    "volonterski sudac.",
    "član općinskog vijeća.",
    "osoba koja je studirala pravo."
   ],
-  "expl_bks": "Sudac porotnik (Gerichtsschöffe) je građanin koji zajedno s profesionalnim sucima sudi u kaznenim postupcima. Taj posao obavlja volonterski: ne dobiva plaću, nego samo naknadu troškova. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
+  "expl_bks": "Porotnik (Gerichtsschöffe) je građanin koji kao sudac porotnik zajedno s profesionalnim sucima sudi u kaznenim postupcima. Taj posao obavlja volonterski: ne dobiva plaću, nego samo naknadu troškova. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
   "merksatz_de": "Ein Schöffe ist ein Richter im Ehrenamt."
  },
  {
@@ -152,7 +152,7 @@
    "Savezna Republika Njemačka",
    "SAD"
   ],
-  "expl_bks": "Berlinski zid izgradila je 13. kolovoza 1961. DDR (Njemačka Demokratska Republika, Istočna Njemačka). Vodstvo DDR-a htjelo je spriječiti da njezini građani bježe na Zapad. Zid je dijelio grad 28 godina, sve do pada Berlinskog zida 9. studenoga 1989.",
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) izgradila je Berlinski zid 13. kolovoza 1961. Vodstvo DDR-a htjelo je spriječiti da njezini građani bježe na Zapad. Zid je dijelio grad 28 godina, sve do pada Berlinskog zida 9. studenoga 1989.",
   "merksatz_de": "Die DDR baute 1961 die Mauer in Berlin."
  },
  {
@@ -387,8 +387,8 @@
   "id": "G-171",
   "q_bks": "Socijalna tržišna ekonomija (Soziale Marktwirtschaft) znači da se ekonomija …",
   "options_bks": [
-   "upravlja sama, samo prema ponudi i potražnji.",
-   "planira i vodi od strane države, a ponuda i potražnja ne uzimaju se u obzir.",
+   "sama regulira, samo prema ponudi i potražnji.",
+   "planira i usmjerava odlukama države, a ponuda i potražnja ne uzimaju se u obzir.",
    "ravna prema potražnji u inozemstvu.",
    "ravna prema ponudi i potražnji, ali država brine o socijalnoj ravnoteži."
   ],

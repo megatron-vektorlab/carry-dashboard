@@ -25,67 +25,67 @@
  },
  {
   "id": "MV-01",
-  "q_bks": "Koji grb pripada saveznoj pokrajini Mecklenburg-Zapadna Pomeranija?",
+  "q_bks": "Koji grb pripada saveznoj pokrajini Mecklenburg-Zapadno Pomorje?",
   "options_bks": [
    "Slika 1",
    "Slika 2",
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Mecklenburga-Zapadne Pomeranije: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi. Glava bika stari je znak Mecklenburga, a grifon znak Pomeranije. Tako grb pokazuje da je pokrajina nastala od dviju povijesnih regija.",
+  "expl_bks": "Grb Mecklenburga-Zapadnog Pomorja: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi. Glava bika stari je znak Mecklenburga, a grifon znak Pomeranije. Tako grb pokazuje da je pokrajina nastala od dviju povijesnih regija.",
   "merksatz_de": "Im Wappen von Mecklenburg-Vorpommern: Stierkopf und Greif."
  },
  {
   "id": "MV-02",
-  "q_bks": "Koji je od ovih okruga (Landkreis) u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "q_bks": "Koji je od ovih okruga (Landkreis) u Mecklenburgu-Zapadnom Pomorju?",
   "options_bks": [
    "Prignitz",
    "Mecklenburgische Seenplatte",
    "Vogtlandkreis",
    "Rhein-Sieg-Kreis"
   ],
-  "expl_bks": "Mecklenburgische Seenplatte („Mecklenburško jezersko područje”) okrug je u Mecklenburgu-Zapadnoj Pomeraniji i površinom najveći okrug u Njemačkoj. Ondje je jezero Müritz, najveće jezero koje u cijelosti leži u Njemačkoj. Prignitz je u Brandenburgu, Vogtlandkreis u Saskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "expl_bks": "Mecklenburgische Seenplatte („Mecklenburško jezersko područje”) okrug je u Mecklenburgu-Zapadnom Pomorju i površinom najveći okrug u Njemačkoj. Ondje je jezero Müritz, najveće jezero koje u cijelosti leži u Njemačkoj. Prignitz je u Brandenburgu, Vogtlandkreis u Saskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
   "merksatz_de": "Die Mecklenburgische Seenplatte ist ein Landkreis in Mecklenburg-Vorpommern."
  },
  {
   "id": "MV-03",
-  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "q_bks": "Na koliko se godina bira Landtag (pokrajinski parlament) u Mecklenburgu-Zapadnom Pomorju?",
   "options_bks": [
    "3",
    "4",
    "5",
    "6"
   ],
-  "expl_bks": "Landtag Mecklenburga-Zapadne Pomeranije bira se na pet godina. Zasjeda u dvorcu u Schwerinu. Zastupnici donose pokrajinske zakone i biraju ministra predsjednika. Pazite na zamku: Bundestag (savezni parlament) bira se na četiri godine, a Landtag ovdje na pet.",
+  "expl_bks": "Landtag Mecklenburga-Zapadnog Pomorja bira se na pet godina. Zasjeda u dvorcu u Schwerinu. Zastupnici donose pokrajinske zakone i biraju ministra predsjednika. Pazite na zamku: Bundestag (savezni parlament) bira se na četiri godine, a Landtag ovdje na pet.",
   "merksatz_de": "Der Landtag in Mecklenburg-Vorpommern wird für fünf Jahre gewählt."
  },
  {
   "id": "MV-04",
-  "q_bks": "Od koje dobi se u Mecklenburgu-Zapadnoj Pomeraniji smije glasati na lokalnim izborima (Kommunalwahlen)?",
+  "q_bks": "Od koje dobi se u Mecklenburgu-Zapadnom Pomorju smije glasati na lokalnim izborima (Kommunalwahlen)?",
   "options_bks": [
    "14",
    "16",
    "18",
    "20"
   ],
-  "expl_bks": "U Mecklenburgu-Zapadnoj Pomeraniji na lokalnim izborima smije se glasati s navršenih 16 godina. Na lokalnim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). Za izbore za Bundestag (savezni parlament) granica je 18 godina.",
+  "expl_bks": "U Mecklenburgu-Zapadnom Pomorju na lokalnim izborima smije se glasati s navršenih 16 godina. Na lokalnim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). Za izbore za Bundestag (savezni parlament) granica je 18 godina.",
   "merksatz_de": "Bei Kommunalwahlen in Mecklenburg-Vorpommern darf man ab 16 wählen."
  },
  {
   "id": "MV-05",
-  "q_bks": "Koje boje ima zastava savezne pokrajine Mecklenburg-Zapadna Pomeranija?",
+  "q_bks": "Koje boje ima zastava savezne pokrajine Mecklenburg-Zapadno Pomorje?",
   "options_bks": [
    "crna-crvena-zlatna",
    "plava-bijela-žuta-crvena",
    "zelena-bijela-crvena",
    "crna-žuta"
   ],
-  "expl_bks": "Zastava Mecklenburga-Zapadne Pomeranije ima vodoravne pruge u plavoj, bijeloj, žutoj i crvenoj boji. Plava, žuta i crvena stare su boje Mecklenburga, a plava i bijela boje Pomeranije. Crno-crveno-zlatna je savezna zastava Njemačke, a ne zastava ove pokrajine.",
+  "expl_bks": "Zastava Mecklenburga-Zapadnog Pomorja ima vodoravne pruge u plavoj, bijeloj, žutoj i crvenoj boji. Plava, žuta i crvena stare su boje Mecklenburga, a plava i bijela boje Pomeranije. Crno-crveno-zlatna je savezna zastava Njemačke, a ne zastava ove pokrajine.",
   "merksatz_de": "Die Flagge von Mecklenburg-Vorpommern ist blau-weiß-gelb-rot."
  },
  {
   "id": "MV-06",
-  "q_bks": "Gdje se u Mecklenburgu-Zapadnoj Pomeraniji možete informirati o političkim temama?",
+  "q_bks": "Gdje se u Mecklenburgu-Zapadnom Pomorju možete informirati o političkim temama?",
   "options_bks": [
    "u Pokrajinskom centru za političko obrazovanje (Landeszentrale für politische Bildung)",
    "u crkvama",
@@ -97,50 +97,50 @@
  },
  {
   "id": "MV-07",
-  "q_bks": "Glavni grad Mecklenburga-Zapadne Pomeranije zove se …",
+  "q_bks": "Glavni grad Mecklenburga-Zapadnog Pomorja zove se …",
   "options_bks": [
    "Greifswald.",
    "Schwerin.",
    "Rostock.",
    "Wismar."
   ],
-  "expl_bks": "Glavni grad Mecklenburga-Zapadne Pomeranije je Schwerin. Ondje su pokrajinska vlada i Landtag (pokrajinski parlament), koji zasjeda u poznatom dvorcu na jezeru. Česta zamka: Rostock je najveći grad pokrajine i važna luka, ali nije glavni grad.",
+  "expl_bks": "Glavni grad Mecklenburga-Zapadnog Pomorja je Schwerin. Ondje su pokrajinska vlada i Landtag (pokrajinski parlament), koji zasjeda u poznatom dvorcu na jezeru. Česta zamka: Rostock je najveći grad pokrajine i važna luka, ali nije glavni grad.",
   "merksatz_de": "Schwerin ist die Landeshauptstadt von Mecklenburg-Vorpommern."
  },
  {
   "id": "MV-08",
-  "q_bks": "Koja savezna pokrajina je Mecklenburg-Zapadna Pomeranija?",
+  "q_bks": "Koja savezna pokrajina je Mecklenburg-Zapadno Pomorje?",
   "options_bks": [
    "1",
    "2",
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Mecklenburg-Zapadna Pomeranija na sjeveroistoku, uz Baltičko more i granicu s Poljskom. Ovoj pokrajini pripada i Rügen, najveći njemački otok. Glavni grad je Schwerin, a najveći grad Rostock.",
+  "expl_bks": "Na karti je Mecklenburg-Zapadno Pomorje na sjeveroistoku, uz Baltičko more i granicu s Poljskom. Ovoj pokrajini pripada i Rügen, najveći njemački otok. Glavni grad je Schwerin, a najveći grad Rostock.",
   "merksatz_de": "Mecklenburg-Vorpommern liegt im Nordosten an der Ostsee."
  },
  {
   "id": "MV-09",
-  "q_bks": "Kako se zove šef vlade u Mecklenburgu-Zapadnoj Pomeraniji?",
+  "q_bks": "Kako se zove šef vlade u Mecklenburgu-Zapadnom Pomorju?",
   "options_bks": [
    "prvi ministar (Erster Minister)",
    "premijer (Premierminister)",
    "gradonačelnik (Bürgermeister)",
    "ministar predsjednik (Ministerpräsident)"
   ],
-  "expl_bks": "U Mecklenburgu-Zapadnoj Pomeraniji pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega bira Landtag (pokrajinski parlament) u Schwerinu. Naziv „premijer” ne koristi se za njemačke pokrajine, a gradonačelnik je na čelu grada ili općine.",
+  "expl_bks": "U Mecklenburgu-Zapadnom Pomorju pokrajinsku vladu vodi ministar predsjednik (Ministerpräsident). Njega bira Landtag (pokrajinski parlament) u Schwerinu. Naziv „premijer” ne koristi se za njemačke pokrajine, a gradonačelnik je na čelu grada ili općine.",
   "merksatz_de": "Regierungschef in Mecklenburg-Vorpommern ist der Ministerpräsident."
  },
  {
   "id": "MV-10",
-  "q_bks": "Kojeg ministra Mecklenburg-Zapadna Pomeranija nema?",
+  "q_bks": "Kojeg ministra Mecklenburg-Zapadno Pomorje nema?",
   "options_bks": [
    "ministra pravosuđa (Justizminister)",
    "ministra vanjskih poslova (Außenminister)",
    "ministra financija (Finanzminister)",
    "ministra unutarnjih poslova (Innenminister)"
   ],
-  "expl_bks": "Za vanjsku politiku i odnose s drugim državama nadležna je savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministra vanjskih poslova ima samo savezna vlada. Mecklenburg-Zapadna Pomeranija ima ministre za pravosuđe, financije i unutarnje poslove, npr. za sudove i policiju.",
+  "expl_bks": "Za vanjsku politiku i odnose s drugim državama nadležna je savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministra vanjskih poslova ima samo savezna vlada. Mecklenburg-Zapadno Pomorje ima ministre za pravosuđe, financije i unutarnje poslove, npr. za sudove i policiju.",
   "merksatz_de": "Außenpolitik macht der Bund, deshalb gibt es keinen Landes-Außenminister."
  },
  {
@@ -524,7 +524,7 @@
    "Neunkirchen",
    "Rhein-Sieg-Kreis"
   ],
-  "expl_bks": "Neunkirchen je okrug u Saarlandu, a istoimeni grad jedan je od najvećih gradova te pokrajine. Saarland je mala pokrajina s malo okruga. Mecklenburgische Seenplatte je u Mecklenburgu-Zapadnoj Pomeraniji, Altötting u Bavarskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
+  "expl_bks": "Neunkirchen je okrug u Saarlandu, a istoimeni grad jedan je od najvećih gradova te pokrajine. Saarland je mala pokrajina s malo okruga. Mecklenburgische Seenplatte je u Mecklenburgu-Zapadnom Pomorju, Altötting u Bavarskoj, a Rhein-Sieg-Kreis u Sjevernoj Rajni-Vestfaliji.",
   "merksatz_de": "Neunkirchen ist ein Landkreis im Saarland."
  },
  {

@@ -2,322 +2,552 @@
  {
   "id": "G-093",
   "q_bks": "Što više „drugih glasova” (Zweitstimmen) stranka dobije na izborima za Bundestag, to …",
-  "options_bks": ["manje prvih glasova može imati.", "više izravnih kandidata stranke ulazi u parlament.", "veći je rizik da će morati sklopiti koaliciju.", "više mjesta stranka dobiva u parlamentu."],
+  "options_bks": [
+   "manje prvih glasova može imati.",
+   "više izravnih kandidata stranke ulazi u parlament.",
+   "veći je rizik da će morati sklopiti koaliciju.",
+   "više mjesta stranka dobiva u parlamentu."
+  ],
   "expl_bks": "Drugi glas (Zweitstimme) daje se stranci, odnosno njezinoj listi. Prema udjelu drugih glasova određuje se koliko mjesta svaka stranka dobiva u Bundestagu (savezni parlament). Zato vrijedi: što više drugih glasova, to više mjesta. Prvim glasom bira se kandidat u izbornom okrugu.",
   "merksatz_de": "Mehr Zweitstimmen bedeuten mehr Sitze im Bundestag."
  },
  {
   "id": "G-094",
   "q_bks": "Od koje se dobi u Njemačkoj smije sudjelovati na izborima za njemački Bundestag?",
-  "options_bks": ["16", "18", "21", "23"],
+  "options_bks": [
+   "16",
+   "18",
+   "21",
+   "23"
+  ],
   "expl_bks": "Na izborima za Bundestag (savezni parlament) smiju glasati njemački državljani koji na dan izbora imaju najmanje 18 godina. To određuje članak 38. Temeljnog zakona. U nekim saveznim pokrajinama na lokalnim izborima glasa se već sa 16 godina, ali za Bundestag granica je 18.",
   "merksatz_de": "Für die Bundestagswahl muss man mindestens 18 Jahre alt sein."
  },
  {
   "id": "G-095",
   "q_bks": "Što vrijedi za većinu djece u Njemačkoj?",
-  "options_bks": ["obveza glasanja", "obvezno školovanje", "obveza čuvanja tajne", "vjerska obveza"],
+  "options_bks": [
+   "obveza glasanja",
+   "obvezno školovanje",
+   "obveza čuvanja tajne",
+   "vjerska obveza"
+  ],
   "expl_bks": "U Njemačkoj postoji obvezno školovanje (Schulpflicht): djeca moraju ići u školu, obično od šeste godine, devet ili deset godina, ovisno o saveznoj pokrajini. Roditelji moraju paziti da dijete redovito ide na nastavu. Obveza glasanja u Njemačkoj ne postoji, a vjera je slobodan izbor.",
   "merksatz_de": "In Deutschland gilt für Kinder die Schulpflicht."
  },
  {
   "id": "G-096",
   "q_bks": "Kako može biti kažnjen netko tko poriče holokaust?",
-  "options_bks": ["smanjenjem socijalnih davanja", "do 100 sati društveno korisnog rada", "nikako, poricanje holokausta je dopušteno", "kaznom zatvora do pet godina ili novčanom kaznom"],
+  "options_bks": [
+   "smanjenjem socijalnih davanja",
+   "do 100 sati društveno korisnog rada",
+   "nikako, poricanje holokausta je dopušteno",
+   "kaznom zatvora do pet godina ili novčanom kaznom"
+  ],
   "expl_bks": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo. Kazneni zakon (§ 130, poticanje na mržnju – Volksverhetzung) za to predviđa kaznu zatvora do pet godina ili novčanu kaznu. Tako se štiti sjećanje na žrtve i javni mir.",
   "merksatz_de": "Holocaustleugnung ist in Deutschland eine Straftat."
  },
  {
   "id": "G-097",
   "q_bks": "Što se u Njemačkoj automatski plaća kad je netko stalno zaposlen?",
-  "options_bks": ["socijalno osiguranje", "socijalnu pomoć", "dječji doplatak (Kindergeld)", "doplatak za stanovanje (Wohngeld)"],
+  "options_bks": [
+   "socijalno osiguranje",
+   "socijalnu pomoć",
+   "dječji doplatak (Kindergeld)",
+   "doplatak za stanovanje (Wohngeld)"
+  ],
   "expl_bks": "Tko je stalno zaposlen, automatski plaća doprinose za socijalno osiguranje: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti i osiguranje za njegu (Pflegeversicherung). Poslodavac taj iznos odbija izravno od bruto plaće i uplaćuje ga. Socijalna pomoć, dječji doplatak i doplatak za stanovanje davanja su koja se primaju, a ne plaćaju.",
   "merksatz_de": "Mit fester Arbeit zahlt man automatisch in die Sozialversicherung."
  },
  {
   "id": "G-098",
   "q_bks": "Kad zastupnici u njemačkom Bundestagu promijene klub zastupnika (Fraktion), …",
-  "options_bks": ["ne smiju više sudjelovati na sjednicama parlamenta.", "vlada može izgubiti većinu.", "savezni predsjednik mora prije toga dati svoj pristanak.", "birači tih zastupnika smiju još jednom glasati."],
+  "options_bks": [
+   "ne smiju više sudjelovati na sjednicama parlamenta.",
+   "vlada može izgubiti većinu.",
+   "savezni predsjednik mora prije toga dati svoj pristanak.",
+   "birači tih zastupnika smiju još jednom glasati."
+  ],
   "expl_bks": "Savezna vlada treba većinu u Bundestagu (savezni parlament) da bi mogla donositi zakone. Ako zastupnici vladajućih stranaka prijeđu u drugi klub zastupnika (Fraktion), npr. u opoziciju, vlada može ostati bez većine. Promjena kluba je dopuštena, jer su zastupnici prema članku 38. Temeljnog zakona vezani samo svojom savješću.",
   "merksatz_de": "Durch Fraktionswechsel kann die Regierung ihre Mehrheit verlieren."
  },
  {
   "id": "G-099",
   "q_bks": "Tko u Njemačkoj plaća socijalna osiguranja?",
-  "options_bks": ["poslodavci i zaposlenici", "samo zaposlenici", "svi državljani", "samo poslodavci"],
+  "options_bks": [
+   "poslodavci i zaposlenici",
+   "samo zaposlenici",
+   "svi državljani",
+   "samo poslodavci"
+  ],
   "expl_bks": "Socijalna osiguranja financiraju se doprinosima koje zajedno plaćaju poslodavci i zaposlenici, većinom otprilike pola-pola. Dio zaposlenika odbija se automatski od bruto plaće, a poslodavac dodaje svoj dio. Zaposlenikov dio vidi se na obračunu plaće (Lohnabrechnung).",
   "merksatz_de": "Arbeitgeber und Arbeitnehmer zahlen zusammen die Sozialversicherung."
  },
  {
   "id": "G-100",
   "q_bks": "Što ne spada u zakonsko socijalno osiguranje?",
-  "options_bks": ["životno osiguranje", "zakonsko mirovinsko osiguranje", "osiguranje za slučaj nezaposlenosti", "osiguranje za njegu (Pflegeversicherung)"],
+  "options_bks": [
+   "životno osiguranje",
+   "zakonsko mirovinsko osiguranje",
+   "osiguranje za slučaj nezaposlenosti",
+   "osiguranje za njegu (Pflegeversicherung)"
+  ],
   "expl_bks": "Zakonsko socijalno osiguranje ima pet grana: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti, osiguranje za njegu i osiguranje od nezgode. Životno osiguranje nije među njima. To je privatno osiguranje koje svatko može dobrovoljno sklopiti kod osiguravajuće kuće.",
   "merksatz_de": "Die Lebensversicherung ist eine private, freiwillige Versicherung."
  },
  {
   "id": "G-101",
   "q_bks": "Sindikati su udruženja koja zastupaju interese …",
-  "options_bks": ["mladih.", "zaposlenika.", "umirovljenika.", "poslodavaca."],
+  "options_bks": [
+   "mladih.",
+   "zaposlenika.",
+   "umirovljenika.",
+   "poslodavaca."
+  ],
   "expl_bks": "Sindikati (Gewerkschaften) udruženja su zaposlenika. Pregovaraju s poslodavcima o plaćama, radnom vremenu i godišnjem odmoru te sklapaju kolektivne ugovore (Tarifverträge). Članstvo je dobrovoljno i plaća se članarina. Poslodavci imaju svoja posebna udruženja (Arbeitgeberverbände).",
   "merksatz_de": "Gewerkschaften vertreten die Interessen der Arbeitnehmer."
  },
  {
   "id": "G-102",
   "q_bks": "Čime netko u Saveznoj Republici Njemačkoj može biti odlikovan ako je postigao posebna dostignuća na političkom, gospodarskom, kulturnom, duhovnom ili socijalnom području? …",
-  "options_bks": ["saveznim križem za zasluge (Bundesverdienstkreuz)", "saveznim orlom (Bundesadler)", "domovinskim ordenom za zasluge (Vaterländischer Verdienstorden)", "počasnom titulom „Heroj Njemačke Demokratske Republike”"],
+  "options_bks": [
+   "saveznim križem za zasluge (Bundesverdienstkreuz)",
+   "saveznim orlom (Bundesadler)",
+   "domovinskim ordenom za zasluge (Vaterländischer Verdienstorden)",
+   "počasnom titulom „Heroj Njemačke Demokratske Republike”"
+  ],
   "expl_bks": "Savezni križ za zasluge (Bundesverdienstkreuz) najpoznatije je odlikovanje Savezne Republike Njemačke, uvedeno 1951. godine. Dodjeljuje ga savezni predsjednik ljudima s posebnim zaslugama, često i za volonterski rad. Domovinski orden za zasluge i titula „Heroj DDR-a” bila su odlikovanja DDR-a (Njemačka Demokratska Republika, Istočna Njemačka), a savezni orao je državni simbol na grbu.",
   "merksatz_de": "Für besondere Verdienste gibt es das Bundesverdienstkreuz."
  },
  {
   "id": "G-103",
   "q_bks": "Što se u Njemačkoj naziva „semaforskom koalicijom” (Ampelkoalition)? Suradnja …",
-  "options_bks": ["klubova zastupnika CDU-a i CSU-a u Bundestagu", "SPD-a, FDP-a i stranke Bündnis 90/Die Grünen u jednoj vladi", "CSU-a, stranke Die LINKE i stranke Bündnis 90/Die Grünen u jednoj vladi", "klubova zastupnika CDU-a i SPD-a u Bundestagu"],
+  "options_bks": [
+   "klubova zastupnika CDU-a i CSU-a u Bundestagu",
+   "SPD-a, FDP-a i stranke Bündnis 90/Die Grünen u jednoj vladi",
+   "CSU-a, stranke Die LINKE i stranke Bündnis 90/Die Grünen u jednoj vladi",
+   "klubova zastupnika CDU-a i SPD-a u Bundestagu"
+  ],
   "expl_bks": "Koalicije se često nazivaju prema bojama stranaka. Boja SPD-a je crvena, FDP-a žuta, a stranke Bündnis 90/Die Grünen zelena – kao tri svjetla na semaforu (Ampel). Zato se vlada tih triju stranaka zove „semaforska koalicija”. Koalicija CDU/CSU-a i SPD-a naziva se „velika koalicija”.",
   "merksatz_de": "Eine Ampelkoalition bilden SPD, FDP und Grüne."
  },
  {
   "id": "G-104",
   "q_bks": "Žena u Njemačkoj izgubi posao. Što ne smije biti razlog za taj otkaz?",
-  "options_bks": ["Žena je dugo bolesna i nesposobna za rad.", "Žena je često kasnila na posao.", "Žena za vrijeme radnog vremena obavlja privatne stvari.", "Žena će dobiti dijete i njezin šef to zna."],
+  "options_bks": [
+   "Žena je dugo bolesna i nesposobna za rad.",
+   "Žena je često kasnila na posao.",
+   "Žena za vrijeme radnog vremena obavlja privatne stvari.",
+   "Žena će dobiti dijete i njezin šef to zna."
+  ],
   "expl_bks": "Trudnice i majke nakon poroda posebno su zaštićene Zakonom o zaštiti majčinstva (Mutterschutzgesetz). Od početka trudnoće do najmanje četiri mjeseca nakon poroda poslodavac ženi u pravilu ne smije dati otkaz. Duga bolest, česta kašnjenja ili privatni poslovi za vrijeme rada, naprotiv, pod određenim uvjetima mogu biti razlog za otkaz.",
   "merksatz_de": "Schwangeren darf man in der Regel nicht kündigen."
  },
  {
   "id": "G-105",
   "q_bks": "Koji je jedan od zadataka izbornih pomagača (Wahlhelfer) u Njemačkoj?",
-  "options_bks": ["Pomažu starijim osobama pri glasanju u glasačkoj kabini.", "Pišu obavijesti o izborima (pozive na glasanje) prije izbora.", "Prosljeđuju međurezultate medijima.", "Broje glasove nakon završetka izbora."],
+  "options_bks": [
+   "Pomažu starijim osobama pri glasanju u glasačkoj kabini.",
+   "Pišu obavijesti o izborima (pozive na glasanje) prije izbora.",
+   "Prosljeđuju međurezultate medijima.",
+   "Broje glasove nakon završetka izbora."
+  ],
   "expl_bks": "Izborni pomagači (Wahlhelfer) rade volonterski na biralištu. Paze da glasanje teče pravilno, a nakon zatvaranja birališta u 18 sati javno broje glasove. Glasanje je tajno, pa svaki birač u kabini u pravilu glasa sam. Obavijesti o izborima šalje općina, a rezultate objavljuju izborna tijela.",
   "merksatz_de": "Wahlhelfer zählen nach der Wahl die Stimmen."
  },
  {
   "id": "G-106",
   "q_bks": "U Njemačkoj na izborima pomažu izborni pomagači (Wahlhelfer) koji rade volonterski. Koji je jedan od zadataka izbornih pomagača?",
-  "options_bks": ["Pomažu djeci i starijim osobama pri glasanju.", "Pišu dopisnice i pisma s podatkom o biralištu.", "Prosljeđuju međurezultate novinarima.", "Broje glasove nakon završetka izbora."],
+  "options_bks": [
+   "Pomažu djeci i starijim osobama pri glasanju.",
+   "Pišu dopisnice i pisma s podatkom o biralištu.",
+   "Prosljeđuju međurezultate novinarima.",
+   "Broje glasove nakon završetka izbora."
+  ],
   "expl_bks": "Na svakom biralištu radi birački odbor (Wahlvorstand) od nekoliko volontera. Oni izdaju glasačke listiće i paze na red, a nakon zatvaranja birališta u 18 sati broje glasove. Brojenje je javno, svatko može gledati. Obavijesti o izborima ne pišu pomagači, nego ih šalje općina.",
   "merksatz_de": "Nach Schließung der Wahllokale zählen Wahlhelfer die Stimmen."
  },
  {
   "id": "G-107",
   "q_bks": "Na koliko se godina u Njemačkoj bira Bundestag?",
-  "options_bks": ["2 godine", "4 godine", "6 godina", "8 godina"],
+  "options_bks": [
+   "2 godine",
+   "4 godine",
+   "6 godina",
+   "8 godina"
+  ],
   "expl_bks": "Bundestag (savezni parlament) bira se na četiri godine. To razdoblje zove se izborni period (Wahlperiode), a određeno je u članku 39. Temeljnog zakona. Raniji izbori mogući su samo u posebnim slučajevima, kad savezni predsjednik raspusti Bundestag.",
   "merksatz_de": "Der Bundestag wird für vier Jahre gewählt."
  },
  {
   "id": "G-108",
   "q_bks": "Na izborima za Bundestag u Njemačkoj smije glasati svatko tko …",
-  "options_bks": ["živi u Saveznoj Republici Njemačkoj i želi glasati.", "je građanin Savezne Republike Njemačke i ima najmanje 18 godina.", "živi u Saveznoj Republici Njemačkoj najmanje 3 godine.", "je građanin Savezne Republike Njemačke i ima najmanje 21 godinu."],
+  "options_bks": [
+   "živi u Saveznoj Republici Njemačkoj i želi glasati.",
+   "je građanin Savezne Republike Njemačke i ima najmanje 18 godina.",
+   "živi u Saveznoj Republici Njemačkoj najmanje 3 godine.",
+   "je građanin Savezne Republike Njemačke i ima najmanje 21 godinu."
+  ],
   "expl_bks": "Za izbore za Bundestag (savezni parlament) vrijede dva uvjeta: njemačko državljanstvo i najmanje 18 godina (članak 38. Temeljnog zakona). Sam boravak u Njemačkoj nije dovoljan, bez obzira na to koliko dugo netko ovdje živi. Nakon naturalizacije (stjecanja državljanstva) dobiva se i to pravo.",
   "merksatz_de": "Wählen dürfen deutsche Staatsbürger ab 18 Jahren."
  },
  {
   "id": "G-109",
   "q_bks": "Koliko se često u Njemačkoj obično održavaju izbori za Bundestag?",
-  "options_bks": ["svake tri godine", "svake četiri godine", "svakih pet godina", "svakih šest godina"],
+  "options_bks": [
+   "svake tri godine",
+   "svake četiri godine",
+   "svakih pet godina",
+   "svakih šest godina"
+  ],
   "expl_bks": "Izbori za Bundestag (savezni parlament) redovito se održavaju svake četiri godine, jer toliko traje izborni period prema članku 39. Temeljnog zakona. Iznimka su prijevremeni izbori: ako savezni predsjednik raspusti Bundestag, novi izbori održavaju se ranije, u roku od 60 dana.",
   "merksatz_de": "Bundestagswahlen finden normalerweise alle vier Jahre statt."
  },
  {
   "id": "G-110",
   "q_bks": "Na koliko se godina u Njemačkoj bira Bundestag?",
-  "options_bks": ["2 godine", "3 godine", "4 godine", "5 godina"],
+  "options_bks": [
+   "2 godine",
+   "3 godine",
+   "4 godine",
+   "5 godina"
+  ],
   "expl_bks": "Mandat Bundestaga (savezni parlament) traje četiri godine, prema članku 39. Temeljnog zakona. U tom razdoblju zastupnici donose zakone i biraju saveznog kancelara. Pažnja, zamka: Europski parlament i većina pokrajinskih parlamenata (Landtag) biraju se na pet godina, a Bundestag na četiri.",
   "merksatz_de": "Eine Wahlperiode des Bundestages dauert vier Jahre."
  },
  {
   "id": "G-111",
   "q_bks": "Koji su postupci u vezi s državom Izrael zabranjeni u Njemačkoj?",
-  "options_bks": ["javno kritiziranje politike Izraela", "vješanje izraelske zastave na privatnom zemljištu", "rasprava o politici Izraela", "javni poziv na uništenje Izraela"],
+  "options_bks": [
+   "javno kritiziranje politike Izraela",
+   "vješanje izraelske zastave na privatnom zemljištu",
+   "rasprava o politici Izraela",
+   "javni poziv na uništenje Izraela"
+  ],
   "expl_bks": "Javni poziv na uništenje Izraela u Njemačkoj je zabranjen i može se kazniti, jer potiče na mržnju i nasilje. Kritizirati politiku izraelske vlade i raspravljati o njoj dopušteno je; to je dio slobode mišljenja. Zbog svoje povijesti Njemačka posebno odlučno postupa protiv antisemitizma.",
   "merksatz_de": "Zur Vernichtung Israels aufzurufen ist in Deutschland verboten."
  },
  {
   "id": "G-112",
   "q_bks": "Izbori u Njemačkoj su …",
-  "options_bks": ["posebni.", "tajni.", "vezani uz zanimanje.", "ovisni o spolu."],
+  "options_bks": [
+   "posebni.",
+   "tajni.",
+   "vezani uz zanimanje.",
+   "ovisni o spolu."
+  ],
   "expl_bks": "Izbori u Njemačkoj su tajni: svatko glasa sam u glasačkoj kabini i nitko ne smije vidjeti ni provjeravati za koga je netko glasao. To je jedno od pet izbornih načela iz članka 38. Temeljnog zakona: izbori su opći, neposredni, slobodni, jednaki i tajni.",
   "merksatz_de": "Wahlen in Deutschland sind geheim."
  },
  {
   "id": "G-113",
   "q_bks": "Izbore u Njemačkoj pobjeđuje stranka koja …",
-  "options_bks": ["dobije najviše glasova.", "dobije glasove većine muškaraca.", "je dobila najviše glasova među radnicima.", "je za svog kandidata za kancelara dobila najviše prvih glasova."],
+  "options_bks": [
+   "dobije najviše glasova.",
+   "dobije glasove većine muškaraca.",
+   "je dobila najviše glasova među radnicima.",
+   "je za svog kandidata za kancelara dobila najviše prvih glasova."
+  ],
   "expl_bks": "Izbore pobjeđuje stranka koja dobije najviše glasova. Svaki glas vrijedi jednako, bez obzira na to glasa li muškarac ili žena, radnik ili poslodavac. Na izborima za Bundestag za raspodjelu mjesta presudan je drugi glas. Kancelara ne bira narod izravno, nego ga bira Bundestag.",
   "merksatz_de": "Die Partei mit den meisten Stimmen gewinnt die Wahl."
  },
  {
   "id": "G-114",
   "q_bks": "Sudjelovati na demokratskim izborima u Njemačkoj je …",
-  "options_bks": ["obveza.", "pravo.", "prisila.", "teret."],
+  "options_bks": [
+   "obveza.",
+   "pravo.",
+   "prisila.",
+   "teret."
+  ],
   "expl_bks": "Glasanje je u Njemačkoj pravo, a ne obveza. Svaki birač sam odlučuje hoće li glasati; tko ne glasa, ne plaća kaznu. Ipak je sudjelovanje na izborima važno, jer tako građani utječu na to tko će ih predstavljati u parlamentu.",
   "merksatz_de": "Wählen ist in Deutschland ein Recht, keine Pflicht."
  },
  {
   "id": "G-115",
   "q_bks": "Što u Njemačkoj znači „aktivno biračko pravo”?",
-  "options_bks": ["Osoba može biti birana.", "Osoba mora ići glasati.", "Osoba može birati.", "Osoba mora ići na brojenje glasova."],
+  "options_bks": [
+   "Osoba može biti birana.",
+   "Osoba mora ići glasati.",
+   "Osoba može birati.",
+   "Osoba mora ići na brojenje glasova."
+  ],
   "expl_bks": "Aktivno biračko pravo znači da osoba smije birati, tj. glasati na izborima. Pasivno biračko pravo znači da osoba može biti birana, na primjer kao zastupnik u parlamentu. Za izbore za Bundestag oba prava imaju njemački državljani od 18 godina. Obveza glasanja ne postoji.",
   "merksatz_de": "Aktives Wahlrecht heißt: Ich darf wählen."
  },
  {
   "id": "G-116",
   "q_bks": "Ako smijete glasati na izborima za Bundestag u Njemačkoj, to se zove …",
-  "options_bks": ["aktivna izborna kampanja (Wahlkampagne).", "aktivni izborni postupak (Wahlverfahren).", "aktivna predizborna borba (Wahlkampf).", "aktivno biračko pravo (Wahlrecht)."],
+  "options_bks": [
+   "aktivna izborna kampanja (Wahlkampagne).",
+   "aktivni izborni postupak (Wahlverfahren).",
+   "aktivna predizborna borba (Wahlkampf).",
+   "aktivno biračko pravo (Wahlrecht)."
+  ],
   "expl_bks": "Pravo da glasate zove se aktivno biračko pravo (aktives Wahlrecht). Na izborima za Bundestag (savezni parlament) imaju ga svi njemački državljani s najmanje 18 godina. Pravo da budete izabrani zove se pasivno biračko pravo. Kampanja i predizborna borba odnose se na stranke, a ne na birače.",
   "merksatz_de": "Wer wählen darf, hat das aktive Wahlrecht."
  },
  {
   "id": "G-117",
   "q_bks": "Koliko najmanje posto drugih glasova stranke moraju dobiti da bi bile izabrane u njemački Bundestag?",
-  "options_bks": ["3 %", "4 %", "5 %", "6 %"],
+  "options_bks": [
+   "3 %",
+   "4 %",
+   "5 %",
+   "6 %"
+  ],
   "expl_bks": "Za Bundestag (savezni parlament) vrijedi izborni prag od 5 %: stranka mora dobiti najmanje 5 % svih drugih glasova u Njemačkoj da bi dobila mjesta prema svom udjelu. Tako parlament ne postaje rascjepkan na previše malih stranaka. Prag ne vrijedi za stranke nacionalnih manjina, npr. danske manjine.",
   "merksatz_de": "Parteien brauchen mindestens fünf Prozent der Zweitstimmen."
  },
  {
   "id": "G-118",
   "q_bks": "Tko smije postati član jedne od otprilike 40 židovskih sportskih udruga Makkabi?",
-  "options_bks": ["samo Nijemci", "samo Izraelci", "samo religiozni ljudi", "svi ljudi"],
+  "options_bks": [
+   "samo Nijemci",
+   "samo Izraelci",
+   "samo religiozni ljudi",
+   "svi ljudi"
+  ],
   "expl_bks": "Udruge Makkabi imaju židovske korijene, ali su otvorene za sve ljude. Članom može postati svatko, bez obzira na vjeru, podrijetlo ili državljanstvo, a mnogi članovi nisu Židovi. Ime dolazi od Makabejaca, židovskih boraca iz antičkog vremena. U udrugama se treniraju nogomet, košarka, tenis i mnogi drugi sportovi.",
   "merksatz_de": "Bei Makkabi-Sportvereinen dürfen alle Menschen Mitglied werden."
  },
  {
   "id": "G-119",
   "q_bks": "Izbori u Njemačkoj su slobodni. Što to znači?",
-  "options_bks": ["Svi osuđeni počinitelji kaznenih djela ne smiju glasati.", "Ako želim ići glasati, moj poslodavac mi mora dati slobodno.", "Svaka osoba može bez prisile odlučiti hoće li glasati i za koga će glasati.", "Mogu slobodno odlučiti gdje ću glasati."],
+  "options_bks": [
+   "Svi osuđeni počinitelji kaznenih djela ne smiju glasati.",
+   "Ako želim ići glasati, moj poslodavac mi mora dati slobodno.",
+   "Svaka osoba može bez prisile odlučiti hoće li glasati i za koga će glasati.",
+   "Mogu slobodno odlučiti gdje ću glasati."
+  ],
   "expl_bks": "Slobodni izbori znače da nitko ne smije vršiti pritisak na birače: ni država, ni poslodavac, ni obitelj. Svatko sam i bez straha odlučuje hoće li uopće glasati i za koga. Zato u Njemačkoj nema obveze glasanja, a glasanje je tajno.",
   "merksatz_de": "Freie Wahl: Niemand darf mich zum Wählen zwingen."
  },
  {
   "id": "G-120",
   "q_bks": "Izborni sustav u Njemačkoj je …",
-  "options_bks": ["cenzusno biračko pravo (Zensuswahlrecht).", "troklasno biračko pravo (Dreiklassenwahlrecht).", "većinsko i razmjerno biračko pravo (Mehrheits- und Verhältniswahlrecht).", "opće muško biračko pravo (allgemeines Männerwahlrecht)."],
+  "options_bks": [
+   "cenzusno biračko pravo (Zensuswahlrecht).",
+   "troklasno biračko pravo (Dreiklassenwahlrecht).",
+   "većinsko i razmjerno biračko pravo (Mehrheits- und Verhältniswahlrecht).",
+   "opće muško biračko pravo (allgemeines Männerwahlrecht)."
+  ],
   "expl_bks": "Njemački sustav spaja dva načela. Prvim glasom bira se kandidat u izbornom okrugu po većinskom načelu (najviše glasova). Drugim glasom bira se stranka, a mjesta u Bundestagu (savezni parlament) dijele se razmjerno udjelu glasova. Cenzusno i troklasno biračko pravo davali su bogatijima veći utjecaj i danas ne postoje.",
   "merksatz_de": "Das Wahlsystem verbindet Mehrheitswahl und Verhältniswahl."
  },
  {
   "id": "G-121",
   "q_bks": "Stranka želi ući u njemački Bundestag. Ali za to mora dobiti minimalni udio glasova birača. To se zove …",
-  "options_bks": ["izborni prag od 5 % (5%-Hürde).", "granica za prijem (Zulassungsgrenze).", "osnovna vrijednost (Basiswert).", "smjernica (Richtlinie)."],
+  "options_bks": [
+   "izborni prag od 5 % (5%-Hürde).",
+   "granica za prijem (Zulassungsgrenze).",
+   "osnovna vrijednost (Basiswert).",
+   "smjernica (Richtlinie)."
+  ],
   "expl_bks": "Taj minimalni udio zove se izborni prag od 5 % (5%-Hürde). Stranka mora osvojiti najmanje 5 % drugih glasova u cijeloj Njemačkoj da bi dobila mjesta u Bundestagu (savezni parlament) prema svom udjelu. Stranka s, na primjer, 4,8 % drugih glasova u pravilu ne ulazi u Bundestag.",
   "merksatz_de": "Den nötigen Mindestanteil an Stimmen nennt man 5%-Hürde."
  },
  {
   "id": "G-122",
   "q_bks": "Kojem načelu podliježu izbori u Njemačkoj? Izbori u Njemačkoj su …",
-  "options_bks": ["slobodni, jednaki, tajni.", "otvoreni, sigurni, slobodni.", "zatvoreni, jednaki, sigurni.", "sigurni, otvoreni, dobrovoljni."],
+  "options_bks": [
+   "slobodni, jednaki, tajni.",
+   "otvoreni, sigurni, slobodni.",
+   "zatvoreni, jednaki, sigurni.",
+   "sigurni, otvoreni, dobrovoljni."
+  ],
   "expl_bks": "Članak 38. Temeljnog zakona određuje pet izbornih načela: izbori su opći, neposredni, slobodni, jednaki i tajni. Slobodni znači bez pritiska, jednaki znači da svaki glas vrijedi jednako, a tajni da nitko ne smije vidjeti za koga glasate. „Otvoreni” izbori bili bi suprotnost tajnosti.",
   "merksatz_de": "Wahlen sind allgemein, unmittelbar, frei, gleich und geheim."
  },
  {
   "id": "G-123",
   "q_bks": "Što je u Njemačkoj „izborni prag od 5 %” (5%-Hürde)?",
-  "options_bks": ["pravilo glasanja u Bundestagu za male stranke", "provjera prisutnosti u Bundestagu kod glasanja", "minimalni udio glasova birača da bi se ušlo u parlament", "provjera prisutnosti u Bundesratu kod glasanja"],
+  "options_bks": [
+   "pravilo glasanja u Bundestagu za male stranke",
+   "provjera prisutnosti u Bundestagu kod glasanja",
+   "minimalni udio glasova birača da bi se ušlo u parlament",
+   "provjera prisutnosti u Bundesratu kod glasanja"
+  ],
   "expl_bks": "Izborni prag od 5 % odnosi se na izbore, a ne na glasanja unutar parlamenta. Stranka mora dobiti najmanje 5 % drugih glasova da bi ušla u Bundestag (savezni parlament) s mjestima prema svom udjelu. Slično pravilo vrijedi i na izborima za pokrajinske parlamente (Landtag).",
   "merksatz_de": "Die 5%-Hürde ist ein Mindestanteil an Wählerstimmen."
  },
  {
   "id": "G-124",
   "q_bks": "Izbori za Bundestag u Njemačkoj su izbori …",
-  "options_bks": ["saveznog kancelara.", "parlamenata pokrajina.", "parlamenta za Njemačku.", "saveznog predsjednika."],
+  "options_bks": [
+   "saveznog kancelara.",
+   "parlamenata pokrajina.",
+   "parlamenta za Njemačku.",
+   "saveznog predsjednika."
+  ],
   "expl_bks": "Na izborima za Bundestag (savezni parlament) građani biraju parlament za cijelu Njemačku. Saveznog kancelara zatim bira Bundestag, a saveznog predsjednika Savezna skupština (Bundesversammlung). Pokrajinski parlamenti (Landtag) biraju se na posebnim pokrajinskim izborima.",
   "merksatz_de": "Bei der Bundestagswahl wählt man das Parlament für Deutschland."
  },
  {
   "id": "G-125",
   "q_bks": "U demokraciji je jedna od funkcija redovitih izbora …",
-  "options_bks": ["prisiliti građane da glasaju.", "omogućiti promjenu vlade prema volji većine birača.", "zadržati postojeće zakone u zemlji.", "dati više moći siromašnima."],
+  "options_bks": [
+   "prisiliti građane da glasaju.",
+   "omogućiti promjenu vlade prema volji većine birača.",
+   "zadržati postojeće zakone u zemlji.",
+   "dati više moći siromašnima."
+  ],
   "expl_bks": "Redoviti izbori omogućuju građanima da vladu potvrde ili je zamijene. Ako većina birača želi promjenu, nova većina u parlamentu može izabrati novu vladu, i to mirnim putem, bez nasilja. Zato se izbori održavaju u stalnim razmacima, za Bundestag svake četiri godine.",
   "merksatz_de": "Durch Wahlen kann die Mehrheit die Regierung wechseln."
  },
  {
   "id": "G-126",
   "q_bks": "Što građani s biračkim pravom u Njemačkoj dobivaju prije izbora?",
-  "options_bks": ["obavijest o izborima (poziv na glasanje) od općine", "dopuštenje za glasanje od saveznog predsjednika", "obavijest od Savezne skupštine (Bundesversammlung)", "obavijest od župnog ureda (Pfarramt)"],
+  "options_bks": [
+   "obavijest o izborima (poziv na glasanje) od općine",
+   "dopuštenje za glasanje od saveznog predsjednika",
+   "obavijest od Savezne skupštine (Bundesversammlung)",
+   "obavijest od župnog ureda (Pfarramt)"
+  ],
   "expl_bks": "Prije izbora svaki birač dobiva poštom obavijest o izborima (Wahlbenachrichtigung) od svoje općine; za Bundestag najkasnije tri tjedna prije izbora. U njoj piše datum izbora, adresa birališta i kako se može zatražiti glasanje poštom. Na biralište je dobro ponijeti tu obavijest i osobnu iskaznicu ili putovnicu.",
   "merksatz_de": "Vor der Wahl schickt die Gemeinde eine Wahlbenachrichtigung."
  },
  {
   "id": "G-127",
   "q_bks": "Zašto u izbornom zakonu Savezne Republike Njemačke postoji izborni prag od 5 %? Postoji zato što …",
-  "options_bks": ["programi mnogih malih stranaka imaju mnogo zajedničkog.", "građani se kod mnogo malih stranaka mogu teško snaći.", "mnogo malih stranaka otežava stvaranje vlade.", "male stranke nemaju dovoljno novca da plaćaju svoje političare."],
+  "options_bks": [
+   "programi mnogih malih stranaka imaju mnogo zajedničkog.",
+   "građani se kod mnogo malih stranaka mogu teško snaći.",
+   "mnogo malih stranaka otežava stvaranje vlade.",
+   "male stranke nemaju dovoljno novca da plaćaju svoje političare."
+  ],
   "expl_bks": "Izborni prag od 5 % posljedica je iskustva iz Weimarske Republike (1919. – 1933.). Tada je u parlamentu bilo mnogo malih stranaka, pa je bilo teško stvoriti stabilnu većinu i vladu. Prag sprječava takvo rascjepkanje parlamenta i olakšava stvaranje stabilne koalicije.",
   "merksatz_de": "Viele kleine Parteien erschweren die Regierungsbildung."
  },
  {
   "id": "G-128",
   "q_bks": "Članovi parlamenta koje biraju građani nazivaju se …",
-  "options_bks": ["zastupnici.", "kancelari.", "veleposlanici (ambasadori).", "ministri predsjednici (Ministerpräsidenten)."],
+  "options_bks": [
+   "zastupnici.",
+   "kancelari.",
+   "veleposlanici (ambasadori).",
+   "ministri predsjednici (Ministerpräsidenten)."
+  ],
   "expl_bks": "Zastupnici (Abgeordnete) su predstavnici naroda koje građani biraju u parlament, na primjer u Bundestag (savezni parlament) ili u Landtag (pokrajinski parlament). Prema članku 38. Temeljnog zakona predstavljaju cijeli narod i vezani su samo svojom savješću. Kancelare i ministre predsjednike ne biraju građani izravno.",
   "merksatz_de": "Gewählte Parlamentsmitglieder heißen Abgeordnete."
  },
  {
   "id": "G-129",
   "q_bks": "U Njemačkoj narod bira …",
-  "options_bks": ["saveznog kancelara.", "ministra predsjednika (Ministerpräsident) savezne pokrajine.", "Bundestag.", "saveznog predsjednika."],
+  "options_bks": [
+   "saveznog kancelara.",
+   "ministra predsjednika (Ministerpräsident) savezne pokrajine.",
+   "Bundestag.",
+   "saveznog predsjednika."
+  ],
   "expl_bks": "Narod izravno bira parlament, na saveznoj razini Bundestag (savezni parlament). Saveznog kancelara bira Bundestag, ministra predsjednika pokrajinski parlament (Landtag), a saveznog predsjednika Savezna skupština (Bundesversammlung). To je parlamentarna demokracija: narod bira zastupnike, a oni biraju vladu.",
   "merksatz_de": "Das Volk wählt den Bundestag direkt."
  },
  {
   "id": "G-130",
   "q_bks": "Koji bi glasački listić bio valjan na izborima za Bundestag?",
-  "options_bks": ["1", "2", "3", "4"],
+  "options_bks": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
   "expl_bks": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati.",
   "merksatz_de": "Pro Spalte darf man nur ein Kreuz machen."
  },
  {
   "id": "G-131",
   "q_bks": "U Njemačkoj je gradonačelnik (načelnik) …",
-  "options_bks": ["ravnatelj škole.", "šef banke.", "čelnik općine.", "predsjednik stranke."],
+  "options_bks": [
+   "ravnatelj škole.",
+   "šef banke.",
+   "čelnik općine.",
+   "predsjednik stranke."
+  ],
   "expl_bks": "Gradonačelnik (Bürgermeister) je na čelu općine ili grada: vodi upravu i predstavlja općinu prema van. U većini saveznih pokrajina građani ga biraju izravno. U većim gradovima često se zove glavni gradonačelnik (Oberbürgermeister).",
   "merksatz_de": "Der Bürgermeister leitet eine Gemeinde."
  },
  {
   "id": "G-132",
-  "q_bks": "Mnogi ljudi u Njemačkoj u slobodno vrijeme rade „ehrenamtlich”. Što to znači?",
-  "options_bks": ["Rade kao vojnici.", "Rade dobrovoljno i bez plaće u udrugama i organizacijama.", "Rade u saveznoj vladi.", "Rade u bolnici i za to dobivaju novac."],
-  "expl_bks": "„Ehrenamtlich” znači da netko obavlja volonterski rad (Ehrenamt): radi dobrovoljno i bez plaće, na primjer kao trener u sportskoj udruzi, u dobrovoljnom vatrogasnom društvu ili u pomoći starijima. Ponekad se dobiva mala naknada troškova, ali ne plaća. Takav rad vrlo je važan za društvo.",
-  "merksatz_de": "Ehrenamtlich heißt: freiwillig arbeiten, ohne Geld dafür zu bekommen."
+  "q_bks": "Mnogi ljudi u Njemačkoj u slobodno vrijeme preuzimaju „Ehrenamt” (doslovno: počasnu dužnost). Što to znači?",
+  "options_bks": [
+   "Rade kao vojnici.",
+   "Rade dobrovoljno i bez plaće u udrugama i organizacijama.",
+   "Rade u saveznoj vladi.",
+   "Rade u bolnici i za to dobivaju novac."
+  ],
+  "expl_bks": "„Ehrenamt” znači volonterski rad: ljudi rade dobrovoljno i bez plaće, na primjer kao treneri u sportskoj udruzi, u dobrovoljnom vatrogasnom društvu ili u pomoći starijima. Ponekad se dobiva mala naknada troškova, ali ne plaća. Takav rad vrlo je važan za društvo.",
+  "merksatz_de": "Ein Ehrenamt macht man freiwillig und ohne Bezahlung."
  },
  {
   "id": "G-133",
   "q_bks": "Što je dopušteno na izborima za Bundestag i za pokrajinske parlamente (Landtag) u Njemačkoj?",
-  "options_bks": ["Muž glasa i za svoju ženu.", "Može se glasati poštom (Briefwahl).", "Na dan izbora može se glasati telefonom.", "Djeca od 14 godina smiju glasati."],
+  "options_bks": [
+   "Muž glasa i za svoju ženu.",
+   "Može se glasati poštom (Briefwahl).",
+   "Na dan izbora može se glasati telefonom.",
+   "Djeca od 14 godina smiju glasati."
+  ],
   "expl_bks": "Svaki birač može glasati poštom (Briefwahl), bez navođenja razloga. Kod općine se zatraže potvrda o pravu glasa (Wahlschein) i glasački listići, glasa se kod kuće i omotnica se pošalje poštom. Glas je osoban: nitko ne smije glasati umjesto drugoga, pa ni muž umjesto žene.",
   "merksatz_de": "Man darf per Briefwahl wählen."
  },
  {
   "id": "G-134",
   "q_bks": "Želi se ukinuti autobusna linija kojom se uvijek vozite na posao. Što možete učiniti da se ta linija zadrži?",
-  "options_bks": ["Sudjelujem u građanskoj inicijativi za očuvanje autobusne linije ili sam osnujem inicijativu.", "Učlanim se u sportsku udrugu i treniram vožnju biciklom.", "Obratim se poreznoj upravi (Finanzamt), jer kao porezni obveznik imam pravo na autobusnu liniju.", "Napišem pismo šumarskom uredu (Forstamt) općine."],
+  "options_bks": [
+   "Sudjelujem u građanskoj inicijativi za očuvanje autobusne linije ili sam osnujem inicijativu.",
+   "Učlanim se u sportsku udrugu i treniram vožnju biciklom.",
+   "Obratim se poreznoj upravi (Finanzamt), jer kao porezni obveznik imam pravo na autobusnu liniju.",
+   "Napišem pismo šumarskom uredu (Forstamt) općine."
+  ],
   "expl_bks": "Građanska inicijativa (Bürgerinitiative) skupina je ljudi koji se zajedno zalažu za konkretan cilj u svom mjestu, na primjer za autobusnu liniju, igralište ili semafor. Mogu skupljati potpise, predati peticiju općini i organizirati prosvjede. To je zakonit i demokratski način da građani utječu na odluke.",
   "merksatz_de": "In einer Bürgerinitiative kann man sich für lokale Ziele einsetzen."
  },
  {
   "id": "G-135",
   "q_bks": "Koga u Njemačkoj zastupaju sindikati?",
-  "options_bks": ["velika poduzeća", "mala poduzeća", "samozaposlene osobe", "zaposlenike"],
+  "options_bks": [
+   "velika poduzeća",
+   "mala poduzeća",
+   "samozaposlene osobe",
+   "zaposlenike"
+  ],
   "expl_bks": "Sindikati (Gewerkschaften) zastupaju zaposlenike, dakle ljude koji rade za poslodavca. Pregovaraju o plaćama i uvjetima rada i pomažu članovima kod problema na poslu. Najveći krovni savez je Njemački savez sindikata (DGB). Poduzeća i poslodavci imaju svoja vlastita udruženja.",
   "merksatz_de": "Gewerkschaften vertreten Arbeitnehmerinnen und Arbeitnehmer."
  },
  {
   "id": "G-136",
   "q_bks": "U Njemačkoj idete na radni sud (Arbeitsgericht) u slučaju …",
-  "options_bks": ["pogrešnog obračuna režijskih troškova (Nebenkostenabrechnung).", "neopravdanog otkaza koji vam je dao šef.", "problema sa susjedima.", "poteškoća nakon prometne nesreće."],
+  "options_bks": [
+   "pogrešnog obračuna režijskih troškova (Nebenkostenabrechnung).",
+   "neopravdanog otkaza koji vam je dao šef.",
+   "problema sa susjedima.",
+   "poteškoća nakon prometne nesreće."
+  ],
   "expl_bks": "Radni sud (Arbeitsgericht) odlučuje o sporovima između zaposlenika i poslodavca, na primjer o otkazu, neisplaćenoj plaći ili svjedodžbi o radu. Tužba protiv otkaza mora se podnijeti u roku od tri tjedna. Za sporove oko režija ili sa susjedima obično je nadležan općinski sud (Amtsgericht).",
   "merksatz_de": "Bei einer ungerechten Kündigung hilft das Arbeitsgericht."
  },
  {
   "id": "G-137",
   "q_bks": "Koji je sud u Njemačkoj nadležan za sukobe u svijetu rada?",
-  "options_bks": ["obiteljski sud (Familiengericht)", "kazneni sud (Strafgericht)", "radni sud (Arbeitsgericht)", "općinski sud (Amtsgericht)"],
+  "options_bks": [
+   "obiteljski sud (Familiengericht)",
+   "kazneni sud (Strafgericht)",
+   "radni sud (Arbeitsgericht)",
+   "općinski sud (Amtsgericht)"
+  ],
   "expl_bks": "Za sukobe na poslu nadležan je radni sud (Arbeitsgericht), na primjer kod otkaza, neisplaćene plaće ili godišnjeg odmora. Tužiti mogu i zaposlenici i poslodavci. U vijeću uz profesionalnog suca sjede i dva suca laika: jedan iz redova zaposlenika i jedan iz redova poslodavaca.",
   "merksatz_de": "Bei Streit am Arbeitsplatz ist das Arbeitsgericht zuständig."
  },
  {
   "id": "G-138",
   "q_bks": "Što mogu učiniti u Njemačkoj ako mi je poslodavac neopravdano dao otkaz?",
-  "options_bks": ["nastaviti raditi i biti ljubazan prema šefu", "pokrenuti postupak opomene (Mahnverfahren) protiv poslodavca", "podnijeti tužbu za zaštitu od otkaza (Kündigungsschutzklage)", "prijaviti poslodavca policiji"],
+  "options_bks": [
+   "nastaviti raditi i biti ljubazan prema šefu",
+   "pokrenuti postupak opomene (Mahnverfahren) protiv poslodavca",
+   "podnijeti tužbu za zaštitu od otkaza (Kündigungsschutzklage)",
+   "prijaviti poslodavca policiji"
+  ],
   "expl_bks": "Protiv neopravdanog otkaza može se podnijeti tužba za zaštitu od otkaza (Kündigungsschutzklage) pred radnim sudom (Arbeitsgericht). Važan je rok: tužba se mora podnijeti u roku od tri tjedna nakon primitka pisanog otkaza. Postupak opomene služi za naplatu novčanih dugova, a ne za otkaz.",
   "merksatz_de": "Gegen eine unfaire Kündigung kann man Kündigungsschutzklage erheben."
  }
