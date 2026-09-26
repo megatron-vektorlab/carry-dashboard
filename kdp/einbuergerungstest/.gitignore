@@ -1,2 +1,4 @@
 build/
 __pycache__/
+# final PDFs are force-added once, at release
+out/*.pdf

@@ -1,0 +1,554 @@
+[
+ {
+  "id": "G-093",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-094",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-095",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-096",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-097",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-098",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-099",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": "expl: \"Dio zaposlenika odbija se automatski od bruto plaće\" can be read as \"some of the employees are deducted\"; use \"Zaposlenikov dio doprinosa odbija se automatski od bruto plaće\"."
+ },
+ {
+  "id": "G-100",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-101",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-102",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": "q_bks ends with a stray \"? …\" (German \"? Mit dem ...\" was dropped, options are already in instrumental); remove the trailing \" …\" so it ends \"…socijalnom području?\"."
+ },
+ {
+  "id": "G-103",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-104",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-105",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-106",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-107",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-108",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-109",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-110",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-111",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-112",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-113",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-114",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-115",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-116",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-117",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-118",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-119",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-120",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-121",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-122",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-123",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-124",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-125",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-126",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-127",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-128",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-129",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-130",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": "Picture question: expl lists the validity rules but never says which ballot (1–4) is the valid one, so readers can't match it to the image; add \"Valjan je listić br. N\" after checking the image (German caption \"In Anlehnung an BWO, Anlage 26\" is also missing)."
+ },
+ {
+  "id": "G-131",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-132",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-133",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-134",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-135",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-136",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-137",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-138",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-139",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-140",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-141",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-142",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-143",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-144",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-145",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-146",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-147",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-148",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-149",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-150",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Minor factual imprecision: lay judges get compensation for lost time and earnings (JVEG), not only expenses; change \"nego samo naknadu troškova\" to \"nego samo naknadu za troškove i izgubljeno vrijeme\"."
+ },
+ {
+  "id": "G-151",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-152",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-153",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-154",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-155",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-156",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-157",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-158",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-159",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-160",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-161",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-162",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-163",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-164",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-165",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-166",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-167",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-168",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-169",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-170",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-171",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-172",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-173",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-174",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-175",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-176",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-177",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-178",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-179",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-180",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-181",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-182",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-183",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-184",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ }
+]
