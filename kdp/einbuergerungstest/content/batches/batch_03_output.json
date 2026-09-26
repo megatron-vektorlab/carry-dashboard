@@ -80,7 +80,7 @@
    "svi državljani",
    "samo poslodavci"
   ],
-  "expl_bks": "Socijalna osiguranja financiraju se doprinosima koje zajedno plaćaju poslodavci i zaposlenici, većinom otprilike pola-pola. Dio zaposlenika odbija se automatski od bruto plaće, a poslodavac dodaje svoj dio. Zaposlenikov dio vidi se na obračunu plaće (Lohnabrechnung).",
+  "expl_bks": "Socijalna osiguranja financiraju se doprinosima koje zajedno plaćaju poslodavci i zaposlenici, većinom otprilike pola-pola. Zaposlenikov dio doprinosa odbija se automatski od bruto plaće, a poslodavac dodaje svoj dio. Zaposlenikov dio vidi se na obračunu plaće (Lohnabrechnung).",
   "merksatz_de": "Arbeitgeber und Arbeitnehmer zahlen zusammen die Sozialversicherung."
  },
  {
@@ -452,7 +452,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati.",
+  "expl_bks": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati. U katalogu je to listić broj 1.",
   "merksatz_de": "Pro Spalte darf man nur ein Kreuz machen."
  },
  {

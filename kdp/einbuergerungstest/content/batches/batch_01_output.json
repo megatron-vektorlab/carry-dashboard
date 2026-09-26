@@ -63,12 +63,12 @@
   "id": "G-006",
   "q_bks": "Kako se zove njemački ustav?",
   "options_bks": [
-   "narodni zakon (Volksgesetz)",
-   "savezni zakon (Bundesgesetz)",
-   "njemački zakon (Deutsches Gesetz)",
+   "Narodni zakon (Volksgesetz)",
+   "Savezni zakon (Bundesgesetz)",
+   "Njemački zakon (Deutsches Gesetz)",
    "Temeljni zakon (Grundgesetz)"
   ],
-  "expl_bks": "Njemački ustav zove se Temeljni zakon (Grundgesetz). Proglašen je 23. svibnja 1949. u Zapadnoj Njemačkoj, a od ponovnog ujedinjenja Njemačke 1990. vrijedi za cijelu zemlju. Tada je zamišljen kao privremeno rješenje do ujedinjenja, pa se namjerno nije zvao „ustav”.",
+  "expl_bks": "Njemački ustav zove se Temeljni zakon (Grundgesetz). Proglašen je 23. svibnja 1949. u Zapadnoj Njemačkoj, a od ponovnog ujedinjenja Njemačke 1990. vrijedi za cijelu zemlju. Pri donošenju 1949. zamišljen je kao privremeno rješenje do ujedinjenja, pa se namjerno nije zvao „ustav”.",
   "merksatz_de": "Die deutsche Verfassung heißt Grundgesetz."
  },
  {
@@ -124,9 +124,9 @@
   "q_bks": "Kako se zove ustav Savezne Republike Njemačke?",
   "options_bks": [
    "Temeljni zakon (Grundgesetz)",
-   "savezni ustav (Bundesverfassung)",
-   "zakonik (Gesetzbuch)",
-   "ustavni ugovor (Verfassungsvertrag)"
+   "Savezni ustav (Bundesverfassung)",
+   "Zakonik (Gesetzbuch)",
+   "Ustavni ugovor (Verfassungsvertrag)"
   ],
   "expl_bks": "Ustav Savezne Republike Njemačke zove se Temeljni zakon (Grundgesetz), skraćeno GG. Ima više od 140 članaka, a na početku su temeljna prava, na primjer ljudsko dostojanstvo u članku 1. Naziv „Bundesverfassung” koristi se u Švicarskoj, a ne u Njemačkoj.",
   "merksatz_de": "Grundgesetz ist der Name der deutschen Verfassung."
@@ -176,7 +176,7 @@
    "slobodan izbor zanimanja",
    "rad u inozemstvu"
   ],
-  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimka je samo rad u zatvoru nakon sudske odluke. Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
+  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimke su samo rad pri lišenju slobode po odluci suda i opće javne obveze koje vrijede jednako za sve. Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
   "merksatz_de": "Zwangsarbeit ist in Deutschland verboten."
  },
  {
@@ -248,7 +248,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Savezne Republike Njemačke je savezni orao (Bundesadler): crni orao s crvenim kljunom, jezikom i kandžama na zlatnožutom štitu. Orao je već stoljećima simbol njemačkih država. Savezni orao vidi se, na primjer, na njemačkim kovanicama od 1 i 2 eura i u dvorani Bundestaga (saveznog parlamenta).",
+  "expl_bks": "Grb Savezne Republike Njemačke je savezni orao (Bundesadler): crni orao s crvenim kljunom, jezikom i kandžama na zlatnožutom štitu. Orao je već stoljećima simbol njemačkih država. Savezni orao vidi se, na primjer, na njemačkim kovanicama od 1 i 2 eura i u dvorani Bundestaga (saveznog parlamenta). U katalogu je to slika 1.",
   "merksatz_de": "Das Bundeswappen zeigt einen schwarzen Adler auf goldgelbem Grund."
  },
  {

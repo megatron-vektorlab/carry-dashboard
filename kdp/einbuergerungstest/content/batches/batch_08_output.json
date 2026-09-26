@@ -13,24 +13,24 @@
  },
  {
   "id": "BE-04",
-  "q_bks": "S koliko godina se u Berlinu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštinu gradskog okruga (Bezirksverordnetenversammlung)?",
+  "q_bks": "S koliko godina se u Berlinu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštinu gradskog kotara (Bezirksverordnetenversammlung)?",
   "options_bks": [
    "14",
    "16",
    "18",
    "20"
   ],
-  "expl_bks": "Berlin je podijeljen na 12 gradskih okruga (Bezirke). Svaki okrug ima svoju skupštinu, Bezirksverordnetenversammlung (BVV). Na izborima za te skupštine smije se glasati već sa 16 godina. Glasati mogu i građani drugih zemalja Europske unije koji žive u Berlinu.",
+  "expl_bks": "Berlin je podijeljen na 12 gradskih kotara (Bezirke). Svaki kotar ima svoju skupštinu, Bezirksverordnetenversammlung (BVV). Na izborima za te skupštine smije se glasati već sa 16 godina. Glasati mogu i građani drugih zemalja Europske unije koji žive u Berlinu.",
   "merksatz_de": "In Berlin wählt man die Bezirksverordnetenversammlung ab 16 Jahren."
  },
  {
   "id": "BE-05",
   "q_bks": "Kakve je boje zastava savezne pokrajine Berlin?",
   "options_bks": [
-   "plavo-bijelo-crvena",
-   "bijelo-crvena",
-   "zeleno-bijelo-crvena",
-   "crno-zlatna"
+   "plavo-bijelo-crveno",
+   "bijelo-crveno",
+   "zeleno-bijelo-crveno",
+   "crno-zlatno"
   ],
   "expl_bks": "Zastava Berlina je bijelo-crvena: gore i dolje ima po jednu crvenu prugu, a u sredini široku bijelu prugu s crnim medvjedom. Medvjed je simbol Berlina i nalazi se i na berlinskom grbu.",
   "merksatz_de": "Berlins Flagge ist weiß-rot und zeigt einen Bären."
@@ -68,7 +68,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Berlin mali grad-pokrajina na istoku, potpuno okružen Brandenburgom. Berlin je glavni grad Njemačke i istodobno savezna pokrajina. Na karti ga prepoznajete kao malu površinu u sredini Brandenburga, nedaleko od granice s Poljskom.",
+  "expl_bks": "Na karti je Berlin mali grad-pokrajina na istoku, potpuno okružen Brandenburgom. Berlin je glavni grad Njemačke i istodobno savezna pokrajina. Na karti ga prepoznajete kao malu površinu u sredini Brandenburga, nedaleko od granice s Poljskom. Na karti u katalogu to je broj 4.",
   "merksatz_de": "Berlin liegt mitten in Brandenburg."
  },
  {
@@ -87,10 +87,10 @@
   "id": "BE-10",
   "q_bks": "Kojeg senatora Berlin nema?",
   "options_bks": [
-   "senator za financije (Finanzsenator)",
-   "senator za unutarnje poslove (Innensenator)",
-   "senator za vanjske odnose (Senator für Außenbeziehungen)",
-   "senator za pravosuđe (Justizsenator)"
+   "senatora za financije (Finanzsenator)",
+   "senatora za unutarnje poslove (Innensenator)",
+   "senatora za vanjske odnose (Senator für Außenbeziehungen)",
+   "senatora za pravosuđe (Justizsenator)"
   ],
   "expl_bks": "Članovi berlinske vlade, Senata, zovu se senatori. Berlin ima senatore za financije, unutarnje poslove i pravosuđe, jer su to i zadaci pokrajine. Odnosi s drugim državama zadatak su savezne države (članak 32. Temeljnog zakona), pa Berlin nema senatora za vanjske odnose.",
   "merksatz_de": "Außenpolitik macht der Bund, nicht das Land Berlin."
@@ -104,7 +104,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Brandenburga: crveni orao na bijelom štitu. Crveni orao već je stoljećima simbol Brandenburga. Isti grb nalazi se i u sredini crveno-bijele pokrajinske zastave. Pazite da ga ne zamijenite s Berlinom, čiji grb pokazuje medvjeda.",
+  "expl_bks": "Grb Brandenburga: crveni orao na bijelom štitu. Crveni orao već je stoljećima simbol Brandenburga. Isti grb nalazi se i u sredini crveno-bijele pokrajinske zastave. Pazite da ga ne zamijenite s Berlinom, čiji grb pokazuje medvjeda. U katalogu je to slika 1.",
   "merksatz_de": "Brandenburgs Wappen zeigt einen roten Adler."
  },
  {
@@ -147,10 +147,10 @@
   "id": "BB-05",
   "q_bks": "Kakve je boje zastava savezne pokrajine Brandenburg?",
   "options_bks": [
-   "plavo-bijelo-crvena",
-   "crveno-bijela",
-   "zeleno-bijelo-crvena",
-   "crno-žuta"
+   "plavo-bijelo-crveno",
+   "crveno-bijelo",
+   "zeleno-bijelo-crveno",
+   "crno-žuto"
   ],
   "expl_bks": "Zastava Brandenburga je crveno-bijela: gore je crvena, a dolje bijela pruga. U sredini se često nalazi pokrajinski grb s crvenim orlom. Boje su preuzete upravo iz grba – crveni orao na bijelom štitu.",
   "merksatz_de": "Die Flagge von Brandenburg ist rot-weiß."
@@ -188,7 +188,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Brandenburg pokrajina na istoku koja okružuje Berlin, uz granicu s Poljskom. Prepoznat ćete je po tome što se u njezinoj sredini nalazi mala površina – grad-pokrajina Berlin. Glavni grad Brandenburga je Potsdam.",
+  "expl_bks": "Na karti je Brandenburg pokrajina na istoku koja okružuje Berlin, uz granicu s Poljskom. Prepoznat ćete je po tome što se u njezinoj sredini nalazi mala površina – grad-pokrajina Berlin. Glavni grad Brandenburga je Potsdam. Na karti u katalogu to je broj 4.",
   "merksatz_de": "Brandenburg liegt im Osten und umschließt Berlin."
  },
  {
@@ -207,10 +207,10 @@
   "id": "BB-10",
   "q_bks": "Kojeg ministra Brandenburg nema?",
   "options_bks": [
-   "ministar pravosuđa (Justizminister)",
-   "ministar vanjskih poslova (Außenminister)",
-   "ministar financija (Finanzminister)",
-   "ministar unutarnjih poslova (Innenminister)"
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
   ],
   "expl_bks": "Vanjska politika zadatak je savezne države: odnose s drugim državama vodi savezna vlada (članak 32. Temeljnog zakona). Zato Brandenburg nema ministra vanjskih poslova. Pravosuđe, financije i unutarnji poslovi (npr. policija) jesu i zadaci pokrajine, pa za njih postoje pokrajinski ministri.",
   "merksatz_de": "Brandenburg hat keinen Außenminister – Außenpolitik ist Sache des Bundes."
@@ -224,7 +224,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Bremena: bijeli (srebrni) ključ na crvenom štitu, iznad štita kruna. Ključ je simbol svetog Petra, zaštitnika bremenske katedrale. Crvena i bijela boja grba ponavljaju se i na bremenskoj zastavi.",
+  "expl_bks": "Grb Bremena: bijeli (srebrni) ključ na crvenom štitu, iznad štita kruna. Ključ je simbol svetog Petra, zaštitnika bremenske katedrale. Crvena i bijela boja grba ponavljaju se i na bremenskoj zastavi. U katalogu je to slika 3.",
   "merksatz_de": "Bremens Wappen zeigt einen silbernen Schlüssel auf Rot."
  },
  {
@@ -236,7 +236,7 @@
    "Pankow",
    "Babelsberg"
   ],
-  "expl_bks": "Hemelingen je gradska četvrt (Stadtteil) na istoku Bremena, uz rijeku Weser. Ostala imena pripadaju drugim gradovima: Altona je gradski okrug u Hamburgu, Pankow gradski okrug u Berlinu, a Babelsberg dio Potsdama, poznat po filmskim studijima.",
+  "expl_bks": "Hemelingen je gradska četvrt (Stadtteil) na istoku Bremena, uz rijeku Weser. Ostala imena pripadaju drugim gradovima: Altona je gradski kotar u Hamburgu, Pankow gradski kotar u Berlinu, a Babelsberg dio Potsdama, poznat po filmskim studijima.",
   "merksatz_de": "Hemelingen ist ein Stadtteil von Bremen."
  },
  {
@@ -267,10 +267,10 @@
   "id": "HB-05",
   "q_bks": "Kakve je boje zastava savezne pokrajine Bremen?",
   "options_bks": [
-   "plavo-bijelo-crvena",
-   "crveno-bijela",
-   "zeleno-bijelo-crvena",
-   "crno-zlatna"
+   "plavo-bijelo-crveno",
+   "crveno-bijelo",
+   "zeleno-bijelo-crveno",
+   "crno-zlatno"
   ],
   "expl_bks": "Zastava Bremena je crveno-bijela. Ima više vodoravnih crvenih i bijelih pruga, a uz rub kod jarbola crveno-bijele kvadratiće. Zbog pruga je ljudi u šali zovu „Speckflagge” (zastava od slanine). Iste boje ima i bremenski grb: bijeli ključ na crvenom.",
   "merksatz_de": "Bremens Flagge hat rote und weiße Streifen."
@@ -289,7 +289,7 @@
  },
  {
   "id": "HB-07",
-  "q_bks": "Što je njemačka grad-pokrajina (Stadtstaat)?",
+  "q_bks": "Koji je grad njemačka grad-pokrajina (Stadtstaat)?",
   "options_bks": [
    "Bremen",
    "München",
@@ -308,7 +308,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Bremen mali grad-pokrajina na sjeverozapadu, okružen Donjom Saskom (ima dva dijela: Bremen i Bremerhaven). Zato na karti vidite dvije male površine unutar Donje Saske. Bremerhaven leži na ušću rijeke Weser u Sjeverno more.",
+  "expl_bks": "Na karti je Bremen mali grad-pokrajina na sjeverozapadu, okružen Donjom Saskom (ima dva dijela: Bremen i Bremerhaven). Zato na karti vidite dvije male površine unutar Donje Saske. Bremerhaven leži na ušću rijeke Weser u Sjeverno more. Na karti u katalogu to je broj 1.",
   "merksatz_de": "Bremen liegt im Nordwesten und ist von Niedersachsen umgeben."
  },
  {
@@ -327,10 +327,10 @@
   "id": "HB-10",
   "q_bks": "Kojeg senatora Bremen nema?",
   "options_bks": [
-   "senator za vanjske odnose (Senator für Außenbeziehungen)",
-   "senator za financije (Finanzsenator)",
-   "senator za pravosuđe (Justizsenator)",
-   "senator za unutarnje poslove (Innensenator)"
+   "senatora za vanjske odnose (Senator für Außenbeziehungen)",
+   "senatora za financije (Finanzsenator)",
+   "senatora za pravosuđe (Justizsenator)",
+   "senatora za unutarnje poslove (Innensenator)"
   ],
   "expl_bks": "Članovi bremenske vlade (Senata) zovu se senatori. Svaki je zadužen za jedno područje, na primjer financije, pravosuđe ili unutarnje poslove. Odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona), zato Bremen nema senatora za vanjske odnose.",
   "merksatz_de": "Bremen hat keinen Senator für Außenbeziehungen – das macht der Bund."
@@ -344,19 +344,19 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Hamburga: bijeli dvorac s tri tornja i zatvorenim vratima na crvenom štitu. Isti dvorac nalazi se i na crvenoj hamburškoj zastavi. Pazite da ga ne zamijenite s Bremenom, čiji grb pokazuje ključ.",
+  "expl_bks": "Grb Hamburga: bijeli dvorac s tri tornja i zatvorenim vratima na crvenom štitu. Isti dvorac nalazi se i na crvenoj hamburškoj zastavi. Pazite da ga ne zamijenite s Bremenom, čiji grb pokazuje ključ. U katalogu je to slika 2.",
   "merksatz_de": "Hamburgs Wappen zeigt eine weiße Burg auf Rot."
  },
  {
   "id": "HH-02",
-  "q_bks": "Koji je gradski okrug (Bezirk) Hamburga?",
+  "q_bks": "Koji je gradski kotar (Bezirk) Hamburga?",
   "options_bks": [
    "Altona",
    "Hemelingen",
    "Pankow",
    "Mecklenburgische Seenplatte"
   ],
-  "expl_bks": "Hamburg je podijeljen na sedam gradskih okruga (Bezirke), a Altona je jedan od njih. Leži zapadno od središta grada, uz rijeku Labu. Hemelingen je gradska četvrt u Bremenu, Pankow okrug u Berlinu, a Mecklenburgische Seenplatte okrug (Landkreis) u Mecklenburgu-Zapadnom Pomorju.",
+  "expl_bks": "Hamburg je podijeljen na sedam gradskih kotara (Bezirke), a Altona je jedan od njih. Leži zapadno od središta grada, uz rijeku Labu. Hemelingen je gradska četvrt u Bremenu, Pankow gradski kotar u Berlinu, a Mecklenburgische Seenplatte okrug (Landkreis) u Mecklenburgu-Zapadnom Pomorju.",
   "merksatz_de": "Altona ist ein Bezirk von Hamburg."
  },
  {
@@ -373,24 +373,24 @@
  },
  {
   "id": "HH-04",
-  "q_bks": "S koliko godina se u Hamburgu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštine gradskih okruga (Bezirksversammlungen)?",
+  "q_bks": "S koliko godina se u Hamburgu smije glasati na lokalnim izborima (Kommunalwahlen) – izborima za skupštine gradskih kotara (Bezirksversammlungen)?",
   "options_bks": [
    "14",
    "16",
    "18",
    "20"
   ],
-  "expl_bks": "Hamburg ima sedam gradskih okruga (Bezirke), a svaki bira svoju skupštinu (Bezirksversammlung). Na tim izborima smije se glasati već sa 16 godina. Od 16 godina u Hamburgu se glasa i za Bürgerschaft, pokrajinski parlament.",
+  "expl_bks": "Hamburg ima sedam gradskih kotara (Bezirke), a svaki bira svoju skupštinu (Bezirksversammlung). Na tim izborima smije se glasati već sa 16 godina. Od 16 godina u Hamburgu se glasa i za Bürgerschaft, pokrajinski parlament.",
   "merksatz_de": "In Hamburg wählt man die Bezirksversammlungen ab 16 Jahren."
  },
  {
   "id": "HH-05",
   "q_bks": "Kakve je boje zastava savezne pokrajine Hamburg?",
   "options_bks": [
-   "plavo-bijelo-crvena",
-   "bijelo-crvena",
-   "zeleno-bijelo-crvena",
-   "crno-žuta"
+   "plavo-bijelo-crveno",
+   "bijelo-crveno",
+   "zeleno-bijelo-crveno",
+   "crno-žuto"
   ],
   "expl_bks": "Zastava Hamburga je bijelo-crvena: na crvenoj podlozi nalazi se bijeli dvorac s tri tornja. Isti dvorac vidi se i na hamburškom grbu. Crvena i bijela stare su boje hanzeatskih gradova, pa ih ima i Bremen.",
   "merksatz_de": "Hamburgs Flagge ist rot mit einer weißen Burg."
@@ -428,7 +428,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Hamburg mali grad-pokrajina na sjeveru, na rijeci Labi, između Schleswig-Holsteina i Donje Saske. Hamburg ima veliku luku i drugi je najveći grad Njemačke, poslije Berlina. Na karti ga prepoznajete kao malu površinu između dviju većih pokrajina.",
+  "expl_bks": "Na karti je Hamburg mali grad-pokrajina na sjeveru, na rijeci Labi, između Schleswig-Holsteina i Donje Saske. Hamburg ima veliku luku i drugi je najveći grad Njemačke, poslije Berlina. Na karti ga prepoznajete kao malu površinu između dviju većih pokrajina. Na karti u katalogu to je broj 3.",
   "merksatz_de": "Hamburg liegt im Norden an der Elbe."
  },
  {
@@ -447,10 +447,10 @@
   "id": "HH-10",
   "q_bks": "Kojeg senatora Hamburg nema?",
   "options_bks": [
-   "senator za pravosuđe (Justizsenator)",
-   "senator za vanjske odnose (Senator für Außenbeziehungen)",
-   "senator za financije (Finanzsenator)",
-   "senator za unutarnje poslove (Innensenator)"
+   "senatora za pravosuđe (Justizsenator)",
+   "senatora za vanjske odnose (Senator für Außenbeziehungen)",
+   "senatora za financije (Finanzsenator)",
+   "senatora za unutarnje poslove (Innensenator)"
   ],
   "expl_bks": "Hamburška vlada (Senat) ima senatore za različita područja, npr. financije, pravosuđe i unutarnje poslove. Vanjska politika nije zadatak pokrajina: odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona). Zato Hamburg nema senatora za vanjske odnose, iako kao lučki grad ima mnogo međunarodnih kontakata.",
   "merksatz_de": "Außenbeziehungen sind Aufgabe des Bundes, nicht Hamburgs."
@@ -464,7 +464,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Hessena: lav s crveno-bijelim prugama na plavom štitu, iznad štita kruna (bez zvjezdica – zvjezdice ima Tiringija). Taj „hesenski lav” star je više stoljeća. Crvena i bijela boja lava nalaze se i na pokrajinskoj zastavi Hessena.",
+  "expl_bks": "Grb Hessena: lav s crveno-bijelim prugama na plavom štitu, iznad štita kruna (bez zvjezdica – zvjezdice ima Tiringija). Taj „hesenski lav” star je više stoljeća. Crvena i bijela boja lava nalaze se i na pokrajinskoj zastavi Hessena. U katalogu je to slika 1.",
   "merksatz_de": "Im hessischen Wappen ist ein rot-weiß gestreifter Löwe."
  },
  {
@@ -507,10 +507,10 @@
   "id": "HE-05",
   "q_bks": "Kakve je boje zastava savezne pokrajine Hessen?",
   "options_bks": [
-   "plavo-bijelo-crvena",
-   "crveno-bijela",
-   "crno-zlatna",
-   "zeleno-bijelo-crvena"
+   "plavo-bijelo-crveno",
+   "crveno-bijelo",
+   "crno-zlatno",
+   "zeleno-bijelo-crveno"
   ],
   "expl_bks": "Zastava Hessena je crveno-bijela: gore je crvena, a dolje bijela pruga. Boje dolaze iz pokrajinskog grba. Lako se pamti: lav u hesenskom grbu ima iste, crveno-bijele pruge. Crveno-bijela je i zastava Brandenburga, ali tamo grb pokazuje orla.",
   "merksatz_de": "Die hessische Flagge ist rot-weiß."
@@ -548,7 +548,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Hessen u sredini zapadnog dijela Njemačke (s Frankfurtom na Majni). Hessen nema izlaz na more ni granicu s drugim državama – okružen je samo njemačkim pokrajinama. Glavni grad mu je Wiesbaden.",
+  "expl_bks": "Na karti je Hessen u sredini zapadnog dijela Njemačke (s Frankfurtom na Majni). Hessen nema izlaz na more ni granicu s drugim državama – okružen je samo njemačkim pokrajinama. Glavni grad mu je Wiesbaden. Na karti u katalogu to je broj 3.",
   "merksatz_de": "Hessen liegt in der Mitte Deutschlands, mit Frankfurt am Main."
  }
 ]

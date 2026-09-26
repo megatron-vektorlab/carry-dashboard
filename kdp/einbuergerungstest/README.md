@@ -9,12 +9,13 @@ vlasnik može sam lektorirati. Isti postupak zatim daje ukrajinsko, tursko i alb
 
 | Dio | Datoteka | Stanje |
 |---|---|---|
-| Katalog, 460 pitanja, provjeren iz 3 izvora | `data/catalog.json`, `data/crosscheck_report.md` | gotovo |
-| Zaključani pojmovnik DE–BKS | `content/glossary_bks.json` | gotovo |
+| Katalog: 460 pitanja, provjereno iz 3 izvora | `data/catalog.json`, `data/crosscheck_report.md` | gotovo |
+| Zaključani pojmovnik DE–BKS (111 pojmova) | `content/glossary_bks.json` | gotovo |
 | Opisi 38 slikovnih pitanja | `content/image_notes_bks.json` | gotovo, provjereno prema slikama |
-| Prijevodi, objašnjenja, Merksätze | `content/bks.json` | vidi `content/validation_report.md` i `content/review_report.md` |
-| Unutrašnjost knjige (PDF za KDP) | `out/interior_de-bks.pdf` | složeno |
-| Naslovnica s hrbtom (PDF za KDP) | `out/cover_de-bks.pdf` | složeno |
+| Prijevodi, objašnjenja i Merksätze (460) | `content/bks.json` | gotovo: 0 grešaka u automatskoj provjeri; slijepa provjera obavljena i sve primjedbe ispravljene |
+| Napomene prevoditelja (za lekturu) | `content/translator_notes.md` | pročitati prije lekture |
+| Unutrašnjost knjige (PDF za KDP), 221 str. | `out/interior_de-bks.pdf` | gotovo |
+| Naslovnica s hrbtom 0,498 in (PDF za KDP) | `out/cover_de-bks.pdf` | gotovo (u impresumu su polja za popuniti) |
 | KDP podaci (naslov, opis, ključne riječi, prijava AI-ja) | `kdp/metadata.md` | gotovo |
 
 ## Kako je osigurana točnost
@@ -27,14 +28,18 @@ vlasnik može sam lektorirati. Isti postupak zatim daje ukrajinsko, tursko i alb
    uz zaključani ključ i pojmovnik.
 3. **Automatska provjera** (`scripts/validate_content.py`): potpunost, 4 opcije, duljine,
    zabranjene riječi („offiziell”, „službeno”…), dosljednost pojmovnika, brojevi.
-4. **Slijepa provjera:** zaseban agent koji ne vidi ključ odgovara na svako pitanje samo iz
-   prijevoda te za svako objašnjenje kaže koju opciju podupire. Svako odstupanje od ključa
-   pregledano je i ispravljeno (`content/review_report.md`).
+4. **Slijepa provjera** (`content/review_report.md`): pet zasebnih agenata koji ne vide ključ riješili su
+   svako pitanje samo iz prijevoda i za svako objašnjenje naveli koju opciju podupire.
+   Na 424 pitanja bez slike **nijedno** odstupanje od ključa. Preostalih 36 su slikovna pitanja,
+   koja se bez slike ne mogu riješiti; njihovo objašnjenje sada navodi broj točne slike.
+   Svih 31 primjedbi na jezik i činjenice ispravljeno je u `scripts/consistency.py`,
+   popis je u `content/consistency_log.md`.
 
 ## Ponovna izgradnja
 ```bash
 pip install typst pymupdf
 python3 scripts/build_catalog.py --a <A>/data/questions.json --b <B>/public/data/bamf/questions.json --c <C>/data/question.json
+python3 scripts/consistency.py      # ujednačavanje naziva + ispravke iz slijepe provjere
 python3 scripts/validate_content.py
 python3 scripts/build_book.py      # out/interior_de-bks.pdf
 python3 scripts/build_cover.py     # out/cover_de-bks.pdf (debljina hrbta prema broju stranica)

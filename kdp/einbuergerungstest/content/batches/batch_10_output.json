@@ -8,7 +8,7 @@
    "crno-žuto",
    "zeleno-bijelo-crveno"
   ],
-  "expl_bks": "Zastava Saarlanda ima iste boje kao njemačka zastava: crno-crveno-zlatno, a u sredini je grb pokrajine. Saarland je jedina savezna pokrajina s tim bojama na zastavi. Saveznoj Republici Njemačkoj pridružio se 1. siječnja 1957., nakon referenduma održanog 1955. godine.",
+  "expl_bks": "Zastava Saarlanda ima iste boje kao njemačka zastava: crno-crveno-zlatno, a u sredini je grb pokrajine. Iste boje imaju i zastave Donje Saske i Porajnja-Falačke, ali s drugim grbom. Saveznoj Republici Njemačkoj pridružio se 1. siječnja 1957., nakon referenduma održanog 1955. godine.",
   "merksatz_de": "Die Flagge des Saarlandes ist schwarz-rot-gold mit Wappen."
  },
  {
@@ -44,7 +44,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Saarland vrlo mala pokrajina na jugozapadu, uz granicu s Francuskom i Luksemburgom. Na sjeveru i istoku graniči s Porajnjem-Falačkom (Rheinland-Pfalz). Saarland je najmanja savezna pokrajina ako se ne računaju gradovi-pokrajine Berlin, Hamburg i Bremen.",
+  "expl_bks": "Na karti je Saarland vrlo mala pokrajina na jugozapadu, uz granicu s Francuskom i Luksemburgom. Na sjeveru i istoku graniči s Porajnjem-Falačkom (Rheinland-Pfalz). Saarland je najmanja savezna pokrajina ako se ne računaju gradovi-pokrajine Berlin, Hamburg i Bremen. Na karti u katalogu to je broj 2.",
   "merksatz_de": "Das Saarland liegt im Südwesten, an der Grenze zu Frankreich."
  },
  {
@@ -63,10 +63,10 @@
   "id": "SL-10",
   "q_bks": "Kojeg ministra Saarland nema?",
   "options_bks": [
-   "ministar pravosuđa (Justizminister)",
-   "ministar vanjskih poslova (Außenminister)",
-   "ministar financija (Finanzminister)",
-   "ministar unutarnjih poslova (Innenminister)"
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
   ],
   "expl_bks": "Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), a ne pokrajina. Zato ministra vanjskih poslova ima samo savezna vlada. Saarland, kao i druge pokrajine, ima ministre za pravosuđe, financije i unutarnje poslove, jer su pokrajine zadužene npr. za sudove, policiju i svoj proračun.",
   "merksatz_de": "Außenpolitik macht der Bund, nicht das Bundesland."
@@ -80,7 +80,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Saske: vodoravne crne i žute pruge preko kojih koso ide zeleni vijenac (Rautenkranz). Saska se naziva slobodnom državom (Freistaat), kao i Bavarska i Tiringija. To je samo povijesni naziv: Saska je savezna pokrajina kao i sve ostale.",
+  "expl_bks": "Grb Saske: vodoravne crne i žute pruge preko kojih koso ide zeleni vijenac (Rautenkranz). Saska se naziva slobodnom državom (Freistaat), kao i Bavarska i Tiringija. To je samo povijesni naziv: Saska je savezna pokrajina kao i sve ostale. U katalogu je to slika 4.",
   "merksatz_de": "Sachsens Wappen hat schwarz-gelbe Streifen und einen grünen Kranz."
  },
  {
@@ -164,7 +164,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Saska na jugoistoku istočnog dijela Njemačke, uz granicu s Poljskom i Češkom. Unutar Njemačke graniči s Bavarskom, Tiringijom, Saskom-Anhalt i Brandenburgom. Glavni grad Saske je Dresden, grad na rijeci Labi.",
+  "expl_bks": "Na karti je Saska na jugoistoku istočnog dijela Njemačke, uz granicu s Poljskom i Češkom. Unutar Njemačke graniči s Bavarskom, Tiringijom, Saskom-Anhalt i Brandenburgom. Glavni grad Saske je Dresden, grad na rijeci Labi. Na karti u katalogu to je broj 4.",
   "merksatz_de": "Sachsen liegt im Osten, an der Grenze zu Polen und Tschechien."
  },
  {
@@ -183,10 +183,10 @@
   "id": "SN-10",
   "q_bks": "Kojeg ministra Saska nema?",
   "options_bks": [
-   "ministar pravosuđa (Justizminister)",
-   "ministar vanjskih poslova (Außenminister)",
-   "ministar financija (Finanzminister)",
-   "ministar unutarnjih poslova (Innenminister)"
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
   ],
   "expl_bks": "Saska nema ministra vanjskih poslova. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), pa vanjsku politiku vodi savezna vlada. Pokrajine imaju vlastite ministre za pravosuđe, financije i unutarnje poslove, jer su zadužene npr. za sudove, policiju i svoj proračun.",
   "merksatz_de": "Einen Außenminister hat nur die Bundesregierung."
@@ -200,7 +200,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Saske-Anhalt: gore crno-žute pruge sa zelenim vijencem i mali crni orao, dolje crni medvjed na crvenom zidu. Medvjed je znak povijesne zemlje Anhalt. Pazite: i grb Saske ima crno-žute pruge sa zelenim vijencem, ali nema medvjeda.",
+  "expl_bks": "Grb Saske-Anhalt: gore crno-žute pruge sa zelenim vijencem i mali crni orao, dolje crni medvjed na crvenom zidu. Medvjed je znak povijesne zemlje Anhalt. Pazite: i grb Saske ima crno-žute pruge sa zelenim vijencem, ali nema medvjeda. U katalogu je to slika 4.",
   "merksatz_de": "Im Wappen von Sachsen-Anhalt steht ein schwarzer Bär auf einer Mauer."
  },
  {
@@ -284,7 +284,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Saska-Anhalt u sredini istočnog dijela Njemačke, između Donje Saske, Brandenburga, Saske i Tiringije. Kroz pokrajinu teče rijeka Laba (Elbe), a glavni grad je Magdeburg. Saska-Anhalt nema granicu ni s jednom drugom državom.",
+  "expl_bks": "Na karti je Saska-Anhalt u sredini istočnog dijela Njemačke, između Donje Saske, Brandenburga, Saske i Tiringije. Kroz pokrajinu teče rijeka Laba (Elbe), a glavni grad je Magdeburg. Saska-Anhalt nema granicu ni s jednom drugom državom. Na karti u katalogu to je broj 3.",
   "merksatz_de": "Sachsen-Anhalt liegt in der Mitte von Ostdeutschland."
  },
  {
@@ -303,10 +303,10 @@
   "id": "ST-10",
   "q_bks": "Kojeg ministra Saska-Anhalt nema?",
   "options_bks": [
-   "ministar pravosuđa (Justizminister)",
-   "ministar vanjskih poslova (Außenminister)",
-   "ministar financija (Finanzminister)",
-   "ministar unutarnjih poslova (Innenminister)"
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
   ],
   "expl_bks": "Saska-Anhalt, kao ni druge pokrajine, nema ministra vanjskih poslova. Vanjska politika je prema članku 32. Temeljnog zakona (njemačkog ustava) zadaća saveza (Bund), pa tog ministra ima samo savezna vlada. Ministri pravosuđa, financija i unutarnjih poslova postoje i u pokrajinama, jer one same vode sudove, policiju i svoj proračun.",
   "merksatz_de": "Bundesländer haben keinen eigenen Außenminister."
@@ -320,7 +320,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Schleswig-Holsteina: lijevo dva plava lava na zlatnoj podlozi, desno bijeli list koprive na crvenoj podlozi. Lavovi predstavljaju povijesni kraj Schleswig, a list koprive kraj Holstein. Tako i ime i grb pokazuju da se pokrajina sastoji od dvaju povijesnih dijelova.",
+  "expl_bks": "Grb Schleswig-Holsteina: lijevo dva plava lava na zlatnoj podlozi, desno bijeli list koprive na crvenoj podlozi. Lavovi predstavljaju povijesni kraj Schleswig, a list koprive kraj Holstein. Tako i ime i grb pokazuju da se pokrajina sastoji od dvaju povijesnih dijelova. U katalogu je to slika 3.",
   "merksatz_de": "Schleswig-Holsteins Wappen: zwei blaue Löwen und ein Nesselblatt."
  },
  {
@@ -404,7 +404,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Schleswig-Holstein najsjevernija pokrajina, između Sjevernog i Baltičkog mora, uz granicu s Danskom. Na jugu graniči s Hamburgom, Donjom Saskom i Mecklenburgom-Zapadnim Pomorjem. Glavni grad pokrajine je Kiel.",
+  "expl_bks": "Na karti je Schleswig-Holstein najsjevernija pokrajina, između Sjevernog i Baltičkog mora, uz granicu s Danskom. Na jugu graniči s Hamburgom, Donjom Saskom i Mecklenburgom-Zapadnim Pomorjem. Glavni grad pokrajine je Kiel. Na karti u katalogu to je broj 1.",
   "merksatz_de": "Schleswig-Holstein ist das nördlichste Bundesland Deutschlands."
  },
  {
@@ -423,10 +423,10 @@
   "id": "SH-10",
   "q_bks": "Kojeg ministra Schleswig-Holstein nema?",
   "options_bks": [
-   "ministar pravosuđa (Justizminister)",
-   "ministar vanjskih poslova (Außenminister)",
-   "ministar financija (Finanzminister)",
-   "ministar unutarnjih poslova (Innenminister)"
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
   ],
   "expl_bks": "Schleswig-Holstein nema ministra vanjskih poslova. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnosi s drugim državama zadaća su saveza (Bund), a ne pokrajina. I kad pokrajina surađuje sa susjednom Danskom, vanjsku politiku Njemačke vodi savezna vlada. Pokrajine imaju ministre za pravosuđe, financije i unutarnje poslove.",
   "merksatz_de": "Für Außenpolitik ist in Deutschland der Bund zuständig."
@@ -440,7 +440,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Tiringije: lav s crveno-bijelim prugama na plavom štitu, oko njega osam bijelih zvjezdica. Sličan prugasti lav nalazi se i u grbu Hessena, ali Hessenov grb nema zvjezdice. Zato pri odgovoru pazite na osam zvjezdica oko lava.",
+  "expl_bks": "Grb Tiringije: lav s crveno-bijelim prugama na plavom štitu, oko njega osam bijelih zvjezdica. Sličan prugasti lav nalazi se i u grbu Hessena, ali grb Hessena nema zvjezdice. Zato pri odgovoru pazite na osam zvjezdica oko lava. U katalogu je to slika 4.",
   "merksatz_de": "Thüringens Wappen zeigt einen gestreiften Löwen und acht Sterne."
  },
  {
@@ -524,7 +524,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Tiringija u sredini Njemačke, južno od Saske-Anhalt, između Hessena, Bavarske i Saske. Zbog mnogo šuma često se naziva „zeleno srce Njemačke” (das grüne Herz Deutschlands). Glavni grad pokrajine je Erfurt.",
+  "expl_bks": "Na karti je Tiringija u sredini Njemačke, južno od Saske-Anhalt, između Hessena, Bavarske i Saske. Zbog mnogo šuma često se naziva „zeleno srce Njemačke” (das grüne Herz Deutschlands). Glavni grad pokrajine je Erfurt. Na karti u katalogu to je broj 2.",
   "merksatz_de": "Thüringen liegt in der Mitte Deutschlands."
  },
  {
@@ -543,10 +543,10 @@
   "id": "TH-10",
   "q_bks": "Kojeg ministra Tiringija nema?",
   "options_bks": [
-   "ministar pravosuđa (Justizminister)",
-   "ministar vanjskih poslova (Außenminister)",
-   "ministar financija (Finanzminister)",
-   "ministar unutarnjih poslova (Innenminister)"
+   "ministra pravosuđa (Justizminister)",
+   "ministra vanjskih poslova (Außenminister)",
+   "ministra financija (Finanzminister)",
+   "ministra unutarnjih poslova (Innenminister)"
   ],
   "expl_bks": "Tiringija nema ministra vanjskih poslova, jer vanjska politika nije zadaća pokrajina. Prema članku 32. Temeljnog zakona (njemačkog ustava) odnose s drugim državama vodi savez (Bund), odnosno savezna vlada i Ministarstvo vanjskih poslova (Auswärtiges Amt). Pokrajinski ministri brinu se npr. o pravosuđu, financijama i unutarnjim poslovima.",
   "merksatz_de": "Thüringen hat Justiz-, Finanz- und Innenminister, aber keinen Außenminister."

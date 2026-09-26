@@ -61,12 +61,12 @@
  },
  {
   "id": "G-282",
-  "q_bks": "Koji volonterski rad (Ehrenamt) moraju preuzeti njemački državljani ako ih se na to pozove?",
+  "q_bks": "Koju počasnu dužnost (Ehrenamt) moraju preuzeti njemački državljani ako ih se na to pozove?",
   "options_bks": [
-   "trener u udruzi",
+   "trener u udruzi (Vereinstrainer)",
    "pomoćnik na izborima (Wahlhelfer)",
-   "nadzor u knjižnici",
-   "učitelj"
+   "nadzor u knjižnici (Bibliotheksaufsicht)",
+   "učitelj (Lehrer)"
   ],
   "expl_bks": "Pomoćnici na izborima (Wahlhelfer) broje glasove i paze da izbori na biralištu teku ispravno. Za to je potrebno mnogo ljudi. Ako općina ne nađe dovoljno dobrovoljaca, može pozvati građane s biračkim pravom, a oni smiju odbiti samo iz važnog razloga, na primjer zbog bolesti. Za taj rad dobiva se mala naknada.",
   "merksatz_de": "Wahlhelfer ist ein Ehrenamt, das man übernehmen muss."
@@ -196,11 +196,11 @@
   "q_bks": "Koji je običaj u Njemačkoj za Uskrs?",
   "options_bks": [
    "stavljati bundeve pred vrata",
-   "kititi jelku",
+   "kititi jelu (Tannenbaum)",
    "bojiti jaja",
    "ispaljivati rakete u zrak"
   ],
-  "expl_bks": "Za Uskrs se u Njemačkoj jaja boje i ukrašavaju, slično kao i u našim krajevima. Djeci se kaže da šarena jaja i slatkiše donosi uskrsni zec (Osterhase) i skriva ih u vrtu ili stanu. Bundeve su običaj za Noć vještica (Halloween), jelka za Božić, a rakete za doček Nove godine.",
+  "expl_bks": "Za Uskrs se u Njemačkoj jaja boje i ukrašavaju, slično kao i u našim krajevima. Djeci se kaže da šarena jaja i slatkiše donosi uskrsni zec (Osterhase) i skriva ih u vrtu ili stanu. Bundeve su običaj za Noć vještica (Halloween), okićena jela za Božić, a rakete za doček Nove godine.",
   "merksatz_de": "An Ostern bemalt man Eier."
  },
  {
@@ -296,7 +296,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Baden-Württemberga: tri crna lava jedan ispod drugoga na zlatnožutom štitu, iznad štita kruna. Lavovi potječu iz starog grba švapske vladarske obitelji Staufen (Hohenstaufen). Pomoć za pamćenje: pokrajina je nastala 1952. spajanjem triju pokrajina – a na grbu su tri lava.",
+  "expl_bks": "Grb Baden-Württemberga: tri crna lava jedan ispod drugoga na zlatnožutom štitu, iznad štita kruna. Lavovi potječu iz starog grba švapske vladarske obitelji Staufen (Hohenstaufen). Pomoć za pamćenje: pokrajina je nastala 1952. spajanjem triju pokrajina – a na grbu su tri lava. U katalogu je to slika 1.",
   "merksatz_de": "Im Wappen von Baden-Württemberg sind drei schwarze Löwen."
  },
  {
@@ -339,10 +339,10 @@
   "id": "BW-05",
   "q_bks": "Koje boje ima pokrajinska zastava Baden-Württemberga?",
   "options_bks": [
-   "plavo-bijelo-crvena",
-   "crno-zlatna",
-   "bijelo-plava",
-   "zeleno-bijelo-crvena"
+   "plavo-bijelo-crveno",
+   "crno-zlatno",
+   "bijelo-plavo",
+   "zeleno-bijelo-crveno"
   ],
   "expl_bks": "Zastava Baden-Württemberga ima dvije vodoravne pruge: gore crnu, dolje zlatnu (žutu). Iste boje vide se i na pokrajinskom grbu, gdje stoje tri crna lava na zlatnoj podlozi. Pazite na zamku: bijelo-plava je zastava Bavarske.",
   "merksatz_de": "Die Landesflagge von Baden-Württemberg ist schwarz-gold."
@@ -380,7 +380,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Baden-Württemberg krajnji jugozapad Njemačke, uz granicu s Francuskom i Švicarskom. Na zapadu ga od Francuske dijeli rijeka Rajna, a na jugu leži Bodensko jezero. Istočni susjed Baden-Württemberga je Bavarska.",
+  "expl_bks": "Na karti je Baden-Württemberg krajnji jugozapad Njemačke, uz granicu s Francuskom i Švicarskom. Na zapadu ga od Francuske dijeli rijeka Rajna, a na jugu leži Bodensko jezero. Istočni susjed Baden-Württemberga je Bavarska. Na karti u katalogu to je broj 2.",
   "merksatz_de": "Baden-Württemberg liegt im Südwesten Deutschlands."
  },
  {
@@ -399,10 +399,10 @@
   "id": "BW-10",
   "q_bks": "Kojeg ministra Baden-Württemberg nema?",
   "options_bks": [
-   "ministar financija",
-   "ministar pravosuđa",
-   "ministar unutarnjih poslova",
-   "ministar vanjskih poslova"
+   "ministra financija",
+   "ministra pravosuđa",
+   "ministra unutarnjih poslova",
+   "ministra vanjskih poslova"
   ],
   "expl_bks": "Odnosi s drugim državama zadatak su savezne države, a ne pokrajina (Temeljni zakon, članak 32.). Zato ministar vanjskih poslova postoji samo u saveznoj vladi. Pokrajine poput Baden-Württemberga imaju vlastite ministre, npr. za financije, pravosuđe, unutarnje poslove i škole, jer za ta područja i same odgovaraju.",
   "merksatz_de": "Außenpolitik ist Sache des Bundes, nicht der Bundesländer."
@@ -416,7 +416,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Bavarske: bijelo-plavi rombovi (romboidni uzorak), iznad štita kruna. Taj uzorak Bavarci zovu „Rauten” i vide ga posvuda, npr. na zastavama i suvenirima. Bavarska se naziva slobodna država (Freistaat), što je samo stari njemački naziv za republiku, a ne posebna vrsta države.",
+  "expl_bks": "Grb Bavarske: bijelo-plavi rombovi (romboidni uzorak), iznad štita kruna. Taj uzorak Bavarci zovu „Rauten” i vide ga posvuda, npr. na zastavama i suvenirima. Bavarska se naziva slobodna država (Freistaat), što je samo stari njemački naziv za republiku, a ne posebna vrsta države. U katalogu je to slika 2.",
   "merksatz_de": "Das bayerische Wappen zeigt weiß-blaue Rauten."
  },
  {
@@ -459,10 +459,10 @@
   "id": "BY-05",
   "q_bks": "Koje boje ima pokrajinska zastava Bavarske?",
   "options_bks": [
-   "plavo-bijelo-crvena",
-   "bijelo-plava",
-   "zeleno-bijelo-crvena",
-   "crno-žuta"
+   "plavo-bijelo-crveno",
+   "bijelo-plavo",
+   "zeleno-bijelo-crveno",
+   "crno-žuto"
   ],
   "expl_bks": "Bavarske boje su bijela i plava. Postoje dvije pokrajinske zastave: jedna s dvije vodoravne pruge, gore bijelom i dolje plavom, a druga s bijelo-plavim rombovima. Te boje vide se posvuda, na primjer na grbu ili za vrijeme Oktoberfesta u Münchenu.",
   "merksatz_de": "Die Farben von Bayern sind Weiß und Blau."
@@ -500,7 +500,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Bavarska velika pokrajina na jugoistoku Njemačke, uz granicu s Austrijom i Češkom. Po površini je najveća savezna pokrajina. Na jugu se nalaze Alpe s najvišim njemačkim vrhom, Zugspitze (2962 m).",
+  "expl_bks": "Na karti je Bavarska velika pokrajina na jugoistoku Njemačke, uz granicu s Austrijom i Češkom. Po površini je najveća savezna pokrajina. Na jugu se nalaze Alpe s najvišim njemačkim vrhom, Zugspitze (2962 m). Na karti u katalogu to je broj 4.",
   "merksatz_de": "Bayern ist das größte Bundesland und liegt im Südosten."
  },
  {
@@ -519,10 +519,10 @@
   "id": "BY-10",
   "q_bks": "Kojeg ministra Bavarska nema?",
   "options_bks": [
-   "ministar pravosuđa",
-   "ministar vanjskih poslova",
-   "ministar financija",
-   "ministar unutarnjih poslova"
+   "ministra pravosuđa",
+   "ministra vanjskih poslova",
+   "ministra financija",
+   "ministra unutarnjih poslova"
   ],
   "expl_bks": "Odnose s drugim državama vodi savezna država, a ne pokrajine (Temeljni zakon, članak 32.). Zato ministar vanjskih poslova postoji samo u saveznoj vladi u Berlinu. Bavarska ima vlastite ministre za pravosuđe, financije i unutarnje poslove; ondje se zovu državni ministri (Staatsminister).",
   "merksatz_de": "Bayern hat keinen Außenminister, das ist Aufgabe des Bundes."
@@ -536,7 +536,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Berlina: crni medvjed s crvenim jezikom na bijelom štitu, iznad štita kruna. Medvjed je simbol grada već stoljećima i nalazi se i na berlinskoj zastavi, crveno-bijelo-crvenoj. Lako je zapamtiti: Berlin = medvjed (Bär).",
+  "expl_bks": "Grb Berlina: crni medvjed s crvenim jezikom na bijelom štitu, iznad štita kruna. Medvjed je simbol grada već stoljećima i nalazi se i na berlinskoj zastavi, crveno-bijelo-crvenoj. Lako je zapamtiti: Berlin = medvjed (Bär). U katalogu je to slika 4.",
   "merksatz_de": "Im Berliner Wappen ist ein schwarzer Bär."
  },
  {

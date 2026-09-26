@@ -32,7 +32,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Mecklenburga-Zapadnog Pomorja: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi. Glava bika stari je znak Mecklenburga, a grifon znak Pomeranije. Tako grb pokazuje da je pokrajina nastala od dviju povijesnih regija.",
+  "expl_bks": "Grb Mecklenburga-Zapadnog Pomorja: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi. Glava bika stari je znak Mecklenburga, a grifon znak Pomeranije. Tako grb pokazuje da je pokrajina nastala od dviju povijesnih regija. U katalogu je to slika 3.",
   "merksatz_de": "Im Wappen von Mecklenburg-Vorpommern: Stierkopf und Greif."
  },
  {
@@ -75,10 +75,10 @@
   "id": "MV-05",
   "q_bks": "Koje boje ima zastava savezne pokrajine Mecklenburg-Zapadno Pomorje?",
   "options_bks": [
-   "crna-crvena-zlatna",
-   "plava-bijela-žuta-crvena",
-   "zelena-bijela-crvena",
-   "crna-žuta"
+   "crno-crveno-zlatno",
+   "plavo-bijelo-žuto-crveno",
+   "zeleno-bijelo-crveno",
+   "crno-žuto"
   ],
   "expl_bks": "Zastava Mecklenburga-Zapadnog Pomorja ima vodoravne pruge u plavoj, bijeloj, žutoj i crvenoj boji. Plava, žuta i crvena stare su boje Mecklenburga, a plava i bijela boje Pomeranije. Crno-crveno-zlatna je savezna zastava Njemačke, a ne zastava ove pokrajine.",
   "merksatz_de": "Die Flagge von Mecklenburg-Vorpommern ist blau-weiß-gelb-rot."
@@ -116,7 +116,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Mecklenburg-Zapadno Pomorje na sjeveroistoku, uz Baltičko more i granicu s Poljskom. Ovoj pokrajini pripada i Rügen, najveći njemački otok. Glavni grad je Schwerin, a najveći grad Rostock.",
+  "expl_bks": "Na karti je Mecklenburg-Zapadno Pomorje na sjeveroistoku, uz Baltičko more i granicu s Poljskom. Ovoj pokrajini pripada i Rügen, najveći njemački otok. Glavni grad je Schwerin, a najveći grad Rostock. Na karti u katalogu to je broj 3.",
   "merksatz_de": "Mecklenburg-Vorpommern liegt im Nordosten an der Ostsee."
  },
  {
@@ -152,7 +152,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Donje Saske: bijeli konj u skoku na crvenom štitu. Taj konj (Sachsenross, „saski konj”) star je simbol regije i nalazi se i na zastavi Donje Saske. Pazite: bijeli konj postoji i u grbu Sjeverne Rajne-Vestfalije, ali ondje je samo jedan od tri dijela grba.",
+  "expl_bks": "Grb Donje Saske: bijeli konj u skoku na crvenom štitu. Taj konj (Sachsenross, „saski konj”) star je simbol regije i nalazi se i na zastavi Donje Saske. Pazite: bijeli konj postoji i u grbu Sjeverne Rajne-Vestfalije, ali ondje je samo jedan od tri dijela grba. U katalogu je to slika 3.",
   "merksatz_de": "Das Wappen von Niedersachsen zeigt ein weißes Pferd auf Rot."
  },
  {
@@ -195,10 +195,10 @@
   "id": "NI-05",
   "q_bks": "Koje boje ima zastava savezne pokrajine Donja Saska?",
   "options_bks": [
-   "bijela-plava",
-   "crna-crvena-zlatna",
-   "crna-žuta",
-   "plava-bijela-crvena"
+   "bijelo-plavo",
+   "crno-crveno-zlatno",
+   "crno-žuto",
+   "plavo-bijelo-crveno"
   ],
   "expl_bks": "Zastava Donje Saske ima iste boje kao njemačka savezna zastava: crnu, crvenu i zlatnu. Razliku čini grb u sredini – bijeli konj na crvenom štitu. Po tom konju zastava Donje Saske lako se prepozna.",
   "merksatz_de": "Niedersachsens Flagge: Schwarz-Rot-Gold mit weißem Pferd."
@@ -236,7 +236,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Donja Saska velika pokrajina na sjeverozapadu, uz Sjeverno more i Nizozemsku (oko Bremena). Grad Bremen posebna je savezna pokrajina koju Donja Saska okružuje. Po površini je Donja Saska druga najveća pokrajina, nakon Bavarske.",
+  "expl_bks": "Na karti je Donja Saska velika pokrajina na sjeverozapadu, uz Sjeverno more i Nizozemsku. Grad Bremen posebna je savezna pokrajina koju Donja Saska okružuje. Po površini je Donja Saska druga najveća pokrajina, nakon Bavarske. Na karti u katalogu to je broj 1.",
   "merksatz_de": "Niedersachsen liegt im Nordwesten an der Nordsee."
  },
  {
@@ -272,7 +272,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Sjeverne Rajne-Vestfalije: lijevo bijela valovita linija na zelenom (Rajna), desno bijeli konj na crvenom, dolje crvena ruža. Tri dijela predstavljaju tri regije od kojih je pokrajina nastala: Rajna znači Porajnje, konj Vestfaliju, a ruža nekadašnju zemlju Lippe.",
+  "expl_bks": "Grb Sjeverne Rajne-Vestfalije: lijevo bijela valovita linija na zelenom (Rajna), desno bijeli konj na crvenom, dolje crvena ruža. Tri dijela predstavljaju tri regije od kojih je pokrajina nastala: Rajna znači Porajnje, konj Vestfaliju, a ruža nekadašnju zemlju Lippe. U katalogu je to slika 2.",
   "merksatz_de": "Das Wappen von Nordrhein-Westfalen zeigt Rhein, Pferd und Rose."
  },
  {
@@ -315,10 +315,10 @@
   "id": "NW-05",
   "q_bks": "Koje boje ima zastava savezne pokrajine Sjeverna Rajna-Vestfalija?",
   "options_bks": [
-   "crvena-bijela",
-   "zelena-bijela-crvena",
-   "crna-zlatna",
-   "plava-bijela-crvena"
+   "crveno-bijelo",
+   "zeleno-bijelo-crveno",
+   "crno-zlatno",
+   "plavo-bijelo-crveno"
   ],
   "expl_bks": "Zastava Sjeverne Rajne-Vestfalije ima tri vodoravne pruge: zelenu, bijelu i crvenu. Zelena i bijela stare su boje Porajnja, a bijela i crvena boje Vestfalije. Na nekim zastavama u sredini se nalazi i grb pokrajine.",
   "merksatz_de": "Die Flagge von Nordrhein-Westfalen ist grün-weiß-rot."
@@ -356,7 +356,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Sjeverna Rajna-Vestfalija na zapadu, uz granicu s Nizozemskom i Belgijom. To je pokrajina s najviše stanovnika u Njemačkoj. Ovdje su veliki gradovi kao Köln, Düsseldorf i Dortmund te industrijsko Porurje (Ruhrgebiet).",
+  "expl_bks": "Na karti je Sjeverna Rajna-Vestfalija na zapadu, uz granicu s Nizozemskom i Belgijom. To je pokrajina s najviše stanovnika u Njemačkoj. Ovdje su veliki gradovi kao Köln, Düsseldorf i Dortmund te industrijsko Porurje (Ruhrgebiet). Na karti u katalogu to je broj 3.",
   "merksatz_de": "Nordrhein-Westfalen liegt im Westen an der Grenze zu den Niederlanden."
  },
  {
@@ -392,7 +392,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Porajnja-Falačke: crveni križ na bijelom, bijeli kotač na crvenom i zlatni lav na crnom, iznad štita kruna. Ti znakovi podsjećaju na tri stare države ovog područja: križ na Trier, kotač na Mainz, a lav na Falačku (Pfalz).",
+  "expl_bks": "Grb Porajnja-Falačke: crveni križ na bijelom, bijeli kotač na crvenom i zlatni lav na crnom, iznad štita kruna. Ti znakovi podsjećaju na tri stare države ovog područja: križ na Trier, kotač na Mainz, a lav na Falačku (Pfalz). U katalogu je to slika 1.",
   "merksatz_de": "Das Wappen von Rheinland-Pfalz zeigt Kreuz, Rad und Löwen."
  },
  {
@@ -435,10 +435,10 @@
   "id": "RP-05",
   "q_bks": "Koje boje ima zastava savezne pokrajine Porajnje-Falačka?",
   "options_bks": [
-   "bijela-crvena",
-   "crna-crvena-zlatna",
-   "crna-žuta",
-   "zelena-bijela-crvena"
+   "bijelo-crveno",
+   "crno-crveno-zlatno",
+   "crno-žuto",
+   "zeleno-bijelo-crveno"
   ],
   "expl_bks": "Zastava Porajnja-Falačke je crno-crveno-zlatna, a u gornjem lijevom kutu nalazi se grb pokrajine. Te boje imaju dugu povijest upravo ovdje: na skupu kod dvorca Hambach (Hambacher Fest) 1832. ljudi su nosili crno-crveno-zlatne zastave za slobodu i jedinstvo Njemačke.",
   "merksatz_de": "Rheinland-Pfalz hat eine schwarz-rot-goldene Flagge mit Wappen."
@@ -476,7 +476,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Na karti je Porajnje-Falačka na zapadu, uz granicu s Belgijom, Luksemburgom i Francuskom. Kroz pokrajinu teku Rajna i Mosel, a poznata je po vinogradima. Jugozapadno od nje nalazi se mali Saarland, a sjeverno Sjeverna Rajna-Vestfalija.",
+  "expl_bks": "Na karti je Porajnje-Falačka na zapadu, uz granicu s Belgijom, Luksemburgom i Francuskom. Kroz pokrajinu teku Rajna i Mosel, a poznata je po vinogradima. Jugozapadno od nje nalazi se mali Saarland, a sjeverno Sjeverna Rajna-Vestfalija. Na karti u katalogu to je broj 1.",
   "merksatz_de": "Rheinland-Pfalz grenzt an Belgien, Luxemburg und Frankreich."
  },
  {
@@ -512,7 +512,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb Saarlanda: štit u četiri polja – srebrni lav na plavom, crveni križ na bijelom, crvena kosa greda s tri mala bijela orla na zlatnom i zlatni lav na crnom. Četiri polja podsjećaju na četiri stare države od kojih je nastao Saarland.",
+  "expl_bks": "Grb Saarlanda: štit u četiri polja – srebrni lav na plavom, crveni križ na bijelom, crvena kosa greda s tri mala bijela orla na zlatnom i zlatni lav na crnom. Četiri polja podsjećaju na četiri stare države od kojih je nastao Saarland. U katalogu je to slika 4.",
   "merksatz_de": "Das Wappen des Saarlandes hat vier Felder."
  },
  {

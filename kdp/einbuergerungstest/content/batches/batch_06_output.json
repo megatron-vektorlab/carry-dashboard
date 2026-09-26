@@ -25,7 +25,7 @@
  },
  {
   "id": "G-233",
-  "q_bks": "Koja je zemlja susjedna zemlja Njemačke?",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
   "options_bks": [
    "Češka",
    "Bugarska",
@@ -152,7 +152,7 @@
    "Ne mogu ništa učiniti jer su demonstracije u Njemačkoj načelno zabranjene.",
    "Maik i Sybille moraju osnovati novu udrugu jer samo udruge smiju demonstrirati."
   ],
-  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije najave. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
+  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije nego što se javno najavi. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
   "merksatz_de": "Eine Demonstration im Freien muss man vorher anmelden."
  },
  {
@@ -438,7 +438,7 @@
    "Moraju poštovati odluku svoje punoljetne kćeri.",
    "Imaju pravo vratiti kćer u roditeljski stan.",
    "Mogu otići na policiju i prijaviti kćer.",
-   "Potražit će kćeri drugog muškarca."
+   "Potražit će drugog muškarca za svoju kćer."
   ],
   "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući ni prijaviti policiji, jer nije učinila ništa zabranjeno.",
   "merksatz_de": "Erwachsene Kinder entscheiden selbst, mit wem sie zusammenleben."
@@ -484,7 +484,7 @@
   "q_bks": "Koji je u Njemačkoj običaj za Božić?",
   "options_bks": [
    "skrivati obojena jaja",
-   "okititi božićno drvce (jelu)",
+   "okititi jelu (Tannenbaum)",
    "prerušiti se maskama i kostimima",
    "stavljati bundeve pred vrata"
   ],
