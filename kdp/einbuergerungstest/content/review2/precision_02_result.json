@@ -1,0 +1,146 @@
+[
+ {
+  "id": "G-096",
+  "field": "expl_bks",
+  "old": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo.",
+  "new": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo ako se izrazi javno, npr. na skupu ili na internetu.",
+  "reason": "§ 130 Abs. 3 StGB punishes denial only if made publicly or in an assembly and apt to disturb public peace; private denial is not a crime.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-096",
+  "field": "merksatz_de",
+  "old": "Holocaustleugnung ist in Deutschland eine Straftat.",
+  "new": "Öffentliche Holocaustleugnung ist in Deutschland eine Straftat.",
+  "reason": "§ 130 Abs. 3 StGB requires public denial (or in an assembly); unqualified Merksatz is overbroad.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-097",
+  "field": "expl_bks",
+  "old": "Tko je stalno zaposlen, automatski plaća doprinose",
+  "new": "Tko je stalno zaposlen, u pravilu automatski plaća doprinose",
+  "reason": "Not every permanent employee pays all four listed contributions: above the Versicherungspflichtgrenze one may be privately health/care insured (§ 6 SGB V); Beamte pay no social insurance.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-100",
+  "field": "expl_bks",
+  "old": "To je privatno osiguranje koje svatko može dobrovoljno sklopiti kod osiguravajuće kuće.",
+  "new": "To je privatno osiguranje koje se može dobrovoljno sklopiti kod osiguravajuće kuće.",
+  "reason": "No right to a private life-insurance contract: insurers may refuse or surcharge on health grounds (freedom of contract); 'svatko može' is overbroad.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-103",
+  "field": "expl_bks",
+  "old": "Koalicija CDU/CSU-a i SPD-a naziva se „velika koalicija”.",
+  "new": "Koalicija CDU/CSU-a i SPD-a tradicionalno se naziva „velika koalicija”.",
+  "reason": "'Große Koalition' means a coalition of the two largest parties; since the 2025 election CDU/CSU and SPD are not the two largest groups and the coalition is usually called 'Schwarz-Rot' – time-sensitive.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-108",
+  "field": "expl_bks",
+  "old": "vrijede dva uvjeta",
+  "new": "vrijede dva osnovna uvjeta",
+  "reason": "§ 12/§ 13 BWahlG add further conditions (3 months' residence in Germany or rules for Germans abroad; no exclusion by court), so 'two conditions' is not exhaustive.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-113",
+  "field": "expl_bks",
+  "old": "Kancelara ne bira narod izravno, nego ga bira Bundestag.",
+  "new": "Kancelara ne bira narod izravno, nego Bundestag, pa najjača stranka ne vlada automatski: vladu čini većina u parlamentu, često koalicija.",
+  "reason": "Art. 63 GG: the chancellor needs a Bundestag majority; the strongest party is not automatically in government (e.g. CDU/CSU in opposition 1969–1982).",
+  "severity": "medium"
+ },
+ {
+  "id": "G-116",
+  "field": "expl_bks",
+  "old": "imaju ga svi njemački državljani s najmanje 18 godina",
+  "new": "imaju ga u pravilu njemački državljani s najmanje 18 godina",
+  "reason": "'svi' is overbroad: § 12 BWahlG also requires residence (or special rules for Germans abroad), § 13 BWahlG allows exclusion by court.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-117",
+  "field": "expl_bks",
+  "old": "Prag ne vrijedi za stranke nacionalnih manjina, npr. danske manjine.",
+  "new": "Prag ne vrijedi za stranke nacionalnih manjina (npr. danske manjine) ni za stranku koja pobijedi u najmanje tri izborna okruga.",
+  "reason": "Besides the minority exemption (§ 4 Abs. 2 BWahlG), the 3-constituency rule (Grundmandatsklausel) still applies per BVerfG 30.7.2024, 2 BvF 1/23 (e.g. Die Linke entered in 2021 with 4.9 %).",
+  "severity": "high"
+ },
+ {
+  "id": "G-117",
+  "field": "merksatz_de",
+  "old": "Parteien brauchen mindestens fünf Prozent der Zweitstimmen.",
+  "new": "Parteien brauchen in der Regel mindestens fünf Prozent der Zweitstimmen.",
+  "reason": "Exceptions: national-minority parties and the 3-constituency rule (BVerfG 2 BvF 1/23); Merksatz as absolute rule is false.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-123",
+  "field": "expl_bks",
+  "old": "Stranka mora dobiti najmanje 5",
+  "new": "Stranka u pravilu mora dobiti najmanje 5",
+  "reason": "Absolute 'mora' ignores the minority exemption and the 3-constituency rule (§ 4 Abs. 2 BWahlG; BVerfG 30.7.2024, 2 BvF 1/23).",
+  "severity": "medium"
+ },
+ {
+  "id": "G-136",
+  "field": "expl_bks",
+  "old": "Tužba protiv otkaza mora se podnijeti u roku od tri tjedna.",
+  "new": "Tužba protiv otkaza mora se podnijeti u roku od tri tjedna od primitka pisanog otkaza.",
+  "reason": "§ 4 KSchG: the 3-week period runs from receipt of the written notice; a deadline without its starting point can mislead in a real case.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-139",
+  "field": "expl_bks",
+  "old": "Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, bez suđenja.",
+  "new": "Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, u pravilu bez suđenja.",
+  "reason": "Parking is an Ordnungswidrigkeit, but after an objection (Einspruch) to a Bußgeldbescheid the Amtsgericht decides (§§ 67, 68 OWiG), so 'bez suđenja' is absolute.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-140",
+  "field": "expl_bks",
+  "old": "koji tu dužnost obavlja volonterski",
+  "new": "koji tu dužnost obavlja kao počasnu službu, bez plaće",
+  "reason": "Schöffenamt is an unpaid Ehrenamt but also a civic duty: once elected it can be refused only on statutory grounds, otherwise Ordnungsgeld (§§ 35, 56 GVG); 'volonterski' suggests it is optional.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-149",
+  "field": "expl_bks",
+  "old": "jasan je primjer antisemitizma i u Njemačkoj je kazneno djelo.",
+  "new": "jasan je primjer antisemitizma, a javno poricanje u Njemačkoj je kazneno djelo.",
+  "reason": "§ 130 Abs. 3 StGB covers only public denial or denial in an assembly.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-149",
+  "field": "merksatz_de",
+  "old": "Den Holocaust zu leugnen ist antisemitisch und strafbar.",
+  "new": "Den Holocaust zu leugnen ist antisemitisch, öffentlich ist es strafbar.",
+  "reason": "§ 130 Abs. 3 StGB: punishable only when public or in an assembly; Merksatz overbroad.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-150",
+  "field": "expl_bks",
+  "old": "Taj posao obavlja volonterski: ne dobiva plaću,",
+  "new": "To je počasna služba (Ehrenamt) i građanska dužnost: porotnik ne dobiva plaću,",
+  "reason": "Schöffenamt is an Ehrenamt that elected citizens must accept unless a statutory ground applies (§§ 33–35, 56 GVG); 'volonterski' implies it is freely optional.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-169",
+  "field": "expl_bks",
+  "old": "kada je stupio na snagu Temeljni zakon (njemački ustav)",
+  "new": "kada je proglašen Temeljni zakon (njemački ustav)",
+  "reason": "The Grundgesetz was promulgated on 23 May 1949 and entered into force only at the end of that day (Art. 145 Abs. 2 GG), i.e. 24 May 1949.",
+  "severity": "medium"
+ }
+]

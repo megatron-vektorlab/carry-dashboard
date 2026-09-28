@@ -8,7 +8,7 @@
    "zastupa drugačije mišljenje od vlade.",
    "pogrešno parkira automobil pa ga odveze pauk."
   ],
-  "expl_bks": "Kazneni proces pred sudom počinje kad državni tužitelj optuži neku osobu za kazneno djelo, na primjer za krađu ili tjelesnu ozljedu. Promjena vjere i drugačije mišljenje od vlade zaštićeni su temeljnim pravima i nisu kažnjivi. Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, bez suđenja.",
+  "expl_bks": "Kazneni proces pred sudom počinje kad državni tužitelj optuži neku osobu za kazneno djelo, na primjer za krađu ili tjelesnu ozljedu. Promjena vjere i drugačije mišljenje od vlade zaštićeni su temeljnim pravima i nisu kažnjivi. Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, u pravilu bez suđenja.",
   "merksatz_de": "Ein Strafprozess beginnt, wenn jemand wegen einer Straftat angeklagt wird."
  },
  {
@@ -20,7 +20,7 @@
    "izdaje isprave.",
    "brani optuženika."
   ],
-  "expl_bks": "Sudac porotnik (Schöffe) je građanin bez pravnog obrazovanja koji tu dužnost obavlja volonterski. Sjedi uz profesionalne suce i s njima odlučuje je li optuženik kriv i kakva će biti kazna. Pritom ima isto pravo glasa kao profesionalni sudac. Optuženika brani odvjetnik, a ne sudac porotnik.",
+  "expl_bks": "Sudac porotnik (Schöffe) je građanin bez pravnog obrazovanja koji tu dužnost obavlja kao počasnu službu, bez plaće. Sjedi uz profesionalne suce i s njima odlučuje je li optuženik kriv i kakva će biti kazna. Pritom ima isto pravo glasa kao profesionalni sudac. Optuženika brani odvjetnik, a ne sudac porotnik.",
   "merksatz_de": "Schöffen entscheiden zusammen mit Richtern über Schuld und Strafe."
  },
  {
@@ -128,8 +128,8 @@
    "poricati holokaust",
    "igrati nogomet protiv Židova"
   ],
-  "expl_bks": "Antisemitizam je mržnja ili neprijateljstvo prema Židovima. Poricanje holokausta, odnosno tvrdnja da nacisti nisu ubili oko šest milijuna Židova, jasan je primjer antisemitizma i u Njemačkoj je kazneno djelo. Posjet židovskoj proslavi ili nogometna utakmica sa Židovima normalan su dio zajedničkog života.",
-  "merksatz_de": "Den Holocaust zu leugnen ist antisemitisch und strafbar."
+  "expl_bks": "Antisemitizam je mržnja ili neprijateljstvo prema Židovima. Poricanje holokausta, odnosno tvrdnja da nacisti nisu ubili oko šest milijuna Židova, jasan je primjer antisemitizma, a javno poricanje u Njemačkoj je kazneno djelo. Posjet židovskoj proslavi ili nogometna utakmica sa Židovima normalan su dio zajedničkog života.",
+  "merksatz_de": "Den Holocaust zu leugnen ist antisemitisch, öffentlich ist es strafbar."
  },
  {
   "id": "G-150",
@@ -140,7 +140,7 @@
    "član općinskog vijeća.",
    "osoba koja je studirala pravo."
   ],
-  "expl_bks": "Porotnik (Gerichtsschöffe) je građanin koji kao sudac porotnik zajedno s profesionalnim sucima sudi u kaznenim postupcima. Taj posao obavlja volonterski: ne dobiva plaću, nego samo naknadu za troškove i izgubljeno vrijeme. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
+  "expl_bks": "Porotnik (Gerichtsschöffe) je građanin koji kao sudac porotnik zajedno s profesionalnim sucima sudi u kaznenim postupcima. To je počasna služba (Ehrenamt) i građanska dužnost: porotnik ne dobiva plaću, nego samo naknadu za troškove i izgubljeno vrijeme. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
   "merksatz_de": "Ein Schöffe ist ein Richter im Ehrenamt."
  },
  {
@@ -368,7 +368,7 @@
    "1949",
    "1951"
   ],
-  "expl_bks": "Savezna Republika Njemačka osnovana je 23. svibnja 1949., kada je stupio na snagu Temeljni zakon (njemački ustav). Iste godine, 7. listopada 1949., u sovjetskoj zoni osnovana je i DDR. Godina 1945. označava kraj rata, a ne osnivanje nove države.",
+  "expl_bks": "Savezna Republika Njemačka osnovana je 23. svibnja 1949., kada je proglašen Temeljni zakon (njemački ustav). Iste godine, 7. listopada 1949., u sovjetskoj zoni osnovana je i DDR. Godina 1945. označava kraj rata, a ne osnivanje nove države.",
   "merksatz_de": "Die Bundesrepublik Deutschland wurde 1949 gegründet."
  },
  {

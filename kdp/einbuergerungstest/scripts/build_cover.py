@@ -14,7 +14,12 @@ def main():
     info = json.load(open(ROOT / "out" / "build_info.json"))
     pages = info["pages"]
     spine = round(pages * PAPER_IN_PER_PAGE, 4)
-    params = dict(pages=pages, spine_in=spine, stand="September 2026", imprint="[VERLAG / NAME]")
+    rel = json.load(open(ROOT / "kdp" / "release.json", encoding="utf-8"))
+    missing = [k for k in rel["required"] if not rel.get(k)]
+    check_note = (f"menschliches Lektorat: {rel['human_proofread_by']}." if rel.get("human_proofread_by")
+                  else "automatisch und durch unabhängige KI-Gegenprüfungen kontrolliert.")
+    params = dict(pages=pages, spine_in=spine, stand=rel.get("catalog_stand") or "[AUSSTEHEND]",
+                  imprint=rel.get("publisher") or "[VERLAG / NAME]", check_note=check_note, draft=bool(missing))
     (ROOT / "build").mkdir(exist_ok=True)
     (ROOT / "build" / "cover_params.json").write_text(json.dumps(params))
     out = ROOT / "out" / "cover_de-bks.pdf"

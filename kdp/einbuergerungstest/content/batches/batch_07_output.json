@@ -56,7 +56,7 @@
    "slobodu okupljanja",
    "slobodu kretanja i nastanjivanja"
   ],
-  "expl_bks": "Pravo na jednako postupanje znači da se prema svim ljudima mora postupati jednako. Temeljni zakon (članak 3.) kaže da nitko ne smije biti zapostavljen zbog svog porijekla ili „rase”. Zabrana ulaska u bazen samo zbog boje kože zato je diskriminacija. Opći zakon o jednakom postupanju (AGG) to zabranjuje i u svakodnevnom životu.",
+  "expl_bks": "Pravo na jednako postupanje znači da nitko ne smije biti lošije tretiran npr. zbog boje kože, spola ili vjere. Temeljni zakon (članak 3.) kaže da nitko ne smije biti zapostavljen zbog svog porijekla ili „rase”. Zabrana ulaska u bazen samo zbog boje kože zato je diskriminacija. Opći zakon o jednakom postupanju (AGG) to zabranjuje i u svakodnevnom životu.",
   "merksatz_de": "Wegen der Hautfarbe darf niemand benachteiligt werden."
  },
  {
@@ -69,7 +69,7 @@
    "učitelj (Lehrer)"
   ],
   "expl_bks": "Pomoćnici na izborima (Wahlhelfer) broje glasove i paze da izbori na biralištu teku ispravno. Za to je potrebno mnogo ljudi. Ako općina ne nađe dovoljno dobrovoljaca, može pozvati građane s biračkim pravom, a oni smiju odbiti samo iz važnog razloga, na primjer zbog bolesti. Za taj rad dobiva se mala naknada.",
-  "merksatz_de": "Wahlhelfer ist ein Ehrenamt, das man übernehmen muss."
+  "merksatz_de": "Wahlhelfer ist ein Ehrenamt, das Wahlberechtigte auf Aufforderung übernehmen müssen."
  },
  {
   "id": "G-283",
@@ -80,8 +80,8 @@
    "Pošaljem račun natrag uredu.",
    "S računom odem u poreznu upravu (Finanzamt)."
   ],
-  "expl_bks": "Protiv pogrešne odluke ili računa nekog ureda možete uložiti prigovor (Widerspruch). Prigovor se šalje pisanim putem istom uredu, obično u roku od mjesec dana. Ured tada mora još jednom provjeriti svoju odluku. Ako račun samo ignorirate ili ga vratite bez objašnjenja, on ostaje važeći.",
-  "merksatz_de": "Gegen einen falschen Bescheid einer Behörde legt man Widerspruch ein."
+  "expl_bks": "Protiv pogrešne odluke ili računa nekog ureda možete uložiti prigovor (Widerspruch). Prigovor se obično šalje pisanim putem istom uredu u roku od mjesec dana. U nekim pokrajinama za mnoge odluke prigovora nema, nego se odmah ide na sud; to piše na kraju odluke (Rechtsbehelfsbelehrung). Ako račun samo ignorirate ili ga vratite bez objašnjenja, on ostaje važeći.",
+  "merksatz_de": "Gegen einen falschen Bescheid einer Behörde wehrt man sich meist mit einem Widerspruch."
  },
  {
   "id": "G-284",
@@ -116,7 +116,7 @@
    "skupina u poduzeću (Betriebsgruppe)",
    "uprava poduzeća (Betriebsmanagement)"
   ],
-  "expl_bks": "Radničko vijeće (Betriebsrat) biraju zaposlenici iz svojih redova. Ono zastupa njihove interese prema poslodavcu, na primjer kod radnog vremena, otkaza ili sukoba na poslu. Prije svakog otkaza poslodavac mora saslušati radničko vijeće. Ono se može osnovati u poduzećima s najmanje pet stalnih zaposlenika.",
+  "expl_bks": "Radničko vijeće (Betriebsrat) biraju zaposlenici iz svojih redova. Ono zastupa njihove interese prema poslodavcu, na primjer kod radnog vremena, otkaza ili sukoba na poslu. Ako u poduzeću postoji radničko vijeće, poslodavac ga mora saslušati prije svakog otkaza. Ono se može osnovati u poduzećima s najmanje pet stalnih zaposlenika.",
   "merksatz_de": "Der Betriebsrat vertritt die Interessen der Arbeitnehmer im Betrieb."
  },
  {
@@ -129,7 +129,7 @@
    "obvezno osiguranje"
   ],
   "expl_bks": "Otkazni rok je vrijeme između predaje otkaza i posljednjeg radnog dana. Po zakonu za zaposlenike obično iznosi četiri tjedna, do 15. u mjesecu ili do kraja mjeseca, a ugovor o radu ili kolektivni ugovor mogu odrediti i drukčije. Otkaz mora biti pisan i vlastoručno potpisan; e-mail ili SMS nisu dovoljni.",
-  "merksatz_de": "Wer kündigt, muss die Kündigungsfrist beachten."
+  "merksatz_de": "Wer kündigt, muss in der Regel die Kündigungsfrist beachten."
  },
  {
   "id": "G-288",
@@ -177,7 +177,7 @@
    "je crkva odgovorna za poreznu prijavu."
   ],
   "expl_bks": "Članovi velikih crkava, npr. katoličke i evangeličke, plaćaju crkveni porez. On iznosi 8 % ili 9 % poreza na dohodak, odnosno poreza na plaću, ovisno o saveznoj pokrajini. Porezna uprava (Finanzamt) ga ubire za crkve i zato mora znati pripada li netko nekoj crkvi. Tko izađe iz crkve, ne plaća crkveni porez.",
-  "merksatz_de": "Kirchenmitglieder zahlen Kirchensteuer, das Finanzamt zieht sie ein."
+  "merksatz_de": "Katholiken und Protestanten zahlen Kirchensteuer; das Finanzamt zieht sie ein."
  },
  {
   "id": "G-292",
@@ -248,8 +248,8 @@
    "Maroko",
    "Turska"
   ],
-  "expl_bks": "Najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske. Mnogi su došli kao gastarbajteri nakon sporazuma o zapošljavanju iz 1961., a kasnije su doveli i svoje obitelji. Danas u Njemačkoj žive već treća i četvrta generacija tih obitelji.",
-  "merksatz_de": "Die meisten Migranten in Deutschland stammen aus der Türkei."
+  "expl_bks": "Prema službenoj statistici (2024.) najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske (oko 12 %). Mnogi su došli kao gastarbajteri nakon sporazuma o zapošljavanju iz 1961., a kasnije su doveli i svoje obitelji. Danas u Njemačkoj žive već treća i četvrta generacija tih obitelji.",
+  "merksatz_de": "Die größte Migrantengruppe in Deutschland stammt aus der Türkei."
  },
  {
   "id": "G-298",
@@ -272,7 +272,7 @@
    "radnicima preko agencije (Zeitarbeiter).",
    "smjenskim radnicima (Schichtarbeiter)."
   ],
-  "expl_bks": "Riječ „Gastarbeiter” znači „radnik gost”. Država je mislila da će ti radnici ostati samo kratko i onda se vratiti kući. Mnogi su ipak ostali i doveli obitelji. Od 1968. dolazili su i radnici iz Jugoslavije, pa je riječ „gastarbajter” ušla i u naš jezik.",
+  "expl_bks": "Riječ „Gastarbeiter” znači „radnik gost”. Država je mislila da će ti radnici ostati samo kratko i onda se vratiti kući. Mnogi su ipak ostali i doveli obitelji. Godine 1968. sporazum je sklopljen i s Jugoslavijom, odakle je došlo mnogo radnika, pa je riječ „gastarbajter” ušla i u naš jezik.",
   "merksatz_de": "Angeworbene ausländische Arbeitskräfte nannte man damals Gastarbeiter."
  },
  {
@@ -285,7 +285,7 @@
    "Turska"
   ],
   "expl_bks": "Prvi sporazum o zapošljavanju stranih radnika Savezna Republika Njemačka sklopila je 1955. s Italijom. Kasnije su slijedili sporazumi sa Španjolskom i Grčkom (1960.), Turskom (1961.), Portugalom (1964.) i Jugoslavijom (1968.). Talijani su tako bili prvi gastarbajteri.",
-  "merksatz_de": "Die ersten Gastarbeiter kamen 1955 aus Italien."
+  "merksatz_de": "Das erste Anwerbeabkommen schloss die Bundesrepublik 1955 mit Italien."
  },
  {
   "id": "BW-01",

@@ -1,0 +1,1290 @@
+[
+ {
+  "id": "G-001",
+  "question_de": "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil ...",
+  "options_de": {
+   "A": "hier Religionsfreiheit gilt.",
+   "B": "die Menschen Steuern zahlen.",
+   "C": "die Menschen das Wahlrecht haben.",
+   "D": "hier Meinungsfreiheit gilt."
+  },
+  "key": "D",
+  "q_bks": "U Njemačkoj ljudi smiju otvoreno govoriti protiv vlade jer …",
+  "expl_bks": "Sloboda mišljenja jedno je od temeljnih prava iz Temeljnog zakona (članak 5.). Svatko smije javno reći ili napisati svoje mišljenje i kritizirati vladu, a zbog toga ne smije biti kažnjen. Granice postoje samo kod kaznenih djela, na primjer uvrede ili poticanja na mržnju.",
+  "merksatz_de": "Meinungsfreiheit: Man darf die Regierung offen kritisieren."
+ },
+ {
+  "id": "G-002",
+  "question_de": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindes entscheiden, ob es in der Schule am ...",
+  "options_de": {
+   "A": "Geschichtsunterricht teilnimmt.",
+   "B": "Religionsunterricht teilnimmt.",
+   "C": "Politikunterricht teilnimmt.",
+   "D": "Sprachunterricht teilnimmt."
+  },
+  "key": "B",
+  "q_bks": "U Njemačkoj roditelji mogu do 14. godine života svojeg djeteta odlučivati hoće li ono u školi sudjelovati u …",
+  "expl_bks": "Temeljni zakon (njemački ustav) u članku 7. daje roditeljima pravo da odluče hoće li dijete pohađati vjeronauk. Od 14. godine dijete o tome odlučuje samo. Tko ne ide na vjeronauk, u mnogim pokrajinama umjesto toga ima etiku. Ostali predmeti obvezni su za sve učenike.",
+  "merksatz_de": "Bis 14 entscheiden die Eltern über den Religionsunterricht."
+ },
+ {
+  "id": "G-003",
+  "question_de": "Deutschland ist ein Rechtsstaat. Was ist damit gemeint?",
+  "options_de": {
+   "A": "Alle Einwohnerinnen/Einwohner und der Staat müssen sich an die Gesetze halten.",
+   "B": "Der Staat muss sich nicht an die Gesetze halten.",
+   "C": "Nur Deutsche müssen die Gesetze befolgen.",
+   "D": "Die Gerichte machen die Gesetze."
+  },
+  "key": "A",
+  "q_bks": "Njemačka je pravna država. Što se time misli?",
+  "expl_bks": "U pravnoj državi zakoni vrijede za sve: za građane, za strance i za samu državu. I policija, uredi i vlada moraju poštovati zakone, a svatko se može obratiti neovisnom sudu. Sudovi ne donose zakone, nego ih primjenjuju; zakone donosi parlament.",
+  "merksatz_de": "Im Rechtsstaat müssen alle, auch der Staat, die Gesetze befolgen."
+ },
+ {
+  "id": "G-004",
+  "question_de": "Welches Recht gehört zu den Grundrechten in Deutschland?",
+  "options_de": {
+   "A": "Waffenbesitz",
+   "B": "Faustrecht",
+   "C": "Meinungsfreiheit",
+   "D": "Selbstjustiz"
+  },
+  "key": "C",
+  "q_bks": "Koje pravo spada u temeljna prava u Njemačkoj?",
+  "expl_bks": "Sloboda mišljenja zaštićena je člankom 5. Temeljnog zakona (njemačkog ustava) i spada u temeljna prava. „Pravo jačega” i uzimanje pravde u svoje ruke u Njemačkoj su zabranjeni: sukobe rješavaju policija i sudovi. Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom i traži dozvolu.",
+  "merksatz_de": "Zu den Grundrechten gehört die Meinungsfreiheit."
+ },
+ {
+  "id": "G-005",
+  "question_de": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+  "options_de": {
+   "A": "Man darf Geld annehmen, wenn man dafür eine bestimmte Kandidatin/einen bestimmten Kandidaten wählt.",
+   "B": "Nur Personen, die noch nie im Gefängnis waren, dürfen wählen.",
+   "C": "Die Wählerin/der Wähler darf bei der Wahl weder beeinflusst noch zu einer bestimmten Stimmabgabe gezwungen werden und keine Nachteile durch die Wahl haben.",
+   "D": "Alle wahlberechtigten Personen müssen wählen."
+  },
+  "key": "C",
+  "q_bks": "Izbori u Njemačkoj su slobodni. Što to znači?",
+  "expl_bks": "Slobodni izbori znače da svaki birač sam odlučuje hoće li glasati i za koga. Nitko ga ne smije prisiljavati, ucjenjivati ni kupovati njegov glas, a zbog svojeg izbora ne smije imati štete, na primjer na poslu. U Njemačkoj nema obveze glasanja. Načela izbora navedena su u članku 38. Temeljnog zakona.",
+  "merksatz_de": "Bei freien Wahlen entscheidet jeder ohne Zwang und Druck."
+ },
+ {
+  "id": "G-006",
+  "question_de": "Wie heißt die deutsche Verfassung?",
+  "options_de": {
+   "A": "Volksgesetz",
+   "B": "Bundesgesetz",
+   "C": "Deutsches Gesetz",
+   "D": "Grundgesetz"
+  },
+  "key": "D",
+  "q_bks": "Kako se zove njemački ustav?",
+  "expl_bks": "Njemački ustav zove se Temeljni zakon (Grundgesetz). Proglašen je 23. svibnja 1949. u Zapadnoj Njemačkoj, a od ponovnog ujedinjenja Njemačke 1990. vrijedi za cijelu zemlju. Pri donošenju 1949. zamišljen je kao privremeno rješenje do ujedinjenja, pa se namjerno nije zvao „ustav”.",
+  "merksatz_de": "Die deutsche Verfassung heißt Grundgesetz."
+ },
+ {
+  "id": "G-007",
+  "question_de": "Welches Recht gehört zu den Grundrechten, die nach der deutschen Verfassung garantiert werden? Das Recht auf ...",
+  "options_de": {
+   "A": "Glaubens- und Gewissensfreiheit",
+   "B": "Unterhaltung",
+   "C": "Arbeit",
+   "D": "Wohnung"
+  },
+  "key": "A",
+  "q_bks": "Koje pravo spada u temeljna prava koja jamči njemački ustav? Pravo na …",
+  "expl_bks": "Članak 4. Temeljnog zakona jamči slobodu vjere i savjesti: svatko smije slobodno izabrati vjeru, promijeniti je ili ne pripadati nijednoj vjeri. Nitko ne smije biti prisiljen djelovati protiv svoje savjesti. Pravo na rad, stan ili zabavu nije navedeno kao temeljno pravo u Temeljnom zakonu.",
+  "merksatz_de": "Das Grundgesetz garantiert Glaubens- und Gewissensfreiheit."
+ },
+ {
+  "id": "G-008",
+  "question_de": "Was steht nicht im Grundgesetz von Deutschland?",
+  "options_de": {
+   "A": "Die Würde des Menschen ist unantastbar.",
+   "B": "Alle sollen gleich viel Geld haben.",
+   "C": "Jeder Mensch darf seine Meinung sagen.",
+   "D": "Alle sind vor dem Gesetz gleich."
+  },
+  "key": "B",
+  "q_bks": "Što ne piše u Temeljnom zakonu Njemačke?",
+  "expl_bks": "Temeljni zakon ne obećava da će svi imati jednako mnogo novca. On jamči ljudsko dostojanstvo (članak 1.), jednakost pred zakonom (članak 3.) i slobodu mišljenja (članak 5.). Ljudi smiju različito zarađivati, a socijalna država pomaže onima kojima je pomoć potrebna.",
+  "merksatz_de": "Gleich viel Geld für alle steht nicht im Grundgesetz."
+ },
+ {
+  "id": "G-009",
+  "question_de": "Welches Grundrecht gilt in Deutschland nur für Ausländerinnen/Ausländer? Das Grundrecht auf ...",
+  "options_de": {
+   "A": "Schutz der Familie",
+   "B": "Menschenwürde",
+   "C": "Asyl",
+   "D": "Meinungsfreiheit"
+  },
+  "key": "C",
+  "q_bks": "Koje temeljno pravo u Njemačkoj vrijedi samo za strance? Temeljno pravo na …",
+  "expl_bks": "Pravo na azil (članak 16.a Temeljnog zakona) štiti politički progonjene osobe, na primjer ljude koje država u domovini progoni zbog mišljenja, vjere ili podrijetla. Njemački državljani ne trebaju azil u Njemačkoj, pa ovo pravo vrijedi samo za strance. Ljudsko dostojanstvo, sloboda mišljenja i zaštita obitelji vrijede za sve ljude.",
+  "merksatz_de": "Nur für Ausländer gilt das Grundrecht auf Asyl."
+ },
+ {
+  "id": "G-010",
+  "question_de": "Was ist mit dem deutschen Grundgesetz vereinbar?",
+  "options_de": {
+   "A": "die Prügelstrafe",
+   "B": "die Folter",
+   "C": "die Todesstrafe",
+   "D": "die Geldstrafe"
+  },
+  "key": "D",
+  "q_bks": "Što je u skladu s njemačkim Temeljnim zakonom?",
+  "expl_bks": "Novčana kazna je dopuštena: sud je može izreći, na primjer za manju krađu. Smrtna kazna ukinuta je člankom 102. Temeljnog zakona. Mučenje i tjelesne kazne povređuju ljudsko dostojanstvo iz članka 1. i zato su u Njemačkoj zabranjeni.",
+  "merksatz_de": "Eine Geldstrafe ist erlaubt, die Todesstrafe ist verboten."
+ },
+ {
+  "id": "G-011",
+  "question_de": "Wie wird die Verfassung der Bundesrepublik Deutschland genannt?",
+  "options_de": {
+   "A": "Grundgesetz",
+   "B": "Bundesverfassung",
+   "C": "Gesetzbuch",
+   "D": "Verfassungsvertrag"
+  },
+  "key": "A",
+  "q_bks": "Kako se zove ustav Savezne Republike Njemačke?",
+  "expl_bks": "Ustav Savezne Republike Njemačke zove se Temeljni zakon (Grundgesetz), skraćeno GG. Ima više od 140 članaka, a na početku su temeljna prava, na primjer ljudsko dostojanstvo u članku 1. Naziv „Bundesverfassung” koristi se u Švicarskoj, a ne u Njemačkoj.",
+  "merksatz_de": "Grundgesetz ist der Name der deutschen Verfassung."
+ },
+ {
+  "id": "G-012",
+  "question_de": "Eine Partei im Deutschen Bundestag will die Pressefreiheit abschaffen. Ist das möglich?",
+  "options_de": {
+   "A": "Ja, wenn mehr als die Hälfte der Abgeordneten im Bundestag dafür sind.",
+   "B": "Ja, aber dazu müssen zwei Drittel der Abgeordneten im Bundestag dafür sein.",
+   "C": "Nein, denn die Pressefreiheit ist ein Grundrecht. Sie kann nicht abgeschafft werden.",
+   "D": "Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen."
+  },
+  "key": "C",
+  "q_bks": "Jedna stranka u njemačkom Bundestagu želi ukinuti slobodu tiska. Je li to moguće?",
+  "expl_bks": "Sloboda tiska temeljno je pravo iz članka 5. Temeljnog zakona. Nijedna stranka i nijedna većina ne može je jednostavno ukinuti: članak 19. kaže da se temeljno pravo ni u kojem slučaju ne smije povrijediti u svojoj biti. Slobodni mediji važni su za demokraciju jer kontroliraju politiku.",
+  "merksatz_de": "Pressefreiheit ist ein Grundrecht und kann nicht abgeschafft werden."
+ },
+ {
+  "id": "G-013",
+  "question_de": "Im Parlament steht der Begriff \"Opposition\" für ...",
+  "options_de": {
+   "A": "die regierenden Parteien.",
+   "B": "die Fraktion mit den meisten Abgeordneten.",
+   "C": "alle Parteien, die bei der letzten Wahl die 5%-Hürde erreichen konnten.",
+   "D": "alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören."
+  },
+  "key": "D",
+  "q_bks": "U parlamentu pojam „opozicija” označava …",
+  "expl_bks": "Opozicija su svi zastupnici koji ne pripadaju vladajućoj stranci ili vladajućoj koaliciji. Njezin je zadatak kontrolirati i kritizirati vladu te predlagati druga rješenja. Opozicija je važan dio demokracije jer nakon sljedećih izbora i sama može preuzeti vlast.",
+  "merksatz_de": "Opposition sind alle Abgeordneten, die nicht zur Regierung gehören."
+ },
+ {
+  "id": "G-014",
+  "question_de": "Meinungsfreiheit in Deutschland heißt, dass ich ...",
+  "options_de": {
+   "A": "Passanten auf der Straße beschimpfen darf.",
+   "B": "meine Meinung im Internet äußern kann.",
+   "C": "Nazi-, Hamas- oder Islamischer Staat-Symbole öffentlich tragen darf.",
+   "D": "meine Meinung nur dann äußern darf, solange ich der Regierung nicht widerspreche."
+  },
+  "key": "B",
+  "q_bks": "Sloboda mišljenja u Njemačkoj znači da ja …",
+  "expl_bks": "Sloboda mišljenja (članak 5. Temeljnog zakona) vrijedi i na internetu: svatko ondje smije napisati svoje mišljenje, pa i kritiku vlade. Ali i na internetu postoje granice: uvrede su kažnjive, a simboli zabranjenih organizacija, na primjer nacistički simboli, ne smiju se javno pokazivati.",
+  "merksatz_de": "Im Internet darf ich meine Meinung sagen."
+ },
+ {
+  "id": "G-015",
+  "question_de": "Was verbietet das deutsche Grundgesetz?",
+  "options_de": {
+   "A": "Militärdienst",
+   "B": "Zwangsarbeit",
+   "C": "freie Berufswahl",
+   "D": "Arbeit im Ausland"
+  },
+  "key": "B",
+  "q_bks": "Što zabranjuje njemački Temeljni zakon?",
+  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimke su samo rad pri lišenju slobode po odluci suda i opće javne obveze koje vrijede jednako za sve. Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
+  "merksatz_de": "Zwangsarbeit ist in Deutschland verboten."
+ },
+ {
+  "id": "G-016",
+  "question_de": "Wann ist die Meinungsfreiheit in Deutschland eingeschränkt?",
+  "options_de": {
+   "A": "bei der öffentlichen Verbreitung falscher Behauptungen über einzelne Personen",
+   "B": "bei Meinungsäußerungen über die Bundesregierung",
+   "C": "bei Diskussionen über Religionen",
+   "D": "bei Kritik am Staat"
+  },
+  "key": "A",
+  "q_bks": "Kada je sloboda mišljenja u Njemačkoj ograničena?",
+  "expl_bks": "Tko javno širi neistinite tvrdnje o nekoj osobi, povređuje njezinu čast i ugled. To može biti kažnjivo, na primjer kao kleveta. Članak 5. Temeljnog zakona kaže da sloboda mišljenja ima granice u općim zakonima i u zaštiti osobne časti. Kritika vlade ili države, naprotiv, dopuštena je.",
+  "merksatz_de": "Lügen über andere Menschen schützt die Meinungsfreiheit nicht."
+ },
+ {
+  "id": "G-017",
+  "question_de": "Die deutschen Gesetze verbieten ...",
+  "options_de": {
+   "A": "Meinungsfreiheit der Einwohnerinnen und Einwohner.",
+   "B": "Petitionen der Bürgerinnen und Bürger.",
+   "C": "Versammlungsfreiheit der Einwohnerinnen und Einwohner.",
+   "D": "Ungleichbehandlung der Bürgerinnen und Bürger durch den Staat."
+  },
+  "key": "D",
+  "q_bks": "Njemački zakoni zabranjuju …",
+  "expl_bks": "Država mora prema svim ljudima postupati jednako. Članak 3. Temeljnog zakona kaže da nitko ne smije biti zapostavljen ili povlašten zbog spola, podrijetla, jezika, vjere ili političkog mišljenja. Sloboda mišljenja, peticije i sloboda okupljanja nisu zabranjeni, nego su zaštićeni kao temeljna prava.",
+  "merksatz_de": "Der Staat muss alle Menschen gleich behandeln."
+ },
+ {
+  "id": "G-018",
+  "question_de": "Welches Grundrecht ist in Artikel 1 des Grundgesetzes der Bundesrepublik Deutschland garantiert?",
+  "options_de": {
+   "A": "die Unantastbarkeit der Menschenwürde",
+   "B": "das Recht auf Leben",
+   "C": "Religionsfreiheit",
+   "D": "Meinungsfreiheit"
+  },
+  "key": "A",
+  "q_bks": "Koje je temeljno pravo zajamčeno u članku 1. Temeljnog zakona Savezne Republike Njemačke?",
+  "expl_bks": "Članak 1. Temeljnog zakona počinje rečenicom: „Ljudsko dostojanstvo je nepovredivo.” Poštovati ga i štititi dužnost je sve državne vlasti. To je najvažnije načelo ustava i ne smije se promijeniti. Pravo na život nalazi se u članku 2., sloboda vjeroispovijesti u članku 4., a sloboda mišljenja u članku 5.",
+  "merksatz_de": "Artikel 1: Die Würde des Menschen ist unantastbar."
+ },
+ {
+  "id": "G-019",
+  "question_de": "Was versteht man unter dem Recht der \"Freizügigkeit\" in Deutschland?",
+  "options_de": {
+   "A": "Man darf sich seinen Wohnort selbst aussuchen.",
+   "B": "Man kann seinen Beruf wechseln.",
+   "C": "Man darf sich für eine andere Religion entscheiden.",
+   "D": "Man darf sich in der Öffentlichkeit nur leicht bekleidet bewegen."
+  },
+  "key": "A",
+  "q_bks": "Što se u Njemačkoj podrazumijeva pod pravom na „Freizügigkeit”?",
+  "expl_bks": "„Freizügigkeit” znači slobodu kretanja i nastanjivanja (članak 11. Temeljnog zakona). Čovjek smije sam odlučiti u kojem će gradu ili mjestu u Njemačkoj živjeti i preseliti se bez posebne dozvole. Pazite na zamku: riječ „freizügig” u svakodnevnom govoru znači i „oskudno odjeven”, ali ovo pravo nema veze s odjećom.",
+  "merksatz_de": "Freizügigkeit heißt: Man darf seinen Wohnort frei wählen."
+ },
+ {
+  "id": "G-020",
+  "question_de": "Eine Partei in Deutschland verfolgt das Ziel, eine Diktatur zu errichten. Sie ist dann ...",
+  "options_de": {
+   "A": "tolerant.",
+   "B": "rechtsstaatlich orientiert.",
+   "C": "gesetzestreu.",
+   "D": "verfassungswidrig."
+  },
+  "key": "D",
+  "q_bks": "Jedna stranka u Njemačkoj ima cilj uspostaviti diktaturu. Ona je onda …",
+  "expl_bks": "Temeljni zakon štiti slobodni demokratski poredak. Stranka koja želi uspostaviti diktaturu bori se protiv tog poretka i zato je protuustavna. Takvu stranku može zabraniti samo Savezni ustavni sud (članak 21.). U Saveznoj Republici Njemačkoj to se dogodilo dva puta, 1952. i 1956. godine.",
+  "merksatz_de": "Eine Partei, die eine Diktatur will, ist verfassungswidrig."
+ },
+ {
+  "id": "G-021",
+  "question_de": "Welches ist das Wappen der Bundesrepublik Deutschland?",
+  "options_de": {
+   "A": "Bild 1",
+   "B": "Bild 2",
+   "C": "Bild 3",
+   "D": "Bild 4"
+  },
+  "key": "A",
+  "q_bks": "Koji je grb Savezne Republike Njemačke?",
+  "expl_bks": "Grb Savezne Republike Njemačke je savezni orao (Bundesadler): crni orao s crvenim kljunom, jezikom i kandžama na zlatnožutom štitu. Orao je već stoljećima simbol njemačkih država. Savezni orao vidi se, na primjer, na njemačkim kovanicama od 1 i 2 eura i u dvorani Bundestaga (saveznog parlamenta). U katalogu je to slika 1.",
+  "merksatz_de": "Das Bundeswappen zeigt einen schwarzen Adler auf goldgelbem Grund."
+ },
+ {
+  "id": "G-022",
+  "question_de": "Was für eine Staatsform hat Deutschland?",
+  "options_de": {
+   "A": "Monarchie",
+   "B": "Diktatur",
+   "C": "Republik",
+   "D": "Fürstentum"
+  },
+  "key": "C",
+  "q_bks": "Kakav oblik države ima Njemačka?",
+  "expl_bks": "Njemačka je republika: na čelu države nije kralj ni car, nego savezni predsjednik, kojeg Savezna skupština bira na pet godina. To stoji već u nazivu zemlje: Savezna Republika Njemačka. Članak 20. Temeljnog zakona kaže da je Njemačka demokratska i socijalna savezna država.",
+  "merksatz_de": "Deutschland ist eine Republik, keine Monarchie."
+ },
+ {
+  "id": "G-023",
+  "question_de": "In Deutschland sind die meisten Erwerbstätigen ...",
+  "options_de": {
+   "A": "in kleinen Familienunternehmen beschäftigt.",
+   "B": "ehrenamtlich für ein Bundesland tätig.",
+   "C": "selbstständig mit einer eigenen Firma tätig.",
+   "D": "bei einer Firma oder Behörde beschäftigt."
+  },
+  "key": "D",
+  "q_bks": "U Njemačkoj većina ljudi koji rade …",
+  "expl_bks": "Većina ljudi u Njemačkoj radi kao zaposlenici: imaju ugovor o radu s nekom tvrtkom ili s javnom ustanovom, na primjer s općinom, školom ili uredom. Samostalnih poduzetnika s vlastitom tvrtkom ima znatno manje. Volonterski rad je važan, ali se za njega ne dobiva plaća.",
+  "merksatz_de": "Die meisten Menschen arbeiten bei einer Firma oder Behörde."
+ },
+ {
+  "id": "G-024",
+  "question_de": "Wie viele Bundesländer hat die Bundesrepublik Deutschland?",
+  "options_de": {
+   "A": "14",
+   "B": "15",
+   "C": "16",
+   "D": "17"
+  },
+  "key": "C",
+  "q_bks": "Koliko saveznih pokrajina ima Savezna Republika Njemačka?",
+  "expl_bks": "Njemačka ima 16 saveznih pokrajina. Tri od njih su gradovi-pokrajine: Berlin, Hamburg i Bremen. Pri ponovnom ujedinjenju Njemačke 1990. zapadnim pokrajinama pridružilo se pet novih pokrajina iz bivšeg DDR-a (Istočne Njemačke), a Berlin je ponovno postao jedan grad.",
+  "merksatz_de": "Deutschland hat 16 Bundesländer."
+ },
+ {
+  "id": "G-025",
+  "question_de": "Was ist kein Bundesland der Bundesrepublik Deutschland?",
+  "options_de": {
+   "A": "Elsass-Lothringen",
+   "B": "Nordrhein-Westfalen",
+   "C": "Mecklenburg-Vorpommern",
+   "D": "Sachsen-Anhalt"
+  },
+  "key": "A",
+  "q_bks": "Što nije savezna pokrajina Savezne Republike Njemačke?",
+  "expl_bks": "Alzas-Lorena (Elsass-Lothringen) je područje na istoku Francuske. Od 1871. do 1918. pripadalo je Njemačkom Carstvu, ali danas je dio Francuske. Sjeverna Rajna-Vestfalija, Mecklenburg-Zapadno Pomorje i Saska-Anhalt jesu njemačke savezne pokrajine.",
+  "merksatz_de": "Elsass-Lothringen gehört heute zu Frankreich."
+ },
+ {
+  "id": "G-026",
+  "question_de": "Deutschland ist ...",
+  "options_de": {
+   "A": "eine kommunistische Republik.",
+   "B": "ein demokratischer und sozialer Bundesstaat.",
+   "C": "eine kapitalistische und soziale Monarchie.",
+   "D": "ein sozialer und sozialistischer Bundesstaat."
+  },
+  "key": "B",
+  "q_bks": "Njemačka je …",
+  "expl_bks": "Tako stoji u članku 20. Temeljnog zakona: Njemačka je demokratska i socijalna savezna država. Demokratska znači da vlast dolazi od naroda, socijalna da država pomaže ljudima u nevolji, a savezna da se zemlja sastoji od 16 saveznih pokrajina. Njemačka nije monarhija ni socijalistička država.",
+  "merksatz_de": "Deutschland ist ein demokratischer und sozialer Bundesstaat."
+ },
+ {
+  "id": "G-027",
+  "question_de": "Deutschland ist ...",
+  "options_de": {
+   "A": "ein sozialistischer Staat.",
+   "B": "ein Bundesstaat.",
+   "C": "eine Diktatur.",
+   "D": "eine Monarchie."
+  },
+  "key": "B",
+  "q_bks": "Njemačka je …",
+  "expl_bks": "Njemačka je savezna država (Bundesstaat). To znači da vlast dijele savez i 16 saveznih pokrajina. Svaka pokrajina ima vlastiti parlament i vladu, a na primjer škole i policija uglavnom su u nadležnosti pokrajina. Takvo uređenje zove se federalizam.",
+  "merksatz_de": "Als Bundesstaat besteht Deutschland aus 16 Ländern."
+ },
+ {
+  "id": "G-028",
+  "question_de": "Wer wählt in Deutschland die Abgeordneten zum Bundestag?",
+  "options_de": {
+   "A": "das Militär",
+   "B": "die Wirtschaft",
+   "C": "das wahlberechtigte Volk",
+   "D": "die Verwaltung"
+  },
+  "key": "C",
+  "q_bks": "Tko u Njemačkoj bira zastupnike u Bundestag?",
+  "expl_bks": "Zastupnike u Bundestagu (saveznom parlamentu) bira narod, odnosno svi koji imaju biračko pravo. Na izborima za Bundestag smiju glasati njemački državljani od 18 godina. Izbori se održavaju svake četiri godine. Tako vrijedi načelo iz članka 20. Temeljnog zakona: sva vlast dolazi od naroda.",
+  "merksatz_de": "Das wahlberechtigte Volk wählt die Bundestagsabgeordneten."
+ },
+ {
+  "id": "G-029",
+  "question_de": "Welches Tier ist das Wappentier der Bundesrepublik Deutschland?",
+  "options_de": {
+   "A": "Löwe",
+   "B": "Adler",
+   "C": "Bär",
+   "D": "Pferd"
+  },
+  "key": "B",
+  "q_bks": "Koja je životinja na grbu Savezne Republike Njemačke?",
+  "expl_bks": "Na grbu Savezne Republike Njemačke nalazi se crni orao na zlatnožutom štitu, zvan savezni orao (Bundesadler). Orao je star simbol njemačkih država. Pazite na zamku: medvjed je na grbu Berlina, a lav se nalazi na grbovima nekih pokrajina, na primjer Bavarske.",
+  "merksatz_de": "Der Adler ist das Wappentier Deutschlands."
+ },
+ {
+  "id": "G-030",
+  "question_de": "Was ist kein Merkmal unserer Demokratie?",
+  "options_de": {
+   "A": "regelmäßige Wahlen",
+   "B": "Pressezensur",
+   "C": "Meinungsfreiheit",
+   "D": "verschiedene Parteien"
+  },
+  "key": "B",
+  "q_bks": "Što nije obilježje naše demokracije?",
+  "expl_bks": "Cenzura znači da država prije objave provjerava tekstove i zabranjuje ih. U Njemačkoj je to zabranjeno: članak 5. Temeljnog zakona kaže „Cenzure nema”. Sloboda tiska pomaže građanima da se informiraju i kontroliraju politiku. Redoviti izbori, sloboda mišljenja i različite stranke dio su demokracije.",
+  "merksatz_de": "In Deutschland gibt es keine Zensur der Presse."
+ },
+ {
+  "id": "G-031",
+  "question_de": "Die Zusammenarbeit von Parteien zur Bildung einer Regierung nennt man in Deutschland ...",
+  "options_de": {
+   "A": "Einheit.",
+   "B": "Koalition.",
+   "C": "Ministerium.",
+   "D": "Fraktion."
+  },
+  "key": "B",
+  "q_bks": "Suradnja stranaka radi sastavljanja vlade u Njemačkoj se zove …",
+  "expl_bks": "Kada nijedna stranka sama nema većinu u parlamentu, više stranaka se dogovori i zajedno sastavi vladu. Taj savez zove se koalicija. Stranke svoje zajedničke planove zapisuju u koalicijski ugovor. Klub zastupnika (Fraktion) je nešto drugo: to su zastupnici iste stranke u parlamentu.",
+  "merksatz_de": "Parteien bilden gemeinsam eine Regierung: Das heißt Koalition."
+ },
+ {
+  "id": "G-032",
+  "question_de": "Was ist keine staatliche Gewalt in Deutschland?",
+  "options_de": {
+   "A": "Gesetzgebung",
+   "B": "Regierung",
+   "C": "Presse",
+   "D": "Rechtsprechung"
+  },
+  "key": "C",
+  "q_bks": "Što nije državna vlast u Njemačkoj?",
+  "expl_bks": "Državna vlast podijeljena je na tri dijela: zakonodavnu vlast (parlament), izvršnu vlast (vlada i uprava) i sudsku vlast (sudovi). To se zove podjela vlasti. Tisak nije dio države: slobodni mediji su neovisni i kritički prate rad države, pa ih ponekad zovu „četvrtom vlasti”.",
+  "merksatz_de": "Die Presse ist frei und keine staatliche Gewalt."
+ },
+ {
+  "id": "G-033",
+  "question_de": "Welche Aussage ist richtig? In Deutschland ...",
+  "options_de": {
+   "A": "sind Staat und Religionsgemeinschaften voneinander getrennt.",
+   "B": "bilden die Religionsgemeinschaften den Staat.",
+   "C": "ist der Staat abhängig von den Religionsgemeinschaften.",
+   "D": "bilden Staat und Religionsgemeinschaften eine Einheit."
+  },
+  "key": "A",
+  "q_bks": "Koja je tvrdnja točna? U Njemačkoj …",
+  "expl_bks": "Temeljni zakon (članak 140.) određuje da u Njemačkoj ne postoji državna crkva. Država je neutralna prema svim vjerama i nikome ne propisuje u što treba vjerovati. Vjerske zajednice same uređuju svoje poslove, a državni zakoni vrijede za sve jednako, bez obzira na vjeru.",
+  "merksatz_de": "Staat und Religion sind in Deutschland getrennt."
+ },
+ {
+  "id": "G-034",
+  "question_de": "Was ist Deutschland nicht?",
+  "options_de": {
+   "A": "eine Demokratie",
+   "B": "ein Rechtsstaat",
+   "C": "eine Monarchie",
+   "D": "ein Sozialstaat"
+  },
+  "key": "C",
+  "q_bks": "Što Njemačka nije?",
+  "expl_bks": "Njemačka nema kralja ni cara, nego je republika sa saveznim predsjednikom na čelu države. Monarhija je ukinuta 1918., kada je car Vilim II. nakon Prvog svjetskog rata morao otići s vlasti. Demokracija, pravna država i socijalna država temeljna su načela Temeljnog zakona.",
+  "merksatz_de": "Eine Monarchie ist Deutschland nicht, es hat keinen König."
+ },
+ {
+  "id": "G-035",
+  "question_de": "Womit finanziert der deutsche Staat die Sozialversicherung?",
+  "options_de": {
+   "A": "Kirchensteuer",
+   "B": "Sozialabgaben",
+   "C": "Spendengeldern",
+   "D": "Vereinsbeiträgen"
+  },
+  "key": "B",
+  "q_bks": "Čime njemačka država financira socijalno osiguranje?",
+  "expl_bks": "Socijalno osiguranje uglavnom se financira socijalnim doprinosima. Zaposlenici i poslodavci svaki mjesec plaćaju doprinose za zdravstveno i mirovinsko osiguranje, osiguranje za njegu (Pflegeversicherung) i osiguranje za slučaj nezaposlenosti. Udio zaposlenika poslodavac odbija izravno od bruto plaće. Crkveni porez ide vjerskim zajednicama, a ne socijalnom osiguranju.",
+  "merksatz_de": "Sozialabgaben finanzieren die Sozialversicherung."
+ },
+ {
+  "id": "G-036",
+  "question_de": "Welche Maßnahme schafft in Deutschland soziale Sicherheit?",
+  "options_de": {
+   "A": "die Krankenversicherung",
+   "B": "die Autoversicherung",
+   "C": "die Gebäudeversicherung",
+   "D": "die Haftpflichtversicherung"
+  },
+  "key": "A",
+  "q_bks": "Koja mjera u Njemačkoj stvara socijalnu sigurnost?",
+  "expl_bks": "Zdravstveno osiguranje dio je socijalnog osiguranja. Ono pomaže ljudima kada su bolesni: plaća liječnika, bolnicu i lijekove. U Njemačkoj svatko mora imati zdravstveno osiguranje. Osiguranje automobila, zgrade ili od odgovornosti štiti imovinu i nije dio socijalnog osiguranja.",
+  "merksatz_de": "Die Krankenversicherung gibt soziale Sicherheit."
+ },
+ {
+  "id": "G-037",
+  "question_de": "Wie werden die Regierungschefinnen/Regierungschefs der meisten Bundesländer in Deutschland genannt?",
+  "options_de": {
+   "A": "Erste Ministerin/Erster Minister",
+   "B": "Premierministerin/Premierminister",
+   "C": "Senatorin/Senator",
+   "D": "Ministerpräsidentin/Ministerpräsident"
+  },
+  "key": "D",
+  "q_bks": "Kako se zovu šefovi vlada većine saveznih pokrajina u Njemačkoj?",
+  "expl_bks": "U 13 od 16 saveznih pokrajina na čelu pokrajinske vlade je ministar predsjednik (Ministerpräsident). U gradovima-pokrajinama nazivi su drukčiji: u Berlinu vladajući gradonačelnik (Regierender Bürgermeister), u Hamburgu prvi gradonačelnik (Erster Bürgermeister), a u Bremenu predsjednik Senata. Senator je član gradske vlade, a naziv „premijer” koristi se u drugim zemljama.",
+  "merksatz_de": "An der Spitze der meisten Länder steht ein Ministerpräsident."
+ },
+ {
+  "id": "G-038",
+  "question_de": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer ...",
+  "options_de": {
+   "A": "Staatenverbund.",
+   "B": "Bundesstaat.",
+   "C": "Staatenbund.",
+   "D": "Zentralstaat."
+  },
+  "key": "B",
+  "q_bks": "Savezna Republika Njemačka je demokratska i socijalna …",
+  "expl_bks": "Ovo je rečenica iz članka 20. Temeljnog zakona. Savezna država znači da je Njemačka jedna država, sastavljena od 16 saveznih pokrajina s vlastitim parlamentima i vladama. Konfederacija (Staatenbund) samo je savez samostalnih država, a riječju „Staatenverbund” često se opisuje Europska unija.",
+  "merksatz_de": "Laut Grundgesetz ist Deutschland ein demokratischer und sozialer Bundesstaat."
+ },
+ {
+  "id": "G-039",
+  "question_de": "Was hat jedes deutsche Bundesland?",
+  "options_de": {
+   "A": "eine eigene Außenministerin/einen eigenen Außenminister",
+   "B": "eine eigene Währung",
+   "C": "eine eigene Armee",
+   "D": "eine eigene Regierung"
+  },
+  "key": "D",
+  "q_bks": "Što ima svaka njemačka savezna pokrajina?",
+  "expl_bks": "Svaka savezna pokrajina ima vlastitu vladu i vlastiti parlament, u većini pokrajina Landtag (pokrajinski parlament). Pokrajinska vlada odlučuje, na primjer, o školama, policiji i kulturi. Vanjska politika i vojska zajedničke su za cijelu Njemačku, a novac je u cijeloj zemlji euro.",
+  "merksatz_de": "Jedes Bundesland hat eine eigene Regierung."
+ },
+ {
+  "id": "G-040",
+  "question_de": "Mit welchen Worten beginnt die deutsche Nationalhymne?",
+  "options_de": {
+   "A": "Völker, hört die Signale ...",
+   "B": "Einigkeit und Recht und Freiheit ...",
+   "C": "Freude schöner Götterfunken ...",
+   "D": "Deutschland einig Vaterland ..."
+  },
+  "key": "B",
+  "q_bks": "Kojim riječima počinje njemačka državna himna?",
+  "expl_bks": "Njemačka himna je treća strofa „Pjesme Nijemaca” (Lied der Deutschen), koju je 1841. napisao August Heinrich Hoffmann von Fallersleben. Počinje riječima „Einigkeit und Recht und Freiheit” (jedinstvo i pravo i sloboda). Ostali stihovi potječu iz drugih pjesama, na primjer „Deutschland einig Vaterland” iz himne DDR-a (Istočne Njemačke).",
+  "merksatz_de": "Die Nationalhymne beginnt mit „Einigkeit und Recht und Freiheit”."
+ },
+ {
+  "id": "G-041",
+  "question_de": "Warum gibt es in einer Demokratie mehr als eine Partei?",
+  "options_de": {
+   "A": "weil dadurch die unterschiedlichen Meinungen der Bürgerinnen und Bürger vertreten werden",
+   "B": "damit Bestechung in der Politik begrenzt wird",
+   "C": "um politische Demonstrationen zu verhindern",
+   "D": "um wirtschaftlichen Wettbewerb anzuregen"
+  },
+  "key": "A",
+  "q_bks": "Zašto u demokraciji postoji više od jedne stranke?",
+  "expl_bks": "Ljudi imaju različite interese i mišljenja, na primjer o porezima, okolišu ili obitelji. Različite stranke zastupaju te stavove u parlamentu. Na izborima građani biraju stranku koja najbolje odgovara njihovu mišljenju. Članak 21. Temeljnog zakona kaže da stranke sudjeluju u oblikovanju političke volje naroda.",
+  "merksatz_de": "Verschiedene Parteien vertreten die verschiedenen Meinungen der Bürger."
+ },
+ {
+  "id": "G-042",
+  "question_de": "Wer beschließt in Deutschland ein neues Gesetz?",
+  "options_de": {
+   "A": "die Regierung",
+   "B": "das Parlament",
+   "C": "die Gerichte",
+   "D": "die Polizei"
+  },
+  "key": "B",
+  "q_bks": "Tko u Njemačkoj donosi novi zakon?",
+  "expl_bks": "Zakone donosi parlament. Za savezne zakone to je Bundestag (savezni parlament), a Bundesrat (savezno vijeće pokrajina) u tome sudjeluje. Vlada može predložiti zakon, ali o njemu glasaju zastupnici. Sudovi primjenjuju zakone, a policija se brine da se zakoni poštuju. To je podjela vlasti.",
+  "merksatz_de": "Neue Gesetze beschließt das Parlament."
+ },
+ {
+  "id": "G-043",
+  "question_de": "Wann kann in Deutschland eine Partei verboten werden?",
+  "options_de": {
+   "A": "wenn ihr Wahlkampf zu teuer ist",
+   "B": "wenn sie gegen die Verfassung kämpft",
+   "C": "wenn sie Kritik am Staatsoberhaupt äußert",
+   "D": "wenn ihr Programm eine neue Richtung vorschlägt"
+  },
+  "key": "B",
+  "q_bks": "Kada se u Njemačkoj može zabraniti stranka?",
+  "expl_bks": "Stranka može biti zabranjena ako se aktivno bori protiv slobodnog demokratskog poretka, dakle protiv ustava. O tome ne odlučuje vlada, nego samo Savezni ustavni sud (članak 21. Temeljnog zakona). Kritika šefa države i nove političke ideje dopuštene su i dio su demokracije.",
+  "merksatz_de": "Kämpft eine Partei gegen die Verfassung, kann man sie verbieten."
+ },
+ {
+  "id": "G-044",
+  "question_de": "Wen kann man als Bürgerin/Bürger in Deutschland nicht direkt wählen?",
+  "options_de": {
+   "A": "Abgeordnete des EU-Parlaments",
+   "B": "Die Bundespräsidentin/den Bundespräsidenten",
+   "C": "Landtagsabgeordnete",
+   "D": "Bundestagsabgeordnete"
+  },
+  "key": "B",
+  "q_bks": "Koga građanin u Njemačkoj ne može izravno birati?",
+  "expl_bks": "Saveznog predsjednika ne biraju građani izravno, nego Savezna skupština (Bundesversammlung). Nju čine svi zastupnici Bundestaga i jednak broj članova koje biraju pokrajinski parlamenti. Predsjednik se bira na pet godina. Zastupnike u Bundestagu, Landtagu i Europskom parlamentu građani biraju izravno na izborima.",
+  "merksatz_de": "Den Bundespräsidenten wählt die Bundesversammlung, nicht das Volk."
+ },
+ {
+  "id": "G-045",
+  "question_de": "Zu welcher Versicherung gehört die Pflegeversicherung?",
+  "options_de": {
+   "A": "Sozialversicherung",
+   "B": "Unfallversicherung",
+   "C": "Hausratsversicherung",
+   "D": "Haftpflicht- und Feuerversicherung"
+  },
+  "key": "A",
+  "q_bks": "U koje osiguranje spada osiguranje za njegu (Pflegeversicherung)?",
+  "expl_bks": "Osiguranje za njegu (Pflegeversicherung) jedan je od stupova socijalnog osiguranja, kao i zdravstveno i mirovinsko osiguranje. Uvedeno je 1995. godine. Ono plaća dio troškova kada netko, na primjer zbog starosti ili bolesti, trajno treba pomoć i njegu. Zaposlenima se doprinos odbija izravno od plaće.",
+  "merksatz_de": "Die Pflegeversicherung gehört zur Sozialversicherung."
+ },
+ {
+  "id": "G-046",
+  "question_de": "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört dazu?",
+  "options_de": {
+   "A": "Er baut Straßen und Schulen.",
+   "B": "Er verkauft Lebensmittel und Kleidung.",
+   "C": "Er versorgt alle Einwohnerinnen und Einwohner kostenlos mit Zeitungen.",
+   "D": "Er produziert Autos und Busse."
+  },
+  "key": "A",
+  "q_bks": "Njemačka država ima mnogo zadataka. Koji od ovih zadataka spada u njih?",
+  "expl_bks": "Država, pokrajine i općine grade i održavaju ceste, mostove i škole. Za to koriste novac od poreza. Hranu, odjeću, automobile i novine proizvode i prodaju privatne tvrtke. Država se brine za ono što trebaju svi građani, na primjer za promet i obrazovanje.",
+  "merksatz_de": "Der Staat baut Straßen und Schulen."
+ },
+ {
+  "id": "G-047",
+  "question_de": "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört nicht dazu?",
+  "options_de": {
+   "A": "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
+   "B": "Er zahlt Kindergeld.",
+   "C": "Er unterstützt Museen.",
+   "D": "Er fördert Sportlerinnen und Sportler."
+  },
+  "key": "A",
+  "q_bks": "Njemačka država ima mnogo zadaća. Koja od ovih zadaća nije njezina?",
+  "expl_bks": "Država ne plaća privatna putovanja na odmor – godišnji odmor svatko sam organizira i plaća. Država ima druge zadaće: obiteljima isplaćuje dječji doplatak (Kindergeld), podupire kulturu, na primjer muzeje, i potiče sportaše. Novac za to dolazi uglavnom od poreza.",
+  "merksatz_de": "Urlaubsreisen bezahlt der Staat nicht, Kindergeld schon."
+ },
+ {
+  "id": "G-048",
+  "question_de": "Welches Organ gehört nicht zu den Verfassungsorganen Deutschlands?",
+  "options_de": {
+   "A": "der Bundesrat",
+   "B": "die Bundespräsidentin/der Bundespräsident",
+   "C": "die Bürgerversammlung",
+   "D": "die Regierung"
+  },
+  "key": "C",
+  "q_bks": "Koje tijelo ne spada među ustavna tijela Njemačke?",
+  "expl_bks": "Ustavna tijela najviša su državna tijela čije zadaće uređuje Temeljni zakon (njemački ustav). To su, na primjer, Bundestag, Bundesrat, savezni predsjednik, savezna vlada i Savezni ustavni sud. Zbor građana (Bürgerversammlung) samo je sastanak stanovnika jedne općine o lokalnim pitanjima i nije ustavno tijelo.",
+  "merksatz_de": "Die Bürgerversammlung ist kein Verfassungsorgan."
+ },
+ {
+  "id": "G-049",
+  "question_de": "Wer bestimmt in Deutschland die Schulpolitik?",
+  "options_de": {
+   "A": "die Lehrer und Lehrerinnen",
+   "B": "die Bundesländer",
+   "C": "das Familienministerium",
+   "D": "die Universitäten"
+  },
+  "key": "B",
+  "q_bks": "Tko u Njemačkoj određuje školsku politiku?",
+  "expl_bks": "U Njemačkoj školsku politiku određuju savezne pokrajine – to se zove kulturni suverenitet pokrajina (Kulturhoheit der Länder). Svaka pokrajina ima svoje ministarstvo obrazovanja i sama određuje vrste škola, nastavne planove i školske praznike. Zato se škole u Bavarskoj razlikuju od škola u Berlinu.",
+  "merksatz_de": "Schulpolitik ist Sache der Bundesländer."
+ },
+ {
+  "id": "G-050",
+  "question_de": "Die Wirtschaftsform in Deutschland nennt man ...",
+  "options_de": {
+   "A": "freie Zentralwirtschaft.",
+   "B": "soziale Marktwirtschaft.",
+   "C": "gelenkte Zentralwirtschaft.",
+   "D": "Planwirtschaft."
+  },
+  "key": "B",
+  "q_bks": "Oblik gospodarstva u Njemačkoj zove se …",
+  "expl_bks": "Njemačka ima socijalno tržišno gospodarstvo (soziale Marktwirtschaft). Cijene i proizvodnju uglavnom određuje slobodno tržište, a država štiti slabije, na primjer socijalnim osiguranjem i minimalnom plaćom. Taj se model povezuje s Ludwigom Erhardom, prvim saveznim ministrom gospodarstva (od 1949.). Plansko gospodarstvo postojalo je u DDR-u.",
+  "merksatz_de": "In Deutschland gibt es die soziale Marktwirtschaft."
+ },
+ {
+  "id": "G-051",
+  "question_de": "Zu einem demokratischen Rechtsstaat gehört es nicht, dass ...",
+  "options_de": {
+   "A": "Menschen sich kritisch über die Regierung äußern können.",
+   "B": "Bürger friedlich demonstrieren gehen dürfen.",
+   "C": "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
+   "D": "jemand ein Verbrechen begeht und deshalb verhaftet wird."
+  },
+  "key": "C",
+  "q_bks": "U demokratsku pravnu državu ne spada to da …",
+  "expl_bks": "U pravnoj državi nitko ne smije biti uhićen bez razloga. Uhićenja provodi državna policija, i to samo prema zakonu i uz opravdan razlog, na primjer sumnju na kazneno djelo. O duljem lišenju slobode odlučuje sudac (članak 104. Temeljnog zakona). Privatna policija koja proizvoljno uhićuje ljude ne postoji u demokratskoj pravnoj državi.",
+  "merksatz_de": "Niemand darf ohne Grund verhaftet werden."
+ },
+ {
+  "id": "G-052",
+  "question_de": "Was bedeutet \"Volkssouveränität\"? Alle Staatsgewalt geht vom ...",
+  "options_de": {
+   "A": "Volke aus.",
+   "B": "Bundestag aus.",
+   "C": "preußischen König aus.",
+   "D": "Bundesverfassungsgericht aus."
+  },
+  "key": "A",
+  "q_bks": "Što znači „narodni suverenitet” (Volkssouveränität)? Sva državna vlast dolazi od …",
+  "expl_bks": "Narodni suverenitet (sva vlast dolazi od naroda) temeljno je načelo demokracije. Članak 20. Temeljnog zakona kaže: „Sva državna vlast dolazi od naroda.” Narod tu vlast ostvaruje na izborima i glasanjima, a provode je posebna tijela zakonodavne, izvršne i sudske vlasti.",
+  "merksatz_de": "Alle Staatsgewalt geht vom Volke aus."
+ },
+ {
+  "id": "G-053",
+  "question_de": "Was bedeutet \"Rechtsstaat\" in Deutschland?",
+  "options_de": {
+   "A": "Der Staat hat Recht.",
+   "B": "Es gibt nur rechte Parteien.",
+   "C": "Die Bürgerinnen und Bürger entscheiden über Gesetze.",
+   "D": "Der Staat muss die Gesetze einhalten."
+  },
+  "key": "D",
+  "q_bks": "Što u Njemačkoj znači „pravna država” (Rechtsstaat)?",
+  "expl_bks": "U pravnoj državi (Rechtsstaat) zakoni vrijede i za državu: vlada, uredi i policija moraju se pridržavati zakona i ustava. Ako neki ured donese pogrešnu odluku, građanin može uložiti prigovor (Widerspruch) ili se obratiti neovisnom sudu. Riječ „Recht” ovdje znači pravo i zakon, a ne „desno”.",
+  "merksatz_de": "Im Rechtsstaat muss auch der Staat die Gesetze einhalten."
+ },
+ {
+  "id": "G-054",
+  "question_de": "Was ist keine staatliche Gewalt in Deutschland?",
+  "options_de": {
+   "A": "Legislative",
+   "B": "Judikative",
+   "C": "Exekutive",
+   "D": "Direktive"
+  },
+  "key": "D",
+  "q_bks": "Što u Njemačkoj nije državna vlast?",
+  "expl_bks": "Podjela vlasti u Njemačkoj ima tri grane: legislativu (zakonodavna vlast – Bundestag i Bundesrat), egzekutivu (izvršna vlast – vlada, uprava, policija) i judikativu (sudska vlast – sudovi). „Direktiva” nije državna vlast; ta riječ znači uputa ili smjernica.",
+  "merksatz_de": "Es gibt drei Gewalten: Legislative, Exekutive und Judikative."
+ },
+ {
+  "id": "G-055",
+  "question_de": "Was zeigt dieses Bild? © Deutscher Bundestag/Achim Melde",
+  "options_de": {
+   "A": "den Bundestagssitz in Berlin",
+   "B": "das Bundesverfassungsgericht in Karlsruhe",
+   "C": "das Bundesratsgebäude in Berlin",
+   "D": "das Bundeskanzleramt in Berlin"
+  },
+  "key": "A",
+  "q_bks": "Što prikazuje ova slika?",
+  "expl_bks": "Na slici je zgrada Reichstaga u Berlinu sa staklenom kupolom – u njoj zasjeda Bundestag. Bundestag (savezni parlament) ondje radi od 1999. godine. Na pročelju piše „Dem deutschen Volke” (Njemačkom narodu), a kupolu mogu posjetiti i građani.",
+  "merksatz_de": "Der Bundestag sitzt im Reichstagsgebäude in Berlin."
+ },
+ {
+  "id": "G-056",
+  "question_de": "Welches Amt gehört in Deutschland zur Gemeindeverwaltung?",
+  "options_de": {
+   "A": "Pfarramt",
+   "B": "Ordnungsamt",
+   "C": "Finanzamt",
+   "D": "Auswärtiges Amt"
+  },
+  "key": "B",
+  "q_bks": "Koji ured u Njemačkoj pripada općinskoj upravi?",
+  "expl_bks": "Komunalni redarstveni ured (Ordnungsamt) dio je gradske ili općinske uprave. Brine se za red i sigurnost u mjestu, na primjer kontrolira parkiranje i buku te izdaje neke dozvole. Porezna uprava (Finanzamt) pokrajinski je ured, Ministarstvo vanjskih poslova savezno je ministarstvo, a župni ured pripada crkvi.",
+  "merksatz_de": "Das Ordnungsamt gehört zur Verwaltung der Gemeinde."
+ },
+ {
+  "id": "G-057",
+  "question_de": "Wer wird meistens zur Präsidentin/zum Präsidenten des Deutschen Bundestages gewählt?",
+  "options_de": {
+   "A": "die/der älteste Abgeordnete im Parlament",
+   "B": "die Ministerpräsidentin/der Ministerpräsident des größten Bundeslandes",
+   "C": "eine ehemalige Bundeskanzlerin/ein ehemaliger Bundeskanzler",
+   "D": "eine Abgeordnete/ein Abgeordneter der stärksten Fraktion"
+  },
+  "key": "D",
+  "q_bks": "Tko se najčešće bira za predsjednika njemačkog Bundestaga?",
+  "expl_bks": "Predsjednik Bundestaga po pravilu dolazi iz najjačeg kluba zastupnika (Fraktion). To nije propisano zakonom, nego je dugogodišnji parlamentarni običaj. Prvu sjednicu novog Bundestaga otvara takozvani Alterspräsident, a zatim zastupnici tajnim glasanjem biraju predsjednika. Predsjednik vodi sjednice i predstavlja Bundestag.",
+  "merksatz_de": "Der Bundestagspräsident kommt meist aus der stärksten Fraktion."
+ },
+ {
+  "id": "G-058",
+  "question_de": "Wer ernennt in Deutschland die Ministerinnen/die Minister der Bundesregierung?",
+  "options_de": {
+   "A": "die Präsidentin/der Präsident des Bundesverfassungsgerichtes",
+   "B": "die Bundespräsidentin/der Bundespräsident",
+   "C": "die Bundesratspräsidentin/der Bundesratspräsident",
+   "D": "die Bundestagspräsidentin/der Bundestagspräsident"
+  },
+  "key": "B",
+  "q_bks": "Tko u Njemačkoj imenuje ministre savezne vlade?",
+  "expl_bks": "Prema članku 64. Temeljnog zakona savezne ministre imenuje savezni predsjednik, i to na prijedlog saveznog kancelara. Kancelar dakle sam bira svoje ministre, a savezni predsjednik ih formalno imenuje i uručuje im ispravu o imenovanju. Na isti način ih i razrješuje.",
+  "merksatz_de": "Die Bundesminister ernennt der Bundespräsident auf Vorschlag des Kanzlers."
+ },
+ {
+  "id": "G-059",
+  "question_de": "Vor wie vielen Jahren gab es erstmals eine jüdische Gemeinde auf dem Gebiet des heutigen Deutschlands?",
+  "options_de": {
+   "A": "vor etwa 300 Jahren",
+   "B": "vor etwa 700 Jahren",
+   "C": "vor etwa 1150 Jahren",
+   "D": "vor etwa 1700 Jahren"
+  },
+  "key": "D",
+  "q_bks": "Prije koliko je godina na području današnje Njemačke prvi put postojala židovska zajednica?",
+  "expl_bks": "Prva poznata židovska zajednica na području današnje Njemačke postojala je u Kölnu. Rimski car Konstantin 321. godine izdao je propis u kojem se spominju Židovi u tom gradu. To je prije otprilike 1700 godina, pa je 2021. obilježena obljetnica „1700 godina židovskog života u Njemačkoj”.",
+  "merksatz_de": "Jüdisches Leben in Deutschland gibt es seit etwa 1700 Jahren."
+ },
+ {
+  "id": "G-060",
+  "question_de": "In Deutschland gehören der Bundestag und der Bundesrat zur ...",
+  "options_de": {
+   "A": "Exekutive.",
+   "B": "Legislative.",
+   "C": "Direktive.",
+   "D": "Judikative."
+  },
+  "key": "B",
+  "q_bks": "U Njemačkoj Bundestag i Bundesrat pripadaju …",
+  "expl_bks": "Bundestag (savezni parlament) i Bundesrat (savezno vijeće pokrajina) sudjeluju u donošenju saveznih zakona, pa pripadaju legislativi, tj. zakonodavnoj vlasti. Egzekutiva (vlada i uprava) provodi zakone, a judikativa (sudovi) sudi na temelju zakona. „Direktiva” uopće nije grana državne vlasti.",
+  "merksatz_de": "Bundestag und Bundesrat gehören zur Legislative."
+ },
+ {
+  "id": "G-061",
+  "question_de": "Was bedeutet \"Volkssouveränität\"?",
+  "options_de": {
+   "A": "Die Königin/der König herrscht über das Volk.",
+   "B": "Das Bundesverfassungsgericht steht über der Verfassung.",
+   "C": "Die Interessenverbände üben die Souveränität zusammen mit der Regierung aus.",
+   "D": "Die Staatsgewalt geht vom Volke aus."
+  },
+  "key": "D",
+  "q_bks": "Što znači „narodni suverenitet” (Volkssouveränität)?",
+  "expl_bks": "Narodni suverenitet (sva vlast dolazi od naroda) znači da je narod izvor sve državne vlasti. Tako piše u članku 20. Temeljnog zakona. Građani tu vlast ostvaruju prije svega na izborima, kada biraju svoje zastupnike. Njemačka nema kralja, a i Savezni ustavni sud mora poštovati ustav.",
+  "merksatz_de": "Volkssouveränität heißt: Die Macht im Staat kommt vom Volk."
+ },
+ {
+  "id": "G-062",
+  "question_de": "Wenn das Parlament eines deutschen Bundeslandes gewählt wird, nennt man das ...",
+  "options_de": {
+   "A": "Kommunalwahl",
+   "B": "Landtagswahl",
+   "C": "Europawahl",
+   "D": "Bundestagswahl"
+  },
+  "key": "B",
+  "q_bks": "Kad se bira parlament njemačke savezne pokrajine, to se zove …",
+  "expl_bks": "Parlament savezne pokrajine zove se Landtag (pokrajinski parlament), pa se izbori za njega zovu Landtagswahl. Svaka od 16 pokrajina bira svoj Landtag, najčešće svakih pet godina. U Berlinu se pokrajinski parlament zove Abgeordnetenhaus, a u Hamburgu i Bremenu Bürgerschaft.",
+  "merksatz_de": "Die Wahl zum Landesparlament heißt Landtagswahl."
+ },
+ {
+  "id": "G-063",
+  "question_de": "Was gehört in Deutschland nicht zur Exekutive?",
+  "options_de": {
+   "A": "die Polizei",
+   "B": "die Gerichte",
+   "C": "das Finanzamt",
+   "D": "die Ministerien"
+  },
+  "key": "B",
+  "q_bks": "Što u Njemačkoj ne pripada izvršnoj vlasti (Exekutive)?",
+  "expl_bks": "Sudovi pripadaju sudskoj vlasti (judikativi), a ne izvršnoj. Suci su neovisni i podložni samo zakonu (članak 97. Temeljnog zakona). Izvršna vlast (egzekutiva) provodi zakone u praksi – to su vlada i ministarstva, ali i uprave poput porezne uprave (Finanzamt) te policija.",
+  "merksatz_de": "Gerichte gehören zur Judikative, nicht zur Exekutive."
+ },
+ {
+  "id": "G-064",
+  "question_de": "Die Bundesrepublik Deutschland ist heute gegliedert in ...",
+  "options_de": {
+   "A": "vier Besatzungszonen.",
+   "B": "einen Oststaat und einen Weststaat.",
+   "C": "16 Kantone.",
+   "D": "Bund, Länder und Kommunen."
+  },
+  "key": "D",
+  "q_bks": "Savezna Republika Njemačka danas je podijeljena na …",
+  "expl_bks": "Njemačka ima tri razine vlasti: saveznu državu (Bund), 16 saveznih pokrajina (Länder) i općine (Kommunen). Svaka razina ima svoje zadaće: Bund se brine na primjer za vanjsku politiku, pokrajine za škole, a općine za vrtiće ili odvoz smeća. Okupacijske zone postojale su nakon 1945., a kantone ima Švicarska.",
+  "merksatz_de": "Deutschland besteht aus Bund, Ländern und Kommunen."
+ },
+ {
+  "id": "G-065",
+  "question_de": "Es gehört nicht zu den Aufgaben des Deutschen Bundestages, ...",
+  "options_de": {
+   "A": "Gesetze zu entwerfen.",
+   "B": "die Bundesregierung zu kontrollieren.",
+   "C": "die Bundeskanzlerin/den Bundeskanzler zu wählen.",
+   "D": "das Bundeskabinett zu bilden."
+  },
+  "key": "D",
+  "q_bks": "Nije zadaća njemačkog Bundestaga …",
+  "expl_bks": "Savezni kabinet (Bundeskabinett) čine savezni kancelar i savezni ministri. Kabinet sastavlja kancelar: on predlaže ministre, a savezni predsjednik ih imenuje. Bundestag izrađuje i donosi zakone, bira kancelara i nadzire vladu, ali ne odlučuje tko će postati ministar.",
+  "merksatz_de": "Das Kabinett bildet der Bundeskanzler, nicht der Bundestag."
+ },
+ {
+  "id": "G-066",
+  "question_de": "Welche Städte haben die größten jüdischen Gemeinden in Deutschland?",
+  "options_de": {
+   "A": "Berlin und München",
+   "B": "Hamburg und Essen",
+   "C": "Nürnberg und Stuttgart",
+   "D": "Worms und Speyer"
+  },
+  "key": "A",
+  "q_bks": "Koji gradovi imaju najveće židovske zajednice u Njemačkoj?",
+  "expl_bks": "Najveće židovske zajednice u Njemačkoj danas su u Berlinu i Münchenu. Mnogi njihovi članovi doselili su se nakon 1990. iz zemalja bivšeg Sovjetskog Saveza. Worms i Speyer česta su zamka: u srednjem vijeku bili su važna židovska središta, ali danas ondje nema velikih židovskih zajednica.",
+  "merksatz_de": "Die größten jüdischen Gemeinden gibt es in Berlin und München."
+ },
+ {
+  "id": "G-067",
+  "question_de": "Was ist in Deutschland vor allem eine Aufgabe der Bundesländer?",
+  "options_de": {
+   "A": "Verteidigungspolitik",
+   "B": "Außenpolitik",
+   "C": "Wirtschaftspolitik",
+   "D": "Schulpolitik"
+  },
+  "key": "D",
+  "q_bks": "Što je u Njemačkoj prije svega zadaća saveznih pokrajina?",
+  "expl_bks": "Školska politika prije svega je zadaća saveznih pokrajina (kulturni suverenitet pokrajina, Kulturhoheit der Länder). Pokrajine same određuju vrste škola, nastavne planove i školske praznike. Obrambena i vanjska politika zadaće su savezne države (Bund), a i gospodarsku politiku uglavnom vodi savezna razina.",
+  "merksatz_de": "Über die Schulen entscheiden die Bundesländer."
+ },
+ {
+  "id": "G-068",
+  "question_de": "Warum kontrolliert der Staat in Deutschland das Schulwesen?",
+  "options_de": {
+   "A": "weil es in Deutschland nur staatliche Schulen gibt",
+   "B": "weil alle Schülerinnen und Schüler einen Schulabschluss haben müssen",
+   "C": "weil es in den Bundesländern verschiedene Schulen gibt",
+   "D": "weil es nach dem Grundgesetz seine Aufgabe ist"
+  },
+  "key": "D",
+  "q_bks": "Zašto država u Njemačkoj nadzire školstvo?",
+  "expl_bks": "Članak 7. Temeljnog zakona (njemačkog ustava) kaže: „Cjelokupno školstvo nalazi se pod nadzorom države.” Zato država postavlja pravila i za privatne škole, na primjer za nastavne planove i obrazovanje učitelja. Privatne škole u Njemačkoj postoje, ali moraju ispunjavati državne uvjete.",
+  "merksatz_de": "Laut Grundgesetz steht das Schulwesen unter staatlicher Aufsicht."
+ },
+ {
+  "id": "G-069",
+  "question_de": "Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?",
+  "options_de": {
+   "A": "Stadträte",
+   "B": "Landräte",
+   "C": "Gemeinden",
+   "D": "Bezirksämter"
+  },
+  "key": "C",
+  "q_bks": "Savezna Republika Njemačka ima upravni ustroj s tri razine. Kako se zove najniža politička razina?",
+  "expl_bks": "Njemačka uprava ima tri razine: saveznu državu (Bund), savezne pokrajine i općine (Gemeinden). Općine su najniža razina i najbliže su građanima: brinu se, na primjer, za vrtiće, lokalne ceste i prijavu prebivališta. Gradska vijeća i Landrat (predstojnik okruga) nisu posebna razina, nego tijela i dužnosnici lokalne samouprave.",
+  "merksatz_de": "Die unterste politische Ebene sind die Gemeinden."
+ },
+ {
+  "id": "G-070",
+  "question_de": "Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben der deutschen Bundespräsidentin/des deutschen Bundespräsidenten? © Bundesregierung/Engelbert Reineke",
+  "options_de": {
+   "A": "Sie/Er führt die Regierungsgeschäfte.",
+   "B": "Sie/Er kontrolliert die Regierungspartei.",
+   "C": "Sie/Er wählt die Ministerinnen/Minister aus.",
+   "D": "Sie/Er schlägt die Kanzlerin/den Kanzler zur Wahl vor."
+  },
+  "key": "D",
+  "q_bks": "Savezni predsjednik Gustav Heinemann uručuje 1974. Helmutu Schmidtu ispravu o imenovanju za saveznog kancelara. Što spada u zadaće saveznog predsjednika?",
+  "expl_bks": "Prema članku 63. Temeljnog zakona savezni predsjednik predlaže Bundestagu kandidata za saveznog kancelara. Kad ga Bundestag izabere, predsjednik ga imenuje – kao na slici iz 1974. Vladu vodi kancelar, a ministre ne bira predsjednik, nego ih predlaže kancelar.",
+  "merksatz_de": "Der Bundespräsident schlägt den Kanzler zur Wahl vor."
+ },
+ {
+  "id": "G-071",
+  "question_de": "Wo hält sich die deutsche Bundeskanzlerin/der deutsche Bundeskanzler am häufigsten auf? Am häufigsten ist sie/er ...",
+  "options_de": {
+   "A": "in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+   "B": "auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.",
+   "C": "auf Schloss Bellevue, dem Amtssitz der Bundespräsidentin/des Bundespräsidenten, um Staatsgäste zu empfangen.",
+   "D": "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden."
+  },
+  "key": "D",
+  "q_bks": "Gdje njemački savezni kancelar najčešće boravi? Najčešće je …",
+  "expl_bks": "Ured saveznog kancelara (Bundeskanzleramt) i Bundestag nalaze se u Berlinu, u vladinoj četvrti blizu zgrade Reichstaga. Bundestag se 1999. preselio iz Bonna u Berlin, a s njim i kancelar. Dvorac Bellevue sjedište je saveznog predsjednika, a dvorac Meseberg kancelar koristi samo povremeno.",
+  "merksatz_de": "Kanzleramt und Bundestag sind in Berlin."
+ },
+ {
+  "id": "G-072",
+  "question_de": "Wie heißt die jetzige Bundeskanzlerin/der jetzige Bundeskanzler von Deutschland?",
+  "options_de": {
+   "A": "Gerhard Schröder",
+   "B": "Angela Merkel",
+   "C": "Ursula von der Leyen",
+   "D": "Friedrich Merz"
+  },
+  "key": "D",
+  "q_bks": "Kako se zove sadašnji savezni kancelar Njemačke?",
+  "expl_bks": "Saveznog kancelara bira Bundestag (savezni parlament) nakon saveznih izbora, zato se odgovor na ovo pitanje s vremenom mijenja. Friedrich Merz (CDU) izabran je za kancelara u svibnju 2025. Prije njega kancelari su bili Olaf Scholz (2021.–2025.), Angela Merkel (2005.–2021.) i Gerhard Schröder (1998.–2005.), a Ursula von der Leyen nikad nije bila kancelarka.",
+  "merksatz_de": "Friedrich Merz wurde im Mai 2025 Bundeskanzler."
+ },
+ {
+  "id": "G-073",
+  "question_de": "Die beiden größten Fraktionen im Deutschen Bundestag heißen zurzeit ...",
+  "options_de": {
+   "A": "CDU/CSU und AfD.",
+   "B": "Die Linke und Bündnis 90/Die Grünen.",
+   "C": "Bündnis 90/Die Grünen und SPD.",
+   "D": "Die Linke und CDU/CSU."
+  },
+  "key": "A",
+  "q_bks": "Dva najveća kluba zastupnika (Fraktion) u njemačkom Bundestagu trenutno su …",
+  "expl_bks": "Na izborima za Bundestag u veljači 2025. najviše mandata osvojili su CDU/CSU, a druga po snazi bila je AfD. Zato su to trenutno dva najveća kluba zastupnika (Fraktion). CDU i CSU u Bundestagu imaju zajednički klub. Nakon sljedećih izbora redoslijed se može promijeniti.",
+  "merksatz_de": "Nach der Bundestagswahl 2025 sind CDU/CSU und AfD die größten Fraktionen."
+ },
+ {
+  "id": "G-074",
+  "question_de": "Wie heißt das Parlament für ganz Deutschland?",
+  "options_de": {
+   "A": "Bundesversammlung",
+   "B": "Volkskammer",
+   "C": "Bundestag",
+   "D": "Bundesgerichtshof"
+  },
+  "key": "C",
+  "q_bks": "Kako se zove parlament za cijelu Njemačku?",
+  "expl_bks": "Bundestag (savezni parlament) jest parlament za cijelu Njemačku. Građani ga biraju svake četiri godine, a on donosi savezne zakone i bira saveznog kancelara. Savezna skupština (Bundesversammlung) sastaje se samo radi izbora saveznog predsjednika, a Volkskammer je bio parlament DDR-a.",
+  "merksatz_de": "Das Parlament für ganz Deutschland heißt Bundestag."
+ },
+ {
+  "id": "G-075",
+  "question_de": "Wie heißt Deutschlands heutiges Staatsoberhaupt?",
+  "options_de": {
+   "A": "Frank-Walter Steinmeier",
+   "B": "Bärbel Bas",
+   "C": "Bodo Ramelow",
+   "D": "Joachim Gauck"
+  },
+  "key": "A",
+  "q_bks": "Kako se zove današnji šef države Njemačke?",
+  "expl_bks": "Šef države u Njemačkoj je savezni predsjednik, a mandat mu traje pet godina. Frank-Walter Steinmeier izabran je na tu dužnost 2017., a ponovno 2022. godine. Joachim Gauck bio je savezni predsjednik prije njega (2012.–2017.), Bärbel Bas bila je predsjednica Bundestaga, a Bodo Ramelow bio je ministar predsjednik (Ministerpräsident) Tiringije.",
+  "merksatz_de": "Frank-Walter Steinmeier wurde 2017 Bundespräsident."
+ },
+ {
+  "id": "G-076",
+  "question_de": "Was bedeutet die Abkürzung CDU in Deutschland?",
+  "options_de": {
+   "A": "Christliche Deutsche Union",
+   "B": "Club Deutscher Unternehmer",
+   "C": "Christlicher Deutscher Umweltschutz",
+   "D": "Christlich Demokratische Union"
+  },
+  "key": "D",
+  "q_bks": "Što u Njemačkoj znači kratica CDU?",
+  "expl_bks": "CDU znači Christlich Demokratische Union (Kršćansko-demokratska unija). Stranka je osnovana 1945., a iz nje je došao prvi savezni kancelar Konrad Adenauer (1949.). Česta zamka: slovo D u kratici znači „demokratska”, a ne „njemačka”. CDU djeluje u svim pokrajinama osim Bavarske, gdje djeluje CSU.",
+  "merksatz_de": "CDU steht für Christlich Demokratische Union."
+ },
+ {
+  "id": "G-077",
+  "question_de": "Was ist die Bundeswehr?",
+  "options_de": {
+   "A": "die deutsche Polizei",
+   "B": "ein deutscher Hafen",
+   "C": "eine deutsche Bürgerinitiative",
+   "D": "die deutsche Armee"
+  },
+  "key": "D",
+  "q_bks": "Što je Bundeswehr?",
+  "expl_bks": "Bundeswehr je njemačka vojska, osnovana 1955. godine. Ima, među ostalim, kopnenu vojsku, ratnu mornaricu i zrakoplovstvo. O slanju vojnika u oružane misije u inozemstvu odlučuje Bundestag (savezni parlament), zato se Bundeswehr zove i „parlamentarna vojska”. Za unutarnju sigurnost brine se policija.",
+  "merksatz_de": "Die Bundeswehr ist die Armee Deutschlands."
+ },
+ {
+  "id": "G-078",
+  "question_de": "Was bedeutet die Abkürzung SPD?",
+  "options_de": {
+   "A": "Sozialistische Partei Deutschlands",
+   "B": "Sozialpolitische Partei Deutschlands",
+   "C": "Sozialdemokratische Partei Deutschlands",
+   "D": "Sozialgerechte Partei Deutschlands"
+  },
+  "key": "C",
+  "q_bks": "Što znači kratica SPD?",
+  "expl_bks": "SPD znači Sozialdemokratische Partei Deutschlands (Socijaldemokratska stranka Njemačke). To je najstarija stranka u Njemačkoj: njezini počeci sežu u 1863. godinu. Iz SPD-a su dolazili savezni kancelari Willy Brandt, Helmut Schmidt, Gerhard Schröder i Olaf Scholz.",
+  "merksatz_de": "SPD ist die Sozialdemokratische Partei Deutschlands."
+ },
+ {
+  "id": "G-079",
+  "question_de": "Was bedeutet die Abkürzung FDP in Deutschland?",
+  "options_de": {
+   "A": "Friedliche Demonstrative Partei",
+   "B": "Freie Deutschland Partei",
+   "C": "Führende Demokratische Partei",
+   "D": "Freie Demokratische Partei"
+  },
+  "key": "D",
+  "q_bks": "Što u Njemačkoj znači kratica FDP?",
+  "expl_bks": "FDP znači Freie Demokratische Partei (Slobodna demokratska stranka). To je liberalna stranka, osnovana 1948. godine. U prošlosti je često bila koalicijski partner, i CDU-a/CSU-a i SPD-a. Pazite: slovo D ne znači „Deutschland”, nego „demokratska”.",
+  "merksatz_de": "Die Abkürzung FDP bedeutet Freie Demokratische Partei."
+ },
+ {
+  "id": "G-080",
+  "question_de": "Welches Gericht in Deutschland ist zuständig für die Auslegung des Grundgesetzes?",
+  "options_de": {
+   "A": "Oberlandesgericht",
+   "B": "Amtsgericht",
+   "C": "Bundesverfassungsgericht",
+   "D": "Verwaltungsgericht"
+  },
+  "key": "C",
+  "q_bks": "Koji je sud u Njemačkoj nadležan za tumačenje Temeljnog zakona?",
+  "expl_bks": "Savezni ustavni sud (Bundesverfassungsgericht) u Karlsruheu tumači Temeljni zakon (njemački ustav) i provjerava jesu li zakoni u skladu s njim. Njegove odluke obvezuju sva državna tijela. Svaki građanin može podnijeti ustavnu tužbu (Verfassungsbeschwerde) ako smatra da su mu povrijeđena temeljna prava.",
+  "merksatz_de": "Das Bundesverfassungsgericht legt das Grundgesetz aus."
+ },
+ {
+  "id": "G-081",
+  "question_de": "Wer wählt die Bundeskanzlerin/den Bundeskanzler in Deutschland?",
+  "options_de": {
+   "A": "der Bundesrat",
+   "B": "die Bundesversammlung",
+   "C": "das Volk",
+   "D": "der Bundestag"
+  },
+  "key": "D",
+  "q_bks": "Tko u Njemačkoj bira saveznog kancelara?",
+  "expl_bks": "Saveznog kancelara bira Bundestag (savezni parlament), na prijedlog saveznog predsjednika (članak 63. Temeljnog zakona). Potrebna je većina glasova svih zastupnika. Građani kancelara ne biraju izravno, nego glasaju za stranke i zastupnike. Savezna skupština bira saveznog predsjednika, a ne kancelara.",
+  "merksatz_de": "Der Bundestag wählt den Bundeskanzler."
+ },
+ {
+  "id": "G-082",
+  "question_de": "Wer leitet das deutsche Bundeskabinett?",
+  "options_de": {
+   "A": "die Bundestagspräsidentin/der Bundestagspräsident",
+   "B": "die Bundespräsidentin/der Bundespräsident",
+   "C": "die Bundesratspräsidentin/der Bundesratspräsident",
+   "D": "die Bundeskanzlerin/der Bundeskanzler"
+  },
+  "key": "D",
+  "q_bks": "Tko vodi njemački savezni kabinet?",
+  "expl_bks": "Savezni kabinet (Bundeskabinett) čine savezni kancelar i savezni ministri. Kancelar vodi kabinet i određuje smjernice politike (članak 65. Temeljnog zakona). Unutar tih smjernica svaki ministar samostalno vodi svoje ministarstvo. Savezni predsjednik te predsjednici Bundestaga i Bundesrata nisu članovi vlade.",
+  "merksatz_de": "Das Bundeskabinett leitet der Bundeskanzler."
+ },
+ {
+  "id": "G-083",
+  "question_de": "Wer wählt die deutsche Bundeskanzlerin/den deutschen Bundeskanzler?",
+  "options_de": {
+   "A": "das Volk",
+   "B": "die Bundesversammlung",
+   "C": "der Bundestag",
+   "D": "die Bundesregierung"
+  },
+  "key": "C",
+  "q_bks": "Tko bira njemačkog saveznog kancelara?",
+  "expl_bks": "Kancelara bira Bundestag (savezni parlament) tajnim glasanjem, nakon što kandidata predloži savezni predsjednik. Narod ga ne bira izravno: građani na saveznim izborima biraju zastupnike, a oni zatim biraju kancelara. Savezna skupština (Bundesversammlung) bira saveznog predsjednika, a saveznu vladu kancelar sastavlja tek nakon izbora.",
+  "merksatz_de": "Den Kanzler wählen die Abgeordneten des Bundestages."
+ },
+ {
+  "id": "G-084",
+  "question_de": "Welche Hauptaufgabe hat die deutsche Bundespräsidentin/der deutsche Bundespräsident? Sie/Er ...",
+  "options_de": {
+   "A": "regiert das Land.",
+   "B": "entwirft die Gesetze.",
+   "C": "repräsentiert das Land.",
+   "D": "überwacht die Einhaltung der Gesetze."
+  },
+  "key": "C",
+  "q_bks": "Koja je glavna zadaća njemačkog saveznog predsjednika? On …",
+  "expl_bks": "Savezni predsjednik je šef države i predstavlja Njemačku u zemlji i u inozemstvu: prima strane državnike, putuje u državne posjete i drži važne govore. Uz to potpisuje zakone te imenuje kancelara i ministre. Zemljom ne vlada on, nego savezna vlada sa saveznim kancelarom na čelu.",
+  "merksatz_de": "Der Bundespräsident repräsentiert Deutschland."
+ },
+ {
+  "id": "G-085",
+  "question_de": "Wer bildet den deutschen Bundesrat?",
+  "options_de": {
+   "A": "die Abgeordneten des Bundestages",
+   "B": "die Ministerinnen und Minister der Bundesregierung",
+   "C": "die Regierungsvertreter der Bundesländer",
+   "D": "die Parteimitglieder"
+  },
+  "key": "C",
+  "q_bks": "Tko čini njemački Bundesrat?",
+  "expl_bks": "Bundesrat (savezno vijeće pokrajina) čine članovi vlada 16 saveznih pokrajina, na primjer ministri predsjednici i pokrajinski ministri. Građani ih ne biraju izravno u Bundesrat, nego ih šalju pokrajinske vlade. Veće pokrajine imaju više glasova (od 3 do 6), a svaka pokrajina glasa jedinstveno.",
+  "merksatz_de": "Im Bundesrat sitzen Vertreter der Landesregierungen."
+ },
+ {
+  "id": "G-086",
+  "question_de": "Wer wählt in Deutschland die Bundespräsidentin/den Bundespräsidenten?",
+  "options_de": {
+   "A": "die Bundesversammlung",
+   "B": "der Bundesrat",
+   "C": "das Bundesparlament",
+   "D": "das Bundesverfassungsgericht"
+  },
+  "key": "A",
+  "q_bks": "Tko u Njemačkoj bira saveznog predsjednika?",
+  "expl_bks": "Saveznog predsjednika bira Savezna skupština (Bundesversammlung), i to na pet godina. Čine je svi zastupnici Bundestaga i jednako toliko članova koje šalju pokrajinski parlamenti; među njima su ponekad i poznate osobe, na primjer sportaši ili glumci. Savezna skupština sastaje se samo radi tog izbora.",
+  "merksatz_de": "Die Bundesversammlung wählt den Bundespräsidenten."
+ },
+ {
+  "id": "G-087",
+  "question_de": "Wer ist das Staatsoberhaupt der Bundesrepublik Deutschland?",
+  "options_de": {
+   "A": "die Bundeskanzlerin/der Bundeskanzler",
+   "B": "die Bundespräsidentin/der Bundespräsident",
+   "C": "die Bundesratspräsidentin/der Bundesratspräsident",
+   "D": "die Bundestagspräsidentin/der Bundestagspräsident"
+  },
+  "key": "B",
+  "q_bks": "Tko je šef države Savezne Republike Njemačke?",
+  "expl_bks": "Šef države je savezni predsjednik. On predstavlja Njemačku, potpisuje zakone te imenuje saveznog kancelara i ministre. Savezni kancelar vodi vladu, pa je on šef vlade, a ne šef države. Sjedište saveznog predsjednika je dvorac Bellevue u Berlinu.",
+  "merksatz_de": "Staatsoberhaupt ist der Bundespräsident, nicht der Kanzler."
+ },
+ {
+  "id": "G-088",
+  "question_de": "Die parlamentarische Opposition im Deutschen Bundestag ...",
+  "options_de": {
+   "A": "kontrolliert die Regierung.",
+   "B": "entscheidet, wer Bundesministerin/Bundesminister wird.",
+   "C": "bestimmt, wer im Bundesrat sitzt.",
+   "D": "schlägt die Regierungschefinnen/Regierungschefs der Länder vor."
+  },
+  "key": "A",
+  "q_bks": "Parlamentarna opozicija u njemačkom Bundestagu …",
+  "expl_bks": "Opoziciju čine stranke u Bundestagu koje nisu u vladi. Njezina je glavna zadaća nadzirati i kritizirati vladu: postavlja pitanja ministrima, raspravlja o zakonima i predlaže drukčija rješenja. Tako vlada mora javno objašnjavati svoje odluke. Ministre ne bira opozicija, nego ih predlaže kancelar.",
+  "merksatz_de": "Die Opposition kontrolliert die Regierung."
+ },
+ {
+  "id": "G-089",
+  "question_de": "Wie nennt man in Deutschland die Vereinigung von Abgeordneten einer Partei im Parlament?",
+  "options_de": {
+   "A": "Verband",
+   "B": "Ältestenrat",
+   "C": "Fraktion",
+   "D": "Opposition"
+  },
+  "key": "C",
+  "q_bks": "Kako se u Njemačkoj zove udruženje zastupnika jedne stranke u parlamentu?",
+  "expl_bks": "Zastupnici iste stranke u Bundestagu udružuju se u klub zastupnika (Fraktion). Za klub je potrebno najmanje 5 % svih zastupnika. Klubovi zajedno pripremaju prijedloge, dogovaraju glasanje i imaju posebna prava u parlamentu. CDU i CSU u Bundestagu imaju zajednički klub.",
+  "merksatz_de": "Abgeordnete einer Partei bilden im Parlament eine Fraktion."
+ },
+ {
+  "id": "G-090",
+  "question_de": "Die deutschen Bundesländer wirken an der Gesetzgebung des Bundes mit durch ...",
+  "options_de": {
+   "A": "den Bundesrat.",
+   "B": "die Bundesversammlung.",
+   "C": "den Bundestag.",
+   "D": "die Bundesregierung."
+  },
+  "key": "A",
+  "q_bks": "Njemačke savezne pokrajine sudjeluju u saveznom zakonodavstvu preko …",
+  "expl_bks": "Prema članku 50. Temeljnog zakona pokrajine preko Bundesrata (savezno vijeće pokrajina) sudjeluju u saveznom zakonodavstvu. O svakom saveznom zakonu raspravlja se i u Bundesratu. Za zakone koji jako utječu na pokrajine, na primjer na njihove financije, potrebna je suglasnost Bundesrata.",
+  "merksatz_de": "Über den Bundesrat wirken die Länder bei Bundesgesetzen mit."
+ },
+ {
+  "id": "G-091",
+  "question_de": "In Deutschland kann ein Regierungswechsel in einem Bundesland Auswirkungen auf die Bundespolitik haben. Das Regieren wird ...",
+  "options_de": {
+   "A": "schwieriger, wenn sich dadurch die Mehrheit im Bundestag ändert.",
+   "B": "leichter, wenn dadurch neue Parteien in den Bundesrat kommen.",
+   "C": "schwieriger, wenn dadurch die Mehrheit im Bundesrat verändert wird.",
+   "D": "leichter, wenn es sich um ein reiches Bundesland handelt."
+  },
+  "key": "C",
+  "q_bks": "U Njemačkoj promjena vlade u jednoj saveznoj pokrajini može utjecati na saveznu politiku. Vladanje postaje …",
+  "expl_bks": "Pokrajinska vlada šalje svoje predstavnike u Bundesrat (savezno vijeće pokrajina). Ako nakon izbora u pokrajini vladu preuzmu stranke koje su u Bundestagu u opoziciji, savezna vlada može izgubiti većinu u Bundesratu. Tada teže donosi zakone kojima je potrebna suglasnost Bundesrata. Većina u Bundestagu zbog toga se ne mijenja.",
+  "merksatz_de": "Landtagswahlen können die Mehrheit im Bundesrat verändern."
+ },
+ {
+  "id": "G-092",
+  "question_de": "Was bedeutet die Abkürzung CSU in Deutschland?",
+  "options_de": {
+   "A": "Christlich Sichere Union",
+   "B": "Christlich Süddeutsche Union",
+   "C": "Christlich Sozialer Unternehmerverband",
+   "D": "Christlich Soziale Union"
+  },
+  "key": "D",
+  "q_bks": "Što u Njemačkoj znači kratica CSU?",
+  "expl_bks": "CSU znači Christlich Soziale Union (Kršćansko-socijalna unija); puno ime je „Christlich-Soziale Union in Bayern”. Ta stranka djeluje samo u Bavarskoj, a CDU u ostalih 15 pokrajina. U Bundestagu CDU i CSU imaju zajednički klub zastupnika (Fraktion), pa ih se često zove „Unija”.",
+  "merksatz_de": "Die CSU (Christlich Soziale Union) gibt es nur in Bayern."
+ }
+]

@@ -8,7 +8,7 @@
    "ljudi imaju biračko pravo.",
    "ovdje vrijedi sloboda mišljenja."
   ],
-  "expl_bks": "Sloboda mišljenja jedno je od temeljnih prava iz Temeljnog zakona (članak 5.). Svatko smije javno reći ili napisati svoje mišljenje i kritizirati vladu, a zbog toga ne smije biti kažnjen. Granice postoje samo kod kaznenih djela, na primjer uvrede ili poticanja na mržnju.",
+  "expl_bks": "Sloboda mišljenja jedno je od temeljnih prava iz Temeljnog zakona (članak 5.). Svatko smije javno reći ili napisati svoje mišljenje i kritizirati vladu, a zbog toga ne smije biti kažnjen. Granice postavljaju opći zakoni te zaštita mladeži i osobne časti (članak 5. stavak 2.), na primjer kod uvrede ili poticanja na mržnju.",
   "merksatz_de": "Meinungsfreiheit: Man darf die Regierung offen kritisieren."
  },
  {
@@ -20,7 +20,7 @@
    "nastavi politike.",
    "nastavi jezika."
   ],
-  "expl_bks": "Temeljni zakon (njemački ustav) u članku 7. daje roditeljima pravo da odluče hoće li dijete pohađati vjeronauk. Od 14. godine dijete o tome odlučuje samo. Tko ne ide na vjeronauk, u mnogim pokrajinama umjesto toga ima etiku. Ostali predmeti obvezni su za sve učenike.",
+  "expl_bks": "Temeljni zakon (njemački ustav) u članku 7. daje roditeljima pravo da odluče hoće li dijete pohađati vjeronauk. Od 14. godine dijete o tome u pravilu odlučuje samo (u Bavarskoj i Saarlandu tek od 18. godine). Tko ne ide na vjeronauk, u mnogim pokrajinama umjesto toga ima etiku. Ostali predmeti obvezni su za sve učenike.",
   "merksatz_de": "Bis 14 entscheiden die Eltern über den Religionsunterricht."
  },
  {
@@ -44,7 +44,7 @@
    "sloboda mišljenja",
    "uzimanje pravde u svoje ruke"
   ],
-  "expl_bks": "Sloboda mišljenja zaštićena je člankom 5. Temeljnog zakona (njemačkog ustava) i spada u temeljna prava. „Pravo jačega” i uzimanje pravde u svoje ruke u Njemačkoj su zabranjeni: sukobe rješavaju policija i sudovi. Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom i traži dozvolu.",
+  "expl_bks": "Sloboda mišljenja zaštićena je člankom 5. Temeljnog zakona (njemačkog ustava) i spada u temeljna prava. „Pravo jačega” i uzimanje pravde u svoje ruke u Njemačkoj su zabranjeni: sukobe rješavaju policija i sudovi. Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom; za vatreno oružje u pravilu je potrebna dozvola.",
   "merksatz_de": "Zu den Grundrechten gehört die Meinungsfreiheit."
  },
  {
@@ -153,7 +153,7 @@
    "sve zastupnike koji ne pripadaju vladajućoj stranci/vladajućim strankama."
   ],
   "expl_bks": "Opozicija su svi zastupnici koji ne pripadaju vladajućoj stranci ili vladajućoj koaliciji. Njezin je zadatak kontrolirati i kritizirati vladu te predlagati druga rješenja. Opozicija je važan dio demokracije jer nakon sljedećih izbora i sama može preuzeti vlast.",
-  "merksatz_de": "Opposition sind alle Abgeordneten, die nicht zur Regierung gehören."
+  "merksatz_de": "Opposition sind alle Abgeordneten, die nicht zu den Regierungsparteien gehören."
  },
  {
   "id": "G-014",
@@ -176,7 +176,7 @@
    "slobodan izbor zanimanja",
    "rad u inozemstvu"
   ],
-  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimke su samo rad pri lišenju slobode po odluci suda i opće javne obveze koje vrijede jednako za sve. Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
+  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimke su rad pri lišenju slobode po odluci suda, opće javne obveze koje vrijede jednako za sve te vojna ili zamjenska služba (članak 12.a). Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
   "merksatz_de": "Zwangsarbeit ist in Deutschland verboten."
  },
  {
@@ -224,7 +224,7 @@
    "Svatko se smije odlučiti za drugu vjeru.",
    "Svatko se u javnosti smije kretati samo oskudno odjeven."
   ],
-  "expl_bks": "„Freizügigkeit” znači slobodu kretanja i nastanjivanja (članak 11. Temeljnog zakona). Čovjek smije sam odlučiti u kojem će gradu ili mjestu u Njemačkoj živjeti i preseliti se bez posebne dozvole. Pazite na zamku: riječ „freizügig” u svakodnevnom govoru znači i „oskudno odjeven”, ali ovo pravo nema veze s odjećom.",
+  "expl_bks": "„Freizügigkeit” znači slobodu kretanja i nastanjivanja (članak 11. Temeljnog zakona). Svaki njemački državljanin smije sam odlučiti u kojem će mjestu u Njemačkoj živjeti i preseliti se bez dozvole. Za neke strance, na primjer izbjeglice, mogu vrijediti ograničenja. Pazite na zamku: riječ „freizügig” u svakodnevnom govoru znači i „oskudno odjeven”, ali ovo pravo nema veze s odjećom.",
   "merksatz_de": "Freizügigkeit heißt: Man darf seinen Wohnort frei wählen."
  },
  {
@@ -236,7 +236,7 @@
    "vjerna zakonima.",
    "protuustavna."
   ],
-  "expl_bks": "Temeljni zakon štiti slobodni demokratski poredak. Stranka koja želi uspostaviti diktaturu bori se protiv tog poretka i zato je protuustavna. Takvu stranku može zabraniti samo Savezni ustavni sud (članak 21.). U Saveznoj Republici Njemačkoj to se dogodilo dva puta, 1952. i 1956. godine.",
+  "expl_bks": "Temeljni zakon štiti slobodni demokratski poredak. Stranka koja želi uspostaviti diktaturu bori se protiv tog poretka i zato je protuustavna. Takvu stranku može zabraniti samo Savezni ustavni sud (članak 21.). Do 2026. to se u Saveznoj Republici Njemačkoj dogodilo dva puta, 1952. i 1956. godine.",
   "merksatz_de": "Eine Partei, die eine Diktatur will, ist verfassungswidrig."
  },
  {
@@ -332,7 +332,7 @@
    "narod s biračkim pravom",
    "uprava"
   ],
-  "expl_bks": "Zastupnike u Bundestagu (saveznom parlamentu) bira narod, odnosno svi koji imaju biračko pravo. Na izborima za Bundestag smiju glasati njemački državljani od 18 godina. Izbori se održavaju svake četiri godine. Tako vrijedi načelo iz članka 20. Temeljnog zakona: sva vlast dolazi od naroda.",
+  "expl_bks": "Zastupnike u Bundestagu (saveznom parlamentu) bira narod, odnosno svi koji imaju biračko pravo. Na izborima za Bundestag smiju glasati njemački državljani od 18 godina. Izbori se u pravilu održavaju svake četiri godine. Tako vrijedi načelo iz članka 20. Temeljnog zakona: sva vlast dolazi od naroda.",
   "merksatz_de": "Das wahlberechtigte Volk wählt die Bundestagsabgeordneten."
  },
  {

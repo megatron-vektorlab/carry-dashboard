@@ -1,0 +1,170 @@
+[
+  {
+    "id": "G-190",
+    "field": "expl_bks",
+    "old": "a slobodnih izbora nije bilo.",
+    "new": "a slobodnih izbora nije bilo sve do ožujka 1990.",
+    "reason": "Činjenično: DDR je 18. 3. 1990. održao slobodne izbore za Volkskammer (to navode i G-196 i G-204); apsolutna tvrdnja je netočna.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-209",
+    "field": "expl_bks",
+    "old": "čekić i šestar na crvenoj podlozi, okruženi",
+    "new": "zlatni čekić i šestar, okruženi",
+    "reason": "Zakon o grbu DDR-a (26. 9. 1955.) ne predviđa crvenu podlogu: grb čine čekić i šestar u vijencu od klasja s crno-crveno-zlatnom trakom (crvena podloga samo na predsjedničkoj zastavi).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-214",
+    "field": "expl_bks",
+    "old": "To određuje članak 22. Temeljnog zakona (njemački ustav).",
+    "new": "Boje određuje članak 22. Temeljnog zakona (njemački ustav).",
+    "reason": "Čl. 22 st. 2 GG kaže samo 'schwarz-rot-gold'; vodoravne pruge određuje Anordnung über die deutschen Flaggen (1950).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-221",
+    "field": "expl_bks",
+    "old": "Među državama članicama u pravilu nema stalnih graničnih kontrola, pa se putuje bez pokazivanja putovnice.",
+    "new": "Među državama članicama u pravilu nema stalnih graničnih kontrola, no države ih smiju privremeno uvesti, kao što je Njemačka učinila 2024.",
+    "reason": "Vremenski osjetljivo: Njemačka od rujna 2024. privremeno kontrolira sve kopnene granice (više puta produljeno, trenutno do ožujka 2027.; čl. 25 Zakonika o schengenskim granicama).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-236",
+    "field": "expl_bks",
+    "old": "Europska unija danas ima 27 država članica.",
+    "new": "Europska unija ima 27 država članica (stanje: 2026.).",
+    "reason": "Broj članica može se promijeniti (pristupni pregovori u tijeku); datirana formulacija umjesto 'danas'.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-241",
+    "field": "expl_bks",
+    "old": "Zahtjev treba predati ubrzo nakon rođenja, jer se naknada unatrag isplaćuje samo za posljednja tri mjeseca.",
+    "new": "Naknada se isplaćuje najviše tri mjeseca unatrag, računajući od mjeseca u kojem je zahtjev stigao.",
+    "reason": "Pretvara se u savjet čitatelju; neutralno navesti pravilo iz § 7 st. 1 BEEG (retroaktivno samo za posljednja tri mjeseca života djeteta prije mjeseca prijema zahtjeva).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-243",
+    "field": "expl_bks",
+    "old": "Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije nego što se javno najavi.",
+    "new": "Tko želi održati demonstraciju na otvorenom, u pravilu je mora unaprijed prijaviti nadležnom uredu, najkasnije 48 sati prije nego što se javno najavi; spontani prosvjedi su iznimka.",
+    "reason": "Preširoko: spontani skupovi ne moraju se prijaviti, hitni čim je moguće (BVerfGE 69, 315 – Brokdorf; § 14 VersG i zemaljski zakoni o okupljanju).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-243",
+    "field": "merksatz_de",
+    "old": "Eine Demonstration im Freien muss man vorher anmelden.",
+    "new": "Eine Demonstration im Freien muss man in der Regel vorher anmelden.",
+    "reason": "Preširoko samo za sebe: Spontanversammlungen sind anmeldefrei (BVerfGE 69, 315; § 14 VersG).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-249",
+    "field": "expl_bks",
+    "old": "a država se uključuje tek kad je dobrobit djeteta ugrožena, na primjer preko ureda za djecu i mlade (Jugendamt).",
+    "new": "a država nudi pomoć, npr. preko ureda za djecu i mlade (Jugendamt); protiv volje roditelja smije se umiješati tek kad je dobrobit djeteta ugrožena.",
+    "reason": "Preširoko: Jugendamt savjetuje i pomaže i na zahtjev roditelja (§§ 16, 27 SGB VIII, usp. G-255/G-273); prag ugroženosti vrijedi za zahvat protiv volje roditelja (čl. 6 st. 3 GG, § 1666 BGB).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-250",
+    "field": "expl_bks",
+    "old": "Vjera, spol ili članstvo u stranci ne smiju biti razlog za prednost ili zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.).",
+    "new": "Vjera, spol ili članstvo u stranci u pravilu ne smiju biti razlog za zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.; Opći zakon o jednakom postupanju, AGG).",
+    "reason": "Preširoko: prednost žena pri jednakoj kvalifikaciji u javnoj službi je dopuštena (čl. 3 st. 2 GG, zakoni o ravnopravnosti), crkveni poslodavci smiju tražiti vjeru (§ 9 AGG); čl. 3 GG izravno veže državu.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-253",
+    "field": "expl_bks",
+    "old": "Za prijavu trebate osobnu iskaznicu ili putovnicu i potvrdu stanodavca (Wohnungsgeberbestätigung).",
+    "new": "Pri prijavi se obično pokazuju osobna iskaznica ili putovnica i potvrda stanodavca (Wohnungsgeberbestätigung).",
+    "reason": "Pojedinačni administrativni savjet ('trebate'); potrebni dokumenti ovise o slučaju i općini (§§ 17, 19, 23 BMG).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-256",
+    "field": "expl_bks",
+    "old": "Za otvaranje restorana, posebno ako se toči alkohol, potrebna je dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured općine, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt). Ured provjerava, na primjer, prostorije i pouzdanost vlasnika. Pojedinosti ovise o pokrajini.",
+    "new": "Prema katalogu za restoran je potrebna dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt), koji provjerava prostorije i pouzdanost vlasnika. U stvarnosti se dozvola u pravilu traži samo kad se toči alkohol, a u mnogim pokrajinama ni tada: ondje je dovoljna prijava (Anzeige).",
+    "reason": "Netočno kao opće pravilo: po § 2 st. 2 GastG bez alkohola dozvola nije potrebna; Brandenburg, Hessen, Niedersachsen, Saarland, Sachsen, Sachsen-Anhalt, Thüringen i od 1. 1. 2026. Baden-Württemberg imaju samo obvezu prijave.",
+    "severity": "high"
+  },
+  {
+    "id": "G-256",
+    "field": "merksatz_de",
+    "old": "Für ein Restaurant braucht man eine Gaststättenerlaubnis.",
+    "new": "Für ein Restaurant braucht man oft eine Gaststättenerlaubnis.",
+    "reason": "Preširoko samo za sebe: Erlaubnis nur bei Alkoholausschank (§ 2 Abs. 2 GastG), in vielen Ländern nur Anzeigepflicht.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-257",
+    "field": "expl_bks",
+    "old": "Visoko učilište i privatno sveučilište traže Abitur već pri upisu.",
+    "new": "Visoko učilište i privatno sveučilište za upis u pravilu već traže Abitur ili sličnu kvalifikaciju.",
+    "reason": "Preširoko: studij je moguć i s Fachhochschulreife ili stručnom kvalifikacijom bez Abitura (npr. majstorski ispit; odluka KMK 2009., zemaljski zakoni o visokim učilištima).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-261",
+    "field": "expl_bks",
+    "old": "a na visoko učilište ili sveučilište upisuje se tek s Abiturom.",
+    "new": "a na visoko učilište ili sveučilište upisuje se u pravilu tek s Abiturom ili sličnom kvalifikacijom.",
+    "reason": "Preširoko: upis moguć i s Fachhochschulreife ili stručnom kvalifikacijom bez Abitura (odluka KMK 2009., zemaljski zakoni o visokim učilištima).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-265",
+    "field": "expl_bks",
+    "old": "U Njemačkoj je pravno valjan samo građanski brak, sklopljen pred matičarom.",
+    "new": "Brak koji se sklapa u Njemačkoj pravno je valjan u pravilu samo ako je sklopljen pred matičarom.",
+    "reason": "Preširoko i zbunjujuće za čitatelje: brak valjano sklopljen u inozemstvu (npr. crkveni brak s građanskim učinkom u Hrvatskoj) priznaje se; § 1310 BGB vrijedi za sklapanje u Njemačkoj (iznimka čl. 13 st. 4 EGBGB).",
+    "severity": "high"
+  },
+  {
+    "id": "G-267",
+    "field": "expl_bks",
+    "old": "ali je ne smiju prisiliti na povratak kući ni prijaviti policiji, jer nije učinila ništa zabranjeno.",
+    "new": "ali je ne smiju prisiliti na povratak kući, a prijava policiji nema osnove, jer nije učinila ništa zabranjeno.",
+    "reason": "Netočno: podnošenje prijave nije zabranjeno, samo je ovdje bez osnove; zabranjena je prisila (§§ 239, 240 StGB).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-269",
+    "field": "expl_bks",
+    "old": "Pohađanje je dobrovoljno,",
+    "new": "Pohađanje je u pravilu dobrovoljno,",
+    "reason": "Razlikuje se po pokrajini: npr. Berlin i Hamburg obvezuju djecu s utvrđenom potrebom jezične potpore na predškolsku potporu/ustanovu.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-272",
+    "field": "expl_bks",
+    "old": "Tko je istodobno u braku s dvije osobe, čini kazneno djelo bigamije.",
+    "new": "Tko u Njemačkoj sklopi novi brak dok prvi još traje, čini kazneno djelo bigamije.",
+    "reason": "Preširoko: § 172 StGB kažnjava sklapanje drugog braka, a ne samo stanje (npr. poligamni brak zakonito sklopljen u inozemstvu nije kazneno djelo u Njemačkoj).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-274",
+    "field": "expl_bks",
+    "old": "Pismo naslovljeno na drugu osobu smije otvoriti samo ta osoba ili netko koga je ona za to ovlastila.",
+    "new": "Pismo naslovljeno na drugu osobu u pravilu smije otvoriti samo ta osoba ili netko koga je ona ovlastila; iznimke postoje, npr. za roditelje male djece ili po sudskom nalogu.",
+    "reason": "Preširoko: čl. 10 st. 2 GG dopušta zakonska ograničenja, § 202 StGB kažnjava samo neovlašteno otvaranje, roditeljska skrb (§ 1626 BGB).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-276",
+    "field": "expl_bks",
+    "old": "Ako vas netko loše tretira, možete se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Ostanite mirni: prijetnje nisu dopuštene i mogu biti kažnjive.",
+    "new": "Tko je loše tretiran, može se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Prijetnje nisu dopuštene i mogu biti kažnjive.",
+    "reason": "Pretvara se u osobni savjet ('vas', 'Ostanite mirni'); neutralno izložiti činjenicu iz ispita.",
+    "severity": "medium"
+  }
+]

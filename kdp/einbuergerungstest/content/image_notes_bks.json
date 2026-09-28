@@ -3,9 +3,9 @@
  "notes": {
   "G-021": "Grb Savezne Republike Njemačke je savezni orao (Bundesadler): crni orao s crvenim kljunom, jezikom i kandžama na zlatnožutom štitu.",
   "G-055": "Na slici je zgrada Reichstaga u Berlinu sa staklenom kupolom – u njoj zasjeda Bundestag.",
-  "G-130": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan.",
+  "G-130": "Među ponuđenim listićima potpuno je valjan samo listić broj 1: ima točno jedan križić za prvi glas (kandidat) i točno jedan za drugi glas (stranka). Na listiću 2 drugi glas ima dva križića, pa taj glas ne vrijedi; na listićima 3 i 4 previše je križića kod prvog glasa.",
   "G-176": "Na karti: 1 = sjeverozapad, 2 = istok (s Berlinom), 3 = jug (Bavarska i Hessen), 4 = jugozapad uz Francusku.",
-  "G-209": "Grb DDR-a: čekić i šestar na crvenoj podlozi, okruženi vijencem od klasja s crno-crveno-zlatnom trakom.",
+  "G-209": "Grb DDR-a: zlatni čekić i šestar, okruženi vijencem od klasja s crno-crveno-zlatnom trakom.",
   "G-226": "Zastava Europske unije: dvanaest zlatnih zvjezdica u krugu na plavoj podlozi.",
   "BW-01": "Grb Baden-Württemberga: tri crna lava jedan ispod drugoga na zlatnožutom štitu, iznad štita kruna.",
   "BY-01": "Grb Bavarske: bijelo-plavi rombovi (romboidni uzorak), iznad štita kruna.",

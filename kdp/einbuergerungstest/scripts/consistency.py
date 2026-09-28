@@ -42,7 +42,7 @@ MANUAL = [
     ("G-011", "options_bks[2]", "zakonik (Gesetzbuch)", "Zakonik (Gesetzbuch)"),
     ("G-011", "options_bks[3]", "ustavni ugovor (Verfassungsvertrag)", "Ustavni ugovor (Verfassungsvertrag)"),
     ("G-015", "expl_bks", "iznimka je samo rad u zatvoru nakon sudske odluke",
-     "iznimke su samo rad pri lišenju slobode po odluci suda i opće javne obveze koje vrijede jednako za sve"),
+     "iznimke su rad pri lišenju slobode po odluci suda, opće javne obveze koje vrijede jednako za sve te vojna ili zamjenska služba (članak 12.a)"),
     ("G-072", "expl_bks", "Gerhard Schröder (1998.–2005.) i Angela Merkel (2005.–2021.) bili su kancelari prije njega",
      "Prije njega kancelari su bili Olaf Scholz (2021.–2025.), Angela Merkel (2005.–2021.) i Gerhard Schröder (1998.–2005.)"),
     ("G-074", "options_bks[3]", "Savezni sud (Bundesgerichtshof)", "Savezni vrhovni sud (Bundesgerichtshof)"),
@@ -64,6 +64,11 @@ MANUAL = [
     ("SL-05", "expl_bks", "Saarland je jedina savezna pokrajina s tim bojama na zastavi.",
      "Iste boje imaju i zastave Donje Saske i Porajnja-Falačke, ali s drugim grbom."),
     ("TH-01", "expl_bks", "ali Hessenov grb nema zvjezdice", "ali grb Hessena nema zvjezdice"),
+    ("G-291", "merksatz_de", "Mitglieder z. B. der katholischen oder evangelischen Kirche zahlen Kirchensteuer, das Finanzamt zieht sie ein.",
+     "Katholiken und Protestanten zahlen Kirchensteuer; das Finanzamt zieht sie ein."),
+    # External editorial review (2026-09-28): the ballot rule was overbroad.
+    ("G-130", "expl_bks", 'Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati. U katalogu je to listić broj 1.',
+     'Među ponuđenim listićima potpuno je valjan samo listić broj 1: ima točno jedan križić za prvi glas (kandidat) i točno jedan za drugi glas (stranka). Na listiću 2 drugi glas ima dva križića, pa taj glas ne vrijedi; na listićima 3 i 4 previše je križića kod prvog glasa. Birač smije dati i samo jedan glas – tada ne vrijedi samo neiskorišteni glas (§ 39 BWahlG). U katalogu je to listić broj 1.'),
 ]
 
 # Bezirk = "gradski kotar" everywhere ("okrug" is reserved for Landkreis).
@@ -109,13 +114,29 @@ def fix(s, log, qid, field):
     return s
 
 
+def precision_fixes():
+    """Fixes proposed by the precision review (content/review2/precision_*_result.json),
+    after editorial acceptance; rejected ones are listed in content/review2/rejected.json."""
+    rejected = set()
+    rej = ROOT / "content" / "review2" / "rejected.json"
+    if rej.exists():
+        rejected = {(r["id"], r["old"]) for r in json.load(open(rej, encoding="utf-8"))}
+    out = []
+    for f in sorted((ROOT / "content" / "review2").glob("precision_*_result.json")):
+        for r in json.load(open(f, encoding="utf-8")):
+            if (r["id"], r["old"]) not in rejected:
+                out.append((r["id"], r["field"], r["old"], r["new"]))
+    return out
+
+
 def main():
     log = []
+    edits = MANUAL + precision_fixes()
     cat = {q["id"]: q for q in json.load(open(ROOT / "data" / "catalog.json", encoding="utf-8"))["questions"]}
     for f in sorted((ROOT / "content" / "batches").glob("batch_*_output.json")):
         items = json.load(open(f, encoding="utf-8"))
         for t in items:
-            for mid, field, old, new in MANUAL:
+            for mid, field, old, new in edits:
                 if t["id"] != mid:
                     continue
                 m = re.fullmatch(r"options_bks\[(\d)\]", field)

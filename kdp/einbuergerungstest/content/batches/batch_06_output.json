@@ -68,7 +68,7 @@
    "25",
    "27"
   ],
-  "expl_bks": "Europska unija danas ima 27 država članica. Hrvatska je 2013. postala 28. članica, a Ujedinjeno Kraljevstvo izašlo je iz EU-a 2020. (Brexit), pa je broj ponovno pao na 27. Njemačka je jedna od šest država osnivačica Europske ekonomske zajednice iz 1957.",
+  "expl_bks": "Europska unija ima 27 država članica (stanje: 2026.). Hrvatska je 2013. postala 28. članica, a Ujedinjeno Kraljevstvo izašlo je iz EU-a 2020. (Brexit), pa je broj ponovno pao na 27. Njemačka je jedna od šest država osnivačica Europske ekonomske zajednice iz 1957.",
   "merksatz_de": "Die EU hat heute 27 Mitgliedstaaten."
  },
  {
@@ -128,7 +128,7 @@
    "Ne mora ništa učiniti jer roditeljsku naknadu dobiva automatski.",
    "Mora zamoliti ured za rad (Arbeitsamt) za dopuštenje."
   ],
-  "expl_bks": "Roditeljska naknada (Elterngeld) ne dobiva se automatski. Roditelji moraju podnijeti pisani zahtjev uredu za roditeljsku naknadu (Elterngeldstelle); koji je ured nadležan, ovisi o pokrajini i mjestu stanovanja. Zahtjev treba predati ubrzo nakon rođenja, jer se naknada unatrag isplaćuje samo za posljednja tri mjeseca.",
+  "expl_bks": "Roditeljska naknada (Elterngeld) ne dobiva se automatski. Roditelji moraju podnijeti pisani zahtjev uredu za roditeljsku naknadu (Elterngeldstelle); koji je ured nadležan, ovisi o pokrajini i mjestu stanovanja. Naknada se isplaćuje najviše tri mjeseca unatrag, računajući od mjeseca u kojem je zahtjev stigao.",
   "merksatz_de": "Elterngeld muss man bei der Elterngeldstelle beantragen."
  },
  {
@@ -152,8 +152,8 @@
    "Ne mogu ništa učiniti jer su demonstracije u Njemačkoj načelno zabranjene.",
    "Maik i Sybille moraju osnovati novu udrugu jer samo udruge smiju demonstrirati."
   ],
-  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije nego što se javno najavi. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
-  "merksatz_de": "Eine Demonstration im Freien muss man vorher anmelden."
+  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, u pravilu je mora unaprijed prijaviti nadležnom uredu, najkasnije 48 sati prije nego što se javno najavi; spontani prosvjedi su iznimka. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
+  "merksatz_de": "Eine Demonstration im Freien muss man in der Regel vorher anmelden."
  },
  {
   "id": "G-244",
@@ -224,7 +224,7 @@
    "rodbina",
    "škole"
   ],
-  "expl_bks": "Za odgoj djece u Njemačkoj prvenstveno su odgovorni roditelji. Temeljni zakon (članak 6.) kaže da je to njihovo pravo i njihova dužnost. Škola, vrtić i rodbina mogu pomoći, a država se uključuje tek kad je dobrobit djeteta ugrožena, na primjer preko ureda za djecu i mlade (Jugendamt).",
+  "expl_bks": "Za odgoj djece u Njemačkoj prvenstveno su odgovorni roditelji. Temeljni zakon (članak 6.) kaže da je to njihovo pravo i njihova dužnost. Škola, vrtić i rodbina mogu pomoći, a država nudi pomoć, npr. preko ureda za djecu i mlade (Jugendamt); protiv volje roditelja smije se umiješati tek kad je dobrobit djeteta ugrožena.",
   "merksatz_de": "Hauptsächlich verantwortlich für die Kindererziehung sind die Eltern."
  },
  {
@@ -236,7 +236,7 @@
    "je žena.",
    "je član neke stranke."
   ],
-  "expl_bks": "Na njemačkom tržištu rada najvažnije su kvalifikacije: završena škola, strukovno obrazovanje (Ausbildung) ili studij. Tko je dobro obrazovan, ima najbolje izglede za dobro plaćen posao. Vjera, spol ili članstvo u stranci ne smiju biti razlog za prednost ili zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.).",
+  "expl_bks": "Na njemačkom tržištu rada najvažnije su kvalifikacije: završena škola, strukovno obrazovanje (Ausbildung) ili studij. Tko je dobro obrazovan, ima najbolje izglede za dobro plaćen posao. Vjera, spol ili članstvo u stranci u pravilu ne smiju biti razlog za zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.; Opći zakon o jednakom postupanju, AGG).",
   "merksatz_de": "Eine gute Ausbildung bringt die besten Chancen auf gute Arbeit."
  },
  {
@@ -272,7 +272,7 @@
    "u komunalnom redarstvenom uredu (Ordnungsamt)",
    "u obrtnom uredu (Gewerbeamt)"
   ],
-  "expl_bks": "Nakon preseljenja novu adresu treba prijaviti u uredu za prijavu prebivališta (Einwohnermeldeamt); u mnogim gradovima to je građanski ured (Bürgeramt). Rok je u pravilu dva tjedna. Za prijavu trebate osobnu iskaznicu ili putovnicu i potvrdu stanodavca (Wohnungsgeberbestätigung).",
+  "expl_bks": "Nakon preseljenja novu adresu treba prijaviti u uredu za prijavu prebivališta (Einwohnermeldeamt); u mnogim gradovima to je građanski ured (Bürgeramt). Rok je u pravilu dva tjedna. Pri prijavi se obično pokazuju osobna iskaznica ili putovnica i potvrda stanodavca (Wohnungsgeberbestätigung).",
   "merksatz_de": "Nach einem Umzug meldet man sich beim Einwohnermeldeamt an."
  },
  {
@@ -308,8 +308,8 @@
    "odobrenje ureda za prijavu prebivališta (Einwohnermeldeamt)",
    "dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis) od nadležnog ureda"
   ],
-  "expl_bks": "Za otvaranje restorana, posebno ako se toči alkohol, potrebna je dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured općine, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt). Ured provjerava, na primjer, prostorije i pouzdanost vlasnika. Pojedinosti ovise o pokrajini.",
-  "merksatz_de": "Für ein Restaurant braucht man eine Gaststättenerlaubnis."
+  "expl_bks": "Prema katalogu za restoran je potrebna dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt), koji provjerava prostorije i pouzdanost vlasnika. U stvarnosti se dozvola u pravilu traži samo kad se toči alkohol, a u mnogim pokrajinama ni tada: ondje je dovoljna prijava (Anzeige).",
+  "merksatz_de": "Für ein Restaurant braucht man oft eine Gaststättenerlaubnis."
  },
  {
   "id": "G-257",
@@ -320,7 +320,7 @@
    "u Hauptschuli (niža srednja škola).",
    "na privatnom sveučilištu."
   ],
-  "expl_bks": "Večernja gimnazija (Abendgymnasium) namijenjena je odraslima koji rade. Nastava se održava navečer, pa se škola može uskladiti s poslom i obitelji. Na kraju se polaže matura (Abitur), s kojom se može studirati. Visoko učilište i privatno sveučilište traže Abitur već pri upisu.",
+  "expl_bks": "Večernja gimnazija (Abendgymnasium) namijenjena je odraslima koji rade. Nastava se održava navečer, pa se škola može uskladiti s poslom i obitelji. Na kraju se polaže matura (Abitur), s kojom se može studirati. Visoko učilište i privatno sveučilište za upis u pravilu već traže Abitur ili sličnu kvalifikaciju.",
   "merksatz_de": "Erwachsene können das Abitur am Abendgymnasium nachholen."
  },
  {
@@ -368,7 +368,7 @@
    "u Hauptschuli (niža srednja škola).",
    "na privatnom sveučilištu."
   ],
-  "expl_bks": "Tko je već odrastao i radi, maturu (Abitur) može naknadno položiti u večernjoj gimnaziji (Abendgymnasium). Nastava je navečer, obično traje oko tri godine i u javnim školama je besplatna. Hauptschule je škola za djecu, a na visoko učilište ili sveučilište upisuje se tek s Abiturom.",
+  "expl_bks": "Tko je već odrastao i radi, maturu (Abitur) može naknadno položiti u večernjoj gimnaziji (Abendgymnasium). Nastava je navečer, obično traje oko tri godine i u javnim školama je besplatna. Hauptschule je škola za djecu, a na visoko učilište ili sveučilište upisuje se u pravilu tek s Abiturom ili sličnom kvalifikacijom.",
   "merksatz_de": "Auch mit 30 kann man am Abendgymnasium Abitur machen."
  },
  {
@@ -416,7 +416,7 @@
    "u Agenciju za rad (Agentur für Arbeit)",
    "u matični ured (Standesamt)"
   ],
-  "expl_bks": "U Njemačkoj je pravno valjan samo građanski brak, sklopljen pred matičarom. Zato par najprije u matičnom uredu (Standesamt) prijavljuje namjeru vjenčanja i predaje dokumente, na primjer rodni list i osobnu iskaznicu ili putovnicu. Vjersko vjenčanje moguće je dodatno, ali nema pravni učinak.",
+  "expl_bks": "Brak koji se sklapa u Njemačkoj pravno je valjan u pravilu samo ako je sklopljen pred matičarom. Zato par najprije u matičnom uredu (Standesamt) prijavljuje namjeru vjenčanja i predaje dokumente, na primjer rodni list i osobnu iskaznicu ili putovnicu. Vjersko vjenčanje moguće je dodatno, ali nema pravni učinak.",
   "merksatz_de": "Wer heiraten möchte, geht zuerst zum Standesamt."
  },
  {
@@ -440,7 +440,7 @@
    "Mogu otići na policiju i prijaviti kćer.",
    "Potražit će drugog muškarca za svoju kćer."
   ],
-  "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući ni prijaviti policiji, jer nije učinila ništa zabranjeno.",
+  "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući, a prijava policiji nema osnove, jer nije učinila ništa zabranjeno.",
   "merksatz_de": "Erwachsene Kinder entscheiden selbst, mit wem sie zusammenleben."
  },
  {
@@ -464,7 +464,7 @@
    "mjesto u vrtiću.",
    "propusnicu za praznične aktivnosti (Ferienpass)."
   ],
-  "expl_bks": "Od 1996. svako dijete od navršene treće godine do polaska u školu ima zakonsko pravo na mjesto u vrtiću (Kindergarten). Od 2013. to pravo vrijedi već od prve godine, u jaslicama ili kod dnevne dadilje. Pohađanje je dobrovoljno, a koliko roditelji plaćaju, ovisi o pokrajini i općini.",
+  "expl_bks": "Od 1996. svako dijete od navršene treće godine do polaska u školu ima zakonsko pravo na mjesto u vrtiću (Kindergarten). Od 2013. to pravo vrijedi već od prve godine, u jaslicama ili kod dnevne dadilje. Pohađanje je u pravilu dobrovoljno, a koliko roditelji plaćaju, ovisi o pokrajini i općini.",
   "merksatz_de": "Ab drei Jahren hat ein Kind Anspruch auf einen Kindergartenplatz."
  },
  {
@@ -500,7 +500,7 @@
    "Samohrani otac živi sa svoje dvoje djece.",
    "Muškarac je u isto vrijeme u braku s dvije žene."
   ],
-  "expl_bks": "U Njemačkoj je brak moguć samo između dvije osobe. Tko je istodobno u braku s dvije osobe, čini kazneno djelo bigamije. Ostali oblici života su dopušteni: razvedeni smiju živjeti s novim partnerima, istospolni parovi od 2017. smiju i sklopiti brak, a samohrani roditelj može sam živjeti s djecom.",
+  "expl_bks": "U Njemačkoj je brak moguć samo između dvije osobe. Tko u Njemačkoj sklopi novi brak dok prvi još traje, čini kazneno djelo bigamije. Ostali oblici života su dopušteni: razvedeni smiju živjeti s novim partnerima, istospolni parovi od 2017. smiju i sklopiti brak, a samohrani roditelj može sam živjeti s djecom.",
   "merksatz_de": "Mehrere Ehepartner zur gleichen Zeit sind in Deutschland verboten."
  },
  {
@@ -524,7 +524,7 @@
    "obvezu čuvanja tajne (Schweigepflicht)",
    "slobodu mišljenja"
   ],
-  "expl_bks": "Tajnost pisama (Briefgeheimnis) zaštićena je Temeljnim zakonom (članak 10.). Pismo naslovljeno na drugu osobu smije otvoriti samo ta osoba ili netko koga je ona za to ovlastila. Tko namjerno otvori tuđe zatvoreno pismo, može biti kažnjen. Obveza čuvanja tajne (Schweigepflicht) odnosi se, na primjer, na liječnike i odvjetnike.",
+  "expl_bks": "Tajnost pisama (Briefgeheimnis) zaštićena je Temeljnim zakonom (članak 10.). Pismo naslovljeno na drugu osobu u pravilu smije otvoriti samo ta osoba ili netko koga je ona ovlastila; iznimke postoje, npr. za roditelje male djece ili po sudskom nalogu. Tko namjerno otvori tuđe zatvoreno pismo, može biti kažnjen. Obveza čuvanja tajne (Schweigepflicht) odnosi se, na primjer, na liječnike i odvjetnike.",
   "merksatz_de": "Fremde Briefe darf man nicht öffnen: Das Briefgeheimnis gilt."
  },
  {
@@ -548,7 +548,7 @@
    "Prijetim toj osobi.",
    "Mogu se požaliti voditelju ureda."
   ],
-  "expl_bks": "U uredima se prema svima mora postupati korektno i s poštovanjem. Ako vas netko loše tretira, možete se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Ostanite mirni: prijetnje nisu dopuštene i mogu biti kažnjive.",
+  "expl_bks": "U uredima se prema svima mora postupati korektno i s poštovanjem. Tko je loše tretiran, može se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Prijetnje nisu dopuštene i mogu biti kažnjive.",
   "merksatz_de": "Bei schlechter Behandlung im Amt kann man sich beschweren."
  }
 ]

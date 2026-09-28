@@ -44,8 +44,8 @@
    "nikako, poricanje holokausta je dopušteno",
    "kaznom zatvora do pet godina ili novčanom kaznom"
   ],
-  "expl_bks": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo. Kazneni zakon (§ 130, poticanje na mržnju – Volksverhetzung) za to predviđa kaznu zatvora do pet godina ili novčanu kaznu. Tako se štiti sjećanje na žrtve i javni mir.",
-  "merksatz_de": "Holocaustleugnung ist in Deutschland eine Straftat."
+  "expl_bks": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo ako se izrazi javno, npr. na skupu ili na internetu. Kazneni zakon (§ 130, poticanje na mržnju – Volksverhetzung) za to predviđa kaznu zatvora do pet godina ili novčanu kaznu. Tako se štiti sjećanje na žrtve i javni mir.",
+  "merksatz_de": "Öffentliche Holocaustleugnung ist in Deutschland eine Straftat."
  },
  {
   "id": "G-097",
@@ -56,7 +56,7 @@
    "dječji doplatak (Kindergeld)",
    "doplatak za stanovanje (Wohngeld)"
   ],
-  "expl_bks": "Tko je stalno zaposlen, automatski plaća doprinose za socijalno osiguranje: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti i osiguranje za njegu (Pflegeversicherung). Poslodavac taj iznos odbija izravno od bruto plaće i uplaćuje ga. Socijalna pomoć, dječji doplatak i doplatak za stanovanje davanja su koja se primaju, a ne plaćaju.",
+  "expl_bks": "Tko je stalno zaposlen, u pravilu automatski plaća doprinose za socijalno osiguranje: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti i osiguranje za njegu (Pflegeversicherung). Poslodavac taj iznos odbija izravno od bruto plaće i uplaćuje ga. Socijalna pomoć, dječji doplatak i doplatak za stanovanje davanja su koja se primaju, a ne plaćaju.",
   "merksatz_de": "Mit fester Arbeit zahlt man automatisch in die Sozialversicherung."
  },
  {
@@ -92,7 +92,7 @@
    "osiguranje za slučaj nezaposlenosti",
    "osiguranje za njegu (Pflegeversicherung)"
   ],
-  "expl_bks": "Zakonsko socijalno osiguranje ima pet grana: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti, osiguranje za njegu i osiguranje od nezgode. Životno osiguranje nije među njima. To je privatno osiguranje koje svatko može dobrovoljno sklopiti kod osiguravajuće kuće.",
+  "expl_bks": "Zakonsko socijalno osiguranje ima pet grana: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti, osiguranje za njegu i osiguranje od nezgode. Životno osiguranje nije među njima. To je privatno osiguranje koje se može dobrovoljno sklopiti kod osiguravajuće kuće.",
   "merksatz_de": "Die Lebensversicherung ist eine private, freiwillige Versicherung."
  },
  {
@@ -128,7 +128,7 @@
    "CSU-a, stranke Die LINKE i stranke Bündnis 90/Die Grünen u jednoj vladi",
    "klubova zastupnika CDU-a i SPD-a u Bundestagu"
   ],
-  "expl_bks": "Koalicije se često nazivaju prema bojama stranaka. Boja SPD-a je crvena, FDP-a žuta, a stranke Bündnis 90/Die Grünen zelena – kao tri svjetla na semaforu (Ampel). Zato se vlada tih triju stranaka zove „semaforska koalicija”. Koalicija CDU/CSU-a i SPD-a naziva se „velika koalicija”.",
+  "expl_bks": "Koalicije se često nazivaju prema bojama stranaka. Boja SPD-a je crvena, FDP-a žuta, a stranke Bündnis 90/Die Grünen zelena – kao tri svjetla na semaforu (Ampel). Zato se vlada tih triju stranaka zove „semaforska koalicija”. Koalicija CDU/CSU-a i SPD-a tradicionalno se naziva „velika koalicija”.",
   "merksatz_de": "Eine Ampelkoalition bilden SPD, FDP und Grüne."
  },
  {
@@ -188,7 +188,7 @@
    "živi u Saveznoj Republici Njemačkoj najmanje 3 godine.",
    "je građanin Savezne Republike Njemačke i ima najmanje 21 godinu."
   ],
-  "expl_bks": "Za izbore za Bundestag (savezni parlament) vrijede dva uvjeta: njemačko državljanstvo i najmanje 18 godina (članak 38. Temeljnog zakona). Sam boravak u Njemačkoj nije dovoljan, bez obzira na to koliko dugo netko ovdje živi. Nakon naturalizacije (stjecanja državljanstva) dobiva se i to pravo.",
+  "expl_bks": "Za izbore za Bundestag (savezni parlament) vrijede dva osnovna uvjeta: njemačko državljanstvo i najmanje 18 godina (članak 38. Temeljnog zakona). Sam boravak u Njemačkoj nije dovoljan, bez obzira na to koliko dugo netko ovdje živi. Nakon naturalizacije (stjecanja državljanstva) dobiva se i to pravo.",
   "merksatz_de": "Wählen dürfen deutsche Staatsbürger ab 18 Jahren."
  },
  {
@@ -248,7 +248,7 @@
    "je dobila najviše glasova među radnicima.",
    "je za svog kandidata za kancelara dobila najviše prvih glasova."
   ],
-  "expl_bks": "Izbore pobjeđuje stranka koja dobije najviše glasova. Svaki glas vrijedi jednako, bez obzira na to glasa li muškarac ili žena, radnik ili poslodavac. Na izborima za Bundestag za raspodjelu mjesta presudan je drugi glas. Kancelara ne bira narod izravno, nego ga bira Bundestag.",
+  "expl_bks": "Izbore pobjeđuje stranka koja dobije najviše glasova. Svaki glas vrijedi jednako, bez obzira na to glasa li muškarac ili žena, radnik ili poslodavac. Na izborima za Bundestag za raspodjelu mjesta presudan je drugi glas. Kancelara ne bira narod izravno, nego Bundestag, pa najjača stranka ne vlada automatski: vladu čini većina u parlamentu, često koalicija.",
   "merksatz_de": "Die Partei mit den meisten Stimmen gewinnt die Wahl."
  },
  {
@@ -284,7 +284,7 @@
    "aktivna predizborna borba (Wahlkampf).",
    "aktivno biračko pravo (Wahlrecht)."
   ],
-  "expl_bks": "Pravo da glasate zove se aktivno biračko pravo (aktives Wahlrecht). Na izborima za Bundestag (savezni parlament) imaju ga svi njemački državljani s najmanje 18 godina. Pravo da budete izabrani zove se pasivno biračko pravo. Kampanja i predizborna borba odnose se na stranke, a ne na birače.",
+  "expl_bks": "Pravo da glasate zove se aktivno biračko pravo (aktives Wahlrecht). Na izborima za Bundestag (savezni parlament) imaju ga u pravilu njemački državljani s najmanje 18 godina. Pravo da budete izabrani zove se pasivno biračko pravo. Kampanja i predizborna borba odnose se na stranke, a ne na birače.",
   "merksatz_de": "Wer wählen darf, hat das aktive Wahlrecht."
  },
  {
@@ -296,8 +296,8 @@
    "5 %",
    "6 %"
   ],
-  "expl_bks": "Za Bundestag (savezni parlament) vrijedi izborni prag od 5 %: stranka mora dobiti najmanje 5 % svih drugih glasova u Njemačkoj da bi dobila mjesta prema svom udjelu. Tako parlament ne postaje rascjepkan na previše malih stranaka. Prag ne vrijedi za stranke nacionalnih manjina, npr. danske manjine.",
-  "merksatz_de": "Parteien brauchen mindestens fünf Prozent der Zweitstimmen."
+  "expl_bks": "Za Bundestag (savezni parlament) vrijedi izborni prag od 5 %: stranka mora dobiti najmanje 5 % svih drugih glasova u Njemačkoj da bi dobila mjesta prema svom udjelu. Tako parlament ne postaje rascjepkan na previše malih stranaka. Prag ne vrijedi za stranke nacionalnih manjina (npr. danske manjine) ni za stranku koja pobijedi u najmanje tri izborna okruga.",
+  "merksatz_de": "Parteien brauchen in der Regel mindestens fünf Prozent der Zweitstimmen."
  },
  {
   "id": "G-118",
@@ -368,7 +368,7 @@
    "minimalni udio glasova birača da bi se ušlo u parlament",
    "provjera prisutnosti u Bundesratu kod glasanja"
   ],
-  "expl_bks": "Izborni prag od 5 % odnosi se na izbore, a ne na glasanja unutar parlamenta. Stranka mora dobiti najmanje 5 % drugih glasova da bi ušla u Bundestag (savezni parlament) s mjestima prema svom udjelu. Slično pravilo vrijedi i na izborima za pokrajinske parlamente (Landtag).",
+  "expl_bks": "Izborni prag od 5 % odnosi se na izbore, a ne na glasanja unutar parlamenta. Stranka u pravilu mora dobiti najmanje 5 % drugih glasova da bi ušla u Bundestag (savezni parlament) s mjestima prema svom udjelu. Slično pravilo vrijedi i na izborima za pokrajinske parlamente (Landtag).",
   "merksatz_de": "Die 5%-Hürde ist ein Mindestanteil an Wählerstimmen."
  },
  {
@@ -452,7 +452,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati. U katalogu je to listić broj 1.",
+  "expl_bks": "Među ponuđenim listićima potpuno je valjan samo listić broj 1: ima točno jedan križić za prvi glas (kandidat) i točno jedan za drugi glas (stranka). Na listiću 2 drugi glas ima dva križića, pa taj glas ne vrijedi; na listićima 3 i 4 previše je križića kod prvog glasa. Birač smije dati i samo jedan glas – tada ne vrijedi samo neiskorišteni glas (§ 39 BWahlG). U katalogu je to listić broj 1.",
   "merksatz_de": "Pro Spalte darf man nur ein Kreuz machen."
  },
  {
@@ -524,7 +524,7 @@
    "problema sa susjedima.",
    "poteškoća nakon prometne nesreće."
   ],
-  "expl_bks": "Radni sud (Arbeitsgericht) odlučuje o sporovima između zaposlenika i poslodavca, na primjer o otkazu, neisplaćenoj plaći ili svjedodžbi o radu. Tužba protiv otkaza mora se podnijeti u roku od tri tjedna. Za sporove oko režija ili sa susjedima obično je nadležan općinski sud (Amtsgericht).",
+  "expl_bks": "Radni sud (Arbeitsgericht) odlučuje o sporovima između zaposlenika i poslodavca, na primjer o otkazu, neisplaćenoj plaći ili svjedodžbi o radu. Tužba protiv otkaza mora se podnijeti u roku od tri tjedna od primitka pisanog otkaza. Za sporove oko režija ili sa susjedima obično je nadležan općinski sud (Amtsgericht).",
   "merksatz_de": "Bei einer ungerechten Kündigung hilft das Arbeitsgericht."
  },
  {

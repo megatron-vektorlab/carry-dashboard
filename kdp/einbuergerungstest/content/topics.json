@@ -1,0 +1,1487 @@
+{
+ "G-001": [
+  "grundrechte"
+ ],
+ "G-002": [
+  "familie_bildung",
+  "religion_kultur"
+ ],
+ "G-003": [
+  "grundrechte"
+ ],
+ "G-004": [
+  "grundrechte"
+ ],
+ "G-005": [
+  "wahlen"
+ ],
+ "G-006": [
+  "grundrechte"
+ ],
+ "G-007": [
+  "grundrechte"
+ ],
+ "G-008": [
+  "grundrechte"
+ ],
+ "G-009": [
+  "grundrechte"
+ ],
+ "G-010": [
+  "grundrechte",
+  "recht_alltag"
+ ],
+ "G-011": [
+  "grundrechte"
+ ],
+ "G-012": [
+  "grundrechte"
+ ],
+ "G-013": [
+  "verfassungsorgane"
+ ],
+ "G-014": [
+  "grundrechte"
+ ],
+ "G-015": [
+  "grundrechte"
+ ],
+ "G-016": [
+  "grundrechte"
+ ],
+ "G-017": [
+  "grundrechte"
+ ],
+ "G-018": [
+  "grundrechte"
+ ],
+ "G-019": [
+  "grundrechte"
+ ],
+ "G-020": [
+  "grundrechte",
+  "wahlen"
+ ],
+ "G-021": [
+  "symbole"
+ ],
+ "G-022": [
+  "grundrechte"
+ ],
+ "G-023": [
+  "arbeit_soziales"
+ ],
+ "G-024": [
+  "foederalismus"
+ ],
+ "G-025": [
+  "foederalismus"
+ ],
+ "G-026": [
+  "grundrechte",
+  "foederalismus"
+ ],
+ "G-027": [
+  "foederalismus",
+  "grundrechte"
+ ],
+ "G-028": [
+  "wahlen"
+ ],
+ "G-029": [
+  "symbole"
+ ],
+ "G-030": [
+  "grundrechte"
+ ],
+ "G-031": [
+  "wahlen",
+  "verfassungsorgane"
+ ],
+ "G-032": [
+  "verfassungsorgane"
+ ],
+ "G-033": [
+  "grundrechte",
+  "religion_kultur"
+ ],
+ "G-034": [
+  "grundrechte"
+ ],
+ "G-035": [
+  "arbeit_soziales"
+ ],
+ "G-036": [
+  "arbeit_soziales"
+ ],
+ "G-037": [
+  "foederalismus"
+ ],
+ "G-038": [
+  "foederalismus",
+  "grundrechte"
+ ],
+ "G-039": [
+  "foederalismus"
+ ],
+ "G-040": [
+  "symbole"
+ ],
+ "G-041": [
+  "wahlen",
+  "grundrechte"
+ ],
+ "G-042": [
+  "verfassungsorgane"
+ ],
+ "G-043": [
+  "grundrechte",
+  "wahlen"
+ ],
+ "G-044": [
+  "verfassungsorgane",
+  "wahlen"
+ ],
+ "G-045": [
+  "arbeit_soziales"
+ ],
+ "G-046": [
+  "arbeit_soziales"
+ ],
+ "G-047": [
+  "arbeit_soziales"
+ ],
+ "G-048": [
+  "verfassungsorgane"
+ ],
+ "G-049": [
+  "foederalismus",
+  "familie_bildung"
+ ],
+ "G-050": [
+  "arbeit_soziales"
+ ],
+ "G-051": [
+  "grundrechte"
+ ],
+ "G-052": [
+  "grundrechte"
+ ],
+ "G-053": [
+  "grundrechte"
+ ],
+ "G-054": [
+  "verfassungsorgane"
+ ],
+ "G-055": [
+  "verfassungsorgane"
+ ],
+ "G-056": [
+  "foederalismus",
+  "recht_alltag"
+ ],
+ "G-057": [
+  "verfassungsorgane"
+ ],
+ "G-058": [
+  "verfassungsorgane"
+ ],
+ "G-059": [
+  "religion_kultur"
+ ],
+ "G-060": [
+  "verfassungsorgane"
+ ],
+ "G-061": [
+  "grundrechte"
+ ],
+ "G-062": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "G-063": [
+  "verfassungsorgane"
+ ],
+ "G-064": [
+  "foederalismus"
+ ],
+ "G-065": [
+  "verfassungsorgane"
+ ],
+ "G-066": [
+  "religion_kultur"
+ ],
+ "G-067": [
+  "foederalismus",
+  "familie_bildung"
+ ],
+ "G-068": [
+  "familie_bildung",
+  "grundrechte"
+ ],
+ "G-069": [
+  "foederalismus"
+ ],
+ "G-070": [
+  "verfassungsorgane"
+ ],
+ "G-071": [
+  "verfassungsorgane"
+ ],
+ "G-072": [
+  "verfassungsorgane"
+ ],
+ "G-073": [
+  "verfassungsorgane",
+  "wahlen"
+ ],
+ "G-074": [
+  "verfassungsorgane"
+ ],
+ "G-075": [
+  "verfassungsorgane"
+ ],
+ "G-076": [
+  "wahlen"
+ ],
+ "G-077": [
+  "verfassungsorgane"
+ ],
+ "G-078": [
+  "wahlen"
+ ],
+ "G-079": [
+  "wahlen"
+ ],
+ "G-080": [
+  "verfassungsorgane"
+ ],
+ "G-081": [
+  "verfassungsorgane"
+ ],
+ "G-082": [
+  "verfassungsorgane"
+ ],
+ "G-083": [
+  "verfassungsorgane"
+ ],
+ "G-084": [
+  "verfassungsorgane"
+ ],
+ "G-085": [
+  "verfassungsorgane",
+  "foederalismus"
+ ],
+ "G-086": [
+  "verfassungsorgane"
+ ],
+ "G-087": [
+  "verfassungsorgane"
+ ],
+ "G-088": [
+  "verfassungsorgane"
+ ],
+ "G-089": [
+  "verfassungsorgane"
+ ],
+ "G-090": [
+  "verfassungsorgane",
+  "foederalismus"
+ ],
+ "G-091": [
+  "foederalismus",
+  "verfassungsorgane"
+ ],
+ "G-092": [
+  "wahlen"
+ ],
+ "G-093": [
+  "wahlen"
+ ],
+ "G-094": [
+  "wahlen"
+ ],
+ "G-095": [
+  "familie_bildung"
+ ],
+ "G-096": [
+  "religion_kultur",
+  "recht_alltag"
+ ],
+ "G-097": [
+  "arbeit_soziales"
+ ],
+ "G-098": [
+  "verfassungsorgane"
+ ],
+ "G-099": [
+  "arbeit_soziales"
+ ],
+ "G-100": [
+  "arbeit_soziales"
+ ],
+ "G-101": [
+  "arbeit_soziales"
+ ],
+ "G-102": [
+  "symbole"
+ ],
+ "G-103": [
+  "wahlen",
+  "verfassungsorgane"
+ ],
+ "G-104": [
+  "arbeit_soziales",
+  "familie_bildung"
+ ],
+ "G-105": [
+  "wahlen"
+ ],
+ "G-106": [
+  "wahlen"
+ ],
+ "G-107": [
+  "wahlen"
+ ],
+ "G-108": [
+  "wahlen"
+ ],
+ "G-109": [
+  "wahlen"
+ ],
+ "G-110": [
+  "wahlen"
+ ],
+ "G-111": [
+  "religion_kultur",
+  "recht_alltag"
+ ],
+ "G-112": [
+  "wahlen"
+ ],
+ "G-113": [
+  "wahlen"
+ ],
+ "G-114": [
+  "wahlen"
+ ],
+ "G-115": [
+  "wahlen"
+ ],
+ "G-116": [
+  "wahlen"
+ ],
+ "G-117": [
+  "wahlen"
+ ],
+ "G-118": [
+  "religion_kultur"
+ ],
+ "G-119": [
+  "wahlen"
+ ],
+ "G-120": [
+  "wahlen"
+ ],
+ "G-121": [
+  "wahlen"
+ ],
+ "G-122": [
+  "wahlen"
+ ],
+ "G-123": [
+  "wahlen"
+ ],
+ "G-124": [
+  "wahlen"
+ ],
+ "G-125": [
+  "wahlen"
+ ],
+ "G-126": [
+  "wahlen"
+ ],
+ "G-127": [
+  "wahlen"
+ ],
+ "G-128": [
+  "wahlen",
+  "verfassungsorgane"
+ ],
+ "G-129": [
+  "wahlen",
+  "verfassungsorgane"
+ ],
+ "G-130": [
+  "wahlen"
+ ],
+ "G-131": [
+  "foederalismus"
+ ],
+ "G-132": [
+  "arbeit_soziales"
+ ],
+ "G-133": [
+  "wahlen"
+ ],
+ "G-134": [
+  "grundrechte",
+  "foederalismus"
+ ],
+ "G-135": [
+  "arbeit_soziales"
+ ],
+ "G-136": [
+  "recht_alltag",
+  "arbeit_soziales"
+ ],
+ "G-137": [
+  "recht_alltag",
+  "arbeit_soziales"
+ ],
+ "G-138": [
+  "recht_alltag",
+  "arbeit_soziales"
+ ],
+ "G-139": [
+  "recht_alltag"
+ ],
+ "G-140": [
+  "recht_alltag"
+ ],
+ "G-141": [
+  "recht_alltag"
+ ],
+ "G-142": [
+  "recht_alltag"
+ ],
+ "G-143": [
+  "verfassungsorgane",
+  "recht_alltag"
+ ],
+ "G-144": [
+  "verfassungsorgane",
+  "recht_alltag"
+ ],
+ "G-145": [
+  "verfassungsorgane",
+  "recht_alltag"
+ ],
+ "G-146": [
+  "recht_alltag"
+ ],
+ "G-147": [
+  "recht_alltag"
+ ],
+ "G-148": [
+  "recht_alltag"
+ ],
+ "G-149": [
+  "religion_kultur"
+ ],
+ "G-150": [
+  "recht_alltag"
+ ],
+ "G-151": [
+  "geschichte_nachkrieg"
+ ],
+ "G-152": [
+  "geschichte_ns"
+ ],
+ "G-153": [
+  "geschichte_ns"
+ ],
+ "G-154": [
+  "geschichte_ns"
+ ],
+ "G-155": [
+  "geschichte_ns"
+ ],
+ "G-156": [
+  "geschichte_ns"
+ ],
+ "G-157": [
+  "geschichte_ns"
+ ],
+ "G-158": [
+  "geschichte_ns"
+ ],
+ "G-159": [
+  "geschichte_ns"
+ ],
+ "G-160": [
+  "geschichte_ns"
+ ],
+ "G-161": [
+  "geschichte_ns"
+ ],
+ "G-162": [
+  "geschichte_ns"
+ ],
+ "G-163": [
+  "geschichte_ns"
+ ],
+ "G-164": [
+  "geschichte_ns"
+ ],
+ "G-165": [
+  "geschichte_nachkrieg"
+ ],
+ "G-166": [
+  "geschichte_nachkrieg"
+ ],
+ "G-167": [
+  "geschichte_nachkrieg"
+ ],
+ "G-168": [
+  "geschichte_nachkrieg"
+ ],
+ "G-169": [
+  "geschichte_nachkrieg"
+ ],
+ "G-170": [
+  "geschichte_ns"
+ ],
+ "G-171": [
+  "arbeit_soziales"
+ ],
+ "G-172": [
+  "geschichte_nachkrieg"
+ ],
+ "G-173": [
+  "europa"
+ ],
+ "G-174": [
+  "geschichte_nachkrieg"
+ ],
+ "G-175": [
+  "geschichte_nachkrieg"
+ ],
+ "G-176": [
+  "geschichte_nachkrieg"
+ ],
+ "G-177": [
+  "geschichte_nachkrieg"
+ ],
+ "G-178": [
+  "geschichte_nachkrieg"
+ ],
+ "G-179": [
+  "geschichte_ns"
+ ],
+ "G-180": [
+  "geschichte_nachkrieg"
+ ],
+ "G-181": [
+  "geschichte_nachkrieg",
+  "geschichte_ns"
+ ],
+ "G-182": [
+  "religion_kultur"
+ ],
+ "G-183": [
+  "geschichte_nachkrieg",
+  "arbeit_soziales"
+ ],
+ "G-184": [
+  "europa",
+  "religion_kultur"
+ ],
+ "G-185": [
+  "geschichte_nachkrieg"
+ ],
+ "G-186": [
+  "geschichte_nachkrieg"
+ ],
+ "G-187": [
+  "geschichte_nachkrieg"
+ ],
+ "G-188": [
+  "geschichte_nachkrieg"
+ ],
+ "G-189": [
+  "geschichte_nachkrieg"
+ ],
+ "G-190": [
+  "geschichte_nachkrieg"
+ ],
+ "G-191": [
+  "geschichte_nachkrieg"
+ ],
+ "G-192": [
+  "geschichte_nachkrieg",
+  "foederalismus"
+ ],
+ "G-193": [
+  "geschichte_nachkrieg"
+ ],
+ "G-194": [
+  "symbole",
+  "geschichte_nachkrieg"
+ ],
+ "G-195": [
+  "geschichte_nachkrieg",
+  "foederalismus"
+ ],
+ "G-196": [
+  "geschichte_nachkrieg"
+ ],
+ "G-197": [
+  "geschichte_nachkrieg",
+  "foederalismus"
+ ],
+ "G-198": [
+  "geschichte_nachkrieg",
+  "foederalismus"
+ ],
+ "G-199": [
+  "geschichte_nachkrieg"
+ ],
+ "G-200": [
+  "geschichte_nachkrieg",
+  "foederalismus"
+ ],
+ "G-201": [
+  "geschichte_nachkrieg",
+  "foederalismus"
+ ],
+ "G-202": [
+  "geschichte_nachkrieg"
+ ],
+ "G-203": [
+  "geschichte_nachkrieg"
+ ],
+ "G-204": [
+  "geschichte_nachkrieg"
+ ],
+ "G-205": [
+  "geschichte_nachkrieg",
+  "europa"
+ ],
+ "G-206": [
+  "geschichte_ns"
+ ],
+ "G-207": [
+  "geschichte_nachkrieg"
+ ],
+ "G-208": [
+  "geschichte_nachkrieg"
+ ],
+ "G-209": [
+  "geschichte_nachkrieg"
+ ],
+ "G-210": [
+  "geschichte_nachkrieg"
+ ],
+ "G-211": [
+  "geschichte_nachkrieg",
+  "europa"
+ ],
+ "G-212": [
+  "symbole"
+ ],
+ "G-213": [
+  "symbole"
+ ],
+ "G-214": [
+  "symbole"
+ ],
+ "G-215": [
+  "geschichte_nachkrieg"
+ ],
+ "G-216": [
+  "symbole"
+ ],
+ "G-217": [
+  "geschichte_nachkrieg"
+ ],
+ "G-218": [
+  "geschichte_nachkrieg",
+  "foederalismus"
+ ],
+ "G-219": [
+  "geschichte_nachkrieg"
+ ],
+ "G-220": [
+  "geschichte_ns"
+ ],
+ "G-221": [
+  "europa"
+ ],
+ "G-222": [
+  "europa"
+ ],
+ "G-223": [
+  "europa"
+ ],
+ "G-224": [
+  "europa"
+ ],
+ "G-225": [
+  "europa"
+ ],
+ "G-226": [
+  "europa"
+ ],
+ "G-227": [
+  "europa"
+ ],
+ "G-228": [
+  "geschichte_nachkrieg"
+ ],
+ "G-229": [
+  "europa"
+ ],
+ "G-230": [
+  "europa"
+ ],
+ "G-231": [
+  "europa"
+ ],
+ "G-232": [
+  "europa",
+  "wahlen"
+ ],
+ "G-233": [
+  "europa"
+ ],
+ "G-234": [
+  "europa"
+ ],
+ "G-235": [
+  "europa"
+ ],
+ "G-236": [
+  "europa"
+ ],
+ "G-237": [
+  "europa"
+ ],
+ "G-238": [
+  "europa"
+ ],
+ "G-239": [
+  "europa"
+ ],
+ "G-240": [
+  "europa"
+ ],
+ "G-241": [
+  "familie_bildung",
+  "arbeit_soziales"
+ ],
+ "G-242": [
+  "familie_bildung"
+ ],
+ "G-243": [
+  "grundrechte",
+  "recht_alltag"
+ ],
+ "G-244": [
+  "familie_bildung"
+ ],
+ "G-245": [
+  "familie_bildung",
+  "recht_alltag"
+ ],
+ "G-246": [
+  "familie_bildung",
+  "recht_alltag"
+ ],
+ "G-247": [
+  "familie_bildung",
+  "arbeit_soziales"
+ ],
+ "G-248": [
+  "familie_bildung"
+ ],
+ "G-249": [
+  "familie_bildung"
+ ],
+ "G-250": [
+  "familie_bildung",
+  "arbeit_soziales"
+ ],
+ "G-251": [
+  "familie_bildung",
+  "recht_alltag"
+ ],
+ "G-252": [
+  "familie_bildung"
+ ],
+ "G-253": [
+  "recht_alltag"
+ ],
+ "G-254": [
+  "familie_bildung"
+ ],
+ "G-255": [
+  "familie_bildung"
+ ],
+ "G-256": [
+  "recht_alltag",
+  "arbeit_soziales"
+ ],
+ "G-257": [
+  "familie_bildung"
+ ],
+ "G-258": [
+  "familie_bildung"
+ ],
+ "G-259": [
+  "arbeit_soziales",
+  "familie_bildung"
+ ],
+ "G-260": [
+  "familie_bildung"
+ ],
+ "G-261": [
+  "familie_bildung"
+ ],
+ "G-262": [
+  "grundrechte",
+  "familie_bildung"
+ ],
+ "G-263": [
+  "recht_alltag"
+ ],
+ "G-264": [
+  "religion_kultur"
+ ],
+ "G-265": [
+  "familie_bildung",
+  "recht_alltag"
+ ],
+ "G-266": [
+  "recht_alltag"
+ ],
+ "G-267": [
+  "familie_bildung"
+ ],
+ "G-268": [
+  "recht_alltag"
+ ],
+ "G-269": [
+  "familie_bildung"
+ ],
+ "G-270": [
+  "familie_bildung"
+ ],
+ "G-271": [
+  "religion_kultur"
+ ],
+ "G-272": [
+  "familie_bildung"
+ ],
+ "G-273": [
+  "familie_bildung"
+ ],
+ "G-274": [
+  "grundrechte",
+  "recht_alltag"
+ ],
+ "G-275": [
+  "familie_bildung",
+  "recht_alltag"
+ ],
+ "G-276": [
+  "recht_alltag"
+ ],
+ "G-277": [
+  "familie_bildung",
+  "arbeit_soziales"
+ ],
+ "G-278": [
+  "familie_bildung",
+  "arbeit_soziales"
+ ],
+ "G-279": [
+  "recht_alltag"
+ ],
+ "G-280": [
+  "recht_alltag",
+  "arbeit_soziales"
+ ],
+ "G-281": [
+  "grundrechte",
+  "familie_bildung"
+ ],
+ "G-282": [
+  "wahlen"
+ ],
+ "G-283": [
+  "recht_alltag"
+ ],
+ "G-284": [
+  "familie_bildung",
+  "arbeit_soziales"
+ ],
+ "G-285": [
+  "arbeit_soziales"
+ ],
+ "G-286": [
+  "arbeit_soziales"
+ ],
+ "G-287": [
+  "arbeit_soziales",
+  "recht_alltag"
+ ],
+ "G-288": [
+  "religion_kultur",
+  "geschichte_ns"
+ ],
+ "G-289": [
+  "familie_bildung",
+  "arbeit_soziales"
+ ],
+ "G-290": [
+  "recht_alltag"
+ ],
+ "G-291": [
+  "religion_kultur",
+  "arbeit_soziales"
+ ],
+ "G-292": [
+  "religion_kultur",
+  "grundrechte"
+ ],
+ "G-293": [
+  "religion_kultur"
+ ],
+ "G-294": [
+  "religion_kultur"
+ ],
+ "G-295": [
+  "religion_kultur"
+ ],
+ "G-296": [
+  "religion_kultur"
+ ],
+ "G-297": [
+  "geschichte_nachkrieg",
+  "arbeit_soziales"
+ ],
+ "G-298": [
+  "geschichte_nachkrieg"
+ ],
+ "G-299": [
+  "geschichte_nachkrieg",
+  "arbeit_soziales"
+ ],
+ "G-300": [
+  "geschichte_nachkrieg",
+  "arbeit_soziales"
+ ],
+ "BW-01": [
+  "foederalismus"
+ ],
+ "BW-02": [
+  "foederalismus"
+ ],
+ "BW-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "BW-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "BW-05": [
+  "foederalismus"
+ ],
+ "BW-06": [
+  "foederalismus"
+ ],
+ "BW-07": [
+  "foederalismus"
+ ],
+ "BW-08": [
+  "foederalismus"
+ ],
+ "BW-09": [
+  "foederalismus"
+ ],
+ "BW-10": [
+  "foederalismus"
+ ],
+ "BY-01": [
+  "foederalismus"
+ ],
+ "BY-02": [
+  "foederalismus"
+ ],
+ "BY-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "BY-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "BY-05": [
+  "foederalismus"
+ ],
+ "BY-06": [
+  "foederalismus"
+ ],
+ "BY-07": [
+  "foederalismus"
+ ],
+ "BY-08": [
+  "foederalismus"
+ ],
+ "BY-09": [
+  "foederalismus"
+ ],
+ "BY-10": [
+  "foederalismus"
+ ],
+ "BE-01": [
+  "foederalismus"
+ ],
+ "BE-02": [
+  "foederalismus"
+ ],
+ "BE-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "BE-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "BE-05": [
+  "foederalismus"
+ ],
+ "BE-06": [
+  "foederalismus"
+ ],
+ "BE-07": [
+  "foederalismus"
+ ],
+ "BE-08": [
+  "foederalismus"
+ ],
+ "BE-09": [
+  "foederalismus"
+ ],
+ "BE-10": [
+  "foederalismus"
+ ],
+ "BB-01": [
+  "foederalismus"
+ ],
+ "BB-02": [
+  "foederalismus"
+ ],
+ "BB-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "BB-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "BB-05": [
+  "foederalismus"
+ ],
+ "BB-06": [
+  "foederalismus"
+ ],
+ "BB-07": [
+  "foederalismus"
+ ],
+ "BB-08": [
+  "foederalismus"
+ ],
+ "BB-09": [
+  "foederalismus"
+ ],
+ "BB-10": [
+  "foederalismus"
+ ],
+ "HB-01": [
+  "foederalismus"
+ ],
+ "HB-02": [
+  "foederalismus"
+ ],
+ "HB-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "HB-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "HB-05": [
+  "foederalismus"
+ ],
+ "HB-06": [
+  "foederalismus"
+ ],
+ "HB-07": [
+  "foederalismus"
+ ],
+ "HB-08": [
+  "foederalismus"
+ ],
+ "HB-09": [
+  "foederalismus"
+ ],
+ "HB-10": [
+  "foederalismus"
+ ],
+ "HH-01": [
+  "foederalismus"
+ ],
+ "HH-02": [
+  "foederalismus"
+ ],
+ "HH-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "HH-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "HH-05": [
+  "foederalismus"
+ ],
+ "HH-06": [
+  "foederalismus"
+ ],
+ "HH-07": [
+  "foederalismus"
+ ],
+ "HH-08": [
+  "foederalismus"
+ ],
+ "HH-09": [
+  "foederalismus"
+ ],
+ "HH-10": [
+  "foederalismus"
+ ],
+ "HE-01": [
+  "foederalismus"
+ ],
+ "HE-02": [
+  "foederalismus"
+ ],
+ "HE-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "HE-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "HE-05": [
+  "foederalismus"
+ ],
+ "HE-06": [
+  "foederalismus"
+ ],
+ "HE-07": [
+  "foederalismus"
+ ],
+ "HE-08": [
+  "foederalismus"
+ ],
+ "HE-09": [
+  "foederalismus"
+ ],
+ "HE-10": [
+  "foederalismus"
+ ],
+ "MV-01": [
+  "foederalismus"
+ ],
+ "MV-02": [
+  "foederalismus"
+ ],
+ "MV-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "MV-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "MV-05": [
+  "foederalismus"
+ ],
+ "MV-06": [
+  "foederalismus"
+ ],
+ "MV-07": [
+  "foederalismus"
+ ],
+ "MV-08": [
+  "foederalismus"
+ ],
+ "MV-09": [
+  "foederalismus"
+ ],
+ "MV-10": [
+  "foederalismus"
+ ],
+ "NI-01": [
+  "foederalismus"
+ ],
+ "NI-02": [
+  "foederalismus"
+ ],
+ "NI-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "NI-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "NI-05": [
+  "foederalismus"
+ ],
+ "NI-06": [
+  "foederalismus"
+ ],
+ "NI-07": [
+  "foederalismus"
+ ],
+ "NI-08": [
+  "foederalismus"
+ ],
+ "NI-09": [
+  "foederalismus"
+ ],
+ "NI-10": [
+  "foederalismus"
+ ],
+ "NW-01": [
+  "foederalismus"
+ ],
+ "NW-02": [
+  "foederalismus"
+ ],
+ "NW-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "NW-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "NW-05": [
+  "foederalismus"
+ ],
+ "NW-06": [
+  "foederalismus"
+ ],
+ "NW-07": [
+  "foederalismus"
+ ],
+ "NW-08": [
+  "foederalismus"
+ ],
+ "NW-09": [
+  "foederalismus"
+ ],
+ "NW-10": [
+  "foederalismus"
+ ],
+ "RP-01": [
+  "foederalismus"
+ ],
+ "RP-02": [
+  "foederalismus"
+ ],
+ "RP-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "RP-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "RP-05": [
+  "foederalismus"
+ ],
+ "RP-06": [
+  "foederalismus"
+ ],
+ "RP-07": [
+  "foederalismus"
+ ],
+ "RP-08": [
+  "foederalismus"
+ ],
+ "RP-09": [
+  "foederalismus"
+ ],
+ "RP-10": [
+  "foederalismus"
+ ],
+ "SL-01": [
+  "foederalismus"
+ ],
+ "SL-02": [
+  "foederalismus"
+ ],
+ "SL-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "SL-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "SL-05": [
+  "foederalismus"
+ ],
+ "SL-06": [
+  "foederalismus"
+ ],
+ "SL-07": [
+  "foederalismus"
+ ],
+ "SL-08": [
+  "foederalismus"
+ ],
+ "SL-09": [
+  "foederalismus"
+ ],
+ "SL-10": [
+  "foederalismus"
+ ],
+ "SN-01": [
+  "foederalismus"
+ ],
+ "SN-02": [
+  "foederalismus"
+ ],
+ "SN-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "SN-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "SN-05": [
+  "foederalismus"
+ ],
+ "SN-06": [
+  "foederalismus"
+ ],
+ "SN-07": [
+  "foederalismus"
+ ],
+ "SN-08": [
+  "foederalismus"
+ ],
+ "SN-09": [
+  "foederalismus"
+ ],
+ "SN-10": [
+  "foederalismus"
+ ],
+ "ST-01": [
+  "foederalismus"
+ ],
+ "ST-02": [
+  "foederalismus"
+ ],
+ "ST-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "ST-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "ST-05": [
+  "foederalismus"
+ ],
+ "ST-06": [
+  "foederalismus"
+ ],
+ "ST-07": [
+  "foederalismus"
+ ],
+ "ST-08": [
+  "foederalismus"
+ ],
+ "ST-09": [
+  "foederalismus"
+ ],
+ "ST-10": [
+  "foederalismus"
+ ],
+ "SH-01": [
+  "foederalismus"
+ ],
+ "SH-02": [
+  "foederalismus"
+ ],
+ "SH-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "SH-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "SH-05": [
+  "foederalismus"
+ ],
+ "SH-06": [
+  "foederalismus"
+ ],
+ "SH-07": [
+  "foederalismus"
+ ],
+ "SH-08": [
+  "foederalismus"
+ ],
+ "SH-09": [
+  "foederalismus"
+ ],
+ "SH-10": [
+  "foederalismus"
+ ],
+ "TH-01": [
+  "foederalismus"
+ ],
+ "TH-02": [
+  "foederalismus"
+ ],
+ "TH-03": [
+  "foederalismus",
+  "wahlen"
+ ],
+ "TH-04": [
+  "wahlen",
+  "foederalismus"
+ ],
+ "TH-05": [
+  "foederalismus"
+ ],
+ "TH-06": [
+  "foederalismus"
+ ],
+ "TH-07": [
+  "foederalismus"
+ ],
+ "TH-08": [
+  "foederalismus"
+ ],
+ "TH-09": [
+  "foederalismus"
+ ],
+ "TH-10": [
+  "foederalismus"
+ ]
+}

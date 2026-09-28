@@ -1,0 +1,935 @@
+{
+ "source": "BAMF Gesamtfragenkatalog, images as published in source B (see data/sources.json)",
+ "legal_note": "Drawings of official emblems, maps and specimen ballots from the BAMF catalogue (amtliches Werk, § 5 Abs. 2 UrhG). Coats of arms and flags are not protected by copyright, but their use is regulated (§ 124 OWiG, state laws): they are shown only as the subject of the exam questions, in a book marked as unofficial. Third-party photos (© …) are excluded.",
+ "included": {
+  "G-021": [
+   {
+    "file": "G-021-1.png",
+    "source": "images/general-021.png",
+    "sha256": "684fb8036a6f0222a70c12413205713084ccdd628be658b667f7b1bea3dc4593",
+    "px": [
+     375,
+     488
+    ]
+   },
+   {
+    "file": "G-021-2.png",
+    "source": "images/general-021-2.png",
+    "sha256": "23e80abd703404a9dfe17edb88ddc51eb0380b54050de8d0513787ac238c6009",
+    "px": [
+     375,
+     456
+    ]
+   },
+   {
+    "file": "G-021-3.png",
+    "source": "images/general-021-3.png",
+    "sha256": "23927fc29298f038bd603f7889be1e7cf6115ba77c36a0deb3e5a92312a188f0",
+    "px": [
+     416,
+     416
+    ]
+   },
+   {
+    "file": "G-021-4.png",
+    "source": "images/general-021-4.png",
+    "sha256": "3a5f338a9fb33257b2a1851bb6506e82dafe94860f12a5111809dcca6ee4df74",
+    "px": [
+     481,
+     489
+    ]
+   }
+  ],
+  "G-130": [
+   {
+    "file": "G-130-1.png",
+    "source": "images/general-130.png",
+    "sha256": "970f2ce57a2434482ea6b9ee923e98cfd1af73f9723aab7777fa3e48845a0c62",
+    "px": [
+     2342,
+     2309
+    ]
+   }
+  ],
+  "G-176": [
+   {
+    "file": "G-176-1.png",
+    "source": "images/general-176.png",
+    "sha256": "3d912762b101c9d7ccf723e768b4f5ad84448f10a0190a551b21e128a0177ae4",
+    "px": [
+     531,
+     711
+    ]
+   }
+  ],
+  "G-209": [
+   {
+    "file": "G-209-1.png",
+    "source": "images/general-209.png",
+    "sha256": "684fb8036a6f0222a70c12413205713084ccdd628be658b667f7b1bea3dc4593",
+    "px": [
+     375,
+     488
+    ]
+   },
+   {
+    "file": "G-209-2.png",
+    "source": "images/general-209-2.png",
+    "sha256": "23e80abd703404a9dfe17edb88ddc51eb0380b54050de8d0513787ac238c6009",
+    "px": [
+     375,
+     456
+    ]
+   },
+   {
+    "file": "G-209-3.png",
+    "source": "images/general-209-3.png",
+    "sha256": "23927fc29298f038bd603f7889be1e7cf6115ba77c36a0deb3e5a92312a188f0",
+    "px": [
+     416,
+     416
+    ]
+   },
+   {
+    "file": "G-209-4.png",
+    "source": "images/general-209-4.png",
+    "sha256": "3a5f338a9fb33257b2a1851bb6506e82dafe94860f12a5111809dcca6ee4df74",
+    "px": [
+     481,
+     489
+    ]
+   }
+  ],
+  "G-226": [
+   {
+    "file": "G-226-1.png",
+    "source": "images/general-226.png",
+    "sha256": "d314bc61047fc10c4d8ef399b5e9913368164653422fd492741c36233701289b",
+    "px": [
+     420,
+     221
+    ]
+   },
+   {
+    "file": "G-226-2.png",
+    "source": "images/general-226-2.jpeg",
+    "sha256": "b9034b76ccba3aa1b8c90bc230165448da87c3c5029c7c44cce6f9d0e68bd39f",
+    "px": [
+     421,
+     280
+    ]
+   },
+   {
+    "file": "G-226-3.png",
+    "source": "images/general-226-3.jpeg",
+    "sha256": "c43c71bb7bc342904dc34bffe443c1a2d13333cae8eb53c3be851349108e7577",
+    "px": [
+     421,
+     280
+    ]
+   },
+   {
+    "file": "G-226-4.png",
+    "source": "images/general-226-4.jpeg",
+    "sha256": "38f37e6069af677316ebc146b1c9ba0e87e47b862402dfe8c4a6d371a5b381fc",
+    "px": [
+     400,
+     273
+    ]
+   }
+  ],
+  "BW-01": [
+   {
+    "file": "BW-01-1.png",
+    "source": "images/BW-01.png",
+    "sha256": "97f9b7bc5947f0f8a0557fab388956cb71cd818f55e30d2a3f654f007ffc942b",
+    "px": [
+     376,
+     525
+    ]
+   },
+   {
+    "file": "BW-01-2.png",
+    "source": "images/BW-01-2.png",
+    "sha256": "b38fd5f497ae2dc5e04b085a3c1e778e0b50d88c689a38ce0c82084496797b4a",
+    "px": [
+     425,
+     495
+    ]
+   },
+   {
+    "file": "BW-01-3.png",
+    "source": "images/BW-01-3.png",
+    "sha256": "5856a7b4efbc2dd8af172f48abb93a47c7dc345be2e94908cc25f3856e7cd099",
+    "px": [
+     424,
+     513
+    ]
+   },
+   {
+    "file": "BW-01-4.png",
+    "source": "images/BW-01-4.png",
+    "sha256": "f8fe2503a8dac75866854d356e59adefaba9755aa77b86ccc99a08f499774dd8",
+    "px": [
+     375,
+     525
+    ]
+   }
+  ],
+  "BW-08": [
+   {
+    "file": "BW-08-1.png",
+    "source": "images/BW-08.png",
+    "sha256": "75df8a7a5f5a70bcf0a094227510b4e2c0ddaf3c04f2454e78c77f146483c38c",
+    "px": [
+     794,
+     682
+    ]
+   }
+  ],
+  "BY-01": [
+   {
+    "file": "BY-01-1.png",
+    "source": "images/BY-01.png",
+    "sha256": "97f9b7bc5947f0f8a0557fab388956cb71cd818f55e30d2a3f654f007ffc942b",
+    "px": [
+     376,
+     525
+    ]
+   },
+   {
+    "file": "BY-01-2.png",
+    "source": "images/BY-01-2.png",
+    "sha256": "8585175135ec4e5e105e0b16607405120d344457c714b5981749d559704bffd0",
+    "px": [
+     376,
+     505
+    ]
+   },
+   {
+    "file": "BY-01-3.png",
+    "source": "images/BY-01-3.png",
+    "sha256": "6e6d6ec8e95233bdff076cc8210fe119bb30d862bc4a59aca1851de73002e2b5",
+    "px": [
+     425,
+     513
+    ]
+   },
+   {
+    "file": "BY-01-4.png",
+    "source": "images/BY-01-4.png",
+    "sha256": "f005d58e609040db96fe5130c94906a06f1fafb20c0d0d79013ce500c7b84b9f",
+    "px": [
+     450,
+     487
+    ]
+   }
+  ],
+  "BY-08": [
+   {
+    "file": "BY-08-1.png",
+    "source": "images/BY-08.png",
+    "sha256": "d46d8e727e9b6b84f4078acb61e52a977fa0cb998d5962df4bf7be04d1aea084",
+    "px": [
+     794,
+     672
+    ]
+   }
+  ],
+  "BE-01": [
+   {
+    "file": "BE-01-1.png",
+    "source": "images/BE-01.png",
+    "sha256": "f8fe2503a8dac75866854d356e59adefaba9755aa77b86ccc99a08f499774dd8",
+    "px": [
+     375,
+     525
+    ]
+   },
+   {
+    "file": "BE-01-2.png",
+    "source": "images/BE-01-2.png",
+    "sha256": "2273d790f6405e7adf19e46eb803d4efe341fe07b4407a167a88b7ebbb8bf402",
+    "px": [
+     376,
+     547
+    ]
+   },
+   {
+    "file": "BE-01-3.png",
+    "source": "images/BE-01-3.png",
+    "sha256": "1e08449f71ffdbaad9dba994841551fb181591f9b46c3411b260cd9d88ced8b2",
+    "px": [
+     425,
+     513
+    ]
+   },
+   {
+    "file": "BE-01-4.png",
+    "source": "images/BE-01-4.png",
+    "sha256": "5c9351521f2651514f2588d8d797601a2f949304f6733ae722f67d1fffc425cd",
+    "px": [
+     377,
+     617
+    ]
+   }
+  ],
+  "BE-08": [
+   {
+    "file": "BE-08-1.png",
+    "source": "images/BE-08.png",
+    "sha256": "bc1293bf168f7f017c9babfa9c77a239cf9f0933e08b9b04e5aa58865b4a46a9",
+    "px": [
+     794,
+     667
+    ]
+   }
+  ],
+  "BB-01": [
+   {
+    "file": "BB-01-1.png",
+    "source": "images/BB-01.png",
+    "sha256": "a67e5da8cdf779536af24bdff2d0a97561cd611bb3ba5453e3450d4df4510401",
+    "px": [
+     425,
+     507
+    ]
+   },
+   {
+    "file": "BB-01-2.png",
+    "source": "images/BB-01-2.png",
+    "sha256": "01120581c371c4aae9a23a6f4bb1152590f7ae37e910ac2b85d5318d7c34c0b1",
+    "px": [
+     450,
+     545
+    ]
+   },
+   {
+    "file": "BB-01-3.png",
+    "source": "images/BB-01-3.png",
+    "sha256": "60385c84898b194d3a80622c011041462f80601a672f50628d48663d73abfa52",
+    "px": [
+     401,
+     493
+    ]
+   },
+   {
+    "file": "BB-01-4.png",
+    "source": "images/BB-01-4.png",
+    "sha256": "97f9b7bc5947f0f8a0557fab388956cb71cd818f55e30d2a3f654f007ffc942b",
+    "px": [
+     376,
+     525
+    ]
+   }
+  ],
+  "BB-08": [
+   {
+    "file": "BB-08-1.png",
+    "source": "images/BB-08.png",
+    "sha256": "81bd8fea7a9fd15fbeda17d3565f9995da63b5ea8f660b324ef9bad1589357f2",
+    "px": [
+     794,
+     670
+    ]
+   }
+  ],
+  "HB-01": [
+   {
+    "file": "HB-01-1.png",
+    "source": "images/HB-01.png",
+    "sha256": "0e2ab1ccfa274781d90c228f16ab046d77ba129f1f84e9f0d056a195e1ce2180",
+    "px": [
+     427,
+     489
+    ]
+   },
+   {
+    "file": "HB-01-2.png",
+    "source": "images/HB-01-2.png",
+    "sha256": "97f9b7bc5947f0f8a0557fab388956cb71cd818f55e30d2a3f654f007ffc942b",
+    "px": [
+     376,
+     525
+    ]
+   },
+   {
+    "file": "HB-01-3.png",
+    "source": "images/HB-01-3.png",
+    "sha256": "2273d790f6405e7adf19e46eb803d4efe341fe07b4407a167a88b7ebbb8bf402",
+    "px": [
+     376,
+     547
+    ]
+   },
+   {
+    "file": "HB-01-4.png",
+    "source": "images/HB-01-4.png",
+    "sha256": "8585175135ec4e5e105e0b16607405120d344457c714b5981749d559704bffd0",
+    "px": [
+     376,
+     505
+    ]
+   }
+  ],
+  "HB-08": [
+   {
+    "file": "HB-08-1.png",
+    "source": "images/HB-08.png",
+    "sha256": "6c5ea7796e1a40dd7f5012939f5815fc47c8f92e46aa65cd0e39781e56beae61",
+    "px": [
+     794,
+     663
+    ]
+   }
+  ],
+  "HH-01": [
+   {
+    "file": "HH-01-1.png",
+    "source": "images/HH-01.png",
+    "sha256": "0ec67d39a6dcfec2c723e1b75b9f30ded52386675937e807cb9979301d8c360f",
+    "px": [
+     427,
+     509
+    ]
+   },
+   {
+    "file": "HH-01-2.png",
+    "source": "images/HH-01-2.png",
+    "sha256": "f8fe2503a8dac75866854d356e59adefaba9755aa77b86ccc99a08f499774dd8",
+    "px": [
+     375,
+     525
+    ]
+   },
+   {
+    "file": "HH-01-3.png",
+    "source": "images/HH-01-3.png",
+    "sha256": "8fd73f30f43aa341d8e41a2a385f7c235b6d91f1a09c9a90c303e5e0ce586edf",
+    "px": [
+     467,
+     538
+    ]
+   },
+   {
+    "file": "HH-01-4.png",
+    "source": "images/HH-01-4.png",
+    "sha256": "6e6d6ec8e95233bdff076cc8210fe119bb30d862bc4a59aca1851de73002e2b5",
+    "px": [
+     425,
+     513
+    ]
+   }
+  ],
+  "HH-08": [
+   {
+    "file": "HH-08-1.png",
+    "source": "images/HH-08.png",
+    "sha256": "bc1293bf168f7f017c9babfa9c77a239cf9f0933e08b9b04e5aa58865b4a46a9",
+    "px": [
+     794,
+     667
+    ]
+   }
+  ],
+  "HE-01": [
+   {
+    "file": "HE-01-1.png",
+    "source": "images/HE-01.png",
+    "sha256": "1e08449f71ffdbaad9dba994841551fb181591f9b46c3411b260cd9d88ced8b2",
+    "px": [
+     425,
+     513
+    ]
+   },
+   {
+    "file": "HE-01-2.png",
+    "source": "images/HE-01-2.png",
+    "sha256": "a4c44b5abef46bd8d73899c418863e5aa0ec2defaa4827f343225a54554cd4e0",
+    "px": [
+     375,
+     616
+    ]
+   },
+   {
+    "file": "HE-01-3.png",
+    "source": "images/HE-01-3.png",
+    "sha256": "d363a8760a4d7908a6ea6c9970000b26c84b918187ee8b60493592136775a534",
+    "px": [
+     425,
+     488
+    ]
+   },
+   {
+    "file": "HE-01-4.png",
+    "source": "images/HE-01-4.png",
+    "sha256": "a1546ffc31ca24deeca23e4e68ae8541156d707da47f95c8da7be2623457de9d",
+    "px": [
+     425,
+     477
+    ]
+   }
+  ],
+  "HE-08": [
+   {
+    "file": "HE-08-1.png",
+    "source": "images/HE-08.png",
+    "sha256": "5c93f280b7ee6f9fba6dec2ebc596480588012073963a73c73925564885950e5",
+    "px": [
+     794,
+     665
+    ]
+   }
+  ],
+  "MV-01": [
+   {
+    "file": "MV-01-1.png",
+    "source": "images/MV-01.png",
+    "sha256": "b38fd5f497ae2dc5e04b085a3c1e778e0b50d88c689a38ce0c82084496797b4a",
+    "px": [
+     425,
+     495
+    ]
+   },
+   {
+    "file": "MV-01-2.png",
+    "source": "images/MV-01-2.png",
+    "sha256": "c802ebd0bc0155063783280e42cfa24624cbcd8f5375d1efee4eefc79b061d28",
+    "px": [
+     425,
+     508
+    ]
+   },
+   {
+    "file": "MV-01-3.png",
+    "source": "images/MV-01-3.png",
+    "sha256": "f005d58e609040db96fe5130c94906a06f1fafb20c0d0d79013ce500c7b84b9f",
+    "px": [
+     450,
+     487
+    ]
+   },
+   {
+    "file": "MV-01-4.png",
+    "source": "images/MV-01-4.png",
+    "sha256": "2a52a573d7c6776453136676742b3b301cae6867770881e00ad7108df9d47e7c",
+    "px": [
+     425,
+     508
+    ]
+   }
+  ],
+  "MV-08": [
+   {
+    "file": "MV-08-1.png",
+    "source": "images/MV-08.png",
+    "sha256": "79192b189ca96d213595ddc21d96206079ce89abfbb75585e56a2aa58158f4bc",
+    "px": [
+     794,
+     667
+    ]
+   }
+  ],
+  "NI-01": [
+   {
+    "file": "NI-01-1.png",
+    "source": "images/NI-01.png",
+    "sha256": "8585175135ec4e5e105e0b16607405120d344457c714b5981749d559704bffd0",
+    "px": [
+     376,
+     505
+    ]
+   },
+   {
+    "file": "NI-01-2.png",
+    "source": "images/NI-01-2.png",
+    "sha256": "d363a8760a4d7908a6ea6c9970000b26c84b918187ee8b60493592136775a534",
+    "px": [
+     425,
+     488
+    ]
+   },
+   {
+    "file": "NI-01-3.png",
+    "source": "images/NI-01-3.png",
+    "sha256": "2a52a573d7c6776453136676742b3b301cae6867770881e00ad7108df9d47e7c",
+    "px": [
+     425,
+     508
+    ]
+   },
+   {
+    "file": "NI-01-4.png",
+    "source": "images/NI-01-4.png",
+    "sha256": "ace5b4a40510eb08e7ee2484422fe000f971f42182f230d90e65a91958e65934",
+    "px": [
+     425,
+     479
+    ]
+   }
+  ],
+  "NI-08": [
+   {
+    "file": "NI-08-1.png",
+    "source": "images/NI-08.png",
+    "sha256": "74f5346c9be8f92139ada3066f69490b1a6a8680a7fb0d6dad1be85c5c602847",
+    "px": [
+     794,
+     667
+    ]
+   }
+  ],
+  "NW-01": [
+   {
+    "file": "NW-01-1.png",
+    "source": "images/NW-01.png",
+    "sha256": "2273d790f6405e7adf19e46eb803d4efe341fe07b4407a167a88b7ebbb8bf402",
+    "px": [
+     376,
+     547
+    ]
+   },
+   {
+    "file": "NW-01-2.png",
+    "source": "images/NW-01-2.png",
+    "sha256": "1796cfd5357cd1887594c4e7eb1f6132d90bf8c1640a4ec9291d7af1e131fb08",
+    "px": [
+     466,
+     537
+    ]
+   },
+   {
+    "file": "NW-01-3.png",
+    "source": "images/NW-01-3.png",
+    "sha256": "6e6d6ec8e95233bdff076cc8210fe119bb30d862bc4a59aca1851de73002e2b5",
+    "px": [
+     425,
+     513
+    ]
+   },
+   {
+    "file": "NW-01-4.png",
+    "source": "images/NW-01-4.png",
+    "sha256": "97f9b7bc5947f0f8a0557fab388956cb71cd818f55e30d2a3f654f007ffc942b",
+    "px": [
+     376,
+     525
+    ]
+   }
+  ],
+  "NW-08": [
+   {
+    "file": "NW-08-1.png",
+    "source": "images/NW-08.png",
+    "sha256": "ffd3d99cc23161fbff9847189c25a1f66737fb775e4106a5d1082c363842e3b2",
+    "px": [
+     794,
+     667
+    ]
+   }
+  ],
+  "RP-01": [
+   {
+    "file": "RP-01-1.png",
+    "source": "images/RP-01.png",
+    "sha256": "d347bcfde998011e009e46fb447d922afef5bf264ec769dc62ab87416082596a",
+    "px": [
+     450,
+     544
+    ]
+   },
+   {
+    "file": "RP-01-2.png",
+    "source": "images/RP-01-2.png",
+    "sha256": "f8fe2503a8dac75866854d356e59adefaba9755aa77b86ccc99a08f499774dd8",
+    "px": [
+     375,
+     525
+    ]
+   },
+   {
+    "file": "RP-01-3.png",
+    "source": "images/RP-01-3.png",
+    "sha256": "b38fd5f497ae2dc5e04b085a3c1e778e0b50d88c689a38ce0c82084496797b4a",
+    "px": [
+     425,
+     495
+    ]
+   },
+   {
+    "file": "RP-01-4.png",
+    "source": "images/RP-01-4.png",
+    "sha256": "d363a8760a4d7908a6ea6c9970000b26c84b918187ee8b60493592136775a534",
+    "px": [
+     425,
+     488
+    ]
+   }
+  ],
+  "RP-08": [
+   {
+    "file": "RP-08-1.png",
+    "source": "images/RP-08.png",
+    "sha256": "ad66690492b1bc9d9e039c047c742d9db5dba3154db127833e8b4d98bb11a36c",
+    "px": [
+     794,
+     665
+    ]
+   }
+  ],
+  "SL-01": [
+   {
+    "file": "SL-01-1.png",
+    "source": "images/SL-01.png",
+    "sha256": "d347bcfde998011e009e46fb447d922afef5bf264ec769dc62ab87416082596a",
+    "px": [
+     450,
+     544
+    ]
+   },
+   {
+    "file": "SL-01-2.png",
+    "source": "images/SL-01-2.png",
+    "sha256": "1e08449f71ffdbaad9dba994841551fb181591f9b46c3411b260cd9d88ced8b2",
+    "px": [
+     425,
+     513
+    ]
+   },
+   {
+    "file": "SL-01-3.png",
+    "source": "images/SL-01-3.png",
+    "sha256": "f005d58e609040db96fe5130c94906a06f1fafb20c0d0d79013ce500c7b84b9f",
+    "px": [
+     450,
+     487
+    ]
+   },
+   {
+    "file": "SL-01-4.png",
+    "source": "images/SL-01-4.png",
+    "sha256": "60385c84898b194d3a80622c011041462f80601a672f50628d48663d73abfa52",
+    "px": [
+     401,
+     493
+    ]
+   }
+  ],
+  "SL-08": [
+   {
+    "file": "SL-08-1.png",
+    "source": "images/SL-08.png",
+    "sha256": "82550d35c36d2ed183325d6b05faa341ab74eef55af73d8e404bb230788c7b8a",
+    "px": [
+     794,
+     660
+    ]
+   }
+  ],
+  "SN-01": [
+   {
+    "file": "SN-01-1.png",
+    "source": "images/SN-01.png",
+    "sha256": "8585175135ec4e5e105e0b16607405120d344457c714b5981749d559704bffd0",
+    "px": [
+     376,
+     505
+    ]
+   },
+   {
+    "file": "SN-01-2.png",
+    "source": "images/SN-01-2.png",
+    "sha256": "a4c44b5abef46bd8d73899c418863e5aa0ec2defaa4827f343225a54554cd4e0",
+    "px": [
+     375,
+     616
+    ]
+   },
+   {
+    "file": "SN-01-3.png",
+    "source": "images/SN-01-3.png",
+    "sha256": "2a52a573d7c6776453136676742b3b301cae6867770881e00ad7108df9d47e7c",
+    "px": [
+     425,
+     508
+    ]
+   },
+   {
+    "file": "SN-01-4.png",
+    "source": "images/SN-01-4.png",
+    "sha256": "ace5b4a40510eb08e7ee2484422fe000f971f42182f230d90e65a91958e65934",
+    "px": [
+     425,
+     479
+    ]
+   }
+  ],
+  "SN-08": [
+   {
+    "file": "SN-08-1.png",
+    "source": "images/SN-08.png",
+    "sha256": "2e9a60e788e23c352eca74003a537087eeae13a6bde4a027415f00ee64ce3202",
+    "px": [
+     794,
+     658
+    ]
+   }
+  ],
+  "ST-01": [
+   {
+    "file": "ST-01-1.png",
+    "source": "images/ST-01.png",
+    "sha256": "8585175135ec4e5e105e0b16607405120d344457c714b5981749d559704bffd0",
+    "px": [
+     376,
+     505
+    ]
+   },
+   {
+    "file": "ST-01-2.png",
+    "source": "images/ST-01-2.png",
+    "sha256": "f8fe2503a8dac75866854d356e59adefaba9755aa77b86ccc99a08f499774dd8",
+    "px": [
+     375,
+     525
+    ]
+   },
+   {
+    "file": "ST-01-3.png",
+    "source": "images/ST-01-3.png",
+    "sha256": "d347bcfde998011e009e46fb447d922afef5bf264ec769dc62ab87416082596a",
+    "px": [
+     450,
+     544
+    ]
+   },
+   {
+    "file": "ST-01-4.png",
+    "source": "images/ST-01-4.png",
+    "sha256": "6e6d6ec8e95233bdff076cc8210fe119bb30d862bc4a59aca1851de73002e2b5",
+    "px": [
+     425,
+     513
+    ]
+   }
+  ],
+  "ST-08": [
+   {
+    "file": "ST-08-1.png",
+    "source": "images/ST-08.png",
+    "sha256": "8d493236c118a732f5c1c8c5d05ee2991f56c65f265a464349187289b0f560f7",
+    "px": [
+     794,
+     663
+    ]
+   }
+  ],
+  "SH-01": [
+   {
+    "file": "SH-01-1.png",
+    "source": "images/SH-01.png",
+    "sha256": "60385c84898b194d3a80622c011041462f80601a672f50628d48663d73abfa52",
+    "px": [
+     401,
+     493
+    ]
+   },
+   {
+    "file": "SH-01-2.png",
+    "source": "images/SH-01-2.png",
+    "sha256": "a4c44b5abef46bd8d73899c418863e5aa0ec2defaa4827f343225a54554cd4e0",
+    "px": [
+     375,
+     616
+    ]
+   },
+   {
+    "file": "SH-01-3.png",
+    "source": "images/SH-01-3.png",
+    "sha256": "d363a8760a4d7908a6ea6c9970000b26c84b918187ee8b60493592136775a534",
+    "px": [
+     425,
+     488
+    ]
+   },
+   {
+    "file": "SH-01-4.png",
+    "source": "images/SH-01-4.png",
+    "sha256": "b38fd5f497ae2dc5e04b085a3c1e778e0b50d88c689a38ce0c82084496797b4a",
+    "px": [
+     425,
+     495
+    ]
+   }
+  ],
+  "SH-08": [
+   {
+    "file": "SH-08-1.png",
+    "source": "images/SH-08.png",
+    "sha256": "bf4787ae4571c3699f4c78204c7d0ae3d1e8dcaca2cce9763250d9c4ac4cad30",
+    "px": [
+     794,
+     662
+    ]
+   }
+  ],
+  "TH-01": [
+   {
+    "file": "TH-01-1.png",
+    "source": "images/TH-01.png",
+    "sha256": "97f9b7bc5947f0f8a0557fab388956cb71cd818f55e30d2a3f654f007ffc942b",
+    "px": [
+     376,
+     525
+    ]
+   },
+   {
+    "file": "TH-01-2.png",
+    "source": "images/TH-01-2.png",
+    "sha256": "f005d58e609040db96fe5130c94906a06f1fafb20c0d0d79013ce500c7b84b9f",
+    "px": [
+     450,
+     487
+    ]
+   },
+   {
+    "file": "TH-01-3.png",
+    "source": "images/TH-01-3.png",
+    "sha256": "ace5b4a40510eb08e7ee2484422fe000f971f42182f230d90e65a91958e65934",
+    "px": [
+     425,
+     479
+    ]
+   },
+   {
+    "file": "TH-01-4.png",
+    "source": "images/TH-01-4.png",
+    "sha256": "b38fd5f497ae2dc5e04b085a3c1e778e0b50d88c689a38ce0c82084496797b4a",
+    "px": [
+     425,
+     495
+    ]
+   }
+  ],
+  "TH-08": [
+   {
+    "file": "TH-08-1.png",
+    "source": "images/TH-08.png",
+    "sha256": "9f874fa3a7f56312e013f2954ba4c1398c7aa8951b6a0a5e4db0b3d7b3e0203d",
+    "px": [
+     794,
+     662
+    ]
+   }
+  ]
+ },
+ "excluded": {
+  "G-055": "© Deutscher Bundestag/Achim Melde",
+  "G-070": "© Bundesregierung/Engelbert Reineke",
+  "G-181": "© Bundesregierung/Engelbert Reineke",
+  "G-187": "not needed to answer the question",
+  "G-216": "© Deutscher Bundestag/Janine Schmitz",
+  "G-235": "© Bundesregierung/Richard Schulze-Vorberg"
+ },
+ "qr": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html"
+}

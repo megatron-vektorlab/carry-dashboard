@@ -8,7 +8,7 @@
    "ljudi imaju biračko pravo.",
    "ovdje vrijedi sloboda mišljenja."
   ],
-  "expl_bks": "Sloboda mišljenja jedno je od temeljnih prava iz Temeljnog zakona (članak 5.). Svatko smije javno reći ili napisati svoje mišljenje i kritizirati vladu, a zbog toga ne smije biti kažnjen. Granice postoje samo kod kaznenih djela, na primjer uvrede ili poticanja na mržnju.",
+  "expl_bks": "Sloboda mišljenja jedno je od temeljnih prava iz Temeljnog zakona (članak 5.). Svatko smije javno reći ili napisati svoje mišljenje i kritizirati vladu, a zbog toga ne smije biti kažnjen. Granice postavljaju opći zakoni te zaštita mladeži i osobne časti (članak 5. stavak 2.), na primjer kod uvrede ili poticanja na mržnju.",
   "merksatz_de": "Meinungsfreiheit: Man darf die Regierung offen kritisieren."
  },
  {
@@ -20,7 +20,7 @@
    "nastavi politike.",
    "nastavi jezika."
   ],
-  "expl_bks": "Temeljni zakon (njemački ustav) u članku 7. daje roditeljima pravo da odluče hoće li dijete pohađati vjeronauk. Od 14. godine dijete o tome odlučuje samo. Tko ne ide na vjeronauk, u mnogim pokrajinama umjesto toga ima etiku. Ostali predmeti obvezni su za sve učenike.",
+  "expl_bks": "Temeljni zakon (njemački ustav) u članku 7. daje roditeljima pravo da odluče hoće li dijete pohađati vjeronauk. Od 14. godine dijete o tome u pravilu odlučuje samo (u Bavarskoj i Saarlandu tek od 18. godine). Tko ne ide na vjeronauk, u mnogim pokrajinama umjesto toga ima etiku. Ostali predmeti obvezni su za sve učenike.",
   "merksatz_de": "Bis 14 entscheiden die Eltern über den Religionsunterricht."
  },
  {
@@ -44,7 +44,7 @@
    "sloboda mišljenja",
    "uzimanje pravde u svoje ruke"
   ],
-  "expl_bks": "Sloboda mišljenja zaštićena je člankom 5. Temeljnog zakona (njemačkog ustava) i spada u temeljna prava. „Pravo jačega” i uzimanje pravde u svoje ruke u Njemačkoj su zabranjeni: sukobe rješavaju policija i sudovi. Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom i traži dozvolu.",
+  "expl_bks": "Sloboda mišljenja zaštićena je člankom 5. Temeljnog zakona (njemačkog ustava) i spada u temeljna prava. „Pravo jačega” i uzimanje pravde u svoje ruke u Njemačkoj su zabranjeni: sukobe rješavaju policija i sudovi. Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom; za vatreno oružje u pravilu je potrebna dozvola.",
   "merksatz_de": "Zu den Grundrechten gehört die Meinungsfreiheit."
  },
  {
@@ -153,7 +153,7 @@
    "sve zastupnike koji ne pripadaju vladajućoj stranci/vladajućim strankama."
   ],
   "expl_bks": "Opozicija su svi zastupnici koji ne pripadaju vladajućoj stranci ili vladajućoj koaliciji. Njezin je zadatak kontrolirati i kritizirati vladu te predlagati druga rješenja. Opozicija je važan dio demokracije jer nakon sljedećih izbora i sama može preuzeti vlast.",
-  "merksatz_de": "Opposition sind alle Abgeordneten, die nicht zur Regierung gehören."
+  "merksatz_de": "Opposition sind alle Abgeordneten, die nicht zu den Regierungsparteien gehören."
  },
  {
   "id": "G-014",
@@ -176,7 +176,7 @@
    "slobodan izbor zanimanja",
    "rad u inozemstvu"
   ],
-  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimke su samo rad pri lišenju slobode po odluci suda i opće javne obveze koje vrijede jednako za sve. Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
+  "expl_bks": "Članak 12. Temeljnog zakona zabranjuje prisilni rad. Nitko ne smije biti prisiljen raditi određeni posao; iznimke su rad pri lišenju slobode po odluci suda, opće javne obveze koje vrijede jednako za sve te vojna ili zamjenska služba (članak 12.a). Isti članak jamči slobodan izbor zanimanja. Vojna služba nije zabranjena: Njemačka ima vlastitu vojsku (Bundeswehr).",
   "merksatz_de": "Zwangsarbeit ist in Deutschland verboten."
  },
  {
@@ -224,7 +224,7 @@
    "Svatko se smije odlučiti za drugu vjeru.",
    "Svatko se u javnosti smije kretati samo oskudno odjeven."
   ],
-  "expl_bks": "„Freizügigkeit” znači slobodu kretanja i nastanjivanja (članak 11. Temeljnog zakona). Čovjek smije sam odlučiti u kojem će gradu ili mjestu u Njemačkoj živjeti i preseliti se bez posebne dozvole. Pazite na zamku: riječ „freizügig” u svakodnevnom govoru znači i „oskudno odjeven”, ali ovo pravo nema veze s odjećom.",
+  "expl_bks": "„Freizügigkeit” znači slobodu kretanja i nastanjivanja (članak 11. Temeljnog zakona). Svaki njemački državljanin smije sam odlučiti u kojem će mjestu u Njemačkoj živjeti i preseliti se bez dozvole. Za neke strance, na primjer izbjeglice, mogu vrijediti ograničenja. Pazite na zamku: riječ „freizügig” u svakodnevnom govoru znači i „oskudno odjeven”, ali ovo pravo nema veze s odjećom.",
   "merksatz_de": "Freizügigkeit heißt: Man darf seinen Wohnort frei wählen."
  },
  {
@@ -236,7 +236,7 @@
    "vjerna zakonima.",
    "protuustavna."
   ],
-  "expl_bks": "Temeljni zakon štiti slobodni demokratski poredak. Stranka koja želi uspostaviti diktaturu bori se protiv tog poretka i zato je protuustavna. Takvu stranku može zabraniti samo Savezni ustavni sud (članak 21.). U Saveznoj Republici Njemačkoj to se dogodilo dva puta, 1952. i 1956. godine.",
+  "expl_bks": "Temeljni zakon štiti slobodni demokratski poredak. Stranka koja želi uspostaviti diktaturu bori se protiv tog poretka i zato je protuustavna. Takvu stranku može zabraniti samo Savezni ustavni sud (članak 21.). Do 2026. to se u Saveznoj Republici Njemačkoj dogodilo dva puta, 1952. i 1956. godine.",
   "merksatz_de": "Eine Partei, die eine Diktatur will, ist verfassungswidrig."
  },
  {
@@ -332,7 +332,7 @@
    "narod s biračkim pravom",
    "uprava"
   ],
-  "expl_bks": "Zastupnike u Bundestagu (saveznom parlamentu) bira narod, odnosno svi koji imaju biračko pravo. Na izborima za Bundestag smiju glasati njemački državljani od 18 godina. Izbori se održavaju svake četiri godine. Tako vrijedi načelo iz članka 20. Temeljnog zakona: sva vlast dolazi od naroda.",
+  "expl_bks": "Zastupnike u Bundestagu (saveznom parlamentu) bira narod, odnosno svi koji imaju biračko pravo. Na izborima za Bundestag smiju glasati njemački državljani od 18 godina. Izbori se u pravilu održavaju svake četiri godine. Tako vrijedi načelo iz članka 20. Temeljnog zakona: sva vlast dolazi od naroda.",
   "merksatz_de": "Das wahlberechtigte Volk wählt die Bundestagsabgeordneten."
  },
  {
@@ -884,7 +884,7 @@
    "Bundestag",
    "Savezni vrhovni sud (Bundesgerichtshof)"
   ],
-  "expl_bks": "Bundestag (savezni parlament) jest parlament za cijelu Njemačku. Građani ga biraju svake četiri godine, a on donosi savezne zakone i bira saveznog kancelara. Savezna skupština (Bundesversammlung) sastaje se samo radi izbora saveznog predsjednika, a Volkskammer je bio parlament DDR-a.",
+  "expl_bks": "Bundestag (savezni parlament) jest parlament za cijelu Njemačku. Građani ga u pravilu biraju svake četiri godine, a on donosi savezne zakone i bira saveznog kancelara. Savezna skupština (Bundesversammlung) sastaje se samo radi izbora saveznog predsjednika, a Volkskammer je bio parlament DDR-a.",
   "merksatz_de": "Das Parlament für ganz Deutschland heißt Bundestag."
  },
  {
@@ -896,7 +896,7 @@
    "Bodo Ramelow",
    "Joachim Gauck"
   ],
-  "expl_bks": "Šef države u Njemačkoj je savezni predsjednik, a mandat mu traje pet godina. Frank-Walter Steinmeier izabran je na tu dužnost 2017., a ponovno 2022. godine. Joachim Gauck bio je savezni predsjednik prije njega (2012.–2017.), Bärbel Bas bila je predsjednica Bundestaga, a Bodo Ramelow bio je ministar predsjednik (Ministerpräsident) Tiringije.",
+  "expl_bks": "Šef države u Njemačkoj je savezni predsjednik, a mandat mu traje pet godina. Frank-Walter Steinmeier izabran je 2017., a ponovno 2022. Njegov drugi mandat završava u ožujku 2027., a ponovni izbor nije moguć. Joachim Gauck bio je savezni predsjednik prije njega (2012.–2017.), Bärbel Bas bila je predsjednica Bundestaga, a Bodo Ramelow bio je ministar predsjednik (Ministerpräsident) Tiringije.",
   "merksatz_de": "Frank-Walter Steinmeier wurde 2017 Bundespräsident."
  },
  {
@@ -956,7 +956,7 @@
    "Savezni ustavni sud (Bundesverfassungsgericht)",
    "upravni sud (Verwaltungsgericht)"
   ],
-  "expl_bks": "Savezni ustavni sud (Bundesverfassungsgericht) u Karlsruheu tumači Temeljni zakon (njemački ustav) i provjerava jesu li zakoni u skladu s njim. Njegove odluke obvezuju sva državna tijela. Svaki građanin može podnijeti ustavnu tužbu (Verfassungsbeschwerde) ako smatra da su mu povrijeđena temeljna prava.",
+  "expl_bks": "Savezni ustavni sud (Bundesverfassungsgericht) u Karlsruheu tumači Temeljni zakon (njemački ustav) i provjerava jesu li zakoni u skladu s njim. Njegove odluke obvezuju sva državna tijela. Svatko može podnijeti ustavnu tužbu (Verfassungsbeschwerde) ako smatra da mu je državna vlast povrijedila temeljna prava, u pravilu tek nakon postupka pred drugim sudovima.",
   "merksatz_de": "Das Bundesverfassungsgericht legt das Grundgesetz aus."
  },
  {
@@ -1148,8 +1148,8 @@
    "nikako, poricanje holokausta je dopušteno",
    "kaznom zatvora do pet godina ili novčanom kaznom"
   ],
-  "expl_bks": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo. Kazneni zakon (§ 130, poticanje na mržnju – Volksverhetzung) za to predviđa kaznu zatvora do pet godina ili novčanu kaznu. Tako se štiti sjećanje na žrtve i javni mir.",
-  "merksatz_de": "Holocaustleugnung ist in Deutschland eine Straftat."
+  "expl_bks": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo ako se izrazi javno, npr. na skupu ili na internetu. Kazneni zakon (§ 130, poticanje na mržnju – Volksverhetzung) za to predviđa kaznu zatvora do pet godina ili novčanu kaznu. Tako se štiti sjećanje na žrtve i javni mir.",
+  "merksatz_de": "Öffentliche Holocaustleugnung ist in Deutschland eine Straftat."
  },
  {
   "id": "G-097",
@@ -1160,7 +1160,7 @@
    "dječji doplatak (Kindergeld)",
    "doplatak za stanovanje (Wohngeld)"
   ],
-  "expl_bks": "Tko je stalno zaposlen, automatski plaća doprinose za socijalno osiguranje: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti i osiguranje za njegu (Pflegeversicherung). Poslodavac taj iznos odbija izravno od bruto plaće i uplaćuje ga. Socijalna pomoć, dječji doplatak i doplatak za stanovanje davanja su koja se primaju, a ne plaćaju.",
+  "expl_bks": "Tko je stalno zaposlen, u pravilu automatski plaća doprinose za socijalno osiguranje: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti i osiguranje za njegu (Pflegeversicherung). Poslodavac taj iznos odbija izravno od bruto plaće i uplaćuje ga. Socijalna pomoć, dječji doplatak i doplatak za stanovanje davanja su koja se primaju, a ne plaćaju.",
   "merksatz_de": "Mit fester Arbeit zahlt man automatisch in die Sozialversicherung."
  },
  {
@@ -1196,7 +1196,7 @@
    "osiguranje za slučaj nezaposlenosti",
    "osiguranje za njegu (Pflegeversicherung)"
   ],
-  "expl_bks": "Zakonsko socijalno osiguranje ima pet grana: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti, osiguranje za njegu i osiguranje od nezgode. Životno osiguranje nije među njima. To je privatno osiguranje koje svatko može dobrovoljno sklopiti kod osiguravajuće kuće.",
+  "expl_bks": "Zakonsko socijalno osiguranje ima pet grana: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti, osiguranje za njegu i osiguranje od nezgode. Životno osiguranje nije među njima. To je privatno osiguranje koje se može dobrovoljno sklopiti kod osiguravajuće kuće.",
   "merksatz_de": "Die Lebensversicherung ist eine private, freiwillige Versicherung."
  },
  {
@@ -1232,7 +1232,7 @@
    "CSU-a, stranke Die LINKE i stranke Bündnis 90/Die Grünen u jednoj vladi",
    "klubova zastupnika CDU-a i SPD-a u Bundestagu"
   ],
-  "expl_bks": "Koalicije se često nazivaju prema bojama stranaka. Boja SPD-a je crvena, FDP-a žuta, a stranke Bündnis 90/Die Grünen zelena – kao tri svjetla na semaforu (Ampel). Zato se vlada tih triju stranaka zove „semaforska koalicija”. Koalicija CDU/CSU-a i SPD-a naziva se „velika koalicija”.",
+  "expl_bks": "Koalicije se često nazivaju prema bojama stranaka. Boja SPD-a je crvena, FDP-a žuta, a stranke Bündnis 90/Die Grünen zelena – kao tri svjetla na semaforu (Ampel). Zato se vlada tih triju stranaka zove „semaforska koalicija”. Koalicija CDU/CSU-a i SPD-a tradicionalno se naziva „velika koalicija”.",
   "merksatz_de": "Eine Ampelkoalition bilden SPD, FDP und Grüne."
  },
  {
@@ -1292,7 +1292,7 @@
    "živi u Saveznoj Republici Njemačkoj najmanje 3 godine.",
    "je građanin Savezne Republike Njemačke i ima najmanje 21 godinu."
   ],
-  "expl_bks": "Za izbore za Bundestag (savezni parlament) vrijede dva uvjeta: njemačko državljanstvo i najmanje 18 godina (članak 38. Temeljnog zakona). Sam boravak u Njemačkoj nije dovoljan, bez obzira na to koliko dugo netko ovdje živi. Nakon naturalizacije (stjecanja državljanstva) dobiva se i to pravo.",
+  "expl_bks": "Za izbore za Bundestag (savezni parlament) vrijede dva osnovna uvjeta: njemačko državljanstvo i najmanje 18 godina (članak 38. Temeljnog zakona). Sam boravak u Njemačkoj nije dovoljan, bez obzira na to koliko dugo netko ovdje živi. Nakon naturalizacije (stjecanja državljanstva) dobiva se i to pravo.",
   "merksatz_de": "Wählen dürfen deutsche Staatsbürger ab 18 Jahren."
  },
  {
@@ -1352,7 +1352,7 @@
    "je dobila najviše glasova među radnicima.",
    "je za svog kandidata za kancelara dobila najviše prvih glasova."
   ],
-  "expl_bks": "Izbore pobjeđuje stranka koja dobije najviše glasova. Svaki glas vrijedi jednako, bez obzira na to glasa li muškarac ili žena, radnik ili poslodavac. Na izborima za Bundestag za raspodjelu mjesta presudan je drugi glas. Kancelara ne bira narod izravno, nego ga bira Bundestag.",
+  "expl_bks": "Izbore pobjeđuje stranka koja dobije najviše glasova. Svaki glas vrijedi jednako, bez obzira na to glasa li muškarac ili žena, radnik ili poslodavac. Na izborima za Bundestag za raspodjelu mjesta presudan je drugi glas. Kancelara ne bira narod izravno, nego Bundestag, pa najjača stranka ne vlada automatski: vladu čini većina u parlamentu, često koalicija.",
   "merksatz_de": "Die Partei mit den meisten Stimmen gewinnt die Wahl."
  },
  {
@@ -1388,7 +1388,7 @@
    "aktivna predizborna borba (Wahlkampf).",
    "aktivno biračko pravo (Wahlrecht)."
   ],
-  "expl_bks": "Pravo da glasate zove se aktivno biračko pravo (aktives Wahlrecht). Na izborima za Bundestag (savezni parlament) imaju ga svi njemački državljani s najmanje 18 godina. Pravo da budete izabrani zove se pasivno biračko pravo. Kampanja i predizborna borba odnose se na stranke, a ne na birače.",
+  "expl_bks": "Pravo da glasate zove se aktivno biračko pravo (aktives Wahlrecht). Na izborima za Bundestag (savezni parlament) imaju ga u pravilu njemački državljani s najmanje 18 godina. Pravo da budete izabrani zove se pasivno biračko pravo. Kampanja i predizborna borba odnose se na stranke, a ne na birače.",
   "merksatz_de": "Wer wählen darf, hat das aktive Wahlrecht."
  },
  {
@@ -1400,8 +1400,8 @@
    "5 %",
    "6 %"
   ],
-  "expl_bks": "Za Bundestag (savezni parlament) vrijedi izborni prag od 5 %: stranka mora dobiti najmanje 5 % svih drugih glasova u Njemačkoj da bi dobila mjesta prema svom udjelu. Tako parlament ne postaje rascjepkan na previše malih stranaka. Prag ne vrijedi za stranke nacionalnih manjina, npr. danske manjine.",
-  "merksatz_de": "Parteien brauchen mindestens fünf Prozent der Zweitstimmen."
+  "expl_bks": "Za Bundestag (savezni parlament) vrijedi izborni prag od 5 %: stranka mora dobiti najmanje 5 % svih drugih glasova u Njemačkoj da bi dobila mjesta prema svom udjelu. Tako parlament ne postaje rascjepkan na previše malih stranaka. Prag ne vrijedi za stranke nacionalnih manjina (npr. danske manjine) ni za stranku koja pobijedi u najmanje tri izborna okruga.",
+  "merksatz_de": "Parteien brauchen in der Regel mindestens fünf Prozent der Zweitstimmen."
  },
  {
   "id": "G-118",
@@ -1472,7 +1472,7 @@
    "minimalni udio glasova birača da bi se ušlo u parlament",
    "provjera prisutnosti u Bundesratu kod glasanja"
   ],
-  "expl_bks": "Izborni prag od 5 % odnosi se na izbore, a ne na glasanja unutar parlamenta. Stranka mora dobiti najmanje 5 % drugih glasova da bi ušla u Bundestag (savezni parlament) s mjestima prema svom udjelu. Slično pravilo vrijedi i na izborima za pokrajinske parlamente (Landtag).",
+  "expl_bks": "Izborni prag od 5 % odnosi se na izbore, a ne na glasanja unutar parlamenta. Stranka u pravilu mora dobiti najmanje 5 % drugih glasova da bi ušla u Bundestag (savezni parlament) s mjestima prema svom udjelu. Slično pravilo vrijedi i na izborima za pokrajinske parlamente (Landtag).",
   "merksatz_de": "Die 5%-Hürde ist ein Mindestanteil an Wählerstimmen."
  },
  {
@@ -1556,7 +1556,7 @@
    "3",
    "4"
   ],
-  "expl_bks": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati. U katalogu je to listić broj 1.",
+  "expl_bks": "Među ponuđenim listićima potpuno je valjan samo listić broj 1: ima točno jedan križić za prvi glas (kandidat) i točno jedan za drugi glas (stranka). Na listiću 2 drugi glas ima dva križića, pa taj glas ne vrijedi; na listićima 3 i 4 previše je križića kod prvog glasa. Birač smije dati i samo jedan glas – tada ne vrijedi samo neiskorišteni glas (§ 39 BWahlG). U katalogu je to listić broj 1.",
   "merksatz_de": "Pro Spalte darf man nur ein Kreuz machen."
  },
  {
@@ -1628,7 +1628,7 @@
    "problema sa susjedima.",
    "poteškoća nakon prometne nesreće."
   ],
-  "expl_bks": "Radni sud (Arbeitsgericht) odlučuje o sporovima između zaposlenika i poslodavca, na primjer o otkazu, neisplaćenoj plaći ili svjedodžbi o radu. Tužba protiv otkaza mora se podnijeti u roku od tri tjedna. Za sporove oko režija ili sa susjedima obično je nadležan općinski sud (Amtsgericht).",
+  "expl_bks": "Radni sud (Arbeitsgericht) odlučuje o sporovima između zaposlenika i poslodavca, na primjer o otkazu, neisplaćenoj plaći ili svjedodžbi o radu. Tužba protiv otkaza mora se podnijeti u roku od tri tjedna od primitka pisanog otkaza. Za sporove oko režija ili sa susjedima obično je nadležan općinski sud (Amtsgericht).",
   "merksatz_de": "Bei einer ungerechten Kündigung hilft das Arbeitsgericht."
  },
  {
@@ -1664,7 +1664,7 @@
    "zastupa drugačije mišljenje od vlade.",
    "pogrešno parkira automobil pa ga odveze pauk."
   ],
-  "expl_bks": "Kazneni proces pred sudom počinje kad državni tužitelj optuži neku osobu za kazneno djelo, na primjer za krađu ili tjelesnu ozljedu. Promjena vjere i drugačije mišljenje od vlade zaštićeni su temeljnim pravima i nisu kažnjivi. Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, bez suđenja.",
+  "expl_bks": "Kazneni proces pred sudom počinje kad državni tužitelj optuži neku osobu za kazneno djelo, na primjer za krađu ili tjelesnu ozljedu. Promjena vjere i drugačije mišljenje od vlade zaštićeni su temeljnim pravima i nisu kažnjivi. Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, u pravilu bez suđenja.",
   "merksatz_de": "Ein Strafprozess beginnt, wenn jemand wegen einer Straftat angeklagt wird."
  },
  {
@@ -1676,7 +1676,7 @@
    "izdaje isprave.",
    "brani optuženika."
   ],
-  "expl_bks": "Sudac porotnik (Schöffe) je građanin bez pravnog obrazovanja koji tu dužnost obavlja volonterski. Sjedi uz profesionalne suce i s njima odlučuje je li optuženik kriv i kakva će biti kazna. Pritom ima isto pravo glasa kao profesionalni sudac. Optuženika brani odvjetnik, a ne sudac porotnik.",
+  "expl_bks": "Sudac porotnik (Schöffe) je građanin bez pravnog obrazovanja koji tu dužnost obavlja kao počasnu službu, bez plaće. Sjedi uz profesionalne suce i s njima odlučuje je li optuženik kriv i kakva će biti kazna. Pritom ima isto pravo glasa kao profesionalni sudac. Optuženika brani odvjetnik, a ne sudac porotnik.",
   "merksatz_de": "Schöffen entscheiden zusammen mit Richtern über Schuld und Strafe."
  },
  {
@@ -1784,8 +1784,8 @@
    "poricati holokaust",
    "igrati nogomet protiv Židova"
   ],
-  "expl_bks": "Antisemitizam je mržnja ili neprijateljstvo prema Židovima. Poricanje holokausta, odnosno tvrdnja da nacisti nisu ubili oko šest milijuna Židova, jasan je primjer antisemitizma i u Njemačkoj je kazneno djelo. Posjet židovskoj proslavi ili nogometna utakmica sa Židovima normalan su dio zajedničkog života.",
-  "merksatz_de": "Den Holocaust zu leugnen ist antisemitisch und strafbar."
+  "expl_bks": "Antisemitizam je mržnja ili neprijateljstvo prema Židovima. Poricanje holokausta, odnosno tvrdnja da nacisti nisu ubili oko šest milijuna Židova, jasan je primjer antisemitizma, a javno poricanje u Njemačkoj je kazneno djelo. Posjet židovskoj proslavi ili nogometna utakmica sa Židovima normalan su dio zajedničkog života.",
+  "merksatz_de": "Den Holocaust zu leugnen ist antisemitisch, öffentlich ist es strafbar."
  },
  {
   "id": "G-150",
@@ -1796,7 +1796,7 @@
    "član općinskog vijeća.",
    "osoba koja je studirala pravo."
   ],
-  "expl_bks": "Porotnik (Gerichtsschöffe) je građanin koji kao sudac porotnik zajedno s profesionalnim sucima sudi u kaznenim postupcima. Taj posao obavlja volonterski: ne dobiva plaću, nego samo naknadu za troškove i izgubljeno vrijeme. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
+  "expl_bks": "Porotnik (Gerichtsschöffe) je građanin koji kao sudac porotnik zajedno s profesionalnim sucima sudi u kaznenim postupcima. To je počasna služba (Ehrenamt) i građanska dužnost: porotnik ne dobiva plaću, nego samo naknadu za troškove i izgubljeno vrijeme. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
   "merksatz_de": "Ein Schöffe ist ein Richter im Ehrenamt."
  },
  {
@@ -2024,7 +2024,7 @@
    "1949",
    "1951"
   ],
-  "expl_bks": "Savezna Republika Njemačka osnovana je 23. svibnja 1949., kada je stupio na snagu Temeljni zakon (njemački ustav). Iste godine, 7. listopada 1949., u sovjetskoj zoni osnovana je i DDR. Godina 1945. označava kraj rata, a ne osnivanje nove države.",
+  "expl_bks": "Savezna Republika Njemačka osnovana je 23. svibnja 1949., kada je proglašen Temeljni zakon (njemački ustav). Iste godine, 7. listopada 1949., u sovjetskoj zoni osnovana je i DDR. Godina 1945. označava kraj rata, a ne osnivanje nove države.",
   "merksatz_de": "Die Bundesrepublik Deutschland wurde 1949 gegründet."
  },
  {
@@ -2276,7 +2276,7 @@
    "Dritte Deutsche Republik (Treća Njemačka Republika)",
    "Deutsche Demokratische Republik (Njemačka Demokratska Republika)"
   ],
-  "expl_bks": "DDR je kratica za Deutsche Demokratische Republik, u prijevodu Njemačka Demokratska Republika ili Istočna Njemačka. Ta je država postojala od 1949. do 1990. Iako u imenu ima riječ „demokratska”, DDR je bio diktatura: vladala je SED (vladajuća stranka u DDR-u), a slobodnih izbora nije bilo.",
+  "expl_bks": "DDR je kratica za Deutsche Demokratische Republik, u prijevodu Njemačka Demokratska Republika ili Istočna Njemačka. Ta je država postojala od 1949. do 1990. Iako u imenu ima riječ „demokratska”, DDR je bio diktatura: vladala je SED (vladajuća stranka u DDR-u), a slobodnih izbora nije bilo sve do ožujka 1990.",
   "merksatz_de": "DDR heißt Deutsche Demokratische Republik."
  },
  {
@@ -2504,7 +2504,7 @@
    "Slika 3",
    "Slika 4"
   ],
-  "expl_bks": "Grb DDR-a: čekić i šestar na crvenoj podlozi, okruženi vijencem od klasja s crno-crveno-zlatnom trakom. Čekić je simbol radnika, šestar inteligencije, a klasje seljaka. Isti se znak od 1959. nalazio i na zastavi DDR-a. Grb Savezne Republike Njemačke je crni orao. U katalogu je to slika 4.",
+  "expl_bks": "Grb DDR-a: zlatni čekić i šestar, okruženi vijencem od klasja s crno-crveno-zlatnom trakom. Čekić je simbol radnika, šestar inteligencije, a klasje seljaka. Isti se znak od 1959. nalazio i na zastavi DDR-a. Grb Savezne Republike Njemačke je crni orao. U katalogu je to slika 4.",
   "merksatz_de": "Das DDR-Wappen zeigte Hammer, Zirkel und Ährenkranz."
  },
  {
@@ -2564,7 +2564,7 @@
    "crno-crveno-zelene",
    "crno-žuto-crvene"
   ],
-  "expl_bks": "Njemačka zastava ima tri vodoravne pruge: odozgo crnu, crvenu i zlatnu. To određuje članak 22. Temeljnog zakona (njemački ustav). Boje potječu iz borbe za jedinstvo i slobodu u 19. stoljeću, npr. s Hambaškog festivala 1832. Pazite na redoslijed: crna je gore, zlatna dolje.",
+  "expl_bks": "Njemačka zastava ima tri vodoravne pruge: odozgo crnu, crvenu i zlatnu. Boje određuje članak 22. Temeljnog zakona (njemački ustav). Boje potječu iz borbe za jedinstvo i slobodu u 19. stoljeću, npr. s Hambaškog festivala 1832. Pazite na redoslijed: crna je gore, zlatna dolje.",
   "merksatz_de": "Die deutsche Flagge ist schwarz-rot-gold."
  },
  {
@@ -2648,7 +2648,7 @@
    "Nijemci mogu putovati u svaku zemlju bez kontrole putovnica.",
    "Nijemci mogu u svakoj zemlji plaćati eurom."
   ],
-  "expl_bks": "Schengenski sporazum potpisan je 1985. u mjestu Schengen u Luksemburgu. Među državama članicama u pravilu nema stalnih graničnih kontrola, pa se putuje bez pokazivanja putovnice. To vrijedi za mnoge, ali ne za sve europske zemlje, a osobnu iskaznicu ili putovnicu ipak treba imati uza sebe.",
+  "expl_bks": "Schengenski sporazum potpisan je 1985. u mjestu Schengen u Luksemburgu. Među državama članicama u pravilu nema stalnih graničnih kontrola, no države ih smiju privremeno uvesti, kao što je Njemačka učinila 2024. To vrijedi za mnoge, ali ne za sve europske zemlje, a osobnu iskaznicu ili putovnicu ipak treba imati uza sebe.",
   "merksatz_de": "Schengen bedeutet: ohne Passkontrolle in viele Länder Europas reisen."
  },
  {
@@ -2828,7 +2828,7 @@
    "25",
    "27"
   ],
-  "expl_bks": "Europska unija danas ima 27 država članica. Hrvatska je 2013. postala 28. članica, a Ujedinjeno Kraljevstvo izašlo je iz EU-a 2020. (Brexit), pa je broj ponovno pao na 27. Njemačka je jedna od šest država osnivačica Europske ekonomske zajednice iz 1957.",
+  "expl_bks": "Europska unija ima 27 država članica (stanje: 2026.). Hrvatska je 2013. postala 28. članica, a Ujedinjeno Kraljevstvo izašlo je iz EU-a 2020. (Brexit), pa je broj ponovno pao na 27. Njemačka je jedna od šest država osnivačica Europske ekonomske zajednice iz 1957.",
   "merksatz_de": "Die EU hat heute 27 Mitgliedstaaten."
  },
  {
@@ -2888,7 +2888,7 @@
    "Ne mora ništa učiniti jer roditeljsku naknadu dobiva automatski.",
    "Mora zamoliti ured za rad (Arbeitsamt) za dopuštenje."
   ],
-  "expl_bks": "Roditeljska naknada (Elterngeld) ne dobiva se automatski. Roditelji moraju podnijeti pisani zahtjev uredu za roditeljsku naknadu (Elterngeldstelle); koji je ured nadležan, ovisi o pokrajini i mjestu stanovanja. Zahtjev treba predati ubrzo nakon rođenja, jer se naknada unatrag isplaćuje samo za posljednja tri mjeseca.",
+  "expl_bks": "Roditeljska naknada (Elterngeld) ne dobiva se automatski. Roditelji moraju podnijeti pisani zahtjev uredu za roditeljsku naknadu (Elterngeldstelle); koji je ured nadležan, ovisi o pokrajini i mjestu stanovanja. Naknada se isplaćuje najviše tri mjeseca unatrag, računajući od mjeseca u kojem je zahtjev stigao.",
   "merksatz_de": "Elterngeld muss man bei der Elterngeldstelle beantragen."
  },
  {
@@ -2912,8 +2912,8 @@
    "Ne mogu ništa učiniti jer su demonstracije u Njemačkoj načelno zabranjene.",
    "Maik i Sybille moraju osnovati novu udrugu jer samo udruge smiju demonstrirati."
   ],
-  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije nego što se javno najavi. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
-  "merksatz_de": "Eine Demonstration im Freien muss man vorher anmelden."
+  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, u pravilu je mora unaprijed prijaviti nadležnom uredu, najkasnije 48 sati prije nego što se javno najavi; spontani prosvjedi su iznimka. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
+  "merksatz_de": "Eine Demonstration im Freien muss man in der Regel vorher anmelden."
  },
  {
   "id": "G-244",
@@ -2984,7 +2984,7 @@
    "rodbina",
    "škole"
   ],
-  "expl_bks": "Za odgoj djece u Njemačkoj prvenstveno su odgovorni roditelji. Temeljni zakon (članak 6.) kaže da je to njihovo pravo i njihova dužnost. Škola, vrtić i rodbina mogu pomoći, a država se uključuje tek kad je dobrobit djeteta ugrožena, na primjer preko ureda za djecu i mlade (Jugendamt).",
+  "expl_bks": "Za odgoj djece u Njemačkoj prvenstveno su odgovorni roditelji. Temeljni zakon (članak 6.) kaže da je to njihovo pravo i njihova dužnost. Škola, vrtić i rodbina mogu pomoći, a država nudi pomoć, npr. preko ureda za djecu i mlade (Jugendamt); protiv volje roditelja smije se umiješati tek kad je dobrobit djeteta ugrožena.",
   "merksatz_de": "Hauptsächlich verantwortlich für die Kindererziehung sind die Eltern."
  },
  {
@@ -2996,7 +2996,7 @@
    "je žena.",
    "je član neke stranke."
   ],
-  "expl_bks": "Na njemačkom tržištu rada najvažnije su kvalifikacije: završena škola, strukovno obrazovanje (Ausbildung) ili studij. Tko je dobro obrazovan, ima najbolje izglede za dobro plaćen posao. Vjera, spol ili članstvo u stranci ne smiju biti razlog za prednost ili zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.).",
+  "expl_bks": "Na njemačkom tržištu rada najvažnije su kvalifikacije: završena škola, strukovno obrazovanje (Ausbildung) ili studij. Tko je dobro obrazovan, ima najbolje izglede za dobro plaćen posao. Vjera, spol ili članstvo u stranci u pravilu ne smiju biti razlog za zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.; Opći zakon o jednakom postupanju, AGG).",
   "merksatz_de": "Eine gute Ausbildung bringt die besten Chancen auf gute Arbeit."
  },
  {
@@ -3032,7 +3032,7 @@
    "u komunalnom redarstvenom uredu (Ordnungsamt)",
    "u obrtnom uredu (Gewerbeamt)"
   ],
-  "expl_bks": "Nakon preseljenja novu adresu treba prijaviti u uredu za prijavu prebivališta (Einwohnermeldeamt); u mnogim gradovima to je građanski ured (Bürgeramt). Rok je u pravilu dva tjedna. Za prijavu trebate osobnu iskaznicu ili putovnicu i potvrdu stanodavca (Wohnungsgeberbestätigung).",
+  "expl_bks": "Nakon preseljenja novu adresu treba prijaviti u uredu za prijavu prebivališta (Einwohnermeldeamt); u mnogim gradovima to je građanski ured (Bürgeramt). Rok je u pravilu dva tjedna. Pri prijavi se obično pokazuju osobna iskaznica ili putovnica i potvrda stanodavca (Wohnungsgeberbestätigung).",
   "merksatz_de": "Nach einem Umzug meldet man sich beim Einwohnermeldeamt an."
  },
  {
@@ -3068,8 +3068,8 @@
    "odobrenje ureda za prijavu prebivališta (Einwohnermeldeamt)",
    "dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis) od nadležnog ureda"
   ],
-  "expl_bks": "Za otvaranje restorana, posebno ako se toči alkohol, potrebna je dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured općine, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt). Ured provjerava, na primjer, prostorije i pouzdanost vlasnika. Pojedinosti ovise o pokrajini.",
-  "merksatz_de": "Für ein Restaurant braucht man eine Gaststättenerlaubnis."
+  "expl_bks": "Prema katalogu za restoran je potrebna dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt), koji provjerava prostorije i pouzdanost vlasnika. U stvarnosti se dozvola u pravilu traži samo kad se toči alkohol, a u mnogim pokrajinama ni tada: ondje je dovoljna prijava (Anzeige).",
+  "merksatz_de": "Für ein Restaurant braucht man oft eine Gaststättenerlaubnis."
  },
  {
   "id": "G-257",
@@ -3080,7 +3080,7 @@
    "u Hauptschuli (niža srednja škola).",
    "na privatnom sveučilištu."
   ],
-  "expl_bks": "Večernja gimnazija (Abendgymnasium) namijenjena je odraslima koji rade. Nastava se održava navečer, pa se škola može uskladiti s poslom i obitelji. Na kraju se polaže matura (Abitur), s kojom se može studirati. Visoko učilište i privatno sveučilište traže Abitur već pri upisu.",
+  "expl_bks": "Večernja gimnazija (Abendgymnasium) namijenjena je odraslima koji rade. Nastava se održava navečer, pa se škola može uskladiti s poslom i obitelji. Na kraju se polaže matura (Abitur), s kojom se može studirati. Visoko učilište i privatno sveučilište za upis u pravilu već traže Abitur ili sličnu kvalifikaciju.",
   "merksatz_de": "Erwachsene können das Abitur am Abendgymnasium nachholen."
  },
  {
@@ -3128,7 +3128,7 @@
    "u Hauptschuli (niža srednja škola).",
    "na privatnom sveučilištu."
   ],
-  "expl_bks": "Tko je već odrastao i radi, maturu (Abitur) može naknadno položiti u večernjoj gimnaziji (Abendgymnasium). Nastava je navečer, obično traje oko tri godine i u javnim školama je besplatna. Hauptschule je škola za djecu, a na visoko učilište ili sveučilište upisuje se tek s Abiturom.",
+  "expl_bks": "Tko je već odrastao i radi, maturu (Abitur) može naknadno položiti u večernjoj gimnaziji (Abendgymnasium). Nastava je navečer, obično traje oko tri godine i u javnim školama je besplatna. Hauptschule je škola za djecu, a na visoko učilište ili sveučilište upisuje se u pravilu tek s Abiturom ili sličnom kvalifikacijom.",
   "merksatz_de": "Auch mit 30 kann man am Abendgymnasium Abitur machen."
  },
  {
@@ -3176,7 +3176,7 @@
    "u Agenciju za rad (Agentur für Arbeit)",
    "u matični ured (Standesamt)"
   ],
-  "expl_bks": "U Njemačkoj je pravno valjan samo građanski brak, sklopljen pred matičarom. Zato par najprije u matičnom uredu (Standesamt) prijavljuje namjeru vjenčanja i predaje dokumente, na primjer rodni list i osobnu iskaznicu ili putovnicu. Vjersko vjenčanje moguće je dodatno, ali nema pravni učinak.",
+  "expl_bks": "Brak koji se sklapa u Njemačkoj pravno je valjan u pravilu samo ako je sklopljen pred matičarom. Zato par najprije u matičnom uredu (Standesamt) prijavljuje namjeru vjenčanja i predaje dokumente, na primjer rodni list i osobnu iskaznicu ili putovnicu. Vjersko vjenčanje moguće je dodatno, ali nema pravni učinak.",
   "merksatz_de": "Wer heiraten möchte, geht zuerst zum Standesamt."
  },
  {
@@ -3200,7 +3200,7 @@
    "Mogu otići na policiju i prijaviti kćer.",
    "Potražit će drugog muškarca za svoju kćer."
   ],
-  "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući ni prijaviti policiji, jer nije učinila ništa zabranjeno.",
+  "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući, a prijava policiji nema osnove, jer nije učinila ništa zabranjeno.",
   "merksatz_de": "Erwachsene Kinder entscheiden selbst, mit wem sie zusammenleben."
  },
  {
@@ -3224,7 +3224,7 @@
    "mjesto u vrtiću.",
    "propusnicu za praznične aktivnosti (Ferienpass)."
   ],
-  "expl_bks": "Od 1996. svako dijete od navršene treće godine do polaska u školu ima zakonsko pravo na mjesto u vrtiću (Kindergarten). Od 2013. to pravo vrijedi već od prve godine, u jaslicama ili kod dnevne dadilje. Pohađanje je dobrovoljno, a koliko roditelji plaćaju, ovisi o pokrajini i općini.",
+  "expl_bks": "Od 1996. svako dijete od navršene treće godine do polaska u školu ima zakonsko pravo na mjesto u vrtiću (Kindergarten). Od 2013. to pravo vrijedi već od prve godine, u jaslicama ili kod dnevne dadilje. Pohađanje je u pravilu dobrovoljno, a koliko roditelji plaćaju, ovisi o pokrajini i općini.",
   "merksatz_de": "Ab drei Jahren hat ein Kind Anspruch auf einen Kindergartenplatz."
  },
  {
@@ -3260,7 +3260,7 @@
    "Samohrani otac živi sa svoje dvoje djece.",
    "Muškarac je u isto vrijeme u braku s dvije žene."
   ],
-  "expl_bks": "U Njemačkoj je brak moguć samo između dvije osobe. Tko je istodobno u braku s dvije osobe, čini kazneno djelo bigamije. Ostali oblici života su dopušteni: razvedeni smiju živjeti s novim partnerima, istospolni parovi od 2017. smiju i sklopiti brak, a samohrani roditelj može sam živjeti s djecom.",
+  "expl_bks": "U Njemačkoj je brak moguć samo između dvije osobe. Tko u Njemačkoj sklopi novi brak dok prvi još traje, čini kazneno djelo bigamije. Ostali oblici života su dopušteni: razvedeni smiju živjeti s novim partnerima, istospolni parovi od 2017. smiju i sklopiti brak, a samohrani roditelj može sam živjeti s djecom.",
   "merksatz_de": "Mehrere Ehepartner zur gleichen Zeit sind in Deutschland verboten."
  },
  {
@@ -3284,7 +3284,7 @@
    "obvezu čuvanja tajne (Schweigepflicht)",
    "slobodu mišljenja"
   ],
-  "expl_bks": "Tajnost pisama (Briefgeheimnis) zaštićena je Temeljnim zakonom (članak 10.). Pismo naslovljeno na drugu osobu smije otvoriti samo ta osoba ili netko koga je ona za to ovlastila. Tko namjerno otvori tuđe zatvoreno pismo, može biti kažnjen. Obveza čuvanja tajne (Schweigepflicht) odnosi se, na primjer, na liječnike i odvjetnike.",
+  "expl_bks": "Tajnost pisama (Briefgeheimnis) zaštićena je Temeljnim zakonom (članak 10.). Pismo naslovljeno na drugu osobu u pravilu smije otvoriti samo ta osoba ili netko koga je ona ovlastila; iznimke postoje, npr. za roditelje male djece ili po sudskom nalogu. Tko namjerno otvori tuđe zatvoreno pismo, može biti kažnjen. Obveza čuvanja tajne (Schweigepflicht) odnosi se, na primjer, na liječnike i odvjetnike.",
   "merksatz_de": "Fremde Briefe darf man nicht öffnen: Das Briefgeheimnis gilt."
  },
  {
@@ -3308,7 +3308,7 @@
    "Prijetim toj osobi.",
    "Mogu se požaliti voditelju ureda."
   ],
-  "expl_bks": "U uredima se prema svima mora postupati korektno i s poštovanjem. Ako vas netko loše tretira, možete se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Ostanite mirni: prijetnje nisu dopuštene i mogu biti kažnjive.",
+  "expl_bks": "U uredima se prema svima mora postupati korektno i s poštovanjem. Tko je loše tretiran, može se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Prijetnje nisu dopuštene i mogu biti kažnjive.",
   "merksatz_de": "Bei schlechter Behandlung im Amt kann man sich beschweren."
  },
  {
@@ -3368,7 +3368,7 @@
    "slobodu okupljanja",
    "slobodu kretanja i nastanjivanja"
   ],
-  "expl_bks": "Pravo na jednako postupanje znači da se prema svim ljudima mora postupati jednako. Temeljni zakon (članak 3.) kaže da nitko ne smije biti zapostavljen zbog svog porijekla ili „rase”. Zabrana ulaska u bazen samo zbog boje kože zato je diskriminacija. Opći zakon o jednakom postupanju (AGG) to zabranjuje i u svakodnevnom životu.",
+  "expl_bks": "Pravo na jednako postupanje znači da nitko ne smije biti lošije tretiran npr. zbog boje kože, spola ili vjere. Temeljni zakon (članak 3.) kaže da nitko ne smije biti zapostavljen zbog svog porijekla ili „rase”. Zabrana ulaska u bazen samo zbog boje kože zato je diskriminacija. Opći zakon o jednakom postupanju (AGG) to zabranjuje i u svakodnevnom životu.",
   "merksatz_de": "Wegen der Hautfarbe darf niemand benachteiligt werden."
  },
  {
@@ -3381,7 +3381,7 @@
    "učitelj (Lehrer)"
   ],
   "expl_bks": "Pomoćnici na izborima (Wahlhelfer) broje glasove i paze da izbori na biralištu teku ispravno. Za to je potrebno mnogo ljudi. Ako općina ne nađe dovoljno dobrovoljaca, može pozvati građane s biračkim pravom, a oni smiju odbiti samo iz važnog razloga, na primjer zbog bolesti. Za taj rad dobiva se mala naknada.",
-  "merksatz_de": "Wahlhelfer ist ein Ehrenamt, das man übernehmen muss."
+  "merksatz_de": "Wahlhelfer ist ein Ehrenamt, das Wahlberechtigte auf Aufforderung übernehmen müssen."
  },
  {
   "id": "G-283",
@@ -3392,8 +3392,8 @@
    "Pošaljem račun natrag uredu.",
    "S računom odem u poreznu upravu (Finanzamt)."
   ],
-  "expl_bks": "Protiv pogrešne odluke ili računa nekog ureda možete uložiti prigovor (Widerspruch). Prigovor se šalje pisanim putem istom uredu, obično u roku od mjesec dana. Ured tada mora još jednom provjeriti svoju odluku. Ako račun samo ignorirate ili ga vratite bez objašnjenja, on ostaje važeći.",
-  "merksatz_de": "Gegen einen falschen Bescheid einer Behörde legt man Widerspruch ein."
+  "expl_bks": "Protiv pogrešne odluke ili računa nekog ureda možete uložiti prigovor (Widerspruch). Prigovor se obično šalje pisanim putem istom uredu u roku od mjesec dana. U nekim pokrajinama za mnoge odluke prigovora nema, nego se odmah ide na sud; to piše na kraju odluke (Rechtsbehelfsbelehrung). Ako račun samo ignorirate ili ga vratite bez objašnjenja, on ostaje važeći.",
+  "merksatz_de": "Gegen einen falschen Bescheid einer Behörde wehrt man sich meist mit einem Widerspruch."
  },
  {
   "id": "G-284",
@@ -3428,7 +3428,7 @@
    "skupina u poduzeću (Betriebsgruppe)",
    "uprava poduzeća (Betriebsmanagement)"
   ],
-  "expl_bks": "Radničko vijeće (Betriebsrat) biraju zaposlenici iz svojih redova. Ono zastupa njihove interese prema poslodavcu, na primjer kod radnog vremena, otkaza ili sukoba na poslu. Prije svakog otkaza poslodavac mora saslušati radničko vijeće. Ono se može osnovati u poduzećima s najmanje pet stalnih zaposlenika.",
+  "expl_bks": "Radničko vijeće (Betriebsrat) biraju zaposlenici iz svojih redova. Ono zastupa njihove interese prema poslodavcu, na primjer kod radnog vremena, otkaza ili sukoba na poslu. Ako u poduzeću postoji radničko vijeće, poslodavac ga mora saslušati prije svakog otkaza. Ono se može osnovati u poduzećima s najmanje pet stalnih zaposlenika.",
   "merksatz_de": "Der Betriebsrat vertritt die Interessen der Arbeitnehmer im Betrieb."
  },
  {
@@ -3441,7 +3441,7 @@
    "obvezno osiguranje"
   ],
   "expl_bks": "Otkazni rok je vrijeme između predaje otkaza i posljednjeg radnog dana. Po zakonu za zaposlenike obično iznosi četiri tjedna, do 15. u mjesecu ili do kraja mjeseca, a ugovor o radu ili kolektivni ugovor mogu odrediti i drukčije. Otkaz mora biti pisan i vlastoručno potpisan; e-mail ili SMS nisu dovoljni.",
-  "merksatz_de": "Wer kündigt, muss die Kündigungsfrist beachten."
+  "merksatz_de": "Wer kündigt, muss in der Regel die Kündigungsfrist beachten."
  },
  {
   "id": "G-288",
@@ -3489,7 +3489,7 @@
    "je crkva odgovorna za poreznu prijavu."
   ],
   "expl_bks": "Članovi velikih crkava, npr. katoličke i evangeličke, plaćaju crkveni porez. On iznosi 8 % ili 9 % poreza na dohodak, odnosno poreza na plaću, ovisno o saveznoj pokrajini. Porezna uprava (Finanzamt) ga ubire za crkve i zato mora znati pripada li netko nekoj crkvi. Tko izađe iz crkve, ne plaća crkveni porez.",
-  "merksatz_de": "Kirchenmitglieder zahlen Kirchensteuer, das Finanzamt zieht sie ein."
+  "merksatz_de": "Katholiken und Protestanten zahlen Kirchensteuer; das Finanzamt zieht sie ein."
  },
  {
   "id": "G-292",
@@ -3560,8 +3560,8 @@
    "Maroko",
    "Turska"
   ],
-  "expl_bks": "Najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske. Mnogi su došli kao gastarbajteri nakon sporazuma o zapošljavanju iz 1961., a kasnije su doveli i svoje obitelji. Danas u Njemačkoj žive već treća i četvrta generacija tih obitelji.",
-  "merksatz_de": "Die meisten Migranten in Deutschland stammen aus der Türkei."
+  "expl_bks": "Prema službenoj statistici (2024.) najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske (oko 12 %). Mnogi su došli kao gastarbajteri nakon sporazuma o zapošljavanju iz 1961., a kasnije su doveli i svoje obitelji. Danas u Njemačkoj žive već treća i četvrta generacija tih obitelji.",
+  "merksatz_de": "Die größte Migrantengruppe in Deutschland stammt aus der Türkei."
  },
  {
   "id": "G-298",
@@ -3584,7 +3584,7 @@
    "radnicima preko agencije (Zeitarbeiter).",
    "smjenskim radnicima (Schichtarbeiter)."
   ],
-  "expl_bks": "Riječ „Gastarbeiter” znači „radnik gost”. Država je mislila da će ti radnici ostati samo kratko i onda se vratiti kući. Mnogi su ipak ostali i doveli obitelji. Od 1968. dolazili su i radnici iz Jugoslavije, pa je riječ „gastarbajter” ušla i u naš jezik.",
+  "expl_bks": "Riječ „Gastarbeiter” znači „radnik gost”. Država je mislila da će ti radnici ostati samo kratko i onda se vratiti kući. Mnogi su ipak ostali i doveli obitelji. Godine 1968. sporazum je sklopljen i s Jugoslavijom, odakle je došlo mnogo radnika, pa je riječ „gastarbajter” ušla i u naš jezik.",
   "merksatz_de": "Angeworbene ausländische Arbeitskräfte nannte man damals Gastarbeiter."
  },
  {
@@ -3597,7 +3597,7 @@
    "Turska"
   ],
   "expl_bks": "Prvi sporazum o zapošljavanju stranih radnika Savezna Republika Njemačka sklopila je 1955. s Italijom. Kasnije su slijedili sporazumi sa Španjolskom i Grčkom (1960.), Turskom (1961.), Portugalom (1964.) i Jugoslavijom (1968.). Talijani su tako bili prvi gastarbajteri.",
-  "merksatz_de": "Die ersten Gastarbeiter kamen 1955 aus Italien."
+  "merksatz_de": "Das erste Anwerbeabkommen schloss die Bundesrepublik 1955 mit Italien."
  },
  {
   "id": "BW-01",
@@ -4196,7 +4196,7 @@
    "senatora za pravosuđe (Justizsenator)",
    "senatora za unutarnje poslove (Innensenator)"
   ],
-  "expl_bks": "Članovi bremenske vlade (Senata) zovu se senatori. Svaki je zadužen za jedno područje, na primjer financije, pravosuđe ili unutarnje poslove. Odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona), zato Bremen nema senatora za vanjske odnose.",
+  "expl_bks": "Članovi bremenske vlade (Senata) zovu se senatori. Svaki je zadužen za određena područja, na primjer financije, pravosuđe ili unutarnje poslove. Odnose s drugim državama vodi savezna država (članak 32. Temeljnog zakona), zato Bremen nema senatora za vanjske odnose.",
   "merksatz_de": "Bremen hat keinen Senator für Außenbeziehungen – das macht der Bund."
  },
  {
@@ -4796,7 +4796,7 @@
    "ministra financija (Finanzminister)",
    "ministra unutarnjih poslova (Innenminister)"
   ],
-  "expl_bks": "Sjeverna Rajna-Vestfalija nema ministra vanjskih poslova, iako ima najviše stanovnika od svih pokrajina. Vanjska politika zadaća je savezne države (Temeljni zakon, članak 32.). Ministre pravosuđa, financija i unutarnjih poslova ima svaka pokrajina jer upravlja npr. sudovima, policijom i svojim proračunom.",
+  "expl_bks": "Sjeverna Rajna-Vestfalija nema ministra vanjskih poslova, iako ima najviše stanovnika od svih pokrajina. Vanjska politika zadaća je savezne države (Temeljni zakon, članak 32.). Ova pokrajina ipak ima ministre pravosuđa, financija i unutarnjih poslova jer upravlja npr. sudovima, policijom i svojim proračunom.",
   "merksatz_de": "Nordrhein-Westfalen hat keinen Außenminister."
  },
  {
@@ -4844,7 +4844,7 @@
    "18",
    "20"
   ],
-  "expl_bks": "U Porajnju-Falačkoj na lokalnim izborima smije se glasati tek s navršenih 18 godina. U nekim drugim pokrajinama, npr. u Donjoj Saskoj, granica je 16 godina, pa je ovdje lako pogriješiti. Pravila za lokalne izbore određuje svaka pokrajina sama.",
+  "expl_bks": "U Porajnju-Falačkoj na lokalnim izborima smije se glasati tek s navršenih 18 godina (stanje: 2026.; o snižavanju na 16 raspravlja se). U nekim drugim pokrajinama, npr. u Donjoj Saskoj, granica je 16 godina, pa je ovdje lako pogriješiti. Pravila za lokalne izbore određuje svaka pokrajina sama.",
   "merksatz_de": "In Rheinland-Pfalz wählt man bei Kommunalwahlen ab 18."
  },
  {
@@ -4964,7 +4964,7 @@
    "18",
    "20"
   ],
-  "expl_bks": "U Saarlandu se na lokalnim izborima smije glasati s navršenih 18 godina. Na tim izborima biraju se npr. općinsko vijeće i gradonačelnik. U nekim drugim pokrajinama, npr. u Sjevernoj Rajni-Vestfaliji, granica je 16 godina, ali ne u Saarlandu.",
+  "expl_bks": "U Saarlandu se na lokalnim izborima smije glasati s navršenih 18 godina (stanje: 2026.). Na tim izborima biraju se npr. općinsko vijeće i gradonačelnik. U nekim drugim pokrajinama, npr. u Sjevernoj Rajni-Vestfaliji, granica je 16 godina, ali ne u Saarlandu.",
   "merksatz_de": "Im Saarland darf man bei Kommunalwahlen ab 18 wählen."
  },
  {
@@ -5084,7 +5084,7 @@
    "18",
    "20"
   ],
-  "expl_bks": "U Saskoj se na lokalnim izborima (Kommunalwahlen) smije glasati od 18. godine. Na tim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). U nekim drugim pokrajinama, primjerice u Saskoj-Anhalt i Tiringiji, na lokalnim izborima glasa se već od 16. godine.",
+  "expl_bks": "U Saskoj se na lokalnim izborima (Kommunalwahlen) smije glasati od 18. godine (stanje: 2026.). Na tim izborima biraju se npr. općinsko ili gradsko vijeće i okružna skupština (Kreistag). U nekim drugim pokrajinama, primjerice u Saskoj-Anhalt i Tiringiji, na lokalnim izborima glasa se već od 16. godine.",
   "merksatz_de": "In Sachsen wählt man bei Kommunalwahlen ab 18 Jahren."
  },
  {

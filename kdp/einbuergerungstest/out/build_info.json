@@ -1,6 +1,18 @@
 {
- "pages": 221,
+ "pages": 311,
  "missing_translations": 0,
  "questions": 460,
- "tests": 10
+ "tests": 10,
+ "draft": true,
+ "missing_release": [
+  "edition_date",
+  "catalog_stand",
+  "catalog_compared_on",
+  "human_proofread_by",
+  "human_proofread_date",
+  "publisher",
+  "address",
+  "email"
+ ],
+ "images": true
 }

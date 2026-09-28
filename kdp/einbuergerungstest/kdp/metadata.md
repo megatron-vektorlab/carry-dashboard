@@ -16,12 +16,12 @@
 | Primarno tržište | Amazon.de (zatim .at; .com nije ciljano) |
 | Format | Meki uvez, 6,69 × 9,61 in (17 × 24,4 cm), crno-bijeli tisak, bijeli papir, bez „bleeda”, mat naslovnica |
 | ISBN | Besplatni KDP ISBN (impresum tada glasi „Independently published”) ili vlastiti ISBN |
-| Cijena | 14,99 € (Amazon.de). Honorar ≈ 60 % × (14,99 / 1,07) − trošak tiska ≈ 4–5 € [provjeriti u KDP kalkulatoru s točnim brojem stranica] |
+| Cijena | Prijedlog **16,99 €** (Amazon.de): knjiga sada ima ~311 stranica. Honorar ≈ 60 % × (16,99 / 1,07) − trošak tiska (≈ 1,00 € + 0,012 € po stranici ≈ 4,7 €) ≈ 4,8 €. Pri 14,99 € honorar bi bio ≈ 3,7 €. [provjeriti u KDP kalkulatoru] |
 
 ## Prijava AI-ja (obavezno)
-- **Text: AI-generated → Yes** (prijevodi, objašnjenja, Merksätze). Opis alata: „Claude (Anthropic), menschlich redigiert”.
+- **Text: AI-generated → Yes** (prijevodi, objašnjenja, Merksätze). Opis alata: „Claude (Anthropic)”. Ljudsku lekturu upišite tek kad je stvarno obavljena.
 - **Translations: AI-generated → Yes.**
-- **Images: No** (knjiga nema slika; naslovnica je tipografska, složena kodom). Ako ste u nedoumici, označite „Yes” – prijava nije javna.
+- **Images: No** – slike u knjizi preuzete su iz BAMF-ova kataloga (nisu nastale AI-jem), naslovnica je tipografska. Ako ste u nedoumici, označite „Yes” – prijava nije javna.
 
 ## Ključne riječi (7 polja, do 50 znakova)
 1. einbürgerungstest kroatisch
@@ -47,8 +47,9 @@ Die Prüfung ist auf Deutsch. Dieses Buch hilft Ihnen, jede Frage wirklich zu ve
 <li>Jede Frage und jede Antwort mit Übersetzung</li>
 <li>Die richtige Antwort markiert und in einfachen Worten erklärt</li>
 <li>Ein kurzer Merksatz auf Deutsch zu jeder Frage</li>
-<li>10 Probetests mit Lösungen – zusammen alle 300 allgemeinen Fragen</li>
-<li>Bildfragen in Worten beschrieben, Glossar Deutsch – BKS</li>
+<li>10 vollständige Prüfungssimulationen (30 + 3 Fragen) mit Antwortbogen und Lösungen</li>
+<li>Wappen, Karten und Stimmzettel der Bildfragen abgedruckt</li>
+<li>Lernplan für 14 und 30 Tage, Fehlerliste, Themenregister, Glossar Deutsch – BKS</li>
 </ul>
 <b>Sva pitanja za test naturalizacije i test „Život u Njemačkoj”</b> – njemački original, prijevod, označen točan odgovor, kratko objašnjenje i 10 probnih testova s rješenjima.
 <br><br>

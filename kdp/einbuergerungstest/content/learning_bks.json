@@ -1,0 +1,446 @@
+{
+ "_note": "Learning aids (BKS). Question numbers in 'refs' are catalogue numbers of general questions; build_book.py checks that each referenced question contains the given keyword.",
+ "topics": {
+  "grundrechte": [
+   "Temeljna prava i načela ustava",
+   "Grundrechte"
+  ],
+  "wahlen": [
+   "Izbori i stranke",
+   "Wahlen und Parteien"
+  ],
+  "verfassungsorgane": [
+   "Državna tijela",
+   "Verfassungsorgane"
+  ],
+  "foederalismus": [
+   "Pokrajine i općine",
+   "Bundesländer und Kommunen"
+  ],
+  "recht_alltag": [
+   "Pravo u svakodnevici",
+   "Recht im Alltag"
+  ],
+  "arbeit_soziales": [
+   "Rad, porezi, socijalna država",
+   "Arbeit und Soziales"
+  ],
+  "familie_bildung": [
+   "Obitelj, škola, ravnopravnost",
+   "Familie und Bildung"
+  ],
+  "religion_kultur": [
+   "Vjera, blagdani, tolerancija",
+   "Religion und Kultur"
+  ],
+  "geschichte_ns": [
+   "Povijest do 1945.",
+   "Geschichte bis 1945"
+  ],
+  "geschichte_nachkrieg": [
+   "Povijest 1945.–1990.",
+   "Geschichte 1945–1990"
+  ],
+  "europa": [
+   "Europa i susjedi",
+   "Europa"
+  ],
+  "symbole": [
+   "Državni simboli",
+   "Staatssymbole"
+  ]
+ },
+ "timeline": [
+  {
+   "year": "1933.",
+   "text": "Nacionalsocijalisti na čelu s Hitlerom dolaze na vlast; Hitler postaje kancelar Reicha i uvodi diktaturu.",
+   "refs": [
+    [
+     152,
+     "1933"
+    ],
+    [
+     155,
+     "1933"
+    ],
+    [
+     156,
+     "Reichskanzler"
+    ],
+    [
+     157,
+     "1933"
+    ]
+   ]
+  },
+  {
+   "year": "9. 11. 1938.",
+   "text": "Nacionalsocijalisti i njihove pristaše uništavaju sinagoge i židovske trgovine.",
+   "refs": [
+    [
+     163,
+     "Synagogen"
+    ],
+    [
+     164,
+     "1938"
+    ]
+   ]
+  },
+  {
+   "year": "1939.–1945.",
+   "text": "Drugi svjetski rat.",
+   "refs": [
+    [
+     160,
+     "1939"
+    ],
+    [
+     154,
+     "Zweite Weltkrieg"
+    ]
+   ]
+  },
+  {
+   "year": "20. 7. 1944.",
+   "text": "Claus Schenk grof von Stauffenberg izvodi atentat na Hitlera.",
+   "refs": [
+    [
+     162,
+     "Stauffenberg"
+    ]
+   ]
+  },
+  {
+   "year": "27. 1. 1945.",
+   "text": "Oslobođenje logora smrti Auschwitz – danas dan sjećanja na žrtve nacionalsocijalizma.",
+   "refs": [
+    [
+     220,
+     "27. Januar"
+    ]
+   ]
+  },
+  {
+   "year": "8. 5. 1945.",
+   "text": "Kraj Drugog svjetskog rata u Europi.",
+   "refs": [
+    [
+     153,
+     "8. Mai 1945"
+    ]
+   ]
+  },
+  {
+   "year": "od 1945.",
+   "text": "Njemačka je podijeljena na četiri okupacijske zone: britansku, sovjetsku, američku i francusku.",
+   "refs": [
+    [
+     176,
+     "Besatzungszonen"
+    ]
+   ]
+  },
+  {
+   "year": "1948.–1949.",
+   "text": "Sovjetski Savez prekida kopneni promet prema Zapadnom Berlinu; grad se opskrbljuje zračnim mostom.",
+   "refs": [
+    [
+     178,
+     "Luftbrücke"
+    ]
+   ]
+  },
+  {
+   "year": "1949.",
+   "text": "Osniva se Savezna Republika Njemačka (Temeljni zakon, 23. 5.) i Njemačka Demokratska Republika (DDR, 7. 10.).",
+   "refs": [
+    [
+     169,
+     "gegründet"
+    ],
+    [
+     174,
+     "DDR"
+    ],
+    [
+     217,
+     "DDR"
+    ]
+   ]
+  },
+  {
+   "year": "17. 6. 1953.",
+   "text": "Štrajkovi i narodni ustanak u DDR-u.",
+   "refs": [
+    [
+     186,
+     "1953"
+    ],
+    [
+     210,
+     "17. Juni 1953"
+    ]
+   ]
+  },
+  {
+   "year": "1957.",
+   "text": "Rimski ugovori: osniva se Europska ekonomska zajednica (EEZ), preteča EU-a.",
+   "refs": [
+    [
+     237,
+     "Römischen Verträge"
+    ]
+   ]
+  },
+  {
+   "year": "13. 8. 1961.",
+   "text": "DDR gradi Berlinski zid; Berlin je podijeljen do 1989.",
+   "refs": [
+    [
+     188,
+     "Mauer"
+    ],
+    [
+     189,
+     "Mauer"
+    ],
+    [
+     193,
+     "1961"
+    ]
+   ]
+  },
+  {
+   "year": "1970.",
+   "text": "Kancelar Willy Brandt kleči u Varšavi i moli Poljsku i poljske Židove za oprost.",
+   "refs": [
+    [
+     181,
+     "Kniefall"
+    ]
+   ]
+  },
+  {
+   "year": "1989.",
+   "text": "Ponedjeljačke demonstracije u DDR-u („Wir sind das Volk”), „Die Wende”; 9. 11. 1989. otvoren je Berlinski zid.",
+   "refs": [
+    [
+     166,
+     "Wir sind das Volk"
+    ],
+    [
+     196,
+     "Wende"
+    ],
+    [
+     191,
+     "Mauer"
+    ]
+   ]
+  },
+  {
+   "year": "3. 10. 1990.",
+   "text": "Ponovno ujedinjenje: pet pokrajina bivšeg DDR-a pristupa Saveznoj Republici; Njemačka ima današnje granice.",
+   "refs": [
+    [
+     218,
+     "Wiedervereinigung"
+    ],
+    [
+     219,
+     "Grenzen"
+    ],
+    [
+     228,
+     "Wiedervereinigung"
+    ]
+   ]
+  },
+  {
+   "year": "2002.",
+   "text": "Euro postaje gotovinsko sredstvo plaćanja u Njemačkoj.",
+   "refs": [
+    [
+     240,
+     "Euro"
+    ]
+   ]
+  }
+ ],
+ "institutions": [
+  {
+   "name": "Bundestag",
+   "bks": "savezni parlament",
+   "does": "donosi savezne zakone, bira saveznog kancelara, kontrolira vladu, odlučuje o proračunu",
+   "who": "birači, svake 4 godine",
+   "kw": [
+    "Bundestag"
+   ]
+  },
+  {
+   "name": "Bundesregierung",
+   "bks": "savezna vlada: kancelar i ministri",
+   "does": "vodi državu; kancelar određuje smjernice politike",
+   "who": "kancelara bira Bundestag na prijedlog saveznog predsjednika; ministre na prijedlog kancelara imenuje savezni predsjednik",
+   "kw": [
+    "Bundesregierung",
+    "Bundeskanzler",
+    "Bundesminister"
+   ]
+  },
+  {
+   "name": "Bundesrat",
+   "bks": "savezno vijeće pokrajina",
+   "does": "preko njega pokrajine sudjeluju u donošenju saveznih zakona",
+   "who": "članovi pokrajinskih vlada",
+   "kw": [
+    "Bundesrat"
+   ]
+  },
+  {
+   "name": "Bundespräsident",
+   "bks": "savezni predsjednik",
+   "does": "šef države: predstavlja Njemačku, potpisuje zakone, imenuje kancelara i ministre",
+   "who": "Savezna skupština, na 5 godina",
+   "kw": [
+    "Bundespräsident",
+    "Staatsoberhaupt"
+   ]
+  },
+  {
+   "name": "Bundesversammlung",
+   "bks": "Savezna skupština",
+   "does": "sastaje se samo radi izbora saveznog predsjednika",
+   "who": "svi zastupnici Bundestaga i jednako toliko predstavnika koje izaberu pokrajinski parlamenti",
+   "kw": [
+    "Bundesversammlung"
+   ]
+  },
+  {
+   "name": "Bundesverfassungsgericht",
+   "bks": "Savezni ustavni sud (Karlsruhe)",
+   "does": "čuva Temeljni zakon; može poništiti zakon koji je u suprotnosti s ustavom",
+   "who": "suce biraju napola Bundestag, napola Bundesrat",
+   "kw": [
+    "Bundesverfassungsgericht",
+    "Verfassungsgericht"
+   ]
+  },
+  {
+   "name": "Landtag / Landesregierung",
+   "bks": "pokrajinski parlament / pokrajinska vlada",
+   "does": "zakoni i uprava pokrajine, npr. škole i policija",
+   "who": "birači pokrajine; Landtag bira šefa pokrajinske vlade",
+   "kw": [
+    "Landtag",
+    "Landesregierung",
+    "Landesparlament",
+    "Ministerpräsident"
+   ]
+  }
+ ],
+ "words": [
+  {
+   "de": "nicht / kein, keine",
+   "bks": "ne / nijedan. Pitanje traži ono što NIJE točno ili što NE postoji. Pročitajte pitanje do kraja prije odgovora.",
+   "kw": [
+    "nicht",
+    "kein",
+    "keine",
+    "keinen",
+    "keiner"
+   ]
+  },
+  {
+   "de": "nur",
+   "bks": "samo. Točan je odgovor koji vrijedi isključivo za to – često su zamka odgovori koji vrijede i za druge.",
+   "kw": [
+    "nur"
+   ]
+  },
+  {
+   "de": "muss / müssen",
+   "bks": "mora – obveza.",
+   "kw": [
+    "muss",
+    "müssen"
+   ]
+  },
+  {
+   "de": "darf / dürfen",
+   "bks": "smije – dopušteno je. Pazite: „darf nicht” = ne smije (zabrana), a „muss nicht” = ne mora (nije obvezno, ali je dopušteno).",
+   "kw": [
+    "darf",
+    "dürfen"
+   ]
+  },
+  {
+   "de": "kann / können",
+   "bks": "može – postoji mogućnost, nije obveza.",
+   "kw": [
+    "kann",
+    "können"
+   ]
+  },
+  {
+   "de": "alle / jede, jeder",
+   "bks": "svi / svaki – odgovor mora vrijediti bez iznimke.",
+   "kw": [
+    "alle",
+    "jede",
+    "jeder",
+    "jedes"
+   ]
+  },
+  {
+   "de": "heute / jetzt / zurzeit / jetzige",
+   "bks": "danas / sada – odgovor se može promijeniti. Prije ispita provjerite aktualni katalog.",
+   "kw": [
+    "heute",
+    "jetzt",
+    "zurzeit",
+    "jetzige",
+    "heutiges"
+   ]
+  },
+  {
+   "de": "meistens / vor allem",
+   "bks": "većinom / prije svega – ne uvijek, nego najčešće.",
+   "kw": [
+    "meistens",
+    "vor allem"
+   ]
+  }
+ ],
+ "state_pattern": [
+  "grb pokrajine (slika)",
+  "okrug (Landkreis) ili gradski kotar",
+  "koliko godina traje mandat Landtaga",
+  "od koje dobi se glasa na lokalnim izborima",
+  "boje pokrajinske zastave",
+  "gdje se informirati o politici",
+  "glavni grad ili grad-pokrajina",
+  "položaj pokrajine na karti (slika)",
+  "naziv šefa pokrajinske vlade",
+  "koji ministar (senator) ne postoji u pokrajini"
+ ],
+ "state_names_bks": {
+  "BW": "Baden-Württemberg",
+  "BY": "Bavarska",
+  "BE": "Berlin",
+  "BB": "Brandenburg",
+  "HB": "Bremen",
+  "HH": "Hamburg",
+  "HE": "Hessen",
+  "MV": "Mecklenburg-Zapadno Pomorje",
+  "NI": "Donja Saska",
+  "NW": "Sjeverna Rajna-Vestfalija",
+  "RP": "Porajnje-Falačka",
+  "SL": "Saarland",
+  "SN": "Saska",
+  "ST": "Saska-Anhalt",
+  "SH": "Schleswig-Holstein",
+  "TH": "Tiringija"
+ }
+}
