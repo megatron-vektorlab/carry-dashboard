@@ -12,8 +12,8 @@ vlasnik može sam lektorirati. Isti postupak zatim daje ukrajinsko, tursko i alb
 | Katalog: 460 pitanja, provjereno iz 3 izvora | `data/catalog.json`, `data/crosscheck_report.md` | gotovo |
 | Prijevodi, objašnjenja i Merksätze (460) | `content/bks.json` | gotovo: 0 grešaka; slijepa provjera + provjera preciznosti, sve ispravke primijenjene |
 | Slike za 37 slikovnih pitanja (sivi tonovi) | `layout/images/`, `content/image_provenance.json` | gotovo; fotografije trećih strana izostavljene |
-| Unutrašnjost (PDF), ~311 str. | `out/interior_de-bks.pdf` | **nacrt** (vodeni žig) dok se ne ispuni `kdp/release.json` |
-| Naslovnica s hrbtom (PDF) | `out/cover_de-bks.pdf` | **nacrt** (vodeni žig) dok se ne ispuni `kdp/release.json` |
+| Unutrašnjost (PDF), 311 str. | `out/interior_de-bks.pdf` | **konačno** (29. 9. 2026.) – bez ljudske lekture i bez usporedbe sa službenim PDF-om, što impresum navodi |
+| Naslovnica s hrbtom (PDF) | `out/cover_de-bks.pdf` | **konačno**: 14,3304 × 9,86 in, hrbat 0,7004 in (vidi `out/build_info.json`) |
 | KDP podaci | `kdp/metadata.md` | gotovo |
 
 ## Sadržaj knjige

@@ -3,10 +3,8 @@
  "missing_translations": 0,
  "questions": 460,
  "tests": 10,
- "draft": true,
- "missing_release": [
-  "address"
- ],
+ "draft": false,
+ "missing_release": [],
  "images": true,
  "spine_in": 0.7004,
  "cover_width_in": 14.3304,

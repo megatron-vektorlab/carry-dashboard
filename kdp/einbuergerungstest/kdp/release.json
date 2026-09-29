@@ -4,7 +4,7 @@
  "edition_date": "29.09.2026",
  "author": "Ivan Sikuten",
  "publisher": "Ivan Sikuten",
- "address": null,
+ "address": "Miškinova 4, Šašinovec, 10360 Sesvete, Kroatien",
  "email": "ivansikuten@gmail.com",
  "isbn": "KDP",
  "catalog_verified": false,
@@ -15,5 +15,13 @@
  "human_proofread_by": null,
  "human_proofread_date": null,
  "images": true,
- "required": ["edition_date", "author", "publisher", "address", "email", "catalog_verified", "human_proofread"]
+ "required": [
+  "edition_date",
+  "author",
+  "publisher",
+  "address",
+  "email",
+  "catalog_verified",
+  "human_proofread"
+ ]
 }
