@@ -5,6 +5,11 @@
 #let R = M.release
 #let pending = "[AUSSTEHEND]"
 #let val(k) = if R.at(k, default: none) == none { pending } else { R.at(k) }
+#let verified = R.at("catalog_verified", default: none) == true
+#let stand-de = if verified { "Stand " + R.catalog_stand } else { "Datenstand " + R.public_copy_retrieved }
+#let proof = R.at("human_proofread", default: none)
+#let proof-de = if proof == true [#R.human_proofread_by, #R.human_proofread_date] else if proof == false [nicht erfolgt] else [ausstehend]
+#let proof-hr = if proof == true [#R.human_proofread_by, #R.human_proofread_date] else if proof == false [nije provedena] else [još nije provedena]
 
 #let ink = black
 #let grey = luma(45)      // translation: dark enough to read comfortably
@@ -149,9 +154,9 @@
     #v(9mm)
     #text(size: 11pt, lang: "hr", style: "italic")[Razumijte svako pitanje na svom jeziku:\ sva pitanja s prijevodom, objašnjenjima\ i 10 potpunih probnih testova]
     #v(1fr)
-    #text(size: 9pt)[#R.edition · #val("edition_date")\ Fragenkatalog: Stand #val("catalog_stand")]
-    #v(3mm)
-    #text(size: 10pt, weight: "semibold", val("publisher"))
+    #text(size: 13pt, weight: "semibold", val("author"))
+    #v(4mm)
+    #text(size: 9pt)[#R.edition · #val("edition_date")\ Fragenkatalog: #stand-de]
   ]
   #v(10mm)
 ]
@@ -169,17 +174,17 @@
 
   *Ausgabe:* #R.edition, #val("edition_date").
 
-  *Fragen und Antworten:* #M.catalog_source, Stand #val("catalog_stand"). Die Fragen, Antwortmöglichkeiten und richtigen Antworten sind unverändert wiedergegeben (§ 5 Abs. 2 UrhG); Schreibweise nur typografisch angepasst. Satzgrundlage: öffentliche Kopie des Katalogs, abgerufen am #R.public_copy_retrieved, abgeglichen mit zwei weiteren unabhängigen Kopien. Abgleich mit dem offiziellen BAMF-PDF: #val("catalog_compared_on"). Maßgeblich ist allein der aktuelle Katalog des BAMF.
+  *Fragen und Antworten:* #M.catalog_source. Die Fragen, Antwortmöglichkeiten und richtigen Antworten sind unverändert wiedergegeben (§ 5 Abs. 2 UrhG); Schreibweise nur typografisch angepasst. #if verified [Stand des Katalogs: #R.catalog_stand; mit dem offiziellen BAMF-PDF abgeglichen am #R.catalog_compared_on.] else [Datenstand: öffentliche Kopie des Katalogs vom #R.public_copy_retrieved (aus dem offiziellen BAMF-PDF erstellt), abgeglichen mit zwei weiteren unabhängigen Kopien. Ein eigener Abgleich mit dem offiziellen BAMF-PDF ist nicht erfolgt.] Maßgeblich ist allein der aktuelle Katalog des BAMF.
 
   *Abbildungen:* Wappen, Karten, Stimmzettel und Flaggen stammen aus dem Fragenkatalog des BAMF (Graustufen). Sie werden nur als Gegenstand der Prüfungsfragen gezeigt. Ein Foto Dritter (Frage 55) ist nicht abgedruckt.
 
-  *Übersetzungen, Erklärungen und Merksätze:* mit Unterstützung durch künstliche Intelligenz erstellt; automatisch und durch unabhängige KI-Gegenprüfungen kontrolliert. Menschliches Lektorat: #if R.human_proofread_by == none [ausstehend] else [#R.human_proofread_by, #R.human_proofread_date].
+  *Übersetzungen, Erklärungen und Merksätze:* mit Unterstützung durch künstliche Intelligenz erstellt; automatisch und durch unabhängige KI-Gegenprüfungen kontrolliert. Menschliches Lektorat: #proof-de.
 
   Alle Angaben ohne Gewähr. Das Buch ersetzt keine Beratung durch die Einbürgerungsbehörde.
 
-  © #val("publisher") (Übersetzungen, Erklärungen, Merksätze, Gestaltung). Alle Rechte vorbehalten.\
-  Verantwortlich / Hersteller (GPSR): #val("publisher"), #val("address"), #val("email")\
-  ISBN: #val("isbn")
+  © 2026 #val("author") (Übersetzungen, Erklärungen, Merksätze, Gestaltung). Alle Rechte vorbehalten.\
+  Herausgeber (Selbstverlag) und Verantwortlicher (GPSR): #val("publisher"), #val("address"), #val("email")\
+  #if R.isbn == none or R.isbn == "KDP" [ISBN: siehe Rückseite (vergeben von Amazon KDP)] else [ISBN: #R.isbn]
   #v(6mm)
 ]
 
@@ -215,10 +220,10 @@ Prije učenja pogledajte stranice *Moja pokrajina*, *Plan učenja*, *Pazi na rij
 
 #table(columns: (auto, 1fr), stroke: 0.4pt + luma(160), inset: 1.8mm,
   [*Izdanje knjige*], [#R.edition, #val("edition_date")],
-  [*Stanje službenog kataloga*], [#val("catalog_stand") (datum otisnut na BAMF-ovu PDF-u)],
-  [*Posljednja usporedba sa službenim PDF-om*], [#val("catalog_compared_on")],
+  [*Stanje kataloga*], [#if verified [#R.catalog_stand (datum otisnut na BAMF-ovu PDF-u)] else [podaci javne kopije BAMF-ova kataloga od #R.public_copy_retrieved (izrađene iz službenog PDF-a)]],
+  [*Usporedba sa službenim PDF-om*], [#if verified [#R.catalog_compared_on] else [izdavač je nije proveo – prije ispita usporedite pitanja na www.bamf.de]],
   [*Podloga za slog*], [javna kopija BAMF-ova kataloga preuzeta #R.public_copy_retrieved, uspoređena s još dvije neovisne kopije; ključ odgovora potvrđen za svih 460 pitanja],
-  [*Provjere prijevoda i objašnjenja*], [automatska provjera; neovisne provjere drugim AI modelima (slijepo rješavanje bez ključa, provjera preciznosti); ljudska lektura: #if R.human_proofread_by == none [još nije provedena] else [#R.human_proofread_by, #R.human_proofread_date]],
+  [*Provjere prijevoda i objašnjenja*], [automatska provjera; neovisne provjere drugim AI modelima (slijepo rješavanje bez ključa, provjera preciznosti); ljudska lektura: #proof-hr],
 )
 Katalog se povremeno mijenja (npr. pitanja o aktualnim dužnosnicima). Prije ispita usporedite pitanja na www.bamf.de.
 

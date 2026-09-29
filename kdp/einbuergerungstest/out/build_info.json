@@ -5,14 +5,15 @@
  "tests": 10,
  "draft": true,
  "missing_release": [
-  "edition_date",
-  "catalog_stand",
-  "catalog_compared_on",
-  "human_proofread_by",
-  "human_proofread_date",
-  "publisher",
-  "address",
-  "email"
+  "address"
  ],
- "images": true
+ "images": true,
+ "spine_in": 0.7004,
+ "cover_width_in": 14.3304,
+ "cover_height_in": 9.86,
+ "trim": "6.69 x 9.61 in",
+ "files": [
+  "interior_de-bks.pdf",
+  "cover_de-bks.pdf"
+ ]
 }

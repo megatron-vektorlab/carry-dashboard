@@ -29,6 +29,17 @@ def pretty(s):
     return s.strip()
 
 
+def release_missing(rel):
+    """Required release fields; false is an explicit answer. Verified catalogue / human
+    proofreading additionally require their dates and names."""
+    need = list(rel["required"])
+    if rel.get("catalog_verified") is True:
+        need += ["catalog_stand", "catalog_compared_on"]
+    if rel.get("human_proofread") is True:
+        need += ["human_proofread_by", "human_proofread_date"]
+    return [k for k in need if rel.get(k) is None or rel.get(k) == ""]
+
+
 def has_word(text, kw):
     return re.search(r"(?<![\wäöüß])" + re.escape(kw) + r"(?![\wäöüß])", text, re.I) is not None
 
@@ -51,7 +62,7 @@ def main():
     missing = [q["id"] for q in questions if q["id"] not in bks]
     if missing and not args.draft:
         sys.exit(f"{len(missing)} questions have no translation (e.g. {missing[:5]}); run validate_content.py or use --draft")
-    missing_release = [k for k in release["required"] if not release.get(k)]
+    missing_release = release_missing(release)
     use_images = bool(release.get("images", True))
 
     def images_of(q):

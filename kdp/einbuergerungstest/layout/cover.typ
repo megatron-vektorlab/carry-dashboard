@@ -61,8 +61,9 @@
     badge("Erklärt", "jede richtige Antwort ·\nsvaki odgovor objašnjen"),
     badge("30 + 3", "10 Prüfungssimulationen\nmit Antwortbogen"),
   ))
+#place(top + left, dx: fx + 0.45in, dy: bleed + trim-h - 1.5in, text(size: 13pt, weight: "semibold", P.author))
 #place(top + left, dx: fx + 0.45in, dy: bleed + trim-h - 1.05in, block(width: trim-w - 0.9in)[
-  #text(size: 9pt, fill: paper)[BAMF-Fragenkatalog · Stand: #P.stand]
+  #text(size: 9pt, fill: paper)[BAMF-Fragenkatalog · #P.stand]
   #linebreak()
   #text(size: 7.5pt, fill: rgb("#aab4c8"))[Keine offizielle Publikation des BAMF]
 ])
@@ -76,7 +77,7 @@
   place(top + left, dx: bleed + trim-w, dy: 0pt, rect(width: spine, height: H, fill: navy))
   place(top + left, dx: bleed + trim-w + spine / 2, dy: H / 2,
     place(center + horizon, rotate(90deg, reflow: true,
-      text(size: 11pt, weight: "semibold")[Einbürgerungstest & Leben in Deutschland #h(8pt) #text(fill: accent)[Deutsch – BKS]])))
+      text(size: 11pt, weight: "semibold")[Einbürgerungstest & Leben in Deutschland #h(8pt) #text(fill: accent)[Deutsch – BKS] #h(14pt) #text(weight: "regular")[#P.author]])))
 }
 
 // ---------- BACK ----------
