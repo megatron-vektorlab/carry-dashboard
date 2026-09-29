@@ -1,5 +1,7 @@
 # KDP – podaci za unos (izdanje DE–BKS, meki uvez)
 
+> Postupak objave korak po korak: `kdp/objava_korak_po_korak.md`. Pravila računa: jedan KDP račun po osobi; najviše 2 nova naslova tjedno po formatu (od 21. 9. 2026.).
+
 > Sve s oznakom **[provjeriti]** potvrdite u KDP-u prije objave.
 
 ## Osnovno
@@ -7,7 +9,7 @@
 |---|---|
 | Jezik knjige | **Njemački** (Deutsch). Hrvatski/bosanski/srpski vjerojatno nije KDP-ov podržani jezik; njemački tekst je izvornik i čini veći dio knjige. [provjeriti na stranici „Book Supported Languages”] |
 | Naslov | Einbürgerungstest & Leben in Deutschland |
-| Podnaslov | Deutsch – Bosnisch/Kroatisch/Serbisch: Alle 460 Fragen mit Übersetzung, Erklärungen und 10 Probetests |
+| Podnaslov | Deutsch – Bosnisch/Kroatisch/Serbisch: Alle 460 Fragen mit Übersetzung, Erklärung und Bildern (oba dijela stoje na naslovnici) |
 | Serija | Einbürgerungstest zweisprachig (svezak: Deutsch–BKS) |
 | Izdanje | 1 |
 | Autor / suradnici | Ime izdavača ili urednika (**ne** navoditi BAMF). Uloga „Übersetzer” za odgovornog urednika. |
