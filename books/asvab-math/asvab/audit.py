@@ -24,7 +24,7 @@ from .render import LETTERS
 
 ARTICLE = re.compile(r"\b[aA] \$?(8|11|18|80|8\d\d|11\d|18\d)(?![\d{,])")
 ONE_PLURAL = re.compile(r"(?<![\d.,{])\$?1\$?~?\s(minutes|hours|miles|feet|inches|days|weeks|years|dollars|pounds|ounces|gallons|cups)\b")
-DOUBLED = re.compile(r"\b(\w+) \1\b", re.I)
+DOUBLED = re.compile(r"(?<![\w.])(\w+) \1\b", re.I)
 PY = re.compile(r"\*\*|sqrt\(|Rational\(|Integer\(|\bpi\b(?!})")
 
 
@@ -58,7 +58,7 @@ def audit_problem(where: str, p) -> list[str]:
         mm = rx.search(blob)
         if mm:
             out.append(f"{name}: …{blob[max(0, mm.start() - 30):mm.end() + 30]}…")
-    for mm in DOUBLED.finditer(plain(blob)):
+    for mm in DOUBLED.finditer(plain(p.stem + " " + steps)):
         w = mm.group(1).lower()
         if not w.isdigit() and w not in {"that", "had"}:
             out.append(f"doubled word: {mm.group(0)!r}")

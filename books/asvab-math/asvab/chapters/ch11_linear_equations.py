@@ -1162,7 +1162,11 @@ def consecutive(rng, lvl):
         if v != ans:
             wrong.append((Q(v), f"is the {pos[i]} {'number' if count > 2 or i else 'number'}, not the {asked}"))
     if step == 2:
-        wrong.append((Q(ans + 1) if which != "smallest" else Q(N - 1), "counts by 1 instead of by 2"))
+        # the student writes n, n + 1, n + 2, ... and solves that equation instead
+        n1 = Q(S - count * (count - 1) // 2) / count
+        if n1.is_integer:
+            pos1 = {"smallest": 0, "middle": 1, "largest": count - 1}[which]
+            wrong.append((n1 + pos1, "counts by 1 instead of by 2"))
     if Q(S) / count != ans and (Q(S) / count).is_integer:
         wrong.append((Q(S) / count, "divides the sum by the number of integers and stops"))
     near = lambda r: [Q(ans + step * j) for j in (-4, -3, 3, 4, -5, 5)]

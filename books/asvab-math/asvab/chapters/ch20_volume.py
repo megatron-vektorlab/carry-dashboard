@@ -916,7 +916,7 @@ def scale_solid(rng, lvl):
             stem=(f"{'A cylinder' if what == 'cylinder' else f'A {what} shaped like a cylinder'} holds "
                   f"{m(_pi_raw(V0))} {_cuw(ab)}. A second {what} has the same "
                   f"{other}, but its {part} is {m(k)} times as large. How much does the second {what} hold?"),
-            answer=ans, fmt=_pi_u(ab, 3), near=_pi_near(ans), wrong=wrong,
+            answer=ans, fmt=_pi_u(ab, 3), near=_pi_near(ans), wrong=wrong, sort=False,
             steps=[f"In {m(r'V = \pi r^2 h')} the radius is squared but the height is not.",
                    (f"Multiplying the radius by {m(k)} multiplies the volume by {m(f'{k}^2 = {k * k}')}." if which == "r"
                     else f"Multiplying the height by {m(k)} multiplies the volume by {m(k)}."),

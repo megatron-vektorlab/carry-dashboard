@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import itertools
 import random
+import re
 from dataclasses import dataclass, field
 from typing import Any, Callable
 
@@ -433,10 +434,10 @@ def finalize(p: Problem, rng: random.Random, target: int) -> Problem:
     p.choices = [(t, None if c[3] else c[1]) for t, c in zip(texs, vals)]
     p.key = [i for i, c in enumerate(vals) if c[3]][0]
 
-    blob = p.stem + "".join(p.steps) + "".join(t for t, _ in p.choices)
-    for bad in ("nan", "zoo", "None", "oo}", "\\infty"):
-        if bad in blob:
-            raise Reject(f"bad token {bad!r} in text")
+    blob = " ".join([p.stem, *p.steps, *(t for t, _ in p.choices)])
+    bad = re.search(r"(?<![A-Za-z])(nan|zoo|None)(?![A-Za-z])|oo\}|\\infty", blob)
+    if bad:
+        raise Reject(f"bad token {bad.group(0)!r} in text")
     return p
 
 

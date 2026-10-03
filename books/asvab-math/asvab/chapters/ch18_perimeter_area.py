@@ -828,7 +828,7 @@ def square_yards(rng, lvl):
         price = rng.choice([15, 18, 20, 24, 25, 30, 32, 35, 40])
         ans = sqyd * price
         room = rng.choice(["living room", "bedroom", "office", "dayroom in the barracks", "recreation room"])
-        stem = (f"{who.name} is buying carpet for a {room} that measures {m(L)} feet by {m(W)} feet. The carpet costs "
+        stem = (f"{who.name} is buying carpet for {"an" if room[0] in "aeiou" else "a"} {room} that measures {m(L)} feet by {m(W)} feet. The carpet costs "
                 f"{money(price)} per square yard. What is the cost of the carpet?")
         wrong = [(Q(sqft * price), "forgets to change square feet to square yards"),
                  (Q(sqft) / 3 * price, "divides by 3 instead of 9 (a square yard is 3 ft by 3 ft)"),
