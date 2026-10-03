@@ -80,7 +80,7 @@ a factor of $10$.
 # --------------------------------------------------------------------------
 
 _PLACES = ["ones", "tens", "hundreds", "thousands", "ten-thousands",
-           "hundred-thousands", "millions"]
+           "hundred-thousands", "millions", "ten-millions", "hundred-millions"]
 _ROUND_NAMES = {10: "ten", 100: "hundred", 1000: "thousand", 10000: "ten thousand"}
 
 
@@ -128,31 +128,27 @@ def place_value(rng, lvl):
                 f"{_PLACES[k]} place.",
                 f"Its value is {m(f'{d} \\times {_n(10**k)} = {_n(ans)}')}.",
             ],
-            check=Q(int(str(n_)[ndig - 1 - k])) * int("1" + "0" * k),
+            check=Q(n_ // 10**k % 10) * int("1" + "0" * k),
         )
     # which digit is in a named place
-    k = rng.randint(1, ndig - 1)
+    k = rng.randint(2, ndig - 1)
     d = digits[ndig - 1 - k]
-    need(len(set(digits)) == ndig)                   # all digits different
-    nb = [(digits[ndig - 1 - j], j) for j in (k - 1, k + 1) if 0 <= j < ndig]
-    wrong = [(Q(v), f"is the digit in the {_PLACES[j]} place") for v, j in nb]
-    if k + 2 < ndig:
-        wrong.append((Q(digits[ndig - 1 - (k + 2)]), f"is the digit in the {_PLACES[k + 2]} place"))
-    if k - 2 >= 0:
-        wrong.append((Q(digits[ndig - 1 - (k - 2)]), f"is the digit in the {_PLACES[k - 2]} place"))
+    wrong = []
+    for j in (k - 1, k + 1, k - 2, k + 2):
+        if 0 <= j < ndig:
+            wrong.append((Q(digits[ndig - 1 - j]), f"is the digit in the {_PLACES[j]} place"))
+    read = ", ".join(f"{m(digits[ndig - 1 - j])} ({_PLACES[j]})" for j in range(k + 1))
     return Problem(
         stem=f"Which digit is in the {_PLACES[k]} place in {num(n_)}?",
         answer=Q(d),
         fmt=num,
         wrong=wrong,
         steps=[
-            "Count places from the right: the last digit is the ones place, then "
-            f"tens, hundreds, and so on, up to {_PLACES[ndig - 1]}.",
-            f"Moving {k} places left of the ones digit lands on the {_PLACES[k]} "
-            f"digit, which is {m(d)}.",
+            f"Read the digits from the right, naming each place: {read}.",
+            f"So the {_PLACES[k]} digit is {m(d)}.",
         ],
-        check=Q(n_ // 10**k % 10),
-        near=lambda r: [Q(v) for v in range(10)],
+        check=Q(int(str(n_)[ndig - 1 - k])),
+        near=lambda r: [Q(v) for v in r.sample(range(10), 10)],
     )
 
 
@@ -164,12 +160,13 @@ def rounding(rng, lvl):
     else:
         p = rng.choice([100, 1000, 1000])
         n_ = rng.randint(10_000, 989_999) if p == 1000 else rng.randint(1_200, 98_999)
+    if lvl == 2 and rng.random() < 0.35:
+        # force a carry: rounding digit 9, next digit 5 or more (e.g. 2,961 -> 3,000)
+        n_ = n_ // (10 * p) * (10 * p) + 9 * p + rng.randint(5, 9) * (p // 10) + rng.randint(0, p // 10 - 1)
     dig = n_ // p % 10                 # digit in the rounding place
     nxt = n_ // (p // 10) % 10         # digit just to its right
-    need(n_ % p != 0 and n_ % (p // 10) != 0 or nxt != 0)
+    need(n_ % p != 0 and n_ // p > 0)
     carry = dig == 9 and nxt >= 5
-    if lvl == 2 and not carry:
-        need(rng.random() < 0.6)       # make carry cases common at level 2
     ans = _round_half_up(n_, p)
     up = nxt >= 5
     down_val, up_val = Q(n_ // p * p), Q(n_ // p * p + p)
@@ -316,6 +313,19 @@ def _evaluate(tokens, rule="right", log=None):
     return t[0]
 
 
+def _clean(tokens):
+    """Drop parentheses around a single number unless an exponent follows."""
+    t = list(tokens)
+    i = 0
+    while i + 2 < len(t):
+        if t[i] == "(" and not isinstance(t[i + 1], str) and t[i + 2] == ")" \
+                and not (i + 3 < len(t) and t[i + 3] == "^"):
+            t = t[:i] + [t[i + 1]] + t[i + 3:]
+        else:
+            i += 1
+    return t
+
+
 def _py(tokens):
     out = []
     for t in tokens:
@@ -356,7 +366,7 @@ def _steps(tokens):
                     if {"+", "-"} <= segops else word)
         after = [k for k in e["after"]]
         if len([k for k in after if not isinstance(k, str) or k not in "()"]) > 1:
-            steps.append(f"{lead}: {m(work)}, which leaves {m(_tex(after))}.")
+            steps.append(f"{lead}: {m(work)}, which leaves {m(_tex(_clean(after)))}.")
         else:
             steps.append(f"{lead}: {m(work)}.")
     return val, log, steps
@@ -457,7 +467,7 @@ def order_ops(rng, lvl):
     return Problem(
         stem=choose(rng, f"What is the value of {m(_tex(toks))}?",
                     f"Evaluate: {m(_tex(toks))}",
-                    f"{m(_tex(toks) + ' = {}?')}".replace("{}?", r"\ ?")),
+                    f"Simplify: {m(_tex(toks))}"),
         answer=ans,
         fmt=num,
         wrong=wrong,
@@ -520,14 +530,27 @@ _PROP_EXPLAIN = {
 }
 
 
+def _classify(eq):
+    """Independent check: name the property from the shape of the equation."""
+    left, right = eq.split("=")
+    if right.strip() in left and ("+ 0" in left or r"\times 1 " in left + " "):
+        return "Identity property"
+    if left.count("(") == 1 and right.count("(") == 1:
+        return "Associative property"
+    if "(" in left:
+        return "Distributive property"
+    return "Commutative property"
+
+
 @template("MK")
 def property_name(rng, lvl):
     kinds = ["comm_add", "comm_mul", "assoc_add", "assoc_mul", "dist_add", "dist_sub", "id_add", "id_mul"]
-    if lvl == 1:
+    if rng.random() < 0.6:
         kind = rng.choice(kinds)
         ans, eq = _prop_example(rng, kind)
         return Problem(
-            stem=f"Which property is shown by the equation {m(eq)}?",
+            stem=choose(rng, f"Which property is shown by the equation {m(eq)}?",
+                        f"The equation {m(eq)} is an example of which property?"),
             answer=ans,
             fmt=text,
             wrong=[(p, _PROP_WHY[p]) for p in _PROPS if p != ans],
@@ -535,9 +558,9 @@ def property_name(rng, lvl):
                 "Compare the two sides of the equation and ask what changed.",
                 _PROP_EXPLAIN[ans],
             ],
-            check=_prop_example(__import__("random").Random(0), kind)[0],
+            check=_classify(eq),
         )
-    # level 2: pick the equation that shows a named property
+    # pick the equation that shows a named property
     target = rng.choice(["comm", "assoc", "dist"])
     pool = {"comm": ["comm_add", "comm_mul"], "assoc": ["assoc_add", "assoc_mul"],
             "dist": ["dist_add", "dist_sub"], "id": ["id_add", "id_mul"]}
@@ -562,7 +585,7 @@ def property_name(rng, lvl):
                      "$a \\times (b + c) = a \\times b + a \\times c$."}[target],
             f"Only {m(eq)} fits that pattern.",
         ],
-        verify=lambda v: v == m(eq) and name.startswith({"comm": "Comm", "assoc": "Assoc", "dist": "Distr"}[target]),
+        verify=lambda v: _classify(v.strip("$")) == name,
     )
 
 
@@ -575,26 +598,32 @@ def distributive(rng, lvl):
         sign = rng.choice(["+", "-"])
         whole = tens + ones if sign == "+" else tens - ones
         ans = rf"${k} \times {tens} {sign} {k} \times {ones}$"
+        wrong = [
+            (rf"${k} \times {tens} {sign} {ones}$", f"multiplies only the {m(tens)} by {m(k)}, not the {m(ones)}"),
+            (rf"${k} \times {tens} \times {k} \times {ones}$", "multiplies everything together"),
+        ]
+        if sign == "+":
+            wrong.append((rf"${k} + {tens} + {k} + {ones}$", "adds the outside number instead of multiplying by it"))
+        else:
+            wrong.append((rf"${k} \times {tens} + {k} \times {ones}$", "changes the subtraction to addition"))
+        # no distractor may equal the original product
+        vals = [sp.sympify(w.strip("$").replace(r"\times", "*")) for w, _ in wrong]
+        need(all(v != k * whole for v in vals))
+        expr_ = f"{k} \\times ({tens} {sign} {ones})"
         return Problem(
             stem=choose(rng,
-                        f"Which expression is equal to {m(rf'{k} \times ({tens} {sign} {ones})')}?",
-                        f"Using the distributive property, {m(rf'{k} \times ({tens} {sign} {ones})')} "
-                        f"is equal to which expression?"),
+                        f"Which expression is equal to {m(expr_)}?",
+                        f"By the distributive property, {m(expr_)} is equal to which expression?"),
             answer=ans,
             fmt=text,
-            wrong=[
-                (rf"${k} \times {tens} {sign} {ones}$", f"multiplies only the {m(tens)} by {m(k)}, not the {m(ones)}"),
-                (rf"${k} + {tens} {sign} {k} + {ones}$", "adds the outside number instead of multiplying by it"),
-                (rf"${k} \times {tens} \times {k} \times {ones}$", "multiplies everything together"),
-                (rf"${tens} \times {ones} {sign} {k}$", None),
-            ],
+            wrong=wrong,
             steps=[
                 f"The distributive property says the {m(k)} outside the parentheses multiplies "
                 f"\\emph{{each}} number inside.",
-                f"So {m(rf'{k} \times ({tens} {sign} {ones}) = {k} \times {tens} {sign} {k} \times {ones}')}.",
+                f"So {m(expr_ + f' = {k} \\times {tens} {sign} {k} \\times {ones}')}.",
                 f"Check: both sides equal {m(_n(k * whole))}.",
             ],
-            verify=lambda v: (k * tens + k * ones if sign == "+" else k * tens - k * ones) == k * whole,
+            verify=lambda v: sp.sympify(v.strip("$").replace(r"\times", "*")) == k * whole,
         )
     base = rng.choice([100, 100, 50, 200, 1000])
     d = rng.randint(1, 4) if base != 1000 else rng.randint(1, 3)

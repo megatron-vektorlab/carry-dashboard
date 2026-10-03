@@ -799,165 +799,115 @@ _TIMES_WORD = {2: "twice", 3: "three times", 4: "four times", 5: "five times",
 def _sentence(rng, lvl):
     """A word sentence about 'a number' n.
 
-    Returns (sentence, answer (lhs, rhs), [(lhs, rhs, why)], procedure) where
-    procedure(v) evaluates the words literally for the number v.
+    Returns (sentence, (tex, lhs, rhs), [(tex, lhs, rhs, why)], procedure,
+    solution, note).  procedure(v) evaluates the words literally for v.
     """
     k = rng.randint(2, 9)
     c = rng.randint(2, 15)
-    kinds = ["more", "less", "tripled", "subfrom"] if lvl == 1 else ["sum", "diff", "subfrom", "quot", "decthen", "less"]
+    kinds = (["more", "less", "tripled", "subfrom"] if lvl == 1
+             else ["sum", "diff", "subfrom", "quot", "decthen", "less"])
     kind = rng.choice(kinds)
     if kind == "tripled":
         k = rng.choice([2, 3, 4])
     N = rng.randint(2, 15)
+    K = _TIMES_WORD[k]
     if kind == "more":
         t = k * N + c
-        s = f"{c} more than {_TIMES_WORD[k]} a number is {t}"
-        ans = (k * n + c, t)
-        wr = [(k * (n + c), t, f"adds {c} before multiplying by {k}"),
-              (k * n - c, t, "subtracts instead of adding"),
-              (c * n + k, t, "mixes up which number multiplies $n$")]
+        s = f"{c} more than {K} a number is {t}"
+        ans = (f"{k}n + {c}", k * n + c)
+        wr = [(f"{k}(n + {c})", k * (n + c), f"adds {c} before multiplying by {k}"),
+              (f"{k}n - {c}", k * n - c, "subtracts instead of adding"),
+              (f"{c}n + {k}", c * n + k, "mixes up which number multiplies $n$")]
         proc = lambda v: k * v + c
-    elif kind == "less":
+        note = f"``{K.capitalize()} a number'' is ${k}n$. ``{c} more than'' that means add {c}: ${k}n + {c}$."
+    elif kind in ("less", "subfrom", "diff", "tripled"):
         t = k * N - c
-        s = f"{c} less than {_TIMES_WORD[k]} a number is {t}"
-        ans = (k * n - c, t)
-        wr = [(c - k * n, t, f"reverses the subtraction (``{c} less than'' means subtract {c})"),
-              (k * (n - c), t, f"subtracts {c} before multiplying by {k}"),
-              (k * n + c, t, "adds instead of subtracting")]
-        proc = lambda v: k * v - c
-    elif kind == "tripled":
-        t = k * N - c
-        s = f"a number {_MULT_WORD[k]} and then decreased by {c} is {t}"
-        ans = (k * n - c, t)
-        wr = [(k * (n - c), t, f"decreases the number by {c} before multiplying"),
-              (c - k * n, t, "subtracts in the wrong order"),
-              (n + k - c, t, f"adds {k} instead of multiplying by {k}")]
-        proc = lambda v: k * v - c
-    elif kind == "subfrom":
-        t = k * N - c
-        s = f"{c} subtracted from {_TIMES_WORD[k]} a number gives {t}"
-        ans = (k * n - c, t)
-        wr = [(c - k * n, t, f"subtracts in the wrong order (``{c} subtracted from'' something means something $- {c}$)"),
-              (k * (n - c), t, f"subtracts {c} before multiplying by {k}"),
-              (k * n + c, t, "adds instead of subtracting")]
+        need(t > 0)
+        if kind == "less":
+            s = f"{c} less than {K} a number is {t}"
+            note = (f"``{K.capitalize()} a number'' is ${k}n$. ``{c} less than'' that means take {c} away "
+                    f"\\emph{{from}} ${k}n$: ${k}n - {c}$, not ${c} - {k}n$.")
+        elif kind == "subfrom":
+            s = f"{c} subtracted from {K} a number gives {t}"
+            note = (f"``{c} subtracted from ${k}n$'' means start with ${k}n$ and take {c} away: "
+                    f"${k}n - {c}$, not ${c} - {k}n$.")
+        elif kind == "diff":
+            s = f"the difference between {K} a number and {c} is {t}"
+            note = (f"``The difference between $A$ and $B$'' means $A - B$, in that order. "
+                    f"Here $A = {k}n$ and $B = {c}$: ${k}n - {c}$.")
+        else:
+            s = f"a number {_MULT_WORD[k]} and then decreased by {c} is {t}"
+            note = (f"``{_MULT_WORD[k].capitalize()}'' means multiplied by {k}: ${k}n$. "
+                    f"Then ``decreased by {c}'' means subtract {c}: ${k}n - {c}$.")
+        ans = (f"{k}n - {c}", k * n - c)
+        wr = [(f"{c} - {k}n", c - k * n, "subtracts in the wrong order"),
+              (f"{k}(n - {c})", k * (n - c), f"subtracts {c} before multiplying by {k}"),
+              (f"{k}n + {c}", k * n + c, "adds instead of subtracting")]
+        if kind == "tripled":
+            wr.append((f"n + {k} - {c}", n + k - c, f"adds {k} instead of multiplying by {k}"))
         proc = lambda v: k * v - c
     elif kind == "sum":
         t = k * (N + c)
-        s = f"{_TIMES_WORD[k]} the sum of a number and {c} is {t}"
-        ans = (k * (n + c), t)
-        wr = [(k * n + c, t, f"multiplies only the number by {k}, not the whole sum"),
-              (k + n + c, t, f"adds {k} instead of multiplying by it"),
-              (k * c + n, t, f"multiplies only {c} by {k}")]
+        s = f"{K} the sum of a number and {c} is {t}"
+        ans = (f"{k}(n + {c})", k * (n + c))
+        wr = [(f"{k}n + {c}", k * n + c, f"multiplies only the number by {k}, not the whole sum"),
+              (f"{k} + n + {c}", k + n + c, f"adds {k} instead of multiplying by it"),
+              (f"\\frac{{n + {c}}}{{{k}}}", (n + c) / k, f"divides by {k} instead of multiplying")]
         proc = lambda v: k * (v + c)
-    elif kind == "diff":
-        t = k * N - c
-        need(t > 0)
-        s = f"the difference between {_TIMES_WORD[k]} a number and {c} is {t}"
-        ans = (k * n - c, t)
-        wr = [(c - k * n, t, "subtracts in the wrong order"),
-              (k * (n - c), t, f"subtracts {c} before multiplying by {k}"),
-              (k * n + c, t, "adds instead of subtracting")]
-        proc = lambda v: k * v - c
+        note = (f"``The sum of a number and {c}'' is $n + {c}$. ``{K.capitalize()} the sum'' multiplies the "
+                f"\\emph{{whole}} sum, so it needs parentheses: ${k}(n + {c})$.")
     elif kind == "decthen":
-        t = k * (N - c)
         need(N > c)
+        t = k * (N - c)
         s = f"when a number is decreased by {c} and the result is multiplied by {k}, the answer is {t}"
-        ans = (k * (n - c), t)
-        wr = [(k * n - c, t, f"multiplies before subtracting {c}"),
-              (c - k * n, t, "reverses the order of the operations"),
-              (k * (c - n), t, "subtracts in the wrong order")]
+        ans = (f"{k}(n - {c})", k * (n - c))
+        wr = [(f"{k}n - {c}", k * n - c, f"multiplies before subtracting {c}"),
+              (f"{k}({c} - n)", k * (c - n), "subtracts in the wrong order"),
+              (f"\\frac{{n - {c}}}{{{k}}}", (n - c) / k, f"divides by {k} instead of multiplying")]
         proc = lambda v: k * (v - c)
+        note = (f"First the number is decreased: $n - {c}$. Then that whole result is multiplied by {k}, "
+                f"so it needs parentheses: ${k}(n - {c})$.")
     else:  # quot
-        Nq = k * N
         t = N + c
+        N = k * N
         s = f"a number divided by {k}, plus {c}, equals {t}"
-        ans = (n / k + c, t)
-        wr = [(k / n + c, t, "divides in the wrong order"),
-              ((n + c) / k, t, f"adds {c} before dividing"),
-              (k * n + c, t, f"multiplies by {k} instead of dividing")]
-        proc = lambda v: Fraction(v, k) + c
-        N = Nq
-    return s, ans, wr, proc, N
+        ans = (f"\\frac{{n}}{{{k}}} + {c}", n / k + c)
+        wr = [(f"\\frac{{{k}}}{{n}} + {c}", k / n + c, "divides in the wrong order"),
+              (f"\\frac{{n + {c}}}{{{k}}}", (n + c) / k, f"adds {c} before dividing"),
+              (f"{k}n + {c}", k * n + c, f"multiplies by {k} instead of dividing")]
+        proc = lambda v: R(v, k) + c
+        note = f"``A number divided by {k}'' is $\\frac{{n}}{{{k}}}$. Then add {c}: $\\frac{{n}}{{{k}}} + {c}$."
+    return s, ans, t, wr, proc, N, note
 
 
 @template("MK")
 def translate(rng, lvl):
-    k_sent, ans, wr, proc, N = _sentence(rng, lvl)
-    # LaTeX for each equation, written the way a student would write it
-    def tex(lhs, rhs):
-        return f"${_eqtex(lhs)} = {rhs}$"
-    ans_tex = tex(*ans)
-    good = all(sp.sympify(ans[0]).subs(n, v) == proc(v) for v in (1, 2, 5, 12))
-    ans_sol = sp.solve(sp.Eq(ans[0], ans[1]), n)
+    s, (atex, alhs), t, wr, proc, N, note = _sentence(rng, lvl)
+    ans_tex = f"${atex} = {t}$"
+    # independent check: the left side matches the words, read literally
+    good = all(sp.sympify(alhs).subs(n, v) == proc(v) for v in (1, 2, 5, 12))
+    ans_sol = sp.solve(sp.Eq(alhs, t), n)
     wrong = []
-    for lhs, rhs, why in wr:
-        ws = sp.solve(sp.Eq(lhs, rhs), n)
-        if ws and ans_sol and ws[0] != ans_sol[0]:
-            wrong.append((tex(lhs, rhs), why))
+    for wtex, wlhs, why in wr:
+        ws = sp.solve(sp.Eq(wlhs, t), n)
+        if ws and ws != ans_sol:      # not an equivalent equation
+            wrong.append((f"${wtex} = {t}$", why))
     need(len(wrong) >= 3)
-    sentence = k_sent[0].upper() + k_sent[1:]
+    sentence = s[0].upper() + s[1:]
     return Problem(
         stem=choose(rng,
-                    f"Which equation means ``{sentence}''? Let $n$ be the number.",
+                    f"Let $n$ be a number. Which equation means ``{sentence}''?",
                     f"``{sentence}.'' If $n$ stands for the number, which equation represents this sentence?"),
         answer=ans_tex,
         fmt=text,
         wrong=wrong,
-        steps=_translate_steps(k_sent, ans, ans_tex),
-        verify=lambda s: good and s == ans_tex and ans_sol == [N],
+        steps=["Translate piece by piece. Let $n$ be the number; ``is,'' ``gives,'' and ``equals'' "
+               "all become ``$=$.''",
+               note,
+               f"The equation is {ans_tex}."],
+        tip=f"Check with the solution: {m(f'n = {N}')} makes {ans_tex} true.",
+        verify=lambda v: good and v == ans_tex and ans_sol == [N],
     )
-
-
-def _eqtex(lhs):
-    """Student-style LaTeX of a left side built from n (keeps parentheses)."""
-    lhs = sp.sympify(lhs)
-    # k*(n + c) style products
-    if isinstance(lhs, sp.Mul) and any(isinstance(f, sp.Add) for f in lhs.args):
-        coef = [f for f in lhs.args if not isinstance(f, sp.Add)]
-        inner = [f for f in lhs.args if isinstance(f, sp.Add)][0]
-        k = sp.Mul(*coef)
-        cst = inner.subs(n, 0)
-        nc = inner.coeff(n)
-        if nc == 1:
-            inside = _lin((1, "n"), (cst, ""))
-        else:
-            inside = _lin((cst, ""), (nc, "n"))
-        return f"{tx(k)}({inside})"
-    if isinstance(lhs, sp.Add):
-        cst = lhs.subs(n, 0)
-        rest = sp.expand(lhs - cst)
-        if rest.has(n) and rest.is_Pow is False and isinstance(rest, sp.Mul) and rest.args[0].is_Rational and rest.args[0].q != 1 and rest.args[0].p == 1:
-            return f"\\frac{{n}}{{{rest.args[0].q}}}{_plus(cst)}"
-        if isinstance(rest, sp.Mul) and any(isinstance(f, sp.Pow) and f.exp == -1 for f in rest.args):
-            kq = rest * n
-            return f"\\frac{{{tx(kq)}}}{{n}}{_plus(cst)}"
-        nc = rest.coeff(n)
-        if nc < 0:
-            return f"{tx(cst)} - {_lin((-nc, 'n'))}"
-        return f"{_lin((nc, 'n'))}{_plus(cst)}" if cst else _lin((nc, "n"))
-    return tx(lhs)
-
-
-def _translate_steps(sentence, ans, ans_tex):
-    lhs = sp.sympify(ans[0])
-    return [f"Translate piece by piece. Let $n$ be the number; ``is,'' ``gives,'' and ``equals'' become ``$=$.''",
-            _TRANS_NOTE(lhs),
-            f"The equation is {ans_tex}."]
-
-
-def _TRANS_NOTE(lhs):
-    if isinstance(lhs, sp.Mul) and any(isinstance(f, sp.Add) for f in lhs.args):
-        return ("The number is changed \\emph{first} (a sum or a difference), and then that whole result is "
-                "multiplied, so it needs parentheses: " + m(_eqtex(lhs)) + ".")
-    cst = lhs.subs(n, 0)
-    rest = sp.expand(lhs - cst)
-    if rest.coeff(n).q != 1:
-        return f"``A number divided by {rest.coeff(n).q}'' is {m(_eqtex(rest))}; then add {m(tx(cst))}: {m(_eqtex(lhs))}."
-    k = rest.coeff(n)
-    if cst > 0:
-        return f"Start with {m(_lin((k, 'n')))}; ``{tx(cst)} more than'' it means add {m(tx(cst))}: {m(_eqtex(lhs))}."
-    return (f"Start with {m(_lin((k, 'n')))}; then take {m(tx(-cst))} away \\emph{{from it}}: {m(_eqtex(lhs))}. "
-            f"The subtraction is in this order because {m(tx(-cst))} is removed from {m(_lin((k, 'n')))}.")
 
 
 @template("AR")
