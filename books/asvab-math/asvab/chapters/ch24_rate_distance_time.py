@@ -1108,8 +1108,8 @@ _TRIPS = [
 
 _TRIPS3 = [
     # two legs and a stop; the destination is named only at the end of the trip
-    ("{B} leaves home at {t0} and drives {d1} miles at {r1} miles per hour. {He} stops for {stop} minutes to eat "
-     "lunch, then drives another {d2} miles at {r2} miles per hour to {his} cousin's house. At what time does "
+    ("{B} leaves home at {t0} and drives {d1} miles at {r1} miles per hour. {He} stops for {stop} minutes {meal}, "
+     "then drives another {d2} miles at {r2} miles per hour to {his} cousin's house. At what time does "
      "{he} arrive at {his} cousin's house?", [40, 48, 50, 60, 64], False),
     ("A convoy leaves the motor pool at {t0} and travels {d1} miles at {r1} miles per hour. It halts for {stop} "
      "minutes to refuel, then travels another {d2} miles at {r2} miles per hour to the training area. At what "
@@ -1183,8 +1183,11 @@ def arrival_time(rng, lvl, part=None):
     stop = rng.choice([15, 20, 30, 45])
     total = int((t1 + t2) * 60) + stop
     end = start + total
+    halt = start + int(Q(t1) * 60)              # clock time of the stop picks the meal
+    meal = ("to eat breakfast" if halt < 10 * 60 + 30 else "to eat lunch" if halt < 14 * 60 + 30
+            else "for a snack")
     stem = st3.format(B=B, He=B.He, he=B.he, his=B.his, t0=_clock(start), d1=int_raw(d1), r1=r1,
-                      d2=int_raw(d2), r2=r2, stop=stop)
+                      d2=int_raw(d2), r2=r2, stop=stop, meal=meal)
     wrong = [(_clock(end - stop), f"forgets the {stop}-minute stop"),
              ]
     one_speed = Q(d1 + d2) / r1 * 60          # minutes if the first speed is used for both legs
