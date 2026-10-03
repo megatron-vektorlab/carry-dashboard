@@ -456,6 +456,8 @@ def _times_pi(P, v):
     res = P * v
     if P == R(22, 7):
         q = Q(v) / 7
+        if q == 1:
+            return rf"\frac{{22}}{{7}} \times 7 = {dec_raw(res)}"
         if q.is_integer:
             return rf"\frac{{22}}{{7}} \times {int_raw(v)} = 22 \times {int_raw(q)} = {dec_raw(res)}"
         return rf"\frac{{22}}{{7}} \times {dec_raw(v)} = {dec_raw(res)}"
@@ -905,7 +907,7 @@ def scale_circle(rng, lvl):
             check=AB / AA,
         )
     if kind == "pizza":
-        small, k = rng.choice([(6, 2), (7, 2), (8, 2), (9, 2), (10, 2), (6, 3)])
+        small, k = rng.choice([(6, 2), (8, 2), (10, 2), (6, 3)])
         big = small * k
         need(big <= 20)
         p = person(rng)

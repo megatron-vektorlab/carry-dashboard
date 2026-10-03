@@ -1240,6 +1240,8 @@ def _flat_fee(rng, who):
              (Q(k - 1), None), (Q(k + 1), None)]
     if (T / (fee + rate) * 10).is_integer:
         wrong.insert(3, (T / (fee + rate), f"adds the fee to the rate per {u} before dividing"))
+    named = [v for v, why in wrong if why and v != k and (Q(v) * 100).is_integer and Q(v) > 0]
+    need(named, "no usable named trap")
     hits = [h for h in range(0, 1000) if fee + rate * h == T]
     return Problem(stem=stem, answer=Q(k), fmt=unit(dec, u), wrong=wrong, steps=[st for st in steps if st],
                    check=Q(hits[0]) if len(hits) == 1 else None,
