@@ -189,7 +189,8 @@ def factor_gcf(rng, lvl):
         t1, t2 = g * p * x**(gx + 1), g * q * x**gx
         ans = f"${g}{_vp(gx)}$"
         lcm = sp.ilcm(g * p, g * abs(q))
-        cands = [(f"${g}{_vp(gx + 1)}$", None, "uses the higher power of $x$; the GCF takes the lower power"),
+        cands = [(f"${g}{_vp(gx + 1)}$", None, "uses the higher power of $x$; the GCF takes the lower power"
+                  if gx else "includes an $x$, but the second term has no $x$"),
                  (f"${lcm}{_vp(gx + 1)}$", None, "gives the least common multiple, not the greatest common factor"),
                  (f"${min(g * p, g * abs(q))}{_vp(gx)}$", None, "uses the smaller coefficient, which does not divide both terms")
                  if min(g * p, g * abs(q)) != g else (f"${g * 2}{_vp(gx)}$", None, None),

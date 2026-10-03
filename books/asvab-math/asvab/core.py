@@ -289,7 +289,19 @@ def same(u, v) -> bool:
         U, V = sp.sympify(u), sp.sympify(v)
         if isinstance(U, sp.core.relational.Relational) or isinstance(V, sp.core.relational.Relational):
             return U == V
-        return sp.simplify(U - V) == 0
+        if U.is_Rational and V.is_Rational:
+            return U == V
+        d = U - V
+        if d.is_number:
+            # fast numeric screen; exact simplify only when it is (nearly) zero
+            if abs(sp.N(d, 40)) > sp.Float(10) ** -25:
+                return False
+            return sp.simplify(d) == 0
+        syms = sorted(d.free_symbols, key=str)
+        for pt in (R(3, 7), R(-5, 11), R(13, 3)):
+            if d.subs({s_: pt + i for i, s_ in enumerate(syms)}) != 0:
+                return False
+        return sp.simplify(d) == 0
     except Exception:  # pragma: no cover - exotic types
         return u == v
 

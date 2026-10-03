@@ -681,7 +681,8 @@ def integer_count(rng, lvl):
     span = Hx - Lx
     for v, why in ((span + 1, "counts both endpoints, but one or both are not included"),
                    (span - 1, "leaves out both endpoints"),
-                   (span, "subtracts the endpoints and forgets that counting includes the first one"),
+                   (span, f"just subtracts the endpoints, {m(f'{Hx} - ({Lx}) = {span}' if Lx < 0 else f'{Hx} - {Lx} = {span}')}, "
+                          "without checking which ends are included"),
                    (ans + 1, None), (ans - 1, None)):
         if v != ans and v > 0:
             wrong.append((Q(v), why))
