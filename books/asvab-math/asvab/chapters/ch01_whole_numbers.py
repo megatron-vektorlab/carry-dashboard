@@ -646,7 +646,7 @@ def distributive(rng, lvl):
             f"Distribute the {m(k)}: {m(rf'{k} \times {_n(base)} {s} {k} \times {d} = {_n(k * base)} {s} {k * d}')}.",
             f"{'Add' if plus else 'Subtract'}: {m(f'{_n(k * base)} {s} {k * d} = {_n(ans)}')}.",
         ],
-        check=sp.Mul(k, other, evaluate=True),
+        check=Q(k) * base + (k * d if plus else -k * d),
     )
 
 
@@ -678,11 +678,10 @@ def estimate(rng, lvl):
             f"Multiply the leading digits: {m(rf'{X // 100} \times {Y // 10} = {lead}')}.",
             f"Attach the three zeros (two from {m(X)}, one from {m(Y)}): {m(_n(est))}.",
         ]
-        tip = f"The exact product is {m(_n(exact))}, which is indeed close to {m(_n(est))}."
+        tip = None
     else:
         Y = rng.choice(range(20, 100, 10))
         q = rng.choice(range(20, 100, 10))
-        need((Y * q) % 1000 != 0 or Y * q >= 1000)
         D0 = Y * q
         a_ = D0 + rng.choice([-1, 1]) * rng.randint(3, 40)
         b_ = Y + rng.choice([-1, 1])
@@ -691,8 +690,8 @@ def estimate(rng, lvl):
         wrong = [
             (est / 10, "drops a zero"),
             (est * 10, "adds an extra zero"),
-            (Q(D0 - Y), "subtracts instead of dividing"),
-            (Q(D0 * Y), "multiplies instead of dividing"),
+            (est - 10, None),
+            (est + 10, None),
         ]
         stem = choose(rng,
                       f"Which of the following is the closest estimate of {m(rf'{_n(a_)} \div {b_}')}?",
