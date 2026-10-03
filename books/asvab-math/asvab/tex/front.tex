@@ -1,0 +1,262 @@
+%% ---------------------------------------------------------------- title page
+\thispagestyle{empty}
+\begin{center}
+\vspace*{1.2in}
+{\sans\bfseries\fontsize{40}{46}\selectfont <<TITLE>>\par}
+\vspace{0.25in}
+{\sans\fontsize{18}{24}\selectfont <<SUBTITLE>>\par}
+\vspace{0.12in}
+{\sans\large\color{mid}<<TAGLINE>>\par}
+\vspace{0.5in}
+{\color{ink}\rule{2.2in}{1.2pt}}\par
+\vspace{0.5in}
+\begin{minipage}{4.6in}\centering\large
+Key concepts and worked examples for every topic\\[2pt]
+A diagnostic test with a personal study plan\\[2pt]
+<<NPRACTICE>> drill problems in <<NCHAPTERS>> chapters\\[2pt]
+4 full-length math practice tests\\[2pt]
+Every answer checked by computer algebra
+\end{minipage}
+\vfill
+{\sans\Large <<AUTHOR>>\par}
+\vspace{0.4in}
+\end{center}
+\clearpage
+
+%% ---------------------------------------------------------------- copyright
+\thispagestyle{empty}
+\vspace*{\fill}
+{\small
+\textbf{<<TITLE>>: <<SUBTITLE>>}\par
+<<EDITION>>, <<YEAR>>\par
+\medskip
+Copyright \textcopyright{} <<YEAR>> <<AUTHOR>>. All rights reserved.\par
+No part of this book may be reproduced, stored in a retrieval system, or
+transmitted in any form or by any means without the prior written permission
+of the author, except for brief quotations in reviews.\par
+\medskip
+ASVAB is a registered trademark of the United States Department of Defense,
+which was not involved in the production of, and does not endorse, this book.
+This book is an independent study aid. It is not affiliated with the
+Department of Defense, any branch of the U.S.\ Armed Forces, or any
+recruiting organization.\par
+\medskip
+Test formats, question counts, time limits, and qualifying scores are set by
+the Department of Defense and the individual services and can change. Always
+confirm current details with your recruiter or at officialasvab.com. The
+author makes no guarantee of any particular test score.\par
+\medskip
+The practice problems in this book were generated and their answers verified
+with the SymPy computer algebra system; every answer was computed exactly and
+then confirmed by a second, independent calculation.\par
+}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+%% ---------------------------------------------------------------- how to use
+\chapter*{How to Use This Book}
+\addcontentsline{toc}{chapter}{How to Use This Book}
+\markboth{How to Use This Book}{How to Use This Book}
+
+The math on the ASVAB is mostly middle-school and early high-school
+math---percents, fractions, equations, areas, word problems---asked quickly
+and without a calculator. What raises scores is \emph{practice}: seeing each
+kind of question often enough that you recognize it instantly and know the
+first step.
+
+This workbook gives you that practice: \textbf{1,000 problems}, each with a
+complete step-by-step solution.
+
+\section*{The plan}
+\begin{enumerate}[leftmargin=1.6em,itemsep=0.4em]
+\item \textbf{Take the Diagnostic Test} (page~\pageref{diag}). Thirty
+  questions, about 35 minutes, no calculator. The answer key tells you which
+  chapter each question comes from.
+\item \textbf{Study the chapters you need.} Start with the topics you missed
+  on the diagnostic. Each chapter has three parts:
+  \begin{itemize}
+  \item \emph{Key Concepts}---the rules, formulas, a worked example, a
+    no-calculator tip, and the traps test writers love.
+  \item \emph{Practice Set}---warm-up problems first, then test-level
+    problems, then challenge problems.
+  \item \emph{Answers \& Explanations}---a quick answer key plus a full
+    solution for every problem.
+  \end{itemize}
+\item \textbf{Take the four Practice Tests} under real time limits once you
+  have worked through the chapters. Each has an Arithmetic Reasoning section
+  (30 questions, 36 minutes) and a Mathematics Knowledge section
+  (25 questions, 24 minutes), the format of the paper ASVAB.
+\item \textbf{Review every miss.} The answer keys of the tests list the
+  chapter for every question, so you always know where to go back.
+\end{enumerate}
+
+\section*{Reading the solutions}
+Every solution is broken into numbered steps that you can follow with pencil
+and paper. Many solutions also include:
+\begin{itemize}
+\item \textbf{TIP}---a shortcut, an estimate, or a way to check your answer.
+\item \textbf{WHY NOT}---what went wrong if you picked one of the tempting
+  wrong answers. The wrong choices in this book are not random numbers; each
+  comes from a real, common mistake (dividing by the wrong number, forgetting
+  to convert minutes to hours, adding percents that should be multiplied).
+  If your answer matches one of them, the explanation tells you exactly which
+  mistake you made.
+\end{itemize}
+
+\section*{Good habits}
+\begin{itemize}
+\item \textbf{No calculator.} The ASVAB does not allow one, so don't practice
+  with one. Every problem here is designed to be done by hand.
+\item \textbf{Write your work down.} Scratch paper is provided at the test;
+  use it here too.
+\item \textbf{Time yourself.} Each practice set shows a target time. Don't
+  worry about speed at first---accuracy comes first, speed follows.
+\item \textbf{Redo your misses a week later} and log them in the Progress
+  Tracker at the back of the book.
+\end{itemize}
+
+%% ---------------------------------------------------------------- the test
+\chapter*{The ASVAB Math Subtests}
+\addcontentsline{toc}{chapter}{The ASVAB Math Subtests}
+\markboth{The ASVAB Math Subtests}{The ASVAB Math Subtests}
+
+The Armed Services Vocational Aptitude Battery (ASVAB) is the entrance test
+for the U.S.\ Army, Navy, Air Force, Marine Corps, Space Force, and Coast Guard.
+It consists of several subtests. Two of them are math:
+
+\begin{concept}{Arithmetic Reasoning (AR)}
+Word problems. Each question describes a real-life situation---a purchase,
+a trip, a paycheck, a recipe, a work schedule---and you have to decide which
+operations to use. Typical topics: percents and discounts, ratios, rates and
+distance, averages, interest, work, measurement, and multi-step reasoning.
+\end{concept}
+
+\begin{concept}{Mathematics Knowledge (MK)}
+Direct math questions: number properties, fractions, exponents and roots,
+algebra (expressions, equations, inequalities, factoring), and geometry
+(angles, triangles, area, circles, volume, coordinates). Knowing the
+vocabulary and formulas is half the battle.
+\end{concept}
+
+\section*{Format and timing}
+The ASVAB is given in two main formats. On the \textbf{computer-adaptive}
+version (CAT-ASVAB), the difficulty of each question depends on how you
+answered the previous ones, and you cannot go back to change an answer. On the
+\textbf{paper-and-pencil} version, everyone answers the same questions and
+you can move around within a subtest. Typical question counts and time
+limits:\footnote{These figures can change; confirm them with your recruiter
+or at officialasvab.com.}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{lcc}
+\toprule
+ & \textbf{Arithmetic Reasoning} & \textbf{Mathematics Knowledge}\\
+\midrule
+CAT-ASVAB (computer) & 15 questions, 55 minutes & 15 questions, 31 minutes\\
+Paper and pencil & 30 questions, 36 minutes & 25 questions, 24 minutes\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Every question is multiple choice with four answer choices. \textbf{Calculators
+are not allowed}; scratch paper is provided. Formulas are \emph{not} given, so
+memorize the ones on the Formula Sheet at the back of this book.
+
+\section*{Why math matters so much}
+Your Armed Forces Qualification Test (AFQT) score---the score that decides
+whether you can enlist at all---is computed from four subtests: Arithmetic
+Reasoning, Mathematics Knowledge, Word Knowledge, and Paragraph Comprehension.
+The two math subtests make up roughly \textbf{half} of the AFQT. The AFQT is
+reported as a percentile from 1 to 99, and each service sets its own minimum.
+
+Arithmetic Reasoning and Mathematics Knowledge also feed many of the
+\emph{line scores} (composite scores) that qualify you for specific jobs, such
+as technical, electronics, and administrative specialties. A few extra correct
+math answers can open up a wider choice of careers and enlistment bonuses.
+
+%% ---------------------------------------------------------------- strategy
+\chapter*{Test-Day Strategies}
+\addcontentsline{toc}{chapter}{Test-Day Strategies}
+\markboth{Test-Day Strategies}{Test-Day Strategies}
+
+\begin{concept}{1. Read the last sentence first}
+In a word problem, the last sentence tells you what to find. Read it first,
+then read the whole problem looking for the numbers you need. Many wrong
+answer choices are the right answer to a \emph{different} question (the
+discount instead of the sale price, the number who passed instead of the
+number who failed).
+\end{concept}
+
+\begin{concept}{2. Estimate before you calculate}
+A rough answer tells you which choices are impossible. If a \$48 item is
+25\% off, the sale price must be a bit more than \$35---so \$12 and \$60 are
+out before you do any exact arithmetic.
+\end{concept}
+
+\begin{concept}{3. Work backward from the choices}
+When a question asks ``which number\ldots'' or gives an equation, you can test
+the answer choices. Start with a middle value; if it is too big, the answer is
+smaller, and vice versa. For ``which value satisfies'' questions this is often
+the fastest method.
+\end{concept}
+
+\begin{concept}{4. Pick numbers}
+If the problem uses variables or percents of an unknown amount, choose an easy
+number (100 for percents, a common multiple for fractions) and see which
+answer choice gives the same result.
+\end{concept}
+
+\begin{concept}{5. Watch the units}
+Minutes vs.\ hours, inches vs.\ feet, cents vs.\ dollars, radius vs.\
+diameter. Convert everything to the units the question asks for
+\emph{before} you calculate.
+\end{concept}
+
+\begin{concept}{6. Manage your time}
+On the paper test you have a little over a minute per question. If a question
+takes more than two minutes, make your best guess, mark it, and move on. Never
+leave a question blank: a blank is always wrong, a guess might be right, and
+on the computer test unanswered questions at the end of a subtest lower your
+score.
+\end{concept}
+
+\begin{concept}{7. Check that your answer makes sense}
+A sale price cannot be higher than the original price. A probability cannot
+be more than 1. An average must lie between the smallest and largest values.
+A quick reasonableness check catches many careless errors.
+\end{concept}
+
+\begin{tip}
+Learn by heart: the squares from $1^2$ to $15^2$, the fraction--decimal--percent
+equivalents ($\frac18 = 0.125 = 12.5\%$, $\frac13 \approx 33.3\%$, \ldots), and
+the formulas on the Formula Sheet. Instant recall of these saves minutes on
+test day.
+\end{tip}
+
+\section*{Mental Math Toolkit}
+Because the ASVAB bans calculators, a handful of shortcuts pay off on almost
+every page of this book. Practice them until they are automatic.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{1.55in}X@{}}
+\toprule
+Trick & Example\\
+\midrule
+Multiply by 5 & Multiply by 10, then halve: $48 \times 5 = 480 \div 2 = 240$.\\
+Multiply by 25 & Multiply by 100, then divide by 4: $36 \times 25 = 3{,}600 \div 4 = 900$.\\
+Multiply by 9 or 11 & $47 \times 9 = 470 - 47 = 423$; \ $34 \times 11 = 340 + 34 = 374$.\\
+Break a number apart & $7 \times 98 = 7 \times 100 - 7 \times 2 = 700 - 14 = 686$.\\
+Square a number ending in 5 & $35^2$: $3 \times 4 = 12$, then write 25: $1{,}225$.\\
+Divide by 5 & Double, then divide by 10: $340 \div 5 = 680 \div 10 = 68$.\\
+Divide by a decimal & Move both decimal points: $4.8 \div 0.06 = 480 \div 6 = 80$.\\
+Build percents from 10\% & $15\%$ of $60$: $10\% = 6$, $5\% = 3$, total $9$.\\
+Swap the percent & $8\%$ of $50$ = $50\%$ of $8$ = $4$.\\
+Compare fractions & Cross-multiply: $\frac58$ vs.\ $\frac35$: $5 \times 5 = 25 > 8 \times 3 = 24$, so $\frac58$ is larger.\\
+Estimate first & $398 \times 51 \approx 400 \times 50 = 20{,}000$ rules out answers near $2{,}000$ or $200{,}000$.\\
+\bottomrule
+\end{tabularx}
+\end{center}

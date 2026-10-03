@@ -1,0 +1,10 @@
+TOTAL PROBLEMS: 246
+  chapters: 25, diagnostic: 1, tests: 220
+answer letters: {'A': 72, 'B': 67, 'C': 62, 'D': 45}
+sections: {'MK': 117, 'AR': 129}   levels: {1: 8, 2: 151, 3: 87}
+with explained traps: 246   with tips: 42   with figures: 0
+distinct templates used: 9
+duplicate stems: 0
+
+per chapter: n, AR/MK, letters
+  ch06 Percents                                      n=25  AR=9   letters={'A': 10, 'B': 6, 'C': 6, 'D': 3}

@@ -63,13 +63,20 @@
 \titleformat{\subsection}{\sans\bfseries\large}{}{0pt}{}
 \titlespacing*{\subsection}{0pt}{0.9em}{0.3em}
 
-% Part pages
-\titleformat{\part}[display]
-  {\centering\sans\bfseries}
-  {\Large\color{mid}PART \thepart}
-  {10pt}
-  {\fontsize{34}{40}\selectfont}
-\titleclass{\part}{page}
+% Part pages: \bookpart{Title}{blurb}{chapter list}
+\newcommand{\bookpart}[3]{%
+  \clearpage\thispagestyle{empty}%
+  \refstepcounter{part}%
+  \phantomsection\addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+  \vspace*{1.9in}%
+  \begin{center}
+  {\sans\bfseries\Large\color{mid}PART \thepart\par}\vspace{8pt}
+  {\sans\bfseries\fontsize{36}{42}\selectfont #1\par}\vspace{20pt}
+  {\color{ink}\rule{1.6in}{1pt}}\par\vspace{20pt}
+  \begin{minipage}{4.4in}\centering\large #2\end{minipage}\par\vspace{28pt}
+  \begin{minipage}{3.6in}\sans\small #3\end{minipage}
+  \end{center}
+  \clearpage}
 
 % ---------------------------------------------------------------- running heads
 \pagestyle{fancy}

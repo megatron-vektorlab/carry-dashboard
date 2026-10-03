@@ -123,12 +123,11 @@ def convert(rng, lvl):
     f = R(num_, den)
     ans = f * 100
     wrong = [
-        (Q(num_ * 10) if num_ * 10 != ans else Q(den), "just writes the numerator as if it were a percent"),
-        (R(den, num_) * 100 if num_ != 0 else 1, "divides the denominator by the numerator"),
+        (Q(num_), "just writes the numerator as if it were a percent"),
+        (R(den, num_) * 100, "divides the denominator by the numerator"),
         (ans / 10, "moves the decimal point only one place"),
+        (Q(num_ + den), None),
     ]
-    if num_ * 10 == ans:
-        wrong[0] = (Q(num_), "just writes the numerator as if it were a percent")
     return Problem(
         stem=f"What is {m(frac_raw(f))} written as a percent?",
         answer=ans,
@@ -238,14 +237,21 @@ def complement_word(rng, lvl):
 
 @template("AR")
 def percent_change(rng, lvl):
-    up = rng.random() < 0.5
-    p = rng.choice([10, 20, 25, 30, 40, 50, 60, 75] if up else [10, 20, 25, 30, 40, 50, 60, 75, 80])
-    item, lo, hi = rng.choice([
-        ("the price of a pair of boots", 60, 240), ("a monthly phone bill", 40, 160),
-        ("the price of a gallon of paint", 20, 80), ("the cost of a yearly gym membership", 200, 800),
-        ("the price of a tool kit", 40, 300), ("the price of a backpack", 30, 160),
-        ("the price of a used car", 4000, 20000), ("monthly rent for an apartment", 800, 2400)])
-    step = 4 if hi <= 800 else 100
+    # (context, low, high, step, allowed directions, percents) — realistic moves only
+    ctx = rng.choice([
+        ("the price of a pair of boots", 60, 240, 4, "ud", [10, 20, 25, 30, 40, 50]),
+        ("a monthly phone bill", 40, 160, 4, "ud", [5, 10, 20, 25]),
+        ("the price of a gallon of paint", 20, 80, 4, "u", [5, 10, 20, 25]),
+        ("the cost of a yearly gym membership", 200, 800, 20, "ud", [5, 10, 15, 20, 25]),
+        ("the price of a tool kit", 40, 300, 4, "ud", [10, 20, 25, 30, 40]),
+        ("the price of a backpack", 30, 160, 2, "d", [10, 20, 25, 30, 40, 50]),
+        ("the value of a used car", 4000, 20000, 100, "d", [10, 15, 20, 25, 30]),
+        ("monthly rent for an apartment", 800, 2400, 50, "u", [2, 4, 5, 6, 8, 10]),
+        ("a soldier's monthly housing allowance", 1200, 2800, 50, "u", [2, 4, 5, 10]),
+    ])
+    item, lo, hi, step, dirs, pcts = ctx
+    up = rng.choice(dirs) == "u"
+    p = rng.choice(pcts)
     old = rng.choice(range(lo, hi + 1, step))
     new = Q(old) * (100 + p) / 100 if up else Q(old) * (100 - p) / 100
     need(new.is_integer and new > 0)
@@ -258,15 +264,16 @@ def percent_change(rng, lvl):
         fmt=pct,
         section="AR",
         wrong=[
-            (change * 100 / new, "divides by the new price instead of the original price"),
+            (change * 100 / new, "divides by the new amount instead of the original amount"),
             (change, "gives the dollar change instead of the percent change"),
-            (new * 100 / old, "gives the new price as a percent of the old price"),
+            (new * 100 / old, "gives the new amount as a percent of the old amount"),
         ],
         steps=[
             f"Find the amount of {word}: {m(f'{int_raw(max(old, new))} - {int_raw(min(old, new))} = {int_raw(change)}')} dollars.",
-            f"Divide by the \\emph{{original}} price: {m(F(int_raw(change), int_raw(old)) + ' = ' + dec_raw(R(p, 100)))}.",
+            f"Divide by the \\emph{{original}} amount: {m(F(int_raw(change), int_raw(old)) + ' = ' + dec_raw(R(p, 100)))}.",
             f"Convert to a percent: {m(dec_raw(R(p, 100)) + ' = ' + str(p) + r'\%')} {word}.",
         ],
+        tip=f"Hard division? Test the choices instead: {pct(p)} of {money(old)} is {money(change)}, exactly the change.",
         check=abs(new - old) / old * 100,
     )
 
