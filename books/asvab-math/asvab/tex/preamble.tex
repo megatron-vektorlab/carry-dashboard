@@ -24,6 +24,7 @@
 \usepackage{needspace}
 \usepackage[most]{tcolorbox}
 \usepackage{etoolbox}
+\usepackage[titles]{tocloft}
 \usepackage[hidelinks,pdfusetitle]{hyperref}
 
 % ---------------------------------------------------------------- tones (grayscale print)
@@ -77,6 +78,15 @@
   \begin{minipage}{3.6in}\sans\small #3\end{minipage}
   \end{center}
   \clearpage}
+
+% ---------------------------------------------------------------- contents
+\setlength{\cftbeforechapskip}{3.2pt}
+\setlength{\cftbeforepartskip}{11pt}
+\renewcommand{\cftchapfont}{\sans}
+\renewcommand{\cftchappagefont}{\sans}
+\renewcommand{\cftpartfont}{\sans\bfseries\large}
+\renewcommand{\cftpartpagefont}{\sans\bfseries\large}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 
 % ---------------------------------------------------------------- running heads
 \pagestyle{fancy}
