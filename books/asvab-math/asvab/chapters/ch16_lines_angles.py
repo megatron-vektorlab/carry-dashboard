@@ -5,14 +5,15 @@ appear only in the private drawing helpers (TikZ coordinates); every answer,
 check and distractor is exact (ints / sympy).
 """
 import math
+import re
 
 import sympy as sp
 
 from ..core import (Q, Problem, need, num, m, dec_raw, int_raw, latex, text,
-                    choose, soldier, template, x as X)
+                    choose, person, soldier, template, x as X)
 
 NUM = 16
-TITLE = "Lines & Angles"
+TITLE = r"Lines \& Angles"
 PART = 3
 
 INTRO = r"""
@@ -41,10 +42,10 @@ is $360^\circ$, and parallel lines create pairs of equal angles.
 \draw (0.45,1.58) -- (0.55,1.5) -- (0.45,1.42);
 \draw (0.45,0.08) -- (0.55,0) -- (0.45,-0.08);
 \draw[thick] (0.95,-0.85) -- (3.05,2.35) node[right] {$t$};
-\node at (1.42,1.82) {$1$}; \node at (2.62,1.82) {$2$};
-\node at (1.58,1.18) {$3$}; \node at (2.78,1.18) {$4$};
-\node at (0.44,0.32) {$5$}; \node at (1.64,0.32) {$6$};
-\node at (0.6,-0.32) {$7$}; \node at (1.8,-0.32) {$8$};
+\node at (2.08,1.76) {$1$}; \node at (2.98,1.74) {$2$};
+\node at (2.02,1.26) {$3$}; \node at (2.86,1.24) {$4$};
+\node at (1.10,0.26) {$5$}; \node at (2.00,0.24) {$6$};
+\node at (1.04,-0.24) {$7$}; \node at (1.88,-0.26) {$8$};
 \end{tikzpicture}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.6\linewidth}
@@ -132,7 +133,7 @@ def _arc(cx, cy, a0, a1, r=0.3):
             rf"end angle={_f(a1)}, radius={_f(r)}];")
 
 
-def _region_label(cx, cy, a0, a1, tex, base=0.62):
+def _region_label(cx, cy, a0, a1, tex, base=0.78):
     """Label placed inside the angle a0..a1 (ccw), far enough out to fit."""
     w = math.radians(float(a1 - a0))
     r = 1.3 if w < 0.2 else min(1.3, max(base, 0.36 / math.tan(w / 2)))
@@ -165,6 +166,16 @@ def _solve_steps(p, c, total):
         steps.append(f"Divide both sides by {m(int_raw(p))}: "
                      f"{m(f'x = {int_raw(rhs)} \\div {int_raw(p)} = {dec_raw(xv)}')}.")
     return steps, xv
+
+
+def _near_int(ans, deltas=(5, 10, 15, 20), hi=360):
+    """Filler distractors: whole numbers a few steps either side of the answer."""
+    def f(rng):
+        out = [Q(ans) + d for d in deltas] + [Q(ans) - d for d in deltas]
+        out = [v for v in out if 0 < v < hi]
+        rng.shuffle(out)
+        return out
+    return f
 
 
 # --------------------------------------------------------------------------
@@ -202,10 +213,12 @@ def comp_supp(rng, lvl):
         else:
             wrong.append((Q(a - 90), r"subtracts $90^\circ$ instead of subtracting from $180^\circ$"))
         wrong.append((Q(180 + a), r"adds the angle to $180^\circ$ instead of subtracting it"))
+    wrong.append((Q(a), f"repeats the given angle, but {adj} angles are not equal; they add up to {m(_d(total))}"))
     return Problem(
         stem=stem,
         answer=ans,
         fmt=deg,
+        near=_near_int(ans, (3, 7, 10, 13, 20)),
         wrong=wrong,
         steps=[
             f"{adj.capitalize()} angles add up to {m(_d(total))}.",
@@ -248,15 +261,17 @@ def _classify(a):
     return "reflex"
 
 
-def _draw_kind(rng, kind):
+def _draw_kind(rng, kind, wide=False):
     lo, hi = {"acute": (25, 80), "obtuse": (100, 165), "reflex": (200, 320),
               "right": (90, 90), "straight": (180, 180)}[kind]
+    if wide:                              # text-only questions can use the full range
+        lo, hi = {"acute": (5, 88), "obtuse": (92, 178), "reflex": (182, 355)}.get(kind, (lo, hi))
     return rng.randint(lo, hi)
 
 
 @template("MK")
 def angle_vocab(rng, lvl):
-    mode = rng.choice(["name", "name", "figure", "which", "pair"])
+    mode = rng.choice(["name"] * 4 + ["figure"] * 2 + ["which", "pair"])
     if mode == "pair":
         pairs = {
             "complementary": (r"Two angles whose measures add up to $90^\circ$ are called", r"describes two angles that add up to $90^\circ$"),
@@ -307,7 +322,7 @@ def angle_vocab(rng, lvl):
             near=lambda r: [],
         )
     kind = rng.choice(["acute", "acute", "obtuse", "obtuse", "reflex", "reflex", "right", "straight"])
-    a = _draw_kind(rng, kind)
+    a = _draw_kind(rng, kind, wide=(mode == "name"))
     wrong = [(k, _KIND_WHY[k]) for k in _KIND_WHY if k != kind]
     rng.shuffle(wrong)
     fig = None
@@ -332,7 +347,8 @@ def angle_vocab(rng, lvl):
     else:
         stem = choose(rng,
                       f"Which term describes an angle that measures {deg(a)}?",
-                      f"An angle measures {deg(a)}. What kind of angle is it?")
+                      f"An angle measures {deg(a)}. What kind of angle is it?",
+                      f"What type of angle has a measure of {deg(a)}?")
     return Problem(
         stem=stem,
         answer=kind,
@@ -351,7 +367,7 @@ def angle_vocab(rng, lvl):
 
 @template("MK")
 def vertical_adjacent(rng, lvl):
-    a = rng.choice([v for v in range(40, 141) if abs(v - 90) >= 10])
+    a = rng.choice([v for v in range(35, 146) if abs(v - 90) >= 10])
     regions = [(0, a), (a, 180), (180, 180 + a), (180 + a, 360)]
     meas = [Q(a), Q(180 - a), Q(a), Q(180 - a)]       # read off the drawing
     i = rng.randrange(4)
@@ -367,11 +383,13 @@ def vertical_adjacent(rng, lvl):
         body.append(rf"\draw[thick] {_P(-x1, -y1)} -- {_P(x1, y1)};")
     for k, tex in ((i, m(_d(g))), (j, r"$x^\circ$")):
         s, e = regions[k]
-        body.append(_arc(0, 0, rot + s, rot + e, 0.3))
+        body.append(_arc(0, 0, rot + s, rot + e, 0.25))
         body.append(_region_label(0, 0, rot + s, rot + e, tex))
     stem = choose(rng,
                   f"In the figure, two straight lines intersect, forming the {deg(g)} angle shown. What is the value of {m('x')}?",
-                  f"Two straight lines cross as shown. One angle measures {deg(g)}. What is the value of {m('x')}?")
+                  f"Two straight lines cross as shown. One angle measures {deg(g)}. What is the value of {m('x')}?",
+                  f"Two lines cross, and one of the four angles they form measures {deg(g)}, as shown. Find {m('x')}.",
+                  f"The figure shows two intersecting straight lines and a {deg(g)} angle. What is the value of {m('x')}?")
     if vert:
         wrong = [(180 - g, r"adds the angles to $180^\circ$, but vertical angles are equal"),
                  (360 - g, r"subtracts from $360^\circ$, but vertical angles are equal")]
@@ -399,6 +417,7 @@ def vertical_adjacent(rng, lvl):
         wrong=wrong,
         steps=steps,
         figure=_tikz("\n".join(body)),
+        near=_near_int(ans),
         check=meas[j],
     )
 
@@ -407,26 +426,62 @@ def vertical_adjacent(rng, lvl):
 # level 2
 # --------------------------------------------------------------------------
 
-def _on_line_label(xc, yc, ray, side, tex, h=0.4):
-    """Label sitting on a horizontal line at (xc, yc), inside the angle between
-    the line and a ray at direction ``ray`` (degrees).  side: 'AR','AL','BL','BR'
-    (above/below the line, right/left of the vertex)."""
+def _label_width(tex):
+    """Rough printed width (cm) of a small label such as $(2x + 10)^\\circ$."""
+    core = re.sub(r"\\circ", "o", tex)
+    core = re.sub(r"[$\\{}^ ]", "", core)
+    return 0.19 * len(core) + 0.15
+
+
+def _line_label(xc, yc, ray, side, tex, h=0.42):
+    """Label sitting on a horizontal line at (xc, yc), inside the angle
+    between the line and a line/ray through (xc, yc) at direction ``ray``.
+    side: 'AR', 'AL', 'BL', 'BR' (above/below the line, right/left of the
+    crossing).  Returns (tikz, xmin, xmax) so callers can size the figure."""
     t = math.radians(float(ray))
-    if side == "AR":
-        cot = math.cos(t) / math.sin(t)
-        dx = h * cot + 0.1 if cot > 0 else 0.12
-        return rf"\node[anchor=south west, inner sep=1pt] at {_P(xc + dx, yc + 0.03)} {{{tex}}};"
-    if side == "AL":
-        cot = math.cos(t) / math.sin(t)
-        dx = -h * cot + 0.1 if cot < 0 else 0.12
-        return rf"\node[anchor=south east, inner sep=1pt] at {_P(xc - dx, yc + 0.03)} {{{tex}}};"
-    if side == "BL":
-        cot = math.cos(t) / math.sin(t)
-        dx = h * cot + 0.1 if cot > 0 else 0.12
-        return rf"\node[anchor=north east, inner sep=1pt] at {_P(xc - dx, yc - 0.03)} {{{tex}}};"
     cot = math.cos(t) / math.sin(t)
-    dx = -h * cot + 0.1 if cot < 0 else 0.12
-    return rf"\node[anchor=north west, inner sep=1pt] at {_P(xc + dx, yc - 0.03)} {{{tex}}};"
+    lean = cot if side in ("AR", "BL") else -cot     # > 0: the ray leans over this label
+    dx = max(0.36, h * lean + 0.12) if lean > 0 else 0.36
+    w = _label_width(tex)
+    if side == "AR":
+        anchor, px, py, lo, hi = "south west", xc + dx, yc + 0.03, xc + dx, xc + dx + w
+    elif side == "AL":
+        anchor, px, py, lo, hi = "south east", xc - dx, yc + 0.03, xc - dx - w, xc - dx
+    elif side == "BL":
+        anchor, px, py, lo, hi = "north east", xc - dx, yc - 0.03, xc - dx - w, xc - dx
+    else:
+        anchor, px, py, lo, hi = "north west", xc + dx, yc - 0.03, xc + dx, xc + dx + w
+    return rf"\node[anchor={anchor}, inner sep=1pt] at {_P(px, py)} {{{tex}}};", lo, hi
+
+
+def _ae(p, q):
+    """Raw LaTeX for an angle written as an expression: (2x + 10)^\\circ, 3x^\\circ."""
+    return f"({_lin(p, q)})^\\circ" if q != 0 else f"{_lin(p, q)}^\\circ"
+
+
+def _aem(p, q):
+    """Inline math for an angle expression; the braces stop line breaks inside it."""
+    return m("{" + _ae(p, q) + "}")
+
+
+def _cross_fig(v, labels, ray_only=False):
+    """A horizontal line crossed at the origin by a line (or, with
+    ray_only, a single ray) at direction v.  labels: {side: tex}."""
+    parts, lo, hi = [], -1.2, 1.2
+    regions = {"AR": (0, v), "AL": (v, 180), "BL": (180, 180 + v), "BR": (180 + v, 360)}
+    for i, (side, tex) in enumerate(labels.items()):
+        code, a, b = _line_label(0, 0, v, side, tex)
+        parts.append(_arc(0, 0, *regions[side], 0.25 if i == 0 else 0.32))
+        parts.append(code)
+        lo, hi = min(lo, a), max(hi, b)
+    L = max(-lo, hi) + 0.25
+    x1, y1 = _polar(v, 1.9)
+    body = [rf"\draw[thick] ({_f(-L)},0) -- ({_f(L)},0);"]
+    if ray_only:
+        body += [rf"\draw[thick] (0,0) -- {_P(x1, y1)};", r"\fill (0,0) circle (1.2pt);"]
+    else:
+        body.append(rf"\draw[thick] {_P(-x1, -y1)} -- {_P(x1, y1)};")
+    return _tikz("\n".join(body + parts))
 
 
 @template("MK")
@@ -453,60 +508,29 @@ def angle_algebra(rng, lvl):
 
     # ---------------- figure and setup sentence ----------------
     fig = None
-    lab1, lab2 = f"$({E1})^\\circ$", f"$({E2})^\\circ$"
+    lab1, lab2 = f"${_ae(p, q)}$", f"${_ae(r, s)}$"
+    A1, A2 = _aem(p, q), _aem(r, s)
     names = {}
     if rel == "vertical":
-        x1, y1 = _polar(v1, 2.1)
-        body = [r"\draw[thick] (-2.4,0) -- (2.4,0);",
-                rf"\draw[thick] {_P(-x1, -y1)} -- {_P(x1, y1)};",
-                _arc(0, 0, 0, v1, 0.3), _arc(0, 0, 180, 180 + v1, 0.3),
-                _on_line_label(0, 0, v1, "AR", lab1),
-                _on_line_label(0, 0, v1, "BL", lab2)]
-        fig = _tikz("\n".join(body))
+        fig = _cross_fig(v1, {"AR": lab1, "BL": lab2})
         setup = (f"In the figure, two straight lines intersect. The vertical angles shown measure "
-                 f"{m(f'({E1})^\\circ')} and {m(f'({E2})^\\circ')}.")
+                 f"{A1} and {A2}.")
     elif rel == "linear":
-        x1, y1 = _polar(v1, 2.0)
-        body = [r"\draw[thick] (-2.4,0) -- (2.4,0);",
-                rf"\draw[thick] (0,0) -- {_P(x1, y1)};",
-                r"\fill (0,0) circle (1.2pt);",
-                _arc(0, 0, 0, v1, 0.3), _arc(0, 0, v1, 180, 0.38),
-                _on_line_label(0, 0, v1, "AR", lab1),
-                _on_line_label(0, 0, v1, "AL", lab2)]
-        fig = _tikz("\n".join(body))
-        setup = (f"In the figure, a ray meets a straight line, forming angles of "
-                 f"{m(f'({E1})^\\circ')} and {m(f'({E2})^\\circ')}.")
+        fig = _cross_fig(v1, {"AR": lab1, "AL": lab2}, ray_only=True)
+        setup = f"In the figure, a ray meets a straight line, forming angles of {A1} and {A2}."
     else:
         A, B = rng.choice([("A", "B"), ("P", "Q"), ("1", "2"), ("J", "K")])
         names = {E1: A, E2: B}
         word = "complementary" if rel == "comp" else "supplementary"
         setup = (f"{m(r'\angle ' + A)} and {m(r'\angle ' + B)} are {word}. "
-                 f"{m(r'\angle ' + A)} measures {m(f'({E1})^\\circ')}, and "
-                 f"{m(r'\angle ' + B)} measures {m(f'({E2})^\\circ')}.")
+                 f"{m(r'\angle ' + A)} measures {A1}, and {m(r'\angle ' + B)} measures {A2}.")
 
     # ---------------- solve for x ----------------
-    steps = []
-    if rel == "vertical":
-        (pb, qb), (ps, qs) = ((p, q), (r, s)) if p > r else ((r, s), (p, q))
-        steps.append(f"Vertical angles are equal, so set the expressions equal: "
-                     f"{m(f'{_lin(pb, qb)} = {_lin(ps, qs)}')}.")
-        steps.append(f"Subtract {m(latex(ps * X))} from both sides: "
-                     f"{m(f'{_lin(pb - ps, qb)} = {int_raw(qs)}')}.")
-        more, xv = _solve_steps(pb - ps, qb, qs)
-        wrong_x = [(Q(180 - q - s) / (p + r), r"adds the angles to $180^\circ$, but vertical angles are equal"),
-                   (Q(qs + qb) / (pb - ps), "makes a sign error when moving the constant term")]
-    else:
-        lead = {"linear": "Angles that form a straight line add up to",
-                "supp": "Supplementary angles add up to",
-                "comp": "Complementary angles add up to"}[rel]
-        steps.append(f"{lead} {m(_d(total))}: {m(f'({E1}) + ({E2}) = {total}')}.")
-        steps.append(f"Combine like terms: {m(f'{_lin(p + r, q + s)} = {total}')}.")
-        more, xv = _solve_steps(p + r, q + s, total)
-        other = 90 if total == 180 else 180
-        wrong_x = [(Q(s - q) / (p - r), "sets the two angles equal instead of adding them"),
-                   (Q(other - q - s) / (p + r), f"uses {m(_d(other))} instead of {m(_d(total))}"),
-                   (Q(total + q + s) / (p + r), "makes a sign error when moving the constant term")]
-    steps += more
+    lead = {"vertical": "Vertical angles are equal",
+            "linear": "Angles that form a straight line add up to",
+            "supp": "Supplementary angles add up to",
+            "comp": "Complementary angles add up to"}[rel]
+    steps, xv, wrong_x = _pair_steps(p, q, r, s, total, lead)
     need(xv == x0)
 
     if lvl <= 2:
@@ -524,7 +548,7 @@ def angle_algebra(rng, lvl):
         if rel == "vertical":
             ask = "What is the measure of each of these angles?"
         elif rel == "linear":
-            ask = f"What is the measure of the {m(f'({which})^\\circ')} angle?"
+            ask = f"What is the measure of the {A1 if which == E1 else A2} angle?"
         else:
             ask = f"What is the measure of {m(r'\angle ' + names[which])}?"
         stem = setup + " " + ask
@@ -552,6 +576,7 @@ def angle_algebra(rng, lvl):
         steps=steps,
         figure=fig,
         tip=tip,
+        near=_near_int(ans, (1, 2, 3, 5) if fmt is num else (5, 10, 15, 20), hi=100 if fmt is num else 180),
         check=check,
         verify=verify,
     )
@@ -567,3 +592,632 @@ def _plug(e, xv):
     elif c < 0:
         head += f" - {int_raw(-c)}"
     return f"{head} = {int_raw(e.subs(X, xv))}"
+
+
+def _pair_steps(p, q, r, s, total, lead):
+    """Solve (p x + q) = (r x + s) when ``total`` is None, else
+    (p x + q) + (r x + s) = total.  ``lead`` names the fact used.
+    Returns (steps, x, wrong_x) where wrong_x are x-values from real mistakes."""
+    steps = []
+    if total is None:
+        (pb, qb), (ps, qs) = ((p, q), (r, s)) if p > r else ((r, s), (p, q))
+        steps.append(f"{lead}, so set the expressions equal: "
+                     f"{m(f'{_lin(pb, qb)} = {_lin(ps, qs)}')}.")
+        steps.append(f"Subtract {m(latex(ps * X))} from both sides: "
+                     f"{m(f'{_lin(pb - ps, qb)} = {int_raw(qs)}')}.")
+        more, xv = _solve_steps(pb - ps, qb, qs)
+        wrong_x = [(Q(180 - q - s) / (p + r), r"adds the angles to $180^\circ$, but these angles are equal"),
+                   (Q(qs + qb) / (pb - ps), "makes a sign error when moving the constant term")]
+    else:
+        steps.append(f"{lead} {m(_d(total))}: {m(f'({_lin(p, q)}) + ({_lin(r, s)}) = {total}')}.")
+        steps.append(f"Combine like terms: {m(f'{_lin(p + r, q + s)} = {total}')}.")
+        more, xv = _solve_steps(p + r, q + s, total)
+        other = 90 if total == 180 else 180
+        wrong_x = [(Q(s - q) / (p - r), "sets the two angles equal instead of adding them"),
+                   (Q(other - q - s) / (p + r), f"uses {m(_d(other))} instead of {m(_d(total))}"),
+                   (Q(total + q + s) / (p + r), "makes a sign error when moving the constant term")]
+    return steps + more, xv, wrong_x
+
+
+# ---- parallel lines cut by a transversal --------------------------------
+# Positions at each crossing: A/B = above/below the parallel line, R/L =
+# right/left of the transversal.  "U" = upper line l, "L" = lower line m.
+# Canonical drawing: the transversal rises to the right, so AR and BL are
+# the acute angles.
+_PACUTE = {"AR", "BL"}
+_PRELS = {
+    "corresponding": [(("U", p), ("L", p)) for p in ("AR", "AL", "BL", "BR")],
+    "alternate interior": [(("U", "BL"), ("L", "AR")), (("U", "BR"), ("L", "AL"))],
+    "alternate exterior": [(("U", "AL"), ("L", "BR")), (("U", "AR"), ("L", "BL"))],
+    "same-side interior": [(("U", "BL"), ("L", "AL")), (("U", "BR"), ("L", "AR"))],
+}
+_PEQUAL = {"corresponding": True, "alternate interior": True,
+           "alternate exterior": True, "same-side interior": False}
+_PWHERE = {
+    "corresponding": "they sit in the same position at the two crossings",
+    "alternate interior": "they are between the parallel lines, on opposite sides of the transversal",
+    "alternate exterior": "they are outside the parallel lines, on opposite sides of the transversal",
+    "same-side interior": "they are between the parallel lines, on the same side of the transversal",
+}
+_MIRROR = {"AR": "AL", "AL": "AR", "BL": "BR", "BR": "BL"}
+
+
+_LINE_NAMES = [(r"\ell", "m", "t"), ("p", "q", "t"), ("j", "k", "n"), ("m", "n", "s"), ("a", "b", "c")]
+
+
+def _parallel_fig(phi, labels, mirror, names=_LINE_NAMES[0]):
+    """Two horizontal parallel lines cut by a transversal making the acute
+    angle ``phi`` with them.  labels: {(line, canonical position): tex}.
+    The lines are made just long enough to carry the labels."""
+    H = 1.6
+    psi = 180 - phi if mirror else phi          # direction of the transversal as drawn
+    t = math.radians(psi)
+    cot = math.cos(t) / math.sin(t)
+    xl, xu = 0.0, H * cot
+    ex, ey = 0.9 * math.cos(t), 0.9 * math.sin(t)
+    regions = {"AR": (0, psi), "AL": (psi, 180), "BL": (180, 180 + psi), "BR": (180 + psi, 360)}
+    parts, lo, hi = [], min(xl, xu) - 1.0, max(xl, xu) + 1.0
+    for (line, pos), tex in labels.items():
+        vis = _MIRROR[pos] if mirror else pos
+        xc, yc = (xu, H) if line == "U" else (xl, 0.0)
+        code, a, b = _line_label(xc, yc, psi, vis, tex)
+        parts.append(_arc(xc, yc, *regions[vis], 0.25))
+        parts.append(code)
+        lo, hi = min(lo, a), max(hi, b)
+    lo, hi = lo - 0.5, hi + 0.25
+    body = [rf"\draw[thick] ({_f(lo)},{H}) -- ({_f(hi)},{H}) node[right] {{${names[0]}$}};",
+            rf"\draw[thick] ({_f(lo)},0) -- ({_f(hi)},0) node[right] {{${names[1]}$}};",
+            rf"\draw {_P(lo + 0.15, H + 0.08)} -- {_P(lo + 0.25, H)} -- {_P(lo + 0.15, H - 0.08)};",
+            rf"\draw {_P(lo + 0.15, 0.08)} -- {_P(lo + 0.25, 0)} -- {_P(lo + 0.15, -0.08)};",
+            rf"\draw[thick] {_P(xl - ex, -ey)} -- {_P(xu + ex, H + ey)} "
+            rf"node[{'right' if psi < 90 else 'left'}] {{${names[2]}$}};"]
+    return _tikz("\n".join(body + parts))
+
+
+@template("MK")
+def parallel_lines(rng, lvl):
+    phi = rng.randint(40, 75)
+    rel = rng.choice(list(_PRELS))
+    pair = rng.choice(_PRELS[rel])
+    if rng.random() < 0.5:
+        pair = (pair[1], pair[0])
+    (gl, gp), (tl, tp) = pair
+    mirror = rng.random() < 0.5
+
+    def drawn(pos):                      # angle as drawn (geometry, not the rule)
+        return Q(phi) if pos in _PACUTE else Q(180 - phi)
+
+    g, tgt = drawn(gp), drawn(tp)
+    equal = _PEQUAL[rel]
+    name = rel
+    names = rng.choice(_LINE_NAMES)
+    L1, L2, T = (m(v) for v in names)
+    if lvl <= 2:
+        ans = g if equal else 180 - g
+        fig = _parallel_fig(phi, {(gl, gp): m(_d(g)), (tl, tp): r"$x^\circ$"}, mirror, names)
+        stem = choose(
+            rng,
+            f"In the figure, lines {L1} and {L2} are parallel, and one angle formed by "
+            f"transversal {T} measures {deg(g)}. What is the value of {m('x')}?",
+            f"Parallel lines {L1} and {L2} are cut by transversal {T}, forming the "
+            f"{deg(g)} angle shown. What is the value of {m('x')}?",
+            f"In the figure, {m(names[0] + r' \parallel ' + names[1])}, and one of the angles measures {deg(g)}. "
+            f"What is the value of {m('x')}?",
+            f"Line {T} crosses parallel lines {L1} and {L2}, making the {deg(g)} angle shown. Find {m('x')}.")
+        if equal:
+            wrong = [(180 - g, f"adds the angles to {m('180^\\circ')}, but {name} angles are equal")]
+            if g < 90:
+                wrong.append((90 - g, r"subtracts from $90^\circ$ instead of using the equal-angle rule"))
+            else:
+                wrong.append((g - 90, r"subtracts $90^\circ$ instead of using the equal-angle rule"))
+            wrong.append((360 - g, r"subtracts from $360^\circ$"))
+            steps = [f"The {deg(g)} angle and the {m('x^\\circ')} angle are \\emph{{{name}}} angles: {_PWHERE[rel]}.",
+                     f"When the lines are parallel, {name} angles are equal, so {m(f'x = {int_raw(ans)}')}."]
+        else:
+            wrong = [(g, "treats the angles as equal, but same-side interior angles add up to $180^\\circ$"),
+                     (360 - g, r"subtracts from $360^\circ$ instead of $180^\circ$")]
+            if g < 90:
+                wrong.append((90 - g, r"subtracts from $90^\circ$ instead of $180^\circ$"))
+            steps = [f"The {deg(g)} angle and the {m('x^\\circ')} angle are \\emph{{same-side interior}} angles: {_PWHERE[rel]}.",
+                     f"Same-side interior angles add up to {m('180^\\circ')}: "
+                     f"{m(f'x = 180 - {int_raw(g)} = {int_raw(ans)}')}."]
+        small, large = min(g, 180 - g), max(g, 180 - g)
+        tip = (f"Every acute angle in this figure is {deg(small)} and every obtuse angle is {deg(large)}. "
+               f"The {m('x^\\circ')} angle is {'acute' if tgt < 90 else 'obtuse'}, so {m(f'x = {int_raw(ans)}')}.")
+        return Problem(stem=stem, answer=ans, fmt=num, wrong=wrong, steps=steps,
+                       tip=tip, figure=fig, near=_near_int(ans), check=tgt)
+
+    # level 3: algebraic labels (long labels need a steeper transversal)
+    need(phi >= 50)
+    x0 = rng.randint(6, 30)
+    p, r = rng.sample(range(1, 7), 2)
+    q, s = g - p * x0, tgt - r * x0
+    need(-40 <= q <= 60 and -40 <= s <= 60 and (q != 0 or s != 0))
+    need(q % 5 == 0 or s % 5 == 0 or rng.random() < 0.4)
+    e1, e2 = p * X + q, r * X + s
+    E1, E2 = _lin(p, q), _lin(r, s)
+    fig = _parallel_fig(phi, {(gl, gp): f"${_ae(p, q)}$", (tl, tp): f"${_ae(r, s)}$"}, mirror, names)
+    total = None if equal else 180
+    lead = (f"These are {name} angles ({_PWHERE[rel]}). {name.capitalize()} angles are equal"
+            if equal else
+            f"These are same-side interior angles ({_PWHERE[rel]}). Same-side interior angles add up to")
+    steps, xv, wrong_x = _pair_steps(p, q, r, s, total, lead)
+    need(xv == x0)
+    eq = sp.Eq(e1, e2) if equal else sp.Eq(e1 + e2, 180)
+    x_solved = sp.solve(eq, X)[0]
+    setup = (f"In the figure, lines {L1} and {L2} are parallel. The marked angles measure "
+             f"{_aem(p, q)} and {_aem(r, s)}.")
+    if rng.random() < 0.5:
+        stem = setup + f" What is the value of {m('x')}?"
+        return Problem(stem=stem, answer=Q(x0), fmt=num,
+                       wrong=wrong_x + [(g, r"is the measure of an angle, not the value of $x$")],
+                       steps=steps, figure=fig, check=x_solved, near=_near_int(x0, (1, 2, 3, 5), hi=100),
+                       verify=lambda v: (e1.subs(X, v) == e2.subs(X, v)) if equal
+                       else (e1 + e2).subs(X, v) == 180)
+    which, target = rng.choice([(E1, e1), (E2, e2)])
+    ans = target.subs(X, x0)
+    other_ang = (e2 if target is e1 else e1).subs(X, x0)
+    wrong = [(Q(x0), r"stops at the value of $x$ instead of finding the angle")]
+    if other_ang != ans:
+        wrong.append((other_ang, "is the measure of the other marked angle"))
+    else:
+        wrong.append((180 - ans, "is the supplement of the angle, not the angle itself"))
+    wv, why = wrong_x[0]
+    if wv.is_integer and wv > 0 and target.subs(X, wv) > 0:
+        wrong.append((target.subs(X, wv), why))
+    steps.append(f"Plug {m(f'x = {x0}')} into {m(latex(target))}: {m(_plug(target, x0))}, "
+                 f"so the angle measures {deg(ans)}.")
+    return Problem(stem=setup + f" What is the measure of the {_aem(p, q) if which == E1 else _aem(r, s)} angle?",
+                   answer=ans, fmt=deg, wrong=wrong, steps=steps, figure=fig,
+                   near=_near_int(ans), check=target.subs(X, x_solved))
+
+
+@template("MK")
+def around_point(rng, lvl):
+    mode = rng.choice(["line", "line", "point", "ratio_line", "ratio_point"])
+    if mode in ("line", "point"):
+        k = 3 if mode == "line" else 4
+        total = 180 if mode == "line" else 360
+        lo, hi = (35, 100) if mode == "line" else (55, 130)
+        given = [rng.randint(lo, hi) for _ in range(k - 1)]
+        xv = total - sum(given)
+        need(lo <= xv <= hi + 20 and len(set(given + [xv])) == k)
+        meas = given + [xv]
+        idx = rng.randrange(k)
+        meas[idx], meas[-1] = meas[-1], meas[idx]          # put x somewhere random
+        labels = [m(_d(v)) if i != idx else r"$x^\circ$" for i, v in enumerate(meas)]
+        gtxt = ", ".join(deg(v) for v in given[:-1]) + f"{',' if k > 3 else ''} and {deg(given[-1])}"
+        if mode == "line":
+            stem = (f"In the figure, three angles share a vertex on a straight line. Two of them measure "
+                    f"{gtxt}. What is the value of {m('x')}?")
+            wrong = [(Q(360 - sum(given)), r"uses $360^\circ$ instead of $180^\circ$"),
+                     (Q(sum(given)), "adds the two given angles and stops"),
+                     (Q(180 - given[0]), "subtracts only one of the given angles")]
+            fact = r"Angles that together form a straight line add up to $180^\circ$"
+        else:
+            stem = (f"Four angles meet at a point, as shown. Three of them measure {gtxt}. "
+                    f"What is the value of {m('x')}?")
+            wrong = [(Q(sum(given)), "adds the three given angles and stops"),
+                     (Q(360 - sum(given[:2])), "leaves out one of the given angles"),
+                     (Q(180 - sum(given[:2])), r"uses $180^\circ$ and leaves out one angle")]
+            fact = r"Angles all the way around a point add up to $360^\circ$"
+        plus = " + ".join(str(v) for v in given)
+        steps = [f"{fact}: {m(plus + ' + x = ' + str(total))}.",
+                 f"Add the known angles: {m(f'{plus} = {sum(given)}')}.",
+                 f"Subtract: {m(f'x = {total} - {sum(given)} = {xv}')}."]
+        ans, check = Q(xv), _solve_sum(given + [X], total)
+    else:
+        if mode == "ratio_line":
+            ks = list(rng.choice([(1, 2, 3), (1, 1, 2), (2, 3, 4), (2, 3, 5), (3, 4, 5), (2, 2, 5), (1, 2, 2)]))
+            total = 180
+        else:
+            ks = list(rng.choice([(1, 2, 3, 4), (1, 1, 2, 2), (2, 3, 3, 4), (1, 2, 2, 3), (2, 3, 4, 6),
+                                  (3, 4, 5, 6), (1, 2, 4, 5)]))
+            total = 360
+        rng.shuffle(ks)
+        K = sum(ks)
+        xv = Q(total) / K
+        need(xv.is_integer)
+        meas = [kk * xv for kk in ks]
+        labels = [f"${latex(kk * X)}^\\circ$" for kk in ks]
+        terms = " + ".join(latex(kk * X) for kk in ks)
+        n_ang = len(ks)
+        if mode == "ratio_line":
+            stem = (f"In the figure, angles measuring {', '.join(m(latex(kk * X) + '^\\circ') for kk in ks[:-1])}, "
+                    f"and {m(latex(ks[-1] * X) + '^\\circ')} together form a straight line. What is the value of {m('x')}?")
+            fact = r"The angles form a straight line, so they add up to $180^\circ$"
+            wrong = [(Q(360) / K, r"uses $360^\circ$ instead of $180^\circ$"),
+                     (Q(180) / n_ang, r"divides $180^\circ$ by the number of angles, as if they were all equal")]
+        else:
+            stem = (f"In the figure, four angles meet at a point and measure "
+                    f"{', '.join(m(latex(kk * X) + '^\\circ') for kk in ks[:-1])}, and "
+                    f"{m(latex(ks[-1] * X) + '^\\circ')}. What is the value of {m('x')}?")
+            fact = r"The angles go all the way around a point, so they add up to $360^\circ$"
+            wrong = [(Q(180) / K, r"uses $180^\circ$ instead of $360^\circ$"),
+                     (Q(90), r"divides $360^\circ$ by the number of angles, as if they were all equal")]
+        wrong.append((max(ks) * xv, r"gives the largest angle instead of the value of $x$"))
+        steps = [f"{fact}: {m(f'{terms} = {total}')}.",
+                 f"Combine like terms: {m(f'{latex(K * X)} = {total}')}.",
+                 f"Divide both sides by {m(K)}: {m(f'x = {total} \\div {K} = {int_raw(xv)}')}."]
+        ans, check = xv, sp.solve(sp.Eq(sum(kk * X for kk in ks), total), X)[0]
+        idx = None
+    # ---- figure: rays from O, regions drawn to the true angle sizes ----
+    body = []
+    if mode in ("line", "ratio_line"):
+        body.append(r"\draw[thick] (-2.1,0) -- (2.1,0);")
+        start = 0
+    else:
+        start = rng.choice([0, 15, 30, 45])
+    cur = start
+    edges = []
+    for v in meas:
+        edges.append((cur, cur + v))
+        cur += v
+    rays = [e[1] for e in edges[:-1]] if mode in ("line", "ratio_line") else [e[0] for e in edges]
+    for d in rays:
+        ex_, ey_ = _polar(d, 1.75)
+        body.append(rf"\draw[thick] (0,0) -- {_P(ex_, ey_)};")
+    body.append(r"\fill (0,0) circle (1.2pt);")
+    for i, ((a0, a1), tex) in enumerate(zip(edges, labels)):
+        body.append(_arc(0, 0, a0, a1, 0.25 if i % 2 == 0 else 0.32))
+        body.append(_region_label(0, 0, a0, a1, tex, base=0.88))
+    return Problem(stem=stem, answer=ans, fmt=num, wrong=wrong, steps=steps,
+                   figure=_tikz("\n".join(body)), near=_near_int(ans), check=check)
+
+
+_POLY = {5: "pentagon", 6: "hexagon", 7: "heptagon (7 sides)", 8: "octagon",
+         9: "nonagon (9 sides)", 10: "decagon (10 sides)"}
+
+
+def _pname(n):
+    return _POLY.get(n, f"{n}-sided polygon")
+
+
+def _a(word):
+    return ("an " if word[0] in "aeiou" else "a ") + word
+
+
+_SUM_OBJECTS = {
+    5: ["Home plate on a baseball field", "The outline of the Pentagon building", "A school crossing sign"],
+    6: ["A hex nut", "A honeycomb cell", "A floor tile"],
+    8: ["A stop sign", "A boxing ring", "A gazebo floor"],
+}
+
+
+@template("MK")
+def polygon_sum(rng, lvl):
+    mode = rng.choice(["sum", "sum", "sides", "algebra", "algebra"])
+    if mode == "sum":
+        n = rng.randint(5, 20)
+        name = _pname(n)
+        total = (n - 2) * 180
+        stems = [f"What is the sum of the measures of the interior angles of {_a(name)}?",
+                 f"The interior angles of {_a(name)} add up to how many degrees?",
+                 f"Find the sum of the interior angles of a polygon with {n} sides."]
+        if n in _SUM_OBJECTS:
+            obj = rng.choice(_SUM_OBJECTS[n])
+            stems += [f"{obj} has the shape of {_a(name)}. What is the sum of its interior angles?"] * 2
+        wrong = [(Q(n * 180), r"multiplies by the number of sides instead of $n-2$"),
+                 (Q((n - 1) * 180), r"uses $n-1$ instead of $n-2$"),
+                 (Q(360), r"gives the sum of the exterior angles, which is always $360^\circ$"),
+                 (Q(total) / n, "gives one angle of a regular polygon, not the sum of all the angles")]
+        return Problem(
+            stem=rng.choice(stems),
+            answer=Q(total),
+            fmt=deg,
+            wrong=wrong,
+            steps=[f"The polygon has {m(f'n = {n}')} sides. "
+                   r"Use: sum of interior angles $= (n-2) \times 180^\circ$.",
+                   f"{m(f'({n} - 2) \\times 180^\\circ = {n - 2} \\times 180^\\circ = {_d(total)}')}."],
+            tip=(f"Why it works: diagonals from one corner cut the polygon into {m(f'{n} - 2 = {n - 2}')} "
+                 r"triangles, and each triangle holds $180^\circ$."),
+            check=Q(n * 180 - 360),          # n straight angles at the vertices minus the 360 of exterior angles
+        )
+    if mode == "sides":
+        n = rng.randint(5, 20)
+        total = (n - 2) * 180
+        stem = choose(rng,
+                      f"The interior angles of a polygon add up to {deg(total)}. How many sides does the polygon have?",
+                      f"A polygon's interior angles have a sum of {deg(total)}. How many sides does it have?",
+                      f"How many sides does a polygon have if the sum of its interior angles is {deg(total)}?")
+        brute = next(k for k in range(3, 100) if (k - 2) * 180 == total)
+        return Problem(
+            stem=stem,
+            answer=Q(n),
+            fmt=num,
+            wrong=[(Q(n - 2), r"finds $n-2$ and forgets to add the $2$ back"),
+                   (Q(n - 1), r"adds $1$ instead of $2$"),
+                   (Q(total) / 360, r"divides by $360^\circ$ instead of $180^\circ$")],
+            steps=[f"Set up the angle-sum formula: {m(f'(n-2) \\times 180 = {int_raw(total)}')}.",
+                   f"Divide both sides by 180: {m(f'n - 2 = {int_raw(total)} \\div 180 = {n - 2}')}.",
+                   f"Add 2: {m(f'n = {n - 2} + 2 = {n}')}."],
+            near=_near_int(n, (1, 2, 3, 4), hi=100),
+            check=Q(brute),
+        )
+    # algebra: the four angles of a quadrilateral are given as expressions in x
+    for _ in range(200):                     # search locally: the angle sum must come out exactly
+        x0 = rng.randint(10, 40)
+        coefs = [rng.choice([1, 1, 2, 2, 3]) for _ in range(4)]
+        consts = [rng.choice([0, 0, 10, 20, 30, -10, -20, 15, 25, -15]) for _ in range(3)]
+        vals = [p * x0 + c for p, c in zip(coefs, consts)]
+        last = 360 - sum(vals)
+        c4 = last - coefs[3] * x0
+        if (all(45 <= v <= 160 for v in vals + [last]) and abs(c4) <= 40 and c4 % 5 == 0
+                and len(set(zip(coefs, consts + [c4]))) == 4):
+            break
+    else:
+        need(False)
+    consts.append(c4)
+    vals.append(last)
+    exprs = [p * X + c for p, c in zip(coefs, consts)]
+    K, C = sum(coefs), sum(consts)
+    terms = ", ".join(_aem(pp, cc) for pp, cc in zip(coefs[:-1], consts[:-1]))
+    terms += f", and {_aem(coefs[-1], c4)}"
+    stem = choose(rng,
+                  f"The four angles of a quadrilateral measure {terms}. What is the value of {m('x')}?",
+                  f"A quadrilateral has angles of {terms}. What is the value of {m('x')}?")
+    steps = [r"The angles of a quadrilateral add up to $(4-2) \times 180^\circ = 360^\circ$.",
+             f"Add the expressions and combine like terms: {m(f'{latex(K * X + C)} = 360')}."]
+    more, xv = _solve_steps(K, C, 360)
+    steps += more
+    need(xv == x0)
+    return Problem(
+        stem=stem,
+        answer=Q(x0),
+        fmt=num,
+        wrong=[(Q(180 - C) / K, r"uses $180^\circ$, the angle sum of a triangle"),
+               (Q(540 - C) / K, r"uses $540^\circ$, the angle sum of a pentagon"),
+               (Q(360 + C) / K, "makes a sign error when moving the constant term"),
+               (Q(360) / K, "ignores the constant terms")],
+        steps=steps,
+        tip=f"Check: with {m(f'x = {x0}')} the angles are " + ", ".join(m(_d(v)) for v in vals)
+            + f", and they add up to {m('360^\\circ')}.",
+        near=_near_int(x0, (1, 2, 3, 5), hi=100),
+        check=_solve_sum(exprs, 360),
+    )
+
+
+_REG_OBJECTS = {
+    5: ["flower bed", "patio", "garden bed"],
+    6: ["patio", "sandbox", "garden bed", "tabletop", "gazebo floor"],
+    8: ["gazebo floor", "picnic table top", "deck", "window frame"],
+    10: ["tabletop", "patio"],
+    12: ["gazebo floor", "fountain base"],
+}
+
+
+@template("MK")
+def regular_polygon(rng, lvl):
+    who = person(rng)
+    if lvl <= 2:
+        mode = rng.choice(["interior", "interior", "exterior"])
+        n = rng.choice([5, 6, 8, 10, 12] if rng.random() < 0.6 else [9, 15, 18, 20])
+        name = _pname(n)
+        total = (n - 2) * 180
+        obj = rng.choice(_REG_OBJECTS.get(n, ["patio"]))
+        if mode == "interior":
+            ans = Q(total) / n
+            stems = [f"What is the measure of each interior angle of a regular {name}?",
+                     f"Each angle of a regular {name} has the same measure. What is that measure?",
+                     f"{who.name} draws a regular {name} for a logo design. What is the measure of "
+                     f"each interior angle of {who.his} drawing?",
+                     f"{soldier(rng)} lays out a concrete pad shaped like a regular {name}. "
+                     f"What must each interior angle of the pad measure?"]
+            if n in _REG_OBJECTS:
+                stems += [f"{who.name} is building a {obj} in the shape of a regular {name}. "
+                          f"What is the measure of each interior angle of the {obj}?"] * 2
+            wrong = [(Q(total), "is the sum of all the interior angles, not one angle"),
+                     (Q(360) / n, "is the exterior angle, not the interior angle"),
+                     (Q((n - 1) * 180) / n, r"uses $n-1$ instead of $n-2$")]
+            steps = [f"{_a(name.split(' (')[0]).capitalize()} has {m(n)} sides. Sum of the interior angles: "
+                     f"{m(f'({n} - 2) \\times 180^\\circ = {_d(total)}')}.",
+                     f"A regular polygon has {m(n)} equal angles: "
+                     f"{m(f'{int_raw(total)}^\\circ \\div {n} = {_d(ans)}')}."]
+            tip = (f"Faster: each exterior angle is {m(f'360^\\circ \\div {n} = {_d(Q(360) / n)}')}, "
+                   f"so each interior angle is {m(f'180^\\circ - {_d(Q(360) / n)} = {_d(ans)}')}.")
+            check = 180 - Q(360) / n
+        else:
+            ans = Q(360) / n
+            stems = [f"What is the measure of each exterior angle of a regular {name}?",
+                     f"A regular {name} has equal exterior angles. What does each one measure?",
+                     f"{who.name} walks along the edge of a {obj} shaped like a regular {name}. At each corner "
+                     f"{who.he} turns through the exterior angle. How many degrees does {who.he} turn at each corner?",
+                     f"{soldier(rng)} marches a squad around a course shaped like a regular {name}, turning "
+                     f"through the same exterior angle at every corner. How many degrees is each turn?"]
+            wrong = [(Q(180) / n, r"divides $180^\circ$ instead of $360^\circ$"),
+                     (Q(total) / n, "is the interior angle, not the exterior angle"),
+                     (Q(total), "is the sum of the interior angles")]
+            steps = [r"The exterior angles of any polygon add up to $360^\circ$ (one full turn).",
+                     f"A regular {name.split(' (')[0]} has {m(n)} equal exterior angles: "
+                     f"{m(f'360^\\circ \\div {n} = {_d(ans)}')}."]
+            tip = None
+            check = 180 - Q(total) / n
+        return Problem(stem=rng.choice(stems), answer=ans, fmt=deg, wrong=wrong, steps=steps,
+                       tip=tip, check=check)
+    # level 3: find the number of sides
+    n = rng.choice([5, 6, 8, 9, 10, 12, 15, 18, 20])
+    ext = Q(360) / n
+    interior = 180 - ext
+    brute = next(k for k in range(3, 200) if Q((k - 2) * 180) == interior * k)
+    s = soldier(rng)
+    if rng.random() < 0.55:
+        stem = choose(
+            rng,
+            f"Each interior angle of a regular polygon measures {deg(interior)}. How many sides does the polygon have?",
+            f"{who.name} is cutting boards to build a frame in the shape of a regular polygon, one board per side. "
+            f"Each interior angle of the frame must measure {deg(interior)}. How many boards does {who.he} need?",
+            f"A tabletop is shaped like a regular polygon with interior angles of {deg(interior)} each. "
+            f"How many sides does the tabletop have?",
+            f"{who.name} designs a regular polygon for a garden path. Each interior angle is {deg(interior)}. "
+            f"How many sides does {who.his} polygon have?",
+            f"{s} sketches a regular polygon whose interior angles each measure {deg(interior)}. "
+            f"How many sides does the polygon have?")
+        steps = [f"Each exterior angle is {m(f'180^\\circ - {_d(interior)} = {_d(ext)}')}.",
+                 f"The exterior angles add up to {m('360^\\circ')}, so the number of sides is "
+                 f"{m(f'360 \\div {int_raw(ext)} = {n}')}.",
+                 f"Check: {m(f'({n} - 2) \\times 180^\\circ \\div {n} = {_d(interior)}')}. \\checkmark"]
+        wrong = [(Q(360) / interior, r"divides $360^\circ$ by the interior angle instead of the exterior angle"),
+                 (Q(180) / ext, r"divides $180^\circ$ instead of $360^\circ$ by the exterior angle"),
+                 (ext, "gives the exterior angle instead of the number of sides")]
+    else:
+        stem = choose(
+            rng,
+            f"Each exterior angle of a regular polygon measures {deg(ext)}. How many sides does the polygon have?",
+            f"{s} pilots a patrol boat around a course shaped like a regular polygon, turning {deg(ext)} "
+            f"at each corner. How many sides does the course have?",
+            f"A drone flies the outline of a regular polygon and turns {deg(ext)} at every corner. "
+            f"How many sides does its path have?",
+            f"{who.name} runs laps around a path shaped like a regular polygon, turning {deg(ext)} at "
+            f"each corner. How many sides does the path have?")
+        steps = [r"The exterior angles of any polygon add up to $360^\circ$; the turn at each corner is an exterior angle.",
+                 f"All {m('n')} exterior angles are equal, so {m(f'n = 360 \\div {int_raw(ext)} = {n}')}."]
+        wrong = [(Q(180) / ext, r"divides $180^\circ$ instead of $360^\circ$"),
+                 (interior, "gives the interior angle instead of the number of sides")]
+    wrong += [(Q(n + 2), None), (Q(n - 2), None)]
+    return Problem(stem=stem, answer=Q(n), fmt=num, wrong=wrong, steps=steps, check=Q(brute),
+                   near=_near_int(n, (1, 2, 3, 4), hi=100))
+
+
+# ---- polygon drawn from its angles --------------------------------------
+
+def _polygon_points(angles, rng):
+    """Vertices of a convex polygon with the given interior angles (floats)."""
+    n = len(angles)
+    dirs = [0.0]
+    for i in range(1, n):
+        dirs.append(dirs[-1] + 180 - float(angles[i]))
+    us = [(math.cos(math.radians(d)), math.sin(math.radians(d))) for d in dirs]
+    for _ in range(200):
+        L = [rng.uniform(1.0, 1.7) for _ in range(n - 2)]
+        sx = sum(l * u[0] for l, u in zip(L, us))
+        sy = sum(l * u[1] for l, u in zip(L, us))
+        (a1, b1), (a2, b2) = us[n - 2], us[n - 1]
+        det = a1 * b2 - a2 * b1
+        if abs(det) < 1e-9:
+            continue
+        la = (-sx * b2 + sy * a2) / det
+        lb = (-a1 * sy + b1 * sx) / det
+        Ls = L + [la, lb]
+        if min(Ls) > 0.8 and max(Ls) / min(Ls) < 2.2:
+            pts = [(0.0, 0.0)]
+            for l, u in zip(Ls[:-1], us[:-1]):
+                pts.append((pts[-1][0] + l * u[0], pts[-1][1] + l * u[1]))
+            return pts
+    need(False, "polygon could not be drawn")
+
+
+def _polygon_fig(angles, labels, rng, wmax=4.8, hmax=3.4):
+    pts = _polygon_points(angles, rng)
+    xs, ys = [p[0] for p in pts], [p[1] for p in pts]
+    sc = min(wmax / (max(xs) - min(xs)), hmax / (max(ys) - min(ys)))
+    pts = [((px - min(xs)) * sc, (py - min(ys)) * sc) for px, py in pts]
+    n = len(pts)
+    body = [r"\draw[thick] " + " -- ".join(_P(*p) for p in pts) + " -- cycle;"]
+    for i, tex in enumerate(labels):
+        vx, vy = pts[i]
+        ux, uy = pts[i - 1][0] - vx, pts[i - 1][1] - vy
+        wx, wy = pts[(i + 1) % n][0] - vx, pts[(i + 1) % n][1] - vy
+        lu, lw = math.hypot(ux, uy), math.hypot(wx, wy)
+        bx, by = ux / lu + wx / lw, uy / lu + wy / lw
+        lb = math.hypot(bx, by)
+        half = math.radians(float(angles[i]) / 2)
+        r = min(1.0, max(0.55, 0.5 / math.sin(half)))
+        body.append(rf"\node at {_P(vx + r * bx / lb, vy + r * by / lb)} {{{tex}}};")
+    return _tikz("\n".join(body))
+
+
+@template("MK")
+def polygon_missing(rng, lvl):
+    n = rng.choice([5, 5, 6] if lvl >= 3 else [4])
+    name = {4: "quadrilateral", 5: "pentagon", 6: "hexagon"}[n]
+    total = (n - 2) * 180
+    lo, hi = {4: (60, 130), 5: (85, 150), 6: (100, 160)}[n]
+    given = [rng.randint(lo, hi) for _ in range(n - 1)]
+    xv = total - sum(given)
+    need(lo - 10 <= xv <= 170 and len(set(given)) >= n - 2)
+    pos = rng.randrange(n)
+    angles = given[:pos] + [xv] + given[pos:]
+    labels = [m(_d(v)) if i != pos else r"$x^\circ$" for i, v in enumerate(angles)]
+    fig = _polygon_fig(angles, labels, rng)
+    gtxt = ", ".join(deg(v) for v in given[:-1]) + f", and {deg(given[-1])}"
+    stem = (f"In the {name} shown, {['three', 'four', 'five'][n - 4]} of the interior angles measure {gtxt}. "
+            f"What is the value of {m('x')}?")
+    plus = " + ".join(str(v) for v in given)
+    wrong = [(Q((n - 1) * 180 - sum(given)), r"uses $(n-1) \times 180^\circ$ for the angle sum instead of $(n-2) \times 180^\circ$"),
+             (Q((n - 3) * 180 - sum(given)), "uses the angle sum of a polygon with one fewer side"),
+             (Q(360 - sum(given)), r"uses $360^\circ$ for the angle sum"),
+             (Q(total) / n, "divides the angle sum by the number of angles, as if all the angles were equal")]
+    return Problem(
+        stem=stem,
+        answer=Q(xv),
+        fmt=num,
+        wrong=wrong,
+        steps=[f"{_a(name).capitalize()} has {m(n)} sides, so its interior angles add up to "
+               f"{m(f'({n} - 2) \\times 180^\\circ = {_d(total)}')}.",
+               f"Add the known angles: {m(f'{plus} = {sum(given)}')}.",
+               f"Subtract: {m(f'x = {int_raw(total)} - {sum(given)} = {xv}')}."],
+        figure=fig,
+        near=_near_int(xv),
+        check=_solve_sum(given + [X], total),
+    )
+
+
+@template("MK")
+def clock_angle(rng, lvl):
+    h = rng.randint(1, 11)
+    mm = rng.choice([10, 20, 40, 50, 15, 45, 25, 35, 5, 55])
+    hour = Q(30 * h) + Q(mm) / 2
+    minute = Q(6 * mm)
+    diff = abs(hour - minute)
+    ans = min(diff, 360 - diff)
+    need(0 < ans < 180 and ans != 90)
+    # independent route: count in minute marks (6 degrees each); hour hand at 5h + mm/12
+    marks = abs(Q(5 * h) + Q(mm) / 12 - mm)
+    chk = min(marks, 60 - marks) * 6
+    tm = f"{h}{{:}}{mm:02d}"
+    s = soldier(rng)
+    stem = choose(
+        rng,
+        f"What is the measure of the smaller angle between the hour hand and the minute hand of a clock at {tm}?",
+        f"A clock shows {tm}. What is the smaller angle formed by its hour hand and minute hand?",
+        f"{s} checks the wall clock at {tm}. What is the measure of the smaller angle between the clock's two hands?",
+    )
+    naive = abs(Q(30 * h) - minute)
+    naive = min(naive, 360 - naive)
+    back = abs(Q(30 * h) - Q(mm) / 2 - minute)
+    back = min(back, 360 - back)
+    wrong = [(naive, r"forgets that the hour hand moves past the hour mark ($0.5^\circ$ per minute)"),
+             (360 - ans, "gives the larger angle, not the smaller one"),
+             (back, None)]
+    steps = [
+        f"The minute hand moves {m('360^\\circ \\div 60 = 6^\\circ')} per minute. "
+        f"At {mm} minutes past the hour it is {m(f'{mm} \\times 6^\\circ = {_d(minute)}')} past the 12.",
+        f"The hour hand moves {m('30^\\circ')} per hour plus {m('0.5^\\circ')} per minute. At {tm} it is "
+        f"{m(f'{h} \\times 30^\\circ + {mm} \\times 0.5^\\circ = {30 * h}^\\circ + {_d(Q(mm) / 2)} = {_d(hour)}')} past the 12.",
+        f"The hands are {m(f'{_d(max(hour, minute))} - {_d(min(hour, minute))} = {_d(diff)}')} apart.",
+    ]
+    if diff > 180:
+        steps.append(f"That is more than {m('180^\\circ')}, so the smaller angle is "
+                     f"{m(f'360^\\circ - {_d(diff)} = {_d(ans)}')}.")
+    return Problem(stem=stem, answer=ans, fmt=deg, wrong=wrong, steps=steps,
+                   tip=r"Each hour mark on a clock face is $360^\circ \div 12 = 30^\circ$ from the next.",
+                   near=_near_int(ans, (5, 10, 15, 30)), check=chk)
+
+
+PLAN = [
+    # (template, level, count) -- easy -> hard; 25 problems
+    (comp_supp, 1, 3),
+    (angle_vocab, 1, 2),
+    (vertical_adjacent, 1, 3),
+    (parallel_lines, 2, 3),
+    (angle_algebra, 2, 2),
+    (around_point, 2, 1),
+    (polygon_sum, 2, 2),
+    (regular_polygon, 2, 1),
+    (polygon_missing, 2, 1),
+    (parallel_lines, 3, 2),
+    (angle_algebra, 3, 1),
+    (polygon_missing, 3, 1),
+    (regular_polygon, 3, 1),
+    (clock_angle, 3, 2),
+]

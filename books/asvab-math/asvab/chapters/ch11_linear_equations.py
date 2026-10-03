@@ -3,7 +3,7 @@ from fractions import Fraction
 
 import sympy as sp
 
-from ..core import (R, Q, Problem, need, frac, dec, m, F, tx, dec_raw,
+from ..core import (R, Q, Problem, need, num, frac, dec, m, F, tx, dec_raw,
                     int_raw, frac_raw, text, unit, person, soldier, choose,
                     template, x, y, n)
 
@@ -112,6 +112,34 @@ def _plus(v):
     return f" - {tx(-v)}" if v < 0 else f" + {tx(v)}"
 
 
+def _subst(X, *terms):
+    """Substitute X into (coef, var) terms, keeping the written order:
+    _subst(8, (9, 'x'), (14, '')) -> '9(8) + 14'."""
+    out = ""
+    for c, v in terms:
+        c = Q(c)
+        if c == 0:
+            continue
+        if v and abs(c) != 1:
+            body = f"{tx(abs(c))}({tx(X)})"
+        elif v:
+            first = not out and c > 0
+            body = tx(X) if (Q(X) >= 0 or first) else f"({tx(X)})"
+        else:
+            body = tx(abs(c))
+        if not out:
+            out = ("-" if c < 0 else "") + body
+        else:
+            out += (" - " if c < 0 else " + ") + body
+    return out
+
+
+def _near(v):
+    """Filler choices: nearby integers and the opposite (instead of x10 / /10)."""
+    v = Q(v)
+    return lambda rng: [v + d for d in (1, -1, 2, -2, 3, -3)] + ([-v] if v else [])
+
+
 def _solve(lhs, rhs, var=x):
     sols = sp.solve(sp.Eq(lhs, rhs), var)
     need(len(sols) == 1)
@@ -129,6 +157,8 @@ def _const_step(b, lhs_tex, rhs, var_side="left"):
 
 
 def _div_step(a, top, var="x"):
+    if a == 1:
+        return ""          # nothing left to undo; filtered out of the steps
     return (f"Undo the multiplication: divide both sides by {m(tx(a))}. "
             f"{m(f'{var} = {F(tx(top), tx(a))} = {tx(Q(top) / a)}')}.")
 
@@ -209,9 +239,9 @@ def basic_eq(rng, lvl):
                  (Q(C) / A - Bc, f"divides both sides by {m(A)} but forgets to divide {m(tx(Bc))} too")]
         if A < 0:
             wrong.insert(0, (-X, f"divides by {m(-A)} instead of {m(A)}"))
-        steps = [_const_step(Bc, f"{_lin((A, 'x'))}", C),
+        steps = [_const_step(Bc, _lin((A, 'x')), C),
                  _div_step(A, C - Bc),
-                 f"Check: {m(f'{A}{_p(X)}{_plus(Bc)} = {tx(A * X)}{_plus(Bc)} = {tx(C)}')}. \\checkmark"]
+                 f"Check: {m(f'{_subst(X, (A, "x"), (Bc, ""))} = {tx(A * X)}{_plus(Bc)} = {tx(C)}')}. \\checkmark"]
     else:  # rev: D - Ax = C
         A = rng.randint(2, 9)
         D = rng.randint(5, 30)
@@ -222,21 +252,22 @@ def basic_eq(rng, lvl):
         wrong = [(-X, f"divides by {m(A)} instead of {m(-A)}"),
                  ((C + D) / Q(-A), f"adds {m(D)} to both sides instead of subtracting it"),
                  (C - D, f"forgets to divide by {m(-A)}")]
-        steps = [f"Undo the {m(D)}: subtract {m(D)} from both sides. "
+        steps = [f"Move the {m(D)} away from the {m('x')}-term: subtract {m(D)} from both sides. "
                  f"{m(f'-{A}x = {tx(C)} - {D} = {tx(C - D)}')}.",
                  f"The {m('x')}-term is {m(f'-{A}x')}, so divide both sides by {m(-A)}: "
                  f"{m(f'x = {F(tx(C - D), -A)} = {tx(X)}')}.",
-                 f"Check: {m(f'{D} - {A}{_p(X)} = {D}{_plus(-A * X)} = {tx(C)}')}. \\checkmark"]
+                 f"Check: {m(f'{_subst(X, (D, ""), (-A, "x"))} = {D}{_plus(-A * X)} = {tx(C)}')}. \\checkmark"]
         tip = "Dividing by a negative number changes the sign of the result."
     return Problem(
         stem=_ask(rng, eq),
         answer=X,
         fmt=frac,
         wrong=wrong,
-        steps=steps,
+        steps=[st for st in steps if st],
         tip=tip,
         verify=holds,
         check=_solve_from(holds),
+        near=_near(X),
         neg_ok=True,
     )
 
@@ -283,7 +314,9 @@ def both_sides(rng, lvl):
             mv = (f"Add {m(tx(-d))} to both sides: "
                   f"{m(f'{tx(b)} + {tx(-d)} = {_lin((k, "x"))}')}, so {m(f'{tx(b - d)} = {_lin((k, "x"))}')}.")
         steps = [move, mv, _div_step(k, b - d)]
-    steps.append(f"Check: both sides equal {m(tx(a * X + b))} when {m(f'x = {tx(X)}')}. \\checkmark")
+    lt = [(a, "x"), (b, "")] if left.startswith(_lin((a, "x"))) else [(b, ""), (a, "x")]
+    steps.append(f"Check with {m(f'x = {tx(X)}')}: the left side is {m(f'{_subst(X, *lt)} = {tx(a * X + b)}')} and the "
+                 f"right side is {m(f'{_subst(X, (c, "x"), (d, ""))} = {tx(a * X + b)}')}. \\checkmark")
     wrong = [(-X, "makes a sign error when moving the terms"),
              (Q(d + b) / (a - c), f"moves {m(tx(b))} across without changing its sign")]
     if a + c != 0:
@@ -295,9 +328,10 @@ def both_sides(rng, lvl):
         answer=X,
         fmt=frac,
         wrong=wrong,
-        steps=steps,
+        steps=[st for st in steps if st],
         verify=lambda v: a * v + b == c * v + d,
         check=_solve(a * x + b, c * x + d),
+        near=_near(X),
         neg_ok=True,
     )
 
@@ -324,7 +358,7 @@ def distribute(rng, lvl):
         steps.append(_div_step(a, d - K))
         wrong = [(Q(d - c - b) / a, f"multiplies only the {m('x')} by {m(a)}, not the {m(tx(b))}"),
                  (Q(d - K) * 1, f"forgets to divide by {m(a)}"),
-                 (Q(d - c + a * b) / a, f"makes a sign error with {m(tx(a * b))}")]
+                 (Q(d - c + a * b) / a, f"writes {m(tx(-a * b))} instead of {m(tx(a * b))} when distributing")]
         tip = (f"Shortcut: divide both sides by {m(a)} first: {m(f'{_lin((1, "x"), (b, ""))} = {tx(Q(d) / a)}')}."
                if c == 0 and Q(d) % a == 0 else None)
         holds = lambda v: a * (v + b) + c == d
@@ -378,10 +412,11 @@ def distribute(rng, lvl):
         answer=X,
         fmt=frac,
         wrong=wrong,
-        steps=steps,
+        steps=[st for st in steps if st],
         tip=tip,
         verify=holds,
         check=chk,
+        near=_near(X),
         neg_ok=True,
     )
 
@@ -479,10 +514,11 @@ def fraction_eq(rng, lvl):
         answer=X,
         fmt=frac,
         wrong=wrong,
-        steps=steps,
+        steps=[st for st in steps if st],
         tip=tip,
         verify=holds,
         check=chk,
+        near=_near(X),
         neg_ok=True,
     )
 
@@ -513,11 +549,12 @@ def decimal_eq(rng, lvl):
         answer=X,
         fmt=dec,
         wrong=wrong,
-        steps=steps,
+        steps=[st for st in steps if st],
         tip=(f"You can also work with the decimals directly: {m(f'{dec_raw(a)}x = {dec_raw(c - b)}')}, "
              f"and {m(f'{dec_raw(c - b)} \\div {dec_raw(a)} = {tx(X)}')}."),
         verify=lambda v: a * v + b == c,
         check=Q(Fraction(int(C - B), int(A))),
+        near=_near(X),
         neg_ok=True,
     )
 
@@ -611,6 +648,51 @@ _FORMULAS = [
      [(r"r = dt", _d * _t, "multiplies by $t$ instead of dividing"),
       (r"r = \frac{t}{d}", _t / _d, "divides in the wrong order"),
       (r"r = d - t", _d - _t, "subtracts $t$ instead of dividing by it")]),
+    ("The area of a triangle is", r"A = \frac{1}{2}bh", sp.Eq(_A, _b * _h / 2), _b, "b",
+     r"b = \frac{2A}{h}", 2 * _A / _h,
+     [(r"b = \frac{A}{2h}", _A / (2 * _h), "divides by 2 instead of multiplying by 2"),
+      (r"b = \frac{Ah}{2}", _A * _h / 2, "multiplies by $h$ instead of dividing by $h$"),
+      (r"b = 2A - h", 2 * _A - _h, "subtracts $h$ instead of dividing by it")]),
+    ("The volume of a box is", r"V = lwh", sp.Eq(_V, _l * _w * _h), _w, "w",
+     r"w = \frac{V}{lh}", _V / (_l * _h),
+     [(r"w = Vlh", _V * _l * _h, "multiplies by $lh$ instead of dividing"),
+      (r"w = \frac{lh}{V}", _l * _h / _V, "divides in the wrong order"),
+      (r"w = V - lh", _V - _l * _h, "subtracts $lh$ instead of dividing by it")]),
+    ("Simple interest is", r"I = Prt", sp.Eq(_I, _P * _r * _t), _t, "t",
+     r"t = \frac{I}{Pr}", _I / (_P * _r),
+     [(r"t = IPr", _I * _P * _r, "multiplies by $Pr$ instead of dividing"),
+      (r"t = \frac{Pr}{I}", _P * _r / _I, "divides in the wrong order"),
+      (r"t = I - Pr", _I - _P * _r, "subtracts $Pr$ instead of dividing by it")]),
+    ("Simple interest is", r"I = Prt", sp.Eq(_I, _P * _r * _t), _P, "P",
+     r"P = \frac{I}{rt}", _I / (_r * _t),
+     [(r"P = Irt", _I * _r * _t, "multiplies by $rt$ instead of dividing"),
+      (r"P = \frac{rt}{I}", _r * _t / _I, "divides in the wrong order"),
+      (r"P = I - rt", _I - _r * _t, "subtracts $rt$ instead of dividing by it")]),
+    ("The equation of a line is", r"y = mx + b", sp.Eq(y, _m * x + _b), _b, "b",
+     r"b = y - mx", y - _m * x,
+     [(r"b = y + mx", y + _m * x, "adds $mx$ instead of subtracting it"),
+      (r"b = mx - y", _m * x - y, "subtracts in the wrong order"),
+      (r"b = \frac{y}{mx}", y / (_m * x), "divides by $mx$ instead of subtracting it")]),
+    ("Final speed is", r"v = u + at", sp.Eq(_v, _u + _a * _t), _a, "a",
+     r"a = \frac{v - u}{t}", (_v - _u) / _t,
+     [(r"a = \frac{v + u}{t}", (_v + _u) / _t, "adds $u$ instead of subtracting it"),
+      (r"a = \frac{v}{t} - u", _v / _t - _u, "divides only $v$ by $t$, not $u$"),
+      (r"a = t(v - u)", _t * (_v - _u), "multiplies by $t$ instead of dividing")]),
+    ("Final speed is", r"v = u + at", sp.Eq(_v, _u + _a * _t), _u, "u",
+     r"u = v - at", _v - _a * _t,
+     [(r"u = v + at", _v + _a * _t, "adds $at$ instead of subtracting it"),
+      (r"u = at - v", _a * _t - _v, "subtracts in the wrong order"),
+      (r"u = \frac{v}{at}", _v / (_a * _t), "divides by $at$ instead of subtracting it")]),
+    ("The area of a rectangle is", r"A = lw", sp.Eq(_A, _l * _w), _w, "w",
+     r"w = \frac{A}{l}", _A / _l,
+     [(r"w = Al", _A * _l, "multiplies by $l$ instead of dividing"),
+      (r"w = \frac{l}{A}", _l / _A, "divides in the wrong order"),
+      (r"w = A - l", _A - _l, "subtracts $l$ instead of dividing by it")]),
+    ("A repair shop's bill for $h$ hours of work is", r"C = 25 + 15h", sp.Eq(_C, 25 + 15 * _h), _h, "h",
+     r"h = \frac{C - 25}{15}", (_C - 25) / 15,
+     [(r"h = \frac{C + 25}{15}", (_C + 25) / 15, "adds 25 instead of subtracting it"),
+      (r"h = \frac{C}{15} - 25", _C / 15 - 25, "divides only $C$ by 15, not the 25"),
+      (r"h = 15(C - 25)", 15 * (_C - 25), "multiplies by 15 instead of dividing")]),
 ]
 
 
@@ -635,7 +717,7 @@ def _formula_problem(rng):
         answer=f"${atex}$",
         fmt=text,
         wrong=[(f"${t}$", why) for t, _, why in wrongs],
-        steps=steps,
+        steps=[st for st in steps if st],
         verify=lambda s: ok_ans and s == f"${atex}$",
         tip=f"Check with easy numbers: pick values for the other letters, find ${vtex}$, and see that the original formula holds.",
     )
@@ -657,12 +739,21 @@ _FORMULA_STEPS = {
     r"A = \frac{1}{2}(b_1 + b_2)h|h": r"Multiply both sides by 2: $2A = (b_1 + b_2)h$. Then divide both sides by the whole sum $(b_1 + b_2)$: $\frac{2A}{b_1 + b_2} = h$.",
     r"A = lw|l": r"$l$ is multiplied by $w$, so divide both sides by $w$: $\frac{A}{w} = l$.",
     r"D = \frac{M}{V}|M": r"$M$ is divided by $V$, so multiply both sides by $V$: $DV = M$.",
+    r"A = \frac{1}{2}bh|b": r"Multiply both sides by 2 to clear the fraction: $2A = bh$. Then divide both sides by $h$: $\frac{2A}{h} = b$.",
+    r"V = lwh|w": r"$w$ is multiplied by $l$ and by $h$, so divide both sides by $lh$: $\frac{V}{lh} = w$.",
+    r"I = Prt|t": r"$t$ is multiplied by $P$ and by $r$, so divide both sides by $Pr$: $\frac{I}{Pr} = t$.",
+    r"I = Prt|P": r"$P$ is multiplied by $r$ and by $t$, so divide both sides by $rt$: $\frac{I}{rt} = P$.",
+    r"y = mx + b|b": r"$b$ has $mx$ added to it, so subtract $mx$ from both sides: $y - mx = b$.",
+    r"v = u + at|a": r"Subtract $u$ from both sides: $v - u = at$. Then divide both sides by $t$: $\frac{v - u}{t} = a$.",
+    r"v = u + at|u": r"$u$ has $at$ added to it, so subtract $at$ from both sides: $v - at = u$.",
+    r"A = lw|w": r"$w$ is multiplied by $l$, so divide both sides by $l$: $\frac{A}{l} = w$.",
+    r"C = 25 + 15h|h": r"Subtract 25 from both sides: $C - 25 = 15h$. Then divide both sides by 15: $\frac{C - 25}{15} = h$.",
 }
 
 
 @template("MK")
 def literal_eq(rng, lvl):
-    if lvl >= 3 and rng.random() < 0.5:
+    if lvl >= 3 and rng.random() < 0.45:
         return _formula_problem(rng)
     # numeric: ax + by = c  ->  y = mm x + kk
     bb = rng.choice([-1, -2, -3, -4, -5, 2, 3, 4, 5])
@@ -689,9 +780,10 @@ def literal_eq(rng, lvl):
               + (f"subtract {m(_lin((aa, 'x')))} from" if aa > 0 else f"add {m(_lin((-aa, 'x')))} to")
               + f" both sides. {m(f'{by} = {_lin((-aa, "x"), (cc, ""))}')}.")]
     if bb != 1:
-        steps.append(f"Divide \\emph{{every}} term by {m(bb)}: "
-                     f"{m(f'y = {F(_lin((-aa, "x")), bb)} + {F(tx(cc), bb)}')}.")
-    steps.append(f"Simplify: {m(f'y = {_lin((mm, "x"), (kk, ""))}')}.")
+        steps.append(f"Divide both sides by {m(bb)}: {m(f'y = {F(_lin((-aa, "x"), (cc, "")), bb)}')}.")
+        steps.append(f"Divide \\emph{{each}} term on top by {m(bb)}: {m(f'y = {_lin((mm, "x"), (kk, ""))}')}.")
+    else:
+        steps.append(f"So {m(f'y = {_lin((mm, "x"), (kk, ""))}')}.")
     sol = sp.solve(sp.Eq(aa * x + bb * y, cc), y)
     return Problem(
         stem=choose(rng, f"Solve {m(eq)} for $y$.",
@@ -700,7 +792,7 @@ def literal_eq(rng, lvl):
         answer=ans,
         fmt=_yfmt,
         wrong=wrong,
-        steps=steps,
+        steps=[st for st in steps if st],
         check=sol[0] if len(sol) == 1 else None,
         verify=lambda v: all(aa * t + bb * Q(v).subs(x, t) == cc for t in (-3, 0, 2, 7)),
     )
@@ -728,13 +820,13 @@ def expression_value(rng, lvl):
         steps = [f"First solve for {m('x')}. " + _const_step(b, _lin((a, "x")), c),
                  _div_step(a, c - b),
                  f"The question asks for {m(target)}, not {m('x')}. Substitute: "
-                 f"{m(f'{p}{_p(X)}{_plus(q)} = {tx(p * X)}{_plus(q)} = {tx(ans)}')}."]
+                 f"{m(f'{_subst(X, (p, "x"), (q, ""))} = {tx(p * X)}{_plus(q)} = {tx(ans)}')}."]
         stem = choose(rng, f"If {m(eq)}, what is the value of {m(target)}?",
                       f"If {m(eq)}, then {m(target)} equals")
         if stem.endswith("equals"):
             stem += " which of the following?"
-        return Problem(stem=stem, answer=ans, fmt=frac, wrong=wrong, steps=steps,
-                       check=(p * _solve(a * x + b, c) + q), neg_ok=True,
+        return Problem(stem=stem, answer=ans, fmt=frac, wrong=wrong, steps=[st for st in steps if st],
+                       check=(p * _solve(a * x + b, c) + q), neg_ok=True, near=_near(ans),
                        tip="Always reread the question before choosing: finding $x$ is only part of the job.")
     # level 3: scale the whole expression instead of solving
     if rng.random() < 0.5:
@@ -755,8 +847,8 @@ def expression_value(rng, lvl):
                  (ans + k, None), (ans - k, None)]
         chk = (k * a * x + k * bb * y).subs(y, (c - a * x) / bb)
         return Problem(stem=f"If {m(f'{given} = {tx(c)}')}, what is the value of {m(target)}?",
-                       answer=ans, fmt=frac, wrong=wrong, steps=steps,
-                       check=sp.simplify(chk), neg_ok=True)
+                       answer=ans, fmt=frac, wrong=wrong, steps=[st for st in steps if st],
+                       check=sp.simplify(chk), neg_ok=True, near=_near(ans))
     # one variable, target is a fraction or multiple of the left side
     g = rng.choice([2, 3])
     a0 = rng.randint(1, 4)
@@ -781,12 +873,10 @@ def expression_value(rng, lvl):
                  f"So {m(f'{target} = {tx(c)} \\div {g} = {tx(ans)}')}. No need to find {m('x')}."]
         wrong = [(c, f"gives the value of {m(given)}"), (X, f"gives the value of {m('x')}"),
                  (g * c, f"multiplies by {m(g)} instead of dividing")]
-    steps.append(f"Check by solving: {m(f'x = {tx(X)}')}, and {m(f'{ta}{_p(X)}{_plus(tb)} = {tx(ans)}')}. \\checkmark"
-                 if ta != 1 else
-                 f"Check by solving: {m(f'x = {tx(X)}')}, and {m(f'{tx(X)}{_plus(tb)} = {tx(ans)}')}. \\checkmark")
+    steps.append(f"Check by solving: {m(f'x = {tx(X)}')}, and {m(f'{_subst(X, (ta, "x"), (tb, ""))} = {tx(ans)}')}. \\checkmark")
     return Problem(stem=f"If {m(f'{given} = {tx(c)}')}, what is the value of {m(target)}?",
-                   answer=ans, fmt=frac, wrong=wrong, steps=steps,
-                   check=ta * _solve(sa * x + sb, c) + tb, neg_ok=True)
+                   answer=ans, fmt=frac, wrong=wrong, steps=[st for st in steps if st],
+                   check=ta * _solve(sa * x + sb, c) + tb, neg_ok=True, near=_near(ans))
 
 
 # ---- words to equations -------------------------------------------------------
@@ -905,9 +995,37 @@ def translate(rng, lvl):
                "all become ``$=$.''",
                note,
                f"The equation is {ans_tex}."],
-        tip=f"Check with the solution: {m(f'n = {N}')} makes {ans_tex} true.",
         verify=lambda v: good and v == ans_tex and ans_sol == [N],
     )
+
+
+def _story(rng, k, c, plus):
+    """A short story whose equation is k*n + c = t (plus) or k*n - c = t.
+
+    Returns (stem with {T} placeholder, meaning of n)."""
+    who = person(rng)
+    more = "more" if plus else "fewer"
+    K = _TIMES_WORD[k]
+    opts = [
+        (f"{who.name} did some push-ups on Monday. On Tuesday {who.he} did {c} {more} than {K} "
+         f"Monday's number, for a total of {{T}} push-ups on Tuesday. How many push-ups did {who.he} do on Monday?",
+         "the number of push-ups on Monday"),
+        (f"A supply sergeant ordered some boxes of batteries in March. The April order was {c} boxes "
+         f"{more} than {K} the March order. If {{T}} boxes were ordered in April, how many boxes were ordered in March?",
+         "the number of boxes ordered in March"),
+        (f"This month a recruiting station signed up {c} {'more' if plus else 'fewer'} recruits than {K} "
+         f"the number it signed up last month. It signed up {{T}} recruits this month. How many did it sign up last month?",
+         "the number of recruits last month"),
+        (f"{who.name} is saving for a used car. This month {who.he} saved \\${c} {'more' if plus else 'less'} "
+         f"than {K} what {who.he} saved last month. If {who.he} saved \\${{T}} this month, how many dollars did "
+         f"{who.he} save last month?",
+         "the number of dollars saved last month"),
+        (f"A platoon ran some miles in its first week of training. In the second week it ran {c} miles "
+         f"{'more' if plus else 'less'} than {K} the first-week distance, a total of {{T}} miles. "
+         f"How many miles did it run in the first week?",
+         "the number of miles in the first week"),
+    ]
+    return rng.choice(opts)
 
 
 @template("AR")
@@ -917,51 +1035,41 @@ def number_puzzle(rng, lvl):
     N = rng.randint(2, 20) if lvl == 1 else rng.randint(3, 30)
     kinds = ["plus", "minus", "story_plus", "story_minus"] if lvl == 1 else ["sum", "quot", "minus", "story_minus", "both"]
     kind = rng.choice(kinds)
-    who = person(rng)
-    if kind == "plus":
-        t = k * N + c
-        stem = choose(rng, f"When {c} is added to {_TIMES_WORD[k]} a number, the result is {t}. What is the number?",
-                      f"{c} more than {_TIMES_WORD[k]} a number is {t}. What is the number?")
-        eq, A, B = f"{k}n + {c} = {t}", k, c
-        wrong = [((t + c) / Q(k), f"adds {c} instead of subtracting it"),
-                 (Q(t - c), f"forgets to divide by {k}"),
-                 (Q(t) / k - c, f"divides {t} by {k} but forgets to divide {c}")]
-    elif kind == "minus":
-        t = k * N - c
+    if kind.startswith("story"):
+        k = rng.randint(2, 4)
+        if rng.random() < 0.6:
+            c = k * rng.randint(1, 4)       # keeps the "divides only one side" trap a whole number
+    plus = kind in ("plus", "story_plus")
+    need(c != k)
+    if kind in ("plus", "minus", "story_plus", "story_minus"):
+        t = k * N + c if plus else k * N - c
         need(t > 0)
-        stem = choose(rng, f"A number is multiplied by {k}, and then {c} is subtracted. The result is {t}. What is the number?",
-                      f"If {c} is subtracted from {_TIMES_WORD[k]} a number, the result is {t}. What is the number?")
-        eq, A, B = f"{k}n - {c} = {t}", k, -c
-        wrong = [((t - c) / Q(k), f"subtracts {c} instead of adding it"),
-                 (Q(t + c), f"forgets to divide by {k}"),
-                 (Q(t) / k + c, f"divides {t} by {k} but forgets to divide {c}")]
-    elif kind == "story_plus":
-        t = k * N + c
-        if rng.random() < 0.5:
-            stem = (f"{who.name} did some push-ups on Monday. On Tuesday {who.he} did {c} more than "
-                    f"{_TIMES_WORD[k]} as many, for a total of {t} push-ups on Tuesday. "
-                    f"How many push-ups did {who.he} do on Monday?")
+        K = _TIMES_WORD[k]
+        if kind == "plus":
+            stem = choose(rng, f"When {c} is added to {K} a number, the result is {t}. What is the number?",
+                          f"{K.capitalize()} a number, increased by {c}, is {t}. What is the number?")
+            meaning = "the number"
+        elif kind == "minus":
+            stem = choose(rng, f"A number is multiplied by {k}, and then {c} is subtracted. The result is {t}. What is the number?",
+                          f"If {c} is subtracted from {K} a number, the result is {t}. What is the number?")
+            meaning = "the number"
         else:
-            stem = (f"A supply sergeant ordered some boxes of batteries in March. In April the order was "
-                    f"{c} boxes more than {_TIMES_WORD[k]} the March order, or {t} boxes. "
-                    f"How many boxes were ordered in March?")
-        eq, A, B = f"{k}n + {c} = {t}", k, c
-        wrong = [((t + c) / Q(k), f"adds {c} instead of subtracting it"),
-                 (Q(t - c), f"forgets to divide by {k}"),
-                 (Q(t) / k - c, f"divides {t} by {k} but forgets to divide {c}")]
-    elif kind == "story_minus":
-        t = k * N - c
-        need(t > 0)
-        stem = choose(rng,
-                      f"{who.name} had some money saved. After {who.he} {_MULT_WORD.get(k, f'multiplied it by {k}') if k in _MULT_WORD else f'multiplied it by {k}'} "
-                      f"the amount and then spent \\${c}, {who.he} had \\${t} left. How many dollars did {who.he} start with?",
-                      f"A platoon ran a number of miles in week 1. In week 2 it ran {c} miles less than "
-                      f"{_TIMES_WORD[k]} the week-1 distance, for a total of {t} miles. How many miles did it run in week 1?")
-        eq, A, B = f"{k}n - {c} = {t}", k, -c
-        wrong = [((t - c) / Q(k), f"subtracts {c} instead of adding it"),
-                 (Q(t + c), f"forgets to divide by {k}"),
-                 (Q(t) / k + c, f"divides {t} by {k} but forgets to divide {c}")]
-    elif kind == "sum":
+            stem, meaning = _story(rng, k, c, plus)
+            stem = stem.replace("{T}", str(t))
+        B = c if plus else -c
+        eq = f"{k}n {'+' if plus else '-'} {c} = {t}"
+        wrong = [((t + B) / Q(k), f"{'adds' if plus else 'subtracts'} {c} instead of "
+                                   f"{'subtracting' if plus else 'adding'} it"),
+                 (Q(t - B), f"forgets to divide by {k}"),
+                 (Q(t) / k - B, f"divides {t} by {k} but forgets to divide {c}")]
+        steps = [f"Let $n$ be {meaning}. Write the words as an equation: {m(eq)}.",
+                 _const_step(B, f"{k}n", t),
+                 f"Divide both sides by {m(k)}: {m(f'n = {F(t - B, k)} = {N}')}."]
+        return Problem(stem=stem, answer=Q(N), fmt=num if kind.startswith("story") else frac,
+                       wrong=wrong, steps=[st for st in steps if st],
+                       verify=lambda v: k * v + B == t, check=_solve(k * n + B, t, n),
+                       section="AR", near=_near(Q(N)))
+    if kind == "sum":
         t = k * (N + c)
         stem = f"{_TIMES_WORD[k].capitalize()} the sum of a number and {c} is {t}. What is the number?"
         steps = [f"Let $n$ be the number. The sum comes first, so it goes in parentheses: {m(f'{k}(n + {c}) = {t}')}.",
@@ -970,10 +1078,10 @@ def number_puzzle(rng, lvl):
         wrong = [(Q(t - c) / k, f"writes {m(f'{k}n + {c}')}, multiplying only the number by {k}"),
                  (Q(t // k + c), f"adds {c} instead of subtracting it"),
                  (Q(t // k), f"forgets to subtract {c}")]
-        return Problem(stem=stem, answer=Q(N), fmt=frac, wrong=wrong, steps=steps,
+        return Problem(stem=stem, answer=Q(N), fmt=frac, wrong=wrong, steps=[st for st in steps if st],
                        verify=lambda v: k * (v + c) == t, check=_solve(k * (n + c), t, n),
-                       section="AR")
-    elif kind == "quot":
+                       section="AR", near=_near(Q(N)))
+    if kind == "quot":
         t = N + c
         stem = f"When a number is divided by {k} and then {c} is added, the result is {t}. What is the number?"
         steps = [f"Let $n$ be the number: {m(f'\\frac{{n}}{{{k}}} + {c} = {t}')}.",
@@ -981,32 +1089,28 @@ def number_puzzle(rng, lvl):
                  f"Multiply both sides by {m(k)}: {m(f'n = {N} \\times {k} = {N * k}')}."]
         wrong = [(Q(N), f"forgets to multiply by {k} at the end"),
                  (Q(t * k - c), f"multiplies {t} by {k} but forgets to multiply {c}"),
-                 (Q((t + c) * k), f"adds {c} instead of subtracting it")]
-        return Problem(stem=stem, answer=Q(N * k), fmt=frac, wrong=wrong, steps=steps,
+                 (Q((t + c) * k), f"adds {c} instead of subtracting it"),
+                 (Q(t - c) / k, f"divides by {k} instead of multiplying")]
+        return Problem(stem=stem, answer=Q(N * k), fmt=frac, wrong=wrong, steps=[st for st in steps if st],
                        verify=lambda v: v / k + c == t, check=_solve(n / k + c, t, n),
-                       section="AR")
-    else:  # both: k n + c = j n + d  ("the same result")
-        j = rng.randint(1, k - 1) if k > 2 else 1
-        d = (k - j) * N + c
-        stem = (f"Adding {c} to {_TIMES_WORD[k]} a number gives the same result as adding {d} to "
-                f"{'the number' if j == 1 else _TIMES_WORD[j] + ' the number'}. What is the number?")
-        jn = "n" if j == 1 else f"{j}n"
-        steps = [f"Let $n$ be the number: {m(f'{k}n + {c} = {jn} + {d}')}.",
-                 f"Subtract {m(jn)} from both sides: {m(f'{_lin((k - j, "n"))} + {c} = {d}')}.",
-                 f"Subtract {m(c)}: {m(f'{_lin((k - j, "n"))} = {d - c}')}."
-                 + (f" Divide by {m(k - j)}: {m(f'n = {N}')}." if k - j != 1 else "")]
-        wrong = [(Q(d - c) / (k + j), "adds the $n$-terms instead of subtracting"),
-                 (Q(d + c) / (k - j), f"adds {c} instead of subtracting it"),
-                 (Q(d - c), f"forgets to divide by {k - j}") if k - j != 1 else (Q(d + c), None)]
-        return Problem(stem=stem, answer=Q(N), fmt=frac, wrong=wrong, steps=steps,
-                       verify=lambda v: k * v + c == j * v + d, check=_solve(k * n + c, j * n + d, n),
-                       section="AR")
-    steps = [f"Let $n$ be the unknown number and write the sentence as an equation: {m(eq)}.",
-             _const_step(B, f"{k}n", t),
-             f"Divide both sides by {m(k)}: {m(f'n = {F(t - B, k)} = {N}')}."]
-    return Problem(stem=stem, answer=Q(N), fmt=frac, wrong=wrong, steps=steps,
-                   verify=lambda v: A * v + B == t, check=_solve(A * n + B, t, n),
-                   section="AR")
+                       section="AR", near=_near(Q(N * k)))
+    # both: k n + c = j n + d  ("the same result")
+    j = rng.randint(1, k - 1)
+    d = (k - j) * N + c
+    stem = (f"Adding {c} to {_TIMES_WORD[k]} a number gives the same result as adding {d} to "
+            f"{'the number' if j == 1 else _TIMES_WORD[j] + ' the number'}. What is the number?")
+    jn = "n" if j == 1 else f"{j}n"
+    steps = [f"Let $n$ be the number: {m(f'{k}n + {c} = {jn} + {d}')}.",
+             f"Subtract {m(jn)} from both sides: {m(f'{_lin((k - j, "n"))} + {c} = {d}')}.",
+             f"Subtract {m(c)}: {m(f'{_lin((k - j, "n"))} = {d - c}')}."
+             + (f" Divide by {m(k - j)}: {m(f'n = {N}')}." if k - j != 1 else "")]
+    wrong = [(Q(d - c) / (k + j), "adds the $n$-terms instead of subtracting"),
+             (Q(d + c) / (k - j), f"adds {c} instead of subtracting it")]
+    if k - j != 1:
+        wrong.append((Q(d - c), f"forgets to divide by {k - j}"))
+    return Problem(stem=stem, answer=Q(N), fmt=frac, wrong=wrong, steps=[st for st in steps if st],
+                   verify=lambda v: k * v + c == j * v + d, check=_solve(k * n + c, j * n + d, n),
+                   section="AR", near=_near(Q(N)))
 
 
 @template("AR")
@@ -1049,27 +1153,48 @@ def consecutive(rng, lvl):
         steps.append(f"The numbers are {', '.join(m(v) for v in vals)}. The {which if count > 2 else ('larger' if which == 'largest' else 'smaller')} is {m(ans)}.")
     else:
         steps.append(f"Check: {m(' + '.join(str(v) for v in vals) + f' = {S}')}. \\checkmark")
+    pos = (["smaller", "larger"] if count == 2 else
+           ["smallest", "middle", "largest"] if count == 3 else
+           ["smallest", "second", "third", "largest"])
+    asked = which if count > 2 else ("larger" if which == "largest" else "smaller")
     wrong = []
     for i, v in enumerate(vals):
         if v != ans:
-            wrong.append((Q(v), "is one of the other integers in the list"))
+            wrong.append((Q(v), f"is the {pos[i]} {'number' if count > 2 or i else 'number'}, not the {asked}"))
     if step == 2:
-        wrong.append((Q(ans + (1 if which != "smallest" else -1)) if which != "smallest" else Q(N + 1),
-                      "counts by 1 instead of by 2"))
+        wrong.append((Q(ans + 1) if which != "smallest" else Q(N - 1), "counts by 1 instead of by 2"))
     if Q(S) / count != ans and (Q(S) / count).is_integer:
         wrong.append((Q(S) / count, "divides the sum by the number of integers and stops"))
+    near = lambda r: [Q(ans + step * j) for j in (-4, -3, 3, 4, -5, 5)]
     # brute-force check
     hits = [k for k in range(-200, 400) if sum(k + step * i for i in range(count)) == S
             and (kind == "integers" or k % 2 == (0 if kind == "even" else 1))]
     need(len(hits) == 1)
     chk = {"smallest": hits[0], "largest": hits[0] + step * (count - 1), "middle": hits[0] + step}[which]
-    return Problem(stem=stem, answer=Q(ans), fmt=frac, wrong=wrong, steps=steps,
-                   check=Q(chk), section="AR")
+    return Problem(stem=stem, answer=Q(ans), fmt=num, wrong=wrong, steps=[st for st in steps if st],
+                   check=Q(chk), near=near, section="AR")
+
+
+def _mo(v):
+    """Money in text: whole dollars without cents, otherwise two places."""
+    v = Q(v)
+    return r"\$" + (int_raw(v) if v.is_integer else dec_raw(v, places=2))
+
+
+def _mr(v):
+    v = Q(v)
+    return int_raw(v) if v.is_integer else dec_raw(v, places=2)
 
 
 @template("AR")
 def cost_equation(rng, lvl):
     who = person(rng)
+    if rng.random() < 0.6:
+        return _flat_fee(rng, who)
+    return _first_unit(rng, who)
+
+
+def _flat_fee(rng, who):
     ctx = rng.choice(["plumber", "taxi", "gym", "range", "tow", "truck"])
     if ctx == "plumber":
         fee, rate, k = rng.randrange(40, 95, 5), rng.randrange(35, 100, 5), rng.randint(2, 8)
@@ -1103,22 +1228,70 @@ def cost_equation(rng, lvl):
                 f"for one day and paid {{T}}. How many miles did {who.he} drive?")
     fee, rate = Q(fee), Q(rate)
     T = fee + rate * k
-    mo = lambda v: (r"\$" + dec_raw(v, places=2)) if not Q(v).is_integer else (r"\$" + int_raw(v))
-    stem = stem.replace("{FEE}", mo(fee)).replace("{RATE}", mo(rate)).replace("{T}", mo(T))
-    mr = lambda v: dec_raw(v, places=2) if not Q(v).is_integer else int_raw(v)
+    stem = stem.replace("{FEE}", _mo(fee)).replace("{RATE}", _mo(rate)).replace("{T}", _mo(T))
     var = u[0]
     steps = [f"Let {m(var)} be the number of {U}. The total is the fixed fee plus "
-             f"{mo(rate)} for each {u}: {m(f'{mr(fee)} + {mr(rate)}{var} = {mr(T)}')}.",
-             f"Subtract the fee from both sides: {m(f'{mr(rate)}{var} = {mr(T)} - {mr(fee)} = {mr(T - fee)}')}.",
-             f"Divide by the rate: {m(f'{var} = {mr(T - fee)} \\div {mr(rate)} = {int_raw(k)}')} {U}."]
+             f"{_mo(rate)} for each {u}: {m(f'{_mr(fee)} + {_mr(rate)}{var} = {_mr(T)}')}.",
+             f"Subtract the fee from both sides: {m(f'{_mr(rate)}{var} = {_mr(T)} - {_mr(fee)} = {_mr(T - fee)}')}.",
+             f"Divide by the rate: {m(f'{var} = {_mr(T - fee)} \\div {_mr(rate)} = {int_raw(k)}')} {U}."]
     wrong = [(T / rate, "ignores the fixed fee"),
              ((T + fee) / rate, "adds the fee instead of subtracting it"),
-             (T - fee, "forgets to divide by the rate"),
-             (Q(k + 1), None), (Q(k - 1), None)]
+             (T - fee, "forgets to divide by the rate") if T - fee <= 4 * k else (Q(k + 2), None),
+             (Q(k - 1), None), (Q(k + 1), None)]
+    if (T / (fee + rate) * 10).is_integer:
+        wrong.insert(3, (T / (fee + rate), f"adds the fee to the rate per {u} before dividing"))
     hits = [h for h in range(0, 1000) if fee + rate * h == T]
-    return Problem(stem=stem, answer=Q(k), fmt=unit(dec, u), wrong=wrong, steps=steps,
+    return Problem(stem=stem, answer=Q(k), fmt=unit(dec, u), wrong=wrong, steps=[st for st in steps if st],
                    check=Q(hits[0]) if len(hits) == 1 else None,
+                   near=lambda r: [Q(k + j) for j in (2, -2, 3, 4)],
                    verify=lambda v: fee + rate * v == T, section="AR")
+
+
+def _first_unit(rng, who):
+    """First unit at one price, each additional unit at another."""
+    ctx = rng.choice(["parking", "movers", "kayak", "storage", "call"])
+    if ctx == "parking":
+        f1, r, k = rng.randint(4, 9), rng.choice([2, 3, 4]), rng.randint(3, 10)
+        u, U = "hour", "hours"
+        stem = (f"A parking garage charges {{F1}} for the first hour and {{R}} for each additional hour. "
+                f"{who.name} paid {{T}} to park. For how many hours did {who.he} park?")
+    elif ctx == "movers":
+        f1, r, k = rng.randrange(100, 180, 10), rng.randrange(60, 100, 5), rng.randint(3, 8)
+        u, U = "hour", "hours"
+        stem = (f"A moving company charges {{F1}} for the first hour of work and {{R}} for each additional hour. "
+                f"The bill for {who.name}'s move was {{T}}. How many hours did the movers work?")
+    elif ctx == "kayak":
+        f1, r, k = rng.randrange(15, 35, 5), rng.randrange(8, 16, 1), rng.randint(2, 7)
+        u, U = "hour", "hours"
+        stem = (f"On a base recreation lake, kayak rentals cost {{F1}} for the first hour and {{R}} for each "
+                f"additional hour. {soldier(rng)} paid {{T}}. For how many hours was the kayak rented?")
+    elif ctx == "storage":
+        f1, r, k = rng.randrange(50, 110, 10), rng.randrange(40, 90, 5), rng.randint(3, 12)
+        u, U = "month", "months"
+        stem = (f"While deployed, {soldier(rng)} rented a storage unit. The first month cost {{F1}} and each "
+                f"additional month cost {{R}}. The total was {{T}}. For how many months was the unit rented?")
+    else:
+        f1, r, k = R(rng.choice([150, 200, 250, 300]), 100), R(rng.choice([25, 50, 75]), 100), rng.randint(4, 20)
+        u, U = "minute", "minutes"
+        stem = (f"A phone card charges {{F1}} for the first minute of a call and {{R}} for each additional minute. "
+                f"A call cost {{T}}. How many minutes long was the call?")
+    f1, r = Q(f1), Q(r)
+    need(f1 != r)
+    T = f1 + r * (k - 1)
+    stem = stem.replace("{F1}", _mo(f1)).replace("{R}", _mo(r)).replace("{T}", _mo(T))
+    var = u[0]
+    steps = [f"Let {m(var)} be the total number of {U}. The first {u} costs {_mo(f1)}; the other "
+             f"{m(f'{var} - 1')} {U} cost {_mo(r)} each: {m(f'{_mr(f1)} + {_mr(r)}({var} - 1) = {_mr(T)}')}.",
+             f"Subtract the first-{u} charge: {m(f'{_mr(r)}({var} - 1) = {_mr(T)} - {_mr(f1)} = {_mr(T - f1)}')}.",
+             f"Divide by {m(_mr(r))}: {m(f'{var} - 1 = {int_raw(k - 1)}')}, so {m(f'{var} = {int_raw(k)}')} {U}."]
+    wrong = [(Q(k - 1), f"finds only the additional {U} and forgets to count the first {u}"),
+             (T / r, f"divides the whole bill by {_mo(r)}, ignoring the first-{u} price"),
+             ((T - f1) / r + 2, None), (Q(k + 1), None)]
+    hits = [h for h in range(1, 1000) if f1 + r * (h - 1) == T]
+    return Problem(stem=stem, answer=Q(k), fmt=unit(dec, u), wrong=wrong, steps=[st for st in steps if st],
+                   check=Q(hits[0]) if len(hits) == 1 else None,
+                   near=lambda r_: [Q(k + j) for j in (2, -2, 3, -3)],
+                   verify=lambda v: f1 + r * (v - 1) == T, section="AR")
 
 
 PLAN = [

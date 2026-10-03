@@ -2,10 +2,10 @@
 import sympy as sp
 
 from ..core import (R, Q, Problem, need, num, dec, money, text, m, int_raw,
-                    dec_raw, person, soldier, choose, template)
+                    person, soldier, choose, template)
 
 NUM = 1
-TITLE = "Whole Numbers & Order of Operations"
+TITLE = r"Whole Numbers \& Order of Operations"
 PART = 1
 
 INTRO = r"""
@@ -87,6 +87,16 @@ _ROUND_NAMES = {10: "ten", 100: "hundred", 1000: "thousand", 10000: "ten thousan
 def _n(v):
     """Raw integer with thousands separators (for use inside math)."""
     return int_raw(v)
+
+
+def _near_whole(v, offsets=(1, 2, 5, 10, 20)):
+    """Filler distractors: whole numbers near v (keeps money choices free of cents)."""
+    def f(r):
+        out = [Q(v) + d * sgn for d in offsets for sgn in (1, -1)]
+        out = [w for w in out if w > 0]
+        r.shuffle(out)
+        return out
+    return f
 
 
 def _round_half_up(v, p):
@@ -211,6 +221,7 @@ def rounding(rng, lvl):
             f"Change every digit after the {place} place to zero: {num(ans)}.",
         ],
         check=Q(chk),
+        near=lambda r: [ans + k * p for k in r.sample([1, -1, 2, -2, 3, -3], 6)],
     )
 
 
@@ -338,6 +349,7 @@ def _steps(tokens):
     val = _evaluate(tokens, "right", log)
     steps = []
     seen_paren = False
+    last_lead = None
     for e in log:
         op, u, v, r, seg = e["op"], e["u"], e["v"], e["r"], e["seg"]
         segops = {s for s in seg if isinstance(s, str)}
@@ -364,6 +376,11 @@ def _steps(tokens):
             word = "Add" if op == "+" else "Subtract"
             lead = (f"{word} (addition and subtraction go left to right)"
                     if {"+", "-"} <= segops else word)
+        if lead == last_lead:
+            lead = "Next, " + ("multiply" if op == "*" else "divide" if op == "/" else
+                               "add" if op == "+" else "subtract" if op == "-" else "the exponent")
+        else:
+            last_lead = lead
         after = [k for k in e["after"]]
         if len([k for k in after if not isinstance(k, str) or k not in "()"]) > 1:
             steps.append(f"{lead}: {m(work)}, which leaves {m(_tex(_clean(after)))}.")
@@ -625,8 +642,9 @@ def distributive(rng, lvl):
             ],
             verify=lambda v: sp.sympify(v.strip("$").replace(r"\times", "*")) == k * whole,
         )
-    base = rng.choice([100, 100, 50, 200, 1000])
-    d = rng.randint(1, 4) if base != 1000 else rng.randint(1, 3)
+    k = rng.choice([3, 4, 5, 6, 7, 8, 9, 11, 12])
+    base = rng.choice([100, 100, 50, 200, 1000, 20, 300])
+    d = rng.randint(1, 2) if base == 20 else (rng.randint(1, 3) if base == 1000 else rng.randint(1, 4))
     plus = rng.random() < 0.4
     other = base + d if plus else base - d
     ans = Q(k) * other
@@ -667,6 +685,9 @@ def estimate(rng, lvl):
             (est / 10, "drops a zero"),
             (est * 10, "adds an extra zero"),
             (Q(X - 100) * Y, f"rounds {m(a_)} down to {m(X - 100)} instead of up to {m(X)}"),
+            (Q(X) * (Y + 10) if b_ > Y else Q(X) * (Y - 10),
+             f"rounds {m(b_)} to {m(Y + 10 if b_ > Y else Y - 10)} instead of {m(Y)}"),
+            (est * 100, "adds two extra zeros"),
             (Q(X + Y), "adds the rounded numbers instead of multiplying them"),
         ]
         stem = choose(rng,
@@ -680,7 +701,7 @@ def estimate(rng, lvl):
         ]
         tip = None
     else:
-        Y = rng.choice(range(20, 100, 10))
+        Y = rng.choice(range(30, 100, 10))
         q = rng.choice(range(20, 100, 10))
         D0 = Y * q
         a_ = D0 + rng.choice([-1, 1]) * rng.randint(3, 40)
@@ -690,6 +711,7 @@ def estimate(rng, lvl):
         wrong = [
             (est / 10, "drops a zero"),
             (est * 10, "adds an extra zero"),
+            (est * 100, "adds two extra zeros"),
             (est - 10, None),
             (est + 10, None),
         ]
@@ -706,6 +728,7 @@ def estimate(rng, lvl):
     def closest(v):
         dist = abs(Q(v) - exact)
         return all(dist < abs(Q(w) - exact) for w in cands if w != v)
+    need(closest(est))
     return Problem(stem=stem, answer=est, fmt=num, wrong=wrong, steps=steps, tip=tip,
                    verify=closest, near=lambda r: [])
 
@@ -771,6 +794,7 @@ def multiply_by_hand(rng, lvl):
         wrong=[
             (Q(a_ * bo + a_ * bt), f"forgets the placeholder zero, multiplying by {m(bt)} instead of {m(bt * 10)}"),
             (Q(at * 10 * bt * 10 + ao * bo), "multiplies only tens by tens and ones by ones"),
+            (Q(a_ * bo + a_ * bt * 100), "puts two placeholder zeros in the second row instead of one"),
             (ans + 100, None), (ans - 100, None),
         ],
         steps=[
@@ -787,49 +811,51 @@ def divide_by_hand(rng, lvl):
     k = rng.randint(3, 9)
     q = rng.randint(101, 909)
     qs = str(q)
-    need("0" in qs[1:] and qs[0] != "0" and qs.count("0") == 1)
+    need(qs.count("0") == 1)
     D = k * q
     need(D < 10000)
-    # long-division narrative, digit by digit
+    # long division, digit by digit: (number divided, digit brought down, quotient digit, remainder)
     ds = str(D)
-    steps_txt = []
-    rem, started, i = 0, False, 0
-    parts = []
+    rem, parts, lead_digits = 0, [], ""
     for c in ds:
         cur = rem * 10 + int(c)
-        if not started and cur < k:
+        if not parts and cur < k:
             rem = cur
+            lead_digits += c
             continue
-        started = True
         qd = cur // k
-        parts.append((cur, qd, cur - qd * k))
+        parts.append((cur, c, qd, cur - qd * k))
         rem = cur - qd * k
-    need("".join(str(p[1]) for p in parts) == qs)
-    lines = []
-    for cur, qd, r in parts:
+    need("".join(str(p_[2]) for p_ in parts) == qs)
+
+    def say(cur, qd, r):
         if qd == 0:
-            lines.append(f"{m(k)} does not go into {m(cur)}, so write {m(0)} in the quotient")
-        else:
-            lines.append(f"{m(rf'{cur} \div {k} = {qd}')}" + (f" with {m(r)} left over" if r else ""))
+            return f"{m(k)} does not go into {m(cur)}, so write {m(0)} in the quotient"
+        return m(rf"{cur} \div {k} = {qd}") + (f", remainder {m(r)}" if r else "")
+
+    cur0, _, qd0, r0 = parts[0]
+    first = (f"{m(k)} does not go into {m(lead_digits)}, so start with {m(cur0)}: " if lead_digits
+             else f"Start with {m(cur0)}: ")
+    steps = [first + say(cur0, qd0, r0) + "."]
+    prev = r0
+    for cur, c, qd, r in parts[1:]:
+        made = f" to make {m(cur)}" if prev else ""
+        steps.append(f"Bring down the {m(c)}{made}: {say(cur, qd, r)}.")
+        prev = r
+    steps.append(f"The quotient is {m(q)}. Check: {m(rf'{k} \times {q} = {_n(D)}')}.")
     zero_drop = int(qs.replace("0", ""))
     i0 = qs.index("0")
-    moved = qs[:i0] + qs[i0 + 1:] + "0" if i0 < len(qs) - 1 else None
     wrong = [(Q(zero_drop), "skips the zero in the quotient")]
-    if moved and int(moved) != q:
-        wrong.append((Q(int(moved)), "puts the zero in the wrong place"))
-    wrong += [(Q(q) * 10, "adds an extra zero"), (Q(q + 10), None)]
+    if i0 < len(qs) - 1:
+        wrong.append((Q(int(qs[:i0] + qs[i0 + 1:] + "0")), "puts the zero in the wrong place"))
+    wrong += [(Q(q) * 10, "adds an extra zero"), (Q(q + 10), None), (Q(q - 10), None)]
     return Problem(
         stem=choose(rng, f"What is {m(rf'{_n(D)} \div {k}')}?", f"Divide: {m(rf'{_n(D)} \div {k}')}"),
         answer=Q(q),
         fmt=num,
         wrong=wrong,
-        steps=[
-            "Divide from left to right, bringing down one digit at a time.",
-            "; then ".join(lines[:2]) + ".",
-        ] + (["Then " + "; then ".join(lines[2:]) + "."] if lines[2:] else []) + [
-            f"The quotient is {m(q)}. Check: {m(rf'{k} \times {q} = {_n(D)}')}.",
-        ],
-        check=Q(D) / k,
+        steps=steps,
+        check=sp.Rational(D, k),
         verify=lambda v: Q(v) * k == D,
     )
 
@@ -840,47 +866,36 @@ def divide_by_hand(rng, lvl):
 
 # (item plural, singular, price range) by context
 _SHOP = {
-    "school": [("notebooks", "notebook", 2, 6), ("binders", "binder", 4, 9),
-               ("packs of pens", "pack of pens", 3, 8), ("backpacks", "backpack", 25, 45)],
-    "clothes": [("T-shirts", "T-shirt", 8, 18), ("pairs of jeans", "pair of jeans", 25, 45),
-                ("packs of socks", "pack of socks", 6, 12), ("hats", "hat", 12, 25)],
-    "hardware": [("gallons of paint", "gallon of paint", 25, 45), ("paint brushes", "paint brush", 6, 14),
-                 ("boxes of screws", "box of screws", 4, 9), ("rolls of tape", "roll of tape", 3, 7)],
-    "supply": [("cots", "cot", 40, 70), ("sleeping bags", "sleeping bag", 35, 80),
-               ("flashlights", "flashlight", 12, 30), ("canteens", "canteen", 8, 15)],
-    "pt": [("pairs of running shoes", "pair of running shoes", 60, 110), ("PT shirts", "PT shirt", 10, 18),
-           ("reflective belts", "reflective belt", 5, 9), ("water bottles", "water bottle", 6, 14)],
-    "party": [("pizzas", "pizza", 9, 16), ("cases of soda", "case of soda", 5, 9),
-              ("bags of ice", "bag of ice", 2, 4), ("veggie trays", "veggie tray", 15, 30)],
+    "school": [("notebooks", 2, 6), ("binders", 4, 9), ("packs of pens", 3, 8), ("backpacks", 25, 45)],
+    "clothes": [("T-shirts", 8, 18), ("pairs of jeans", 25, 45), ("packs of socks", 6, 12), ("hats", 12, 25)],
+    "hardware": [("gallons of paint", 25, 45), ("paint brushes", 6, 14), ("boxes of screws", 4, 9),
+                 ("rolls of tape", 3, 7)],
+    "supply": [("cots", 40, 70), ("sleeping bags", 35, 80), ("flashlights", 12, 30), ("canteens", 8, 15)],
+    "pt": [("pairs of running shoes", 60, 110), ("PT shirts", 10, 18), ("reflective belts", 5, 9),
+           ("water bottles", 6, 14)],
+    "party": [("pizzas", 9, 16), ("cases of soda", 5, 9), ("bags of ice", 2, 4), ("veggie trays", 15, 30)],
 }
-
-
-def _buyer(rng, ctx):
-    if ctx in ("supply", "pt", "party") and rng.random() < 0.7:
-        s = soldier(rng)
-        return s, "he or she", "the order"
-    p = person(rng)
-    return p.name, p.he, None
 
 
 @template("AR")
 def shopping_total(rng, lvl):
+    if lvl == 3:
+        return _payments(rng)
     ctx = rng.choice(list(_SHOP))
-    items = rng.sample(_SHOP[ctx], 2 if lvl < 3 else 3)
-    qs = [rng.randint(2, 6 if lvl == 1 else 12) for _ in items]
-    ps = [rng.randint(lo, hi) for _, _, lo, hi in items]
+    items = rng.sample(_SHOP[ctx], 2)
+    qs = [rng.randint(2, 6 if lvl == 1 else 8) for _ in items]
+    ps = [rng.randint(lo, hi) for _, lo, hi in items]
     lines = [q * p for q, p in zip(qs, ps)]
     total = sum(lines)
-    s = soldier(rng) if ctx in ("supply", "pt", "party") and rng.random() < 0.6 else None
-    who = s if s else person(rng).name
-    buy = ", ".join(f"{m(q)} {it[0]} at {money(p)} each" for q, it, p in zip(qs[:-1], items[:-1], ps[:-1]))
-    buy += f"{',' if len(items) > 2 else ''} and {m(qs[-1])} {items[-1][0]} at {money(ps[-1])} each"
-    parts = r" + ".join(rf"{q} \times {p}" for q, p in zip(qs, ps))
-    line_txt = ", ".join(m(rf"{q} \times {p} = {_n(q * p)}") for q, p in zip(qs, ps))
+    military = ctx in ("supply", "pt", "party") and rng.random() < 0.6
+    who = soldier(rng) if military else person(rng).name
+    buy = (f"{m(qs[0])} {items[0][0]} at {money(ps[0])} each and "
+           f"{m(qs[1])} {items[1][0]} at {money(ps[1])} each")
+    line_txt = " and ".join(m(rf"{q} \times {p} = {_n(q * p)}") for q, p in zip(qs, ps))
     add_txt = " + ".join(_n(v) for v in lines)
     if lvl == 1:
         return Problem(
-            stem=f"{who} buys {buy}. How much does {'the order' if s else 'that'} cost in all?",
+            stem=f"{who} buys {buy}. What is the total cost?",
             answer=Q(total),
             fmt=money,
             wrong=[
@@ -894,58 +909,66 @@ def shopping_total(rng, lvl):
                 f"Add: {m(f'{add_txt} = {_n(total)}')} dollars.",
             ],
             check=sum(Q(p) for q, p in zip(qs, ps) for _ in range(q)),
+            near=_near_whole(total),
         )
-    if lvl == 2:
-        bill = next(b for b in (20, 50, 100, 200, 300, 500) if b > total)
-        need(bill - total >= 3)
-        change = bill - total
-        pay = choose(rng, f"pays with {'a' if bill < 200 else 'two' if bill == 200 else 'several'} "
-                          f"{money(bill if bill < 200 else 100)} bill{'s' if bill >= 200 else ''}",
-                     f"hands the cashier {money(bill)}")
-        return Problem(
-            stem=(f"{who} buys {buy} and {pay}. How much change should "
-                  f"{'come back' if s else 'be given back'}?"),
-            answer=Q(change),
-            fmt=money,
-            wrong=[
-                (Q(total), "is the total cost, not the change"),
-                (Q(bill - sum(ps)), "subtracts one of each price and ignores the quantities"),
-                (Q(bill - lines[0] - ps[1]), f"forgets to multiply the second price by {m(qs[1])}"),
-                (Q(change + 10), None),
-            ],
-            steps=[
-                f"Find the cost of each kind of item: {line_txt}.",
-                f"Total cost: {m(f'{add_txt} = {_n(total)}')} dollars.",
-                f"Change: {m(f'{_n(bill)} - {_n(total)} = {_n(change)}')} dollars.",
-            ],
-            check=bill - sum(Q(p) for q, p in zip(qs, ps) for _ in range(q)),
-        )
-    # level 3: down payment, rest split into equal monthly payments
-    big = rng.choice([("a sofa", 600, 1400, "matching chairs", 120, 260),
-                      ("a laptop", 600, 1500, "software packages", 40, 120),
-                      ("a used motorcycle", 2400, 4800, "helmets", 90, 250),
-                      ("a refrigerator", 800, 1800, "service plans", 60, 150)])
-    name1, lo1, hi1, name2, lo2, hi2 = big
+    need(total <= 480)
+    bills = [b for b in (20, 50, 100, 200, 300, 400, 500) if b >= total + 3]
+    need(bills)
+    bill = rng.choice(bills[:2]) if len(bills) > 1 and bills[1] <= 100 else bills[0]
+    change = bill - total
+    pay = (f"pays with a {money(bill)} bill" if bill <= 100
+           else f"pays with {m(bill // 100)} {money(100)} bills")
+    return Problem(
+        stem=f"{who} buys {buy} and {pay}. How much change should {who} get back?",
+        answer=Q(change),
+        fmt=money,
+        wrong=[
+            (Q(total), "is the total cost, not the change"),
+            (Q(bill - sum(ps)), "subtracts one of each price and ignores the quantities"),
+            (Q(bill - lines[0] - ps[1]), f"forgets to multiply the second price by {m(qs[1])}"),
+            (Q(bill - qs[0] * ps[1] - qs[1] * ps[0]), "matches each quantity with the wrong price"),
+            (Q(change + 10), None),
+        ],
+        steps=[
+            f"Find the cost of each kind of item: {line_txt}.",
+            f"Total cost: {m(f'{add_txt} = {_n(total)}')} dollars.",
+            f"Change: {m(f'{_n(bill)} - {_n(total)} = {_n(change)}')} dollars.",
+        ],
+        check=bill - sum(Q(p) for q, p in zip(qs, ps) for _ in range(q)),
+        near=_near_whole(change),
+    )
+
+
+def _payments(rng):
+    """Level 3: total of a purchase, minus a down payment, split into equal payments."""
+    name1, lo1, hi1, name2, lo2, hi2 = rng.choice([
+        ("a sofa", 600, 1400, "matching chairs", 120, 260),
+        ("a laptop", 600, 1500, "software programs", 40, 120),
+        ("a used motorcycle", 2400, 4800, "helmets", 90, 250),
+        ("a refrigerator", 800, 1800, "water filters", 30, 60),
+        ("a set of tires", 400, 900, "wiper blades", 20, 40),
+    ])
     p1 = rng.choice(range(lo1, hi1 + 1, 10))
     q2 = rng.randint(2, 3)
     p2 = rng.choice(range(lo2, hi2 + 1, 5))
-    down = rng.choice(range(100, 700, 50))
+    down = rng.choice(range(100, min(700, p1), 50))
     months = rng.choice([4, 5, 6, 8, 10, 12])
     tot = p1 + q2 * p2
     rest = tot - down
     need(rest > 0 and rest % months == 0)
     pay = Q(rest) / months
-    p = person(rng)
+    pr = person(rng)
     return Problem(
-        stem=(f"{p.name} buys {name1} for {money(p1)} and {m(q2)} {name2} for {money(p2)} each. "
-              f"{p.He} pays {money(down)} up front and splits the rest into {m(months)} equal "
+        stem=(f"{pr.name} buys {name1} for {money(p1)} and {m(q2)} {name2} for {money(p2)} each. "
+              f"{pr.He} pays {money(down)} up front and splits the rest into {m(months)} equal "
               f"monthly payments. How much is each monthly payment?"),
         answer=pay,
         fmt=money,
+        section="AR",
         wrong=[
             (Q(tot) / months, "forgets to subtract the up-front payment"),
             (Q(p1 + p2 - down) / months, f"counts only one of the {name2}"),
-            (Q(rest), "is the amount left to pay, not each monthly payment"),
+            (Q(rest), "is the amount still owed, not each monthly payment"),
             (Q(tot + down) / months, "adds the up-front payment instead of subtracting it"),
         ],
         steps=[
@@ -961,29 +984,33 @@ def shopping_total(rng, lvl):
 @template("AR")
 def equal_share(rng, lvl):
     if lvl == 1:
-        k = rng.randint(3, 12)
-        each = rng.randint(12, 95)
+        kind = rng.randrange(5)
+        k, each = [((rng.randint(3, 8), rng.randint(12, 45))),
+                   ((rng.randint(4, 12), rng.randint(20, 90))),
+                   ((rng.randint(4, 12), rng.randint(30, 90))),
+                   ((rng.choice([6, 10, 12, 18, 24]), rng.randint(25, 60))),
+                   ((rng.randint(4, 9), rng.randint(12, 48)))][kind]
         total = k * each
-        ctx = rng.choice([
+        stem, fmt = [
             (f"A group of {m(k)} friends splits a restaurant bill of {money(total)} equally. "
              "How much does each friend pay?", money),
             (f"{soldier(rng)} divides {num(total)} rounds of ammunition equally among {m(k)} "
              "soldiers. How many rounds does each soldier get?", num),
-            (f"A farmer packs {num(total)} eggs equally into {m(k)} crates. How many eggs go "
+            (f"A farm packs {num(total)} eggs equally into {m(k)} crates. How many eggs go "
              "in each crate?", num),
-            (f"{person(rng).name} wants to pay off a {money(total)} phone in {m(k)} equal monthly "
+            (f"{person(rng).name} pays off a {money(total)} phone in {m(k)} equal monthly "
              "payments. How much is each payment?", money),
             (f"A supply clerk splits {num(total)} bottles of water equally among {m(k)} "
              "squads. How many bottles does each squad get?", num),
-        ])
+        ][kind]
         return Problem(
-            stem=ctx[0],
+            stem=stem,
             answer=Q(each),
-            fmt=ctx[1],
+            fmt=fmt,
             wrong=[
                 (Q(total - k), "subtracts instead of dividing"),
                 (Q(each) * 10, "puts an extra zero in the quotient"),
-                (Q(total + k), "adds instead of dividing"),
+                (Q(each // 10), "stops dividing too soon and drops the last digit of the quotient"),
                 (Q(each + 1), None), (Q(each - 2), None),
             ],
             steps=[
@@ -991,157 +1018,140 @@ def equal_share(rng, lvl):
                 f"{m(rf'{_n(total)} \div {k} = {each}')}. Check: {m(rf'{k} \times {each} = {_n(total)}')}.",
             ],
             check=sp.Rational(total, k),
+            near=_near_whole(each),
         )
-    if lvl == 2:
-        kind = rng.choice(["cabin", "trucks", "rent"])
-        if kind == "cabin":
-            nightly = rng.choice(range(120, 400, 10))
-            nights = rng.randint(2, 5)
-            k = rng.randint(3, 8)
-            tot = nightly * nights
-            need(tot % k == 0)
-            each = Q(tot) / k
-            stem = (f"{m(k)} friends rent a cabin for {m(nights)} nights at {money(nightly)} per night. "
-                    "They split the total cost equally. How much does each friend pay?")
-            wrong = [(Q(nightly) / k, "forgets to multiply by the number of nights"),
-                     (Q(tot), "is the total cost, not each friend's share"),
-                     (Q(tot) / (k - 1), "divides by one person too few")]
-            steps = [f"Total cost: {m(rf'{nights} \times {nightly} = {_n(tot)}')} dollars.",
-                     f"Split it {m(k)} ways: {m(rf'{_n(tot)} \div {k} = {_n(each)}')} dollars each."]
-            fmt = money
-        elif kind == "trucks":
-            t = rng.randint(2, 6)
-            load = rng.choice(range(60, 400, 12))
-            k = rng.choice([4, 6, 8, 9, 12])
-            tot = t * load
-            need(tot % k == 0 and load % k != 0)
-            each = Q(tot) / k
-            stem = (f"{m(t)} trucks each carry {num(load)} cases of water to a training area. The "
-                    f"water is shared equally among {m(k)} companies. How many cases does each "
-                    "company get?")
-            wrong = [(Q(tot), "is the total number of cases, not each company's share"),
-                     (Q(load) * t / (k * 2), None),
-                     (Q(tot) / (k + t), "divides by the number of trucks plus companies"),
-                     (Q(load) - k, None)]
-            steps = [f"Total cases: {m(rf'{t} \times {load} = {_n(tot)}')}.",
-                     f"Share among {m(k)} companies: {m(rf'{_n(tot)} \div {k} = {_n(each)}')}."]
-            fmt = num
-        else:
-            rent = rng.choice(range(1200, 2800, 50))
-            util = rng.choice(range(120, 400, 10))
-            net = rng.choice([40, 50, 60, 70, 80])
-            k = rng.randint(3, 5)
-            tot = rent + util + net
-            need(tot % k == 0)
-            each = Q(tot) / k
-            stem = (f"{m(k)} roommates share an apartment. Each month the rent is {money(rent)}, "
-                    f"utilities are {money(util)}, and internet is {money(net)}. If they split all "
-                    "three costs equally, how much does each roommate pay per month?")
-            wrong = [(Q(rent) / k, "splits only the rent") if rent % k == 0 else (Q(rent // k), None),
-                     (Q(tot), "is the total monthly cost, not each share"),
-                     (Q(rent) / k + util + net, "splits the rent but has each roommate pay all of the other bills")]
-            steps = [f"Total monthly cost: {m(f'{_n(rent)} + {util} + {net} = {_n(tot)}')} dollars.",
-                     f"Split it {m(k)} ways: {m(rf'{_n(tot)} \div {k} = {_n(each)}')} dollars each."]
-            fmt = money
-        return Problem(stem=stem, answer=each, fmt=fmt, wrong=wrong, steps=steps,
-                       verify=lambda v: Q(v) * k == tot)
-    # level 3: set some aside, then share the rest
-    k = rng.choice([4, 6, 8, 9, 12])
-    each = rng.randint(15, 60)
-    keep = rng.randint(12, 90)
-    total = k * each + keep
-    need(total % k != 0)
-    s = soldier(rng)
-    ctx = rng.choice([
-        (f"A unit receives {num(total)} MREs. {s} keeps {m(keep)} in reserve and divides the rest "
-         f"equally among {m(k)} squads. How many MREs does each squad get?", num, "MREs"),
-        (f"A school raises {money(total)} at a car wash. It spends {money(keep)} on supplies and "
-         f"divides the rest equally among {m(k)} teams. How much does each team get?", money, "dollars"),
-        (f"A food bank has {num(total)} cans of soup. It saves {m(keep)} cans for an emergency "
-         f"shelf and packs the rest equally into {m(k)} boxes. How many cans go in each box?", num, "cans"),
-    ])
-    rest = total - keep
-    return Problem(
-        stem=ctx[0],
-        answer=Q(each),
-        fmt=ctx[1],
-        wrong=[
-            (Q(rest), "forgets to divide the rest"),
-            (Q(each + keep), "adds the reserve back into each share"),
-            (Q(total // k), f"divides all {num(total)} without setting any aside (and drops the remainder)"),
-            (Q(each - 1), None),
-        ],
-        steps=[
-            f"First set the reserve aside: {m(f'{_n(total)} - {keep} = {_n(rest)}')} {ctx[2]}.",
-            f"Divide the rest equally: {m(rf'{_n(rest)} \div {k} = {each}')} {ctx[2]}.",
-        ],
-        verify=lambda v: Q(v) * k + keep == total,
-    )
+    kind = rng.choice(["cabin", "trucks", "rent", "reserve", "reserve"] if lvl == 3
+                      else ["cabin", "trucks", "rent"])
+    if kind == "cabin":
+        nightly = rng.choice(range(120, 400, 10))
+        nights = rng.randint(2, 5)
+        k = rng.randint(3, 8)
+        tot = nightly * nights
+        need(tot % k == 0)
+        each = Q(tot) / k
+        stem = (f"{m(k)} friends rent a cabin for {m(nights)} nights at {money(nightly)} per night. "
+                "They split the total cost equally. How much does each friend pay?")
+        wrong = [(Q(nightly) / k, "forgets to multiply by the number of nights"),
+                 (Q(tot), "is the total cost, not each friend's share"),
+                 (Q(tot) / (k - 1), "divides by one person too few")]
+        steps = [f"Total cost: {m(rf'{nights} \times {nightly} = {_n(tot)}')} dollars.",
+                 f"Split it {m(k)} ways: {m(rf'{_n(tot)} \div {k} = {_n(each)}')} dollars each."]
+        fmt = money
+    elif kind == "trucks":
+        t = rng.randint(2, 6)
+        load = rng.choice(range(60, 400, 12))
+        k = rng.choice([4, 6, 8, 9, 12])
+        tot = t * load
+        need(tot % k == 0)
+        each = Q(tot) / k
+        stem = (f"{m(t)} trucks each carry {num(load)} cases of water to a training area. The "
+                f"water is shared equally among {m(k)} companies. How many cases does each "
+                "company get?")
+        wrong = [(Q(tot), "is the total number of cases, not each company's share"),
+                 (Q(load) / k, "shares only one truck's load"),
+                 (Q(load) * k / t, None)]
+        steps = [f"Total cases: {m(rf'{t} \times {load} = {_n(tot)}')}.",
+                 f"Share among {m(k)} companies: {m(rf'{_n(tot)} \div {k} = {_n(each)}')} cases each."]
+        fmt = num
+    elif kind == "rent":
+        rent = rng.choice(range(1200, 2800, 50))
+        util = rng.choice(range(120, 400, 10))
+        net = rng.choice([40, 50, 60, 70, 80])
+        k = rng.randint(3, 5)
+        tot = rent + util + net
+        need(tot % k == 0)
+        each = Q(tot) / k
+        stem = (f"{m(k)} roommates share an apartment. Each month the rent is {money(rent)}, "
+                f"utilities are {money(util)}, and internet is {money(net)}. If they split all "
+                "three costs equally, how much does each roommate pay per month?")
+        wrong = [(Q(rent) / k, "splits only the rent"),
+                 (Q(tot), "is the total monthly cost, not each share"),
+                 (Q(rent) / k + util + net, "splits the rent but has each roommate pay the other bills in full")]
+        steps = [f"Total monthly cost: {m(f'{_n(rent)} + {util} + {net} = {_n(tot)}')} dollars.",
+                 f"Split it {m(k)} ways: {m(rf'{_n(tot)} \div {k} = {_n(each)}')} dollars each."]
+        fmt = money
+    else:
+        k = rng.choice([4, 6, 8, 9, 12])
+        e = rng.randint(15, 60)
+        keep = rng.randint(12, 90)
+        tot0 = k * e + keep
+        need(tot0 % k != 0)
+        stem, fmt, unit_, kept, first = rng.choice([
+            (f"A unit receives {num(tot0)} MREs. {soldier(rng)} keeps {m(keep)} in reserve and "
+             f"divides the rest equally among {m(k)} squads. How many MREs does each squad get?",
+             num, "MREs", "the reserve", "Set the reserve aside"),
+            (f"A school club raises {money(tot0)} at a car wash. It spends {money(keep)} on "
+             f"supplies and divides the rest equally among {m(k)} teams. How much does each "
+             "team get?", money, "dollars", "the supply money", "Subtract the supply money"),
+            (f"A food bank has {num(tot0)} cans of soup. It saves {m(keep)} cans for an "
+             f"emergency shelf and packs the rest equally into {m(k)} boxes. How many cans go "
+             "in each box?", num, "cans", "the saved cans", "Set the saved cans aside"),
+        ])
+        rest = tot0 - keep
+        each = Q(e)
+        tot = rest
+        wrong = [(Q(rest), "forgets to divide the rest"),
+                 (Q(e + keep), f"adds {kept} back into each share"),
+                 (R(tot0, k), f"divides the whole amount without taking out {kept} first"),
+                 (Q(e - 1), None)]
+        steps = [f"{first}: {m(f'{_n(tot0)} - {keep} = {_n(rest)}')} {unit_} remain.",
+                 f"Divide the rest equally: {m(rf'{_n(rest)} \div {k} = {e}')} {unit_}."]
+    return Problem(stem=stem, answer=each, fmt=fmt, wrong=wrong, steps=steps,
+                   verify=lambda v: Q(v) * k == tot, near=_near_whole(each))
 
 
 _GROUPS = [
-    # (who, plural noun, container sing., plural, capacity choices, total range, military?)
-    ("students", "students", "bus", "buses", [40, 44, 48, 50, 52], (150, 600), False),
-    ("people", "people", "van", "vans", [8, 10, 12, 15], (30, 140), False),
-    ("soldiers", "soldiers", "truck", "trucks", [16, 18, 20, 24], (60, 400), True),
-    ("guests", "guests", "table", "tables", [6, 8, 10, 12], (40, 250), False),
-    ("recruits", "recruits", "tent", "tents", [4, 6, 8, 12], (30, 200), True),
-    ("books", "books", "box", "boxes", [12, 15, 20, 24, 25], (100, 500), False),
-    ("troops", "troops", "helicopter", "helicopters", [10, 12, 15], (40, 160), True),
+    # (noun, container, plural, capacities, total range, setup, question)
+    ("students", "bus", "buses", [40, 44, 48, 50, 52], (150, 600),
+     "A school is taking {N} students on a field trip. Each bus holds {C} students.",
+     "How many buses are needed?"),
+    ("people", "van", "vans", [8, 10, 12, 15], (30, 140),
+     "{N} people are going to a family reunion. Each van can carry {C} people.",
+     "How many vans are needed to carry everyone?"),
+    ("soldiers", "truck", "trucks", [16, 18, 20, 24], (60, 400),
+     "A convoy must move {N} soldiers. Each truck can carry {C} soldiers.",
+     "How many trucks are needed?"),
+    ("guests", "table", "tables", [6, 8, 10, 12], (40, 250),
+     "A wedding has {N} guests. Each table seats {C} guests.",
+     "What is the least number of tables needed so that every guest has a seat?"),
+    ("recruits", "tent", "tents", [4, 6, 8, 12], (30, 200),
+     "{N} recruits are camping during field training. Each tent sleeps {C} recruits.",
+     "How many tents are needed?"),
+    ("books", "box", "boxes", [12, 15, 20, 24, 25], (100, 500),
+     "A library is packing {N} books. Each box holds {C} books.",
+     "How many boxes are needed to pack all the books?"),
+    ("troops", "helicopter", "helicopters", [10, 12, 15], (40, 160),
+     "{N} troops must be flown to a landing zone, and each helicopter makes one trip. "
+     "Each helicopter carries {C} troops.",
+     "How many helicopters are needed?"),
 ]
-
-
-def _group_stem(rng, g, total, cap):
-    who, noun, c1, c2 = g[0], g[1], g[2], g[3]
-    if c1 == "bus":
-        return (f"A school is taking {num(total)} students on a field trip. Each bus holds "
-                f"{m(cap)} students. How many buses are needed?")
-    if c1 == "van":
-        return (f"{num(total)} people are going to a family reunion. Each van can carry {m(cap)} "
-                f"people. How many vans are needed to carry everyone?")
-    if c1 == "truck":
-        return (f"A convoy must move {num(total)} soldiers. Each truck can carry {m(cap)} "
-                f"soldiers. How many trucks are needed?")
-    if c1 == "table":
-        return (f"A wedding has {num(total)} guests. Each table seats {m(cap)} guests. What is "
-                f"the least number of tables needed so that every guest has a seat?")
-    if c1 == "tent":
-        return (f"{num(total)} recruits are camping during field training. Each tent sleeps "
-                f"{m(cap)} recruits. How many tents are needed?")
-    if c1 == "box":
-        return (f"A library is packing {num(total)} books. Each box holds {m(cap)} books. How many "
-                f"boxes are needed to pack all the books?")
-    return (f"{num(total)} troops must be flown to a landing zone. Each helicopter carries "
-            f"{m(cap)} troops. If each helicopter makes one trip, how many helicopters are needed?")
 
 
 @template("AR")
 def round_up_groups(rng, lvl):
-    g = rng.choice(_GROUPS)
-    cap = rng.choice(g[4])
-    total = rng.randint(*g[5])
+    noun, c1, c2, caps, trange, setup, question = rng.choice(_GROUPS)
+    cap = rng.choice(caps)
+    total = rng.randint(*trange)
     qf, r = divmod(total, cap)
-    need(r != 0 and qf >= 2)
-    need(cap - r >= 2)
+    need(r != 0 and qf >= 2 and cap - r >= 2)
     ceil_ = qf + 1
     exact = R(total, cap)
-    c1, c2, noun = g[2], g[3], g[1]
+    setup = setup.format(N=num(total), C=m(cap))
+    setup = setup[0].upper() + setup[1:]
+    divide = f"Divide: {m(rf'{_n(total)} \div {cap} = {qf}')} remainder {m(r)}."
     if lvl == 2:
         wrong = [(Q(qf), f"rounds down, which leaves {m(r)} {noun} with no {c1}"),
                  (Q(r), f"is the number of {noun} left over after filling {m(qf)} {c2}")]
-        try:
-            dec_raw(exact, max_places=2)
+        if (exact * 100).is_integer:
             wrong.append((exact, f"is the exact quotient, but you cannot use part of a {c1}"))
-        except Exception:
-            pass
         wrong.append((Q(ceil_ + 1), None))
         return Problem(
-            stem=_group_stem(rng, g, total, cap),
+            stem=f"{setup} {question}",
             answer=Q(ceil_),
             fmt=dec,
             wrong=wrong,
             steps=[
-                f"Divide: {m(rf'{_n(total)} \div {cap} = {qf}')} remainder {m(r)}.",
+                divide,
                 f"{m(qf)} full {c2} hold {m(rf'{qf} \times {cap} = {_n(qf * cap)}')} {noun}, "
                 f"so {m(r)} {noun} are still left.",
                 f"They need one more {c1}: {m(f'{qf} + 1 = {ceil_}')} {c2}.",
@@ -1149,28 +1159,24 @@ def round_up_groups(rng, lvl):
             check=Q(-((-total) // cap)),
             verify=lambda v: (Q(v) - 1) * cap < total <= Q(v) * cap,
         )
-    variant = rng.choice(["cost", "empty"])
-    if variant == "empty":
+    if rng.random() < 0.4:
         empty = ceil_ * cap - total
-        stem = _group_stem(rng, g, total, cap)
-        stem = stem.rsplit(" How", 1)[0].rsplit(" What", 1)[0]
-        stem += (f" If they use the least number of {c2} possible, how many empty "
-                 f"{'seats' if c1 not in ('box', 'tent') else 'spaces'} are left in the last {c1}?")
+        verb = "seat" if c1 == "table" else "hold"
         return Problem(
-            stem=stem,
+            stem=(f"{setup} If they use the least number of {c2} possible, how many more {noun} "
+                  f"could the last {c1} {verb}?"),
             answer=Q(empty),
             fmt=num,
-            wrong=[(Q(r), f"is the number of {noun} in the last {c1}, not the empty spaces"),
+            wrong=[(Q(r), f"is the number of {noun} in the last {c1}, not the open spaces"),
                    (Q(ceil_), f"is the number of {c2} needed"),
-                   (Q(cap - r + cap), None),
-                   (Q(qf), f"is the number of full {c2}")],
+                   (Q(qf), f"is the number of full {c2}"),
+                   (Q(empty + cap), None)],
             steps=[
-                f"Divide: {m(rf'{_n(total)} \div {cap} = {qf}')} remainder {m(r)}, "
-                f"so {m(ceil_)} {c2} are needed.",
+                divide + f" So {m(ceil_)} {c2} are needed.",
                 f"The last {c1} holds only the {m(r)} leftover {noun}.",
-                f"Empty spaces in it: {m(f'{cap} - {r} = {empty}')}.",
+                f"Open spaces in it: {m(f'{cap} - {r} = {empty}')}.",
             ],
-            check=Q(ceil_ * cap - total),
+            check=Q(-total % cap),
         )
     price = rng.choice({"bus": range(250, 500, 25), "van": range(60, 150, 5),
                         "truck": range(80, 200, 10), "table": range(8, 30, 2),
@@ -1183,24 +1189,17 @@ def round_up_groups(rng, lvl):
             "tent": "Each tent costs {P}.",
             "box": "Each box costs {P}.",
             "helicopter": "Each helicopter trip costs {P} in fuel."}[c1].format(P=money(price))
-    stem = _group_stem(rng, g, total, cap)
-    stem = stem.rsplit(" How", 1)[0].rsplit(" What", 1)[0]
-    stem += f" {what} What is the total cost of the {c2} needed?"
     wrong = [(Q(qf) * price, f"rounds the number of {c2} down")]
-    try:
-        dec_raw(exact * price, max_places=2)
+    if (exact * price * 100).is_integer:
         wrong.append((exact * price, f"pays for a fraction of a {c1}"))
-    except Exception:
-        pass
-    wrong += [(Q(ceil_ + 1) * price, f"rounds up one {c1} too many"),
-              (Q(total) * price, f"multiplies the number of {noun} by the price")]
+    wrong += [(Q(ceil_ + 1) * price, None), (Q(ceil_ - 2) * price, None)]
     return Problem(
-        stem=stem,
+        stem=f"{setup} {what} What is the total cost of the {c2} needed?",
         answer=Q(ceil_) * price,
         fmt=money,
         wrong=wrong,
         steps=[
-            f"Divide: {m(rf'{_n(total)} \div {cap} = {qf}')} remainder {m(r)}.",
+            divide,
             f"The {m(r)} leftover {noun} need one more {c1}, so {m(ceil_)} {c2} are needed.",
             f"Cost: {m(rf'{ceil_} \times {_n(price)} = {_n(ceil_ * price)}')} dollars.",
         ],
@@ -1209,35 +1208,44 @@ def round_up_groups(rng, lvl):
 
 
 _REM = [
-    ("cookies", "box", "boxes", [12, 15, 16, 20, 24], (100, 400), "A bakery packs {N} cookies into boxes of {C}."),
-    ("eggs", "carton", "cartons", [12, 18], (100, 500), "A farm packs {N} eggs into cartons that hold {C} eggs each."),
-    ("soldiers", "squad", "squads", [9, 10, 12, 13], (60, 250), "{S} divides {N} soldiers into squads of {C}."),
-    ("photos", "page", "pages", [4, 6, 8, 9], (50, 200), "{P} puts {N} photos into an album, {C} photos to a page."),
-    ("MREs", "case", "cases", [12, 24], (100, 500), "A supply clerk packs {N} MREs into cases of {C}."),
-    ("players", "team", "teams", [5, 6, 9, 11], (40, 160), "A recreation league assigns {N} players to teams of {C}."),
+    # (noun, container, plural, capacities, total range, setup, fill-verb)
+    ("cookies", "box", "boxes", [12, 15, 16, 20, 24], (100, 400),
+     "A bakery packs {N} cookies into boxes of {C}.", "filling"),
+    ("eggs", "carton", "cartons", [12, 18], (100, 500),
+     "A farm packs {N} eggs into cartons that hold {C} eggs each.", "filling"),
+    ("soldiers", "squad", "squads", [9, 10, 12, 13], (60, 250),
+     "{S} divides {N} soldiers into squads of {C}.", "forming"),
+    ("photos", "page", "pages", [4, 6, 8, 9], (50, 200),
+     "{P} puts {N} photos into an album, {C} photos to a page.", "filling"),
+    ("MREs", "case", "cases", [12, 24], (100, 500),
+     "A supply clerk packs {N} MREs into cases of {C}.", "filling"),
+    ("players", "team", "teams", [5, 6, 9, 11], (40, 160),
+     "A recreation league assigns {N} players to teams of {C}.", "forming"),
 ]
 
 
 @template("AR")
 def remainder(rng, lvl):
-    noun, c1, c2, caps, rngs, txt = rng.choice(_REM)
+    noun, c1, c2, caps, trange, setup, verb = rng.choice(_REM)
     cap = rng.choice(caps)
-    total = rng.randint(*rngs)
+    total = rng.randint(*trange)
     qf, r = divmod(total, cap)
     need(r >= 2 and cap - r >= 2 and qf >= 3)
-    lead = txt.format(N=num(total), C=m(cap), S=soldier(rng), P=person(rng).name)
-    full = {"squad": "complete squads", "team": "complete teams"}.get(c1, f"full {c2}")
+    setup = setup.format(N=num(total), C=m(cap), S=soldier(rng), P=person(rng).name)
+    setup = setup[0].upper() + setup[1:]
+    full = f"complete {c2}" if verb == "forming" else f"full {c2}"
     if rng.random() < 0.55:
         return Problem(
-            stem=f"{lead} After making as many {full} as possible, how many {noun} are left over?",
+            stem=f"{setup} After {verb} as many {full} as possible, how many {noun} are left over?",
             answer=Q(r),
             fmt=num,
             wrong=[(Q(qf), f"is the number of {full}, not the leftover {noun}"),
-                   (Q(qf + 1), f"is the number of {c2} needed to hold all the {noun}"),
+                   (Q(qf + 1), f"is the number of {c2} needed if the leftovers get their own {c1}"),
                    (Q(cap - r), f"is how many more {noun} it would take to fill another {c1}")],
             steps=[
-                f"Divide: {m(rf'{_n(total)} \div {cap}')}. Since {m(rf'{qf} \times {cap} = {_n(qf * cap)}')}, "
-                f"{m(qf)} {full} can be made.",
+                f"Divide: {m(rf'{_n(total)} \div {cap}')}. Since {m(rf'{qf} \times {cap} = {_n(qf * cap)}')} "
+                f"and {m(rf'{qf + 1} \times {cap} = {_n((qf + 1) * cap)}')} is too many, "
+                f"{m(qf)} {full} can be {'formed' if verb == 'forming' else 'filled'}.",
                 f"Left over: {m(f'{_n(total)} - {_n(qf * cap)} = {r}')} {noun}.",
             ],
             check=Q(total % cap),
@@ -1246,20 +1254,17 @@ def remainder(rng, lvl):
     wrong = [(Q(qf + 1), f"rounds up, but the last {c1} would not be full"),
              (Q(r), f"is the number of {noun} left over")]
     exact = R(total, cap)
-    try:
-        dec_raw(exact, max_places=2)
-        wrong.append((exact, f"is the exact quotient; a part of a {c1} is not a full {c1}"))
-    except Exception:
-        pass
+    if (exact * 100).is_integer:
+        wrong.append((exact, f"is the exact quotient; part of a {c1} is not a full {c1}"))
     wrong.append((Q(qf - 1), None))
     return Problem(
-        stem=f"{lead} How many {full} can be made?",
+        stem=f"{setup} How many {full} can be {'formed' if verb == 'forming' else 'filled'}?",
         answer=Q(qf),
         fmt=dec,
         wrong=wrong,
         steps=[
             f"Divide: {m(rf'{_n(total)} \div {cap} = {qf}')} remainder {m(r)}.",
-            f"Only {m(qf)} {c2} are full; the {m(r)} extra {noun} are not enough for another one.",
+            f"Only {m(qf)} {c2} are complete; the {m(r)} extra {noun} are not enough for another one.",
         ],
         check=Q(total // cap),
     )
@@ -1284,8 +1289,7 @@ PLAN = [
     (remainder, 2, 1),
     (shopping_total, 2, 1),
     (order_ops, 3, 3),
-    (round_up_groups, 3, 1),
+    (round_up_groups, 3, 2),
     (shopping_total, 3, 1),
     (equal_share, 3, 1),
-    (equal_share, 2, 1),
 ]

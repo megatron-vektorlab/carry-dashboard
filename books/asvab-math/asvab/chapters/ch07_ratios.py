@@ -9,7 +9,7 @@ from ..core import (R, Q, Problem, need, num, dec, frac, mixed, money, unit, m, 
                     template, x, y)
 
 NUM = 7
-TITLE = "Ratios & Proportions"
+TITLE = r"Ratios \& Proportions"
 PART = 1
 
 INTRO = r"""
@@ -219,6 +219,7 @@ def simplify_ratio(rng, lvl):
 def solve_proportion(rng, lvl):
     # level 1: x/a = c/d ; level 2: a/x = c/d.  The unknown is always a whole number.
     p, q = _coprime_pair(rng, 1, 9)
+    need(q >= 2)
     s, t = rng.sample(range(2, 9), 2)
     if lvl == 1:
         a, xv, c, d = q * s, p * s, p * t, q * t
@@ -230,7 +231,10 @@ def solve_proportion(rng, lvl):
         cross = a * c
         g = gcd(c, d)
         tip = None
-        if g > 1 and d // g == a:
+        if g > 1 and d // g == 1:
+            tip = (f"Simplify first: {m(F(c, d) + ' = ' + str(c // g))}, so {m(F('x', a) + f' = {c // g}')} "
+                   f"and {m(f'x = {a} \\times {c // g} = {xv}')}.")
+        elif g > 1 and d // g == a:
             tip = (f"Simplify first: {m(F(c, d) + ' = ' + F(c // g, d // g))}, so "
                    f"{m(F('x', a) + ' = ' + F(c // g, a))} and {m(f'x = {c // g}')}.")
         elif g > 1:
@@ -241,11 +245,11 @@ def solve_proportion(rng, lvl):
                         f"If {m(stem_eq)}, what is the value of {m('x')}?"),
             answer=Q(xv),
             fmt=num,
-            wrong=[
+            wrong=[w for w in [
                 (Q(a * c), f"multiplies {a} by {c} but forgets to divide by {d}"),
                 (Q(c + a - d), f"adds the difference of the denominators ({m(f'{a} - {d}')}) instead of scaling"),
                 (R(a * d, c), f"cross-multiplies the wrong pair: {m(f'{a} \\times {d} \\div {c}')}"),
-            ],
+            ] if w[0] > 0],
             steps=[
                 f"Cross-multiply: {m(f'{d} \\times x = {a} \\times {c}')}, so {m(f'{d}x = {int_raw(cross)}')}.",
                 f"Divide both sides by {d}: {m(f'x = {int_raw(cross)} \\div {d} = {int_raw(xv)}')}.",
@@ -264,11 +268,11 @@ def solve_proportion(rng, lvl):
                     f"If {m(stem_eq)}, what is the value of {m('x')}?"),
         answer=Q(xv),
         fmt=num,
-        wrong=[
+        wrong=[w for w in [
             (R(a * c, d), f"solves as if {m('x')} were on top, giving {m(f'{a} \\times {c} \\div {d}')}"),
             (Q(a * d), f"multiplies {a} by {d} but forgets to divide by {c}"),
             (Q(d + a - c), "adds the difference of the numerators instead of scaling"),
-        ],
+        ] if w[0] > 0],
         steps=[
             f"Cross-multiply: {m(f'{c} \\times x = {a} \\times {d}')}, so {m(f'{c}x = {int_raw(cross)}')}.",
             f"Divide both sides by {c}: {m(f'x = {int_raw(cross)} \\div {c} = {int_raw(xv)}')}.",
@@ -283,8 +287,8 @@ _GROUPS = [
     # (setting with {r}, first group, second group, question with {g})
     ("The ratio of boys to girls in a class is {r}.", "boys", "girls",
      "What fraction of the students in the class are {g}?"),
-    ("In a parking lot, the ratio of cars to trucks is {r}, and there are no other vehicles.",
-     "cars", "trucks", "What fraction of the vehicles in the lot are {g}?"),
+    ("A jar holds only quarters and dimes, in the ratio {r} (quarters to dimes).",
+     "quarters", "dimes", "What fraction of the coins in the jar are {g}?"),
     ("At a recruiting station, the ratio of Army enlistees to Navy enlistees this week is {r}, "
      "and no one enlisted in any other branch.", "Army enlistees", "Navy enlistees",
      "What fraction of this week's enlistees are {g}?"),
@@ -294,6 +298,11 @@ _GROUPS = [
      "officers", "enlisted soldiers", "What fraction of the company are {g}?"),
     ("A team's ratio of wins to losses this season is {r}, and it has had no ties.",
      "wins", "losses", "What fraction of its games this season were {g}?"),
+    ("In a survey, everyone chose either coffee or tea, and the ratio of coffee drinkers to tea "
+     "drinkers was {r}.", "coffee drinkers", "tea drinkers",
+     "What fraction of the people surveyed were {g}?"),
+    ("A battalion's vehicles are all trucks or trailers, in the ratio {r} (trucks to trailers).",
+     "trucks", "trailers", "What fraction of the vehicles are {g}?"),
 ]
 
 
@@ -311,16 +320,20 @@ def part_of_whole(rng, lvl):
         stem=setting.format(r=m(_rt(p, q))) + " " + ask.format(g=gname),
         answer=ans,
         fmt=frac,
-        wrong=[
+        wrong=[w for w in [
             (R(part, other), f"uses the ratio {m(_rt(part, other))} as if it were the fraction of the total"),
             (R(other, p + q), "is the fraction for the other group"),
+            (R(1, p + q), "is the size of just one part, not the whole group's share"),
+            (R(part, p * q), "multiplies the terms of the ratio instead of adding them to get the total"),
             (R(other, part), "flips the ratio"),
-        ],
+        ] if w[0] < 1 or w[1].startswith("uses the ratio")],
         steps=[
             f"Think in parts: the whole group is {m(f'{p} + {q} = {p + q}')} equal parts.",
             f"The {gname} are {part} of those {p + q} parts, so the fraction is {m(frac_raw(ans))}.",
         ],
         check=Fraction(part, p + q),
+        near=lambda r: [R(k, p + q) for k in range(1, p + q) if k != part]
+                       + [R(k, other + 1) for k in range(1, other + 1)],
     )
 
 
@@ -339,6 +352,10 @@ _TOTALS = [
      "apples to oranges sold was {r}.", "apples", "oranges", "were sold", range(30, 300)),
     ("A school club has {T} members, and every member is a junior or a senior. The ratio of "
      "juniors to seniors is {r}.", "juniors", "seniors", "are in the club", range(15, 80)),
+    ("A company surveyed {T} soldiers about PT. Each soldier chose morning PT or evening PT, and "
+     "the ratio of morning to evening choices was {r}.", "soldiers", "soldiers", "chose __", range(40, 240)),
+    ("A bookstore sold {T} books last week, all paperbacks or hardcovers. The ratio of paperbacks "
+     "to hardcovers sold was {r}.", "paperbacks", "hardcovers", "were sold", range(40, 400)),
 ]
 
 
@@ -355,6 +372,10 @@ def ratio_total(rng, lvl):
     ans = part * one
     if verb in ("were", "are"):
         question = f" How many {name} {verb} there?"
+    elif verb == "chose __":
+        question = f" How many soldiers chose {'morning' if ask_first else 'evening'} PT?"
+        name = f"soldiers who chose {'morning' if ask_first else 'evening'} PT"
+        oname = f"soldiers who chose {'evening' if ask_first else 'morning'} PT"
     else:
         question = f" How many {name} {verb}?"
     return Problem(
@@ -363,14 +384,15 @@ def ratio_total(rng, lvl):
         fmt=num,
         wrong=[
             (Q(other * one), f"is the number of {oname}"),
-            (R(T * part, other), f"treats the ratio as the fraction {m(F(part, other))} of the total"),
+            (R(T * part, other) if part < other else Q(-1),
+             f"treats the ratio as the fraction {m(F(part, other))} of the total"),
             (Q(one), "stops after finding the size of one part"),
             (R(T, part), None),
         ],
         steps=[
             f"Add the terms of the ratio to get the number of equal parts: {m(f'{p} + {q} = {s}')}.",
             f"Find the size of one part: {m(f'{int_raw(T)} \\div {s} = {one}')}.",
-            f"The {name} make up {part} parts: {m(f'{part} \\times {one} = {int_raw(ans)}')}.",
+            f"The {name} make up {_parts(part)}: {m(f'{part} \\times {one} = {int_raw(ans)}')}.",
         ],
         tip=(f"Check: {m(f'{int_raw(ans)} + {int_raw(other * one)} = {int_raw(T)}')}, and "
              f"{m(_rt(p * one, q * one))} simplifies to {m(_rt(p, q))}."),
@@ -411,8 +433,72 @@ _RECIPES = [
 ]
 
 
+_FRAC_RECIPES = [
+    # (stem with {a} {b} {c}, unit sing/pl, per-noun, amounts a)
+    ("A recipe that serves {b} people uses {a} of sugar. How many cups of sugar are needed to "
+     "serve {c} people?", ("cup", "cups"), ("person", "people"), [R(1, 2), R(2, 3), R(3, 4), R(3, 2), R(5, 4)]),
+    ("A pancake recipe uses {a} of milk to make {b} pancakes. How many cups of milk are needed "
+     "to make {c} pancakes?", ("cup", "cups"), ("pancake", "pancakes"), [R(2, 3), R(3, 4), R(3, 2), R(5, 4)]),
+    ("A chili recipe that makes {b} servings uses {a} of ground beef. How many pounds of ground "
+     "beef are needed to make {c} servings?", ("pound", "pounds"), ("serving", "servings"),
+     [R(3, 2), R(5, 2), R(9, 4), R(2)]),
+    ("A field kitchen's oatmeal recipe uses {a} of oats for every {b} soldiers. How many cups "
+     "of oats are needed for {c} soldiers?", ("cup", "cups"), ("soldier", "soldiers"), [R(3, 4), R(3, 2), R(5, 2), R(2)]),
+]
+
+
+def _parts(k) -> str:
+    return f"{k} part" if k == 1 else f"{k} parts"
+
+
 @template("AR")
 def recipe_scale(rng, lvl):
+    if lvl == 3:
+        stem_t, (one, many), (per1, per), avals = rng.choice(_FRAC_RECIPES)
+        a = rng.choice(avals)
+        b = rng.choice([4, 6, 8, 12])
+        c = rng.choice([v for v in range(2, 41) if v != b])
+        need(c > b or rng.random() < 0.25)
+        scale = R(c, b)
+        ans = a * scale
+        need(not scale.is_integer and ans.q in (1, 2, 3, 4) and ans <= 8 and ans != a)
+        need(not ans.is_integer or rng.random() < 0.3)
+        amt = lambda v: f"{m(mixed_raw(v))} {one if v == 1 else many}"
+        raw_p, raw_q = a.p * scale.p, a.q * scale.q
+        chain = f"{mixed_raw(a)} \\times {frac_raw(scale)}"
+        if a.q != 1 and a > 1:
+            chain += f" = {frac_raw(a)} \\times {frac_raw(scale)}"
+        raw = F(int_raw(raw_p), int_raw(raw_q)) if raw_q != 1 else int_raw(raw_p)
+        chain += f" = {raw}"
+        if mixed_raw(ans) != raw:
+            chain += f" = {mixed_raw(ans)}"
+        wrong = [
+            (a * R(b, c), f"multiplies by {m(F(b, c))} instead of {m(F(c, b))}"),
+            (Q(a * c), f"multiplies by {num(c)} but forgets to divide by {num(b)}"),
+            (ans - a if c > b else a - ans, "finds only the change in the amount" if c > b else
+             "finds how much less is needed, not the new amount"),
+        ]
+        if c > b:
+            wrong.append((a + (c - b), f"adds {c - b} (the number of extra {per}) instead of scaling"))
+        wrong.append((ans + R(1, 2), None))
+        wrong.append((ans - R(1, 4), None))
+        return Problem(
+            stem=stem_t.format(a=amt(a), b=num(b), c=num(c)),
+            answer=ans,
+            fmt=mixed,
+            wrong=wrong,
+            steps=[
+                f"Find the scale factor: {num(c)} {per} is "
+                f"{m(F(c, b) + ('' if gcd(b, c) == 1 else ' = ' + frac_raw(scale)))} "
+                + (f"times as many as {num(b)} {per}." if c > b else f"of {num(b)} {per}."),
+                f"Multiply the amount by that factor: {m(chain)} {one if ans == 1 else many}.",
+            ],
+            tip=(f"Unit rate: each {per1} needs {m(f'{frac_raw(a)} \\div {b} = {frac_raw(a / b)}')} "
+                 f"{one}, and {m(f'{c} \\times {frac_raw(a / b)} = {mixed_raw(ans)}')} {many}."),
+            check=_fr(a) / b * c,
+            verify=lambda v: _fr(v) / c == _fr(a) / b,
+        )
+
     ctx = rng.choice(_RECIPES)
     one, many = ctx["unit"]
     a = rng.choice(list(ctx["a"]))
@@ -421,15 +507,9 @@ def recipe_scale(rng, lvl):
     need(c > b)
     ans = R(a * c, b)
     fmt = ctx["fmt"]
-    if lvl == 2:
-        need(ans.q in (1, 2))
-    else:
-        need(ans.q in (2, 3, 4) and fmt is not num)
-        fmt = mixed
+    need(ans.q in (1, 2))
     if fmt is num:
         need(ans.is_integer)
-    if fmt is dec:
-        need(ans.q in (1, 2, 4))
     show = (lambda v: mixed_raw(v)) if fmt is mixed else (lambda v: dec_raw(v))
     cross = a * c
     if ans.is_integer:
@@ -444,6 +524,7 @@ def recipe_scale(rng, lvl):
     ]
     if ctx["small"]:
         wrong.append((Q(a + c - b), f"adds the {c - b} extra {ctx['per']} instead of scaling"))
+    wrong.append((Q(a * c), f"multiplies by {num(c)} but forgets to divide by {num(b)}"))
     wrong.append((ans + a, None))
     unit_rate = R(b, a)
     tip = None
@@ -498,12 +579,13 @@ def map_scale(rng, lvl):
                       f"{m(mixed_raw(d))} inches long on the blueprint. How long is the actual "
                       f"{thing}, in feet?"),
                 answer=ans,
-                fmt=num,
+                fmt=dec,
                 wrong=[
                     (d / k, f"multiplies by {m(F(1, k))} instead of dividing by it"),
                     (Q(whole * k), f"ignores the {m(frac_raw(part))} inch"),
                     (d + k, None),
                     (ans / 2 if k == 4 else ans * 2, None),
+                    (ans * 10, "misplaces the decimal point in the product"),
                 ],
                 steps=[
                     f"Each {m(F(1, k))} inch stands for 1 foot, so each whole inch stands for {k} feet.",
@@ -514,10 +596,11 @@ def map_scale(rng, lvl):
                 verify=lambda v: v / k == d,
             )
         stem_t, (one, many), scales, top = rng.choice(_MAPS)
+        where = "plan" if "floor plan" in stem_t else "model" if "model" in stem_t else "map"
         s = rng.choice(scales)
         whole = rng.randint(2, 9)
-        part = rng.choice([0, R(1, 4), R(1, 2), R(3, 4)])
-        d = whole + part
+        part = rng.choice([Q(0), R(1, 4), R(1, 2), R(3, 4)])
+        d = Q(whole) + part
         ans = d * s
         need(ans.is_integer or ans.q == 2)
         need(ans <= top)
@@ -528,6 +611,7 @@ def map_scale(rng, lvl):
         ]
         if part:
             wrong.append((Q(whole * s), f"ignores the {m(frac_raw(part))} inch"))
+            wrong.append((ans * 10, "misplaces the decimal point in the product"))
         wrong.append((ans * 2, None))
         if part:
             work = (f"Split it up: {m(f'{whole} \\times {s} = {whole * s}')} and "
@@ -541,7 +625,7 @@ def map_scale(rng, lvl):
             fmt=unit(dec, one, many),
             wrong=wrong,
             steps=[
-                f"Each inch on the map stands for {num(s)} {many}, so multiply the measurement by {num(s)}.",
+                f"Each inch on the {where} stands for {num(s)} {many}, so multiply the measurement by {num(s)}.",
                 work,
             ],
             check=_fr(d) * s,
@@ -555,8 +639,9 @@ def map_scale(rng, lvl):
         k = rng.randint(3, 12)
         actual = v * k
         ans = Q(u * k)
-        place = rng.choice(["two cities", "two Army posts", "a lake and a campground",
-                            "two airports", "two exits on a highway"])
+        need(ans <= 16 and 40 <= actual <= 900)
+        place = rng.choice(["two cities", "two Army posts", "two airports", "two state capitals",
+                            "two Air Force bases"])
         return Problem(
             stem=(f"On a map, {u} inches represent {num(v)} miles. The actual distance between "
                   f"{place} is {num(actual)} miles. How far apart are they on the map?"),
@@ -593,6 +678,8 @@ def map_scale(rng, lvl):
             (Q(2 * (L * s + W * s)), "finds the perimeter instead of the area"),
             (Q(L * W), "gives the area on the plan, in square inches"),
             (Q(L * s + W * s), None),
+            (ans * s, f"converts the sides and then multiplies the area by {s} again"),
+            (ans + L * s, None),
         ],
         steps=[
             f"Convert each side to feet: {m(f'{L} \\times {s} = {L * s}')} feet and "
@@ -643,19 +730,15 @@ def unit_rate(rng, lvl):
     rate = Q(rate)
     total = rate * n
     step = R(1, 2) if money_like else 1
-    if money_like:
-        slip = (rate * 10, "misplaces the decimal point when dividing")
-    elif rate % 10 == 0:
-        slip = (rate / 10, "drops a zero from the quotient when dividing")
-    else:
-        slip = (rate * 10, "is off by a factor of 10 (a place-value slip in the division)")
-    wrong = [slip, (rate + step, None), (rate - step, None), (rate + 2 * step, None),
+    wrong = [(rate * 10, "misplaces the decimal point when dividing"),
+             (rate / 10, "misplaces the decimal point when dividing"),
+             (rate + step, None), (rate - step, None), (rate + 2 * step, None),
              (rate - 2 * step, None)]
     result = f"{money(rate)} {per}" if money_like else f"{num(rate)} {per}"
     return Problem(
         stem=stem,
         answer=rate,
-        fmt=money if money_like else num,
+        fmt=money if money_like else dec,
         wrong=wrong,
         steps=[
             f"\\emph{{Per}} means ``for each one,'' so divide the total by the number of units: "
@@ -740,7 +823,8 @@ def direct_variation(rng, lvl):
         fmt=lambda s: s,
         wrong=[
             (eq(1 / k), f"divides {m('x')} by {m('y')} instead of {m('y')} by {m('x')}"),
-            (m(f"y = x + {int_raw(y1 - x1)}"), "describes a constant difference, not a constant ratio"),
+            (m(f"y = x {'+' if y1 > x1 else '-'} {int_raw(abs(y1 - x1))}"),
+             "describes a constant difference, not a constant ratio"),
             (m(f"y = {F(int_raw(x1 * y1), 'x')}"), "describes inverse variation"),
             (eq(k + 1), None),
         ],
@@ -812,7 +896,7 @@ def divide_in_ratio(rng, lvl):
             steps=[
                 parts_step,
                 one_step,
-                f"The largest share is {hi} parts and the smallest is {lo} parts, a difference of "
+                f"The largest share is {_parts(hi)} and the smallest is {_parts(lo)}, a difference of "
                 f"{m(f'{hi} - {lo} = {hi - lo}')} parts: {m(f'{hi - lo} \\times {int_raw(one)} = {int_raw(ans)}')} dollars.",
             ],
             check=Fraction(T, s) * (hi - lo),
@@ -837,7 +921,7 @@ def divide_in_ratio(rng, lvl):
     calc = m(f"{rs[idx]} \\times {int_raw(one)} = {int_raw(ans)}" + ("^\\circ" if kind == "angle" else ""))
     who = {"angle": f"The {which} angle", "concrete": f"The {which}",
            "water": f"{which} platoon's share"}.get(kind, f"The {which} share")
-    last_step = (f"{who} is {rs[idx]} parts: {calc}" + ("." if kind == "angle" else f" {ctx['unit']}."))
+    last_step = (f"{who} is {_parts(rs[idx])}: {calc}" + ("." if kind == "angle" else f" {ctx['unit']}."))
     return Problem(
         stem=ctx["stem"].format(r=r_txt, T=Tt, which=which),
         answer=ans,
@@ -913,7 +997,7 @@ def ratio_difference(rng, lvl):
     elif ask == "big":
         ans = Q(hi * one)
         stem += " " + ctx["q_big"]
-        last = f"The {ctx['big']} are {hi} parts: {m(f'{hi} \\times {one} = {int_raw(ans)}')}."
+        last = f"The {ctx['big']} are {_parts(hi)}: {m(f'{hi} \\times {one} = {int_raw(ans)}')}."
         wrong = [
             (Q(d * hi), one_note),
             (Q(lo * one), f"is the number of {ctx['small']}"),
@@ -923,7 +1007,7 @@ def ratio_difference(rng, lvl):
     else:
         ans = Q(lo * one)
         stem += " " + ctx["q_small"]
-        last = f"The {ctx['small']} are {lo} parts: {m(f'{lo} \\times {one} = {int_raw(ans)}')}."
+        last = f"The {ctx['small']} are {_parts(lo)}: {m(f'{lo} \\times {one} = {int_raw(ans)}')}."
         wrong = [
             (Q(d * lo), one_note),
             (Q(hi * one), f"is the number of {ctx['big']}"),
@@ -936,7 +1020,7 @@ def ratio_difference(rng, lvl):
         fmt=num,
         wrong=wrong,
         steps=[
-            f"In parts, the {ctx['big']} are {hi} parts and the {ctx['small']} are {lo} parts, so the "
+            f"In parts, the {ctx['big']} are {_parts(hi)} and the {ctx['small']} are {_parts(lo)}, so the "
             f"difference is {m(f'{hi} - {lo} = {hi - lo}')} parts.",
             f"Those {hi - lo} parts equal {num(d)}, so one part is {m(f'{int_raw(d)} \\div {hi - lo} = {one}')}.",
             last,

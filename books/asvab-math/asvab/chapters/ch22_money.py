@@ -1,11 +1,12 @@
 """Chapter 22 - Money: Shopping, Discounts, Tax & Wages (word problems)."""
+import functools
 from fractions import Fraction
 
-from ..core import (R, Q, Problem, Person, need, num, money, money_cents, pct, m,
+from ..core import (R, Q, F, Problem, Person, need, num, money, money_cents, pct, m,
                     text, unit, dec_raw, int_raw, frac_raw, person, choose, template)
 
 NUM = 22
-TITLE = "Money: Shopping, Discounts, Tax & Wages"
+TITLE = r"Money: Shopping, Discounts, Tax \& Wages"
 PART = 4
 
 INTRO = r"""
@@ -125,9 +126,71 @@ def _pdec(p):
     return dec_raw(Q(p) / 100)
 
 
+def is_whole(v):
+    return Q(v).is_integer
+
+
 def _hc(c):
     """Exact money value from integer cents."""
     return R(c, 100)
+
+
+def _near_money(ans):
+    """Filler distractors with the same shape as a money answer (whole dollars
+    stay whole, cents keep their cents), spaced by a round step."""
+    A = Q(ans)
+    step = next(R(x) for x in (R(1, 100), R(1, 20), R(1, 4), 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000)
+                if abs(A) <= 12 * Q(x))
+
+    def f(rng):
+        out = [A + k * step for k in (1, 2, 3, -1, -2, -3)]
+        out = [v for v in out if v > 0]
+        rng.shuffle(out)
+        return out
+    return f
+
+
+def _near_count(ans):
+    A = Q(ans)
+
+    def f(rng):
+        out = [A + k for k in (1, 2, 3, 4, -1, -2, -3, -4) if A + k > 0]
+        rng.shuffle(out)
+        return out
+    return f
+
+
+def _pick(rng, seq, part):
+    """rng.choice(seq), or - for a template variant - only from slice k of n."""
+    if part is None:
+        return rng.choice(seq)
+    k, n = part
+    return rng.choice(seq[k::n])
+
+
+def _variants(fn, n):
+    """Split a template into n variants that draw from disjoint slices of its
+    contexts, so the copies used in one practice set never share a context."""
+    out = []
+    for k in range(n):
+        def g(rng, lvl, _k=k):
+            return fn(rng, lvl, part=(_k, n))
+        g.__name__ = g.__qualname__ = f"{fn.__name__}_{'abcd'[k]}"
+        g.__module__ = fn.__module__
+        g.section = fn.section
+        out.append(g)
+    return out
+
+
+def _fill(fn):
+    """Give a template same-shape filler distractors (no odd 10x or /10 values)."""
+    @functools.wraps(fn)
+    def wrapper(rng, lvl, **kw):
+        p = fn(rng, lvl, **kw)
+        if p.near is None and not isinstance(p.answer, str):
+            p.near = _near_money(p.answer) if p.fmt is money else _near_count(p.answer)
+        return p
+    return wrapper
 
 
 # --------------------------------------------------------------------------
@@ -181,8 +244,9 @@ _SHOPS = [
 
 
 @template("AR")
-def change_due(rng, lvl):
-    fmt_s, mil, items = rng.choice(_SHOPS)
+@_fill
+def change_due(rng, lvl, part=None):
+    fmt_s, mil, items = _pick(rng, _SHOPS, part)
     B = _trooper(rng) if mil else person(rng)
     (n1, pl1, lo1, hi1), (n2, pl2, lo2, hi2) = rng.sample(items, 2)
     a, b = _price(rng, lo1, hi1), _price(rng, lo2, hi2)
@@ -191,7 +255,7 @@ def change_due(rng, lvl):
     else:
         q1, q2 = rng.choice([2, 3, 4]), rng.choice([1, 2, 3])
     total = q1 * a + q2 * b
-    need(total < 100 and not is_whole(total))
+    need(total < 98 and not is_whole(total))
     bills = [v for v in (10, 20, 50, 100) if v > total + 1]
     bill = Q(bills[0] if len(bills) == 1 or rng.random() < 0.7 else bills[1])
     change = bill - total
@@ -215,9 +279,11 @@ def change_due(rng, lvl):
         steps.append(f"Add to get the total cost: {m(f'{money(q1 * a)} + {money(q2 * b)} = {money(total)}')}.")
     steps.append(f"Subtract the total from the amount paid: "
                  f"{m(f'{money_cents(bill)} - {money(total)} = {money(change)}')}.")
+    rounded = q1 * a.ceiling() + q2 * b.ceiling()
     wrong = [
         (total, "is the total cost, not the change"),
         (change + 1, "forgets to borrow a dollar when subtracting the cents"),
+        (bill - rounded, "rounds each price up to a whole dollar instead of using the exact prices"),
     ]
     if lvl == 1:
         wrong.append((bill - a, f"leaves out the price of the {n2}"))
@@ -232,10 +298,6 @@ def change_due(rng, lvl):
         check=_hc(_cents(bill) - q1 * _cents(a) - q2 * _cents(b)),
         verify=lambda v: v + q1 * a + q2 * b == bill,
     )
-
-
-def is_whole(v):
-    return Q(v).is_integer
 
 
 # --------------------------------------------------------------------------
@@ -254,20 +316,21 @@ _SALE = [
     ("pair of tactical sunglasses", 60, 160, 5, True),
     ("hydration backpack", 40, 100, 5, True),
     ("smartwatch", 180, 400, 10, True),
-    ("gaming headset", 60, 150, 5, True),
+    ("gaming headset", 60, 150, 5, False),
 ]
 
 
 @template("AR")
-def sale_price(rng, lvl):
-    item, lo, hi, st, mil = rng.choice(_SALE)
+@_fill
+def sale_price(rng, lvl, part=None):
+    item, lo, hi, st, mil = _pick(rng, _SALE, part)
     P = Q(rng.choice(range(lo, hi + 1, st)))
     p = rng.choice([10, 15, 20, 25, 30, 35, 40, 50])
     disc = P * p / 100
     sale = P - disc
     if mil:
         T = _trooper(rng)
-        stem = (f"The base exchange is having a {pct(p)}-off sale. {T} buys {_art(item)} {item} "
+        stem = (f"The base exchange is having {_art_n(p)} {pct(p)}-off sale. {T} buys {_art(item)} {item} "
                 f"that regularly costs {money(P)}. How much does {T.he} pay? "
                 f"(There is no sales tax at the exchange.)")
     else:
@@ -293,7 +356,7 @@ def sale_price(rng, lvl):
             f"Subtract it from the regular price: {m(f'{money(P)} - {money(disc)} = {money(sale)}')}.",
         ],
         tip=(f"Shortcut: {pct(p)} off means you pay {m(f'100\\% - {p}\\% = {100 - p}\\%')}, and "
-             f"{m(f'{_pdec(100 - p)} \\times {int_raw(P)} = {dec_raw(sale) if not sale.is_integer else int_raw(sale)}')}."),
+             f"{m(f'{_pdec(100 - p)} \\times {money(P)} = {money(sale)}')}."),
         check=P * (100 - p) / 100,
     )
 
@@ -326,14 +389,15 @@ _TAX_MULTI = [
 
 
 @template("AR")
-def sales_tax(rng, lvl):
+@_fill
+def sales_tax(rng, lvl, part=None):
     t = rng.choice([4, 5, 6, 7, 8] if lvl == 1 else [5, 6, 7, 8, R(15, 2)])
     mil = rng.random() < 0.35
     B = _trooper(rng) if mil else person(rng)
     where = (choose(rng, "at a store off base", "in town on a weekend pass") if mil
              else choose(rng, "at a local store", "online", "at a department store"))
     if lvl == 1:
-        item, lo, hi, st = rng.choice(_TAX_ONE)
+        item, lo, hi, st = _pick(rng, _TAX_ONE, part)
         sub = Q(rng.choice(range(lo, hi + 1, st)))
         stem = (f"{B} buys {_art(item)} {item} {where} for {money(sub)}. The sales tax rate is {pct(t)}. "
                 f"What is the total cost, including tax?")
@@ -392,8 +456,9 @@ _BIG = [
 
 
 @template("AR")
-def discount_tax(rng, lvl):
-    item, lo, hi, st = rng.choice(_BIG)
+@_fill
+def discount_tax(rng, lvl, part=None):
+    item, lo, hi, st = _pick(rng, _BIG, part)
     P = Q(rng.choice(range(lo, hi + 1, st)))
     d = rng.choice([10, 15, 20, 25, 30, 40])
     t = rng.choice([5, 6, 7, 8])
@@ -402,7 +467,7 @@ def discount_tax(rng, lvl):
     need(sale.is_integer)
     tax = sale * t / 100
     total = sale + tax
-    v = rng.randrange(3)
+    v = _pick(rng, [0, 1, 2], part)
     if v == 0:
         T = _trooper(rng)
         stem = (f"{T} is furnishing an apartment off base. {_cap(_art(item))} {item} that regularly "
@@ -410,10 +475,10 @@ def discount_tax(rng, lvl):
                 f"sale price. How much does {T.he} pay in all?")
     elif v == 1:
         stem = (f"{_cap(_art(item))} {item} is priced at {money(P)}. It is on sale for {pct(d)} off, and "
-                f"a {pct(t)} sales tax is charged on the sale price. What is the total cost?")
+                f"{_art_n(t)} {pct(t)} sales tax is charged on the sale price. What is the total cost?")
     else:
         B = person(rng)
-        stem = (f"{B} buys {_art(item)} {item} during a {pct(d)}-off sale. The regular price is "
+        stem = (f"{B} buys {_art(item)} {item} during {_art_n(d)} {pct(d)}-off sale. The regular price is "
                 f"{money(P)}, and {pct(t)} sales tax is added to the sale price. How much does {B.he} "
                 f"pay, including tax?")
     return Problem(
@@ -430,7 +495,7 @@ def discount_tax(rng, lvl):
             f"Tax on the \\emph{{sale}} price: {m(f'{_pdec(t)} \\times {money(sale)} = {money(tax)}')}.",
             f"Total: {m(f'{money(sale)} + {money(tax)} = {money(total)}')}.",
         ],
-        tip=(f"Or chain the multipliers: {m(f'{int_raw(P)} \\times {_pdec(100 - d)} \\times {dec_raw(R(100 + t, 100))}')}."),
+        tip=(f"Or chain the multipliers: {m(f'{money(P)} \\times {_pdec(100 - d)} \\times {dec_raw(R(100 + t, 100))} = {money(total)}')}."),
         check=_hc(_cents(P) * (100 - d) * (100 + t) / 10000),
     )
 
@@ -440,23 +505,28 @@ def discount_tax(rng, lvl):
 # --------------------------------------------------------------------------
 
 _PRODUCTS = [
-    # (kind, product, pkg, unit, unit_pl, sizes, u_lo, u_hi (cents), military)
-    ("wt", "peanut butter", "jar", "ounce", "ounces", [12, 16, 18, 28, 40], 10, 24, False),
-    ("wt", "cereal", "box", "ounce", "ounces", [10, 12, 14, 18, 24], 16, 36, False),
-    ("wt", "coffee", "bag", "ounce", "ounces", [12, 16, 24, 32, 40], 28, 60, False),
-    ("wt", "laundry detergent", "bottle", "ounce", "ounces", [50, 64, 100, 150], 8, 18, False),
-    ("wt", "rice", "bag", "pound", "pounds", [2, 5, 10, 20], 80, 180, False),
-    ("wt", "dog food", "bag", "pound", "pounds", [5, 15, 30, 40], 80, 200, False),
-    ("ct", "sports drinks", "pack", "bottle", "bottles", [6, 8, 12, 24], 50, 125, True),
-    ("ct", "AA batteries", "pack", "battery", "batteries", [4, 8, 12, 24], 40, 125, True),
-    ("ct", "protein bars", "box", "bar", "bars", [6, 10, 12, 15, 20], 75, 200, True),
-    ("ct", "bottled water", "case", "bottle", "bottles", [12, 24, 32, 40], 15, 40, True),
+    # (kind, "X come(s)", noun after "of", pkg, unit, unit_pl, sizes, u_lo, u_hi (cents), military)
+    ("wt", "peanut butter comes", "peanut butter", "jar", "ounce", "ounces", [12, 16, 18, 28, 40], 10, 24, False),
+    ("wt", "cereal comes", "cereal", "box", "ounce", "ounces", [10, 12, 14, 18, 24], 16, 36, False),
+    ("wt", "coffee comes", "coffee", "bag", "ounce", "ounces", [12, 16, 24, 32, 40], 28, 60, False),
+    ("wt", "laundry detergent comes", "laundry detergent", "bottle", "ounce", "ounces", [50, 64, 100, 150], 8, 18, False),
+    ("wt", "rice comes", "rice", "bag", "pound", "pounds", [2, 5, 10, 20], 80, 180, False),
+    ("wt", "dog food comes", "dog food", "bag", "pound", "pounds", [5, 15, 30, 40], 80, 200, False),
+    ("ct", "sports drinks come", "sports drinks", "pack", "bottle", "bottles", [6, 8, 12, 24], 50, 125, True),
+    ("ct", "AA batteries come", "AA batteries", "pack", "battery", "batteries", [4, 8, 12, 24], 40, 125, True),
+    ("ct", "protein bars come", "protein bars", "box", "bar", "bars", [6, 10, 12, 15, 20], 75, 200, True),
+    ("ct", "bottled water comes", "bottles of water", "case", "bottle", "bottles", [12, 24, 32, 40], 15, 40, False),
 ]
+
+
+def _art_n(k):
+    """Article before a number: 'an 18-ounce', 'an 8-pack', 'a 16-ounce'."""
+    return "an" if str(k).startswith("8") or k in (11, 18) else "a"
 
 
 def _desc(kind, product, pkg, unit_, s):
     if kind == "wt":
-        return f"{_art(str(s))} {s}-{unit_} {pkg} of {product}" if s not in (8, 11, 18) else f"an {s}-{unit_} {pkg} of {product}"
+        return f"{_art_n(s)} {s}-{unit_} {pkg} of {product}"
     return f"{_art(pkg)} {pkg} of {s} {product}"
 
 
@@ -471,8 +541,9 @@ def _place(rng, mil):
 
 
 @template("AR")
-def unit_price(rng, lvl):
-    kind, product, pkg, u_, upl, sizes, ulo, uhi, mil = rng.choice(_PRODUCTS)
+@_fill
+def unit_price(rng, lvl, part=None):
+    kind, _subj, product, pkg, u_, upl, sizes, ulo, uhi, mil = _pick(rng, _PRODUCTS, part)
     s1, s2 = sorted(rng.sample(sizes, 2))
     u1 = rng.randint(ulo, uhi)
     gap = rng.randint(1, max(2, (uhi - ulo) // 6))
@@ -485,11 +556,11 @@ def unit_price(rng, lvl):
     d1, d2 = _desc(kind, product, pkg, u_, s1), _desc(kind, product, pkg, u_, s2)
     bd = _short(kind, pkg, u_, s1 if U1 < U2 else s2)
     place = _place(rng, mil)
+    B = _trooper(rng) if mil else person(rng)
     stem = (f"{place}, {d1} costs {money(P1)}, and {d2} costs {money(P2)}. "
             + choose(rng, f"What is the price per {u_} of the better buy?",
-                     f"Which is the better buy, and what is its price per {u_}? Give the price per {u_}."))
-    stem = stem.replace("Which is the better buy, and what is its price per", "Find the price per").replace(
-        f"? Give the price per {u_}.", f" of the better buy.") if "Which is" in stem else stem
+                     f"{B} wants the better buy, so {B.he} compares the prices per {u_}. "
+                     f"What is the lower price per {u_}?"))
     return Problem(
         stem=stem, answer=best, fmt=money, section="AR",
         wrong=[
@@ -513,20 +584,23 @@ def unit_price(rng, lvl):
 # --------------------------------------------------------------------------
 
 @template("AR")
-def best_buy(rng, lvl):
-    kind, product, pkg, u_, upl, sizes, ulo, uhi, mil = rng.choice(_PRODUCTS)
+@_fill
+def best_buy(rng, lvl, part=None):
+    kind, subj, product, pkg, u_, upl, sizes, ulo, uhi, mil = _pick(rng, _PRODUCTS[::-1], part)
     need(len(sizes) >= 3)
     ss = sorted(rng.sample(sizes, 3))
-    us = rng.sample(range(ulo, uhi + 1), 3)
-    need(max(us) - min(us) <= max(4, (uhi - ulo) // 3))
+    lowu, *others = sorted(rng.sample(range(ulo, uhi + 1), 3))
+    need(others[-1] - lowu <= max(4, (uhi - ulo) // 3))
+    ib = rng.choices([0, 1, 2], weights=[25, 35, 40])[0]   # bigger is a bit more often the best buy
+    rng.shuffle(others)
+    us = others[:ib] + [lowu] + others[ib:]
     Us = [R(u, 100) for u in us]
     Ps = [U * s for U, s in zip(Us, ss)]
     need(len(set(Ps)) == 3)
-    ib = min(range(3), key=lambda i: Us[i])
     names = [_short(kind, pkg, u_, s) for s in ss]
     descs = [_desc(kind, product, pkg, u_, s) for s in ss]
     place = _place(rng, mil)
-    stem = (f"{place}, {product} comes in three sizes: {descs[0]} for {money(Ps[0])}, {descs[1]} for "
+    stem = (f"{place}, {subj} in three sizes: {descs[0]} for {money(Ps[0])}, {descs[1]} for "
             f"{money(Ps[1])}, and {descs[2]} for {money(Ps[2])}. Which size is the best buy?")
     cheapest_tag = min(range(3), key=lambda i: Ps[i])
     wrong = []
@@ -543,6 +617,7 @@ def best_buy(rng, lvl):
     def cheaper(i, j):
         return Ps[i] * ss[j] < Ps[j] * ss[i]
     chk = [i for i in range(3) if all(cheaper(i, j) for j in range(3) if j != i)]
+    need(len(chk) == 1)
     return Problem(
         stem=stem, answer=names[ib], fmt=text, section="AR", wrong=wrong,
         steps=[
@@ -552,7 +627,7 @@ def best_buy(rng, lvl):
         ],
         tip=("The biggest package is not always the best deal, so always compare unit prices."
              if ib != 2 else None),
-        check=names[chk[0]] if len(chk) == 1 else None,
+        check=names[chk[0]],
     )
 
 
@@ -574,12 +649,13 @@ _JOBS = [
 
 
 @template("AR")
-def overtime(rng, lvl):
-    job, lo, hi, mil = rng.choice(_JOBS)
+@_fill
+def overtime(rng, lvl, part=None):
+    job, lo, hi, mil = _pick(rng, _JOBS, part)
     B = person(rng)
     r = Q(rng.randint(lo, hi))
     ot = r * R(3, 2)
-    v = 0 if lvl == 2 else rng.choice([1, 1, 2])
+    v = 0 if lvl == 2 else (rng.choice([1, 1, 2]) if part is None else _pick(rng, [1, 2], part))
     if v in (0, 2):
         h = rng.choice([42, 43, 44, 45, 46, 47, 48, 50])
     else:
@@ -640,6 +716,7 @@ def overtime(rng, lvl):
     ]
     return Problem(stem=stem, answer=Q(h), fmt=unit(num, "hour"), section="AR",
                    wrong=[(w, y) for w, y in wrong if Q(w).is_integer], steps=steps,
+                   near=lambda g: [Q(h + d) for d in g.sample([-3, -2, -1, 1, 2, 3, 4, 5], 6)],
                    verify=lambda H: 40 * r + (H - 40) * ot == pay,
                    check=next(H for H in range(41, 80) if 40 * r + (H - 40) * ot == pay))
 
@@ -677,8 +754,9 @@ _FREQ_STEP = {
 
 
 @template("AR")
-def paycheck(rng, lvl):
-    mil = rng.random() < (0.4 if lvl == 2 else 0.5)
+@_fill
+def paycheck(rng, lvl, part=None):
+    mil = rng.random() < (0.4 if lvl == 2 else 0.35) if part is None else bool(_pick(rng, [0, 1], part))
     if mil:
         ranks, lo, hi = rng.choice(_MIL_PAY)
         T = _trooper(rng, ranks)
@@ -687,10 +765,11 @@ def paycheck(rng, lvl):
         job, lo, hi = rng.choice(_CIV_JOBS)
         T = person(rng)
         P = rng.choice([26, 26, 24, 52])
-    stepc = 25 if P == 52 else 50
-    c = Q(rng.choice(range(lo // P // stepc * stepc, hi // P + 1, stepc)))
+    # paycheck sizes chosen so the classic wrong divisions also come out to whole cents
+    stepc = 325 if (P == 24 and rng.random() < 0.6) else (150 if P in (26, 52) else 50)
+    c = Q(rng.choice(range(-(-lo // P // stepc) * stepc, hi // P + 1, stepc) or [0]))
     S = c * P
-    need(lo <= S <= hi)
+    need(c > 0 and lo <= S <= hi)
     m1 = {26: m("52 \\div 2 = 26"), 24: m("12 \\times 2 = 24"), 52: ""}[P]
     count_step = _FREQ_STEP[P].format(m1=m1)
     div_step = f"Divide the yearly pay by the number of paychecks: {m(f'{money(S)} \\div {P} = {money(c)}')}."
@@ -700,17 +779,20 @@ def paycheck(rng, lvl):
     else:
         intro = (f"{T} works as {job} for a salary of {money(S)} a year and is paid "
                  f"{rng.choice(_FREQ[P])}.")
-    wrong_base = [(S / 12, "divides by 12, which gives one month's pay"),
-                  (S / 52, "divides by 52, the number of weeks, not the number of paychecks"),
-                  (S / 24, "uses 24 paychecks, but every two weeks gives 26 paychecks a year"),
-                  (S / 26, "uses 26 paychecks, but twice a month gives 24 paychecks a year"),
-                  (S / 26 if P == 52 else S / 2, None)]
-    wrong_base = [w for w in wrong_base if not (Q(w[0]) * P == S)]
-    if P == 52:
-        wrong_base = [(S / 12, "divides by 12, which gives one month's pay"),
+    month = (S / 12, "divides by 12, which gives one month's pay")
+    if P == 26:
+        wrong_base = [(S / 24, "uses 24 paychecks, but every two weeks gives 26 paychecks a year"),
+                      month,
+                      (S / 52, "divides by 52, the number of weeks, not the number of paychecks")]
+    elif P == 24:
+        wrong_base = [(S / 26, "uses 26 paychecks, but twice a month gives 24 paychecks a year"),
+                      month,
+                      (S / 52, "divides by 52, the number of weeks, not the number of paychecks")]
+    else:
+        wrong_base = [month,
                       (S / 26, "divides by 26, but weekly pay means 52 paychecks"),
                       (S / 24, "divides by 24, but weekly pay means 52 paychecks")]
-    if lvl == 2 or (not mil and lvl == 3 and False):
+    if lvl == 2:
         stem = intro + " How much is each paycheck before taxes and other deductions?"
         return Problem(stem=stem, answer=c, fmt=money, section="AR", wrong=wrong_base,
                        steps=[count_step, div_step],
@@ -757,65 +839,79 @@ def paycheck(rng, lvl):
 # 9. budget shares (fractions of a paycheck)
 # --------------------------------------------------------------------------
 
-_FR1 = [R(1, 3), R(1, 4), R(1, 5), R(2, 5), R(3, 10), R(1, 6)]
+_RENT = [R(1, 4), R(1, 3), R(3, 10), R(2, 5)]
+_SAVE = [R(1, 10), R(1, 5), R(1, 4), R(1, 6)]
+_SMALL = [R(1, 6), R(1, 8), R(1, 10), R(1, 5)]
+_HOME = [R(1, 4), R(1, 3), R(1, 5)]
 
 
 @template("AR")
-def budget_share(rng, lvl):
+@_fill
+def budget_share(rng, lvl, part=None):
     mil = rng.random() < 0.4
     B = _trooper(rng) if mil else person(rng)
+    # (verb, phrase, noun for "the amount ...", realistic fractions of the whole pay)
     if mil:
         T = Q(rng.choice(range(1800, 3601, 60)))
         who = f"{B}'s take-home pay is {money(T)} a month."
-        uses = [("sends", "home to {his} family", "sent home"), ("puts", "into savings", "saved"),
-                ("pays", "toward a car loan", "paid on the car loan")]
+        uses = [("sends", "home to {his} family", "sent home", _HOME),
+                ("puts", "into savings", "saved", _SAVE),
+                ("pays", "toward a car loan", "paid on the car loan", _SMALL)]
     else:
         T = Q(rng.choice(range(1800, 4801, 60)))
         who = f"{B} takes home {money(T)} a month."
-        uses = [("spends", "on rent", "spent on rent"), ("puts", "into savings", "saved"),
-                ("spends", "on groceries", "spent on groceries"), ("pays", "toward a car loan", "paid on the car loan")]
-    f1 = rng.choice(_FR1)
-    (v1, w1, n1), (v2, w2, n2) = rng.sample(uses, 2)
+        uses = [("spends", "on rent", "spent on rent", _RENT),
+                ("puts", "into savings", "saved", _SAVE),
+                ("spends", "on groceries", "spent on groceries", _SMALL),
+                ("pays", "toward a car loan", "paid on the car loan", _SMALL)]
+    (v1, w1, n1, fs1), (v2, w2, n2, fs2) = rng.sample(uses, 2)
+    if lvl == 3 and not mil:
+        (v1, w1, n1, fs1) = uses[0]            # rent comes off the top first
+        (v2, w2, n2, fs2) = rng.choice(uses[1:])
     w1, w2 = w1.format(his=B.his), w2.format(his=B.his)
+    f1 = rng.choice(fs1)
     p1 = T * f1
     need(p1.is_integer)
     fr1 = m(frac_raw(f1))
     if lvl == 1:
-        ask_left = rng.random() < 0.5
-        stem = (who + f" {B.He} {v1} {fr1} of it {w1}. "
-                + (f"How much money is left each month?" if ask_left
-                   else f"How much does {B.he} {v1.rstrip('s')} {w1} each month?"))
-        stem = stem.replace("spend on", "spend on").replace("pay toward", "pay toward")
+        ask_left = rng.random() < 0.5 if part is None else bool(_pick(rng, [0, 1], part))
         left = T - p1
+        one = T / f1.q
+        find = (f"{fr1} of the pay: {m(f'{money(T)} \\div {f1.q} = {money(one)}')}"
+                + (f", and {m(f'{f1.p} \\times {money(one)} = {money(p1)}')}" if f1.p > 1 else ""))
         if ask_left:
+            stem = who + f" {B.He} {v1} {fr1} of it {w1}. How much of the month's pay is left?"
+            wrong = [(p1, f"is the amount {n1}, not the amount left")]
+            if f1.p > 1:
+                wrong.append((T - one, f"subtracts only {m(frac_raw(R(1, f1.q)))} of the pay"))
             return Problem(
-                stem=stem, answer=left, fmt=money, section="AR",
-                wrong=[(p1, f"is the amount {n1}, not the amount left"),
-                       (T - T / f1.q, f"subtracts only {m(frac_raw(R(1, f1.q)))} of the pay") if f1.p > 1 else (T - T / (f1.q + 1), None),
-                       (T * f1.q / (f1.q + f1.p) if (T * f1.q / (f1.q + f1.p)).is_integer else T - p1 / 2, None)],
-                steps=[f"Find the amount {n1}: {m(f'{frac_raw(f1)} \\times {money(T)} = {money(p1)}')}.",
+                stem=stem, answer=left, fmt=money, section="AR", wrong=wrong,
+                steps=[f"Find {find}. That is the amount {n1}.",
                        f"Subtract it from the pay: {m(f'{money(T)} - {money(p1)} = {money(left)}')}."],
                 tip=(f"Or: {m(f'1 - {frac_raw(f1)} = {frac_raw(1 - f1)}')} of the pay is left, and "
                      f"{m(f'{frac_raw(1 - f1)} \\times {money(T)} = {money(left)}')}."),
-                check=T * (1 - f1))
+                check=Fraction(int(T)) * (1 - Fraction(f1.p, f1.q)))
+        stem = who + f" {B.He} {v1} {fr1} of it {w1}. How much does {B.he} {v1.rstrip('s')} {w1} each month?"
+        wrong = [(T - p1, f"is the amount left over, not the amount {n1}")]
+        if f1.p > 1:
+            wrong.append((one, f"finds only {m(frac_raw(R(1, f1.q)))} of the pay and forgets to multiply by {f1.p}"))
+        steps = [f"\\emph{{Of}} means multiply: {m(f'{frac_raw(f1)} \\times {money(T)}')}. "
+                 f"To find {fr1} of an amount, divide by {f1.q}"
+                 + (f" and then multiply by {f1.p}." if f1.p > 1 else "."),
+                 f"{m(f'{money(T)} \\div {f1.q} = {money(one)}')}"
+                 + (f", and {m(f'{f1.p} \\times {money(one)} = {money(p1)}')}." if f1.p > 1 else ".")]
         return Problem(
-            stem=stem, answer=p1, fmt=money, section="AR",
-            wrong=[(T - p1, "is the amount left over, not the amount asked for"),
-                   (T / f1.q, f"finds only {m(frac_raw(R(1, f1.q)))} of the pay and forgets the numerator") if f1.p > 1
-                   else (T / (f1.q + 1), None),
-                   (T * f1.p / 10 if f1.q != 10 else T / 3, None)],
-            steps=[f"\\textit{{Of}} means multiply: {m(f'{frac_raw(f1)} \\times {money(T)}')}.",
-                   f"Divide by {f1.q}, then multiply by {f1.p}: {m(f'{money(T)} \\div {f1.q} = {money(T / f1.q)}')}"
-                   + (f", and {m(f'{f1.p} \\times {money(T / f1.q)} = {money(p1)}')}." if f1.p > 1 else ".")],
+            stem=stem, answer=p1, fmt=money, section="AR", wrong=wrong, steps=steps,
+            tip=(f"Check: {m(f'{f1.q} \\times {money(p1)} = {money(T)}')}." if f1.p == 1 else None),
             check=Fraction(int(T)) * Fraction(f1.p, f1.q))
     if lvl == 2:
-        f2 = rng.choice([R(1, 10), R(1, 5), R(1, 6), R(1, 8), R(1, 4), R(1, 12)])
-        need(f2 != f1 and f1 + f2 < R(3, 4))
+        f2 = rng.choice(fs2)
+        need(f1 != f2 and f1 + f2 < R(3, 4))
         p2 = T * f2
         need(p2.is_integer)
         left = T - p1 - p2
         fr2 = m(frac_raw(f2))
-        stem = (who + f" {B.He} {v1} {fr1} of it {w1} and {v2.rstrip('s') if False else v2} {fr2} of it {w2}. "
+        stem = (who + f" {B.He} {v1} {fr1} of it {w1} and {v2} {fr2} of it {w2}. "
                 f"How much is left each month for everything else?")
         bad = R(f1.p + f2.p, f1.q + f2.q)
         return Problem(
@@ -829,16 +925,16 @@ def budget_share(rng, lvl):
                    f"What is left: {m(f'{money(T)} - {money(p1)} - {money(p2)} = {money(left)}')}."],
             check=T * (1 - f1 - f2))
     # level 3: a fraction of what is left
-    f2 = rng.choice([R(1, 2), R(1, 3), R(1, 4), R(1, 5), R(2, 3), R(3, 4), R(2, 5)])
+    f2 = rng.choice(fs2 + [R(1, 3), R(1, 2)] if "sav" in n2 else fs2 + [R(1, 4)])
     rest1 = T - p1
     p2 = rest1 * f2
-    need(p2.is_integer and f1 != f2)
+    need(p2.is_integer and T * f2 != p2)
     left = rest1 - p2
     ask_left = rng.random() < 0.5
     fr2 = m(frac_raw(f2))
     stem = (who + f" {B.He} {v1} {fr1} of the pay {w1}, and then {v2} {fr2} of what is left {w2}. "
             + ("How much money remains after both?" if ask_left
-               else f"How much {'money ' if True else ''}does {B.he} {v2.rstrip('s')} {w2}?"))
+               else f"How much money does {B.he} {v2.rstrip('s')} {w2}?"))
     wrong_left = [(T - p1 - T * f2, f"takes {fr2} of the whole pay instead of {fr2} of what is left"),
                   (p2, f"is the amount {n2}, not the amount remaining"),
                   (rest1, f"stops after the amount {n1}"),
@@ -862,46 +958,69 @@ def budget_share(rng, lvl):
 # 10. splitting a bill with a tip
 # --------------------------------------------------------------------------
 
+_WORD = {2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 8: "Eight"}
+
+
 @template("AR")
-def split_bill(rng, lvl):
+@_fill
+def split_bill(rng, lvl, part=None):
     t = rng.choice([15, 18, 20])
-    v = rng.randrange(5)
+    v = _pick(rng, list(range(8)), part)
     if v == 0:
         n = rng.choice([3, 4, 5])
         Bl = Q(rng.choice(range(60, 181, 2))) + R(rng.choice([0, 0, 50]), 100)
         P = person(rng)
         stem = (f"After {P}'s graduation from basic training, {P.he} and {n - 1} family members go out to "
-                f"dinner. The bill is {money(Bl)}. They add a {pct(t)} tip and split the total evenly among "
+                f"dinner. The bill is {money(Bl)}. They add {_art_n(t)} {pct(t)} tip and split the total evenly among "
                 f"the {n} of them. How much does each person pay?")
         who = "person"
     elif v == 1:
         n = rng.choice([4, 5, 6, 8])
         Bl = Q(rng.choice(range(40, 101, 2)))
         stem = (f"A squad of {n} soldiers orders pizza for a movie night. The order costs {money(Bl)}, and "
-                f"they give the driver a {pct(t)} tip. If they split the cost evenly, how much does each "
+                f"they give the driver {_art_n(t)} {pct(t)} tip. If they split the cost evenly, how much does each "
                 f"soldier pay?")
         who = "soldier"
     elif v == 2:
         n = rng.choice([2, 3, 4])
         Bl = Q(rng.choice(range(30, 121, 2))) + R(rng.choice([0, 50]), 100)
-        stem = (f"{n} friends eat lunch together. The bill comes to {money(Bl)} before the tip. They leave a "
-                f"{pct(t)} tip and share the total equally. How much does each friend pay?").replace(
-            f"{n} friends", {2: "Two", 3: "Three", 4: "Four"}[n] + " friends")
+        stem = (f"{_WORD[n]} friends eat lunch together. The bill comes to {money(Bl)} before the tip. They "
+                f"leave {_art_n(t)} {pct(t)} tip and share the total equally. How much does each friend pay?")
         who = "friend"
     elif v == 3:
         n = rng.choice([4, 5, 6])
         Bl = Q(rng.choice(range(80, 201, 4)))
-        stem = (f"{ {4: 'Four', 5: 'Five', 6: 'Six'}[n] } coworkers celebrate a birthday at a restaurant. "
-                f"The food costs {money(Bl)}, and they add a {pct(t)} tip. If they divide the total cost "
+        stem = (f"{_WORD[n]} coworkers celebrate a birthday at a restaurant. "
+                f"The food costs {money(Bl)}, and they add {_art_n(t)} {pct(t)} tip. If they divide the total cost "
                 f"equally, what is each coworker's share?")
         who = "coworker"
+    elif v == 5:
+        n = rng.choice([3, 4, 5])
+        Bl = Q(rng.choice(range(90, 241, 5)))
+        stem = (f"On their first weekend pass, {n} Marines eat at a steakhouse. The check comes to "
+                f"{money(Bl)}, and they add {_art_n(t)} {pct(t)} tip. If they split the total evenly, how much does "
+                f"each Marine pay?")
+        who = "Marine"
+    elif v == 6:
+        n = rng.choice([2, 3, 4])
+        Bl = Q(rng.choice(range(30, 91, 2))) + R(rng.choice([0, 50]), 100)
+        stem = (f"{_WORD[n]} roommates order takeout. The food costs {money(Bl)}, and they add {_art_n(t)} {pct(t)} "
+                f"tip for the delivery driver. They split the total equally. What is each roommate's share?")
+        who = "roommate"
+    elif v == 7:
+        n = rng.choice([4, 5, 6])
+        Bl = Q(rng.choice(range(60, 161, 4)))
+        stem = (f"After a bowling league night, the {n} members of a team share a meal. The bill is "
+                f"{money(Bl)}, and they leave {_art_n(t)} {pct(t)} tip. If they split the total evenly, how much does "
+                f"each team member pay?")
+        who = "team member"
     else:
         n = rng.choice([3, 4, 5, 6])
         Bl = Q(rng.choice(range(60, 151, 2)))
-        stem = (f"After a long ruck march, {n} soldiers eat at a diner near the base. The bill is "
-                f"{money(Bl)}, and they leave a {pct(t)} tip. They split the total evenly. How much does "
-                f"each soldier pay?")
-        who = "soldier"
+        stem = (f"After a long hike, {n} friends eat at a diner near the trailhead. The bill is "
+                f"{money(Bl)}, and they leave {_art_n(t)} {pct(t)} tip. They split the total evenly. How much does "
+                f"each friend pay?")
+        who = "friend"
     tip = Bl * t / 100
     total = Bl + tip
     each = total / n
@@ -939,12 +1058,13 @@ _GOALS = [
 
 
 @template("AR")
-def savings_weeks(rng, lvl):
-    thing, glo, ghi, gst, slo, shi, wlo, whi, mil = rng.choice(_GOALS)
+@_fill
+def savings_weeks(rng, lvl, part=None):
+    thing, glo, ghi, gst, slo, shi, wlo, whi, mil = _pick(rng, _GOALS, part)
     B = _trooper(rng) if mil else person(rng)
     G = rng.choice(range(glo, ghi + 1, gst))
     S = rng.choice(range(slo, shi + 1, 10 if shi <= 500 else 50))
-    w = rng.choice(range(wlo, whi + 1, 5))
+    w = rng.choice(range(wlo, whi + 1, 25 if wlo >= 75 else 5))
     rem = G - S
     need(rem > 0 and rem % w != 0)
     q = rem // w
@@ -978,19 +1098,26 @@ def savings_weeks(rng, lvl):
 _BUY1 = [
     # (stem with {B} {M} {C}, item plural, budget range, step, cost choices)
     ("A squad leader has {M} to buy sports drinks for a long day on the range. Each bottle costs {C}. "
-     "What is the greatest number of bottles the squad leader can buy?", "bottles", 25, 60, 5,
+     "What is the greatest number of bottles the squad leader can buy?", "bottles", 25, 60, 1,
      [R(5, 4), R(3, 2), R(7, 4), R(9, 4), R(5, 2)]),
     ("{B} has {M} on a transit card. Each bus ride costs {C}. How many rides can {B.he} pay for?",
-     "rides", 20, 40, 5, [R(9, 4), R(5, 2), R(11, 4)]),
+     "rides", 20, 45, 1, [R(9, 4), R(5, 2), R(11, 4)]),
     ("A coach has {M} to spend on new soccer balls that cost {C} each. How many soccer balls can the "
-     "coach buy?", "soccer balls", 100, 250, 10, [Q(14), Q(16), Q(18), Q(22), Q(24)]),
+     "coach buy?", "soccer balls", 100, 250, 5, [Q(14), Q(16), Q(18), Q(22), Q(24)]),
     ("A unit's morale fund has {M} to spend on large pizzas for a platoon party. Each pizza costs {C}. "
-     "What is the greatest number of pizzas the unit can buy?", "pizzas", 100, 300, 10,
+     "What is the greatest number of pizzas the unit can buy?", "pizzas", 100, 300, 5,
      [Q(12), Q(13), Q(14), Q(15), Q(16), Q(17)]),
     ("A teacher has {M} to buy calculators for her classroom. Each calculator costs {C}. How many "
-     "calculators can she buy?", "calculators", 100, 300, 10, [Q(12), Q(14), Q(16), Q(18)]),
-    ("{B} has {M} to spend on paperback books for a long deployment. Each book costs {C}. How many books "
-     "can {B.he} buy?", "books", 40, 90, 5, [Q(7), Q(8), Q(9), Q(11), Q(12)]),
+     "calculators can she buy?", "calculators", 100, 300, 5, [Q(12), Q(14), Q(16), Q(18)]),
+    ("{B} has {M} to spend on paperback books for a long summer trip. Each book costs {C}. How many books "
+     "can {B.he} buy?", "books", 40, 90, 1, [Q(7), Q(8), Q(9), Q(11), Q(12)]),
+    ("A recruiter has {M} to spend on T-shirts to give away at a high school career fair. Each T-shirt "
+     "costs {C}. How many T-shirts can the recruiter buy?", "T-shirts", 150, 400, 5,
+     [Q(6), Q(7), Q(8), Q(9), R(13, 2), R(15, 2)]),
+    ("A softball coach has {M} to buy caps for the team. Each cap costs {C}. How many caps can the coach "
+     "buy?", "caps", 60, 150, 1, [Q(6), Q(7), R(13, 2), R(15, 2), R(17, 2)]),
+    ("A school club has {M} to spend on movie tickets for a field trip. Each ticket costs {C}. How many "
+     "tickets can the club buy?", "tickets", 80, 200, 5, [Q(9), Q(11), Q(12), R(19, 2), R(21, 2), R(25, 2)]),
 ]
 
 _BUY2 = [
@@ -1014,10 +1141,11 @@ _BUY2 = [
 
 
 @template("AR")
-def items_budget(rng, lvl):
+@_fill
+def items_budget(rng, lvl, part=None):
     B = person(rng)
     if lvl == 1:
-        st, pl, lo, hi, step, costs = rng.choice(_BUY1)
+        st, pl, lo, hi, step, costs = _pick(rng, _BUY1, part)
         M = Q(rng.choice(range(lo, hi + 1, step)))
         C = rng.choice(costs)
         F = Q(0)
@@ -1043,11 +1171,14 @@ def items_budget(rng, lvl):
         f"Round \\emph{{down}}: {k} {pl}.",
     ]
     wrong = [(k + 1, f"rounds up, but {k + 1} {pl} would cost {money((k + 1) * C)}")]
+    if not C.is_integer and int(avail // C.ceiling()) < k:
+        wrong.append((int(avail // C.ceiling()), f"rounds the price up to {money(C.ceiling())} before dividing"))
     if lvl > 1:
         wrong += [(int(M // C), f"forgets to subtract the {money(F)} first"),
                   (int((M + F) // C), f"adds the {money(F)} instead of subtracting it")]
-    else:
-        wrong += [(k - 1, None)]
+        if "shipping" in st:
+            wrong.append((int(M // (C + F)), f"adds the {money(F)} shipping to the cost of each of the {pl} "
+                                             f"instead of paying it once"))
     return Problem(
         stem=stem, answer=Q(k), fmt=num, section="AR", wrong=wrong, steps=steps,
         tip=f"Left over: {m(f'{money(avail)} - {money(k * C)} = {money(left)}')}, not enough for one more.",
@@ -1060,30 +1191,30 @@ def items_budget(rng, lvl):
 # --------------------------------------------------------------------------
 
 _BULK = [
-    # (product, unit, unit_pl, pkg, ks, single lo, single hi (cents), who, military)
-    ("sports drinks", "bottle", "bottles", "case", [12, 24], 99, 149, "At the base commissary", True),
-    ("bottled water", "bottle", "bottles", "case", [24, 32], 50, 100, "At a grocery store", False),
-    ("printer paper", "ream", "reams", "box", [5, 8, 10], 500, 900, "At an office-supply store", False),
-    ("motor oil", "quart", "quarts", "case", [6, 12], 600, 1000, "At the motor pool's parts supplier", True),
-    ("energy bars", "bar", "bars", "box", [12, 18, 24], 125, 250, "At the base exchange", True),
-    ("paper towels", "roll", "rolls", "pack", [6, 12], 150, 300, "At a warehouse store", False),
+    # (product, unit, unit_pl, pkg, case sizes, single prices (cents), where, military)
+    ("sports drinks cost", "bottle", "bottles", "case", [12, 24], [99, 119, 125, 129, 149],
+     "At the base commissary", True),
+    ("bottled water costs", "bottle", "bottles", "case", [24, 32], [50, 75, 89, 99], "At a grocery store", False),
+    ("printer paper costs", "ream", "reams", "box", [5, 8, 10], [599, 649, 699, 799, 899],
+     "At an office-supply store", False),
+    ("motor oil costs", "quart", "quarts", "case", [6, 12], [699, 749, 799, 899, 999],
+     "At the motor pool's parts supplier", True),
+    ("energy bars cost", "bar", "bars", "box", [12, 18, 24], [129, 149, 175, 199, 225], "At a sporting-goods store", False),
+    ("paper towels cost", "roll", "rolls", "pack", [6, 12], [149, 179, 199, 229, 249], "At a warehouse store", False),
 ]
 
 
 @template("AR")
-def bulk_savings(rng, lvl):
-    product, u_, upl, pkg, ks, slo, shi, where, mil = rng.choice(_BULK)
+@_fill
+def bulk_savings(rng, lvl, part=None):
+    product, u_, upl, pkg, ks, singles, where, mil = rng.choice(_BULK)
     k = rng.choice(ks)
-    s = rng.choice(range(slo, shi + 1, 5 if shi < 300 else 25))
-    cut = rng.choice(range(10, 41, 5))            # percent saved per unit in the case
-    uc = s * (100 - cut)
-    need(uc % 100 == 0)
-    uc //= 100
+    s = rng.choice(singles)
+    uc = rng.randint(s * 60 // 100, s * 90 // 100)      # price per unit inside the case, in cents
     S1, C = R(s, 100), R(uc * k, 100)
-    need(C.is_integer or (C * 4).is_integer)
     if lvl == 2:
         sav = k * S1 - C
-        stem = (f"{where}, {product} costs {money(S1)} per {u_}, or {money(C)} for a {pkg} of {k}. How much "
+        stem = (f"{where}, {product} {money(S1)} per {u_}, or {money(C)} for a {pkg} of {k}. How much "
                 f"is saved by buying a {pkg} of {k} instead of {k} single {upl}?")
         return Problem(
             stem=stem, answer=sav, fmt=money, section="AR",
@@ -1100,10 +1231,9 @@ def bulk_savings(rng, lvl):
     need(cost < (j + 1) * C)
     buyer = (choose(rng, "A supply sergeant", "A unit's supply clerk") if mil
              else choose(rng, "A youth-league coach", "An office manager", "A camp director"))
-    stem = (f"{where}, {product} costs {money(S1)} per {u_}, or {money(C)} for a {pkg} of {k}. "
-            f"{buyer} needs {N} {upl}, so {'she' if 'manager' in buyer or 'director' in buyer else 'he'} "
-            f"buys as many full {pkg}s as possible and the rest as single {upl}. What is the total cost?")
-    stem = stem.replace("A supply sergeant needs", "A supply sergeant needs")
+    stem = (f"{where}, {product} {money(S1)} per {u_}, or {money(C)} for a {pkg} of {k}. "
+            f"{buyer} needs {N} {upl}. The plan is to buy as many full {pkg}s as possible and the rest "
+            f"as single {upl}. What is the total cost?")
     wrong = [(N * S1, f"buys every {u_} singly"),
              ((j + 1) * C, f"buys one more full {pkg} instead of {r} single {upl}"),
              (j * C, f"forgets the {r} single {upl}")]
@@ -1125,15 +1255,16 @@ def bulk_savings(rng, lvl):
 # --------------------------------------------------------------------------
 
 @template("AR")
-def hourly_vs_salary(rng, lvl):
+@_fill
+def hourly_vs_salary(rng, lvl, part=None):
     r = rng.choice([Q(16), Q(17), Q(18), Q(19), Q(20), Q(21), Q(22), Q(23), Q(24),
                     R(33, 2), R(37, 2), R(39, 2), R(41, 2), R(45, 2)])
     A = r * 2080
-    S = (A / 500).floor() * 500 + rng.choice([-1500, -1000, -500, 500, 1000, 1500, 2000])
-    S = Q(S)
+    # the salary works out to a whole number of quarters per hour more or less than Job A
+    dh = rng.choice([R(1, 4), R(1, 2), R(3, 4), Q(1), R(5, 4), R(3, 2), Q(2)]) * rng.choice([1, -1])
+    S = (r + dh) * 2080
     diff = abs(A - S)
-    need(diff >= 300)
-    mil = rng.random() < 0.5
+    mil = rng.random() < 0.5 if part is None else bool(_pick(rng, [0, 1], part))
     if mil:
         T = _trooper(rng, ["Sergeant", "Specialist", "Corporal", "Staff Sergeant"])
         intro = (f"{T} is leaving the Army after four years and has two civilian job offers.")
@@ -1149,7 +1280,8 @@ def hourly_vs_salary(rng, lvl):
         wrong=[(A, "is Job A's yearly pay, not the difference"),
                (abs(r * 40 * 48 - S), "assumes 4 weeks in every month (48 weeks), but a year has 52 weeks"),
                (abs(r * 2000 - S), "uses 2,000 hours a year instead of 2,080"),
-               (abs(r * 40 * 12 * 4 + r * 40 - S), None)],
+               (abs(dh) * 40, "is the difference for one week, not for a year"),
+               (abs(dh), "is the difference in pay per hour, not per year")],
         steps=[f"Hours in a year: {m('40 \\times 52 = 2{,}080')} hours.",
                f"Job A per year: {m(f'2{{,}}080 \\times {money(r)} = {money(A)}')}."
                + (f" (Think {m(f'2{{,}}080 \\times {int_raw(r.floor())} = {money(2080 * r.floor())}')} plus "
@@ -1164,28 +1296,28 @@ def hourly_vs_salary(rng, lvl):
 
 PLAN = [
     # level 1 (12)
-    (change_due, 1, 3),
-    (sale_price, 1, 3),
-    (sales_tax, 1, 2),
-    (items_budget, 1, 2),
-    (budget_share, 1, 2),
+    *[(v, 1, 1) for v in _variants(change_due, 3)],
+    *[(v, 1, 1) for v in _variants(sale_price, 3)],
+    *[(v, 1, 1) for v in _variants(sales_tax, 2)],
+    *[(v, 1, 1) for v in _variants(items_budget, 2)],
+    *[(v, 1, 1) for v in _variants(budget_share, 2)],
     # level 2 (16)
-    (change_due, 2, 2),
-    (unit_price, 2, 2),
+    *[(v, 2, 1) for v in _variants(change_due, 2)],
+    *[(v, 2, 1) for v in _variants(unit_price, 2)],
     (sales_tax, 2, 1),
-    (overtime, 2, 2),
-    (paycheck, 2, 2),
-    (split_bill, 2, 2),
-    (savings_weeks, 2, 2),
+    *[(v, 2, 1) for v in _variants(overtime, 2)],
+    *[(v, 2, 1) for v in _variants(paycheck, 2)],
+    *[(v, 2, 1) for v in _variants(split_bill, 2)],
+    *[(v, 2, 1) for v in _variants(savings_weeks, 2)],
     (budget_share, 2, 1),
     (items_budget, 2, 1),
     (bulk_savings, 2, 1),
     # level 3 (12)
-    (discount_tax, 3, 3),
-    (overtime, 3, 2),
-    (best_buy, 3, 2),
+    *[(v, 3, 1) for v in _variants(discount_tax, 3)],
+    *[(v, 3, 1) for v in _variants(overtime, 2)],
+    *[(v, 3, 1) for v in _variants(best_buy, 2)],
     (budget_share, 3, 1),
     (paycheck, 3, 1),
-    (hourly_vs_salary, 3, 2),
+    *[(v, 3, 1) for v in _variants(hourly_vs_salary, 2)],
     (bulk_savings, 3, 1),
 ]

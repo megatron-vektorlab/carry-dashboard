@@ -335,7 +335,7 @@ def _default_near(answer, rng: random.Random):
         st = _nice_step(A)
         for k in (1, 2, 3, 4, -1, -2, -3, -4):
             out.append(A + k * st)
-        out += [A * 2, A / 2, A * 10, A / 10]
+        out += [A * 2, A / 2]
     if A > 0:
         out = [v for v in out if Q(v) > 0]
     rng.shuffle(out)
