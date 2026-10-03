@@ -185,7 +185,10 @@ def pct(v) -> str:
 
 
 def expr(v) -> str:
-    return m(latex(v))
+    V = Q(v)
+    if V.is_number and V.is_integer:
+        return m(int_raw(V))
+    return m(latex(V))
 
 
 def money(v) -> str:

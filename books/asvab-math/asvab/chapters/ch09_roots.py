@@ -336,7 +336,7 @@ def estimate_root(rng, lvl):
         return Problem(
             stem=choose(rng, f"{m(f'\\sqrt{{{N}}}')} is between which two consecutive whole numbers?",
                         f"Between which two consecutive whole numbers does {m(f'\\sqrt{{{N}}}')} lie?",
-                        f"A square {rng.choice(['patio', 'garden', 'rug', 'room', 'tarp'])} has an area of "
+                        f"A square {rng.choice(['patio', 'rug', 'room', 'tarp'])} has an area of "
                         f"{num(N)} square feet. Its side length, in feet, is between which two consecutive whole numbers?"),
             answer=Q(k),
             fmt=lambda v: between(Q(v)),
@@ -353,7 +353,7 @@ def estimate_root(rng, lvl):
     return Problem(
         stem=choose(rng, f"Which whole number is closest to {m(f'\\sqrt{{{N}}}')}?",
                     f"To the nearest whole number, what is {m(f'\\sqrt{{{N}}}')}?",
-                    f"A square {rng.choice(['garden', 'patio', 'helipad', 'deck', 'storage pad'])} has an area of "
+                    f"A square {rng.choice(['garden', 'helipad', 'deck', 'storage pad'])} has an area of "
                     f"{num(N)} square feet. To the nearest foot, how long is each side?"),
         answer=ans,
         fmt=num,
@@ -451,7 +451,6 @@ def root_fraction_decimal(rng, lvl):
             (sq / 2, "divides by 2 instead of taking the square root"),
             (d * 10, "puts the decimal point too far to the right"),
             (d + R(1, 10 ** places), None),
-            (d * 2, "multiplies by 2 instead of taking the square root"),
         ],
         steps=[
             f"Write the decimal as a fraction: {m(f'{dec_raw(sq)} = {F(int_raw(sq * 10 ** sq_places), int_raw(10 ** sq_places))}')}.",

@@ -821,7 +821,8 @@ def sci_multiply(rng, lvl):
         tex = f"({_sci_raw(a, e1)})({_sci_raw(b, e2)})"
         wrong = [
             (prod * sp.Integer(10) ** (e1 * e2), "multiplies the exponents instead of adding them"),
-            ((a + b) * sp.Integer(10) ** (e1 + e2), "adds the first factors instead of multiplying them"),
+            ((a + b) * sp.Integer(10) ** (e1 + e2) if a + b < 10 else None,
+             "adds the first factors instead of multiplying them"),
         ]
         if big:
             wrong.insert(0, (ans / 10, f"rewrites {m(dec_raw(prod))} as {m(dec_raw(prod / 10))} but forgets to add 1 to the exponent"))
@@ -841,7 +842,7 @@ def sci_multiply(rng, lvl):
                         f"Multiply: {m(tex)}. Give the answer in scientific notation."),
             answer=ans,
             fmt=_sci,
-            wrong=wrong,
+            wrong=[w for w in wrong if w[0] is not None],
             steps=steps,
             near=_sci_near(ans),
             check=Fraction(int(a.p), int(a.q)) * Fraction(int(b.p), int(b.q)) * Fraction(10) ** (e1 + e2),
@@ -889,7 +890,8 @@ def sci_multiply(rng, lvl):
         wrong = [
             (ans / 10, f"rewrites {m(dec_raw(prod))} as {m(dec_raw(prod / 10))} but forgets to add 1 to the exponent"),
             (prod / 10 * sp.Integer(10) ** (e2 - e1 + 1), "ignores the negative sign on the first exponent"),
-            ((a + b) * sp.Integer(10) ** (e1 + e2), "adds the first factors instead of multiplying them"),
+            ((a + b) * sp.Integer(10) ** (e1 + e2) if a + b < 10 else None,
+             "adds the first factors instead of multiplying them"),
         ]
         steps = [
             f"Multiply the first factors: {m(f'{dec_raw(a)} \\times {dec_raw(b)} = {dec_raw(prod)}')}.",
@@ -904,7 +906,7 @@ def sci_multiply(rng, lvl):
                     f"Simplify {m(tex)}. Give the answer in scientific notation."),
         answer=ans,
         fmt=_sci,
-        wrong=wrong,
+        wrong=[w for w in wrong if w[0] is not None],
         steps=steps,
         near=_sci_near(ans),
         check=check,

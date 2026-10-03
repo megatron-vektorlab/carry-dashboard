@@ -240,7 +240,7 @@ def evaluate_expr(rng, lvl):
             parts = [int(_term_val(c, f, vals)) for c, f in terms]
             steps = [
                 f"Substitute {vals_t}: {m(sub_txt)}.",
-                f"{'Find the power, then multiply' if shape == 'x2+b' else 'Multiply first'}: {m(_signed(parts))}.",
+                f"{'Find the power first' if shape == 'x2+b' else 'Multiply first'}: {m(_signed(parts))}.",
                 f"Then add or subtract: {m(f'{_signed(parts)} = {int_raw(ans)}')}.",
             ]
         return Problem(
@@ -374,8 +374,14 @@ def combine_like(rng, lvl):
         if tot != 0:
             wrongs.append((_lin([(tot, u + w)]), _sym([(tot, u + w)]),
                            f"combines unlike terms; {m(u)}-terms and {m(w)}-terms cannot be added together"))
-        wrongs.append((_lin([(p1 + q1, u), (p2 + q2, w)]), _sym([(p1 + q1, u), (p2 + q2, w)]),
-                       "adds terms by their position instead of by their variable"))
+        if abs(p2) == 1:
+            wrongs.append((_lin([(p1, u), (q1 + q2, w)]), _sym([(p1, u), (q1 + q2, w)]),
+                           f"treats {m(_lin([(p2, u)]))} as 0; a variable by itself has coefficient 1"))
+        if abs(q1) == 1 or abs(q2) == 1:
+            qq = q2 if abs(q1) == 1 else q1
+            one = q1 if abs(q1) == 1 else q2
+            wrongs.append((_lin([(p1 + p2, u), (qq, w)]), _sym([(p1 + p2, u), (qq, w)]),
+                           f"treats {m(_lin([(one, w)]))} as 0; a variable by itself has coefficient 1"))
         wrongs.append((_lin([(p1 + p2 + 1, u), (q1 + q2, w)]), _sym([(p1 + p2 + 1, u), (q1 + q2, w)]), None))
         steps = [
             f"Group the like terms: {m(u)}-terms {m(_lin([(p1, u), (p2, u)]))} and {m(w)}-terms {m(_lin([(q1, w), (q2, w)]))}.",
@@ -484,8 +490,7 @@ def distribute(rng, lvl):
             steps = [
                 f"Multiplication comes before subtraction, so distribute {m(-d)} first: "
                 f"{m(f'-{d}({p2}) = {_lin([(-d * e, "x"), (-d * f, "")])}')}.",
-                f"Now the expression is {m(f'{k} ' + _lin([(-d * e, 'x'), (-d * f, '')]).replace('-', '- ', 1) if True else '')}"
-                .replace(f"{k} - ", f"{k} - ") + ".",
+                f"Now the expression is {m(f'{k} ' + _lin([(1, 'Z'), (-d * e, 'x'), (-d * f, '')])[1:].lstrip())}.",
                 f"Combine the constants: {m(f'{_signed([k, -d * f])} = {int_raw(K1)}')}. The result is "
                 f"{m(_lin(ans_terms))}.",
             ]
@@ -557,137 +562,161 @@ def distribute(rng, lvl):
     )
 
 
-# phrase bank: (words with {k}/{j}, answer tex, answer sympy-able, semantic, [(wrong tex, sympy, why)])
-def _phrases(k, j, lvl):
+# phrase bank: (words, answer tex, answer sympy, semantic, explanation, [(wrong tex, sympy, why)])
+def _phrases(k, j, lvl, fam):
     n = sp.Symbol("n")
-    if lvl == 1:
+    q = "``"
+    e = "''"
+    if lvl == 1 and fam == 0:
         return [
             (f"{k} more than a number", f"n + {k}", n + k, lambda v: v + k,
+             f"{q}More than{e} means add: start with the number and add {k}.",
              [(f"{k}n", k * n, "multiplies instead of adding"),
               (f"n - {k}", n - k, "subtracts instead of adding"),
               (f"{k} - n", k - n, None)]),
             (f"{k} less than a number", f"n - {k}", n - k, lambda v: v - k,
+             f"{q}{k} less than a number{e} means start with the number and take {k} away. "
+             f"The order is the reverse of the words.",
              [(f"{k} - n", k - n, "reverses the order; \\emph{less than} means subtract from the number"),
               (f"n + {k}", n + k, "adds instead of subtracting"),
               (f"{k}n", k * n, None)]),
             (f"a number decreased by {k}", f"n - {k}", n - k, lambda v: v - k,
+             f"{q}Decreased by{e} means subtract, in the order written: the number minus {k}.",
              [(f"{k} - n", k - n, "reverses the order of the subtraction"),
               (f"n + {k}", n + k, "adds instead of subtracting"),
               (f"{k}n", k * n, None)]),
+            (f"a number increased by {k}", f"n + {k}", n + k, lambda v: v + k,
+             f"{q}Increased by{e} means add {k} to the number.",
+             [(f"{k}n", k * n, "multiplies instead of adding"),
+              (f"n - {k}", n - k, "subtracts instead of adding"),
+              (f"{k} - n", k - n, None)]),
+        ]
+    if lvl == 1:
+        return [
             (f"the product of {k} and a number", f"{k}n", k * n, lambda v: k * v,
+             f"{q}Product{e} means multiply: {m(f'{k} \\times n')}, written {m(f'{k}n')}.",
              [(f"n + {k}", n + k, "adds instead of multiplying"),
               (f"\\frac{{n}}{{{k}}}", n / k, "divides instead of multiplying"),
               (f"n - {k}", n - k, None)]),
             (f"the quotient of a number and {k}", f"\\frac{{n}}{{{k}}}", n / k, lambda v: Fraction(v, k),
+             f"{q}Quotient{e} means divide, in the order written: the number divided by {k}.",
              [(f"\\frac{{{k}}}{{n}}", k / n, "reverses the order of the division"),
               (f"{k}n", k * n, "multiplies instead of dividing"),
               (f"n - {k}", n - k, None)]),
             (f"{k} times a number, increased by {j}", f"{k}n + {j}", k * n + j, lambda v: k * v + j,
+             f"{q}{k} times a number{e} is {m(f'{k}n')}; {q}increased by {j}{e} adds {j} to that.",
              [(f"{k}(n + {j})", k * (n + j), "adds before multiplying"),
               (f"{j}n + {k}", j * n + k, "swaps the two numbers"),
               (f"{k + j}n", (k + j) * n, None)]),
+            (f"a number divided by {k}, decreased by {j}", f"\\frac{{n}}{{{k}}} - {j}", n / k - j,
+             lambda v: Fraction(v, k) - j,
+             f"{q}A number divided by {k}{e} is {m(f'\\frac{{n}}{{{k}}}')}; {q}decreased by {j}{e} subtracts {j} from that.",
+             [(f"\\frac{{n - {j}}}{{{k}}}", (n - j) / k, "subtracts before dividing"),
+              (f"\\frac{{{k}}}{{n}} - {j}", k / n - j, "reverses the order of the division"),
+              (f"{k}n - {j}", k * n - j, "multiplies instead of dividing")]),
+        ]
+    if fam == 0:
+        return [
+            (f"{j} less than {k} times a number", f"{k}n - {j}", k * n - j, lambda v: k * v - j,
+             f"{q}{k} times a number{e} is {m(f'{k}n')}. {q}{j} less than{e} that means take {j} away from "
+             f"{m(f'{k}n')}, so {m(f'{k}n')} comes first.",
+             [(f"{j} - {k}n", j - k * n, "reverses the order; \\emph{less than} means subtract from the other amount"),
+              (f"{k}(n - {j})", k * (n - j), "subtracts before multiplying"),
+              (f"{j}n - {k}", j * n - k, "swaps the two numbers")]),
+            (f"{k} times the difference of a number and {j}", f"{k}(n - {j})", k * (n - j), lambda v: k * (v - j),
+             f"{q}The difference of a number and {j}{e} is {m(f'n - {j}')}. It is one quantity, so keep it in "
+             f"parentheses and multiply it by {k}.",
+             [(f"{k}n - {j}", k * n - j, "multiplies only the number, not the whole difference"),
+              (f"{k}({j} - n)", k * (j - n), "reverses the order of the difference"),
+              (f"{k} - n - {j}", k - n - j, None)]),
+            (f"{j} subtracted from twice a number", f"2n - {j}", 2 * n - j, lambda v: 2 * v - j,
+             f"{q}Twice a number{e} is {m('2n')}. {q}{j} subtracted from{e} it means take {j} away from "
+             f"{m('2n')}, so {m('2n')} comes first.",
+             [(f"{j} - 2n", j - 2 * n, "reverses the order; \\emph{subtracted from} means take it away from the other amount"),
+              (f"2(n - {j})", 2 * (n - j), "subtracts before doubling"),
+              (f"n^2 - {j}", n ** 2 - j, "reads \\emph{twice} as squaring")]),
+            (f"the difference of {k} times a number and {j}", f"{k}n - {j}", k * n - j, lambda v: k * v - j,
+             f"The two amounts are {q}{k} times a number{e} ({m(f'{k}n')}) and {j}; a difference subtracts "
+             f"them in the order written.",
+             [(f"{k}(n - {j})", k * (n - j), "multiplies the whole difference by the number; only the number is multiplied"),
+              (f"{j} - {k}n", j - k * n, "subtracts in the wrong order"),
+              (f"{j}n - {k}", j * n - k, "attaches the variable to the wrong number")]),
         ]
     return [
-        (f"{j} less than {k} times a number", f"{k}n - {j}", k * n - j, lambda v: k * v - j,
-         [(f"{j} - {k}n", j - k * n, "reverses the order; \\emph{less than} means subtract from the other amount"),
-          (f"{k}(n - {j})", k * (n - j), "subtracts before multiplying"),
-          (f"{j}n - {k}", j * n - k, "swaps the two numbers")]),
         (f"{k} times the sum of a number and {j}", f"{k}(n + {j})", k * (n + j), lambda v: k * (v + j),
+         f"{q}The sum of a number and {j}{e} is {m(f'n + {j}')}. It is one quantity, so keep it in "
+         f"parentheses and multiply it by {k}.",
          [(f"{k}n + {j}", k * n + j, "multiplies only the number, not the whole sum"),
           (f"{k} + n + {j}", k + n + j, "adds instead of multiplying"),
           (f"{k}n + {j}n", k * n + j * n, None)]),
         (f"the sum of {k} times a number and {j}", f"{k}n + {j}", k * n + j, lambda v: k * v + j,
+         f"The two amounts being added are {q}{k} times a number{e} ({m(f'{k}n')}) and {j}.",
          [(f"{k}(n + {j})", k * (n + j), "multiplies the whole sum by the number; only the number is multiplied"),
           (f"{k} + {j}n", k + j * n, "attaches the variable to the wrong number"),
           (f"{k + j}n", (k + j) * n, None)]),
-        (f"{k} times the difference of a number and {j}", f"{k}(n - {j})", k * (n - j), lambda v: k * (v - j),
-         [(f"{k}n - {j}", k * n - j, "multiplies only the number, not the whole difference"),
-          (f"{k}({j} - n)", k * (j - n), "reverses the order of the difference"),
-          (f"{k} - n - {j}", k - n - j, None)]),
-        (f"{j} subtracted from twice a number", f"2n - {j}", 2 * n - j, lambda v: 2 * v - j,
-         [(f"{j} - 2n", j - 2 * n, "reverses the order; \\emph{subtracted from} means take it away from the other amount"),
-          (f"2(n - {j})", 2 * (n - j), "subtracts before doubling"),
-          (f"n^2 - {j}", n ** 2 - j, "reads \\emph{twice} as squaring")]),
         (f"half of a number, decreased by {j}", f"\\frac{{n}}{{2}} - {j}", n / 2 - j, lambda v: Fraction(v, 2) - j,
+         f"{q}Half of a number{e} is {m('\\frac{n}{2}')}; {q}decreased by {j}{e} subtracts {j} from that.",
          [(f"\\frac{{n - {j}}}{{2}}", (n - j) / 2, "subtracts before taking half"),
           (f"2n - {j}", 2 * n - j, "doubles instead of halving"),
           (f"{j} - \\frac{{n}}{{2}}", j - n / 2, "reverses the order of the subtraction")]),
         (f"the square of a number, increased by {j}", f"n^2 + {j}", n ** 2 + j, lambda v: v * v + j,
+         f"{q}The square of a number{e} is {m('n^2')}; {q}increased by {j}{e} adds {j} to that.",
          [(f"(n + {j})^2", (n + j) ** 2, "adds before squaring"),
           (f"2n + {j}", 2 * n + j, "doubles the number instead of squaring it"),
           (f"{j}n^2", j * n ** 2, None)]),
     ]
 
 
-@template("MK")
-def translate(rng, lvl):
-    k = rng.randint(3, 12)
+def _translate(rng, lvl, fam):
+    k = rng.randint(2, 25) if (lvl == 1 and fam == 0) else rng.randint(3, 12)
     j = rng.randint(2, 15)
     need(k != j)
-    bank = _phrases(k, j, lvl)
-    words, ans_t, ans_s, sem, wr = rng.choice(bank)
+    words, ans_t, ans_s, sem, explain, wr = rng.choice(_phrases(k, j, lvl, fam))
     n = sp.Symbol("n")
-    wrong = _choices(ans_s, wr + [(f"{k}n + {j + 1}" if lvl == 2 else f"n + {k + 1}",
-                                   (k * n + j + 1) if lvl == 2 else n + k + 1, None)])
-    lead = "Five less than" if False else words[0].upper() + words[1:]
+    filler = (f"{k}n + {j + 1}", k * n + j + 1) if lvl == 2 else (f"n + {k + 1}", n + k + 1)
     return Problem(
         stem=choose(rng, f"Which expression means ``{words}''?",
                     f"If {m('n')} stands for a number, which expression represents ``{words}''?",
                     f"Translate into an expression: ``{words}.''"),
         answer=m(ans_t),
         fmt=lambda s: s,
-        wrong=wrong,
-        steps=_translate_steps(words, ans_t, k, j),
+        wrong=_choices(ans_s, wr + [(filler[0], filler[1], None)]),
+        steps=[explain, f"With {m('n')} for the number, the expression is {m(ans_t)}."],
         verify=lambda s: s == m(ans_t) and all(ans_s.subs(n, v) == sem(v) for v in range(1, 8)),
     )
 
 
-def _translate_steps(words, ans_t, k, j):
-    hints = {
-        "more than": "\\emph{more than} means add",
-        "less than": "\\emph{less than} means subtract, and the order flips: the amount after \\emph{than} comes first",
-        "decreased by": "\\emph{decreased by} means subtract, in the order written",
-        "product": "\\emph{product} means multiply",
-        "quotient": "\\emph{quotient} means divide, in the order written",
-        "increased by": "\\emph{increased by} means add",
-        "sum of a number": "\\emph{the sum of a number and} groups those two together first, so use parentheses",
-        "difference of a number": "\\emph{the difference of a number and} groups those two together first, so use parentheses",
-        "sum of": "\\emph{the sum of A and B} means A + B",
-        "subtracted from": "\\emph{A subtracted from B} means B - A: the order flips",
-        "twice": "\\emph{twice} means 2 times",
-        "half of": "\\emph{half of a number} means divide it by 2",
-        "square of": "\\emph{the square of a number} means the number to the second power",
-    }
-    used = [h for key, h in hints.items() if key in words]
-    # keep the specific "sum of a number" hint and drop the generic one
-    if any("sum of a number" in key for key in hints if key in words):
-        used = [h for h in used if not h.startswith("\\emph{the sum of A")]
-    out = ["Translate the key words: " + "; ".join(used[:3]) + "."]
-    out.append(f"Let {m('n')} be the number. The expression is {m(ans_t)}.")
-    return out
+@template("MK")
+def translate(rng, lvl):
+    return _translate(rng, lvl, 0)
+
+
+@template("MK")
+def translate_more(rng, lvl):
+    return _translate(rng, lvl, 1)
 
 
 _SHOP = [
     # (stem, price p range, price q range, items)
     ("Shirts cost {p} each and hats cost {q} each. Which expression gives the total cost, in dollars, "
-     "of {X} shirts and {Y} hats?", (10, 25), (6, 15)),
+     "of {X} shirts and {Y} hats?", (10, 25), (6, 15), ("shirt", "hat")),
     ("At a movie theater, adult tickets cost {p} and child tickets cost {q}. Which expression gives the "
-     "total cost, in dollars, of {X} adult tickets and {Y} child tickets?", (9, 15), (5, 9)),
+     "total cost, in dollars, of {X} adult tickets and {Y} child tickets?", (9, 15), (5, 9), ("adult ticket", "child ticket")),
     ("A unit store sells T-shirts for {p} and pairs of socks for {q}. Which expression gives the total "
-     "cost, in dollars, of {X} T-shirts and {Y} pairs of socks?", (8, 16), (2, 6)),
+     "cost, in dollars, of {X} T-shirts and {Y} pairs of socks?", (8, 16), (2, 6), ("T-shirt", "pair of socks")),
     ("Notebooks cost {p} each and pens cost {q} each. Which expression gives the total cost, in "
-     "dollars, of {X} notebooks and {Y} pens?", (3, 8), (1, 3)),
+     "dollars, of {X} notebooks and {Y} pens?", (3, 8), (1, 3), ("notebook", "pen")),
 ]
 
 _RATE = [
     ("A taxi charges {a} to start a ride plus {b} for each mile. Which expression gives the cost, "
-     "in dollars, of a ride that is {M} miles long?", (3, 6), (2, 4), "m"),
+     "in dollars, of a ride that is {M} miles long?", (3, 6), (2, 4), "m", "mile"),
     ("A phone plan costs {a} per month plus {b} for each gigabyte of data used. Which expression "
-     "gives the cost, in dollars, of one month in which {M} gigabytes are used?", (25, 45), (5, 15), "g"),
+     "gives the cost, in dollars, of one month in which {M} gigabytes are used?", (25, 45), (5, 15), "g", "gigabyte"),
     ("A plumber charges {a} for a house call plus {b} per hour of work. Which expression gives the "
-     "charge, in dollars, for a job that takes {M} hours?", (40, 90), (45, 95), "h"),
+     "charge, in dollars, for a job that takes {M} hours?", (40, 90), (45, 95), "h", "hour"),
     ("A gym charges a {a} sign-up fee plus {b} per month. Which expression gives the total cost, in "
-     "dollars, of a membership for {M} months?", (25, 75), (20, 45), "t"),
+     "dollars, of a membership for {M} months?", (25, 75), (20, 45), "t", "month"),
 ]
 
 _COUNT = [
@@ -704,9 +733,17 @@ _COUNT = [
 def word_expression(rng, lvl):
     if lvl == 3:
         return _word_l3(rng)
-    kind = rng.choice(["shop", "rate", "count"])
+    return _word_l2(rng, "shop")
+
+
+@template("AR")
+def word_cost(rng, lvl):
+    return _word_l2(rng, rng.choice(["rate", "count"]))
+
+
+def _word_l2(rng, kind):
     if kind == "shop":
-        stem_t, (plo, phi), (qlo, qhi) = rng.choice(_SHOP)
+        stem_t, (plo, phi), (qlo, qhi), (n1, n2) = rng.choice(_SHOP)
         p, q = rng.randint(plo, phi), rng.randint(qlo, qhi)
         need(p != q)
         X, Y = sp.symbols("x y")
@@ -719,21 +756,20 @@ def word_expression(rng, lvl):
         ]
         stem = stem_t.format(p=money(p), q=money(q), X=m("x"), Y=m("y"))
         steps = [
-            f"Each shirt-type item costs {money(p)}, so {m('x')} of them cost {m(f'{p}x')} dollars."
-            .replace("shirt-type item", "item of the first kind"),
-            f"{m('y')} of the second item cost {m(f'{q}y')} dollars.",
+            f"Each {n1} costs {money(p)}, so {m('x')} of them cost {m(f'{p}x')} dollars.",
+            f"Each {n2} costs {money(q)}, so {m('y')} of them cost {m(f'{q}y')} dollars.",
             f"Add the two costs: {m(ans_t)}.",
         ]
         sem = lambda xv, yv: sum([p] * xv) + sum([q] * yv)
         verify = lambda s: s == m(ans_t) and all(ans_s.subs({X: a, Y: b}) == sem(a, b) for a in range(4) for b in range(4))
     elif kind == "rate":
-        stem_t, (alo, ahi), (blo, bhi), v = rng.choice(_RATE)
+        stem_t, (alo, ahi), (blo, bhi), v, unit_n = rng.choice(_RATE)
         a, b = rng.randint(alo, ahi), rng.randint(blo, bhi)
         need(a != b)
         V = sp.Symbol(v)
         ans_t, ans_s = f"{a} + {b}{v}", a + b * V
         wr = [
-            (f"{a + b}{v}", (a + b) * V, f"charges the one-time {money(a)} for every unit too"),
+            (f"{a + b}{v}", (a + b) * V, f"charges the one-time {money(a)} for every {unit_n} too"),
             (f"{a}{v} + {b}", a * V + b, "swaps the one-time charge and the rate"),
             (f"{b}({a} + {v})", b * (a + V), None),
             (f"{a} + {b} + {v}", a + b + V, f"adds {m(v)} instead of multiplying it by {money(b)}"),
@@ -741,7 +777,7 @@ def word_expression(rng, lvl):
         stem = stem_t.format(a=money(a), b=money(b), M=m(v))
         steps = [
             f"The {money(a)} is charged once, no matter what.",
-            f"The {money(b)} is charged for each unit, so {m(v)} units cost {m(f'{b}{v}')} dollars.",
+            f"The {money(b)} is charged for each {unit_n}, so {m(v)} {unit_n}s cost {m(f'{b}{v}')} dollars.",
             f"Total: {m(ans_t)}.",
         ]
         sem = lambda t: a + sum([b] * t)
@@ -847,62 +883,148 @@ def _word_l3(rng):
 
 
 @template("MK")
+def formula_geometry(rng, lvl):
+    return _formula_l1(rng, rng.choice(["perim", "tri"]))
+
+
+@template("MK")
 def evaluate_formula(rng, lvl):
     if lvl == 1:
-        kind = rng.choice(["perim", "tri", "dist"])
-        if kind == "perim":
-            l, w = rng.randint(5, 30), rng.randint(2, 20)
-            need(l > w)
-            ans = Q(2 * l + 2 * w)
-            stem = (f"The perimeter of a rectangle is given by {m('P = 2l + 2w')}. What is {m('P')} when "
-                    f"{m(f'l = {l}')} and {m(f'w = {w}')}?")
-            wrong = [
-                (Q(l + w), "adds one length and one width only"),
-                (Q(l * w), "finds the area instead of the perimeter"),
-                (Q(2 * l + w), "doubles only the length"),
-                (Q(2 * (l * w)), None),
-            ]
-            steps = [f"Substitute: {m(f'P = 2({l}) + 2({w})')}.",
-                     f"Multiply, then add: {m(f'{2 * l} + {2 * w} = {int_raw(ans)}')}."]
-            check = (2 * sp.Symbol("l") + 2 * sp.Symbol("w")).subs({sp.Symbol("l"): l, sp.Symbol("w"): w})
-        elif kind == "tri":
-            b, h = rng.randint(3, 20), rng.randint(2, 16)
-            need((b * h) % 2 == 0 and b != h)
-            ans = R(b * h, 2)
-            stem = (f"The area of a triangle is {m('A = \\frac{1}{2}bh')}. What is {m('A')} when "
-                    f"{m(f'b = {b}')} and {m(f'h = {h}')}?")
-            wrong = [
-                (Q(b * h), f"forgets to multiply by {m('\\frac{1}{2}')}"),
-                (R(b + h, 2), "adds the base and height instead of multiplying"),
-                (Q(2 * b * h), f"multiplies by 2 instead of by {m('\\frac{1}{2}')}"),
-                (ans + b, None),
-            ]
-            steps = [f"Substitute: {m(f'A = \\frac{{1}}{{2}}({b})({h})')}.",
-                     f"Multiply: {m(f'{b} \\times {h} = {b * h}')}, and half of {num(b * h)} is {num(ans)}."]
-            check = sp.Rational(1, 2) * b * h
-        else:
-            r = rng.choice(range(30, 66, 5))
-            t = rng.choice([R(v, 2) for v in range(3, 15)])
-            ans = r * t
-            need(ans.is_integer or ans.q == 2)
-            stem = (f"Distance traveled is given by {m('d = rt')}, where {m('r')} is the rate in miles per hour "
-                    f"and {m('t')} is the time in hours. What is {m('d')} when {m(f'r = {r}')} and "
-                    f"{m(f't = {dec_raw(t)}')}?")
-            wrong = [
-                (r + t, "adds the rate and time instead of multiplying"),
-                (r / t, "divides the rate by the time"),
-                (r * (t.p // t.q) if t.q != 1 else r * t + r, f"ignores the half hour" if t.q != 1 else None),
-                (ans * 10, None),
-            ]
-            whole = t.p // t.q
-            steps = [f"Substitute: {m(f'd = {r} \\times {dec_raw(t)}')}.",
-                     (f"Multiply: {m(f'{r} \\times {whole} = {r * whole}')} and half of {r} is {m(dec_raw(R(r, 2)))}; "
-                      f"{m(f'{r * whole} + {dec_raw(R(r, 2))} = {dec_raw(ans)}')} miles." if t.q == 2 else
-                      f"Multiply: {m(f'{r} \\times {dec_raw(t)} = {dec_raw(ans)}')} miles.")]
-            check = sp.Integer(r) * t
-        return Problem(stem=stem, answer=ans, fmt=dec, wrong=wrong, steps=steps, check=check)
+        return _formula_l1(rng, rng.choice(["dist", "cost"]))
+    return _formula_l2(rng)
 
-    # level 2: temperature conversion
+
+def _formula_l1(rng, kind):
+    if kind == "cost":
+        a, b, h = rng.choice(range(30, 91, 5)), rng.choice(range(40, 101, 5)), rng.randint(2, 6)
+        need(a != b)
+        ans = Q(a + b * h)
+        stem = (f"A plumber charges {m(f'C = {a} + {b}h')} dollars for a job that takes {m('h')} hours. "
+                f"What is {m('C')} when {m(f'h = {h}')}?")
+        wrong = [
+            (Q((a + b) * h), "adds before multiplying"),
+            (Q(a * h + b), f"multiplies {a} by {m('h')} instead of {b}"),
+            (Q(b * h), f"forgets to add the {a}"),
+            (Q(a + b + h), "adds all the numbers"),
+        ]
+        steps = [f"Substitute: {m(f'C = {a} + {b}({h})')}.",
+                 f"Multiply first: {m(f'{b} \\times {h} = {b * h}')}. Then add: {m(f'{a} + {b * h} = {int_raw(ans)}')}."]
+        check = (a + b * sp.Symbol("h")).subs(sp.Symbol("h"), h)
+        return Problem(stem=stem, answer=ans, fmt=dec, wrong=wrong, steps=steps, check=check)
+    if kind == "perim":
+        l, w = rng.randint(5, 30), rng.randint(2, 20)
+        need(l > w)
+        ans = Q(2 * l + 2 * w)
+        stem = (f"The perimeter of a rectangle is given by {m('P = 2l + 2w')}. What is {m('P')} when "
+                f"{m(f'l = {l}')} and {m(f'w = {w}')}?")
+        wrong = [
+            (Q(l + w), "adds one length and one width only"),
+            (Q(l * w), "finds the area instead of the perimeter"),
+            (Q(2 * l + w), "doubles only the length"),
+            (Q(2 * (l * w)), None),
+        ]
+        steps = [f"Substitute: {m(f'P = 2({l}) + 2({w})')}.",
+                 f"Multiply, then add: {m(f'{2 * l} + {2 * w} = {int_raw(ans)}')}."]
+        check = (2 * sp.Symbol("l") + 2 * sp.Symbol("w")).subs({sp.Symbol("l"): l, sp.Symbol("w"): w})
+    elif kind == "tri":
+        b, h = rng.randint(3, 20), rng.randint(2, 16)
+        need((b * h) % 2 == 0 and b != h)
+        ans = R(b * h, 2)
+        stem = (f"The area of a triangle is {m('A = \\frac{1}{2}bh')}. What is {m('A')} when "
+                f"{m(f'b = {b}')} and {m(f'h = {h}')}?")
+        wrong = [
+            (Q(b * h), f"forgets to multiply by {m('\\frac{1}{2}')}"),
+            (R(b + h, 2), "adds the base and height instead of multiplying"),
+            (Q(2 * b * h), f"multiplies by 2 instead of by {m('\\frac{1}{2}')}"),
+            (ans + b, None),
+        ]
+        steps = [f"Substitute: {m(f'A = \\frac{{1}}{{2}}({b})({h})')}.",
+                 f"Multiply: {m(f'{b} \\times {h} = {b * h}')}, and half of {num(b * h)} is {num(ans)}."]
+        check = sp.Rational(1, 2) * b * h
+    else:
+        r = rng.choice(range(30, 66, 5))
+        t = rng.choice([R(v, 2) for v in range(3, 15)])
+        ans = r * t
+        need(ans.is_integer or ans.q == 2)
+        stem = (f"Distance traveled is given by {m('d = rt')}, where {m('r')} is the rate in miles per hour "
+                f"and {m('t')} is the time in hours. What is {m('d')} when {m(f'r = {r}')} and "
+                f"{m(f't = {dec_raw(t)}')}?")
+        wrong = [
+            (r + t, "adds the rate and time instead of multiplying"),
+            (r / t, "divides the rate by the time"),
+            (r * (t.p // t.q) if t.q != 1 else r * t + r, f"ignores the half hour" if t.q != 1 else None),
+            (ans * 10, None),
+        ]
+        whole = t.p // t.q
+        steps = [f"Substitute: {m(f'd = {r} \\times {dec_raw(t)}')}.",
+                 (f"Multiply: {m(f'{r} \\times {whole} = {r * whole}')} and half of {r} is {m(dec_raw(R(r, 2)))}; "
+                  f"{m(f'{r * whole} + {dec_raw(R(r, 2))} = {dec_raw(ans)}')} miles." if t.q == 2 else
+                  f"Multiply: {m(f'{r} \\times {dec_raw(t)} = {dec_raw(ans)}')} miles.")]
+        check = sp.Integer(r) * t
+    return Problem(stem=stem, answer=ans, fmt=dec, wrong=wrong, steps=steps, check=check)
+
+
+def _formula_l2(rng):
+    # level 2: temperature conversion, trapezoid, rental cost, simple interest
+    kind2 = rng.choice(["temp", "temp", "trap", "rent", "interest"])
+    if kind2 == "trap":
+        b1, b2, h = rng.randint(3, 20), rng.randint(3, 20), rng.randint(2, 12)
+        need(b1 != b2 and ((b1 + b2) * h) % 2 == 0)
+        ans = R((b1 + b2) * h, 2)
+        stem = (f"The area of a trapezoid is {m('A = \\frac{1}{2}(b_1 + b_2)h')}. What is {m('A')} when "
+                f"{m(f'b_1 = {b1}')}, {m(f'b_2 = {b2}')}, and {m(f'h = {h}')}?")
+        wrong = [
+            (Q((b1 + b2) * h), f"forgets to multiply by {m('\\frac{1}{2}')}"),
+            (R(b1, 2) + b2 * h, f"multiplies only {m('b_2')} by {m('h')} instead of the whole sum"),
+            (R(b1 + b2 + h, 2), "adds all three numbers instead of multiplying by the height"),
+            (R(b1 * b2 * h, 2), "multiplies the two bases instead of adding them"),
+        ]
+        steps = [f"Substitute: {m(f'A = \\frac{{1}}{{2}}({b1} + {b2})({h})')}.",
+                 f"Parentheses first: {m(f'{b1} + {b2} = {b1 + b2}')}.",
+                 f"Multiply: {m(f'{b1 + b2} \\times {h} = {(b1 + b2) * h}')}, and half of that is {m(dec_raw(ans))}."]
+        Bs1, Bs2, Hs = sp.symbols("b1 b2 h")
+        check = (R(1, 2) * (Bs1 + Bs2) * Hs).subs({Bs1: b1, Bs2: b2, Hs: h})
+        return Problem(stem=stem, answer=ans, fmt=dec, wrong=wrong, steps=steps, check=check)
+    if kind2 == "rent":
+        base = rng.choice(range(20, 61, 5))
+        rate = R(rng.choice([10, 15, 20, 25, 30, 40, 50]), 100)
+        miles = rng.choice(range(40, 401, 20))
+        ans = base + rate * miles
+        stem = (f"The cost, in dollars, of renting a car for one day is {m(f'C = {base} + {dec_raw(rate, places=2)}m')}, "
+                f"where {m('m')} is the number of miles driven. What is the cost when {m(f'm = {miles}')}?")
+        wrong = [
+            (rate * miles, f"forgets to add the {money(base)}"),
+            ((base + rate) * miles, "adds before multiplying"),
+            (base + int(rate * 100) * miles, f"uses {int(rate * 100)} instead of {dec_raw(rate, places=2)}"),
+            (base * miles + rate, None),
+        ]
+        steps = [f"Substitute: {m(f'C = {base} + {dec_raw(rate, places=2)}({miles})')}.",
+                 f"Multiply first: {m(f'{dec_raw(rate, places=2)} \\times {miles} = {dec_raw(rate * miles)}')}.",
+                 f"Add: {m(f'{base} + {dec_raw(rate * miles)} = {dec_raw(ans)}')}, so the cost is {money(ans)}."]
+        Ms = sp.Symbol("m")
+        check = (base + rate * Ms).subs(Ms, miles)
+        return Problem(stem=stem, answer=ans, fmt=money, wrong=wrong, steps=steps, check=check)
+    if kind2 == "interest":
+        P_ = rng.choice(range(500, 5001, 500))
+        r_ = rng.choice([2, 3, 4, 5, 6, 8, 10])
+        t_ = rng.randint(2, 5)
+        ans = R(P_ * r_ * t_, 100)
+        need(ans.is_integer)
+        stem = (f"Simple interest is given by {m('I = Prt')}, where {m('P')} is the amount invested, {m('r')} "
+                f"is the yearly rate as a decimal, and {m('t')} is the time in years. What is {m('I')} when "
+                f"{m(f'P = {int_raw(P_)}')}, {m(f'r = {dec_raw(R(r_, 100))}')}, and {m(f't = {t_}')}?")
+        wrong = [
+            (R(P_ * r_, 100), f"forgets to multiply by {m('t')}"),
+            (Q(P_ * r_ * t_), f"uses {r_} instead of {dec_raw(R(r_, 100))}"),
+            (P_ + ans, "adds the amount invested to the interest"),
+            (R(P_ * r_ * t_, 10), None),
+        ]
+        steps = [f"Substitute: {m(f'I = {int_raw(P_)} \\times {dec_raw(R(r_, 100))} \\times {t_}')}.",
+                 f"{m(f'{int_raw(P_)} \\times {dec_raw(R(r_, 100))} = {int_raw(R(P_ * r_, 100)) if (R(P_ * r_, 100)).is_integer else dec_raw(R(P_ * r_, 100))}')}, "
+                 f"and {m(f'{dec_raw(R(P_ * r_, 100))} \\times {t_} = {int_raw(ans)}')}. The interest is {money(ans)}."]
+        Ps, rs, ts = sp.symbols("P r t")
+        check = (Ps * rs * ts).subs({Ps: P_, rs: R(r_, 100), ts: t_})
+        return Problem(stem=stem, answer=ans, fmt=money, wrong=wrong, steps=steps, check=check)
     if rng.random() < 0.55:
         Cv = rng.choice(range(-10, 41, 5))
         need(Cv != 0)
@@ -944,8 +1066,26 @@ def evaluate_formula(rng, lvl):
 
 @template("MK")
 def formula_solve(rng, lvl):
-    kind = rng.choice(["perim", "temp", "tri", "box"])
-    if kind == "perim":
+    kind = rng.choice(["perim", "perim_l", "temp", "tri", "box"])
+    if kind == "perim_l":
+        l, w = rng.randint(6, 30), rng.randint(2, 20)
+        need(l > w and l != 2 * w)
+        P = 2 * l + 2 * w
+        ans = Q(l)
+        stem = (f"The perimeter of a rectangle is {m('P = 2l + 2w')}. If {m(f'P = {P}')} and {m(f'w = {w}')}, "
+                f"what is {m('l')}?")
+        wrong = [
+            (Q(2 * l), "forgets to divide by 2"),
+            (R(P - w, 2), f"subtracts {m('w')} only once before dividing by 2"),
+            (R(P, 2) - 2 * w, "divides only part of the equation by 2"),
+            (R(P, 2), "divides by 2 and forgets to subtract the width"),
+        ]
+        steps = [f"Substitute: {m(f'{P} = 2l + 2({w})')}, so {m(f'{P} = 2l + {2 * w}')}.",
+                 f"Subtract {2 * w}: {m(f'2l = {P - 2 * w}')}.",
+                 f"Divide by 2: {m(f'l = {l}')}."]
+        Ls = sp.Symbol("l")
+        check = sp.solve(sp.Eq(P, 2 * Ls + 2 * w), Ls)[0]
+    elif kind == "perim":
         l, w = rng.randint(6, 30), rng.randint(2, 20)
         need(l > w)
         P = 2 * l + 2 * w
@@ -1082,13 +1222,17 @@ PLAN = [
     # (template, level, count)  -- easy -> hard; 25 problems
     (evaluate_expr, 1, 2),
     (combine_like, 1, 2),
-    (translate, 1, 2),
-    (evaluate_formula, 1, 2),
+    (translate, 1, 1),
+    (translate_more, 1, 1),
+    (formula_geometry, 1, 1),
+    (evaluate_formula, 1, 1),
     (evaluate_expr, 2, 2),
     (combine_like, 2, 1),
     (distribute, 2, 2),
-    (translate, 2, 2),
-    (word_expression, 2, 2),
+    (translate, 2, 1),
+    (translate_more, 2, 1),
+    (word_expression, 2, 1),
+    (word_cost, 2, 1),
     (evaluate_formula, 2, 1),
     (distribute, 3, 2),
     (evaluate_expr, 3, 2),

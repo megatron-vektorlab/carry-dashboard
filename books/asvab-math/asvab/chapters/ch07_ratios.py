@@ -361,8 +361,19 @@ _TOTALS = [
 
 @template("AR")
 def ratio_total(rng, lvl):
+    """Military settings."""
+    return _ratio_total(rng, lvl, [_TOTALS[i] for i in (0, 3, 6)])
+
+
+@template("AR")
+def ratio_total_civ(rng, lvl):
+    """Civilian settings."""
+    return _ratio_total(rng, lvl, [_TOTALS[i] for i in (1, 2, 4, 5, 7)])
+
+
+def _ratio_total(rng, lvl, settings):
     p, q = _coprime_pair(rng, 1, 9)
-    setting, n1, n2, verb, trange = rng.choice(_TOTALS)
+    setting, n1, n2, verb, trange = rng.choice(settings)
     s = p + q
     T = rng.choice([t for t in trange if t % s == 0] or [0])
     one = T // s
@@ -429,7 +440,7 @@ _RECIPES = [
     dict(stem="A concrete mix uses {a} of cement for every {b} bags of sand. How many bags of "
               "cement are needed for {c} bags of sand?",
          unit=("bag", "bags"), per="bags of sand", a=[1, 2, 3], b=[3, 4, 5],
-         c=range(9, 41), fmt=num, small=True),
+         c=range(9, 41), fmt=num, small=True, label="bags of cement"),
 ]
 
 
@@ -453,6 +464,17 @@ def _parts(k) -> str:
 
 @template("AR")
 def recipe_scale(rng, lvl):
+    """Kitchen-size batches (level 2) or fractional amounts (level 3)."""
+    return _recipe_scale(rng, lvl, small=True)
+
+
+@template("AR")
+def bulk_scale(rng, lvl):
+    """Large-quantity rates: mess hall, fertilizer, paint, coffee."""
+    return _recipe_scale(rng, lvl, small=False)
+
+
+def _recipe_scale(rng, lvl, small):
     if lvl == 3:
         stem_t, (one, many), (per1, per), avals = rng.choice(_FRAC_RECIPES)
         a = rng.choice(avals)
@@ -499,7 +521,7 @@ def recipe_scale(rng, lvl):
             verify=lambda v: _fr(v) / c == _fr(a) / b,
         )
 
-    ctx = rng.choice(_RECIPES)
+    ctx = rng.choice([c for c in _RECIPES if c["small"] == small])
     one, many = ctx["unit"]
     a = rng.choice(list(ctx["a"]))
     b = rng.choice(ctx["b"])
@@ -537,10 +559,10 @@ def recipe_scale(rng, lvl):
         fmt=fmt,
         wrong=wrong,
         steps=[
-            f"Set up a proportion with the same order on both sides ({many} over {ctx['per']}): "
+            f"Set up a proportion with the same order on both sides ({ctx.get('label', many)} over {ctx['per']}): "
             f"{m(F(int_raw(a), int_raw(b)) + ' = ' + F('x', int_raw(c)))}.",
             f"Cross-multiply: {m(f'{int_raw(b)}x = {int_raw(a)} \\times {int_raw(c)} = {int_raw(cross)}')}.",
-            f"Divide by {num(b)}: {m(last)} {many}.",
+            f"Divide by {num(b)}: {m(last)} {ctx.get('label', many) if ans != 1 else one}.",
         ],
         tip=tip,
         check=Fraction(a, b) * c,
@@ -555,6 +577,10 @@ _MAPS = [
     ("On a map of an Army training area, 1 inch represents {s} miles. Two checkpoints are {d} "
      "inches apart on the map. How far apart are the checkpoints on the ground?",
      ("mile", "miles"), [2, 3, 4], 40),
+    ("On a state highway map, 1 inch represents {s} miles. Two cities are {d} inches apart on the "
+     "map. How many miles apart are the cities?", ("mile", "miles"), [15, 20, 25, 30, 40], 400),
+    ("On a map of a national park, 1 inch represents {s} miles. A hiking trail measures {d} inches "
+     "on the map. How long is the actual trail?", ("mile", "miles"), [2, 3, 4, 6], 30),
     ("A model of a Coast Guard patrol boat is built to a scale of 1 inch = {s} feet. The model is "
      "{d} inches long. How long is the actual boat?", ("foot", "feet"), [6, 8, 10, 12], 120),
     ("A floor plan is drawn to a scale of 1 inch = {s} feet. A wall measures {d} inches on the "
@@ -564,8 +590,19 @@ _MAPS = [
 
 @template("AR")
 def map_scale(rng, lvl):
+    """Maps (level 2) or scales that need working backward / areas (level 3)."""
+    return _map_scale(rng, lvl, plans=False)
+
+
+@template("AR")
+def plan_scale(rng, lvl):
+    """Blueprints, floor plans, and models."""
+    return _map_scale(rng, lvl, plans=True)
+
+
+def _map_scale(rng, lvl, plans):
     if lvl == 2:
-        if rng.random() < 0.3:
+        if plans and rng.random() < 0.45:
             # blueprint with a fractional scale such as 1/4 inch = 1 foot
             k = rng.choice([2, 4])
             whole = rng.randint(2, 9)
@@ -595,7 +632,7 @@ def map_scale(rng, lvl):
                 check=_fr(d) / Fraction(1, k),
                 verify=lambda v: v / k == d,
             )
-        stem_t, (one, many), scales, top = rng.choice(_MAPS)
+        stem_t, (one, many), scales, top = rng.choice(_MAPS[4:] if plans else _MAPS[:4])
         where = "plan" if "floor plan" in stem_t else "model" if "model" in stem_t else "map"
         s = rng.choice(scales)
         whole = rng.randint(2, 9)
@@ -859,7 +896,18 @@ _THREE = [
 
 @template("AR")
 def divide_in_ratio(rng, lvl):
-    ctx = rng.choice(_THREE)
+    """Angles, mixtures, and supplies."""
+    return _divide_in_ratio(rng, lvl, [c for c in _THREE if c["kind"] != "money"])
+
+
+@template("AR")
+def divide_money(rng, lvl):
+    """Money split three ways."""
+    return _divide_in_ratio(rng, lvl, [c for c in _THREE if c["kind"] == "money"])
+
+
+def _divide_in_ratio(rng, lvl, ctxs):
+    ctx = rng.choice(ctxs)
     kind = ctx["kind"]
     while True:
         rs = [rng.randint(1, 7) for _ in range(3)]
@@ -972,7 +1020,18 @@ _DIFFS = [
 
 @template("AR")
 def ratio_difference(rng, lvl):
-    ctx = rng.choice(_DIFFS)
+    """Civilian settings."""
+    return _ratio_difference(rng, lvl, [_DIFFS[i] for i in (0, 2, 3)])
+
+
+@template("AR")
+def ratio_difference_mil(rng, lvl):
+    """Military settings."""
+    return _ratio_difference(rng, lvl, [_DIFFS[i] for i in (1, 4)])
+
+
+def _ratio_difference(rng, lvl, ctxs):
+    ctx = rng.choice(ctxs)
     p, q = _coprime_pair(rng, 1, 11)
     lo, hi = min(p, q), max(p, q)
     need(hi - lo >= 2)
@@ -1026,7 +1085,8 @@ def ratio_difference(rng, lvl):
             last,
         ],
         tip=(f"Check: {m(f'{int_raw(hi * one)} - {int_raw(lo * one)} = {int_raw(d)}')}, and "
-             f"{m(_rt(lo * one, hi * one))} simplifies to {m(_rt(lo, hi))}."),
+             + (f"{m(_rt(lo * one, hi * one))} simplifies to {m(_rt(lo, hi))}." if ctx["order"] == "small-big" else
+                f"{m(_rt(hi * one, lo * one))} simplifies to {m(_rt(hi, lo))}.")),
         check=Fraction(d, hi - lo) * {"total": hi + lo, "big": hi, "small": lo}[ask],
     )
 
@@ -1039,12 +1099,17 @@ PLAN = [
     (unit_rate, 1, 2),
     (simplify_ratio, 2, 2),
     (solve_proportion, 2, 1),
-    (ratio_total, 2, 2),
-    (recipe_scale, 2, 2),
-    (map_scale, 2, 2),
+    (ratio_total, 2, 1),
+    (ratio_total_civ, 2, 1),
+    (recipe_scale, 2, 1),
+    (bulk_scale, 2, 1),
+    (map_scale, 2, 1),
+    (plan_scale, 2, 1),
     (direct_variation, 2, 1),
-    (divide_in_ratio, 3, 2),
-    (ratio_difference, 3, 2),
+    (divide_in_ratio, 3, 1),
+    (divide_money, 3, 1),
+    (ratio_difference, 3, 1),
+    (ratio_difference_mil, 3, 1),
     (map_scale, 3, 1),
     (direct_variation, 3, 1),
     (recipe_scale, 3, 1),
