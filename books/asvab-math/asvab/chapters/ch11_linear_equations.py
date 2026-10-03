@@ -1241,7 +1241,7 @@ def _flat_fee(rng, who):
     wrong = [(T / rate, "ignores the fixed fee"),
              ((T + fee) / rate, "adds the fee instead of subtracting it"),
              (T - fee, "forgets to divide by the rate") if T - fee <= 4 * k else (Q(k + 2), None),
-             (Q(k - 1), None), (Q(k + 1), None)]
+             (Q(k - 1) if k > 1 else Q(k + 3), None), (Q(k + 1), None)]
     if (T / (fee + rate) * 10).is_integer:
         wrong.insert(3, (T / (fee + rate), f"adds the fee to the rate per {u} before dividing"))
     named = [v for v, why in wrong if why and v != k and (Q(v) * 100).is_integer and Q(v) > 0]
@@ -1249,7 +1249,7 @@ def _flat_fee(rng, who):
     hits = [h for h in range(0, 1000) if fee + rate * h == T]
     return Problem(stem=stem, answer=Q(k), fmt=unit(dec, u), wrong=wrong, steps=[st for st in steps if st],
                    check=Q(hits[0]) if len(hits) == 1 else None,
-                   near=lambda r: [Q(k + j) for j in (2, -2, 3, 4)],
+                   near=lambda r: [Q(k + j) for j in (2, -2, 3, 4) if k + j >= 1],
                    verify=lambda v: fee + rate * v == T, section="AR")
 
 
@@ -1296,7 +1296,7 @@ def _first_unit(rng, who):
     hits = [h for h in range(1, 1000) if f1 + r * (h - 1) == T]
     return Problem(stem=stem, answer=Q(k), fmt=unit(dec, u), wrong=wrong, steps=[st for st in steps if st],
                    check=Q(hits[0]) if len(hits) == 1 else None,
-                   near=lambda r_: [Q(k + j) for j in (2, -2, 3, -3)],
+                   near=lambda r_: [Q(k + j) for j in (2, -2, 3, -3) if k + j >= 1],
                    verify=lambda v: f1 + r * (v - 1) == T, section="AR")
 
 

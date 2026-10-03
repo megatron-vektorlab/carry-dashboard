@@ -208,10 +208,10 @@ def _pick_system(rng, lvl):
         X = rng.randint(1, 15)
         Y = rng.randint(-5, 12)
         need(X != Y and X + Y != 0)
-        e1 = (1, 1, X + Y)
-        e2 = (1, -1, X - Y) if rng.random() < 0.6 else (rng.choice([2, 3]), -1, 0)
-        if e2[2] == 0:
-            e2 = (e2[0], -1, e2[0] * X - Y)
+        # every level-1 system eliminates y by simply adding the equations
+        a1, a2 = rng.choice([(1, 1), (1, 1), (1, 2), (1, 3), (2, 1), (3, 1), (2, 3), (3, 2)])
+        e1 = (a1, 1, a1 * X + Y)
+        e2 = (a2, -1, a2 * X - Y)
     elif lvl == 2:
         X = rng.randint(-6, 12)
         Y = rng.randint(-6, 12)

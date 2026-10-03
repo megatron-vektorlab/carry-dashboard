@@ -258,7 +258,7 @@ def perfect_root(rng, lvl):
     # level 3: roots of sums, differences, and products
     kind = rng.choice(["sum", "sum", "diff", "prod"])
     if kind == "prod":
-        a, b = rng.sample(range(2, 10), 2)
+        a, b = rng.sample(range(2, 13), 2)
         A, B = a * a, b * b
         ans = Q(a * b)
         inside = f"{A} \\times {B}"
