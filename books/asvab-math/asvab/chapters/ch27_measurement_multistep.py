@@ -851,9 +851,9 @@ def _borrow_why(start, end, civilian=False):
     h, mm = divmod(diff, 100)
     head = (f"writes the times as {m(a_)} and {m(b_)}, subtracts them like ordinary numbers,"
             if civilian else f"subtracts {m(b_)} $-$ {m(a_)} like ordinary numbers")
-    read = f"reads {m(str(diff))} as {h} hours {mm} minutes"
+    read = f"reads {m(str(diff))} as {h} {_pl('hour', h)} {mm} {_pl('minute', mm)}"
     if mm >= 60:
-        read += f" (that is, {h + 1} hours {mm - 60} minutes)"
+        read += f" (that is, {_hm_text(60 * h + mm)})"
     return f"{head} and {read}"
 
 
@@ -1890,7 +1890,7 @@ def day_of_week(rng, lvl):
             (_DAYS[(d0 + q) % 7], f"moves ahead {q} days (the number of weeks) instead of {r}"),
         ]
         steps = [
-            f"Every 7 days the day of the week repeats. {m(f'{N} \\div 7 = {q}')} weeks with "
+            f"Every 7 days the day of the week repeats. {m(f'{N} \\div 7 = {q}')} {_pl('week', q)} with "
             f"{m(str(r))} {_pl('day', r)} left over.",
             f"After {q} full weeks it is {_DAYS[d0]} again. Count {r} more {_pl('day', r)}: "
             + ", ".join(_DAYS[(d0 + i) % 7] for i in range(1, r + 1)) + ".",
@@ -1915,7 +1915,7 @@ def day_of_week(rng, lvl):
         ]
         steps = [
             f"Day {num(N)} is {m(f'{N} - 1 = {N - 1}')} days after day 1.",
-            f"{m(f'{N - 1} \\div 7 = {q}')} weeks with {m(str(r))} {_pl('day', r)} left over, so move "
+            f"{m(f'{N - 1} \\div 7 = {q}')} {_pl('week', q)} with {m(str(r))} {_pl('day', r)} left over, so move "
             f"{r} {_pl('day', r)} past {_DAYS[d0]}: {_DAYS[ans_i]}.",
         ]
         check = _DAYS[(base + datetime.timedelta(days=N - 1)).weekday()]
@@ -1935,7 +1935,7 @@ def day_of_week(rng, lvl):
         ]
         steps = [
             f"{month} {b_} is {m(f'{b_} - {a_} = {b_ - a_}')} days after {month} {a_}.",
-            f"{m(f'{b_ - a_} \\div 7 = {q}')} weeks with {m(str(r))} {_pl('day', r)} left over: "
+            f"{m(f'{b_ - a_} \\div 7 = {q}')} {_pl('week', q)} with {m(str(r))} {_pl('day', r)} left over: "
             f"{r} {_pl('day', r)} after {_DAYS[d0]} is {_DAYS[ans_i]}.",
         ]
         check = _DAYS[(base + datetime.timedelta(days=b_ - a_)).weekday()]
@@ -1954,7 +1954,7 @@ def day_of_week(rng, lvl):
             (_DAYS[(d0 - q) % 7], f"moves back {q} days (the number of weeks) instead of {r}"),
         ]
         steps = [
-            f"{m(f'{N} \\div 7 = {q}')} weeks with {m(str(r))} {_pl('day', r)} left over. "
+            f"{m(f'{N} \\div 7 = {q}')} {_pl('week', q)} with {m(str(r))} {_pl('day', r)} left over. "
             f"{q} weeks ago was also a {_DAYS[d0]}.",
             f"Go back {r} more {_pl('day', r)}: "
             + ", ".join(_DAYS[(d0 - i) % 7] for i in range(1, r + 1)) + ".",
