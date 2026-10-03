@@ -1198,7 +1198,7 @@ def arrival_time(rng, lvl, part=None):
     wrong += [(_clock(end + f), None) for f in fill]
     wrong = [w for w in wrong if w[0] != _clock(end)]
     return Problem(
-        stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong, order=_clock_min,
+        stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong, order=_clock_min, must=1,
         steps=[f"First part: {m(f'{int_raw(d1)} \\div {r1} = {_d(t1)}')} {_hw(t1)}"
                + ("" if Q(t1).is_integer else f" ({_hm(t1)})")
                + f". Second part: {m(f'{int_raw(d2)} \\div {r2} = {_d(t2)}')} {_hw(t2)}"

@@ -177,6 +177,12 @@ def _near_prob(ans):
     return f
 
 
+def _dd(t):
+    """Die event text: 'even' -> 'an even number', 'greater than 4' -> 'a number greater than 4'."""
+    return {"even": "an even number", "odd": "an odd number"}.get(
+        t, t if t.startswith("a ") else f"a number {t}")
+
+
 def _pwrong(wrong):
     """Probability distractors must be possible probabilities (0 < p <= 1)."""
     return [w for w in wrong if w[0] is not None and 0 < Q(w[0]) <= 1]
@@ -383,6 +389,7 @@ def score_needed(rng, lvl):
     need(rest % more == 0)
     ans = rest // more
     need(vlo <= ans <= vmax and ans != target and abs(ans - target) >= 2)
+    need(ans <= max(vals) + (vhi - vlo) // 2)
     stem = _need_stem(rng, key, vals, target, more)
     cur_mean = R(S, k)
     u1 = {"tests": "test", "bowling": "game", "pushups": "test", "marks": "round",
@@ -1154,10 +1161,7 @@ def independent_events(rng, lvl):
         if kind == "coin_die":
             side = rng.choice(["heads", "tails"])
             stem = (f"A coin is tossed and a six-sided die is rolled. What is the probability of "
-                    f"getting {side} on the coin and {'an' if die_t[0] in ('even', 'odd') else ''}"
-                    f"{' ' if die_t[0] in ('even', 'odd') else ''}{die_t[0]}"
-                    f"{' number' if die_t[0] in ('even', 'odd') else ''} on the die?")
-            stem = stem.replace("and  ", "and ")
+                    f"getting {side} on the coin and {_dd(die_t[0])} on the die?")
             first = (R(1, 2), "the coin", 1, 2, f"{side}")
             outs = list(itertools.product(["heads", "tails"], range(1, 7)))
             ok = sum(1 for c, f in outs if c == side and die_t[1](f))
@@ -1166,8 +1170,7 @@ def independent_events(rng, lvl):
             t2 = rng.choice([("even", lambda f: f % 2 == 0), ("greater than 3", lambda f: f > 3),
                              ("a 6", lambda f: f == 6), ("less than 5", lambda f: f < 5)])
             stem = (f"Two six-sided dice, one red and one blue, are rolled. What is the probability "
-                    f"that the red die shows {'an even number' if t2[0] == 'even' else t2[0]} and the "
-                    f"blue die shows {'an even number' if die_t[0] == 'even' else 'an odd number' if die_t[0] == 'odd' else die_t[0]}?")
+                    f"that the red die shows {_dd(t2[0])} and the blue die shows {_dd(die_t[0])}?")
             c1 = sum(1 for f in range(1, 7) if t2[1](f))
             first = (R(c1, 6), "the red die", c1, 6, t2[0])
             outs = list(itertools.product(range(1, 7), range(1, 7)))
@@ -1181,8 +1184,7 @@ def independent_events(rng, lvl):
             col = rng.choice(colors)
             stem = (f"A spinner has {secs} equal sections, each a different color, one of them {col}. "
                     f"The spinner is spun once and a six-sided die is rolled once. What is the "
-                    f"probability that the spinner lands on {col} and the die shows "
-                    f"{'an even number' if die_t[0] == 'even' else 'an odd number' if die_t[0] == 'odd' else die_t[0]}?")
+                    f"probability that the spinner lands on {col} and the die shows {_dd(die_t[0])}?")
             first = (R(1, secs), "the spinner", 1, secs, col)
             outs = list(itertools.product(range(secs), range(1, 7)))
             ok = sum(1 for s_, f in outs if s_ == 0 and die_t[1](f))
@@ -1191,9 +1193,6 @@ def independent_events(rng, lvl):
         p1, p2 = first[0], R(c2, 6)
         ans = p1 * p2
 
-        def _dd(t):
-            return {"even": "an even number", "odd": "an odd number"}.get(
-                t, t if t.startswith("a ") else f"a number {t}")
         ev1 = _dd(first[4]) if kind == "two_dice" else first[4]
         die_name = "the blue die" if kind == "two_dice" else "the die"
         steps = [

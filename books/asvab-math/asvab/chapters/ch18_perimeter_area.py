@@ -954,7 +954,7 @@ def scale_change(rng, lvl):
             return Problem(stem=stem, answer=ans, fmt=num, wrong=wrong, steps=steps, tip=tip, check=Q(k) ** 2,
                            near=lambda r: [])
         # reverse: the area factor is given; find the side factor
-        k = rng.choice([4, 6, 8, 10])
+        k = rng.choice([6, 8, 10, 12])
         stem = choose(rng,
                       f"Each side of a square is multiplied by the same number, and the area of the square becomes "
                       f"{m(k * k)} times as large. By what number was each side multiplied?",
@@ -962,7 +962,7 @@ def scale_change(rng, lvl):
                       f"was the length of each side multiplied?")
         wrong = [(Q(k * k), "gives the area factor itself"),
                  (Q(k * k) / 2, "halves the area factor instead of taking its square root"),
-                 (Q(k ** 4), "squares the area factor instead of taking its square root")]
+                 (Q(k * k) / 4, "divides the area factor by 4 (the number of sides) instead of taking its square root")]
         steps = [f"If each side is multiplied by {m('k')}, the area is multiplied by {m('k^2')}.",
                  f"So {m(f'k^2 = {k * k}')}, and {m(f'k = \\sqrt{{{k * k}}} = {k}')}."]
         return Problem(stem=stem, answer=Q(k), fmt=num, wrong=wrong, steps=steps,

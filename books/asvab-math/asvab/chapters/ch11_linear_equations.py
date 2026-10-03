@@ -318,7 +318,7 @@ def both_sides(rng, lvl):
     lt = [(a, "x"), (b, "")] if left.startswith(_lin((a, "x"))) else [(b, ""), (a, "x")]
     steps.append(f"Check with {m(f'x = {tx(X)}')}: the left side is {m(f'{_subst(X, *lt)} = {tx(a * X + b)}')} and the "
                  f"right side is {m(f'{_subst(X, (c, "x"), (d, ""))} = {tx(a * X + b)}')}. \\checkmark")
-    wrong = [(-X, "makes a sign error when moving the terms"),
+    wrong = [(-X, "has the right size but the wrong sign"),
              (Q(d + b) / (a - c), f"moves {m(tx(b))} across without changing its sign")]
     if a + c != 0:
         wrong.insert(0, (Q(d - b) / (a + c), "adds the $x$-terms instead of subtracting one from the other"))
@@ -403,7 +403,7 @@ def distribute(rng, lvl):
                  _const_step(a * b, _lin((k, "x")), c * e),
                  _div_step(k, c * e - a * b)]
         wrong = [(Q(e - b) / k, "multiplies only the $x$-terms, not the numbers in parentheses"),
-                 (-X, "makes a sign error when moving the terms"),
+                 (-X, "has the right size but the wrong sign"),
                  (Q(c * e - a * b) / (a + c), "adds the $x$-terms instead of subtracting")]
         tip = None
         holds = lambda v: a * (v + b) == c * (v + e)
@@ -439,7 +439,8 @@ def fraction_eq(rng, lvl):
                  f"Undo the division: multiply both sides by {m(a)}. {m(f'x = {tx(k)} \\times {a} = {tx(X)}')}.",
                  f"Check: {m(f'\\frac{{{tx(X)}}}{{{a}}}{_plus(sb)} = {tx(k)}{_plus(sb)} = {tx(c)}')}. \\checkmark"]
         wrong = [((c - sb) / Q(a), f"divides by {m(a)} instead of multiplying"),
-                 (a * c - sb, f"multiplies {m(tx(c))} by {m(a)} but forgets to multiply {m(tx(sb))}"),
+                 (a * c - sb, f"multiplies only {m(tx(c))} by {m(a)}, not the {m(tx(sb))}: "
+                              f"{m(f'x{_plus(sb)} = {tx(a * c)}')}"),
                  (a * (c + sb), f"moves {m(tx(sb))} across without changing its sign"),
                  (c - sb, f"forgets to multiply by {m(a)}")]
         holds = lambda v: v / a + sb == c
