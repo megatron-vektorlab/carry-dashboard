@@ -143,6 +143,23 @@ def convert(rng, lvl):
     )
 
 
+def _what_percent_steps(part, whole, p):
+    """Show the no-calculator route: reduce the fraction, then scale to /100."""
+    from math import gcd
+    g = gcd(int(part), int(whole))
+    a_, b_ = int(part) // g, int(whole) // g
+    steps = [f"Write the part over the whole: {m(F(int_raw(part), int_raw(whole)))}."]
+    if g > 1:
+        steps.append(f"Simplify by dividing the top and bottom by {num(g)}: "
+                     f"{m(F(int_raw(part), int_raw(whole)) + ' = ' + F(a_, b_) if b_ != 1 else F(int_raw(part), int_raw(whole)) + ' = ' + str(a_))}.")
+    k = R(100, b_)
+    if b_ != 100 and k.is_integer:
+        steps.append(f"Rewrite as hundredths: {m(F(a_, b_) + ' = ' + F(int_raw(a_ * k), 100) + ' = ' + int_raw(p) + r'\%')}.")
+    else:
+        steps.append(f"Convert to a percent: {m(F(a_, b_) + ' = ' + dec_raw(R(p, 100)) + ' = ' + int_raw(p) + r'\%')}.")
+    return steps
+
+
 @template("MK")
 def what_percent(rng, lvl):
     p = rng.choice([5, 10, 12, 15, 20, 25, 30, 40, 60, 75, 80, 125, 150] if lvl > 1 else [10, 20, 25, 50, 75])
@@ -151,7 +168,7 @@ def what_percent(rng, lvl):
     need(part.is_integer and part > 0)
     return Problem(
         stem=choose(rng,
-                    f"{num(part)} is what percent of {num(whole)}?",
+                    f"The number {num(part)} is what percent of {num(whole)}?",
                     f"What percent of {num(whole)} is {num(part)}?"),
         answer=Q(p),
         fmt=pct,
@@ -160,10 +177,8 @@ def what_percent(rng, lvl):
             (R(p, 10), "moves the decimal point only one place"),
             (R(p, 100), "forgets to multiply by 100"),
         ],
-        steps=[
-            f"Write the part over the whole: {m(F(int_raw(part), int_raw(whole)))}.",
-            f"Simplify and convert: {m(F(int_raw(part), int_raw(whole)) + ' = ' + dec_raw(R(p, 100)) + ' = ' + str(p) + r'\%')}.",
-        ],
+        steps=_what_percent_steps(part, whole, p),
+        tip=f"Or test the choices: {pct(p)} of {num(whole)} is {m(f'{dec_raw(R(p, 100))} \\times {int_raw(whole)} = {int_raw(part)}')}.",
         check=part * 100 / whole,
     )
 
@@ -176,7 +191,7 @@ def find_whole(rng, lvl):
     need(part.is_integer and part != whole)
     return Problem(
         stem=choose(rng,
-                    f"{num(part)} is {pct(p)} of what number?",
+                    f"Find the number if {pct(p)} of it is {num(part)}.",
                     f"If {pct(p)} of a number is {num(part)}, what is the number?"),
         answer=Q(whole),
         fmt=num,
@@ -329,7 +344,7 @@ def up_then_down(rng, lvl):
         stem=choose(rng,
                     f"A {item} was priced at {money(old)}. The store raised the price by {pct(pu)}, "
                     f"and a month later it marked the new price down by {pct(pd)}. What is the final price?",
-                    f"A store sold a {item} for {money(old)}. It increased the price by {pct(pu)}, "
+                    f"A store priced a {item} at {money(old)}. Later it increased the price by {pct(pu)}, "
                     f"then put the {item} on sale at {pct(pd)} off the new price. What is the sale price?"),
         answer=end,
         fmt=money,
@@ -356,12 +371,16 @@ def part_of_part(rng, lvl):
     s = soldier(rng)
     fr = frac_raw(R(f_num, f_den))
     ctx = rng.choice([
-        (f"A training battalion has {num(total)} recruits. {pct(p)} of them are assigned to the morning shift, "
+        (f"A training battalion has {num(total)} recruits. Of these, {pct(p)} are assigned to the morning shift, "
          f"and {m(fr)} of the morning-shift recruits are on kitchen duty. How many recruits are on kitchen duty?"),
-        (f"A warehouse holds {num(total)} crates. {pct(p)} of the crates contain medical supplies, and "
+        (f"A warehouse holds {num(total)} crates. Of the crates, {pct(p)} contain medical supplies, and "
          f"{m(fr)} of those crates must be kept refrigerated. How many crates must be refrigerated?"),
-        (f"{s} surveyed {num(total)} service members. {pct(p)} said they exercise every day, and "
-         f"{m(fr)} of the daily exercisers said they run. How many said they run?"),
+        (f"{s} surveyed {num(total)} service members. Of those surveyed, {pct(p)} said they exercise every day, "
+         f"and {m(fr)} of the daily exercisers said they run. How many said they run?"),
+        (f"A high school has {num(total)} seniors. Of the seniors, {pct(p)} plan to go to college, and "
+         f"{m(fr)} of those students plan to study engineering. How many seniors plan to study engineering?"),
+        (f"A food bank received {num(total)} cans of food. Of the cans, {pct(p)} were vegetables, and "
+         f"{m(fr)} of the vegetable cans were corn. How many cans of corn did the food bank receive?"),
     ])
     return Problem(
         stem=ctx,

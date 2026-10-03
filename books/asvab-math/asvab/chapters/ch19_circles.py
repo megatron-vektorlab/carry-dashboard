@@ -568,7 +568,7 @@ def radius_from(rng, lvl):
                         f"The circumference of a circle is {m(_pi_raw(C))} {_w(ab)}. What is the radius of the circle?",
                         f"A circle has a circumference of {m(_pi_raw(C))} {_w(ab)}. What is its radius?"),
             answer=Q(r), fmt=_u(dec, ab), near=_int_near(r),
-            wrong=[(Q(d), "gives the diameter; divide by 2 again to get the radius"),
+            wrong=[(Q(d), "gives the diameter; divide it by 2 to get the radius"),
                    (Q(2 * d), "multiplies by 2 instead of dividing by 2"),
                    (R(r, 2), "divides by 4 instead of by 2")],
             steps=[f"Use {m(r'C = 2\pi r')}: {m(rf'2\pi r = {_pi_raw(C)}')}.",
@@ -846,7 +846,7 @@ def scale_circle(rng, lvl):
             first += f" (Multiplying the diameter by {m(k)} multiplies the radius by {m(k)}, too.)"
         return Problem(
             stem=f"If the {part} of a circle is {words[k]}, the area of the circle is multiplied by what number?",
-            answer=Q(k * k), fmt=num, sort=False,
+            answer=Q(k * k), fmt=num, must=1,
             wrong=[(Q(k), f"assumes the area grows by the same factor as the {part}"),
                    (Q(2 * k), "doubles the factor instead of squaring it"),
                    (Q(k**3), "cubes the factor; that is how volume grows")],
@@ -860,7 +860,7 @@ def scale_circle(rng, lvl):
         part = rng.choice(["radius", "diameter"])
         return Problem(
             stem=f"If the {part} of a circle is {words[k]}, the circumference of the circle is multiplied by what number?",
-            answer=Q(k), fmt=num, sort=False,
+            answer=Q(k), fmt=num, must=1,
             wrong=[(Q(k * k), "squares the factor; only the area grows by the square"),
                    (Q(2 * k), r"doubles the factor because of the 2 in $2\pi r$"),
                    (Q(k**3), "cubes the factor")],
@@ -874,7 +874,7 @@ def scale_circle(rng, lvl):
         how = "cut in half" if k == 2 else "divided by 3"
         return Problem(
             stem=f"If the radius of a circle is {how}, the area of the new circle is what fraction of the area of the original circle?",
-            answer=R(1, k * k), fmt=frac, sort=False,
+            answer=R(1, k * k), fmt=frac, must=1,
             wrong=[(R(1, k), "assumes the area shrinks by the same factor as the radius"),
                    (R(1, k**3), "cubes the factor; that is how volume changes"),
                    (R(1, 2 * k), "doubles the factor instead of squaring it")],
@@ -894,7 +894,7 @@ def scale_circle(rng, lvl):
         return Problem(
             stem=(f"Circle {m('A')} has a {part} of {m(a_)} {_w(ab)}, and circle {m('B')} has a {part} of "
                   f"{m(b_)} {_w(ab)}. The area of circle {m('B')} is how many times the area of circle {m('A')}?"),
-            answer=Q(k * k), fmt=num,
+            answer=Q(k * k), fmt=num, must=1,
             wrong=[(Q(k), f"compares the {part}s instead of the areas"),
                    (Q(2 * k), "doubles the ratio instead of squaring it"),
                    (Q(k**3), "cubes the ratio")],
@@ -916,7 +916,7 @@ def scale_circle(rng, lvl):
             stem=(f"{p.name} is choosing between a pizza with a diameter of {m(small)} inches and a pizza "
                   f"with a diameter of {m(big)} inches. The area of the larger pizza is how many times the "
                   f"area of the smaller one?"),
-            answer=Q(k * k), fmt=num,
+            answer=Q(k * k), fmt=num, must=1,
             wrong=[(Q(k), "compares the diameters instead of the areas"),
                    (Q(2 * k), "doubles the ratio instead of squaring it"),
                    (Q(k**3), "cubes the ratio")],
@@ -936,7 +936,8 @@ def scale_circle(rng, lvl):
     return Problem(
         stem=(f"A circle has an area of {m(_pi_raw(A0))} {_sqw(ab)}. If the radius of the circle is "
               f"{words[k]}, what is the area of the new circle?"),
-        answer=ans, fmt=_pi_u(ab, 2), near=_pi_near(ans, [(k * k + 1) * A0, (k * k - 1) * A0, A0 + k * k]),
+        answer=ans, fmt=_pi_u(ab, 2), must=1,
+        near=_pi_near(ans, [(k * k + 1) * A0, (k * k - 1) * A0, A0 + k * k]),
         wrong=[(k * A0, f"multiplies the area by {m(k)} instead of by {m(k * k)}"),
                (k**3 * A0, f"multiplies the area by {m(f'{k}^3 = {k**3}')} instead of {m(f'{k}^2')}"),
                (2 * k * A0, f"multiplies the area by {m(f'2 \\times {k}')} instead of {m(f'{k}^2')}")],
@@ -1208,7 +1209,7 @@ def arc_sector(rng, lvl):
 
 
 _MILES = {R(1, 4): "a quarter of a mile", R(1, 2): "half a mile", Q(1): "1 mile", Q(2): "2 miles",
-          Q(3): "3 miles"}
+          Q(3): "3 miles", Q(5): "5 miles"}
 
 
 @template("AR")
@@ -1268,21 +1269,42 @@ def wheel(rng, lvl):
             tip=f"Move the decimal point to divide by a whole number: {m(f'{int_raw(dist)} \\div {dec_raw(C)} = {int_raw(dist * 100)} \\div {int_raw(C * 100)}')}.",
             verify=lambda v: v * C == dist,
         )
-    # revolutions in a mile
-    d, Cft = rng.choice([(42, 11), (21, R(11, 2))])
-    miles = rng.choice([R(1, 4), R(1, 2), Q(1), Q(2), Q(3)])
+    # revolutions over a longer distance: every wheel size gets its own contexts and distances
+    S_ = soldier(rng)
+    d, thing, miles_opts = rng.choice([
+        (14, f"the wheel of {p.name}'s wheelbarrow", [R(1, 4), R(1, 2)]),
+        (14, f"a wheel on {p.name}'s jogging stroller", [Q(1), Q(2), Q(3)]),
+        (21, f"a tire on {p.name}'s utility trailer", [Q(1), Q(2), Q(5)]),
+        (21, f"a rear tire of {p.name}'s riding mower", [R(1, 4), R(1, 2)]),
+        (21, f"a tire on {S_}'s supply trailer", [Q(1), Q(2), Q(5)]),
+        (28, f"the front wheel of {p.name}'s bicycle", [Q(1), Q(2), Q(3), Q(5)]),
+        (28, f"a wheel on {S_}'s bicycle", [R(1, 2), Q(1), Q(2)]),
+        (42, f"{p.name}'s truck tire", [Q(1), Q(2), Q(5)]),
+        (42, f"a tire on {S_}'s cargo truck", [R(1, 2), Q(1), Q(2), Q(5)]),
+        (42, f"the front tire of {p.name}'s tractor", [R(1, 4), R(1, 2), Q(1)]),
+    ])
+    miles = rng.choice(miles_opts)
+    C_in = R(22, 7) * d
+    Cft = C_in / 12
     feet = miles * 5280
-    ans = feet / Q(Cft)
-    if d == 42:
-        thing = rng.choice([f"{p.name}'s truck tire", f"a tire on {soldier(rng)}'s cargo truck",
-                            f"the front tire of {p.name}'s tractor"])
-    else:
-        thing = rng.choice([f"a tire on {p.name}'s utility trailer", f"a rear tire of {p.name}'s riding mower",
-                            f"a tire on {soldier(rng)}'s supply trailer"])
+    ans = feet / Cft
+    need(ans.is_integer)
     dist_step = ([] if miles == 1 else
                  [f"Change the distance to feet: {m(f'{frac_raw(miles)} \\times {int_raw(5280)} = {int_raw(feet)}')} feet."])
+    if Cft.q == 1:
+        last = f"{m(f'{int_raw(feet)} \\div {int_raw(Cft)} = {int_raw(ans)}')}"
+        tip = None
+    elif Cft.q == 2:
+        last = f"{m(f'{int_raw(feet)} \\div {dec_raw(Cft)} = {int_raw(ans)}')}"
+        tip = (f"To divide by {dec_raw(Cft)}, double both numbers: "
+               f"{m(f'{int_raw(2 * feet)} \\div {int_raw(2 * Cft)} = {int_raw(ans)}')}.")
+    else:   # thirds: dividing by p/3 means multiplying by 3/p
+        last = (f"{m(f'{int_raw(feet)} \\div {frac_raw(Cft)} = {int_raw(feet)} \\times {F(3, Cft.p)}')}: "
+                f"{m(f'{int_raw(feet)} \\div {Cft.p} = {int_raw(feet / Cft.p)}')}, and "
+                f"{m(f'{int_raw(feet / Cft.p)} \\times 3 = {int_raw(ans)}')}")
+        tip = None
     return Problem(
-        stem=(f"The diameter of {thing} is {m(d)} inches. About how many complete turns does the tire make "
+        stem=(f"The diameter of {thing} is {m(d)} inches. About how many complete turns does it make "
               f"in {_MILES[miles]}? (1 mile {m('=')} {num(5280)} feet; use {m(F(22, 7))} for {m(r'\pi')}.)"),
         answer=ans, fmt=num, near=lambda rng: [ans * R(3, 4), ans * R(5, 4), ans * R(3, 2)],
         wrong=[(2 * ans, "uses the radius instead of the diameter"),
@@ -1290,14 +1312,12 @@ def wheel(rng, lvl):
                (ans / 2, r"uses the diameter in $2\pi r$"),
                (Q(feet) / d * 12, "divides by the diameter instead of the circumference")],
         steps=[f"One turn covers one circumference: {m('C = \\pi d \\approx ' + _times_pi(R(22, 7), d))} inches.",
-               f"Change to feet: {m(f'{int_raw(R(22, 7) * d)} \\div 12 = {dec_raw(Cft)}')} feet.",
+               f"Change to feet: {m(f'{int_raw(C_in)} \\div 12 = ' + (frac_raw(Cft) if Cft.q == 3 else dec_raw(Cft)))} feet.",
                ] + dist_step + [
-               f"Turns {m('=')} distance {m(r'\div')} circumference: {m(f'{int_raw(feet)} \\div {dec_raw(Cft)} = {int_raw(ans)}')}."],
-        tip=(f"To divide by 5.5, double both numbers and divide by 11: {m(f'{int_raw(2 * feet)} \\div 11 = {int_raw(ans)}')}."
-             if Cft != 11 else None),
+               f"Turns {m('=')} distance {m(r'\div')} circumference: {last}."],
+        tip=tip,
         verify=lambda v: v * R(22, 7) * d == feet * 12,
     )
-
 
 PLAN = [
     # (template, level, count) -- easy -> hard; 25 problems

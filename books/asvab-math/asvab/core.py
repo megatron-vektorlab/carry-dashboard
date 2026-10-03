@@ -272,6 +272,8 @@ class Problem:
     near: Callable | None = None       # rng -> plausible filler value
     sort: bool | None = None           # sort numeric choices ascending (default yes)
     neg_ok: bool = False               # allow negative distractors for a positive answer
+    must: int = 0                      # the first `must` wrong answers are always shown
+    order: Callable | None = None      # sort key for choices (e.g. clock times as minutes)
 
     # filled in by finalize()
     choices: list = field(default_factory=list)   # [(tex, why|None)]
@@ -437,26 +439,33 @@ def finalize(p: Problem, rng: random.Random, target: int) -> Problem:
         raise Reject("fewer than 3 distinct distractors")
 
     numeric = _is_real_num(p.answer) and all(_is_real_num(v) for v, _, _ in pool)
-    do_sort = numeric if p.sort is None else (p.sort and numeric)
+    keyf = p.order if p.order is not None else (Q if numeric else None)
+    do_sort = keyf is not None and p.sort is not False
 
-    explained = [c for c in pool if c[1]]
-    plain = [c for c in pool if not c[1]]
-    ordered = explained + plain
+    # mandatory distractors: the first `must` entries of `wrong` that survived
+    wanted = [w[0] for w in p.wrong[:p.must]]
+    must = [c for c in pool if any(c[0] is v or same(c[0], v) for v in wanted)][:3]
+    rest = [c for c in pool if c not in must]
+    explained = [c for c in rest if c[1]]
+    plain = [c for c in rest if not c[1]]
+    ordered = must + explained + plain
     ANS = (p.answer, None, ans_tex, True)
 
     if do_sort:
-        A = Q(p.answer)
+        A = keyf(p.answer)
         best = None
-        # keep at least one explained trap, then hit the target slot (to
-        # balance A-D), then prefer still more explained traps
+        # keep the mandatory traps and at least one explained trap, then hit
+        # the target slot (to balance A-D), then prefer more explained traps
         for combo in itertools.combinations(ordered[:10], 3):
+            if any(m_ not in combo for m_ in must):
+                continue
             sc = sum(1 for c in combo if c[1])
-            below = sum(1 for c in combo if Q(c[0]) < A)
+            below = sum(1 for c in combo if keyf(c[0]) < A)
             key = (min(sc, 1), below == target, sc)
             if best is None or key > best[0]:
                 best = (key, combo)
         vals = [c + (False,) for c in best[1]] + [ANS]
-        vals.sort(key=lambda c: Q(c[0]))
+        vals.sort(key=lambda c: keyf(c[0]))
     else:
         chosen = [c + (False,) for c in ordered[:3]]
         rng.shuffle(chosen)

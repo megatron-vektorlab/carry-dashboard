@@ -363,7 +363,7 @@ def _steps(tokens):
             if op in "*/" and segops & {"+", "-"}:
                 lead += (", multiply" if op == "*" else ", divide") + " before adding or subtracting"
         elif op == "^":
-            lead = "Exponent next"
+            lead = "Exponent next" if steps else "Exponents first"
         elif op in "*/":
             word = "Multiply" if op == "*" else "Divide"
             if {"*", "/"} <= segops:
@@ -834,7 +834,7 @@ def divide_by_hand(rng, lvl):
         return m(rf"{cur} \div {k} = {qd}") + (f", remainder {m(r)}" if r else "")
 
     cur0, _, qd0, r0 = parts[0]
-    first = (f"{m(k)} does not go into {m(lead_digits)}, so start with {m(cur0)}: " if lead_digits
+    first = (f"Since {m(k)} does not go into {m(lead_digits)}, start with {m(cur0)}: " if lead_digits
              else f"Start with {m(cur0)}: ")
     steps = [first + say(cur0, qd0, r0) + "."]
     prev = r0
@@ -917,7 +917,7 @@ def shopping_total(rng, lvl):
     bill = rng.choice(bills[:2]) if len(bills) > 1 and bills[1] <= 100 else bills[0]
     change = bill - total
     pay = (f"pays with a {money(bill)} bill" if bill <= 100
-           else f"pays with {m(bill // 100)} {money(100)} bills")
+           else f"pays with {['two', 'three', 'four', 'five'][bill // 100 - 2]} {money(100)} bills")
     return Problem(
         stem=f"{who} buys {buy} and {pay}. How much change should {who} get back?",
         answer=Q(change),
@@ -1029,7 +1029,7 @@ def equal_share(rng, lvl):
         tot = nightly * nights
         need(tot % k == 0)
         each = Q(tot) / k
-        stem = (f"{m(k)} friends rent a cabin for {m(nights)} nights at {money(nightly)} per night. "
+        stem = (f"A group of {m(k)} friends rents a cabin for {m(nights)} nights at {money(nightly)} per night. "
                 "They split the total cost equally. How much does each friend pay?")
         wrong = [(Q(nightly) / k, "forgets to multiply by the number of nights"),
                  (Q(tot), "is the total cost, not each friend's share"),
@@ -1044,7 +1044,7 @@ def equal_share(rng, lvl):
         tot = t * load
         need(tot % k == 0)
         each = Q(tot) / k
-        stem = (f"{m(t)} trucks each carry {num(load)} cases of water to a training area. The "
+        stem = (f"Each of {m(t)} trucks carries {num(load)} cases of water to a training area. The "
                 f"water is shared equally among {m(k)} companies. How many cases does each "
                 "company get?")
         wrong = [(Q(tot), "is the total number of cases, not each company's share"),
@@ -1061,7 +1061,7 @@ def equal_share(rng, lvl):
         tot = rent + util + net
         need(tot % k == 0)
         each = Q(tot) / k
-        stem = (f"{m(k)} roommates share an apartment. Each month the rent is {money(rent)}, "
+        stem = (f"An apartment is shared by {m(k)} roommates. Each month the rent is {money(rent)}, "
                 f"utilities are {money(util)}, and internet is {money(net)}. If they split all "
                 "three costs equally, how much does each roommate pay per month?")
         wrong = [(Q(rent) / k, "splits only the rent"),
@@ -1106,7 +1106,7 @@ _GROUPS = [
      "A school is taking {N} students on a field trip. Each bus holds {C} students.",
      "How many buses are needed?"),
     ("people", "van", "vans", [8, 10, 12, 15], (30, 140),
-     "{N} people are going to a family reunion. Each van can carry {C} people.",
+     "A total of {N} people are going to a family reunion. Each van can carry {C} people.",
      "How many vans are needed to carry everyone?"),
     ("soldiers", "truck", "trucks", [16, 18, 20, 24], (60, 400),
      "A convoy must move {N} soldiers. Each truck can carry {C} soldiers.",
@@ -1115,13 +1115,13 @@ _GROUPS = [
      "A wedding has {N} guests. Each table seats {C} guests.",
      "What is the least number of tables needed so that every guest has a seat?"),
     ("recruits", "tent", "tents", [4, 6, 8, 12], (30, 200),
-     "{N} recruits are camping during field training. Each tent sleeps {C} recruits.",
+     "A group of {N} recruits is camping during field training. Each tent sleeps {C} recruits.",
      "How many tents are needed?"),
     ("books", "box", "boxes", [12, 15, 20, 24, 25], (100, 500),
      "A library is packing {N} books. Each box holds {C} books.",
      "How many boxes are needed to pack all the books?"),
     ("troops", "helicopter", "helicopters", [10, 12, 15], (40, 160),
-     "{N} troops must be flown to a landing zone, and each helicopter makes one trip. "
+     "A unit of {N} troops must be flown to a landing zone, and each helicopter makes one trip. "
      "Each helicopter carries {C} troops.",
      "How many helicopters are needed?"),
 ]
@@ -1133,7 +1133,7 @@ def round_up_groups(rng, lvl):
     cap = rng.choice(caps)
     total = rng.randint(*trange)
     qf, r = divmod(total, cap)
-    need(r != 0 and qf >= 2 and cap - r >= 2)
+    need(r >= 2 and qf >= 2 and cap - r >= 2)
     ceil_ = qf + 1
     exact = R(total, cap)
     setup = setup.format(N=num(total), C=m(cap))
@@ -1152,7 +1152,7 @@ def round_up_groups(rng, lvl):
             wrong=wrong,
             steps=[
                 divide,
-                f"{m(qf)} full {c2} hold {m(rf'{qf} \times {cap} = {_n(qf * cap)}')} {noun}, "
+                f"The {m(qf)} full {c2} hold {m(rf'{qf} \times {cap} = {_n(qf * cap)}')} {noun}, "
                 f"so {m(r)} {noun} are still left.",
                 f"They need one more {c1}: {m(f'{qf} + 1 = {ceil_}')} {c2}.",
             ],

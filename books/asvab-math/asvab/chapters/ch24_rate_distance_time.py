@@ -285,7 +285,7 @@ def drt_basic(rng, lvl, part=None):
 _MIN_MOVERS = [
     # (sentence with {r} speed and {T} time phrase, noun, speed choices, military)
     ("{B} drives at {r} miles per hour for {T}.", "{he} drive", [40, 45, 48, 50, 54, 60, 66, 72], False),
-    ("{R}'s supply convoy travels at {r} miles per hour for {T}.", "the convoy travel",
+    ("The supply convoy {R} is driving in travels at {r} miles per hour for {T}.", "the convoy travel",
      [24, 30, 32, 36, 40, 42, 45, 48, 50], True),
     ("A helicopter flies at {r} miles per hour for {T}.", "the helicopter fly", [120, 132, 144, 150, 160],
      True),
@@ -1084,6 +1084,36 @@ _TRIPS = [
 ]
 
 
+_TRIPS3 = [
+    # two legs and a stop; the destination is named only at the end of the trip
+    ("{B} leaves home at {t0} and drives {d1} miles at {r1} miles per hour. {He} stops for {stop} minutes to eat "
+     "lunch, then drives another {d2} miles at {r2} miles per hour to {his} cousin's house. At what time does "
+     "{he} arrive at {his} cousin's house?", [40, 48, 50, 60, 64], False),
+    ("A convoy leaves the motor pool at {t0} and travels {d1} miles at {r1} miles per hour. It halts for {stop} "
+     "minutes to refuel, then travels another {d2} miles at {r2} miles per hour to the training area. At what "
+     "time does the convoy reach the training area?", [30, 40, 45, 48, 50], True),
+    ("A charter bus carrying new recruits leaves the processing station at {t0} and travels {d1} miles at {r1} "
+     "miles per hour. It makes a {stop}-minute rest stop, then travels another {d2} miles at {r2} miles per "
+     "hour to the training base. At what time does it arrive at the base?", [50, 55, 60, 65], True),
+    ("A train leaves the first station at {t0} and travels {d1} miles at {r1} miles per hour. It waits {stop} "
+     "minutes at a second station, then travels another {d2} miles at {r2} miles per hour to the end of the "
+     "line. At what time does it reach the end of the line?", [48, 50, 60, 64, 80], False),
+    ("A tour bus leaves the hotel at {t0} and travels {d1} miles at {r1} miles per hour. It makes a {stop}-minute "
+     "stop, then travels another {d2} miles at {r2} miles per hour to a national park. At what time does it "
+     "arrive at the park?", [40, 45, 48, 50, 60], False),
+    ("{B} leaves for the airport at {t0} and drives {d1} miles on the highway at {r1} miles per hour. {He} "
+     "stops {stop} minutes for gas, then drives the last {d2} miles to the airport at {r2} miles per hour. At "
+     "what time does {he} reach the airport?", [40, 45, 48, 50, 60, 64], False),
+]
+
+
+def _clock_min(s):
+    """'11:05 a.m.' -> minutes after midnight (sort key for clock-time choices)."""
+    hm, suf = s.split()
+    h, mm = map(int, hm.split(":"))
+    return (h % 12 + (12 if suf == "p.m." else 0)) * 60 + mm
+
+
 @template("AR")
 @_fill
 def arrival_time(rng, lvl, part=None):
@@ -1111,7 +1141,7 @@ def arrival_time(rng, lvl, part=None):
         wrong += [(_clock(end + 60), None), (_clock(end - 30), None), (_clock(end + 30), None)]
         wrong = [w for w in wrong if w[0] != _clock(end)]
         return Problem(
-            stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong[:5],
+            stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong[:5], order=_clock_min,
             steps=[f"Travel time: {m(f'{int_raw(d)} \\div {r} = {mixed_raw(th)}')} hours.",
                    f"Change the fraction of an hour to minutes: {m(f'{frac_raw(frac_h)} \\times 60 = {int(frac_h * 60)}')} "
                    f"minutes, so the trip takes {_hm(th)}.",
@@ -1119,8 +1149,9 @@ def arrival_time(rng, lvl, part=None):
             check=_clock(start + (Fraction(int(d), r) * 60)),
         )
     # level 3: two legs with a rest stop
-    r1 = r
-    r2 = rng.choice([s for s in speeds if s != r1] or [r1])
+    st3, speeds3, mil3 = _pick(rng, _TRIPS3, part)
+    r1 = rng.choice(speeds3)
+    r2 = rng.choice([v for v in speeds3 if v != r1])
     t1 = rng.choice([1, 2, R(3, 2), R(5, 2), 3])
     t2 = rng.choice([R(1, 2), 1, R(3, 2), R(3, 4), R(5, 4)])
     d1, d2 = r1 * t1, r2 * t2
@@ -1128,18 +1159,15 @@ def arrival_time(rng, lvl, part=None):
     stop = rng.choice([15, 20, 30, 45])
     total = int((t1 + t2) * 60) + stop
     end = start + total
-    stem = (st.format(B=B, t0=_clock(start), d=int_raw(d1), r=r1)
-            + f" After a {stop}-minute stop, it goes another {int_raw(d2)} miles at {r2} miles per hour. "
-              f"At what time does it arrive?")
-    if "{B}" in st:
-        stem = stem.replace("it goes another", f"{B.he} drives another").replace("does it arrive", f"does {B.he} arrive")
+    stem = st3.format(B=B, He=B.He, he=B.he, his=B.his, t0=_clock(start), d1=int_raw(d1), r1=r1,
+                      d2=int_raw(d2), r2=r2, stop=stop)
     wrong = [(_clock(end - stop), f"forgets the {stop}-minute stop"),
              (_clock(start + int((d1 + d2) / r1 * 60) + stop) if ((d1 + d2) / r1 * 60).is_integer else _clock(end + 60),
               "uses the first speed for the whole trip" if ((d1 + d2) / r1 * 60).is_integer else None),
              (_clock(end + 60), None), (_clock(end - 30), None), (_clock(end + 15), None)]
     wrong = [w for w in wrong if w[0] != _clock(end)]
     return Problem(
-        stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong,
+        stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong, order=_clock_min,
         steps=[f"First part: {m(f'{int_raw(d1)} \\div {r1} = {_d(t1)}')} {_hw(t1)}"
                + ("" if Q(t1).is_integer else f" ({_hm(t1)})")
                + f". Second part: {m(f'{int_raw(d2)} \\div {r2} = {_d(t2)}')} {_hw(t2)}"

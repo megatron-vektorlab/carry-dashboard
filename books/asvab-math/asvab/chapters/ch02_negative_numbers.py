@@ -637,8 +637,9 @@ def neg_powers(rng, lvl):
             fmt=num,
             wrong=[(Q(k ** 2 + c), f"treats {m('-x^2')} as {m('(-x)^2')}, which is positive"),
                    (Q(-k ** 2 - c), f"subtracts {m(c)} instead of subtracting {m(-c)}; subtracting a negative means adding"),
-                   (Q(k ** 2 - c), "makes both signs wrong"),
-                   (Q(-2 * k + c), "multiplies by 2 instead of squaring")],
+                   (Q(k ** 2 - c), f"makes both mistakes: treats {m('-x^2')} as positive and subtracts {m(c)} "
+                                  f"instead of adding it"),
+                   (Q(2 * k + c), f"multiplies {m('x')} by 2 instead of squaring it: {m(f'-2({x_}) = {2 * k}')}")],
             steps=[f"Substitute, keeping negatives in parentheses: {m(f'-({x_})^2 - ({y_})')}.",
                    f"Square first: {m(f'({x_})^2 = {k ** 2}')}, so {m(f'-({x_})^2 = {-k ** 2}')}.",
                    f"Subtracting {m(y_)} means adding {m(c)}: {m(f'{-k ** 2} + {c} = {_r(ans)}')}."],
@@ -668,7 +669,8 @@ def neg_powers(rng, lvl):
         ans = Q((-a_) ** 3 - b_ ** 2)
         wrong = [(Q(a_ ** 3 - b_ ** 2), f"thinks {m(f'(-{a_})^3')} is positive; an odd power of a negative is negative"),
                  (Q((-a_) ** 3 + b_ ** 2), f"treats {m(f'(-{b_})^2')} as {m(f'-{b_ ** 2}')}"),
-                 (Q(-3 * a_ - 2 * b_), "multiplies by the exponents instead of using them as powers")]
+                 (Q(-3 * a_ + 2 * b_), f"multiplies by the exponents instead of using them as powers: "
+                                       f"{m(rf'(-{a_}) \times 3 - (-{b_}) \times 2 = {-3 * a_ + 2 * b_}')}")]
         steps = [
             f"{m(f'(-{a_})^3 = (-{a_})(-{a_})(-{a_}) = {(-a_) ** 3}')}: three negative factors give a negative.",
             f"{m(f'(-{b_})^2 = (-{b_})(-{b_}) = {b_ ** 2}')}: two negative factors give a positive.",
@@ -685,7 +687,7 @@ def neg_powers(rng, lvl):
         wrong = [(Q(k ** 2 + c * x_), f"squares {m(f'-{k}')} correctly but drops the minus sign in front of {m('x^2')}"),
                  (Q(-k ** 2 - c * x_), f"gets the sign of {m(f'{c}({x_})')} wrong"),
                  (Q(k ** 2 - c * x_), "makes both terms positive"),
-                 (Q(-2 * k + c * x_), "multiplies by 2 instead of squaring")]
+                 (Q(2 * k + c * x_), f"multiplies {m('x')} by 2 instead of squaring it: {m(f'-2({x_}) = {2 * k}')}")]
         steps = [
             f"Substitute {m(x_)} for {m('x')}, keeping it in parentheses: {m(f'-({x_})^2 + {c}({x_})')}.",
             f"Square first: {m(f'({x_})^2 = {k ** 2}')}, so {m(f'-({x_})^2 = {-k ** 2}')}.",
@@ -740,8 +742,9 @@ def mixed_ops(rng, lvl):
         disp = rf"{_r(k)} \times ({u} - {w}) + {_p(top)} \div {_p(d)}"
         wrong = [(Q(-k * inner + q), f"gets the sign of {m(rf'{_r(k)} \times {_p(inner)}')} wrong"),
                  (Q(k * inner - q), f"gets the sign of {m(rf'{_p(top)} \div {_p(d)}')} wrong"),
-                 (Q((k * inner + top) / Q(d)) if (k * inner + top) % d == 0 else Q(k * inner + top),
-                  "adds before dividing")]
+                 ((Q(k * inner + top) / d, f"adds {m(k * inner)} and {m(_p(top))} before dividing by {m(_p(d))}")
+                  if (k * inner + top) % d == 0 else
+                  (Q(k * inner + top), f"forgets to divide {m(_p(top))} by {m(_p(d))}"))]
         steps = [
             f"Parentheses first: {m(f'{u} - {w} = {inner}')}.",
             f"Multiply: {m(rf'{_r(k)} \times {_p(inner)} = {k * inner}')} (same signs, positive).",
@@ -758,7 +761,8 @@ def mixed_ops(rng, lvl):
         ans = Q(inner * c_ - e_)
         disp = rf"({_r(a_)} - {b_}) \times {_p(c_)} - {_p(e_)}"
         wrong = [(Q(-inner * c_ - e_), f"gets the sign of {m(rf'{_p(inner)} \times {_p(c_)}')} wrong"),
-                 (Q(inner * c_ + e_), f"subtracts {m(_p(e_))} incorrectly" if e_ < 0 else f"adds {m(e_)} instead of subtracting it"),
+                 (Q(inner * c_ + e_), f"subtracts {m(abs(e_))} instead of adding it; subtracting a negative means adding"
+                  if e_ < 0 else f"adds {m(e_)} instead of subtracting it"),
                  (Q(inner * (c_ - e_)), "subtracts before multiplying")]
         steps = [
             f"Parentheses first: {m(f'{_r(a_)} - {b_} = {inner}')}.",

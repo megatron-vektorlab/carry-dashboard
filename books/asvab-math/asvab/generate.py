@@ -4,6 +4,7 @@ from __future__ import annotations
 import importlib
 import pkgutil
 import random
+import re
 
 from . import chapters as _chapters_pkg
 from .core import Problem, Reject, finalize
@@ -28,15 +29,34 @@ def load_chapters(only: int | None = None):
     return mods
 
 
+def _skeleton(stem: str) -> str:
+    """Scenario fingerprint: the opening words with every number masked."""
+    s = re.sub(r"\$[^$]*\$|\\\$[\d{},.]+|\d[\d{},.]*", "#", stem)
+    words = re.findall(r"[A-Za-z#']+", s)
+    return " ".join(words[:7]).lower()
+
+
 def make(tpl, lvl: int, rng: random.Random, target: int, seen: set[str],
-         chapter: int = 0) -> Problem:
-    """One finished problem from a template; retries on Reject / duplicates."""
+         chapter: int = 0, avoid: set | None = None) -> Problem:
+    """One finished problem from a template; retries on Reject / duplicates.
+
+    ``avoid`` (shared across one chapter or test section) holds scenario
+    fingerprints and (template, answer) pairs already used, so a set does
+    not tell the same story twice or reuse the same numbers; after half the
+    tries the rule is relaxed rather than failing.
+    """
     last = None
-    for _ in range(MAX_TRIES):
+    name = f"{tpl.__module__.rsplit('.', 1)[-1]}.{tpl.__name__}"
+    for i in range(MAX_TRIES):
         try:
             p = tpl(rng, lvl)
             if p.stem in seen:
                 raise Reject("duplicate stem")
+            keys = {("ans", name, str(p.answer))}
+            if len(p.stem) > 70:          # word problems: vary the scenario too
+                keys.add(("sk", _skeleton(p.stem)))
+            if avoid is not None and i < MAX_TRIES // 2 and keys & avoid:
+                raise Reject("scenario or numbers already used in this set")
             if getattr(tpl, "section", None) and p.section == "MK":
                 p.section = tpl.section
             finalize(p, rng, target)
@@ -44,9 +64,11 @@ def make(tpl, lvl: int, rng: random.Random, target: int, seen: set[str],
             last = e
             continue
         p.level = lvl
-        p.template = f"{tpl.__module__.rsplit('.', 1)[-1]}.{tpl.__name__}"
+        p.template = name
         p.chapter = chapter
         seen.add(p.stem)
+        if avoid is not None:
+            avoid |= keys
         return p
     raise RuntimeError(f"{tpl.__module__}.{tpl.__name__} (level {lvl}) failed {MAX_TRIES} times: {last}")
 
@@ -83,7 +105,8 @@ def chapter_problems(mod, seed: int, seen: set[str]) -> list[Problem]:
     total = sum(c for _, _, c in mod.PLAN)
     targets = balanced_targets(total, rng)
     out = []
+    avoid: set = set()
     for tpl, lvl, count in mod.PLAN:
         for _ in range(count):
-            out.append(make(tpl, lvl, rng, targets[len(out)], seen, mod.NUM))
+            out.append(make(tpl, lvl, rng, targets[len(out)], seen, mod.NUM, avoid))
     return interleave(out)

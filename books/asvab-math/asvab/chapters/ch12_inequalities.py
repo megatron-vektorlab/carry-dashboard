@@ -39,8 +39,8 @@ $x \ge 3$ & $x$ is at least $3$ (no less than $3$) & closed dot at $3$, shade ri
 \begin{concept}{Solving: one extra rule}
 Add or subtract any number on both sides, and multiply or divide both sides
 by a \emph{positive} number, exactly as with equations. But when you
-\textbf{multiply or divide both sides by a negative number, flip the
-inequality sign}:
+\textbf{multiply or divide both sides by a negative number, reverse the
+inequality symbol}:
 \[ -2x < 6 \;\Rightarrow\; x > -3 \]
 \emph{Compound} inequalities have three parts; do the same thing to all
 three: $-3 < 2x + 1 \le 9 \Rightarrow -4 < 2x \le 8 \Rightarrow -2 < x \le 4$.
@@ -58,20 +58,21 @@ $|x - 3|$ is the distance between $x$ and $3$ on the number line.
 Solve $5 - 3x \ge 17$.
 
 \textbf{Solution.} Subtract $5$ from both sides: $-3x \ge 12$. Divide both
-sides by $-3$ and \emph{flip} the sign: $x \le -4$. Check with $x = -5$:
+sides by $-3$ and \emph{reverse} the inequality symbol: $x \le -4$. Check with $x = -5$:
 $5 - 3(-5) = 20$, and $20 \ge 17$. \checkmark
 \end{example}
 
 \begin{tip}
 Test a point. Pick an easy number in your answer (such as $0$, if it is
 included) and substitute it into the \emph{original} inequality. If it
-makes a true statement, the direction of your sign is right.
+makes a true statement, your inequality symbol points the right way.
 \end{tip}
 
 \begin{trap}
 \begin{itemize}
-\item Forgetting to flip the sign after dividing by a negative number.
-\item Flipping when you only \emph{subtracted} a number: $x - 5 > 2$ is
+\item Forgetting to reverse the inequality symbol after dividing by a
+  negative number.
+\item Reversing it when you only \emph{subtracted} a number: $x - 5 > 2$ is
   simply $x > 7$.
 \item Mixing up $<$ and $\le$: ``at least $10$'' includes $10$.
 \item Rounding the wrong way in word problems: to earn \emph{at least} a
@@ -187,17 +188,17 @@ def _keep_wrong(cands, orig, grid, ans_tex):
 def _div_text(a, op):
     """Words for dividing both sides of an inequality by a."""
     if a > 0:
-        return f"Divide both sides by {m(tx(a))}. Dividing by a positive number keeps the sign the same"
-    return (f"Divide both sides by {m(tx(a))}. Dividing by a \\emph{{negative}} number flips the sign: "
+        return f"Divide both sides by {m(tx(a))}. Dividing by a positive number keeps the inequality symbol the same"
+    return (f"Divide both sides by {m(tx(a))}. Dividing by a \\emph{{negative}} number reverses the inequality symbol: "
             f"{m(_TEX[op])} becomes {m(_TEX[_FLIP[op]])}")
 
 
 def _const_text(b, lhs_tex, op, rhs):
     new = Q(rhs) - b
     if b > 0:
-        return (f"Subtract {m(tx(b))} from both sides (adding or subtracting never changes the sign): "
+        return (f"Subtract {m(tx(b))} from both sides (adding or subtracting never changes the direction): "
                 f"{m(f'{lhs_tex} {_TEX[op]} {tx(rhs)} - {tx(b)}')}, so {m(f'{lhs_tex} {_TEX[op]} {tx(new)}')}.")
-    return (f"Add {m(tx(-b))} to both sides (adding or subtracting never changes the sign): "
+    return (f"Add {m(tx(-b))} to both sides (adding or subtracting never changes the direction): "
             f"{m(f'{lhs_tex} {_TEX[op]} {tx(rhs)} + {tx(-b)}')}, so {m(f'{lhs_tex} {_TEX[op]} {tx(new)}')}.")
 
 
@@ -228,7 +229,7 @@ def solve_ineq(rng, lvl):
         steps = [_const_text(a, "x", op, c)]
         cands = [(_ray(op, c + a), f"{'adds' if a > 0 else 'subtracts'} {m(abs(a))} instead of "
                                    f"{'subtracting' if a > 0 else 'adding'} it"),
-                 (_ray(_FLIP[op], B), "flips the sign, but you flip only when multiplying or dividing by a negative number"),
+                 (_ray(_FLIP[op], B), "reverses the inequality symbol, but that happens only when you multiply or divide by a negative number"),
                  (_ray(_STRICT[op], B), f"uses {m(_TEX[_STRICT[op]])} instead of {m(_TEX[op])}")]
         test_terms = [(1, "x"), (a, "")]
     elif kind == "mul":
@@ -237,7 +238,7 @@ def solve_ineq(rng, lvl):
         ineq = f"{a}x {_TEX[op]} {tx(c)}"
         orig = lambda t: _holds(op, a * t, c)
         steps = [_div_text(a, op) + f": {m(f'x {_TEX[op]} {F(tx(c), a)}')}, so {m(f'x {_TEX[op]} {tx(B)}')}."]
-        cands = [(_ray(_FLIP[op], B), f"flips the sign, but {m(a)} is positive"),
+        cands = [(_ray(_FLIP[op], B), f"reverses the inequality symbol, but {m(a)} is positive"),
                  (_ray(op, c - a), f"subtracts {m(a)} instead of dividing by it"),
                  (_ray(op, c * a), f"multiplies by {m(a)} instead of dividing"),
                  (_ray(_STRICT[op], B), f"uses {m(_TEX[_STRICT[op]])} instead of {m(_TEX[op])}")]
@@ -258,10 +259,10 @@ def solve_ineq(rng, lvl):
                  _div_text(a, op) + f": {m(f'x {_TEX[fop]} {F(tx(c - b), tx(a))}')}, so {m(f'x {_TEX[fop]} {tx(B)}')}."]
         cands = []
         if a < 0:
-            cands.append((_ray(op, B), f"forgets to flip the sign when dividing by {m(a)}"))
-            cands.append((_ray(fop, -B), f"makes a sign error when dividing by {m(a)}"))
+            cands.append((_ray(op, B), f"forgets to reverse the inequality symbol when dividing by {m(a)}"))
+            cands.append((_ray(fop, -B), f"gets the number's sign wrong (positive vs. negative) when dividing by {m(a)}"))
         else:
-            cands.append((_ray(_FLIP[op], B), "flips the sign, but you flip only when dividing by a negative number"))
+            cands.append((_ray(_FLIP[op], B), "reverses the inequality symbol, but that happens only when you divide by a negative number"))
         cands += [(_ray(fop, Q(c + b) / a), f"moves {m(tx(b))} across without changing its sign"),
                   (_ray(fop, Q(c - b)), f"forgets to divide by {m(a)}"),
                   (_ray(_STRICT[fop], B), f"uses {m(_TEX[_STRICT[fop]])} instead of {m(_TEX[fop])}")]
@@ -313,12 +314,15 @@ def both_sides_ineq(rng, lvl):
         steps.pop()
     cands = []
     if k < 0:
-        cands.append((_ray(op, B), f"forgets to flip the sign when dividing by {m(k)}"))
-        cands.append((_ray(fop, -B), f"makes a sign error when dividing by {m(k)}"))
+        cands.append((_ray(op, B), f"forgets to reverse the inequality symbol when dividing by {m(k)}"))
+        cands.append((_ray(fop, -B), f"gets the number's sign wrong (positive vs. negative) when dividing by {m(k)}"))
     else:
-        cands.append((_ray(_FLIP[op], B), "flips the sign, but no division by a negative number happened"))
+        cands.append((_ray(_FLIP[op], B), "reverses the inequality symbol, but no division by a negative number happened"))
     if a + c != 0:
-        cands.append((_ray(fop, Q(d - b) / (a + c)), "adds the $x$-terms instead of subtracting"))
+        # the slip gives (a + c)x + b ? d; its direction follows the sign of (a + c)
+        aop = op if a + c > 0 else _FLIP[op]
+        cands.append((_ray(aop, Q(d - b) / (a + c)),
+                      f"adds the $x$-terms instead of subtracting, getting {m(_lin((a + c, 'x')))}"))
     cands += [(_ray(fop, Q(d + b) / k), f"moves {m(tx(b))} across without changing its sign"),
               (_ray(_STRICT[fop], B), f"uses {m(_TEX[_STRICT[fop]])} instead of {m(_TEX[fop])}")]
     ans_tex, ans_pred = _ray(fop, B)
@@ -355,9 +359,10 @@ def compound(rng, lvl):
         sub = "Subtract" if b > 0 else "Add"
         steps = [f"Do the same thing to all three parts. {sub} {m(abs(b))} "
                  f"{'from' if b > 0 else 'to'} each part: {m(f'{tx(lo - b)} {_TEX[lo_op]} {a}x {_TEX[hi_op]} {tx(hi - b)}')}.",
-                 f"Divide each part by {m(a)} (positive, so the signs stay the same): "
+                 f"Divide each part by {m(a)} (positive, so the inequality symbols stay the same): "
                  f"{m(f'{tx(L)} {_TEX[lo_op]} x {_TEX[hi_op]} {tx(H)}')}."]
-        cands = [(_between(Q(lo - b), lo_op, H, hi_op), f"forgets to divide the left part by {m(a)}"),
+        cands = [(_between(Q(lo - b), lo_op, H, hi_op), f"forgets to divide the left part by {m(a)}")
+                 if Q(lo - b) < H else (_between(L, lo_op, Q(hi - b), hi_op), f"forgets to divide the right part by {m(a)}"),
                  (_between(L, hi_op, H, lo_op), "swaps which endpoint is included"),
                  (_between(Q(lo + b) / a, lo_op, Q(hi + b) / a, hi_op),
                   f"{'adds' if b > 0 else 'subtracts'} {m(abs(b))} instead of "
@@ -377,7 +382,7 @@ def compound(rng, lvl):
         sub = "Subtract" if b > 0 else "Add"
         steps = [f"Do the same thing to all three parts. {sub} {m(abs(b))} "
                  f"{'from' if b > 0 else 'to'} each part: {m(f'{tx(lo - b)} {_TEX[lo_op]} {a}x {_TEX[hi_op]} {tx(hi - b)}')}.",
-                 f"Divide each part by {m(a)}. Dividing by a negative number flips \\emph{{both}} signs: "
+                 f"Divide each part by {m(a)}. Dividing by a negative number reverses \\emph{{both}} inequality symbols: "
                  f"{m(f'{tx(H)} {_TEX[_FLIP[lo_op]]} x {_TEX[_FLIP[hi_op]]} {tx(L)}')}.",
                  f"Rewrite it with the smaller number on the left: {m(f'{tx(L)} {_TEX[hi_op]} x {_TEX[lo_op]} {tx(H)}')}."]
         cands = [(_between(L, lo_op, H, hi_op), "moves the numbers but leaves each symbol in its old place"),
@@ -423,7 +428,7 @@ def which_satisfies(rng, lvl):
             cands.insert(0, B)
         cond = f"{_WORD[op]} {m(tx(c))}"
         steps = [f"Solve first. " + _const_text(b, f"{a}x", op, c),
-                 f"Divide both sides by {m(a)} (positive, so the sign stays): {m(f'x {_TEX[op]} {tx(B)}')}.",
+                 f"Divide both sides by {m(a)} (positive, so the inequality symbol stays the same): {m(f'x {_TEX[op]} {tx(B)}')}.",
                  f"Only {m(tx(ans))} is {_WORD[op]} {m(tx(B))}. Check: {m(f'{_subst(ans, *expr_terms)} = {tx(a * ans + b)}')}, "
                  f"which is {cond}. \\checkmark"]
     else:
@@ -510,7 +515,7 @@ def _extreme_integer(rng):
             why = f"gives {m(f'{_subst(v, *terms)} = {tx(val)}')}, which is not {_WORD[op]} {m(tx(c))}"
         wrong.append((v, why))
     steps = ["Solve first. " + _const_text(b, f"{a}x", op, c),
-             f"Divide both sides by {m(a)} (positive, so the sign stays): {m(f'x {_TEX[op]} {tx(B)}')}.",
+             f"Divide both sides by {m(a)} (positive, so the inequality symbol stays the same): {m(f'x {_TEX[op]} {tx(B)}')}.",
              (f"{m(tx(B))} itself is allowed ({m(_TEX[op])}), so the {word} integer is {m(tx(ans))}."
               if op in ("le", "ge") else
               f"{m(tx(B))} itself is \\emph{{not}} allowed ({m(_TEX[op])}), so the {word} integer is {m(tx(ans))}.")]
@@ -544,13 +549,22 @@ _MEANS = {  # independent table: which of K-1, K, K+1 satisfy each phrase
 }
 
 
-def _op_why(right, wrong):
-    if _FLIP[right] == wrong:
-        return "points the sign the wrong way"
+def _op_why(right, wrong, phrase, K):
+    """Why-not note for using the symbol `wrong` where `right` is meant."""
+    K = m(K)
     if _STRICT[right] == wrong:
-        return ("includes the boundary number, which is not allowed" if right in ("<", ">")
-                else "leaves out the boundary number, which is allowed")
-    return "points the sign the wrong way and gets the boundary wrong"
+        if right in ("ge", "le"):
+            return (f"uses {m(_TEX[wrong])}, which leaves out exactly {K}, but {K} meets "
+                    f"``{phrase} {K}''")
+        return (f"uses {m(_TEX[wrong])}, which includes exactly {K}, but {K} is not "
+                f"``{phrase} {K}''")
+    more = right in ("ge", ">")
+    want = f"{K} or more" if right == "ge" else f"{K} or less" if right == "le" else \
+        f"bigger than {K}" if right == ">" else f"smaller than {K}"
+    if _FLIP[right] == wrong:
+        return f"points the inequality symbol the wrong way: ``{phrase} {K}'' means {want}"
+    return (f"points the inequality symbol the wrong way and also gets the endpoint {K} wrong: "
+            f"``{phrase} {K}'' means {want}")
 
 
 @template("MK")
@@ -571,14 +585,14 @@ def translate_ineq(rng, lvl):
         else:
             words, lhs = f"{_TIMESW[k].capitalize()} a number $n$ is {phrase} {K}.", f"{k}n"
             f = lambda v: k * v
-        stem = choose(rng, f"Which inequality says: ``{words}''",
+        stem = choose(rng, f"Which inequality represents the statement ``{words[:-1]}''?",
                       f"``{words}'' Which inequality represents this statement?")
         bad_expr = None
     else:
         stem, lhs, K, f, bad_expr, op, phrase = _context_ineq(rng)
     Kt = int_raw(K)
     ans_tex = f"${lhs} {_TEX[op]} {Kt}$"
-    wrong = [(f"${lhs} {_TEX[w]} {Kt}$", _op_why(op, w)) for w in ("<", ">", "le", "ge") if w != op]
+    wrong = [(f"${lhs} {_TEX[w]} {Kt}$", _op_why(op, w, phrase, Kt)) for w in ("<", ">", "le", "ge") if w != op]
     if bad_expr:
         wrong.insert(1, (f"${bad_expr[0]} {_TEX[op]} {Kt}$", bad_expr[1]))
     # independent check: the symbol's meaning matches the phrase at K-1, K, K+1
@@ -853,16 +867,21 @@ def _compare_plans(rng):
         steps.append(f"The greatest whole number below that is {m(ans)}.")
     wrong = [(Q(ans + 1), "is where the plans cost the same or more, not less") if Q(exact).is_integer
              else (Q(ans + 1), f"rounds up, which makes {optA} cost more"),
-             (Q(math.floor(flat / per)), f"ignores the {_mo(fee)} fee") if fee
+             (Q(_below(flat / per)), f"ignores the {_mo(fee)} fee") if fee
              else (Q(ans + 2), None),
-             (Q(math.floor((flat + fee) / per)), "adds the fee instead of subtracting it") if fee else (Q(ans - 1), None),
-             (Q(math.floor(flat / (fee + per))), f"adds the {_mo(fee)} fee to the price of each {u}")
-             if fee and 3 * math.floor(flat / (fee + per)) >= ans else (Q(ans - 2), None),
+             (Q(_below((flat + fee) / per)), "adds the fee instead of subtracting it") if fee else (Q(ans - 1), None),
+             (Q(_below(flat / (fee + per))), f"adds the {_mo(fee)} fee to the price of each {u}")
+             if fee and 3 * _below(flat / (fee + per)) >= ans else (Q(ans - 2), None),
              (Q(ans - 1), None)]
     ok = lambda k: fee + per * k < flat
     most = max(k for k in range(0, 1000) if ok(k))
     return Problem(stem=stem, answer=Q(ans), fmt=unit(num, u), wrong=wrong, steps=steps,
                    check=Q(most), section="AR", near=_near_int(ans))
+
+
+def _below(q):
+    """Greatest whole number strictly less than q (the same rule the key uses)."""
+    return math.ceil(Q(q)) - 1
 
 
 def _mr(v):

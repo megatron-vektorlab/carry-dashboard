@@ -188,3 +188,20 @@ The selftest reports `keys={…}` — the distribution of the correct answer's
 position; if one template has the answer almost always at the same letter
 (e.g. A in >60 % of draws), add distractors on the other side of the
 answer.
+
+## Added after the first full build
+
+* `Problem(must=n)`: the first `n` entries of `wrong` are always among the
+  four choices (use this instead of `sort=False` when a key distractor must
+  appear — numeric choices should stay in ascending order).
+* `Problem(order=keyfunc)`: sort key for non-numeric choices, e.g. clock
+  times by minutes past midnight, so they also appear in order.
+* The generator avoids, within one chapter or test section, a second problem
+  with the same scenario opening (stems longer than 70 characters) or the
+  same (template, answer) pair; the rule relaxes after half the retries.
+* Default fillers no longer include ×10 / ÷10 values. Filter impossible
+  fillers yourself with `near=` (probabilities > 1, polygons with < 3 sides).
+* "a/an" before numbers is fixed automatically ("an 11-foot board").
+* `TITLE` is LaTeX: write `\&`.
+* "Why not" notes must describe exactly how *that* value arises; when a value
+  needs two slips, name both or pick a different distractor.

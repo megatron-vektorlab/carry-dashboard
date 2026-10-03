@@ -13,6 +13,7 @@ import argparse
 import collections
 import csv
 import random
+import re
 import shutil
 import sys
 
@@ -49,8 +50,18 @@ N_DIAG = 30
 
 # ------------------------------------------------------------------ pools
 def entries(mod):
-    e = getattr(mod, "TEST", None) or [(t, l) for t, l, _ in mod.PLAN if l >= 2]
+    e = getattr(mod, "TEST", None) or [(t, l) for t, l, _ in mod.PLAN]
     return list(dict.fromkeys(e))
+
+
+def family(mod, tpl) -> tuple:
+    """Templates split into variants (commission_a/_b, ratio_total_civ...) are one family."""
+    return (mod.NUM, re.sub(r"_(?:[a-z]|civ|mil|\d)$", "", tpl.__name__))
+
+
+def test_level(rng, weights=(0.25, 0.45, 0.30)) -> int:
+    r = rng.random()
+    return 1 if r < weights[0] else (2 if r < weights[0] + weights[1] else 3)
 
 
 def pick_level_entry(rng, ents, prefer):
@@ -59,7 +70,7 @@ def pick_level_entry(rng, ents, prefer):
     return rng.choice(best or ents)
 
 
-def build_section(mods, section, count, rng, seen, used):
+def build_section(mods, section, count, rng, seen, used, avoid=None):
     """Draw `count` problems of one subtest from all chapters."""
     by_ch = collections.OrderedDict()
     for mod in mods:
@@ -69,7 +80,7 @@ def build_section(mods, section, count, rng, seen, used):
     if section == "AR":
         core = [n for n in by_ch if by_ch[n][0].PART == 4]
         alloc = {n: 0 for n in by_ch}
-        per = count * 4 // 5 // max(1, len(core))
+        per = count * 3 // 5 // max(1, len(core))     # 3 per word-problem chapter
         for n in core:
             alloc[n] = per
         others = [n for n in by_ch if n not in core]
@@ -91,32 +102,35 @@ def build_section(mods, section, count, rng, seen, used):
     for n, k in alloc.items():
         mod, es = by_ch[n]
         for j in range(k):
-            fresh = [e for e in es if (n, e[0].__name__) not in used] or es
-            e = pick_level_entry(rng, fresh, 3 if rng.random() < 0.4 else 2)
-            used.add((n, e[0].__name__))
+            fresh = [e for e in es if family(mod, e[0]) not in used] or es
+            e = pick_level_entry(rng, fresh, test_level(rng))
+            used.add(family(mod, e[0]))
             chosen.append((mod, e))
     # rough difficulty ramp with randomness
     chosen.sort(key=lambda c: c[1][1] + rng.random() * 1.6)
     targets = balanced_targets(len(chosen), rng)
     probs = []
+    avoid = set() if avoid is None else avoid
     for (mod, (tpl, lvl)), t in zip(chosen, targets):
-        probs.append(make(tpl, lvl, rng, t, seen, mod.NUM))
+        probs.append(make(tpl, lvl, rng, t, seen, mod.NUM, avoid))
     return probs
 
 
-def build_diagnostic(mods, rng, seen):
+def build_diagnostic(mods, rng, seen, avoid=None):
     chosen = []
     for mod in mods:
         es = entries(mod)
-        chosen.append((mod, pick_level_entry(rng, es, 2)))
+        chosen.append((mod, pick_level_entry(rng, es, test_level(rng, (0.2, 0.6, 0.2)))))
     extra = [m for m in mods if m.PART == 4]
     rng.shuffle(extra)
     for mod in extra[: N_DIAG - len(chosen)]:
-        es = [e for e in entries(mod) if e not in [c[1] for c in chosen]] or entries(mod)
+        fams = {family(m_, c[0]) for m_, c in chosen}
+        es = [e for e in entries(mod) if family(mod, e[0]) not in fams] or entries(mod)
         chosen.append((mod, pick_level_entry(rng, es, 2)))
     chosen.sort(key=lambda c: c[0].NUM)
     targets = balanced_targets(len(chosen), rng)
-    return [make(tpl, lvl, rng, t, seen, mod.NUM) for (mod, (tpl, lvl)), t in zip(chosen, targets)]
+    avoid = set() if avoid is None else avoid
+    return [make(tpl, lvl, rng, t, seen, mod.NUM, avoid) for (mod, (tpl, lvl)), t in zip(chosen, targets)]
 
 
 # ------------------------------------------------------------------ tex pieces
@@ -321,13 +335,16 @@ def generate_all(mods):
     for mod in mods:
         chapters[mod.NUM] = chapter_problems(mod, config.SEED + 101 * mod.NUM, seen)
     rng = random.Random(config.SEED + 7)
-    diag = build_diagnostic(mods, rng, seen)
+    # one shared set: no scenario or (template, answer) repeats across the
+    # diagnostic and the four practice tests
+    book_avoid: set = set()
+    diag = build_diagnostic(mods, rng, seen, book_avoid)
     tests = []
     for k in range(1, N_TESTS + 1):
         rng = random.Random(config.SEED + 1000 * k)
         used: set = set()
-        ar = build_section(mods, "AR", AR_TEST, rng, seen, used)
-        mk = build_section(mods, "MK", MK_TEST, rng, seen, used)
+        ar = build_section(mods, "AR", AR_TEST, rng, seen, used, book_avoid)
+        mk = build_section(mods, "MK", MK_TEST, rng, seen, used, book_avoid)
         tests.append((ar, mk))
     return chapters, diag, tests
 

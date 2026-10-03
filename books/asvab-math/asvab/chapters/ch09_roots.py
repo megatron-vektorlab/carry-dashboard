@@ -142,19 +142,24 @@ def _simplify_both(n1, p, n2, q, r) -> str:
 # templates
 # --------------------------------------------------------------------------
 
+# (stem, smallest and largest realistic value)
 _SQ_CTX = [
-    "A square rug has an area of {A} square feet. How long is each side, in feet?",
-    "A square garden plot has an area of {A} square yards. How long is each side, in yards?",
-    "A square floor tile has an area of {A} square inches. How long is each side, in inches?",
-    "A square parade field has an area of {A} square yards. How long is each side, in yards?",
-    "A square tent floor has an area of {A} square feet. How long is each side, in feet?",
-    "What number multiplied by itself equals {A}?",
+    ("A square rug has an area of {A} square feet. How long is each side, in feet?", 16, 144),
+    ("A square garden plot has an area of {A} square yards. How long is each side, in yards?", 16, 400),
+    ("A square floor tile has an area of {A} square inches. How long is each side, in inches?", 36, 576),
+    ("A square parade field has an area of {A} square yards. How long is each side, in yards?", 1600, 8100),
+    ("A square tent floor has an area of {A} square feet. How long is each side, in feet?", 36, 400),
+    ("What number multiplied by itself equals {A}?", 1, 10 ** 6),
 ]
 _CUBE_CTX = [
-    "A cube-shaped storage box has a volume of {V} cubic feet. How long is each edge, in feet?",
-    "A cube-shaped block of ice has a volume of {V} cubic inches. How long is each edge, in inches?",
-    "What number used as a factor three times equals {V}?",
+    ("A cube-shaped storage box has a volume of {V} cubic feet. How long is each edge, in feet?", 8, 125),
+    ("A cube-shaped block of ice has a volume of {V} cubic inches. How long is each edge, in inches?", 8, 1000),
+    ("What number used as a factor three times equals {V}?", 1, 10 ** 6),
 ]
+
+
+def _ctx_for(rng, ctxs, v):
+    return rng.choice([t for t, lo, hi in ctxs if lo <= v <= hi])
 
 
 @template("MK")
@@ -172,7 +177,7 @@ def perfect_root(rng, lvl):
             ans = Q(f(a, b))
             wrong = [
                 (Q(f(A, B)), "forgets to take the square roots"),
-                (R(f(A, B), 2) if op != "x" else R(A * B, 2), "divides by 2 instead of taking the square roots"),
+                (f(R(A, 2), R(B, 2)), f"divides {A} and {B} by 2 instead of taking their square roots"),
             ]
             if op in "+-" and isqrt(f(A, B)) ** 2 == f(A, B) and f(A, B) > 0:
                 wrong.append((Q(isqrt(f(A, B))), f"{'adds' if op == '+' else 'subtracts'} first and then takes one square root"))
@@ -207,7 +212,7 @@ def perfect_root(rng, lvl):
             n2t = m(f"\\sqrt{{{int_raw(n2)}}}")
             stem = choose(rng, f"What is the value of {n2t}?", f"Evaluate {n2t}.",
                           f"What is the square root of {num(n2)}?",
-                          rng.choice(_SQ_CTX).format(A=num(n2)))
+                          _ctx_for(rng, _SQ_CTX, n2).format(A=num(n2)))
             steps = [f"Look for the number that, multiplied by itself, gives {num(n2)}."]
             if kind == "tens":
                 steps.append(f"{m(f'{k // 10} \\times {k // 10} = {k * k // 100}')}, so "
@@ -240,7 +245,7 @@ def perfect_root(rng, lvl):
         fac = f"({int_raw(ans)})" if neg else int_raw(ans)
         stem = (choose(rng, f"What is the value of {ct}?", f"Evaluate {ct}.") if neg else
                 choose(rng, f"What is the value of {ct}?", f"Evaluate {ct}.", f"What is the cube root of {num(c)}?",
-                       rng.choice(_CUBE_CTX).format(V=num(c))))
+                       _ctx_for(rng, _CUBE_CTX, c).format(V=num(c))))
         return Problem(
             stem=stem,
             answer=ans,
@@ -320,6 +325,16 @@ def perfect_root(rng, lvl):
     )
 
 
+# square things and the areas (square feet) for which they are realistic
+_SQ_THINGS_1 = [("patio", 40, 400), ("rug", 10, 150), ("room", 60, 400), ("tarp", 20, 250)]
+_SQ_THINGS_2 = [("garden", 20, 400), ("deck", 40, 400), ("tent floor", 30, 200), ("storage pad", 30, 400)]
+
+
+def _square_word(rng, N, things):
+    fits = [t for t, lo, hi in things if lo <= N <= hi]
+    return rng.choice(fits) if fits else None
+
+
 @template("MK")
 def estimate_root(rng, lvl):
     k = rng.randint(2, 14)
@@ -333,11 +348,14 @@ def estimate_root(rng, lvl):
             (Q(k - 1), None), (Q(k + 1), None), (Q(k - 2) if k > 2 else Q(k + 2), None),
             (Q(k - 3) if k > 3 else Q(k + 3), None), (Q(k + 2), None),
         ]
+        thing = _square_word(rng, N, _SQ_THINGS_1)
+        stems = [f"{m(f'\\sqrt{{{N}}}')} is between which two consecutive whole numbers?",
+                 f"Between which two consecutive whole numbers does {m(f'\\sqrt{{{N}}}')} lie?"]
+        if thing:
+            stems.append(f"A square {thing} has an area of {num(N)} square feet. Its side length, in feet, is "
+                         f"between which two consecutive whole numbers?")
         return Problem(
-            stem=choose(rng, f"{m(f'\\sqrt{{{N}}}')} is between which two consecutive whole numbers?",
-                        f"Between which two consecutive whole numbers does {m(f'\\sqrt{{{N}}}')} lie?",
-                        f"A square {rng.choice(['patio', 'rug', 'room', 'tarp'])} has an area of "
-                        f"{num(N)} square feet. Its side length, in feet, is between which two consecutive whole numbers?"),
+            stem=rng.choice(stems),
             answer=Q(k),
             fmt=lambda v: between(Q(v)),
             wrong=wrong,
@@ -350,16 +368,18 @@ def estimate_root(rng, lvl):
     near_hi = N - lo > hi - N
     ans = Q(k + 1 if near_hi else k)
     other = Q(k if near_hi else k + 1)
+    thing = _square_word(rng, N, _SQ_THINGS_2)
+    stems = [f"Which whole number is closest to {m(f'\\sqrt{{{N}}}')}?",
+             f"To the nearest whole number, what is {m(f'\\sqrt{{{N}}}')}?"]
+    if thing:
+        stems.append(f"A square {thing} has an area of {num(N)} square feet. To the nearest foot, how long is each side?")
     return Problem(
-        stem=choose(rng, f"Which whole number is closest to {m(f'\\sqrt{{{N}}}')}?",
-                    f"To the nearest whole number, what is {m(f'\\sqrt{{{N}}}')}?",
-                    f"A square {rng.choice(['garden', 'helipad', 'deck', 'storage pad'])} has an area of "
-                    f"{num(N)} square feet. To the nearest foot, how long is each side?"),
+        stem=rng.choice(stems),
         answer=ans,
         fmt=num,
         wrong=[
             (other, f"is the other neighbor, but {num(N)} is closer to {num(hi if near_hi else lo)}"),
-            (R(N, 2) if N % 2 == 0 else Q(N // 2), f"divides {num(N)} by 2 instead of taking the square root"),
+            (Q(N // 2) if N % 2 == 0 else Q(-1), f"divides {num(N)} by 2 instead of taking the square root"),
             (ans + 1 if near_hi else ans - 1, None),
             (ans + 2 if not near_hi else ans - 2, None),
             (ans - 2, None), (ans - 3, None), (ans + 2, None),
@@ -474,8 +494,8 @@ def simplify_radical(rng, lvl):
     wrong = [
         (_rad(kk * kk, rr), f"pulls out {kk * kk} instead of its square root, {kk}"),
     ]
-    if isqrt(kk) ** 2 != kk:
-        wrong.append((_rad(rr, kk), "swaps the number outside the radical with the number inside"))
+    if kk > 1 and _split(kk)[0] == 1:          # rr*sqrt(kk) is already in simplest form, so it shows as written
+        wrong.append((_rad(rr, kk), f"swaps the numbers: writes {m(_rt(rr, kk))} instead of {m(_rt(kk, rr))}"))
     wrong.append((Q(kk), f"drops the leftover {m(f'\\sqrt{{{rr}}}')}"))
     return Problem(
         stem=choose(rng, f"Simplify {m(f'\\sqrt{{{n}}}')}.",
@@ -510,12 +530,13 @@ def like_radicals(rng, lvl):
         ans = _rad(c, r)
         t = f"{_rt(a, r)} {op} {_rt(b, r)}"
         wrong = [(_rad(a * b, r), "multiplies the numbers in front instead of combining them")]
-        if op == "+" and _clean(2 * r):
-            wrong.append((_rad(c, 2 * r), "adds the numbers under the radicals too"))
-            wrong.append((Q(c), f"drops the {m(f'\\sqrt{{{r}}}')} after adding"))
+        if op == "+":
+            if _clean(2 * r):
+                wrong.append((_rad(c, 2 * r), "adds the numbers under the radicals too"))
+            wrong.append((_rad(a - b, r) if a > b else _rad(b - a, r), "subtracts instead of adding"))
         else:
             wrong.append((_rad(a + b, r), "adds instead of subtracting"))
-            wrong.append((Q(c), f"drops the {m(f'\\sqrt{{{r}}}')} after subtracting"))
+        wrong.append((Q(c), f"drops the {m(f'\\sqrt{{{r}}}')} after {'adding' if op == '+' else 'subtracting'}"))
         return Problem(
             stem=choose(rng, f"Simplify {m(t)}.", f"What is {m(t)}?", f"Which of the following is equal to {m(t)}?"),
             answer=ans,

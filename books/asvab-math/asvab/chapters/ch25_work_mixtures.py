@@ -211,6 +211,10 @@ def _retrying(fn, tries=300):
     return wrapper
 
 
+def _cap(t):
+    return t[0].upper() + t[1:]
+
+
 def _pairs(lo, hi, cond):
     return [(a, b) for a in range(lo, hi + 1) for b in range(a + 1, hi + 1) if cond(a, b)]
 
@@ -456,7 +460,7 @@ def work_find_one(rng, lvl):
         steps=[
             f"Rates: together they do {m(F(1, T))} of the job per hour, and {lk} alone does "
             f"{m(F(1, known))} of the job per hour.",
-            f"The other worker's rate is the difference: {m(rate_raw)} of the job per hour.",
+            f"{_cap(lu)}'s rate is the difference: {m(rate_raw)} of the job per hour.",
             f"Doing {m(frac_raw(R(1, ans)))} of the job each hour, {lu} needs {num(ans)} hours alone.",
         ],
         tip=(f"Check: {m(F(1, known) + ' + ' + F(1, ans) + ' = ' + frac_raw(R(1, T)))}, the "
@@ -485,7 +489,7 @@ def _speed_ratio(rng):
     elif key == "mower":
         lf, ls = "the riding mower", "the push mower"
         stem = (f"A riding mower cuts grass {word} as fast as a push mower. Using both mowers "
-                f"at the same time, a groundskeeper can mow a park in {num(T)} hours. How long "
+                f"at the same time, two groundskeepers, one on each mower, can mow a park in {num(T)} hours. How long "
                 f"would it take using only the {'riding' if ask_fast else 'push'} mower?")
     elif key == "pump":
         lf, ls = "the new pump", "the old pump"
@@ -606,15 +610,15 @@ def fill_and_drain(rng, lvl):
     steps = [
         f"Rates: {lf} fills {m(F(1, a))} of the {cont} per {u}, and {ld} empties "
         f"{m(F(1, b))} of it per {u}.",
-        f"The drain works against the fill, so \\emph{{subtract}}: "
+        f"{_cap(ld)} works against {lf}, so \\emph{{subtract}}: "
         f"{m(F(1, a) + ' - ' + F(1, b) + ' = ' + F(L // a, L) + ' - ' + F(L // b, L) + ' = ' + F(net, L) + (' = ' + frac_raw(R(net, L)) if math.gcd(net, L) != 1 else ''))} "
         f"of the {cont} per {u}.",
         f"Time $=$ 1 {cont} $\\div$ rate $=$ {m('1 \\div ' + frac_raw(1 / T) + ' = ' + int_raw(T))} {_plural(u, T)}.",
     ]
     wrong = [
-        (R(a * b, a + b), "adds the drain's rate instead of subtracting it"),
+        (R(a * b, a + b), f"adds {ld}'s rate instead of subtracting it"),
         (Q(b - a), "subtracts the two times"),
-        (Q(a), "ignores the drain"),
+        (Q(a), f"ignores {ld}"),
         (Q(a + b), "adds the two times"),
         (1 / T, "stops at the net rate and forgets to flip it into a time"),
     ]
@@ -675,9 +679,10 @@ def _two_in_one_out(rng):
     return Problem(
         stem=stem, answer=T, fmt=_hours, section="AR",
         wrong=[
-            (R(a * b, a + b), "ignores the outflow"),
-            (1 / (R(1, a) + R(1, b) + R(1, c)), "adds the outflow's rate instead of subtracting it"),
-            (R(a + b, 2), "averages the two fill times and ignores the outflow"),
+            (R(a * b, a + b), f"ignores the {out}"),
+            (1 / (R(1, a) + R(1, b) + R(1, c)), f"adds the {out}'s rate instead of subtracting it"
+             if not out.endswith("use") else f"adds the rate of the {out} instead of subtracting it"),
+            (R(a + b, 2), f"averages the two fill times and ignores the {out}"),
             (1 / T, "stops at the net rate and forgets to flip it into a time"),
             (Q(a + b + c), "adds the three times"),
         ],
@@ -858,7 +863,10 @@ def crew_changes(rng, lvl):
         steps.append(f"Add the days already passed: {m(f'{k} + {rem} = {k + rem}')} days in all.")
     wrong = [
         (Q(d1 - k) + (k if ask_total else 0), f"ignores the {'new arrivals' if arrive else 'smaller group'}"),
-        (R(n1 * d1, n2) + (k if ask_total else 0), f"forgets the {num(k)} days already used"),
+        (R(n1 * d1, n2) + (k if ask_total else 0),
+         (f"forgets the food already eaten in the first {num(k)} days (gives the new group the full supply)"
+          if key in ("mre", "camp") else
+          f"forgets the work already done in the first {num(k)} days (gives the new crew the whole job)")),
         (R((d1 - k) * n2, n1) + (k if ask_total else 0), "sets up a direct proportion instead of an inverse one"),
     ]
     if ask_total:
@@ -1087,9 +1095,11 @@ def concentration_change(rng, lvl):
             stem=stem, answer=water, fmt=unit(num, u), section="AR",
             wrong=[
                 (final, "is the final amount of the mixture, not the water added"),
-                (R(V * q, p), "sets up the ratio upside down"),
+                (R(V * q, p), f"makes two slips: flips the percents ({m(F(q, p))} instead of {m(F(p, q))}) "
+                 "and stops at the total instead of finding the water added"),
                 (R(V * (p - q), 100), "takes the drop in percent of the original amount"),
-                (V - R(V * q, p), "sets up the ratio upside down, then subtracts"),
+                (V - R(V * q, p), f"flips the percents ({m(F(q, p))} instead of {m(F(p, q))}), then "
+                 "subtracts that amount from the starting amount"),
                 (P, f"is the amount of pure {pure}, not the water to add"),
                 (V - P, "is the water already in the solution, not the water to add"),
             ],
@@ -1131,7 +1141,8 @@ def concentration_change(rng, lvl):
                 (final, "is the amount left after evaporating, not the amount removed"),
                 (R(V * (q - p), 100), "takes the rise in percent of the original amount"),
                 (R(V * (q - p), p), "divides by the old percent instead of the new one"),
-                (R(V * q, p), "sets up the ratio upside down"),
+                (R(V * q, p), f"makes two slips: flips the percents ({m(F(q, p))} instead of {m(F(p, q))}) "
+                 "and stops at the total instead of finding the water removed"),
             ],
             near=_near(gone),
             steps=[
@@ -1152,6 +1163,7 @@ def concentration_change(rng, lvl):
     need(q > p)
     add = R(V * (q - p), 100 - q)
     need(add.is_integer and add > 0)
+    need((V * (q - p)) % 100 == 0 or rng.random() < 0.25)
     u = {"winter": "gallon", "lab": "liter", "garden": "gallon"}[key]
     pure = {"winter": "antifreeze", "lab": "acid", "garden": "fertilizer"}[key]
     stem = {
@@ -1165,9 +1177,10 @@ def concentration_change(rng, lvl):
     return Problem(
         stem=stem, answer=add, fmt=unit(num, u), section="AR",
         wrong=[
-            (R(V * (q - p), 100), "takes the rise in percent of the original amount only"),
-            (R(V * (q - p), q), "forgets that the added antifreeze also raises the total" if key == "winter"
-             else "forgets that the added liquid also raises the total"),
+            (R(V * (q - p), 100), f"forgets that the added {pure} also raises the total amount "
+             f"(solves {m(f'{pd}({int_raw(V)}) + y = {qd}({int_raw(V)})')})"),
+            (R(V * (q - p), q), f"divides by the target percent ({pct(q)}) instead of by the share that is "
+             f"not {pure} ({pct(100 - q)})"),
             (V + add, "gives the total amount of the new mixture"),
             (R(V * (q - p), p), None),
         ],
@@ -1394,7 +1407,7 @@ def ratio_mix(rng, lvl):
              f"{m(f'{have} \\div {ri} = {k}')} {u(k)}.")
     wrong = [
         (Q(have * rj), "multiplies by the number of parts without first finding the size of one part"),
-        (Q(have + rj - ri), "adds the difference in parts instead of using a multiple"),
+        (Q(have + rj - ri), "adds or subtracts the difference in parts instead of scaling by the size of one part"),
     ]
     if j != "total":
         wrong.append((Q(S * k), f"gives the total amount of {prod}"))
@@ -1428,7 +1441,8 @@ def _two_stroke(rng):
         stem=stem, answer=oil, fmt=unit(num, "fluid ounce"), section="AR",
         wrong=[
             (gal * 32 / ratio, "uses 32 ounces in a gallon (that is a quart)"),
-            (gal * ratio, "multiplies by the ratio instead of dividing"),
+            (gal * ratio, "makes two slips: multiplies the gallons by the ratio instead of dividing, "
+             "and skips the change to ounces"),
             (oz / ratio * 2, None),
             (oz / ratio / 2, None),
         ],

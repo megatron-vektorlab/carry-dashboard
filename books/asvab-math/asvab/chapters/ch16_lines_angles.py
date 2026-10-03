@@ -168,11 +168,12 @@ def _solve_steps(p, c, total):
     return steps, xv
 
 
-def _near_int(ans, deltas=(5, 10, 15, 20), hi=360):
-    """Filler distractors: whole numbers a few steps either side of the answer."""
+def _near_int(ans, deltas=(5, 10, 15, 20), hi=360, lo=0):
+    """Filler distractors: whole numbers a few steps either side of the answer
+    (strictly between lo and hi; use lo=2 for numbers of sides)."""
     def f(rng):
         out = [Q(ans) + d for d in deltas] + [Q(ans) - d for d in deltas]
-        out = [v for v in out if 0 < v < hi]
+        out = [v for v in out if lo < v < hi]
         rng.shuffle(out)
         return out
     return f
@@ -391,7 +392,7 @@ def vertical_adjacent(rng, lvl):
                   f"Two lines cross, and one of the four angles they form measures {deg(g)}, as shown. Find {m('x')}.",
                   f"The figure shows two intersecting straight lines and a {deg(g)} angle. What is the value of {m('x')}?")
     if vert:
-        wrong = [(180 - g, r"adds the angles to $180^\circ$, but vertical angles are equal"),
+        wrong = [(180 - g, r"assumes the two angles add up to $180^\circ$, but vertical angles are equal"),
                  (360 - g, r"subtracts from $360^\circ$, but vertical angles are equal")]
         if g < 90:
             wrong.append((90 - g, r"subtracts from $90^\circ$, but vertical angles are equal"))
@@ -606,7 +607,7 @@ def _pair_steps(p, q, r, s, total, lead):
         steps.append(f"Subtract {m(latex(ps * X))} from both sides: "
                      f"{m(f'{_lin(pb - ps, qb)} = {int_raw(qs)}')}.")
         more, xv = _solve_steps(pb - ps, qb, qs)
-        wrong_x = [(Q(180 - q - s) / (p + r), r"adds the angles to $180^\circ$, but these angles are equal"),
+        wrong_x = [(Q(180 - q - s) / (p + r), r"assumes the two angles add up to $180^\circ$, but these angles are equal"),
                    (Q(qs + qb) / (pb - ps), "makes a sign error when moving the constant term")]
     else:
         steps.append(f"{lead} {m(_d(total))}: {m(f'({_lin(p, q)}) + ({_lin(r, s)}) = {total}')}.")
@@ -705,7 +706,7 @@ def parallel_lines(rng, lvl):
             f"What is the value of {m('x')}?",
             f"Line {T} crosses parallel lines {L1} and {L2}, making the {deg(g)} angle shown. Find {m('x')}.")
         if equal:
-            wrong = [(180 - g, f"adds the angles to {m('180^\\circ')}, but {name} angles are equal")]
+            wrong = [(180 - g, f"assumes the two angles add up to {m('180^\\circ')}, but {name} angles are equal")]
             if g < 90:
                 wrong.append((90 - g, r"subtracts from $90^\circ$ instead of using the equal-angle rule"))
             else:
@@ -926,12 +927,13 @@ def polygon_sum(rng, lvl):
             answer=Q(n),
             fmt=num,
             wrong=[(Q(n - 2), r"finds $n-2$ and forgets to add the $2$ back"),
-                   (Q(n - 1), r"adds $1$ instead of $2$"),
-                   (Q(total) / 360, r"divides by $360^\circ$ instead of $180^\circ$")],
+                   (Q(n - 1), r"adds $1$ instead of $2$")]
+                  + ([(Q(total) / 360, r"divides by $360^\circ$ instead of $180^\circ$, then stops")]
+                     if Q(total) / 360 >= 3 else []),
             steps=[f"Set up the angle-sum formula: {m(f'(n-2) \\times 180 = {int_raw(total)}')}.",
                    f"Divide both sides by 180: {m(f'n - 2 = {int_raw(total)} \\div 180 = {n - 2}')}.",
                    f"Add 2: {m(f'n = {n - 2} + 2 = {n}')}."],
-            near=_near_int(n, (1, 2, 3, 4), hi=100),
+            near=_near_int(n, (1, 2, 3, 4), hi=100, lo=2),
             check=Q(brute),
         )
     # algebra: the four angles of a quadrilateral are given as expressions in x
@@ -1009,7 +1011,8 @@ def regular_polygon(rng, lvl):
             wrong = [(Q(total), "is the sum of all the interior angles, not one angle"),
                      (Q(360) / n, "is the exterior angle, not the interior angle"),
                      (Q((n - 1) * 180) / n, r"uses $n-1$ instead of $n-2$")]
-            steps = [f"{_a(name.split(' (')[0]).capitalize()} has {m(n)} sides. Sum of the interior angles: "
+            intro = "" if "side" in name else f"{_a(name).capitalize()} has {m(n)} sides. "
+            steps = [f"{intro}Sum of the interior angles: "
                      f"{m(f'({n} - 2) \\times 180^\\circ = {_d(total)}')}.",
                      f"A regular polygon has {m(n)} equal angles: "
                      f"{m(f'{int_raw(total)}^\\circ \\div {n} = {_d(ans)}')}."]
@@ -1073,9 +1076,9 @@ def regular_polygon(rng, lvl):
                  f"All {m('n')} exterior angles are equal, so {m(f'n = 360 \\div {int_raw(ext)} = {n}')}."]
         wrong = [(Q(180) / ext, r"divides $180^\circ$ instead of $360^\circ$"),
                  (interior, "gives the interior angle instead of the number of sides")]
-    wrong += [(Q(n + 2), None), (Q(n - 2), None)]
+    wrong += [(Q(n + 2), None)] + ([(Q(n - 2), None)] if n - 2 >= 3 else [])
     return Problem(stem=stem, answer=Q(n), fmt=num, wrong=wrong, steps=steps, check=Q(brute),
-                   near=_near_int(n, (1, 2, 3, 4), hi=100))
+                   near=_near_int(n, (1, 2, 3, 4), hi=100, lo=2))
 
 
 # ---- polygon drawn from its angles --------------------------------------
