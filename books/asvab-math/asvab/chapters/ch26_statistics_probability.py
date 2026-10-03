@@ -1615,7 +1615,8 @@ def arrangements(rng, lvl):
         }[key]
         ans = n * (n - 1) * (n - 2)
         wrong = [
-            (Q(n ** 3), "lets the same one fill more than one position"),
+            (Q(n ** 3), f"lets the same {dict(medals='runner', crew='soldier', officers='person', awards='project')[key]} "
+             "fill more than one position"),
             (Q(math.comb(n, 3)), "counts groups of three instead of ordered positions"),
             (Q(n * (n - 1)), "fills only two of the three positions"),
             (Q(3 * n), None),

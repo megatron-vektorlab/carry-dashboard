@@ -927,12 +927,12 @@ def solute_amount(rng, lvl):
     if not ask_pct:
         return Problem(
             stem=stem, answer=A, fmt=unit(dec, u), section="AR",
-            wrong=[
+            wrong=[w for w in [
                 (V - A, f"is the amount of {rest}, not {pure}"),
-                (A * 10, "moves the decimal point only one place when changing the percent"),
+                (A * 10 if A * 10 != V else None, "moves the decimal point only one place when changing the percent"),
                 (A / 10, "moves the decimal point three places when changing the percent"),
                 (Q(P), "uses the percent as if it were the amount"),
-            ],
+            ] if w[0] is not None],
             steps=[
                 f"Amount of {pure} $=$ percent $\\times$ total. Change the percent to a decimal: "
                 f"{m(f'{P}\\% = {dec_raw(R(P, 100))}')}.",

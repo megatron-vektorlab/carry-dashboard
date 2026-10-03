@@ -849,11 +849,11 @@ def _borrow_why(start, end, civilian=False):
     a_, b_ = f"{hs:02d}{ms:02d}", f"{he:02d}{me:02d}"
     diff = (he * 100 + me) - (hs * 100 + ms)
     h, mm = divmod(diff, 100)
-    head = (f"writes the times as {m(a_)} and {m(b_)} and subtracts them like ordinary numbers"
+    head = (f"writes the times as {m(a_)} and {m(b_)}, subtracts them like ordinary numbers,"
             if civilian else f"subtracts {m(b_)} $-$ {m(a_)} like ordinary numbers")
     read = f"reads {m(str(diff))} as {h} hours {mm} minutes"
     if mm >= 60:
-        read += f", which it rewrites as {h + 1} hours {mm - 60} minutes"
+        read += f" (that is, {h + 1} hours {mm - 60} minutes)"
     return f"{head} and {read}"
 
 
@@ -1311,7 +1311,7 @@ def round_up_down(rng, lvl):
     need(r != 0 and q >= 2)
     ans = q + 1 if up else q
     wrong = [
-        (Q(q) if up else Q(q + 1), f"rounds down, which leaves {r} {items} short" if up
+        (Q(q) if up else Q(q + 1), f"rounds down, which comes up {r} {items} short" if up
          else f"rounds up, but there is not enough for another {one}"),
         (Q(r), f"gives the leftover {items}, not the number of {cont}"),
     ]
@@ -1479,8 +1479,7 @@ def fraction_remainder(rng, lvl):
     }[key]
     asked = left_n if ask_left else second_n
     wrong = [
-        (rest, f"stops after the first step (gives what is left after the {first_n})"
-         if key not in ("paycheck", "prize") else "stops after the first step"),
+        (rest, "stops after the first step"),
         (second if ask_left else left, f"gives the {second_n if ask_left else left_n}, not the {asked}"),
         (first, f"gives the {first_n}, not the {asked}"),
     ]
@@ -1599,7 +1598,8 @@ def age_problem(rng, lvl):
         steps = [
             f"Let the {rel} be {m('a')} years old; then {p} is {m(f'{k1}a')}.",
             f"In {t} years: {m(f'{k1}a + {t} = {k2}(a + {t})')}, so {m(f'{k1}a + {t} = {k2}a + {k2 * t}')}.",
-            f"Then {m(f'{_ca(k1 - k2)} = {k2 * t - t}')}, so {m(f'a = {y}')} and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
+            (f"Then {m(f'{_ca(k1 - k2)} = {k2 * t - t}')}, so {m(f'a = {y}')}" if k1 - k2 != 1 else
+             f"Then {m(f'a = {y}')}") + f", and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
         ]
         verify = lambda v: Q(v) % k1 == 0 and Q(v) + t == k2 * (Q(v) / k1 + t)  # noqa: E731
         sols = [(xx, yy) for yy in range(1, 60) for xx in range(1, 120) if xx == k1 * yy and xx + t == k2 * (yy + t)]
@@ -1649,7 +1649,8 @@ def age_problem(rng, lvl):
         steps = [
             f"Let the {rel} be {m('a')} years old; then {p} is {m(f'{k1}a')}.",
             f"{t} years ago: {m(f'{k1}a - {t} = {k2}(a - {t})')}, so {m(f'{k1}a - {t} = {k2}a - {k2 * t}')}.",
-            f"Then {m(f'{k2 * t - t} = {_ca(k2 - k1)}')}, so {m(f'a = {y}')} and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
+            (f"Then {m(f'{k2 * t - t} = {_ca(k2 - k1)}')}, so {m(f'a = {y}')}" if k2 - k1 != 1 else
+             f"Then {m(f'a = {y}')}") + f", and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
         ]
         verify = lambda v: Q(v) % k1 == 0 and Q(v) - t == k2 * (Q(v) / k1 - t)  # noqa: E731
         sols = [xx for yy in range(1, 60) for xx in [k1 * yy] if xx - t == k2 * (yy - t)]

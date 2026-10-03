@@ -444,7 +444,7 @@ def sales_tax(rng, lvl, part=None):
 
 _BIG = [
     # (item, lo, hi, step, why a service member is buying it)
-    ("television", 300, 900, 10, "{T} is furnishing an apartment off base and needs a television."),
+    ("television", 300, 900, 10, "{T} is furnishing an apartment off base."),
     ("laptop", 400, 1200, 20, "{T} needs a laptop for online college classes."),
     ("recliner", 300, 800, 10, "{T} is furnishing an apartment off base."),
     ("set of four tires", 400, 900, 20, "{T} needs new tires before driving to a new duty station."),
@@ -625,7 +625,7 @@ def best_buy(rng, lvl, part=None):
         steps=[
             f"Find each price per {u_} (price {m('\\div')} number of {upl}): "
             + "; ".join(m(f"{money(Ps[i])} \\div {ss[i]} = {money_cents(Us[i])}") for i in range(3)) + ".",
-            f"The lowest price per {u_} is {money_cents(Us[ib])}, so {small[ib]} is the best buy.",
+            f"The lowest price per {u_} is {money_cents(Us[ib])}. {names[ib]} is the best buy.",
         ],
         tip=("The biggest package is not always the best deal, so always compare unit prices."
              if ib != 2 else None),
