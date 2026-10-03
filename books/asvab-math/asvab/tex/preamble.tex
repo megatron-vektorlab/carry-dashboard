@@ -1,0 +1,166 @@
+% ASVAB Math Workbook - interior preamble.
+% KDP paperback, 8.5 x 11 in, black & white, no bleed.
+\documentclass[11pt,twoside,openany]{book}
+
+\usepackage[paperwidth=8.5in,paperheight=11in,
+  inner=0.875in,outer=0.65in,top=0.8in,bottom=0.75in,
+  headheight=14pt,headsep=0.22in,footskip=0.38in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sups]{XCharter}
+\usepackage[xcharter,vvarbb]{newtxmath}
+\usepackage[scale=0.92,semibold]{sourcesanspro}
+\usepackage[final,protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes,calc,arrows.meta,patterns,positioning}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{array,booktabs,tabularx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage[most]{tcolorbox}
+\usepackage{etoolbox}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+
+% ---------------------------------------------------------------- tones (grayscale print)
+\definecolor{ink}{gray}{0}
+\definecolor{mid}{gray}{0.38}
+\definecolor{rulegray}{gray}{0.62}
+\definecolor{shade}{gray}{0.93}
+\definecolor{shadedark}{gray}{0.84}
+
+\setlength{\columnsep}{0.32in}
+\setlength{\columnseprule}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em plus 0.15em}
+\setlist{itemsep=0.15em,topsep=0.3em,parsep=0pt,leftmargin=1.4em}
+\raggedbottom
+\emergencystretch=1.5em
+\widowpenalty=10000
+\clubpenalty=10000
+
+\newcommand{\sans}{\sffamily}
+
+% ---------------------------------------------------------------- headings
+\titleformat{\chapter}[display]
+  {\sans\bfseries}
+  {\normalsize\color{mid}\MakeUppercase{\chaptertitlename}\ \thechapter}
+  {2pt}
+  {\fontsize{26}{30}\selectfont}
+  [\vspace{6pt}{\color{ink}\titlerule[1.4pt]}]
+\titleformat{name=\chapter,numberless}[display]
+  {\sans\bfseries}{}{0pt}{\fontsize{26}{30}\selectfont}
+  [\vspace{6pt}{\color{ink}\titlerule[1.4pt]}]
+\titlespacing*{\chapter}{0pt}{-14pt}{16pt}
+
+\titleformat{\section}{\sans\bfseries\Large}{\thesection}{0.6em}{}
+\titleformat{name=\section,numberless}{\sans\bfseries\Large}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1.1em}{0.5em}
+\titleformat{\subsection}{\sans\bfseries\large}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{0.9em}{0.3em}
+
+% Part pages
+\titleformat{\part}[display]
+  {\centering\sans\bfseries}
+  {\Large\color{mid}PART \thepart}
+  {10pt}
+  {\fontsize{34}{40}\selectfont}
+\titleclass{\part}{page}
+
+% ---------------------------------------------------------------- running heads
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[LE]{\sans\footnotesize\color{mid}\MakeUppercase{ASVAB Math Workbook}}
+\fancyhead[RO]{\sans\footnotesize\color{mid}\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\sans\small\bfseries\thepage}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\renewcommand{\sectionmark}[1]{}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}%
+  \fancyfoot[LE,RO]{\sans\small\bfseries\thepage}}
+\fancypagestyle{empty}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
+
+% ---------------------------------------------------------------- teaching boxes
+\tcbset{
+  bookbox/.style={enhanced, breakable, boxrule=0.6pt, arc=2pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt, before skip=0.8em, after skip=0.8em,
+    fonttitle=\sans\bfseries\small, coltitle=ink, colframe=ink},
+}
+\newtcolorbox{concept}[1]{bookbox, colback=white, colbacktitle=shade,
+  title={#1}, titlerule=0.6pt}
+\newtcolorbox{example}[1]{bookbox, colback=white, colframe=rulegray,
+  colbacktitle=white, title={\MakeUppercase{#1}}, titlerule=0pt,
+  borderline west={2.5pt}{0pt}{ink}, boxrule=0.4pt}
+\newtcolorbox{tip}{bookbox, colback=shade, boxrule=0pt, frame hidden,
+  title={No-Calculator Tip}, colbacktitle=shade, titlerule=0pt, attach title to upper={\enspace}}
+\newtcolorbox{trap}{bookbox, colback=white, boxrule=0.6pt, colframe=ink,
+  title={Common Traps}, colbacktitle=white, titlerule=0pt, attach title to upper={\par}}
+\newtcolorbox{infobox}[1]{bookbox, colback=shade, boxrule=0pt, frame hidden,
+  title={#1}, colbacktitle=shade, titlerule=0pt}
+
+% ---------------------------------------------------------------- problems
+\newcommand{\choicelabel}[1]{{\sans\bfseries #1}\enspace}
+\newlength{\chw}\newlength{\chmax}
+\newcommand{\measurechoice}[1]{\settowidth{\chw}{\choicelabel{A}#1}%
+  \ifdim\chw>\chmax\global\setlength{\chmax}{\chw}\fi}
+% \choices{A}{B}{C}{D}: four across, two-by-two, or one per line
+\newcommand{\choices}[4]{%
+  \global\setlength{\chmax}{0pt}%
+  \measurechoice{#1}\measurechoice{#2}\measurechoice{#3}\measurechoice{#4}%
+  \par\nopagebreak\vspace{1pt}\noindent
+  \ifdim\chmax<0.235\linewidth
+    \makebox[.25\linewidth][l]{\choicelabel{A}#1}%
+    \makebox[.25\linewidth][l]{\choicelabel{B}#2}%
+    \makebox[.25\linewidth][l]{\choicelabel{C}#3}%
+    \makebox[.25\linewidth][l]{\choicelabel{D}#4}%
+  \else\ifdim\chmax<0.48\linewidth
+    \makebox[.5\linewidth][l]{\choicelabel{A}#1}%
+    \makebox[.5\linewidth][l]{\choicelabel{B}#2}\par\noindent
+    \makebox[.5\linewidth][l]{\choicelabel{C}#3}%
+    \makebox[.5\linewidth][l]{\choicelabel{D}#4}%
+  \else
+    \begin{tabular}{@{}l@{}p{\dimexpr\linewidth-1.4em}@{}}
+      \choicelabel{A} & #1\\ \choicelabel{B} & #2\\
+      \choicelabel{C} & #3\\ \choicelabel{D} & #4
+    \end{tabular}%
+  \fi\fi\par}
+
+\newenvironment{problem}[1]
+  {\par\noindent\begin{minipage}{\linewidth}%
+   \begin{list}{}{\setlength{\leftmargin}{1.75em}\setlength{\labelwidth}{1.6em}%
+     \setlength{\labelsep}{0.15em}\setlength{\topsep}{0pt}\setlength{\itemsep}{0pt}%
+     \setlength{\parsep}{0.25em}}%
+   \item[{\sans\bfseries #1.}\hfill]}
+  {\end{list}\end{minipage}\par\vspace{0.85em plus 0.4em minus 0.1em}}
+
+\newcommand{\probfig}[1]{\par\vspace{2pt}{\centering #1\par}\vspace{2pt}}
+\newcommand{\level}[1]{}
+
+% ---------------------------------------------------------------- solutions
+\newenvironment{solution}[3]% number, letter, answer text
+  {\par\noindent\begin{minipage}{\linewidth}\small
+   \begin{list}{}{\setlength{\leftmargin}{1.75em}\setlength{\labelwidth}{1.6em}%
+     \setlength{\labelsep}{0.15em}\setlength{\topsep}{0pt}\setlength{\itemsep}{0pt}%
+     \setlength{\parsep}{0.2em}}%
+   \item[{\sans\bfseries #1.}\hfill]%
+   {\sans\bfseries\fboxsep=1.5pt\colorbox{shadedark}{\,#2\,}}\enspace #3\par}
+  {\end{list}\end{minipage}\par\vspace{0.75em plus 0.3em}}
+\newcommand{\step}[2]{\noindent\hangindent=1.1em\hangafter=1\makebox[1.1em][l]{\sans\footnotesize\color{mid}#1}#2\par}
+\newcommand{\tipline}[1]{\noindent{\sans\bfseries\footnotesize TIP}\enspace #1\par}
+\newcommand{\trapline}[1]{\noindent{\sans\bfseries\footnotesize WHY NOT}\enspace{\color{mid}#1}\par}
+
+% answer key grid
+\newcommand{\keyentry}[2]{\makebox[2.1em][r]{\sans\bfseries #1}\enspace#2}
+
+% chapter meta line
+\newcommand{\chaptermeta}[1]{{\sans\small\color{mid}#1}\par\vspace{0.6em}}
+\newcommand{\scoreline}[2]{\par\noindent{\sans\small Score:\ \underline{\hspace{2.6em}}\,/\,#1
+  \hfill Target time: #2 minutes}\par\vspace{0.5em}}
+
+\newcommand{\answerrule}{\par\noindent{\color{rulegray}\rule{\linewidth}{0.4pt}}\par}
+
+\hypersetup{pdfauthor={},pdftitle={ASVAB Math Workbook}}
