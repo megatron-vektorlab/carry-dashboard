@@ -610,18 +610,19 @@ def fill_tank(rng, lvl):
     dep = rng.choice([Q(k) for k in range(1, h)] + [R(k, 2) for k in range(1, 2 * h) if k % 2])
     need(0 < dep < h)
     gal = l * w * dep * G
-    rate = rng.choice([5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50])
+    pump = rng.choice(["a garden hose that delivers", "a pump that delivers"])
+    rate = rng.choice([5, 6, 8, 10] if "hose" in pump else [15, 20, 25, 30, 40, 50])
     mins = gal / rate
-    need(gal.is_integer and mins.is_integer and 5 <= mins <= 180)
-    pump = rng.choice(["a hose that delivers", "a pump that delivers"])
+    full = V * G / rate
+    need(gal.is_integer and mins.is_integer and 5 <= mins <= 180 and (full * 10).is_integer)
     dep_t = dec_raw(dep)
     return Problem(
         stem=(f"{what} is {m(l)} feet long, {m(w)} feet wide, and {m(h)} feet deep. It is being filled with "
               f"{pump} {m(rate)} gallons per minute. How many minutes will it take to fill it to a depth of "
               f"{m(dep_t)} {'foot' if dep == 1 else 'feet'}? {note}"),
-        answer=mins, fmt=_u(dec, "min"),
+        answer=mins, fmt=_u(dec, "min"), must=1,
         near=_int_near(mins, (mins / 2, -mins / 2, mins, -mins * R(2, 3))),
-        wrong=[w_ for w_ in [(V * G / rate, f"fills the tank all the way to the top instead of to a depth of {dep_t} ft"),
+        wrong=[w_ for w_ in [(full, f"uses the tank's full depth of {h} ft instead of the water depth of {dep_t} ft"),
                              (l * w * dep / rate, "forgets to change cubic feet to gallons"),
                              (gal, "finds the number of gallons, not the number of minutes"),
                              (l * w * dep / G / rate, "divides by 7.5 instead of multiplying")]
@@ -743,28 +744,48 @@ def concrete(rng, lvl):
                  f"{m(f'{F(L, 3)} \\times {F(W, 3)} \\times {F(D, 3)} = {frac_raw(R(L, 3))} \\times {frac_raw(R(W, 3))} \\times {frac_raw(R(D, 3))} = {int_raw(yd3)}')} cubic yards."),
             check=Q(L) / 3 * Q(W) / 3 * Q(D) / 3,
         )
-    # sandbox: bags that hold half a cubic foot each
-    L, W = rng.randint(3, 8), rng.randint(3, 8)
+    # sandbox: whole bags of sand (1/2, 1 or 2 cubic feet each); sometimes you must round up
+    L, W = rng.randint(3, 10), rng.randint(3, 8)
     need(L >= W)
     t = rng.choice([4, 6, 8, 9, 12])
-    ft3 = R(L * W * t, 12)
-    bags = ft3 * 2
-    need(bags.is_integer and 20 <= bags <= 200)
+    bag = rng.choice([R(1, 2), R(1, 2), Q(1), Q(2), Q(2)])
+    tf = R(t, 12)
+    need(tf != bag)                      # depth and bag size must not cancel (answer = floor area)
+    ft3 = L * W * tf
+    exact = ft3 / bag
+    bags = sp.ceiling(exact)
+    rounded = not exact.is_integer
+    need(8 <= bags <= 200)
     p = person(rng)
+    bag_t = {R(1, 2): "half a cubic foot", Q(1): "1 cubic foot", Q(2): "2 cubic feet"}[bag]
+    v_t = int_raw(ft3) if ft3.is_integer else dec_raw(ft3)
+    wrong = []
+    if rounded:
+        wrong.append((sp.floor(exact), "rounds down; that many bags would leave the sandbox short of sand"))
+    wrong += _whole([(Q(L * W * t) / bag, "uses the depth in inches as if it were feet"),
+                     (Q(L * W) / bag, "leaves out the depth"),
+                     (ft3 * bag, "multiplies by the bag size instead of dividing by it")])
+    if bag != 1 and ft3.is_integer:
+        wrong.append((ft3, "finds the number of cubic feet but forgets to divide by the bag size"))
+    if bag == R(1, 2):
+        last = [f"Each bag holds {m(F(1, 2))} cubic foot, so it takes 2 bags for every cubic foot: "
+                f"{m(f'{v_t} \\times 2 = {dec_raw(exact)}')} bags."]
+    elif bag == 1:
+        last = [f"Each bag holds 1 cubic foot, so you need one bag for each cubic foot: {m(v_t)} bags."]
+    else:
+        last = [f"Each bag holds 2 cubic feet: {m(f'{v_t} \\div 2 = {dec_raw(exact)}')} bags."]
+    if rounded:
+        last.append(f"You can't buy part of a bag, and {m(int_raw(sp.floor(exact)))} bags would not be enough, "
+                    f"so round up to {m(int_raw(bags))} bags.")
     return Problem(
         stem=(f"{p.name} is filling a sandbox that is {m(L)} feet long and {m(W)} feet wide with sand "
-              f"{m(t)} inches deep. Sand is sold in bags that each hold half a cubic foot. "
-              f"How many bags does {p.he} need?"),
-        answer=bags, fmt=num, near=_int_near(bags, (2, -2, 4, -4)),
-        wrong=_whole([(Q(L * W * t) * 2, "uses the depth in inches as if it were feet"),
-                      (ft3, "finds the number of cubic feet but forgets that each bag holds only half a cubic foot"),
-                      (ft3 / 2, "multiplies by the bag size (0.5) instead of dividing by it"),
-                      (Q(L * W) * 2, "leaves out the depth")]),
-        steps=[f"Change the depth to feet: {m(f'{t} \\text{{ in}} = {F(t, 12)} \\text{{ ft}} = {frac_raw(R(t, 12))} \\text{{ ft}}')}.",
-               f"Volume: {m(f'{L} \\times {W} \\times {frac_raw(R(t, 12))} = {int_raw(ft3) if ft3.is_integer else dec_raw(ft3)}')} cubic feet.",
-               f"Each bag holds {m(F(1, 2))} cubic foot, so it takes 2 bags for every cubic foot: "
-               f"{m(f'{int_raw(ft3) if ft3.is_integer else dec_raw(ft3)} \\times 2 = {int_raw(bags)}')} bags."],
-        check=Q(L) * W * t / 12 / R(1, 2),
+              f"{m(t)} inches deep. Sand is sold in bags that each hold {bag_t}. "
+              f"How many bags does {p.he} need to buy?"),
+        answer=bags, fmt=num, near=_int_near(bags, (2, -2, 3, -3)), must=1 if rounded else 0,
+        wrong=wrong,
+        steps=[f"Change the depth to feet: {m(f'{t} \\text{{ in}} = {F(t, 12)} \\text{{ ft}} = {frac_raw(tf)} \\text{{ ft}}')}.",
+               f"Volume: {m(f'{L} \\times {W} \\times {frac_raw(tf)} = {v_t}')} cubic feet."] + last,
+        check=next(k_ for k_ in range(1, 1000) if k_ * bag >= ft3),     # smallest number of bags that is enough
     )
 
 
@@ -832,10 +853,10 @@ def scale_solid(rng, lvl):
         what = "volume" if kind == "cube_V" else "surface area"
         ans = k**3 if kind == "cube_V" else k**2
         wrong = [(Q(k), f"assumes the {what} grows by the same factor as the edges"),
-                 (Q(3 * k), "multiplies the factor by 3 instead of cubing it" if kind == "cube_V" else None),
                  (Q(k**2 if kind == "cube_V" else k**3),
                   "squares the factor; that is how surface area grows" if kind == "cube_V"
                   else "cubes the factor; that is how volume grows"),
+                 (Q(3 * k), "multiplies the factor by 3 instead of cubing it" if kind == "cube_V" else None),
                  (Q(2 * k), None)]
         if kind == "cube_V":
             steps = [f"Volume multiplies three lengths, and each one is multiplied by {m(k)}.",
@@ -845,7 +866,7 @@ def scale_solid(rng, lvl):
                      f"So every face, and the total surface area, is multiplied by {m(f'{k} \\times {k} = {k * k}')}."]
         return Problem(
             stem=f"If every edge of {solid} is {words[k]}, its {what} is multiplied by what number?",
-            answer=Q(ans), fmt=num, sort=False, wrong=wrong, steps=steps,
+            answer=Q(ans), fmt=num, must=2, wrong=wrong, steps=steps,
             check=sp.expand((k * x)**3 / x**3) if kind == "cube_V" else sp.expand(6 * (k * x)**2 / (6 * x**2)),
         )
     if kind == "box_num":
@@ -859,7 +880,7 @@ def scale_solid(rng, lvl):
             stem=(f"{p.name} has a box with a volume of {num(V0)} {_cuw(ab)}. {p.He} builds a second box whose length, "
                   f"width, and height are each {m(k)} times as long as those of the first box. What is the volume of "
                   f"the second box?"),
-            answer=Q(ans), fmt=_u(num, ab, 3),
+            answer=Q(ans), fmt=_u(num, ab, 3), must=1,
             near=lambda rng: [Q(ans + V0), Q(ans - V0), Q(V0 * (k**3 + 2)), Q(V0 * 4 * k)],
             wrong=[(Q(V0 * k), f"multiplies the volume by {m(k)} instead of {m(f'{k}^3')}"),
                    (Q(V0 * k * k), f"multiplies the volume by {m(f'{k}^2')} instead of {m(f'{k}^3')}"),
@@ -874,7 +895,7 @@ def scale_solid(rng, lvl):
         return Problem(
             stem=(f"The radius of a cylinder is {words[k]}, and its height stays the same. The volume of the new "
                   f"cylinder is how many times the volume of the original?"),
-            answer=Q(k * k), fmt=num, sort=False,
+            answer=Q(k * k), fmt=num, must=1,
             wrong=[(Q(k), "assumes the volume grows by the same factor as the radius"),
                    (Q(k**3), "cubes the factor, but only the radius changed, not the height"),
                    (Q(2 * k), "doubles the factor instead of squaring it")],
@@ -888,7 +909,7 @@ def scale_solid(rng, lvl):
         return Problem(
             stem=(f"The height of a cylinder is {words[k]}, and its radius stays the same. The volume of the new "
                   f"cylinder is how many times the volume of the original?"),
-            answer=Q(k), fmt=num, sort=False,
+            answer=Q(k), fmt=num, must=1,
             wrong=[(Q(k * k), "squares the factor; only the radius is squared in the formula"),
                    (Q(k**3), "cubes the factor"),
                    (Q(2 * k), None)],
@@ -916,7 +937,7 @@ def scale_solid(rng, lvl):
             stem=(f"{'A cylinder' if what == 'cylinder' else f'A {what} shaped like a cylinder'} holds "
                   f"{m(_pi_raw(V0))} {_cuw(ab)}. A second {what} has the same "
                   f"{other}, but its {part} is {m(k)} times as large. How much does the second {what} hold?"),
-            answer=ans, fmt=_pi_u(ab, 3), near=_pi_near(ans), wrong=wrong, sort=False,
+            answer=ans, fmt=_pi_u(ab, 3), near=_pi_near(ans), wrong=wrong, must=1,
             steps=[f"In {m(r'V = \pi r^2 h')} the radius is squared but the height is not.",
                    (f"Multiplying the radius by {m(k)} multiplies the volume by {m(f'{k}^2 = {k * k}')}." if which == "r"
                     else f"Multiplying the height by {m(k)} multiplies the volume by {m(k)}."),
@@ -987,6 +1008,7 @@ def cone_sphere(rng, lvl):
             fig = _fig_sphere(r, ab, use_d) if what == "a sphere" else None
         else:
             ab = rng.choice(["in", "cm"])
+            need(r in ((3, 6) if ab == "in" else (6, 9)))     # a real bowl: 6-12 in or 12-18 cm across
             given = f"diameter {m(2 * r)} {_w(ab)}" if use_d else f"radius {m(r)} {_w(ab)}"
             stem = (f"The volume of a sphere is {m(r'V = \frac{4}{3}\pi r^3')}. A bowl is shaped like half of a "
                     f"sphere (a hemisphere) with {given}. How much does the bowl hold when full?")

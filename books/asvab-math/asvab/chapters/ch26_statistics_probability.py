@@ -177,6 +177,11 @@ def _near_prob(ans):
     return f
 
 
+def _pwrong(wrong):
+    """Probability distractors must be possible probabilities (0 < p <= 1)."""
+    return [w for w in wrong if w[0] is not None and 0 < Q(w[0]) <= 1]
+
+
 def _pfrac_steps(fav, total, what="favorable outcomes"):
     """'P = 7/20' with reduction shown when needed."""
     raw = F(int_raw(fav), int_raw(total))
@@ -380,14 +385,18 @@ def score_needed(rng, lvl):
     need(vlo <= ans <= vmax and ans != target and abs(ans - target) >= 2)
     stem = _need_stem(rng, key, vals, target, more)
     cur_mean = R(S, k)
+    u1 = {"tests": "test", "bowling": "game", "pushups": "test", "marks": "round",
+          "miles": "week", "sales": "month"}[key]
+    what = {"tests": "score", "bowling": "score", "pushups": "push-ups", "marks": "hits",
+            "miles": "miles", "sales": "cars"}[key]
+    when = (f"on the next {u1}" if key in ("tests", "pushups") else f"in the next {u1}"
+            if key in ("bowling", "marks") else f"next {u1}") if more == 1 else f"each {u1}"
     wrong = [
-        (Q(target), "is the target average, not the score needed"),
-        (2 * target - cur_mean, "makes up the shortfall for only one test, not for all of them"),
+        (Q(target), f"is the target average, not the {what} needed {when}"),
+        (2 * target - cur_mean, f"makes up the shortfall for only one {u1}, not for all of them"),
         ((target + cur_mean) / 2, "averages the target with the current average"),
     ]
     if more == 2:
-        u1 = {"tests": "test", "bowling": "game", "pushups": "test", "marks": "round",
-              "miles": "week", "sales": "month"}[key]
         wrong.append((Q(rest), f"is the total for the next two {u1}s, not the amount for each"))
         wrong.append((Q(target * (k + 1) - S), f"plans for only one more {u1} instead of two"))
     steps = [
@@ -827,6 +836,7 @@ def _weighted_reverse(rng):
                      f"average of the evening group?"),
         }[key]
         other = {"class": "girls", "company": "other soldiers", "team": "evening group"}[key]
+        firstg = {"class": "boys", "company": "first group", "team": "morning group"}[key]
         have = "has" if key == "team" else "have"
         return Problem(
             stem=stem, answer=Q(a2), fmt=num, section="AR",
@@ -834,11 +844,12 @@ def _weighted_reverse(rng):
                 (Q(2 * c - a1), "assumes the two groups are the same size"),
                 (Q(rest), f"is the total for the {other}, not their average"),
                 (Q(c), "gives the average of the whole group"),
-                (R(T - a1, n2), "subtracts the first group's average instead of its total"),
+                (R(T - a1, n2), f"subtracts the {firstg}' average instead of their total"
+                 if firstg.endswith("s") else f"subtracts the {firstg}'s average instead of its total"),
             ],
             steps=[
                 f"Total for everyone: {m(f'{n1 + n2} \\times {c} = {int_raw(T)}')}.",
-                f"Total for the first group: {m(f'{n1} \\times {a1} = {int_raw(n1 * a1)}')}.",
+                f"Total for the {firstg}: {m(f'{n1} \\times {a1} = {int_raw(n1 * a1)}')}.",
                 f"The {other} {have} {m(f'{int_raw(T)} - {int_raw(n1 * a1)} = {int_raw(rest)}')} points in "
                 f"all, so their average is {m(f'{int_raw(rest)} \\div {n2} = {a2}')}.",
             ],
@@ -1018,7 +1029,7 @@ def simple_prob(rng, lvl):
             (R(1, mine), None),
         ]
         check = Fraction(len([t for t in range(sold) if t < mine]), sold)
-    return Problem(stem=stem, answer=ans, fmt=frac, section="AR", wrong=wrong, steps=steps,
+    return Problem(stem=stem, answer=ans, fmt=frac, section="AR", wrong=_pwrong(wrong), steps=steps,
                    near=_near_prob(ans), check=check)
 
 
@@ -1127,7 +1138,7 @@ def prob_complement(rng, lvl):
             (R(mine, fav), "compares the tickets bought to the tickets not bought"),
         ]
         check = Fraction(len([t for t in range(sold) if t >= mine]), sold)
-    return Problem(stem=stem, answer=ans, fmt=frac, section="AR", wrong=wrong, steps=steps,
+    return Problem(stem=stem, answer=ans, fmt=frac, section="AR", wrong=_pwrong(wrong), steps=steps,
                    tip=tip, near=_near_prob(ans), check=check)
 
 
@@ -1179,9 +1190,15 @@ def independent_events(rng, lvl):
         c2 = sum(1 for f in range(1, 7) if die_t[1](f))
         p1, p2 = first[0], R(c2, 6)
         ans = p1 * p2
+
+        def _dd(t):
+            return {"even": "an even number", "odd": "an odd number"}.get(
+                t, t if t.startswith("a ") else f"a number {t}")
+        ev1 = _dd(first[4]) if kind == "two_dice" else first[4]
+        die_name = "the blue die" if kind == "two_dice" else "the die"
         steps = [
-            f"P({first[4]} on {first[1]}) $=$ {m(_pfrac_steps(first[2], first[3]))}. "
-            f"P(die) $=$ {m(_pfrac_steps(c2, 6))}.",
+            f"P({ev1} on {first[1]}) $=$ {m(_pfrac_steps(first[2], first[3]))}. "
+            f"P({_dd(die_t[0])} on {die_name}) $=$ {m(_pfrac_steps(c2, 6))}.",
             f"The two results do not affect each other, so multiply: "
             f"{m(f'{frac_raw(p1)} \\times {frac_raw(p2)} = {frac_raw(ans)}')}.",
         ]
@@ -1252,7 +1269,7 @@ def independent_events(rng, lvl):
         outs = list(itertools.product(range(den), repeat=k))
         check = Fraction(sum(1 for o in outs if all(v < num_ for v in o)), len(outs))
     need(0 < ans < 1)
-    return Problem(stem=stem, answer=ans, fmt=frac, section="AR", wrong=wrong, steps=steps,
+    return Problem(stem=stem, answer=ans, fmt=frac, section="AR", wrong=_pwrong(wrong), steps=steps,
                    near=_near_prob(ans), check=check)
 
 
@@ -1264,33 +1281,33 @@ def without_replacement(rng, lvl):
         c1, c2 = rng.sample(["red", "blue", "green", "white"], 2)
         a_, b_ = rng.randint(2, 8), rng.randint(2, 8)
         setup = f"A bag holds {num(a_)} {c1} marbles and {num(b_)} {c2} marbles."
-        draw = "Two marbles are drawn at random, one after the other, without being put back."
+        draw = "Two marbles are drawn at random, one after the other (the first is not put back)."
         A, B, noun = c1, c2, "marbles"
         As, Ap, Bs, Bp, it_s = f"{c1} marble", f"{c1} marbles", f"{c2} marble", f"{c2} marbles", "marble"
     elif key == "roster":
         a_, b_ = rng.randint(2, 7), rng.randint(3, 9)
         setup = (f"A squad has {num(a_)} privates and {num(b_)} specialists. The squad leader puts "
                  f"all of their names in a helmet.")
-        draw = "Two names are drawn at random for weekend guard duty."
+        draw = "Two names are drawn at random, one after the other (the first is not put back), for weekend guard duty."
         A, B, noun = "privates", "specialists", "names"
         As, Ap, Bs, Bp, it_s = "private", "privates", "specialist", "specialists", "name"
     elif key == "batteries":
         a_, b_ = rng.randint(2, 4), rng.randint(5, 10)
         setup = f"A box of {num(a_ + b_)} radio batteries contains {num(a_)} dead batteries."
-        draw = "Two batteries are taken from the box at random."
+        draw = "Two batteries are taken from the box at random, one after the other (the first is not put back)."
         A, B, noun = "dead", "good", "batteries"
         As, Ap, Bs, Bp, it_s = "dead battery", "dead batteries", "good battery", "good batteries", "battery"
     elif key == "donuts":
         a_, b_ = rng.randint(3, 7), rng.randint(3, 9)
         setup = f"A box contains {num(a_)} glazed donuts and {num(b_)} chocolate donuts."
-        draw = "Two donuts are taken at random, one after the other."
+        draw = "Two donuts are taken at random, one after the other (the first is not put back)."
         A, B, noun = "glazed", "chocolate", "donuts"
         As, Ap, Bs, Bp, it_s = "glazed donut", "glazed donuts", "chocolate donut", "chocolate donuts", "donut"
     else:
         a_, b_ = rng.randint(2, 6), rng.randint(4, 10)
         setup = (f"The {num(a_ + b_)} finalists in a base raffle include {num(a_)} soldiers from "
                  f"Alpha Company; the rest are from other companies.")
-        draw = "Two different winners are drawn at random."
+        draw = "Two winners are drawn at random, one after the other (the first name is not put back)."
         A, B, noun = "Alpha Company soldiers", "other soldiers", "names"
         As, Ap, Bs, Bp, it_s = ("Alpha Company soldier", "Alpha Company soldiers", "soldier from another company",
                                 "soldiers from other companies", "name")
@@ -1359,7 +1376,7 @@ def without_replacement(rng, lvl):
         ]
     need(0 < ans < 1)
     wrong = [w for w in wrong if w[0] is not None]
-    return Problem(stem=f"{setup} {draw} {q}", answer=ans, fmt=frac, section="AR", wrong=wrong,
+    return Problem(stem=f"{setup} {draw} {q}", answer=ans, fmt=frac, section="AR", wrong=_pwrong(wrong),
                    steps=steps, near=_near_prob(ans), check=Fraction(ok, len(pairs)))
 
 
@@ -1708,28 +1725,32 @@ def expected_count(rng, lvl):
             N = rng.choice([200, 300, 400, 500, 600, 800, 1000])
             stem = (f"A factory finds that {m(f'{p}\\%')} of the light bulbs it makes are defective. "
                     f"In a shipment of {num(N)} bulbs, how many would you expect to be defective?")
-            other = "not defective"
+            other = "of bulbs that are not defective"
+            noun = "bulbs in the shipment"
         elif key == "freethrows":
             p = rng.choice([60, 70, 75, 80, 90])
             N = rng.choice([20, 30, 40, 50, 60])
             nm = person(rng)
             stem = (f"{nm} makes {m(f'{p}\\%')} of {nm.his} free throws. If {nm.he} shoots {num(N)} "
                     f"free throws, how many would you expect {nm.him} to make?")
-            other = "missed"
+            other = "of missed free throws"
+            noun = "free throws"
         elif key == "targets":
             p = rng.choice([70, 75, 80, 85, 90, 95])
             N = rng.choice([20, 40, 60, 80, 100])
             s = _army(rng)
             stem = (f"On the range, {s} hits {m(f'{p}\\%')} of the targets on average. Out of "
                     f"{num(N)} targets, how many hits should {s.split()[-1]} expect?")
-            other = "misses"
+            other = "of misses"
+            noun = "targets"
         else:
             p = rng.choice([10, 15, 20, 25, 30, 35, 40])
             N = rng.choice([200, 300, 400, 500, 600, 800])
             stem = (f"A survey found that {m(f'{p}\\%')} of high school seniors plan to join the "
                     f"military. In a group of {num(N)} seniors, how many would you expect to plan "
                     f"to join?")
-            other = "not planning to join"
+            other = "of seniors \\emph{not} planning to join"
+            noun = "seniors in the group"
         ans = R(p * N, 100)
         need(ans.is_integer)
         return Problem(
@@ -1741,7 +1762,7 @@ def expected_count(rng, lvl):
                 (ans / 10 if (ans / 10).is_integer else ans + 10, None),
             ],
             steps=[
-                f"Expected count $=$ probability $\\times$ number of tries: "
+                f"Expected number $=$ percent (as a decimal) $\\times$ number of {noun}: "
                 f"{m(f'{dec_raw(R(p, 100))} \\times {int_raw(N)} = {int_raw(ans)}')}.",
             ],
             near=_near(ans),
@@ -1758,7 +1779,8 @@ def expected_count(rng, lvl):
         prob = R(t[1], 6)
         ans = prob * N
         steps = [f"P({t[0]}) $=$ {m(_pfrac_steps(t[1], 6))}.",
-                 f"Expected count: {m(f'{frac_raw(prob)} \\times {int_raw(N)} = {int_raw(ans)}')}."]
+                 f"Expected number: probability $\\times$ number of rolls $=$ "
+                 f"{m(f'{frac_raw(prob)} \\times {int_raw(N)} = {int_raw(ans)}')}."]
         wrong = [
             (N - ans, f"is the expected number of rolls that are \\emph{{not}} {t[0]}"),
             (Q(N // 2), "assumes each roll is a 50-50 chance"),
@@ -1777,7 +1799,8 @@ def expected_count(rng, lvl):
         stem = (f"A spinner has {secs} equal sections, and {k} of them {'is' if k == 1 else 'are'} red. "
                 f"If the spinner is spun {num(N)} times, about how many times should it land on red?")
         steps = [f"P(red) $=$ {m(_pfrac_steps(k, secs))}.",
-                 f"Expected count: {m(f'{frac_raw(prob)} \\times {int_raw(N)} = {int_raw(ans)}')}."]
+                 f"Expected number: probability $\\times$ number of spins $=$ "
+                 f"{m(f'{frac_raw(prob)} \\times {int_raw(N)} = {int_raw(ans)}')}."]
         wrong = [
             (N - ans, "is the expected number of spins that do \\emph{not} land on red"),
             (R(N, secs), "counts only one red section"),

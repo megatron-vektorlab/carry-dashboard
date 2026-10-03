@@ -481,7 +481,7 @@ def zero_negative(rng, lvl):
         neg_ok=True,
         wrong=[w for w in [
             (Q(b) ** (e1 + e2) if b ** (e1 + e2) <= 10 ** 6 else None, "ignores the negative sign on the exponent and adds"),
-            (Q(b) ** (-k), "subtracts the exponents in the wrong order"),
+            (Q(b) ** (-k), f"gets the sign of the exponent wrong: {m(f'{-e1} + {e2}')} is {m(int_raw(k))}, not {m(int_raw(-k))}"),
             (Q(b * b) ** k, "multiplies the bases as well as adding the exponents"),
             (-ans, "makes the answer negative because of the negative exponent"),
         ] if w[0] is not None],
@@ -669,8 +669,9 @@ def power_of_fraction(rng, lvl):
         ],
         tip=(f"Estimate: {m(dec_raw(d))} is less than 1, so its {'square' if e == 2 else 'cube'} must be "
              f"\\emph{{smaller}} than {m(dec_raw(d))}." if d < 1 else
-             f"Estimate: {m(dec_raw(d))} is more than 1, so its {'square' if e == 2 else 'cube'} must be "
-             f"\\emph{{larger}} than {m(dec_raw(d))}."),
+             f"Estimate: {m(dec_raw(d))} is between {int(d)} and {int(d) + 1}, so its "
+             f"{'square' if e == 2 else 'cube'} is between {m(f'{int(d)}^{e} = {int(d) ** e}')} and "
+             f"{m(f'{int(d) + 1}^{e} = {(int(d) + 1) ** e}')}."),
         check=Fraction(int(d.p), int(d.q)) ** e,
     )
 

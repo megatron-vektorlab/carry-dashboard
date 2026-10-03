@@ -391,7 +391,7 @@ def triangle_area(rng, lvl):
             wrong = [(Q(max(b, h) * c) / 2, "uses the hypotenuse as the height"),
                      (Q(b * h), r"forgets to multiply by $\frac12$"),
                      (Q(b + h + c), "gives the perimeter, not the area"),
-                     (Q(b * h * c) / 2, "multiplies all three sides")]
+                     (Q(b * h * c) / 2, "multiplies all three sides, then halves")]
             need((b * h) % 2 == 0)
     area = Q(b * h) / 2
     return Problem(
@@ -685,7 +685,7 @@ def composite(rng, lvl):
                   "adds only the four labeled sides and leaves out the other edges" if label_cut else
                   "adds only the four labeled sides and leaves out the two edges of the cut-out corner"),
                  (Q(area), "gives the area, not the perimeter"),
-                 (Q(per + 2 * (cw + ch)), "counts the two inside edges twice")]
+                 (Q(per + cw + ch), "counts the two inside edges twice")]
         steps = find_cut + [
             f"Go around the shape and add all six sides: "
             f"{m(f'{W} + {H - ch} + {cw} + {ch} + {W - cw} + {H} = {int_raw(per)}')} {_UNITS[u][1]}."]
@@ -935,22 +935,39 @@ def walkway(rng, lvl):
 @template("MK")
 def scale_change(rng, lvl):
     mode = rng.choice(["factor", "rect_new", "square_new", "perimeter"])
-    k = rng.choice([2, 3, 4, 5]) if mode != "factor" else rng.choice([2, 3, 4, 5, 10])
+    # (factor mode skips k = 2, where "2k" and the answer k^2 would both be 4)
+    k = rng.choice([2, 3, 4, 5]) if mode != "factor" else rng.choice([3, 4, 5, 10])
     word = {2: "doubled", 3: "tripled", 4: "multiplied by 4", 5: "multiplied by 5", 10: "multiplied by 10"}[k]
     if mode == "factor":
         shape = rng.choice(["square", "rectangle", "triangle"])
         part = {"square": "each side of a square is", "rectangle": "the length and the width of a rectangle are both",
                 "triangle": "the base and the height of a triangle are both"}[shape]
-        stem = (f"If {part} {word}, the area of the {shape} is multiplied by what number?")
-        ans = Q(k * k)
-        wrong = [(Q(k), "assumes the area grows by the same factor as the sides"),
-                 (Q(2 * k), "doubles the scale factor instead of squaring it"),
-                 (Q(k ** 3), "cubes the factor, which is how volume changes, not area")]
-        steps = [f"Area multiplies two lengths together, and each length is multiplied by {m(k)}.",
-                 f"So the area is multiplied by {m(f'{k} \\times {k} = {k * k}')}."]
-        tip = f"Try numbers: a 1-by-1 square has area 1; a {k}-by-{k} square has area {k * k}."
-        return Problem(stem=stem, answer=ans, fmt=num, wrong=wrong, steps=steps, tip=tip, check=Q(k) ** 2,
-                       near=_near_int(ans, (1, 2, 3), lo=1))
+        if rng.random() < 0.6:
+            stem = (f"If {part} {word}, the area of the {shape} is multiplied by what number?")
+            ans = Q(k * k)
+            wrong = [(Q(k), "assumes the area grows by the same factor as the sides"),
+                     (Q(2 * k), "doubles the scale factor instead of squaring it"),
+                     (Q(k ** 3), "cubes the factor, which is how volume changes, not area")]
+            steps = [f"Area multiplies two lengths together, and each length is multiplied by {m(k)}.",
+                     f"So the area is multiplied by {m(f'{k} \\times {k} = {k * k}')}."]
+            tip = f"Try numbers: a 1-by-1 square has area 1; a {k}-by-{k} square has area {k * k}."
+            return Problem(stem=stem, answer=ans, fmt=num, wrong=wrong, steps=steps, tip=tip, check=Q(k) ** 2,
+                           near=lambda r: [])
+        # reverse: the area factor is given; find the side factor
+        k = rng.choice([4, 6, 8, 10])
+        stem = choose(rng,
+                      f"Each side of a square is multiplied by the same number, and the area of the square becomes "
+                      f"{m(k * k)} times as large. By what number was each side multiplied?",
+                      f"A square photo is enlarged so that its area is {m(k * k)} times as large. By what number "
+                      f"was the length of each side multiplied?")
+        wrong = [(Q(k * k), "gives the area factor itself"),
+                 (Q(k * k) / 2, "halves the area factor instead of taking its square root"),
+                 (Q(k ** 4), "squares the area factor instead of taking its square root")]
+        steps = [f"If each side is multiplied by {m('k')}, the area is multiplied by {m('k^2')}.",
+                 f"So {m(f'k^2 = {k * k}')}, and {m(f'k = \\sqrt{{{k * k}}} = {k}')}."]
+        return Problem(stem=stem, answer=Q(k), fmt=num, wrong=wrong, steps=steps,
+                       tip=f"Check: {m(f'{k} \\times {k} = {k * k}')}.",
+                       check=sp.sqrt(k * k), near=lambda r: [])
     u = rng.choice(["ft", "in", "m", "cm"])
     if mode == "rect_new":
         L, W = rng.randint(3, 12), rng.randint(2, 9)
@@ -961,7 +978,9 @@ def scale_change(rng, lvl):
                 f"what is the area of the new rectangle?")
         wrong = [(Q(A * k), f"multiplies the area by {m(k)} instead of {m(k * k)}"),
                  (Q(A), "gives the original area"),
-                 (Q((L + k) * (W + k)), f"adds {m(k)} to each side instead of multiplying")]
+                 (Q((L + k) * (W + k)), f"adds {m(k)} to the length and the width instead of multiplying"),
+                 (Q(2 * (k * L + k * W)), "finds the new perimeter instead of the new area"),
+                 (Q(A * k ** 3), f"multiplies the area by {m(k ** 3)}, which is how volume changes, not area")]
         steps = [f"New sides: {m(f'{L} \\times {k} = {L * k}')} and {m(f'{W} \\times {k} = {W * k}')} {u}.",
                  f"New area: {m(f'{L * k} \\times {W * k} = {int_raw(ans)}')} square {_UNITS[u][1]}."]
         tip = f"Check: the old area is {m(f'{L} \\times {W} = {int_raw(A)}')}, and {m(f'{int_raw(A)} \\times {k * k} = {int_raw(ans)}')}."
@@ -975,7 +994,9 @@ def scale_change(rng, lvl):
                 f"the new square?")
         wrong = [(Q(A * k), f"multiplies the area by {m(k)} instead of {m(k * k)}"),
                  (Q(4 * sd * k), "gives the new perimeter instead of the new area"),
-                 (Q((sd + k) ** 2), f"adds {m(k)} to the side instead of multiplying")]
+                 (Q((sd + k) ** 2), f"adds {m(k)} to the side instead of multiplying"),
+                 (Q(A), "gives the original area"),
+                 (Q(A * k ** 3), f"multiplies the area by {m(k ** 3)}, which is how volume changes, not area")]
         steps = [f"The original side is {m(sd)} {u}, because {m(f'{sd} \\times {sd} = {int_raw(A)}')}.",
                  f"The new side is {m(f'{sd} \\times {k} = {sd * k}')} {u}.",
                  f"New area: {m(f'{sd * k} \\times {sd * k} = {int_raw(ans)}')} square {_UNITS[u][1]}."]
@@ -990,8 +1011,9 @@ def scale_change(rng, lvl):
         stem = (f"A rectangle has a perimeter of {_w(Pm, u)}. If its length and width are both {word}, what is "
                 f"the perimeter of the new rectangle?")
         wrong = [(Q(Pm * k * k), f"multiplies by {m(k * k)}, which is how the area changes"),
-                 (Q(Pm + 2 * k), f"adds {m(k)} to the length and width instead of multiplying"),
-                 (Q(Pm), "gives the original perimeter")]
+                 (Q(2 * ((L + k) + (W + k))), f"adds {m(k)} to the length and to the width instead of multiplying"),
+                 (Q(Pm), "gives the original perimeter"),
+                 (Q(2 * (k * L + W)), f"multiplies only the length by {m(k)}")]
         steps = [f"Perimeter is a length (a sum of sides), so when every side is multiplied by {m(k)}, the "
                  f"perimeter is multiplied by {m(k)} too.",
                  f"{m(f'{int_raw(Pm)} \\times {k} = {int_raw(ans)}')}, so the new perimeter is {_w(ans, u)}."]
@@ -1001,7 +1023,7 @@ def scale_change(rng, lvl):
                             f"A rectangle that is {_w(L, u)} by {_w(W, u)} has a perimeter of {_w(Pm, u)}.")
         check = Q(2 * (k * L + k * W))
     return Problem(stem=stem, answer=ans, fmt=fmt, wrong=wrong, steps=steps, tip=tip, check=check,
-                   near=_near_int(ans, (4, 8, 10, 20)))
+                   near=lambda r: [])
 
 
 PLAN = [

@@ -301,7 +301,7 @@ def interest_balance(rng, lvl, part=None):
     steps += [f"One year's interest: {m(f'{money(P)} \\times {_pdec(r)} = {money(Y)}')}.",
               f"Interest for the whole time: {m(f'{money(Y)} \\times {mixed_raw(t) if tt else int_raw(t)} = {money(I)}')}.",
               f"Add it to the principal: {m(f'{money(P)} + {money(I)} = {money(total)}')}."]
-    return Problem(stem=intro + q, answer=total, fmt=money, section="AR", wrong=wrong, steps=steps,
+    return Problem(stem=intro + q, answer=total, fmt=money, section="AR", wrong=wrong, steps=steps, must=1,
                    check=Fraction(int(P)) * (1 + Fraction(r, 100) * Fraction(t.p, t.q)))
 
 
@@ -331,14 +331,17 @@ def loan_payment(rng, lvl, part=None):
     pay = total / (12 * t)
     need(pay.is_integer)
     stem = (st.format(B=B, P=money(P), his=B.his)
-            + f" The loan charges {pct(r)} simple interest per year, and {B.he} will repay the principal "
-              f"plus interest in equal monthly payments over {t} years. How much is each monthly payment?")
+            + f" The loan charges {pct(r)} simple interest per year, figured on the full {money(P)} for "
+              f"{'both years' if t == 2 else f'all {t} years'}. {B.He} will repay the principal plus interest in equal monthly payments over {t} "
+              f"years. How much is each monthly payment?")
     return Problem(
-        stem=stem, answer=pay, fmt=money, section="AR",
+        stem=stem, answer=pay, fmt=money, section="AR", must=1,
         wrong=[(P / (12 * t), "forgets to add the interest"),
+               ((P + P * r / 100) / (12 * t), "adds only one year of interest"),
+               (I / (12 * t), "gives only the interest part of each payment"),
                (total / 12, "divides by 12 instead of by the total number of months"),
-               (total / t, "gives the yearly payment, not the monthly payment"),
-               ((P + P * r / 100) / (12 * t), "adds only one year of interest")],
+               (total / t, "gives the yearly payment, not the monthly payment")],
+        near=lambda g: [],                    # every choice comes from a named mistake
         steps=[f"Interest: {m(f'{money(P)} \\times {_pdec(r)} \\times {t} = {money(I)}')}.",
                f"Total to repay: {m(f'{money(P)} + {money(I)} = {money(total)}')}.",
                f"Number of payments: {m(f'{t} \\times 12 = {12 * t}')} months.",
@@ -401,18 +404,20 @@ def find_rate_time(rng, lvl, part=None):
 # --------------------------------------------------------------------------
 
 _COMM1 = [
-    # (stem, S lo, hi, step, rates, military)
+    # (stem, S lo, hi, step, rates, military, what the commission is figured on)
     ("A real estate agent earns {ar} {r} commission on each home {he} sells. How much commission does {he} "
-     "earn on a home that sells for {S}?", 150000, 450000, 5000, [2, R(5, 2), 3], False),
+     "earn on a home that sells for {S}?", 150000, 450000, 5000, [2, R(5, 2), 3], False, "the home's price"),
     ("{B} sells cars and earns {ar} {r} commission on the price of each car {he} sells. What is {his} "
-     "commission on a car that sells for {S}?", 16000, 48000, 500, [2, 3, 4, 5], False),
+     "commission on a car that sells for {S}?", 16000, 48000, 500, [2, 3, 4, 5], False, "the car's price"),
     ("{B} works at an electronics store and earns {ar} {r} commission on everything {he} sells. Last week "
      "{he} sold {S} worth of merchandise. How much commission did {he} earn?", 3000, 12000, 100,
-     [3, 4, 5, 6, 8], False),
+     [3, 4, 5, 6, 8], False, "the sales"),
     ("After leaving the Navy, {B} took a job selling boats. {He} earns {ar} {r} commission on each sale. "
-     "How much does {he} earn for selling a boat priced at {S}?", 20000, 90000, 1000, [3, 4, 5, 6], True),
+     "How much does {he} earn for selling a boat priced at {S}?", 20000, 90000, 1000, [3, 4, 5, 6], True,
+     "the boat's price"),
     ("{B}, an Army veteran, sells insurance and earns {ar} {r} commission on the yearly premiums {he} sells. "
-     "This month {he} sold {S} in premiums. What is {his} commission?", 8000, 30000, 500, [5, 8, 10, 12], True),
+     "This month {he} sold {S} in premiums. What is {his} commission?", 8000, 30000, 500, [5, 8, 10, 12], True,
+     "the premiums sold"),
 ]
 
 
@@ -421,7 +426,7 @@ _COMM1 = [
 def commission(rng, lvl, part=None):
     B = person(rng)
     if lvl == 1:
-        st, lo, hi, step, rates, mil = _pick(rng, _COMM1, part)
+        st, lo, hi, step, rates, mil, on = _pick(rng, _COMM1, part)
         S = Q(rng.choice(range(lo, hi + 1, step)))
         r = rng.choice(rates)
         c = S * r / 100
@@ -433,7 +438,7 @@ def commission(rng, lvl, part=None):
             stem=stem, answer=c, fmt=money, section="AR",
             wrong=[(c * 10, f"writes {pct(r)} as {m(dec_raw(Q(r) / 10))} instead of {m(_pdec(r))}"),
                    (c / 10, "moves the decimal point three places instead of two"),
-                   (S - c, "subtracts the commission from the sale price"),
+                   (S - c, f"subtracts the commission from {on}"),
                    (S * r, "forgets to change the percent to a decimal")],
             steps=[f"Commission {m('=')} rate {m('\\times')} sales. Change the rate to a decimal: "
                    f"{m(f'{dec_raw(r)}\\% = {_pdec(r)}')}.",
@@ -463,7 +468,7 @@ def commission(rng, lvl, part=None):
         return Problem(
             stem=stem, answer=pay, fmt=money, section="AR",
             wrong=[(c, "is the commission only; it leaves out the base salary"),
-                   ((base + S) * r / 100, "takes the commission on the base salary plus sales"),
+                   (base + (base + S) * r / 100, "figures the commission on the base salary plus the sales"),
                    (base + c * 10, f"writes {pct(r)} as {m(dec_raw(Q(r) / 10))}"),
                    (base + S, "adds the sales instead of the commission")],
             steps=[f"Commission: {m(f'{_pdec(r)} \\times {money(S)} = {money(c)}')}.",
@@ -833,8 +838,11 @@ _SUCC_Q = [" The two discounts together are the same as a single discount of wha
 @_fill
 def successive(rng, lvl, part=None):
     st, item, lo, hi, step = _pick(rng, _SUCC, part)
-    d1 = rng.choice([10, 20, 25, 30, 40, 50])
-    d2 = rng.choice([10, 15, 20, 25, 5, 30] if lvl == 3 else [10, 15, 20, 25])
+    if item == "used car":                       # car prices drop a little at a time
+        d1, d2 = rng.choice([5, 10, 15, 20]), rng.choice([5, 10])
+    else:
+        d1 = rng.choice([10, 20, 25, 30, 40, 50])
+        d2 = rng.choice([10, 15, 20, 25, 5, 30] if lvl == 3 else [10, 15, 20, 25])
     keep = R((100 - d1) * (100 - d2), 10000)
     eq = 100 - keep * 100
     if lvl == 2:
@@ -851,7 +859,9 @@ def successive(rng, lvl, part=None):
             wrong=[(P * (100 - d1 - d2) / 100, f"adds the discounts to get {pct(d1 + d2)} off"),
                    (s1, "stops after the first discount"),
                    (P * (100 - d2) / 100, "applies only the second discount"),
-                   (P * d1 * d2 / 10000, "multiplies the two discounts together")],
+                   (P * (10000 - d1 * d2) / 10000,
+                    f"multiplies the two rates ({m(f'{d1}\\% \\times {d2}\\% = {dec_raw(R(d1 * d2, 100))}\\%')}) "
+                    f"and takes only that much off")],
             steps=[f"First discount: {m(f'{money(P)} - {_pdec(d1)} \\times {money(P)} = {money(P)} - {money(P * d1 / 100)} = {money(s1)}')}.",
                    f"The second discount is taken from the \\emph{{new}} price: "
                    f"{m(f'{money(s1)} - {_pdec(d2)} \\times {money(s1)} = {money(s1)} - {money(s1 * d2 / 100)} = {money(s2)}')}."],
@@ -1024,15 +1034,15 @@ def compound(rng, lvl, part=None):
     B = _trooper(rng) if mil else person(rng)
     semi = (rng.random() < 0.35) if part is None else part[0] == 1
     if semi:
-        r = rng.choice([4, 6, 8, 10])
-        P = Q(rng.choice(range(1000, 10001, 500)))
+        r = rng.choice([2, 4, 6, 8, 10, 12])
+        P = Q(rng.choice(range(1000, 15001, 100)))
         i = Q(r) / 2
         what = (f"pays {pct(r)} yearly interest, compounded every six months (so {pct(i)} is added every "
                 f"six months)")
         span = "1 year"
     else:
-        r = rng.choice([2, 3, 4, 5, 6, 8, 10])
-        P = Q(rng.choice(range(1000, 10001, 500)))
+        r = rng.choice([2, 3, 4, 5, 6, 7, 8, 9, 10])
+        P = Q(rng.choice(range(1000, 15001, 100)))
         i = Q(r)
         what = f"pays {pct(r)} interest per year, compounded once a year"
         span = "2 years"
@@ -1060,7 +1070,7 @@ def compound(rng, lvl, part=None):
     if ask_int:
         steps.append(f"Interest earned: {m(f'{money(a2)} - {money(P)} = {money(I)}')}.")
     return Problem(
-        stem=stem, answer=ans, fmt=money, section="AR", wrong=wrong, steps=steps,
+        stem=stem, answer=ans, fmt=money, section="AR", wrong=wrong, steps=steps, must=1,
         tip=f"The second {'period' if semi else 'year'} earns more ({money(a2 - a1)} vs. {money(a1 - P)}) because it earns interest on the interest.",
         check=(Fraction(int(P)) * (1 + Fraction(i.p, i.q * 100)) ** 2) - (Fraction(int(P)) if ask_int else 0),
     )

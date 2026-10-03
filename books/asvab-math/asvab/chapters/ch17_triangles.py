@@ -353,7 +353,10 @@ def classify_triangle(rng, lvl):
 
 
 # Pythagorean triples (legs a < b, hypotenuse c)
-_EASY_TRIPLES = [(3 * k, 4 * k, 5 * k) for k in range(1, 7)] + [(5, 12, 13)]
+_EASY_TRIPLES = [(3 * k, 4 * k, 5 * k) for k in range(1, 6)] + [(5, 12, 13)]
+# leg problems use a different mix than the hypotenuse warm-ups
+_LEG_TRIPLES = [(5, 12, 13), (10, 24, 26), (15, 36, 39), (8, 15, 17), (16, 30, 34), (7, 24, 25), (9, 12, 15),
+                (12, 16, 20), (21, 28, 35), (24, 32, 40), (27, 36, 45), (30, 40, 50)]
 _TRIPLES = ([(3 * k, 4 * k, 5 * k) for k in range(7, 11)] + [(5 * k, 12 * k, 13 * k) for k in (1, 2, 3)]
             + [(8 * k, 15 * k, 17 * k) for k in (1, 2)] + [(7, 24, 25)])
 
@@ -520,7 +523,7 @@ def exterior_angle(rng, lvl):
 
 @template("MK")
 def pyth_leg(rng, lvl):
-    a, b, c = rng.choice(_EASY_TRIPLES[1:] + _TRIPLES[:8])
+    a, b, c = rng.choice(_LEG_TRIPLES)
     u = rng.choice(["ft", "in", "cm", "m", "yd"])
     known, unknown = (a, b) if rng.random() < 0.5 else (b, a)
     labels = {"c": _lab(c, u)}
@@ -558,7 +561,8 @@ def pyth_leg(rng, lvl):
 def _scaled(rng, lo, hi, pool=None):
     """A Pythagorean triple scaled into the range [lo, hi] for the hypotenuse."""
     pool = pool or [(3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25)]
-    opts = [(a * k, b * k, c * k) for a, b, c in pool for k in range(1, 60) if lo <= c * k <= hi]
+    a, b, c = rng.choice(pool)                    # pick the family first, so 3-4-5 does not dominate
+    opts = [(a * k, b * k, c * k) for k in range(1, 60) if lo <= c * k <= hi]
     need(bool(opts))
     return rng.choice(opts)
 
@@ -606,7 +610,7 @@ def pyth_word(rng, lvl):
         ans, k1, k2, u, hyp = Q(c), a, b, "ft", True
         setup = "The pole, the ground, and the wire form a right triangle with the wire as the hypotenuse."
     elif ctx == "tv":
-        a, b, c = rng.choice([(15, 20, 25), (18, 24, 30), (24, 32, 40), (30, 40, 50), (36, 48, 60), (45, 60, 75)])
+        a, b, c = rng.choice([(15, 20, 25), (24, 32, 40), (30, 40, 50), (36, 48, 60), (45, 60, 75), (27, 36, 45)])
         stem = (f"A rectangular TV screen measures {m(c)} inches on the diagonal and is {m(b)} inches wide. "
                 f"How tall is the screen?")
         ans, k1, k2, u, hyp = Q(a), b, c, "in", False
@@ -659,31 +663,93 @@ def _pyth_word_hard(rng, who, s):
         return Problem(stem=stem, answer=ans, fmt=_lenfmt(u), wrong=wrong, steps=steps, section="AR",
                        tip=_triple_tip(a, b, False),
                        near=_near_int(ans, (5, 10, 15, 20)), check=Q(a + b) - _isqrt_check(a * a + b * b))
-    # ladder slides down: foot moves out, top comes down
-    (p1, h1, L), (p2, h2) = rng.choice([((7, 24, 25), (15, 20)), ((6, 8, 10), (8, 6)), ((5, 12, 13), (12, 5)),
-                                        ((10, 24, 26), (24, 10)), ((9, 12, 15), (12, 9)), ((12, 16, 20), (16, 12)),
-                                        ((14, 48, 50), (30, 40)), ((15, 20, 25), (20, 15))])
-    need(p1 < p2)
-    stem = choose(rng,
-                  f"A {m(L)}-foot ladder leans against a wall with its foot {m(p1)} feet from the wall. "
-                  f"The foot of the ladder slides out until it is {m(p2)} feet from the wall. "
-                  f"How many feet does the top of the ladder slide down the wall?",
-                  f"{who.name} leans a {m(L)}-foot ladder against a building, with its foot {m(p1)} feet from the "
-                  f"wall. The foot slips until it is {m(p2)} feet from the wall. How far down the wall does the top "
-                  f"of the ladder slide?",
-                  f"{s} sets a {m(L)}-foot ladder against a barracks wall, {m(p1)} feet from the base. "
-                  f"If the foot of the ladder is moved out to {m(p2)} feet from the wall, how many feet lower "
-                  f"will the top of the ladder be?")
-    ans = Q(h1 - h2)
-    steps = [f"Before: height {m(f'= \\sqrt{{{L}^2 - {p1}^2}} = \\sqrt{{{int_raw(L * L - p1 * p1)}}} = {h1}')} feet.",
+    if rng.random() < 0.5:
+        return _two_travelers(rng, who, s)
+    # ladder moved: two DIFFERENT triples with the same 25-ft hypotenuse, so the
+    # change in height is not equal to the change at the foot
+    L = 25
+    p1, p2 = rng.choice([(7, 15), (7, 20), (15, 7)])
+    h1, h2 = {7: 24, 15: 20, 20: 15}[p1], {7: 24, 15: 20, 20: 15}[p2]
+    out = p2 > p1
+    if out:
+        stem = choose(rng,
+                      f"A {m(L)}-foot ladder leans against a wall with its foot {m(p1)} feet from the base of the wall. "
+                      f"The foot of the ladder slides out until it is {m(p2)} feet from the wall. "
+                      f"How many feet does the top of the ladder slide down the wall?",
+                      f"{who.name} leans a {m(L)}-foot ladder against a building, with its foot {m(p1)} feet from the "
+                      f"base of the wall. The foot slips until it is {m(p2)} feet from the wall. How far down the wall "
+                      f"does the top of the ladder slide?",
+                      f"{s} sets a {m(L)}-foot ladder against a barracks wall, with its foot {m(p1)} feet from the base "
+                      f"of the wall. If the foot of the ladder is moved out to {m(p2)} feet from the wall, how many feet "
+                      f"lower will the top of the ladder be?")
+    else:
+        stem = choose(rng,
+                      f"A {m(L)}-foot ladder leans against a wall with its foot {m(p1)} feet from the base of the wall. "
+                      f"The foot is pushed in until it is {m(p2)} feet from the wall. How many feet higher up the wall "
+                      f"does the top of the ladder reach now?",
+                      f"{s} sets a {m(L)}-foot ladder against a barracks wall, with its foot {m(p1)} feet from the base "
+                      f"of the wall, then moves the foot in to {m(p2)} feet from the wall. How many feet does the top of "
+                      f"the ladder rise?")
+    ans = Q(abs(h1 - h2))
+    steps = [f"The ladder, the wall, and the ground form a right triangle with the {m(L)}-foot ladder as the hypotenuse.",
+             f"Before: height {m(f'= \\sqrt{{{L}^2 - {p1}^2}} = \\sqrt{{{int_raw(L * L - p1 * p1)}}} = {h1}')} feet.",
              f"After: height {m(f'= \\sqrt{{{L}^2 - {p2}^2}} = \\sqrt{{{int_raw(L * L - p2 * p2)}}} = {h2}')} feet.",
-             f"The top slides down {m(f'{h1} - {h2} = {int_raw(ans)}')} feet."]
-    wrong = [(Q(p2 - p1), "assumes the top slides down as far as the foot slides out"),
+             f"The top {'slides down' if out else 'rises'} {m(f'{max(h1, h2)} - {min(h1, h2)} = {int_raw(ans)}')} feet."]
+    wrong = [(Q(abs(p2 - p1)), f"assumes the top moves as far as the foot moves ({m(f'{max(p1, p2)} - {min(p1, p2)}')})"),
              (Q(h1), "gives the starting height of the ladder"),
              (Q(h2), "gives the final height of the ladder")]
-    return Problem(stem=stem, answer=ans, fmt=_lenfmt("ft"), wrong=wrong, steps=steps, section="AR",
+    return Problem(stem=stem, answer=ans, fmt=_lenfmt("ft"), wrong=wrong, steps=steps, section="AR", must=1,
+                   tip=r"Both positions are Pythagorean triples with hypotenuse $25$: $7$-$24$-$25$ and $15$-$20$-$25$.",
                    near=_near_int(ans, (1, 2, 3, 5)),
-                   check=_isqrt_check(L * L - p1 * p1) - _isqrt_check(L * L - p2 * p2))
+                   check=abs(_isqrt_check(L * L - p1 * p1) - _isqrt_check(L * L - p2 * p2)))
+
+
+def _two_travelers(rng, who, s):
+    """Two people leave the same point at right angles; distance apart after t hours."""
+    ctx = rng.choice(["cars", "cyclists", "boats", "patrols", "hikers"])
+    t = rng.choice([2, 3])
+    if ctx == "cars":
+        r1, r2 = rng.choice([(30, 40), (45, 60), (36, 48), (24, 45)])
+        unit, uw = "mi", "miles"
+        stem = (f"Two cars leave the same intersection at the same time. One drives north at {m(r1)} miles per hour "
+                f"and the other drives east at {m(r2)} miles per hour. How far apart are the cars after {m(t)} hours?")
+    elif ctx == "cyclists":
+        r1, r2 = rng.choice([(9, 12), (12, 16), (5, 12), (8, 15)])
+        unit, uw = "mi", "miles"
+        stem = (f"{who.name} and a friend start biking from the same corner at the same time. {who.name} rides south at "
+                f"{m(r1)} miles per hour and the friend rides west at {m(r2)} miles per hour. How far apart are they "
+                f"after {m(t)} hours?")
+    elif ctx == "boats":
+        r1, r2 = rng.choice([(6, 8), (9, 12), (5, 12), (12, 16)])
+        unit, uw = "mi", "miles"
+        stem = (f"Two boats leave the same dock at the same time. One travels due east at {m(r1)} miles per hour and "
+                f"the other travels due north at {m(r2)} miles per hour. How far apart are the boats after {m(t)} hours?")
+    elif ctx == "patrols":
+        r1, r2 = rng.choice([(3, 4), (6, 8), (5, 12)])
+        unit, uw = "km", "kilometers"
+        stem = (f"Two patrols leave a checkpoint at the same time. {s}'s patrol marches north at {m(r1)} kilometers per "
+                f"hour, and the other marches east at {m(r2)} kilometers per hour. How far apart are the patrols after "
+                f"{m(t)} hours?")
+    else:
+        r1, r2 = 3, 4
+        unit, uw = "mi", "miles"
+        stem = (f"Two hikers leave camp at the same time. One walks north at {m(r1)} miles per hour and the other walks "
+                f"west at {m(r2)} miles per hour. How far apart are they after {m(t)} hours?")
+    d1, d2 = r1 * t, r2 * t
+    ans = _isqrt_check(d1 * d1 + d2 * d2)
+    need(ans.is_integer)
+    steps = [f"Distances after {m(t)} hours: {m(f'{r1} \\times {t} = {d1}')} and {m(f'{r2} \\times {t} = {d2}')} {uw}.",
+             "The two paths meet at a right angle, so the distance between them is the hypotenuse of a right triangle.",
+             f"{m(f'\\sqrt{{{d1}^2 + {d2}^2}} = \\sqrt{{{int_raw(d1 * d1)} + {int_raw(d2 * d2)}}} = '
+                   f'\\sqrt{{{int_raw(d1 * d1 + d2 * d2)}}} = {int_raw(ans)}')} {uw}."]
+    wrong = [(Q(d1 + d2), "adds the two distances instead of using the Pythagorean theorem"),
+             (ans / t, "finds how far apart they are after 1 hour only"),
+             (Q(d1 * d1 + d2 * d2), "forgets to take the square root"),
+             (Q(d2 - d1), "subtracts the two distances")]
+    return Problem(stem=stem, answer=ans, fmt=_lenfmt(unit), wrong=wrong, steps=steps, section="AR",
+                   tip=_triple_tip(d1, d2, False),
+                   near=_near_int(ans, (2, 4, 5, 10)),
+                   check=Q(t) * sp.sqrt(r1 * r1 + r2 * r2))
 
 
 def _range_check(p, q):
@@ -790,12 +856,15 @@ def triangle_inequality(rng, lvl):
         sign = "=" if x1 + x2 == x3 else "<"
         return f"fails because {m(f'{x1} + {x2} = {x1 + x2}')}, which is not more than {m(x3)}" if sign == "=" \
             else f"fails because {m(f'{x1} + {x2} = {x1 + x2}')} is less than {m(x3)}"
+    # the choices are shown in this same (sorted) order -- see order= below --
+    # so the checks can be listed choice by choice, A to D
     checks = []
-    for t in sorted(sets):
+    for letter, t in zip("ABCD", sorted(sets)):
         x1, x2, x3 = t
         verdict = "\\checkmark" if ok(t) else r"$\times$"
         rel = ">" if x1 + x2 > x3 else ("=" if x1 + x2 == x3 else "<")
-        checks.append(f"{tx(t)}: {m(f'{x1} + {x2} = {x1 + x2} {rel} {x3}')} {verdict}")
+        checks.append(f"({letter}) {tx(t)}: {m(f'{x1} + {x2} = {x1 + x2} {rel} {x3}')} {verdict}")
+    lookup = {tx(t): t for t in sets}
     survivors = [t for t in sets if ok(t)]
     return Problem(
         stem=choose(rng,
@@ -805,8 +874,9 @@ def triangle_inequality(rng, lvl):
         answer=tx(good),
         fmt=text,
         wrong=[(tx(t), why_bad(t)) for t in sets[1:]],
+        order=lambda v: lookup[v],
         steps=[r"For three lengths to form a triangle, the two shorter ones must add up to \emph{more} than the longest one.",
-               "Test each set: " + "; ".join(checks) + ".",
+               "Test each choice: " + "; ".join(checks) + ".",
                f"Only {tx(good)} works."],
         check=tx(survivors[0]) if len(survivors) == 1 else "ambiguous",
     )
@@ -845,19 +915,19 @@ def special_right(rng, lvl):
             lab = {"h": m(latex(given)), "c": "$x$"}
             what = "the hypotenuse"
             steps = [ratio, f"Hypotenuse = leg {m(r'\times \sqrt{2}')} = {m(f'{k}\\sqrt{{2}}')}."]
-            wrong = [(Q(2 * k), r"doubles the leg, the $30^\circ$-$60^\circ$-$90^\circ$ rule for the hypotenuse"),
-                     (k * s3, r"uses $\sqrt{3}$ instead of $\sqrt{2}$"),
+            wrong = [(Q(2 * k), r"doubles the leg, which is the $30^\circ$-$60^\circ$-$90^\circ$ rule for the hypotenuse"),
+                     (k * s3, r"multiplies the leg by $\sqrt{3}$ (the $30^\circ$-$60^\circ$-$90^\circ$ long-leg rule) instead of by $\sqrt{2}$"),
                      (Q(k), "gives the other leg, not the hypotenuse"),
-                     (Q(k) / 2 * s2, r"divides by $\sqrt{2}$ instead of multiplying")]
+                     (Q(k) / 2 * s2, r"divides the leg by $\sqrt{2}$ instead of multiplying")]
             check = given / sp.cos(deg45)
         elif case == "45_hyp_leg":
             given, ans = k * s2, Q(k)
             lab = {"c": m(latex(given)), "h": "$x$"}
             what = "each leg"
             steps = [ratio, f"Leg = hypotenuse {m(r'\div \sqrt{2}')} = {m(f'{k}\\sqrt{{2}} \\div \\sqrt{{2}} = {k}')}."]
-            wrong = [(Q(2 * k), r"multiplies by $\sqrt{2}$ instead of dividing"),
-                     (k * s2 / 2, r"halves the hypotenuse, the $30^\circ$-$60^\circ$-$90^\circ$ rule"),
-                     (k * s3, r"uses $\sqrt{3}$ instead of $\sqrt{2}$")]
+            wrong = [(Q(2 * k), r"multiplies the hypotenuse by $\sqrt{2}$ instead of dividing"),
+                     (k * s2 / 2, r"halves the hypotenuse, which is the $30^\circ$-$60^\circ$-$90^\circ$ rule for the short leg"),
+                     (k * s2, r"solves $x^2 = c^2$ instead of $x^2 + x^2 = c^2$, forgetting the second leg")]
             check = given * sp.cos(deg45)
         else:
             h = 2 * k
@@ -867,9 +937,9 @@ def special_right(rng, lvl):
             steps = [ratio, f"Leg = hypotenuse {m(r'\div \sqrt{2}')} = {m(f'\\frac{{{h}}}{{\\sqrt{{2}}}}')}.",
                      f"Multiply top and bottom by {m(r'\sqrt{2}')}: "
                      f"{m(f'\\frac{{{h}\\sqrt{{2}}}}{{2}} = {k}\\sqrt{{2}}')}."]
-            wrong = [(h * s2, r"multiplies by $\sqrt{2}$ instead of dividing"),
-                     (Q(k), r"halves the hypotenuse, the $30^\circ$-$60^\circ$-$90^\circ$ rule"),
-                     (k * s3, r"uses $\sqrt{3}$ instead of $\sqrt{2}$")]
+            wrong = [(h * s2, r"multiplies the hypotenuse by $\sqrt{2}$ instead of dividing"),
+                     (Q(k), r"halves the hypotenuse, which is the $30^\circ$-$60^\circ$-$90^\circ$ rule for the short leg"),
+                     (k * s3, r"halves the hypotenuse and multiplies by $\sqrt{3}$, the $30^\circ$-$60^\circ$-$90^\circ$ rule for the long leg")]
             check = given * sp.sin(deg45)
     else:
         kind = "30"
@@ -881,22 +951,22 @@ def special_right(rng, lvl):
             given, ans, lab, what = short, hyp, {"v": m(latex(short)), "c": "$x$"}, "the hypotenuse"
             steps = [ratio, f"Hypotenuse = 2 {m(r'\times')} short leg = {m(f'2 \\times {k} = {2 * k}')}."]
             wrong = [(k * s3, "gives the long leg, not the hypotenuse"),
-                     (k * s2, r"uses the $45^\circ$-$45^\circ$-$90^\circ$ rule"),
+                     (k * s2, r"multiplies the short leg by $\sqrt{2}$, the $45^\circ$-$45^\circ$-$90^\circ$ rule for the hypotenuse"),
                      (Q(k) / 2, "halves the short leg instead of doubling it")]
             check = short / sp.sin(deg30)
         elif case == "30_short_long":
             given, ans, lab, what = short, long_, {"v": m(latex(short)), "h": "$x$"}, "the longer leg"
             steps = [ratio, f"Long leg = short leg {m(r'\times \sqrt{3}')} = {m(f'{k}\\sqrt{{3}}')}."]
             wrong = [(Q(2 * k), "gives the hypotenuse, not the long leg"),
-                     (k * s2, r"uses $\sqrt{2}$ instead of $\sqrt{3}$"),
-                     (Q(k) / 3 * s3, r"divides by $\sqrt{3}$ instead of multiplying")]
+                     (k * s2, r"multiplies the short leg by $\sqrt{2}$ (the $45^\circ$-$45^\circ$-$90^\circ$ rule) instead of by $\sqrt{3}$"),
+                     (Q(k) / 3 * s3, r"divides the short leg by $\sqrt{3}$ instead of multiplying")]
             check = short / sp.tan(deg30)
         elif case == "30_hyp_short":
             given, ans, lab, what = hyp, short, {"c": m(latex(hyp)), "v": "$x$"}, "the shorter leg"
             steps = [ratio, f"Short leg = hypotenuse {m(r'\div 2')} = {m(f'{2 * k} \\div 2 = {k}')}."]
             wrong = [(Q(4 * k), "doubles the hypotenuse instead of halving it"),
                      (k * s3, "gives the long leg, not the short leg"),
-                     (k * s2, r"uses the $45^\circ$-$45^\circ$-$90^\circ$ rule")]
+                     (k * s2, r"divides the hypotenuse by $\sqrt{2}$, the $45^\circ$-$45^\circ$-$90^\circ$ rule for a leg")]
             check = hyp * sp.sin(deg30)
         elif case == "30_hyp_long":
             given, ans, lab, what = hyp, long_, {"c": m(latex(hyp)), "h": "$x$"}, "the longer leg"
@@ -904,14 +974,14 @@ def special_right(rng, lvl):
                      f"Long leg = short leg {m(r'\times \sqrt{3}')} = {m(f'{k}\\sqrt{{3}}')}."]
             wrong = [(Q(k), "gives the short leg, not the long leg"),
                      (2 * k * s3, r"multiplies the hypotenuse by $\sqrt{3}$ instead of the short leg"),
-                     (k * s2, r"uses $\sqrt{2}$ instead of $\sqrt{3}$")]
+                     (k * s2, r"divides the hypotenuse by $\sqrt{2}$, the $45^\circ$-$45^\circ$-$90^\circ$ rule for a leg")]
             check = hyp * sp.cos(deg30)
         elif case == "30_long_short":
             given, ans, lab, what = long_, short, {"h": m(latex(long_)), "v": "$x$"}, "the shorter leg"
             steps = [ratio, f"Short leg = long leg {m(r'\div \sqrt{3}')} = {m(f'{k}\\sqrt{{3}} \\div \\sqrt{{3}} = {k}')}."]
             wrong = [(Q(3 * k), r"multiplies by $\sqrt{3}$ instead of dividing"),
                      (Q(2 * k), "gives the hypotenuse, not the short leg"),
-                     (k * s3 / 2, "halves the long leg")]
+                     (k * s3 / 2, "halves the long leg instead of dividing it by $\\sqrt{3}$")]
             check = long_ * sp.tan(deg30)
         else:
             given, ans, lab, what = long_, hyp, {"h": m(latex(long_)), "c": "$x$"}, "the hypotenuse"
@@ -919,16 +989,16 @@ def special_right(rng, lvl):
                      f"Hypotenuse = 2 {m(r'\times')} short leg = {m(f'2 \\times {k} = {2 * k}')}."]
             wrong = [(Q(k), "gives the short leg, not the hypotenuse"),
                      (2 * k * s3, "doubles the long leg instead of the short leg"),
-                     (k * s2, r"uses $\sqrt{2}$ instead of $\sqrt{3}$")]
+                     (k * sp.sqrt(6), r"multiplies the long leg by $\sqrt{2}$, as if the triangle were $45^\circ$-$45^\circ$-$90^\circ$")]
             check = long_ / sp.cos(deg30)
     fig = _special_fig(kind, lab)
     gname = {"leg": "each leg", "hyp": "the hypotenuse", "hypint": "the hypotenuse",
              "short": "the shorter leg", "long": "the longer leg"}[case.split("_")[1]]
-    verb = "measures" if gname != "each leg" else "measures"
+    gv = f"{m(latex(given))} units"
     stem = choose(rng,
-                  f"In the {name} triangle shown, {gname} {verb} {m(latex(given))}. What is the length {m('x')} of {what}?",
-                  f"The figure shows a {name} triangle in which {gname} is {m(latex(given))}. What is the value of {m('x')}?",
-                  f"In a {name} triangle, {gname} is {m(latex(given))} long. How long is {what}?")
+                  f"In the {name} triangle shown, {gname} measures {gv}. What is the length {m('x')} of {what}?",
+                  f"The figure shows a {name} triangle in which {gname} is {gv} long. What is the value of {m('x')}?",
+                  f"In a {name} triangle, {gname} is {gv} long. How many units long is {what}?")
 
     def near(r):
         out = [ans * 2, ans / 2, ans * 3 / 2, ans * 3]
@@ -970,7 +1040,10 @@ def similar_triangles(rng, lvl):
                       f"{m(r'\triangle ' + A + B + C + r' \sim \triangle ' + D + E + F)}. If {m(f'{D}{E} = {int_raw(ka)}')}, "
                       f"{m(f'{D}{F} = {int_raw(kb)}')}, and {m(f'{A}{B} = {a}')}, what is the length {m('x')} of "
                       f"{m(A + C)}?")
-        steps = [f"Corresponding sides are proportional. The scale factor from {m(r'\triangle ' + A + B + C)} to "
+        steps = [f"The order of the letters gives the matching vertices: {m(f'{A} \\leftrightarrow {D}')}, "
+                 f"{m(f'{B} \\leftrightarrow {E}')}, {m(f'{C} \\leftrightarrow {F}')}. So {m('x')} is side {m(A + C)}, "
+                 f"which matches {m(D + F)} ({m(int_raw(kb))}), and {m(A + B)} matches {m(D + E)}.",
+                 f"Corresponding sides are proportional. The scale factor from {m(r'\triangle ' + A + B + C)} to "
                  f"{m(r'\triangle ' + D + E + F)} is {m(f'{int_raw(ka)} \\div {a} = {latex(k)}')}.",
                  f"Divide the big triangle's side by the scale factor: {m(f'x = {int_raw(kb)} \\div {latex(k)} = {b}')}."]
         wrong = [(Q(kb) - (ka - a), "subtracts the difference between corresponding sides instead of dividing by the scale factor"),
@@ -988,7 +1061,10 @@ def similar_triangles(rng, lvl):
                       f"{m(r'\triangle ' + A + B + C + r' \sim \triangle ' + D + E + F)}. If {m(f'{A}{B} = {a}')}, "
                       f"{m(f'{A}{C} = {b}')}, and {m(f'{D}{E} = {int_raw(ka)}')}, what is the length {m('x')} of "
                       f"{m(D + F)}?")
-        steps = [f"Corresponding sides are proportional: {m(f'\\frac{{{D}{F}}}{{{A}{C}}} = \\frac{{{D}{E}}}{{{A}{B}}}')}, "
+        steps = [f"The order of the letters gives the matching vertices: {m(f'{A} \\leftrightarrow {D}')}, "
+                 f"{m(f'{B} \\leftrightarrow {E}')}, {m(f'{C} \\leftrightarrow {F}')}. So {m('x')} is side {m(D + F)}, "
+                 f"which matches {m(A + C)} ({m(b)}), and {m(D + E)} matches {m(A + B)}.",
+                 f"Corresponding sides are proportional: {m(f'\\frac{{{D}{F}}}{{{A}{C}}} = \\frac{{{D}{E}}}{{{A}{B}}}')}, "
                  f"so {m(f'\\frac{{x}}{{{b}}} = \\frac{{{int_raw(ka)}}}{{{a}}}')}.",
                  f"The scale factor is {m(f'{int_raw(ka)} \\div {a} = {latex(k)}')}.",
                  f"Multiply: {m(f'x = {b} \\times {latex(k)} = {int_raw(kb)}')}."]
@@ -1036,7 +1112,11 @@ def shadow(rng, lvl):
     elif rh % rs == 0 and rh // rs in times:
         tip = (f"Shortcut: at this time of day every object is {times[rh // rs]} as tall as its shadow is long, so the {obj} is "
                f"{m(f'{int_raw(os_)} \\times {rh // rs} = {int_raw(ans)}')} feet tall.")
-    wrong = [(os_ + (rh - rs), "adds the difference between height and shadow instead of using a ratio"),
+    refname = {"person": who.name, "soldier": s, "post": "the post"}[ref[0]]
+    d = rh - rs
+    diff_why = (f"assumes the {obj} is {m(abs(d))} feet {'shorter' if d < 0 else 'taller'} than its shadow, "
+                f"just as {refname} is, instead of using a ratio")
+    wrong = [(os_ + d, diff_why),
              (os_ * rs / rh, "sets up the proportion upside down"),
              (os_ * rh, "multiplies by the height but forgets to divide by the shadow")]
     return Problem(

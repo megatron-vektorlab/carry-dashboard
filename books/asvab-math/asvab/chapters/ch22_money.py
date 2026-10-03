@@ -282,7 +282,7 @@ def change_due(rng, lvl, part=None):
     rounded = q1 * a.ceiling() + q2 * b.ceiling()
     wrong = [
         (total, "is the total cost, not the change"),
-        (change + 1, "forgets to borrow a dollar when subtracting the cents"),
+        (change + 1, "borrows for the cents but forgets to take that dollar away from the dollars"),
         (bill - rounded, "rounds each price up to a whole dollar instead of using the exact prices"),
     ]
     if lvl == 1:
@@ -443,22 +443,22 @@ def sales_tax(rng, lvl, part=None):
 # --------------------------------------------------------------------------
 
 _BIG = [
-    # (item, lo, hi, step)
-    ("television", 300, 900, 10),
-    ("laptop", 400, 1200, 20),
-    ("recliner", 300, 800, 10),
-    ("set of four tires", 400, 900, 20),
-    ("mattress", 400, 1200, 20),
-    ("mountain bike", 300, 900, 10),
-    ("gaming console", 300, 600, 10),
-    ("dishwasher", 400, 900, 10),
+    # (item, lo, hi, step, why a service member is buying it)
+    ("television", 300, 900, 10, "{T} is furnishing an apartment off base and needs a television."),
+    ("laptop", 400, 1200, 20, "{T} needs a laptop for online college classes."),
+    ("recliner", 300, 800, 10, "{T} is furnishing an apartment off base."),
+    ("set of four tires", 400, 900, 20, "{T} needs new tires before driving to a new duty station."),
+    ("mattress", 400, 1200, 20, "{T} is furnishing an apartment off base."),
+    ("mountain bike", 300, 900, 10, "{T} wants a mountain bike to ride the trails near the base."),
+    ("gaming console", 300, 600, 10, "{T} wants a gaming console for {his} room in the barracks."),
+    ("dishwasher", 400, 900, 10, "{T} is replacing the broken dishwasher in {his} rented house off base."),
 ]
 
 
 @template("AR")
 @_fill
 def discount_tax(rng, lvl, part=None):
-    item, lo, hi, st = _pick(rng, _BIG, part)
+    item, lo, hi, st, why = _pick(rng, _BIG, part)
     P = Q(rng.choice(range(lo, hi + 1, st)))
     d = rng.choice([10, 15, 20, 25, 30, 40])
     t = rng.choice([5, 6, 7, 8])
@@ -470,7 +470,7 @@ def discount_tax(rng, lvl, part=None):
     v = _pick(rng, [0, 1, 2], part)
     if v == 0:
         T = _trooper(rng)
-        stem = (f"{T} is furnishing an apartment off base. {_cap(_art(item))} {item} that regularly "
+        stem = (why.format(T=T, his=T.his) + f" {_cap(_art(item))} {item} that regularly "
                 f"costs {money(P)} is on sale for {pct(d)} off. A sales tax of {pct(t)} is charged on the "
                 f"sale price. How much does {T.he} pay in all?")
     elif v == 1:
@@ -589,15 +589,17 @@ def best_buy(rng, lvl, part=None):
     kind, subj, product, pkg, u_, upl, sizes, ulo, uhi, mil = _pick(rng, _PRODUCTS[::-1], part)
     need(len(sizes) >= 3)
     ss = sorted(rng.sample(sizes, 3))
-    lowu, *others = sorted(rng.sample(range(ulo, uhi + 1), 3))
-    need(others[-1] - lowu <= max(4, (uhi - ulo) // 3))
-    ib = rng.choices([0, 1, 2], weights=[25, 35, 40])[0]   # bigger is a bit more often the best buy
-    rng.shuffle(others)
-    us = others[:ib] + [lowu] + others[ib:]
+    lo_u, mid_u, hi_u = sorted(rng.sample(range(ulo, uhi + 1), 3))
+    need(hi_u - lo_u <= max(4, (uhi - ulo) // 3))
+    # as in real stores, the biggest package is usually (not always) the best buy, and it is never the
+    # worst one; unit prices listed small -> medium -> large
+    ib = rng.choices([2, 1, 0], weights=[55, 30, 15])[0]
+    us = {2: [hi_u, mid_u, lo_u], 1: [hi_u, lo_u, mid_u], 0: [lo_u, hi_u, mid_u]}[ib]
     Us = [R(u, 100) for u in us]
     Ps = [U * s for U, s in zip(Us, ss)]
     need(len(set(Ps)) == 3)
-    names = [_short(kind, pkg, u_, s) for s in ss]
+    small = [_short(kind, pkg, u_, s) for s in ss]
+    names = [_cap(x) for x in small]
     descs = [_desc(kind, product, pkg, u_, s) for s in ss]
     place = _place(rng, mil)
     stem = (f"{place}, {subj} in three sizes: {descs[0]} for {money(Ps[0])}, {descs[1]} for "
@@ -623,7 +625,7 @@ def best_buy(rng, lvl, part=None):
         steps=[
             f"Find each price per {u_} (price {m('\\div')} number of {upl}): "
             + "; ".join(m(f"{money(Ps[i])} \\div {ss[i]} = {money_cents(Us[i])}") for i in range(3)) + ".",
-            f"The lowest price per {u_} is {money_cents(Us[ib])}, so {names[ib]} is the best buy.",
+            f"The lowest price per {u_} is {money_cents(Us[ib])}, so {small[ib]} is the best buy.",
         ],
         tip=("The biggest package is not always the best deal, so always compare unit prices."
              if ib != 2 else None),
@@ -966,57 +968,48 @@ _WORD = {2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 8: "Eight"}
 def split_bill(rng, lvl, part=None):
     t = rng.choice([15, 18, 20])
     v = _pick(rng, list(range(8)), part)
+    # (party sizes, per-person cost range in dollars, bill may have cents) - the bill grows with the party
+    size, lo, hi, cents = {0: ([3, 4, 5], 20, 40, True), 1: ([4, 5, 6, 8], 8, 15, False),
+                           2: ([2, 3, 4], 12, 25, True), 3: ([4, 5, 6], 18, 35, False),
+                           4: ([3, 4, 5, 6], 12, 25, False), 5: ([3, 4, 5], 25, 45, False),
+                           6: ([2, 3, 4], 12, 25, True), 7: ([4, 5, 6], 12, 25, False)}[v]
+    n = rng.choice(size)
+    Bl = Q(rng.randint(n * lo, n * hi)) + (R(rng.choice([0, 0, 50]), 100) if cents else 0)
     if v == 0:
-        n = rng.choice([3, 4, 5])
-        Bl = Q(rng.choice(range(60, 181, 2))) + R(rng.choice([0, 0, 50]), 100)
         P = person(rng)
         stem = (f"After {P}'s graduation from basic training, {P.he} and {n - 1} family members go out to "
                 f"dinner. The bill is {money(Bl)}. They add {_art_n(t)} {pct(t)} tip and split the total evenly among "
                 f"the {n} of them. How much does each person pay?")
         who = "person"
     elif v == 1:
-        n = rng.choice([4, 5, 6, 8])
-        Bl = Q(rng.choice(range(40, 101, 2)))
         stem = (f"A squad of {n} soldiers orders pizza for a movie night. The order costs {money(Bl)}, and "
                 f"they give the driver {_art_n(t)} {pct(t)} tip. If they split the cost evenly, how much does each "
                 f"soldier pay?")
         who = "soldier"
     elif v == 2:
-        n = rng.choice([2, 3, 4])
-        Bl = Q(rng.choice(range(30, 121, 2))) + R(rng.choice([0, 50]), 100)
         stem = (f"{_WORD[n]} friends eat lunch together. The bill comes to {money(Bl)} before the tip. They "
                 f"leave {_art_n(t)} {pct(t)} tip and share the total equally. How much does each friend pay?")
         who = "friend"
     elif v == 3:
-        n = rng.choice([4, 5, 6])
-        Bl = Q(rng.choice(range(80, 201, 4)))
         stem = (f"{_WORD[n]} coworkers celebrate a birthday at a restaurant. "
                 f"The food costs {money(Bl)}, and they add {_art_n(t)} {pct(t)} tip. If they divide the total cost "
                 f"equally, what is each coworker's share?")
         who = "coworker"
     elif v == 5:
-        n = rng.choice([3, 4, 5])
-        Bl = Q(rng.choice(range(90, 241, 5)))
         stem = (f"On their first weekend pass, {n} Marines eat at a steakhouse. The check comes to "
                 f"{money(Bl)}, and they add {_art_n(t)} {pct(t)} tip. If they split the total evenly, how much does "
                 f"each Marine pay?")
         who = "Marine"
     elif v == 6:
-        n = rng.choice([2, 3, 4])
-        Bl = Q(rng.choice(range(30, 91, 2))) + R(rng.choice([0, 50]), 100)
         stem = (f"{_WORD[n]} roommates order takeout. The food costs {money(Bl)}, and they add {_art_n(t)} {pct(t)} "
                 f"tip for the delivery driver. They split the total equally. What is each roommate's share?")
         who = "roommate"
     elif v == 7:
-        n = rng.choice([4, 5, 6])
-        Bl = Q(rng.choice(range(60, 161, 4)))
         stem = (f"After a bowling league night, the {n} members of a team share a meal. The bill is "
                 f"{money(Bl)}, and they leave {_art_n(t)} {pct(t)} tip. If they split the total evenly, how much does "
                 f"each team member pay?")
         who = "team member"
     else:
-        n = rng.choice([3, 4, 5, 6])
-        Bl = Q(rng.choice(range(60, 151, 2)))
         stem = (f"After a long hike, {n} friends eat at a diner near the trailhead. The bill is "
                 f"{money(Bl)}, and they leave {_art_n(t)} {pct(t)} tip. They split the total evenly. How much does "
                 f"each friend pay?")

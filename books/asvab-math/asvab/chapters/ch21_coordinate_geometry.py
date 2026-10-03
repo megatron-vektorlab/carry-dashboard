@@ -369,7 +369,7 @@ def slope_two_points(rng, lvl):
         wrong.append((R(y1 + y2, x1 + x2), "adds the coordinates instead of subtracting them"))
     wrong.append((-1 / sl, None))
     return Problem(
-        stem=stem, figure=fig, answer=sl, fmt=frac, neg_ok=True, sort=False, wrong=wrong,
+        stem=stem, figure=fig, answer=sl, fmt=frac, neg_ok=True, must=1 if lvl == 1 else 2, wrong=wrong,
         steps=_slope_steps(x1, y1, x2, y2),
         tip=("Quick check: as $x$ increases, $y$ increases, so the slope must be positive." if sl > 0 else
              "Quick check: as $x$ increases, $y$ decreases, so the slope must be negative."),
@@ -392,7 +392,7 @@ def slope_from_eq(rng, lvl):
         if ask == "slope":
             return Problem(
                 stem=f"What is the slope of the line {m(eq)}?",
-                answer=Q(m_), fmt=frac, neg_ok=True, sort=False,
+                answer=Q(m_), fmt=frac, neg_ok=True, must=2,
                 wrong=[(Q(b_), "gives the $y$-intercept (the number without $x$)" if form == "mxb"
                         else "takes the first number in the equation; the slope is the number multiplied by $x$"),
                        (-Q(m_), "drops the sign of the slope" if m_ < 0 else "changes the sign of the slope"),
@@ -405,7 +405,7 @@ def slope_from_eq(rng, lvl):
             )
         return Problem(
             stem=f"What is the {m('y')}-intercept of the line {m(eq)}?",
-            answer=Q(b_), fmt=frac, neg_ok=True, sort=False,
+            answer=Q(b_), fmt=frac, neg_ok=True, must=2,
             wrong=[(Q(m_), "gives the slope instead of the $y$-intercept"),
                    (-Q(b_), "changes the sign of the $y$-intercept"),
                    (-Q(b_) / m_, "finds the $x$-intercept instead")],
@@ -432,7 +432,7 @@ def slope_from_eq(rng, lvl):
         steps.append(f"The slope is the coefficient of {m('x')}: {m(frac_raw(sl))}.")
         return Problem(
             stem=f"What is the slope of the line {m(eq)}?",
-            answer=sl, fmt=frac, neg_ok=True, sort=False,
+            answer=sl, fmt=frac, neg_ok=True, must=2,
             wrong=[(R(A, B), "forgets to change the sign when moving the $x$-term"),
                    (R(-B, A), "flips the fraction (puts the $x$-coefficient on the bottom)"),
                    (Q(A), "uses the coefficient of $x$ without solving for $y$"),
@@ -443,7 +443,7 @@ def slope_from_eq(rng, lvl):
     steps.append(f"The {m('y')}-intercept is the constant term: {m(frac_raw(yi))}.")
     return Problem(
         stem=f"What is the {m('y')}-intercept of the line {m(eq)}?",
-        answer=yi, fmt=frac, neg_ok=True, sort=False,
+        answer=yi, fmt=frac, neg_ok=True, must=2,
         wrong=[(Q(C), "forgets to divide by the coefficient of $y$"),
                (-yi, "gets the sign wrong when dividing"),
                (R(C, A), "finds the $x$-intercept instead"),
@@ -525,10 +525,11 @@ def distance(rng, lvl):
         stem = choose(rng, f"What is the distance between the points {_pt(x1, y1)} and {_pt(x2, y2)}?",
                       f"How far apart are the points {_pt(x1, y1)} and {_pt(x2, y2)}?")
     return Problem(
-        stem=stem, figure=fig, answer=Q(c_), fmt=num,
+        stem=stem, figure=fig, answer=Q(c_), fmt=num, must=3,
         wrong=[(Q(a_ + b_), "adds the horizontal and vertical distances instead of using the Pythagorean theorem"),
                (Q(a_ * a_ + b_ * b_), "forgets to take the square root"),
-               (Q(abs(a_ - b_)), "subtracts the two distances"),
+               rng.choice([(Q(abs(a_ - b_)), "subtracts the horizontal and vertical distances"),
+                           (Q(a_ * b_), "multiplies the horizontal and vertical distances")]),
                (Q(c_ + 1), None), (Q(c_ - 1), None)],
         steps=[f"Horizontal change: {m(rf'\lvert {_sub(x2, x1)} \rvert = {a_}')}. "
                f"Vertical change: {m(rf'\lvert {_sub(y2, y1)} \rvert = {b_}')}.",
@@ -550,10 +551,10 @@ def intercepts(rng, lvl):
         need(abs(b_) <= 30 and abs(xi) != abs(b_))
         return Problem(
             stem=f"What is the {m('x')}-intercept of the line {m(_line_raw(m_, b_))}?",
-            answer=Q(xi), fmt=frac, neg_ok=True, sort=False,
+            answer=Q(xi), fmt=frac, neg_ok=True, must=2,
             wrong=[(Q(b_), "gives the $y$-intercept instead of the $x$-intercept"),
                    (-Q(xi), "makes a sign error when solving for $x$"),
-                   (R(m_, b_) if b_ else Q(m_), "divides the slope by the $y$-intercept (the division is upside down)"),
+                   (R(m_, b_) if b_ else Q(m_), "divides the slope by the $y$-intercept instead of dividing $-b$ by the slope"),
                    (Q(m_), None)],
             steps=[f"The {m('x')}-intercept is where the line crosses the {m('x')}-axis, so set {m('y = 0')}: "
                    f"{m(f'0 = {_coef(m_)} {chr(43) if b_ > 0 else chr(45)} {abs(b_)}')}.",
@@ -570,7 +571,7 @@ def intercepts(rng, lvl):
     if kind == "x_std":
         return Problem(
             stem=f"What is the {m('x')}-intercept of the line {m(eq)}?",
-            answer=xi, fmt=frac, neg_ok=True, sort=False,
+            answer=xi, fmt=frac, neg_ok=True, must=2,
             wrong=[(yi, "finds the $y$-intercept instead (sets $x = 0$)"),
                    (-xi, "makes a sign error"),
                    (Q(C), "forgets to divide by the coefficient of $x$"),
@@ -582,7 +583,7 @@ def intercepts(rng, lvl):
         )
     return Problem(
         stem=f"At what value of {m('y')} does the line {m(eq)} cross the {m('y')}-axis?",
-        answer=yi, fmt=frac, neg_ok=True, sort=False,
+        answer=yi, fmt=frac, neg_ok=True, must=2,
         wrong=[(xi, "finds the $x$-intercept instead (sets $y = 0$)"),
                (-yi, "makes a sign error"),
                (Q(C), "forgets to divide by the coefficient of $y$"),
@@ -636,7 +637,7 @@ def parallel_perp(rng, lvl):
         wrong.append((Q(A), "uses the coefficient of $x$ without solving for $y$ first"))
     return Problem(
         stem=f"What is the slope of a line that is {rel} to the line {m(eq)}?",
-        answer=ans, fmt=frac, neg_ok=True, sort=False, wrong=wrong, steps=steps,
+        answer=ans, fmt=frac, neg_ok=True, must=3, wrong=wrong, steps=steps,
         verify=(lambda v: v * m_ == -1) if rel == "perpendicular" else (lambda v: v == m_),
     )
 

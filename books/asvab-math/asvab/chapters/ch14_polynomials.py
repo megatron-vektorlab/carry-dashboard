@@ -446,7 +446,9 @@ def special_products(rng, lvl):
         expr_tex = choose(rng, f"({_bin(p, a)})({_bin(p, -a)})", f"({_bin(p, -a)})({_bin(p, a)})")
         ans = sp.expand((P + a) * (P - a))
         wrong = [(p**2 * x**2 + a**2, "makes the last term positive, but a positive times a negative is negative"),
-                 (p**2 * x**2 - 2 * p * a * x - a**2, "adds middle terms that actually cancel"),
+                 (p**2 * x**2 - 2 * p * a * x - a**2,
+                  f"gets the sign of one middle product wrong ({m(_poly_tex(-p * a * x))} instead of "
+                  f"{m(_poly_tex(p * a * x))}), so the middle terms add to {m(_poly_tex(-2 * p * a * x))} instead of canceling"),
                  (p**2 * x**2 - 2 * p * a * x + a**2, "treats it like a perfect square"),
                  (p * x**2 - a**2, f"does not square the coefficient {m(p)}") if p > 1 else (x**2 - 2 * a, f"doubles {m(a)} instead of squaring it")]
         f = lambda t, u: (p * t + a) * (p * t - a)
@@ -628,7 +630,7 @@ def negative_exponents(rng, lvl):
         need(nexp != mexp)
         e = nexp - mexp
         ans = a * b * x**e
-        given = f"({a}x^{{-{mexp}}})({b}x^{{{nexp}}})"
+        given = f"({a}x^{{-{mexp}}})({b}{_xp(nexp)})"
         stem = choose(rng, f"Simplify {m(given)} and write the answer with positive exponents.",
                       f"Which expression is equal to {m(given)}?")
         wrong = [(a * b * x**(-mexp * nexp), "multiplies the exponents instead of adding them"),

@@ -236,7 +236,8 @@ def basic_eq(rng, lvl):
         moved = "subtracting it" if Bc > 0 else "adding it"
         wrong = [((C + Bc) / Q(A), f"moves {m(tx(Bc))} to the other side without changing its sign"),
                  (C - Bc, f"forgets to divide by {m(A)}"),
-                 (Q(C) / A - Bc, f"divides both sides by {m(A)} but forgets to divide {m(tx(Bc))} too")]
+                 (Q(C) / A - Bc, f"divides only {m(tx(C))} by {m(A)}, not the {m(tx(Bc))}: "
+                                 f"{m(f'x{_plus(Bc)} = {F(tx(C), A)}')}")]
         if A < 0:
             wrong.insert(0, (-X, f"divides by {m(-A)} instead of {m(A)}"))
         steps = [_const_step(Bc, _lin((A, 'x')), C),
@@ -1061,7 +1062,8 @@ def number_puzzle(rng, lvl):
         wrong = [((t + B) / Q(k), f"{'adds' if plus else 'subtracts'} {c} instead of "
                                    f"{'subtracting' if plus else 'adding'} it"),
                  (Q(t - B), f"forgets to divide by {k}"),
-                 (Q(t) / k - B, f"divides {t} by {k} but forgets to divide {c}")]
+                 (Q(t) / k - B, f"divides only {t} by {k}, not the {c}: "
+                                f"{m(f'n {"+" if plus else "-"} {c} = {F(t, k)}')}")]
         steps = [f"Let $n$ be {meaning}. Write the words as an equation: {m(eq)}.",
                  _const_step(B, f"{k}n", t),
                  f"Divide both sides by {m(k)}: {m(f'n = {F(t - B, k)} = {N}')}."]
@@ -1088,7 +1090,7 @@ def number_puzzle(rng, lvl):
                  f"Subtract {m(c)} from both sides: {m(f'\\frac{{n}}{{{k}}} = {N}')}.",
                  f"Multiply both sides by {m(k)}: {m(f'n = {N} \\times {k} = {N * k}')}."]
         wrong = [(Q(N), f"forgets to multiply by {k} at the end"),
-                 (Q(t * k - c), f"multiplies {t} by {k} but forgets to multiply {c}"),
+                 (Q(t * k - c), f"multiplies only {t} by {k}, not the {c}: {m(f'n + {c} = {t * k}')}"),
                  (Q((t + c) * k), f"adds {c} instead of subtracting it"),
                  (Q(t - c) / k, f"divides by {k} instead of multiplying")]
         return Problem(stem=stem, answer=Q(N * k), fmt=frac, wrong=wrong, steps=[st for st in steps if st],
@@ -1142,8 +1144,10 @@ def consecutive(rng, lvl):
                 f"The numbers on {count_w} rooms in a row add up to {S}. What is the "
                 f"{which if count > 2 else ('larger' if which == 'largest' else 'smaller')} room number?")
     else:
-        stem = (f"The sum of {count_w} {word} is {S}. What is the "
-                f"{which if count > 2 else ('larger' if which == 'largest' else 'smaller')} of these integers?")
+        stem = (f"The sum of {count_w} {word} is {S}. "
+                + ("What is the middle integer?" if which == "middle" else
+                   f"What is the {which if count > 2 else ('larger' if which == 'largest' else 'smaller')} "
+                   f"of these integers?"))
     terms = ", ".join(_lin((1, "n"), (step * i, "")) for i in range(count))
     total = step * count * (count - 1) // 2
     steps = [f"Let $n$ be the smallest. {word.capitalize()} go up by {m(step)}, so the numbers are {m(terms)}.",
@@ -1199,7 +1203,7 @@ def cost_equation(rng, lvl):
 
 
 def _flat_fee(rng, who):
-    ctx = rng.choice(["plumber", "taxi", "gym", "range", "tow", "truck"])
+    ctx = rng.choice(["plumber", "taxi", "gym", "paintball", "tow", "truck"])
     if ctx == "plumber":
         fee, rate, k = rng.randrange(40, 95, 5), rng.randrange(35, 100, 5), rng.randint(2, 8)
         u, U = "hour", "hours"
@@ -1215,11 +1219,11 @@ def _flat_fee(rng, who):
         u, U = "month", "months"
         stem = (f"A gym charges a one-time sign-up fee of {{FEE}} plus {{RATE}} per month. "
                 f"{who.name} has paid {{T}} in all. For how many months has {who.he} been a member?")
-    elif ctx == "range":
-        fee, rate, k = rng.randrange(100, 425, 25), rng.randrange(5, 21), rng.randint(12, 40)
-        u, U = "soldier", "soldiers"
-        stem = (f"{soldier(rng)} reserved a training range for a {{FEE}} flat fee plus {{RATE}} per soldier "
-                f"for ammunition. The total bill was {{T}}. How many soldiers trained?")
+    elif ctx == "paintball":
+        fee, rate, k = rng.randrange(100, 325, 25), rng.randrange(15, 36), rng.randint(8, 30)
+        u, U = "player", "players"
+        stem = (f"A paintball park charges {{FEE}} per event plus {{RATE}} per player. The bill for "
+                f"{who.name}'s group was {{T}}. How many players were in the group?")
     elif ctx == "tow":
         fee, rate, k = rng.randrange(50, 130, 5), rng.choice([3, 4, 5, 6]), rng.randint(8, 40)
         u, U = "mile", "miles"
@@ -1244,6 +1248,8 @@ def _flat_fee(rng, who):
              (Q(k - 1) if k > 1 else Q(k + 3), None), (Q(k + 1), None)]
     if (T / (fee + rate) * 10).is_integer:
         wrong.insert(3, (T / (fee + rate), f"adds the fee to the rate per {u} before dividing"))
+    if u in ("player", "month"):          # whole things only: no 37.5 players
+        wrong = [(v, why) for v, why in wrong if Q(v).is_integer]
     named = [v for v, why in wrong if why and v != k and (Q(v) * 100).is_integer and Q(v) > 0]
     need(named, "no usable named trap")
     hits = [h for h in range(0, 1000) if fee + rate * h == T]

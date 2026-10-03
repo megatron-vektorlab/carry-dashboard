@@ -307,7 +307,8 @@ def mult_div(rng, lvl):
             f"({'same signs, positive' if (q < 0) == (c < 0) else 'different signs, negative'}).",
         ]
         wrong = [(-ans, "gets the sign wrong in one of the steps"),
-                 (Q(top) / (Q(d) * c), "multiplies before dividing, ignoring the parentheses")]
+                 (Q(top) / (Q(d) * c), f"divides {m(_r(top))} by {m(rf'{_p(d)} \times {_p(c)}')} instead of doing "
+                                       "the division in parentheses first")]
         check = sp.Rational(top, d) * c
     return Problem(
         stem=choose(rng, f"What is {m(disp)}?", f"Evaluate: {m(disp)}"),
@@ -392,8 +393,9 @@ def _abs_value(rng, lvl):
         else:
             disp = f"|{_r(c_)}| \\times |{_r(a_)} - {_p(b_)}|"
             ans = Q(abs(inner) * abs(c_))
-            wrong = [(Q(inner * c_) if inner * c_ != ans else Q(inner * abs(c_)),
-                      "keeps the signs inside the bars instead of taking absolute values"),
+            wrong = [(Q(inner * c_), "keeps the signs inside the bars instead of taking absolute values")
+                     if inner * c_ != ans else
+                     (Q(inner * abs(c_)), f"forgets the absolute value of {m(f'{_r(a_)} - {_p(b_)}')}"),
                      (Q(abs(c_) + abs(inner)), "adds instead of multiplying"),
                      (-ans, "makes the answer negative; absolute values are never negative")]
             last = f"Multiply: {m(rf'{abs(c_)} \times {abs(inner)} = {ans}')}."
@@ -602,8 +604,7 @@ def distance(rng, lvl):
         wrong=[(half, "is half the distance between the numbers, not the point halfway between them"),
                (-mid, "has the right size but the wrong sign"),
                (Q(q_ - p_), "is the distance between the numbers"),
-               (Q(abs(p_) + abs(q_)) / 2 if (p_ < 0) != (q_ < 0) else Q(abs(p_) - abs(q_)) / 2,
-                "ignores the negative sign when averaging")],
+               (Q(abs(p_) + abs(q_)) / 2, "ignores the negative signs when averaging")],
         steps=[
             f"The halfway point is the average of the two numbers: "
             f"{m(f'({_r(p_)} + {_p(q_)}) \\div 2')}.",

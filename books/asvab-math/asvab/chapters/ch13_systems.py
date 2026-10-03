@@ -183,7 +183,7 @@ def _elim_steps(e1, e2, X, Y):
     other = "y" if keep == "x" else "x"
     oval = Y if other == "y" else X
     idx = 1 if other == "y" else 0
-    use = e1 if abs(e1[idx]) <= abs(e2[idx]) else e2
+    use = min((e1, e2), key=lambda e: (abs(e[idx]), abs(e[1 - idx])))      # the simpler equation
     oc = use[idx]
     kc = use[1 - idx]
     rest = use[2] - kc * kv
@@ -265,7 +265,7 @@ def elimination(rng, lvl):
         if op == "sub" and Q(rhs) == -(c1 - k * c2):
             bad_rhs = -bad_rhs
         wrong.insert(1, (Q(bad_rhs) / coef, f"multiplies the left side of the second equation by {m(k)} but not the right side"))
-    wrong.append((-val, "makes a sign error"))
+    wrong.append((-val, "has the right size but the wrong sign"))
     sol = sp.solve([sp.Eq(e1[0] * x + e1[1] * y, e1[2]), sp.Eq(e2[0] * x + e2[1] * y, e2[2])], [x, y])
     bx = _brute(e1, e2)
     need(len(bx) == 1)
@@ -328,7 +328,7 @@ def substitution(rng, lvl):
         if b != 1:
             wrong.append((xw1, f"multiplies only {m(_lin((mm, 'x')))} by {m(b)}, not {m(tx(kk))}"))
         wrong.append((xw2, f"makes a sign error with the {m(tx(b * kk))}"))
-        wrong.append((-X, "makes a sign error"))
+        wrong.append((-X, "has the right size but the wrong sign"))
     else:
         wrong.append((X, f"gives the value of {m('x')}, not {m('y')}"))
         if b != 1:
@@ -390,7 +390,7 @@ def check_solution(rng, lvl):
         if ok2(p2) and not ok1(p2):
             cands.append((p2, "works in the second equation but not the first"))
             break
-    cands.append(((X, -Y) if Y else (-X, Y), "makes a sign error"))
+    cands.append(((X, -Y), "gives $y$ the wrong sign") if Y else ((-X, Y), "gives $x$ the wrong sign"))
     wrong, seen = [], {(X, Y)}
     for p, why in cands:
         if p in seen or (ok1(p) and ok2(p)):
@@ -544,7 +544,7 @@ def tickets(rng, lvl):
         ans = abs(A - C)
     stem = (stem.replace("{HI}", _mo(hi)).replace("{LO}", _mo(lo)).replace("{T}", _mo(T))
             .replace("{ASK}", H[1] if ask_hi else L[1]))
-    v1 = H[0][0].lower()
+    v1 = {"large": "L"}.get(H[0], H[0][0].lower())
     steps = [f"Let {m(v1)} be the number of {H[1]}. The rest are {L[1]}: {m(f'{N} - {v1}')}.",
              f"Add up the money: {m(f'{hi}{v1} + {lo}({N} - {v1}) = {int_raw(T)}')}.",
              f"Distribute and combine: {m(f'{hi}{v1} + {int_raw(lo * N)} - {lo}{v1} = {int_raw(T)}')}, so "
@@ -621,7 +621,7 @@ def coins(rng, lvl):
         unit_word = "dollars"
         bv, sv, Vt = big // 100, small // 100, V // 100
         lead = f"Each {bn[:-1]} is worth {m(bv)} dollars and each {sn[:-1]} is worth {m(sv)} dollars."
-    v1 = "b"
+    v1 = {"quarters": "q", "dimes": "d"}.get(bn, "t" if "10" in bn else "w")
     steps = [lead,
              f"Let {m(v1)} be the number of {bn}; then there are {m(f'{N} - {v1}')} {sn}. Total value: "
              f"{m(f'{bv}{v1} + {sv}({N} - {v1}) = {int_raw(Vt)}')}.",
@@ -702,7 +702,8 @@ def sum_diff(rng, lvl):
     ans = Lg if ask_large else S_small
     wrong = [(Q(S_small if ask_large else Lg), f"gives {S_name if ask_large else L_name} instead"),
              (Q(S) / 2, "splits the total evenly and ignores the difference"),
-             (Q(S + D) if ask_large else Q(S - D), "forgets to divide by 2"),
+             (Q(S + D), f"finds {m(f'2L = {S + D}')} but forgets to divide by 2") if ask_large else
+             (Q(S - D), f"subtracts the equations to get {m(f'2s = {S - D}')}, then forgets to divide by 2"),
              (Q(S - D) if ask_large else Q(S + D) / 2, None)]
     hits = [(a_, S - a_) for a_ in range(0, S + 1) if a_ - (S - a_) == D]
     need(len(hits) == 1)
@@ -740,7 +741,7 @@ def mixture(rng, lvl):
     ask_cheap = rng.random() < 0.6
     ans = a if ask_cheap else b
     stem = (f"{place} mixes {cheap} that {v1} {_mo(p1)} per pound with {dear} that {v2} {_mo(p2)} per pound "
-            f"to make {W} pounds of {what} that sells for {_mo(p)} per pound. How many pounds of "
+            f"to make {W} pounds of {what} that is worth {_mo(p)} per pound. How many pounds of "
             f"{cheap if ask_cheap else dear} are in the mix?")
     steps = [f"Let {m(var)} be the pounds of {cheap}; then {m(f'{W} - {var}')} pounds are {dear}.",
              f"The value of the mix is {m(f'{W} \\times {p} = {total}')} dollars, so "
@@ -760,7 +761,7 @@ def mixture(rng, lvl):
     closer = cheap if p - p1 < p2 - p else dear
     return Problem(stem=stem, answer=Q(ans), fmt=unit(num, "pound"), wrong=wrong, steps=steps,
                    check=Q(hits[0] if ask_cheap else W - hits[0]), section="AR",
-                   tip=(f"Sense check: the mix price {_mo(p)} is closer to the price of {closer}, so the mix "
+                   tip=(f"Sense check: {_mo(p)} per pound is closer to the price of {closer}, so the mix "
                         f"must contain more {closer}." if p - p1 != p2 - p else None),
                    near=lambda r: [Q(ans + d) for d in (-3, 3, -2, 2, -1, 1) if 0 < ans + d < W])
 

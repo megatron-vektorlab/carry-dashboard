@@ -124,7 +124,7 @@ _PAIRS = [
     ("A box holds {A} red pens and {B} blue pens.", "red pens", "blue pens"),
     ("A basketball team won {A} games and lost {B} games this season. There were no ties.",
      "wins", "losses"),
-    ("A recruiting office signed up {A} recruits for the Army and {B} recruits for the Navy last month.",
+    ("A recruiting office signed up {A} recruits for the Army and {B} recruits for the Navy last year.",
      "Army recruits", "Navy recruits"),
     ("A motor pool has {A} trucks and {B} Humvees.", "trucks", "Humvees"),
     ("A garden has {A} tomato plants and {B} pepper plants.", "tomato plants", "pepper plants"),
@@ -247,7 +247,9 @@ def solve_proportion(rng, lvl):
             fmt=num,
             wrong=[w for w in [
                 (Q(a * c), f"multiplies {a} by {c} but forgets to divide by {d}"),
-                (Q(c + a - d), f"adds the difference of the denominators ({m(f'{a} - {d}')}) instead of scaling"),
+                (Q(c + a - d), (f"uses a constant difference: {a} is {abs(a - d)} {'more' if a > d else 'less'} than {d}, "
+                                f"so it {'adds' if a > d else 'subtracts'} {abs(a - d)} {'to' if a > d else 'from'} {c} "
+                                f"instead of scaling")),
                 (R(a * d, c), f"cross-multiplies the wrong pair: {m(f'{a} \\times {d} \\div {c}')}"),
             ] if w[0] > 0],
             steps=[
@@ -271,7 +273,9 @@ def solve_proportion(rng, lvl):
         wrong=[w for w in [
             (R(a * c, d), f"solves as if {m('x')} were on top, giving {m(f'{a} \\times {c} \\div {d}')}"),
             (Q(a * d), f"multiplies {a} by {d} but forgets to divide by {c}"),
-            (Q(d + a - c), "adds the difference of the numerators instead of scaling"),
+            (Q(d + a - c), (f"uses a constant difference: {a} is {abs(a - c)} {'more' if a > c else 'less'} than {c}, "
+                            f"so it {'adds' if a > c else 'subtracts'} {abs(a - c)} {'to' if a > c else 'from'} {d} "
+                            f"instead of scaling")),
         ] if w[0] > 0],
         steps=[
             f"Cross-multiply: {m(f'{c} \\times x = {a} \\times {d}')}, so {m(f'{c}x = {int_raw(cross)}')}.",
@@ -339,7 +343,7 @@ def part_of_whole(rng, lvl):
 
 _TOTALS = [
     # (setting with {T} and {r}, first group, second group, verb, totals range)
-    ("A recruiting station signed up {T} recruits last month, all for either the Army or the Navy. "
+    ("A recruiting station signed up {T} recruits last year, all for either the Army or the Navy. "
      "The ratio of Army recruits to Navy recruits was {r}.", "Army recruits", "Navy recruits", "were", range(20, 200)),
     ("A parking lot holds {T} vehicles, all cars or trucks. The ratio of cars to trucks is {r}.",
      "cars", "trucks", "are", range(20, 300)),
@@ -416,30 +420,37 @@ _RECIPES = [
     dict(stem="A cookie recipe uses {a} of flour to make {b} cookies. How many cups of flour are "
               "needed to make {c} cookies?",
          unit=("cup", "cups"), per="cookies", a=[1, 2, 3, 4], b=[12, 16, 18, 24, 30, 36],
+         rate="1 cup of flour makes {u} cookies",
          c=range(12, 91, 2), fmt=mixed, small=True),
     dict(stem="A mess hall recipe uses {a} of rice to feed {b} soldiers. How many pounds of rice "
               "are needed to feed {c} soldiers?",
          unit=("pound", "pounds"), per="soldiers", a=range(3, 13), b=[20, 25, 30, 40, 50],
+         rate="1 pound of rice feeds {u} soldiers",
          c=range(50, 301, 5), fmt=dec, small=False),
     dict(stem="A pancake recipe calls for {a} to make {b} pancakes. How many eggs are needed to "
               "make {c} pancakes?",
          unit=("egg", "eggs"), per="pancakes", a=[2, 3, 4], b=[8, 10, 12, 15, 16],
+         rate="1 egg makes {u} pancakes",
          c=range(16, 61), fmt=num, small=True),
     dict(stem="The label on a bag of lawn fertilizer says to use {a} for every {b} square feet of "
               "lawn. How many pounds are needed for {c} square feet?",
          unit=("pound", "pounds"), per="square feet", a=[2, 3, 4, 5, 6], b=[500, 1000],
+         rate="1 pound covers {u} square feet",
          c=range(1250, 6001, 250), fmt=dec, small=False),
     dict(stem="A field kitchen brews {a} of coffee for every {b} soldiers. How many gallons "
               "should it brew for {c} soldiers?",
          unit=("gallon", "gallons"), per="soldiers", a=[2, 3, 4, 5], b=[20, 25, 30, 40],
+         rate="1 gallon serves {u} soldiers",
          c=range(60, 241, 5), fmt=dec, small=False),
     dict(stem="A painter used {a} of paint to cover {b} square feet of fence. At the same rate, "
               "how many gallons are needed to cover {c} square feet?",
          unit=("gallon", "gallons"), per="square feet", a=[2, 3, 4], b=[600, 700, 800],
+         rate="1 gallon covers {u} square feet",
          c=range(900, 2801, 50), fmt=dec, small=False),
     dict(stem="A concrete mix uses {a} of cement for every {b} bags of sand. How many bags of "
               "cement are needed for {c} bags of sand?",
          unit=("bag", "bags"), per="bags of sand", a=[1, 2, 3], b=[3, 4, 5],
+         rate="1 bag of cement goes with every {u} bags of sand",
          c=range(9, 41), fmt=num, small=True, label="bags of cement"),
 ]
 
@@ -542,7 +553,7 @@ def _recipe_scale(rng, lvl, small):
         last = f"x = {int_raw(cross)} \\div {int_raw(b)} = {dec_raw(ans)}"
     wrong = [
         (ans - a, f"finds only the extra amount needed and forgets the original {m(show(a))} {many if a != 1 else one}"),
-        (R(a * b, c), "sets up the proportion upside down"),
+        (R(a * b, c), f"matches the {show(a)} {many if a != 1 else one} with {num(c)} {ctx['per']} instead of {num(b)}"),
     ]
     if ctx["small"]:
         wrong.append((Q(a + c - b), f"adds the {c - b} extra {ctx['per']} instead of scaling"))
@@ -551,8 +562,8 @@ def _recipe_scale(rng, lvl, small):
     unit_rate = R(b, a)
     tip = None
     if unit_rate.is_integer and unit_rate > 1 and a > 1:
-        tip = (f"Unit rate: 1 {one} is enough for {m(int_raw(unit_rate))} {ctx['per']}, so "
-               f"{m(f'{int_raw(c)} \\div {int_raw(unit_rate)} = {show(ans)}')} {many}.")
+        tip = (f"Unit rate: {ctx['rate'].format(u=m(int_raw(unit_rate)))}, so "
+               f"{m(f'{int_raw(c)} \\div {int_raw(unit_rate)} = {show(ans)}')} {ctx.get('label', many)}.")
     return Problem(
         stem=ctx["stem"].format(a=f"{m(show(a))} {one if a == 1 else many}", b=num(b), c=num(c)),
         answer=ans,
@@ -600,6 +611,15 @@ def plan_scale(rng, lvl):
     return _map_scale(rng, lvl, plans=True)
 
 
+# rooms on a floor plan: (name, realistic length range, width range) in feet
+_ROOMS = [("bedroom", (10, 16), (9, 14)), ("garage", (18, 24), (10, 24)), ("office", (8, 16), (8, 14)),
+          ("storage room", (6, 14), (6, 12)), ("classroom", (24, 36), (20, 30)),
+          ("barracks dayroom", (16, 30), (12, 24))]
+# things on a blueprint: (name, realistic length range in feet)
+_BLUEPRINT = [("wall", 8, 40), ("room", 10, 24), ("deck", 8, 24), ("garage", 20, 30),
+              ("hallway", 10, 40), ("shed", 8, 16)]
+
+
 def _map_scale(rng, lvl, plans):
     if lvl == 2:
         if plans and rng.random() < 0.45:
@@ -609,8 +629,8 @@ def _map_scale(rng, lvl, plans):
             part = rng.choice([R(1, 4), R(1, 2), R(3, 4)] if k == 4 else [R(1, 2)])
             d = whole + part
             ans = d * k
-            need(ans.is_integer)
-            thing = rng.choice(["wall", "room", "deck", "garage", "hallway"])
+            thing, tlo, thi = rng.choice(_BLUEPRINT)
+            need(ans.is_integer and tlo <= ans <= thi)
             return Problem(
                 stem=(f"A blueprint uses the scale {m(F(1, k))} inch = 1 foot. A {thing} is "
                       f"{m(mixed_raw(d))} inches long on the blueprint. How long is the actual "
@@ -641,6 +661,7 @@ def _map_scale(rng, lvl, plans):
         ans = d * s
         need(ans.is_integer or ans.q == 2)
         need(ans <= top)
+        need(ans >= {"plan": 8, "model": 25}.get(where, 0))
         need(part != 0 or rng.random() < 0.25)
         wrong = [
             (d / s, "divides by the scale instead of multiplying"),
@@ -699,15 +720,15 @@ def _map_scale(rng, lvl, plans):
                  f"each chunk is {u} inches on the map, so {m(f'{k} \\times {u} = {int_raw(ans)}')}."),
             check=Fraction(u, v) * actual,
         )
+    room, (llo, lhi), (wlo, whi) = rng.choice(_ROOMS)
     s = rng.choice([2, 3, 4, 5, 6, 8])             # 1 inch = s feet
-    L, W = sorted(rng.sample(range(2, 8), 2), reverse=True)
-    need(L * s <= 40 and W * s <= 30)
+    L, W = rng.randint(2, 9), rng.randint(2, 9)
+    need(L > W and llo <= L * s <= lhi and wlo <= W * s <= whi)
     ans = Q(L * s * W * s)
-    room = rng.choice(["A bedroom", "A garage", "An office", "A storage room", "A classroom",
-                       "A barracks dayroom"])
+    art = "An" if room[0] in "aeiou" else "A"
     return Problem(
-        stem=(f"On a floor plan, 1 inch represents {num(s)} feet. {room} measures {num(L)} inches "
-              f"by {num(W)} inches on the plan. What is the actual area of the room, in square feet?"),
+        stem=(f"On a floor plan, 1 inch represents {num(s)} feet. {art} {room} measures {num(L)} inches "
+              f"by {num(W)} inches on the plan. What is the actual area of the {room}, in square feet?"),
         answer=ans,
         fmt=num,
         wrong=[
@@ -767,7 +788,8 @@ def unit_rate(rng, lvl):
     rate = Q(rate)
     total = rate * n
     step = R(1, 2) if money_like else 1
-    wrong = [(rate * 10, "misplaces the decimal point when dividing"),
+    wrong = [(rate * 10, "is the total, not the rate; it was never divided by 10" if n == 10 else
+              "misplaces the decimal point when dividing"),
              (rate / 10, "misplaces the decimal point when dividing"),
              (rate + step, None), (rate - step, None), (rate + 2 * step, None),
              (rate - 2 * step, None)]

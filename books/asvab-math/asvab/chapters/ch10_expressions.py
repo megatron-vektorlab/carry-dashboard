@@ -747,17 +747,17 @@ def _word_l2(rng, kind):
         p, q = rng.randint(plo, phi), rng.randint(qlo, qhi)
         need(p != q)
         X, Y = sp.symbols("x y")
-        ans_t, ans_s = f"{p}x + {q}y", p * X + q * Y
+        ans_t, ans_s = _lin([(p, "x"), (q, "y")]), p * X + q * Y
         wr = [
-            (f"{q}x + {p}y", q * X + p * Y, "matches each price with the wrong item"),
+            (_lin([(q, "x"), (p, "y")]), q * X + p * Y, "matches each price with the wrong item"),
             (f"{p + q}(x + y)", (p + q) * (X + Y), "charges both prices for every item"),
             (f"{p + q}xy", (p + q) * X * Y, "combines unlike terms"),
             (f"x + y + {p + q}", X + Y + p + q, "adds the prices instead of multiplying them by the number of items"),
         ]
         stem = stem_t.format(p=money(p), q=money(q), X=m("x"), Y=m("y"))
         steps = [
-            f"Each {n1} costs {money(p)}, so {m('x')} of them cost {m(f'{p}x')} dollars.",
-            f"Each {n2} costs {money(q)}, so {m('y')} of them cost {m(f'{q}y')} dollars.",
+            f"Each {n1} costs {money(p)}, so {m('x')} of them cost {m(_lin([(p, 'x')]))} dollars.",
+            f"Each {n2} costs {money(q)}, so {m('y')} of them cost {m(_lin([(q, 'y')]))} dollars.",
             f"Add the two costs: {m(ans_t)}.",
         ]
         sem = lambda xv, yv: sum([p] * xv) + sum([q] * yv)

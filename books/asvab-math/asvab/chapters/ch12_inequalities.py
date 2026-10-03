@@ -570,7 +570,8 @@ def _op_why(right, wrong, phrase, K):
 @template("MK")
 def translate_ineq(rng, lvl):
     op = rng.choice(["ge", "le", ">", "<"])
-    phrase = rng.choice(_PHRASES[op])
+    # "a maximum of" / "a minimum of" read naturally only in word situations
+    phrase = rng.choice([ph for ph in _PHRASES[op] if not ph.startswith("a ")])
     if lvl == 1:
         k = rng.randint(2, 9)
         c = rng.randint(2, 30)
@@ -602,7 +603,7 @@ def translate_ineq(rng, lvl):
                 ">": "is greater than", "<": "is less than"}[op]
     incl = ("includes" if op in ("ge", "le") else "does not include")
     steps = [f"``{phrase.capitalize()} {Kt}'' means the quantity {sym_word} {Kt}: it {incl} {Kt} itself, "
-             f"so the symbol is {m(_TEX[op])}.",
+             f"so the inequality symbol is {m(_TEX[op])}.",
              f"The quantity is {m(lhs)}, so the inequality is {ans_tex}."]
     return Problem(
         stem=stem,

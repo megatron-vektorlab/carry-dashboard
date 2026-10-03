@@ -734,8 +734,7 @@ def us_metric(rng, lvl):
                 f"miles is that? (1 mile $\\approx$ 1.6 kilometers)")
         fmt = unit(dec, "mile")
         wrong = [(Q(km) * R(16, 10), "multiplies by 1.6 instead of dividing"),
-                 (Q(km) * R(6, 10), "multiplies by 0.6"),
-                 (ans * 10, "slips the decimal point")]
+                 ]
         steps = [f"A mile is longer than a kilometer, so there are fewer miles. Divide by 1.6: "
                  f"{m(f'{km} \\div 1.6')}.",
                  f"Clear the decimal: {m(f'{km * 10} \\div 16 = {dec_raw(ans)}')} miles."]
@@ -748,7 +747,7 @@ def us_metric(rng, lvl):
         fmt = unit(dec, "kilometer")
         wrong = [(R(mi * 10, 16), "divides by 1.6 instead of multiplying"),
                  (Q(mi) + R(16, 10), "adds 1.6 instead of multiplying"),
-                 (ans * 10, "slips the decimal point")]
+                 ]
         steps = [f"Each mile is about 1.6 kilometers, so multiply: "
                  f"{m(f'{mi} \\times 1.6 = {dec_raw(ans)}')} kilometers."]
         check = Fraction(mi * 16, 10)
@@ -760,8 +759,7 @@ def us_metric(rng, lvl):
                 f"(1 kilogram $\\approx$ 2.2 pounds)")
         fmt = unit(dec, "pound")
         wrong = [(R(kg * 10, 22), "divides by 2.2 instead of multiplying"),
-                 (Q(kg) + R(22, 10), "adds 2.2 instead of multiplying"),
-                 (Q(kg) * 2, "multiplies by 2 instead of 2.2")]
+                 (Q(kg) + R(22, 10), "adds 2.2 instead of multiplying")]
         steps = [f"Each kilogram is about 2.2 pounds, so multiply: "
                  f"{m(f'{kg} \\times 2.2 = {dec_raw(ans)}')} pounds."]
         check = Fraction(kg * 22, 10)
@@ -773,7 +771,6 @@ def us_metric(rng, lvl):
                 f"(1 kilogram $\\approx$ 2.2 pounds)")
         fmt = unit(dec, "kilogram")
         wrong = [(Q(lb) * R(22, 10), "multiplies by 2.2 instead of dividing"),
-                 (R(lb, 2), "divides by 2 instead of 2.2"),
                  (Q(lb) - R(22, 10), "subtracts 2.2 instead of dividing")]
         steps = [f"A kilogram is heavier than a pound, so there are fewer kilograms. Divide by 2.2: "
                  f"{m(f'{lb} \\div 2.2 = {lb * 10} \\div 22 = {dec_raw(ans)}')} kilograms."]
@@ -785,10 +782,9 @@ def us_metric(rng, lvl):
         stem = (f"A {thing} is {num(inch)} inches long. How many centimeters is that? "
                 f"(1 inch $=$ 2.54 centimeters)")
         fmt = unit(dec, "centimeter")
-        wrong = [(R(inch * 100, 254) if (R(inch * 100, 254) * 100).is_integer else Q(inch) * R(254, 1000), "divides instead of multiplying"
-                  if (R(inch * 100, 254) * 100).is_integer else "slips the decimal point"),
-                 (Q(inch) + R(254, 100), "adds 2.54 instead of multiplying"),
-                 (ans * 10, "slips the decimal point")]
+        wrong = [(Q(inch) + R(254, 100), "adds 2.54 instead of multiplying")]
+        if _short(R(inch * 100, 254)):
+            wrong.append((R(inch * 100, 254), "divides by 2.54 instead of multiplying"))
         steps = [f"Each inch is 2.54 centimeters, so multiply: "
                  f"{m(f'{inch} \\times 2.54 = {dec_raw(ans)}')} centimeters."]
         check = Fraction(inch * 254, 100)
@@ -801,10 +797,9 @@ def us_metric(rng, lvl):
         stem = (f"{thing} holds {num(gal)} gallons. About how many liters is that? "
                 f"(1 gallon $\\approx$ 3.8 liters)")
         fmt = unit(dec, "liter")
-        wrong = [(R(gal * 10, 38) if (R(gal * 10, 38) * 100).is_integer else Q(gal) * R(38, 100),
-                  "divides instead of multiplying" if (R(gal * 10, 38) * 100).is_integer else "slips the decimal point"),
-                 (Q(gal) + R(38, 10), "adds 3.8 instead of multiplying"),
-                 (Q(gal) * 4, "rounds 3.8 up to 4")]
+        wrong = [(Q(gal) + R(38, 10), "adds 3.8 instead of multiplying")]
+        if _short(R(gal * 10, 38)):
+            wrong.append((R(gal * 10, 38), "divides by 3.8 instead of multiplying"))
         steps = [f"Each gallon is about 3.8 liters, so multiply: "
                  f"{m(f'{gal} \\times 3.8 = {dec_raw(ans)}')} liters."]
         check = Fraction(gal * 38, 10)
@@ -815,15 +810,23 @@ def us_metric(rng, lvl):
                 f"many miles per hour is that? (1 mile $\\approx$ 1.6 kilometers)")
         fmt = unit(dec, "mile per hour", "miles per hour")
         wrong = [(Q(kmh) * R(16, 10), "multiplies by 1.6 instead of dividing"),
-                 (Q(kmh) - 16, "subtracts 16"),
-                 (ans * 10, "slips the decimal point")]
+                 ]
         steps = [f"Fewer miles than kilometers, so divide by 1.6: "
                  f"{m(f'{kmh} \\div 1.6 = {kmh * 10} \\div 16 = {dec_raw(ans)}')} miles per hour."]
         check = Fraction(kmh * 10, 16)
     need((ans * 100).is_integer)
+    # error-based decimal slips; fillers stay far from the answer ("about" questions)
+    wrong.append((ans * 10, "moves the decimal point one place too far to the right"))
+    if _short(ans / 10):
+        wrong.append((ans / 10, "moves the decimal point one place too far to the left"))
+    wrong = [w for w in wrong if _short(w[0]) and Q(w[0]) > 0]
+
+    def far(rng_):
+        out = [v for v in (ans * 2, ans / 2, ans * R(3, 2), ans * R(2, 3)) if _short(v)]
+        rng_.shuffle(out)
+        return out
     return _Prob(stem=stem, answer=ans, fmt=fmt, section="AR", wrong=wrong, steps=steps,
-                   near=_near(ans, step=(1 if ans.is_integer else R(1, 2) if (ans * 2).is_integer else R(1, 10))),
-                   check=check)
+                 near=far, check=check)
 
 
 # --------------------------------------------------------------------------
@@ -837,6 +840,21 @@ def _borrow_trap(start, end):
     diff = (he * 100 + me) - (hs * 100 + ms)
     h, mm = divmod(diff, 100)
     return 60 * h + mm   # e.g. 675 -> 6 h 75 min -> 7 h 15 min
+
+
+def _borrow_why(start, end, civilian=False):
+    """Exact description of the 'subtract clock times like ordinary numbers' slip."""
+    hs, ms = divmod(start, 60)
+    he, me = divmod(end, 60)
+    a_, b_ = f"{hs:02d}{ms:02d}", f"{he:02d}{me:02d}"
+    diff = (he * 100 + me) - (hs * 100 + ms)
+    h, mm = divmod(diff, 100)
+    head = (f"writes the times as {m(a_)} and {m(b_)} and subtracts them like ordinary numbers"
+            if civilian else f"subtracts {m(b_)} $-$ {m(a_)} like ordinary numbers")
+    read = f"reads {m(str(diff))} as {h} hours {mm} minutes"
+    if mm >= 60:
+        read += f", which it rewrites as {h + 1} hours {mm - 60} minutes"
+    return f"{head} and {read}"
 
 
 @template("AR")
@@ -863,7 +881,7 @@ def elapsed_time(rng, lvl):
         before, after = noon - start, end - noon
         trap_noon = abs((end % 720) - start)   # treats 4:15 as if it came before 7:45
         wrong = [
-            (Q(_borrow_trap(start, end)), "subtracts the clock times like ordinary numbers (borrows 100 minutes instead of 60)"),
+            (Q(_borrow_trap(start, end)), _borrow_why(start, end, civilian=True)),
             (Q(trap_noon), "forgets that the clock starts over at 12 noon"),
             (Q(60 * (end // 60 - start // 60)), "counts only the change in the hour"),
         ]
@@ -942,7 +960,7 @@ def military_time(rng, lvl):
             sh, sm = divmod(start, 60)
             eh, em = divmod(end, 60)
             wrong = [
-                (Q(_borrow_trap(start, end)), f"subtracts {m(_mil(end))} $-$ {m(_mil(start))} like ordinary numbers (borrows 100 minutes instead of 60)"),
+                (Q(_borrow_trap(start, end)), _borrow_why(start, end)),
                 (Q(60 * (eh - sh) + (sm - em)), "subtracts the smaller number of minutes from the larger instead of borrowing"),
                 (Q(dur + 60), "borrows the hour but forgets to take it away from the hours"),
                 (Q(60 * (eh - 1 - sh) + (sm - em)), "borrows an hour but forgets to add the 60 minutes"),
@@ -996,12 +1014,14 @@ def military_time(rng, lvl):
         dur = before + end
         sh, sm = divmod(start, 60)
         wrong = [
-            (Q(abs(_borrow_trap(end, start))), f"subtracts {m(_mil(end))} from {m(_mil(start))} instead of going past midnight"),
-            (Q(dur + 40), "borrows 100 minutes instead of 60 when counting up to midnight"),
+            (Q(start - end), f"subtracts {m(_mil(end))} from {m(_mil(start))} instead of going past midnight"),
+            (Q(dur + 40) if sm > 40 else None, f"borrows 100 minutes instead of 60 when counting up to midnight "
+             f"({m('2400')} $-$ {m(_mil(start))} read as {_hm_text(before + 40)})"),
             (Q(24 * 60 - dur), "finds the rest of the 24 hours instead of the time on duty"),
             (Q(end), "counts only the time after midnight"),
             (Q(dur - 60), None),
         ]
+        wrong = [w for w in wrong if w[0] is not None]
         steps = [
             f"From {m(_mil(start))} to midnight ({m('2400')}): {_hm_text(before)}.",
             f"From midnight to {m(_mil(end))}: {_hm_text(end)}.",
@@ -1125,7 +1145,7 @@ def mixed_units(rng, lvl):
         "ftin": f"{p} has a board that is {fmt(v1)} long and cuts off a piece {fmt(v2)} long. How long is the board that is left?",
         "lboz": f"A box of supplies weighs {fmt(v1)}. After {p} removes {fmt(v2)} of supplies, how much does the box weigh?",
         "hrmin": f"A training exercise is scheduled to last {fmt(v1)}. After {fmt(v2)}, how much time is left?",
-        "galqt": f"A water can held {fmt(v1)} of water. A squad used {fmt(v2)}. How much water is left?",
+        "galqt": f"A water tank held {fmt(v1)} of water. A squad used {fmt(v2)}. How much water is left?",
         "ydft": f"A roll of fabric holds {fmt(v1)}. {p} cuts off {fmt(v2)}. How much fabric is left on the roll?",
     }[key]
     if key == "lboz":
@@ -1162,54 +1182,72 @@ def round_up_down(rng, lvl):
     if lvl == 1:
         if up:
             key = _fresh(rng, ["eggs", "ammo", "pallets", "seeds", "rafts"], "up1")
-            per, total, stem_fn = {
-                "eggs": (12, rng.randint(100, 900),
-                         lambda per, t: f"A farm packs eggs in cartons of {num(per)}. How many cartons are needed to pack {num(t)} eggs?"),
-                "ammo": (rng.choice([200, 250, 400]), rng.randint(900, 5000),
-                         lambda per, t: f"Each ammunition can holds {num(per)} rounds. How many cans are needed for {num(t)} rounds of training ammunition?"),
-                "pallets": (rng.choice([30, 40, 48]), rng.randint(200, 1500),
-                            lambda per, t: f"Each pallet holds {num(per)} cases of MREs. How many pallets are needed to ship {num(t)} cases?"),
-                "seeds": (rng.choice([15, 20, 25]), rng.randint(60, 400),
-                          lambda per, t: f"One packet of seeds plants {num(per)} feet of garden row. How many packets does {person(rng)} need to plant {num(t)} feet of rows?"),
-                "rafts": (rng.choice([6, 8]), rng.randint(20, 90),
-                          lambda per, t: f"Each rubber raft holds {num(per)} soldiers for a river-crossing exercise. How many rafts are needed for {num(t)} soldiers?"),
+            per, total = {"eggs": (12, rng.randint(100, 900)),
+                          "ammo": (rng.choice([200, 250, 400]), rng.randint(900, 5000)),
+                          "pallets": (rng.choice([30, 40, 48]), rng.randint(200, 1500)),
+                          "seeds": (rng.choice([15, 20, 25]), rng.randint(60, 400)),
+                          "rafts": (rng.choice([6, 8]), rng.randint(20, 90))}[key]
+            # (stem, container plural, item plural, leftover phrase)
+            stem, cont, items, left = {
+                "eggs": (f"A farm packs eggs in cartons of {num(per)}. How many cartons are needed to pack {num(total)} eggs?",
+                         "cartons", "eggs", "without a carton"),
+                "ammo": (f"Each ammunition can holds {num(per)} rounds. How many cans are needed for {num(total)} rounds of training ammunition?",
+                         "cans", "rounds", "without a can"),
+                "pallets": (f"Each pallet holds {num(per)} cases of MREs. How many pallets are needed to ship {num(total)} cases?",
+                            "pallets", "cases", "off the pallets"),
+                "seeds": (f"One packet of seeds plants {num(per)} feet of garden row. How many packets does {person(rng)} need to plant {num(total)} feet of rows?",
+                          "packets", "feet of row", "unplanted"),
+                "rafts": (f"Each rubber raft holds {num(per)} soldiers for a river-crossing exercise. How many rafts are needed for {num(total)} soldiers?",
+                          "rafts", "soldiers", "without a raft"),
             }[key]
         else:
             key = _fresh(rng, ["tickets", "shelf", "truck", "rope", "shirts"], "down1")
-            per, total, stem_fn = {
-                "tickets": (rng.choice([7, 8, 9, 12, 15]), rng.randint(40, 150),
-                            lambda per, t: f"Movie tickets cost {money(per)} each. How many tickets can be bought with {money(t)}?"),
-                "shelf": (rng.choice([2, 3]), rng.randint(25, 60),
-                          lambda per, t: f"A shelf is {num(t)} inches long. How many binders, each {num(per)} inches thick, can stand on it?"),
-                "truck": (rng.choice([120, 140, 150, 160, 180]), rng.choice([2000, 2500, 3000, 4000, 5000]),
-                          lambda per, t: f"A trailer can safely carry {num(t)} pounds. Each crate weighs {num(per)} pounds. What is the greatest number of crates it can carry?"),
-                "rope": (rng.choice([6, 8, 12, 15]), rng.choice([50, 75, 100, 150]),
-                         lambda per, t: f"A {num(t)}-foot coil of rope is cut into {num(per)}-foot pieces for a training course. How many full pieces can be cut?"),
-                "shirts": (rng.choice([12, 14, 18, 22]), rng.randint(50, 150),
-                           lambda per, t: f"{person(rng)} has {money(t)} to spend on T-shirts that cost {money(per)} each. How many shirts can be bought?"),
+            per, total = {"tickets": (rng.choice([7, 8, 9, 12, 15]), rng.randint(40, 150)),
+                          "shelf": (rng.choice([2, 3]), rng.randint(25, 60)),
+                          "truck": (rng.choice([120, 140, 150, 160, 180]), rng.choice([2000, 2500, 3000, 4000, 5000])),
+                          "rope": (rng.choice([6, 8, 12, 15]), rng.choice([50, 75, 100, 150])),
+                          "shirts": (rng.choice([12, 14, 18, 22]), rng.randint(50, 150))}[key]
+            # (stem, items counted, singular item, leftover unit)
+            stem, cont, one, items = {
+                "tickets": (f"Movie tickets cost {money(per)} each. How many tickets can be bought with {money(total)}?",
+                            "tickets", "ticket", "dollars"),
+                "shelf": (f"A shelf is {num(total)} inches long. How many binders, each {num(per)} inches thick, can stand on it?",
+                          "binders", "binder", "inches"),
+                "truck": (f"A trailer can safely carry {num(total)} pounds. Each crate weighs {num(per)} pounds. What is the greatest number of crates it can carry?",
+                          "crates", "crate", "pounds"),
+                "rope": (f"A {num(total)}-foot coil of rope is cut into {num(per)}-foot pieces for a training course. How many full pieces can be cut?",
+                         "pieces", "piece", "feet"),
+                "shirts": (f"{person(rng)} has {money(total)} to spend on T-shirts that cost {money(per)} each. How many shirts can be bought?",
+                           "shirts", "shirt", "dollars"),
             }[key]
         q, r = divmod(total, per)
         need(r != 0 and q >= 2)
         ans = q + 1 if up else q
-        stem = stem_fn(per, total)
         exact = R(total, per)
-        wrong = [
-            (Q(q) if up else Q(q + 1), "rounds down, which leaves some left over" if up
-             else "rounds up, but there is not enough for one more"),
-            (Q(r), "gives the leftover amount, not the number asked for"),
+        if up:
+            wrong = [(Q(q), f"rounds down, which leaves {r} {items} {left}")]
+            last = (f"{m(str(q))} {cont} take care of only {m(f'{q} \\times {per} = {int_raw(q * per)}')} {items}, "
+                    f"leaving {m(str(r))} {items} {left}. One more is needed: {m(f'{q} + 1 = {q + 1}')} {cont}.")
+        else:
+            wrong = [(Q(q + 1), f"rounds up, but there is not enough for another {one}")]
+            amt = (money(r) if items == "dollars" else f"{m(str(r))} {items}")
+            last = (f"The {amt} left over {'is' if items == 'dollars' else 'are'} not enough for another {one}, "
+                    f"so the answer is {m(str(q))} {cont}.")
+        wrong += [
+            (Q(r), f"gives the leftover {items}, not the number of {cont}"),
             (Q(q + r), "adds the remainder to the quotient"),
         ]
         if (exact * 10).is_integer:
             wrong.append((exact, "gives the exact quotient, which is not a whole number"))
         steps = [
             f"Divide: {m(f'{int_raw(total)} \\div {per}')} is {m(str(q))} with a remainder of {m(str(r))}.",
-            (f"With only {m(str(q))}, {m(str(r))} would be left over, so one more is needed: {m(f'{q} + 1 = {q + 1}')}."
-             if up else f"There is not enough left for another one, so the answer is {m(str(q))}."),
+            last,
         ]
         return _Prob(stem=stem, answer=Q(ans), fmt=num, section="AR", wrong=wrong, steps=steps,
-                       near=_near(ans), check=Q(math.ceil(Fraction(total, per)) if up else total // per))
+                     near=_near(ans), check=Q(math.ceil(Fraction(total, per)) if up else total // per))
     # level 2: with a unit conversion
     key = _fresh(rng, ["board", "bottle", "water", "milk", "sand"], "round2")
+    wrong_conv = None
     if key == "board":
         ft = rng.randint(6, 20)
         piece = rng.choice([7, 9, 10, 11, 14, 15, 16, 18, 20, 22])
@@ -1217,7 +1255,11 @@ def round_up_down(rng, lvl):
         stem = (f"{person(rng)} cuts a {num(ft)}-foot board into pieces {num(piece)} inches long. "
                 f"How many full pieces can be cut?")
         conv = f"Change feet to inches: {m(f'{ft} \\times 12 = {total}')} inches."
-        wrong_conv = (Q(ft // piece) if ft >= piece else Q(R(ft * 10, piece).floor() or 1), "forgets to change feet to inches")
+        if ft >= piece:
+            wrong_conv = (Q(ft // piece), "forgets to change feet to inches")
+        cont, one, items = "pieces", "piece", "inches"
+        last = lambda q, r: (f"Only full pieces count: the {m(str(r))} inches left are too short for "  # noqa: E731
+                             f"another piece, so {m(str(q))} pieces.")
     elif key == "bottle":
         L = rng.choice([1, 2, 3, 4])
         cup = rng.choice([150, 175, 200, 225, 300, 350, 400, 450])
@@ -1225,7 +1267,11 @@ def round_up_down(rng, lvl):
         stem = (f"{person(rng)} pours juice from a {num(L)}-liter bottle into {num(cup)}-milliliter "
                 f"cups. How many cups can be filled completely?")
         conv = f"Change liters to milliliters: {m(f'{L} \\times 1{{,}}000 = {int_raw(total)}')} milliliters."
-        wrong_conv = (Q(100 * L // cup) if 100 * L >= cup else Q(1000 * L // cup + 2), "uses 100 milliliters in a liter")
+        if 100 * L >= cup:
+            wrong_conv = (Q(100 * L // cup), "uses 100 milliliters in a liter instead of 1,000")
+        cont, one, items = "cups", "cup", "milliliters"
+        last = lambda q, r: (f"Only completely filled cups count: the {m(str(r))} milliliters left will "  # noqa: E731
+                             f"not fill another cup, so {m(str(q))} cups.")
     elif key == "water":
         gal = rng.choice([5, 10, 15, 20, 25, 30, 40, 50])
         qt = rng.choice([3, 6, 7, 9])
@@ -1233,7 +1279,11 @@ def round_up_down(rng, lvl):
         stem = (f"In the field, each soldier needs {num(qt)} quarts of water per day. How many soldiers can "
                 f"a full {num(gal)}-gallon water tank supply for one day?")
         conv = f"Change gallons to quarts: {m(f'{gal} \\times 4 = {total}')} quarts."
-        wrong_conv = (Q(2 * gal // qt) if 2 * gal >= qt else Q(total // qt + 2), "uses 2 quarts in a gallon instead of 4")
+        if 2 * gal >= qt:
+            wrong_conv = (Q(2 * gal // qt), "uses 2 quarts in a gallon instead of 4")
+        cont, one, items = "soldiers", "soldier", "quarts"
+        last = lambda q, r: (f"The {m(str(r))} quarts left are not enough for another soldier's day, so "  # noqa: E731
+                             f"{m(str(q))} soldiers.")
     elif key == "milk":
         batches = rng.randint(5, 16)
         cups = rng.choice([2, 3, 5])
@@ -1243,6 +1293,9 @@ def round_up_down(rng, lvl):
                 f"cartons of milk must be bought? (1 half gallon $=$ 8 cups)")
         conv = f"Total milk: {m(f'{batches} \\times {cups} = {total}')} cups."
         wrong_conv = (Q(math.ceil(Fraction(total, 16))), "uses 16 cups per carton (that is a full gallon)")
+        cont, one, items = "cartons", "carton", "cups"
+        last = lambda q, r: (f"{m(str(q))} cartons hold only {m(f'{q} \\times 8 = {8 * q}')} cups, which is "  # noqa: E731
+                             f"{m(str(r))} cups short, so buy {m(str(q + 1))} cartons.")
     else:
         tons = rng.choice([1, 2, 3, 4, 5])
         bag = rng.choice([30, 35, 40, 45, 60, 70, 80, 90])
@@ -1251,23 +1304,26 @@ def round_up_down(rng, lvl):
                 f"bags. How many bags must they order?")
         conv = f"Change tons to pounds: {m(f'{tons} \\times 2{{,}}000 = {int_raw(total)}')} pounds."
         wrong_conv = (Q(math.ceil(Fraction(1000 * tons, bag))), "uses 1,000 pounds in a ton instead of 2,000")
+        cont, one, items = "bags", "bag", "pounds"
+        last = lambda q, r: (f"{m(str(q))} bags hold only {m(f'{q} \\times {per} = {int_raw(q * per)}')} pounds, "  # noqa: E731
+                             f"which is {m(str(r))} pounds short, so order {m(str(q + 1))} bags.")
     q, r = divmod(total, per)
     need(r != 0 and q >= 2)
     ans = q + 1 if up else q
     wrong = [
-        (Q(q) if up else Q(q + 1), "rounds down, which is not enough" if up
-         else "rounds up, but there is not enough for one more full piece"),
-        wrong_conv,
-        (Q(r), "gives the leftover amount, not the number asked for"),
+        (Q(q) if up else Q(q + 1), f"rounds down, which leaves {r} {items} short" if up
+         else f"rounds up, but there is not enough for another {one}"),
+        (Q(r), f"gives the leftover {items}, not the number of {cont}"),
     ]
+    if wrong_conv is not None:
+        wrong.insert(1, wrong_conv)
     steps = [
         conv,
         f"Divide: {m(f'{int_raw(total)} \\div {per}')} is {m(str(q))} with a remainder of {m(str(r))}.",
-        (f"{m(str(q))} is not enough, so round up to {m(str(q + 1))}." if up
-         else f"Only full ones count, so round down to {m(str(q))}."),
+        last(q, r),
     ]
     return _Prob(stem=stem, answer=Q(ans), fmt=num, section="AR", wrong=wrong, steps=steps,
-                   near=_near(ans), check=Q(math.ceil(Fraction(total, per)) if up else total // per))
+                 near=_near(ans), check=Q(math.ceil(Fraction(total, per)) if up else total // per))
 
 
 def _round_cost(rng):
@@ -1317,7 +1373,8 @@ def _round_cost(rng):
     steps = [
         f"Each {one} covers {num(cover)} {area_u}: "
         f"{m(f'{int_raw(area)} \\div {cover}')} is {m(str(q))} with a remainder of {m(str(r))}.",
-        f"{m(str(q))} is not quite enough, so buy {m(str(n_))} {unit_w}.",
+        f"{m(str(q))} {unit_w} would cover only {m(f'{q} \\times {cover} = {int_raw(q * cover)}')} {area_u}, "
+        f"which is not quite enough, so buy {m(str(n_))} {unit_w}.",
         f"Cost: {m(f'{n_} \\times {price} = {int_raw(ans)}')}, so {money(ans)}.",
     ]
     return _Prob(stem=stem, answer=ans, fmt=money, section="AR", wrong=wrong, steps=steps,
@@ -1361,11 +1418,12 @@ def fraction_remainder(rng, lvl):
         }[key]
         fmt = money if key in ("paycheck", "prize") else num
         wrong = [
-            (left / (1 - f1 - f2) if f1 + f2 < 1 else left * 3, "subtracts both fractions from the whole amount"),
+            (left / (1 - f1 - f2) if f1 + f2 < 1 else None, "subtracts both fractions from the whole amount"),
             (left * (1 + f1) * (1 + f2), "increases the amount by each fraction instead of dividing"),
             (left / rest1, "undoes only the first step"),
             (left + left * (f1 + f2), "adds the fractions of the amount left"),
         ]
+        wrong = [w_ for w_ in wrong if w_[0] is not None]
         need(sum(1 for w_ in wrong if Q(w_[0]).is_integer and Q(w_[0]) != T) >= 2)
         lf = frac_raw(left_frac)
         steps = [
@@ -1410,13 +1468,26 @@ def fraction_remainder(rng, lvl):
     stem += q_left if ask_left else q_second
     fmt = money if key in ("paycheck", "prize") else num
     ans = left if ask_left else second
+    first_n, second_n, left_n = {
+        "paycheck": ("rent", "amount spent on food", "amount left"),
+        "convoy": ("miles driven on the first day", "miles driven on the second day", "miles left"),
+        "fuel": ("fuel used on the first day", "fuel used on the second day", "fuel left"),
+        "recruits": ("recruits moved in the first month", "recruits moved in the second month",
+                     "recruits who remain"),
+        "water": ("water used in the morning", "water used in the afternoon", "water left"),
+        "prize": ("cost of the car repair", "amount saved", "amount left to spend"),
+    }[key]
+    asked = left_n if ask_left else second_n
     wrong = [
-        (T * (1 - f1 - f2) if ask_left and f1 + f2 < 1 else T * f2, "takes both fractions of the original amount instead of the remainder"
-         if ask_left and f1 + f2 < 1 else "takes the fraction of the original amount instead of the remainder"),
-        (rest, "stops after the first step"),
-        (second if ask_left else left, "answers a different part of the question"),
-        (first, "gives the first amount instead"),
+        (rest, f"stops after the first step (gives what is left after the {first_n})"
+         if key not in ("paycheck", "prize") else "stops after the first step"),
+        (second if ask_left else left, f"gives the {second_n if ask_left else left_n}, not the {asked}"),
+        (first, f"gives the {first_n}, not the {asked}"),
     ]
+    if ask_left and f1 + f2 < 1:
+        wrong.insert(0, (T * (1 - f1 - f2), "takes both fractions of the original amount instead of the remainder"))
+    elif not ask_left:
+        wrong.insert(0, (T * f2, "takes the fraction of the original amount instead of the remainder"))
     steps = [
         f"First step: {m(f'{frac_raw(f1)} \\times {int_raw(T)} = {int_raw(first)}')}. "
         f"Remainder: {m(f'{int_raw(T)} - {int_raw(first)} = {int_raw(rest)}')}.",
@@ -1528,7 +1599,7 @@ def age_problem(rng, lvl):
         steps = [
             f"Let the {rel} be {m('a')} years old; then {p} is {m(f'{k1}a')}.",
             f"In {t} years: {m(f'{k1}a + {t} = {k2}(a + {t})')}, so {m(f'{k1}a + {t} = {k2}a + {k2 * t}')}.",
-            f"Then {m(f'{k1 - k2}a = {k2 * t - t}')}, so {m(f'a = {y}')} and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
+            f"Then {m(f'{_ca(k1 - k2)} = {k2 * t - t}')}, so {m(f'a = {y}')} and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
         ]
         verify = lambda v: Q(v) % k1 == 0 and Q(v) + t == k2 * (Q(v) / k1 + t)  # noqa: E731
         sols = [(xx, yy) for yy in range(1, 60) for xx in range(1, 120) if xx == k1 * yy and xx + t == k2 * (yy + t)]
@@ -1578,13 +1649,18 @@ def age_problem(rng, lvl):
         steps = [
             f"Let the {rel} be {m('a')} years old; then {p} is {m(f'{k1}a')}.",
             f"{t} years ago: {m(f'{k1}a - {t} = {k2}(a - {t})')}, so {m(f'{k1}a - {t} = {k2}a - {k2 * t}')}.",
-            f"Then {m(f'{k2 * t - t} = {k2 - k1}a')}, so {m(f'a = {y}')} and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
+            f"Then {m(f'{k2 * t - t} = {_ca(k2 - k1)}')}, so {m(f'a = {y}')} and {p} is {m(f'{k1} \\times {y} = {x_}')}.",
         ]
         verify = lambda v: Q(v) % k1 == 0 and Q(v) - t == k2 * (Q(v) / k1 - t)  # noqa: E731
         sols = [xx for yy in range(1, 60) for xx in [k1 * yy] if xx - t == k2 * (yy - t)]
         check = Q(sols[0])
     return _Prob(stem=stem, answer=Q(x_), fmt=num, section="AR", wrong=wrong, steps=steps,
                    near=_near(x_), verify=verify, check=check)
+
+
+def _ca(c, v="a"):
+    """'3a', but 'a' for a coefficient of 1."""
+    return v if c == 1 else f"{c}{v}"
 
 
 def _times(k):
@@ -1739,6 +1815,7 @@ def fence_posts(rng, lvl):
         n_p = rng.randint(4, 10)
         L = piece * n_p
         t = rng.choice([2, 3, 4, 5, 6])
+        need(t not in (n_p - 1, n_p, piece))   # keep the numbers in the notes distinct
         key = _fresh(rng, ["log", "beam"], "cut_time")
         stem = ({"log": f"It takes {num(t)} minutes to make one cut through a log. How long will it take to cut a {num(L)}-foot log into {num(piece)}-foot pieces?",
                  "beam": f"A saw takes {num(t)} minutes to cut through a steel beam. How long will it take to cut a {num(L)}-foot beam into {num(n_p)} equal pieces?"}[key])

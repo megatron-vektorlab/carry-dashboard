@@ -1009,6 +1009,13 @@ _FPS_Q = {True: [" How many feet per second is this?", " What is this speed in f
           False: [" How many miles per hour is this?", " What is this speed in miles per hour?"]}
 
 
+_KNOWN = [(15, 22), (30, 44), (45, 66), (60, 88), (75, 110), (90, 132)]   # mph, feet per second
+
+
+def _ratio_raw(k):
+    return frac_raw(k) if k.q == 3 else _d(k)
+
+
 @template("AR")
 @_fill
 def fps_mph(rng, lvl, part=None):
@@ -1017,51 +1024,66 @@ def fps_mph(rng, lvl, part=None):
     B, T = person(rng), _trooper(rng)
     fps = mph * R(22, 15)
     need(fps.is_integer)
-    given = rng.choice(["full", "88"])
+    pairs = [(km, kf) for km, kf in _KNOWN
+             if km != mph and R(mph, km).q in (1, 2, 3, 4) and R(mph, km) <= 10]
+    full = rng.random() < 0.4 or not pairs
     to_fps = rng.random() < 0.5
-    conv = ("(1 mile = 5,280 feet and 1 hour = 3,600 seconds.)" if given == "full"
-            else "(60 miles per hour is the same as 88 feet per second.)")
+    if full:
+        conv = "(1 mile = 5,280 feet and 1 hour = 3,600 seconds.)"
+    else:
+        km, kf = rng.choice(pairs)
+        k = R(mph, km)
+        conv = f"({km} miles per hour is the same as {kf} feet per second.)"
+        same_pair = (f"Compare with the known pair: {m(f'{mph} \\div {km} = {_ratio_raw(k)}')}, so the speed is "
+                     f"{m(_ratio_raw(k))} times {km} mph" if to_fps else
+                     f"Compare with the known pair: {m(f'{int_raw(fps)} \\div {kf} = {_ratio_raw(k)}')}, so the "
+                     f"speed is {m(_ratio_raw(k))} times {kf} feet per second")
     if to_fps:
         stem = (st.format(v=f"{mph} miles per hour", B=B, T=T) + rng.choice(_FPS_Q[True]) + " " + conv)
-        if given == "full":
+        if full:
             steps = [f"Change miles to feet: {m(f'{mph} \\times 5{{,}}280 = {int_raw(mph * 5280)}')} feet per hour.",
                      f"Change hours to seconds: {m(f'{int_raw(mph * 5280)} \\div 3{{,}}600 = {int_raw(fps)}')} feet per second."]
             tip = (f"Simplify first: {m('5{,}280 \\div 3{,}600 = \\frac{22}{15}')}, so "
                    f"{m(f'{mph} \\times \\frac{{22}}{{15}} = {int_raw(fps)}')}.")
+            wrong = [(Q(mph * 88), "changes hours to minutes but not to seconds, which gives feet per minute"),
+                     (Q(mph * 5280), "changes miles to feet but never changes hours to seconds")]
         else:
-            steps = [f"Compare with the known pair: {m(f'{mph} \\div 60 = {_d(R(mph, 60))}')}, so the speed is "
-                     f"{m(_d(R(mph, 60)))} times 60 mph.",
-                     f"Feet per second: {m(f'{_d(R(mph, 60))} \\times 88 = {int_raw(fps)}')}."]
-            tip = None
+            steps = [same_pair + ".",
+                     f"Feet per second: {m(f'{_ratio_raw(k)} \\times {kf} = {int_raw(fps)}')}."]
+            tip = (f"Check with 15 mph {m('=')} 22 feet per second: {m(f'{mph} = {mph // 15} \\times 15')}, and "
+                   f"{m(f'{mph // 15} \\times 22 = {int_raw(fps)}')}." if mph > 15 else None)
+            wrong = [(Q(mph + kf - km), f"adds the difference {m(f'{kf} - {km} = {kf - km}')} instead of "
+                                        f"multiplying by {m(_ratio_raw(k))}")]
+            inv = Q(kf) / k
+            if inv.is_integer and inv != fps:
+                wrong.append((inv, f"divides by {m(_ratio_raw(k))} instead of multiplying"))
         return Problem(
-            stem=stem, answer=fps, fmt=num, section="AR",
-            wrong=[(Q(mph * 88), "gives feet per minute, not feet per second"),
-                   (Q(mph * 5280), "gives feet per hour, not feet per second"),
-                   (mph * R(15, 22) if (mph * R(15, 22)).is_integer else Q(mph) + 22, None)],
-            steps=steps, tip=tip,
+            stem=stem, answer=fps, fmt=num, section="AR", wrong=wrong, steps=steps, tip=tip,
             verify=lambda v: v * 3600 == mph * 5280,
-            near=lambda g: [fps + k for k in g.sample([-22, -11, -8, -4, 4, 8, 11, 22], 6) if fps + k > 0],
+            near=lambda g: [fps + d for d in g.sample([-22, -11, -8, -4, 4, 8, 11, 22], 6) if fps + d > 0],
         )
     stem = (st.format(v=f"{int_raw(fps)} feet per second", B=B, T=T) + rng.choice(_FPS_Q[False]) + " " + conv)
-    if given == "full":
+    if full:
         steps = [f"Feet per hour: {m(f'{int_raw(fps)} \\times 3{{,}}600 = {int_raw(fps * 3600)}')}.",
                  f"Miles per hour: {m(f'{int_raw(fps * 3600)} \\div 5{{,}}280 = {mph}')}."]
         tip = (f"Simplify first: {m('3{,}600 \\div 5{,}280 = \\frac{15}{22}')}, so "
                f"{m(f'{int_raw(fps)} \\times \\frac{{15}}{{22}} = {mph}')}.")
+        wrong = [(fps * R(22, 15), "turns the conversion upside down (multiplies by 5,280 and divides by 3,600)"),
+                 (fps * 3600, "changes seconds to hours but never changes feet to miles"),
+                 (fps * 60 / 5280, "changes seconds to minutes but not to hours")]
     else:
-        steps = [f"Compare with the known pair: {m(f'{int_raw(fps)} \\div 88 = {_d(fps / 88)}')}, so the speed is "
-                 f"{m(_d(fps / 88))} times 60 mph.",
-                 f"Miles per hour: {m(f'{_d(fps / 88)} \\times 60 = {mph}')}."]
+        steps = [same_pair + ".",
+                 f"Miles per hour: {m(f'{_ratio_raw(k)} \\times {km} = {mph}')}."]
         tip = None
+        wrong = [(fps - (kf - km), f"subtracts the difference {m(f'{kf} - {km} = {kf - km}')} instead of "
+                                   f"multiplying by {m(_ratio_raw(k))}")]
+        inv = Q(km) / k
+        if inv.is_integer and inv != mph:
+            wrong.append((inv, f"divides by {m(_ratio_raw(k))} instead of multiplying"))
     return Problem(
-        stem=stem, answer=Q(mph), fmt=_MPH, section="AR",
-        wrong=[(fps * R(22, 15), "turns the conversion upside down (multiplies by 5,280 and divides by 3,600)"),
-               (fps * 3600, "changes seconds to hours but never changes feet to miles"),
-               (fps * 60, "multiplies by 60 only once, which gives feet per minute"),
-               (fps * 60 / 5280, "changes seconds to minutes but not to hours")],
-        steps=steps, tip=tip,
+        stem=stem, answer=Q(mph), fmt=_MPH, section="AR", wrong=wrong, steps=steps, tip=tip,
         verify=lambda v: v * 5280 == fps * 3600,
-        near=lambda g: [Q(mph + k) for k in g.sample([-15, -10, -5, 5, 10, 15, 20], 6) if mph + k > 0],
+        near=lambda g: [Q(mph + d) for d in g.sample([-15, -10, -5, 5, 10, 15, 20], 6) if mph + d > 0],
     )
 
 
@@ -1138,10 +1160,12 @@ def arrival_time(rng, lvl, part=None):
             shown = dec_raw(th) if (th * 100).is_integer else f"{whole}.{misread:02d}"
             wrong.append((_clock(start + whole * 60 + misread),
                           f"reads {m(shown)} hours as {whole} hour{'s' if whole > 1 else ''} {misread} minutes"))
-        wrong += [(_clock(end + 60), None), (_clock(end - 30), None), (_clock(end + 30), None)]
+        fill = [60, -30, 30, -60, -15, 15, 45, -45]
+        rng.shuffle(fill)
+        wrong += [(_clock(end + f), None) for f in fill]
         wrong = [w for w in wrong if w[0] != _clock(end)]
         return Problem(
-            stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong[:5], order=_clock_min,
+            stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong, order=_clock_min,
             steps=[f"Travel time: {m(f'{int_raw(d)} \\div {r} = {mixed_raw(th)}')} hours.",
                    f"Change the fraction of an hour to minutes: {m(f'{frac_raw(frac_h)} \\times 60 = {int(frac_h * 60)}')} "
                    f"minutes, so the trip takes {_hm(th)}.",
@@ -1162,9 +1186,13 @@ def arrival_time(rng, lvl, part=None):
     stem = st3.format(B=B, He=B.He, he=B.he, his=B.his, t0=_clock(start), d1=int_raw(d1), r1=r1,
                       d2=int_raw(d2), r2=r2, stop=stop)
     wrong = [(_clock(end - stop), f"forgets the {stop}-minute stop"),
-             (_clock(start + int((d1 + d2) / r1 * 60) + stop) if ((d1 + d2) / r1 * 60).is_integer else _clock(end + 60),
-              "uses the first speed for the whole trip" if ((d1 + d2) / r1 * 60).is_integer else None),
-             (_clock(end + 60), None), (_clock(end - 30), None), (_clock(end + 15), None)]
+             ]
+    one_speed = Q(d1 + d2) / r1 * 60          # minutes if the first speed is used for both legs
+    if one_speed.is_integer and one_speed != total - stop:
+        wrong.append((_clock(start + int(one_speed) + stop), "uses the first speed for the whole trip"))
+    fill = [60, -30, 15, -60, 30, -15, 45]
+    rng.shuffle(fill)
+    wrong += [(_clock(end + f), None) for f in fill]
     wrong = [w for w in wrong if w[0] != _clock(end)]
     return Problem(
         stem=stem, answer=_clock(end), fmt=text, section="AR", wrong=wrong, order=_clock_min,

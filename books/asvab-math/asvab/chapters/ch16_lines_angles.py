@@ -393,9 +393,9 @@ def vertical_adjacent(rng, lvl):
                   f"The figure shows two intersecting straight lines and a {deg(g)} angle. What is the value of {m('x')}?")
     if vert:
         wrong = [(180 - g, r"assumes the two angles add up to $180^\circ$, but vertical angles are equal"),
-                 (360 - g, r"subtracts from $360^\circ$, but vertical angles are equal")]
+                 (360 - g, r"assumes the two angles add up to $360^\circ$, but vertical angles are equal")]
         if g < 90:
-            wrong.append((90 - g, r"subtracts from $90^\circ$, but vertical angles are equal"))
+            wrong.append((90 - g, r"assumes the two angles add up to $90^\circ$, but vertical angles are equal"))
         steps = [
             f"The {m('x^\\circ')} angle is directly across from the {deg(g)} angle where the lines cross, "
             "so the two are \\emph{vertical angles}.",
@@ -403,9 +403,9 @@ def vertical_adjacent(rng, lvl):
         ]
     else:
         wrong = [(g, r"treats the angles as vertical angles, but these two angles together form a straight line"),
-                 (360 - g, r"subtracts from $360^\circ$ instead of $180^\circ$")]
+                 (360 - g, r"assumes the two angles add up to $360^\circ$ instead of $180^\circ$")]
         if g < 90:
-            wrong.append((90 - g, r"subtracts from $90^\circ$ instead of $180^\circ$"))
+            wrong.append((90 - g, r"assumes the two angles add up to $90^\circ$ instead of $180^\circ$"))
         steps = [
             f"The {m('x^\\circ')} angle and the {deg(g)} angle sit side by side along one straight line, "
             f"so together they make {m('180^\\circ')}.",
@@ -708,17 +708,17 @@ def parallel_lines(rng, lvl):
         if equal:
             wrong = [(180 - g, f"assumes the two angles add up to {m('180^\\circ')}, but {name} angles are equal")]
             if g < 90:
-                wrong.append((90 - g, r"subtracts from $90^\circ$ instead of using the equal-angle rule"))
+                wrong.append((90 - g, r"assumes the two angles add up to $90^\circ$; they are equal"))
             else:
-                wrong.append((g - 90, r"subtracts $90^\circ$ instead of using the equal-angle rule"))
-            wrong.append((360 - g, r"subtracts from $360^\circ$"))
+                wrong.append((g - 90, r"subtracts $90^\circ$ from the given angle; the two angles are equal"))
+            wrong.append((360 - g, r"assumes the two angles add up to $360^\circ$; they are equal"))
             steps = [f"The {deg(g)} angle and the {m('x^\\circ')} angle are \\emph{{{name}}} angles: {_PWHERE[rel]}.",
                      f"When the lines are parallel, {name} angles are equal, so {m(f'x = {int_raw(ans)}')}."]
         else:
             wrong = [(g, "treats the angles as equal, but same-side interior angles add up to $180^\\circ$"),
-                     (360 - g, r"subtracts from $360^\circ$ instead of $180^\circ$")]
+                     (360 - g, r"assumes the two angles add up to $360^\circ$ instead of $180^\circ$")]
             if g < 90:
-                wrong.append((90 - g, r"subtracts from $90^\circ$ instead of $180^\circ$"))
+                wrong.append((90 - g, r"assumes the two angles add up to $90^\circ$ instead of $180^\circ$"))
             steps = [f"The {deg(g)} angle and the {m('x^\\circ')} angle are \\emph{{same-side interior}} angles: {_PWHERE[rel]}.",
                      f"Same-side interior angles add up to {m('180^\\circ')}: "
                      f"{m(f'x = 180 - {int_raw(g)} = {int_raw(ans)}')}."]

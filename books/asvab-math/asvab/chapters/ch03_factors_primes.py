@@ -129,7 +129,8 @@ def _gcf_steps(nums):
     g = math.prod(p ** min(fs[n_][p] for n_ in nums) for p in shared)
     if shared:
         pw = _pf_tex([(p, min(fs[n_][p] for n_ in nums)) for p in shared])
-        last = (f"Take each prime they \\emph{{all}} share, with its lowest power: "
+        who = "both numbers share" if len(nums) == 2 else f"all {['', '', 'two', 'three', 'four'][len(nums)]} numbers share"
+        last = (f"Take each prime that {who}, with its lowest power: "
                 f"{m(pw + (f' = {g}' if pw != str(g) else ''))}.")
     else:
         last = "They share no prime factor, so the GCF is $1$."
@@ -196,14 +197,16 @@ def which_prime(rng, lvl):
         root = math.isqrt(ans)
         small = [p for p in (2, 3, 5, 7, 11) if p <= root]
         if ans == 2:
-            why_ans = "$2$ is prime: its only factors are $1$ and $2$ (it is the only even prime)."
+            why_ans = "That leaves $2$, which is prime: its only factors are $1$ and $2$ (it is the only even prime)."
         elif not small:
-            why_ans = f"{m(ans)} is prime: its only factors are $1$ and {m(ans)}."
+            why_ans = f"That leaves {m(ans)}, which is prime: its only factors are $1$ and {m(ans)}."
         else:
             nxt = next(p for p in (2, 3, 5, 7, 11, 13) if p > root)
-            why_ans = (f"{m(ans)} is not divisible by {', '.join(m(p) for p in small)}, and "
-                       f"{m(rf'{nxt} \times {nxt} = {nxt * nxt}')} is already more than {m(ans)}, "
-                       f"so {m(ans)} is prime.")
+            plist = (" or ".join(m(p) for p in small) if len(small) <= 2
+                     else ", ".join(m(p) for p in small[:-1]) + ", or " + m(small[-1]))
+            why_ans = (f"That leaves {m(ans)}. It is not divisible by {plist}. Since "
+                       f"{m(rf'{nxt} \times {nxt} = {nxt * nxt}')} is already more than {m(ans)}, no larger "
+                       f"factor needs testing, so {m(ans)} is prime.")
         steps = ["A prime number has exactly two factors: $1$ and itself."]
         if tests:
             steps.append(f"Each of the other choices has another factor: {tests}."
@@ -346,7 +349,8 @@ def gcf(rng, lvl):
         d = rng.choice(smaller_cf)
         wrong.append((Q(d), "is a common factor, but not the greatest one"))
     if nums[0] != g:
-        wrong.append((Q(nums[0]), f"is the smallest number, but it is not a factor of {m(nums[1])}"))
+        miss = next(v for v in nums[1:] if v % nums[0])
+        wrong.append((Q(nums[0]), f"is the smallest number, but it is not a factor of {m(miss)}"))
     wrong.append((Q(g * 2) if all(n_ % (2 * g) for n_ in nums) else Q(g + 1), None))
     shown = rng.sample(nums, len(nums))
     names = ", ".join(m(v) for v in shown[:-1]) + (", and " if len(shown) > 2 else " and ") + m(shown[-1])
@@ -403,7 +407,7 @@ def lcm(rng, lvl):
         k = L // b_
         mults = [b_ * i for i in range(1, k + 1)]
         if k == 1:
-            steps = [f"{m(b_)} is itself a multiple of {m(a_)}: {m(rf'{a_} \times {b_ // a_} = {b_}')}.",
+            steps = [f"The larger number, {m(b_)}, is itself a multiple of {m(a_)}: {m(rf'{a_} \times {b_ // a_} = {b_}')}.",
                      f"So the least common multiple is the larger number, {m(b_)}."]
         else:
             steps = [f"List multiples of the larger number, {m(b_)}: {_brk(mults)}.",
@@ -457,12 +461,12 @@ def num_factors(rng, lvl):
     pairs = [(d, n_ // d) for d in ds if d * d <= n_]
     square = math.isqrt(n_) ** 2 == n_
     pf = _factor_td(n_)
-    wrong = [(Q(cnt - 2), f"leaves out $1$ and {m(n_)}"),
-             (Q(sum(e for _, e in pf)), "counts only the prime factors")]
+    plist = " and ".join(m(q) for q, _ in pf) if len(pf) <= 2 else ", ".join(m(q) for q, _ in pf)
+    wrong = [(Q(len(pairs)), "counts the factor pairs instead of the factors"),
+             (Q(cnt - 2), f"leaves out $1$ and {m(n_)}"),
+             (Q(len(pf)), f"counts only the different prime factors ({plist})")]
     if square:
         wrong.insert(0, (Q(cnt + 1), f"counts the factor {m(math.isqrt(n_))} twice"))
-    else:
-        wrong.append((Q(cnt // 2), "counts the factor pairs instead of the factors"))
     wrong.append((Q(cnt - 1), None))
     pair_txt = ", ".join(m(rf"{a} \times {b}") for a, b in pairs)
     if rng.random() < 0.3:
@@ -476,7 +480,7 @@ def num_factors(rng, lvl):
             fmt=num,
             wrong=[(Q(cnt), f"also counts {m(1)} per {unit_} and a single {unit_} of {m(n_)}, which the problem rules out"),
                    (Q(cnt - 1), "rules out only one of the two forbidden cases"),
-                   (Q(sum(e for _, e in pf)), "counts only the prime factors"),
+                   (Q(len(pf)), f"counts only the different prime factors ({plist})"),
                    (Q(cnt - 3), None)],
             steps=[f"Each possible {what[:-1]} is a factor of {m(n_)}.",
                    f"Factor pairs of {m(n_)}: {pair_txt}.",
@@ -584,7 +588,7 @@ def divisibility(rng, lvl):
         stem = choose(rng, f"Which of the numbers {_mlist(allv)} is divisible by {m(k)}?",
                       f"Which one of {_mlist(allv, 'or')} can be divided evenly by {m(k)}?")
         steps = [f"Rule: a number is divisible by {m(k)} when {_RULE[k]}.",
-                 f"{m(ans)} passes ({_passes(ans, k)}): {m(rf'{ans} \div {k} = {ans // k}')}.",
+                 f"The number {m(ans)} passes ({_passes(ans, k)}): {m(rf'{ans} \div {k} = {ans // k}')}.",
                  "Each of the other choices fails the rule."]
     else:
         k1, k2 = rng.choice([(3, 4), (2, 9), (3, 5), (4, 9), (5, 6), (4, 5)])
@@ -609,7 +613,7 @@ def divisibility(rng, lvl):
         stem = choose(rng, f"Which of the numbers {_mlist(allv)} is divisible by both {m(k1)} and {m(k2)}?",
                       f"Which one of {_mlist(allv, 'or')} is divisible by {m(k1)} \\emph{{and}} by {m(k2)}?")
         steps = [f"Divisible by {m(k1)}: {_RULE[k1]}. Divisible by {m(k2)}: {_RULE[k2]}.",
-                 f"{m(ans)} passes both tests ({_passes(ans, k1)}; {_passes(ans, k2)}): "
+                 f"The number {m(ans)} passes both tests ({_passes(ans, k1)}; {_passes(ans, k2)}): "
                  f"{m(rf'{ans} \div {k1 * k2} = {ans // (k1 * k2)}')}.",
                  "Each of the other choices fails one of the tests."]
     return Problem(
@@ -643,7 +647,7 @@ def vocab(rng, lvl):
                    (Q(bad[1]), f"does not divide {m(n_)} evenly")],
             steps=[f"A factor of {m(n_)} divides it with no remainder.",
                    f"{m(rf'{n_} \div {ans} = {n_ // ans}')}, so {m(ans)} is a factor. "
-                   f"{m(2 * n_)} is bigger than {m(n_)}, so it can only be a multiple."],
+                   f"The choice {m(2 * n_)} is bigger than {m(n_)}, so it can only be a multiple."],
             verify=lambda v: n_ % int(v) == 0,
             check=Q(next(v for v in sorted([ans, 2 * n_] + bad) if n_ % v == 0)),
             near=lambda r: [],
@@ -713,6 +717,13 @@ def _clock(start_h, start_m, add_min):
     return f"{h12}:{mi:02d} {suffix}"
 
 
+def _clock_minutes(t):
+    """'8:36 a.m.' -> minutes after midnight (sort key for clock-time choices)."""
+    hm, suf = t.split(" ")
+    h, mi = map(int, hm.split(":"))
+    return (h % 12 + (12 if suf == "p.m." else 0)) * 60 + mi
+
+
 @template("AR")
 def lcm_word(rng, lvl):
     a_, b_ = sorted(rng.sample(range(4, 21), 2))
@@ -771,6 +782,7 @@ def lcm_word(rng, lvl):
             steps=_lcm_steps([a_, b_])[0] + [f"They leave together again after {m(L)} minutes: "
                                              f"{m(L)} minutes after {start} is {ans}"],
             check=_clock(h0, mm, next(t for t in range(1, 10 ** 4) if t % a_ == 0 and t % b_ == 0)),
+            order=_clock_minutes,
         )
     sa, sb = rng.choice([("hot dogs", "buns"), ("hamburger patties", "buns"), ("cups", "lids"),
                          ("bolts", "nuts"), ("envelopes", "greeting cards"), ("juice boxes", "granola bars"),
@@ -844,6 +856,18 @@ def gcf_word(rng, lvl):
         q3 = "If she cuts the longest possible pieces, how many pieces will she have in all?"
         ia, ib, unit_ = None, None, "inches"
     steps0, _ = _gcf_steps([A, B])
+    if kind == "kits":
+        why_gcf = (f"Every {kit} gets the same number of {ia} and the same number of {ib}, so the number "
+                   f"of {kit}s must divide both {m(A)} and {m(B)}. The greatest such number is the GCF.")
+        first3 = f"First find the greatest number of {kit}s: it must divide both {m(A)} and {m(B)}, so it is the GCF."
+    elif kind == "teams":
+        why_gcf = (f"Every team gets the same number of Alpha soldiers and the same number of Bravo soldiers, "
+                   f"so the number of teams must divide both {m(A)} and {m(B)}. The greatest such number is the GCF.")
+        first3 = f"First find the greatest number of teams: it must divide both {m(A)} and {m(B)}, so it is the GCF."
+    else:
+        why_gcf = (f"The piece length must divide both {m(A)} and {m(B)} evenly, so the longest possible piece "
+                   "is the greatest common factor.")
+        first3 = "First find the longest piece: it must divide both lengths, so it is the GCF."
     if lvl == 2:
         fmt = unit(num, "inch", "inches") if kind == "boards" else num
         return Problem(
@@ -854,10 +878,7 @@ def gcf_word(rng, lvl):
                    (Q(rng.choice(cf)), "is a common factor, but not the greatest one"),
                    (Q(A + B), "adds the two numbers"),
                    (Q(min(A, B)), f"does not divide {m(max(A, B))} evenly")],
-            steps=[("The pieces must divide both lengths evenly, so look for the greatest common factor."
-                    if kind == "boards" else
-                    "Each item count must split evenly into the groups, so the number of groups must "
-                    "divide both numbers. The greatest such number is the GCF.")] + steps0,
+            steps=[why_gcf] + steps0,
             check=Q(max(d for d in range(1, min(A, B) + 1) if A % d == 0 and B % d == 0)),
         )
     if kind == "boards":
@@ -881,9 +902,7 @@ def gcf_word(rng, lvl):
         answer=ans,
         fmt=num,
         wrong=wrong,
-        steps=[("First find the longest piece: the GCF of the two lengths."
-                if kind == "boards" else f"First find the greatest number of {unit_}: the GCF.")]
-        + steps0 + last,
+        steps=[first3] + steps0 + last,
         check=(Q(A // math.gcd(A, B) + B // math.gcd(A, B)) if kind == "boards"
                else Q(A // max(d for d in range(1, min(A, B) + 1) if A % d == 0 and B % d == 0))),
     )

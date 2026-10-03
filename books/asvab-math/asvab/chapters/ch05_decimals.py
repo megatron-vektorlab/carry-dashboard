@@ -86,6 +86,10 @@ def _draw(rng, lo, hi, places, nonzero_last=True):
     return R(n_, k)
 
 
+def _n(v):
+    return int_raw(v)
+
+
 def _d(v):
     return dec_raw(v)
 
@@ -208,11 +212,15 @@ def multiply_dec(rng, lvl):
     ai, bi = int(a_ * 10 ** pa), int(b_ * 10 ** pb)
     need(_places(ans) <= 4 and ai * bi < 1000)
     tot = pa + pb
-    wrong = [(ans * 10, "puts too few decimal places in the answer"),
-             (ans / 10, "puts too many decimal places in the answer"),
-             (a_ + b_, "adds instead of multiplying")]
-    if tot >= 2:
-        wrong.append((ans * 100, "counts the decimal places in only one of the numbers"))
+    wrong = [(Q(ai * bi), "ignores the decimal points completely")]
+    if pa and pb:
+        big, bp, other = (a_, pa, b_) if pa >= pb else (b_, pb, a_)
+        wrong.append((R(ai * bi, 10 ** bp), f"counts only the decimal place{'s' if bp > 1 else ''} in "
+                                            f"{m(_d(big))} and ignores the one{'s' if _places(other) > 1 else ''} "
+                                            f"in {m(_d(other))}"))
+    wrong += [(ans * 10, "puts one decimal place too few in the answer"),
+              (ans / 10, "puts one decimal place too many in the answer"),
+              (a_ + b_, "adds instead of multiplying")]
     raw = R(ai * bi, 10 ** tot)
     steps = [f"Ignore the decimal points and multiply: {m(rf'{ai} \times {bi} = {int_raw(ai * bi)}')}.",
              f"Count the decimal places: {m(pa)} in {m(_d(a_))} and {m(pb)} in {m(_d(b_))}, "
@@ -261,8 +269,8 @@ def divide_dec(rng, lvl):
                  f"Divide: {m(rf'{_d(A2)} \div {_d(B2)} = {_d(q)}')}. "
                  f"Check: {m(rf'{_d(b_)} \times {_d(q)} = {_d(a_)}')}."]
         wrong = [(q / shift, "moves the decimal point in the divisor but not in the number being divided"),
-                 (q * 10, "moves the decimal point one place too many"),
-                 (q / 10, "moves the decimal point one place too few"),
+                 (q * 10, "moves the decimal point in the number being divided one place too many"),
+                 (q / 10, "moves the decimal point in the number being divided one place too few"),
                  (a_ * b_, "multiplies instead of dividing")]
     ans = a_ / b_
     need(ans == q)
@@ -381,7 +389,7 @@ def frac_dec(rng, lvl):
         answer=ans,
         fmt=frac,
         wrong=wrong,
-        steps=[f"The last digit is in the {_DIGIT[pl][:-1]} place, so {m(_d(d_) + ' = ' + F(int(d_ * base), base))}.",
+        steps=[f"The last digit is in the {_DIGIT[pl]} place, so {m(_d(d_) + ' = ' + F(int(d_ * base), base))}.",
                (f"Simplify by dividing the top and bottom by {m(g)}: "
                 f"{m(F(int(d_ * base), base) + ' = ' + frac_raw(d_))}." if g > 1 else
                 f"{m(F(int(d_ * base), base))} is already in lowest terms.")],
@@ -639,12 +647,12 @@ def unit_price(rng, lvl):
             stem=f"{setup} What is the lower price per {unit_w}?",
             answer=lo_e,
             fmt=money_cents,
-            wrong=[(max(e1, e2), "is the higher of the two prices per item"),
-                   (diff, "is the difference between the prices per item"),
-                   (min(t1, t2), "is the cheaper pack price, not the price per item"),
+            wrong=[(max(e1, e2), f"is the higher of the two prices per {unit_w}"),
+                   (diff, f"is the difference between the prices per {unit_w}"),
+                   (min(t1, t2), f"is the cheaper {pk} price, not the price per {unit_w}"),
                    (lo_e * 10, "misplaces the decimal point")],
-            steps=[f"Store A: {m(rf'{_dp(t1, 2)} \div {n1} = {_dp(e1, 2)}')} each.",
-                   f"Store B: {m(rf'{_dp(t2, 2)} \div {n2} = {_dp(e2, 2)}')} each.",
+            steps=[f"Store A: {m(rf'{_dp(t1, 2)} \div {n1} = {_dp(e1, 2)}')} per {unit_w}.",
+                   f"Store B: {m(rf'{_dp(t2, 2)} \div {n2} = {_dp(e2, 2)}')} per {unit_w}.",
                    f"The lower price is at Store {cheaper}: {money_cents(lo_e)} per {unit_w}."],
             check=_qd(min(_dq(t1) / n1, _dq(t2) / n2)),
             near=_near_cents(lo_e, (R(1, 100), R(2, 100), R(5, 100))),
@@ -653,14 +661,14 @@ def unit_price(rng, lvl):
         stem=f"{setup} How much less is the price per {unit_w} at the cheaper store?",
         answer=diff,
         fmt=money_cents,
-        wrong=[(abs(t1 - t2), "compares the pack prices instead of the prices per item"),
-               (min(e1, e2), "is the price per item at the cheaper store, not the difference"),
-               (max(e1, e2), "is the price per item at the more expensive store"),
+        wrong=[(abs(t1 - t2), f"compares the {pk} prices instead of the prices per {unit_w}"),
+               (min(e1, e2), f"is the price per {unit_w} at the cheaper store, not the difference"),
+               (max(e1, e2), f"is the price per {unit_w} at the more expensive store"),
                (diff * 10, "misplaces the decimal point")],
-        steps=[f"Store A: {m(rf'{_dp(t1, 2)} \div {n1} = {_dp(e1, 2)}')} each.",
-               f"Store B: {m(rf'{_dp(t2, 2)} \div {n2} = {_dp(e2, 2)}')} each.",
+        steps=[f"Store A: {m(rf'{_dp(t1, 2)} \div {n1} = {_dp(e1, 2)}')} per {unit_w}.",
+               f"Store B: {m(rf'{_dp(t2, 2)} \div {n2} = {_dp(e2, 2)}')} per {unit_w}.",
                f"Store {cheaper} is cheaper by {m(f'{_dp(max(e1, e2), 2)} - {_dp(min(e1, e2), 2)} = {_dp(diff, 2)}')}, "
-               f"or {money_cents(diff)} per item."],
+               f"or {money_cents(diff)} per {unit_w}."],
         check=_qd(abs(_dq(t1) / n1 - _dq(t2) / n2)),
         near=_near_cents(diff, (R(1, 100), R(2, 100), R(5, 100))),
     )
@@ -708,6 +716,8 @@ def mpg(rng, lvl):
     rate = rng.randint(rlo, rhi)
     miles = g * rate
     need(_places(miles) <= 1)
+    Dm, Gm = int(miles * 10), int(g * 10)
+    tens, ones = rate // 10 * 10, rate % 10
     return Problem(
         stem=(f"{veh} traveled {m(_d(miles))} miles on {m(_d(g))} gallons of fuel. How many miles per gallon "
               "did it get?"),
@@ -718,10 +728,14 @@ def mpg(rng, lvl):
                (miles - g, "subtracts instead of dividing"),
                (Q(rate + 2), None), (Q(rate - 2), None)],
         steps=[f"Miles per gallon {m('=')} miles {m(r'\div')} gallons: {m(rf'{_d(miles)} \div {_d(g)}')}.",
-               f"Estimate: {m(_d(g))} gallons is about {m(int(g))}, and "
-               f"{m(rf'{int(g)} \times {rate} = {int(g) * rate}')}, which is close to {m(_d(miles))}. So try {m(rate)}.",
-               f"Check: {m(rf'{_d(g)} \times {rate} = {int(g)} \times {rate} + {_d(g - int(g))} \times {rate} = {int(g) * rate} + {_d((g - int(g)) * rate)} = {_d(miles)}')}. "
-               f"It works exactly, so the answer is {m(rate)} miles per gallon."],
+               f"Move the decimal point one place to the right in both numbers: {m(rf'{_n(Dm)} \div {Gm}')}.",
+               (f"Divide: {m(rf'{Gm} \times {tens} = {_n(Gm * tens)}')}, and "
+                f"{m(f'{_n(Dm)} - {_n(Gm * tens)} = {_n(Dm - Gm * tens)}')}, which is "
+                f"{m(rf'{Gm} \times {ones}')}. So {m(rf'{_n(Dm)} \div {Gm} = {tens} + {ones} = {rate}')} "
+                "miles per gallon."
+                if tens and ones else
+                f"Divide: {m(rf'{Gm} \times {rate} = {_n(Dm)}')}, so {m(rf'{_n(Dm)} \div {Gm} = {rate}')} "
+                "miles per gallon.")],
         check=_qd(_dq(miles) / _dq(g)),
         near=lambda r: [Q(rate + d) for d in (1, -1, 2, -2, 3)],
     )

@@ -895,7 +895,7 @@ def scale_circle(rng, lvl):
             stem=(f"Circle {m('A')} has a {part} of {m(a_)} {_w(ab)}, and circle {m('B')} has a {part} of "
                   f"{m(b_)} {_w(ab)}. The area of circle {m('B')} is how many times the area of circle {m('A')}?"),
             answer=Q(k * k), fmt=num, must=1,
-            wrong=[(Q(k), f"compares the {part}s instead of the areas"),
+            wrong=[(Q(k), f"compares the {'radii' if part == 'radius' else 'diameters'} instead of the areas"),
                    (Q(2 * k), "doubles the ratio instead of squaring it"),
                    (Q(k**3), "cubes the ratio")],
             steps=([f"Radii: {m(f'{a_} \\div 2 = {dec_raw(rA)}')} and {m(f'{b_} \\div 2 = {dec_raw(rB)}')} {_w(ab)}."]

@@ -702,7 +702,7 @@ def function_eval(rng, lvl):
              f"Square first (order of operations): {m(f'{sq} = {t * t}')}"
              + (f", then multiply: {m(f'{a} \\cdot {t * t} = {a * t * t}')}" if a not in (1, -1) else "")
              + f". So {m(f'{fname}({t}) = {nums}')}.",
-             f"Add: {m(f'{fname}({t}) = {val}')}."]
+             f"Combine: {m(f'{fname}({t}) = {val}')}."]
     fr = Fraction(a) * t * t + b * t + c
     return Problem(stem=choose(rng, f"If {m(f'{fname}(x) = {ftex}')}, what is {m(f'{fname}({t})')}?",
                                f"Given {m(f'{fname}(x) = {ftex}')}, find {m(f'{fname}({t})')}."),

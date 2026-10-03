@@ -525,6 +525,7 @@ def mixed_mult_div(rng, lvl):
     dens = [2, 3, 4, 5, 6, 8]
     x_, w1, f1 = _draw_mixed(rng, 1, 5, dens)
     y_, w2, f2 = _draw_mixed(rng, 1, 4, dens)
+    need(x_ != y_)
     op = rng.choice(["*", "/"])
     a_, b_ = int(x_.p), int(x_.q)
     c_, d_ = int(y_.p), int(y_.q)
@@ -569,15 +570,15 @@ def mixed_mult_div(rng, lvl):
 # --------------------------------------------------------------------------
 
 _GROUPS = [
-    ("A platoon has {N} soldiers. {P} of them are on guard duty tonight.", "soldiers are on guard duty",
+    ("A platoon has {N} soldiers, and {P} of them are on guard duty tonight.", "soldiers are on guard duty",
      "soldiers are \\emph{not} on guard duty", [8, 12, 16, 20, 24, 28, 30, 32, 36, 40, 42, 48]),
-    ("A class has {N} students. {P} of them take the bus to school.", "students take the bus",
+    ("A class has {N} students, and {P} of them take the bus to school.", "students take the bus",
      "students do \\emph{not} take the bus", [18, 20, 21, 24, 25, 27, 28, 30, 32, 35, 36]),
-    ("A recruiting station processed {N} applicants this week. {P} of them chose the Navy.",
+    ("A recruiting station processed {N} applicants this week, and {P} of them chose the Navy.",
      "applicants chose the Navy", "applicants did \\emph{not} choose the Navy", [20, 24, 30, 36, 40, 45, 48, 60]),
-    ("A shipment has {N} boxes. {P} of the boxes hold medical supplies.", "boxes hold medical supplies",
+    ("A shipment has {N} boxes, and {P} of the boxes hold medical supplies.", "boxes hold medical supplies",
      "boxes do \\emph{not} hold medical supplies", [24, 30, 36, 40, 48, 60, 72, 80]),
-    ("A parking lot holds {N} vehicles. {P} of them are pickup trucks.", "vehicles are pickup trucks",
+    ("A parking lot holds {N} vehicles, and {P} of them are pickup trucks.", "vehicles are pickup trucks",
      "vehicles are \\emph{not} pickup trucks", [24, 30, 36, 40, 45, 48, 60, 64]),
 ]
 
@@ -596,15 +597,16 @@ def fraction_of(rng, lvl):
         need(part >= 4 and dg)
         g_ = _proper(rng, dg)
         sub = g_ * part
-        s = soldier(rng)
         ctx = rng.choice([
-            (f"A {'platoon' if N <= 48 else 'company'} of {m(N)} soldiers took a road march. {m(F(p, q))} of them carried the heavy "
-             f"rucksack, and {m(_fr(g_))} of those soldiers finished in under three hours. How many "
-             "soldiers carried the heavy rucksack and finished in under three hours?"),
-            (f"{s} has {m(N)} recruits. {m(F(p, q))} of them passed the swim test on the first try, and "
-             f"{m(_fr(g_))} of those also passed the rope climb. How many recruits passed both?"),
-            (f"A club has {m(N)} members. {m(F(p, q))} of them signed up for the trip, and {m(_fr(g_))} "
-             "of those who signed up want a window seat. How many members want a window seat?"),
+            (f"A {'platoon' if N <= 48 else 'company'} of {m(N)} soldiers took a road march, and "
+             f"{m(F(p, q))} of them carried the heavy rucksack. Of those soldiers, {m(_fr(g_))} finished in "
+             "under three hours. How many soldiers carried the heavy rucksack and finished in under "
+             "three hours?"),
+            (f"A drill sergeant has {m(N)} recruits, and {m(F(p, q))} of them passed the swim test on the "
+             f"first try. Of those, {m(_fr(g_))} also passed the obstacle course on the first try. How "
+             "many recruits passed both on the first try?"),
+            (f"A club has {m(N)} members, and {m(F(p, q))} of them signed up for the trip. Of those who "
+             f"signed up, {m(_fr(g_))} want a window seat. How many members want a window seat?"),
         ])
         return Problem(
             stem=ctx,
@@ -654,8 +656,8 @@ def fraction_of(rng, lvl):
 _SPEND = [
     ("{P} earned {M} last month. {He} spent {A} of it on rent and then {B} of what was left on groceries.",
      "rent", "groceries", (900, 3600), money),
-    ("{S} received a {M} enlistment bonus, used {A} of it to pay off a car loan, and then put {B} "
-     "of the remaining money into savings.", "the car loan", "savings", (3000, 12000), money),
+    ("{S} received a {M} reenlistment bonus, used {A} of it to pay off a car loan, and then spent {B} "
+     "of the remaining money on new furniture.", "the car loan", "the furniture", (3000, 12000), money),
     ("A truck started a trip with {M} gallons of fuel. It used {A} of the fuel on the first day and "
      "{B} of what was left on the second day.", "the first day", "the second day", (24, 120), None),
     ("A supply point had {M} cases of water. On Monday it issued {A} of the cases, and on Tuesday it "
@@ -689,6 +691,8 @@ def remaining_after(rng, lvl):
     ffmt = money if fmt is money else (unit(num, "gallon") if "fuel" in tpl else num)
     left_q = {"money": "How much money is left?", "fuel": "How many gallons of fuel are left?",
               "cases": "How many cases are left?"}[what]
+    if "bonus" in tpl:
+        left_q = "How much of the bonus is left?"
     return Problem(
         stem=f"{stem} {left_q}",
         answer=left2,
@@ -735,14 +739,15 @@ def mixed_word(rng, lvl):
         amt, w, f_ = _draw_mixed(rng, 1, 3, dens)
         k = rng.randint(2, 4)
         ans = amt * k
-        need(f_ * k > 1)
+        need(f_ * k > 1 and Q(f_ * k).q != 1)
         p = person(rng)
         item = rng.choice(["cups of flour", "cups of milk", "cups of rice", "teaspoons of salt"])
         stem = (f"A recipe calls for {m(_mx(amt))} {item}. {p.name} is making {m(k)} batches. How many "
                 f"{item} does {p.he} need?")
         wrong = [(Q(w * k) + f_, "multiplies only the whole number"),
                  (amt + k, f"adds {m(k)} instead of multiplying by {m(k)}"),
-                 (Q(w * k) + f_ * k - 1 if (f_ * k) > 1 else Q(w * k), f"drops the extra whole number from {m(_fr(f_ * k))}"),
+                 (Q(w * k) + f_ * k - int(f_ * k),
+                  f"rewrites {m(_fr(f_ * k))} as {m(_mx(f_ * k))} but then drops the whole number {m(int(f_ * k))}"),
                  (ans + 1, None)]
         steps = [f"Multiply the whole number and the fraction by {m(k)}: "
                  f"{m(rf'{w} \times {k} = {w * k}')} and {m(rf'{_fr(f_)} \times {k} = {_fr(f_ * k)} = {_mx(f_ * k)}')}.",
