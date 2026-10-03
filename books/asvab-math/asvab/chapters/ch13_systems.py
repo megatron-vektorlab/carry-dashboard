@@ -167,8 +167,14 @@ def _elim_steps(e1, e2, X, Y):
         steps.append(f"Add the equations. The {m(var)}-terms cancel: {m(_eq(na, nb, nc))}.")
     else:
         na, nb, nc = a1 - A2, b1 - B2, c1 - C2
-        steps.append(f"Subtract the {'new ' if k > 1 else ''}second equation from the first "
-                     f"(subtract \\emph{{every}} term). The {m(var)}-terms cancel: {m(_eq(na, nb, nc))}.")
+        if (na if var == "y" else nb) < 0:
+            # subtract the other way round so the remaining coefficient is positive
+            na, nb, nc = -na, -nb, -nc
+            steps.append(f"Subtract the first equation from the {'new ' if k > 1 else ''}second "
+                         f"(subtract \\emph{{every}} term). The {m(var)}-terms cancel: {m(_eq(na, nb, nc))}.")
+        else:
+            steps.append(f"Subtract the {'new ' if k > 1 else ''}second equation from the first "
+                         f"(subtract \\emph{{every}} term). The {m(var)}-terms cancel: {m(_eq(na, nb, nc))}.")
     keep = "x" if var == "y" else "y"
     coef = na if keep == "x" else nb
     kv = X if keep == "x" else Y
@@ -238,6 +244,9 @@ def elimination(rng, lvl):
     e1, e2, X, Y = _pick_system(rng, lvl)
     asks = ["x", "y"] + (["x + y"] if lvl >= 2 else []) + (["x - y"] if lvl == 3 else [])
     ask = rng.choice(asks)
+    # never ask for x + y (or x - y) when an equation already states it
+    given = {(e[0], e[1]) for e in (e1, e2)} | {(-e[0], -e[1]) for e in (e1, e2)}
+    need(not (ask == "x + y" and (1, 1) in given) and not (ask == "x - y" and (1, -1) in given))
     val = {"x": X, "y": Y, "x + y": X + Y, "x - y": X - Y}[ask]
     steps, first, coef, rhs, k, op = _elim_steps(e1, e2, X, Y)
     if ask in ("x + y", "x - y"):
@@ -253,6 +262,8 @@ def elimination(rng, lvl):
         a1, b1, c1 = e1
         a2, b2, c2 = e2
         bad_rhs = c1 + c2 if op == "add" else c1 - c2
+        if op == "sub" and Q(rhs) == -(c1 - k * c2):
+            bad_rhs = -bad_rhs
         wrong.insert(1, (Q(bad_rhs) / coef, f"multiplies the left side of the second equation by {m(k)} but not the right side"))
     wrong.append((-val, "makes a sign error"))
     sol = sp.solve([sp.Eq(e1[0] * x + e1[1] * y, e1[2]), sp.Eq(e2[0] * x + e2[1] * y, e2[2])], [x, y])
@@ -346,9 +357,14 @@ def substitution(rng, lvl):
 def check_solution(rng, lvl):
     X, Y = rng.randint(-3, 9), rng.randint(-3, 9)
     need(X != Y and (X, Y) != (0, 0))
-    form = rng.randint(0, 2)
+    form = rng.randint(0, 3)
     if form == 0:
-        e1, e2 = (1, 2, X + 2 * Y), (1, -1, X - Y)
+        b1 = rng.choice([2, 3])
+        e1, e2 = (1, b1, X + b1 * Y), (1, -1, X - Y)
+    elif form == 3:
+        a1, b1, a2, b2 = rng.choice([(2, 3, 1, 1), (3, 2, 1, -1), (2, -1, 1, 1), (1, -2, 3, 1), (2, 1, 3, -1),
+                                     (3, 1, 1, -2), (1, 3, 2, -1), (2, -3, 1, 2)])
+        e1, e2 = (a1, b1, a1 * X + b1 * Y), (a2, b2, a2 * X + b2 * Y)
     elif form == 1:
         a = rng.choice([2, 3])
         e1, e2 = (a, 1, a * X + Y), (1, -1, X - Y)

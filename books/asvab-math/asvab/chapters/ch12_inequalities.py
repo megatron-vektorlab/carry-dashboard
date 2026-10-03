@@ -576,17 +576,18 @@ def translate_ineq(rng, lvl):
         bad_expr = None
     else:
         stem, lhs, K, f, bad_expr, op, phrase = _context_ineq(rng)
-    ans_tex = f"${lhs} {_TEX[op]} {K}$"
-    wrong = [(f"${lhs} {_TEX[w]} {K}$", _op_why(op, w)) for w in ("<", ">", "le", "ge") if w != op]
+    Kt = int_raw(K)
+    ans_tex = f"${lhs} {_TEX[op]} {Kt}$"
+    wrong = [(f"${lhs} {_TEX[w]} {Kt}$", _op_why(op, w)) for w in ("<", ">", "le", "ge") if w != op]
     if bad_expr:
-        wrong.insert(1, (f"${bad_expr[0]} {_TEX[op]} {K}$", bad_expr[1]))
+        wrong.insert(1, (f"${bad_expr[0]} {_TEX[op]} {Kt}$", bad_expr[1]))
     # independent check: the symbol's meaning matches the phrase at K-1, K, K+1
     means = _MEANS[phrase]
     good = all(_holds(op, kk, K) == want for kk, want in zip((K - 1, K, K + 1), means))
     sym_word = {"ge": "is greater than or equal to", "le": "is less than or equal to",
                 ">": "is greater than", "<": "is less than"}[op]
     incl = ("includes" if op in ("ge", "le") else "does not include")
-    steps = [f"``{phrase.capitalize()} {K}'' means the quantity {sym_word} {K}: it {incl} {K} itself, "
+    steps = [f"``{phrase.capitalize()} {Kt}'' means the quantity {sym_word} {Kt}: it {incl} {Kt} itself, "
              f"so the symbol is {m(_TEX[op])}.",
              f"The quantity is {m(lhs)}, so the inequality is {ans_tex}."]
     return Problem(
@@ -618,8 +619,8 @@ def _context_ineq(rng):
     if pick == 1:
         have, K = rng.randrange(300, 900, 25), rng.choice([2000, 2500, 3000])
         op, phrase = "le", rng.choice(["at most", "no more than", "a maximum of"])
-        stem = (f"A trailer can carry {phrase} {K:,} pounds. It is already loaded with {have} pounds of gear. "
-                f"Which inequality shows the additional weight $w$, in pounds, that can be loaded?").replace(",", "{,}")
+        stem = (f"A trailer can carry {phrase} {int_raw(K)} pounds. It is already loaded with {have} pounds of gear. "
+                f"Which inequality shows the additional weight $w$, in pounds, that can be loaded?")
         return stem, f"{have} + w", K, None, (f"{have}w", "multiplies instead of adding the weights"), op, phrase
     if pick == 2:
         price, K = rng.choice([3, 4, 5, 6, 8]), rng.choice([40, 50, 60, 75, 80])
@@ -712,6 +713,10 @@ def ineq_word(rng, lvl):
     return rng.choice([_compare_plans, _average_needed, _min_or_max])(rng)
 
 
+def _near_int(ans):
+    return lambda r: [Q(ans + d) for d in (1, -1, 2, -2, 3, -3) if ans + d > 0]
+
+
 def _mo(v):
     v = Q(v)
     return r"\$" + (int_raw(v) if v.is_integer else dec_raw(v, places=2))
@@ -758,7 +763,7 @@ def _min_or_max(rng):
         ok = lambda h: have + rate * h >= goal
         least = next(h for h in range(0, 1000) if ok(h))
         return Problem(stem=stem, answer=Q(ans), fmt=unit(num, unit_s), wrong=wrong, steps=steps,
-                       check=Q(least), section="AR")
+                       check=Q(least), section="AR", near=_near_int(ans))
     # stay within a limit: round down
     if ctx == 3:
         base, per, cap = rng.randrange(150, 400, 10), rng.choice([35, 40, 45, 55, 60, 65, 70]), rng.choice([1500, 2000, 2500, 3000])
@@ -802,7 +807,7 @@ def _min_or_max(rng):
     ok = lambda h: base + per * h <= cap
     most = max(h for h in range(0, 1000) if ok(h))
     return Problem(stem=stem, answer=Q(ans), fmt=unit(num, unit_s), wrong=wrong, steps=steps,
-                   check=Q(most), section="AR")
+                   check=Q(most), section="AR", near=_near_int(ans))
 
 
 def _compare_plans(rng):
@@ -856,7 +861,7 @@ def _compare_plans(rng):
     ok = lambda k: fee + per * k < flat
     most = max(k for k in range(0, 1000) if ok(k))
     return Problem(stem=stem, answer=Q(ans), fmt=unit(num, u), wrong=wrong, steps=steps,
-                   check=Q(most), section="AR")
+                   check=Q(most), section="AR", near=_near_int(ans))
 
 
 def _mr(v):
@@ -895,7 +900,7 @@ def _average_needed(rng):
              (Q(target * k - S + target + 5), None)]
     least = next(v for v in range(0, 1000) if Q(S + v) / (k + 1) >= target)
     return Problem(stem=stem, answer=Q(ans), fmt=num, wrong=wrong, steps=steps,
-                   check=Q(least), section="AR")
+                   check=Q(least), section="AR", near=_near_int(ans))
 
 
 @template("MK")
