@@ -197,7 +197,7 @@ def find_whole(rng, lvl):
         fmt=num,
         wrong=[
             (R(p, 100) * part, f"finds {pct(p)} of {num(part)} instead"),
-            (part * 100 / p / 10, "slips the decimal point"),
+            (part * 10 / p, f"divides by {m(dec_raw(R(p, 10)))} instead of {m(dec_raw(R(p, 100)))}") if p != 10 else (part, "gives the part instead of the whole"),
             (part + p, "adds the percent to the part"),
             (part * p, "multiplies by the percent without converting it"),
         ],

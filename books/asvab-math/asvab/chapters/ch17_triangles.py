@@ -227,7 +227,7 @@ def _tri_body(P, sides=None, angles=None, right=None, ticks=None, verts=None, ar
             body.append(rf"\draw {_P(V[0] + s * ux, V[1] + s * uy)} -- "
                         rf"{_P(V[0] + s * (ux + wx), V[1] + s * (uy + wy))} -- {_P(V[0] + s * wx, V[1] + s * wy)};")
         if angles and i in angles:
-            r = min(1.35, max(0.5, 0.36 / math.sin(theta / 2)))
+            r = min(0.85, max(0.5, 0.36 / math.sin(theta / 2)))  # capped so the label stays near its own vertex
             body.append(rf"\node at {_P(V[0] + r * bx, V[1] + r * by)} {{{angles[i]}}};")
             if arcs and right != i:
                 a0 = math.degrees(math.atan2(wy, wx))

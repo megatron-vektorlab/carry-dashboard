@@ -567,7 +567,7 @@ def unit_price(rng, lvl, part=None):
             (worse, f"is the price per {u_} of the worse buy"),
             (best - (worse - best) if best > worse - best else worse + (worse - best), None),
             (worse - best, f"is the difference between the two prices per {u_}"),
-            (abs(P2 - P1), f"compares the total prices instead of the prices per {u_}"),
+            (abs(P2 - P1), f"subtracts the two total prices instead of finding each price per {u_}"),
         ],
         steps=[
             f"Divide each price by its number of {upl}. Smaller size: {m(f'{money(P1)} \\div {s1} = {money_cents(U1)}')} per {u_}.",
@@ -858,14 +858,14 @@ def budget_share(rng, lvl, part=None):
         who = f"{B}'s take-home pay is {money(T)} a month."
         uses = [("sends", "home to {his} family", "sent home", _HOME),
                 ("puts", "into savings", "saved", _SAVE),
-                ("pays", "toward a car loan", "paid on the car loan", _SMALL)]
+                ("pays", "toward the car loan", "paid on the car loan", _SMALL)]
     else:
         T = Q(rng.choice(range(1800, 4801, 60)))
         who = f"{B} takes home {money(T)} a month."
         uses = [("spends", "on rent", "spent on rent", _RENT),
                 ("puts", "into savings", "saved", _SAVE),
                 ("spends", "on groceries", "spent on groceries", _SMALL),
-                ("pays", "toward a car loan", "paid on the car loan", _SMALL)]
+                ("pays", "toward the car loan", "paid on the car loan", _SMALL)]
     (v1, w1, n1, fs1), (v2, w2, n2, fs2) = rng.sample(uses, 2)
     if lvl == 3 and not mil:
         (v1, w1, n1, fs1) = uses[0]            # rent comes off the top first

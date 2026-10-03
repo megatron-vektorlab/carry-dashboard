@@ -382,7 +382,7 @@ def fix_articles(text: str) -> str:
     return _ARTICLE.sub(sub, text)
 
 
-def finalize(p: Problem, rng: random.Random, target: int) -> Problem:
+def finalize(p: Problem, rng: random.Random, target: int, strict: bool = True) -> Problem:
     """Validate a raw Problem and build its 4 answer choices.
 
     ``target`` is the preferred 0-based position of the correct answer (used
@@ -401,6 +401,12 @@ def finalize(p: Problem, rng: random.Random, target: int) -> Problem:
         raise AssertionError(f"answer {p.answer} fails verification\n{p.stem}")
 
     ans_tex = _fmt_all(p.fmt, [p.answer])[0]
+
+    # A named mistake that lands on the correct answer makes the item unable
+    # to tell the mistake from the right method: draw new numbers instead.
+    for w in p.wrong:
+        if strict and w[1] and same(w[0], p.answer):
+            raise Reject(f"named mistake ({w[1][:40]}...) gives the correct answer")
 
     # candidate distractors: (value, why, tex|None)
     cands = []

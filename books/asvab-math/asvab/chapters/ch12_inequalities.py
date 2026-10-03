@@ -942,7 +942,7 @@ def abs_ineq(rng, lvl):
         cands = [(_ray(op, hi), f"keeps only the positive case; the inside must also be greater than {m(f'-{r}')}"),
                  (_between(Q(-c - r) / a, op, Q(-c + r) / a, op), f"uses the wrong sign: {m(inside)} is zero when {m(f'x = {tx(Q(c) / a)}')}, not {m(f'x = {tx(Q(-c) / a)}')}"),
                  (_outside(lo, "<" if op == "le" else "le", hi, ">" if op == "le" else "ge"),
-                  f"gives the ``outside'' set, which is for {m('>')}"),
+                  f"gives the ``outside'' set, which would solve the inequality with {m(r'\ge' if op == '<' else '>')}"),
                  (_between(lo, _STRICT[op], hi, _STRICT[op]), "gets the endpoints wrong")]
         steps = [f"{m(ineq)} means {m(inside)} is within {m(r)} of zero, so it is \\emph{{between}} "
                  f"{m(-r)} and {m(r)}: {m(f'{-r} {_TEX[op]} {inside} {_TEX[op]} {r}')}.",
@@ -955,7 +955,7 @@ def abs_ineq(rng, lvl):
         ans_tex, ans_pred = _outside(lo, low_op, hi, op)
         cands = [(_ray(op, hi), "keeps only the positive case; the inside can also be very negative"),
                  (_between(lo, "<" if op == "ge" else "le", hi, "<" if op == "ge" else "le"),
-                  f"gives the ``between'' set, which is for {m('<')}"),
+                  f"gives the ``between'' set, which would solve the inequality with {m(r'\le' if op == '>' else '<')}"),
                  (_outside(Q(-c - r) / a, low_op, Q(-c + r) / a, op), f"uses the wrong sign: {m(inside)} is zero when {m(f'x = {tx(Q(c) / a)}')}, not {m(f'x = {tx(Q(-c) / a)}')}"),
                  (_outside(lo, _STRICT[low_op], hi, _STRICT[op]), "gets the endpoints wrong")]
         steps = [f"{m(ineq)} means {m(inside)} is \\emph{{more than}} {m(r)} away from zero"

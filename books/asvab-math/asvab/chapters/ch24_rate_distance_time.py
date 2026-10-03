@@ -477,10 +477,10 @@ def fuel(rng, lvl, part=None):
             stem = (f"A school bus gets {mpg} miles per gallon of diesel, and diesel costs {money(price)} per "
                     f"gallon. How much will the fuel cost for a field trip of {num(miles)} miles?")
         else:
-            trip = rng.choice(["a trip to visit family", "a road trip", "a drive to the beach",
-                               "a drive to a job interview"])
+            trip = rng.choice(["trip to visit family", "road trip", "drive to the beach",
+                               "drive to a job interview"])
             stem = (f"{B}'s {name} gets {mpg} miles per gallon. Gas costs {money(price)} per gallon. How much "
-                    f"will gas cost for {trip} of {num(miles)} miles?")
+                    f"will gas cost for a {num(miles)}-mile {trip}?")
         return Problem(
             stem=stem, answer=cost, fmt=money, section="AR",
             wrong=[(Q(g), "gives the number of gallons, not the cost"),
@@ -992,7 +992,7 @@ _FPS = [
     ("A paratrooper's open parachute slows the fall to about {v}.", [15], True),
     ("A Black Hawk helicopter cruises at {v}.", [135, 150], True),
     ("A tank crosses open ground at {v}.", [30, 45], True),
-    ("A sprinter reaches a top speed of {v}.", [15, 30], False),
+    ("A runner reaches a top speed of {v}.", [15, 30], False),
     ("A cheetah can run at {v}.", [60, 75], False),
     ("A racehorse gallops at {v}.", [30, 45], False),
     ("A roller coaster reaches a top speed of {v}.", [60, 75, 90], False),

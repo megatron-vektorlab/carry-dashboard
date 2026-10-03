@@ -1140,7 +1140,7 @@ def concentration_change(rng, lvl):
             wrong=[
                 (final, "is the amount left after evaporating, not the amount removed"),
                 (R(V * (q - p), 100), "takes the rise in percent of the original amount"),
-                (R(V * (q - p), p), "divides by the old percent instead of the new one"),
+                (R(V * (q - p), p), f"swaps the two percents ({m(F(q, p))} of the original amount) and then subtracts the original amount"),
                 (R(V * q, p), f"makes two slips: flips the percents ({m(F(q, p))} instead of {m(F(p, q))}) "
                  "and stops at the total instead of finding the water removed"),
             ],

@@ -1609,7 +1609,7 @@ def arrangements(rng, lvl):
         W = _cap(_WORDS[n])
         stem = {
             "medals": f"{W} runners, including {p}, are in a race. In how many different ways can the gold, silver, and bronze medals be awarded (no ties)?",
-            "crew": f"From a squad of {n} soldiers, {_army(rng)} will choose a driver, a gunner, and a radio operator. In how many ways can the three jobs be filled if no one does two jobs?",
+            "crew": f"From a platoon of {n} soldiers, {_army(rng)} will choose a driver, a gunner, and a radio operator. In how many ways can the three jobs be filled if no one does two jobs?",
             "officers": f"{p}'s club of {n} members will elect a president, a vice president, and a treasurer. No one can hold two offices. How many different results are possible?",
             "awards": f"A science fair has {n} projects, including {p}'s. In how many ways can the judges award first, second, and third place?",
         }[key]
@@ -1686,7 +1686,7 @@ def combinations(rng, lvl):
         if kind == "pick2":
             key = _fresh(rng, ["detail", "reps", "books", "pizza"], "pick2")
             stem = {
-                "detail": f"{_army(rng)} must pick 2 soldiers from a squad of {n} to go on a supply run. How many different pairs can be chosen?",
+                "detail": f"{_army(rng)} must pick 2 soldiers from a platoon of {n} to go on a supply run. How many different pairs can be chosen?",
                 "reps": f"{p}'s class of {n} students will choose 2 students to represent it at a meeting. How many different pairs of students are possible?",
                 "books": f"{p} wants to take 2 of {p.his} {n} favorite books on vacation. How many different pairs of books can {p.he} choose?",
                 "pizza": f"A pizza shop has {n} toppings, and {p} wants a pizza with 2 different toppings. How many different pairs of toppings can {p.he} choose?",

@@ -221,9 +221,10 @@ def _grid(points=(), lim=5, scale=0.3, segs=(), line=None, ticks=(-4, -2, 2, 4),
     for (p1, p2) in dashed:
         out.append(rf"\draw[dashed] ({p1[0]},{p1[1]}) -- ({p2[0]},{p2[1]});")
     for (px, py, lab, anchor) in points:
-        out.append(rf"\fill ({px},{py}) circle (5pt);")
+        # label first (pushed clear of the dot), then the dot on top of it
         if lab:
-            out.append(rf"\node[{anchor}, inner sep=1.5pt, fill=white] at ({px},{py}) {{\scriptsize {lab}}};")
+            out.append(rf"\node[{anchor}, inner sep=1pt, outer sep=4pt, fill=white] at ({px},{py}) {{\scriptsize {lab}}};")
+        out.append(rf"\fill ({px},{py}) circle (5pt);")
     out.append(r"\end{tikzpicture}")
     return "\n".join(out)
 

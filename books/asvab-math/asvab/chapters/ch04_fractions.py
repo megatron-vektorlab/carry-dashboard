@@ -494,8 +494,8 @@ def mixed_add_sub(rng, lvl):
         n1, n2 = int(f1 * L), int(f2 * L)
         wrong = [((w1 - w2) + (f2 - f1), "subtracts the smaller fraction from the larger instead of regrouping"),
                  ((w1 - w2) + (1 + f1 - f2), "regroups but forgets to take 1 from the whole number"),
-                 ((w1 - w2 - 1) + (f2 - f1), "takes 1 from the whole number but then subtracts the "
-                                             "fractions in the wrong order"),
+                 ((w1 - w2 - 1) + (f2 - f1), "lowers the whole number by 1 but never adds that 1 to the "
+                                             "fraction, then subtracts the smaller fraction from the larger"),
                  (x_ + y_, "adds instead of subtracting"),
                  (ans - 1, None)]
         steps = [

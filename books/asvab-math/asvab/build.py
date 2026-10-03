@@ -98,22 +98,63 @@ def build_section(mods, section, count, rng, seen, used, avoid=None):
             extra += 1
         for i in range(extra):
             alloc[pool[i % len(pool)]] += 1
+    # exact level mix so all four forms have the same difficulty
+    levels = level_plan(count, rng)
+    slots = [n for n, k in alloc.items() for _ in range(k)]
+    rng.shuffle(slots)
     chosen = []
-    for n, k in alloc.items():
+    for n, want in zip(slots, levels):
         mod, es = by_ch[n]
-        for j in range(k):
-            fresh = [e for e in es if family(mod, e[0]) not in used] or es
-            e = pick_level_entry(rng, fresh, test_level(rng))
-            used.add(family(mod, e[0]))
-            chosen.append((mod, e))
-    # rough difficulty ramp with randomness
+        fresh = [e for e in es if family(mod, e[0]) not in used] or es
+        # the wanted level first, then templates least used by earlier tests
+        at_level = [e for e in fresh if e[1] == want] or fresh
+        low = min(BOOK_USE[family(mod, e[0])] for e in at_level)
+        e = rng.choice([e for e in at_level if BOOK_USE[family(mod, e[0])] == low])
+        used.add(family(mod, e[0]))
+        BOOK_USE[family(mod, e[0])] += 1
+        chosen.append((mod, e))
+    # difficulty ramp with some randomness
     chosen.sort(key=lambda c: c[1][1] + rng.random() * 1.6)
-    targets = balanced_targets(len(chosen), rng)
-    probs = []
     avoid = set() if avoid is None else avoid
-    for (mod, (tpl, lvl)), t in zip(chosen, targets):
-        probs.append(make(tpl, lvl, rng, t, seen, mod.NUM, avoid))
+    best = None
+    for attempt in range(12):
+        trial_seen, trial_avoid = set(seen), set(avoid)
+        targets = balanced_targets(len(chosen), rng)
+        probs = [make(tpl, lvl, rng, t, trial_seen, mod.NUM, trial_avoid)
+                 for (mod, (tpl, lvl)), t in zip(chosen, targets)]
+        score = letter_score(probs)
+        if best is None or score < best[0]:
+            best = (score, probs, trial_seen, trial_avoid)
+        if score == 0:
+            break
+    _, probs, trial_seen, trial_avoid = best
+    seen |= trial_seen
+    avoid |= trial_avoid
     return probs
+
+
+BOOK_USE: collections.Counter = collections.Counter()
+
+
+def level_plan(count, rng, mix=(0.27, 0.46, 0.27)):
+    n1 = round(count * mix[0])
+    n3 = round(count * mix[2])
+    lv = [1] * n1 + [3] * n3 + [2] * (count - n1 - n3)
+    rng.shuffle(lv)
+    return lv
+
+
+def letter_score(probs) -> int:
+    """0 when letters are balanced (each 18-32 %) and no letter repeats 4 times in a row."""
+    n = len(probs)
+    keys = [p.key for p in probs]
+    c = collections.Counter(keys)
+    bad = sum(max(0, c[k] - round(n * 0.32)) + max(0, round(n * 0.18) - c[k]) for k in range(4))
+    run = longest = 1
+    for a_, b_ in zip(keys, keys[1:]):
+        run = run + 1 if a_ == b_ else 1
+        longest = max(longest, run)
+    return bad + max(0, longest - 3) * 3
 
 
 def build_diagnostic(mods, rng, seen, avoid=None):
@@ -330,6 +371,7 @@ def closing_tex():
 
 # ------------------------------------------------------------------ main
 def generate_all(mods):
+    BOOK_USE.clear()
     seen: set[str] = set()
     chapters = {}
     for mod in mods:

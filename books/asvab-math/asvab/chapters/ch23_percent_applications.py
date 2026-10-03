@@ -383,7 +383,7 @@ def find_rate_time(rng, lvl, part=None):
             verify=lambda v: P * v / 100 * t == I,
         )
     # find the time
-    stem = intro + (f" How many years will it take for the account to earn {money(I)} in interest?"
+    stem = intro + (f" How many years will it take for the CD to earn {money(I)} in interest?"
                     if kind == "save" else
                     f" After how many years will the interest on the loan add up to {money(I)}?")
     yr = unit(dec, "year")

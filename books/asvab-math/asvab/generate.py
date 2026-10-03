@@ -59,7 +59,7 @@ def make(tpl, lvl: int, rng: random.Random, target: int, seen: set[str],
                 raise Reject("scenario or numbers already used in this set")
             if getattr(tpl, "section", None) and p.section == "MK":
                 p.section = tpl.section
-            finalize(p, rng, target)
+            finalize(p, rng, target, strict=i < MAX_TRIES // 2)
         except Reject as e:
             last = e
             continue
@@ -74,8 +74,12 @@ def make(tpl, lvl: int, rng: random.Random, target: int, seen: set[str],
 
 
 def balanced_targets(n: int, rng: random.Random) -> list[int]:
+    """Evenly spread answer slots with no slot repeated 3 times in a row."""
     t = [i % 4 for i in range(n)]
-    rng.shuffle(t)
+    for _ in range(200):
+        rng.shuffle(t)
+        if all(not (t[i] == t[i + 1] == t[i + 2]) for i in range(n - 2)):
+            break
     return t
 
 

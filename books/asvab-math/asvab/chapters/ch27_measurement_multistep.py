@@ -963,7 +963,7 @@ def military_time(rng, lvl):
                 (Q(_borrow_trap(start, end)), _borrow_why(start, end)),
                 (Q(60 * (eh - sh) + (sm - em)), "subtracts the smaller number of minutes from the larger instead of borrowing"),
                 (Q(dur + 60), "borrows the hour but forgets to take it away from the hours"),
-                (Q(60 * (eh - 1 - sh) + (sm - em)), "borrows an hour but forgets to add the 60 minutes"),
+                (Q(60 * (eh - 1 - sh) + (sm - em)), "borrows an hour but then subtracts the minutes backward (smaller from larger) instead of adding 60 to them first"),
             ]
             steps = [
                 f"{m(str(em))} minutes minus {m(str(sm))} minutes won't go, so borrow 1 hour: "
@@ -1130,7 +1130,7 @@ def mixed_units(rng, lvl):
         ]
         if f in (12, 16) and ss >= 10 and ss % 10 < f:
             wrong.append((Q((b1 + b2 + ss // 10) * f + ss % 10), f"regroups 10 {Sw} as 1 {B} instead of {f}"))
-        wrong.append((Q(ans + f), f"adds 1 {B} for the extra {Sw} but does not take {f} {S} away"))
+        wrong.append((Q(ans + f), f"carries {carry + 1} {_pl(B, carry + 1, Bw)} instead of {carry} when regrouping {ss} {S}"))
         steps = [
             f"Add the {Sw}: {m(f'{s1} + {s2} = {ss}')} {S}. Since {m(f'{f}')} {S} $=$ 1 {B}, "
             f"{m(str(ss))} {S} $=$ 1 {B} {m(str(rem))} {S}.",
@@ -1221,7 +1221,7 @@ def round_up_down(rng, lvl):
                            "shirts", "shirt", "dollars"),
             }[key]
         q, r = divmod(total, per)
-        need(r != 0 and q >= 2)
+        need(r != 0 and q >= 2 and (r >= 2 or per <= 2))  # avoids "1 inches"
         ans = q + 1 if up else q
         exact = R(total, per)
         if up:
@@ -1588,7 +1588,7 @@ def age_problem(rng, lvl):
         need(4 <= y <= 20 and 22 <= x_ <= 55 and x_ - y >= 18)
         rel = rng.choice(["son", "daughter"])
         stem = (f"{p} is {_times(k1)} as old as {p.his} {rel}. In {num(t)} years, {p} will be "
-                f"{_times(k2)} as old as the {rel}. How old is {p} now?")
+                f"{_times(k2)} as old as {p.his} {rel}. How old is {p} now?")
         wrong = [
             (Q(y), f"gives the {rel}'s age"),
             (Q(x_ + t), f"gives {p}'s age in {t} years"),
@@ -1613,7 +1613,7 @@ def age_problem(rng, lvl):
         S = x_ + y
         rel = rng.choice(["son", "daughter"])
         stem = (f"The sum of the ages of {p} and {p.his} {rel} is {num(S)}. In {num(t)} years, {p} will "
-                f"be {_times(k)} as old as the {rel}. How old is {p} now?")
+                f"be {_times(k)} as old as {p.his} {rel}. How old is {p} now?")
         wrong = [
             (Q(y), f"gives the {rel}'s age"),
             (Q(x_ + t), f"gives {p}'s age in {t} years"),

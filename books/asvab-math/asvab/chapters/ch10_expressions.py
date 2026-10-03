@@ -651,7 +651,7 @@ def _phrases(k, j, lvl, fam):
           (f"{k}n + {j}n", k * n + j * n, None)]),
         (f"the sum of {k} times a number and {j}", f"{k}n + {j}", k * n + j, lambda v: k * v + j,
          f"The two amounts being added are {q}{k} times a number{e} ({m(f'{k}n')}) and {j}.",
-         [(f"{k}(n + {j})", k * (n + j), "multiplies the whole sum by the number; only the number is multiplied"),
+         [(f"{k}(n + {j})", k * (n + j), f"multiplies the whole sum $n + {j}$ by {k}; only the number should be multiplied by {k}"),
           (f"{k} + {j}n", k + j * n, "attaches the variable to the wrong number"),
           (f"{k + j}n", (k + j) * n, None)]),
         (f"half of a number, decreased by {j}", f"\\frac{{n}}{{2}} - {j}", n / 2 - j, lambda v: Fraction(v, 2) - j,

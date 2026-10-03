@@ -88,5 +88,16 @@ python3.12 -m venv .venv && .venv/bin/pip install sympy pillow   # jednom
 * `selftest` za svaki predložak generira stotine varijanti i provjerava sve
   gore navedeno + LaTeX sintaksu; `audit` traži gramatičke greške i
   provjerava da se konačni odgovor pojavljuje u koracima rješenja.
-* Dodatno: nezavisni „slijepi” recenzenti (AI agenti) riješili su zadatke
-  bez ključa i usporedili s ključem — vidi završni izvještaj.
+* **Dva kruga slijepe provjere**: neovisni AI recenzenti riješili su svih
+  1.000 zadataka bez ključa i usporedili s ključem — u oba kruga **1.000/1.000
+  podudaranja, nijedan pogrešan odgovor**. Nađene sitnice (netočne „why not”
+  bilješke, realističnost konteksta, stil, ponavljanja između testova) su
+  ispravljene.
+* Probni testovi imaju jednak omjer težine, ravnomjerno raspoređena slova
+  A–D (bez nizova od 4 ista) i ne ponavljaju isti scenarij između testova.
+
+## Brojke ove verzije
+
+255 stranica · 1.000 zadataka (750 + 30 + 220) · 79 slika · točni odgovori
+A/B/C/D = 255/275/256/214 · trošak tiska ≈ $5,34 · prijedlog cijene $19.99 →
+≈ $6,66 po prodanom primjerku.

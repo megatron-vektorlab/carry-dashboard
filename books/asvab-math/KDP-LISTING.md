@@ -87,12 +87,19 @@ uploading — KDP rejects a cover whose spine doesn't match.
 * Suggested list price: **$19.99** (UK £15.99, EU €18.99, CA $26.99, AU $29.99).
   Comparable ASVAB math-only workbooks sell for $14–$30; the big all-subject
   guides (Kaplan, Mometrix, Trivium) for $25–$45.
-* Royalty estimate (US): 60 % × $19.99 − printing cost. For an 8.5 × 11
-  black-and-white book KDP charges a fixed fee plus a per-page fee
-  (see `README.md` for the page count of this build) — confirm the exact
-  figure in KDP's pricing calculator on the "Rights & pricing" page.
+* Royalty estimate (US): this build has **255 pages**. KDP's printing cost
+  for a black-and-white 8.5 × 11 paperback is a fixed $1.00 plus $0.017 per
+  page → **≈ $5.34 per copy**. Royalty = 60 % × $19.99 − $5.34 ≈ **$6.66 per
+  sale** (at $17.99: ≈ $5.46). Confirm in KDP's pricing calculator, which is
+  authoritative.
 * Expanded distribution: optional (lower royalty, requires a higher list
   price; leave off at launch).
+
+## Marketing images
+
+`output/front-cover.png` (front cover, 1600 px wide) and three sample pages in
+`output/marketing/` (Key Concepts, a practice page with figures, a solutions
+page with "Why not?" notes) — use them for A+ Content and ads.
 
 ## After publishing
 
