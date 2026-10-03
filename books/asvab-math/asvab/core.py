@@ -358,6 +358,28 @@ def _default_near(answer, rng: random.Random):
     return out
 
 
+_ARTICLE = re.compile(r"(?<![\w\\])([Aa]) ((?:\\\$|\$)*)(\d[\d{},]*)")
+
+
+def _an_number(digits: str) -> bool:
+    """True if the number is read with a vowel sound: 8.., 11, 18, 11,000, 18,500."""
+    d = digits.replace("{,}", ",").rstrip(",")
+    if d.startswith("8"):
+        return True
+    head = d.split(",")[0]
+    return head in ("11", "18")
+
+
+def fix_articles(text: str) -> str:
+    """'a 11-foot board' -> 'an 11-foot board', 'a $8 fee' -> 'an $8 fee'."""
+    def sub(mm):
+        art, pre, dig = mm.groups()
+        if _an_number(dig):
+            art = "An" if art == "A" else "an"
+        return f"{art} {pre}{dig}"
+    return _ARTICLE.sub(sub, text)
+
+
 def finalize(p: Problem, rng: random.Random, target: int) -> Problem:
     """Validate a raw Problem and build its 4 answer choices.
 
@@ -449,6 +471,9 @@ def finalize(p: Problem, rng: random.Random, target: int) -> Problem:
     p.choices = [(t, None if c[3] else c[1]) for t, c in zip(texs, vals)]
     p.key = [i for i, c in enumerate(vals) if c[3]][0]
 
+    p.stem = fix_articles(p.stem)
+    p.steps = [fix_articles(t) for t in p.steps]
+    p.tip = fix_articles(p.tip) if p.tip else p.tip
     blob = " ".join([p.stem, *p.steps, *(t for t, _ in p.choices)])
     bad = re.search(r"(?<![A-Za-z])(nan|zoo|None)(?![A-Za-z])|oo\}|\\infty", blob)
     if bad:

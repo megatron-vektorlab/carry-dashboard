@@ -25,7 +25,7 @@ from .render import LETTERS
 ARTICLE = re.compile(r"\b[aA] \$?(8|11|18|80|8\d\d|11\d|18\d)(?![\d{,])")
 ONE_PLURAL = re.compile(r"(?<![\d.,{])\$?1\$?~?\s(minutes|hours|miles|feet|inches|days|weeks|years|dollars|pounds|ounces|gallons|cups)\b")
 DOUBLED = re.compile(r"(?<![\w.])(\w+) \1\b", re.I)
-PY = re.compile(r"\*\*|sqrt\(|Rational\(|Integer\(|\bpi\b(?!})")
+PY = re.compile(r"\*\*|sqrt\(|Rational\(|Integer\(|(?<!\\)\bpi\b")
 
 
 def plain(tex: str) -> str:
@@ -38,11 +38,13 @@ def plain(tex: str) -> str:
 
 def answer_core(tex: str) -> str:
     """The number/expression part of a choice, for searching in the steps."""
-    s = tex.replace("\\$", "").replace("\\%", "")
-    s = re.sub(r"~?[A-Za-z]+s?$", "", s.strip())        # trailing unit word
-    s = s.strip().strip("$").strip()
-    s = re.sub(r"\\text\{[^}]*\}\^\d", "", s)            # sq_unit suffix
-    s = re.sub(r"\.00$", "", s.strip())                    # $156.00 vs 156
+    s = tex.strip()
+    mm = re.match(r"^\$([^$]*)\$", s)
+    if mm:                                   # math part only, drop unit words
+        s = mm.group(1)
+    s = s.replace("\\$", "").replace("\\%", "")
+    s = re.sub(r"\\text\{[^}]*\}(\^\d)?", "", s)   # \text{ ft}^2
+    s = re.sub(r"\.00$", "", s.strip())       # $156.00 vs 156
     return s.strip()
 
 
@@ -60,7 +62,7 @@ def audit_problem(where: str, p) -> list[str]:
             out.append(f"{name}: …{blob[max(0, mm.start() - 30):mm.end() + 30]}…")
     for mm in DOUBLED.finditer(plain(p.stem + " " + steps)):
         w = mm.group(1).lower()
-        if not w.isdigit() and w not in {"that", "had"}:
+        if not w.isdigit() and len(w) > 1 and w not in {"that", "had"}:
             out.append(f"doubled word: {mm.group(0)!r}")
     return [f"{where} [{p.template} L{p.level}]: {o}" for o in out]
 

@@ -1,10 +1,36 @@
-TOTAL PROBLEMS: 246
-  chapters: 25, diagnostic: 1, tests: 220
-answer letters: {'A': 72, 'B': 67, 'C': 62, 'D': 45}
-sections: {'MK': 117, 'AR': 129}   levels: {1: 8, 2: 151, 3: 87}
-with explained traps: 246   with tips: 42   with figures: 0
-distinct templates used: 9
+TOTAL PROBLEMS: 1000
+  chapters: 750, diagnostic: 30, tests: 220
+answer letters: {'A': 265, 'B': 270, 'C': 245, 'D': 220}
+sections: {'MK': 531, 'AR': 469}   levels: {1: 234, 2: 449, 3: 317}
+with explained traps: 998   with tips: 266   with figures: 75
+distinct templates used: 342
 duplicate stems: 0
 
 per chapter: n, AR/MK, letters
-  ch06 Percents                                      n=25  AR=9   letters={'A': 10, 'B': 6, 'C': 6, 'D': 3}
+  ch01 Whole Numbers \& Order of Operations          n=25  AR=9   letters={'A': 4, 'B': 6, 'C': 9, 'D': 6}
+  ch02 Negative Numbers \& Absolute Value            n=25  AR=7   letters={'A': 5, 'B': 6, 'C': 6, 'D': 8}
+  ch03 Factors, Multiples, Primes, GCF \& LCM        n=25  AR=8   letters={'A': 7, 'B': 7, 'C': 4, 'D': 7}
+  ch04 Fractions \& Mixed Numbers                    n=25  AR=7   letters={'A': 9, 'B': 6, 'C': 7, 'D': 3}
+  ch05 Decimals                                      n=25  AR=11  letters={'A': 9, 'B': 6, 'C': 5, 'D': 5}
+  ch06 Percents                                      n=25  AR=9   letters={'A': 8, 'B': 6, 'C': 6, 'D': 5}
+  ch07 Ratios \& Proportions                         n=25  AR=14  letters={'A': 8, 'B': 6, 'C': 6, 'D': 5}
+  ch08 Exponents \& Scientific Notation              n=25  AR=0   letters={'A': 6, 'B': 6, 'C': 6, 'D': 7}
+  ch09 Square Roots \& Radicals                      n=25  AR=0   letters={'A': 8, 'B': 7, 'C': 6, 'D': 4}
+  ch10 Algebraic Expressions                         n=25  AR=3   letters={'A': 7, 'B': 6, 'C': 6, 'D': 6}
+  ch11 Linear Equations                              n=25  AR=6   letters={'A': 6, 'B': 7, 'C': 6, 'D': 6}
+  ch12 Inequalities                                  n=25  AR=4   letters={'A': 7, 'B': 8, 'C': 6, 'D': 4}
+  ch13 Systems of Equations                          n=25  AR=10  letters={'A': 5, 'B': 7, 'C': 6, 'D': 7}
+  ch14 Polynomials \& Exponent Rules                 n=25  AR=0   letters={'A': 7, 'B': 6, 'C': 6, 'D': 6}
+  ch15 Factoring \& Quadratic Equations              n=25  AR=0   letters={'A': 8, 'B': 6, 'C': 5, 'D': 6}
+  ch16 Lines \& Angles                               n=25  AR=0   letters={'A': 7, 'B': 5, 'C': 6, 'D': 7}
+  ch17 Triangles \& the Pythagorean Theorem          n=25  AR=5   letters={'A': 9, 'B': 8, 'C': 6, 'D': 2}
+  ch18 Perimeter \& Area                             n=25  AR=6   letters={'A': 5, 'B': 6, 'C': 6, 'D': 8}
+  ch19 Circles                                       n=25  AR=5   letters={'A': 9, 'B': 7, 'C': 6, 'D': 3}
+  ch20 Volume \& Surface Area                        n=25  AR=7   letters={'A': 6, 'B': 6, 'C': 6, 'D': 7}
+  ch21 Coordinate Geometry                           n=25  AR=0   letters={'A': 7, 'B': 7, 'C': 5, 'D': 6}
+  ch22 Money: Shopping, Discounts, Tax \& Wages      n=40  AR=40  letters={'A': 10, 'B': 11, 'C': 10, 'D': 9}
+  ch23 Interest, Commission \& Percent Change        n=35  AR=35  letters={'A': 9, 'B': 9, 'C': 9, 'D': 8}
+  ch24 Rate, Distance \& Time                        n=40  AR=40  letters={'A': 10, 'B': 13, 'C': 11, 'D': 6}
+  ch25 Work Rates \& Mixtures                        n=35  AR=35  letters={'A': 9, 'B': 9, 'C': 8, 'D': 9}
+  ch26 Averages, Statistics \& Probability           n=40  AR=40  letters={'A': 10, 'B': 14, 'C': 10, 'D': 6}
+  ch27 Measurement, Units \& Multi-Step Problems     n=35  AR=35  letters={'A': 5, 'B': 10, 'C': 10, 'D': 10}

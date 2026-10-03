@@ -1,247 +1,1001 @@
 set,number,chapter,template,level,section,answer_letter,answer,choices
+ch01,1,1,ch01_whole_numbers.order_ops,1,MK,C,$19$,$13$ | $15$ | $19$ | $50$
+ch01,2,1,ch01_whole_numbers.place_value,1,MK,C,$5$,$3$ | $4$ | $5$ | $7$
+ch01,3,1,ch01_whole_numbers.order_ops,1,MK,B,$44$,$29$ | $44$ | $204$ | $288$
+ch01,4,1,ch01_whole_numbers.rounding,1,MK,D,"$8{,}200$","$8{,}000$ | $8{,}100$ | $8{,}180$ | $8{,}200$"
+ch01,5,1,ch01_whole_numbers.property_name,1,MK,B,Identity property,Associative property | Identity property | Commutative property | Distributive property
+ch01,6,1,ch01_whole_numbers.multiply_by_hand,1,MK,D,"$5{,}824$","$4{,}824$ | $5{,}664$ | $5{,}814$ | $5{,}824$"
+ch01,7,1,ch01_whole_numbers.shopping_total,1,AR,C,\$42,\$9 | \$27 | \$42 | \$90
+ch01,8,1,ch01_whole_numbers.equal_share,1,AR,C,\$23,\$2 | \$21 | \$23 | \$132
+ch01,9,1,ch01_whole_numbers.order_ops,2,MK,B,$34$,$25$ | $34$ | $48$ | $49$
+ch01,10,1,ch01_whole_numbers.rounding,2,MK,A,"$426{,}000$","$426{,}000$ | $426{,}400$ | $427{,}000$ | $430{,}000$"
+ch01,11,1,ch01_whole_numbers.order_ops,2,MK,C,$18$,$0$ | $14$ | $18$ | $24$
+ch01,12,1,ch01_whole_numbers.distributive,2,MK,B,"$2{,}189$","$1{,}389$ | $2{,}189$ | $2{,}199$ | $2{,}211$"
+ch01,13,1,ch01_whole_numbers.estimate,2,MK,A,$20$,"$20$ | $30$ | $200$ | $2{,}000$"
+ch01,14,1,ch01_whole_numbers.divide_by_hand,2,MK,B,$270$,"$27$ | $270$ | $280$ | $2{,}700$"
+ch01,15,1,ch01_whole_numbers.multiply_by_hand,2,MK,B,"$4{,}536$","$756$ | $4{,}536$ | $4{,}636$ | $42{,}336$"
+ch01,16,1,ch01_whole_numbers.round_up_groups,2,AR,C,$11$,$1$ | $10$ | $11$ | $12$
+ch01,17,1,ch01_whole_numbers.remainder,2,AR,D,$9$,$5$ | $6$ | $8$ | $9$
+ch01,18,1,ch01_whole_numbers.shopping_total,2,AR,A,\$60,\$60 | \$193 | \$334 | \$340
+ch01,19,1,ch01_whole_numbers.order_ops,3,MK,C,$35$,$13$ | $15$ | $35$ | $45$
+ch01,20,1,ch01_whole_numbers.round_up_groups,3,AR,C,\$92.00,\$88.00 | \$88.80 | \$92.00 | \$96.00
+ch01,21,1,ch01_whole_numbers.order_ops,3,MK,D,$39$,$3$ | $24$ | $30$ | $39$
+ch01,22,1,ch01_whole_numbers.round_up_groups,3,AR,C,"\$9{,}800","\$7{,}000 | \$8{,}400 | \$9{,}800 | \$11{,}200"
+ch01,23,1,ch01_whole_numbers.order_ops,3,MK,D,$32$,$20$ | $22$ | $27$ | $32$
+ch01,24,1,ch01_whole_numbers.shopping_total,3,AR,A,\$620.00,"\$620.00 | \$757.50 | \$895.00 | \$2{,}480.00"
+ch01,25,1,ch01_whole_numbers.equal_share,3,AR,D,\$88,\$44 | \$68 | \$83 | \$88
+ch02,1,2,ch02_negative_numbers.add_sub,1,MK,A,$-19$,$-19$ | $-14$ | $-9$ | $19$
+ch02,2,2,ch02_negative_numbers.mult_div,1,MK,B,$14$,$-14$ | $14$ | $15$ | $16$
+ch02,3,2,ch02_negative_numbers.add_sub,1,MK,D,$-1$,$-17$ | $-3$ | $-2$ | $-1$
+ch02,4,2,ch02_negative_numbers.mult_div,1,MK,C,$8$,$-99$ | $-8$ | $8$ | $12$
+ch02,5,2,ch02_negative_numbers.abs_value,1,MK,D,$1$,$-2$ | $-1$ | $0$ | $1$
+ch02,6,2,ch02_negative_numbers.distance,1,MK,B,$4$,$-4$ | $4$ | $5$ | $7$
+ch02,7,2,ch02_negative_numbers.order_ints,1,MK,C,$-14$,$-19$ | $-15$ | $-14$ | $-17$
+ch02,8,2,ch02_negative_numbers.temperature,1,AR,C,$-11^{\circ}\mathrm{F}$,$-35^{\circ}\mathrm{F}$ | $-14^{\circ}\mathrm{F}$ | $-11^{\circ}\mathrm{F}$ | $35^{\circ}\mathrm{F}$
+ch02,9,2,ch02_negative_numbers.add_sub,2,MK,A,$6$,$6$ | $8$ | $9$ | $38$
+ch02,10,2,ch02_negative_numbers.elevation,2,AR,D,$-15$~ft,$-45$~ft | $-30$~ft | $-25$~ft | $-15$~ft
+ch02,11,2,ch02_negative_numbers.add_sub,2,MK,B,$4$,$-4$ | $4$ | $5$ | $36$
+ch02,12,2,ch02_negative_numbers.elevation,2,AR,B,$400$~ft,$200$~ft | $400$~ft | $450$~ft | $500$~ft
+ch02,13,2,ch02_negative_numbers.mult_div,2,MK,D,$12$,$-12$ | $6$ | $10$ | $12$
+ch02,14,2,ch02_negative_numbers.abs_value,2,MK,C,$2$,$-14$ | $-2$ | $2$ | $14$
+ch02,15,2,ch02_negative_numbers.order_ints,2,MK,B,"$-15, -13, -5, 2, 7$","$7, 2, -5, -13, -15$ | $-15, -13, -5, 2, 7$ | $2, -5, 7, -13, -15$ | $-5, -13, -15, 2, 7$"
+ch02,16,2,ch02_negative_numbers.distance,2,MK,C,$-1$,$-6$ | $-5$ | $-1$ | $13$
+ch02,17,2,ch02_negative_numbers.temperature,2,AR,D,$20$~degrees,$-20$~degrees | $-6$~degrees | $7$~degrees | $20$~degrees
+ch02,18,2,ch02_negative_numbers.bank_balance,2,AR,C,$-$\$68,$-$\$288 | $-$\$78 | $-$\$68 | $-$\$43
+ch02,19,2,ch02_negative_numbers.neg_powers,3,MK,A,$-12$,$-12$ | $3$ | $12$ | $38$
+ch02,20,2,ch02_negative_numbers.mixed_ops,3,MK,D,$25$,$-35$ | $-25$ | $0$ | $25$
+ch02,21,2,ch02_negative_numbers.neg_powers,3,MK,A,$27$,$27$ | $29$ | $31$ | $45$
+ch02,22,2,ch02_negative_numbers.mixed_ops,3,MK,D,$9$,$-19$ | $-6$ | $7$ | $9$
+ch02,23,2,ch02_negative_numbers.abs_value,3,MK,B,$-10$,$-13$ | $-10$ | $0$ | $10$
+ch02,24,2,ch02_negative_numbers.elevation,3,AR,D,"$-1{,}380$~ft","$-1{,}620$~ft | $-1{,}460$~ft | $-1{,}430$~ft | $-1{,}380$~ft"
+ch02,25,2,ch02_negative_numbers.bank_balance,3,AR,A,\$112,\$112 | \$117 | \$122 | \$146
+ch03,1,3,ch03_factors_primes.which_prime,1,MK,D,$59$,$1$ | $33$ | $49$ | $59$
+ch03,2,3,ch03_factors_primes.vocab,1,MK,B,$\frac{1}{16}$,$16$ | $\frac{1}{16}$ | $-\frac{1}{16}$ | $-16$
+ch03,3,3,ch03_factors_primes.gcf,1,MK,C,$5$,$3$ | $4$ | $5$ | $105$
+ch03,4,3,ch03_factors_primes.lcm,1,MK,A,$16$,$16$ | $18$ | $32$ | $64$
+ch03,5,3,ch03_factors_primes.gcf,1,MK,A,$7$,$7$ | $8$ | $28$ | $140$
+ch03,6,3,ch03_factors_primes.lcm,1,MK,A,$84$,$84$ | $114$ | $124$ | $168$
+ch03,7,3,ch03_factors_primes.vocab,1,MK,A,$9$,$9$ | $11$ | $26$ | $54$
+ch03,8,3,ch03_factors_primes.which_prime,1,MK,D,$53$,$9$ | $21$ | $49$ | $53$
+ch03,9,3,ch03_factors_primes.prime_factorization,2,MK,B,$2^{4} \times 5^{2}$,$2 \times 5$ | $2^{4} \times 5^{2}$ | $2^{3} \times 5 \times 10$ | $2^{3} \times 5^{2}$
+ch03,10,3,ch03_factors_primes.divisibility,2,MK,D,$840$,$144$ | $310$ | $609$ | $840$
+ch03,11,3,ch03_factors_primes.lcm_word,2,AR,B,$18$~minutes,$3$~minutes | $18$~minutes | $36$~minutes | $54$~minutes
+ch03,12,3,ch03_factors_primes.gcf_word,2,AR,C,$9$,$3$ | $5$ | $9$ | $216$
+ch03,13,3,ch03_factors_primes.lcm_word,2,AR,A,$36$~seconds,$36$~seconds | $41$~seconds | $72$~seconds | $216$~seconds
+ch03,14,3,ch03_factors_primes.gcf_word,2,AR,D,$9$,$3$ | $6$ | $8$ | $9$
+ch03,15,3,ch03_factors_primes.divisibility,2,MK,D,$630$,$112$ | $405$ | $542$ | $630$
+ch03,16,3,ch03_factors_primes.prime_factorization,2,MK,B,$2^{2} \times 3 \times 5 \times 7$,$2^{3} \times 3 \times 5 \times 7$ | $2^{2} \times 3 \times 5 \times 7$ | $2 \times 3 \times 7 \times 10$ | $2 \times 3 \times 5 \times 7$
+ch03,17,3,ch03_factors_primes.gcf,2,MK,B,$4$,$2$ | $4$ | $8$ | $24$
+ch03,18,3,ch03_factors_primes.lcm,2,MK,A,$165$,$165$ | $205$ | $330$ | $495$
+ch03,19,3,ch03_factors_primes.num_factors,3,MK,C,$6$,$3$ | $4$ | $6$ | $8$
+ch03,20,3,ch03_factors_primes.lcm_word,3,AR,A,$3$,$3$ | $4$ | $9$ | $36$
+ch03,21,3,ch03_factors_primes.gcf_word,3,AR,C,$4$,$2$ | $3$ | $4$ | $15$
+ch03,22,3,ch03_factors_primes.lcm_word,3,AR,B,$5$,$3$ | $5$ | $20$ | $60$
+ch03,23,3,ch03_factors_primes.gcf_word,3,AR,B,$5$,$4$ | $5$ | $9$ | $15$
+ch03,24,3,ch03_factors_primes.num_factors,3,MK,D,$6$,$3$ | $4$ | $5$ | $6$
+ch03,25,3,ch03_factors_primes.lcm,3,MK,D,$280$,$40$ | $56$ | $140$ | $280$
+ch04,1,4,ch04_fractions.simplify,1,MK,C,$\frac{2}{11}$,$\frac{6}{33}$ | $\frac{11}{2}$ | $\frac{2}{11}$ | $\frac{2}{99}$
+ch04,2,4,ch04_fractions.add_sub,1,MK,B,$1\frac{11}{15}$,$\frac{9}{10}$ | $1\frac{11}{15}$ | $1\frac{4}{5}$ | $1\frac{14}{15}$
+ch04,3,4,ch04_fractions.fraction_of,1,AR,A,$4$,$4$ | $5$ | $16$ | $100$
+ch04,4,4,ch04_fractions.add_sub,1,MK,A,$\frac{1}{3}$,$\frac{1}{3}$ | $\frac{2}{3}$ | $1$ | $1\frac{1}{3}$
+ch04,5,4,ch04_fractions.fraction_of,1,AR,B,$16$,$15$ | $16$ | $32$ | $144$
+ch04,6,4,ch04_fractions.simplify,1,MK,C,$\frac{1}{3}$,$\frac{2}{6}$ | $\frac{2}{3}$ | $\frac{1}{3}$ | $\frac{1}{30}$
+ch04,7,4,ch04_fractions.equivalent,1,MK,D,$25$,$5$ | $10$ | $24$ | $25$
+ch04,8,4,ch04_fractions.multiply,1,MK,B,$28$,$7$ | $28$ | $43\frac{3}{4}$ | $140$
+ch04,9,4,ch04_fractions.compare,2,MK,A,$\frac{1}{6}$,$\frac{1}{6}$ | $\frac{1}{5}$ | $\frac{3}{4}$ | $\frac{3}{5}$
+ch04,10,4,ch04_fractions.divide,2,MK,C,$20$,$\frac{1}{20}$ | $11\frac{1}{4}$ | $20$ | $28$
+ch04,11,4,ch04_fractions.mixed_add_sub,2,MK,B,$11\frac{5}{12}$,$10\frac{5}{12}$ | $11\frac{5}{12}$ | $12\frac{5}{12}$ | $27\frac{17}{24}$
+ch04,12,4,ch04_fractions.mixed_word,2,AR,C,$5\frac{1}{2}$~miles,$2\frac{3}{4}$~miles | $4\frac{1}{2}$~miles | $5\frac{1}{2}$~miles | $6\frac{1}{2}$~miles
+ch04,13,4,ch04_fractions.mixed_add_sub,2,MK,B,$12\frac{3}{10}$,$11\frac{3}{10}$ | $12\frac{3}{10}$ | $13\frac{3}{10}$ | $35\frac{1}{10}$
+ch04,14,4,ch04_fractions.mixed_word,2,AR,C,$10\frac{1}{2}$~cups,$6\frac{1}{2}$~cups | $9\frac{1}{2}$~cups | $10\frac{1}{2}$~cups | $11\frac{1}{2}$~cups
+ch04,15,4,ch04_fractions.divide,2,MK,A,$\frac{1}{4}$,$\frac{1}{4}$ | $1$ | $4$ | $9$
+ch04,16,4,ch04_fractions.compare,2,MK,D,$\frac{1}{6}$,$\frac{13}{15}$ | $\frac{9}{10}$ | $\frac{2}{3}$ | $\frac{1}{6}$
+ch04,17,4,ch04_fractions.add_sub,2,MK,D,$1\frac{1}{30}$,$\frac{4}{15}$ | $\frac{11}{30}$ | $\frac{8}{13}$ | $1\frac{1}{30}$
+ch04,18,4,ch04_fractions.multiply,2,MK,A,$2$,$2$ | $10$ | $12$ | $72$
+ch04,19,4,ch04_fractions.mixed_add_sub,3,MK,A,$6\frac{1}{3}$,$6\frac{1}{3}$ | $6\frac{2}{3}$ | $7\frac{1}{3}$ | $7\frac{2}{3}$
+ch04,20,4,ch04_fractions.mixed_mult_div,3,MK,C,$6\frac{1}{4}$,$2\frac{1}{4}$ | $4\frac{1}{4}$ | $6\frac{1}{4}$ | $12\frac{1}{2}$
+ch04,21,4,ch04_fractions.remaining_after,3,AR,B,"\$2{,}064","\$1{,}720 | \$2{,}064 | \$3{,}440 | \$3{,}956"
+ch04,22,4,ch04_fractions.mixed_mult_div,3,MK,A,$2\frac{4}{5}$,$2\frac{4}{5}$ | $3\frac{2}{5}$ | $5$ | $7\frac{7}{9}$
+ch04,23,4,ch04_fractions.remaining_after,3,AR,A,$12$~gallons,$12$~gallons | $13$~gallons | $15$~gallons | $75$~gallons
+ch04,24,4,ch04_fractions.mixed_add_sub,3,MK,C,$3\frac{7}{10}$,$2\frac{7}{10}$ | $3\frac{3}{10}$ | $3\frac{7}{10}$ | $4\frac{3}{10}$
+ch04,25,4,ch04_fractions.fraction_of,3,AR,A,$2$,$2$ | $4$ | $8$ | $12$
+ch05,1,5,ch05_decimals.add_sub_dec,1,MK,A,$20.459$,$20.459$ | $20.461$ | $21.661$ | $38.261$
+ch05,2,5,ch05_decimals.round_dec,1,MK,B,$32.53$,$32.52$ | $32.53$ | $32.54$ | $32.55$
+ch05,3,5,ch05_decimals.add_sub_dec,1,MK,B,$10.56$,$10.52$ | $10.56$ | $10.64$ | $15.24$
+ch05,4,5,ch05_decimals.round_dec,1,MK,C,$20.28$,$20.26$ | $20.27$ | $20.28$ | $20.29$
+ch05,5,5,ch05_decimals.multiply_dec,1,MK,A,$0.35$,$0.35$ | $1.2$ | $3.5$ | $35$
+ch05,6,5,ch05_decimals.divide_dec,1,MK,A,$7.8$,$7.8$ | $8.4$ | $78$ | $631.8$
+ch05,7,5,ch05_decimals.money_mult,1,AR,C,\$14.21,\$9.03 | \$14.03 | \$14.21 | \$142.10
+ch05,8,5,ch05_decimals.change_from_bill,1,AR,C,\$15.85,\$4.15 | \$14.85 | \$15.85 | \$17.84
+ch05,9,5,ch05_decimals.divide_dec,2,MK,A,$9.5$,$9.5$ | $10.5$ | $19$ | $95$
+ch05,10,5,ch05_decimals.frac_dec,2,MK,C,$\frac{71}{100}$,$\frac{71}{1000}$ | $\frac{7}{10}$ | $\frac{71}{100}$ | $\frac{71}{10}$
+ch05,11,5,ch05_decimals.compare_dec,2,MK,B,$0.0102$,$0.201$ | $0.0102$ | $0.21$ | $0.012$
+ch05,12,5,ch05_decimals.frac_dec,2,MK,D,$0.78$,$0.078$ | $0.395$ | $0.76$ | $0.78$
+ch05,13,5,ch05_decimals.compare_dec,2,MK,D,$0.035$,$0.5$ | $0.305$ | $0.35$ | $0.035$
+ch05,14,5,ch05_decimals.divide_dec,2,MK,A,$43$,$43$ | $48$ | $86$ | $430$
+ch05,15,5,ch05_decimals.add_sub_dec,2,MK,A,$1.39$,$1.39$ | $2.39$ | $18.61$ | $98.61$
+ch05,16,5,ch05_decimals.multiply_dec,2,MK,B,$4.9$,$0.49$ | $4.9$ | $49$ | $490$
+ch05,17,5,ch05_decimals.money_mult,2,AR,C,\$4.45,\$1.85 | \$3.35 | \$4.45 | \$5.50
+ch05,18,5,ch05_decimals.unit_price,2,AR,B,\$0.91,\$0.81 | \$0.91 | \$1.01 | \$9.10
+ch05,19,5,ch05_decimals.unit_price,3,AR,A,\$0.02,\$0.02 | \$0.91 | \$0.93 | \$2.69
+ch05,20,5,ch05_decimals.paycheck,3,AR,D,\$534.00,\$480.00 | \$516.00 | \$520.50 | \$534.00
+ch05,21,5,ch05_decimals.unit_price,3,AR,B,\$0.10,\$0.09 | \$0.10 | \$0.62 | \$2.04
+ch05,22,5,ch05_decimals.paycheck,3,AR,D,\$522.50,\$440.00 | \$495.00 | \$502.50 | \$522.50
+ch05,23,5,ch05_decimals.mpg,3,AR,D,$41$~miles per gallon,$4.1$~miles per gallon | $39$~miles per gallon | $40$~miles per gallon | $41$~miles per gallon
+ch05,24,5,ch05_decimals.money_mult,3,AR,A,\$29.35,\$29.35 | \$29.45 | \$139.60 | \$183.25
+ch05,25,5,ch05_decimals.change_from_bill,3,AR,A,\$11.66,\$11.66 | \$14.60 | \$15.83 | \$28.34
 ch06,1,6,ch06_percents.percent_of,1,MK,A,$99$,$99$ | $297$ | $495$ | $990$
-ch06,2,6,ch06_percents.convert,1,MK,B,$13\%$,$1.3\%$ | $13\%$ | $15\%$ | $130\%$
-ch06,3,6,ch06_percents.percent_of,1,MK,B,$96$,$32$ | $96$ | $224$ | $960$
-ch06,4,6,ch06_percents.convert,1,MK,C,$25\%$,$1\%$ | $2.5\%$ | $25\%$ | $400\%$
-ch06,5,6,ch06_percents.complement_word,1,AR,A,$95$,$95$ | $105$ | $285$ | $305$
-ch06,6,6,ch06_percents.convert,1,MK,A,$7.5\%$,$7.5\%$ | $8\%$ | $15\%$ | $75\%$
-ch06,7,6,ch06_percents.complement_word,1,AR,A,$91$,$91$ | $101$ | $273$ | $289$
-ch06,8,6,ch06_percents.percent_of,1,MK,A,$48$,$48$ | $272$ | $368$ | $480$
-ch06,9,6,ch06_percents.what_percent,2,MK,D,$125\%$,$1.25\%$ | $12.5\%$ | $80\%$ | $125\%$
-ch06,10,6,ch06_percents.find_whole,2,MK,C,$220$,"$22$ | $128$ | $220$ | $3{,}520$"
-ch06,11,6,ch06_percents.what_percent,2,MK,C,$75\%$,$0.75\%$ | $7.5\%$ | $75\%$ | $115\%$
-ch06,12,6,ch06_percents.find_whole,2,MK,B,$210$,"$21$ | $210$ | $420$ | $7{,}560$"
-ch06,13,6,ch06_percents.percent_change,2,AR,C,$60\%$,$12\%$ | $37.5\%$ | $60\%$ | $160\%$
-ch06,14,6,ch06_percents.find_whole,2,MK,D,$280$,$28$ | $180$ | $228$ | $280$
-ch06,15,6,ch06_percents.percent_change,2,AR,C,$25\%$,$12.5\%$ | $20\%$ | $25\%$ | $144\%$
-ch06,16,6,ch06_percents.what_percent,2,MK,D,$150\%$,$1.5\%$ | $15\%$ | $70\%$ | $150\%$
-ch06,17,6,ch06_percents.convert,2,MK,A,$1.5\%$,$1.5\%$ | $2\%$ | $3\%$ | $15\%$
-ch06,18,6,ch06_percents.percent_of,2,MK,B,$156$,"$136$ | $156$ | $260$ | $1{,}560$"
-ch06,19,6,ch06_percents.up_then_down,3,AR,A,\$114,\$114 | \$144 | \$152 | \$228
-ch06,20,6,ch06_percents.percent_of_percent,3,MK,A,$42$,$42$ | $84$ | $420$ | $504$
-ch06,21,6,ch06_percents.up_then_down,3,AR,A,\$156.00,\$156.00 | \$163.80 | \$195.00 | \$312.00
-ch06,22,6,ch06_percents.part_of_part,3,AR,A,$16$,$16$ | $24$ | $40$ | $80$
-ch06,23,6,ch06_percents.up_then_down,3,AR,B,\$115,\$92 | \$115 | \$138 | \$230
-ch06,24,6,ch06_percents.part_of_part,3,AR,C,$100$,$10$ | $60$ | $100$ | $300$
-ch06,25,6,ch06_percents.percent_of_percent,3,MK,B,$204$,$102$ | $204$ | $272$ | $782$
-diag,1,6,ch06_percents.convert,2,MK,A,$86\%$,$86\%$ | $106\%$ | $126\%$ | $860\%$
-test1-AR,1,6,ch06_percents.percent_change,2,AR,B,$40\%$,$20\%$ | $40\%$ | $60\%$ | $760\%$
-test1-AR,2,6,ch06_percents.percent_change,2,AR,A,$25\%$,$25\%$ | $30\%$ | $75\%$ | $375\%$
-test1-AR,3,6,ch06_percents.percent_change,2,AR,A,$50\%$,$50\%$ | $65\%$ | $100\%$ | $650\%$
-test1-AR,4,6,ch06_percents.percent_change,2,AR,D,$50\%$,$25\%$ | $35\%$ | $48\%$ | $50\%$
-test1-AR,5,6,ch06_percents.percent_change,2,AR,B,$50\%$,$25\%$ | $50\%$ | $63\%$ | $150\%$
-test1-AR,6,6,ch06_percents.percent_change,2,AR,A,$30\%$,$30\%$ | $60\%$ | $126\%$ | $130\%$
-test1-AR,7,6,ch06_percents.percent_change,2,AR,B,$20\%$,$2\%$ | $20\%$ | $120\%$ | $180\%$
-test1-AR,8,6,ch06_percents.percent_change,2,AR,D,$80\%$,$20\%$ | $40\%$ | $48\%$ | $80\%$
-test1-AR,9,6,ch06_percents.percent_change,2,AR,B,$30\%$,$15\%$ | $30\%$ | $60\%$ | $130\%$
-test1-AR,10,6,ch06_percents.percent_change,2,AR,C,$50\%$,$30\%$ | $35\%$ | $50\%$ | $100\%$
-test1-AR,11,6,ch06_percents.percent_change,2,AR,A,$75\%$,$75\%$ | $95\%$ | $175\%$ | $282\%$
-test1-AR,12,6,ch06_percents.up_then_down,3,AR,C,\$152.00,\$112.00 | \$121.60 | \$152.00 | \$159.60
-test1-AR,13,6,ch06_percents.up_then_down,3,AR,A,\$333.00,\$333.00 | \$340.40 | \$370.00 | \$483.00
-test1-AR,14,6,ch06_percents.percent_change,2,AR,B,$50\%$,$5\%$ | $50\%$ | $76\%$ | $150\%$
-test1-AR,15,6,ch06_percents.part_of_part,3,AR,B,$114$,$104$ | $114$ | $190$ | $570$
-test1-AR,16,6,ch06_percents.percent_change,2,AR,C,$25\%$,$18\%$ | $20\%$ | $25\%$ | $125\%$
-test1-AR,17,6,ch06_percents.up_then_down,3,AR,A,\$332.00,\$332.00 | \$348.60 | \$415.00 | \$664.00
-test1-AR,18,6,ch06_percents.percent_change,2,AR,B,$60\%$,$37.5\%$ | $60\%$ | $160\%$ | $720\%$
-test1-AR,19,6,ch06_percents.part_of_part,3,AR,A,$30$,$30$ | $90$ | $100$ | $120$
-test1-AR,20,6,ch06_percents.up_then_down,3,AR,B,\$84.00,\$67.20 | \$84.00 | \$88.20 | \$105.00
-test1-AR,21,6,ch06_percents.percent_change,2,AR,C,$75\%$,$45\%$ | $55\%$ | $75\%$ | $78\%$
-test1-AR,22,6,ch06_percents.up_then_down,3,AR,D,\$84,\$60 | \$64 | \$74 | \$84
-test1-AR,23,6,ch06_percents.up_then_down,3,AR,C,\$328.00,\$228.00 | \$262.40 | \$328.00 | \$344.40
-test1-AR,24,6,ch06_percents.part_of_part,3,AR,C,$252$,$168$ | $202$ | $252$ | $420$
-test1-AR,25,6,ch06_percents.up_then_down,3,AR,C,\$840,\$540 | \$600 | \$840 | \$920
-test1-AR,26,6,ch06_percents.part_of_part,3,AR,D,$228$,$57$ | $114$ | $208$ | $228$
-test1-AR,27,6,ch06_percents.up_then_down,3,AR,D,\$228.00,\$114.00 | \$182.40 | \$208.00 | \$228.00
-test1-AR,28,6,ch06_percents.part_of_part,3,AR,A,$264$,$264$ | $440$ | $528$ | $660$
-test1-AR,29,6,ch06_percents.up_then_down,3,AR,B,\$192,\$160 | \$192 | \$200 | \$240
-test1-AR,30,6,ch06_percents.up_then_down,3,AR,A,\$126,\$126 | \$133 | \$166 | \$168
-test1-MK,1,6,ch06_percents.find_whole,2,MK,D,$430$,$43$ | $318$ | $380$ | $430$
-test1-MK,2,6,ch06_percents.find_whole,2,MK,D,$80$,$8$ | $40$ | $45$ | $80$
-test1-MK,3,6,ch06_percents.percent_of,2,MK,C,$71$,$41$ | $61$ | $71$ | $710$
-test1-MK,4,6,ch06_percents.convert,2,MK,C,$64\%$,$6.4\%$ | $16\%$ | $64\%$ | $156.25\%$
-test1-MK,5,6,ch06_percents.convert,2,MK,C,$57\%$,$0.57\%$ | $5.7\%$ | $57\%$ | $570\%$
-test1-MK,6,6,ch06_percents.convert,2,MK,B,$15\%$,$3\%$ | $15\%$ | $17\%$ | $23\%$
-test1-MK,7,6,ch06_percents.what_percent,2,MK,B,$25\%$,$2.5\%$ | $25\%$ | $30\%$ | $400\%$
-test1-MK,8,6,ch06_percents.convert,2,MK,B,$26\%$,$2.6\%$ | $26\%$ | $46\%$ | $260\%$
-test1-MK,9,6,ch06_percents.what_percent,2,MK,D,$75\%$,$0.75\%$ | $7.5\%$ | $65\%$ | $75\%$
-test1-MK,10,6,ch06_percents.percent_of,2,MK,D,$210$,$21$ | $105$ | $170$ | $210$
-test1-MK,11,6,ch06_percents.what_percent,2,MK,A,$25\%$,$25\%$ | $30\%$ | $35\%$ | $400\%$
-test1-MK,12,6,ch06_percents.what_percent,2,MK,B,$150\%$,$15\%$ | $150\%$ | $170\%$ | $300\%$
-test1-MK,13,6,ch06_percents.percent_of_percent,3,MK,B,$36$,$16$ | $36$ | $48$ | $138$
-test1-MK,14,6,ch06_percents.what_percent,2,MK,D,$25\%$,$0.25\%$ | $2.5\%$ | $5\%$ | $25\%$
-test1-MK,15,6,ch06_percents.find_whole,2,MK,A,$115$,$115$ | $145$ | $155$ | $460$
-test1-MK,16,6,ch06_percents.find_whole,2,MK,C,$455$,"$111$ | $255$ | $455$ | $1{,}820$"
-test1-MK,17,6,ch06_percents.percent_of,2,MK,A,$64$,$64$ | $192$ | $320$ | $640$
-test1-MK,18,6,ch06_percents.find_whole,2,MK,A,$490$,"$490$ | $590$ | $4{,}900$ | $7{,}840$"
-test1-MK,19,6,ch06_percents.find_whole,2,MK,C,$20$,$2$ | $12$ | $20$ | $40$
-test1-MK,20,6,ch06_percents.percent_of_percent,3,MK,B,$160$,$80$ | $160$ | $640$ | $840$
-test1-MK,21,6,ch06_percents.percent_of_percent,3,MK,C,$33$,$18$ | $23$ | $33$ | $396$
-test1-MK,22,6,ch06_percents.percent_of_percent,3,MK,A,$300$,$300$ | $375$ | $400$ | $775$
-test1-MK,23,6,ch06_percents.percent_of_percent,3,MK,A,$27$,$27$ | $45$ | $108$ | $153$
-test1-MK,24,6,ch06_percents.percent_of_percent,3,MK,C,$49$,$39$ | $44$ | $49$ | $588$
-test1-MK,25,6,ch06_percents.percent_of_percent,3,MK,A,$144$,$144$ | $180$ | $720$ | $900$
-test2-AR,1,6,ch06_percents.percent_change,2,AR,B,$50\%$,$30\%$ | $50\%$ | $74\%$ | $100\%$
-test2-AR,2,6,ch06_percents.percent_change,2,AR,B,$50\%$,"$5\%$ | $50\%$ | $100\%$ | $4{,}450\%$"
-test2-AR,3,6,ch06_percents.percent_change,2,AR,A,$25\%$,$25\%$ | $28\%$ | $125\%$ | $250\%$
-test2-AR,4,6,ch06_percents.percent_change,2,AR,A,$40\%$,"$40\%$ | $80\%$ | $140\%$ | $3{,}320\%$"
-test2-AR,5,6,ch06_percents.percent_change,2,AR,A,$30\%$,$30\%$ | $130\%$ | $300\%$ | $390\%$
-test2-AR,6,6,ch06_percents.percent_change,2,AR,A,$50\%$,$50\%$ | $55\%$ | $100\%$ | $500\%$
-test2-AR,7,6,ch06_percents.percent_change,2,AR,A,$50\%$,$50\%$ | $64\%$ | $65\%$ | $100\%$
-test2-AR,8,6,ch06_percents.percent_change,2,AR,B,$25\%$,$5\%$ | $25\%$ | $48\%$ | $75\%$
-test2-AR,9,6,ch06_percents.percent_change,2,AR,A,$20\%$,$20\%$ | $25\%$ | $44\%$ | $80\%$
-test2-AR,10,6,ch06_percents.percent_change,2,AR,B,$40\%$,$4\%$ | $40\%$ | $140\%$ | $400\%$
-test2-AR,11,6,ch06_percents.percent_change,2,AR,A,$50\%$,$50\%$ | $60\%$ | $70\%$ | $150\%$
-test2-AR,12,6,ch06_percents.percent_change,2,AR,D,$60\%$,$6\%$ | $30\%$ | $40\%$ | $60\%$
-test2-AR,13,6,ch06_percents.percent_change,2,AR,A,$40\%$,$40\%$ | $50\%$ | $64\%$ | $140\%$
-test2-AR,14,6,ch06_percents.up_then_down,3,AR,C,\$240,\$180 | \$192 | \$240 | \$252
-test2-AR,15,6,ch06_percents.percent_change,2,AR,C,$75\%$,"$35\%$ | $65\%$ | $75\%$ | $1{,}125\%$"
-test2-AR,16,6,ch06_percents.percent_change,2,AR,C,$30\%$,$3\%$ | $25\%$ | $30\%$ | $48\%$
-test2-AR,17,6,ch06_percents.percent_change,2,AR,B,$50\%$,"$5\%$ | $50\%$ | $150\%$ | $5{,}350\%$"
-test2-AR,18,6,ch06_percents.percent_change,2,AR,C,$30\%$,"$3\%$ | $15\%$ | $30\%$ | $2{,}130\%$"
-test2-AR,19,6,ch06_percents.part_of_part,3,AR,B,$80$,$8$ | $80$ | $100$ | $240$
-test2-AR,20,6,ch06_percents.percent_change,2,AR,A,$10\%$,$10\%$ | $11\%$ | $20\%$ | $110\%$
-test2-AR,21,6,ch06_percents.percent_change,2,AR,C,$75\%$,$15\%$ | $65\%$ | $75\%$ | $175\%$
-test2-AR,22,6,ch06_percents.up_then_down,3,AR,D,\$450,\$225 | \$250 | \$300 | \$450
-test2-AR,23,6,ch06_percents.up_then_down,3,AR,D,\$372.00,\$272.00 | \$297.60 | \$322.00 | \$372.00
-test2-AR,24,6,ch06_percents.part_of_part,3,AR,C,$40$,$20$ | $25$ | $40$ | $120$
-test2-AR,25,6,ch06_percents.percent_change,2,AR,B,$40\%$,$20\%$ | $40\%$ | $60\%$ | $140\%$
-test2-AR,26,6,ch06_percents.part_of_part,3,AR,C,$36$,$9$ | $21$ | $36$ | $45$
-test2-AR,27,6,ch06_percents.part_of_part,3,AR,A,$90$,$90$ | $225$ | $270$ | $360$
-test2-AR,28,6,ch06_percents.up_then_down,3,AR,D,\$355,\$155 | \$284 | \$305 | \$355
-test2-AR,29,6,ch06_percents.part_of_part,3,AR,B,$135$,$55$ | $135$ | $225$ | $270$
-test2-AR,30,6,ch06_percents.part_of_part,3,AR,B,$48$,$38$ | $48$ | $160$ | $240$
-test2-MK,1,6,ch06_percents.convert,2,MK,B,$6\%$,$0.6\%$ | $6\%$ | $7.5\%$ | $60\%$
-test2-MK,2,6,ch06_percents.convert,2,MK,A,$62.5\%$,$62.5\%$ | $63\%$ | $125\%$ | $160\%$
-test2-MK,3,6,ch06_percents.what_percent,2,MK,C,$75\%$,$0.75\%$ | $7.5\%$ | $75\%$ | $95\%$
-test2-MK,4,6,ch06_percents.what_percent,2,MK,C,$80\%$,$0.8\%$ | $8\%$ | $80\%$ | $125\%$
-test2-MK,5,6,ch06_percents.find_whole,2,MK,A,$420$,"$420$ | $620$ | $4{,}200$ | $23{,}625$"
-test2-MK,6,6,ch06_percents.what_percent,2,MK,D,$15\%$,$0.15\%$ | $1.5\%$ | $11\%$ | $15\%$
-test2-MK,7,6,ch06_percents.convert,2,MK,A,$5\%$,"$5\%$ | $6\%$ | $21\%$ | $2{,}000\%$"
-test2-MK,8,6,ch06_percents.convert,2,MK,C,$8\%$,"$0.8\%$ | $2\%$ | $8\%$ | $1{,}250\%$"
-test2-MK,9,6,ch06_percents.what_percent,2,MK,D,$30\%$,$0.3\%$ | $3\%$ | $25\%$ | $30\%$
-test2-MK,10,6,ch06_percents.convert,2,MK,D,$40\%$,$2\%$ | $4\%$ | $7\%$ | $40\%$
-test2-MK,11,6,ch06_percents.percent_of,2,MK,A,"$1{,}332$","$1{,}332$ | $2{,}220$ | $2{,}664$ | $13{,}320$"
-test2-MK,12,6,ch06_percents.find_whole,2,MK,D,$240$,$15$ | $24$ | $85$ | $240$
-test2-MK,13,6,ch06_percents.convert,2,MK,B,$80\%$,$4\%$ | $80\%$ | $100\%$ | $125\%$
-test2-MK,14,6,ch06_percents.find_whole,2,MK,C,$80$,"$8$ | $72$ | $80$ | $1{,}280$"
-test2-MK,15,6,ch06_percents.percent_of_percent,3,MK,C,$11$,$7$ | $10$ | $11$ | $99$
-test2-MK,16,6,ch06_percents.percent_of_percent,3,MK,B,$312$,$26$ | $312$ | $416$ | $806$
-test2-MK,17,6,ch06_percents.percent_of,2,MK,C,"$1{,}128$","$728$ | $828$ | $1{,}128$ | $11{,}280$"
-test2-MK,18,6,ch06_percents.percent_of,2,MK,A,$240$,"$240$ | $280$ | $540$ | $2{,}400$"
-test2-MK,19,6,ch06_percents.percent_of_percent,3,MK,B,$126$,$42$ | $126$ | $210$ | $378$
-test2-MK,20,6,ch06_percents.convert,2,MK,D,$20\%$,$1\%$ | $2\%$ | $6\%$ | $20\%$
-test2-MK,21,6,ch06_percents.percent_of_percent,3,MK,B,$352$,"$264$ | $352$ | $704$ | $1{,}144$"
-test2-MK,22,6,ch06_percents.percent_of_percent,3,MK,C,$516$,"$43$ | $366$ | $516$ | $1{,}333$"
-test2-MK,23,6,ch06_percents.percent_of_percent,3,MK,B,$264$,$88$ | $264$ | $528$ | $968$
-test2-MK,24,6,ch06_percents.percent_of_percent,3,MK,A,$81$,$81$ | $108$ | $405$ | $513$
-test2-MK,25,6,ch06_percents.percent_of_percent,3,MK,A,$75$,$75$ | $100$ | $150$ | $250$
-test3-AR,1,6,ch06_percents.percent_change,2,AR,D,$80\%$,$20\%$ | $40\%$ | $70\%$ | $80\%$
-test3-AR,2,6,ch06_percents.percent_change,2,AR,B,$10\%$,$7\%$ | $10\%$ | $12\%$ | $90\%$
-test3-AR,3,6,ch06_percents.percent_change,2,AR,C,$50\%$,$30\%$ | $34\%$ | $50\%$ | $150\%$
-test3-AR,4,6,ch06_percents.percent_change,2,AR,A,$10\%$,"$10\%$ | $14\%$ | $110\%$ | $1{,}580\%$"
-test3-AR,5,6,ch06_percents.percent_change,2,AR,B,$40\%$,$25\%$ | $40\%$ | $60\%$ | $480\%$
-test3-AR,6,6,ch06_percents.percent_change,2,AR,C,$20\%$,$10\%$ | $16\%$ | $20\%$ | $25\%$
-test3-AR,7,6,ch06_percents.percent_change,2,AR,C,$20\%$,$12\%$ | $16\%$ | $20\%$ | $320\%$
-test3-AR,8,6,ch06_percents.percent_change,2,AR,B,$30\%$,"$20\%$ | $30\%$ | $70\%$ | $5{,}370\%$"
-test3-AR,9,6,ch06_percents.percent_change,2,AR,B,$75\%$,$35\%$ | $75\%$ | $84\%$ | $175\%$
-test3-AR,10,6,ch06_percents.percent_change,2,AR,B,$50\%$,"$40\%$ | $50\%$ | $100\%$ | $9{,}500\%$"
-test3-AR,11,6,ch06_percents.percent_change,2,AR,B,$75\%$,$45\%$ | $75\%$ | $175\%$ | $177\%$
-test3-AR,12,6,ch06_percents.percent_change,2,AR,A,$75\%$,$75\%$ | $84\%$ | $115\%$ | $300\%$
-test3-AR,13,6,ch06_percents.percent_change,2,AR,C,$20\%$,$10\%$ | $14\%$ | $20\%$ | $68\%$
-test3-AR,14,6,ch06_percents.percent_change,2,AR,C,$20\%$,$16\%$ | $18\%$ | $20\%$ | $420\%$
-test3-AR,15,6,ch06_percents.percent_change,2,AR,D,$75\%$,$7.5\%$ | $25\%$ | $35\%$ | $75\%$
-test3-AR,16,6,ch06_percents.percent_change,2,AR,B,$75\%$,$25\%$ | $75\%$ | $168\%$ | $300\%$
-test3-AR,17,6,ch06_percents.part_of_part,3,AR,D,$170$,$17$ | $85$ | $150$ | $170$
-test3-AR,18,6,ch06_percents.percent_change,2,AR,A,$75\%$,$75\%$ | $115\%$ | $300\%$ | $519\%$
-test3-AR,19,6,ch06_percents.up_then_down,3,AR,B,\$96,\$64 | \$96 | \$128 | \$192
-test3-AR,20,6,ch06_percents.part_of_part,3,AR,C,$24$,$20$ | $22$ | $24$ | $120$
-test3-AR,21,6,ch06_percents.part_of_part,3,AR,C,$120$,$12$ | $60$ | $120$ | $180$
-test3-AR,22,6,ch06_percents.up_then_down,3,AR,D,\$90,\$9 | \$50 | \$60 | \$90
-test3-AR,23,6,ch06_percents.percent_change,2,AR,D,$75\%$,$7.5\%$ | $27\%$ | $37.5\%$ | $75\%$
-test3-AR,24,6,ch06_percents.percent_change,2,AR,A,$25\%$,$25\%$ | $35\%$ | $58\%$ | $75\%$
-test3-AR,25,6,ch06_percents.up_then_down,3,AR,A,\$84.00,\$84.00 | \$95.20 | \$104.00 | \$140.00
-test3-AR,26,6,ch06_percents.part_of_part,3,AR,A,$168$,$168$ | $210$ | $280$ | $336$
-test3-AR,27,6,ch06_percents.up_then_down,3,AR,B,\$99,\$66 | \$99 | \$132 | \$198
-test3-AR,28,6,ch06_percents.up_then_down,3,AR,A,\$72,\$72 | \$96 | \$144 | \$720
-test3-AR,29,6,ch06_percents.up_then_down,3,AR,D,\$72,\$36 | \$48 | \$52 | \$72
-test3-AR,30,6,ch06_percents.part_of_part,3,AR,A,$132$,$132$ | $198$ | $220$ | $330$
-test3-MK,1,6,ch06_percents.what_percent,2,MK,B,$60\%$,$6\%$ | $60\%$ | $65\%$ | $75\%$
-test3-MK,2,6,ch06_percents.what_percent,2,MK,A,$25\%$,$25\%$ | $45\%$ | $50\%$ | $400\%$
-test3-MK,3,6,ch06_percents.convert,2,MK,D,$12.5\%$,$1\%$ | $1.25\%$ | $9\%$ | $12.5\%$
-test3-MK,4,6,ch06_percents.find_whole,2,MK,B,$435$,"$321$ | $435$ | $870$ | $15{,}660$"
-test3-MK,5,6,ch06_percents.find_whole,2,MK,B,$30$,$3$ | $30$ | $35$ | $60$
-test3-MK,6,6,ch06_percents.find_whole,2,MK,D,$140$,$14$ | $24$ | $120$ | $140$
-test3-MK,7,6,ch06_percents.percent_of,2,MK,A,$840$,"$840$ | $940$ | $1{,}540$ | $8{,}400$"
-test3-MK,8,6,ch06_percents.find_whole,2,MK,D,$340$,$34$ | $85$ | $220$ | $340$
-test3-MK,9,6,ch06_percents.convert,2,MK,D,$87.5\%$,$7\%$ | $8.75\%$ | $15\%$ | $87.5\%$
-test3-MK,10,6,ch06_percents.convert,2,MK,D,$37.5\%$,$3\%$ | $3.75\%$ | $11\%$ | $37.5\%$
-test3-MK,11,6,ch06_percents.convert,2,MK,A,$93\%$,$93\%$ | $113\%$ | $186\%$ | $930\%$
-test3-MK,12,6,ch06_percents.percent_of,2,MK,C,$82$,$52$ | $62$ | $82$ | $820$
-test3-MK,13,6,ch06_percents.find_whole,2,MK,D,$100$,$10$ | $16$ | $80$ | $100$
-test3-MK,14,6,ch06_percents.what_percent,2,MK,C,$25\%$,$0.25\%$ | $2.5\%$ | $25\%$ | $400\%$
-test3-MK,15,6,ch06_percents.find_whole,2,MK,B,$140$,"$14$ | $140$ | $160$ | $2{,}240$"
-test3-MK,16,6,ch06_percents.percent_of,2,MK,C,$42$,$21$ | $32$ | $42$ | $420$
-test3-MK,17,6,ch06_percents.convert,2,MK,B,$75\%$,$3\%$ | $75\%$ | $105\%$ | $750\%$
-test3-MK,18,6,ch06_percents.percent_of_percent,3,MK,C,$48$,$24$ | $33$ | $48$ | $312$
-test3-MK,19,6,ch06_percents.percent_of_percent,3,MK,D,$108$,$36$ | $54$ | $68$ | $108$
-test3-MK,20,6,ch06_percents.percent_of_percent,3,MK,C,$100$,$50$ | $70$ | $100$ | $450$
-test3-MK,21,6,ch06_percents.percent_of_percent,3,MK,B,$360$,"$120$ | $360$ | $480$ | $1{,}080$"
-test3-MK,22,6,ch06_percents.percent_of_percent,3,MK,A,$60$,$60$ | $120$ | $300$ | $420$
-test3-MK,23,6,ch06_percents.percent_of_percent,3,MK,A,$135$,$135$ | $180$ | $540$ | $720$
-test3-MK,24,6,ch06_percents.percent_of_percent,3,MK,A,$90$,$90$ | $120$ | $150$ | $270$
-test3-MK,25,6,ch06_percents.percent_of_percent,3,MK,C,$120$,$60$ | $110$ | $120$ | $760$
-test4-AR,1,6,ch06_percents.percent_change,2,AR,A,$75\%$,$75\%$ | $150\%$ | $175\%$ | $825\%$
-test4-AR,2,6,ch06_percents.percent_change,2,AR,B,$75\%$,$37.5\%$ | $75\%$ | $129\%$ | $175\%$
-test4-AR,3,6,ch06_percents.percent_change,2,AR,A,$25\%$,$25\%$ | $41\%$ | $75\%$ | $250\%$
-test4-AR,4,6,ch06_percents.percent_change,2,AR,A,$50\%$,$50\%$ | $55\%$ | $112\%$ | $150\%$
-test4-AR,5,6,ch06_percents.percent_change,2,AR,B,$75\%$,$25\%$ | $75\%$ | $87\%$ | $300\%$
-test4-AR,6,6,ch06_percents.percent_change,2,AR,A,$25\%$,$25\%$ | $45\%$ | $75\%$ | $425\%$
-test4-AR,7,6,ch06_percents.percent_change,2,AR,A,$30\%$,"$30\%$ | $35\%$ | $130\%$ | $3{,}240\%$"
-test4-AR,8,6,ch06_percents.percent_change,2,AR,B,$80\%$,$20\%$ | $80\%$ | $400\%$ | $640\%$
-test4-AR,9,6,ch06_percents.percent_change,2,AR,A,$20\%$,$20\%$ | $24\%$ | $28\%$ | $120\%$
-test4-AR,10,6,ch06_percents.percent_change,2,AR,C,$75\%$,$25\%$ | $42\%$ | $75\%$ | $300\%$
-test4-AR,11,6,ch06_percents.part_of_part,3,AR,B,$384$,$96$ | $384$ | $480$ | $640$
-test4-AR,12,6,ch06_percents.up_then_down,3,AR,D,\$207.00,\$20.70 | \$165.60 | \$187.00 | \$207.00
-test4-AR,13,6,ch06_percents.percent_change,2,AR,D,$25\%$,$5\%$ | $15\%$ | $20\%$ | $25\%$
-test4-AR,14,6,ch06_percents.part_of_part,3,AR,D,$192$,$48$ | $132$ | $152$ | $192$
-test4-AR,15,6,ch06_percents.up_then_down,3,AR,B,\$210,\$168 | \$210 | \$224 | \$280
-test4-AR,16,6,ch06_percents.percent_change,2,AR,B,$25\%$,$6\%$ | $25\%$ | $30\%$ | $75\%$
-test4-AR,17,6,ch06_percents.percent_change,2,AR,C,$75\%$,"$7.5\%$ | $35\%$ | $75\%$ | $11{,}325\%$"
-test4-AR,18,6,ch06_percents.percent_change,2,AR,C,$75\%$,$7.5\%$ | $37.5\%$ | $75\%$ | $132\%$
-test4-AR,19,6,ch06_percents.percent_change,2,AR,B,$50\%$,$35\%$ | $50\%$ | $76\%$ | $150\%$
-test4-AR,20,6,ch06_percents.percent_change,2,AR,C,$30\%$,"$3\%$ | $15\%$ | $30\%$ | $3{,}660\%$"
-test4-AR,21,6,ch06_percents.up_then_down,3,AR,A,\$123,\$123 | \$164 | \$203 | \$246
-test4-AR,22,6,ch06_percents.up_then_down,3,AR,C,\$356.00,\$156.00 | \$284.80 | \$356.00 | \$373.80
-test4-AR,23,6,ch06_percents.part_of_part,3,AR,A,$70$,$70$ | $110$ | $140$ | $350$
-test4-AR,24,6,ch06_percents.part_of_part,3,AR,C,$57$,$42$ | $47$ | $57$ | $285$
-test4-AR,25,6,ch06_percents.up_then_down,3,AR,B,\$261,\$174 | \$261 | \$348 | \$522
-test4-AR,26,6,ch06_percents.part_of_part,3,AR,B,$24$,$16$ | $24$ | $40$ | $60$
-test4-AR,27,6,ch06_percents.up_then_down,3,AR,A,\$435,"\$435 | \$522 | \$870 | \$4{,}350"
-test4-AR,28,6,ch06_percents.part_of_part,3,AR,B,$180$,$100$ | $180$ | $360$ | $450$
-test4-AR,29,6,ch06_percents.up_then_down,3,AR,A,\$45,\$45 | \$54 | \$55 | \$90
-test4-AR,30,6,ch06_percents.part_of_part,3,AR,C,$288$,$72$ | $144$ | $288$ | $360$
-test4-MK,1,6,ch06_percents.percent_of,2,MK,C,$25$,$5$ | $15$ | $25$ | $250$
-test4-MK,2,6,ch06_percents.what_percent,2,MK,C,$75\%$,$0.75\%$ | $7.5\%$ | $75\%$ | $150\%$
-test4-MK,3,6,ch06_percents.what_percent,2,MK,C,$150\%$,$1.5\%$ | $15\%$ | $150\%$ | $300\%$
-test4-MK,4,6,ch06_percents.what_percent,2,MK,D,$20\%$,$0.2\%$ | $2\%$ | $16\%$ | $20\%$
-test4-MK,5,6,ch06_percents.find_whole,2,MK,D,$245$,$138$ | $145$ | $195$ | $245$
-test4-MK,6,6,ch06_percents.what_percent,2,MK,C,$75\%$,$0.75\%$ | $7.5\%$ | $75\%$ | $150\%$
-test4-MK,7,6,ch06_percents.convert,2,MK,D,$5\%$,$0.05\%$ | $0.5\%$ | $4.5\%$ | $5\%$
-test4-MK,8,6,ch06_percents.find_whole,2,MK,A,$210$,"$210$ | $420$ | $840$ | $2{,}100$"
-test4-MK,9,6,ch06_percents.convert,2,MK,B,$79\%$,$7.9\%$ | $79\%$ | $158\%$ | $790\%$
-test4-MK,10,6,ch06_percents.find_whole,2,MK,A,$480$,"$480$ | $630$ | $960$ | $1{,}920$"
-test4-MK,11,6,ch06_percents.convert,2,MK,D,$97.5\%$,$9.75\%$ | $39\%$ | $79\%$ | $97.5\%$
-test4-MK,12,6,ch06_percents.find_whole,2,MK,C,$250$,$25$ | $160$ | $250$ | $280$
-test4-MK,13,6,ch06_percents.find_whole,2,MK,B,$450$,"$45$ | $450$ | $4{,}500$ | $11{,}250$"
-test4-MK,14,6,ch06_percents.percent_of,2,MK,A,$669$,"$669$ | $869$ | $1{,}561$ | $6{,}690$"
-test4-MK,15,6,ch06_percents.percent_of,2,MK,D,$130$,$13$ | $50$ | $65$ | $130$
-test4-MK,16,6,ch06_percents.convert,2,MK,D,$65\%$,$6.5\%$ | $13\%$ | $33\%$ | $65\%$
-test4-MK,17,6,ch06_percents.find_whole,2,MK,D,$260$,$26$ | $90$ | $160$ | $260$
-test4-MK,18,6,ch06_percents.percent_of_percent,3,MK,B,$80$,$60$ | $80$ | $320$ | $420$
-test4-MK,19,6,ch06_percents.percent_of,2,MK,C,$192$,"$96$ | $132$ | $192$ | $1{,}920$"
-test4-MK,20,6,ch06_percents.percent_of_percent,3,MK,B,$192$,$64$ | $192$ | $384$ | $704$
-test4-MK,21,6,ch06_percents.percent_of_percent,3,MK,C,$138$,$69$ | $118$ | $138$ | $874$
-test4-MK,22,6,ch06_percents.percent_of_percent,3,MK,B,$192$,$144$ | $192$ | $240$ | $624$
-test4-MK,23,6,ch06_percents.percent_of_percent,3,MK,B,$32$,$27$ | $32$ | $40$ | $120$
-test4-MK,24,6,ch06_percents.percent_of_percent,3,MK,C,$140$,$14$ | $100$ | $140$ | $735$
-test4-MK,25,6,ch06_percents.percent_of_percent,3,MK,A,$38$,$38$ | $152$ | $190$ | $342$
+ch06,2,6,ch06_percents.convert,1,MK,B,$13\%$,$1.3\%$ | $13\%$ | $17\%$ | $130\%$
+ch06,3,6,ch06_percents.percent_of,1,MK,B,$48$,$12$ | $48$ | $108$ | $480$
+ch06,4,6,ch06_percents.convert,1,MK,C,$2\%$,$0.02\%$ | $0.2\%$ | $2\%$ | $20\%$
+ch06,5,6,ch06_percents.complement_word,1,AR,A,$62$,$62$ | $72$ | $173$ | $186$
+ch06,6,6,ch06_percents.convert,1,MK,D,$45\%$,$4.5\%$ | $9\%$ | $29\%$ | $45\%$
+ch06,7,6,ch06_percents.complement_word,1,AR,A,$108$,$108$ | $110$ | $118$ | $138$
+ch06,8,6,ch06_percents.percent_of,1,MK,D,$210$,$21$ | $70$ | $170$ | $210$
+ch06,9,6,ch06_percents.what_percent,2,MK,D,$15\%$,$0.15\%$ | $1.5\%$ | $7.5\%$ | $15\%$
+ch06,10,6,ch06_percents.find_whole,2,MK,C,$400$,"$25$ | $40$ | $400$ | $2{,}500$"
+ch06,11,6,ch06_percents.what_percent,2,MK,C,$40\%$,$0.4\%$ | $4\%$ | $40\%$ | $250\%$
+ch06,12,6,ch06_percents.find_whole,2,MK,B,$120$,"$30$ | $120$ | $160$ | $3{,}000$"
+ch06,13,6,ch06_percents.percent_change,2,AR,C,$25\%$,$10\%$ | $20\%$ | $25\%$ | $73\%$
+ch06,14,6,ch06_percents.find_whole,2,MK,D,$465$,$226$ | $315$ | $415$ | $465$
+ch06,15,6,ch06_percents.percent_change,2,AR,C,$20\%$,$12\%$ | $16\%$ | $20\%$ | $120\%$
+ch06,16,6,ch06_percents.what_percent,2,MK,D,$25\%$,$0.25\%$ | $2.5\%$ | $12.5\%$ | $25\%$
+ch06,17,6,ch06_percents.convert,2,MK,A,$45\%$,$45\%$ | $55\%$ | $90\%$ | $450\%$
+ch06,18,6,ch06_percents.percent_of,2,MK,B,$86$,$66$ | $86$ | $774$ | $860$
+ch06,19,6,ch06_percents.up_then_down,3,AR,A,\$60,\$60 | \$70 | \$80 | \$120
+ch06,20,6,ch06_percents.percent_of_percent,3,MK,A,$270$,$270$ | $360$ | $450$ | $810$
+ch06,21,6,ch06_percents.up_then_down,3,AR,A,\$306,\$306 | \$323 | \$408 | \$612
+ch06,22,6,ch06_percents.part_of_part,3,AR,A,$64$,$64$ | $80$ | $256$ | $320$
+ch06,23,6,ch06_percents.up_then_down,3,AR,B,\$84,\$70 | \$84 | \$98 | \$168
+ch06,24,6,ch06_percents.part_of_part,3,AR,C,$80$,$40$ | $50$ | $80$ | $200$
+ch06,25,6,ch06_percents.percent_of_percent,3,MK,B,$24$,$16$ | $24$ | $30$ | $126$
+ch07,1,7,ch07_ratios.simplify_ratio,1,MK,A,$6:7$,$6:7$ | $7:6$ | $9:7$ | $12:7$
+ch07,2,7,ch07_ratios.part_of_whole,1,MK,D,$\frac{5}{6}$,$\frac{1}{6}$ | $\frac{1}{5}$ | $\frac{1}{3}$ | $\frac{5}{6}$
+ch07,3,7,ch07_ratios.solve_proportion,1,MK,C,$40$,$28$ | $35$ | $40$ | $320$
+ch07,4,7,ch07_ratios.unit_rate,1,AR,D,$67$,$6.7$ | $65$ | $66$ | $67$
+ch07,5,7,ch07_ratios.solve_proportion,1,MK,C,$10$,$6$ | $7$ | $10$ | $270$
+ch07,6,7,ch07_ratios.unit_rate,1,AR,A,$59$,$59$ | $60$ | $61$ | $590$
+ch07,7,7,ch07_ratios.part_of_whole,1,MK,C,$\frac{5}{8}$,$\frac{1}{8}$ | $\frac{3}{8}$ | $\frac{5}{8}$ | $\frac{5}{3}$
+ch07,8,7,ch07_ratios.simplify_ratio,1,MK,A,$1:6$,$1:6$ | $1:3$ | $6:7$ | $6:1$
+ch07,9,7,ch07_ratios.simplify_ratio,2,MK,B,$1:6$,$1:10$ | $1:6$ | $6:1$ | $10:1$
+ch07,10,7,ch07_ratios.solve_proportion,2,MK,A,$16$,$16$ | $18$ | $46$ | $384$
+ch07,11,7,ch07_ratios.simplify_ratio,2,MK,C,$18:7$,$3:14$ | $7:18$ | $18:7$ | $20:7$
+ch07,12,7,ch07_ratios.ratio_total,2,AR,D,$84$,$12$ | $64$ | $74$ | $84$
+ch07,13,7,ch07_ratios.ratio_total_civ,2,AR,B,$120$,$15$ | $120$ | $135$ | $160$
+ch07,14,7,ch07_ratios.recipe_scale,2,AR,C,$15$,$9$ | $13$ | $15$ | $28$
+ch07,15,7,ch07_ratios.bulk_scale,2,AR,A,$13.5$,$13.5$ | $14.5$ | $22.5$ | $540$
+ch07,16,7,ch07_ratios.map_scale,2,AR,A,$275$~miles,"$275$~miles | $300$~miles | $550$~miles | $2{,}750$~miles"
+ch07,17,7,ch07_ratios.plan_scale,2,AR,A,$14$,$14$ | $18$ | $22$ | $140$
+ch07,18,7,ch07_ratios.direct_variation,2,MK,D,$60$,$1.35$ | $3$ | $26$ | $60$
+ch07,19,7,ch07_ratios.divide_in_ratio,3,AR,B,$66$,$44$ | $66$ | $88$ | $154$
+ch07,20,7,ch07_ratios.divide_money,3,AR,B,"\$4{,}050","\$1{,}350 | \$4{,}050 | \$5{,}400 | \$8{,}100"
+ch07,21,7,ch07_ratios.ratio_difference,3,AR,A,$48$,$48$ | $63$ | $96$ | $288$
+ch07,22,7,ch07_ratios.ratio_difference_mil,3,AR,D,$88$,$16$ | $44$ | $83$ | $88$
+ch07,23,7,ch07_ratios.map_scale,3,AR,B,$192$,$48$ | $192$ | $208$ | $768$
+ch07,24,7,ch07_ratios.direct_variation,3,MK,B,$y = \frac{5}{2}x$,$y = \frac{40}{x}$ | $y = \frac{5}{2}x$ | $y = x + 6$ | $y = \frac{2}{5}x$
+ch07,25,7,ch07_ratios.recipe_scale,3,AR,C,$7\frac{1}{2}$,$\frac{8}{15}$ | $5\frac{1}{2}$ | $7\frac{1}{2}$ | $60$
+ch08,1,8,ch08_exponents.evaluate_power,1,MK,D,"$10{,}000$","$40$ | $1{,}000$ | $5{,}000$ | $10{,}000$"
+ch08,2,8,ch08_exponents.zero_negative,1,MK,B,$\frac{1}{25}$,$-25$ | $\frac{1}{25}$ | $\frac{1}{10}$ | $25$
+ch08,3,8,ch08_exponents.exp_rules,1,MK,C,$2^{11}$,$2^{28}$ | $4^{28}$ | $2^{11}$ | $4^{11}$
+ch08,4,8,ch08_exponents.zero_negative,1,MK,B,$\frac{1}{16}$,$-16$ | $\frac{1}{16}$ | $\frac{1}{8}$ | $16$
+ch08,5,8,ch08_exponents.exp_rules,1,MK,C,$8^{13}$,$64^{40}$ | $8^{40}$ | $8^{13}$ | $64^{13}$
+ch08,6,8,ch08_exponents.evaluate_power,1,MK,D,$91$,$21$ | $39$ | $81$ | $91$
+ch08,7,8,ch08_exponents.sci_to_standard,1,MK,D,"$9{,}500$","$0.0095$ | $28.5$ | $950$ | $9{,}500$"
+ch08,8,8,ch08_exponents.standard_to_sci,1,MK,A,$4.7 \times 10^{7}$,$4.7 \times 10^{7}$ | $47 \times 10^{6}$ | $4.7 \times 10^{8}$ | $4.7 \times 10^{6}$
+ch08,9,8,ch08_exponents.evaluate_power,2,MK,D,$25$,$-125$ | $-25$ | $-10$ | $25$
+ch08,10,8,ch08_exponents.power_of_fraction,2,MK,A,$1.69$,$1.69$ | $2.197$ | $2.6$ | $16.9$
+ch08,11,8,ch08_exponents.standard_to_sci,2,MK,D,$9.33 \times 10^{-2}$,$9.33 \times 10^{-3}$ | $9.33 \times 10^{-1}$ | $9.33 \times 10^{2}$ | $9.33 \times 10^{-2}$
+ch08,12,8,ch08_exponents.sci_multiply,2,MK,C,$2 \times 10^{13}$,$2 \times 10^{12}$ | $1 \times 10^{13}$ | $2 \times 10^{13}$ | $2 \times 10^{33}$
+ch08,13,8,ch08_exponents.standard_to_sci,2,MK,D,$4.34 \times 10^{7}$,$4.34 \times 10^{8}$ | $43.4 \times 10^{6}$ | $4.34 \times 10^{6}$ | $4.34 \times 10^{7}$
+ch08,14,8,ch08_exponents.sci_multiply,2,MK,A,$3 \times 10^{8}$,$3 \times 10^{8}$ | $3.5 \times 10^{8}$ | $3 \times 10^{9}$ | $3 \times 10^{12}$
+ch08,15,8,ch08_exponents.power_of_fraction,2,MK,B,$\frac{4}{25}$,$\frac{2}{25}$ | $\frac{4}{25}$ | $\frac{1}{5}$ | $\frac{4}{5}$
+ch08,16,8,ch08_exponents.evaluate_power,2,MK,C,$-243$,$-318$ | $-268$ | $-243$ | $243$
+ch08,17,8,ch08_exponents.sci_to_standard,2,MK,C,"$348{,}000{,}000$","$27.84$ | $34{,}800{,}000$ | $348{,}000{,}000$ | $3{,}480{,}000{,}000$"
+ch08,18,8,ch08_exponents.exp_rules,2,MK,A,$8^{18}$,$8^{18}$ | $8^{32}$ | $64^{18}$ | $8^{10}$
+ch08,19,8,ch08_exponents.sci_multiply,3,MK,A,$2.25 \times 10^{4}$,$2.25 \times 10^{4}$ | $2.5 \times 10^{4}$ | $4.25 \times 10^{4}$ | $2.25 \times 10^{16}$
+ch08,20,8,ch08_exponents.compare_sci,3,MK,C,$4 \times 10^{4}$,$2.5 \times 10^{-5}$ | $4 \times 10^{3}$ | $4 \times 10^{4}$ | $4 \times 10^{12}$
+ch08,21,8,ch08_exponents.exp_equation,3,MK,B,$6$,$5$ | $6$ | $10$ | $24$
+ch08,22,8,ch08_exponents.compare_sci,3,MK,B,$5.6 \times 10^{5}$,$3.9 \times 10^{7}$ | $5.6 \times 10^{5}$ | $3.9 \times 10^{6}$ | $9.1 \times 10^{5}$
+ch08,23,8,ch08_exponents.exp_equation,3,MK,B,$3$,$2$ | $3$ | $4$ | $12$
+ch08,24,8,ch08_exponents.sci_multiply,3,MK,D,$3 \times 10^{5}$,$3 \times 10^{3}$ | $3 \times 10^{4}$ | $2 \times 10^{5}$ | $3 \times 10^{5}$
+ch08,25,8,ch08_exponents.zero_negative,3,MK,A,$1\frac{1}{3}$,$1\frac{1}{3}$ | $2$ | $4$ | $6\frac{1}{3}$
+ch09,1,9,ch09_roots.perfect_root,1,MK,B,$2$,$1$ | $2$ | $18$ | $36$
+ch09,2,9,ch09_roots.estimate_root,1,MK,A,$13$ and $14$,$13$ and $14$ | $14$ and $15$ | $15$ and $16$ | $16$ and $17$
+ch09,3,9,ch09_roots.perfect_root,1,MK,A,$20$,$20$ | $21$ | $101$ | $202$
+ch09,4,9,ch09_roots.root_fraction_decimal,1,MK,A,$\frac{12}{7}$,$\frac{12}{7}$ | $2$ | $\frac{15}{7}$ | $\frac{144}{7}$
+ch09,5,9,ch09_roots.perfect_root,1,MK,A,$20$,$20$ | $21$ | $200$ | $400$
+ch09,6,9,ch09_roots.root_fraction_decimal,1,MK,C,$\frac{3}{4}$,$\frac{3}{16}$ | $\frac{9}{32}$ | $\frac{3}{4}$ | $\frac{9}{4}$
+ch09,7,9,ch09_roots.estimate_root,1,MK,A,$6$ and $7$,$6$ and $7$ | $7$ and $8$ | $8$ and $9$ | $9$ and $10$
+ch09,8,9,ch09_roots.solve_square,1,MK,B,$5$,$-5$ | $5$ | $6$ | $25$
+ch09,9,9,ch09_roots.simplify_radical,2,MK,C,$8\sqrt{6}$,$8$ | $12\sqrt{2}$ | $8\sqrt{6}$ | $64\sqrt{6}$
+ch09,10,9,ch09_roots.like_radicals,2,MK,D,$7\sqrt{6}$,$7$ | $5\sqrt{6}$ | $6\sqrt{6}$ | $7\sqrt{6}$
+ch09,11,9,ch09_roots.simplify_radical,2,MK,D,$3\sqrt{5}$,$\sqrt{5}$ | $3$ | $2\sqrt{5}$ | $3\sqrt{5}$
+ch09,12,9,ch09_roots.multiply_radicals,2,MK,A,$2\sqrt{5}$,$2\sqrt{5}$ | $3\sqrt{5}$ | $4\sqrt{5}$ | $20$
+ch09,13,9,ch09_roots.simplify_radical,2,MK,B,$5\sqrt{15}$,$5$ | $5\sqrt{15}$ | $15\sqrt{5}$ | $25\sqrt{15}$
+ch09,14,9,ch09_roots.multiply_radicals,2,MK,D,$3\sqrt{10}$,$\sqrt{10}$ | $\sqrt{23}$ | $2\sqrt{10}$ | $3\sqrt{10}$
+ch09,15,9,ch09_roots.like_radicals,2,MK,C,$2\sqrt{6}$,$2$ | $\sqrt{6}$ | $2\sqrt{6}$ | $24\sqrt{6}$
+ch09,16,9,ch09_roots.root_fraction_decimal,2,MK,A,$1\frac{1}{4}$,$1\frac{1}{4}$ | $1\frac{3}{4}$ | $2$ | $6\frac{1}{4}$
+ch09,17,9,ch09_roots.estimate_root,2,MK,B,$12$,$11$ | $12$ | $13$ | $74$
+ch09,18,9,ch09_roots.solve_square,2,MK,C,$10$,$-10$ | $5$ | $10$ | $100$
+ch09,19,9,ch09_roots.like_radicals,3,MK,A,$\sqrt{6}$,$\sqrt{6}$ | $2\sqrt{6}$ | $9\sqrt{6}$ | $20\sqrt{6}$
+ch09,20,9,ch09_roots.rationalize,3,MK,B,$12\sqrt{2}$,$12$ | $12\sqrt{2}$ | $24$ | $24\sqrt{2}$
+ch09,21,9,ch09_roots.like_radicals,3,MK,B,$8\sqrt{7}$,$\sqrt{238}$ | $8\sqrt{7}$ | $8\sqrt{14}$ | $15\sqrt{7}$
+ch09,22,9,ch09_roots.rationalize,3,MK,B,$\frac{8\sqrt{6}}{3}$,$\frac{8}{3}$ | $\frac{8\sqrt{6}}{3}$ | $16$ | $16\sqrt{6}$
+ch09,23,9,ch09_roots.multiply_radicals,3,MK,D,$18\sqrt{10}$,$6\sqrt{21}$ | $9\sqrt{10}$ | $15\sqrt{10}$ | $18\sqrt{10}$
+ch09,24,9,ch09_roots.solve_square,3,MK,C,$9$ and $-9$,$9$ only | $81$ and $-81$ | $9$ and $-9$ | $-9$ only
+ch09,25,9,ch09_roots.perfect_root,3,MK,C,$25$,$10$ | $24$ | $25$ | $35$
+ch10,1,10,ch10_expressions.evaluate_expr,1,MK,A,$17$,$17$ | $23$ | $25$ | $34$
+ch10,2,10,ch10_expressions.combine_like,1,MK,B,$9a + 6b$,$9a + 10b$ | $9a + 6b$ | $10a + 6b$ | $15ab$
+ch10,3,10,ch10_expressions.evaluate_expr,1,MK,C,$57$,$2$ | $47$ | $57$ | $74$
+ch10,4,10,ch10_expressions.combine_like,1,MK,C,$6a + 4b$,$5a + 4b$ | $6a + 12b$ | $6a + 4b$ | $10ab$
+ch10,5,10,ch10_expressions.translate,1,MK,D,$n - 3$,$3 - n$ | $3n$ | $n + 3$ | $n - 3$
+ch10,6,10,ch10_expressions.translate_more,1,MK,D,$\frac{n}{12}$,$n - 12$ | $12n$ | $\frac{12}{n}$ | $\frac{n}{12}$
+ch10,7,10,ch10_expressions.formula_geometry,1,MK,B,$34$,$17$ | $34$ | $52$ | $104$
+ch10,8,10,ch10_expressions.evaluate_formula,1,MK,B,$325$,$250$ | $325$ | $425$ | $625$
+ch10,9,10,ch10_expressions.evaluate_expr,2,MK,A,$4$,$4$ | $6$ | $28$ | $52$
+ch10,10,10,ch10_expressions.distribute,2,MK,D,$4x - 50$,$4x - 22$ | $12x - 22$ | $4x - 16$ | $4x - 50$
+ch10,11,10,ch10_expressions.evaluate_expr,2,MK,A,$33$,$33$ | $43$ | $57$ | $213$
+ch10,12,10,ch10_expressions.distribute,2,MK,A,$14x + 48$,$14x + 48$ | $22x$ | $14x + 10$ | $14x$
+ch10,13,10,ch10_expressions.combine_like,2,MK,D,$3x^2 + 3x + 5$,$9x^2 + 3x + 5$ | $6x^2 + 5$ | $3x^2 + 13x + 5$ | $3x^2 + 3x + 5$
+ch10,14,10,ch10_expressions.translate,2,MK,B,$8(n - 14)$,$8n - 14$ | $8(n - 14)$ | $8 - n - 14$ | $8(14 - n)$
+ch10,15,10,ch10_expressions.translate_more,2,MK,C,$n^2 + 5$,$2n + 5$ | $5n^2$ | $n^2 + 5$ | $(n + 5)^2$
+ch10,16,10,ch10_expressions.word_expression,2,AR,A,$11x + 8y$,$11x + 8y$ | $8x + 11y$ | $19xy$ | $19(x + y)$
+ch10,17,10,ch10_expressions.word_cost,2,AR,D,$48p + 13$,$48(p + 13)$ | $13p + 48$ | $61p$ | $48p + 13$
+ch10,18,10,ch10_expressions.evaluate_formula,2,MK,B,$-5$,$-9$ | $-5$ | $-4$ | $-3$
+ch10,19,10,ch10_expressions.distribute,3,MK,A,$x^2 - 10x - 35$,$x^2 - 10x - 35$ | $x^2 - 10x + 35$ | $x^2 - 35$ | $-8x - 35$
+ch10,20,10,ch10_expressions.evaluate_expr,3,MK,C,$2$,$-16$ | $-2$ | $2$ | $20$
+ch10,21,10,ch10_expressions.distribute,3,MK,C,$5x - 5$,$5x + 1$ | $11x - 11$ | $5x - 5$ | $5x - 11$
+ch10,22,10,ch10_expressions.evaluate_expr,3,MK,C,$20$,$-16$ | $16$ | $20$ | $22$
+ch10,23,10,ch10_expressions.formula_solve,3,MK,D,$10$,$2.5$ | $5$ | $6$ | $10$
+ch10,24,10,ch10_expressions.perimeter_expression,3,MK,B,$10x + 16$,$6x^2 + 22x + 12$ | $10x + 16$ | $10x + 8$ | $5x + 8$
+ch10,25,10,ch10_expressions.word_expression,3,AR,A,$90 - 15x$,$90 - 15x$ | $15x - 90$ | $75x$ | $90 + 15x$
+ch11,1,11,ch11_linear_equations.basic_eq,1,MK,B,$52$,$\frac{13}{4}$ | $52$ | $53$ | $54$
+ch11,2,11,ch11_linear_equations.translate,1,MK,A,$6n + 7 = 91$,$6n + 7 = 91$ | $6n - 7 = 91$ | $7n + 6 = 91$ | $6(n + 7) = 91$
+ch11,3,11,ch11_linear_equations.basic_eq,1,MK,D,$72$,$1$ | $\frac{9}{8}$ | $17$ | $72$
+ch11,4,11,ch11_linear_equations.number_puzzle,1,AR,D,$13$,$11$ | $\frac{34}{3}$ | $12$ | $13$
+ch11,5,11,ch11_linear_equations.basic_eq,1,MK,C,$9$,$-33$ | $8$ | $9$ | $33$
+ch11,6,11,ch11_linear_equations.number_puzzle,1,AR,A,$14$,$14$ | $15$ | $\frac{52}{3}$ | $42$
+ch11,7,11,ch11_linear_equations.translate,1,MK,A,$2n + 7 = 37$,$2n + 7 = 37$ | $2(n + 7) = 37$ | $7n + 2 = 37$ | $2n - 7 = 37$
+ch11,8,11,ch11_linear_equations.fraction_eq,1,MK,B,$16$,$4$ | $16$ | $24$ | $48$
+ch11,9,11,ch11_linear_equations.both_sides,2,MK,B,$-6$,$-36$ | $-6$ | $-3$ | $6$
+ch11,10,11,ch11_linear_equations.cost_equation,2,AR,A,$30$~soldiers,$30$~soldiers | $32$~soldiers | $90$~soldiers | $150$~soldiers
+ch11,11,11,ch11_linear_equations.both_sides,2,MK,C,$2$,$-2$ | $\frac{4}{5}$ | $2$ | $3$
+ch11,12,11,ch11_linear_equations.cost_equation,2,AR,B,$5$~hours,$4$~hours | $5$~hours | $6$~hours | $7$~hours
+ch11,13,11,ch11_linear_equations.basic_eq,2,MK,D,$-7$,$-17$ | $-9$ | $-8$ | $-7$
+ch11,14,11,ch11_linear_equations.distribute,2,MK,D,$8$,$2$ | $\frac{38}{7}$ | $7$ | $8$
+ch11,15,11,ch11_linear_equations.decimal_eq,2,MK,D,$3$,$0.3$ | $1$ | $2$ | $3$
+ch11,16,11,ch11_linear_equations.literal_eq,2,MK,C,$y = 5x - 8$,$y = 5x + 8$ | $y = -5x + 8$ | $y = 5x - 8$ | $y = -5x - 8$
+ch11,17,11,ch11_linear_equations.expression_value,2,MK,A,$-4$,$-4$ | $2$ | $4$ | $5$
+ch11,18,11,ch11_linear_equations.consecutive,2,AR,C,$41$,$37$ | $40$ | $41$ | $42$
+ch11,19,11,ch11_linear_equations.distribute,3,MK,C,$12$,$-20$ | $\frac{12}{5}$ | $12$ | $13$
+ch11,20,11,ch11_linear_equations.fraction_eq,3,MK,B,$80$,$72$ | $80$ | $81$ | $480$
+ch11,21,11,ch11_linear_equations.literal_eq,3,MK,B,$y = \frac{9}{5}x - 3$,$y = -\frac{9}{5}x - 3$ | $y = \frac{9}{5}x - 3$ | $y = 9x - 15$ | $y = 9x - 3$
+ch11,22,11,ch11_linear_equations.expression_value,3,MK,B,$-36$,$-40$ | $-36$ | $-9$ | $-5$
+ch11,23,11,ch11_linear_equations.both_sides,3,MK,D,$-1$,$-7$ | $-\frac{25}{7}$ | $-\frac{7}{3}$ | $-1$
+ch11,24,11,ch11_linear_equations.consecutive,3,AR,C,$56$,$50$ | $52$ | $56$ | $62$
+ch11,25,11,ch11_linear_equations.translate,3,MK,A,$\frac{n}{9} + 9 = 20$,$\frac{n}{9} + 9 = 20$ | $\frac{9}{n} + 9 = 20$ | $9n + 9 = 20$ | $\frac{n + 9}{9} = 20$
+ch12,1,12,ch12_inequalities.solve_ineq,1,MK,C,$x < 10$,$x > 10$ | $x < 90$ | $x < 10$ | $x < \frac{104}{9}$
+ch12,2,12,ch12_inequalities.translate_ineq,1,MK,C,$8n \le 57$,$8n < 57$ | $8n \ge 57$ | $8n \le 57$ | $8n > 57$
+ch12,3,12,ch12_inequalities.solve_ineq,1,MK,B,$x \le 7$,$x \le 9$ | $x \le 7$ | $x \ge 7$ | $x < 7$
+ch12,4,12,ch12_inequalities.which_satisfies,1,MK,D,$2$,$-3$ | $-2$ | $-1$ | $2$
+ch12,5,12,ch12_inequalities.solve_ineq,1,MK,A,$x \ge 8$,$x \ge 8$ | $x \ge -4$ | $x \le 8$ | $x > 8$
+ch12,6,12,ch12_inequalities.which_satisfies,1,MK,B,$9$,$8$ | $9$ | $10$ | $11$
+ch12,7,12,ch12_inequalities.translate_ineq,1,MK,A,$n - 10 \ge 27$,$n - 10 \ge 27$ | $n - 10 \le 27$ | $n - 10 < 27$ | $n - 10 > 27$
+ch12,8,12,ch12_inequalities.integer_count,1,MK,B,$4$,$3$ | $4$ | $5$ | $6$
+ch12,9,12,ch12_inequalities.solve_ineq,2,MK,B,$x \le 10$,$x \le \frac{38}{3}$ | $x \le 10$ | $x \le -10$ | $x \ge 10$
+ch12,10,12,ch12_inequalities.both_sides_ineq,2,MK,B,$x \ge 6$,$x \ge \frac{2}{5}$ | $x \ge 6$ | $x \le 6$ | $x \ge \frac{30}{17}$
+ch12,11,12,ch12_inequalities.compound,2,MK,C,$-3 < x \le 4$,$-5 < x \le 2$ | $-3 \le x < 4$ | $-3 < x \le 4$ | $-6 < x \le 4$
+ch12,12,12,ch12_inequalities.ineq_word,2,AR,A,$90$~hours,$90$~hours | $91$~hours | $100$~hours | $111$~hours
+ch12,13,12,ch12_inequalities.compound,2,MK,C,$2 \le x \le 6$,$8 \le x \le 6$ | $\frac{7}{2} \le x \le \frac{15}{2}$ | $2 \le x \le 6$ | $\frac{11}{4} \le x \le \frac{27}{4}$
+ch12,14,12,ch12_inequalities.ineq_word,2,AR,A,$18$~crates,$18$~crates | $19$~crates | $21$~crates | $24$~crates
+ch12,15,12,ch12_inequalities.both_sides_ineq,2,MK,C,$x \ge 7$,$x \ge \frac{5}{2}$ | $x \ge \frac{7}{4}$ | $x \ge 7$ | $x \le 7$
+ch12,16,12,ch12_inequalities.solve_ineq,2,MK,C,$x > 8$,$x > \frac{26}{3}$ | $x < 8$ | $x > 8$ | $x > -8$
+ch12,17,12,ch12_inequalities.which_satisfies,2,MK,A,$1$,$1$ | $4$ | $5$ | $6$
+ch12,18,12,ch12_inequalities.translate_ineq,2,MK,B,"$525 + w \le 3{,}000$","$525 + w > 3{,}000$ | $525 + w \le 3{,}000$ | $525 + w < 3{,}000$ | $525w \le 3{,}000$"
+ch12,19,12,ch12_inequalities.abs_ineq,3,MK,D,$-1 \le x \le 15$,$-15 \le x \le 1$ | $x \le 15$ | $x < -1$ or $x > 15$ | $-1 \le x \le 15$
+ch12,20,12,ch12_inequalities.ineq_word,3,AR,A,$39$~miles,$39$~miles | $40$~miles | $180$~miles | $320$~miles
+ch12,21,12,ch12_inequalities.abs_ineq,3,MK,B,$x \le -13$ or $x \ge 1$,$x \ge 1$ | $x \le -13$ or $x \ge 1$ | $x \le -1$ or $x \ge 13$ | $-13 < x < 1$
+ch12,22,12,ch12_inequalities.ineq_word,3,AR,A,$4$~visits,$4$~visits | $5$~visits | $7$~visits | $10$~visits
+ch12,23,12,ch12_inequalities.compound,3,MK,D,$-2 < x \le 4$,$-2 \le x < 4$ | $-4 \le x < 2$ | $5 < x \le 11$ | $-2 < x \le 4$
+ch12,24,12,ch12_inequalities.both_sides_ineq,3,MK,D,$x \ge -2$,$x \ge 2$ | $x \le -2$ | $x \ge \frac{2}{3}$ | $x \ge -2$
+ch12,25,12,ch12_inequalities.integer_count,3,MK,B,$5$,$4$ | $5$ | $6$ | $15$
+ch13,1,13,ch13_systems.elimination,1,MK,A,$4$,$4$ | $5$ | $7$ | $11$
+ch13,2,13,ch13_systems.check_solution,1,MK,D,"$(4, 6)$","$(6, 4)$ | $(7, 5)$ | $(5, 8)$ | $(4, 6)$"
+ch13,3,13,ch13_systems.elimination,1,MK,C,$10$,$3$ | $7$ | $10$ | $40$
+ch13,4,13,ch13_systems.check_solution,1,MK,A,"$(5, -1)$","$(5, -1)$ | $(7, -4)$ | $(-1, 5)$ | $(6, 0)$"
+ch13,5,13,ch13_systems.sum_diff,1,AR,B,$52$,$33$ | $52$ | $66$ | $104$
+ch13,6,13,ch13_systems.check_solution,1,MK,B,"$(-1, 5)$","$(0, 2)$ | $(-1, 5)$ | $(0, 6)$ | $(5, -1)$"
+ch13,7,13,ch13_systems.sum_diff,1,AR,B,$32$,$18$ | $32$ | $36$ | $64$
+ch13,8,13,ch13_systems.elimination,1,MK,C,$4$,$-4$ | $-3$ | $4$ | $7$
+ch13,9,13,ch13_systems.elimination,2,MK,C,$21$,$10$ | $11$ | $21$ | $22$
+ch13,10,13,ch13_systems.substitution,2,MK,C,$-7$,$-10$ | $-8$ | $-7$ | $-3$
+ch13,11,13,ch13_systems.elimination,2,MK,D,$9$,$-13$ | $-4$ | $5$ | $9$
+ch13,12,13,ch13_systems.tickets,2,AR,D,$85$,$35$ | $51$ | $60$ | $85$
+ch13,13,13,ch13_systems.sum_diff,2,AR,A,$12$,$12$ | $15$ | $18$ | $24$
+ch13,14,13,ch13_systems.tickets,2,AR,B,$25$,$15$ | $25$ | $50$ | $75$
+ch13,15,13,ch13_systems.sum_diff,2,AR,D,$16$,$12$ | $13$ | $14$ | $16$
+ch13,16,13,ch13_systems.elimination,2,MK,D,$3$,$-3$ | $-2$ | $2$ | $3$
+ch13,17,13,ch13_systems.substitution,2,MK,C,$8$,$\frac{26}{5}$ | $\frac{106}{15}$ | $8$ | $25$
+ch13,18,13,ch13_systems.coins,2,AR,D,$35$,$13$ | $24$ | $31$ | $35$
+ch13,19,13,ch13_systems.elimination,3,MK,B,$9$,$\frac{82}{13}$ | $9$ | $10$ | $117$
+ch13,20,13,ch13_systems.sum_trick,3,MK,A,$-6$,$-6$ | $-5$ | $-4$ | $-2$
+ch13,21,13,ch13_systems.mixture,3,AR,C,$3$~pounds,$1$~pound | $2$~pounds | $3$~pounds | $9$~pounds
+ch13,22,13,ch13_systems.sum_trick,3,MK,B,$16$,$4$ | $16$ | $17$ | $112$
+ch13,23,13,ch13_systems.mixture,3,AR,B,$18$~pounds,$12$~pounds | $18$~pounds | $21$~pounds | $45$~pounds
+ch13,24,13,ch13_systems.elimination,3,MK,D,$6$,$1$ | $4$ | $5$ | $6$
+ch13,25,13,ch13_systems.tickets,3,AR,A,$24$,$24$ | $26$ | $28$ | $35$
+ch14,1,14,ch14_polynomials.add_sub_poly,1,MK,D,$8x^{2} + 4x + 16$,$8x^{4} + 4x^{2} + 16$ | $8x^{2} + 12x + 16$ | $12x^{2} + 16$ | $8x^{2} + 4x + 16$
+ch14,2,14,ch14_polynomials.mult_monomials,1,MK,B,$21x^{7}$,$10x^{7}$ | $21x^{7}$ | $21x^{12}$ | $10x^{12}$
+ch14,3,14,ch14_polynomials.quotient_rule,1,MK,D,$4x^{3}$,$4x^{11}$ | $4x^{4}$ | $6x^{3}$ | $4x^{3}$
+ch14,4,14,ch14_polynomials.poly_vocab,1,MK,B,$5$,$-5$ | $5$ | $6$ | $8$
+ch14,5,14,ch14_polynomials.quotient_rule,1,MK,A,$3x$,$3x$ | $10x$ | $3x^{2}$ | $3x^{5}$
+ch14,6,14,ch14_polynomials.poly_vocab,1,MK,C,$8$,$4$ | $6$ | $8$ | $17$
+ch14,7,14,ch14_polynomials.mult_monomials,1,MK,C,$30x^{7}$,$11x^{6}$ | $30x^{6}$ | $30x^{7}$ | $11x^{7}$
+ch14,8,14,ch14_polynomials.add_sub_poly,1,MK,C,$5x^{2} + 16x - 2$,$5x^{2} - 2$ | $21x^{2} - 2$ | $5x^{2} + 16x - 2$ | $5x^{4} + 16x^{2} - 2$
+ch14,9,14,ch14_polynomials.add_sub_poly,2,MK,C,$x^{2} - 5x + 11$,$x^{2} + 7x - 9$ | $9x^{2} + 7x - 9$ | $x^{2} - 5x + 11$ | $x^{2} - 5x - 9$
+ch14,10,14,ch14_polynomials.power_rule,2,MK,D,$36x^{6} y^{2}$,$6x^{6} y^{2}$ | $12x^{6} y^{2}$ | $36x^{5} y^{3}$ | $36x^{6} y^{2}$
+ch14,11,14,ch14_polynomials.foil,2,MK,A,$x^{2} - 6x - 16$,$x^{2} - 6x - 16$ | $x^{2} + 6x - 16$ | $x^{2} - 16$ | $x^{2} - 6x + 16$
+ch14,12,14,ch14_polynomials.special_products,2,MK,B,$9x^{2} - 42x + 49$,$9x^{2} + 49$ | $9x^{2} - 42x + 49$ | $9x^{2} - 49$ | $9x^{2} - 42x - 49$
+ch14,13,14,ch14_polynomials.foil,2,MK,B,$x^{2} - x - 56$,$x^{2} - x + 56$ | $x^{2} - x - 56$ | $x^{2} + x - 56$ | $x^{2} - 56$
+ch14,14,14,ch14_polynomials.special_products,2,MK,B,$4x^{2} - 81$,$4x^{2} - 36x + 81$ | $4x^{2} - 81$ | $4x^{2} - 36x - 81$ | $4x^{2} + 81$
+ch14,15,14,ch14_polynomials.power_rule,2,MK,D,$27x^{15}$,$3x^{15}$ | $27x^{8}$ | $9x^{15}$ | $27x^{15}$
+ch14,16,14,ch14_polynomials.add_sub_poly,2,MK,A,$-2x^{2} - 5x + 11$,$-2x^{2} - 5x + 11$ | $-2x^{2} + 7x - 5$ | $12x^{2} + 7x - 5$ | $-2x^{2} - 5x - 5$
+ch14,17,14,ch14_polynomials.divide_by_monomial,2,MK,D,$4x^{2} - 2x - 2$,$4x^{3} - 2x^{2} - 2x$ | $4x^{2} - 2x$ | $4x^{2} - 4x$ | $4x^{2} - 2x - 2$
+ch14,18,14,ch14_polynomials.mult_monomials,2,MK,C,$- 28x^{10} y^{4}$,$3x^{10} y^{4}$ | $- 28x^{10} y^{3}$ | $- 28x^{10} y^{4}$ | $- 28x^{24} y^{3}$
+ch14,19,14,ch14_polynomials.binomial_trinomial,3,MK,D,$38$,$-48$ | $8$ | $30$ | $38$
+ch14,20,14,ch14_polynomials.negative_exponents,3,MK,A,$\frac{9}{x^{2}}$,$\frac{9}{x^{2}}$ | $- 9x^{2}$ | $\frac{1}{9x^{2}}$ | $9x^{2}$
+ch14,21,14,ch14_polynomials.binomial_trinomial,3,MK,A,$x^{3} - x^{2} - 15x - 25$,$x^{3} - x^{2} - 15x - 25$ | $x^{3} - x^{2} + 25x - 25$ | $x^{3} + 4x^{2} + 5x - 25$ | $x^{3} - x^{2} - 25$
+ch14,22,14,ch14_polynomials.negative_exponents,3,MK,B,$\frac{12}{x^{2}}$,$\frac{7}{x^{2}}$ | $\frac{12}{x^{2}}$ | $\frac{12}{x^{3}}$ | $12x^{4}$
+ch14,23,14,ch14_polynomials.power_rule,3,MK,C,$- 27x^{3} y^{3}$,$- 3x^{3} y^{3}$ | $- 27x^{4} y^{4}$ | $- 27x^{3} y^{3}$ | $27x^{3} y^{3}$
+ch14,24,14,ch14_polynomials.foil,3,MK,A,$8x^{2} + 20x + 8$,$8x^{2} + 20x + 8$ | $8x^{2} + 20x - 8$ | $8x^{2} - 20x + 8$ | $8x^{2} + 8$
+ch14,25,14,ch14_polynomials.special_products,3,MK,A,$16x^{2} + 72x + 81$,$16x^{2} + 72x + 81$ | $16x^{2} + 36x + 81$ | $16x^{2} + 81$ | $4x^{2} + 72x + 81$
+ch15,1,15,ch15_quadratics.factor_gcf,1,MK,A,$2x$,$2x$ | $2x^{2}$ | $12x$ | $84x^{2}$
+ch15,2,15,ch15_quadratics.factor_trinomial,1,MK,D,$(x - 5)(x - 3)$,$(x - 9)(x + 1)$ | $(x + 3)(x + 5)$ | $(x - 15)(x - 1)$ | $(x - 5)(x - 3)$
+ch15,3,15,ch15_quadratics.solve_factored,1,MK,D,$x = -2$ or $x = 0$,$x = 0$ or $x = 2$ | $x = -2$ | $x = -2$ or $x = 1$ | $x = -2$ or $x = 0$
+ch15,4,15,ch15_quadratics.factor_trinomial,1,MK,B,$(x - 9)(x - 8)$,$(x + 3)(x + 24)$ | $(x - 9)(x - 8)$ | $(x + 2)(x + 36)$ | $(x + 8)(x + 9)$
+ch15,5,15,ch15_quadratics.solve_factored,1,MK,C,$x = 7$ or $x = 8$,$x = 8$ | $x = -8$ or $x = 7$ | $x = 7$ or $x = 8$ | $x = -8$ or $x = -7$
+ch15,6,15,ch15_quadratics.factor_gcf,1,MK,C,$4x^{2}$,$144x^{3}$ | $4x^{3}$ | $4x^{2}$ | $16x^{2}$
+ch15,7,15,ch15_quadratics.square_root_eq,1,MK,A,$n = -7$ or $n = 7$,$n = -7$ or $n = 7$ | $n = -49$ or $n = 49$ | $n = 7$ | $n = -8$ or $n = 8$
+ch15,8,15,ch15_quadratics.function_eval,1,MK,B,$17$,$-33$ | $17$ | $27$ | $34$
+ch15,9,15,ch15_quadratics.factor_trinomial,2,MK,D,$(x - 11)(x + 7)$,$(x - 77)(x + 1)$ | $(x - 7)(x + 11)$ | $(x - 5)(x + 1)$ | $(x - 11)(x + 7)$
+ch15,10,15,ch15_quadratics.special_factor,2,MK,C,$(t + 8)^{2}$,$(t - 8)(t + 8)$ | $(t + 1)(t + 64)$ | $(t + 8)^{2}$ | $(t - 8)^{2}$
+ch15,11,15,ch15_quadratics.solve_factored,2,MK,C,$x = -5$ or $x = 7$,$x = -5$ | $x = -7$ or $x = 5$ | $x = -5$ or $x = 7$ | $x = -1$ or $x = 35$
+ch15,12,15,ch15_quadratics.which_solution,2,MK,D,$8$,$-16$ | $-8$ | $2$ | $8$
+ch15,13,15,ch15_quadratics.solve_factored,2,MK,A,$x = -6$ or $x = 9$,$x = -6$ or $x = 9$ | $x = -9$ or $x = 6$ | $x = -1$ or $x = 54$ | $x = -2$ or $x = 27$
+ch15,14,15,ch15_quadratics.which_solution,2,MK,A,$-6$,$-6$ | $6$ | $9$ | $54$
+ch15,15,15,ch15_quadratics.special_factor,2,MK,D,$(m - 3)^{2}$,$(m - 9)(m - 1)$ | $(m + 3)^{2}$ | $(m - 3)(m + 3)$ | $(m - 3)^{2}$
+ch15,16,15,ch15_quadratics.factor_trinomial,2,MK,B,$(x - 5)(x + 9)$,$(x - 9)(x + 5)$ | $(x - 5)(x + 9)$ | $(x - 15)(x + 3)$ | $(x - 3)(x + 15)$
+ch15,17,15,ch15_quadratics.square_root_eq,2,MK,A,$x = -11$ or $x = 11$,$x = -11$ or $x = 11$ | $x = -22$ or $x = 22$ | $x = -121$ or $x = 121$ | $x = 11$
+ch15,18,15,ch15_quadratics.function_eval,2,MK,D,$0$,$-12$ | $-4$ | $-2$ | $0$
+ch15,19,15,ch15_quadratics.leading_coef,3,MK,C,$(5x - 6)(x - 1)$,$(x - 6)(x - 1)$ | $(5x + 6)(x + 1)$ | $(5x - 6)(x - 1)$ | $(5x - 1)(x - 6)$
+ch15,20,15,ch15_quadratics.quadratic_formula,3,MK,A,$x = -1$ or $x = \frac{5}{6}$,$x = -1$ or $x = \frac{5}{6}$ | $x = -\frac{5}{6}$ or $x = 1$ | $x = -2$ or $x = \frac{5}{3}$ | $x = \frac{5}{6}$
+ch15,21,15,ch15_quadratics.leading_coef,3,MK,A,$(3x - 7)(x + 6)$,$(3x - 7)(x + 6)$ | $(3x + 7)(x - 6)$ | $(3x + 6)(x - 7)$ | $(x - 7)(x + 6)$
+ch15,22,15,ch15_quadratics.quadratic_formula,3,MK,B,$x = -5$ or $x = -\frac{3}{2}$,$x = -10$ or $x = -3$ | $x = -5$ or $x = -\frac{3}{2}$ | $x = \frac{3}{2}$ or $x = 5$ | $x = -\frac{15}{2}$ or $x = 1$
+ch15,23,15,ch15_quadratics.special_factor,3,MK,B,$(5x - 6)(5x + 6)$,$(5x + 6)^{2}$ | $(5x - 6)(5x + 6)$ | $(25x - 6)(25x + 6)$ | $(5x - 6)^{2}$
+ch15,24,15,ch15_quadratics.factor_gcf,3,MK,A,$5(x - 4)(x + 5)$,$5(x - 4)(x + 5)$ | $5(x - 5)(x + 4)$ | $(x - 4)(x + 5)$ | $5(x - 20)(x + 1)$
+ch15,25,15,ch15_quadratics.solve_factored,3,MK,B,$x = 3$ or $x = 7$,$x = 7$ | $x = 3$ or $x = 7$ | $x = -7$ or $x = -3$ | $x = 1$ or $x = 21$
+ch16,1,16,ch16_lines_angles.comp_supp,1,MK,A,$134^\circ$,$134^\circ$ | $147^\circ$ | $226^\circ$ | $314^\circ$
+ch16,2,16,ch16_lines_angles.vertical_adjacent,1,MK,A,$77$,$77$ | $82$ | $103$ | $257$
+ch16,3,16,ch16_lines_angles.comp_supp,1,MK,C,$50^\circ$,$37^\circ$ | $40^\circ$ | $50^\circ$ | $140^\circ$
+ch16,4,16,ch16_lines_angles.vertical_adjacent,1,MK,A,$44$,$44$ | $54$ | $136$ | $224$
+ch16,5,16,ch16_lines_angles.angle_vocab,1,MK,B,straight,acute | straight | reflex | obtuse
+ch16,6,16,ch16_lines_angles.vertical_adjacent,1,MK,C,$58$,$38$ | $43$ | $58$ | $122$
+ch16,7,16,ch16_lines_angles.angle_vocab,1,MK,D,$259^\circ$,$70^\circ$ | $90^\circ$ | $117^\circ$ | $259^\circ$
+ch16,8,16,ch16_lines_angles.comp_supp,1,MK,A,$45^\circ$,$45^\circ$ | $135^\circ$ | $225^\circ$ | $315^\circ$
+ch16,9,16,ch16_lines_angles.parallel_lines,2,MK,A,$49$,$49$ | $64$ | $131$ | $311$
+ch16,10,16,ch16_lines_angles.angle_algebra,2,MK,C,$34$,$2$ | $16$ | $34$ | $38$
+ch16,11,16,ch16_lines_angles.parallel_lines,2,MK,D,$128$,$38$ | $52$ | $113$ | $128$
+ch16,12,16,ch16_lines_angles.polygon_sum,2,MK,C,"$1{,}440^\circ$","$144^\circ$ | $360^\circ$ | $1{,}440^\circ$ | $1{,}800^\circ$"
+ch16,13,16,ch16_lines_angles.parallel_lines,2,MK,C,$72$,$62$ | $67$ | $72$ | $108$
+ch16,14,16,ch16_lines_angles.polygon_sum,2,MK,A,$720^\circ$,"$720^\circ$ | $900^\circ$ | $1{,}080^\circ$ | $1{,}120^\circ$"
+ch16,15,16,ch16_lines_angles.angle_algebra,2,MK,B,$12$,$6$ | $12$ | $42$ | $48$
+ch16,16,16,ch16_lines_angles.around_point,2,MK,B,$77$,$57$ | $77$ | $103$ | $257$
+ch16,17,16,ch16_lines_angles.regular_polygon,2,MK,B,$150^\circ$,"$30^\circ$ | $150^\circ$ | $165^\circ$ | $1{,}800^\circ$"
+ch16,18,16,ch16_lines_angles.polygon_missing,2,MK,B,$115$,$90$ | $115$ | $125$ | $295$
+ch16,19,16,ch16_lines_angles.parallel_lines,3,MK,D,$58^\circ$,$22^\circ$ | $38^\circ$ | $43^\circ$ | $58^\circ$
+ch16,20,16,ch16_lines_angles.clock_angle,3,MK,D,$157.5^\circ$,$142.5^\circ$ | $150^\circ$ | $152.5^\circ$ | $157.5^\circ$
+ch16,21,16,ch16_lines_angles.parallel_lines,3,MK,D,$62^\circ$,$8^\circ$ | $52^\circ$ | $57^\circ$ | $62^\circ$
+ch16,22,16,ch16_lines_angles.clock_angle,3,MK,C,$112.5^\circ$,$97.5^\circ$ | $107.5^\circ$ | $112.5^\circ$ | $120^\circ$
+ch16,23,16,ch16_lines_angles.angle_algebra,3,MK,D,$128^\circ$,$12^\circ$ | $52^\circ$ | $113^\circ$ | $128^\circ$
+ch16,24,16,ch16_lines_angles.polygon_missing,3,MK,A,$102$,$102$ | $108$ | $122$ | $282$
+ch16,25,16,ch16_lines_angles.regular_polygon,3,MK,D,$8$,$4$ | $5$ | $6$ | $8$
+ch17,1,17,ch17_triangles.third_angle,1,MK,A,$84^\circ$,$84^\circ$ | $96^\circ$ | $120^\circ$ | $264^\circ$
+ch17,2,17,ch17_triangles.pyth_hyp,1,MK,A,$30\text{ yd}$,$30\text{ yd}$ | $31\text{ yd}$ | $42\text{ yd}$ | $900\text{ yd}$
+ch17,3,17,ch17_triangles.third_angle,1,MK,B,$67^\circ$,$47^\circ$ | $67^\circ$ | $113^\circ$ | $247^\circ$
+ch17,4,17,ch17_triangles.pyth_hyp,1,MK,A,$30\text{ cm}$,$30\text{ cm}$ | $31\text{ cm}$ | $42\text{ cm}$ | $900\text{ cm}$
+ch17,5,17,ch17_triangles.classify_triangle,1,MK,B,an acute triangle,a right triangle | an acute triangle | an equilateral triangle | an obtuse triangle
+ch17,6,17,ch17_triangles.pyth_hyp,1,MK,C,$5\text{ cm}$,$2\text{ cm}$ | $3\text{ cm}$ | $5\text{ cm}$ | $7\text{ cm}$
+ch17,7,17,ch17_triangles.classify_triangle,1,MK,B,an obtuse triangle,an equilateral triangle | an obtuse triangle | a right triangle | an acute triangle
+ch17,8,17,ch17_triangles.third_angle,1,MK,A,$75^\circ$,$75^\circ$ | $105^\circ$ | $119^\circ$ | $255^\circ$
+ch17,9,17,ch17_triangles.isosceles_angles,2,MK,A,$112$,$112$ | $117$ | $122$ | $146$
+ch17,10,17,ch17_triangles.exterior_angle,2,MK,C,$56$,$36$ | $41$ | $56$ | $154$
+ch17,11,17,ch17_triangles.pyth_leg,2,MK,C,$12\text{ yd}$,$8\text{ yd}$ | $9\text{ yd}$ | $12\text{ yd}$ | $144\text{ yd}$
+ch17,12,17,ch17_triangles.pyth_word,2,AR,B,$30\text{ km}$,$29\text{ km}$ | $30\text{ km}$ | $42\text{ km}$ | $900\text{ km}$
+ch17,13,17,ch17_triangles.triangle_inequality,2,MK,A,$11$,$11$ | $12$ | $14$ | $16$
+ch17,14,17,ch17_triangles.pyth_word,2,AR,C,$25\text{ km}$,$22\text{ km}$ | $24\text{ km}$ | $25\text{ km}$ | $35\text{ km}$
+ch17,15,17,ch17_triangles.triangle_inequality,2,MK,B,$13 < x < 25$,$0 < x < 25$ | $13 < x < 25$ | $13 \le x \le 25$ | $6 < x < 19$
+ch17,16,17,ch17_triangles.pyth_leg,2,MK,D,$30\text{ in}$,$10\text{ in}$ | $27\text{ in}$ | $28\text{ in}$ | $30\text{ in}$
+ch17,17,17,ch17_triangles.exterior_angle,2,MK,C,$140$,$2$ | $40$ | $140$ | $220$
+ch17,18,17,ch17_triangles.isosceles_angles,2,MK,D,$62$,$42$ | $52$ | $59$ | $62$
+ch17,19,17,ch17_triangles.special_right,3,MK,B,$11$,$\frac{11\sqrt{2}}{2}$ | $11$ | $11\sqrt{3}$ | $22$
+ch17,20,17,ch17_triangles.shadow,3,AR,C,$152\text{ ft}$,$142\text{ ft}$ | $147\text{ ft}$ | $152\text{ ft}$ | $298\text{ ft}$
+ch17,21,17,ch17_triangles.special_right,3,MK,A,$11$,$11$ | $\frac{33}{2}$ | $22$ | $33$
+ch17,22,17,ch17_triangles.shadow,3,AR,B,$177\text{ ft}$,$172\text{ ft}$ | $177\text{ ft}$ | $235\text{ ft}$ | $708\text{ ft}$
+ch17,23,17,ch17_triangles.special_right,3,MK,B,$15\sqrt{3}$,$15\sqrt{2}$ | $15\sqrt{3}$ | $30$ | $45\sqrt{3}$
+ch17,24,17,ch17_triangles.similar_triangles,3,MK,A,$24$,$24$ | $25$ | $26$ | $28$
+ch17,25,17,ch17_triangles.pyth_word,3,AR,A,$2\text{ ft}$,$2\text{ ft}$ | $4\text{ ft}$ | $6\text{ ft}$ | $8\text{ ft}$
+ch18,1,18,ch18_perimeter_area.rect_basic,1,MK,D,$100\text{ cm}^2$,$20\text{ cm}^2$ | $40\text{ cm}^2$ | $50\text{ cm}^2$ | $100\text{ cm}^2$
+ch18,2,18,ch18_perimeter_area.triangle_area,1,MK,B,$34\text{ ft}^2$,$21\text{ ft}^2$ | $34\text{ ft}^2$ | $44\text{ ft}^2$ | $68\text{ ft}^2$
+ch18,3,18,ch18_perimeter_area.rect_basic,1,MK,C,$144\text{ m}^2$,$24\text{ m}^2$ | $48\text{ m}^2$ | $144\text{ m}^2$ | $148\text{ m}^2$
+ch18,4,18,ch18_perimeter_area.triangle_area,1,MK,C,$48\text{ in}^2$,$20\text{ in}^2$ | $24\text{ in}^2$ | $48\text{ in}^2$ | $96\text{ in}^2$
+ch18,5,18,ch18_perimeter_area.missing_side,1,MK,C,$4\text{ yd}$,$1\text{ yd}$ | $3\text{ yd}$ | $4\text{ yd}$ | $8\text{ yd}$
+ch18,6,18,ch18_perimeter_area.triangle_area,1,MK,D,$26\text{ in}^2$,$13\text{ in}^2$ | $17\text{ in}^2$ | $20\text{ in}^2$ | $26\text{ in}^2$
+ch18,7,18,ch18_perimeter_area.missing_side,1,MK,C,$5\text{ in}$,$1\text{ in}$ | $2\text{ in}$ | $5\text{ in}$ | $6.25\text{ in}$
+ch18,8,18,ch18_perimeter_area.rect_basic,1,MK,D,$288\text{ ft}^2$,$34\text{ ft}^2$ | $68\text{ ft}^2$ | $144\text{ ft}^2$ | $288\text{ ft}^2$
+ch18,9,18,ch18_perimeter_area.parallelogram,2,MK,B,$28\text{ ft}^2$,$14\text{ ft}^2$ | $28\text{ ft}^2$ | $34\text{ ft}^2$ | $35\text{ ft}^2$
+ch18,10,18,ch18_perimeter_area.trapezoid,2,MK,A,$57\text{ yd}^2$,$57\text{ yd}^2$ | $72\text{ yd}^2$ | $114\text{ yd}^2$ | $252\text{ yd}^2$
+ch18,11,18,ch18_perimeter_area.composite,2,MK,A,$316\text{ yd}^2$,$316\text{ yd}^2$ | $320\text{ yd}^2$ | $448\text{ yd}^2$ | $520\text{ yd}^2$
+ch18,12,18,ch18_perimeter_area.cost_word,2,AR,D,"\$1{,}100.00","\$47.50 | \$95.00 | \$1{,}075.00 | \$1{,}100.00"
+ch18,13,18,ch18_perimeter_area.composite,2,MK,A,$495\text{ yd}^2$,$495\text{ yd}^2$ | $499\text{ yd}^2$ | $505\text{ yd}^2$ | $560\text{ yd}^2$
+ch18,14,18,ch18_perimeter_area.cost_word,2,AR,C,\$145.00,\$58.00 | \$72.50 | \$145.00 | \$510.00
+ch18,15,18,ch18_perimeter_area.trapezoid,2,MK,B,$231\text{ cm}^2$,$210\text{ cm}^2$ | $231\text{ cm}^2$ | $252\text{ cm}^2$ | $462\text{ cm}^2$
+ch18,16,18,ch18_perimeter_area.parallelogram,2,MK,C,$112\text{ ft}^2$,$48\text{ ft}^2$ | $56\text{ ft}^2$ | $112\text{ ft}^2$ | $140\text{ ft}^2$
+ch18,17,18,ch18_perimeter_area.triangle_area,2,MK,B,$6\text{ m}^2$,$4\text{ m}^2$ | $6\text{ m}^2$ | $10\text{ m}^2$ | $12\text{ m}^2$
+ch18,18,18,ch18_perimeter_area.missing_side,2,MK,D,$42\text{ ft}$,$9\text{ ft}$ | $21\text{ ft}$ | $38\text{ ft}$ | $42\text{ ft}$
+ch18,19,18,ch18_perimeter_area.square_yards,3,AR,B,\$432,"\$24 | \$432 | \$1{,}296 | \$3{,}888"
+ch18,20,18,ch18_perimeter_area.walkway,3,AR,B,$162\text{ ft}^2$,$72\text{ ft}^2$ | $162\text{ ft}^2$ | $178\text{ ft}^2$ | $270\text{ ft}^2$
+ch18,21,18,ch18_perimeter_area.scale_change,3,MK,D,"$2{,}025\text{ ft}^2$","$180\text{ ft}^2$ | $196\text{ ft}^2$ | $405\text{ ft}^2$ | $2{,}025\text{ ft}^2$"
+ch18,22,18,ch18_perimeter_area.walkway,3,AR,D,$208\text{ ft}^2$,$100\text{ ft}^2$ | $192\text{ ft}^2$ | $200\text{ ft}^2$ | $208\text{ ft}^2$
+ch18,23,18,ch18_perimeter_area.scale_change,3,MK,D,$100$,$10$ | $20$ | $97$ | $100$
+ch18,24,18,ch18_perimeter_area.square_yards,3,AR,A,"\$1{,}280","\$1{,}280 | \$1{,}320 | \$3{,}840 | \$11{,}520"
+ch18,25,18,ch18_perimeter_area.composite,3,MK,A,$86\text{ yd}$,$86\text{ yd}$ | $94\text{ yd}$ | $124\text{ yd}$ | $362\text{ yd}$
+ch19,1,19,ch19_circles.circle_area,1,MK,C,$121\pi\text{ ft}^2$,$11\pi\text{ ft}^2$ | $22\pi\text{ ft}^2$ | $121\pi\text{ ft}^2$ | $484\pi\text{ ft}^2$
+ch19,2,19,ch19_circles.circumference,1,MK,C,$18\pi\text{ cm}$,$9\pi\text{ cm}$ | $14\pi\text{ cm}$ | $18\pi\text{ cm}$ | $81\pi\text{ cm}$
+ch19,3,19,ch19_circles.circle_area,1,MK,B,$9\pi\text{ cm}^2$,$6\pi\text{ cm}^2$ | $9\pi\text{ cm}^2$ | $16\pi\text{ cm}^2$ | $36\pi\text{ cm}^2$
+ch19,4,19,ch19_circles.circumference,1,MK,A,$14\pi\text{ in}$,$14\pi\text{ in}$ | $16\pi\text{ in}$ | $28\pi\text{ in}$ | $49\pi\text{ in}$
+ch19,5,19,ch19_circles.pi_approx,1,AR,A,$616\text{ ft}^2$,"$616\text{ ft}^2$ | $638\text{ ft}^2$ | $660\text{ ft}^2$ | $2{,}464\text{ ft}^2$"
+ch19,6,19,ch19_circles.circumference,1,MK,D,$20\pi\text{ yd}$,$10\pi\text{ yd}$ | $16\pi\text{ yd}$ | $18\pi\text{ yd}$ | $20\pi\text{ yd}$
+ch19,7,19,ch19_circles.pi_approx,1,AR,B,$220\text{ yd}$,"$110\text{ yd}$ | $220\text{ yd}$ | $440\text{ yd}$ | $3{,}850\text{ yd}$"
+ch19,8,19,ch19_circles.circle_area,1,MK,B,$400\pi\text{ cm}^2$,"$40\pi\text{ cm}^2$ | $400\pi\text{ cm}^2$ | $800\pi\text{ cm}^2$ | $1{,}600\pi\text{ cm}^2$"
+ch19,9,19,ch19_circles.radius_from,2,MK,C,$9\text{ cm}$,$4.5\text{ cm}$ | $7\text{ cm}$ | $9\text{ cm}$ | $18\text{ cm}$
+ch19,10,19,ch19_circles.part_circle,2,MK,B,$36\pi\text{ m}^2$,$6\pi\text{ m}^2$ | $36\pi\text{ m}^2$ | $72\pi\text{ m}^2$ | $144\pi\text{ m}^2$
+ch19,11,19,ch19_circles.annulus,2,MK,A,$96\pi\text{ yd}^2$,$96\pi\text{ yd}^2$ | $116\pi\text{ yd}^2$ | $121\pi\text{ yd}^2$ | $146\pi\text{ yd}^2$
+ch19,12,19,ch19_circles.scale_circle,2,MK,A,$9$,$9$ | $11$ | $13$ | $27$
+ch19,13,19,ch19_circles.annulus,2,MK,D,$17\pi\text{ ft}^2$,$\pi\text{ ft}^2$ | $2\pi\text{ ft}^2$ | $15\pi\text{ ft}^2$ | $17\pi\text{ ft}^2$
+ch19,14,19,ch19_circles.scale_circle,2,MK,C,$4$,$16$ | $64$ | $4$ | $8$
+ch19,15,19,ch19_circles.part_circle,2,MK,A,$\pi\text{ yd}^2$,$\pi\text{ yd}^2$ | $2\pi\text{ yd}^2$ | $3\pi\text{ yd}^2$ | $4\pi\text{ yd}^2$
+ch19,16,19,ch19_circles.radius_from,2,MK,C,$11\text{ cm}$,$5.5\text{ cm}$ | $10\text{ cm}$ | $11\text{ cm}$ | $22\text{ cm}$
+ch19,17,19,ch19_circles.circle_area,2,MK,A,$81\pi\text{ cm}^2$,$81\pi\text{ cm}^2$ | $100\pi\text{ cm}^2$ | $162\pi\text{ cm}^2$ | $324\pi\text{ cm}^2$
+ch19,18,19,ch19_circles.pi_approx,2,AR,A,"$5{,}024\text{ mi}^2$","$5{,}024\text{ mi}^2$ | $5{,}030.28\text{ mi}^2$ | $10{,}048\text{ mi}^2$ | $20{,}096\text{ mi}^2$"
+ch19,19,19,ch19_circles.shaded_region,3,MK,B,$(100 - 25\pi)\text{ m}^2$,$(100 - 29\pi)\text{ m}^2$ | $(100 - 25\pi)\text{ m}^2$ | $(100 - 10\pi)\text{ m}^2$ | $25\pi\text{ m}^2$
+ch19,20,19,ch19_circles.arc_sector,3,MK,B,$24\pi\text{ in}$,$12\pi\text{ in}$ | $24\pi\text{ in}$ | $36\pi\text{ in}$ | $216\pi\text{ in}$
+ch19,21,19,ch19_circles.wheel,3,AR,D,"$2{,}880$","$240$ | $1{,}440$ | $2{,}160$ | $2{,}880$"
+ch19,22,19,ch19_circles.arc_sector,3,MK,B,$225\pi\text{ ft}^2$,$15\pi\text{ ft}^2$ | $225\pi\text{ ft}^2$ | $450\pi\text{ ft}^2$ | $900\pi\text{ ft}^2$
+ch19,23,19,ch19_circles.wheel,3,AR,A,"$2{,}880$","$2{,}880$ | $3{,}600$ | $4{,}320$ | $5{,}760$"
+ch19,24,19,ch19_circles.shaded_region,3,MK,A,$(484 - 121\pi)\text{ yd}^2$,$(484 - 121\pi)\text{ yd}^2$ | $121\pi\text{ yd}^2$ | $(484 - 22\pi)\text{ yd}^2$ | $(484 - 11\pi)\text{ yd}^2$
+ch19,25,19,ch19_circles.part_circle,3,MK,C,$(16\pi + 32)\text{ yd}$,$16\pi\text{ yd}$ | $(16\pi + 16)\text{ yd}$ | $(16\pi + 32)\text{ yd}$ | $(32\pi + 32)\text{ yd}$
+ch20,1,20,ch20_volume.box_volume,1,MK,D,$384\text{ cm}^3$,$24\text{ cm}^3$ | $32\text{ cm}^3$ | $352\text{ cm}^3$ | $384\text{ cm}^3$
+ch20,2,20,ch20_volume.cube,1,MK,D,$294\text{ ft}^2$,$42\text{ ft}^2$ | $49\text{ ft}^2$ | $196\text{ ft}^2$ | $294\text{ ft}^2$
+ch20,3,20,ch20_volume.box_volume,1,MK,B,"$1{,}320\text{ cm}^3$","$33\text{ cm}^3$ | $1{,}320\text{ cm}^3$ | $1{,}430\text{ cm}^3$ | $1{,}440\text{ cm}^3$"
+ch20,4,20,ch20_volume.cube,1,MK,B,$729\text{ ft}^3$,$27\text{ ft}^3$ | $729\text{ ft}^3$ | $810\text{ ft}^3$ | $891\text{ ft}^3$
+ch20,5,20,ch20_volume.cylinder,1,MK,D,$275\pi\text{ ft}^3$,$25\pi\text{ ft}^3$ | $55\pi\text{ ft}^3$ | $110\pi\text{ ft}^3$ | $275\pi\text{ ft}^3$
+ch20,6,20,ch20_volume.cube,1,MK,C,$216\text{ cm}^3$,$18\text{ cm}^3$ | $36\text{ cm}^3$ | $216\text{ cm}^3$ | $288\text{ cm}^3$
+ch20,7,20,ch20_volume.cylinder,1,MK,D,$735\pi\text{ cm}^3$,$49\pi\text{ cm}^3$ | $105\pi\text{ cm}^3$ | $210\pi\text{ cm}^3$ | $735\pi\text{ cm}^3$
+ch20,8,20,ch20_volume.box_volume,1,MK,D,$432\text{ cm}^3$,$27\text{ cm}^3$ | $36\text{ cm}^3$ | $216\text{ cm}^3$ | $432\text{ cm}^3$
+ch20,9,20,ch20_volume.box_surface,2,MK,C,$82\text{ ft}^2$,$41\text{ ft}^2$ | $42\text{ ft}^2$ | $82\text{ ft}^2$ | $84\text{ ft}^2$
+ch20,10,20,ch20_volume.missing_dim,2,MK,B,$15\text{ in}$,$13\text{ in}$ | $15\text{ in}$ | $150\text{ in}$ | $360\text{ in}$
+ch20,11,20,ch20_volume.fill_tank,2,AR,C,$450\text{ gal}$,$8\text{ gal}$ | $60\text{ gal}$ | $450\text{ gal}$ | $780\text{ gal}$
+ch20,12,20,ch20_volume.how_many_fit,2,AR,B,$20$,"$10$ | $20$ | $320$ | $1{,}280$"
+ch20,13,20,ch20_volume.fill_tank,2,AR,D,$150\text{ gal}$,$20\text{ gal}$ | $75\text{ gal}$ | $140\text{ gal}$ | $150\text{ gal}$
+ch20,14,20,ch20_volume.how_many_fit,2,AR,A,$400$,"$400$ | $440$ | $3{,}600$ | $10{,}800$"
+ch20,15,20,ch20_volume.missing_dim,2,MK,C,$5\text{ in}$,$3\text{ in}$ | $4\text{ in}$ | $5\text{ in}$ | $15\text{ in}$
+ch20,16,20,ch20_volume.box_surface,2,MK,B,$552\text{ ft}^2$,$276\text{ ft}^2$ | $552\text{ ft}^2$ | $576\text{ ft}^2$ | $864\text{ ft}^2$
+ch20,17,20,ch20_volume.cube,2,MK,A,$64\text{ in}^3$,$64\text{ in}^3$ | $80\text{ in}^3$ | $96\text{ in}^3$ | $125\text{ in}^3$
+ch20,18,20,ch20_volume.cylinder,2,MK,A,$62.8\text{ ft}^3$,$62.8\text{ ft}^3$ | $63\text{ ft}^3$ | $63.4\text{ ft}^3$ | $251.2\text{ ft}^3$
+ch20,19,20,ch20_volume.concrete,3,AR,B,$49$,$47$ | $49$ | $98$ | $588$
+ch20,20,20,ch20_volume.scale_solid,3,MK,A,$2$,$2$ | $1$ | $8$ | $4$
+ch20,21,20,ch20_volume.cone_sphere,3,MK,C,$18\pi\text{ cm}^3$,$6\pi\text{ cm}^3$ | $16\pi\text{ cm}^3$ | $18\pi\text{ cm}^3$ | $36\pi\text{ cm}^3$
+ch20,22,20,ch20_volume.scale_solid,3,MK,C,$40\text{ cm}^3$,$20\text{ cm}^3$ | $35\text{ cm}^3$ | $40\text{ cm}^3$ | $160\text{ cm}^3$
+ch20,23,20,ch20_volume.cone_sphere,3,MK,A,$486\pi\text{ in}^3$,"$486\pi\text{ in}^3$ | $972\pi\text{ in}^3$ | $1{,}458\pi\text{ in}^3$ | $3{,}888\pi\text{ in}^3$"
+ch20,24,20,ch20_volume.concrete,3,AR,A,$49$,$49$ | $53$ | $98$ | $588$
+ch20,25,20,ch20_volume.fill_tank,3,AR,D,$9\text{ min}$,$1.2\text{ min}$ | $3\text{ min}$ | $4.5\text{ min}$ | $9\text{ min}$
+ch21,1,21,ch21_coordinate_geometry.quadrant,1,MK,B,Quadrant II,Quadrant I | Quadrant II | Quadrant III | Quadrant IV
+ch21,2,21,ch21_coordinate_geometry.read_grid,1,MK,D,point $P$,point $S$ | point $Q$ | point $R$ | point $P$
+ch21,3,21,ch21_coordinate_geometry.slope_two_points,1,MK,C,$\frac{5}{3}$,$5$ | $\frac{3}{5}$ | $\frac{5}{3}$ | $-\frac{5}{3}$
+ch21,4,21,ch21_coordinate_geometry.slope_from_eq,1,MK,D,$-2$,$-\frac{1}{2}$ | $2$ | $3$ | $-2$
+ch21,5,21,ch21_coordinate_geometry.slope_two_points,1,MK,B,$\frac{4}{3}$,$-\frac{4}{3}$ | $\frac{4}{3}$ | $4$ | $\frac{3}{4}$
+ch21,6,21,ch21_coordinate_geometry.slope_from_eq,1,MK,B,$-3$,$3$ | $-3$ | $-\frac{1}{3}$ | $12$
+ch21,7,21,ch21_coordinate_geometry.read_grid,1,MK,C,point $S$,point $Q$ | point $R$ | point $S$ | point $P$
+ch21,8,21,ch21_coordinate_geometry.quadrant,1,MK,C,Quadrant III,Quadrant I | Quadrant II | Quadrant III | Quadrant IV
+ch21,9,21,ch21_coordinate_geometry.slope_two_points,2,MK,B,$\frac{2}{3}$,$\frac{3}{2}$ | $\frac{2}{3}$ | $-\frac{2}{3}$ | $-8$
+ch21,10,21,ch21_coordinate_geometry.midpoint,2,MK,A,"$(-4, 0)$","$(-4, 0)$ | $(-8, 0)$ | $(-1, 8)$ | $(0, -4)$"
+ch21,11,21,ch21_coordinate_geometry.distance,2,MK,A,$15$,$15$ | $16$ | $21$ | $225$
+ch21,12,21,ch21_coordinate_geometry.intercepts,2,MK,A,$-5$,$-5$ | $5$ | $\frac{1}{5}$ | $15$
+ch21,13,21,ch21_coordinate_geometry.point_on_line,2,MK,D,"$(-4, 7)$","$(7, -4)$ | $(-4, -7)$ | $(-4, 9)$ | $(-4, 7)$"
+ch21,14,21,ch21_coordinate_geometry.intercepts,2,MK,C,$-6$,$6$ | $-9$ | $-6$ | $-18$
+ch21,15,21,ch21_coordinate_geometry.point_on_line,2,MK,B,"$(-3, 1)$","$(1, -3)$ | $(-3, 1)$ | $(-3, -13)$ | $(-3, 6)$"
+ch21,16,21,ch21_coordinate_geometry.distance,2,MK,D,$20$,$4$ | $14$ | $19$ | $20$
+ch21,17,21,ch21_coordinate_geometry.midpoint,2,MK,A,"$(12, 5)$","$(12, 5)$ | $(-6, -2)$ | $(-18, -7)$ | $(10, 4)$"
+ch21,18,21,ch21_coordinate_geometry.slope_two_points,2,MK,C,$\frac{1}{4}$,$-1$ | $-\frac{1}{4}$ | $\frac{1}{4}$ | $4$
+ch21,19,21,ch21_coordinate_geometry.line_equation,3,MK,A,$y = 2x - 3$,$y = 2x - 3$ | $y = \frac{1}{2}x + \frac{3}{2}$ | $y = -2x + 9$ | $y = 2x + 3$
+ch21,20,21,ch21_coordinate_geometry.parallel_perp,3,MK,D,$2$,$-\frac{1}{2}$ | $\frac{1}{2}$ | $-2$ | $2$
+ch21,21,21,ch21_coordinate_geometry.line_equation,3,MK,B,$y = -3x - 1$,$y = -3x - 4$ | $y = -3x - 1$ | $y = -3x + 1$ | $y = -\frac{1}{3}x - \frac{11}{3}$
+ch21,22,21,ch21_coordinate_geometry.slope_from_eq,3,MK,B,$-\frac{1}{2}$,$-2$ | $-\frac{1}{2}$ | $\frac{1}{2}$ | $1$
+ch21,23,21,ch21_coordinate_geometry.line_equation,3,MK,A,$y = -5x + 7$,$y = -5x + 7$ | $y = -5x - 3$ | $y = -5x - 7$ | $y = -\frac{1}{5}x - \frac{13}{5}$
+ch21,24,21,ch21_coordinate_geometry.slope_from_eq,3,MK,D,$-\frac{4}{3}$,$\frac{4}{3}$ | $4$ | $-\frac{3}{4}$ | $-\frac{4}{3}$
+ch21,25,21,ch21_coordinate_geometry.parallel_perp,3,MK,A,$-\frac{5}{2}$,$-\frac{5}{2}$ | $\frac{2}{5}$ | $\frac{5}{2}$ | $-\frac{2}{5}$
+ch22,1,22,ch22_money.change_due_a,1,AR,B,\$32.25,\$17.75 | \$32.25 | \$33.25 | \$38.75
+ch22,2,22,ch22_money.change_due_b,1,AR,A,\$9.50,\$9.50 | \$10.50 | \$12.50 | \$16.75
+ch22,3,22,ch22_money.change_due_c,1,AR,D,\$32.76,\$17.24 | \$27.76 | \$32.00 | \$32.76
+ch22,4,22,ch22_money.sale_price_a,1,AR,B,\$48.00,\$32.00 | \$48.00 | \$76.80 | \$112.00
+ch22,5,22,ch22_money.sale_price_b,1,AR,D,\$39,\$25 | \$26 | \$34 | \$39
+ch22,6,22,ch22_money.sale_price_c,1,AR,D,\$27.50,\$5.00 | \$12.50 | \$22.50 | \$27.50
+ch22,7,22,ch22_money.sales_tax_a,1,AR,D,\$294,\$14 | \$266 | \$285 | \$294
+ch22,8,22,ch22_money.sales_tax_b,1,AR,B,\$723.60,"\$53.60 | \$723.60 | \$1{,}023.60 | \$1{,}206.00"
+ch22,9,22,ch22_money.items_budget_a,1,AR,A,$11$,$11$ | $12$ | $13$ | $15$
+ch22,10,22,ch22_money.items_budget_b,1,AR,C,$19$,$17$ | $18$ | $19$ | $20$
+ch22,11,22,ch22_money.budget_share_a,1,AR,C,\$345,"\$245 | \$295 | \$345 | \$2{,}415"
+ch22,12,22,ch22_money.budget_share_b,1,AR,B,"\$2{,}250","\$750 | \$2{,}250 | \$2{,}450 | \$2{,}850"
+ch22,13,22,ch22_money.change_due_a,2,AR,C,\$73.03,\$26.97 | \$70.00 | \$73.03 | \$74.03
+ch22,14,22,ch22_money.change_due_b,2,AR,D,\$38.25,\$23.25 | \$28.25 | \$36.00 | \$38.25
+ch22,15,22,ch22_money.unit_price_a,2,AR,C,\$1.21,\$0.13 | \$1.08 | \$1.21 | \$1.34
+ch22,16,22,ch22_money.unit_price_b,2,AR,A,\$0.14,\$0.14 | \$0.15 | \$0.24 | \$2.60
+ch22,17,22,ch22_money.sales_tax,2,AR,C,\$86.40,\$6.40 | \$73.60 | \$86.40 | \$88.00
+ch22,18,22,ch22_money.overtime_a,2,AR,D,\$780,\$180 | \$660 | \$720 | \$780
+ch22,19,22,ch22_money.overtime_b,2,AR,B,"\$1{,}212","\$1{,}128 | \$1{,}212 | \$1{,}296 | \$1{,}692"
+ch22,20,22,ch22_money.paycheck_a,2,AR,A,"\$1{,}500","\$1{,}500 | \$1{,}625 | \$1{,}900 | \$3{,}250"
+ch22,21,22,ch22_money.paycheck_b,2,AR,B,"\$2{,}250","\$1{,}850 | \$2{,}250 | \$2{,}650 | \$4{,}500"
+ch22,22,22,ch22_money.split_bill_a,2,AR,B,\$48.30,\$42.00 | \$48.30 | \$60.90 | \$144.90
+ch22,23,22,ch22_money.split_bill_b,2,AR,A,\$19.20,\$19.20 | \$21.20 | \$32.00 | \$96.00
+ch22,24,22,ch22_money.savings_weeks_a,2,AR,D,$9$~weeks,$5$~weeks | $7$~weeks | $8$~weeks | $9$~weeks
+ch22,25,22,ch22_money.savings_weeks_b,2,AR,B,$15$~weeks,$14$~weeks | $15$~weeks | $25$~weeks | $34$~weeks
+ch22,26,22,ch22_money.budget_share,2,AR,A,"\$1{,}932","\$1{,}932 | \$2{,}208 | \$2{,}392 | \$2{,}484"
+ch22,27,22,ch22_money.items_budget,2,AR,A,$11$,$11$ | $12$ | $15$ | $20$
+ch22,28,22,ch22_money.bulk_savings,2,AR,D,\$10.62,\$0.59 | \$1.16 | \$7.62 | \$10.62
+ch22,29,22,ch22_money.discount_tax_a,3,AR,B,\$380.16,\$352.00 | \$380.16 | \$387.20 | \$475.20
+ch22,30,22,ch22_money.discount_tax_b,3,AR,C,\$445.12,\$386.88 | \$416.00 | \$445.12 | \$452.40
+ch22,31,22,ch22_money.discount_tax_c,3,AR,D,\$532.44,\$453.56 | \$482.44 | \$493.00 | \$532.44
+ch22,32,22,ch22_money.overtime_a,3,AR,A,\$735,"\$735 | \$780 | \$935 | \$1{,}035"
+ch22,33,22,ch22_money.overtime_b,3,AR,C,$42$~hours,$2$~hours | $40$~hours | $42$~hours | $43$~hours
+ch22,34,22,ch22_money.best_buy_a,3,AR,B,the case of 12,All three cost the same per bottle | the case of 12 | the case of 24 | the case of 40
+ch22,35,22,ch22_money.best_buy_b,3,AR,C,the 12-ounce bag,the 32-ounce bag | the 24-ounce bag | the 12-ounce bag | All three cost the same per ounce
+ch22,36,22,ch22_money.budget_share,3,AR,C,\$231,\$171 | \$191 | \$231 | \$264
+ch22,37,22,ch22_money.paycheck,3,AR,A,"\$1{,}350.00","\$1{,}350.00 | \$1{,}462.50 | \$1{,}800.00 | \$2{,}925.00"
+ch22,38,22,ch22_money.hourly_vs_salary_a,3,AR,B,"\$4{,}160","\$80 | \$4{,}160 | \$6{,}720 | \$33{,}280"
+ch22,39,22,ch22_money.hourly_vs_salary_b,3,AR,A,"\$3{,}120","\$3{,}120 | \$3{,}620 | \$4{,}120 | \$40{,}560"
+ch22,40,22,ch22_money.bulk_savings,3,AR,C,\$36.96,\$24.96 | \$33.28 | \$36.96 | \$48.00
+ch23,1,23,ch23_percent_applications.simple_interest_a,1,AR,C,\$800,"\$200 | \$600 | \$800 | \$5{,}800"
+ch23,2,23,ch23_percent_applications.simple_interest_b,1,AR,A,\$400,"\$400 | \$4{,}000 | \$5{,}400 | \$40{,}000"
+ch23,3,23,ch23_percent_applications.simple_interest_c,1,AR,C,\$330,"\$165 | \$280 | \$330 | \$5{,}830"
+ch23,4,23,ch23_percent_applications.commission_a,1,AR,A,"\$1{,}450","\$1{,}450 | \$14{,}500 | \$27{,}550 | \$145{,}000"
+ch23,5,23,ch23_percent_applications.commission_b,1,AR,C,\$900,"\$90 | \$800 | \$900 | \$9{,}000"
+ch23,6,23,ch23_percent_applications.pay_raise_a,1,AR,D,"\$3{,}127","\$177 | \$2{,}773 | \$2{,}956 | \$3{,}127"
+ch23,7,23,ch23_percent_applications.pay_raise_b,1,AR,B,"\$74{,}200","\$4{,}200 | \$74{,}200 | \$104{,}200 | \$112{,}000"
+ch23,8,23,ch23_percent_applications.pay_raise_c,1,AR,B,"\$3{,}038.50","\$88.50 | \$3{,}038.50 | \$3{,}835.00 | \$4{,}538.50"
+ch23,9,23,ch23_percent_applications.percent_goal_a,1,AR,A,$40\%$,$40\%$ | $50\%$ | $60\%$ | $250\%$
+ch23,10,23,ch23_percent_applications.percent_goal_b,1,AR,D,$55\%$,$0.55\%$ | $40\%$ | $45\%$ | $55\%$
+ch23,11,23,ch23_percent_applications.simple_interest_a,2,AR,A,\$232.50,"\$232.50 | \$279.00 | \$2{,}790.00 | \$3{,}332.50"
+ch23,12,23,ch23_percent_applications.simple_interest_b,2,AR,B,\$550,"\$55 | \$550 | \$660 | \$6{,}600"
+ch23,13,23,ch23_percent_applications.interest_balance_a,2,AR,A,\$512.50,\$512.50 | \$525.00 | \$625.00 | \$650.00
+ch23,14,23,ch23_percent_applications.interest_balance_b,2,AR,A,"\$6{,}490","\$6{,}490 | \$7{,}490 | \$8{,}490 | \$15{,}400"
+ch23,15,23,ch23_percent_applications.commission_a,2,AR,B,\$805,"\$305 | \$805 | \$3{,}550 | \$6{,}600"
+ch23,16,23,ch23_percent_applications.commission_b,2,AR,A,"\$3{,}000","\$3{,}000 | \$4{,}000 | \$16{,}500 | \$76{,}500"
+ch23,17,23,ch23_percent_applications.reverse_percent_a,2,AR,C,"\$2{,}900.00","\$389.76 | \$2{,}858.24 | \$2{,}900.00 | \$3{,}236.00"
+ch23,18,23,ch23_percent_applications.reverse_percent_b,2,AR,B,$64$,$48$ | $64$ | $65$ | $69$
+ch23,19,23,ch23_percent_applications.markup_a,2,AR,D,\$5.00,\$2.30 | \$3.00 | \$4.00 | \$5.00
+ch23,20,23,ch23_percent_applications.markup_b,2,AR,A,\$12,\$12 | \$13 | \$14 | \$58
+ch23,21,23,ch23_percent_applications.successive_a,2,AR,B,"\$5{,}130","\$4{,}750 | \$5{,}130 | \$5{,}700 | \$8{,}550"
+ch23,22,23,ch23_percent_applications.successive_b,2,AR,D,\$67.50,\$7.50 | \$57.50 | \$60.00 | \$67.50
+ch23,23,23,ch23_percent_applications.tip_tax,2,AR,C,\$145.00,\$121.80 | \$139.20 | \$145.00 | \$146.16
+ch23,24,23,ch23_percent_applications.percent_goal,2,AR,B,$60$~miles,$40$~miles | $60$~miles | $62$~miles | $64$~miles
+ch23,25,23,ch23_percent_applications.find_rate_time_a,3,AR,C,$4.5\%$,$0.045\%$ | $2.25\%$ | $4.5\%$ | $9\%$
+ch23,26,23,ch23_percent_applications.find_rate_time_b,3,AR,D,$4$~years,$0.04$~years | $2$~years | $3$~years | $4$~years
+ch23,27,23,ch23_percent_applications.commission_a,3,AR,B,"\$1{,}334","\$984 | \$1{,}334 | \$1{,}344 | \$1{,}694"
+ch23,28,23,ch23_percent_applications.commission_b,3,AR,B,"\$5{,}000","\$500 | \$5{,}000 | \$6{,}000 | \$10{,}500"
+ch23,29,23,ch23_percent_applications.reverse_percent_a,3,AR,D,\$460,\$310 | \$368 | \$410 | \$460
+ch23,30,23,ch23_percent_applications.reverse_percent_b,3,AR,C,\$110.00,\$66.00 | \$100.00 | \$110.00 | \$118.80
+ch23,31,23,ch23_percent_applications.successive,3,AR,C,$46\%$,$4\%$ | $36\%$ | $46\%$ | $50\%$
+ch23,32,23,ch23_percent_applications.markup,3,AR,A,\$39.20,\$39.20 | \$45.50 | \$49.20 | \$56.00
+ch23,33,23,ch23_percent_applications.compound_a,3,AR,C,"\$8{,}988.80","\$8{,}480.00 | \$8{,}960.00 | \$8{,}988.80 | \$10{,}988.80"
+ch23,34,23,ch23_percent_applications.compound_b,3,AR,D,"\$4{,}161.60","\$161.60 | \$4{,}080.00 | \$4{,}160.00 | \$4{,}161.60"
+ch23,35,23,ch23_percent_applications.loan_payment,3,AR,D,\$120,\$100 | \$105 | \$110 | \$120
+ch24,1,24,ch24_rate_distance_time.drt_basic_a,1,AR,C,$12$~miles,$7$~miles | $11$~miles | $12$~miles | $16$~miles
+ch24,2,24,ch24_rate_distance_time.drt_basic_b,1,AR,D,$300$~miles,$75$~miles | $152$~miles | $275$~miles | $300$~miles
+ch24,3,24,ch24_rate_distance_time.drt_basic_c,1,AR,C,"$1{,}700$~miles","$429$~miles | $1{,}500$~miles | $1{,}700$~miles | $2{,}125$~miles"
+ch24,4,24,ch24_rate_distance_time.drt_basic_d,1,AR,D,$34$~miles,$19$~miles | $24$~miles | $29$~miles | $34$~miles
+ch24,5,24,ch24_rate_distance_time.minutes_hours_a,1,AR,C,$80$~miles,"$48$~miles | $60$~miles | $80$~miles | $4{,}800$~miles"
+ch24,6,24,ch24_rate_distance_time.minutes_hours_b,1,AR,A,$5$~miles,$5$~miles | $6$~miles | $7$~miles | $300$~miles
+ch24,7,24,ch24_rate_distance_time.fuel_a,1,AR,B,$33$,$30$ | $33$ | $37$ | $352$
+ch24,8,24,ch24_rate_distance_time.fuel_b,1,AR,C,$9$,$6$ | $7$ | $9$ | $152$
+ch24,9,24,ch24_rate_distance_time.fuel_c,1,AR,B,$54$,$50$ | $54$ | $59$ | $159$
+ch24,10,24,ch24_rate_distance_time.work_rate_a,1,AR,B,$10$~minutes,$8$~minutes | $10$~minutes | $15$~minutes | $540$~minutes
+ch24,11,24,ch24_rate_distance_time.work_rate_b,1,AR,B,$12$~minutes,$9$~minutes | $12$~minutes | $13$~minutes | $198$~minutes
+ch24,12,24,ch24_rate_distance_time.work_rate_c,1,AR,A,$5$~hours,$5$~hours | $7$~hours | $10$~hours | $100$~hours
+ch24,13,24,ch24_rate_distance_time.minutes_hours_a,2,AR,B,$90$~miles,$82.8$~miles | $90$~miles | $108$~miles | $120$~miles
+ch24,14,24,ch24_rate_distance_time.minutes_hours_b,2,AR,B,$54$~mph,$0.9$~mph | $54$~mph | $90$~mph | $360$~mph
+ch24,15,24,ch24_rate_distance_time.minutes_hours_c,2,AR,A,$25$~minutes,$25$~minutes | $35$~minutes | $41$~minutes | $144$~minutes
+ch24,16,24,ch24_rate_distance_time.two_movers_a,2,AR,C,$4$~hours,$1$~hour | $2$~hours | $4$~hours | $20$~hours
+ch24,17,24,ch24_rate_distance_time.two_movers_b,2,AR,A,$20$~miles,$20$~miles | $22$~miles | $240$~miles | $460$~miles
+ch24,18,24,ch24_rate_distance_time.two_movers_c,2,AR,A,$2$~hours,$2$~hours | $3.5$~hours | $4$~hours | $14$~hours
+ch24,19,24,ch24_rate_distance_time.fuel_a,2,AR,A,\$15.00,\$15.00 | \$17.00 | \$112.50 | \$450.00
+ch24,20,24,ch24_rate_distance_time.fuel_b,2,AR,B,\$35.10,\$9.00 | \$35.10 | \$66.30 | \$596.70
+ch24,21,24,ch24_rate_distance_time.pace_speed_a,2,AR,A,$5$~mph,$5$~mph | $6$~mph | $12$~mph | $192$~mph
+ch24,22,24,ch24_rate_distance_time.pace_speed_b,2,AR,D,$40$~minutes,$8$~minutes | $25$~minutes | $30$~minutes | $40$~minutes
+ch24,23,24,ch24_rate_distance_time.pace_speed_c,2,AR,C,$4$~mph,$1$~mph | $3$~mph | $4$~mph | $15$~mph
+ch24,24,24,ch24_rate_distance_time.two_leg_a,2,AR,B,$2.5$~hours,$1.5$~hours | $2.5$~hours | $3.5$~hours | $4$~hours
+ch24,25,24,ch24_rate_distance_time.two_leg_b,2,AR,C,$3$~hours,$1$~hour | $1.75$~hours | $3$~hours | $5$~hours
+ch24,26,24,ch24_rate_distance_time.arrival_time_a,2,AR,C,12:07 p.m.,11:55 a.m. | 12:15 p.m. | 12:07 p.m. | 1:07 p.m.
+ch24,27,24,ch24_rate_distance_time.arrival_time_b,2,AR,B,9:27 a.m.,9:15 a.m. | 9:27 a.m. | 9:35 a.m. | 10:27 a.m.
+ch24,28,24,ch24_rate_distance_time.work_rate,2,AR,D,$900$,$540$ | $700$ | $800$ | $900$
+ch24,29,24,ch24_rate_distance_time.round_trip_a,3,AR,D,$30$~mph,$15$~mph | $20$~mph | $25$~mph | $30$~mph
+ch24,30,24,ch24_rate_distance_time.round_trip_b,3,AR,D,$9.6$~mph,$4.8$~mph | $6.6$~mph | $8.6$~mph | $9.6$~mph
+ch24,31,24,ch24_rate_distance_time.round_trip_c,3,AR,C,$48$~mph,$24$~mph | $33$~mph | $48$~mph | $50$~mph
+ch24,32,24,ch24_rate_distance_time.catch_up_a,3,AR,B,$0.5$~hours,$0.25$~hours | $0.5$~hours | $1$~hour | $1.5$~hours
+ch24,33,24,ch24_rate_distance_time.catch_up_b,3,AR,B,$3.5$~hours,$2$~hours | $3.5$~hours | $5$~hours | $5.5$~hours
+ch24,34,24,ch24_rate_distance_time.catch_up_c,3,AR,A,$144$~miles,$144$~miles | $164$~miles | $204$~miles | $216$~miles
+ch24,35,24,ch24_rate_distance_time.fps_mph_a,3,AR,B,$132$,"$112$ | $132$ | $7{,}920$ | $475{,}200$"
+ch24,36,24,ch24_rate_distance_time.fps_mph_b,3,AR,C,$88$,"$82$ | $84$ | $88$ | $5{,}280$"
+ch24,37,24,ch24_rate_distance_time.two_leg_a,3,AR,A,$12$~mph,$12$~mph | $16$~mph | $20$~mph | $48$~mph
+ch24,38,24,ch24_rate_distance_time.two_leg_b,3,AR,C,$36$~mph,$31$~mph | $32.5$~mph | $36$~mph | $65$~mph
+ch24,39,24,ch24_rate_distance_time.fuel,3,AR,A,\$31.00,\$31.00 | \$37.20 | \$46.50 | \$77.50
+ch24,40,24,ch24_rate_distance_time.arrival_time,3,AR,B,11:35 a.m.,11:50 a.m. | 11:35 a.m. | 11:05 a.m. | 12:35 p.m.
+ch25,1,25,ch25_work_mixtures.work_together,1,AR,C,$8$~minutes,$6$~minutes | $7$~minutes | $8$~minutes | $18$~minutes
+ch25,2,25,ch25_work_mixtures.solute_amount,1,AR,A,$3.2$~gallons,$3.2$~gallons | $4.8$~gallons | $32$~gallons | $40$~gallons
+ch25,3,25,ch25_work_mixtures.work_together,1,AR,B,$4$~hours,$3$~hours | $4$~hours | $9$~hours | $18$~hours
+ch25,4,25,ch25_work_mixtures.solute_amount,1,AR,A,$5\%$,"$5\%$ | $30\%$ | $95\%$ | $2{,}000\%$"
+ch25,5,25,ch25_work_mixtures.equal_workers,1,AR,D,$18$~days,$9$~days | $12$~days | $16$~days | $18$~days
+ch25,6,25,ch25_work_mixtures.ratio_mix,1,AR,B,$15$~cubic feet,$5$~cubic feet | $15$~cubic feet | $24$~cubic feet | $25$~cubic feet
+ch25,7,25,ch25_work_mixtures.equal_workers,1,AR,D,$40$~days,$10$~days | $20$~days | $25$~days | $40$~days
+ch25,8,25,ch25_work_mixtures.ratio_mix,1,AR,B,$28$~gallons,$7$~gallons | $28$~gallons | $32$~gallons | $140$~gallons
+ch25,9,25,ch25_work_mixtures.solute_amount,1,AR,A,$10\%$,"$10\%$ | $12.8\%$ | $90\%$ | $1{,}000\%$"
+ch25,10,25,ch25_work_mixtures.work_together,1,AR,A,$6$~hours,$6$~hours | $6$~hours $45$~minutes | $13$~hours $30$~minutes | $27$~hours
+ch25,11,25,ch25_work_mixtures.work_together,2,AR,D,$20$~minutes,$14$~minutes | $16$~minutes | $18$~minutes | $20$~minutes
+ch25,12,25,ch25_work_mixtures.work_find_one,2,AR,A,$10$~hours,$10$~hours | $12$~hours | $13$~hours | $21$~hours
+ch25,13,25,ch25_work_mixtures.fill_and_drain,2,AR,C,$42$~minutes,$1$~minute | $6$~minutes | $42$~minutes | $57$~minutes
+ch25,14,25,ch25_work_mixtures.equal_workers,2,AR,D,$12$,$9$ | $10$ | $11$ | $12$
+ch25,15,25,ch25_work_mixtures.mix_two_solutions,2,AR,B,$64\%$,$57.5\%$ | $64\%$ | $70\%$ | $115\%$
+ch25,16,25,ch25_work_mixtures.mix_prices,2,AR,B,\$6.40,\$6.00 | \$6.40 | \$288.00 | \$576.00
+ch25,17,25,ch25_work_mixtures.mix_two_solutions,2,AR,B,$20\%$,$1.2\%$ | $20\%$ | $25\%$ | $30\%$
+ch25,18,25,ch25_work_mixtures.mix_prices,2,AR,A,\$16.00,\$16.00 | \$16.50 | \$96.00 | \$192.00
+ch25,19,25,ch25_work_mixtures.equal_workers,2,AR,C,$5$,$2$ | $4$ | $5$ | $50$
+ch25,20,25,ch25_work_mixtures.fill_and_drain,2,AR,D,$12$~hours,$1$~hour | $3$~hours | $7$~hours | $12$~hours
+ch25,21,25,ch25_work_mixtures.work_find_one,2,AR,D,$12$~hours,$2$~hours | $8$~hours | $10$~hours | $12$~hours
+ch25,22,25,ch25_work_mixtures.work_together,2,AR,C,$2$~hours $30$~minutes,$24$~minutes | $1$~hour $30$~minutes | $2$~hours $30$~minutes | $9$~hours
+ch25,23,25,ch25_work_mixtures.concentration_change,2,AR,B,$12$~liters,$6$~liters | $12$~liters | $15$~liters | $24$~liters
+ch25,24,25,ch25_work_mixtures.ratio_mix,2,AR,B,$45$~pounds,$13$~pounds | $45$~pounds | $50$~pounds | $60$~pounds
+ch25,25,25,ch25_work_mixtures.crew_changes,3,AR,A,$24$~days,$24$~days | $30$~days | $32$~days | $39$~days
+ch25,26,25,ch25_work_mixtures.mix_two_solutions,3,AR,B,"$1{,}200$~milliliters","$400$~milliliters | $1{,}200$~milliliters | $1{,}500$~milliliters | $1{,}600$~milliliters"
+ch25,27,25,ch25_work_mixtures.concentration_change,3,AR,C,$4$~liters,$1$~liter | $2$~liters | $4$~liters | $6$~liters
+ch25,28,25,ch25_work_mixtures.mix_prices,3,AR,A,$51$~pounds,$51$~pounds | $56$~pounds | $85$~pounds | $102$~pounds
+ch25,29,25,ch25_work_mixtures.concentration_change,3,AR,C,$50$~gallons,$35$~gallons | $40$~gallons | $50$~gallons | $100$~gallons
+ch25,30,25,ch25_work_mixtures.mix_prices,3,AR,C,$30$~pounds,$20$~pounds | $24$~pounds | $30$~pounds | $50$~pounds
+ch25,31,25,ch25_work_mixtures.mix_two_solutions,3,AR,A,$1$~quart,$1$~quart | $7$~quarts | $8$~quarts | $49$~quarts
+ch25,32,25,ch25_work_mixtures.crew_changes,3,AR,C,$16$~days,$9$~days | $12$~days | $16$~days | $32$~days
+ch25,33,25,ch25_work_mixtures.work_together,3,AR,D,$1$~hour $12$~minutes,$36$~minutes | $40$~minutes | $50$~minutes | $1$~hour $12$~minutes
+ch25,34,25,ch25_work_mixtures.work_find_one,3,AR,D,$9$~hours $20$~minutes,$7$~hours | $8$~hours $20$~minutes | $8$~hours $40$~minutes | $9$~hours $20$~minutes
+ch25,35,25,ch25_work_mixtures.fill_and_drain,3,AR,D,$12$~hours,$5$~minutes | $3$~hours $30$~minutes | $9$~hours | $12$~hours
+ch26,1,26,ch26_statistics_probability.mean_basic,1,AR,A,$72$,$72$ | $74$ | $75$ | $432$
+ch26,2,26,ch26_statistics_probability.center_spread,1,AR,B,$81$,$2$ | $81$ | $87$ | $91$
+ch26,3,26,ch26_statistics_probability.simple_prob,1,AR,C,$\frac{1}{3}$,$\frac{1}{24}$ | $\frac{1}{6}$ | $\frac{1}{3}$ | $\frac{1}{2}$
+ch26,4,26,ch26_statistics_probability.center_spread,1,AR,B,$23$,$18$ | $23$ | $24$ | $29$
+ch26,5,26,ch26_statistics_probability.simple_prob,1,AR,B,$\frac{2}{125}$,$\frac{1}{250}$ | $\frac{2}{125}$ | $\frac{2}{123}$ | $\frac{123}{125}$
+ch26,6,26,ch26_statistics_probability.mean_basic,1,AR,B,\$125.00,\$120.50 | \$125.00 | \$129.50 | \$500.00
+ch26,7,26,ch26_statistics_probability.counting,1,AR,C,$30$,$6$ | $10$ | $30$ | $125$
+ch26,8,26,ch26_statistics_probability.mean_basic,1,AR,A,$93$,$93$ | $95$ | $124$ | $372$
+ch26,9,26,ch26_statistics_probability.counting,1,AR,B,$40$,$11$ | $40$ | $49$ | $125$
+ch26,10,26,ch26_statistics_probability.simple_prob,1,AR,A,$\frac{1}{6}$,$\frac{1}{6}$ | $\frac{1}{5}$ | $\frac{5}{24}$ | $\frac{5}{6}$
+ch26,11,26,ch26_statistics_probability.center_spread,1,AR,D,$16$,$6$ | $10$ | $14$ | $16$
+ch26,12,26,ch26_statistics_probability.expected_count,1,AR,B,$60$,$10$ | $60$ | $540$ | $600$
+ch26,13,26,ch26_statistics_probability.score_needed,2,AR,B,$28$,$17$ | $28$ | $30$ | $34$
+ch26,14,26,ch26_statistics_probability.average_change,2,AR,B,$26$,$24$ | $26$ | $32$ | $35$
+ch26,15,26,ch26_statistics_probability.score_needed,2,AR,B,$70$,$64$ | $70$ | $73$ | $78$
+ch26,16,26,ch26_statistics_probability.center_spread,2,AR,A,$72$,$72$ | $72.5$ | $73$ | $73.5$
+ch26,17,26,ch26_statistics_probability.weighted_average,2,AR,A,$75$,"$75$ | $76$ | $78$ | $4{,}875$"
+ch26,18,26,ch26_statistics_probability.prob_complement,2,AR,C,$\frac{23}{30}$,$\frac{7}{30}$ | $\frac{7}{23}$ | $\frac{23}{30}$ | $\frac{23}{7}$
+ch26,19,26,ch26_statistics_probability.independent_events,2,AR,A,$\frac{25}{36}$,$\frac{25}{36}$ | $\frac{7}{9}$ | $\frac{5}{6}$ | $\frac{35}{36}$
+ch26,20,26,ch26_statistics_probability.prob_complement,2,AR,B,$\frac{1}{3}$,$\frac{1}{6}$ | $\frac{1}{3}$ | $\frac{1}{2}$ | $\frac{2}{3}$
+ch26,21,26,ch26_statistics_probability.independent_events,2,AR,C,$\frac{1}{10}$,$\frac{1}{30}$ | $\frac{1}{20}$ | $\frac{1}{10}$ | $\frac{7}{10}$
+ch26,22,26,ch26_statistics_probability.weighted_average,2,AR,D,$18$~minutes,$12$~minutes | $14$~minutes | $17$~minutes | $18$~minutes
+ch26,23,26,ch26_statistics_probability.center_spread,2,AR,C,$77.5$,$68$ | $77$ | $77.5$ | $87$
+ch26,24,26,ch26_statistics_probability.score_needed,2,AR,D,$72$,$54$ | $56$ | $60$ | $72$
+ch26,25,26,ch26_statistics_probability.average_change,2,AR,C,$73$~inches,$64$~inches | $72$~inches | $73$~inches | $77$~inches
+ch26,26,26,ch26_statistics_probability.expected_count,2,AR,C,"$1{,}170$","$0$ | $130$ | $1{,}170$ | $1{,}290$"
+ch26,27,26,ch26_statistics_probability.arrangements,2,AR,C,$72$,$17$ | $36$ | $72$ | $81$
+ch26,28,26,ch26_statistics_probability.counting,2,AR,D,$90$,$16$ | $30$ | $60$ | $90$
+ch26,29,26,ch26_statistics_probability.without_replacement,3,AR,D,$\frac{7}{26}$,$\frac{7}{52}$ | $\frac{35}{156}$ | $\frac{42}{169}$ | $\frac{7}{26}$
+ch26,30,26,ch26_statistics_probability.average_change,3,AR,A,$75$,$75$ | $78$ | $84$ | $441$
+ch26,31,26,ch26_statistics_probability.without_replacement,3,AR,B,$\frac{9}{35}$,$\frac{6}{25}$ | $\frac{9}{35}$ | $\frac{11}{35}$ | $\frac{18}{35}$
+ch26,32,26,ch26_statistics_probability.weighted_average,3,AR,C,$63$,$54$ | $57$ | $63$ | $76$
+ch26,33,26,ch26_statistics_probability.arrangements,3,AR,A,$720$,"$720$ | $5{,}039$ | $5{,}040$ | $46{,}656$"
+ch26,34,26,ch26_statistics_probability.combinations,3,AR,B,$35$,$21$ | $35$ | $105$ | $210$
+ch26,35,26,ch26_statistics_probability.arrangements,3,AR,B,$120$,$20$ | $120$ | $130$ | $216$
+ch26,36,26,ch26_statistics_probability.combinations,3,AR,C,$66$,$24$ | $55$ | $66$ | $132$
+ch26,37,26,ch26_statistics_probability.weighted_average,3,AR,A,$80$,$80$ | $82$ | $84$ | $720$
+ch26,38,26,ch26_statistics_probability.without_replacement,3,AR,B,$\frac{1}{22}$,$\frac{1}{24}$ | $\frac{1}{22}$ | $\frac{1}{16}$ | $\frac{3}{44}$
+ch26,39,26,ch26_statistics_probability.average_change,3,AR,A,$33$,$33$ | $39$ | $41$ | $42$
+ch26,40,26,ch26_statistics_probability.score_needed,3,AR,D,$26$,$20$ | $22$ | $24$ | $26$
+ch27,1,27,ch27_measurement_multistep.us_length,1,AR,B,$7$~yards,$1.75$~yards | $7$~yards | $18$~yards | $63$~yards
+ch27,2,27,ch27_measurement_multistep.capacity_weight,1,AR,B,$9.5$~pounds,"$8.5$~pounds | $9.5$~pounds | $136$~pounds | $2{,}432$~pounds"
+ch27,3,27,ch27_measurement_multistep.metric_convert,1,AR,C,$3.75$~liters,$0.375$~liters | $3.65$~liters | $3.75$~liters | $37.5$~liters
+ch27,4,27,ch27_measurement_multistep.elapsed_time,1,AR,B,$2{:}15$~p.m.,$1{:}15$~p.m. | $2{:}15$~p.m. | $2{:}25$~p.m. | $2{:}35$~p.m.
+ch27,5,27,ch27_measurement_multistep.metric_convert,1,AR,B,$250$~milliliters,"$25$~milliliters | $250$~milliliters | $300$~milliliters | $2{,}500$~milliliters"
+ch27,6,27,ch27_measurement_multistep.elapsed_time,1,AR,A,$1$~hour $15$~minutes,$1$~hour $15$~minutes | $1$~hour $55$~minutes | $2$~hours | $10$~hours $45$~minutes
+ch27,7,27,ch27_measurement_multistep.capacity_weight,1,AR,D,$64$~ounces,$0.25$~ounces | $20$~ounces | $48$~ounces | $64$~ounces
+ch27,8,27,ch27_measurement_multistep.us_length,1,AR,D,$252$~inches,$1.75$~inches | $33$~inches | $63$~inches | $252$~inches
+ch27,9,27,ch27_measurement_multistep.mixed_units,1,AR,D,$8$~hr $23$~min,$7$~hr $23$~min | $8$~hr $17$~min | $8$~hr $21$~min | $8$~hr $23$~min
+ch27,10,27,ch27_measurement_multistep.round_up_down,1,AR,D,$70$,$5$ | $60$ | $69$ | $70$
+ch27,11,27,ch27_measurement_multistep.us_metric,2,AR,A,$30$~kilograms,$30$~kilograms | $33$~kilograms | $63.8$~kilograms | $145.2$~kilograms
+ch27,12,27,ch27_measurement_multistep.military_time,2,AR,B,$9$~hours $30$~minutes,$9$~hours $10$~minutes | $9$~hours $30$~minutes | $10$~hours $10$~minutes | $10$~hours $30$~minutes
+ch27,13,27,ch27_measurement_multistep.mixed_units,2,AR,B,$18$~yd $2$~ft,$17$~yd $2$~ft | $18$~yd $2$~ft | $19$~yd $1$~ft | $19$~yd $2$~ft
+ch27,14,27,ch27_measurement_multistep.round_up_down,2,AR,C,$5$,$3$ | $4$ | $5$ | $6$
+ch27,15,27,ch27_measurement_multistep.mixed_units,2,AR,A,$2$~ft $6$~in,$2$~ft $6$~in | $2$~ft $8$~in | $3$~ft | $3$~ft $6$~in
+ch27,16,27,ch27_measurement_multistep.round_up_down,2,AR,D,$26$,$4$ | $13$ | $24$ | $26$
+ch27,17,27,ch27_measurement_multistep.military_time,2,AR,D,$1810$,$0610$ | $1710$ | $1745$ | $1810$
+ch27,18,27,ch27_measurement_multistep.us_metric,2,AR,C,$10.16$~centimeters,$1.016$~centimeters | $6.54$~centimeters | $10.16$~centimeters | $101.6$~centimeters
+ch27,19,27,ch27_measurement_multistep.us_length,2,AR,A,$8$,"$8$ | $10$ | $24$ | $1{,}760$"
+ch27,20,27,ch27_measurement_multistep.capacity_weight,2,AR,C,$200$,$50$ | $100$ | $200$ | $400$
+ch27,21,27,ch27_measurement_multistep.metric_convert,2,AR,C,$20$,"$2$ | $14$ | $20$ | $10{,}000$"
+ch27,22,27,ch27_measurement_multistep.fraction_remainder,2,AR,B,$105$,$35$ | $105$ | $140$ | $280$
+ch27,23,27,ch27_measurement_multistep.fence_posts,2,AR,C,$60$,$58$ | $59$ | $60$ | $61$
+ch27,24,27,ch27_measurement_multistep.age_problem,2,AR,D,$33$,$21$ | $23$ | $27$ | $33$
+ch27,25,27,ch27_measurement_multistep.fence_posts,3,AR,C,$36$~minutes,$6$~minutes | $31$~minutes | $36$~minutes | $42$~minutes
+ch27,26,27,ch27_measurement_multistep.day_of_week,3,AR,B,Monday,Tuesday | Monday | Thursday | Sunday
+ch27,27,27,ch27_measurement_multistep.age_problem,3,AR,A,$44$,$44$ | $48$ | $54$ | $59$
+ch27,28,27,ch27_measurement_multistep.fraction_remainder,3,AR,C,$160$,$80$ | $140$ | $160$ | $480$
+ch27,29,27,ch27_measurement_multistep.military_time,3,AR,D,$0310$,$0140$ | $0210$ | $0255$ | $0310$
+ch27,30,27,ch27_measurement_multistep.fraction_remainder,3,AR,C,"\$1{,}800","\$1{,}080 | \$1{,}470 | \$1{,}800 | \$1{,}900"
+ch27,31,27,ch27_measurement_multistep.military_time,3,AR,B,$11$~hours $20$~minutes,$7$~hours $45$~minutes | $11$~hours $20$~minutes | $12$~hours | $13$~hours $20$~minutes
+ch27,32,27,ch27_measurement_multistep.age_problem,3,AR,B,$48$,$16$ | $48$ | $56$ | $80$
+ch27,33,27,ch27_measurement_multistep.day_of_week,3,AR,D,Thursday,Wednesday | Saturday | Friday | Thursday
+ch27,34,27,ch27_measurement_multistep.fence_posts,3,AR,D,$34$,$17$ | $32$ | $33$ | $34$
+ch27,35,27,ch27_measurement_multistep.round_up_down,3,AR,C,\$126,\$84 | \$120 | \$126 | \$168
+diag,1,1,ch01_whole_numbers.multiply_by_hand,2,MK,C,"$1{,}512$","$378$ | $1{,}212$ | $1{,}512$ | $12{,}852$"
+diag,2,2,ch02_negative_numbers.order_ints,2,MK,A,"$-9, -7, -3, 8, 12$","$-9, -7, -3, 8, 12$ | $-3, -7, 8, -9, 12$ | $12, 8, -3, -7, -9$ | $-3, -7, -9, 8, 12$"
+diag,3,3,ch03_factors_primes.gcf_word,2,AR,D,$14$,$6$ | $7$ | $8$ | $14$
+diag,4,4,ch04_fractions.compare,2,MK,A,$\frac{11}{12}$,$\frac{11}{12}$ | $\frac{5}{12}$ | $\frac{7}{15}$ | $\frac{3}{4}$
+diag,5,5,ch05_decimals.money_mult,2,AR,D,\$12.30,\$5.30 | \$8.70 | \$12.20 | \$12.30
+diag,6,6,ch06_percents.convert,2,MK,D,$78\%$,$0.78\%$ | $7.8\%$ | $58\%$ | $78\%$
+diag,7,7,ch07_ratios.bulk_scale,2,AR,C,$12.5$,"$2$ | $7.5$ | $12.5$ | $12{,}500$"
+diag,8,8,ch08_exponents.sci_to_standard,2,MK,C,"$618{,}000$","$30.9$ | $61{,}800$ | $618{,}000$ | $6{,}180{,}000$"
+diag,9,9,ch09_roots.multiply_radicals,2,MK,B,$6\sqrt{2}$,$5\sqrt{2}$ | $6\sqrt{2}$ | $36\sqrt{2}$ | $72$
+diag,10,10,ch10_expressions.word_expression,2,AR,D,$12x + 8y$,$8x + 12y$ | $20(x + y)$ | $20xy$ | $12x + 8y$
+diag,11,11,ch11_linear_equations.literal_eq,2,MK,A,$y = 3x + 3$,$y = 3x + 3$ | $y = 15x + 3$ | $y = -3x + 3$ | $y = 15x + 15$
+diag,12,12,ch12_inequalities.translate_ineq,2,MK,C,$180 + p \ge 250$,$180 + p > 250$ | $180p \ge 250$ | $180 + p \ge 250$ | $180 + p < 250$
+diag,13,13,ch13_systems.substitution,2,MK,D,$2$,$-16$ | $-2$ | $1$ | $2$
+diag,14,14,ch14_polynomials.power_rule,2,MK,C,$9x^{8}$,$- 9x^{8}$ | $9x^{6}$ | $9x^{8}$ | $- 3x^{8}$
+diag,15,15,ch15_quadratics.which_solution,2,MK,D,$8$,$-32$ | $-8$ | $4$ | $8$
+diag,16,16,ch16_lines_angles.polygon_sum,2,MK,B,"$1{,}080^\circ$","$360^\circ$ | $1{,}080^\circ$ | $1{,}260^\circ$ | $1{,}440^\circ$"
+diag,17,17,ch17_triangles.isosceles_angles,2,MK,B,$40$,$20$ | $40$ | $80$ | $100$
+diag,18,18,ch18_perimeter_area.triangle_area,2,MK,A,$150\text{ yd}^2$,"$150\text{ yd}^2$ | $250\text{ yd}^2$ | $300\text{ yd}^2$ | $3{,}750\text{ yd}^2$"
+diag,19,19,ch19_circles.scale_circle,2,MK,D,$\frac{1}{4}$,$\frac{1}{8}$ | $1$ | $\frac{1}{2}$ | $\frac{1}{4}$
+diag,20,20,ch20_volume.missing_dim,2,MK,B,$10\text{ ft}$,$8\text{ ft}$ | $10\text{ ft}$ | $20\text{ ft}$ | $22\text{ ft}$
+diag,21,21,ch21_coordinate_geometry.distance,2,MK,C,$15$,$3$ | $14$ | $15$ | $21$
+diag,22,22,ch22_money.items_budget,2,AR,A,$17$,$17$ | $18$ | $33$ | $48$
+diag,23,23,ch23_percent_applications.markup_b,2,AR,B,\$62.40,\$23.40 | \$62.40 | \$82.40 | \$99.00
+diag,24,23,ch23_percent_applications.simple_interest_b,2,AR,C,\$81.25,\$51.25 | \$71.25 | \$81.25 | \$975.00
+diag,25,24,ch24_rate_distance_time.two_movers_c,2,AR,B,$200$~miles,$20$~miles | $200$~miles | $220$~miles | $260$~miles
+diag,26,25,ch25_work_mixtures.equal_workers,2,AR,B,$2$,$1$ | $2$ | $7$ | $35$
+diag,27,25,ch25_work_mixtures.fill_and_drain,2,AR,B,$9$~minutes,$6$~minutes | $9$~minutes | $12$~minutes | $24$~minutes
+diag,28,26,ch26_statistics_probability.independent_events,2,AR,A,$\frac{36}{289}$,$\frac{36}{289}$ | $\frac{6}{17}$ | $\frac{12}{17}$ | $\frac{18}{17}$
+diag,29,27,ch27_measurement_multistep.military_time,2,AR,A,$7$~hours $25$~minutes,$7$~hours $25$~minutes | $8$~hours $5$~minutes | $8$~hours $25$~minutes | $8$~hours $35$~minutes
+diag,30,27,ch27_measurement_multistep.round_up_down,2,AR,C,$5$,$3$ | $4$ | $5$ | $8$
+test1-AR,1,25,ch25_work_mixtures.work_together,2,AR,B,$3$~hours $45$~minutes,$3$~hours | $3$~hours $45$~minutes | $8$~hours | $16$~hours
+test1-AR,2,20,ch20_volume.fill_tank,2,AR,D,$270\text{ gal}$,$36\text{ gal}$ | $135\text{ gal}$ | $252\text{ gal}$ | $270\text{ gal}$
+test1-AR,3,23,ch23_percent_applications.commission_a,2,AR,C,\$615,"\$315 | \$330 | \$615 | \$3{,}450"
+test1-AR,4,23,ch23_percent_applications.interest_balance_b,2,AR,A,"\$10{,}560","\$10{,}560 | \$11{,}560 | \$13{,}560 | \$33{,}600"
+test1-AR,5,26,ch26_statistics_probability.expected_count,2,AR,B,$15$,$13$ | $15$ | $19$ | $45$
+test1-AR,6,25,ch25_work_mixtures.concentration_change,2,AR,B,$8$~gallons,$5$~gallons | $8$~gallons | $10$~gallons | $24$~gallons
+test1-AR,7,26,ch26_statistics_probability.counting,2,AR,B,"$1{,}000$","$720$ | $1{,}000$ | $1{,}100$ | $1{,}300$"
+test1-AR,8,26,ch26_statistics_probability.prob_complement,2,AR,C,$\frac{49}{50}$,$\frac{1}{50}$ | $\frac{1}{49}$ | $\frac{49}{50}$ | $\frac{149}{150}$
+test1-AR,9,22,ch22_money.discount_tax_a,3,AR,A,\$381.99,\$381.99 | \$392.70 | \$431.99 | \$545.70
+test1-AR,10,24,ch24_rate_distance_time.two_movers_c,2,AR,A,$1$~hour,$1$~hour | $2$~hours | $3$~hours | $5.5$~hours
+test1-AR,11,25,ch25_work_mixtures.ratio_mix,2,AR,B,$8$~fluid ounces,$2$~fluid ounces | $8$~fluid ounces | $16$~fluid ounces | $100$~fluid ounces
+test1-AR,12,27,ch27_measurement_multistep.mixed_units,2,AR,C,$12$~gal $3$~qt,$11$~gal $3$~qt | $12$~gal $2$~qt | $12$~gal $3$~qt | $13$~gal $1$~qt
+test1-AR,13,22,ch22_money.discount_tax_c,3,AR,A,\$272.85,\$272.85 | \$276.00 | \$321.00 | \$422.85
+test1-AR,14,23,ch23_percent_applications.commission_b,2,AR,B,"\$3{,}350","\$1{,}150 | \$3{,}350 | \$13{,}700 | \$25{,}200"
+test1-AR,15,22,ch22_money.bulk_savings,3,AR,B,\$50.72,\$36.48 | \$50.72 | \$54.72 | \$56.96
+test1-AR,16,2,ch02_negative_numbers.elevation,3,AR,D,$-880$~ft,"$-1{,}420$~ft | $-1{,}120$~ft | $-1{,}030$~ft | $-880$~ft"
+test1-AR,17,10,ch10_expressions.word_expression,2,AR,B,$3x + 1y$,$4(x + y)$ | $3x + 1y$ | $4xy$ | $1x + 3y$
+test1-AR,18,26,ch26_statistics_probability.center_spread,2,AR,D,$38$,$25$ | $29$ | $37.5$ | $38$
+test1-AR,19,24,ch24_rate_distance_time.catch_up_c,3,AR,A,$0.25$~hours,$0.25$~hours | $0.75$~hours | $1$~hour | $2.25$~hours
+test1-AR,20,4,ch04_fractions.fraction_of,3,AR,B,$11$,$8$ | $11$ | $12$ | $22$
+test1-AR,21,27,ch27_measurement_multistep.fence_posts,3,AR,C,$44$~seconds,$34$~seconds | $40$~seconds | $44$~seconds | $48$~seconds
+test1-AR,22,23,ch23_percent_applications.find_rate_time_b,3,AR,C,$2$~years,$0.02$~years | $1$~year | $2$~years | $24$~years
+test1-AR,23,27,ch27_measurement_multistep.military_time,3,AR,A,$0710$,$0710$ | $0810$ | $0840$ | $1910$
+test1-AR,24,17,ch17_triangles.pyth_word,3,AR,A,$3\text{ ft}$,$3\text{ ft}$ | $6\text{ ft}$ | $9\text{ ft}$ | $12\text{ ft}$
+test1-AR,25,27,ch27_measurement_multistep.age_problem,3,AR,C,$27$,$9$ | $18$ | $27$ | $36$
+test1-AR,26,24,ch24_rate_distance_time.arrival_time,3,AR,D,12:05 p.m.,11:50 a.m. | 1:05 p.m. | 11:45 a.m. | 12:05 p.m.
+test1-AR,27,5,ch05_decimals.money_mult,3,AR,D,\$33.15,\$16.20 | \$24.75 | \$32.15 | \$33.15
+test1-AR,28,24,ch24_rate_distance_time.round_trip_c,3,AR,C,$24$~mph,$12$~mph | $18$~mph | $24$~mph | $25$~mph
+test1-AR,29,25,ch25_work_mixtures.fill_and_drain,3,AR,C,$30$~hours,$2$~minutes | $4$~hours | $30$~hours | $36$~hours
+test1-AR,30,22,ch22_money.overtime_a,3,AR,B,\$884,"\$816 | \$884 | \$952 | \$1{,}224"
+test1-MK,1,8,ch08_exponents.evaluate_power,2,MK,C,$-216$,$-256$ | $-236$ | $-216$ | $216$
+test1-MK,2,19,ch19_circles.circle_area,2,MK,A,$361\pi\text{ ft}^2$,"$361\pi\text{ ft}^2$ | $400\pi\text{ ft}^2$ | $722\pi\text{ ft}^2$ | $1{,}444\pi\text{ ft}^2$"
+test1-MK,3,20,ch20_volume.cube,2,MK,D,$864\text{ m}^2$,$72\text{ m}^2$ | $144\text{ m}^2$ | $576\text{ m}^2$ | $864\text{ m}^2$
+test1-MK,4,7,ch07_ratios.solve_proportion,2,MK,D,$25$,$4$ | $10$ | $19$ | $25$
+test1-MK,5,9,ch09_roots.multiply_radicals,2,MK,B,$2\sqrt{42}$,$\sqrt{26}$ | $2\sqrt{42}$ | $4\sqrt{42}$ | $168$
+test1-MK,6,17,ch17_triangles.triangle_inequality,2,MK,D,"$6$, $12$, $16$","$2$, $6$, $8$ | $5$, $6$, $15$ | $7$, $11$, $22$ | $6$, $12$, $16$"
+test1-MK,7,21,ch21_coordinate_geometry.midpoint,2,MK,B,"$(-1, -6)$","$(-6, -1)$ | $(-1, -6)$ | $(-4, -3)$ | $(-2, -12)$"
+test1-MK,8,11,ch11_linear_equations.fraction_eq,3,MK,B,$45$,$12$ | $45$ | $46$ | $180$
+test1-MK,9,5,ch05_decimals.frac_dec,2,MK,B,$\frac{7}{125}$,$\frac{7}{1250}$ | $\frac{7}{125}$ | $\frac{14}{25}$ | $\frac{125}{7}$
+test1-MK,10,15,ch15_quadratics.quadratic_formula,3,MK,C,$x = -2$ or $x = \frac{1}{2}$,$x = -4$ or $x = 1$ | $x = -\frac{1}{2}$ or $x = 2$ | $x = -2$ or $x = \frac{1}{2}$ | $x = \frac{1}{2}$
+test1-MK,11,1,ch01_whole_numbers.order_ops,3,MK,C,$18$,$10$ | $16$ | $18$ | $28$
+test1-MK,12,18,ch18_perimeter_area.composite,3,MK,D,$36\text{ yd}$,$25\text{ yd}$ | $26\text{ yd}$ | $32\text{ yd}$ | $36\text{ yd}$
+test1-MK,13,2,ch02_negative_numbers.neg_powers,3,MK,C,$85$,$-157$ | $-34$ | $85$ | $157$
+test1-MK,14,17,ch17_triangles.special_right,3,MK,B,$5$,$\frac{5\sqrt{2}}{2}$ | $5$ | $5\sqrt{3}$ | $10$
+test1-MK,15,6,ch06_percents.percent_of_percent,3,MK,C,$39$,$29$ | $34$ | $39$ | $468$
+test1-MK,16,11,ch11_linear_equations.decimal_eq,2,MK,A,$11$,$11$ | $12$ | $13$ | $110$
+test1-MK,17,20,ch20_volume.box_surface,2,MK,D,$52\text{ in}^2$,$24\text{ in}^2$ | $26\text{ in}^2$ | $40\text{ in}^2$ | $52\text{ in}^2$
+test1-MK,18,10,ch10_expressions.evaluate_expr,3,MK,B,$3$,$-3$ | $3$ | $5$ | $6$
+test1-MK,19,14,ch14_polynomials.negative_exponents,3,MK,B,$\frac{12}{x^{2}}$,$12x^{6}$ | $\frac{12}{x^{2}}$ | $\frac{12}{x^{8}}$ | $\frac{7}{x^{2}}$
+test1-MK,20,18,ch18_perimeter_area.scale_change,3,MK,C,$136\text{ ft}$,$34\text{ ft}$ | $42\text{ ft}$ | $136\text{ ft}$ | $544\text{ ft}$
+test1-MK,21,3,ch03_factors_primes.lcm,3,MK,A,$210$,$210$ | $224$ | $290$ | $420$
+test1-MK,22,12,ch12_inequalities.abs_ineq,3,MK,A,$x < 1$ or $x > 7$,$x < 1$ or $x > 7$ | $x < -7$ or $x > -1$ | $1 \le x \le 7$ | $x > 7$
+test1-MK,23,4,ch04_fractions.mixed_add_sub,3,MK,A,$2\frac{11}{12}$,$2\frac{11}{12}$ | $3\frac{1}{12}$ | $3\frac{11}{12}$ | $7\frac{3}{4}$
+test1-MK,24,13,ch13_systems.elimination,3,MK,A,$6$,$6$ | $7$ | $8$ | $10$
+test1-MK,25,16,ch16_lines_angles.regular_polygon,3,MK,D,$6$,$2$ | $3$ | $4$ | $6$
+test2-AR,1,24,ch24_rate_distance_time.minutes_hours_a,2,AR,B,$75$~miles,$69$~miles | $75$~miles | $95$~miles | $120$~miles
+test2-AR,2,10,ch10_expressions.word_expression,2,AR,B,$12x + 5y$,$17(x + y)$ | $12x + 5y$ | $17xy$ | $5x + 12y$
+test2-AR,3,25,ch25_work_mixtures.ratio_mix,2,AR,A,$64$~pounds,$64$~pounds | $69$~pounds | $74$~pounds | $256$~pounds
+test2-AR,4,22,ch22_money.split_bill_a,2,AR,D,\$68.44,\$10.44 | \$58.00 | \$58.44 | \$68.44
+test2-AR,5,24,ch24_rate_distance_time.pace_speed_b,2,AR,D,$6$~mph,$0.1$~mph | $3$~mph | $5$~mph | $6$~mph
+test2-AR,6,25,ch25_work_mixtures.mix_prices,2,AR,A,\$5.00,\$5.00 | \$5.75 | \$6.50 | \$420.00
+test2-AR,7,27,ch27_measurement_multistep.us_metric,2,AR,A,$30$~miles per hour,$30$~miles per hour | $32$~miles per hour | $76.8$~miles per hour | $300$~miles per hour
+test2-AR,8,27,ch27_measurement_multistep.fraction_remainder,2,AR,B,"\$1{,}800","\$1{,}650 | \$1{,}800 | \$1{,}900 | \$2{,}400"
+test2-AR,9,23,ch23_percent_applications.simple_interest_b,2,AR,A,\$510,"\$510 | \$612 | \$6{,}120 | \$9{,}010"
+test2-AR,10,11,ch11_linear_equations.consecutive,2,AR,B,$7$,$5$ | $7$ | $10$ | $11$
+test2-AR,11,24,ch24_rate_distance_time.minutes_hours_c,2,AR,A,$15$~minutes,$15$~minutes | $17$~minutes | $25$~minutes | $240$~minutes
+test2-AR,12,19,ch19_circles.pi_approx,2,AR,D,$94.2\text{ ft}$,$47.1\text{ ft}$ | $87.92\text{ ft}$ | $90\text{ ft}$ | $94.2\text{ ft}$
+test2-AR,13,5,ch05_decimals.money_mult,2,AR,A,\$22.30,\$22.30 | \$22.40 | \$23.30 | \$28.05
+test2-AR,14,26,ch26_statistics_probability.weighted_average,3,AR,C,$60$,$15$ | $54$ | $60$ | $75$
+test2-AR,15,22,ch22_money.change_due_a,2,AR,C,\$26.29,\$22.00 | \$23.71 | \$26.29 | \$27.29
+test2-AR,16,26,ch26_statistics_probability.average_change,3,AR,C,$14$,$2$ | $8$ | $14$ | $22$
+test2-AR,17,20,ch20_volume.fill_tank,2,AR,D,$450\text{ gal}$,$8\text{ gal}$ | $60\text{ gal}$ | $420\text{ gal}$ | $450\text{ gal}$
+test2-AR,18,26,ch26_statistics_probability.score_needed,3,AR,C,$30$,$17$ | $26$ | $30$ | $60$
+test2-AR,19,25,ch25_work_mixtures.mix_two_solutions,2,AR,B,$45\%$,$40\%$ | $45\%$ | $50\%$ | $80\%$
+test2-AR,20,22,ch22_money.savings_weeks_b,2,AR,A,$19$~weeks,$19$~weeks | $21$~weeks | $27$~weeks | $34$~weeks
+test2-AR,21,27,ch27_measurement_multistep.round_up_down,3,AR,C,\$270,\$225 | \$245 | \$270 | \$315
+test2-AR,22,25,ch25_work_mixtures.work_find_one,3,AR,D,$5$~hours,$2$~hours | $3$~hours | $4$~hours | $5$~hours
+test2-AR,23,23,ch23_percent_applications.compound_b,3,AR,D,"\$5{,}948.80","\$448.80 | \$5{,}720.00 | \$5{,}940.00 | \$5{,}948.80"
+test2-AR,24,27,ch27_measurement_multistep.fence_posts,3,AR,C,$42$,$21$ | $38$ | $42$ | $43$
+test2-AR,25,23,ch23_percent_applications.markup_a,2,AR,B,\$387.50,\$77.50 | \$387.50 | \$437.50 | \$487.50
+test2-AR,26,24,ch24_rate_distance_time.minutes_hours_b,2,AR,C,$48$~mph,$0.8$~mph | $33$~mph | $48$~mph | $80$~mph
+test2-AR,27,23,ch23_percent_applications.compound_a,3,AR,A,\$665.60,"\$665.60 | \$765.60 | \$865.60 | \$4{,}665.60"
+test2-AR,28,26,ch26_statistics_probability.arrangements,3,AR,D,$6$,$3$ | $4$ | $5$ | $6$
+test2-AR,29,3,ch03_factors_primes.lcm_word,3,AR,B,$3$,$2$ | $3$ | $4$ | $60$
+test2-AR,30,22,ch22_money.hourly_vs_salary_b,3,AR,B,"\$2{,}080","\$40 | \$2{,}080 | \$5{,}360 | \$42{,}640"
+test2-MK,1,13,ch13_systems.substitution,2,MK,B,$2$,$-14$ | $2$ | $3$ | $5$
+test2-MK,2,7,ch07_ratios.direct_variation,2,MK,D,$24$,$6$ | $12$ | $20$ | $24$
+test2-MK,3,13,ch13_systems.elimination,2,MK,C,$-2$,$-5$ | $-3$ | $-2$ | $3$
+test2-MK,4,20,ch20_volume.cylinder,2,MK,B,$891\pi\text{ m}^3$,"$198\pi\text{ m}^3$ | $891\pi\text{ m}^3$ | $1{,}782\pi\text{ m}^3$ | $3{,}564\pi\text{ m}^3$"
+test2-MK,5,9,ch09_roots.multiply_radicals,2,MK,C,$4\sqrt{3}$,$2\sqrt{3}$ | $\sqrt{14}$ | $4\sqrt{3}$ | $48$
+test2-MK,6,19,ch19_circles.circle_area,2,MK,A,$100\pi\text{ ft}^2$,$100\pi\text{ ft}^2$ | $121\pi\text{ ft}^2$ | $200\pi\text{ ft}^2$ | $400\pi\text{ ft}^2$
+test2-MK,7,15,ch15_quadratics.function_eval,2,MK,D,$39$,$15$ | $29$ | $34$ | $39$
+test2-MK,8,20,ch20_volume.cube,2,MK,A,$8\text{ cm}^3$,$8\text{ cm}^3$ | $12\text{ cm}^3$ | $24\text{ cm}^3$ | $27\text{ cm}^3$
+test2-MK,9,18,ch18_perimeter_area.trapezoid,2,MK,B,$90\text{ cm}^2$,$50\text{ cm}^2$ | $90\text{ cm}^2$ | $130\text{ cm}^2$ | $180\text{ cm}^2$
+test2-MK,10,16,ch16_lines_angles.regular_polygon,2,MK,D,$144^\circ$,$36^\circ$ | $72^\circ$ | $124^\circ$ | $144^\circ$
+test2-MK,11,10,ch10_expressions.distribute,2,MK,C,$4x - 16$,$4x + 56$ | $20x + 56$ | $4x - 16$ | $4x - 4$
+test2-MK,12,3,ch03_factors_primes.divisibility,2,MK,C,$780$,$438$ | $675$ | $780$ | $945$
+test2-MK,13,14,ch14_polynomials.divide_by_monomial,2,MK,D,$5x^{2} + 4x + 5$,$5x^{2} + 4x$ | $5x^{3} + 4x^{2} + 5x$ | $5x^{2} + 9x$ | $5x^{2} + 4x + 5$
+test2-MK,14,4,ch04_fractions.divide,2,MK,C,$1\frac{1}{3}$,$\frac{1}{3}$ | $\frac{3}{4}$ | $1\frac{1}{3}$ | $3$
+test2-MK,15,2,ch02_negative_numbers.abs_value,3,MK,B,$19$,$-19$ | $19$ | $21$ | $23$
+test2-MK,16,21,ch21_coordinate_geometry.slope_from_eq,3,MK,B,$-2$,$4$ | $-2$ | $2$ | $-\frac{1}{2}$
+test2-MK,17,14,ch14_polynomials.special_products,2,MK,A,$x^{2} - 8x + 16$,$x^{2} - 8x + 16$ | $x^{2} - 8x - 16$ | $x^{2} - 16$ | $x^{2} + 16$
+test2-MK,18,11,ch11_linear_equations.literal_eq,3,MK,A,$b = y - mx$,$b = y - mx$ | $b = y + mx$ | $b = mx - y$ | $b = \frac{y}{mx}$
+test2-MK,19,6,ch06_percents.percent_of_percent,3,MK,A,$129$,$129$ | $172$ | $645$ | $817$
+test2-MK,20,5,ch05_decimals.compare_dec,2,MK,A,$0.091$,$0.091$ | $0.91$ | $0.1$ | $0.109$
+test2-MK,21,1,ch01_whole_numbers.order_ops,3,MK,D,$32$,$12$ | $16$ | $24$ | $32$
+test2-MK,22,10,ch10_expressions.evaluate_expr,3,MK,D,$4$,$-36$ | $-4$ | $2$ | $4$
+test2-MK,23,12,ch12_inequalities.both_sides_ineq,3,MK,C,$x \ge 5$,$x \le 5$ | $x \ge -5$ | $x \ge 5$ | $x \ge -25$
+test2-MK,24,17,ch17_triangles.similar_triangles,3,MK,A,$5$,$5$ | $8$ | $9$ | $20$
+test2-MK,25,8,ch08_exponents.sci_multiply,3,MK,B,$1.2 \times 10^{6}$,$1.2 \times 10^{5}$ | $1.2 \times 10^{6}$ | $2.2 \times 10^{6}$ | $1.2 \times 10^{20}$
+test3-AR,1,25,ch25_work_mixtures.mix_two_solutions,2,AR,B,$22\%$,$17.5\%$ | $22\%$ | $26\%$ | $35\%$
+test3-AR,2,26,ch26_statistics_probability.prob_complement,2,AR,B,$\frac{21}{25}$,$\frac{4}{25}$ | $\frac{21}{25}$ | $\frac{22}{25}$ | $\frac{21}{4}$
+test3-AR,3,26,ch26_statistics_probability.average_change,2,AR,A,$183$~pounds,$183$~pounds | $188$~pounds | $190$~pounds | $193$~pounds
+test3-AR,4,27,ch27_measurement_multistep.us_metric,2,AR,D,$9.6$~kilometers,$3.75$~kilometers | $7.6$~kilometers | $9.5$~kilometers | $9.6$~kilometers
+test3-AR,5,24,ch24_rate_distance_time.minutes_hours_b,2,AR,B,$42$~mph,$0.7$~mph | $42$~mph | $52$~mph | $70$~mph
+test3-AR,6,5,ch05_decimals.unit_price,2,AR,B,\$0.20,\$0.02 | \$0.20 | \$2.00 | \$5.00
+test3-AR,7,22,ch22_money.savings_weeks_a,2,AR,A,$8$~weeks,$8$~weeks | $9$~weeks | $14$~weeks | $21$~weeks
+test3-AR,8,23,ch23_percent_applications.commission_a,2,AR,A,"\$1{,}010","\$1{,}010 | \$1{,}210 | \$5{,}600 | \$9{,}000"
+test3-AR,9,2,ch02_negative_numbers.bank_balance,2,AR,D,$-$\$48,$-$\$398 | $-$\$68 | $-$\$53 | $-$\$48
+test3-AR,10,27,ch27_measurement_multistep.metric_convert,2,AR,C,$16$,"$1.6$ | $14$ | $16$ | $2{,}400$"
+test3-AR,11,3,ch03_factors_primes.lcm_word,2,AR,C,$18$~days,$3$~days | $15$~days | $18$~days | $54$~days
+test3-AR,12,22,ch22_money.overtime_b,3,AR,B,$44$~hours,$4$~hours | $44$~hours | $45$~hours | $46$~hours
+test3-AR,13,26,ch26_statistics_probability.independent_events,2,AR,A,$\frac{16}{25}$,$\frac{16}{25}$ | $\frac{17}{25}$ | $\frac{4}{5}$ | $\frac{24}{25}$
+test3-AR,14,25,ch25_work_mixtures.fill_and_drain,3,AR,A,$6$~hours,$6$~hours | $7$~hours | $10$~hours | $30$~hours
+test3-AR,15,25,ch25_work_mixtures.work_find_one,2,AR,C,$5$~hours,$2$~hours | $4$~hours | $5$~hours | $16$~hours
+test3-AR,16,24,ch24_rate_distance_time.two_leg_b,3,AR,B,$45$~mph,$35$~mph | $45$~mph | $54$~mph | $70$~mph
+test3-AR,17,23,ch23_percent_applications.compound_b,3,AR,D,"\$9{,}548.10","\$548.10 | \$9{,}270.00 | \$9{,}540.00 | \$9{,}548.10"
+test3-AR,18,27,ch27_measurement_multistep.age_problem,2,AR,A,$65$,$65$ | $80$ | $81$ | $89$
+test3-AR,19,26,ch26_statistics_probability.expected_count,2,AR,C,$300$,$100$ | $200$ | $300$ | $375$
+test3-AR,20,23,ch23_percent_applications.markup_b,2,AR,D,\$9.00,\$4.50 | \$4.95 | \$8.00 | \$9.00
+test3-AR,21,27,ch27_measurement_multistep.mixed_units,2,AR,D,$10$~lb $14$~oz,$9$~lb $14$~oz | $10$~lb $8$~oz | $10$~lb $12$~oz | $10$~lb $14$~oz
+test3-AR,22,24,ch24_rate_distance_time.round_trip_c,3,AR,A,$120$~mph,$120$~mph | $125$~mph | $150$~mph | $250$~mph
+test3-AR,23,19,ch19_circles.wheel,3,AR,B,$176\text{ ft}$,"$88\text{ ft}$ | $176\text{ ft}$ | $352\text{ ft}$ | $2{,}112\text{ ft}$"
+test3-AR,24,22,ch22_money.budget_share,3,AR,C,\$960,"\$760 | \$860 | \$960 | \$1{,}440"
+test3-AR,25,25,ch25_work_mixtures.mix_prices,3,AR,A,$16$~pounds,$16$~pounds | $20$~pounds | $25$~pounds | $36$~pounds
+test3-AR,26,10,ch10_expressions.word_expression,3,AR,A,$28d + 1.50m$,$28d + 1.50m$ | $28m + 1.50d$ | $(28 + 1.50)dm$ | $28 + 1.50m$
+test3-AR,27,22,ch22_money.best_buy_b,3,AR,B,the box of 15,All three cost the same per bar | the box of 15 | the box of 12 | the box of 20
+test3-AR,28,23,ch23_percent_applications.successive,3,AR,D,$55\%$,$10\%$ | $45\%$ | $50\%$ | $55\%$
+test3-AR,29,24,ch24_rate_distance_time.fps_mph_a,3,AR,C,$60$~mph,"$1$~mph | $50$~mph | $60$~mph | $316{,}800$~mph"
+test3-AR,30,18,ch18_perimeter_area.square_yards,3,AR,C,"\$1{,}600","\$40 | \$1{,}580 | \$1{,}600 | \$14{,}400"
+test3-MK,1,14,ch14_polynomials.foil,2,MK,A,$x^{2} - 9x + 8$,$x^{2} - 9x + 8$ | $x^{2} + 8$ | $x^{2} - 9x - 8$ | $x^{2} + 9x + 8$
+test3-MK,2,19,ch19_circles.annulus,2,MK,A,$72\pi\text{ ft}^2$,$72\pi\text{ ft}^2$ | $121\pi\text{ ft}^2$ | $170\pi\text{ ft}^2$ | $176\pi\text{ ft}^2$
+test3-MK,3,1,ch01_whole_numbers.distributive,2,MK,C,"$2{,}727$","$2{,}673$ | $2{,}703$ | $2{,}727$ | $3{,}227$"
+test3-MK,4,2,ch02_negative_numbers.abs_value,2,MK,D,$-7$,$-12$ | $-9$ | $-8$ | $-7$
+test3-MK,5,9,ch09_roots.simplify_radical,2,MK,A,$6\sqrt{2}$,$6\sqrt{2}$ | $8\sqrt{2}$ | $9\sqrt{2}$ | $36\sqrt{2}$
+test3-MK,6,3,ch03_factors_primes.lcm,3,MK,D,$168$,$24$ | $56$ | $84$ | $168$
+test3-MK,7,4,ch04_fractions.multiply,2,MK,A,$30$,$30$ | $34$ | $58\frac{4}{5}$ | $210$
+test3-MK,8,10,ch10_expressions.evaluate_expr,3,MK,B,$32$,$0$ | $32$ | $47$ | $64$
+test3-MK,9,11,ch11_linear_equations.translate,3,MK,D,$2n - 3 = 25$,$3 - 2n = 25$ | $2n + 3 = 25$ | $2(n - 3) = 25$ | $2n - 3 = 25$
+test3-MK,10,21,ch21_coordinate_geometry.midpoint,2,MK,D,"$(-10, -6)$","$(-9, -7)$ | $(17, 15)$ | $(7, 9)$ | $(-10, -6)$"
+test3-MK,11,15,ch15_quadratics.solve_factored,3,MK,B,$x = -3$ or $x = 2$,$x = -1$ or $x = 6$ | $x = -3$ or $x = 2$ | $x = -2$ or $x = 3$ | $x = -3$
+test3-MK,12,20,ch20_volume.cone_sphere,3,MK,D,$972\pi\text{ in}^3$,$108\pi\text{ in}^3$ | $324\pi\text{ in}^3$ | $922\pi\text{ in}^3$ | $972\pi\text{ in}^3$
+test3-MK,13,5,ch05_decimals.add_sub_dec,2,MK,C,$1.65$,$1$ | $1.5$ | $1.65$ | $18.35$
+test3-MK,14,21,ch21_coordinate_geometry.distance,2,MK,A,$5$,$5$ | $6$ | $7$ | $25$
+test3-MK,15,12,ch12_inequalities.which_satisfies,2,MK,C,$-2$,$-5$ | $-4$ | $-2$ | $-1$
+test3-MK,16,17,ch17_triangles.special_right,3,MK,B,$10$,$5\sqrt{3}$ | $10$ | $20$ | $30$
+test3-MK,17,7,ch07_ratios.solve_proportion,2,MK,B,$42$,$33$ | $42$ | $57$ | $504$
+test3-MK,18,8,ch08_exponents.zero_negative,3,MK,A,$\frac{1}{10}$,$\frac{1}{10}$ | $\frac{1}{5}$ | $\frac{2}{5}$ | $10$
+test3-MK,19,18,ch18_perimeter_area.composite,3,MK,B,$60\text{ yd}$,$47\text{ yd}$ | $60\text{ yd}$ | $86\text{ yd}$ | $181\text{ yd}$
+test3-MK,20,6,ch06_percents.percent_of_percent,3,MK,C,$24$,$18$ | $20$ | $24$ | $78$
+test3-MK,21,16,ch16_lines_angles.polygon_missing,3,MK,B,$91$,$76$ | $91$ | $108$ | $271$
+test3-MK,22,13,ch13_systems.sum_trick,3,MK,C,$9$,$-3$ | $8$ | $9$ | $63$
+test3-MK,23,19,ch19_circles.part_circle,3,MK,B,$(5\pi + 20)\text{ cm}$,$5\pi\text{ cm}$ | $(5\pi + 20)\text{ cm}$ | $(10\pi + 20)\text{ cm}$ | $(20\pi + 20)\text{ cm}$
+test3-MK,24,20,ch20_volume.scale_solid,3,MK,C,"$1{,}350\text{ cm}^3$","$150\text{ cm}^3$ | $450\text{ cm}^3$ | $1{,}350\text{ cm}^3$ | $1{,}400\text{ cm}^3$"
+test3-MK,25,11,ch11_linear_equations.fraction_eq,3,MK,C,$75$,$\frac{5}{2}$ | $20$ | $75$ | $300$
+test4-AR,1,27,ch27_measurement_multistep.round_up_down,2,AR,D,$18$,$1$ | $6$ | $16$ | $18$
+test4-AR,2,4,ch04_fractions.mixed_word,2,AR,D,$8\frac{1}{4}$~cups,$5\frac{3}{4}$~cups | $6\frac{3}{4}$~cups | $7\frac{1}{4}$~cups | $8\frac{1}{4}$~cups
+test4-AR,3,26,ch26_statistics_probability.counting,2,AR,D,"$4{,}000$","$34$ | $40$ | $2{,}880$ | $4{,}000$"
+test4-AR,4,24,ch24_rate_distance_time.pace_speed_a,2,AR,A,$48$~minutes,$48$~minutes | $53$~minutes | $63$~minutes | $80$~minutes
+test4-AR,5,26,ch26_statistics_probability.average_change,2,AR,A,$86$,$86$ | $88$ | $90$ | $101$
+test4-AR,6,27,ch27_measurement_multistep.fraction_remainder,2,AR,A,$60$,$60$ | $70$ | $90$ | $150$
+test4-AR,7,24,ch24_rate_distance_time.fuel_b,2,AR,C,\$45.00,\$10.00 | \$35.00 | \$45.00 | \$94.50
+test4-AR,8,25,ch25_work_mixtures.work_together,2,AR,B,$30$~minutes,$15$~minutes | $30$~minutes | $45$~minutes | $135$~minutes
+test4-AR,9,27,ch27_measurement_multistep.us_metric,2,AR,B,$15$~miles,$14.4$~miles | $15$~miles | $38.4$~miles | $150$~miles
+test4-AR,10,18,ch18_perimeter_area.cost_word,2,AR,C,"\$1{,}820","\$910 | \$1{,}430 | \$1{,}820 | \$15{,}600"
+test4-AR,11,24,ch24_rate_distance_time.minutes_hours_b,2,AR,D,$66$~mph,$1.1$~mph | $46$~mph | $56$~mph | $66$~mph
+test4-AR,12,23,ch23_percent_applications.find_rate_time_a,3,AR,C,$9\%$,$0.09\%$ | $1.8\%$ | $9\%$ | $45\%$
+test4-AR,13,7,ch07_ratios.divide_in_ratio,3,AR,B,$120^\circ$,$20^\circ$ | $120^\circ$ | $140^\circ$ | $150^\circ$
+test4-AR,14,27,ch27_measurement_multistep.fence_posts,2,AR,A,$6$,$6$ | $7$ | $8$ | $21$
+test4-AR,15,6,ch06_percents.up_then_down,3,AR,C,\$498.00,\$348.00 | \$398.40 | \$498.00 | \$564.40
+test4-AR,16,23,ch23_percent_applications.markup_b,2,AR,D,"\$12{,}500","\$2{,}500 | \$7{,}500 | \$10{,}025 | \$12{,}500"
+test4-AR,17,25,ch25_work_mixtures.ratio_mix,2,AR,B,$16$~cubic feet,$10$~cubic feet | $16$~cubic feet | $23$~cubic feet | $48$~cubic feet
+test4-AR,18,26,ch26_statistics_probability.arrangements,2,AR,B,$720$,"$21$ | $720$ | $920$ | $46{,}656$"
+test4-AR,19,23,ch23_percent_applications.tip_tax,2,AR,B,\$50.00,\$42.80 | \$50.00 | \$60.00 | \$65.00
+test4-AR,20,25,ch25_work_mixtures.concentration_change,3,AR,B,$16$~gallons,$8$~gallons | $16$~gallons | $36$~gallons | $80$~gallons
+test4-AR,21,24,ch24_rate_distance_time.fps_mph_a,3,AR,C,$60$~mph,"$1$~mph | $55$~mph | $60$~mph | $316{,}800$~mph"
+test4-AR,22,25,ch25_work_mixtures.mix_two_solutions,3,AR,C,$130$~milliliters,"$50$~milliliters | $120$~milliliters | $130$~milliliters | $3{,}250$~milliliters"
+test4-AR,23,22,ch22_money.budget_share,3,AR,A,\$630,"\$630 | \$945 | \$1{,}890 | \$2{,}520"
+test4-AR,24,22,ch22_money.overtime_b,3,AR,A,$42$~hours,$42$~hours | $43$~hours | $45$~hours | $46$~hours
+test4-AR,25,12,ch12_inequalities.ineq_word,3,AR,C,$3$~visits,$1$~visit | $2$~visits | $3$~visits | $4$~visits
+test4-AR,26,22,ch22_money.discount_tax_b,3,AR,D,\$551.20,\$488.80 | \$501.20 | \$520.00 | \$551.20
+test4-AR,27,26,ch26_statistics_probability.weighted_average,3,AR,D,$180$,$165$ | $168$ | $174$ | $180$
+test4-AR,28,17,ch17_triangles.pyth_word,3,AR,B,$4\text{ ft}$,$3\text{ ft}$ | $4\text{ ft}$ | $8\text{ ft}$ | $24\text{ ft}$
+test4-AR,29,23,ch23_percent_applications.compound_a,3,AR,A,\$548.10,"\$548.10 | \$598.10 | \$698.10 | \$9{,}548.10"
+test4-AR,30,22,ch22_money.best_buy_b,3,AR,A,the pack of 24,the pack of 24 | the pack of 6 | the pack of 8 | All three cost the same per bottle
+test4-MK,1,14,ch14_polynomials.special_products,2,MK,B,$x^{2} - 10x + 25$,$x^{2} + 25$ | $x^{2} - 10x + 25$ | $x^{2} - 25$ | $x^{2} - 10x - 25$
+test4-MK,2,13,ch13_systems.elimination,2,MK,D,$12$,$-12$ | $1$ | $11$ | $12$
+test4-MK,3,15,ch15_quadratics.function_eval,2,MK,B,$2$,$-2$ | $2$ | $4$ | $26$
+test4-MK,4,19,ch19_circles.scale_circle,2,MK,C,$96\pi\text{ m}^2$,$24\pi\text{ m}^2$ | $48\pi\text{ m}^2$ | $96\pi\text{ m}^2$ | $384\pi\text{ m}^2$
+test4-MK,5,15,ch15_quadratics.special_factor,2,MK,C,$(x - 9)(x + 9)$,$(x - 1)(x + 81)$ | $(x - 9)^{2}$ | $(x - 9)(x + 9)$ | $(x + 9)^{2}$
+test4-MK,6,12,ch12_inequalities.translate_ineq,2,MK,D,$70 + 14h \ge 600$,$70 + 14h < 600$ | $14(70 + h) \ge 600$ | $70 + 14h > 600$ | $70 + 14h \ge 600$
+test4-MK,7,4,ch04_fractions.mixed_add_sub,2,MK,D,$10\frac{1}{6}$,$9\frac{1}{6}$ | $9\frac{2}{3}$ | $10$ | $10\frac{1}{6}$
+test4-MK,8,6,ch06_percents.what_percent,2,MK,C,$75\%$,$0.75\%$ | $7.5\%$ | $75\%$ | $95\%$
+test4-MK,9,21,ch21_coordinate_geometry.distance,2,MK,C,$10$,$2$ | $9$ | $10$ | $14$
+test4-MK,10,11,ch11_linear_equations.fraction_eq,3,MK,D,$20$,$1$ | $18$ | $19$ | $20$
+test4-MK,11,5,ch05_decimals.add_sub_dec,2,MK,A,$11.91$,$11.91$ | $12.09$ | $12.91$ | $18.09$
+test4-MK,12,16,ch16_lines_angles.polygon_missing,3,MK,B,$79$,$59$ | $79$ | $108$ | $259$
+test4-MK,13,7,ch07_ratios.solve_proportion,2,MK,C,$8$,$4$ | $6$ | $8$ | $336$
+test4-MK,14,18,ch18_perimeter_area.composite,2,MK,B,$171\text{ ft}^2$,$55\text{ ft}^2$ | $171\text{ ft}^2$ | $176\text{ ft}^2$ | $231\text{ ft}^2$
+test4-MK,15,20,ch20_volume.cube,2,MK,B,$24\text{ cm}^2$,$16\text{ cm}^2$ | $24\text{ cm}^2$ | $28\text{ cm}^2$ | $32\text{ cm}^2$
+test4-MK,16,8,ch08_exponents.exp_rules,2,MK,A,$6^{7}$,$6^{7}$ | $6^{21}$ | $6^{2}$ | $6^{41}$
+test4-MK,17,10,ch10_expressions.translate_more,2,MK,C,$\frac{n}{2} - 12$,$2n - 12$ | $\frac{n - 12}{2}$ | $\frac{n}{2} - 12$ | $12 - \frac{n}{2}$
+test4-MK,18,18,ch18_perimeter_area.triangle_area,2,MK,A,$96\text{ ft}^2$,"$96\text{ ft}^2$ | $160\text{ ft}^2$ | $192\text{ ft}^2$ | $1{,}920\text{ ft}^2$"
+test4-MK,19,20,ch20_volume.scale_solid,3,MK,A,$4$,$4$ | $2$ | $3$ | $8$
+test4-MK,20,3,ch03_factors_primes.lcm,3,MK,B,$180$,"$90$ | $180$ | $360$ | $1{,}080$"
+test4-MK,21,1,ch01_whole_numbers.order_ops,3,MK,A,$140$,$140$ | $160$ | $220$ | $284$
+test4-MK,22,17,ch17_triangles.special_right,3,MK,D,$28$,$7$ | $14\sqrt{2}$ | $14\sqrt{3}$ | $28$
+test4-MK,23,2,ch02_negative_numbers.neg_powers,3,MK,A,$-100$,$-100$ | $-28$ | $-24$ | $28$
+test4-MK,24,9,ch09_roots.rationalize,3,MK,B,$\frac{9\sqrt{6}}{2}$,$\frac{9}{2}$ | $\frac{9\sqrt{6}}{2}$ | $27$ | $27\sqrt{6}$
+test4-MK,25,14,ch14_polynomials.negative_exponents,3,MK,A,$\frac{x^{5}}{y^{5}}$,$\frac{x^{5}}{y^{5}}$ | $\frac{y^{3}}{x}$ | $\frac{y^{5}}{x^{5}}$ | $x^{5} y^{5}$
