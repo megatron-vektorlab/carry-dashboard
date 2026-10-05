@@ -11,9 +11,9 @@
   "Vito and Imani baked the apple pie and the mince pie, one apiece."
  ],
  "hints": [
-  "Clues 1 and 5 both measure from the stage helper's arrival. How early, and how late, could the stage helper have come?",
+  "Clues 1 and 5 both tie a fixed gap to the stage helper's arrival. How early, and how late, could the stage helper have come?",
   "Both gaps are fixed: clue 1 needs 45 minutes before the stage helper, and clue 5 needs 15 minutes after. Which time leaves room for both?",
-  "The stage helper came at 6:45, the only time with 45 minutes before it and 15 after. So pumpkin came at 7:00, mince at 6:00.",
+  "The stage helper came at 6:45, the only time with 45 minutes before it and 15 after. So the pumpkin pie's baker came at 7:00, and the mince pie's baker at 6:00.",
   "Clues 2 and 3 put Della at the bake table, which clue 7 keeps off 7:00, the pumpkin's time. Clue 8 then leaves Della the cherry pie."
  ],
  "solution": {
