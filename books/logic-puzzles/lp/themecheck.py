@@ -108,6 +108,12 @@ def check_grid(t, slot, verbose=False):
             vals = c.get("labels") or c.get("values") or [c.get("fmt", "{x}").format(x=x) for x in c.get("nums", [])]
             if q.get("value") not in vals:
                 errs.append(f"question value '{q.get('value')}' is not one of {vals}")
+            if t.get("answer") and t["answer"] not in names:
+                errs.append(f"answer '{t['answer']}' is not one of the names")
+            for lab, want in (t.get("answer_has") or {}).items():
+                cc = [c for c in cats if c["label"] == lab]
+                if not cc or cc[0].get("ordered") or want not in cc[0].get("values", []):
+                    errs.append(f"answer_has: '{lab}={want}' must name a value of an unordered category")
             if not str(q.get("text", "")).endswith("?"):
                 errs.append("question text should be a question ending with '?'")
     if not _sentence_ok(t["story"].strip()):

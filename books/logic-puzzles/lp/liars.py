@@ -100,6 +100,12 @@ def generate_liars(names, rng: random.Random, rule_kind="exactly", allow_ref=Fal
         sts = [random_statement(rng, i, n, allow_ref) for i in range(n)]
         if len(set(sts)) < n:
             continue
+        # variety: at most one "I didn't do it", and no two speakers saying the same words
+        selfdeny = sum(st == ("not", i) for i, st in enumerate(sts))
+        if selfdeny > 1:
+            continue
+        if allow_ref and not any(st[0] in ("lies", "truth") for st in sts):
+            continue
         if rule_kind == "exactly":
             m = rng.choice(range(1, n))
             rule = ("exactly", m)

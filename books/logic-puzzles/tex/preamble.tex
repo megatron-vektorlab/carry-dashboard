@@ -1,0 +1,102 @@
+\documentclass[fontsize=16pt, twoside, paper=8.5in:11in, open=right, headings=small, parskip=false]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[lining]{librecaslon}
+\usepackage[sfdefault]{atkinson}
+\usepackage[inner=0.75in, outer=0.6in, top=0.6in, bottom=0.45in, includefoot, footskip=0.42in,
+            headheight=0pt, headsep=0pt]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, calc}
+\usepackage{array, enumitem, multicol, ragged2e, needspace, longtable}
+\usepackage[automark]{scrlayer-scrpage}
+\linespread{1.06}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt}
+\RaggedRight
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\clubpenalty=10000 \widowpenalty=10000
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ofoot*{\pagemark}
+\cfoot*{\puzzlefoot}
+\setkomafont{pagefoot}{\normalfont\fontsize{13}{15}\selectfont}
+\setkomafont{pagenumber}{\normalfont\bfseries\fontsize{14}{16}\selectfont}
+\newcommand{\puzzlefoot}{}
+\newcommand{\setpuzzlefoot}[1]{\renewcommand{\puzzlefoot}{#1}}
+\newcommand{\display}{\rmfamily}
+\newsavebox{\cbox}\newsavebox{\rbox}\newsavebox{\obox}\newsavebox{\xbox}
+\AtBeginDocument{%
+  \sbox{\cbox}{\tikz[baseline=-0.02in]\draw[line width=1pt] (0,0) rectangle (0.17in,0.17in);}%
+  \sbox{\rbox}{\tikz[baseline=-0.02in]\draw[line width=1pt] (0.085in,0.085in) circle (0.085in);}%
+  \sbox{\obox}{\tikz[baseline=-0.03in]\fill (0.08in,0.08in) circle (0.075in);}%
+  \sbox{\xbox}{\tikz[baseline=-0.03in]\draw[line width=1.2pt] (0,0) -- (0.16in,0.16in) (0,0.16in) -- (0.16in,0);}}
+\newcommand{\cluebox}{\usebox{\cbox}}
+\newcommand{\ringbox}{\usebox{\rbox}}
+\newcommand{\omark}{\usebox{\obox}}
+\newcommand{\xmark}{\usebox{\xbox}}
+\newcommand{\puzzlehead}[4]{% number, title, stars, extra line
+  \noindent\begin{tikzpicture}[baseline=(n.base)]
+    \node[fill=black, text=white, rounded corners=4pt, inner xsep=8pt, inner ysep=5pt,
+          font=\rmfamily\bfseries\fontsize{28}{30}\selectfont, minimum width=0.62in] (n) {#1};
+  \end{tikzpicture}\hspace{0.16in}{\display\fontsize{25}{29}\selectfont #2}\par
+  \vspace{6pt}\noindent #3\hspace{0.22in}#4\par
+  \vspace{2pt}\noindent\rule{\linewidth}{1.2pt}\par\vspace{4pt}}
+\newlist{clues}{enumerate}{1}
+\setlist[clues]{label={\cluebox\hspace{0.35em}\textbf{\arabic*.}}, leftmargin=0.62in, labelsep=0.12in,
+                itemsep=3pt, topsep=4pt, parsep=0pt}
+\pdfinfo{/Title (Cozy Mystery Logic Puzzles for Beginners) /Author (AUTHOR)}
+% ------------------------------------------------------------- page flow
+\newcommand{\fillerpage}{%
+  \thispagestyle{plain.scrheadings}\setpuzzlefoot{}%
+  {\display\fontsize{24}{28}\selectfont Scratch Pad\par}\vspace{4pt}
+  For working things out, testing a ``Suppose,'' or making notes.\par\vspace{10pt}
+  \begin{tikzpicture}[x=1in,y=1in]
+    \foreach \x in {0,0.25,...,7.0} \foreach \y in {0,0.25,...,7.75} \fill[black!45] (\x,\y) circle (0.012);
+  \end{tikzpicture}\clearpage}
+\newcommand{\puzzlestart}[1]{\clearpage\label{puz:#1}}
+\newcommand{\startspread}{\clearpage\ifodd\value{page}\fillerpage\fi}
+\newcommand{\startodd}{\clearpage\ifodd\value{page}\else\setpuzzlefoot{}\fillerpage\fi}
+% ------------------------------------------------------------- boxes
+\newcommand{\tipbox}[1]{\par\noindent\begin{tikzpicture}
+  \node[draw, line width=1.2pt, rounded corners=6pt, inner xsep=12pt, inner ysep=9pt, text width=\linewidth-26pt,
+        align=left] (b) {\textbf{Ada's tip:} #1};
+  \end{tikzpicture}\par}
+\newcommand{\adabox}[1]{\par\vspace{2pt}\noindent\begin{tikzpicture}
+  \node[draw, line width=1.2pt, rounded corners=6pt, inner xsep=12pt, inner ysep=9pt, text width=\linewidth-26pt,
+        align=left, fill=black!6] (b) {#1};
+  \end{tikzpicture}\par\vspace{2pt}}
+\newcommand{\rulebox}[1]{\par\vspace{4pt}\noindent\begin{tikzpicture}
+  \node[draw, line width=2pt, inner xsep=12pt, inner ysep=8pt, text width=\linewidth-28pt, align=center]
+  {\textbf{The rule:} #1};\end{tikzpicture}\par}
+\newcommand{\saying}[2]{\par\noindent\hangindent=1.25in\hangafter=1\makebox[1.25in][l]{\textbf{#1:}}``#2''\par}
+% ------------------------------------------------------------- chapters
+\newcommand{\chapteropener}[6]{% num, title, skill, stars, range, intro
+  \startodd\setpuzzlefoot{}\thispagestyle{plain.scrheadings}\label{ch:#1}
+  \vspace*{0.4in}
+  {\centering\display\fontsize{22}{26}\selectfont CHAPTER #1\par\vspace{8pt}
+   \fontsize{44}{50}\selectfont #2\par\vspace{14pt}}
+  {\centering\begin{tikzpicture}\draw[line width=1.2pt] (0,0) -- (2.2in,0); \fill (1.1in,0) circle (3pt);
+   \end{tikzpicture}\par\vspace{14pt}}
+  {\centering\textbf{You will learn:} #3\par\vspace{6pt}Difficulty up to #4\qquad #5\par}
+  \vspace{0.35in}
+  #6
+  \clearpage}
+\newcommand{\lessonhead}[2]{\clearpage\setpuzzlefoot{}%
+  {\display\fontsize{14}{16}\selectfont LESSON #1\par}\vspace{2pt}
+  {\display\fontsize{30}{34}\selectfont #2\par}\vspace{4pt}\noindent\rule{\linewidth}{1.2pt}\par}
+\makeatletter
+\renewcommand*{\subsection}{\@startsection{subsection}{2}{0pt}{10pt}{4pt}{\display\fontsize{21}{24}\selectfont}}
+\makeatother
+% ------------------------------------------------------------- hints and solutions
+\newcommand{\hintsection}[2]{\clearpage\setpuzzlefoot{}%
+  {\display\fontsize{32}{36}\selectfont #1\par}\vspace{4pt}#2\par\vspace{2pt}\noindent\rule{\linewidth}{1.2pt}\par}
+\newcommand{\hintentry}[3]{\par\noindent\hangindent=0.5in\hangafter=1\makebox[0.5in][l]{\textbf{#1}}\label{#3}#2\par\vspace{1pt}}
+\newcommand{\solutionsstart}{\setpuzzlefoot{}%
+  {\display\fontsize{40}{44}\selectfont Solutions\par}\label{solutions}\vspace{4pt}
+  Each solution starts with the finished answer, so you can check your grid at a glance.
+  Below it, the key idea and the reasoning, step by step.\par\vspace{2pt}\noindent\rule{\linewidth}{1.2pt}\par}
+\newcommand{\solhead}[3]{\par\needspace{6\baselineskip}\vspace{2pt}\noindent
+  {\display\fontsize{20}{24}\selectfont \ifx&#1&\else#1\enspace\textperiodcentered\enspace\fi #2}\label{#3}\par\vspace{-2pt}}
+\newcommand{\solsep}{\par\vspace{2pt}}
+\newcommand{\answerbox}[1]{\par\noindent\begin{tikzpicture}
+  \node[fill=black!12, inner xsep=10pt, inner ysep=6pt, text width=\linewidth-20pt, align=left,
+        rounded corners=4pt] {#1};\end{tikzpicture}\par}

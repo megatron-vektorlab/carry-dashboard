@@ -76,6 +76,22 @@ class Bound:
         ent = theme.get("entity", ["person", "people"])
         self.entity, self.entities = ent[0], ent[1]
 
+    # ---- persistence
+    def state(self):
+        return {"theme": {k: v for k, v in self.theme.items() if k != "cats"}, "cats": self.cats}
+
+    @classmethod
+    def restore(cls, state):
+        B = cls.__new__(cls)
+        B.theme = dict(state["theme"])
+        B.cats = [dict(c) for c in state["cats"]]
+        B.n = len(B.cats[0]["values"])
+        B.k = len(B.cats)
+        B.ordered = tuple(i for i, c in enumerate(B.cats) if c.get("ordered"))
+        ent = B.theme.get("entity", ["person", "people"])
+        B.entity, B.entities = ent[0], ent[1]
+        return B
+
     # ---- phrases
     def val(self, it):
         return self.cats[it[0]]["values"][it[1]]

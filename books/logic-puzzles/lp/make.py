@@ -41,5 +41,28 @@ def make(slot, theme, seed, tries=3000):
     if spec.need_trial:
         accept = lambda d: 3 <= trial_chain(d) <= 10  # noqa: E731
     sol, clues, d = generate(spec, rng, tries=tries, accept=accept)
+    answer = None
+    q = theme.get("question")
+    if q:
+        ci = [c["label"] for c in B.cats].index(q["cat"])
+        vi = B.cats[ci]["values"].index(q["value"])
+        owner = sol[ci].index(vi)
+        names = B.cats[0]["values"]
+        if theme.get("answer"):
+            # relabel entities so the intended culprit is the answer (a pure renaming)
+            j = names.index(theme["answer"])
+            names[owner], names[j] = names[j], names[owner]
+        answer = names[owner]
+        # optionally give the answer person particular values in unordered categories,
+        # again by swapping two labels within a category (the puzzle's logic is unchanged)
+        labels = [c["label"] for c in B.cats]
+        for lab, want in (theme.get("answer_has") or {}).items():
+            c = labels.index(lab)
+            if B.cats[c].get("ordered"):
+                raise ValueError("answer_has cannot fix an ordered category")
+            vals = B.cats[c]["values"]
+            have = sol[c][owner]
+            i = vals.index(want)
+            vals[have], vals[i] = vals[i], vals[have]
     texts = [B.clue_text(c, rng) for c in clues]
-    return dict(B=B, sol=sol, clues=clues, d=d, texts=texts, feats=features(d))
+    return dict(B=B, sol=sol, clues=clues, d=d, texts=texts, feats=features(d), answer=answer)

@@ -37,6 +37,9 @@ THEMES = [
         "cat": "Jar",                        # a category label
         "value": "mason jar",                # whoever has this value is the answer
     },
+    "answer": "Lou",                         # optional: force who the answer is (finale needs it)
+    "answer_has": {"Jam": "plum"},           # optional: also force the answer person's value in an
+                                             # unordered category (so the story's motive holds)
     "cats": [
       {"label": "Cook", "kind": "name", "values": ["Hattie", "Ruben", "Lou"]},
       {"label": "Jam", "values": ["plum", "fig", "quince"],

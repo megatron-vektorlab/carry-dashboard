@@ -348,7 +348,7 @@ class Deducer:
                 if y not in keep_b and b[0] != o:
                     self._set(b, (o, y), False, newO, newX)
             if self.record("cmp", newO, newX, clue=i, part="range", dropped_a=[x for x in da if x not in keep_a],
-                           dropped_b=[y for y in db if y not in keep_b]):
+                           dropped_b=[y for y in db if y not in keep_b], dom_a=list(da), dom_b=list(db)):
                 return True
         return False
 
