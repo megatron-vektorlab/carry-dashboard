@@ -20,6 +20,8 @@ from __future__ import annotations
 
 import itertools
 import random
+
+import numpy as np
 from dataclasses import dataclass, field
 
 Item = tuple  # (category, value index)
@@ -28,7 +30,7 @@ Item = tuple  # (category, value index)
 # ---------------------------------------------------------------- clues
 @dataclass(frozen=True)
 class Clue:
-    kind: str                 # same | diff | either | cmp | pair | alldiff
+    kind: str                 # same | diff | nor | either | cmp | pair | alldiff
     items: tuple              # items involved (see kinds below)
     cat: int = -1             # ordered category for cmp
     op: str = ""              # '>' '<' or 'd' (exact difference, items[0] - items[1] = d)
@@ -37,6 +39,7 @@ class Clue:
     # kinds
     #   same    (a, b)            owner(a) == owner(b)
     #   diff    (a, b)            owner(a) != owner(b)
+    #   nor     (a, b1, b2)       owner(a) not in {owner(b1), owner(b2)}; b1, b2 same category
     #   either  (a, b1, b2)       owner(a) in {owner(b1), owner(b2)}; b1, b2 same category
     #   cmp     (a, b)            val(a) op val(b) in ordered category `cat`
     #   pair    (a1, a2, b1, b2)  of a1 and a2, one is b1 and the other is b2
@@ -66,6 +69,9 @@ def holds(clue: Clue, sol) -> bool:
     if clue.kind == "either":
         a, b1, b2 = clue.items
         return o(a) in (o(b1), o(b2))
+    if clue.kind == "nor":
+        a, b1, b2 = clue.items
+        return o(a) not in (o(b1), o(b2))
     if clue.kind == "cmp":
         a, b = clue.items
         va = sol[clue.cat][o(a)]
@@ -74,6 +80,10 @@ def holds(clue: Clue, sol) -> bool:
             return va > vb
         if clue.op == "<":
             return va < vb
+        if clue.op == "adj":
+            return abs(va - vb) == 1
+        if clue.op == "nadj":
+            return abs(va - vb) > 1
         return va - vb == clue.d
     if clue.kind == "pair":
         a1, a2, b1, b2 = clue.items
@@ -139,7 +149,7 @@ class Step:
 
 
 WEIGHT = {"fact": 1, "only": 2, "transfer": 3, "either": 3, "alldiff": 2,
-          "cmp": 4, "pair": 4, "trial": 10}
+          "cmp": 4, "pair": 4, "trial": 10, "assume": 0}
 
 
 class Deducer:
@@ -225,18 +235,25 @@ class Deducer:
     # -- rules (each returns True if it changed something)
     def r_facts(self):
         for i, cl in enumerate(self.clues):
-            if i in self.applied or cl.kind not in ("same", "diff"):
+            self._clue = i
+            if i in self.applied or cl.kind not in ("same", "diff", "nor"):
                 continue
             self.applied.add(i)
             newO, newX = [], []
-            a, b = cl.items
-            self._set(a, b, cl.kind == "same", newO, newX)
+            if cl.kind == "nor":
+                a, b1, b2 = cl.items
+                self._set(a, b1, False, newO, newX)
+                self._set(a, b2, False, newO, newX)
+            else:
+                a, b = cl.items
+                self._set(a, b, cl.kind == "same", newO, newX)
             if self.record("fact", newO, newX, clue=i):
                 return True
         return False
 
     def r_alldiff(self):
         for i, cl in enumerate(self.clues):
+            self._clue = i
             if i in self.applied or cl.kind != "alldiff":
                 continue
             self.applied.add(i)
@@ -278,6 +295,7 @@ class Deducer:
 
     def r_either(self):
         for i, cl in enumerate(self.clues):
+            self._clue = i
             if cl.kind != "either":
                 continue
             a, b1, b2 = cl.items
@@ -297,6 +315,7 @@ class Deducer:
 
     def r_cmp(self):
         for i, cl in enumerate(self.clues):
+            self._clue = i
             if cl.kind != "cmp":
                 continue
             a, b = cl.items
@@ -313,6 +332,10 @@ class Deducer:
                     return x > y
                 if cl.op == "<":
                     return x < y
+                if cl.op == "adj":
+                    return abs(x - y) == 1
+                if cl.op == "nadj":
+                    return abs(x - y) > 1
                 return x - y == cl.d
             keep_a = [x for x in da if any(ok(x, y) for y in db)]
             keep_b = [y for y in db if any(ok(x, y) for x in da)]
@@ -331,6 +354,7 @@ class Deducer:
 
     def r_pair(self):
         for i, cl in enumerate(self.clues):
+            self._clue = i
             if cl.kind != "pair":
                 continue
             a1, a2, b1, b2 = cl.items
@@ -379,32 +403,53 @@ class Deducer:
                 kind = {"facts": "fact"}.get(kind, kind)
                 if kind not in self.allow and kind != "fact":
                     continue
-                if getattr(self, name)():
-                    self.check()
+                self._clue = None
+                try:
+                    hit = getattr(self, name)()
+                    if hit:
+                        self.check()
+                except Contradiction as e:
+                    raise Contradiction({"rule": kind, "clue": self._clue, "detail": e.args[0] if e.args else None})
+                if hit:
                     changed = True
                     break
             if not changed:
                 return
 
-    def r_trial(self):
-        """Assume an open O; if the basic rules then hit a contradiction, mark X."""
-        cells = [(a, b) for (a, b), v in self.rel.items()
-                 if v is None and a[0] == 0 and b[0] != 0]
-        # prefer cells in rows with few options (most informative)
-        cells.sort(key=lambda ab: len(self.options(ab[0], ab[1][0])))
-        for a, b in cells:
+    def r_trial(self, max_options=3):
+        """Assume an open O; if the basic rules then hit a contradiction, mark X.
+
+        Only rows with few options are tried (a human picks a row with two or
+        three choices left and asks "suppose it is this one?").
+        """
+        cells = []
+        for e in range(self.n):
+            a = (0, e)
+            for c in range(1, self.k):
+                opts = self.options(a, c)
+                if 1 < len(opts) <= max_options:
+                    cells.extend((len(opts), a, b) for b in opts if self.rel.get((a, b)) is None)
+        cells.sort(key=lambda t: t[0])
+        best = None
+        for _, a, b in cells:
             probe = self.clone()
+            start = len(probe.steps)
             try:
                 newO, newX = [], []
                 probe._set(a, b, True, newO, newX)
-                probe.propagate()
+                probe.record("assume", newO, newX, assume=(a, b))
                 probe.check()
-            except Contradiction:
-                newO, newX = [], []
-                self._set(a, b, False, newO, newX)
-                return self.record("trial", newO, newX, assume=(a, b),
-                                   chain=[s.kind for s in probe.steps[len(self.steps):]][:6])
-        return False
+                probe.propagate()
+            except Contradiction as e:
+                length = len(probe.steps) - start
+                if best is None or length < best[0]:
+                    best = (length, a, b, probe, start, e.args[0] if e.args else None)
+        if best is None:
+            return False
+        _, a, b, probe, start, why = best
+        newO, newX = [], []
+        self._set(a, b, False, newO, newX)
+        return self.record("trial", newO, newX, assume=(a, b), probe=probe, start=start, why=why)
 
     def clone(self):
         d = Deducer.__new__(Deducer)
@@ -416,12 +461,14 @@ class Deducer:
         d.cause = dict(self.cause)
         return d
 
-    def run(self, trial=False):
+    def run(self, trial=False, max_trials=2):
         try:
             self.propagate()
-            while trial and not self.solved():
+            used = 0
+            while trial and not self.solved() and used < max_trials:
                 if not self.r_trial():
                     break
+                used += 1
                 self.propagate()
         except Contradiction:
             return False
@@ -432,6 +479,29 @@ class Deducer:
 
 
 # ---------------------------------------------------------------- generation
+def stars(d: "Deducer") -> int:
+    """Difficulty in stars from the techniques the solve needed.
+
+    1: direct facts + 'only choice left' within a block
+    2: also carrying facts across blocks (transfer)
+    3: also clue reasoning (either/or, comparisons, pairs) — re-reading clues
+    4: clue reasoning with many dependent steps (several passes / combined clues)
+    5: needs one 'Suppose' (case check)
+    """
+    kinds = {s.kind for s in d.steps}
+    if "trial" in kinds:
+        return 5
+    clue_steps = sum(1 for s in d.steps if s.kind in ("either", "cmp", "pair"))
+    if kinds & {"either", "cmp", "pair"}:
+        # how far into the solve clue reasoning is still needed
+        idx = [i for i, s in enumerate(d.steps) if s.kind in ("either", "cmp", "pair")]
+        late = idx[-1] / max(1, len(d.steps) - 1)
+        return 4 if (clue_steps >= 6 and late > 0.4) else 3
+    if "transfer" in kinds:
+        return 2
+    return 1
+
+
 def random_solution(n, k, rng):
     sol = [tuple(range(n))]
     for _ in range(1, k):
@@ -453,6 +523,15 @@ def clue_pool(n, k, sol, ordered, rng, kinds):
                 pool.append(Clue("same", (a, b)))
         elif "diff" in kinds:
             pool.append(Clue("diff", (a, b)))
+    if "nor" in kinds:
+        for a in items:
+            for c in range(k):
+                if c == a[0]:
+                    continue
+                true_b = (c, sol[c][own[a]])
+                others = [(c, v) for v in range(n) if (c, v) != true_b]
+                for b1, b2 in itertools.combinations(others, 2):
+                    pool.append(Clue("nor", (a, b1, b2)))
     if "either" in kinds:
         for a in items:
             for c in range(k):
@@ -468,8 +547,8 @@ def clue_pool(n, k, sol, ordered, rng, kinds):
     if "cmp" in kinds or "cmpd" in kinds:
         for o in ordered:
             for a, b in itertools.permutations(items, 2):
-                if a[0] == o and b[0] == o:
-                    continue
+                if a[0] == o or b[0] == o:
+                    continue    # "later than the 10 a.m. arrival" is a disguised plain fact
                 if own[a] == own[b]:
                     continue
                 va, vb = sol[o][own[a]], sol[o][own[b]]
@@ -477,6 +556,10 @@ def clue_pool(n, k, sol, ordered, rng, kinds):
                     pool.append(Clue("cmp", (a, b), cat=o, op=">" if va > vb else "<"))
                 if "cmpd" in kinds and va > vb:
                     pool.append(Clue("cmp", (a, b), cat=o, op="d", d=va - vb))
+                if "adj" in kinds and a < b and abs(va - vb) == 1:
+                    pool.append(Clue("cmp", (a, b), cat=o, op="adj"))
+                if "nadj" in kinds and a < b and abs(va - vb) > 1:
+                    pool.append(Clue("cmp", (a, b), cat=o, op="nadj"))
     if "pair" in kinds:
         for a1, a2 in itertools.combinations(items, 2):
             if own[a1] == own[a2]:
@@ -489,8 +572,9 @@ def clue_pool(n, k, sol, ordered, rng, kinds):
                 rng.shuffle(bb)
                 pool.append(Clue("pair", (a1, a2, bb[0], bb[1])))
     if "alldiff" in kinds and n >= 3:
-        for _ in range(30):
-            ents = rng.sample(range(n), 3)
+        for _ in range(40):
+            size = rng.randint(3, min(n, 5))
+            ents = rng.sample(range(n), size)
             its = []
             for e in ents:
                 c = rng.randrange(k)
@@ -509,46 +593,148 @@ class Spec:
     allow: tuple = ("fact", "only", "transfer", "either", "alldiff", "cmp", "pair")
     min_clues: int = 2
     max_clues: int = 99
+    stars: tuple = (1, 2, 3, 4, 5)          # acceptable star ratings
+    need_trial: bool = False                 # require a 'Suppose' step (5 stars)
+    max_trials: int = 1                      # at most this many 'Suppose' steps
     score_range: tuple = (0, 10**9)
     max_positive: int | None = None   # cap on direct "same" clues (they make puzzles too easy)
+    max_kind: dict = field(default_factory=dict)   # cap per clue kind, e.g. {"either": 2}
 
 
-def generate(spec: Spec, rng: random.Random, tries: int = 200):
-    """Return (solution, clues, deducer) for a unique, beginner-solvable puzzle."""
+def _wkey(c):
+    if c.kind == "cmp":
+        return {"d": "cmpd", "adj": "adj", "nadj": "nadj"}.get(c.op, "cmp")
+    return c.kind
+
+
+def features(d: "Deducer") -> dict:
+    """Measures of how hard the deducer's solve was."""
+    seen, revisits = set(), 0
+    for s in d.steps:
+        c = s.info.get("clue")
+        if c is None:
+            continue
+        if c in seen and s.kind in ("either", "cmp", "pair"):
+            revisits += 1
+        seen.add(c)
+    kinds = [s.kind for s in d.steps]
+    return {"steps": len(d.steps), "score": d.score(), "revisits": revisits,
+            "transfer": kinds.count("transfer"), "trial": kinds.count("trial"),
+            "clue_steps": sum(k in ("either", "cmp", "pair") for k in kinds)}
+
+
+def _subject_keys(cl):
+    """(item, category) pairs a negative/limiting clue talks about."""
+    if cl.kind == "diff":
+        a, b = cl.items
+        return {(a, b[0]), (b, a[0])}
+    if cl.kind in ("nor", "either"):
+        a, b1, _ = cl.items
+        return {(a, b1[0])}
+    return set()
+
+
+def minimal_clues(spec, sol, pool, weights, rng):
+    """Pick clues in weighted random order until unique, then drop redundant ones."""
+    from .space import Space, feasible
+    keyed = sorted(range(len(pool)), key=lambda i: -(rng.random() ** (1.0 / max(weights[i], 1e-9))))
+    caps = dict(spec.max_kind)
+    if spec.max_positive is not None:
+        caps.setdefault("same", spec.max_positive)
+    used = {}
+    talked = set()
+    if feasible(spec.n, spec.k):
+        S = Space(spec.n, spec.k)
+        mask = np.ones(S.size, bool)
+        chosen, masks = [], []
+        total = S.size
+        for i in keyed:
+            cl = pool[i]
+            kk = _wkey(cl)
+            if kk in caps and used.get(kk, 0) >= caps[kk]:
+                continue
+            keys = _subject_keys(cl)
+            if keys & talked:
+                continue                      # avoid splitting one fact over two clues
+            m = S.mask(cl)
+            new = mask & m
+            cnt = int(new.sum())
+            if cnt == total:
+                continue                      # adds nothing
+            chosen.append(cl)
+            masks.append(m)
+            talked |= keys
+            used[kk] = used.get(kk, 0) + 1
+            mask, total = new, cnt
+            if total == 1 and len(chosen) >= spec.min_clues:
+                break
+        if total != 1:
+            return None
+        keep = list(range(len(chosen)))
+        for j in reversed(range(len(chosen))):
+            rest = [x for x in keep if x != j]
+            if len(rest) < spec.min_clues:
+                continue
+            m = np.ones(S.size, bool)
+            for x in rest:
+                m &= masks[x]
+            if int(m.sum()) == 1:
+                keep = rest
+        return [chosen[x] for x in keep]
+    chosen = []
+    for i in keyed:
+        cl = pool[i]
+        kk = _wkey(cl)
+        if kk in caps and used.get(kk, 0) >= caps[kk]:
+            continue
+        chosen.append(cl)
+        used[kk] = used.get(kk, 0) + 1
+        if len(chosen) >= spec.min_clues and count_solutions(spec.n, spec.k, chosen, 2) == 1:
+            break
+    else:
+        return None
+    for cl in list(reversed(chosen)):
+        trial = [c for c in chosen if c is not cl]
+        if len(trial) >= spec.min_clues and count_solutions(spec.n, spec.k, trial, 2) == 1:
+            chosen = trial
+    return chosen
+
+
+def generate(spec: Spec, rng: random.Random, tries: int = 200, accept=None):
+    """Return (solution, clues, deducer) for a unique, beginner-solvable puzzle.
+
+    ``accept(deducer)`` may add a final filter (e.g. a difficulty band).
+    """
     for _ in range(tries):
         sol = random_solution(spec.n, spec.k, rng)
         pool = clue_pool(spec.n, spec.k, sol, spec.ordered, rng, set(spec.kinds))
-        weights = [spec.kinds.get("cmpd" if (c.kind == "cmp" and c.op == "d") else c.kind, 0) for c in pool]
-        # weighted random order
-        keyed = sorted(range(len(pool)), key=lambda i: -(rng.random() ** (1.0 / max(weights[i], 1e-9))))
-        chosen = []
-        positives = 0
-        for i in keyed:
-            cl = pool[i]
-            if spec.max_positive is not None and cl.kind == "same" and positives >= spec.max_positive:
-                continue
-            chosen.append(cl)
-            positives += cl.kind == "same"
-            if len(chosen) >= spec.min_clues and count_solutions(spec.n, spec.k, chosen, 2) == 1:
-                break
-        else:
-            continue
-        if count_solutions(spec.n, spec.k, chosen, 2) != 1:
-            continue
-        # drop redundant clues (latest first keeps early easy facts)
-        for cl in list(reversed(chosen)):
-            trial = [c for c in chosen if c is not cl]
-            if len(trial) >= spec.min_clues and count_solutions(spec.n, spec.k, trial, 2) == 1:
-                chosen = trial
-        if not (spec.min_clues <= len(chosen) <= spec.max_clues):
+        weights = [spec.kinds.get(_wkey(c), 0) for c in pool]
+        chosen = minimal_clues(spec, sol, pool, weights, rng)
+        if chosen is None or not (spec.min_clues <= len(chosen) <= spec.max_clues):
             continue
         rng.shuffle(chosen)
+        use_trial = "trial" in spec.allow
         d = Deducer(spec.n, spec.k, chosen, spec.ordered, spec.allow)
-        if not d.run(trial="trial" in spec.allow):
+        if use_trial:
+            # cheap screen first: puzzles the basic rules solve never need a trial
+            plain = Deducer(spec.n, spec.k, chosen, spec.ordered, tuple(a for a in spec.allow if a != "trial"))
+            if plain.run():
+                if spec.need_trial:
+                    continue
+                d = plain
+            elif not d.run(trial=True, max_trials=spec.max_trials):
+                continue
+        elif not d.run():
+            continue
+        if spec.need_trial and not any(st.kind == "trial" for st in d.steps):
+            continue
+        if stars(d) not in spec.stars:
             continue
         if d.solution() != sol:
             raise AssertionError("deducer reached a different solution")
         if not (spec.score_range[0] <= d.score() <= spec.score_range[1]):
+            continue
+        if accept is not None and not accept(d):
             continue
         return sol, chosen, d
     raise RuntimeError("could not generate a puzzle for spec")

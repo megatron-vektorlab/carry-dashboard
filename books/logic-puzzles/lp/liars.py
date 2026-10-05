@@ -117,25 +117,30 @@ def generate_liars(names, rng: random.Random, rule_kind="exactly", allow_ref=Fal
     raise RuntimeError("no liar puzzle found")
 
 
-def statement_text(p: LiarPuzzle, i):
+def statement_text(p: LiarPuzzle, i, theme=None):
+    """What suspect i says.  ``theme`` gives past-tense phrases: did ('took the
+    trophy') and didnt ("didn't take the trophy")."""
     st = p.statements[i]
     N = p.names
+    did = (theme or {}).get("did", "did it")
+    didnt = (theme or {}).get("didnt", "didn't do it")
     k = st[0]
     if k == "is":
-        return "I did it." if st[1] == i else f"{N[st[1]]} did it."
+        return f"I {did}." if st[1] == i else f"{N[st[1]]} {did}."
     if k == "not":
-        return "I didn't do it." if st[1] == i else f"{N[st[1]]} didn't do it."
+        return f"I {didnt}." if st[1] == i else f"{N[st[1]]} {didnt}."
     if k == "or":
         x, y = st[1], st[2]
-        nx = "me" if x == i else N[x]
-        ny = "me" if y == i else N[y]
-        return f"It was {nx} or {ny}."
+        if i in (x, y):
+            o = y if x == i else x
+            return f"Either {N[o]} or I {did}."
+        return f"Either {N[x]} or {N[y]} {did}."
     if k == "nor":
         x, y = st[1], st[2]
         if i in (x, y):
             o = y if x == i else x
-            return f"Neither {N[o]} nor I did it."
-        return f"Neither {N[x]} nor {N[y]} did it."
+            return f"Neither {N[o]} nor I {did}."
+        return f"Neither {N[x]} nor {N[y]} {did}."
     if k == "lies":
         return f"{N[st[1]]} is lying."
     if k == "truth":

@@ -51,14 +51,18 @@ class Bound:
             vals = list(c["values"]) if "values" in c else None
             if c.get("ordered"):
                 nums = list(c["nums"])
+                labels = list(c.get("labels") or [])
                 start = rng.randrange(0, len(nums) - n + 1)
                 c["nums"] = nums[start:start + n]
                 steps = {b - a for a, b in zip(c["nums"], c["nums"][1:])}
                 if len(steps) > 1:
                     raise ValueError(f"{c['label']}: ordered values must be evenly spaced")
                 c["step"] = steps.pop() if steps else 1
-                fmt = c.get("fmt", "{x}")
-                c["values"] = [fmt.format(x=v) for v in c["nums"]]
+                if labels:
+                    c["values"] = labels[start:start + n]
+                else:
+                    fmt = c.get("fmt", "{x}")
+                    c["values"] = [fmt.format(x=v) for v in c["nums"]]
             else:
                 if len(vals) < n:
                     raise ValueError(f"{c['label']}: needs {n} values")
@@ -108,7 +112,19 @@ class Bound:
         c = self.cats[b1[0]]
         if c.get("kind") == "name":
             return f"is either {self.val(b1)} or {self.val(b2)}"
+        if c.get("ordered") and c.get("ends") and {b1[1], b2[1]} == {0, self.n - 1}:
+            return c["ends"]
+        if c.get("ordered") and b1[1] > b2[1]:
+            b1, b2 = b2, b1
         return c.get("either", "has either the {a} or the {b}").format(a=self.val(b1), b=self.val(b2))
+
+    def nor(self, b1, b2):
+        c = self.cats[b1[0]]
+        if c.get("ordered") and b1[1] > b2[1]:
+            b1, b2 = b2, b1
+        if c.get("kind") == "name":
+            return f"is neither {self.val(b1)} nor {self.val(b2)}"
+        return c.get("nor", "has neither the {a} nor the {b}").format(a=self.val(b1), b=self.val(b2))
 
     def diff_words(self, o, d):
         c = self.cats[o]
@@ -126,6 +142,10 @@ class Bound:
         return (a, b) if rank(a) <= rank(b) else (b, a)
 
     def clue_text(self, cl: Clue, rng: random.Random) -> str:
+        s = self._clue_text(cl, rng)
+        return re.sub(r"\.\.$", ".", s)
+
+    def _clue_text(self, cl: Clue, rng: random.Random) -> str:
         if cl.kind == "same":
             a, b = self.subject_first(*cl.items)
             return f"{cap(self.ref(a))} {self.pred(b)}."
@@ -135,17 +155,28 @@ class Bound:
         if cl.kind == "either":
             a, b1, b2 = cl.items
             return f"{cap(self.ref(a))} {self.either(b1, b2)}."
+        if cl.kind == "nor":
+            a, b1, b2 = cl.items
+            return f"{cap(self.ref(a))} {self.nor(b1, b2)}."
         if cl.kind == "cmp":
             a, b = cl.items
             c = self.cats[cl.cat]
-            if cl.op == ">":
-                return f"{cap(self.ref(a))} {c['more'].format(y=self.ref(b))}."
-            if cl.op == "<":
-                return f"{cap(self.ref(a))} {c['less'].format(y=self.ref(b))}."
+            if cl.op in ("adj", "nadj"):
+                a, b = self.subject_first(a, b)
+                return f"{cap(self.ref(a))} {c[cl.op].format(y=self.ref(b))}."
+            if cl.op in (">", "<"):
+                # either direction reads fine; prefer a name as the subject
+                first, second = self.subject_first(a, b)
+                op = cl.op if first == a else {">": "<", "<": ">"}[cl.op]
+                return f"{cap(self.ref(first))} {c['more' if op == '>' else 'less'].format(y=self.ref(second))}."
             words = self.diff_words(cl.cat, cl.d)
-            if rng.random() < 0.5:
-                return f"{cap(self.ref(a))} {c['dmore'].format(d=words, y=self.ref(b))}."
-            return f"{cap(self.ref(b))} {c['dless'].format(d=words, y=self.ref(a))}."
+            one = cl.d == 1 and c.get("dmore1") and c.get("dless1")
+            first, _ = self.subject_first(a, b)
+            if first == a:
+                tpl = c["dmore1"] if one else c["dmore"]
+                return f"{cap(self.ref(a))} {tpl.format(d=words, y=self.ref(b))}."
+            tpl = c["dless1"] if one else c["dless"]
+            return f"{cap(self.ref(b))} {tpl.format(d=words, y=self.ref(a))}."
         if cl.kind == "pair":
             a1, a2, b1, b2 = cl.items
             return (f"Of {self.ref(a1)} and {self.ref(a2)}, one {self.pred(b1)} "
@@ -153,6 +184,8 @@ class Bound:
         if cl.kind == "alldiff":
             refs = [self.ref(it) for it in cl.items]
             words = {3: "three", 4: "four", 5: "five"}[len(refs)]
+            if len(refs) == self.n:
+                return f"The {words} {self.entities} were {', '.join(refs[:-1])}, and {refs[-1]}."
             return f"{cap(', '.join(refs[:-1]))}, and {refs[-1]} are {words} different {self.entities}."
         raise ValueError(cl.kind)
 
