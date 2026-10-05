@@ -1,0 +1,39 @@
+{
+ "no": 97,
+ "clues": [
+  "Of the rower bound for Gull Rock and the one who pushed off at 3:30 p.m., one took out the Puffin and the other the Minnow.",
+  "Between Nico and whoever pushed off at 3:30 p.m., one rowed the Teacup and the other rowed the Minnow.",
+  "Either Felix or Imani pushed off at 3:00 p.m.",
+  "Felix pushed off at neither 2:00 p.m. nor 2:30 p.m.",
+  "Oscar's boat was neither the Minnow nor the Puffin.",
+  "The 3:30 p.m. rower went to neither East Cove nor the Narrows.",
+  "The Skipjack's rower pushed off at neither 2:00 p.m. nor 3:30 p.m.",
+  "Neither Oscar nor Imani pushed off at 2:30 p.m.",
+  "Teddy pushed off sometime after Felix.",
+  "Either Oscar or Imani rowed to Seal Ledge.",
+  "The rower headed for the Narrows pushed off earlier than the one headed for East Cove.",
+  "One of Nico and Felix rowed to Gull Rock, and the other rowed to the Narrows."
+ ],
+ "hints": [
+  "Look at the 3:30 p.m. rower in clues 1 and 2. Which boat fits both?",
+  "Put pair clues 1 and 2 together, then clue 12. When the clues stall, the Minnow has just two possible rowers left: test one with a Suppose.",
+  "Suppose Imani took the Minnow, at 3:30 p.m. Clue 3 then puts Felix at 3:00 p.m., and clue 9 leaves Teddy no later time.",
+  "With Teddy at 3:30 p.m., clues 4 and 8 give 2:30 p.m. to Nico. Then clues 11 and 6 put East Cove at 3:00 p.m."
+ ],
+ "solution": {
+  "key_idea": "Supposing Imani took the Minnow puts her at 3:30 p.m. and Felix at 3:00 p.m., leaving Teddy no later time; so Teddy took it.",
+  "steps": [
+   "Clue 1 gives the 3:30 p.m. rower the Puffin or Minnow; clue 2, the Teacup or Minnow. So the Minnow went at 3:30 p.m.",
+   "So Nico took the Teacup (clue 2), and the Puffin went to Gull Rock (clue 1).",
+   "Nico's Teacup did not go to Gull Rock, so clue 12 sends Nico to the Narrows and Felix to Gull Rock, in the Puffin.",
+   "Clue 5 rules out Oscar for the Minnow. Suppose Imani took it, at 3:30 p.m. Then clue 3 puts Felix at 3:00 p.m.",
+   "But clue 9 needs Teddy after Felix, and 3:30 p.m. is taken. So Imani did not take the Minnow; Teddy did, at 3:30 p.m.",
+   "Clues 4 and 8 give Nico 2:30 p.m. Clues 6 and 10 keep Teddy from East Cove and Seal Ledge: he went to the Point.",
+   "East Cove came after Nico's Narrows (clue 11), so at 3:00 p.m. By clue 3 that was Imani, since Felix went to Gull Rock.",
+   "Clue 4 puts Felix at 1:30 p.m. and Oscar at 2:00 p.m., bound for Seal Ledge. Clue 7 gives Oscar the Pebble, Imani the Skipjack."
+  ],
+  "epilogue": "Teddy pushed off last, at 3:30 p.m., and rowed the Minnow to Thimble Point, camera in his lap and the spare key in his pocket. He was back at the boatyard by half past four."
+ },
+ "tip": null,
+ "answer_line": "Teddy rowed out to Thimble Point."
+}

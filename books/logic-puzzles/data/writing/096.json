@@ -1,0 +1,34 @@
+{
+ "no": 96,
+ "clues": [
+  "Walt and whoever took the binoculars are two different people: one signed the slate at noon, the other at 11:00 a.m.",
+  "Of the tide chart's borrower and the person who signed at noon, one wore ski gloves and the other wore fleece gloves.",
+  "Gus signed the slate exactly two hours after Amara did.",
+  "Whoever wore the leather gloves signed the slate later than Amara.",
+  "Between Selma and whoever took the spare key, one wore fingerless gloves and the other wore fleece.",
+  "The visitor who signed at 11:30 a.m. wore either fingerless or wool gloves.",
+  "Whoever borrowed the megaphone signed the slate earlier than Walt."
+ ],
+ "hints": [
+  "Look at clue 3. Which two sign-out times are exactly two hours apart? Then see where clue 1 leaves Walt.",
+  "Clue 5, a pair clue, leaves Selma just two glove choices. After clues 3 and 1, test one of them with a Suppose, then follow clue 2.",
+  "Suppose Selma wore fingerless. Then the spare key's borrower wore fleece (clue 5), Gus wore ski (clue 2), and the tide chart has no gloves left.",
+  "So Selma wore fleece and took the tide chart (clue 2). Clue 6 keeps fleece off 11:30 a.m., so Selma signed at 10:30 a.m."
+ ],
+ "solution": {
+  "key_idea": "Selma wore fingerless or fleece gloves; supposing fingerless leaves the tide chart no gloves at all, so she wore fleece.",
+  "steps": [
+   "Clue 3 puts Amara at 10:00 a.m. and Gus at noon. Clue 1 then puts Walt at 11:00 a.m., and the binoculars with Gus.",
+   "By clue 2, Gus and the tide chart's borrower wore the ski and fleece gloves. By clue 5, Selma wore fingerless or fleece.",
+   "Suppose Selma wore fingerless. Then the spare key's borrower wore fleece (clue 5), so Gus wore ski, and the tide chart has no gloves left.",
+   "So Selma wore fleece, not fingerless. Gus wore ski, Selma took the tide chart (clue 2), and the spare key went with fingerless (clue 5).",
+   "Clue 6 keeps Selma's fleece off 11:30 a.m., so she signed at 10:30 a.m., and Teddy at 11:30 a.m.",
+   "Clue 4 keeps the leather gloves off Amara, and clue 6 keeps them off Teddy, so Walt wore leather.",
+   "Clue 7 puts the megaphone before Walt's 11:00 a.m. Selma's 10:30 a.m. went with the tide chart, so the megaphone was Amara's.",
+   "Walt's leather rules him out for the spare key, so Teddy took it, in fingerless gloves. Walt took the life ring; Amara wore wool."
+  ],
+  "epilogue": "Teddy signed out the spare key at 11:30 a.m., in fingerless gloves that left his fingers free for the camera. He wanted to photograph the Keeper's Lamp in the low winter light for his series."
+ },
+ "tip": null,
+ "answer_line": "Teddy borrowed the spare lighthouse key."
+}

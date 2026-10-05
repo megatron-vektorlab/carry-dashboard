@@ -1,0 +1,14 @@
+{"no": 97, "clues": [
+ {"kind": "pair", "people": ["Went to=Gull Rock", "Time=3:30 p.m."], "options": ["Boat=Puffin", "Boat=Minnow"]},
+ {"kind": "pair", "people": ["Rower=Nico", "Time=3:30 p.m."], "options": ["Boat=Teacup", "Boat=Minnow"]},
+ {"kind": "either", "a": "Time=3:00 p.m.", "one_of": ["Rower=Felix", "Rower=Imani"]},
+ {"kind": "nor", "a": "Rower=Felix", "not": ["Time=2:00 p.m.", "Time=2:30 p.m."]},
+ {"kind": "nor", "a": "Rower=Oscar", "not": ["Boat=Minnow", "Boat=Puffin"]},
+ {"kind": "nor", "a": "Time=3:30 p.m.", "not": ["Went to=East Cove", "Went to=the Narrows"]},
+ {"kind": "nor", "a": "Boat=Skipjack", "not": ["Time=2:00 p.m.", "Time=3:30 p.m."]},
+ {"kind": "nor", "a": "Time=2:30 p.m.", "not": ["Rower=Oscar", "Rower=Imani"]},
+ {"kind": "compare", "a": "Rower=Teddy", "b": "Rower=Felix", "cat": "Time", "rel": "a_greater"},
+ {"kind": "either", "a": "Went to=Seal Ledge", "one_of": ["Rower=Oscar", "Rower=Imani"]},
+ {"kind": "compare", "a": "Went to=the Narrows", "b": "Went to=East Cove", "cat": "Time", "rel": "a_less"},
+ {"kind": "pair", "people": ["Rower=Nico", "Rower=Felix"], "options": ["Went to=Gull Rock", "Went to=the Narrows"]}
+]}

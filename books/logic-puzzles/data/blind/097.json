@@ -1,0 +1,70 @@
+{
+ "no": 97,
+ "people": "rowers",
+ "categories": [
+  {
+   "label": "Rower",
+   "values": [
+    "Nico",
+    "Oscar",
+    "Felix",
+    "Imani",
+    "Teddy"
+   ]
+  },
+  {
+   "label": "Boat",
+   "values": [
+    "Minnow",
+    "Pebble",
+    "Skipjack",
+    "Teacup",
+    "Puffin"
+   ]
+  },
+  {
+   "label": "Went to",
+   "values": [
+    "the Point",
+    "Gull Rock",
+    "East Cove",
+    "the Narrows",
+    "Seal Ledge"
+   ]
+  },
+  {
+   "label": "Time",
+   "values": [
+    "1:30 p.m.",
+    "2:00 p.m.",
+    "2:30 p.m.",
+    "3:00 p.m.",
+    "3:30 p.m."
+   ],
+   "ordered": true,
+   "numbers": [
+    810,
+    840,
+    870,
+    900,
+    930
+   ],
+   "note": "values in order from smallest to largest number; numbers [810, 840, 870, 900, 930] (unit: minutes)"
+  }
+ ],
+ "clues": [
+  "Of the rower bound for Gull Rock and the one who pushed off at 3:30 p.m., one took out the Puffin and the other the Minnow.",
+  "Between Nico and whoever pushed off at 3:30 p.m., one rowed the Teacup and the other rowed the Minnow.",
+  "Either Felix or Imani pushed off at 3:00 p.m.",
+  "Felix pushed off at neither 2:00 p.m. nor 2:30 p.m.",
+  "Oscar's boat was neither the Minnow nor the Puffin.",
+  "The 3:30 p.m. rower went to neither East Cove nor the Narrows.",
+  "The Skipjack's rower pushed off at neither 2:00 p.m. nor 3:30 p.m.",
+  "Neither Oscar nor Imani pushed off at 2:30 p.m.",
+  "Teddy pushed off sometime after Felix.",
+  "Either Oscar or Imani rowed to Seal Ledge.",
+  "The rower headed for the Narrows pushed off earlier than the one headed for East Cove.",
+  "One of Nico and Felix rowed to Gull Rock, and the other rowed to the Narrows."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

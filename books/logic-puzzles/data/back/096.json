@@ -1,0 +1,9 @@
+{"no": 96, "clues": [
+ {"kind": "pair", "people": ["Visitor=Walt", "Item=binoculars"], "options": ["Time=noon", "Time=11:00 a.m."]},
+ {"kind": "pair", "people": ["Item=tide chart", "Time=noon"], "options": ["Gloves=ski", "Gloves=fleece"]},
+ {"kind": "compare", "a": "Visitor=Gus", "b": "Visitor=Amara", "cat": "Time", "rel": "a_greater_by", "by": 120},
+ {"kind": "compare", "a": "Gloves=leather", "b": "Visitor=Amara", "cat": "Time", "rel": "a_greater"},
+ {"kind": "pair", "people": ["Visitor=Selma", "Item=spare key"], "options": ["Gloves=fingerless", "Gloves=fleece"]},
+ {"kind": "either", "a": "Time=11:30 a.m.", "one_of": ["Gloves=fingerless", "Gloves=wool"]},
+ {"kind": "compare", "a": "Item=megaphone", "b": "Visitor=Walt", "cat": "Time", "rel": "a_less"}
+]}
