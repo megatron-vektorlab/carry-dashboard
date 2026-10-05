@@ -8,20 +8,20 @@ What I need is an apprentice. That is you.
 
 You do not need to be good at math. You do not need to have solved a logic puzzle before. If you can read a sentence carefully and keep track of what it does and does not say, you can solve every puzzle in this book. I will show you how, one small idea at a time.
 
-Here is how we will work. Each chapter starts with a short lesson. Then come the puzzles, from gentle to genuinely tricky. When you get stuck, and you will, the hints at the back of the book come in three steps, so you can take only as much help as you need. Every solution explains the reasoning, not just the answer.
+Here is how we will work. Each of the first six chapters starts with a short lesson. Then come the puzzles, from gentle to genuinely tricky. When you get stuck, and you will, the hints at the back of the book come in small steps, so you can take only as much help as you need. Every solution explains the reasoning, not just the answer.
 
-Along the way you will get to know the town. Somebody swapped the jam labels at the church supper. Somebody let a goat into the pie tent. And this winter, something will go missing from the lighthouse that nobody can explain. By then, you will be ready for it.
+Along the way you will get to know the town. Somebody peeled the labels off the jams at the church supper. Somebody let a goat into the pie tent. And this winter, something will go missing from the lighthouse that nobody can explain. By then, you will be ready for it.
 
 Sharpen your pencil, partner. We start with three neighbors and three pies.
 
 **Ada Quill**
-*Puzzle Editor (retired), the Thimble Harbor Gazette*
+Puzzle Editor (retired), the *Thimble Harbor Gazette*
 
 # How This Book Works
 
 ## The puzzles
 
-Each puzzle gives you a short story, a list of clues, and a grid. Every clue is true. Together, the clues lead to exactly one answer. You never need to guess, and you never need outside knowledge.
+Each puzzle gives you a short story, a list of clues, and a grid or table to fill in. Every clue is true. Together, the clues lead to exactly one answer. You never need to guess, and you never need outside knowledge.
 
 Every puzzle in this book was checked by computer to make sure it has one solution and only one.
 
@@ -40,8 +40,8 @@ Lesson 1 shows you exactly how it works.
 The stars at the top of each puzzle tell you how hard it is.
 
 - One star: small grids. Read a clue, mark it, and fill in the only choice left.
-- Two stars: bigger grids. Carry facts from one part of the grid to another.
-- Three stars: clues you come back to as the grid fills in: line-ups, numbers, and truth-tellers.
+- Two stars: bigger grids and first line-ups. Carry facts from one box to another.
+- Three stars: order and number clues you come back to as the grid fills in, and truth-or-fib puzzles.
 - Four stars: two clues working together, and many careful steps.
 - Five stars: you will need one careful "Suppose" (Lesson 6).
 
@@ -66,7 +66,7 @@ Each solution starts with the finished answer table, so you can check your grid 
 
 ## A few tools
 
-A pencil with a good eraser. A quiet half hour. That is all. If you want to work a puzzle twice, there are blank grids and Scratch Pad pages at the back of the book.
+A pencil with a good eraser. A quiet half hour. That is all. If you want to work a puzzle twice, there are blank grids at the back of the book, and Scratch Pad pages between the puzzles.
 
 # Welcome to Thimble Harbor
 
@@ -89,6 +89,6 @@ You will meet these neighbors again and again.
 - **Lena Kowalski** runs the lighthouse museum and wears white gloves to touch anything older than she is.
 - **Nico Papas** catches lobsters and tells tall tales. The lobster gets bigger every time.
 
-You will also meet **Inkwell**, the Gazette's gray cat, who is suspected of everything and guilty of nothing, and **Pilot**, Jonah's old beagle, who rides the ferry in a small orange life vest.
+You will also meet **Inkwell**, the *Gazette*'s gray cat, who is suspected of everything and guilty of nothing, and **Pilot**, Jonah's old beagle, who rides the ferry in a small orange life vest.
 
-Everyone else in these pages is a friend, a visitor, or a neighbor passing through. None of them is real, and all of them could use your help.
+Everyone else in these pages is a friend, a visitor, or a neighbor passing through. Nobody in this town is real, and every one of them could use your help.

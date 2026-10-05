@@ -16,7 +16,7 @@
  "hints": [
   "Clues 3 and 5 both name Hal: which gear fits both? And which boat could possibly come at 2:00 p.m.?",
   "Clues 3 and 5 both mention Hal and the net: put them together, then use clues 6 and 4. Later, test one of Priya's two possible times with a Suppose.",
-  "Suppose Priya came at 2:00. The cooler then came by 1:30 and the skiff earlier (clue 8); clues 9 and 10 leave just the canoe for both 1:30 and 1:45.",
+  "Suppose Priya came at 2:00. Then the cooler came by 1:30 and the skiff earlier (clue 8), and clues 9 and 10 leave 1:45 no boat. So Priya came at 1:00.",
   "With Priya at 1:00, clue 1 puts Nico at 1:30 and Una at 2:00, with the kayak. Clue 1 again gives Hal the canoe."
  ],
  "solution": {
@@ -31,7 +31,7 @@
    "Clue 10 puts the punt at 1:15, Kenji's. Clue 9 keeps the dory off 1:30, so Priya hauled out the dory and Nico the skiff.",
    "Kenji and Una had the bucket and cooler. Clue 4 puts the bucket before Hal, so it was Kenji's, and Una brought the cooler."
   ],
-  "epilogue": "Kenji pulled the drain plug on his hauled-out punt, then pulled the work rowboat's out of habit, not noticing she was still afloat. He helped Felix bail her out by dusk."
+  "epilogue": "Kenji pulled the drain plug on his hauled-out punt, then pulled the work rowboat's plug too, out of habit, not noticing she was still afloat. He helped Felix bail her out by dusk."
  },
  "tip": null,
  "answer_line": "Kenji pulled the plug."

@@ -14,7 +14,7 @@
     "label": "Name",
     "kind": "name",
     "values": [
-     "Gus",
+     "Walt",
      "Nico",
      "Mabel"
     ]
@@ -65,7 +65,7 @@
   ]
  },
  "clues": [
-  "Gus is older than Mabel.",
+  "Walt is older than Mabel.",
   "Of Mabel and the skiff's owner, one is 65 and the other is 70.",
   "Nico does not own the dory."
  ],
@@ -159,7 +159,7 @@
    "clues": [
     1
    ],
-   "text": "Clue 1 means Gus cannot be 60 and Mabel cannot be 70."
+   "text": "Clue 1 means Walt cannot be 60 and Mabel cannot be 70."
   },
   {
    "kind": "pair",
@@ -184,7 +184,7 @@
    "clues": [
     1
    ],
-   "text": "Gus must go with 70: clue 1 rules out 60; 65 already goes with Mabel."
+   "text": "Walt must go with 70: clue 1 rules out 60; 65 already goes with Mabel."
   },
   {
    "kind": "only",
@@ -206,7 +206,7 @@
    "clues": [
     3
    ],
-   "text": "The dory must go with Mabel: clue 3 rules out Nico; Gus is already ruled out for 70."
+   "text": "The dory must go with Mabel: clue 3 rules out Nico; Walt is already ruled out for 70."
   },
   {
    "kind": "transfer",
@@ -226,7 +226,7 @@
    "kind": "transfer",
    "trivial": true,
    "clues": [],
-   "text": "Gus goes with 70, so Gus also goes with the skiff."
+   "text": "Walt goes with 70, so Walt also goes with the skiff."
   },
   {
    "kind": "only",
@@ -234,7 +234,7 @@
    "clues": [
     3
    ],
-   "text": "Nico must go with the sloop: clue 3 rules out the dory; the skiff already goes with Gus."
+   "text": "Nico must go with the sloop: clue 3 rules out the dory; the skiff already goes with Walt."
   }
  ],
  "snaps": [

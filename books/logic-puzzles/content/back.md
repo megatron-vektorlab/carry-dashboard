@@ -7,7 +7,7 @@ What each kind of clue lets you mark.
 - **"Gus brought either the apple or the cherry pie."** X every other pie in Gus's row. Come back later: once one of the two is ruled out, the other is a dot.
 - **"Gus brought neither the apple nor the cherry pie."** Two X's.
 - **"Of Gus and Rosa, one brought the apple pie and the other the cherry pie."** Gus and Rosa are different people. Each of them has apple or cherry, so X their other pies. Nobody else has apple or cherry. When you learn one of them, the other follows.
-- **"Gus, Rosa and the pie baker are three different people."** X between every pair of them.
+- **"Gus, Rosa and the peach pie's baker are three different people."** Put an X wherever two of them meet in the grid.
 - **"Gus arrived later than Rosa."** Gus is not first, Rosa is not last, and they are different people.
 - **"Gus arrived exactly two hours after Rosa."** A fixed gap. If you know one time, you know the other.
 - **"Gus stood right behind Rosa."** No gap. Gus is not first, Rosa is not last.
@@ -19,7 +19,7 @@ What each kind of clue lets you mark.
 
 **Placing a dot without its X's.** Every dot means X for the rest of its row and column in that box. If you skip this, a later "only choice left" can look like two choices.
 
-**Reading "before" as "right before."** "Earlier than" leaves room for others in between. Only "right before," "right behind," "one hour after" and the like mean no gap.
+**Reading "before" as "right before."** "Earlier than" leaves room for others in between. Only "right before," "right behind" and the like mean no gap, and "one hour after" means exactly one step later.
 
 **Forgetting to carry.** When a row in one box is settled, look at the other boxes. If Rosa has the tin and the tin holds the fig jam, Rosa made the fig jam.
 
@@ -35,7 +35,7 @@ What each kind of clue lets you mark.
 
 Puzzle setters work backward. Here is the method I used for forty-one years.
 
-1. **Choose a small world.** Three neighbors and two kinds of things are plenty: names, pies and jars.
+1. **Choose a small world.** Three neighbors and two kinds of things are plenty: say, pies and jars.
 2. **Write the answer first.** Fill in an answer table: who has what.
 3. **Write a clue that is true.** "Hattie did not use the tin."
 4. **Solve your own puzzle with only the clues** on a blank grid. Where you get stuck, add one more true clue.

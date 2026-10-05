@@ -1,37 +1,37 @@
 {
- "no": 98,
- "clues": [
-  "Whoever went on to the library was either Rosa or Pearl.",
-  "The person headed to the inn got their item earlier than the person headed to the church.",
-  "Whoever went on to the bakery was handed something exactly 20 minutes after whoever went on to the inn.",
-  "Of the mail sack's recipient and the person handed something at 5:40 p.m., one was Hattie and the other was Kenji.",
-  "One of Jonah and Rosa was handed the spare key, and the other was handed something at 6:00 p.m.",
-  "Neither Pearl nor Rosa was handed the lantern.",
-  "Kenji got his item earlier than the person headed to the inn.",
-  "The 6:20 p.m. hand-off went to either Jonah or Kenji.",
-  "Either Hattie or Pearl was handed the pie tin.",
-  "Hattie got her item exactly 20 minutes after the person headed to the store got theirs."
- ],
- "hints": [
-  "Look at the 6:20 p.m. column. Clue 8 offers two names; check each one against the other clues that mention them.",
-  "Use two clues together: clues 7 and 8 settle 6:20 p.m., and clue 5 follows. Then Suppose: the 6:20 p.m. person has only two places left to go.",
-  "Jonah went on to the bakery or the church. Suppose the bakery: clue 3 puts the inn at 6:00 p.m., and clue 2 leaves the church no later time.",
-  "With the church at 6:20 p.m., clue 3 keeps the inn before 6:00 p.m. So clue 7 keeps Kenji off 5:40 p.m., and clue 4 gives that slot to Hattie."
- ],
- "solution": {
-  "key_idea": "Clues 7, 8 and 5 hand Jonah the key at 6:20 p.m.; then supposing he went to the bakery leaves the church no later time.",
-  "steps": [
-   "Clue 7 keeps Kenji off 6:20 p.m., so clue 8 puts Jonah there; clue 5 then gives Rosa 6:00 p.m. and Jonah the spare key.",
-   "By clues 6, 4 and 9, Rosa had the thermos and Pearl the pie tin. Hattie and Kenji had the lantern and the mail sack.",
-   "At 6:20 p.m., Jonah did not go on to the library (clue 1), the inn (clue 2) or the store (clue 10).",
-   "Suppose Jonah went on to the bakery. Then clue 3 puts the inn at 6:00 p.m., and clue 2 leaves the church no later time.",
-   "So Jonah went to the church. Clue 3 now keeps the inn before 6:00 p.m., so clue 7 keeps Kenji off 5:40 p.m.",
-   "So clue 4 puts Hattie at 5:40 p.m., and keeps the mail sack off that time: Hattie had the lantern, Kenji the mail sack.",
-   "Clue 10 puts the store at 5:20 p.m. The inn follows Kenji (clue 7), so it is Hattie's, at 5:40 p.m.; clue 3 puts the bakery, Rosa's, at 6:00 p.m.",
-   "Clue 1 sends Pearl to the library, so Kenji, bound for the store, came at 5:20 p.m., and Pearl at 5:00 p.m."
+  "no": 98,
+  "clues": [
+    "Whoever went on to the library was either Rosa or Pearl.",
+    "The person headed to the inn got their item earlier than the person headed to the church.",
+    "Whoever went on to the bakery was handed something exactly 20 minutes after whoever went on to the inn.",
+    "Of the mail sack's recipient and the person handed something at 5:40 p.m., one was Hattie and the other was Kenji.",
+    "One of Jonah and Rosa was handed the spare key, and the other was handed something at 6:00 p.m.",
+    "Neither Pearl nor Rosa was handed the lantern.",
+    "Kenji got his item earlier than the person headed to the inn.",
+    "The 6:20 p.m. hand-off went to either Jonah or Kenji.",
+    "Either Hattie or Pearl was handed the pie tin.",
+    "Hattie got her item exactly 20 minutes after the person headed to the store got theirs."
   ],
-  "epilogue": "Teddy, hurrying to the green, handed Jonah the spare key at 6:20 p.m. Jonah tucked it in his coat and promised to drop it at the harbor office after his stop at the church."
- },
- "tip": null,
- "answer_line": "Jonah received the spare key at the ferry dock."
+  "hints": [
+    "Look at the 6:20 p.m. column. Clue 8 offers two names; check each one against the other clues that mention them.",
+    "Use two clues together: clues 7 and 8 settle 6:20 p.m., and clue 5 follows. Then Suppose: the 6:20 p.m. person has only two places left to go.",
+    "Jonah went on to the bakery or the church. Suppose the bakery: clue 3 puts the inn at 6:00 p.m., and clue 2 leaves the church no later time.",
+    "With the church at 6:20 p.m., clue 3 keeps the inn before 6:00 p.m. So clue 7 keeps Kenji off 5:40 p.m., and clue 4 gives that slot to Hattie."
+  ],
+  "solution": {
+    "key_idea": "Clues 7, 8 and 5 hand Jonah the key at 6:20 p.m.; then supposing he went to the bakery leaves the church no later time.",
+    "steps": [
+      "Clue 7 keeps Kenji off 6:20 p.m., so clue 8 puts Jonah there; clue 5 then gives Rosa 6:00 p.m. and Jonah the spare key.",
+      "By clues 6, 4 and 9, Rosa had the thermos and Pearl the pie tin. Hattie and Kenji had the lantern and the mail sack.",
+      "At 6:20 p.m., Jonah did not go on to the library (clue 1), the inn (clue 2) or the store (clue 10).",
+      "Suppose Jonah went on to the bakery. Then clue 3 puts the inn at 6:00 p.m., and clue 2 leaves the church no later time.",
+      "So Jonah went to the church. Clue 3 now keeps the inn before 6:00 p.m., so clue 7 keeps Kenji off 5:40 p.m.",
+      "So clue 4 puts Hattie at 5:40 p.m., and keeps the mail sack off that time: Hattie had the lantern, Kenji the mail sack.",
+      "Clue 10 puts the store at 5:20 p.m. The inn follows Kenji (clue 7), so it is Hattie's, at 5:40 p.m.; clue 3 puts the bakery, Rosa's, at 6:00 p.m.",
+      "Clue 1 sends Pearl to the library, which leaves Kenji the store. So Kenji came at 5:20 p.m., and Pearl at 5:00 p.m."
+    ],
+    "epilogue": "Teddy, hurrying to the green, handed Jonah the spare key at 6:20 p.m. Jonah tucked it in his coat and promised to drop it at the harbor office after his stop at the church."
+  },
+  "tip": null,
+  "answer_line": "Jonah received the spare key at the ferry dock."
 }

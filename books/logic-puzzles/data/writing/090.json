@@ -13,21 +13,21 @@
  ],
  "hints": [
   "Start with the white paint. Clue 1 gives its buyer two possible brushes. Does clue 6 allow both?",
-  "Next, find the $16 brush and the $14 customer. When the clues run dry, test Yusuf's price with a Suppose: clues 5 and 8 leave him just two.",
-  "Suppose Yusuf spent $8. Clue 8 puts the purple wide brush at $10, and clue 2 then needs the rag at $8, which Yusuf already has.",
-  "With Yusuf at $12, the wide brush cost $14: Della's. Clue 9 keeps the roller off $8, so clue 4 puts Enzo at $16."
+  "Next, find which brush goes with $16 and who spent $14. When the clues run dry, test Yusuf's total with a Suppose: clues 5 and 8 leave him two.",
+  "Suppose Yusuf spent $8. Clue 8 puts the purple wide-brush buyer at $10, so clue 2 needs the rag's buyer at $8. But that is Yusuf, with the spray can.",
+  "With Yusuf at $12, the wide-brush buyer spent $14: Della. Clue 9 keeps the roller off $8, so clue 4 puts Enzo at $16."
  ],
  "solution": {
-  "key_idea": "Yusuf spent $8 or $12; supposing $8 puts the purple wide brush at $10 and leaves the rag nowhere cheaper, so Yusuf spent $12.",
+  "key_idea": "If Yusuf spent $8, the wide-brush buyer spent $10 and the rag's buyer had nothing cheaper left, so Yusuf spent $12.",
   "steps": [
-   "Clue 5 keeps Yusuf off $10 and $14, and clue 8 off $16. So the wide brush (clue 8) cost $10 or $14.",
+   "Clue 5 keeps Yusuf off $10 and $14, and clue 8 off $16. So the wide-brush buyer (clue 8) spent $10 or $14.",
    "Clue 6 keeps the white paint off the spray can, so by clue 1 white went with the sponge, and Yusuf took the spray can.",
-   "The sponge cost $16: clue 4 rules out the roller, clue 2 the rag, and the wide brush and Yusuf's spray can are already out.",
+   "The sponge's buyer spent $16: clue 4 rules out the roller, clue 2 the rag; the wide brush and Yusuf's spray can are already out.",
    "Clue 3 puts Yusuf or Della at $14, and clue 5 rules out Yusuf. So Della spent $14, and Yusuf bought the black paint.",
    "By clue 7 the wide brush had the purple. Clue 9 keeps teal off the roller, so teal had the rag and yellow the roller.",
-   "Suppose Yusuf spent $8. The purple wide brush cost $10 (clue 8), so the rag cost less (clue 2), but $8 is Yusuf's spray can.",
-   "So Yusuf spent $12, and by clue 8 the wide brush cost $14. That was Della, so Della bought the purple paint.",
-   "The roller, above teal (clue 9), cost $10, and Enzo, above the roller (clue 4), spent $16. Clue 5 leaves Marta $8 and Felix $10."
+   "Suppose Yusuf spent $8. Then the purple wide-brush buyer spent $10 (clue 8), so the rag's buyer spent $8 (clue 2). But that was Yusuf, with the spray can.",
+   "So Yusuf spent $12, and by clue 8 the wide-brush buyer spent $14. That was Della, so Della bought the purple paint.",
+   "With $8 and $10 left for the roller and rag, the roller's buyer spent $10 (clue 9). Enzo spent $16 (clue 4); clue 5 leaves Marta $8, Felix $10."
   ],
   "epilogue": "Della had offered to brighten the pier's spare buoys for the holidays and painted the wrong pile after dark. She bought Nico orange paint and helped him redo every one."
  },

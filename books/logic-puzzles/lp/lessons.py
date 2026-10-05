@@ -79,7 +79,7 @@ EXAMPLES = {
     3: dict(theme=theme("The Ferry Line", ["Jonah", "Priya", "Teddy", "Lena"], [PLACE]),
             clues=[S("cmp", (0, 1), (0, 0), cat=1, op="<"), S("cmp", (0, 2), (0, 1), cat=1, op="d", d=1),
                    S("diff", (0, 3), (1, 0)), S("diff", (0, 0), (1, 3))]),
-    5: dict(theme=theme("Three Old Salts", ["Gus", "Nico", "Mabel"], [AGE, BOAT]),
+    5: dict(theme=theme("Three Old Salts", ["Walt", "Nico", "Mabel"], [AGE, BOAT]),
             clues=[S("cmp", (0, 0), (0, 2), cat=1, op=">"), S("pair", (0, 2), (2, 1), (1, 1), (1, 2)),
                    S("diff", (0, 1), (2, 0))]),
 }
@@ -164,8 +164,8 @@ def snapshots_from(pr, s0, base):
 
 
 def liar_example(rng):
-    names = ["Bea", "Otto", "Juno"]
-    th = {"did": "ate the last scone", "didnt": "didn't eat the last scone"}
+    names = ["Bea", "Hugo", "Kit"]
+    th = {"did": "ate the last caramel apple", "didnt": "didn't eat the last caramel apple"}
     for _ in range(200):
         p = generate_liars(names, rng, rule_kind="exactly")
         if p.rule == ("exactly", 1) and all(st[0] != "lies" and st[0] != "truth" for st in p.statements):

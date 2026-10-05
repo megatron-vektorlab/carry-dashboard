@@ -1,6 +1,6 @@
 # Lesson 1
 
-Three neighbors, Hattie, Gus and Wren, each brought one pie to the spring seed swap: apple, cherry or peach. Nobody brought two, and no two brought the same kind. Here are the clues.
+Three neighbors, Hattie, Gus and Wren, each brought one pie to the spring bake sale at the church hall: apple, cherry or peach. Nobody brought two, and no two brought the same kind. Here are the clues.
 
 [[clues L1]]
 
@@ -83,7 +83,7 @@ Now carry again. Mabel used the crock, and the crock held the quince jam, so Mab
 
 # Lesson 3
 
-Four neighbors waited in line for the morning ferry. Who stood where?
+Four neighbors waited in line at the bakery counter one morning. Who stood where?
 
 [[clues L3]]
 
@@ -109,19 +109,19 @@ Clues 3 and 4 are plain X's: Lena was not first, and Jonah was not fourth.
 
 Look down the column for first place. Lena, Jonah and Teddy are crossed out. So Priya was first. Teddy is right behind her, so Teddy was second. Jonah was not fourth, so Jonah was third, and Lena was fourth.
 
-[[grid L3 | O: Priya=first, Teddy=second, Jonah=third, Lena=fourth | new: Priya=first | caption: The line, front to back: Priya, Teddy, Jonah, Lena.]]
+[[grid L3 | O: Priya=first, Teddy=second, Jonah=third, Lena=fourth | new: Priya=first, Teddy=second, Jonah=third, Lena=fourth | caption: The line, front to back: Priya, Teddy, Jonah, Lena.]]
 
 > **Read down the columns too.** In line-ups, the question "Who could be first?" is often quicker than "Where could Jonah be?"
 
 ## Other order words
 
-- "**Exactly two places** behind": count. If Lena is first, the other person is third.
+- "Lena stood **exactly two places** behind Teddy": count. If Teddy is first, Lena is third.
 - "**Next to**": right in front or right behind, either side.
 - "**At one end** of the line": first or last.
 
 # Lesson 4
 
-At the county fair, the last scone vanished from the bake-sale table. Three people were nearby, and each said one thing.
+At the county fair, the last caramel apple vanished from the candy stand. Three people were nearby, and each said one thing.
 
 [[liar L4]]
 
@@ -133,18 +133,18 @@ Exactly one suspect will fit.
 
 ## Testing Bea
 
-Suppose Bea ate the scone. Bea's own statement, "Juno didn't eat the last scone," would be true. Otto's, "Juno ate the last scone," would be false. Juno's, "Either Bea or Otto ate the last scone," would be true. That is two true statements, but the rule says exactly one. So it was not Bea.
+Suppose Bea ate the caramel apple. Bea's own statement, "Kit didn't eat the last caramel apple," would be true. Hugo's, "Kit ate the last caramel apple," would be false. Kit's, "Either Bea or Hugo ate the last caramel apple," would be true. That is two true statements, but the rule says exactly one. So it was not Bea.
 
-Test Otto and Juno the same way. Only Juno gives exactly one true statement.
+Test Hugo and Kit the same way. Only Kit gives exactly one true statement.
 
 [[liar L4 filled]]
 
-> **The shortcut: opposites.** When two people say opposite things, as Bea and Otto do here, exactly one of them is telling the truth. Here that uses up the only true statement, so Juno's statement must be false. Neither Bea nor Otto did it, so it was Juno.
+> **The shortcut: opposites.** When two people say opposite things, as Bea and Hugo do here, exactly one of them is telling the truth. Here that uses up the only true statement, so Kit's statement must be false. Neither Bea nor Hugo did it, so it was Kit.
 
 ## Things to watch for
 
 - "I didn't do it" is true for everyone except the culprit.
-- "Otto is lying" is true exactly when Otto's statement is false.
+- "Hugo is lying" is true exactly when Hugo's statement is false.
 - Some puzzles use a different rule: "only the culprit is fibbing," which means the culprit's statement is false and everyone else's is true. The method is the same.
 
 # Lesson 5
@@ -155,7 +155,7 @@ Three old friends keep boats in the harbor. They are 60, 65 and 70 years old, an
 
 ## Comparisons rule out the ends
 
-Clue 1 says Gus is older than Mabel. So Gus cannot be the youngest, 60, and Mabel cannot be the oldest, 70. Mark those two X's straight away.
+Clue 1 says Walt is older than Mabel. So Walt cannot be the youngest, 60, and Mabel cannot be the oldest, 70. Mark those two X's straight away.
 
 ## A pair clue
 
@@ -165,24 +165,24 @@ Clue 2 says: of Mabel and the skiff's owner, one is 65 and the other is 70. A pa
 - The skiff's owner is 65 or 70.
 - Mabel is not the skiff's owner, because they are two different people.
 
-[[grid L5 | X: Gus=60, Mabel=70, Mabel=60, skiff=60, Mabel=skiff | caption: Clues 1 and 2, each read on its own.]]
+[[grid L5 | X: Walt=60, Mabel=70, Mabel=60, skiff=60, Mabel=skiff | caption: Clues 1 and 2, each read on its own.]]
 
 ## Two clues together
 
 Now let them team up. Clue 2 says Mabel is 65 or 70. Clue 1 says she is not 70. So Mabel is 65, and by clue 2 the skiff's owner is 70.
 
-Clue 1 again: Gus is older than Mabel, who is 65, so Gus is 70. That makes Gus the skiff's owner, and Nico is 60.
+Clue 1 again: Walt is older than Mabel, who is 65, so Walt is 70. That makes Walt the skiff's owner, and Nico is 60.
 
-Finally, clue 3: Nico does not own the dory, and the skiff is Gus's, so Nico owns the sloop and Mabel owns the dory.
+Finally, clue 3: Nico does not own the dory, and the skiff is Walt's, so Nico owns the sloop and Mabel owns the dory.
 
-[[grid L5 | O: Mabel=65, Gus=70, Nico=60, Gus=skiff, Nico=sloop, Mabel=dory, skiff=70, sloop=60, dory=65 | caption: The finished grid.]]
+[[grid L5 | O: Mabel=65, Walt=70, Nico=60, Walt=skiff, Nico=sloop, Mabel=dory, skiff=70, sloop=60, dory=65 | caption: The finished grid.]]
 
 > **Go back to the clues.** A clue that told you only a little at first can tell you much more once other facts are in. When you are stuck, read every clue again, slowly.
 
 ## Number words
 
 - "**Older than**," "**cost more than**," "**later than**": the first person cannot have the smallest number, and the second cannot have the largest.
-- "**Exactly 10 years older**": the gap is fixed. If one is 60, the other is 70.
+- "**Exactly 10 years older**": the gap is fixed. If the younger is 60, the older is 70.
 - "**One hour after**": a gap of exactly one step.
 
 # Lesson 6
@@ -197,9 +197,11 @@ Four neighbors returned library books one morning, one each hour from 9 a.m. to 
 
 Clue 4 says Dot came earlier than the atlas borrower, so Dot did not borrow the atlas. By clue 2, Dot borrowed the cookbook and Wren the atlas. Clue 5 leaves Basil only the almanac, so Otis borrowed the diary.
 
-[[grid L6 | O: Dot=cookbook, Wren=atlas, Basil=almanac, Otis=diary | caption: Names and books are done. The times are not.]]
+The time clues give a few X's. Clue 1: the diary was not at 9 a.m., and the almanac was not at noon. Clue 3: the cookbook was not at noon. Clue 4: Dot was not at noon, and the atlas was not at 9 a.m. Carry each X across to the names.
 
-The time clues still leave several choices. So we test one.
+[[grid L6 | O: Dot=cookbook, Wren=atlas, Basil=almanac, Otis=diary | X: diary=9 a.m., almanac=noon, cookbook=noon, Dot=noon, atlas=9 a.m., Otis=9 a.m., Basil=noon, Wren=9 a.m. | caption: Names and books are done. The times are not.]]
+
+That is all the clues can say. The times still have several choices. So we test one.
 
 ## Suppose
 
@@ -207,11 +209,11 @@ Pick a row with only two or three choices left and test one of them in pencil. S
 
 Then the cookbook came at 9 a.m. By clue 3, the diary came one hour later, at 10 a.m. By clue 1, the almanac came earlier than the diary, so at 9 a.m. But 9 a.m. already belongs to Dot and her cookbook. Two people cannot come at the same time. The supposition breaks.
 
-[[grid L6 | O: Dot=cookbook, Wren=atlas, Basil=almanac, Otis=diary, Dot=9 a.m., diary=10 a.m. | new: Dot=9 a.m., diary=10 a.m. | caption: In pencil: if Dot came at 9 a.m., the almanac has nowhere to go.]]
+[[grid L6 | O: Dot=cookbook, Wren=atlas, Basil=almanac, Otis=diary, Dot=9 a.m., cookbook=9 a.m., diary=10 a.m. | X: almanac=11 a.m., almanac=noon, Basil=noon | new: Dot=9 a.m., cookbook=9 a.m., diary=10 a.m. | caption: In pencil: if Dot came at 9 a.m., the almanac has nowhere to go.]]
 
 So Dot did not come at 9 a.m. Erase the pencil marks and put a firm X there.
 
-Now the clues work again. Who came at 9 a.m.? Not Dot. Not Wren, whose atlas came later than Dot (clue 4). Not Otis, whose diary came later than the almanac (clue 1). So Basil and the almanac came at 9 a.m. If Dot came at 11 a.m., the diary would come at noon (clue 3) and the atlas would have no later hour left (clue 4). So Dot came at 10 a.m., the diary at 11 a.m., and Wren's atlas at noon.
+Now the clues work again. Who came at 9 a.m.? Not Dot. Not Wren, whose atlas came later than Dot (clue 4). Not Otis, whose diary came later than the almanac (clue 1). So Basil and the almanac came at 9 a.m. Who came at 10 a.m.? Not Otis: his diary came one hour after Dot's cookbook (clue 3), and Dot came at 10 a.m. at the earliest. Not Wren: her atlas came later than Dot (clue 4). So Dot came at 10 a.m., the diary at 11 a.m., and Wren's atlas at noon.
 
 > **Suppose in pencil, conclude in pen.** Write "Suppose" above the grid. If you reach a contradiction, erase everything you added and mark one firm X on the square you tested. If you do not reach a contradiction, the test tells you nothing: erase it and try another square.
 

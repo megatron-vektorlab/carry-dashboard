@@ -12,15 +12,15 @@
  "hints": [
   "Look at clue 3. Which two sign-out times are exactly two hours apart? Then see where clue 1 leaves Walt.",
   "Clue 5, a pair clue, leaves Selma just two glove choices. After clues 3 and 1, test one of them with a Suppose, then follow clue 2.",
-  "Suppose Selma wore fingerless. Then the spare key's borrower wore fleece (clue 5), Gus wore ski (clue 2), and the tide chart has no gloves left.",
+  "Suppose Selma wore fingerless. Then the spare key's borrower wore fleece (clue 5), Gus wore ski (clue 2), and the tide chart's borrower has no gloves left.",
   "So Selma wore fleece and took the tide chart (clue 2). Clue 6 keeps fleece off 11:30 a.m., so Selma signed at 10:30 a.m."
  ],
  "solution": {
-  "key_idea": "Selma wore fingerless or fleece gloves; supposing fingerless leaves the tide chart no gloves at all, so she wore fleece.",
+  "key_idea": "Selma wore fingerless or fleece gloves; supposing fingerless leaves the tide chart's borrower no gloves at all, so she wore fleece.",
   "steps": [
    "Clue 3 puts Amara at 10:00 a.m. and Gus at noon. Clue 1 then puts Walt at 11:00 a.m., and the binoculars with Gus.",
    "By clue 2, Gus and the tide chart's borrower wore the ski and fleece gloves. By clue 5, Selma wore fingerless or fleece.",
-   "Suppose Selma wore fingerless. Then the spare key's borrower wore fleece (clue 5), so Gus wore ski, and the tide chart has no gloves left.",
+   "Suppose Selma wore fingerless. Then the spare key's borrower wore fleece (clue 5), so Gus (binoculars) wore ski, leaving the tide chart's borrower no gloves.",
    "So Selma wore fleece, not fingerless. Gus wore ski, Selma took the tide chart (clue 2), and the spare key went with fingerless (clue 5).",
    "Clue 6 keeps Selma's fleece off 11:30 a.m., so she signed at 10:30 a.m., and Teddy at 11:30 a.m.",
    "Clue 4 keeps the leather gloves off Amara, and clue 6 keeps them off Teddy, so Walt wore leather.",

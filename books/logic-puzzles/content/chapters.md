@@ -1,18 +1,18 @@
 # Chapter 1
 
-April in Thimble Harbor. The rain is warm, the tulips are in, and the lighthouse has opened for the season. The town's troubles are small ones: a mislabeled jar, a lost glove, a mix-up at the seed swap.
+April in Thimble Harbor. The rain is warm, the tulips are in, and the lighthouse has opened for the season. The town's troubles are small ones: a muddle of umbrellas, a lost glove, a mix-up at the seed swap.
 
 They are the perfect place to start. Each puzzle has one list of names and one list of things to match. Read a clue, mark it, and look for the only choice left. Lesson 1, on the next page, shows you how.
 
 # Chapter 2
 
-May brings the Spring Regatta, Kite Day and the Strawberry Social, and twice as many things to keep straight. Now every neighbor has two things to match, and the grid grows into a staircase.
+May and June bring the Spring Regatta, Kite Day and the Rhubarb Social, and twice as many things to keep straight. Now every neighbor has two things to match, and the grid grows into a staircase.
 
 The new skill is carrying a fact from one box to another. Lesson 2 shows how. By the end of this chapter you will do it without thinking.
 
 # Chapter 3
 
-Summer. The Fourth of July parade, fireworks on the green, a clambake on Thimble Beach, and lines for everything: the ferry, the pie table, the dunk tank.
+Summer. The Fourth of July parade, fireworks on the green, a clambake on Thimble Beach, and lines for everything: the ferry, the creamery window, the library book sale.
 
 This chapter is about order: who came first, who stood right behind whom, and who arrived exactly an hour later. Lesson 3 explains the difference between "before" and "right before." It matters more than you think.
 
@@ -32,10 +32,10 @@ Here clues start working in pairs. One clue tells you a little; two together tel
 
 November. The boats are hauled out, the first frost is on the boatyard, and the mysteries are bigger: a missing heirloom, a sunk rowboat, a key that wandered off for a day.
 
-These are full case files, with five suspects and four things to match, and each one ends with a question to answer. The last nine need one careful "Suppose." Lesson 6 shows you how to test an idea in pencil and know for certain.
+These are full case files, with five suspects and three things to match for each, and every one ends with a question to answer. The last nine need one careful "Suppose." Lesson 6 shows you how to test an idea in pencil and know for certain.
 
 # Chapter 7
 
-December 20, the eve of the Lantern Festival. At nine o'clock the light at Thimble Point blinks three times and goes dark. By morning, the town's beloved Keeper's Lamp is gone, and a note on the sill says only, "It will shine again."
+December 20, the eve of the Lantern Festival. All week the Keeper's Lamp has been lit each evening for the Festival. At nine o'clock it blinks three times and goes dark. By morning, the town's beloved lamp is gone, and a note on the sill says only, "It will shine again."
 
 Five puzzles, each one answering a single question. Solve them in order, then turn to "Putting It All Together" to name the person behind the Lighthouse Affair. No new lessons now. You have everything you need.

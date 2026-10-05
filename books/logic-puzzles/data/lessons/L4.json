@@ -2,16 +2,16 @@
  "lesson": 4,
  "names": [
   "Bea",
-  "Otto",
-  "Juno"
+  "Hugo",
+  "Kit"
  ],
  "texts": [
-  "Juno didn't eat the last scone.",
-  "Juno ate the last scone.",
-  "Either Bea or Otto ate the last scone."
+  "Kit didn't eat the last caramel apple.",
+  "Kit ate the last caramel apple.",
+  "Either Bea or Hugo ate the last caramel apple."
  ],
  "rule_text": "Exactly one of these statements is true.",
- "culprit": "Juno",
+ "culprit": "Kit",
  "cases": [
   {
    "case": "Bea",
@@ -23,7 +23,7 @@
    "fits": false
   },
   {
-   "case": "Otto",
+   "case": "Hugo",
    "truth": [
     true,
     false,
@@ -32,7 +32,7 @@
    "fits": false
   },
   {
-   "case": "Juno",
+   "case": "Kit",
    "truth": [
     false,
     true,
