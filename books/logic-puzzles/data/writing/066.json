@@ -9,15 +9,15 @@
   "The box showed up exactly 30 minutes after the basket."
  ],
  "hints": [
-  "Look at clue 2. Exactly 45 minutes is a wide gap for an evening that runs from 5:00 to 5:45. Where can it fit?",
+  "Look at clue 2. Exactly 45 minutes is a wide gap when the arrivals run from 5:00 to 5:45. Where can it fit?",
   "Comparisons rule out the ends, and a fixed gap of 45 minutes rules out even more. Which times can Lou have? Then add clue 4.",
   "So Lou came at 5:00 and the squash soup at 5:45. Clue 4 then fits only one way: Rosa at 5:15, the apple crisp at 5:30.",
   "Clue 3 keeps the basket away from Lou, so it did not come at 5:00. By clue 6, the basket came at 5:15 and the box at 5:45."
  ],
  "solution": {
-  "key_idea": "Clue 2's 45-minute gap fills the whole evening, so Lou came at 5:00 and the squash soup at 5:45.",
+  "key_idea": "Clue 2's 45-minute gap spans all the arrival times, so Lou came at 5:00 and the squash soup at 5:45.",
   "steps": [
-   "Clue 2 puts exactly 45 minutes between Lou and the squash soup, the whole evening. So Lou came at 5:00 and the squash soup at 5:45.",
+   "Clue 2 puts exactly 45 minutes between Lou and the squash soup, from the first arrival to the last. So Lou came at 5:00 and the squash soup at 5:45.",
    "By clue 4, Rosa came before the apple crisp. Lou holds 5:00 and the soup holds 5:45, so Rosa came at 5:15 and the crisp at 5:30.",
    "Rosa did not bring the baked beans (clue 5), the apple crisp or the squash soup, so she brought the cornbread. That leaves the baked beans for Lou.",
    "Clue 3 keeps the basket from Lou, so not at 5:00. By clue 6, the basket came at 5:15, with Rosa, and the box at 5:45.",

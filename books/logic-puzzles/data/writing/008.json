@@ -14,7 +14,7 @@
   "key_idea": "Clue 1 offers Bubbles to Enzo or Quinn, and Quinn already has Barnacle, so Bubbles went home with Enzo.",
   "steps": [
    "Clue 3 gives Quinn Barnacle, so Quinn has no other starter and nobody else has Barnacle.",
-   "Clue 1 says Bubbles went to Enzo or Quinn. Quinn is taken, so Enzo took Bubbles.",
+   "Clue 1 says Bubbles went to Enzo or Quinn. Quinn already has Barnacle, so Enzo took Bubbles.",
    "Clue 2 gives Wren Admiral or Barnacle. Barnacle is Quinn's, so Wren took Admiral.",
    "Dev took Pip."
   ],

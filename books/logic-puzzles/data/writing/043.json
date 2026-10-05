@@ -19,7 +19,7 @@
   "steps": [
    "Clue 1 keeps the wet paint off Sunday, so by clue 5 the wet paint note was written on Thursday.",
    "The odd flicker was not Thursday's note, and clue 1 keeps it off Sunday, so it was Friday's or Saturday's.",
-   "By clue 2, the stuck latch came two nights after the flicker. So the flicker was Friday, the latch Sunday, and the gull nest Saturday.",
+   "Clue 2 puts the latch two nights after the flicker, and a Saturday flicker would need Monday. So the flicker was Friday, the latch Sunday, the gull nest Saturday.",
    "By clue 7, neither Teddy nor Arlo locked up Sunday, and by clue 3 Priya did not note the latch. So Della locked up Sunday.",
    "By clue 6, Priya locked up on Thursday, so the wet paint note was hers.",
    "By clue 4, Arlo did not note the flicker, so he noted the gull nest on Saturday. Teddy saw the odd flicker on Friday."
@@ -27,5 +27,5 @@
   "epilogue": "Teddy had locked up on Friday and seen the flicker from the causeway, too quick for his camera. Lena underlined his note twice and kept the log in her desk."
  },
  "tip": "Two either-or clues that meet on the same square can settle it between them.",
- "answer_line": "Teddy noticed the odd flicker, on Friday night."
+ "answer_line": "Teddy noticed the odd flicker on Friday night."
 }

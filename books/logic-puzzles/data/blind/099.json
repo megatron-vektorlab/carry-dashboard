@@ -1,0 +1,66 @@
+{
+ "no": 99,
+ "people": "people",
+ "categories": [
+  {
+   "label": "Person",
+   "values": [
+    "Mabel",
+    "Priya",
+    "Zeke",
+    "Jonah",
+    "Linus"
+   ]
+  },
+  {
+   "label": "Spot",
+   "values": [
+    "the Point",
+    "the pier",
+    "the slipway",
+    "the beach",
+    "the seawall"
+   ]
+  },
+  {
+   "label": "Light",
+   "values": [
+    "flashlight",
+    "headlamp",
+    "lantern",
+    "bike light",
+    "penlight"
+   ]
+  },
+  {
+   "label": "Time",
+   "values": [
+    "7:00 p.m.",
+    "7:20 p.m.",
+    "7:40 p.m.",
+    "8:00 p.m.",
+    "8:20 p.m."
+   ],
+   "ordered": true,
+   "numbers": [
+    1140,
+    1160,
+    1180,
+    1200,
+    1220
+   ],
+   "note": "values in order from smallest to largest number; numbers [1140, 1160, 1180, 1200, 1220] (unit: minutes)"
+  }
+ ],
+ "clues": [
+  "Linus carried either a headlamp or a bike light.",
+  "Of Jonah and whoever arrived at 7:40 p.m., one carried the headlamp and the other the penlight.",
+  "One of Mabel and the person who reached the Point arrived at 8:00 p.m., and the other at 7:20 p.m.",
+  "Zeke and the person on the beach are two different people: one arrived at 8:20 p.m., the other at 7:20 p.m.",
+  "Whoever went to the slipway got there at either 7:00 p.m. or 7:40 p.m.",
+  "Whoever wore the headlamp arrived exactly 20 minutes after whoever carried the penlight.",
+  "The person at the Point arrived exactly an hour after the person at the pier.",
+  "The person with the lantern arrived at either 7:00 p.m. or 7:20 p.m."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

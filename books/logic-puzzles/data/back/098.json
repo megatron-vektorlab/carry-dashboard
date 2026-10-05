@@ -1,0 +1,89 @@
+{
+ "no": 98,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Headed to=the library",
+   "one_of": [
+    "Person=Rosa",
+    "Person=Pearl"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Headed to=the inn",
+   "b": "Headed to=the church",
+   "cat": "Time",
+   "rel": "a_less"
+  },
+  {
+   "kind": "compare",
+   "a": "Headed to=the bakery",
+   "b": "Headed to=the inn",
+   "cat": "Time",
+   "rel": "a_greater_by",
+   "by": 20
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Received=mail sack",
+    "Time=5:40 p.m."
+   ],
+   "options": [
+    "Person=Hattie",
+    "Person=Kenji"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Person=Jonah",
+    "Person=Rosa"
+   ],
+   "options": [
+    "Received=spare key",
+    "Time=6:00 p.m."
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Received=lantern",
+   "not": [
+    "Person=Pearl",
+    "Person=Rosa"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Person=Kenji",
+   "b": "Headed to=the inn",
+   "cat": "Time",
+   "rel": "a_less"
+  },
+  {
+   "kind": "either",
+   "a": "Time=6:20 p.m.",
+   "one_of": [
+    "Person=Jonah",
+    "Person=Kenji"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Received=pie tin",
+   "one_of": [
+    "Person=Hattie",
+    "Person=Pearl"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Person=Hattie",
+   "b": "Headed to=the store",
+   "cat": "Time",
+   "rel": "a_greater_by",
+   "by": 20
+  }
+ ]
+}

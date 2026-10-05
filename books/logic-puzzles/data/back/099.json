@@ -1,0 +1,78 @@
+{
+ "no": 99,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Person=Linus",
+   "one_of": [
+    "Light=headlamp",
+    "Light=bike light"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Person=Jonah",
+    "Time=7:40 p.m."
+   ],
+   "options": [
+    "Light=headlamp",
+    "Light=penlight"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Person=Mabel",
+    "Spot=the Point"
+   ],
+   "options": [
+    "Time=8:00 p.m.",
+    "Time=7:20 p.m."
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Person=Zeke",
+    "Spot=the beach"
+   ],
+   "options": [
+    "Time=8:20 p.m.",
+    "Time=7:20 p.m."
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Spot=the slipway",
+   "one_of": [
+    "Time=7:00 p.m.",
+    "Time=7:40 p.m."
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Light=headlamp",
+   "b": "Light=penlight",
+   "cat": "Time",
+   "rel": "a_greater_by",
+   "by": 20
+  },
+  {
+   "kind": "compare",
+   "a": "Spot=the Point",
+   "b": "Spot=the pier",
+   "cat": "Time",
+   "rel": "a_greater_by",
+   "by": 60
+  },
+  {
+   "kind": "either",
+   "a": "Light=lantern",
+   "one_of": [
+    "Time=7:00 p.m.",
+    "Time=7:20 p.m."
+   ]
+  }
+ ]
+}

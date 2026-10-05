@@ -1,0 +1,84 @@
+{
+ "no": 100,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Job=choir",
+   "b": "Coat=red",
+   "cat": "Time",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Volunteer=Gideon",
+    "Volunteer=Hattie"
+   ],
+   "options": [
+    "Time=7:00 p.m.",
+    "Time=8:00 p.m."
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Coat=navy",
+   "one_of": [
+    "Job=choir",
+    "Job=lanterns"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Job=tickets",
+   "one_of": [
+    "Coat=gray",
+    "Coat=camel"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Volunteer=Wren",
+   "b": "Coat=green",
+   "cat": "Time",
+   "rel": "a_greater_by",
+   "by": 30
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Volunteer=Lena",
+    "Volunteer=Gideon"
+   ],
+   "options": [
+    "Job=tickets",
+    "Job=choir"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Volunteer=Wren",
+    "Job=cocoa"
+   ],
+   "options": [
+    "Time=9:00 p.m.",
+    "Time=8:30 p.m."
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Volunteer=Lena",
+   "b": "Coat=camel",
+   "cat": "Time",
+   "rel": "a_less"
+  },
+  {
+   "kind": "either",
+   "a": "Volunteer=Wren",
+   "one_of": [
+    "Time=7:00 p.m.",
+    "Time=8:30 p.m."
+   ]
+  }
+ ]
+}

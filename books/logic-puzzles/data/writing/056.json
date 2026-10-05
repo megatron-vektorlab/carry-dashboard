@@ -7,7 +7,7 @@
   "So Pablo and Yusuf both tell the truth, and neither is the culprit. Yusuf names Arlo or Pablo, which leaves Arlo."
  ],
  "solution": {
-  "key_idea": "Pablo vouches for Yusuf, so they would fib together; with only one fibber allowed, both are truthful, and Yusuf's statement points to Arlo.",
+  "key_idea": "Pablo vouches for Yusuf, so they stand or fall together; with only one fibber allowed, both are truthful, and Yusuf's statement points to Arlo.",
   "steps": [
    "The rule says only the culprit fibs, so exactly one statement is false, and it belongs to the culprit.",
    "Pablo says Yusuf is telling the truth, so Pablo's and Yusuf's statements are both true or both false.",

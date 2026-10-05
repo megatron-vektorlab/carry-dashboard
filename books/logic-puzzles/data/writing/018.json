@@ -10,10 +10,10 @@
  "hints": [
   "Look at the box that matches buoys with spots. Where could the striped buoy's owner fish?",
   "Clue 1 crosses out two spots for the striped buoy's owner. Read clue 2 beside it: which buoy must the East Cove lobsterman own?",
-  "Clue 2 gives East Cove the checkered buoy, and Oscar does not fish there (clue 5). So by clue 3, Oscar owns the striped buoy."
+  "Clues 1 and 2 give East Cove the checkered buoy, and Oscar does not fish there (clue 5). So by clue 3, Oscar owns the striped buoy."
  ],
  "solution": {
-  "key_idea": "Clues 1 and 2 tie the checkered buoy to East Cove, so clue 5 keeps Oscar off it, and clue 3 gives him striped.",
+  "key_idea": "Clues 1 and 2 put the checkered buoy at East Cove; Oscar does not fish there (clue 5), so clue 3 gives him striped.",
   "steps": [
    "Clue 1 leaves the striped buoy's owner only the Narrows.",
    "By clue 2, the East Cove lobsterman owns the checkered or striped buoy. Striped goes with the Narrows, so East Cove goes with checkered.",
@@ -23,5 +23,6 @@
   ],
   "epilogue": "Oscar got his striped buoy back for the Narrows, Nico his checkered one for East Cove, and Pablo his orange one for Gull Rock. Nico claimed his had drifted halfway to Pine Key."
  },
- "tip": "X's can be carried too, not just dots."
+ "tip": "X's can be carried too, not just dots.",
+ "story": "Last night's gale sent lobster buoys bobbing all over the harbor, from Thimble Beach clear to the ferry dock. Otis spent the morning fishing them out with a boat hook, whistling a shanty slightly off-key. Three of the strays belong to three different lobstermen, and the harbor log has to say who fishes where. Whose buoy is whose, and where does each of them fish?"
 }

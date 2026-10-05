@@ -10,7 +10,7 @@
  "hints": [
   "Look at the baguettes column in the box where customers meet orders. Who could possibly have ordered them?",
   "Every comparison hides an X. Clues 3 and 4 compare Lou and Zeke with the baguettes' customer. Could either of them be that customer?",
-  "So Milo ordered the baguettes. By clues 3 and 4, Lou came before Milo and Zeke after him, and clue 1 keeps Zeke off 10 a.m."
+  "With clue 5 ruling out Nico, Milo ordered the baguettes. By clues 3 and 4, Lou came before him and Zeke after, and clue 1 keeps Zeke off 10 a.m."
  ],
  "solution": {
   "key_idea": "Clues 3, 4 and 5 each rule out one customer for the baguettes, so they were Milo's, and he came between Lou and Zeke.",
@@ -23,5 +23,6 @@
   ],
   "epilogue": "Rosa's book read Lou, Milo, Zeke and Nico, from 7 to 10 a.m. Zeke carried the plate-sized cinnamon bun out with both hands, and Nico swore it was bigger than his boat."
  },
- "tip": "Every comparison hides an X: nobody comes in earlier than themselves."
+ "tip": "Every comparison hides an X: nobody comes in earlier than themselves.",
+ "story": "Rosa's order book is her pride, second only to Gloria, her oldest sourdough starter. On Friday morning four special orders waited on the back shelf at Salt & Sugar, among them a cinnamon bun the size of a dinner plate. Four customers came to collect them, each at a different hour. In the rush, Rosa never wrote down who took what. Can you set her book straight before the next rush?"
 }

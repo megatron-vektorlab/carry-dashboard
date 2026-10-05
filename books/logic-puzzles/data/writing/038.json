@@ -1,5 +1,6 @@
 {
  "no": 38,
+ "story": "Teddy lined up the Lighthouse Anniversary Committee in one row in front of Thimble Point Light and took forty-two pictures to get one where nobody blinked. The Gazette needs the caption, left to right as the camera saw them. Studying the contact sheet with her magnifier, Ada notes that in every frame one member is glancing up at the lantern room. Can you name all five, left to right?",
  "clues": [
   "Otis stood somewhere to the left of Jonah.",
   "Gus stood directly to the left of Otis, with nobody in between.",
@@ -8,7 +9,7 @@
  ],
  "hints": [
   "Look at the first column. Who could possibly stand at the far left of the photo?",
-  "Read down the columns too. Comparisons rule out the ends: check each clue for who it keeps off the far left.",
+  "Read down the columns too. Anyone who stood to the right of someone cannot be first: check each clue for who it keeps off the far left.",
   "Clues 1 to 4 keep Jonah, Otis, Lena and Hattie off the far left. So Gus stood first, and by clue 2, Otis stood second."
  ],
  "solution": {

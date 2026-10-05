@@ -7,7 +7,7 @@
  ],
  "hints": [
   "Look at clue 2. In a row of only five blankets, which pairs of spots are exactly three apart?",
-  "Count the exact gap, and remember that comparisons rule out the ends. Which of Pablo's possible spots leaves room for Amara on his right?",
+  "Count the exact gap in clue 2. Then use clue 1: which of Pablo's possible spots leaves room for Amara on his right?",
   "Clue 1 keeps Pablo off the fifth blanket, so by clue 2 Pablo sat fourth and Lena first. Then Amara took the fifth blanket."
  ],
  "solution": {

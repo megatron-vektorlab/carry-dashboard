@@ -10,7 +10,7 @@
  ],
  "hints": [
   "Look at Oscar's row. Three clues name him, and clue 3 decides who can be fourth. Which spots are left for him?",
-  "Comparisons rule out the ends. Clues 4 and 6 each compare Oscar with someone. Then add what clues 1 and 3 cross out in his row.",
+  "Clue 4 puts someone ahead of Oscar and clue 6 puts someone behind him, so which ends are ruled out? Then add what clues 1 and 3 cross out.",
   "Clues 4 and 6 keep Oscar off both ends, and clues 1 and 3 rule out second and fourth. So Oscar held the third spot."
  ],
  "solution": {

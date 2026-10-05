@@ -7,7 +7,7 @@
   "Imani picked either navy or sea green."
  ],
  "hints": [
-  "Look at Imani's row of boats and at the navy column of owners. After clues 1 and 2, how many blanks does each have?",
+  "Look at Imani's row where owners meet boats, and the navy column where owners meet colors. After clues 1 and 2, how many blanks does each have?",
   "Clues 1 and 2 each leave one blank, so each gives a dot. Now read clue 3 beside clue 2: could the navy go on Imani's boat?",
   "Imani's boat is the Lucky Gull, and navy is not hers, so clue 3 puts navy on the Wavelet. Navy is Basil's, so Basil brought in the Wavelet."
  ],
@@ -22,5 +22,5 @@
   ],
   "epilogue": "Gus painted the Sea Pea cream, Imani gave the Lucky Gull a coat of sea green, and Basil's Wavelet went navy. Felix called all three shipshape. Mostly shipshape."
  },
- "tip": "When two clues talk about the same thing, read them side by side."
+ "tip": "Two clues about the same paint can settle together what neither settles alone."
 }

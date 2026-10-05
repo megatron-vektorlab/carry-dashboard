@@ -1,5 +1,6 @@
 {
  "no": 75,
+ "story": "Twice an hour on harvest weekend, a hay wagon rattles from Main Street to Hilltop Orchard's fields. Four riders paid different fares to different stops, and each rode home with an armful from the market barn, Teddy with his camera perched on top of the pile. Now the fare can is a dollar off, and the farmer wants it to balance before the next run. Where did each rider go, what did each carry home, and what did each pay?",
  "clues": [
   "Basil paid exactly $2 more than the rider bound for the farm stand.",
   "The rider headed for the corn maze paid exactly $6 more than Teddy.",
@@ -22,7 +23,7 @@
    "Only $3 and $9 are exactly $6 apart, so by clue 2 Teddy paid $3 and the corn maze rider paid $9.",
    "Clue 7 keeps the apple crate from Teddy, so by clue 3 Teddy carried the cider jug and the orchard gate rider the apple crate.",
    "Clues 5, 3 and 6 keep the pumpkin from the corn maze, orchard gate and farm stand, so it went to the cider stand.",
-   "Teddy was not the $9 corn maze rider, the pumpkin's rider, or the orchard gate rider (clue 3), so he rode to the farm stand.",
+   "Teddy's $3 and cider jug rule out the corn maze and the cider stand. Clue 3 rules out the orchard gate, so he rode to the farm stand.",
    "By clue 1, Basil paid $5, two dollars more than Teddy's $3. Clue 4 then gives Nadia $9 and Zeke $7.",
    "So Nadia rode to the corn maze. The apple crate, at the orchard gate, is off Basil's $5 (clue 8), so Zeke had it.",
    "That leaves Basil at the cider stand with the pumpkin, and Nadia at the corn maze with the mums."

@@ -8,7 +8,7 @@
  ],
  "hints": [
   "Look at Felix's row. Clue 4 puts someone ahead of him, and clue 1 puts someone behind him. Where can he stand?",
-  "Comparisons rule out the ends. Put clues 3 and 4 together: if Hugo is third or fourth, how close to the front can Felix be?",
+  "Clue 4 is a comparison: Felix stood behind Hugo. If Hugo is third or fourth (clue 3), how close to the front can Felix be?",
   "Hugo was third or fourth (clue 3), so Felix, behind him, was fourth or fifth. Clue 1 puts Vera behind Felix, so Felix was fourth and Hugo third."
  ],
  "solution": {
