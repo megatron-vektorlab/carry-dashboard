@@ -124,6 +124,10 @@ def liar_table(names, n_statements=None, rh=0.44):
     """Truth table: one row per suspect tested, one column per statement."""
     n = len(names)
     cw = max(0.62, max(width(x, LABEL_PT, "sfb") for x in names) + 0.14)
+    name_w0 = max(width(f"If {x} did it") for x in names) + 0.25
+    short = name_w0 + (n + 2) * cw > 7.0
+    if short:
+        cw = max(0.62, (7.0 - name_w0) / (n + 2))
     name_w = max(width(f"If {x} did it") for x in names) + 0.25
     out = [r"\begin{tikzpicture}[x=1in,y=1in]"]
     cols = [f"{x[:1]}." for x in names] + ["True", "Fits?"]
@@ -131,7 +135,7 @@ def liar_table(names, n_statements=None, rh=0.44):
     for j, c in enumerate(cols):
         x = name_w + j * cw
         out.append(rf"\fill[black!13] ({x:.3f},{top:.3f}) rectangle ({x + cw:.3f},{top + rh:.3f});")
-        out.append(rf"\node[font=\bfseries] at ({x + cw / 2:.3f},{top + rh / 2:.3f}) {{{esc(c) if j >= n else esc(names[j])}}};")
+        out.append(rf"\node[font=\bfseries] at ({x + cw / 2:.3f},{top + rh / 2:.3f}) {{{esc(c) if j >= n else (esc(names[j][:1]) + "." if short else esc(names[j]))}}};")
     for i, x in enumerate(names):
         y = top - (i + 1) * rh
         out.append(rf"\node[anchor=east] at ({name_w - 0.1:.3f},{y + rh / 2:.3f}) {{If {esc(x)} did it}};")

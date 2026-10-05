@@ -11,7 +11,7 @@
 \linespread{1.06}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.55\baselineskip plus 2pt}
-\RaggedRight
+\raggedright\emergencystretch=2em
 \hyphenpenalty=10000 \exhyphenpenalty=10000
 \clubpenalty=10000 \widowpenalty=10000
 \pagestyle{scrheadings}
@@ -81,7 +81,7 @@
   #6
   \clearpage}
 \newcommand{\lessonhead}[2]{\clearpage\setpuzzlefoot{}%
-  {\display\fontsize{14}{16}\selectfont LESSON #1\par}\vspace{2pt}
+  {\display\fontsize{16}{18}\selectfont LESSON #1\par}\vspace{2pt}
   {\display\fontsize{30}{34}\selectfont #2\par}\vspace{4pt}\noindent\rule{\linewidth}{1.2pt}\par}
 \makeatletter
 \renewcommand*{\subsection}{\@startsection{subsection}{2}{0pt}{10pt}{4pt}{\display\fontsize{21}{24}\selectfont}}

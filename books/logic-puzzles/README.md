@@ -15,7 +15,13 @@ slikama mreže, tri razine savjeta za svaku zagonetku i objašnjenim rješenjima
 | `output/marketing/*.png` | primjeri stranica (lekcija, zagonetka, savjeti, rješenje) |
 | `KDP-LISTING.md` | sve vrijednosti za KDP (naslov, opis, ključne riječi, kategorije, cijena, AI-izjava) |
 
-Detalji o objavi, cijeni i zaradi po primjerku su u `KDP-LISTING.md` i na dnu ove datoteke.
+**Knjiga ima 321 stranicu** (8,5 × 11 in, veliki tisak), hrbat 0,723 in. Trošak tiska na KDP-u je
+oko 6,46 $; uz preporučenu cijenu **16,99 $** zarada je oko **3,73 $ po primjerku** (uz 15,99 $ oko 3,13 $).
+Sve vrijednosti za KDP su u `KDP-LISTING.md`.
+
+**Prije objave odlučite:** ime autora (sada „Ivan Sikuten“, mijenja se u `lp/config.py`, zatim ponovno
+izraditi knjigu i omot) i provjerite na Amazonu da naziv serije/grada nije zauzet. Preporučujem naručiti
+jedan tiskani probni primjerak prije puštanja u prodaju.
 
 ## Što je drugačije od stare verzije
 

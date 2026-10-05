@@ -85,11 +85,13 @@ KDP rejects a cover whose spine doesn't match.
 
 * Territories: all territories (worldwide rights).
 * Royalty: 60 %.
-* Suggested list price: **$15.99** (UK £12.99, EU €14.99, CA $21.99, AU $24.99).
+* Suggested list price: **$16.99** (UK £13.99, EU €15.99, CA $22.99, AU $26.99).
   Comparable large-print logic and cozy puzzle books sell for $9.99–$16.
-* Royalty estimate (US): see the page count in `README.md`. Printing cost for
-  black-and-white 8.5 × 11 is $1.00 + $0.017 per page (≈ $5.70 at 276 pages),
-  so 60 % × $15.99 − $5.70 ≈ **$3.90 per sale** (at $14.99 ≈ $3.30). KDP's
+* Royalty estimate (US): the interior has **321 pages**. Printing cost for
+  black-and-white 8.5 × 11 is $1.00 + $0.017 per page ≈ **$6.46**, so
+  60 % × $16.99 − $6.46 ≈ **$3.73 per sale** (at $15.99 ≈ $3.13; at $14.99
+  ≈ $2.53). Large print makes the book thick; the 16 pt text is the selling
+  point, so do not shrink it to save pages. KDP's
   pricing calculator is authoritative.
 * Expanded distribution: optional; leave off at launch.
 
