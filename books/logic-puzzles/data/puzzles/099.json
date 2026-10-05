@@ -1,0 +1,673 @@
+{
+ "no": 99,
+ "chapter": 7,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 99001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Moonlight Dinghy",
+ "story": "After dark, under a thin December moon, Felix found his own dinghy gone from its slip. The tide was high and the causeway under water, so anyone who reached Thimble Point that evening got there by boat, and the dinghy was the only boat missing. Five people admit they were down by the water, each at a different spot, arriving at a different time, by a different light. Who went where, when, and by which light?",
+ "question": {
+  "text": "Who rowed out to Thimble Point after dark?",
+  "cat": "Spot",
+  "value": "the Point"
+ },
+ "answer": "Jonah",
+ "cast": [
+  "Mabel",
+  "Jonah",
+  "Priya",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 99,
+   "title": "The Moonlight Dinghy",
+   "story": "After dark, under a thin December moon, Felix found his own dinghy gone from its slip. The tide was high and the causeway under water, so anyone who reached Thimble Point that evening got there by boat, and the dinghy was the only boat missing. Five people admit they were down by the water, each at a different spot, arriving at a different time, by a different light. Who went where, when, and by which light?",
+   "entity": [
+    "person",
+    "people"
+   ],
+   "cast": [
+    "Mabel",
+    "Jonah",
+    "Priya",
+    "Felix"
+   ],
+   "question": {
+    "text": "Who rowed out to Thimble Point after dark?",
+    "cat": "Spot",
+    "value": "the Point"
+   },
+   "answer": "Jonah"
+  },
+  "cats": [
+   {
+    "label": "Person",
+    "kind": "name",
+    "values": [
+     "Mabel",
+     "Priya",
+     "Zeke",
+     "Jonah",
+     "Linus"
+    ]
+   },
+   {
+    "label": "Spot",
+    "values": [
+     "the Point",
+     "the pier",
+     "the slipway",
+     "the beach",
+     "the seawall"
+    ],
+    "ref": "the person at {v}",
+    "pred": "went out to {v}",
+    "neg": "did not go out to {v}",
+    "either": "went out to either {a} or {b}",
+    "nor": "went out to neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Light",
+    "values": [
+     "flashlight",
+     "headlamp",
+     "lantern",
+     "bike light",
+     "penlight"
+    ],
+    "ref": "the person with the {v}",
+    "pred": "brought a {v}",
+    "neg": "did not bring a {v}",
+    "either": "brought either a {a} or a {b}",
+    "nor": "brought neither a {a} nor a {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1140,
+     1160,
+     1180,
+     1200,
+     1220
+    ],
+    "labels": [
+     "7:00 p.m.",
+     "7:20 p.m.",
+     "7:40 p.m.",
+     "8:00 p.m.",
+     "8:20 p.m."
+    ],
+    "ref": "the person who arrived at {x}",
+    "pred": "arrived at {x}",
+    "neg": "did not arrive at {x}",
+    "either": "arrived at either {a} or {b}",
+    "nor": "arrived at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "arrived later than {y}",
+    "less": "arrived earlier than {y}",
+    "dmore": "arrived exactly {d} after {y}",
+    "dless": "arrived exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "arrived 20 minutes after {y}",
+    "dless1": "arrived 20 minutes before {y}",
+    "step": 20,
+    "values": [
+     "7:00 p.m.",
+     "7:20 p.m.",
+     "7:40 p.m.",
+     "8:00 p.m.",
+     "8:20 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   3,
+   2,
+   4,
+   0,
+   1
+  ],
+  [
+   2,
+   4,
+   0,
+   1,
+   3
+  ],
+  [
+   1,
+   2,
+   4,
+   3,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Linus brought either a headlamp or a bike light.",
+  "Of Jonah and the person who arrived at 7:40 p.m., one brought a headlamp and the other brought a penlight.",
+  "Of Mabel and the person at the Point, one arrived at 8:00 p.m. and the other arrived at 7:20 p.m.",
+  "Of Zeke and the person at the beach, one arrived at 8:20 p.m. and the other arrived at 7:20 p.m.",
+  "The person at the slipway arrived at either 7:00 p.m. or 7:40 p.m.",
+  "The person with the headlamp arrived 20 minutes after the person with the penlight.",
+  "The person at the Point arrived exactly 60 minutes after the person at the pier.",
+  "The person with the lantern arrived at either 7:00 p.m. or 7:20 p.m."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 means the headlamp cannot be 7:00 p.m. and the penlight cannot be 8:20 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 means the Point cannot be 7:00 p.m., 7:20 p.m., or 7:40 p.m. and the pier cannot be 7:40 p.m., 8:00 p.m., or 8:20 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    7
+   ],
+   "text": "The Point must go with 8:00 p.m.: clue 7 rules out 7:00 p.m., 7:20 p.m., and 7:40 p.m.; clue 3 rules out 8:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Mabel must go with 7:20 p.m.: clue 3 rules out 7:00 p.m., 7:40 p.m., and 8:20 p.m.; 8:00 p.m. is already ruled out for the Point."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since the Point can still be only 8:00 p.m. and the pier can still be only 7:00 p.m. or 7:20 p.m., clue 7 means the pier cannot be 7:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The pier must go with 7:00 p.m.: clue 7 rules out 7:20 p.m., 7:40 p.m., 8:00 p.m., and 8:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The slipway must go with 7:40 p.m.: clue 5 rules out 7:20 p.m., 8:00 p.m., and 8:20 p.m.; 7:00 p.m. already goes with the pier."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Zeke must go with 8:20 p.m.: clue 4 rules out 7:00 p.m., 7:40 p.m., and 8:00 p.m.; 7:20 p.m. already goes with Mabel."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Zeke must go with the seawall: clue 4 rules out the beach; the Point is already ruled out for 8:00 p.m.; the pier is already ruled out for 7:00 p.m.; the slipway is already ruled out for 7:40 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Mabel must go with the beach: clue 3 rules out the Point; the pier and the slipway are already ruled out for 7:20 p.m.; the seawall already goes with Zeke."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "7:20 p.m. goes with Mabel, so 7:20 p.m. also goes with the beach."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The seawall must go with 8:20 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [],
+   "text": "SUPPOSE TEST: try Jonah with the penlight.",
+   "chain": [
+    "Suppose Jonah goes with the penlight.",
+    "The slipway must go with the headlamp: the flashlight, the lantern, and the bike light are already ruled out for 7:40 p.m.; the penlight is already ruled out for Jonah.",
+    "7:40 p.m. goes with the slipway, so 7:40 p.m. also goes with the headlamp.",
+    "But then clue 6 cannot be true."
+   ],
+   "result": "So Jonah does NOT go with the penlight: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Jonah must go with the headlamp: clue 2 rules out the flashlight, the lantern, and the bike light; the Suppose test ruled out the penlight."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Linus must go with the bike light: clue 1 rules out the flashlight, the lantern, and the penlight; the headlamp already goes with Jonah."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Zeke must go with the flashlight: the lantern and the penlight are already ruled out for 8:20 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "8:20 p.m. goes with Zeke, so 8:20 p.m. also goes with the flashlight."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The seawall goes with Zeke, so the seawall also goes with the flashlight."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Jonah must go with the Point: the pier is already ruled out for the headlamp; the slipway is already ruled out for 7:40 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "8:00 p.m. goes with the Point, so 8:00 p.m. also goes with Jonah."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The headlamp goes with Jonah, so the headlamp also goes with the Point."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The slipway must go with the penlight: the flashlight, the lantern, and the bike light are already ruled out for 7:40 p.m.; the headlamp already goes with the Point."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The beach must go with the lantern: the headlamp and the bike light are already ruled out for Mabel; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The pier must go with the bike light: the flashlight and the headlamp are already ruled out for 7:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "8:00 p.m. goes with the Point, so 8:00 p.m. also goes with the headlamp."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The bike light must go with 7:00 p.m.: clue 2 rules out 7:40 p.m.; 7:20 p.m. is already ruled out for Mabel; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The lantern must go with 7:20 p.m.: clue 8 rules out 7:40 p.m., 8:00 p.m., and 8:20 p.m.; 7:00 p.m. already goes with the bike light."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The penlight must go with 7:40 p.m.: clue 6 rules out 8:20 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Mabel goes with 7:20 p.m., so Mabel also goes with the lantern."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with the penlight: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Linus goes with the bike light, so Linus also goes with the pier."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with the slipway: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with 7:40 p.m.: 7:00 p.m. is already ruled out for the pier; 8:00 p.m. is already ruled out for the Point; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Linus must go with 7:00 p.m.: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 66,
+  "score": 189,
+  "revisits": 1,
+  "transfer": 34,
+  "trial": 1,
+  "clue_steps": 9
+ },
+ "trial_chain": 9,
+ "table": [
+  [
+   "Mabel",
+   "the beach",
+   "lantern",
+   "7:20 p.m."
+  ],
+  [
+   "Priya",
+   "the slipway",
+   "penlight",
+   "7:40 p.m."
+  ],
+  [
+   "Zeke",
+   "the seawall",
+   "flashlight",
+   "8:20 p.m."
+  ],
+  [
+   "Jonah",
+   "the Point",
+   "headlamp",
+   "8:00 p.m."
+  ],
+  [
+   "Linus",
+   "the pier",
+   "bike light",
+   "7:00 p.m."
+  ]
+ ],
+ "score": 189
+}

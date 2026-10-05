@@ -1,0 +1,788 @@
+{
+ "no": 98,
+ "chapter": 7,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 98001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Ferry Dock Hand-Offs",
+ "story": "Between five o'clock and twenty past six on Festival Eve, the ferry dock bustled with errands, and Pilot the beagle greeted everyone in his orange life vest. Five people were each handed something there, from a festival lantern to the spare lighthouse key, and each went on somewhere different. Teddy says he passed the key along on his way to the green. Ada would like the grid's word for it. Who got what, when, and where did each go next?",
+ "question": {
+  "text": "Who received the spare key at the ferry dock?",
+  "cat": "Received",
+  "value": "spare key"
+ },
+ "answer": "Jonah",
+ "cast": [
+  "Jonah",
+  "Hattie",
+  "Rosa",
+  "Teddy"
+ ],
+ "state": {
+  "theme": {
+   "slot": 98,
+   "title": "The Ferry Dock Hand-Offs",
+   "story": "Between five o'clock and twenty past six on Festival Eve, the ferry dock bustled with errands, and Pilot the beagle greeted everyone in his orange life vest. Five people were each handed something there, from a festival lantern to the spare lighthouse key, and each went on somewhere different. Teddy says he passed the key along on his way to the green. Ada would like the grid's word for it. Who got what, when, and where did each go next?",
+   "entity": [
+    "person",
+    "people"
+   ],
+   "cast": [
+    "Jonah",
+    "Hattie",
+    "Rosa",
+    "Teddy"
+   ],
+   "question": {
+    "text": "Who received the spare key at the ferry dock?",
+    "cat": "Received",
+    "value": "spare key"
+   },
+   "answer": "Jonah"
+  },
+  "cats": [
+   {
+    "label": "Person",
+    "kind": "name",
+    "values": [
+     "Hattie",
+     "Jonah",
+     "Pearl",
+     "Rosa",
+     "Kenji"
+    ]
+   },
+   {
+    "label": "Received",
+    "values": [
+     "spare key",
+     "lantern",
+     "thermos",
+     "mail sack",
+     "pie tin"
+    ],
+    "ref": "the person with the {v}",
+    "pred": "was handed the {v}",
+    "neg": "was not handed the {v}",
+    "either": "was handed either the {a} or the {b}",
+    "nor": "was handed neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Headed to",
+    "values": [
+     "the inn",
+     "the bakery",
+     "the store",
+     "the church",
+     "the library"
+    ],
+    "ref": "the person headed to {v}",
+    "pred": "went on to {v}",
+    "neg": "did not go on to {v}",
+    "either": "went on to either {a} or {b}",
+    "nor": "went on to neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1020,
+     1040,
+     1060,
+     1080,
+     1100
+    ],
+    "labels": [
+     "5:00 p.m.",
+     "5:20 p.m.",
+     "5:40 p.m.",
+     "6:00 p.m.",
+     "6:20 p.m."
+    ],
+    "ref": "the person whose hand-off came at {x}",
+    "pred": "was handed something at {x}",
+    "neg": "was not handed anything at {x}",
+    "either": "was handed something at either {a} or {b}",
+    "nor": "was handed something at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "was handed something later than {y}",
+    "less": "was handed something earlier than {y}",
+    "dmore": "was handed something exactly {d} after {y}",
+    "dless": "was handed something exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "was handed something 20 minutes after {y}",
+    "dless1": "was handed something 20 minutes before {y}",
+    "step": 20,
+    "values": [
+     "5:00 p.m.",
+     "5:20 p.m.",
+     "5:40 p.m.",
+     "6:00 p.m.",
+     "6:20 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   0,
+   4,
+   2,
+   3
+  ],
+  [
+   0,
+   3,
+   4,
+   1,
+   2
+  ],
+  [
+   2,
+   4,
+   0,
+   3,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     4
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  }
+ ],
+ "texts": [
+  "The person headed to the library is either Rosa or Pearl.",
+  "The person headed to the inn was handed something earlier than the person headed to the church.",
+  "The person headed to the bakery was handed something 20 minutes after the person headed to the inn.",
+  "Of the person with the mail sack and the person whose hand-off came at 5:40 p.m., one is Hattie and the other is Kenji.",
+  "Of the person with the spare key and the person whose hand-off came at 6:00 p.m., one is Jonah and the other is Rosa.",
+  "The person with the lantern is neither Pearl nor Rosa.",
+  "Kenji was handed something earlier than the person headed to the inn.",
+  "The person whose hand-off came at 6:20 p.m. is either Jonah or Kenji.",
+  "The person with the pie tin is either Hattie or Pearl.",
+  "Hattie was handed something 20 minutes after the person headed to the store."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the inn cannot be 6:20 p.m. and the church cannot be 5:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the inn can still be only 5:00 p.m., 5:20 p.m., 5:40 p.m., or 6:00 p.m., clue 3 means the bakery cannot be 5:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since the inn can still be only 5:00 p.m., 5:20 p.m., 5:40 p.m., or 6:00 p.m., clue 7 means the inn cannot be 5:00 p.m. and Kenji cannot be 6:00 p.m. or 6:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7,
+    8
+   ],
+   "text": "6:20 p.m. must go with Jonah: clue 8 rules out Hattie, Pearl, and Rosa; clue 7 rules out Kenji."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the inn can still be only 5:20 p.m., 5:40 p.m., or 6:00 p.m. and the church can still be only 5:20 p.m., 5:40 p.m., 6:00 p.m., or 6:20 p.m., clue 2 means the church cannot be 5:20 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the bakery can still be only 5:20 p.m., 5:40 p.m., 6:00 p.m., or 6:20 p.m. and the inn can still be only 5:20 p.m., 5:40 p.m., or 6:00 p.m., clue 3 means the bakery cannot be 5:20 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since Hattie can still be only 5:00 p.m., 5:20 p.m., 5:40 p.m., or 6:00 p.m., clue 10 means Hattie cannot be 5:00 p.m. and the store cannot be 6:00 p.m. or 6:20 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    7
+   ],
+   "text": "6:00 p.m. must go with Rosa: clue 5 rules out Hattie and Pearl; clue 7 rules out Kenji; Jonah already goes with 6:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    6,
+    9
+   ],
+   "text": "Rosa must go with the thermos: clue 6 rules out the lantern; clue 4 rules out the mail sack; clue 9 rules out the pie tin; the spare key is already ruled out for 6:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    5,
+    6
+   ],
+   "text": "Pearl must go with the pie tin: clue 5 rules out the spare key; clue 6 rules out the lantern; clue 4 rules out the mail sack; the thermos already goes with Rosa."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The spare key must go with Jonah: clue 5 rules out Hattie, Pearl, and Kenji; Rosa is already ruled out for 6:00 p.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:20 p.m. goes with Jonah, so 6:20 p.m. also goes with the spare key."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:00 p.m. goes with Rosa, so 6:00 p.m. also goes with the thermos."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "5:40 p.m. must go with the lantern: clue 4 rules out the mail sack; the pie tin is already ruled out for Pearl; the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since Hattie can still be only 5:20 p.m. or 5:40 p.m. and the store can still be only 5:00 p.m., 5:20 p.m., or 5:40 p.m., clue 10 means the store cannot be 5:40 p.m."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "SUPPOSE TEST: try Jonah with the bakery.",
+   "chain": [
+    "Suppose Jonah goes with the bakery.",
+    "6:20 p.m. goes with Jonah, so 6:20 p.m. also goes with the bakery.",
+    "The spare key goes with Jonah, so the spare key also goes with the bakery.",
+    "Since the inn can still be only 5:20 p.m., 5:40 p.m., or 6:00 p.m. and the church can still be only 5:40 p.m. or 6:00 p.m., clue 2 means the inn cannot be 6:00 p.m.",
+    "But then clue 3 cannot be true."
+   ],
+   "result": "So Jonah does NOT go with the bakery: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Jonah must go with the church: the Suppose test ruled out the bakery; clue 1 rules out the library; the inn and the store are already ruled out for 6:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    10
+   ],
+   "text": "6:20 p.m. must go with the church: clue 2 rules out the inn; clue 10 rules out the store; the bakery and the library are already ruled out for Jonah."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The spare key must go with the church: the inn, the bakery, the store, and the library are already ruled out for Jonah."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the bakery can still be only 5:40 p.m. or 6:00 p.m. and the inn can still be only 5:20 p.m., 5:40 p.m., or 6:00 p.m., clue 3 means the inn cannot be 6:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since the inn can still be only 5:20 p.m. or 5:40 p.m. and Kenji can still be only 5:00 p.m., 5:20 p.m., or 5:40 p.m., clue 7 means Kenji cannot be 5:40 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    7
+   ],
+   "text": "5:40 p.m. must go with Hattie: clue 4 rules out Pearl and Rosa; clue 7 rules out Kenji; Jonah already goes with 6:20 p.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The lantern goes with 5:40 p.m., so the lantern also goes with Hattie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    9
+   ],
+   "text": "Kenji must go with the mail sack: clue 5 rules out the spare key; clue 9 rules out the pie tin; the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since Hattie can still be only 5:40 p.m. and the store can still be only 5:00 p.m. or 5:20 p.m., clue 10 means the store cannot be 5:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The store must go with 5:20 p.m.: clue 10 rules out 5:00 p.m., 5:40 p.m., 6:00 p.m., and 6:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3,
+    7
+   ],
+   "text": "The inn must go with 5:40 p.m.: clue 7 rules out 5:00 p.m.; clue 3 rules out 6:00 p.m.; clue 2 rules out 6:20 p.m.; 5:20 p.m. already goes with the store."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The bakery must go with 6:00 p.m.: clue 3 rules out 5:00 p.m. and 5:20 p.m.; 6:20 p.m. is already ruled out for Jonah; 5:40 p.m. already goes with the inn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The library must go with 5:00 p.m.: 5:40 p.m. is already ruled out for Hattie; 6:20 p.m. is already ruled out for Jonah; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Rosa goes with 6:00 p.m., so Rosa also goes with the bakery."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    10
+   ],
+   "text": "Hattie must go with the inn: clue 10 rules out the store; clue 1 rules out the library; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    7
+   ],
+   "text": "Kenji must go with the store: clue 7 rules out the inn; clue 1 rules out the library; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Pearl must go with the library: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The thermos goes with Rosa, so the thermos also goes with the bakery."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The lantern must go with the inn: the store and the library are already ruled out for 5:40 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The mail sack must go with the store: the inn and the library are already ruled out for Kenji; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The pie tin must go with the library: the church is already ruled out for Pearl; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    5,
+    8
+   ],
+   "text": "Pearl must go with 5:00 p.m.: clue 4 rules out 5:40 p.m.; clue 5 rules out 6:00 p.m.; clue 8 rules out 6:20 p.m.; 5:20 p.m. is already ruled out for the store."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Kenji must go with 5:20 p.m.: clue 7 rules out 5:40 p.m., 6:00 p.m., and 6:20 p.m.; 5:00 p.m. already goes with Pearl."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The pie tin goes with Pearl, so the pie tin also goes with 5:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The mail sack must go with 5:20 p.m.: clue 4 rules out 5:40 p.m.; 6:20 p.m. is already ruled out for Jonah; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 74,
+  "score": 217,
+  "revisits": 8,
+  "transfer": 31,
+  "trial": 1,
+  "clue_steps": 17
+ },
+ "trial_chain": 8,
+ "table": [
+  [
+   "Hattie",
+   "lantern",
+   "the inn",
+   "5:40 p.m."
+  ],
+  [
+   "Jonah",
+   "spare key",
+   "the church",
+   "6:20 p.m."
+  ],
+  [
+   "Pearl",
+   "pie tin",
+   "the library",
+   "5:00 p.m."
+  ],
+  [
+   "Rosa",
+   "thermos",
+   "the bakery",
+   "6:00 p.m."
+  ],
+  [
+   "Kenji",
+   "mail sack",
+   "the store",
+   "5:20 p.m."
+  ]
+ ],
+ "score": 217
+}

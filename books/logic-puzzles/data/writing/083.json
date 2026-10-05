@@ -1,0 +1,35 @@
+{
+ "no": 83,
+ "clues": [
+  "Of Otis and Faye, one stopped by at 5:00 p.m. and the other at 6:30 p.m.",
+  "Of the visitor with the purple pen and the one who came at 5:30 p.m., one brought pretzels and the other brought almonds.",
+  "Whoever brought the almonds stopped by earlier than whoever brought the grapes.",
+  "Tariq and the visitor with the black pen were two different people: one brought grapes, the other pretzels.",
+  "The 6:00 p.m. visitor had either the blue pen or the green pen.",
+  "Whoever brought popcorn stopped by at either 5:30 p.m. or 6:30 p.m.",
+  "The 5:30 p.m. visitor, the one with almonds, the one with grapes, Otis, and the one with the blue pen were five different people.",
+  "Wren stopped by later than the visitor who brought grapes."
+ ],
+ "hints": [
+  "Look at the grapes in the box where snacks meet times. Which times could the grapes possibly have?",
+  "Comparisons rule out the ends. Apply clues 3 and 8 to the grapes, then see which time clue 7 takes away.",
+  "So the grapes came at 6:00 or 6:30, and Wren later (clue 8). Clue 1 gives 6:30 to Otis or Faye, so Wren came at 7:00.",
+  "By clue 2, the 5:30 visitor brought pretzels or almonds, so clue 6 puts the popcorn at 6:30. The grapes came at 6:00."
+ ],
+ "solution": {
+  "key_idea": "Clues 3, 7 and 8 leave the grapes only 6:00 or 6:30, so Wren came at 7:00: clue 1 gives 6:30 to Otis or Faye.",
+  "steps": [
+   "Clue 3 keeps the grapes off 5:00, clue 7 off 5:30, and clue 8 off 7:00. So the grapes came at 6:00 or 6:30.",
+   "By clue 8, Wren came after 6:00. Clue 1 gives 6:30 to Otis or Faye, so Wren came at 7:00.",
+   "By clue 2, the 5:30 visitor brought pretzels or almonds, so clue 6 puts the popcorn at 6:30. The grapes came at 6:00.",
+   "Clues 7 and 3 put the almonds at 5:00. By clue 2, the 5:30 snack was pretzels, so Wren's 7:00 snack was fudge.",
+   "By clue 5, the 6:00 visitor had blue or green; clue 7 keeps blue from the grapes. So the grape visitor had green.",
+   "Clue 7 keeps Otis from the 5:00 almonds, so by clue 1 Otis came at 6:30 with popcorn, and Faye at 5:00 with almonds.",
+   "By clue 2, the visitor with the purple pen brought pretzels or almonds, but did not come at 5:30. So Faye had purple, and clue 7 leaves blue for Wren.",
+   "Green went with the grapes, so by clue 4 the black pen's owner brought pretzels and Tariq the grapes. Tariq had green; Emil black; Otis red."
+  ],
+  "epilogue": "Tariq mistook the proof for a spare copy and corrected three answers he was sure were wrong, in green ink. Ada changed them back and gave him a crossword of his own."
+ },
+ "tip": null,
+ "answer_line": "Tariq scrambled the crossword with the green pen."
+}

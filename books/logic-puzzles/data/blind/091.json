@@ -1,0 +1,68 @@
+{
+ "no": 91,
+ "people": "climbers",
+ "categories": [
+  {
+   "label": "Climber",
+   "values": [
+    "Hugo",
+    "Jonah",
+    "Wren",
+    "Teddy",
+    "Cass"
+   ]
+  },
+  {
+   "label": "Item",
+   "values": [
+    "sketchbook",
+    "thermos",
+    "field guide",
+    "flashlight",
+    "notebook"
+   ]
+  },
+  {
+   "label": "Landing",
+   "values": [
+    "1st landing",
+    "2nd landing",
+    "3rd landing",
+    "4th landing",
+    "top"
+   ]
+  },
+  {
+   "label": "Time",
+   "values": [
+    "4:00 p.m.",
+    "4:30 p.m.",
+    "5:00 p.m.",
+    "5:30 p.m.",
+    "6:00 p.m."
+   ],
+   "ordered": true,
+   "numbers": [
+    960,
+    990,
+    1020,
+    1050,
+    1080
+   ],
+   "note": "values in order from smallest to largest number; numbers [960, 990, 1020, 1050, 1080] (unit: minutes)"
+  }
+ ],
+ "clues": [
+  "Of Cass and the climber with the flashlight, one stopped at the 3rd landing and the other at the top.",
+  "Jonah and whoever carried the flashlight were two different climbers: one stopped at the 2nd landing, the other at the 3rd landing.",
+  "Wren climbed later than whoever carried the thermos.",
+  "Jonah climbed sometime before the climber with the thermos.",
+  "The thermos went up the tower at either 4:30 p.m. or 5:30 p.m.",
+  "Hugo did not climb at 5:30 p.m.",
+  "Cass went up the stairs earlier than Hugo.",
+  "One of Teddy and the thermos carrier stopped at the top, and the other at the 1st landing.",
+  "Jonah carried neither the sketchbook nor the thermos.",
+  "Whoever carried the notebook climbed exactly an hour after whoever stopped at the 1st landing."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

@@ -1,0 +1,11 @@
+{"no": 92, "clues": [
+  {"kind": "pair", "people": ["Mittens=brown", "Time=9:20 p.m."], "options": ["Helper=Milo", "Helper=Greta"]},
+  {"kind": "pair", "people": ["Helper=Imani", "Helper=Greta"], "options": ["Mittens=green", "Job=inking"]},
+  {"kind": "compare", "a": "Job=sweeping", "b": "Job=proofing", "cat": "Time", "rel": "a_less"},
+  {"kind": "either", "a": "Mittens=red", "one_of": ["Job=folding", "Job=bundling"]},
+  {"kind": "compare", "a": "Helper=Imani", "b": "Helper=Milo", "cat": "Time", "rel": "a_greater_by", "by": 40},
+  {"kind": "compare", "a": "Helper=Selma", "b": "Mittens=gray", "cat": "Time", "rel": "a_greater"},
+  {"kind": "either", "a": "Helper=Quinn", "one_of": ["Time=8:00 p.m.", "Time=8:40 p.m."]},
+  {"kind": "either", "a": "Helper=Milo", "one_of": ["Job=inking", "Job=folding"]},
+  {"kind": "compare", "a": "Mittens=green", "b": "Helper=Imani", "cat": "Time", "rel": "a_greater"}
+]}

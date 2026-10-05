@@ -1,0 +1,37 @@
+{
+ "no": 84,
+ "clues": [
+  "Whoever stood by the window was neither Nadia nor Sam.",
+  "Teddy came to ask about either the tide chart or the radio.",
+  "Sam stood either by the window or by the map table.",
+  "The visitor with the permit question came in at either noon or 1:00 p.m.",
+  "Of the visitor who asked about the lost cap and the one by the desk, one came in at 9:00 a.m. and the other at 10:00 a.m.",
+  "The visitor by the window and the 10:00 a.m. visitor were two different people: one asked about the lost cap, the other about the permit.",
+  "The noon visitor asked about neither the radio nor the permit.",
+  "Whoever asked about the radio came in later than whoever stood by the stove.",
+  "Sam came in earlier than Teddy.",
+  "Of Lena and the visitor who came about the mooring fee, one came in at 10:00 a.m. and the other at 9:00 a.m."
+ ],
+ "hints": [
+  "Look at the permit in the box where errands meet times. Clue 4 gives it two hours. Does another clue rule one out?",
+  "Two clues together, then more. Once the permit's hour is settled, see which hours clues 6, 7 and 8 leave for the radio.",
+  "Clues 4 and 7 put the permit at 1:00. The radio is not at 9:00 (clue 8), 10:00 (clue 6) or noon (clue 7), so it came at 11:00.",
+  "By clue 6, the 10:00 visitor asked about the lost cap. So by clue 5 the desk was at 9:00, and by clue 8 the stove at 10:00."
+ ],
+ "solution": {
+  "key_idea": "Clues 4 and 7 put the permit at 1:00, and then clues 6, 7 and 8 leave the radio only 11:00.",
+  "steps": [
+   "Clues 1 and 3 put Sam at the map table. Clue 4 gives the permit noon or 1:00, and clue 7 rules out noon.",
+   "The radio is not at 9:00 (clue 8), 10:00 (clue 6), noon (clue 7) or 1:00. So the radio came at 11:00.",
+   "By clue 6, the 10:00 visitor asked about the lost cap, and the window visitor about the permit, at 1:00.",
+   "By clue 5, the desk was at 9:00. By clue 8, the stove came before 11:00, so at 10:00, with the lost cap.",
+   "Clue 2 keeps Teddy off the 1:00 permit, so by clue 9 Sam came before noon. Sam's map table was at 11:00, with the radio.",
+   "So by clue 9 Teddy came at noon, by the key wall. By clue 2, he asked about the tide chart.",
+   "That leaves the mooring fee for the 9:00 visitor at the desk.",
+   "By clue 10, Lena came at 10:00, by the stove. Clue 1 keeps Nadia off the window, so Nadia had the desk, Gus the window."
+  ],
+  "epilogue": "Teddy had borrowed the key to photograph the lantern room at sunset for his '150 Years of Light' series. He hung it back before Otis opened up on Friday and hoped nobody had noticed."
+ },
+ "tip": null,
+ "answer_line": "Teddy borrowed the spare key."
+}

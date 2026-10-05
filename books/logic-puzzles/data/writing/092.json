@@ -1,0 +1,36 @@
+{
+ "no": 92,
+ "clues": [
+  "Of the helper in brown mittens and the one who came in at 9:20 p.m., one was Milo and the other Greta.",
+  "One of Imani and Greta wore the green mittens, and the other did the inking.",
+  "Whoever did the sweeping came in earlier than whoever did the proofing.",
+  "Whoever wore the red mittens did either the folding or the bundling.",
+  "Imani arrived exactly 40 minutes after Milo.",
+  "Selma arrived later than whoever wore the gray mittens.",
+  "Quinn came in at either 8:00 p.m. or 8:40 p.m.",
+  "Milo did either the inking or the folding.",
+  "The helper in green mittens arrived later than Imani."
+ ],
+ "hints": [
+  "Look at Imani's row in the time box. Clues 5 and 9 leave just two possible times. Which two?",
+  "Time for a Suppose: clue 5 ties Milo to Imani, 40 minutes apart, and clue 7 limits Quinn. Test Imani's earlier time.",
+  "Suppose Imani came in at 8:40 p.m. Then clue 5 puts Milo at 8:00, and clue 7 leaves Quinn only 8:00 too, a clash. So Imani came at 9:00.",
+  "Greta came in at 9:20, Imani at 9:00 and Milo at 8:20. Clue 6 keeps Selma off 8:00, so Selma came at 8:40."
+ ],
+ "solution": {
+  "key_idea": "Testing Imani at 8:40 p.m. puts Milo and Quinn both at 8:00, so Imani came at 9:00 and the times fall into place.",
+  "steps": [
+   "By clue 1, Milo or Greta came in at 9:20. Clue 5 puts Milo before Imani, so it was Greta, and Milo wore brown.",
+   "Clue 9 keeps Imani out of the green mittens, so by clue 2 Greta wore green and Imani did the inking.",
+   "So by clue 8 Milo did the folding, and by clue 4 whoever wore red did the bundling.",
+   "Greta, in green, did not bundle, and clue 3 keeps the sweeping off 9:20. So Greta did the proofing.",
+   "Clue 5 puts Imani at 8:40 or later, and clue 9 before Greta's 9:20, so at 8:40 or 9:00.",
+   "Suppose Imani came in at 8:40. Then clue 5 puts Milo at 8:00, but clue 7 leaves Quinn only 8:00 as well. That cannot be.",
+   "So Imani came in at 9:00 and Milo at 8:20. Clue 6 keeps Selma off 8:00, so Selma came at 8:40 and Quinn at 8:00.",
+   "Clue 6 puts the gray mittens before Selma: Quinn's. Imani did the inking, so Selma wore red and did the bundling. Quinn swept; Imani wore white."
+  ],
+  "epilogue": "Selma had slipped off a red mitten to knot the twine on a bundle and set it on the press, where the rollers swallowed it. She had been hunting for it ever since."
+ },
+ "tip": null,
+ "answer_line": "The red mitten was Selma's."
+}

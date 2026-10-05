@@ -1,0 +1,14 @@
+{"no": 85, "clues": [
+  {"kind": "compare", "a": "Scarf=striped", "b": "Reason=the view", "cat": "Day", "rel": "a_greater_by", "by": 3},
+  {"kind": "diff", "a": "Climber=Tova", "b": "Reason=the view"},
+  {"kind": "either", "a": "Reason=pigeons", "one_of": ["Scarf=plaid", "Scarf=cable"]},
+  {"kind": "either", "a": "Climber=Linus", "one_of": ["Day=Monday", "Day=Tuesday"]},
+  {"kind": "either", "a": "Reason=dusting", "one_of": ["Day=Tuesday", "Day=Thursday"]},
+  {"kind": "diff", "a": "Scarf=cable", "b": "Reason=bats"},
+  {"kind": "diff", "a": "Climber=Linus", "b": "Reason=pigeons"},
+  {"kind": "either", "a": "Climber=Hattie", "one_of": ["Reason=repairs", "Reason=dusting"]},
+  {"kind": "either", "a": "Reason=repairs", "one_of": ["Climber=Tova", "Climber=Pablo"]},
+  {"kind": "either", "a": "Climber=Gideon", "one_of": ["Day=Thursday", "Day=Friday"]},
+  {"kind": "pair", "people": ["Reason=the view", "Reason=pigeons"], "options": ["Scarf=plaid", "Scarf=argyle"]},
+  {"kind": "pair", "people": ["Reason=bats", "Reason=pigeons"], "options": ["Climber=Linus", "Climber=Gideon"]}
+]}

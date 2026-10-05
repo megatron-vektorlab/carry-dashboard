@@ -1,0 +1,37 @@
+{
+ "no": 91,
+ "clues": [
+  "Of Cass and the climber with the flashlight, one stopped at the 3rd landing and the other at the top.",
+  "Jonah and whoever carried the flashlight were two different climbers: one stopped at the 2nd landing, the other at the 3rd landing.",
+  "Wren climbed later than whoever carried the thermos.",
+  "Jonah climbed sometime before the climber with the thermos.",
+  "The thermos went up the tower at either 4:30 p.m. or 5:30 p.m.",
+  "Hugo did not climb at 5:30 p.m.",
+  "Cass went up the stairs earlier than Hugo.",
+  "One of Teddy and the thermos carrier stopped at the top, and the other at the 1st landing.",
+  "Jonah carried neither the sketchbook nor the thermos.",
+  "Whoever carried the notebook climbed exactly an hour after whoever stopped at the 1st landing."
+ ],
+ "hints": [
+  "Clues 1 and 2 both name the climber with the flashlight. Which landing do both clues allow?",
+  "Use two clues together: clues 1 and 2 settle the flashlight's landing, and clue 8 then finds the thermos. When the clues run dry, test Hugo's time with a Suppose.",
+  "Cass has the thermos, so clues 5, 6 and 7 leave Hugo 5:00 or 6:00 p.m. Suppose 5:00: then only Wren fits 6:00 and only Cass 5:30, after Hugo, against clue 7.",
+  "With Hugo at 6:00, clue 3 keeps the thermos off 5:30, since Wren must come later. So Cass climbed at 4:30 p.m."
+ ],
+ "solution": {
+  "key_idea": "Clues 1, 2 and 8 give Cass the thermos; then testing Hugo at 5:00 p.m. breaks clue 7, so Hugo climbed at 6:00.",
+  "steps": [
+   "Clue 1 allows the flashlight the 3rd landing or the top; clue 2, the 2nd or 3rd. So the flashlight stopped at the 3rd.",
+   "Clue 2 gives Jonah the 2nd landing, clue 1 gives Cass the top. By clue 8, Teddy took the 1st, and Cass the thermos.",
+   "Clue 5 puts Cass at 4:30 or 5:30 p.m. Hugo came after Cass (clue 7), but not at 5:30 (clue 6), so 5:00 or 6:00.",
+   "Clue 4 keeps Jonah, before the thermos, off 5:30 and 6:00. Clue 10 keeps the 1st landing, Teddy's, off them too.",
+   "Suppose Hugo climbed at 5:00. Then Wren and Cass must take 5:30 and 6:00, so Cass climbed after Hugo, against clue 7.",
+   "So Hugo climbed at 6:00 p.m. Wren came after the thermos (clue 3) but before 6:00, so Cass and the thermos came at 4:30.",
+   "Only Wren is left for 5:30. Jonah came before the thermos, so at 4:00, and Teddy at 5:00. By clue 10, Hugo had the notebook.",
+   "Jonah's 2nd landing rules out the flashlight, so clue 9 leaves him the field guide. Teddy had the sketchbook; Wren, the flashlight and 3rd landing; Hugo, the 4th landing."
+  ],
+  "epilogue": "Hugo, the newest volunteer, had left his glasses on the 4th landing and slipped back in at six, muddy boots and all, too embarrassed to say so. He never touched the lamp."
+ },
+ "tip": null,
+ "answer_line": "Hugo climbed the tower after closing."
+}

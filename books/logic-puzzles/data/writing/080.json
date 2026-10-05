@@ -1,0 +1,36 @@
+{
+ "no": 80,
+ "clues": [
+  "Whoever wore the fleece arrived half an hour after whoever came for mail.",
+  "Of Hal and the early riser in the barn coat, one came at 6:30 a.m. and the other at 7:00 a.m.",
+  "The 7:00 a.m. arrival came for neither bait nor mail.",
+  "Of the person in the peacoat and the one who came for mail, one was Walt and the other was Hal.",
+  "The person who arrived at 8:00 a.m. came for either diesel or mail.",
+  "The person in the slicker was there for neither bait nor coffee.",
+  "Quinn was not the one in the slicker.",
+  "Of the person who came for mail and the 8:00 a.m. arrival, one wore the fleece and the other the parka.",
+  "Either Walt or Bea came for coffee."
+ ],
+ "hints": [
+  "Look at the 8:00 a.m. arrival in clue 5. Could the mail errand really have come last?",
+  "Comparisons rule out the ends: use clue 1 on clue 5's two choices. Then put clues 1 and 8 together.",
+  "Clue 8 gives mail the fleece or the parka, and clue 1 rules out the fleece. So mail had the parka, and 8:00 the fleece.",
+  "By clue 1, mail came at 7:30. Clue 2 keeps Hal off 7:30, so by clue 4 Walt came for mail and Hal wore the peacoat."
+ ],
+ "solution": {
+  "key_idea": "Clue 1 keeps the fleece off the mail errand, so by clue 8 mail went with the parka and 8:00 with the fleece.",
+  "steps": [
+   "Clue 1 keeps the mail errand off 8:00, so by clue 5 the 8:00 arrival came for diesel.",
+   "By clue 8, mail went with the fleece or the parka. Clue 1 rules out the fleece, so mail went with the parka.",
+   "By clue 8, the 8:00 arrival wore the fleece, so diesel went with the fleece. By clue 1, mail came at 7:30.",
+   "Clue 2 puts Hal at 6:30 or 7:00, so by clue 4 Walt came for mail in the parka, and Hal wore the peacoat.",
+   "By clue 9, Bea came for coffee. With mail and diesel taken, clue 6 leaves the slicker only ice.",
+   "The slicker was not Quinn's (clue 7), Walt's, Hal's or Bea's, since Bea came for coffee. So Nico wore the slicker and came for ice.",
+   "Hal, at 6:30 or 7:00, came for bait, not diesel. Quinn came for diesel at 8:00 in the fleece; Bea wore the barn coat.",
+   "By clue 2, Hal and Bea took 6:30 and 7:00, leaving Nico 6:00. Clue 3 keeps bait off 7:00: Hal 6:30, Bea 7:00."
+  ],
+  "epilogue": "Nico untied the Ripple at 6:00 to replace her frayed line, then went for ice and forgot to tie her back. He helped Felix patch the keel; the scrape grew with every telling."
+ },
+ "tip": null,
+ "answer_line": "Nico untied the Ripple."
+}

@@ -1,0 +1,12 @@
+{"no": 84, "clues": [
+  {"kind": "nor", "a": "Spot=window", "not": ["Visitor=Nadia", "Visitor=Sam"]},
+  {"kind": "either", "a": "Visitor=Teddy", "one_of": ["Visit=tide chart", "Visit=radio"]},
+  {"kind": "either", "a": "Visitor=Sam", "one_of": ["Spot=window", "Spot=map table"]},
+  {"kind": "either", "a": "Visit=permit", "one_of": ["Time=noon", "Time=1:00 p.m."]},
+  {"kind": "pair", "people": ["Visit=lost cap", "Spot=desk"], "options": ["Time=9:00 a.m.", "Time=10:00 a.m."]},
+  {"kind": "pair", "people": ["Spot=window", "Time=10:00 a.m."], "options": ["Visit=lost cap", "Visit=permit"]},
+  {"kind": "nor", "a": "Time=noon", "not": ["Visit=radio", "Visit=permit"]},
+  {"kind": "compare", "a": "Visit=radio", "b": "Spot=stove", "cat": "Time", "rel": "a_greater"},
+  {"kind": "compare", "a": "Visitor=Sam", "b": "Visitor=Teddy", "cat": "Time", "rel": "a_less"},
+  {"kind": "pair", "people": ["Visitor=Lena", "Visit=mooring fee"], "options": ["Time=10:00 a.m.", "Time=9:00 a.m."]}
+]}

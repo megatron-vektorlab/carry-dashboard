@@ -1,0 +1,70 @@
+{
+ "no": 85,
+ "people": "climbers",
+ "categories": [
+  {
+   "label": "Climber",
+   "values": [
+    "Tova",
+    "Linus",
+    "Hattie",
+    "Gideon",
+    "Pablo"
+   ]
+  },
+  {
+   "label": "Scarf",
+   "values": [
+    "striped",
+    "plaid",
+    "argyle",
+    "red",
+    "cable"
+   ]
+  },
+  {
+   "label": "Reason",
+   "values": [
+    "dusting",
+    "repairs",
+    "bats",
+    "the view",
+    "pigeons"
+   ]
+  },
+  {
+   "label": "Day",
+   "values": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+   ],
+   "ordered": true,
+   "numbers": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "note": "values in order from smallest to largest number; numbers [1, 2, 3, 4, 5] (unit: days)"
+  }
+ ],
+ "clues": [
+  "Whoever wore the striped scarf went up exactly 3 days after whoever climbed for the view.",
+  "Tova did not climb the tower for the view.",
+  "The climber who went up about the pigeons wore either the plaid or the cable scarf.",
+  "Linus made his climb on either Monday or Tuesday.",
+  "Whoever went up to do the dusting climbed on either Tuesday or Thursday.",
+  "The climber in the cable scarf was not the one who went up about the bats.",
+  "Linus did not go up about the pigeons.",
+  "Hattie climbed the tower for either repairs or dusting.",
+  "The climber who went up for repairs was either Tova or Pablo.",
+  "Gideon made his climb on either Thursday or Friday.",
+  "Of the climber who went up for the view and the one who went up about the pigeons, one wore the plaid scarf and the other the argyle.",
+  "Of the climber who went up about the bats and the one who went up about the pigeons, one was Linus and the other was Gideon."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

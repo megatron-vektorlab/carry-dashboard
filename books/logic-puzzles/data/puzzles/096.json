@@ -1,0 +1,631 @@
+{
+ "no": 96,
+ "chapter": 7,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 96002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Harbor Office Sign-Out",
+ "story": "At dawn on Festival day, Lena found the Keeper's Lamp gone from Thimble Point Light and a note on the sill: \"It will shine again.\" Ada starts where the spare key is kept, at the harbor office. On Festival Eve, Otis left for a harbormasters' meeting in Portland at ten, and five visitors in winter gloves signed things out on his honor-system slate. This morning, as always, he wiped it clean: \"Fresh tide, fresh slate.\" Who took what, and when?",
+ "question": {
+  "text": "Who borrowed the spare lighthouse key?",
+  "cat": "Item",
+  "value": "spare key"
+ },
+ "answer": "Teddy",
+ "cast": [
+  "Teddy",
+  "Gus",
+  "Otis",
+  "Lena"
+ ],
+ "state": {
+  "theme": {
+   "slot": 96,
+   "title": "The Harbor Office Sign-Out",
+   "story": "At dawn on Festival day, Lena found the Keeper's Lamp gone from Thimble Point Light and a note on the sill: \"It will shine again.\" Ada starts where the spare key is kept, at the harbor office. On Festival Eve, Otis left for a harbormasters' meeting in Portland at ten, and five visitors in winter gloves signed things out on his honor-system slate. This morning, as always, he wiped it clean: \"Fresh tide, fresh slate.\" Who took what, and when?",
+   "entity": [
+    "visitor",
+    "visitors"
+   ],
+   "cast": [
+    "Teddy",
+    "Gus",
+    "Otis",
+    "Lena"
+   ],
+   "question": {
+    "text": "Who borrowed the spare lighthouse key?",
+    "cat": "Item",
+    "value": "spare key"
+   },
+   "answer": "Teddy"
+  },
+  "cats": [
+   {
+    "label": "Visitor",
+    "kind": "name",
+    "values": [
+     "Teddy",
+     "Walt",
+     "Amara",
+     "Selma",
+     "Gus"
+    ]
+   },
+   {
+    "label": "Item",
+    "values": [
+     "spare key",
+     "binoculars",
+     "tide chart",
+     "megaphone",
+     "life ring"
+    ],
+    "ref": "the borrower of the {v}",
+    "pred": "borrowed the {v}",
+    "neg": "did not borrow the {v}",
+    "either": "borrowed either the {a} or the {b}",
+    "nor": "borrowed neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Gloves",
+    "values": [
+     "wool",
+     "leather",
+     "fleece",
+     "fingerless",
+     "ski"
+    ],
+    "ref": "the person in the {v} gloves",
+    "pred": "wore {v} gloves",
+    "neg": "did not wear {v} gloves",
+    "either": "wore either {a} or {b} gloves",
+    "nor": "wore neither {a} nor {b} gloves",
+    "short": "the {v} gloves"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     600,
+     630,
+     660,
+     690,
+     720
+    ],
+    "labels": [
+     "10:00 a.m.",
+     "10:30 a.m.",
+     "11:00 a.m.",
+     "11:30 a.m.",
+     "noon"
+    ],
+    "ref": "the person who signed the slate at {x}",
+    "pred": "signed the slate at {x}",
+    "neg": "did not sign the slate at {x}",
+    "either": "signed the slate at either {a} or {b}",
+    "nor": "signed the slate at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "signed the slate later than {y}",
+    "less": "signed the slate earlier than {y}",
+    "dmore": "signed the slate exactly {d} after {y}",
+    "dless": "signed the slate exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "signed the slate half an hour after {y}",
+    "dless1": "signed the slate half an hour before {y}",
+    "step": 30,
+    "values": [
+     "10:00 a.m.",
+     "10:30 a.m.",
+     "11:00 a.m.",
+     "11:30 a.m.",
+     "noon"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   0,
+   4,
+   3,
+   2,
+   1
+  ],
+  [
+   3,
+   1,
+   0,
+   2,
+   4
+  ],
+  [
+   3,
+   2,
+   0,
+   1,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 4
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of Walt and the borrower of the binoculars, one signed the slate at noon and the other signed the slate at 11:00 a.m.",
+  "Of the borrower of the tide chart and the person who signed the slate at noon, one wore ski gloves and the other wore fleece gloves.",
+  "Gus signed the slate exactly 120 minutes after Amara.",
+  "Amara signed the slate earlier than the person in the leather gloves.",
+  "Of Selma and the borrower of the spare key, one wore fingerless gloves and the other wore fleece gloves.",
+  "The person who signed the slate at 11:30 a.m. wore either fingerless or wool gloves.",
+  "Walt signed the slate later than the borrower of the megaphone."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 means Gus cannot be 10:00 a.m., 10:30 a.m., 11:00 a.m., or 11:30 a.m. and Amara cannot be 10:30 a.m., 11:00 a.m., 11:30 a.m., or noon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Amara must go with 10:00 a.m.: clue 3 rules out 10:30 a.m., 11:00 a.m., 11:30 a.m., and noon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Gus must go with noon: clue 3 rules out 10:00 a.m., 10:30 a.m., 11:00 a.m., and 11:30 a.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Walt can still be only 10:30 a.m., 11:00 a.m., or 11:30 a.m., clue 7 means the megaphone cannot be 11:30 a.m. or noon."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Walt must go with 11:00 a.m.: clue 1 rules out 10:30 a.m. and 11:30 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The binoculars must go with noon: clue 1 rules out 10:00 a.m., 10:30 a.m., and 11:30 a.m.; 11:00 a.m. is already ruled out for Walt."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Gus goes with noon, so Gus also goes with the binoculars."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "SUPPOSE TEST: try Selma with the fingerless gloves.",
+   "chain": [
+    "Suppose Selma goes with the fingerless gloves.",
+    "The spare key must go with the fleece gloves: clue 5 rules out the wool gloves, the leather gloves, and the ski gloves; the fingerless gloves is already ruled out for Selma.",
+    "The binoculars must go with the ski gloves: the wool gloves, the leather gloves, and the fingerless gloves are already ruled out for noon; the fleece gloves already goes with the spare key.",
+    "But then the tide chart has no gloves left."
+   ],
+   "result": "So Selma does NOT go with the fingerless gloves: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Selma must go with the fleece gloves: clue 5 rules out the wool gloves, the leather gloves, and the ski gloves; the Suppose test ruled out the fingerless gloves."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Gus must go with the ski gloves: the wool gloves, the leather gloves, and the fingerless gloves are already ruled out for noon; the fleece gloves already goes with Selma."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Noon must go with the ski gloves: clue 2 rules out the wool gloves, the leather gloves, and the fingerless gloves; the fleece gloves is already ruled out for Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The fleece gloves must go with 10:30 a.m.: clue 6 rules out 11:30 a.m.; 10:00 a.m. is already ruled out for Amara; 11:00 a.m. is already ruled out for Walt; noon is already ruled out for Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "The leather gloves must go with 11:00 a.m.: clue 6 rules out 11:30 a.m.; clue 2 rules out noon; 10:00 a.m. is already ruled out for Amara; 10:30 a.m. already goes with the fleece gloves."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Walt goes with 11:00 a.m., so Walt also goes with the leather gloves."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The binoculars must go with the ski gloves: the wool gloves, the leather gloves, the fleece gloves, and the fingerless gloves are already ruled out for noon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The tide chart must go with the fleece gloves: clue 2 rules out the wool gloves, the leather gloves, and the fingerless gloves; the ski gloves already goes with the binoculars."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The spare key must go with the fingerless gloves: clue 5 rules out the wool gloves, the leather gloves, and the ski gloves; the fleece gloves already goes with the tide chart."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Selma goes with the fleece gloves, so Selma also goes with the tide chart."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Selma goes with the fleece gloves, so Selma also goes with 10:30 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Teddy must go with 11:30 a.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "10:30 a.m. goes with the fleece gloves, so 10:30 a.m. also goes with the tide chart."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The megaphone must go with 10:00 a.m.: clue 7 rules out 11:30 a.m. and noon; 11:00 a.m. is already ruled out for Walt; 10:30 a.m. already goes with the tide chart."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Amara goes with 10:00 a.m., so Amara also goes with the megaphone."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The spare key must go with 11:30 a.m.: 10:30 a.m. is already ruled out for the fleece gloves; 11:00 a.m. is already ruled out for the leather gloves; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The life ring must go with 11:00 a.m.: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    7
+   ],
+   "text": "Walt must go with the life ring: clue 1 rules out the binoculars; clue 7 rules out the megaphone; the spare key is already ruled out for 11:00 a.m.; the tide chart already goes with Selma."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Teddy must go with the spare key: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The megaphone must go with the wool gloves: the leather gloves is already ruled out for 11:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The life ring must go with the leather gloves: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The fingerless gloves goes with the spare key, so the fingerless gloves also goes with Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Amara must go with the wool gloves: clue 4 rules out the leather gloves; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "10:00 a.m. goes with Amara, so 10:00 a.m. also goes with the wool gloves."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The fingerless gloves must go with 11:30 a.m.: clue 2 rules out noon; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 64,
+  "score": 184,
+  "revisits": 1,
+  "transfer": 33,
+  "trial": 1,
+  "clue_steps": 8
+ },
+ "trial_chain": 6,
+ "table": [
+  [
+   "Teddy",
+   "spare key",
+   "fingerless",
+   "11:30 a.m."
+  ],
+  [
+   "Walt",
+   "life ring",
+   "leather",
+   "11:00 a.m."
+  ],
+  [
+   "Amara",
+   "megaphone",
+   "wool",
+   "10:00 a.m."
+  ],
+  [
+   "Selma",
+   "tide chart",
+   "fleece",
+   "10:30 a.m."
+  ],
+  [
+   "Gus",
+   "binoculars",
+   "ski",
+   "noon"
+  ]
+ ],
+ "score": 184
+}

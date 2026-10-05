@@ -1,0 +1,11 @@
+{"no": 90, "clues": [
+ {"kind": "pair", "people": ["Customer=Yusuf", "Paint=white"], "options": ["Brush=sponge", "Brush=spray can"]},
+ {"kind": "compare", "a": "Brush=rag", "b": "Paint=purple", "cat": "Cost", "rel": "a_less"},
+ {"kind": "pair", "people": ["Customer=Yusuf", "Customer=Della"], "options": ["Paint=black", "Cost=$14"]},
+ {"kind": "compare", "a": "Customer=Enzo", "b": "Brush=roller", "cat": "Cost", "rel": "a_greater"},
+ {"kind": "all_different", "items": ["Customer=Marta", "Customer=Yusuf", "Cost=$10", "Cost=$14"]},
+ {"kind": "either", "a": "Brush=spray can", "one_of": ["Paint=black", "Paint=yellow"]},
+ {"kind": "pair", "people": ["Customer=Yusuf", "Brush=wide brush"], "options": ["Paint=black", "Paint=purple"]},
+ {"kind": "compare", "a": "Brush=wide brush", "b": "Customer=Yusuf", "cat": "Cost", "rel": "a_greater_by", "by": 2},
+ {"kind": "compare", "a": "Paint=teal", "b": "Brush=roller", "cat": "Cost", "rel": "a_less"}
+]}

@@ -1,0 +1,13 @@
+{"no": 94, "clues": [
+ {"kind": "compare", "a": "Owner=Nico", "b": "Boat=canoe", "cat": "Time", "rel": "a_less"},
+ {"kind": "either", "a": "Owner=Kenji", "one_of": ["Time=1:15 p.m.", "Time=1:45 p.m."]},
+ {"kind": "pair", "people": ["Owner=Nico", "Owner=Hal"], "options": ["Gear=anchor", "Gear=net"]},
+ {"kind": "compare", "a": "Gear=bucket", "b": "Owner=Hal", "cat": "Time", "rel": "a_less"},
+ {"kind": "pair", "people": ["Owner=Priya", "Owner=Hal"], "options": ["Gear=oars", "Gear=net"]},
+ {"kind": "either", "a": "Gear=net", "one_of": ["Time=1:00 p.m.", "Time=1:45 p.m."]},
+ {"kind": "nor", "a": "Time=2:00 p.m.", "not": ["Boat=canoe", "Boat=dory"]},
+ {"kind": "compare", "a": "Boat=skiff", "b": "Gear=cooler", "cat": "Time", "rel": "a_less"},
+ {"kind": "nor", "a": "Boat=dory", "not": ["Time=1:30 p.m.", "Time=1:45 p.m."]},
+ {"kind": "compare", "a": "Boat=punt", "b": "Boat=canoe", "cat": "Time", "rel": "a_less_by", "by": 30},
+ {"kind": "diff", "a": "Gear=oars", "b": "Time=1:30 p.m."}
+]}

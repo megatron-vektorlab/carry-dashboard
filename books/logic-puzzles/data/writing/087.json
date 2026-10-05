@@ -1,0 +1,36 @@
+{
+ "no": 87,
+ "clues": [
+  "Basil was drinking either tea or cider.",
+  "Of the guest reading the sea stories and the guest reading the mystery, one was Basil and the other was Carmen.",
+  "Zeke sat down exactly an hour before the coffee drinker.",
+  "The eggnog drinker, Mabel, and the mystery reader were three different guests.",
+  "Whoever drank the eggnog was reading either the sea stories or the cookbook.",
+  "Of the sea stories reader and the mystery reader, one sat down at 3:00 p.m. and the other at 3:20 p.m.",
+  "The guest with the mystery was drinking either eggnog or tea.",
+  "The poems reader sat down later than the cookbook reader.",
+  "Of Basil and the cocoa drinker, one sat down at 2:00 p.m. and the other at 3:20 p.m."
+ ],
+ "hints": [
+  "Clue 9 gives Basil only two times, 2:00 or 3:20. Once the other clues stop giving, that is the row to test.",
+  "Use a Suppose. Pencil Basil in at 2:00, then follow clue 3 for Zeke and the coffee, and clue 9 for the cocoa.",
+  "If Basil sat down at 2:00, clue 3 leaves Zeke 2:20 and the coffee 3:20, but clue 9 puts the cocoa at 3:20. So Basil sat down at 3:20.",
+  "Clue 1 keeps Basil from coffee, so by clue 3 the coffee came at 3:00 and Zeke at 2:00, with the cocoa (clue 9)."
+ ],
+ "solution": {
+  "key_idea": "If Basil sat down at 2:00, clues 3 and 9 would put both the coffee and the cocoa at 3:20, so Basil came at 3:20.",
+  "steps": [
+   "Clue 7 gives the mystery reader eggnog or tea, and clue 4 rules out eggnog. So the mystery went with the tea.",
+   "By clue 3, Zeke sat down at 2:00 or 2:20, and the coffee at 3:00 or 3:20.",
+   "Suppose Basil sat down at 2:00. Then Zeke took 2:20, so the coffee came at 3:20. But clue 9 puts the cocoa at 3:20.",
+   "So Basil did not sit down at 2:00. By clue 9, Basil came at 3:20 and the cocoa at 2:00.",
+   "Clue 1 keeps Basil from coffee, so the coffee came at 3:00, and by clue 3 Zeke at 2:00, with the cocoa.",
+   "By clue 6, the mystery and its tea took 3:20, Basil's time. By clue 2, Carmen read the sea stories at 3:00, with coffee.",
+   "Clue 5 now puts the eggnog with the cookbook, and clue 8 keeps the poems off 2:00. So Zeke's 2:00 book was the almanac.",
+   "By clue 8, the cookbook came at 2:20 and the poems at 2:40. Clue 4 keeps Mabel from eggnog, so Mabel had the poems and cider; Ivan, the cookbook."
+  ],
+  "epilogue": "Zeke had noticed the cameo's clasp was loose and took it to his room to mend, as a thank-you to Priya. He had marked his place in the almanac with the pouch."
+ },
+ "tip": null,
+ "answer_line": "Zeke tucked the cameo away."
+}

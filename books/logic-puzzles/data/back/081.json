@@ -1,0 +1,13 @@
+{"no": 81, "clues": [
+ {"kind": "nor", "a": "Order=scone", "not": ["Customer=Lou", "Customer=Mabel"]},
+ {"kind": "compare", "a": "Customer=Selma", "b": "Seat=window", "cat": "Time", "rel": "a_greater"},
+ {"kind": "either", "a": "Order=croissant", "one_of": ["Customer=Kenji", "Customer=Priya"]},
+ {"kind": "nor", "a": "Time=8:00 a.m.", "not": ["Customer=Selma", "Customer=Priya"]},
+ {"kind": "pair", "people": ["Customer=Priya", "Order=bagel"], "options": ["Time=8:00 a.m.", "Time=7:30 a.m."]},
+ {"kind": "nor", "a": "Time=8:30 a.m.", "not": ["Seat=counter", "Seat=patio"]},
+ {"kind": "either", "a": "Time=8:30 a.m.", "one_of": ["Order=danish", "Order=croissant"]},
+ {"kind": "nor", "a": "Customer=Mabel", "not": ["Order=muffin", "Order=bagel"]},
+ {"kind": "either", "a": "Seat=window", "one_of": ["Customer=Selma", "Customer=Lou"]},
+ {"kind": "compare", "a": "Seat=corner", "b": "Seat=window", "cat": "Time", "rel": "a_greater_by", "by": 30},
+ {"kind": "either", "a": "Order=bagel", "one_of": ["Seat=corner", "Seat=counter"]}
+]}

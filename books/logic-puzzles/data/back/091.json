@@ -1,0 +1,12 @@
+{"no": 91, "clues": [
+  {"kind": "pair", "people": ["Climber=Cass", "Item=flashlight"], "options": ["Landing=3rd landing", "Landing=top"]},
+  {"kind": "pair", "people": ["Climber=Jonah", "Item=flashlight"], "options": ["Landing=2nd landing", "Landing=3rd landing"]},
+  {"kind": "compare", "a": "Climber=Wren", "b": "Item=thermos", "cat": "Time", "rel": "a_greater"},
+  {"kind": "compare", "a": "Climber=Jonah", "b": "Item=thermos", "cat": "Time", "rel": "a_less"},
+  {"kind": "either", "a": "Item=thermos", "one_of": ["Time=4:30 p.m.", "Time=5:30 p.m."]},
+  {"kind": "diff", "a": "Climber=Hugo", "b": "Time=5:30 p.m."},
+  {"kind": "compare", "a": "Climber=Cass", "b": "Climber=Hugo", "cat": "Time", "rel": "a_less"},
+  {"kind": "pair", "people": ["Climber=Teddy", "Item=thermos"], "options": ["Landing=top", "Landing=1st landing"]},
+  {"kind": "nor", "a": "Climber=Jonah", "not": ["Item=sketchbook", "Item=thermos"]},
+  {"kind": "compare", "a": "Item=notebook", "b": "Landing=1st landing", "cat": "Time", "rel": "a_greater_by", "by": 60}
+]}

@@ -1,0 +1,11 @@
+{"no": 80, "clues": [
+ {"kind": "compare", "a": "Coat=fleece", "b": "Errand=mail", "cat": "Time", "rel": "a_greater_by", "by": 30},
+ {"kind": "pair", "people": ["Early riser=Hal", "Coat=barn coat"], "options": ["Time=6:30 a.m.", "Time=7:00 a.m."]},
+ {"kind": "nor", "a": "Time=7:00 a.m.", "not": ["Errand=bait", "Errand=mail"]},
+ {"kind": "pair", "people": ["Coat=peacoat", "Errand=mail"], "options": ["Early riser=Walt", "Early riser=Hal"]},
+ {"kind": "either", "a": "Time=8:00 a.m.", "one_of": ["Errand=diesel", "Errand=mail"]},
+ {"kind": "nor", "a": "Coat=slicker", "not": ["Errand=bait", "Errand=coffee"]},
+ {"kind": "diff", "a": "Early riser=Quinn", "b": "Coat=slicker"},
+ {"kind": "pair", "people": ["Errand=mail", "Time=8:00 a.m."], "options": ["Coat=fleece", "Coat=parka"]},
+ {"kind": "either", "a": "Errand=coffee", "one_of": ["Early riser=Walt", "Early riser=Bea"]}
+]}

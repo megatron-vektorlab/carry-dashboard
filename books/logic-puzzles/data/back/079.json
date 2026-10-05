@@ -1,0 +1,10 @@
+{"no": 79, "clues": [
+ {"kind": "compare", "a": "Spot=stage", "b": "Pie=mince", "cat": "Time", "rel": "a_greater_by", "by": 45},
+ {"kind": "nor", "a": "Pie=pecan", "not": ["Helper=Della", "Helper=Vito"]},
+ {"kind": "pair", "people": ["Pie=pecan", "Spot=bake table"], "options": ["Helper=Rosa", "Helper=Della"]},
+ {"kind": "either", "a": "Pie=mince", "one_of": ["Spot=kitchen", "Spot=bake table"]},
+ {"kind": "compare", "a": "Pie=pumpkin", "b": "Spot=stage", "cat": "Time", "rel": "a_greater_by", "by": 15},
+ {"kind": "pair", "people": ["Pie=pumpkin", "Spot=porch"], "options": ["Helper=Gus", "Helper=Imani"]},
+ {"kind": "compare", "a": "Spot=porch", "b": "Spot=bake table", "cat": "Time", "rel": "a_greater"},
+ {"kind": "pair", "people": ["Helper=Vito", "Helper=Imani"], "options": ["Pie=apple", "Pie=mince"]}
+]}

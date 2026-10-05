@@ -1,0 +1,11 @@
+{"no": 87, "clues": [
+  {"kind": "either", "a": "Guest=Basil", "one_of": ["Drink=tea", "Drink=cider"]},
+  {"kind": "pair", "people": ["Book=sea stories", "Book=mystery"], "options": ["Guest=Basil", "Guest=Carmen"]},
+  {"kind": "compare", "a": "Guest=Zeke", "b": "Drink=coffee", "cat": "Time", "rel": "a_less_by", "by": 60},
+  {"kind": "all_different", "items": ["Drink=eggnog", "Guest=Mabel", "Book=mystery"]},
+  {"kind": "either", "a": "Drink=eggnog", "one_of": ["Book=sea stories", "Book=cookbook"]},
+  {"kind": "pair", "people": ["Book=sea stories", "Book=mystery"], "options": ["Time=3:00 p.m.", "Time=3:20 p.m."]},
+  {"kind": "either", "a": "Book=mystery", "one_of": ["Drink=eggnog", "Drink=tea"]},
+  {"kind": "compare", "a": "Book=poems", "b": "Book=cookbook", "cat": "Time", "rel": "a_greater"},
+  {"kind": "pair", "people": ["Guest=Basil", "Drink=cocoa"], "options": ["Time=2:00 p.m.", "Time=3:20 p.m."]}
+]}

@@ -91,12 +91,12 @@ def grid_tikz(B, max_w=7.0, max_h=6.0, marks=None, highlight=None, max_cell=0.52
     return "\n".join(out), g
 
 
-def answer_table(B, filled=None, name_w=None):
+def answer_table(B, filled=None, name_w=None, stretch=1.45):
     """Blank (or filled) answer table: one row per person."""
     k = B.k
     cols = "|" + "|".join(["l"] + ["p{%.2fin}" % max(1.15, 0.12 + max(width(v) for v in _col_values(B.cats[c])))
                                    for c in range(1, k)]) + "|"
-    out = [r"\begingroup\renewcommand{\arraystretch}{1.45}\begin{tabular}{" + cols + r"}\hline"]
+    out = [r"\begingroup\renewcommand{\arraystretch}{%.2f}\begin{tabular}{" % stretch + cols + r"}\hline"]
     out.append(" & ".join(r"\bfseries " + esc(B.cats[c]["label"]) for c in range(k)) + r" \\ \hline")
     for e in range(B.n):
         cells = [esc(B.cats[0]["values"][e])]

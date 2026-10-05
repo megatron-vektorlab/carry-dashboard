@@ -1,0 +1,69 @@
+{
+ "no": 94,
+ "people": "boat owners",
+ "categories": [
+  {
+   "label": "Owner",
+   "values": [
+    "Kenji",
+    "Nico",
+    "Priya",
+    "Hal",
+    "Una"
+   ]
+  },
+  {
+   "label": "Boat",
+   "values": [
+    "skiff",
+    "kayak",
+    "canoe",
+    "dory",
+    "punt"
+   ]
+  },
+  {
+   "label": "Gear",
+   "values": [
+    "oars",
+    "net",
+    "cooler",
+    "anchor",
+    "bucket"
+   ]
+  },
+  {
+   "label": "Time",
+   "values": [
+    "1:00 p.m.",
+    "1:15 p.m.",
+    "1:30 p.m.",
+    "1:45 p.m.",
+    "2:00 p.m."
+   ],
+   "ordered": true,
+   "numbers": [
+    780,
+    795,
+    810,
+    825,
+    840
+   ],
+   "note": "values in order from smallest to largest number; numbers [780, 795, 810, 825, 840] (unit: minutes)"
+  }
+ ],
+ "clues": [
+  "Nico got to the slips earlier than whoever hauled out the canoe.",
+  "Kenji turned up at either 1:15 p.m. or 1:45 p.m.",
+  "Between Nico and Hal, one brought the anchor and the other the net.",
+  "Whoever brought the bucket arrived sometime before Hal.",
+  "Of Priya and Hal, one carried the oars and the other carried the net.",
+  "The one with the net arrived at either 1:00 p.m. or 1:45 p.m.",
+  "The 2:00 p.m. arrival hauled out neither the canoe nor the dory.",
+  "The skiff's owner arrived earlier than whoever brought the cooler.",
+  "The dory's owner came at neither 1:30 p.m. nor 1:45 p.m.",
+  "The punt's owner got there exactly half an hour before the canoe's owner.",
+  "The person with the oars did not arrive at 1:30 p.m."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

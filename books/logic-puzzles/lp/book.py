@@ -258,6 +258,12 @@ def grid_puzzle(P, W, shrink=0.0):
         return "\n".join(parts), 1
     table = table_block(B)
     table_h = M.get("table", (B.n + 1) * 0.37 + 0.6) + 0.2
+    if top > TEXT_H - 0.25:
+        # the clues run over onto the right-hand page; the grid follows them there
+        over = top - TEXT_H + 0.75
+        g, geo = grid_tikz(B, max_w=TEXT_W, max_h=TEXT_H - over - 0.6 - shrink, max_cell=0.58)
+        parts += [r"\par\vfill\begin{center}", g, r"\end{center}\vfill", rf"\label{{puzend:{no}}}", r"\clearpage"]
+        return "\n".join(parts), 2
     tip = tip_block(P, W)
     tip_h = M.get("tip", 0.0) + 0.25 if tip else 0.0
     where = "left" if top + table_h <= TEXT_H - 0.3 else "right"
@@ -268,11 +274,16 @@ def grid_puzzle(P, W, shrink=0.0):
     if where == "left":
         parts += [r"\vfill", table]
     parts += [r"\vfill\clearpage"]
+    big = 0.7 if (B.n, B.k) == (4, 3) else 0.58
+    if where == "right":
+        table = (r"\begin{center}\textbf{Your answers}\par\vspace{4pt}" + answer_table(B, stretch=1.2)
+                 + r"\end{center}")
+        table_h = table_h * 0.85
     max_h = TEXT_H - 0.45 - shrink - (table_h if where == "right" else 0)
-    g, geo = grid_tikz(B, max_w=TEXT_W, max_h=max_h, max_cell=0.58)
+    g, geo = grid_tikz(B, max_w=TEXT_W, max_h=max_h, max_cell=big)
     if where == "right" and geo["cell"] < 0.33:
         where, table = "none", ""
-        g, geo = grid_tikz(B, max_w=TEXT_W, max_h=TEXT_H - 0.45 - shrink, max_cell=0.58)
+        g, geo = grid_tikz(B, max_w=TEXT_W, max_h=TEXT_H - 0.45 - shrink, max_cell=big)
     parts += [r"\vspace*{\fill}\begin{center}", g, r"\end{center}\vspace*{\fill}"]
     if where == "right":
         parts += [table, r"\vspace*{\fill}"]

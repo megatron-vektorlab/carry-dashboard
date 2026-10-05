@@ -11,7 +11,7 @@
   "The rider with the apple crate did not pay $5."
  ],
  "hints": [
-  "Look at clue 2. The fares are $3, $5, $7 and $9. Which two fares are exactly $6 apart?",
+  "Look at clue 2. Of the fares $3, $5, $7 and $9, which two are exactly $6 apart?",
   "An exact gap is a fixed gap. On this scale a $6 gap has only one fit, so clue 2 settles two squares at once.",
   "So Teddy paid $3 and the corn maze rider $9. Clues 7 and 3 then give Teddy the cider jug.",
   "Clues 5, 3 and 6 send the pumpkin to the cider stand, so Teddy rode to the farm stand. Now clue 1 sets Basil's fare."

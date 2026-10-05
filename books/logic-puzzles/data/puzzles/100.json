@@ -1,0 +1,721 @@
+{
+ "no": 100,
+ "chapter": 7,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 100002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Rehearsal on the Green",
+ "story": "Down on the town green, half of Thimble Harbor spent Festival Eve in winter coats, rehearsing the Lantern Festival. Lena's own museum key never left her key ring. Five volunteers, each with a different job, took turns at the Gazette's camera: one photo each, every half hour from seven. The last one, at nine, shows the light at Thimble Point going dark. Who took which photo, and who caught that last one?",
+ "question": {
+  "text": "Who snapped the 9 p.m. photo?",
+  "cat": "Time",
+  "value": "9:00 p.m."
+ },
+ "answer": "Teddy",
+ "cast": [
+  "Lena",
+  "Wren",
+  "Teddy",
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 100,
+   "title": "The Rehearsal on the Green",
+   "story": "Down on the town green, half of Thimble Harbor spent Festival Eve in winter coats, rehearsing the Lantern Festival. Lena's own museum key never left her key ring. Five volunteers, each with a different job, took turns at the Gazette's camera: one photo each, every half hour from seven. The last one, at nine, shows the light at Thimble Point going dark. Who took which photo, and who caught that last one?",
+   "entity": [
+    "volunteer",
+    "volunteers"
+   ],
+   "cast": [
+    "Lena",
+    "Wren",
+    "Teddy",
+    "Hattie"
+   ],
+   "question": {
+    "text": "Who snapped the 9 p.m. photo?",
+    "cat": "Time",
+    "value": "9:00 p.m."
+   },
+   "answer": "Teddy"
+  },
+  "cats": [
+   {
+    "label": "Volunteer",
+    "kind": "name",
+    "values": [
+     "Lena",
+     "Gideon",
+     "Wren",
+     "Hattie",
+     "Teddy"
+    ]
+   },
+   {
+    "label": "Job",
+    "values": [
+     "lanterns",
+     "choir",
+     "cocoa",
+     "tickets",
+     "banners"
+    ],
+    "ref": "the person in charge of the {v}",
+    "pred": "was in charge of the {v}",
+    "neg": "was not in charge of the {v}",
+    "either": "was in charge of either the {a} or the {b}",
+    "nor": "was in charge of neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Coat",
+    "values": [
+     "red",
+     "navy",
+     "green",
+     "gray",
+     "camel"
+    ],
+    "ref": "the person in the {v} coat",
+    "pred": "wore a {v} coat",
+    "neg": "did not wear a {v} coat",
+    "either": "wore either a {a} or a {b} coat",
+    "nor": "wore neither a {a} nor a {b} coat",
+    "short": "the {v} coat"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1140,
+     1170,
+     1200,
+     1230,
+     1260
+    ],
+    "labels": [
+     "7:00 p.m.",
+     "7:30 p.m.",
+     "8:00 p.m.",
+     "8:30 p.m.",
+     "9:00 p.m."
+    ],
+    "ref": "the person who took the {x} photo",
+    "pred": "took the {x} photo",
+    "neg": "did not take the {x} photo",
+    "either": "took either the {a} or the {b} photo",
+    "nor": "took neither the {a} nor the {b} photo",
+    "short": "the {x} photo",
+    "more": "took a photo later than {y}",
+    "less": "took a photo earlier than {y}",
+    "dmore": "took a photo exactly {d} after {y}",
+    "dless": "took a photo exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "took a photo half an hour after {y}",
+    "dless1": "took a photo half an hour before {y}",
+    "step": 30,
+    "values": [
+     "7:00 p.m.",
+     "7:30 p.m.",
+     "8:00 p.m.",
+     "8:30 p.m.",
+     "9:00 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   3,
+   1,
+   0,
+   4,
+   2
+  ],
+  [
+   3,
+   2,
+   1,
+   0,
+   4
+  ],
+  [
+   1,
+   2,
+   3,
+   0,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The person in charge of the choir took a photo later than the person in the red coat.",
+  "Of Gideon and Hattie, one took the 8:00 p.m. photo and the other took the 7:00 p.m. photo.",
+  "The person in the navy coat was in charge of either the choir or the lanterns.",
+  "The person in charge of the tickets wore either a gray or a camel coat.",
+  "Wren took a photo half an hour after the person in the green coat.",
+  "Of Lena and Gideon, one was in charge of the tickets and the other was in charge of the choir.",
+  "Of Wren and the person in charge of the cocoa, one took the 9:00 p.m. photo and the other took the 8:30 p.m. photo.",
+  "Lena took a photo earlier than the person in the camel coat.",
+  "Wren took either the 7:00 p.m. or the 8:30 p.m. photo."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means the choir cannot be the 7:00 p.m. photo and the red coat cannot be the 9:00 p.m. photo."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since Wren can still be only the 7:00 p.m. photo or the 8:30 p.m. photo, clue 5 means Wren cannot be the 7:00 p.m. photo and the green coat cannot be the 7:00 p.m. photo, the 7:30 p.m. photo, the 8:30 p.m. photo, or the 9:00 p.m. photo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    9
+   ],
+   "text": "Wren must go with the 8:30 p.m. photo: clue 5 rules out the 7:00 p.m. photo; clue 9 rules out the 7:30 p.m. photo, the 8:00 p.m. photo, and the 9:00 p.m. photo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The green coat must go with the 8:00 p.m. photo: clue 5 rules out the 7:00 p.m. photo, the 7:30 p.m. photo, the 8:30 p.m. photo, and the 9:00 p.m. photo."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since the camel coat can still be only the 7:00 p.m. photo, the 7:30 p.m. photo, the 8:30 p.m. photo, or the 9:00 p.m. photo and Lena can still be only the 7:00 p.m. photo, the 7:30 p.m. photo, the 8:00 p.m. photo, or the 9:00 p.m. photo, clue 8 means the camel coat cannot be the 7:00 p.m. photo and Lena cannot be the 9:00 p.m. photo."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    8
+   ],
+   "text": "Lena must go with the 7:30 p.m. photo: clue 2 rules out the 7:00 p.m. photo and the 8:00 p.m. photo; clue 8 rules out the 9:00 p.m. photo; the 8:30 p.m. photo already goes with Wren."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Teddy must go with the 9:00 p.m. photo: clue 2 rules out the 7:00 p.m. photo and the 8:00 p.m. photo; the other choices are already taken."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the choir can still be only the 7:30 p.m. photo or the 8:00 p.m. photo and the red coat can still be only the 7:00 p.m. photo, the 7:30 p.m. photo, or the 8:30 p.m. photo, clue 1 means the red coat cannot be the 8:30 p.m. photo."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The cocoa must go with the 9:00 p.m. photo: clue 7 rules out the 7:00 p.m. photo and the 8:00 p.m. photo; the 7:30 p.m. photo is already ruled out for Lena; the 8:30 p.m. photo is already ruled out for Wren."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Teddy goes with the 9:00 p.m. photo, so Teddy also goes with the cocoa."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "text": "SUPPOSE TEST: try Wren with the banners.",
+   "chain": [
+    "Suppose Wren goes with the banners.",
+    "Hattie must go with the lanterns: clue 6 rules out the choir and the tickets; the other choices are already taken.",
+    "The 8:30 p.m. photo must go with the banners: the lanterns, the choir, the cocoa, and the tickets are already ruled out for Wren.",
+    "The red coat must go with the lanterns: clue 1 rules out the choir; clue 4 rules out the tickets; the cocoa is already ruled out for the 9:00 p.m. photo; the banners is already ruled out for Wren.",
+    "The navy coat must go with the choir: clue 3 rules out the cocoa, the tickets, and the banners; the lanterns already goes with the red coat.",
+    "But then the green coat has no job left."
+   ],
+   "result": "So Wren does NOT go with the banners: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    7
+   ],
+   "text": "Wren must go with the lanterns: clue 6 rules out the choir and the tickets; clue 7 rules out the cocoa; the Suppose test ruled out the banners."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Hattie must go with the banners: clue 6 rules out the choir and the tickets; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 8:30 p.m. photo goes with Wren, so the 8:30 p.m. photo also goes with the lanterns."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "The red coat must go with the banners: clue 1 rules out the choir; clue 4 rules out the tickets; the lanterns is already ruled out for Wren; the cocoa is already ruled out for the 9:00 p.m. photo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The green coat must go with the choir: clue 4 rules out the tickets; the lanterns and the cocoa are already ruled out for the 8:00 p.m. photo; the banners already goes with the red coat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The navy coat must go with the lanterns: clue 3 rules out the cocoa, the tickets, and the banners; the choir already goes with the green coat."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 8:00 p.m. photo goes with the green coat, so the 8:00 p.m. photo also goes with the choir."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The banners must go with the 7:00 p.m. photo: the 7:30 p.m. photo is already ruled out for Lena; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The tickets must go with the 7:30 p.m. photo: the 8:00 p.m. photo is already ruled out for the green coat; the 8:30 p.m. photo is already ruled out for Wren; the 9:00 p.m. photo is already ruled out for Teddy; the 7:00 p.m. photo already goes with the banners."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Lena must go with the tickets: clue 6 rules out the lanterns, the cocoa, and the banners; the choir is already ruled out for the 7:30 p.m. photo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Gideon must go with the choir: clue 6 rules out the lanterns, the cocoa, and the banners; the tickets already goes with Lena."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Wren goes with the lanterns, so Wren also goes with the navy coat."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 8:30 p.m. photo goes with Wren, so the 8:30 p.m. photo also goes with the navy coat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The camel coat must go with the 9:00 p.m. photo: clue 8 rules out the 7:00 p.m. photo; the 7:30 p.m. photo is already ruled out for Lena; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Teddy must go with the camel coat: the red coat, the navy coat, and the gray coat are already ruled out for the 9:00 p.m. photo; the green coat is already ruled out for the 8:00 p.m. photo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The cocoa must go with the camel coat: clue 3 rules out the navy coat; the red coat and the gray coat are already ruled out for the 9:00 p.m. photo; the green coat is already ruled out for the 8:00 p.m. photo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "The tickets must go with the gray coat: clue 4 rules out the red coat and the green coat; clue 3 rules out the navy coat; the camel coat already goes with the cocoa."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Hattie goes with the banners, so Hattie also goes with the red coat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Lena must go with the gray coat: clue 8 rules out the camel coat; the green coat is already ruled out for the 8:00 p.m. photo; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Gideon must go with the green coat: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 8:00 p.m. photo goes with the green coat, so the 8:00 p.m. photo also goes with Gideon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Hattie must go with the 7:00 p.m. photo: clue 2 rules out the 7:30 p.m. photo and the 9:00 p.m. photo; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The red coat must go with the 7:00 p.m. photo: clue 1 rules out the 8:30 p.m. photo and the 9:00 p.m. photo; the 7:30 p.m. photo is already ruled out for Lena; the 8:00 p.m. photo already goes with the green coat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The gray coat must go with the 7:30 p.m. photo: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 69,
+  "score": 201,
+  "revisits": 4,
+  "transfer": 32,
+  "trial": 1,
+  "clue_steps": 13
+ },
+ "trial_chain": 8,
+ "table": [
+  [
+   "Lena",
+   "tickets",
+   "gray",
+   "7:30 p.m."
+  ],
+  [
+   "Gideon",
+   "choir",
+   "green",
+   "8:00 p.m."
+  ],
+  [
+   "Wren",
+   "lanterns",
+   "navy",
+   "8:30 p.m."
+  ],
+  [
+   "Hattie",
+   "banners",
+   "red",
+   "7:00 p.m."
+  ],
+  [
+   "Teddy",
+   "cocoa",
+   "camel",
+   "9:00 p.m."
+  ]
+ ],
+ "score": 201
+}

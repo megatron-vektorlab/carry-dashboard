@@ -1,0 +1,66 @@
+{
+ "no": 83,
+ "people": "visitors",
+ "categories": [
+  {
+   "label": "Visitor",
+   "values": [
+    "Otis",
+    "Faye",
+    "Emil",
+    "Tariq",
+    "Wren"
+   ]
+  },
+  {
+   "label": "Pen",
+   "values": [
+    "green",
+    "red",
+    "blue",
+    "black",
+    "purple"
+   ]
+  },
+  {
+   "label": "Snack",
+   "values": [
+    "pretzels",
+    "fudge",
+    "grapes",
+    "popcorn",
+    "almonds"
+   ]
+  },
+  {
+   "label": "Time",
+   "values": [
+    "5:00 p.m.",
+    "5:30 p.m.",
+    "6:00 p.m.",
+    "6:30 p.m.",
+    "7:00 p.m."
+   ],
+   "ordered": true,
+   "numbers": [
+    1020,
+    1050,
+    1080,
+    1110,
+    1140
+   ],
+   "note": "values in order from smallest to largest number; numbers [1020, 1050, 1080, 1110, 1140] (unit: minutes)"
+  }
+ ],
+ "clues": [
+  "Of Otis and Faye, one stopped by at 5:00 p.m. and the other at 6:30 p.m.",
+  "Of the visitor with the purple pen and the one who came at 5:30 p.m., one brought pretzels and the other brought almonds.",
+  "Whoever brought the almonds stopped by earlier than whoever brought the grapes.",
+  "Tariq and the visitor with the black pen were two different people: one brought grapes, the other pretzels.",
+  "The 6:00 p.m. visitor had either the blue pen or the green pen.",
+  "Whoever brought popcorn stopped by at either 5:30 p.m. or 6:30 p.m.",
+  "The 5:30 p.m. visitor, the one with almonds, the one with grapes, Otis, and the one with the blue pen were five different people.",
+  "Wren stopped by later than the visitor who brought grapes."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

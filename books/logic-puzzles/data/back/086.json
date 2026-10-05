@@ -1,0 +1,10 @@
+{"no": 86, "clues": [
+  {"kind": "either", "a": "Patron=Nico", "one_of": ["Section=maps", "Section=travel"]},
+  {"kind": "compare", "a": "Boots=hiking", "b": "Section=history", "cat": "Time", "rel": "a_less"},
+  {"kind": "nor", "a": "Time=2:30 p.m.", "not": ["Patron=Greta", "Patron=Oscar"]},
+  {"kind": "pair", "people": ["Patron=Greta", "Boots=rubber"], "options": ["Time=1:00 p.m.", "Time=2:30 p.m."]},
+  {"kind": "pair", "people": ["Section=history", "Section=poetry"], "options": ["Time=1:30 p.m.", "Time=3:00 p.m."]},
+  {"kind": "nor", "a": "Boots=snow", "not": ["Time=1:30 p.m.", "Time=3:00 p.m."]},
+  {"kind": "all_different", "items": ["Time=3:00 p.m.", "Patron=Oscar", "Boots=hiking", "Patron=Nico", "Section=travel"]},
+  {"kind": "pair", "people": ["Boots=work", "Time=3:00 p.m."], "options": ["Patron=Pearl", "Patron=Greta"]}
+]}

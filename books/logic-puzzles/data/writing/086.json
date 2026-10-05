@@ -1,0 +1,35 @@
+{
+ "no": 86,
+ "clues": [
+  "Nico browsed either the maps section or the travel section.",
+  "The patron in hiking boots came in earlier than whoever browsed the history section.",
+  "The 2:30 p.m. patron was neither Greta nor Oscar.",
+  "Of Greta and the patron in rubber boots, one came by at 1:00 p.m. and the other at 2:30 p.m.",
+  "Of the patrons in the history and poetry sections, one came by at 1:30 p.m. and the other at 3:00 p.m.",
+  "Whoever wore snow boots came by at neither 1:30 p.m. nor 3:00 p.m.",
+  "The 3:00 p.m. patron, Oscar, the patron in hiking boots, Nico, and the one in the travel section were five different people.",
+  "Of the patron in work boots and the 3:00 p.m. patron, one was Pearl and the other was Greta."
+ ],
+ "hints": [
+  "Look at Greta in clue 4: she came by at either 1:00 or 2:30. Does another clue rule one out?",
+  "Two clues together: clues 3 and 4 both talk about 2:30, so read them side by side for Greta. Then see what clue 8 says about 3:00.",
+  "Clue 3 keeps Greta off 2:30, so clue 4 puts her at 1:00 and the rubber boots at 2:30. Then clue 8 gives Pearl 3:00 and Greta the work boots.",
+  "By clues 4, 6, 7 and 8, Pearl's 3:00 boots were cowboy. Oscar's were not hiking (clue 7) or the 2:30 rubber (clue 3), so snow."
+ ],
+ "solution": {
+  "key_idea": "Clues 3 and 4 put Greta at 1:00, so clue 8 gives 3:00 to Pearl and the work boots to Greta.",
+  "steps": [
+   "Clue 1 gives Nico the maps or travel, and clue 7 keeps him from travel. So Nico browsed the maps.",
+   "Clue 3 keeps Greta off 2:30, so by clue 4 Greta came at 1:00 and the rubber boots at 2:30.",
+   "By clue 8, the 3:00 patron was Pearl or Greta, so Pearl. Clue 8 then gives Greta the work boots.",
+   "Pearl's 3:00 boots were not rubber, hiking (clue 7), snow (clue 6) or work. So Pearl wore cowboy boots.",
+   "Oscar wore snow boots: clue 3 keeps him off the 2:30 rubber, clue 7 rules out hiking, and cowboy and work are taken.",
+   "Clue 7 keeps Nico out of the hiking boots, so Nico wore rubber, at 2:30, and Milo wore hiking.",
+   "By clue 6, Oscar's snow boots came at 2:00, the only time left for them. So Milo came at 1:30.",
+   "Clue 2 puts history later than Milo's hiking boots, so by clue 5 Pearl had history and Milo poetry. Clue 7 gives Greta travel; Oscar, cooking."
+  ],
+  "epilogue": "Nico came straight off the boat to check a chart in the maps section and return an overdue whale book, mud and all. He waxed Wren's floor again himself the next morning."
+ },
+ "tip": null,
+ "answer_line": "Nico tracked in the mud with his rubber boots."
+}

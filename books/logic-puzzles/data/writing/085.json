@@ -1,0 +1,39 @@
+{
+ "no": 85,
+ "clues": [
+  "Whoever wore the striped scarf went up exactly 3 days after whoever climbed for the view.",
+  "Tova did not climb the tower for the view.",
+  "The climber who went up about the pigeons wore either the plaid or the cable scarf.",
+  "Linus made his climb on either Monday or Tuesday.",
+  "Whoever went up to do the dusting climbed on either Tuesday or Thursday.",
+  "The climber in the cable scarf was not the one who went up about the bats.",
+  "Linus did not go up about the pigeons.",
+  "Hattie climbed the tower for either repairs or dusting.",
+  "The climber who went up for repairs was either Tova or Pablo.",
+  "Gideon made his climb on either Thursday or Friday.",
+  "Of the climber who went up for the view and the one who went up about the pigeons, one wore the plaid scarf and the other the argyle.",
+  "Of the climber who went up about the bats and the one who went up about the pigeons, one was Linus and the other was Gideon."
+ ],
+ "hints": [
+  "Look at Hattie's row in the box where names meet reasons. Clue 8 gives her two choices: can another clue rule one out?",
+  "Two clues together: clues 8 and 9 both mention repairs. Then do the same for Linus with clues 12 and 7.",
+  "Clue 9 keeps Hattie off repairs, so clue 8 gives her dusting. Then clues 12, 7 and 2 give Linus the bats, Gideon the pigeons, Tova repairs and Pablo the view.",
+  "Only Tova can take Wednesday: clues 4, 5 and 10 keep Linus, Hattie and Gideon off it, and clue 1 keeps Pablo's view off it."
+ ],
+ "solution": {
+  "key_idea": "Clues 2, 7, 8, 9 and 12 settle every climber's reason; then only Tova, the repairs climber, is free for Wednesday.",
+  "steps": [
+   "Clue 9 keeps Hattie from repairs, so by clue 8 she went up for dusting.",
+   "By clue 12, Linus and Gideon had the bats and the pigeons. Clue 7 gives Linus the bats, so Gideon had the pigeons.",
+   "That leaves repairs and the view for Tova and Pablo. Clue 2 gives Tova repairs, so Pablo went up for the view.",
+   "Clue 1 puts the view on Monday or Tuesday. With clues 4, 5 and 10, only Tova is free for Wednesday.",
+   "Linus and Pablo fill Monday and Tuesday, so Hattie went up on Thursday and Gideon on Friday.",
+   "Clues 3 and 11 give the pigeons the plaid scarf and the view the argyle. So Gideon wore plaid, and Pablo argyle.",
+   "By clue 1, the striped scarf went up on Thursday or Friday. Friday was Gideon's plaid, so Hattie wore the striped scarf.",
+   "By clue 1, Pablo went up on Monday, so Linus went on Tuesday. Clue 6 keeps the cable scarf off Linus: Tova wore cable, Linus red."
+  ],
+  "epilogue": "Tova had muffled the clapper on Wednesday so the bell would not clang while she mended the louvers, and then forgot her scarf. Hattie added 'check the clapper' to her list."
+ },
+ "tip": null,
+ "answer_line": "Tova muffled the bell with her cable-knit scarf."
+}

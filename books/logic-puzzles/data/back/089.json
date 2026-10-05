@@ -1,0 +1,11 @@
+{"no": 89, "clues": [
+ {"kind": "compare", "a": "Name tag=holly", "b": "Table=mittens", "cat": "Shift", "rel": "a_less"},
+ {"kind": "either", "a": "Table=mittens", "one_of": ["Name tag=pinecone", "Name tag=reindeer"]},
+ {"kind": "either", "a": "Table=candles", "one_of": ["Name tag=reindeer", "Name tag=holly"]},
+ {"kind": "pair", "people": ["Volunteer=Dev", "Table=cocoa"], "options": ["Name tag=star", "Name tag=reindeer"]},
+ {"kind": "either", "a": "Shift=5 hours", "one_of": ["Table=wreaths", "Table=fudge"]},
+ {"kind": "compare", "a": "Volunteer=Ruben", "b": "Table=wreaths", "cat": "Shift", "rel": "a_less"},
+ {"kind": "nor", "a": "Name tag=holly", "not": ["Shift=2 hours", "Shift=4 hours"]},
+ {"kind": "pair", "people": ["Table=fudge", "Shift=3 hours"], "options": ["Volunteer=Una", "Volunteer=Elsa"]},
+ {"kind": "all_different", "items": ["Volunteer=Una", "Name tag=star", "Shift=2 hours", "Shift=3 hours", "Shift=5 hours"]}
+]}

@@ -10,8 +10,8 @@
   "Felix made exactly 5 gallons more than the neighbor with the moon label."
  ],
  "hints": [
-  "Look at the 5-gallon column in the labels box. Which label could possibly belong to the smallest batch?",
-  "Comparisons rule out the ends. Clue 1 keeps the owl off 5 gallons. What do clues 5 and 6 say about the star and the moon?",
+  "Look at the 5-gallon row in the box where labels meet gallons. Which label could possibly belong to the smallest batch?",
+  "Comparisons rule out the ends: clue 1 keeps the owl off 5 gallons. What do clues 5 and 6 say about the star and the moon?",
   "So the anchor made 5 gallons. The moon made 10 or 15, so by clues 7 and 4, Felix made 15 and the moon 10.",
   "The star made 15 or 20, so by clue 5 the spicy mix made 10 or 15. Clue 2 rules out 10."
  ],

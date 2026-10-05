@@ -1,0 +1,35 @@
+{
+ "no": 79,
+ "clues": [
+  "Whoever worked the stage arrived exactly 45 minutes after the mince pie's baker.",
+  "Neither Della nor Vito baked the pecan pie.",
+  "Of the pecan pie's baker and the helper at the bake table, one was Rosa and the other was Della.",
+  "Whoever baked the mince pie worked either the kitchen or the bake table.",
+  "The pumpkin pie's baker arrived 15 minutes after the stage helper did.",
+  "Of the pumpkin pie's baker and the porch helper, one was Gus and the other was Imani.",
+  "The helper on the porch arrived later than the one at the bake table.",
+  "Vito and Imani baked the apple pie and the mince pie, one apiece."
+ ],
+ "hints": [
+  "Clues 1 and 5 both measure from the stage helper's arrival. How early, and how late, could the stage helper have come?",
+  "Both gaps are fixed: clue 1 needs 45 minutes before the stage helper, and clue 5 needs 15 minutes after. Which time leaves room for both?",
+  "The stage helper came at 6:45, the only time with 45 minutes before it and 15 after. So pumpkin came at 7:00, mince at 6:00.",
+  "Clues 2 and 3 put Della at the bake table, which clue 7 keeps off 7:00, the pumpkin's time. Clue 8 then leaves Della the cherry pie."
+ ],
+ "solution": {
+  "key_idea": "Clue 5 needs a time after the stage helper's, so clue 1 puts the stage at 6:45, pumpkin at 7:00 and mince at 6:00.",
+  "steps": [
+   "Clue 1 puts the stage helper at 6:45 or 7:00. Clue 5 needs a time 15 minutes after the stage, so the stage was 6:45.",
+   "So the pumpkin pie's baker arrived at 7:00, and by clue 1 the mince pie's baker arrived at 6:00.",
+   "Clue 2 keeps Della off the pecan pie, so by clue 3 Rosa baked the pecan pie and Della worked the bake table.",
+   "Clue 8 keeps Della off the mince pie, so by clue 4 the mince pie's baker worked the kitchen.",
+   "Clue 7 keeps the bake table off 7:00, so Della did not bake the pumpkin pie. By clue 8, she baked the cherry.",
+   "Clue 8 keeps Gus off apple and mince, so he baked the pumpkin pie at 7:00. Clues 5 and 6 leave him the cloakroom.",
+   "With 6:00, 6:45 and 7:00 taken, the bake table and porch share 6:15 and 6:30. By clue 7, Della came at 6:15.",
+   "By clue 6, Imani worked the porch at 6:30, with the apple pie. Vito baked mince in the kitchen, and Rosa worked the stage."
+  ],
+  "epilogue": "Gus found the server on the cloakroom floor and tucked it into the nearest coat pocket to keep it safe for Hattie. Then the bidding on his pumpkin pie began, and he forgot."
+ },
+ "tip": null,
+ "answer_line": "Gus slipped the pie server into a coat pocket."
+}

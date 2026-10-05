@@ -1,0 +1,12 @@
+{"no": 95, "clues": [
+ {"kind": "compare", "a": "Treat=rolls", "b": "Treat=brownies", "cat": "Age", "rel": "a_greater_by", "by": 5},
+ {"kind": "either", "a": "Baker=Ruben", "one_of": ["Age=75", "Age=80"]},
+ {"kind": "compare", "a": "Treat=brownies", "b": "Baker=Emil", "cat": "Age", "rel": "a_less"},
+ {"kind": "pair", "people": ["Baker=Emil", "Apron=white"], "options": ["Age=70", "Age=80"]},
+ {"kind": "compare", "a": "Apron=plaid", "b": "Baker=Gus", "cat": "Age", "rel": "a_less"},
+ {"kind": "nor", "a": "Treat=gingerbread", "not": ["Age=70", "Age=75"]},
+ {"kind": "compare", "a": "Apron=striped", "b": "Treat=fudge", "cat": "Age", "rel": "a_less_by", "by": 20},
+ {"kind": "either", "a": "Treat=gingerbread", "one_of": ["Baker=Emil", "Baker=Lou"]},
+ {"kind": "either", "a": "Apron=blue", "one_of": ["Baker=Lou", "Baker=Mabel"]},
+ {"kind": "pair", "people": ["Age=70", "Age=80"], "options": ["Apron=flowered", "Apron=white"]}
+]}

@@ -1,0 +1,822 @@
+{
+ "no": 97,
+ "chapter": 7,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 97002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Afternoon Boats",
+ "story": "On a cold, calm Festival Eve afternoon, five rowers in the lantern flotilla took the boatyard's rental rowboats out to rehearse, each to a different spot on the route. Felix keeps those boats in the water this late only for the flotilla. High tide had the causeway under water, so the only way to the Point was by boat. Felix rowed too, so he can vouch for his own trip and nobody else's. Who rowed which boat where, and when?",
+ "question": {
+  "text": "Who rowed out to Thimble Point?",
+  "cat": "Went to",
+  "value": "the Point"
+ },
+ "answer": "Teddy",
+ "cast": [
+  "Nico",
+  "Teddy",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 97,
+   "title": "The Afternoon Boats",
+   "story": "On a cold, calm Festival Eve afternoon, five rowers in the lantern flotilla took the boatyard's rental rowboats out to rehearse, each to a different spot on the route. Felix keeps those boats in the water this late only for the flotilla. High tide had the causeway under water, so the only way to the Point was by boat. Felix rowed too, so he can vouch for his own trip and nobody else's. Who rowed which boat where, and when?",
+   "entity": [
+    "rower",
+    "rowers"
+   ],
+   "cast": [
+    "Nico",
+    "Teddy",
+    "Felix"
+   ],
+   "question": {
+    "text": "Who rowed out to Thimble Point?",
+    "cat": "Went to",
+    "value": "the Point"
+   },
+   "answer": "Teddy"
+  },
+  "cats": [
+   {
+    "label": "Rower",
+    "kind": "name",
+    "values": [
+     "Nico",
+     "Oscar",
+     "Felix",
+     "Imani",
+     "Teddy"
+    ]
+   },
+   {
+    "label": "Boat",
+    "values": [
+     "Minnow",
+     "Pebble",
+     "Skipjack",
+     "Teacup",
+     "Puffin"
+    ],
+    "ref": "the rower in the {v}",
+    "pred": "took out the {v}",
+    "neg": "did not take out the {v}",
+    "either": "took out either the {a} or the {b}",
+    "nor": "took out neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Went to",
+    "values": [
+     "the Point",
+     "Gull Rock",
+     "East Cove",
+     "the Narrows",
+     "Seal Ledge"
+    ],
+    "ref": "the rower bound for {v}",
+    "pred": "rowed to {v}",
+    "neg": "did not row to {v}",
+    "either": "rowed to either {a} or {b}",
+    "nor": "rowed to neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     810,
+     840,
+     870,
+     900,
+     930
+    ],
+    "labels": [
+     "1:30 p.m.",
+     "2:00 p.m.",
+     "2:30 p.m.",
+     "3:00 p.m.",
+     "3:30 p.m."
+    ],
+    "ref": "the rower who pushed off at {x}",
+    "pred": "pushed off at {x}",
+    "neg": "did not push off at {x}",
+    "either": "pushed off at either {a} or {b}",
+    "nor": "pushed off at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "pushed off later than {y}",
+    "less": "pushed off earlier than {y}",
+    "dmore": "pushed off exactly {d} after {y}",
+    "dless": "pushed off exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "pushed off half an hour after {y}",
+    "dless1": "pushed off half an hour before {y}",
+    "step": 30,
+    "values": [
+     "1:30 p.m.",
+     "2:00 p.m.",
+     "2:30 p.m.",
+     "3:00 p.m.",
+     "3:30 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   3,
+   1,
+   4,
+   2,
+   0
+  ],
+  [
+   3,
+   4,
+   1,
+   2,
+   0
+  ],
+  [
+   2,
+   1,
+   0,
+   3,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     4
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the rower bound for Gull Rock and the rower who pushed off at 3:30 p.m., one took out the Puffin and the other took out the Minnow.",
+  "Of Nico and the rower who pushed off at 3:30 p.m., one took out the Teacup and the other took out the Minnow.",
+  "The rower who pushed off at 3:00 p.m. is either Felix or Imani.",
+  "Felix pushed off at neither 2:00 p.m. nor 2:30 p.m.",
+  "Oscar took out neither the Minnow nor the Puffin.",
+  "The rower who pushed off at 3:30 p.m. rowed to neither East Cove nor the Narrows.",
+  "The rower in the Skipjack pushed off at neither 2:00 p.m. nor 3:30 p.m.",
+  "The rower who pushed off at 2:30 p.m. is neither Oscar nor Imani.",
+  "Felix pushed off earlier than Teddy.",
+  "The rower bound for Seal Ledge is either Oscar or Imani.",
+  "The rower bound for the Narrows pushed off earlier than the rower bound for East Cove.",
+  "Of Nico and Felix, one rowed to Gull Rock and the other rowed to the Narrows."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    10
+   ],
+   "text": "Clue 10 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Since Felix can still be only 1:30 p.m., 3:00 p.m., or 3:30 p.m. and Teddy can still be only 1:30 p.m., 2:00 p.m., 2:30 p.m., or 3:30 p.m., clue 9 means Felix cannot be 3:30 p.m. and Teddy cannot be 1:30 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    11
+   ],
+   "text": "Since the Narrows can still be only 1:30 p.m., 2:00 p.m., 2:30 p.m., or 3:00 p.m. and East Cove can still be only 1:30 p.m., 2:00 p.m., 2:30 p.m., or 3:00 p.m., clue 11 means the Narrows cannot be 3:00 p.m. and East Cove cannot be 1:30 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    7
+   ],
+   "text": "3:30 p.m. must go with the Minnow: clue 1 rules out the Pebble and the Teacup; clue 7 rules out the Skipjack; clue 2 rules out the Puffin."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Nico must go with the Teacup: clue 2 rules out the Pebble, the Skipjack, and the Puffin; the Minnow is already ruled out for 3:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Gull Rock must go with the Puffin: clue 1 rules out the Pebble, the Skipjack, and the Teacup; the Minnow is already ruled out for 3:30 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    12
+   ],
+   "text": "Clue 12 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10,
+    12
+   ],
+   "text": "Nico must go with the Narrows: clue 12 rules out the Point and East Cove; clue 10 rules out Seal Ledge; Gull Rock is already ruled out for the Teacup."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10,
+    12
+   ],
+   "text": "Felix must go with Gull Rock: clue 12 rules out the Point and East Cove; clue 10 rules out Seal Ledge; the Narrows already goes with Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The Teacup must go with the Narrows: clue 1 rules out Gull Rock; the Point, East Cove, and Seal Ledge are already ruled out for Nico."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Puffin goes with Gull Rock, so the Puffin also goes with Felix."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    3
+   ],
+   "text": "SUPPOSE TEST: try Imani with the Minnow.",
+   "chain": [
+    "Suppose Imani goes with the Minnow.",
+    "3:30 p.m. goes with the Minnow, so 3:30 p.m. also goes with Imani.",
+    "3:00 p.m. must go with Felix: clue 3 rules out Nico, Oscar, and Teddy; Imani already goes with 3:30 p.m.",
+    "Gull Rock must go with 3:00 p.m.: clue 1 rules out 3:30 p.m.; 1:30 p.m., 2:00 p.m., and 2:30 p.m. are already ruled out for Felix.",
+    "The Puffin must go with 3:00 p.m.: clue 2 rules out 3:30 p.m.; 1:30 p.m., 2:00 p.m., and 2:30 p.m. are already ruled out for Gull Rock.",
+    "But then clue 9 cannot be true."
+   ],
+   "result": "So Imani does NOT go with the Minnow: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The Minnow must go with Teddy: clue 5 rules out Oscar; the Suppose test ruled out Imani; Nico and Felix are already ruled out for 3:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    9
+   ],
+   "text": "3:30 p.m. must go with Teddy: clue 2 rules out Nico; clue 9 rules out Felix; Oscar and Imani are already ruled out for the Minnow."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    8
+   ],
+   "text": "2:30 p.m. must go with Nico: clue 8 rules out Oscar and Imani; clue 4 rules out Felix; Teddy already goes with 3:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The Teacup must go with 2:30 p.m.: clue 1 rules out 3:30 p.m.; 1:30 p.m., 2:00 p.m., and 3:00 p.m. are already ruled out for Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "2:00 p.m. must go with the Pebble: clue 7 rules out the Skipjack; the Teacup is already ruled out for Nico; the Puffin is already ruled out for Gull Rock; the Minnow already goes with 3:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    11
+   ],
+   "text": "The Narrows must go with 2:30 p.m.: clue 11 rules out 3:00 p.m.; clue 6 rules out 3:30 p.m.; 1:30 p.m. and 2:00 p.m. are already ruled out for Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10,
+    12
+   ],
+   "text": "Teddy must go with the Point: clue 12 rules out Gull Rock and the Narrows; clue 10 rules out Seal Ledge; East Cove is already ruled out for the Minnow."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Minnow goes with Teddy, so the Minnow also goes with the Point."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "3:30 p.m. goes with the Minnow, so 3:30 p.m. also goes with the Point."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    11
+   ],
+   "text": "Since the Narrows can still be only 2:30 p.m. and East Cove can still be only 2:00 p.m. or 3:00 p.m., clue 11 means East Cove cannot be 2:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    11
+   ],
+   "text": "East Cove must go with 3:00 p.m.: clue 11 rules out 1:30 p.m. and 2:00 p.m.; clue 6 rules out 3:30 p.m.; 2:30 p.m. already goes with the Narrows."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Gull Rock must go with 1:30 p.m.: clue 1 rules out 3:30 p.m.; 2:00 p.m. and 2:30 p.m. are already ruled out for Felix; 3:00 p.m. already goes with East Cove."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Seal Ledge must go with 2:00 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Puffin goes with Gull Rock, so the Puffin also goes with 1:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The Skipjack must go with 3:00 p.m.: clue 7 rules out 2:00 p.m. and 3:30 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Felix goes with Gull Rock, so Felix also goes with 1:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    8
+   ],
+   "text": "Oscar must go with 2:00 p.m.: clue 8 rules out 2:30 p.m.; clue 3 rules out 3:00 p.m.; 3:30 p.m. is already ruled out for the Minnow; 1:30 p.m. already goes with Felix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Imani must go with 3:00 p.m.: clue 8 rules out 2:30 p.m.; 3:30 p.m. is already ruled out for the Minnow; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Pebble goes with 2:00 p.m., so the Pebble also goes with Oscar."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Imani must go with the Skipjack: the Suppose test ruled out the Minnow; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The Pebble must go with Seal Ledge: clue 1 rules out Gull Rock; East Cove is already ruled out for 2:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The Skipjack must go with East Cove: clue 1 rules out Gull Rock; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    12
+   ],
+   "text": "Oscar must go with Seal Ledge: clue 12 rules out the Narrows; Gull Rock is already ruled out for the Puffin; East Cove is already ruled out for 3:00 p.m.; the Point already goes with Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    12
+   ],
+   "text": "Imani must go with East Cove: clue 12 rules out Gull Rock and the Narrows; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 68,
+  "score": 183,
+  "revisits": 1,
+  "transfer": 30,
+  "trial": 1,
+  "clue_steps": 8
+ },
+ "trial_chain": 8,
+ "table": [
+  [
+   "Nico",
+   "Teacup",
+   "the Narrows",
+   "2:30 p.m."
+  ],
+  [
+   "Oscar",
+   "Pebble",
+   "Seal Ledge",
+   "2:00 p.m."
+  ],
+  [
+   "Felix",
+   "Puffin",
+   "Gull Rock",
+   "1:30 p.m."
+  ],
+  [
+   "Imani",
+   "Skipjack",
+   "East Cove",
+   "3:00 p.m."
+  ],
+  [
+   "Teddy",
+   "Minnow",
+   "the Point",
+   "3:30 p.m."
+  ]
+ ],
+ "score": 183
+}

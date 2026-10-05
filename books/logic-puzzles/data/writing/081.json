@@ -1,0 +1,38 @@
+{
+ "no": 81,
+ "clues": [
+  "Neither Lou nor Mabel ordered the scone.",
+  "Selma came in later than whoever took the window seat.",
+  "Either Kenji or Priya ordered the croissant.",
+  "Neither Selma nor Priya came in at 8:00 a.m.",
+  "Of Priya and the bagel customer, one came in at 8:00 a.m. and the other at 7:30 a.m.",
+  "The 8:30 a.m. customer sat neither at the counter nor on the patio.",
+  "Whoever came in at 8:30 a.m. ordered either the danish or the croissant.",
+  "Mabel ordered neither the muffin nor the bagel.",
+  "The window seat went to either Selma or Lou.",
+  "The customer in the corner seat came in half an hour after the one in the window seat.",
+  "Whoever ordered the bagel sat either in the corner or at the counter."
+ ],
+ "hints": [
+  "Look at the window seat and clue 9's two choices for it. Does another clue rule one of them out?",
+  "Two clues at once: clue 2 compares Selma with the window customer. Could Selma come in later than herself?",
+  "Clue 2 keeps Selma out of the window, so by clue 9 Lou sat there. Clues 1, 3, 8 and 11 then leave Lou only the muffin.",
+  "Clues 5 and 4 put Priya at 7:30 and the bagel at 8:00. Clues 7 and 2 then leave Lou only 7:00."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 keeps Selma out of the window seat, so clue 9 puts Lou there, right beside the corkboard.",
+  "steps": [
+   "Clues 8, 1 and 3 rule out the muffin, bagel, scone and croissant for Mabel, so she ordered the danish.",
+   "Clue 2 keeps Selma out of the window seat, so by clue 9 Lou sat there. Clue 11 keeps the bagel from the window.",
+   "Lou had no scone (clue 1), croissant (clue 3), bagel or danish, so Lou had the muffin.",
+   "By clue 5, Priya came at 7:30 or 8:00, and clue 4 makes it 7:30. So by clue 5, the bagel came at 8:00.",
+   "Clues 7 and 2 keep Lou's muffin off 8:30 and 9:00, so Lou came at 7:00. By clue 4, the 8:00 bagel was Kenji's.",
+   "By clue 3, Priya had the croissant, Selma the scone. Clue 7 keeps the scone off 8:30: Selma came at 9:00, Mabel at 8:30.",
+   "By clue 10, the corner customer came in at 7:30: Priya. By clue 11, Kenji's bagel went to the counter.",
+   "Clue 6 keeps Mabel, at 8:30, off the patio, so she sat in the booth and Selma on the patio."
+  ],
+  "epilogue": "Lou had pocketed the card to have it framed behind glass, safe from flour and fingers, as a surprise for Rosa. It came back the next week, and Gloria looked much relieved."
+ },
+ "tip": null,
+ "answer_line": "Lou pocketed the recipe card."
+}

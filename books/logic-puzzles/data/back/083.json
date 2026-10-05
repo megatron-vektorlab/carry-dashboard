@@ -1,0 +1,10 @@
+{"no": 83, "clues": [
+  {"kind": "pair", "people": ["Visitor=Otis", "Visitor=Faye"], "options": ["Time=5:00 p.m.", "Time=6:30 p.m."]},
+  {"kind": "pair", "people": ["Pen=purple", "Time=5:30 p.m."], "options": ["Snack=pretzels", "Snack=almonds"]},
+  {"kind": "compare", "a": "Snack=almonds", "b": "Snack=grapes", "cat": "Time", "rel": "a_less"},
+  {"kind": "pair", "people": ["Visitor=Tariq", "Pen=black"], "options": ["Snack=grapes", "Snack=pretzels"]},
+  {"kind": "either", "a": "Time=6:00 p.m.", "one_of": ["Pen=blue", "Pen=green"]},
+  {"kind": "either", "a": "Snack=popcorn", "one_of": ["Time=5:30 p.m.", "Time=6:30 p.m."]},
+  {"kind": "all_different", "items": ["Time=5:30 p.m.", "Snack=almonds", "Snack=grapes", "Visitor=Otis", "Pen=blue"]},
+  {"kind": "compare", "a": "Visitor=Wren", "b": "Snack=grapes", "cat": "Time", "rel": "a_greater"}
+]}

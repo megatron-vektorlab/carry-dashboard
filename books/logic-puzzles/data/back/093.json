@@ -1,0 +1,10 @@
+{"no": 93, "clues": [
+  {"kind": "either", "a": "Age=45", "one_of": ["Duster=brush", "Duster=wand"]},
+  {"kind": "compare", "a": "Duster=cloth", "b": "Display=lanterns", "cat": "Age", "rel": "a_less"},
+  {"kind": "either", "a": "Volunteer=Faye", "one_of": ["Display=maps", "Display=anchors"]},
+  {"kind": "pair", "people": ["Display=shells", "Age=35"], "options": ["Duster=chamois", "Duster=mitt"]},
+  {"kind": "compare", "a": "Volunteer=Otis", "b": "Duster=brush", "cat": "Age", "rel": "a_less_by", "by": 10},
+  {"kind": "compare", "a": "Display=maps", "b": "Display=shells", "cat": "Age", "rel": "a_greater"},
+  {"kind": "pair", "people": ["Volunteer=Jade", "Age=45"], "options": ["Duster=cloth", "Duster=brush"]},
+  {"kind": "pair", "people": ["Volunteer=Cyrus", "Duster=chamois"], "options": ["Display=shells", "Display=lanterns"]}
+]}

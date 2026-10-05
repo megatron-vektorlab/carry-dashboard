@@ -1,0 +1,11 @@
+{"no": 82, "clues": [
+  {"kind": "compare", "a": "Tool=lantern", "b": "Tool=ladder", "cat": "Age", "rel": "a_less"},
+  {"kind": "compare", "a": "Tool=rope", "b": "Tool=ladder", "cat": "Age", "rel": "a_greater"},
+  {"kind": "pair", "people": ["Visitor=Milo", "Tool=rope"], "options": ["Age=60", "Age=40"]},
+  {"kind": "compare", "a": "Excuse=fishing", "b": "Excuse=sketching", "cat": "Age", "rel": "a_greater_by", "by": 30},
+  {"kind": "compare", "a": "Excuse=fishing", "b": "Tool=wrench", "cat": "Age", "rel": "a_greater"},
+  {"kind": "either", "a": "Visitor=Boris", "one_of": ["Excuse=jogging", "Excuse=sketching"]},
+  {"kind": "pair", "people": ["Visitor=Cass", "Excuse=fishing"], "options": ["Age=20", "Age=60"]},
+  {"kind": "nor", "a": "Visitor=Jade", "not": ["Excuse=fishing", "Excuse=stargazing"]},
+  {"kind": "pair", "people": ["Excuse=jogging", "Age=50"], "options": ["Visitor=Arlo", "Visitor=Cass"]}
+]}

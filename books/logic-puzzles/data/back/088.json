@@ -1,0 +1,10 @@
+{"no": 88, "clues": [
+ {"kind": "pair", "people": ["Visitor=Kit", "Visitor=Rosa"], "options": ["Hat=beret", "Time=7:00 p.m."]},
+ {"kind": "either", "a": "Hat=beret", "one_of": ["Visitor=Amara", "Visitor=Kit"]},
+ {"kind": "compare", "a": "Hat=cap", "b": "Carried=basket", "cat": "Time", "rel": "a_less"},
+ {"kind": "pair", "people": ["Visitor=Vito", "Carried=lantern"], "options": ["Hat=bonnet", "Hat=beanie"]},
+ {"kind": "pair", "people": ["Visitor=Otis", "Carried=toolbox"], "options": ["Hat=cap", "Hat=bonnet"]},
+ {"kind": "nor", "a": "Carried=umbrella", "not": ["Hat=beret", "Hat=fedora"]},
+ {"kind": "compare", "a": "Visitor=Otis", "b": "Carried=umbrella", "cat": "Time", "rel": "a_less_by", "by": 120},
+ {"kind": "compare", "a": "Hat=beret", "b": "Hat=fedora", "cat": "Time", "rel": "a_less"}
+]}

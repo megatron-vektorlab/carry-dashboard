@@ -1,0 +1,35 @@
+{
+ "no": 93,
+ "clues": [
+  "The 45-year-old used either the brush or the wand.",
+  "Whoever used the cloth is younger than whoever dusted the lanterns.",
+  "Faye dusted either the maps or the anchors.",
+  "Of the volunteer who dusted the shells and the 35-year-old, one used the chamois and the other the mitt.",
+  "Otis is exactly ten years younger than whoever used the brush.",
+  "The volunteer who dusted the maps is older than the one who dusted the shells.",
+  "Jade and the 45-year-old are two different volunteers: one used the cloth, the other the brush.",
+  "One of Cyrus and whoever used the chamois dusted the shells, and the other dusted the lanterns."
+ ],
+ "hints": [
+  "Look at the 45-year-old in clues 1 and 7. Which duster appears in both?",
+  "Use two clues together: clues 1 and 7 settle the 45-year-old's duster, and then Jade's. When the clues run dry, test Jade's age with a Suppose: she has two left.",
+  "Suppose Jade is 55. Then the shells must be 65 and the maps 75 (clues 4 and 6), leaving the lanterns no age (clue 2), so Jade is 65.",
+  "With Jade at 65, the shells are 55 and the lanterns 75. By clue 6, the maps are 65: Jade dusted them."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 7 give the 45-year-old the brush; then testing Jade at 55 leaves the lanterns no age, so Jade is 65.",
+  "steps": [
+   "Clue 1 gives the 45-year-old the brush or wand; clue 7, the cloth or brush. So it was the brush, and Jade had the cloth.",
+   "By clue 5, Otis is 35. Clues 4 and 2 keep Jade's cloth off 35 and 75, and the brush has 45, so Jade is 55 or 65.",
+   "By clue 4, the shells volunteer is not 35 and had the chamois or mitt, so is not 45 either. Clue 6 rules out 75.",
+   "Suppose Jade is 55. Then the shells, which lack the cloth, are 65, and the maps 75 (clue 6). The lanterns, older than the cloth, have no age left.",
+   "So Jade is 65, the shells 55, and the lanterns 75 (clue 2). By clue 6, the maps are 65: Jade's.",
+   "Clue 3 gives Faye the anchors. The maps, shells and lanterns are not 35, so Otis dusted the knots. Faye is 45, with the brush.",
+   "Together, clues 4 and 8 leave the chamois only the shells. So Otis had the mitt, and Cyrus dusted the lanterns (clue 8).",
+   "So Bea dusted the shells with the chamois, at 55, and Cyrus, at 75, had the wand."
+  ],
+  "epilogue": "Otis had carried the Constance to the harbor office to count her tiny sails against an old chart, leaving a bowline in her place as a sailor's IOU. The ship was back before story hour."
+ },
+ "tip": null,
+ "answer_line": "Otis moved the ship in a bottle."
+}

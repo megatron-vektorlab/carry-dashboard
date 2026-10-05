@@ -1,0 +1,37 @@
+{
+ "no": 95,
+ "clues": [
+  "Whoever is known for rolls is exactly five years older than whoever is known for brownies.",
+  "Ruben is either 75 or 80 years old.",
+  "The baker known for brownies is younger than Emil.",
+  "Emil and the baker in the white apron are two different people: one is 70, the other 80.",
+  "Whoever bakes in the plaid apron is younger than Gus.",
+  "The baker whose specialty is gingerbread is neither 70 nor 75 years old.",
+  "The baker in the striped apron is exactly 20 years younger than the one known for fudge.",
+  "Gingerbread is the specialty of either Emil or Lou.",
+  "Either Lou or Mabel bakes in the blue apron.",
+  "One of the 70-year-old and the 80-year-old wears the flowered apron, and the other wears the white one."
+ ],
+ "hints": [
+  "Clue 7 pins two ages at once. Then look at clues 4 and 10: what do they say about the 70- and 80-year-olds?",
+  "Clue 4 makes Emil 70 or 80, and clue 10 puts those two ages in flowered and white. Clue 2 gives Ruben two ages: Suppose one.",
+  "Suppose Ruben is 80. Then Emil is 70 (clue 4), the two wear flowered and white (clue 10), and clues 9, 5 and 7 leave Gus no apron.",
+  "With Ruben at 75, clues 9 and 10 make blue 65, so Ruben wears plaid. Emil wears flowered, Gus white, and clue 5 makes Gus 80."
+ ],
+ "solution": {
+  "key_idea": "Supposing Ruben is 80 hands Emil and Ruben the flowered and white aprons, leaving Gus none; so Ruben is 75.",
+  "steps": [
+   "Clue 7 puts the striped apron at 60 and fudge at 80. Clue 5 keeps Gus off 60, so Gus's apron is not striped.",
+   "Clue 2 makes Ruben 75 or 80; clue 4 makes Emil 70 or 80. Clue 10 gives the 70- and 80-year-olds the flowered and white aprons.",
+   "Suppose Ruben is 80. Then Emil is 70 (clue 4), so between them they wear the flowered and white aprons (clue 10).",
+   "But then Gus has no apron left: not blue (clue 9), not plaid (clue 5), not striped. So Ruben is 75.",
+   "Clue 10 keeps blue and plaid off 70 and 80, and clue 9 keeps blue off Ruben. So blue is 65, and Ruben wears plaid.",
+   "Emil, not in white (clue 4), wears flowered, so Gus wears white. Clue 5 makes Gus 80, with the fudge; Emil is 70.",
+   "Clue 6 keeps gingerbread off Emil, at 70, so clue 8 gives it to Lou. Clues 3 and 1 keep brownies off Emil and Ruben.",
+   "So Mabel has the brownies. Clue 1 makes her 65, in blue, and gives Emil the rolls. Ruben has biscotti; Lou is 60, in stripes."
+  ],
+  "epilogue": "Lou's own oven had died mid-batch, so Lou used Rosa's spare key at midnight to finish gingerbread lighthouses for Hattie's holiday supper. Rosa forgave everything and asked for the icing recipe."
+ },
+ "tip": null,
+ "answer_line": "Lou baked the gingerbread at midnight."
+}
