@@ -1,0 +1,37 @@
+{
+ "no": 9,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Gardener=Olive",
+   "one_of": [
+    "Gloves=floral",
+    "Gloves=striped"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Gloves=floral",
+   "not": [
+    "Gardener=Priya",
+    "Gardener=Zeke"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Gloves=green",
+   "not": [
+    "Gardener=Zeke",
+    "Gardener=Cass"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Gloves=leather",
+   "one_of": [
+    "Gardener=Cass",
+    "Gardener=Olive"
+   ]
+  }
+ ]
+}

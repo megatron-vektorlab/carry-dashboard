@@ -1,0 +1,23 @@
+{
+ "no": 58,
+ "clues": [],
+ "hints": [
+  "Look at the chain: Gideon vouches for Vera, and Vera vouches for Lou. What does that say about those three statements?",
+  "Gideon's statement is true exactly when Vera's is, and Vera's exactly when Lou's is. Now count them against the rule: only one statement is true.",
+  "All three true would be three true statements, one too many. So all three are false, and Lou's false statement means Gideon or Priya did it."
+ ],
+ "solution": {
+  "key_idea": "Gideon backs Vera and Vera backs Lou, so those three stand or fall together; with only one true statement allowed, all three are false.",
+  "steps": [
+   "Vera says Lou is truthful, and Gideon says Vera is truthful. So Gideon's, Vera's and Lou's statements are all true or all false.",
+   "All true would give three true statements, but the rule allows only one. So all three are false.",
+   "Lou's statement is false, so Gideon or Priya drew the mustache.",
+   "Either way, neither Vera nor Felix did it, so Felix's statement is true. It must be the only true one.",
+   "So Priya's statement is false, and Gideon drew the mustache.",
+   "Check Gideon: only Felix's statement is true, which is exactly one. So Gideon fits."
+  ],
+  "epilogue": "Gideon had been testing a grease pencil for the prize labels and could not resist. He offered to wipe it off, but the committee voted to keep the mustache through the awards."
+ },
+ "tip": null,
+ "answer_line": "Gideon drew the mustache on the trophy."
+}

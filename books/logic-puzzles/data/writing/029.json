@@ -1,0 +1,26 @@
+{
+ "no": 29,
+ "clues": [
+  "Either Kenji or Priya went home with the trophy.",
+  "One of Vera and whoever took home the medal won the sailboard race, and the other won the rowing race.",
+  "Kenji and the winner of the rowing race took home the ribbon and the pie, one each.",
+  "Of Kenji and the swim race winner, one got the ribbon and the other got the trophy."
+ ],
+ "hints": [
+  "Look at the trophy. Clue 1 gives it two possible owners. Can another clue rule one of them out?",
+  "Clue 3 says Kenji took home either the ribbon or the pie. Read that beside clue 1.",
+  "So Kenji did not win the trophy, and by clue 1 Priya did. Then clues 2 and 3 leave the medal only for Della."
+ ],
+ "solution": {
+  "key_idea": "Clue 3 keeps Kenji from the trophy, so clue 1 hands it to Priya.",
+  "steps": [
+   "By clue 3, Kenji took home the ribbon or the pie, so by clue 1 Priya won the trophy.",
+   "Clue 2 keeps Vera from the medal and clue 3 keeps Kenji from it, so the medal went to Della.",
+   "Clue 2 gives Della the sailboard or rowing race. Clue 3 gives the rowing winner the ribbon or pie, so Della won the sailboard race.",
+   "Clue 2 gives Vera the rowing race. Clue 4 keeps Kenji from the swim race, so Kenji won the kayak race and Priya the swim.",
+   "By clue 3, Kenji took the ribbon or pie, and clue 4 rules out the pie, so Kenji took the ribbon and Vera the pie."
+  ],
+  "epilogue": "The Gazette went to press on time, captions and all: Priya's swim trophy, Kenji's kayak ribbon, Della's sailboard medal, and Vera's rowing-race pie, which she shared with the newsroom."
+ },
+ "tip": "When a clue gives someone just two choices, look for another clue that takes one away."
+}

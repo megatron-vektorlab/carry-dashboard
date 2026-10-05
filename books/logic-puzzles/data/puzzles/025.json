@@ -1,0 +1,369 @@
+{
+ "no": 25,
+ "chapter": 2,
+ "family": "grid4",
+ "stars": 2,
+ "seed": 25001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Supper at the Clam Shack",
+ "story": "Nico was halfway through the one about the lobster the size of a canoe (a smaller canoe than last time) when four friends gave their orders at the harbor clam shack. Nobody was listening, the cook included. Now the fryer is hot, the cook is waiting, and the order pad says only \"four suppers, four drinks.\" Who ordered which dish, and who drank what?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Nico",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 25,
+   "title": "Supper at the Clam Shack",
+   "story": "Nico was halfway through the one about the lobster the size of a canoe (a smaller canoe than last time) when four friends gave their orders at the harbor clam shack. Nobody was listening, the cook included. Now the fryer is hot, the cook is waiting, and the order pad says only \"four suppers, four drinks.\" Who ordered which dish, and who drank what?",
+   "entity": [
+    "diner",
+    "diners"
+   ],
+   "cast": [
+    "Nico",
+    "Felix"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Diner",
+    "kind": "name",
+    "values": [
+     "Nico",
+     "Felix",
+     "Bea",
+     "Sam"
+    ]
+   },
+   {
+    "label": "Dish",
+    "values": [
+     "lobster roll",
+     "fried clams",
+     "fish tacos",
+     "crab cake"
+    ],
+    "ref": "the diner with the {v}",
+    "pred": "ordered the {v}",
+    "neg": "did not order the {v}",
+    "either": "ordered either the {a} or the {b}",
+    "nor": "ordered neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Drink",
+    "values": [
+     "lemonade",
+     "iced tea",
+     "root beer",
+     "cider"
+    ],
+    "ref": "the {v} drinker",
+    "pred": "drank {v}",
+    "neg": "did not drink {v}",
+    "either": "drank either {a} or {b}",
+    "nor": "drank neither {a} nor {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   2,
+   0,
+   1
+  ],
+  [
+   1,
+   0,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The cider drinker ordered either the lobster roll or the fried clams.",
+  "Of Felix and the diner with the crab cake, one drank iced tea and the other drank lemonade.",
+  "Sam drank neither iced tea nor cider.",
+  "Bea ordered either the fish tacos or the lobster roll.",
+  "The lemonade drinker ordered either the lobster roll or the fish tacos."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    5
+   ],
+   "text": "The crab cake must go with the iced tea: clue 5 rules out the lemonade; clue 2 rules out the root beer; clue 1 rules out the cider."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Felix must go with the lemonade: clue 2 rules out the root beer and the cider; the iced tea is already ruled out for the crab cake."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Sam must go with the root beer: clue 3 rules out the iced tea and the cider; the lemonade already goes with Felix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Bea must go with the cider: the iced tea is already ruled out for the crab cake; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with the iced tea: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The crab cake goes with the iced tea, so the crab cake also goes with Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The fried clams must go with Sam: clue 4 rules out Bea; Felix is already ruled out for the lemonade; Nico already goes with the crab cake."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The root beer goes with Sam, so the root beer also goes with the fried clams."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The fish tacos must go with the lemonade: clue 1 rules out the cider; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The lobster roll must go with the cider: the root beer is already ruled out for Sam; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Felix must go with the fish tacos: clue 2 rules out the crab cake; the lobster roll and the fried clams are already ruled out for the lemonade."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Bea must go with the lobster roll: clue 4 rules out the fried clams and the crab cake; the fish tacos already goes with Felix."
+  }
+ ],
+ "features": {
+  "steps": 22,
+  "score": 55,
+  "revisits": 0,
+  "transfer": 7,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Nico",
+   "crab cake",
+   "iced tea"
+  ],
+  [
+   "Felix",
+   "fish tacos",
+   "lemonade"
+  ],
+  [
+   "Bea",
+   "lobster roll",
+   "cider"
+  ],
+  [
+   "Sam",
+   "fried clams",
+   "root beer"
+  ]
+ ],
+ "score": 55
+}

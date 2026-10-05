@@ -1,0 +1,50 @@
+{
+ "no": 44,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Boat=Ripple",
+   "b": "Boat=Tern",
+   "cat": "Time",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Student=Pearl",
+   "b": "Boat=Tern",
+   "cat": "Time",
+   "rel": "a_less"
+  },
+  {
+   "kind": "compare",
+   "a": "Student=Emil",
+   "b": "Boat=Bluebell",
+   "cat": "Time",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "either",
+   "a": "Student=Walt",
+   "one_of": [
+    "Time=9 a.m.",
+    "Time=11 a.m."
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Boat=Bluebell",
+   "not": [
+    "Student=Emil",
+    "Student=Pearl"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Boat=Bluebell",
+   "one_of": [
+    "Time=10 a.m.",
+    "Time=noon"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "no": 26,
+ "clues": [
+  {
+   "kind": "pair",
+   "people": [
+    "Charm=acorn",
+    "Charm=wishbone"
+   ],
+   "options": [
+    "Word=kayak",
+    "Word=zucchini"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Word=rhythm",
+   "one_of": [
+    "Charm=sea glass",
+    "Charm=wishbone"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Charm=sea glass",
+   "one_of": [
+    "Finalist=Cyrus",
+    "Finalist=Oscar"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Finalist=Wren",
+   "one_of": [
+    "Word=zucchini",
+    "Word=rhythm"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Finalist=Oscar",
+    "Finalist=Imani"
+   ],
+   "options": [
+    "Charm=wishbone",
+    "Charm=sea glass"
+   ]
+  }
+ ]
+}

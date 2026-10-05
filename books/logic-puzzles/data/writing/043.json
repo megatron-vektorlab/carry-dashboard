@@ -1,0 +1,31 @@
+{
+ "no": 43,
+ "clues": [
+  "Sunday's note was about either the gull nest or the stuck latch.",
+  "The stuck latch was noted exactly two nights after the odd flicker.",
+  "Priya wrote about either the odd flicker or the wet paint.",
+  "Arlo locked up on the night after the odd flicker was logged.",
+  "The wet paint note was written on either Thursday or Sunday.",
+  "Either Priya or Della locked up on Thursday.",
+  "Neither Teddy nor Arlo locked up on Sunday."
+ ],
+ "hints": [
+  "Look at the wet paint note. Clue 5 allows it only two nights. Does another clue speak about one of them?",
+  "Put clues 1 and 5 together. Clue 1 names the only notes Sunday could have. Is the wet paint among them?",
+  "So the wet paint was Thursday's note. Then by clue 2, the odd flicker came on Friday and the stuck latch on Sunday."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 5 put the wet paint on Thursday, and then clue 2's two-night gap fixes the odd flicker on Friday.",
+  "steps": [
+   "Clue 1 keeps the wet paint off Sunday, so by clue 5 the wet paint note was written on Thursday.",
+   "The odd flicker was not Thursday's note, and clue 1 keeps it off Sunday, so it was Friday's or Saturday's.",
+   "By clue 2, the stuck latch came two nights after the flicker. So the flicker was Friday, the latch Sunday, and the gull nest Saturday.",
+   "By clue 7, neither Teddy nor Arlo locked up Sunday, and by clue 3 Priya did not note the latch. So Della locked up Sunday.",
+   "By clue 6, Priya locked up on Thursday, so the wet paint note was hers.",
+   "By clue 4, Arlo did not note the flicker, so he noted the gull nest on Saturday. Teddy saw the odd flicker on Friday."
+  ],
+  "epilogue": "Teddy had locked up on Friday and seen the flicker from the causeway, too quick for his camera. Lena underlined his note twice and kept the log in her desk."
+ },
+ "tip": "Two either-or clues that meet on the same square can settle it between them.",
+ "answer_line": "Teddy noticed the odd flicker, on Friday night."
+}

@@ -1,0 +1,88 @@
+{
+ "no": 48,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 48000,
+ "kind": "liars",
+ "title": "Who Let the Goat Out?",
+ "story": "Clementine the goat has never met a pie she didn't like, so when her pen came open at the county fair, she trotted straight into the pie tent. Nico swears she ate a dozen; the judges count two. Three people were leaning on the fence by her pen just before, and each says one thing. Can you work out who let her loose?",
+ "cast": [
+  "Nico"
+ ],
+ "names": [
+  "Nico",
+  "Faye",
+  "Linus"
+ ],
+ "did": "left the goat pen open",
+ "didnt": "didn't leave the goat pen open",
+ "statements": [
+  [
+   "not",
+   2
+  ],
+  [
+   "or",
+   0,
+   1
+  ],
+  [
+   "not",
+   0
+  ]
+ ],
+ "texts": [
+  "Linus didn't leave the goat pen open.",
+  "Either Nico or I left the goat pen open.",
+  "Nico didn't leave the goat pen open."
+ ],
+ "rule": [
+  "exactly",
+  2
+ ],
+ "rule_text": "Exactly two of these statements are true.",
+ "culprit": "Nico",
+ "truth": [
+  true,
+  true,
+  false
+ ],
+ "cases": [
+  {
+   "case": "Nico",
+   "truth": [
+    "true",
+    "true",
+    "false"
+   ],
+   "count": 2,
+   "fits": true
+  },
+  {
+   "case": "Faye",
+   "truth": [
+    "true",
+    "true",
+    "true"
+   ],
+   "count": 3,
+   "fits": false
+  },
+  {
+   "case": "Linus",
+   "truth": [
+    "false",
+    "false",
+    "true"
+   ],
+   "count": 1,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who left the goat pen open?"
+ },
+ "answer": "Nico",
+ "score": 30
+}

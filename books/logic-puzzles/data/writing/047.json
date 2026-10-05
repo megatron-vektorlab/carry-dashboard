@@ -1,0 +1,22 @@
+{
+ "no": 47,
+ "clues": [],
+ "hints": [
+  "Look at Bea's and Gus's statements side by side. What does each one say about Teddy?",
+  "Opposites: Bea and Gus contradict each other, so exactly one of them is lying. The rule allows only one liar, the culprit.",
+  "So the culprit is Bea or Gus, and Teddy tells the truth. Teddy says Gus ate the scone, and Gus fits the rule."
+ ],
+ "solution": {
+  "key_idea": "Bea and Gus contradict each other, so one of them is the lone liar, and truthful Teddy names Gus.",
+  "steps": [
+   "The rule says only the culprit lies. So exactly one statement is false, and it is the culprit's.",
+   "Bea says Teddy didn't eat the scone, and Gus says he did. They are opposites, so exactly one of them is false.",
+   "So the lone liar, the culprit, is Bea or Gus. Teddy is telling the truth, and Teddy says Gus ate the scone.",
+   "Check Gus: Teddy's statement is true, Bea's is true because Teddy is innocent, and Gus's own is false. Only the culprit lies.",
+   "The others fail: if Bea did it, her own statement would be true; if Teddy did it, both Teddy and Bea would be lying."
+  ],
+  "epilogue": "Gus had popped in with the store's ad, decided an unattended scone was fair game, and ate it in three bites. He brought Ada two from Rosa's the next morning and apologized to Teddy."
+ },
+ "tip": null,
+ "answer_line": "Gus ate the last scone."
+}

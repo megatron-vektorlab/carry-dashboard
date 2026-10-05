@@ -1,0 +1,546 @@
+{
+ "no": 74,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 74003,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Firewood Orders",
+ "story": "When the first cold snap hit, four households on Hattie's lane wanted firewood, so she took every order on one of her lists. That list is now somewhere on another list, possibly clipped to a third. The wood came Saturday, every neighbor had a load stacked by Sunday night, and the woodcutter's bill still needs checking. Who chose which wood, how many cords did each neighbor order, and where was each load stacked?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 74,
+   "title": "The Firewood Orders",
+   "story": "When the first cold snap hit, four households on Hattie's lane wanted firewood, so she took every order on one of her lists. That list is now somewhere on another list, possibly clipped to a third. The wood came Saturday, every neighbor had a load stacked by Sunday night, and the woodcutter's bill still needs checking. Who chose which wood, how many cords did each neighbor order, and where was each load stacked?",
+   "entity": [
+    "neighbor",
+    "neighbors"
+   ],
+   "cast": [
+    "Hattie"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Neighbor",
+    "kind": "name",
+    "values": [
+     "Kit",
+     "Hattie",
+     "Ruben",
+     "Amara"
+    ]
+   },
+   {
+    "label": "Wood",
+    "values": [
+     "oak",
+     "birch",
+     "maple",
+     "ash"
+    ],
+    "ref": "the neighbor who chose {v}",
+    "pred": "chose {v}",
+    "neg": "did not choose {v}",
+    "either": "chose either {a} or {b}",
+    "nor": "chose neither {a} nor {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Stacked",
+    "values": [
+     "porch",
+     "shed",
+     "barn",
+     "garage"
+    ],
+    "ref": "the neighbor with the woodpile by the {v}",
+    "pred": "stacked the wood by the {v}",
+    "neg": "did not stack the wood by the {v}",
+    "either": "stacked the wood by either the {a} or the {b}",
+    "nor": "stacked the wood by neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Cords",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "1 cord",
+     "2 cords",
+     "3 cords",
+     "4 cords"
+    ],
+    "ref": "the neighbor who ordered {x}",
+    "pred": "ordered {x}",
+    "neg": "did not order {x}",
+    "either": "ordered either {a} or {b}",
+    "nor": "ordered neither {a} nor {b}",
+    "short": "{x}",
+    "more": "ordered more wood than {y}",
+    "less": "ordered less wood than {y}",
+    "dmore": "ordered exactly {d} more than {y}",
+    "dless": "ordered exactly {d} less than {y}",
+    "dunit": [
+     "cord",
+     "cords"
+    ],
+    "dmore1": "ordered exactly 1 cord more than {y}",
+    "dless1": "ordered exactly 1 cord less than {y}",
+    "step": 1,
+    "values": [
+     "1 cord",
+     "2 cords",
+     "3 cords",
+     "4 cords"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   3,
+   0,
+   1
+  ],
+  [
+   0,
+   2,
+   3,
+   1
+  ],
+  [
+   2,
+   3,
+   0,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the neighbor who chose oak and the neighbor who ordered 3 cords, one stacked the wood by the garage and the other stacked the wood by the porch.",
+  "Amara ordered exactly 2 cords less than the neighbor who chose ash.",
+  "Hattie chose either ash or oak.",
+  "Ruben ordered less wood than the neighbor who chose maple.",
+  "The neighbor with the woodpile by the garage ordered less wood than the neighbor who chose birch.",
+  "Of the neighbor who chose maple and the neighbor with the woodpile by the shed, one ordered 3 cords and the other ordered 2 cords."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the ash cannot be 1 cord or 2 cords and Amara cannot be 3 cords or 4 cords."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means Ruben cannot be 4 cords and the maple cannot be 1 cord."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 means the garage cannot be 4 cords and the birch cannot be 1 cord."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4,
+    5
+   ],
+   "text": "1 cord must go with the oak: clue 5 rules out the birch; clue 4 rules out the maple; clue 2 rules out the ash."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6
+   ],
+   "text": "The shed must go with 2 cords: clue 1 rules out 3 cords; clue 6 rules out 4 cords; 1 cord is already ruled out for the oak."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The barn must go with 4 cords: clue 1 rules out 3 cords; 1 cord is already ruled out for the oak; 2 cords already goes with the shed."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    6
+   ],
+   "text": "The maple must go with 3 cords: clue 4 rules out 1 cord; clue 6 rules out 4 cords; 2 cords is already ruled out for the shed."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The ash must go with 4 cords: clue 2 rules out 1 cord and 2 cords; 3 cords already goes with the maple."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The birch must go with 2 cords: clue 5 rules out 1 cord; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The shed goes with 2 cords, so the shed also goes with the birch."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The barn must go with the ash: clue 1 rules out the oak; the maple is already ruled out for 4 cords; the birch already goes with the shed."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "3 cords must go with Kit: clue 2 rules out Amara; Hattie and Ruben are already ruled out for the maple."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "4 cords must go with Hattie: clue 4 rules out Ruben; clue 2 rules out Amara; Kit already goes with 3 cords."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Hattie must go with the ash: clue 3 rules out the birch and the maple; the oak is already ruled out for 1 cord."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The barn must go with Hattie: Kit, Ruben, and Amara are already ruled out for 4 cords."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The maple goes with 3 cords, so the maple also goes with Kit."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the ash can still be only 4 cords and Amara can still be only 1 cord or 2 cords, clue 2 means Amara cannot be 1 cord."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Amara must go with 2 cords: clue 2 rules out 1 cord, 3 cords, and 4 cords."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Ruben must go with 1 cord: clue 4 rules out 4 cords; 3 cords is already ruled out for the maple; 2 cords already goes with Amara."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The oak goes with 1 cord, so the oak also goes with Ruben."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Amara must go with the birch: clue 2 rules out the ash; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The shed must go with Amara: Kit, Hattie, and Ruben are already ruled out for 2 cords."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the garage can still be only 1 cord or 3 cords and the birch can still be only 2 cords, clue 5 means the garage cannot be 3 cords."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The garage must go with 1 cord: clue 5 rules out 3 cords and 4 cords; 2 cords already goes with the shed."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The porch must go with 3 cords: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The oak must go with the garage: clue 1 rules out the shed and the barn; the porch is already ruled out for 1 cord."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The maple must go with the porch: clue 6 rules out the shed; the barn is already ruled out for 4 cords; the garage already goes with the oak."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Kit goes with 3 cords, so Kit also goes with the porch."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Ruben must go with the garage: the shed is already ruled out for 2 cords; the barn is already ruled out for 4 cords; the porch already goes with Kit."
+  }
+ ],
+ "features": {
+  "steps": 50,
+  "score": 140,
+  "revisits": 5,
+  "transfer": 19,
+  "trial": 0,
+  "clue_steps": 11
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Kit",
+   "maple",
+   "porch",
+   "3 cords"
+  ],
+  [
+   "Hattie",
+   "ash",
+   "barn",
+   "4 cords"
+  ],
+  [
+   "Ruben",
+   "oak",
+   "garage",
+   "1 cord"
+  ],
+  [
+   "Amara",
+   "birch",
+   "shed",
+   "2 cords"
+  ]
+ ],
+ "score": 140
+}

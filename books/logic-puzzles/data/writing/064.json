@@ -1,0 +1,28 @@
+{
+ "no": 64,
+ "clues": [
+  "Marta and Basil were the two who paid 50 cents and 75 cents, in some order.",
+  "The biography fine was exactly a quarter more than the atlas fine.",
+  "One of Marta and Ivan paid the atlas fine, and the other paid the biography fine.",
+  "The poetry fine was either 50 cents or 75 cents.",
+  "Whoever paid 25 cents owed it for either the atlas or the biography."
+ ],
+ "hints": [
+  "Look at the 25 cents column in the box where books meet fines. Which book could have had the smallest fine?",
+  "Clue 5 allows only the atlas or the biography at 25 cents. Comparisons rule out the ends, and clue 2 is a comparison.",
+  "So the atlas fine was 25 cents, since clue 2 puts the biography fine above it. Then clue 2 makes the biography fine 50 cents."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 keeps the biography fine off 25 cents, so by clue 5 the atlas fine was 25 cents and the biography fine 50.",
+  "steps": [
+   "By clue 2, the biography fine was a quarter more than the atlas fine, so it was not 25 cents.",
+   "So by clue 5, the atlas fine was 25 cents, and by clue 2 the biography fine was 50 cents.",
+   "By clue 4, the poetry fine was 75 cents, which leaves $1.00 for the thriller.",
+   "By clue 1, Marta paid 50 or 75 cents: the biography or the poetry. By clue 3, she paid for the atlas or the biography.",
+   "So Marta paid 50 cents for the biography. By clue 3, Ivan paid 25 cents for the atlas.",
+   "By clue 1, Basil paid 75 cents for the poetry, and Teddy paid $1.00 for the thriller."
+  ],
+  "epilogue": "Ivan's atlas fine was a quarter, Marta's biography fine 50 cents, Basil's poetry 75 cents, and Teddy's thriller a full dollar. Wren whispered her thanks, then frowned again at the logbook's checkout card."
+ },
+ "tip": null
+}

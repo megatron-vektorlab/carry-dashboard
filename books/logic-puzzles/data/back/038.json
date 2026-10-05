@@ -1,0 +1,6 @@
+{"no": 38, "clues": [
+ {"kind": "compare", "a": "Member=Otis", "b": "Member=Jonah", "cat": "Spot", "rel": "a_less"},
+ {"kind": "compare", "a": "Member=Gus", "b": "Member=Otis", "cat": "Spot", "rel": "a_less_by", "by": 1},
+ {"kind": "compare", "a": "Member=Lena", "b": "Member=Hattie", "cat": "Spot", "rel": "a_greater"},
+ {"kind": "either", "a": "Member=Hattie", "one_of": ["Spot=second", "Spot=fourth"]}
+]}

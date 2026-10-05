@@ -1,0 +1,28 @@
+{
+ "no": 42,
+ "clues": [
+  "The poems were read by either Olive or Kenji.",
+  "One of Wren and Kenji read on July 8, and the other on July 15.",
+  "Of Olive and the July 29 volunteer, one read the pirate tale and the other the poems.",
+  "Wren read on an earlier date than whoever read the fairy tale."
+ ],
+ "hints": [
+  "Look at clue 2. Once Wren and Kenji have their two dates, who is left for July 22 and July 29?",
+  "Clue 3 is a pair clue. Could Olive be the July 29 volunteer? Put your answer beside clue 2.",
+  "So Olive read on July 22 and Sam on July 29. By clue 3, those two read the pirate tale and the poems."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 leaves the last two dates to Olive and Sam, and clue 3 keeps Olive off July 29, so Olive read on July 22.",
+  "steps": [
+   "By clue 2, Wren and Kenji read on July 8 and July 15, so Olive and Sam read on July 22 and July 29.",
+   "Clue 3 is a pair clue, so Olive is not the July 29 volunteer. Olive read on July 22, and Sam on July 29.",
+   "By clue 3, Olive and Sam read the pirate tale and the poems. That leaves the fairy tale and the fables for Wren and Kenji.",
+   "Kenji's book is the fairy tale or the fables, so by clue 1, Olive read the poems, and Sam the pirate tale.",
+   "By clue 4, Wren did not read the fairy tale, so Wren read the fables and Kenji the fairy tale.",
+   "By clue 4, Kenji read later than Wren, so Wren read on July 8 and Kenji on July 15."
+  ],
+  "epilogue": "Wren whispered fables on July 8, Kenji read a fairy tale on July 15, Olive recited poems on July 22, and Sam ended the month with a pirate tale."
+ },
+ "tip": "If two people use up two dates, everyone else must share the dates that are left.",
+ "answer_line": null
+}

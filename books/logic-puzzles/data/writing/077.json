@@ -1,0 +1,32 @@
+{
+ "no": 77,
+ "clues": [
+  "The neighbor who drew the owl label made more cider than the one who drew the moon.",
+  "Of the neighbor who made 5 gallons and the one who made 10, one pressed the wild mix and the other the tart.",
+  "The tart and spicy mixes came from two different neighbors: one made 5 gallons, the other 15 gallons.",
+  "Cyrus made more cider than Felix.",
+  "Whoever drew the star label made exactly 5 gallons more than whoever pressed the spicy mix.",
+  "Marta made less cider than the neighbor who drew the moon.",
+  "Felix made exactly 5 gallons more than the neighbor with the moon label."
+ ],
+ "hints": [
+  "Look at the 5-gallon column in the labels box. Which label could possibly belong to the smallest batch?",
+  "Comparisons rule out the ends. Clue 1 keeps the owl off 5 gallons. What do clues 5 and 6 say about the star and the moon?",
+  "So the anchor made 5 gallons. The moon made 10 or 15, so by clues 7 and 4, Felix made 15 and the moon 10.",
+  "The star made 15 or 20, so by clue 5 the spicy mix made 10 or 15. Clue 2 rules out 10."
+ ],
+ "solution": {
+  "key_idea": "Clues 1, 5 and 6 keep the owl, star and moon labels off 5 gallons, so the anchor went on the smallest batch.",
+  "steps": [
+   "Clue 1 keeps the owl off 5 gallons, clue 5 the star, and clue 6 the moon. So the anchor label made 5 gallons.",
+   "The moon made neither 5 (clue 6) nor 20 (clue 1). By clue 7, Felix made 5 more than the moon, so 15 or 20.",
+   "Clue 4 keeps Felix off 20, so Felix made 15 and the moon 10. Cyrus, above Felix, made 20.",
+   "By clue 6, Marta made less than 10, so 5 gallons, with the anchor. Priya made 10, with the moon.",
+   "The star made 15 or 20, so by clue 5 the spicy mix made 10 or 15. Clue 2 rules out 10, leaving Felix's 15.",
+   "So by clue 5 the star made 20: Cyrus drew it. Felix, with 15, drew the owl.",
+   "By clue 3, the tart made 5 gallons: Marta's. By clue 2, Priya's 10 gallons were wild, and Cyrus pressed the sweet."
+  ],
+  "epilogue": "Fifty gallons in all: Cyrus's sweet under a star, Felix's spicy under an owl, Priya's wild under a moon and Marta's tart under an anchor. Felix took his fair share."
+ },
+ "tip": null
+}

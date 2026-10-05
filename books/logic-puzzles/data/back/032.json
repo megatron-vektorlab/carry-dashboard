@@ -1,0 +1,8 @@
+{
+ "no": 32,
+ "clues": [
+  {"kind": "compare", "a": "Rider=Hattie", "b": "Rider=Arlo", "cat": "Float", "rel": "a_less_by", "by": 2},
+  {"kind": "either", "a": "Rider=Hattie", "one_of": ["Float=first", "Float=fourth"]},
+  {"kind": "compare", "a": "Rider=Selma", "b": "Rider=Arlo", "cat": "Float", "rel": "a_less_by", "by": 1}
+ ]
+}

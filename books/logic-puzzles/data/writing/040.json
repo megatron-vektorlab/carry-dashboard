@@ -1,0 +1,29 @@
+{
+ "no": 40,
+ "clues": [
+  "Gus shipped his cargo on Thursday.",
+  "Tariq's cargo was either the canoe or the beehive.",
+  "The armchair did not go over on Friday.",
+  "Una shipped earlier in the week than Tariq.",
+  "Of Faye and the piano's sender, one shipped on Thursday and the other on Friday.",
+  "The canoe went over earlier in the week than Gus's cargo."
+ ],
+ "hints": [
+  "Look at clue 5. It names two days. Does another clue already give one of those days to somebody?",
+  "Clue 5 is a pair clue: Faye and the piano's sender split Thursday and Friday between them. Put it beside clue 1.",
+  "Gus has Thursday, so Faye shipped on Friday, and the piano was Gus's. Clue 4 then puts Una on Tuesday and Tariq on Wednesday."
+ ],
+ "solution": {
+  "key_idea": "Clue 5 gives Thursday and Friday to Faye and the piano's sender, and clue 1 gives Thursday to Gus, so Gus sent the piano.",
+  "steps": [
+   "Clue 1 puts Gus on Thursday.",
+   "By clue 5, Faye and the piano's sender shipped on Thursday and Friday. Gus has Thursday, so Faye shipped Friday and Gus sent the piano.",
+   "That leaves Tuesday and Wednesday for Una and Tariq. By clue 4, Una shipped earlier, so Una shipped Tuesday and Tariq Wednesday.",
+   "Friday's cargo was not the canoe (clue 6), the armchair (clue 3) or the piano, so Faye sent the beehive.",
+   "By clue 2, Tariq sent the canoe or the beehive. The beehive is Faye's, so Tariq sent the canoe and Una the armchair."
+  ],
+  "epilogue": "Una's armchair crossed on Tuesday, Tariq's canoe on Wednesday, Gus's piano on Thursday and Faye's beehive on Friday. Jonah fixed his log, and Pilot greeted the bees from a polite distance."
+ },
+ "tip": "When a pair clue names two days, check whether another clue has already taken one of them.",
+ "answer_line": null
+}

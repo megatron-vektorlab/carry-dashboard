@@ -1,0 +1,570 @@
+{
+ "no": 77,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 77005,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Cider Press Batches",
+ "story": "Come October, Felix wheels the old cider press out of the boatyard's paint shed and lends it to the neighbors for a fair share of each batch. This year four pressed, Felix included, each with a different apple mix and a hand-drawn label for the jugs. Nobody wrote down the gallons, and a fair share needs numbers. Who pressed which mix, who drew which label, and how much cider did each one make?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Priya",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 77,
+   "title": "The Cider Press Batches",
+   "story": "Come October, Felix wheels the old cider press out of the boatyard's paint shed and lends it to the neighbors for a fair share of each batch. This year four pressed, Felix included, each with a different apple mix and a hand-drawn label for the jugs. Nobody wrote down the gallons, and a fair share needs numbers. Who pressed which mix, who drew which label, and how much cider did each one make?",
+   "entity": [
+    "neighbor",
+    "neighbors"
+   ],
+   "cast": [
+    "Priya",
+    "Felix"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Neighbor",
+    "kind": "name",
+    "values": [
+     "Marta",
+     "Priya",
+     "Cyrus",
+     "Felix"
+    ]
+   },
+   {
+    "label": "Mix",
+    "values": [
+     "tart",
+     "sweet",
+     "spicy",
+     "wild"
+    ],
+    "ref": "the neighbor with the {v} mix",
+    "pred": "pressed a {v} mix",
+    "neg": "did not press a {v} mix",
+    "either": "pressed either a {a} or a {b} mix",
+    "nor": "pressed neither a {a} nor a {b} mix",
+    "short": "the {v} mix"
+   },
+   {
+    "label": "Label",
+    "values": [
+     "owl",
+     "anchor",
+     "moon",
+     "star"
+    ],
+    "ref": "the neighbor with the {v} label",
+    "pred": "drew the {v} label",
+    "neg": "did not draw the {v} label",
+    "either": "drew either the {a} or the {b} label",
+    "nor": "drew neither the {a} nor the {b} label",
+    "short": "the {v} label"
+   },
+   {
+    "label": "Gallons",
+    "ordered": true,
+    "nums": [
+     5,
+     10,
+     15,
+     20
+    ],
+    "labels": [
+     "5 gallons",
+     "10 gallons",
+     "15 gallons",
+     "20 gallons"
+    ],
+    "ref": "the neighbor who made {x}",
+    "pred": "made {x} of cider",
+    "neg": "did not make {x} of cider",
+    "either": "made either {a} or {b} of cider",
+    "nor": "made neither {a} nor {b} of cider",
+    "short": "{x}",
+    "more": "made more cider than {y}",
+    "less": "made less cider than {y}",
+    "dmore": "made exactly {d} more than {y}",
+    "dless": "made exactly {d} less than {y}",
+    "dunit": [
+     "gallon",
+     "gallons"
+    ],
+    "dmore1": "made exactly 5 gallons more than {y}",
+    "dless1": "made exactly 5 gallons less than {y}",
+    "step": 5,
+    "values": [
+     "5 gallons",
+     "10 gallons",
+     "15 gallons",
+     "20 gallons"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   3,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   3,
+   0
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  }
+ ],
+ "texts": [
+  "The neighbor with the owl label made more cider than the neighbor with the moon label.",
+  "Of the neighbor who made 5 gallons and the neighbor who made 10 gallons, one pressed a wild mix and the other pressed a tart mix.",
+  "Of the neighbor with the tart mix and the neighbor with the spicy mix, one made 5 gallons of cider and the other made 15 gallons of cider.",
+  "Cyrus made more cider than Felix.",
+  "The neighbor with the star label made exactly 5 gallons more than the neighbor with the spicy mix.",
+  "Marta made less cider than the neighbor with the moon label.",
+  "Felix made exactly 5 gallons more than the neighbor with the moon label."
+ ],
+ "trace": [
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means the owl label cannot be 5 gallons and the moon label cannot be 20 gallons."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means Cyrus cannot be 5 gallons and Felix cannot be 20 gallons."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 means the star label cannot be 5 gallons and the spicy mix cannot be 20 gallons."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since the moon label can still be only 5 gallons, 10 gallons, or 15 gallons, clue 6 means Marta cannot be 15 gallons or 20 gallons and the moon label cannot be 5 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5,
+    6
+   ],
+   "text": "5 gallons must go with the anchor label: clue 1 rules out the owl label; clue 6 rules out the moon label; clue 5 rules out the star label."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the owl label can still be only 10 gallons, 15 gallons, or 20 gallons and the moon label can still be only 10 gallons or 15 gallons, clue 1 means the owl label cannot be 10 gallons."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Felix can still be only 5 gallons, 10 gallons, or 15 gallons and the moon label can still be only 10 gallons or 15 gallons, clue 7 means Felix cannot be 5 gallons or 10 gallons and the moon label cannot be 15 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    7
+   ],
+   "text": "Felix must go with 15 gallons: clue 7 rules out 5 gallons and 10 gallons; clue 4 rules out 20 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6,
+    7
+   ],
+   "text": "The moon label must go with 10 gallons: clue 6 rules out 5 gallons; clue 7 rules out 15 gallons; clue 1 rules out 20 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Marta must go with 5 gallons: clue 6 rules out 15 gallons and 20 gallons; 10 gallons is already ruled out for the moon label."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The anchor label goes with 5 gallons, so the anchor label also goes with Marta."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Cyrus can still be only 10 gallons or 20 gallons and Felix can still be only 15 gallons, clue 4 means Cyrus cannot be 10 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Cyrus must go with 20 gallons: clue 4 rules out 5 gallons and 10 gallons; 15 gallons already goes with Felix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with 10 gallons: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The moon label goes with 10 gallons, so the moon label also goes with Priya."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the star label can still be only 15 gallons or 20 gallons and the spicy mix can still be only 5 gallons, 10 gallons, or 15 gallons, clue 5 means the spicy mix cannot be 5 gallons."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    5
+   ],
+   "text": "The spicy mix must go with 15 gallons: clue 5 rules out 5 gallons and 20 gallons; clue 2 rules out 10 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The sweet mix must go with 20 gallons: clue 2 rules out 5 gallons and 10 gallons; 15 gallons already goes with the spicy mix."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Felix goes with 15 gallons, so Felix also goes with the spicy mix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The spicy mix must go with the owl label: clue 5 rules out the star label; the anchor label is already ruled out for 5 gallons; the moon label is already ruled out for 10 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The sweet mix must go with the star label: the anchor label is already ruled out for 5 gallons; the moon label is already ruled out for 10 gallons; the owl label already goes with the spicy mix."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Cyrus goes with 20 gallons, so Cyrus also goes with the sweet mix."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "15 gallons goes with the spicy mix, so 15 gallons also goes with the owl label."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The star label must go with 20 gallons: clue 5 rules out 5 gallons; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Felix goes with 15 gallons, so Felix also goes with the owl label."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Cyrus must go with the star label: the anchor label is already ruled out for 5 gallons; the other choices are already taken."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3
+   ],
+   "text": "The tart mix must go with 5 gallons: clue 3 rules out 10 gallons; clue 2 rules out 15 gallons and 20 gallons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3
+   ],
+   "text": "The wild mix must go with 10 gallons: clue 3 rules out 5 gallons; clue 2 rules out 15 gallons and 20 gallons."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The anchor label goes with 5 gallons, so the anchor label also goes with the tart mix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The wild mix must go with the moon label: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Marta goes with 5 gallons, so Marta also goes with the tart mix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with the wild mix: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 50,
+  "score": 147,
+  "revisits": 6,
+  "transfer": 21,
+  "trial": 0,
+  "clue_steps": 13
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Marta",
+   "tart",
+   "anchor",
+   "5 gallons"
+  ],
+  [
+   "Priya",
+   "wild",
+   "moon",
+   "10 gallons"
+  ],
+  [
+   "Cyrus",
+   "sweet",
+   "star",
+   "20 gallons"
+  ],
+  [
+   "Felix",
+   "spicy",
+   "owl",
+   "15 gallons"
+  ]
+ ],
+ "score": 147
+}

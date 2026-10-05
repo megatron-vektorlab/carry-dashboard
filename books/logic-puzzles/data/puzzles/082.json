@@ -1,0 +1,705 @@
+{
+ "no": 82,
+ "chapter": 6,
+ "family": "case54",
+ "stars": 4,
+ "seed": 82004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Copper Whale",
+ "story": "For as long as anyone can remember, a copper whale has swung on the boatyard roof. On Wednesday morning the roof was bare, and Felix called it the least shipshape thing he had ever seen. Five visitors were in the yard the evening before, each with a different tool and a different excuse. The roof is too high to reach without a ladder, and fresh ladder marks dent the frost under the eaves. Who took down the copper whale?",
+ "question": {
+  "text": "Who took down the copper whale?",
+  "cat": "Tool",
+  "value": "ladder"
+ },
+ "answer": "Boris",
+ "cast": [
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 82,
+   "title": "The Case of the Copper Whale",
+   "story": "For as long as anyone can remember, a copper whale has swung on the boatyard roof. On Wednesday morning the roof was bare, and Felix called it the least shipshape thing he had ever seen. Five visitors were in the yard the evening before, each with a different tool and a different excuse. The roof is too high to reach without a ladder, and fresh ladder marks dent the frost under the eaves. Who took down the copper whale?",
+   "entity": [
+    "visitor",
+    "visitors"
+   ],
+   "cast": [
+    "Felix"
+   ],
+   "question": {
+    "text": "Who took down the copper whale?",
+    "cat": "Tool",
+    "value": "ladder"
+   }
+  },
+  "cats": [
+   {
+    "label": "Visitor",
+    "kind": "name",
+    "values": [
+     "Jade",
+     "Arlo",
+     "Boris",
+     "Cass",
+     "Milo"
+    ]
+   },
+   {
+    "label": "Tool",
+    "values": [
+     "ladder",
+     "rope",
+     "wrench",
+     "lantern",
+     "crowbar"
+    ],
+    "ref": "the visitor with the {v}",
+    "pred": "carried the {v}",
+    "neg": "did not carry the {v}",
+    "either": "carried either the {a} or the {b}",
+    "nor": "carried neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Excuse",
+    "values": [
+     "fishing",
+     "jogging",
+     "sketching",
+     "lost dog",
+     "stargazing"
+    ],
+    "ref": "the visitor with the {v} excuse",
+    "pred": "gave the {v} excuse",
+    "neg": "did not give the {v} excuse",
+    "either": "gave either the {a} or the {b} excuse",
+    "nor": "gave neither the {a} nor the {b} excuse",
+    "short": "the {v} excuse"
+   },
+   {
+    "label": "Age",
+    "ordered": true,
+    "nums": [
+     20,
+     30,
+     40,
+     50,
+     60
+    ],
+    "ref": "the {x}-year-old",
+    "pred": "is {x} years old",
+    "neg": "is not {x} years old",
+    "either": "is either {a} or {b} years old",
+    "nor": "is neither {a} nor {b} years old",
+    "short": "age {x}",
+    "more": "is older than {y}",
+    "less": "is younger than {y}",
+    "dmore": "is exactly {d} older than {y}",
+    "dless": "is exactly {d} younger than {y}",
+    "dunit": [
+     "year",
+     "years"
+    ],
+    "dmore1": "is 10 years older than {y}",
+    "dless1": "is 10 years younger than {y}",
+    "step": 10,
+    "values": [
+     "20",
+     "30",
+     "40",
+     "50",
+     "60"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   2,
+   0,
+   3,
+   4
+  ],
+  [
+   3,
+   4,
+   2,
+   1,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   0,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The visitor with the lantern is younger than the visitor with the ladder.",
+  "The visitor with the rope is older than the visitor with the ladder.",
+  "Of Milo and the visitor with the rope, one is 60 years old and the other is 40 years old.",
+  "The visitor with the fishing excuse is exactly 30 years older than the visitor with the sketching excuse.",
+  "The visitor with the fishing excuse is older than the visitor with the wrench.",
+  "Boris gave either the jogging or the sketching excuse.",
+  "Of Cass and the visitor with the fishing excuse, one is 20 years old and the other is 60 years old.",
+  "Jade gave neither the fishing nor the stargazing excuse.",
+  "Of the visitor with the jogging excuse and the 50-year-old, one is Arlo and the other is Cass."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means the lantern cannot be age 60 and the ladder cannot be age 20."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the ladder can still be only age 30, age 40, age 50, or age 60, clue 2 means the rope cannot be age 20 or age 30 and the ladder cannot be age 60."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the lantern can still be only age 20, age 30, age 40, or age 50 and the ladder can still be only age 30, age 40, or age 50, clue 1 means the lantern cannot be age 50."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means the fishing excuse cannot be age 20, age 30, or age 40 and the sketching excuse cannot be age 40, age 50, or age 60."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the fishing excuse can still be only age 50 or age 60, clue 5 means the wrench cannot be age 60."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    7
+   ],
+   "text": "The fishing excuse must go with age 60: clue 4 rules out age 20, age 30, and age 40; clue 7 rules out age 50."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Cass must go with age 20: clue 7 rules out age 30, age 40, and age 50; age 60 is already ruled out for the fishing excuse."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since the fishing excuse can still be only age 60 and the sketching excuse can still be only age 20 or age 30, clue 4 means the sketching excuse cannot be age 20."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The sketching excuse must go with age 30: clue 4 rules out age 20, age 40, age 50, and age 60."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    9
+   ],
+   "text": "Boris must go with the sketching excuse: clue 6 rules out the fishing excuse, the lost dog excuse, and the stargazing excuse; clue 9 rules out the jogging excuse."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8,
+    9
+   ],
+   "text": "Jade must go with the lost dog excuse: clue 8 rules out the fishing excuse and the stargazing excuse; clue 9 rules out the jogging excuse; the sketching excuse already goes with Boris."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    7,
+    9
+   ],
+   "text": "Age 50 must go with Arlo: clue 9 rules out Jade and Boris; clue 7 rules out Cass; clue 3 rules out Milo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Age 60 must go with Milo: Jade, Boris, and Cass are already ruled out for the fishing excuse; Arlo already goes with age 50."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    7,
+    8
+   ],
+   "text": "The fishing excuse must go with Milo: clue 8 rules out Jade; clue 6 rules out Boris; clue 7 rules out Cass; Arlo is already ruled out for age 60."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Jade must go with age 40: clue 9 rules out age 50; age 30 is already ruled out for the sketching excuse; age 60 is already ruled out for the fishing excuse; age 20 already goes with Cass."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Boris must go with age 30: clue 9 rules out age 50; age 60 is already ruled out for the fishing excuse; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The lost dog excuse goes with Jade, so the lost dog excuse also goes with age 40."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "The jogging excuse must go with age 20: clue 9 rules out age 50; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The stargazing excuse must go with age 50: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Cass goes with age 20, so Cass also goes with the jogging excuse."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Arlo must go with the stargazing excuse: the fishing excuse is already ruled out for age 60; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The rope must go with Jade: clue 3 rules out Milo; Arlo is already ruled out for age 50; Boris is already ruled out for the sketching excuse; Cass is already ruled out for age 20."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The lost dog excuse goes with Jade, so the lost dog excuse also goes with the rope."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The fishing excuse must go with the crowbar: clue 5 rules out the wrench; the ladder and the lantern are already ruled out for age 60; the rope already goes with the lost dog excuse."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3
+   ],
+   "text": "The rope must go with age 40: clue 2 rules out age 20 and age 30; clue 3 rules out age 50; age 60 is already ruled out for the fishing excuse."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    5
+   ],
+   "text": "Age 60 must go with the crowbar: clue 2 rules out the ladder; clue 5 rules out the wrench; clue 1 rules out the lantern; the rope is already ruled out for the fishing excuse."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The crowbar must go with Milo: Arlo is already ruled out for age 50; Boris is already ruled out for the sketching excuse; Cass is already ruled out for age 20; Jade already goes with the rope."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the rope can still be only age 40 and the ladder can still be only age 30 or age 50, clue 2 means the ladder cannot be age 50."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The ladder must go with age 30: clue 1 rules out age 20; clue 2 rules out age 50 and age 60; age 40 already goes with the rope."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The lantern must go with age 20: clue 1 rules out age 50 and age 60; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The wrench must go with age 50: clue 5 rules out age 60; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Cass must go with the lantern: the ladder, the rope, the wrench, and the crowbar are already ruled out for age 20."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The sketching excuse goes with age 30, so the sketching excuse also goes with the ladder."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The lantern must go with the jogging excuse: the fishing excuse is already ruled out for age 60; the stargazing excuse is already ruled out for age 50; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The wrench must go with the stargazing excuse: clue 5 rules out the fishing excuse; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Boris goes with the sketching excuse, so Boris also goes with the ladder."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Arlo must go with the wrench: the rope, the lantern, and the crowbar are already ruled out for age 50; the ladder already goes with Boris."
+  }
+ ],
+ "features": {
+  "steps": 67,
+  "score": 185,
+  "revisits": 4,
+  "transfer": 29,
+  "trial": 0,
+  "clue_steps": 12
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Jade",
+   "rope",
+   "lost dog",
+   "40"
+  ],
+  [
+   "Arlo",
+   "wrench",
+   "stargazing",
+   "50"
+  ],
+  [
+   "Boris",
+   "ladder",
+   "sketching",
+   "30"
+  ],
+  [
+   "Cass",
+   "lantern",
+   "jogging",
+   "20"
+  ],
+  [
+   "Milo",
+   "crowbar",
+   "fishing",
+   "60"
+  ]
+ ],
+ "score": 185
+}

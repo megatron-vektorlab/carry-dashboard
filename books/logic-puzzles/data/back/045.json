@@ -1,0 +1,46 @@
+{
+ "no": 45,
+ "clues": [
+  {
+   "kind": "pair",
+   "people": [
+    "Customer=Zeke",
+    "Pickup=10 a.m."
+   ],
+   "options": [
+    "Order=rye loaf",
+    "Order=cinnamon bun"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Pickup=7 a.m.",
+    "Pickup=10 a.m."
+   ],
+   "options": [
+    "Order=rye loaf",
+    "Order=layer cake"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Customer=Lou",
+   "b": "Order=baguettes",
+   "cat": "Pickup",
+   "rel": "a_less"
+  },
+  {
+   "kind": "compare",
+   "a": "Customer=Zeke",
+   "b": "Order=baguettes",
+   "cat": "Pickup",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "diff",
+   "a": "Order=baguettes",
+   "b": "Customer=Nico"
+  }
+ ]
+}

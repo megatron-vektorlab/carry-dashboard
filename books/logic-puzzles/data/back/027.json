@@ -1,0 +1,8 @@
+{"no": 27, "clues": [
+  {"kind": "nor", "a": "Flavor=carrot", "not": ["Topper=mortarboard", "Topper=owl"]},
+  {"kind": "pair", "people": ["Customer=Elsa", "Customer=Gus"], "options": ["Flavor=carrot", "Flavor=coconut"]},
+  {"kind": "either", "a": "Customer=Jade", "one_of": ["Flavor=lemon", "Flavor=carrot"]},
+  {"kind": "either", "a": "Topper=star", "one_of": ["Flavor=chocolate", "Flavor=lemon"]},
+  {"kind": "nor", "a": "Topper=mortarboard", "not": ["Customer=Tariq", "Customer=Gus"]},
+  {"kind": "either", "a": "Customer=Tariq", "one_of": ["Topper=owl", "Topper=diploma"]}
+]}

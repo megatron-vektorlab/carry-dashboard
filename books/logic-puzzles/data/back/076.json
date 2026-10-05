@@ -1,0 +1,54 @@
+{
+ "no": 76,
+ "clues": [
+  {
+   "kind": "pair",
+   "people": [
+    "Tickets=2",
+    "Tickets=4"
+   ],
+   "options": [
+    "Quilt=star",
+    "Quilt=nine patch"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Quilt=nine patch",
+   "b": "Wants it for=bedroom",
+   "cat": "Tickets",
+   "rel": "a_greater_by",
+   "by": 2
+  },
+  {
+   "kind": "compare",
+   "a": "Wants it for=porch",
+   "b": "Quilt=nine patch",
+   "cat": "Tickets",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "either",
+   "a": "Entrant=Jade",
+   "one_of": [
+    "Quilt=nine patch",
+    "Quilt=wedding ring"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Wants it for=den",
+   "b": "Entrant=Emil",
+   "cat": "Tickets",
+   "rel": "a_greater_by",
+   "by": 4
+  },
+  {
+   "kind": "compare",
+   "a": "Entrant=Pablo",
+   "b": "Wants it for=porch",
+   "cat": "Tickets",
+   "rel": "a_greater"
+  }
+ ]
+}

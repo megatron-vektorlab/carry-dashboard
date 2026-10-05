@@ -1,0 +1,25 @@
+{
+ "no": 21,
+ "clues": [
+  "Dev and the osprey's spotter kept watch at the dunes and the old pier, one at each.",
+  "Of Mabel and the birder at the dunes, one saw the loon and the other saw the oriole.",
+  "Ivan and whoever saw the loon kept watch at the dunes and the salt marsh, not necessarily in that order."
+ ],
+ "hints": [
+  "Clue 1 allows the osprey's spotter only two spots. Does another clue tell you what the birder at one of those spots saw?",
+  "Read clues 1 and 2 together. Clue 2 says the birder at the dunes saw the loon or the oriole.",
+  "So the osprey was not seen from the dunes. By clue 1, its spotter was at the old pier, and Dev was at the dunes."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 keeps the osprey away from the dunes, so clue 1 puts the osprey at the old pier and Dev at the dunes.",
+  "steps": [
+   "By clue 2, the birder at the dunes saw the loon or the oriole, so the osprey was not seen from the dunes.",
+   "Clue 1 then puts the osprey's spotter at the old pier and Dev at the dunes.",
+   "In clue 3, Ivan cannot be at the dunes, which are Dev's, so Ivan was at the salt marsh and Dev saw the loon.",
+   "Clue 2 then gives Mabel the oriole, so she was not at the osprey's old pier; she was in the orchard.",
+   "Tova kept watch at the old pier and saw the osprey, and Ivan saw the heron at the salt marsh."
+  ],
+  "epilogue": "Mabel mailed a spotless report a day early. Her oriole was in the orchard, Dev's loon at the dunes, Tova's osprey at the old pier, and Ivan's heron in the salt marsh."
+ },
+ "tip": "A 'one and the other' clue always names two different people, and that alone is worth an X."
+}

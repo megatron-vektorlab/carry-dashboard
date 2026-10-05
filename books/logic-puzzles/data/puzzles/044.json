@@ -1,0 +1,418 @@
+{
+ "no": 44,
+ "chapter": 3,
+ "family": "days4",
+ "stars": 3,
+ "seed": 44001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Mostly Shipshape",
+ "story": "Felix gave four sailing lessons on Saturday morning, one on the hour, each in a different little boat from his yard. He kept the lesson sheet in his head, which he calls shipshape. It is mostly shipshape. Every student is owed a certificate naming the boat and the hour, so who sailed when, and in which boat?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 44,
+   "title": "Mostly Shipshape",
+   "story": "Felix gave four sailing lessons on Saturday morning, one on the hour, each in a different little boat from his yard. He kept the lesson sheet in his head, which he calls shipshape. It is mostly shipshape. Every student is owed a certificate naming the boat and the hour, so who sailed when, and in which boat?",
+   "entity": [
+    "student",
+    "students"
+   ],
+   "cast": [
+    "Felix"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Student",
+    "kind": "name",
+    "values": [
+     "Walt",
+     "Carmen",
+     "Emil",
+     "Pearl"
+    ]
+   },
+   {
+    "label": "Boat",
+    "values": [
+     "Whelk",
+     "Tern",
+     "Bluebell",
+     "Ripple"
+    ],
+    "ref": "the {v}'s sailor",
+    "pred": "sailed the {v}",
+    "neg": "did not sail the {v}",
+    "either": "sailed either the {a} or the {b}",
+    "nor": "sailed neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "labels": [
+     "9 a.m.",
+     "10 a.m.",
+     "11 a.m.",
+     "noon"
+    ],
+    "ref": "the {x} student",
+    "pred": "had the {x} lesson",
+    "neg": "did not have the {x} lesson",
+    "either": "had either the {a} or the {b} lesson",
+    "nor": "had neither the {a} nor the {b} lesson",
+    "short": "{x}",
+    "more": "had a later lesson than {y}",
+    "less": "had an earlier lesson than {y}",
+    "dmore": "had a lesson exactly {d} after {y}",
+    "dless": "had a lesson exactly {d} before {y}",
+    "dunit": [
+     "hour",
+     "hours"
+    ],
+    "dmore1": "had the lesson right after {y}",
+    "dless1": "had the lesson right before {y}",
+    "step": 1,
+    "values": [
+     "9 a.m.",
+     "10 a.m.",
+     "11 a.m.",
+     "noon"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   2,
+   3,
+   0
+  ],
+  [
+   2,
+   1,
+   3,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 2,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 2,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 2,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The Ripple's sailor had a later lesson than the Tern's sailor.",
+  "Pearl had an earlier lesson than the Tern's sailor.",
+  "Emil had a later lesson than the Bluebell's sailor.",
+  "Walt had either the 9 a.m. or the 11 a.m. lesson.",
+  "The Bluebell's sailor is neither Emil nor Pearl.",
+  "The Bluebell's sailor had either the 10 a.m. or the noon lesson."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means the Ripple cannot be 9 a.m. and the Tern cannot be noon."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the Tern can still be only 9 a.m., 10 a.m., or 11 a.m., clue 2 means Pearl cannot be 11 a.m. or noon and the Tern cannot be 9 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    6
+   ],
+   "text": "9 a.m. must go with the Whelk: clue 2 rules out the Tern; clue 6 rules out the Bluebell; clue 1 rules out the Ripple."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the Ripple can still be only 10 a.m., 11 a.m., or noon and the Tern can still be only 10 a.m. or 11 a.m., clue 1 means the Ripple cannot be 10 a.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the Bluebell can still be only 10 a.m. or noon, clue 3 means Emil cannot be 9 a.m. or 10 a.m. and the Bluebell cannot be noon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    6
+   ],
+   "text": "The Bluebell must go with 10 a.m.: clue 6 rules out 9 a.m. and 11 a.m.; clue 3 rules out noon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The Tern must go with 11 a.m.: clue 2 rules out 9 a.m.; clue 1 rules out noon; 10 a.m. already goes with the Bluebell."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The Ripple must go with noon: clue 1 rules out 9 a.m. and 10 a.m.; 11 a.m. already goes with the Tern."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The Bluebell must go with Carmen: clue 5 rules out Emil and Pearl; Walt is already ruled out for 10 a.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "10 a.m. goes with the Bluebell, so 10 a.m. also goes with Carmen."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Pearl must go with 9 a.m.: clue 2 rules out 11 a.m. and noon; 10 a.m. already goes with Carmen."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Walt must go with 11 a.m.: clue 4 rules out 10 a.m. and noon; 9 a.m. already goes with Pearl."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Emil must go with noon: clue 3 rules out 9 a.m. and 10 a.m.; 11 a.m. already goes with Walt."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The Whelk must go with Pearl: Walt and Emil are already ruled out for 9 a.m.; Carmen already goes with the Bluebell."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Tern goes with 11 a.m., so the Tern also goes with Walt."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Emil must go with the Ripple: clue 5 rules out the Bluebell; the Whelk is already ruled out for 9 a.m.; the Tern already goes with Walt."
+  }
+ ],
+ "features": {
+  "steps": 24,
+  "score": 65,
+  "revisits": 2,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 7
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Walt",
+   "Tern",
+   "11 a.m."
+  ],
+  [
+   "Carmen",
+   "Bluebell",
+   "10 a.m."
+  ],
+  [
+   "Emil",
+   "Ripple",
+   "noon"
+  ],
+  [
+   "Pearl",
+   "Whelk",
+   "9 a.m."
+  ]
+ ],
+ "score": 65
+}

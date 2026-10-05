@@ -1,0 +1,34 @@
+{
+ "no": 14,
+ "clues": [
+  {
+   "kind": "same",
+   "a": "Customer=Bea",
+   "b": "Ribbon=peach"
+  },
+  {
+   "kind": "nor",
+   "a": "Customer=Jonah",
+   "not": [
+    "Ribbon=lavender",
+    "Ribbon=peach"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Flower=rose",
+   "not": [
+    "Ribbon=white",
+    "Ribbon=peach"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Customer=Jonah",
+   "one_of": [
+    "Flower=rose",
+    "Flower=peony"
+   ]
+  }
+ ]
+}

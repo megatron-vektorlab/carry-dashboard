@@ -1,0 +1,29 @@
+{
+ "no": 22,
+ "clues": [
+  "Either Faye or Jonah used the wide brush.",
+  "The stairs were painted by either Ruben or Faye.",
+  "Of the roller and the small brush, one was used on the door and the other on the stairs.",
+  "Jonah's part was either the shutters or the railing.",
+  "Whoever painted the shutters did not use the wide brush.",
+  "The roller went on neither the door nor the railing.",
+  "Neither Jonah nor Ruben painted the railing."
+ ],
+ "hints": [
+  "Start in Jonah's row of the parts box. Which clues mention Jonah's part, and what do they leave him?",
+  "Clue 4 is an either-or clue for Jonah, and clue 7 crosses off one of its two parts. Put them together.",
+  "So Jonah painted the shutters. Clue 5 keeps the wide brush off the shutters, so by clue 1 Faye used the wide brush."
+ ],
+ "solution": {
+  "key_idea": "Clues 4 and 7 leave Jonah only the shutters, and that hands the wide brush to Faye.",
+  "steps": [
+   "Clue 4 gives Jonah the shutters or the railing, and clue 7 rules out the railing, so Jonah painted the shutters.",
+   "The shutters did not get the wide brush (clue 5), so by clue 1 Faye used the wide brush.",
+   "Clue 6 keeps the roller off the door, so by clue 3 the roller went on the stairs and the small brush on the door.",
+   "Clue 5 leaves the shutters only the sponge, so Jonah used the sponge, and Faye's wide brush went on the railing.",
+   "Faye had the railing, so by clue 2 Ruben painted the stairs with the roller, and Teddy the door with the small brush."
+  ],
+  "epilogue": "By sundown the lighthouse looked the part, and Lena's log was exact. Teddy's small brush did the door, Jonah's sponge the shutters, Faye's wide brush the railing, and Ruben's roller the stairs."
+ },
+ "tip": "Mark the plain no's first; the either-or clues go easier once those X's are in."
+}

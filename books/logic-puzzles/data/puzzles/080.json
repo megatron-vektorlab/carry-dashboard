@@ -1,0 +1,708 @@
+{
+ "no": 80,
+ "chapter": 6,
+ "family": "case54",
+ "stars": 4,
+ "seed": 80004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Loose Mooring",
+ "story": "Frost silvered the town pier one November morning, the week before haul-out, when someone untied Felix's sailboat, the Ripple, and let her drift onto Gull Rock. She has a scraped keel; Felix has a long face. Five early risers came down to the dock, each at a different time, in a different coat, on a different errand. A dog walker on the seawall saw someone in a yellow slicker bent over the Ripple's mooring line. Who untied the Ripple?",
+ "question": {
+  "text": "Who untied the Ripple?",
+  "cat": "Coat",
+  "value": "slicker"
+ },
+ "answer": "Nico",
+ "cast": [
+  "Nico",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 80,
+   "title": "The Case of the Loose Mooring",
+   "story": "Frost silvered the town pier one November morning, the week before haul-out, when someone untied Felix's sailboat, the Ripple, and let her drift onto Gull Rock. She has a scraped keel; Felix has a long face. Five early risers came down to the dock, each at a different time, in a different coat, on a different errand. A dog walker on the seawall saw someone in a yellow slicker bent over the Ripple's mooring line. Who untied the Ripple?",
+   "entity": [
+    "early riser",
+    "early risers"
+   ],
+   "cast": [
+    "Nico",
+    "Felix"
+   ],
+   "question": {
+    "text": "Who untied the Ripple?",
+    "cat": "Coat",
+    "value": "slicker"
+   }
+  },
+  "cats": [
+   {
+    "label": "Early riser",
+    "kind": "name",
+    "values": [
+     "Walt",
+     "Quinn",
+     "Bea",
+     "Nico",
+     "Hal"
+    ]
+   },
+   {
+    "label": "Coat",
+    "values": [
+     "slicker",
+     "peacoat",
+     "parka",
+     "barn coat",
+     "fleece"
+    ],
+    "ref": "the person in the {v}",
+    "pred": "wore the {v}",
+    "neg": "did not wear the {v}",
+    "either": "wore either the {a} or the {b}",
+    "nor": "wore neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Errand",
+    "values": [
+     "bait",
+     "mail",
+     "coffee",
+     "ice",
+     "diesel"
+    ],
+    "ref": "the person who came for {v}",
+    "pred": "came for {v}",
+    "neg": "did not come for {v}",
+    "either": "came for either {a} or {b}",
+    "nor": "came for neither {a} nor {b}",
+    "short": "the {v} errand"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     360,
+     390,
+     420,
+     450,
+     480
+    ],
+    "labels": [
+     "6:00 a.m.",
+     "6:30 a.m.",
+     "7:00 a.m.",
+     "7:30 a.m.",
+     "8:00 a.m."
+    ],
+    "ref": "the person who arrived at {x}",
+    "pred": "arrived at {x}",
+    "neg": "did not arrive at {x}",
+    "either": "arrived at either {a} or {b}",
+    "nor": "arrived at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "arrived later than {y}",
+    "less": "arrived earlier than {y}",
+    "dmore": "arrived exactly {d} after {y}",
+    "dless": "arrived exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "arrived half an hour after {y}",
+    "dless1": "arrived half an hour before {y}",
+    "step": 30,
+    "values": [
+     "6:00 a.m.",
+     "6:30 a.m.",
+     "7:00 a.m.",
+     "7:30 a.m.",
+     "8:00 a.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   4,
+   3,
+   0,
+   1
+  ],
+  [
+   1,
+   4,
+   2,
+   3,
+   0
+  ],
+  [
+   3,
+   4,
+   2,
+   0,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The person in the fleece arrived half an hour after the person who came for mail.",
+  "Of Hal and the person in the barn coat, one arrived at 6:30 a.m. and the other arrived at 7:00 a.m.",
+  "The person who arrived at 7:00 a.m. came for neither bait nor mail.",
+  "Of the person in the peacoat and the person who came for mail, one is Walt and the other is Hal.",
+  "The person who arrived at 8:00 a.m. came for either diesel or mail.",
+  "The person in the slicker came for neither bait nor coffee.",
+  "Quinn did not wear the slicker.",
+  "Of the person who came for mail and the person who arrived at 8:00 a.m., one wore the fleece and the other wore the parka.",
+  "The person who came for coffee is either Walt or Bea."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the mail errand can still be only 6:00 a.m., 6:30 a.m., 7:30 a.m., or 8:00 a.m., clue 1 means the fleece cannot be 6:00 a.m. or 7:30 a.m. and the mail errand cannot be 8:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5
+   ],
+   "text": "8:00 a.m. must go with the diesel errand: clue 5 rules out the bait errand, the coffee errand, and the ice errand; clue 1 rules out the mail errand."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4,
+    8
+   ],
+   "text": "The mail errand must go with the parka: clue 8 rules out the slicker and the barn coat; clue 4 rules out the peacoat; clue 1 rules out the fleece."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    8
+   ],
+   "text": "The slicker must go with the ice errand: clue 6 rules out the bait errand and the coffee errand; clue 8 rules out the mail errand; the diesel errand is already ruled out for 8:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The diesel errand must go with the fleece: the slicker, the peacoat, and the barn coat are already ruled out for 8:00 a.m.; the parka already goes with the mail errand."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    8
+   ],
+   "text": "8:00 a.m. must go with the fleece: clue 8 rules out the slicker and the peacoat; clue 2 rules out the barn coat; the parka is already ruled out for the diesel errand."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the fleece can still be only 8:00 a.m. and the mail errand can still be only 6:00 a.m., 6:30 a.m., or 7:30 a.m., clue 1 means the mail errand cannot be 6:00 a.m. or 6:30 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "The mail errand must go with 7:30 a.m.: clue 1 rules out 6:00 a.m., 6:30 a.m., and 8:00 a.m.; clue 3 rules out 7:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The parka must go with 7:30 a.m.: 6:00 a.m., 6:30 a.m., and 7:00 a.m. are already ruled out for the mail errand; 8:00 a.m. is already ruled out for the diesel errand."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "7:30 a.m. must go with Walt: clue 2 rules out Hal; Quinn, Bea, and Nico are already ruled out for the mail errand."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The mail errand goes with 7:30 a.m., so the mail errand also goes with Walt."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "The coffee errand must go with Bea: clue 9 rules out Quinn, Nico, and Hal; Walt already goes with the mail errand."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The parka goes with the mail errand, so the parka also goes with Walt."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The peacoat must go with Hal: clue 4 rules out Quinn, Bea, and Nico; Walt already goes with the parka."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The slicker must go with Nico: clue 7 rules out Quinn; Bea is already ruled out for the ice errand; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The ice errand goes with the slicker, so the ice errand also goes with Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Hal must go with the bait errand: clue 9 rules out the coffee errand; the diesel errand is already ruled out for 8:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    9
+   ],
+   "text": "Quinn must go with the diesel errand: clue 4 rules out the mail errand; clue 9 rules out the coffee errand; the ice errand is already ruled out for the slicker; the bait errand already goes with Hal."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "8:00 a.m. goes with the diesel errand, so 8:00 a.m. also goes with Quinn."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The fleece goes with the diesel errand, so the fleece also goes with Quinn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Bea must go with the barn coat: clue 4 rules out the peacoat; the slicker is already ruled out for the ice errand; the parka is already ruled out for the mail errand; the fleece already goes with Quinn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The peacoat must go with the bait errand: clue 4 rules out the mail errand; the coffee errand is already ruled out for Bea; the diesel errand is already ruled out for 8:00 a.m.; the ice errand already goes with the slicker."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The barn coat must go with the coffee errand: clue 8 rules out the mail errand; the diesel errand is already ruled out for 8:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "6:00 a.m. must go with the slicker: clue 2 rules out the barn coat; clue 1 rules out the fleece; the peacoat is already ruled out for Hal; the parka is already ruled out for the mail errand."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The ice errand goes with the slicker, so the ice errand also goes with 6:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "The bait errand must go with 6:30 a.m.: clue 3 rules out 7:00 a.m.; clue 5 rules out 8:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The coffee errand must go with 7:00 a.m.: clue 5 rules out 8:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "6:00 a.m. must go with Nico: clue 2 rules out Hal; Bea is already ruled out for the coffee errand; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Bea must go with 7:00 a.m.: 6:00 a.m. and 6:30 a.m. are already ruled out for the coffee errand; 7:30 a.m. is already ruled out for the mail errand; 8:00 a.m. is already ruled out for the diesel errand."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Hal must go with 6:30 a.m.: clue 2 rules out 6:00 a.m., 7:30 a.m., and 8:00 a.m.; 7:00 a.m. already goes with Bea."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The peacoat goes with Hal, so the peacoat also goes with 6:30 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The barn coat must go with 7:00 a.m.: clue 2 rules out 6:00 a.m., 7:30 a.m., and 8:00 a.m.; 6:30 a.m. already goes with the peacoat."
+  }
+ ],
+ "features": {
+  "steps": 65,
+  "score": 172,
+  "revisits": 2,
+  "transfer": 31,
+  "trial": 0,
+  "clue_steps": 8
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Walt",
+   "parka",
+   "mail",
+   "7:30 a.m."
+  ],
+  [
+   "Quinn",
+   "fleece",
+   "diesel",
+   "8:00 a.m."
+  ],
+  [
+   "Bea",
+   "barn coat",
+   "coffee",
+   "7:00 a.m."
+  ],
+  [
+   "Nico",
+   "slicker",
+   "ice",
+   "6:00 a.m."
+  ],
+  [
+   "Hal",
+   "peacoat",
+   "bait",
+   "6:30 a.m."
+  ]
+ ],
+ "score": 172
+}

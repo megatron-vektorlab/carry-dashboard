@@ -1,0 +1,9 @@
+{"no": 22, "clues": [
+  {"kind": "either", "a": "Tool=wide brush", "one_of": ["Volunteer=Faye", "Volunteer=Jonah"]},
+  {"kind": "either", "a": "Part=stairs", "one_of": ["Volunteer=Ruben", "Volunteer=Faye"]},
+  {"kind": "pair", "people": ["Tool=roller", "Tool=small brush"], "options": ["Part=door", "Part=stairs"]},
+  {"kind": "either", "a": "Volunteer=Jonah", "one_of": ["Part=shutters", "Part=railing"]},
+  {"kind": "diff", "a": "Part=shutters", "b": "Tool=wide brush"},
+  {"kind": "nor", "a": "Tool=roller", "not": ["Part=door", "Part=railing"]},
+  {"kind": "nor", "a": "Part=railing", "not": ["Volunteer=Jonah", "Volunteer=Ruben"]}
+]}

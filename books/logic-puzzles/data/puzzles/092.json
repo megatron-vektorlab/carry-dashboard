@@ -1,0 +1,730 @@
+{
+ "no": 92,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 92001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Jammed Press",
+ "story": "Press night at the Gazette was going beautifully until the old press groaned, clanked and stopped dead, and Ada pulled a single red mitten out of the rollers. The press room is drafty in November, so the five helpers, on five different jobs, all worked in mittens, each pair a different color. In forty-one years Ada has fished a necktie and half a sandwich out of that press, but never a mitten. Whose mitten stopped the press?",
+ "question": {
+  "text": "Whose mitten jammed the press?",
+  "cat": "Mittens",
+  "value": "red"
+ },
+ "answer": "Selma",
+ "cast": [],
+ "state": {
+  "theme": {
+   "slot": 92,
+   "title": "The Case of the Jammed Press",
+   "story": "Press night at the Gazette was going beautifully until the old press groaned, clanked and stopped dead, and Ada pulled a single red mitten out of the rollers. The press room is drafty in November, so the five helpers, on five different jobs, all worked in mittens, each pair a different color. In forty-one years Ada has fished a necktie and half a sandwich out of that press, but never a mitten. Whose mitten stopped the press?",
+   "entity": [
+    "helper",
+    "helpers"
+   ],
+   "cast": [],
+   "question": {
+    "text": "Whose mitten jammed the press?",
+    "cat": "Mittens",
+    "value": "red"
+   }
+  },
+  "cats": [
+   {
+    "label": "Helper",
+    "kind": "name",
+    "values": [
+     "Selma",
+     "Quinn",
+     "Milo",
+     "Imani",
+     "Greta"
+    ]
+   },
+   {
+    "label": "Mittens",
+    "values": [
+     "red",
+     "gray",
+     "green",
+     "white",
+     "brown"
+    ],
+    "ref": "the helper in {v} mittens",
+    "pred": "wore {v} mittens",
+    "neg": "did not wear {v} mittens",
+    "either": "wore either {a} or {b} mittens",
+    "nor": "wore neither {a} nor {b} mittens",
+    "short": "the {v} mittens"
+   },
+   {
+    "label": "Job",
+    "values": [
+     "folding",
+     "inking",
+     "bundling",
+     "sweeping",
+     "proofing"
+    ],
+    "ref": "the helper who did the {v}",
+    "pred": "did the {v}",
+    "neg": "did not do the {v}",
+    "either": "did either the {a} or the {b}",
+    "nor": "did neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1200,
+     1220,
+     1240,
+     1260,
+     1280
+    ],
+    "labels": [
+     "8:00 p.m.",
+     "8:20 p.m.",
+     "8:40 p.m.",
+     "9:00 p.m.",
+     "9:20 p.m."
+    ],
+    "ref": "the {x} arrival",
+    "pred": "came in at {x}",
+    "neg": "did not come in at {x}",
+    "either": "came in at either {a} or {b}",
+    "nor": "came in at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "came in later than {y}",
+    "less": "came in earlier than {y}",
+    "dmore": "came in exactly {d} after {y}",
+    "dless": "came in exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "came in twenty minutes after {y}",
+    "dless1": "came in twenty minutes before {y}",
+    "step": 20,
+    "values": [
+     "8:00 p.m.",
+     "8:20 p.m.",
+     "8:40 p.m.",
+     "9:00 p.m.",
+     "9:20 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   0,
+   1,
+   4,
+   3,
+   2
+  ],
+  [
+   2,
+   3,
+   0,
+   1,
+   4
+  ],
+  [
+   2,
+   0,
+   1,
+   3,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the helper in brown mittens and the 9:20 p.m. arrival, one is Milo and the other is Greta.",
+  "Of the helper in green mittens and the helper who did the inking, one is Imani and the other is Greta.",
+  "The helper who did the sweeping came in earlier than the helper who did the proofing.",
+  "The helper in red mittens did either the folding or the bundling.",
+  "Imani came in exactly 40 minutes after Milo.",
+  "Selma came in later than the helper in gray mittens.",
+  "Quinn came in at either 8:00 p.m. or 8:40 p.m.",
+  "Milo did either the inking or the folding.",
+  "Imani came in earlier than the helper in green mittens."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 means the sweeping cannot be 9:20 p.m. and the proofing cannot be 8:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 means Imani cannot be 8:00 p.m. or 8:20 p.m. and Milo cannot be 9:00 p.m. or 9:20 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 means the gray mittens cannot be 9:20 p.m. and Selma cannot be 8:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Since Imani can still be only 8:40 p.m., 9:00 p.m., or 9:20 p.m., clue 9 means Imani cannot be 9:20 p.m. and the green mittens cannot be 8:00 p.m., 8:20 p.m., or 8:40 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since Imani can still be only 8:40 p.m. or 9:00 p.m. and Milo can still be only 8:00 p.m., 8:20 p.m., or 8:40 p.m., clue 5 means Milo cannot be 8:40 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5,
+    7,
+    9
+   ],
+   "text": "9:20 p.m. must go with Greta: clue 1 rules out Selma; clue 7 rules out Quinn; clue 5 rules out Milo; clue 9 rules out Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The brown mittens must go with Milo: clue 1 rules out Selma, Quinn, and Imani; Greta is already ruled out for 9:20 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since the gray mittens can still be only 8:00 p.m., 8:20 p.m., 8:40 p.m., or 9:00 p.m. and Selma can still be only 8:20 p.m., 8:40 p.m., or 9:00 p.m., clue 6 means the gray mittens cannot be 9:00 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    8
+   ],
+   "text": "Milo must go with the folding: clue 2 rules out the inking; clue 8 rules out the bundling, the sweeping, and the proofing."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    9
+   ],
+   "text": "The green mittens must go with Greta: clue 2 rules out Selma and Quinn; clue 9 rules out Imani; Milo already goes with the brown mittens."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "9:20 p.m. goes with Greta, so 9:20 p.m. also goes with the green mittens."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The brown mittens goes with Milo, so the brown mittens also goes with the folding."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The red mittens must go with the bundling: clue 4 rules out the inking, the sweeping, and the proofing; the folding already goes with the brown mittens."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The inking must go with Imani: clue 2 rules out Selma, Quinn, and Milo; Greta is already ruled out for the green mittens."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Greta must go with the proofing: the inking and the bundling are already ruled out for the green mittens; the sweeping is already ruled out for 9:20 p.m.; the folding already goes with Milo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "9:20 p.m. must go with the proofing: clue 3 rules out the sweeping; the folding, the inking, and the bundling are already ruled out for Greta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The green mittens must go with the proofing: clue 2 rules out the inking; the sweeping is already ruled out for Greta; the other choices are already taken."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    1,
+    5,
+    6,
+    7
+   ],
+   "text": "SUPPOSE TEST: try Imani with 8:40 p.m..",
+   "chain": [
+    "Suppose Imani goes with 8:40 p.m.",
+    "Quinn must go with 8:00 p.m.: clue 7 rules out 8:20 p.m., 9:00 p.m., and 9:20 p.m.; 8:40 p.m. already goes with Imani.",
+    "Milo must go with 8:20 p.m.: clue 5 rules out 8:40 p.m., 9:00 p.m., and 9:20 p.m.; 8:00 p.m. already goes with Quinn.",
+    "Selma must go with 9:00 p.m.: clue 6 rules out 8:00 p.m.; clue 1 rules out 9:20 p.m.; the other choices are already taken.",
+    "The brown mittens must go with 8:20 p.m.: clue 1 rules out 9:20 p.m.; 8:00 p.m., 8:40 p.m., and 9:00 p.m. are already ruled out for Milo.",
+    "The folding must go with 8:20 p.m.: 8:00 p.m., 8:40 p.m., and 9:00 p.m. are already ruled out for Milo; 9:20 p.m. is already ruled out for Greta.",
+    "The inking goes with Imani, so the inking also goes with 8:40 p.m.",
+    "But then clue 5 cannot be true."
+   ],
+   "result": "So Imani does NOT go with 8:40 p.m.: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    9
+   ],
+   "text": "Imani must go with 9:00 p.m.: clue 5 rules out 8:00 p.m. and 8:20 p.m.; the Suppose test ruled out 8:40 p.m.; clue 9 rules out 9:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The inking must go with 9:00 p.m.: 8:00 p.m., 8:20 p.m., and 8:40 p.m. are already ruled out for Imani; 9:20 p.m. is already ruled out for Greta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "9:00 p.m. must go with the white mittens: clue 6 rules out the gray mittens; the red mittens is already ruled out for the bundling; the brown mittens is already ruled out for Milo; the green mittens already goes with 9:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    9
+   ],
+   "text": "Imani must go with the white mittens: clue 9 rules out the green mittens; clue 1 rules out the brown mittens; the red mittens is already ruled out for the bundling; the gray mittens is already ruled out for 9:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    6
+   ],
+   "text": "Selma must go with the red mittens: clue 6 rules out the gray mittens; clue 2 rules out the green mittens; clue 1 rules out the brown mittens; the white mittens already goes with Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Quinn must go with the gray mittens: clue 2 rules out the green mittens; clue 1 rules out the brown mittens; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The bundling goes with the red mittens, so the bundling also goes with Selma."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Quinn must go with the sweeping: clue 2 rules out the inking; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The gray mittens must go with the sweeping: the inking is already ruled out for Imani; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The white mittens must go with the inking: the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since Imani can still be only 9:00 p.m. and Milo can still be only 8:00 p.m. or 8:20 p.m., clue 5 means Milo cannot be 8:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Milo must go with 8:20 p.m.: clue 5 rules out 8:00 p.m., 8:40 p.m., 9:00 p.m., and 9:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6
+   ],
+   "text": "Selma must go with 8:40 p.m.: clue 6 rules out 8:00 p.m.; clue 1 rules out 9:20 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Quinn must go with 8:00 p.m.: clue 7 rules out 8:20 p.m., 9:00 p.m., and 9:20 p.m.; 8:40 p.m. already goes with Selma."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The brown mittens must go with 8:20 p.m.: clue 1 rules out 9:20 p.m.; 8:00 p.m., 8:40 p.m., and 9:00 p.m. are already ruled out for Milo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The red mittens must go with 8:40 p.m.: 8:00 p.m. is already ruled out for Selma; 9:00 p.m. is already ruled out for the bundling; 9:20 p.m. is already ruled out for Greta; 8:20 p.m. already goes with the brown mittens."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The gray mittens must go with 8:00 p.m.: clue 6 rules out 9:00 p.m. and 9:20 p.m.; 8:20 p.m. is already ruled out for Quinn; 8:40 p.m. already goes with the red mittens."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The folding must go with 8:20 p.m.: 8:00 p.m., 8:40 p.m., and 9:00 p.m. are already ruled out for Milo; 9:20 p.m. is already ruled out for Greta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The bundling must go with 8:40 p.m.: 8:00 p.m. is already ruled out for the red mittens; 9:20 p.m. is already ruled out for Greta; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The sweeping must go with 8:00 p.m.: clue 3 rules out 9:20 p.m.; 8:20 p.m. is already ruled out for Quinn; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 75,
+  "score": 216,
+  "revisits": 5,
+  "transfer": 33,
+  "trial": 1,
+  "clue_steps": 14
+ },
+ "trial_chain": 10,
+ "table": [
+  [
+   "Selma",
+   "red",
+   "bundling",
+   "8:40 p.m."
+  ],
+  [
+   "Quinn",
+   "gray",
+   "sweeping",
+   "8:00 p.m."
+  ],
+  [
+   "Milo",
+   "brown",
+   "folding",
+   "8:20 p.m."
+  ],
+  [
+   "Imani",
+   "white",
+   "inking",
+   "9:00 p.m."
+  ],
+  [
+   "Greta",
+   "green",
+   "proofing",
+   "9:20 p.m."
+  ]
+ ],
+ "score": 216
+}

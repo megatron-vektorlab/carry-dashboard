@@ -1,0 +1,39 @@
+{
+ "no": 17,
+ "clues": [
+  {
+   "kind": "diff",
+   "a": "Dessert=pie",
+   "b": "Baker=Rosa"
+  },
+  {
+   "kind": "nor",
+   "a": "Topping=custard",
+   "not": [
+    "Baker=Rosa",
+    "Baker=Elsa"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Topping=ice cream",
+   "one_of": [
+    "Dessert=pie",
+    "Dessert=shortcake"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Baker=Rosa",
+   "one_of": [
+    "Topping=ice cream",
+    "Topping=custard"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Topping=honey",
+   "b": "Dessert=crumble"
+  }
+ ]
+}

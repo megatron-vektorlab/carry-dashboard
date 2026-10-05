@@ -1,0 +1,369 @@
+{
+ "no": 42,
+ "chapter": 3,
+ "family": "days4",
+ "stars": 3,
+ "seed": 42004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Once Upon a Story Hour",
+ "story": "Once a week through July, a different volunteer settled onto the library's story-hour rug and read aloud to a circle of small children in sun hats. Wren took her turn too, in her usual whisper, and the children leaned in so far they nearly tipped over. The newsletter thanking all four readers goes to print tomorrow. Who read on which date, and what kind of book did each one choose?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 42,
+   "title": "Once Upon a Story Hour",
+   "story": "Once a week through July, a different volunteer settled onto the library's story-hour rug and read aloud to a circle of small children in sun hats. Wren took her turn too, in her usual whisper, and the children leaned in so far they nearly tipped over. The newsletter thanking all four readers goes to print tomorrow. Who read on which date, and what kind of book did each one choose?",
+   "entity": [
+    "volunteer",
+    "volunteers"
+   ],
+   "cast": [
+    "Wren"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Volunteer",
+    "kind": "name",
+    "values": [
+     "Wren",
+     "Kenji",
+     "Sam",
+     "Olive"
+    ]
+   },
+   {
+    "label": "Book",
+    "values": [
+     "pirate tale",
+     "fairy tale",
+     "poems",
+     "fables"
+    ],
+    "ref": "the volunteer with the {v}",
+    "pred": "read the {v}",
+    "neg": "did not read the {v}",
+    "either": "read either the {a} or the {b}",
+    "nor": "read neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Week",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "July 8",
+     "July 15",
+     "July 22",
+     "July 29"
+    ],
+    "ref": "the {x} volunteer",
+    "pred": "read on {x}",
+    "neg": "did not read on {x}",
+    "either": "read on either {a} or {b}",
+    "nor": "read on neither {a} nor {b}",
+    "short": "{x}",
+    "more": "read later in the month than {y}",
+    "less": "read earlier in the month than {y}",
+    "dmore": "read exactly {d} after {y}",
+    "dless": "read exactly {d} before {y}",
+    "dunit": [
+     "week",
+     "weeks"
+    ],
+    "dmore1": "read the week after {y}",
+    "dless1": "read the week before {y}",
+    "step": 1,
+    "values": [
+     "July 8",
+     "July 15",
+     "July 22",
+     "July 29"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   1,
+   0,
+   2
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 2,
+   "op": ">",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The volunteer with the poems is either Olive or Kenji.",
+  "Of Wren and Kenji, one read on July 15 and the other read on July 8.",
+  "Of Olive and the July 29 volunteer, one read the pirate tale and the other read the poems.",
+  "Wren read earlier in the month than the volunteer with the fairy tale."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means the fairy tale cannot be July 8 and Wren cannot be July 29."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3
+   ],
+   "text": "Olive must go with July 22: clue 2 rules out July 8 and July 15; clue 3 rules out July 29."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Sam must go with July 29: clue 2 rules out July 8 and July 15; July 22 already goes with Olive."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "The fairy tale must go with July 15: clue 4 rules out July 8; clue 3 rules out July 29; July 22 is already ruled out for Olive."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The fables must go with July 8: clue 3 rules out July 29; July 22 is already ruled out for Olive; July 15 already goes with the fairy tale."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "The fairy tale must go with Kenji: clue 4 rules out Wren; clue 3 rules out Olive; Sam is already ruled out for July 29."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The poems must go with Olive: clue 1 rules out Wren and Sam; Kenji already goes with the fairy tale."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The pirate tale must go with July 29: July 22 is already ruled out for Olive; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The poems must go with July 22: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Sam goes with July 29, so Sam also goes with the pirate tale."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "Wren must go with the fables: clue 4 rules out the fairy tale; clue 1 rules out the poems; the pirate tale already goes with Sam."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Wren must go with July 8: clue 2 rules out July 22; clue 4 rules out July 29; July 15 is already ruled out for the fairy tale."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Kenji must go with July 15: clue 2 rules out July 22 and July 29; July 8 already goes with Wren."
+  }
+ ],
+ "features": {
+  "steps": 22,
+  "score": 59,
+  "revisits": 1,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 5
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Wren",
+   "fables",
+   "July 8"
+  ],
+  [
+   "Kenji",
+   "fairy tale",
+   "July 15"
+  ],
+  [
+   "Sam",
+   "pirate tale",
+   "July 29"
+  ],
+  [
+   "Olive",
+   "poems",
+   "July 22"
+  ]
+ ],
+ "score": 59
+}

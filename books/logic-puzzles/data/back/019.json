@@ -1,0 +1,8 @@
+{"no": 19, "clues": [
+  {"kind": "either", "a": "Float=lighthouse", "one_of": ["Music=fiddle", "Music=tuba"]},
+  {"kind": "either", "a": "Music=banjo", "one_of": ["Float=tall ship", "Float=lobster"]},
+  {"kind": "diff", "a": "Float=tall ship", "b": "Builder=Marta"},
+  {"kind": "pair", "people": ["Music=fiddle", "Music=banjo"], "options": ["Builder=Zeke", "Builder=Lena"]},
+  {"kind": "nor", "a": "Float=lighthouse", "not": ["Builder=Zeke", "Builder=Marta"]},
+  {"kind": "either", "a": "Builder=Zeke", "one_of": ["Float=lighthouse", "Float=whale"]}
+]}

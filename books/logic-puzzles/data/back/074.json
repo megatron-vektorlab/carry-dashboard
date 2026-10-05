@@ -1,0 +1,8 @@
+{"no": 74, "clues": [
+ {"kind": "pair", "people": ["Wood=oak", "Cords=3 cords"], "options": ["Stacked=garage", "Stacked=porch"]},
+ {"kind": "compare", "a": "Neighbor=Amara", "b": "Wood=ash", "cat": "Cords", "rel": "a_less_by", "by": 2},
+ {"kind": "either", "a": "Neighbor=Hattie", "one_of": ["Wood=ash", "Wood=oak"]},
+ {"kind": "compare", "a": "Neighbor=Ruben", "b": "Wood=maple", "cat": "Cords", "rel": "a_less"},
+ {"kind": "compare", "a": "Stacked=garage", "b": "Wood=birch", "cat": "Cords", "rel": "a_less"},
+ {"kind": "pair", "people": ["Wood=maple", "Stacked=shed"], "options": ["Cords=3 cords", "Cords=2 cords"]}
+]}

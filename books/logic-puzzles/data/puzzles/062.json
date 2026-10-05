@@ -1,0 +1,418 @@
+{
+ "no": 62,
+ "chapter": 5,
+ "family": "num43",
+ "stars": 3,
+ "seed": 62003,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Fishing Derby Trophy",
+ "story": "At dawn on derby day, four anglers cast their lines from the town pier, and each landed one fish of a different kind and a different length before the noon horn. Otis measured every catch, whistling a shanty off-key, then wrote the lengths on a tide chart that the wind carried straight into the harbor. The trophy goes to the longest fish. Who caught what, and who takes the trophy home?",
+ "question": {
+  "text": "Who wins the derby trophy?",
+  "cat": "Length",
+  "value": "18 inches"
+ },
+ "answer": "Nico",
+ "cast": [
+  "Nico",
+  "Otis"
+ ],
+ "state": {
+  "theme": {
+   "slot": 62,
+   "title": "The Fishing Derby Trophy",
+   "story": "At dawn on derby day, four anglers cast their lines from the town pier, and each landed one fish of a different kind and a different length before the noon horn. Otis measured every catch, whistling a shanty off-key, then wrote the lengths on a tide chart that the wind carried straight into the harbor. The trophy goes to the longest fish. Who caught what, and who takes the trophy home?",
+   "entity": [
+    "angler",
+    "anglers"
+   ],
+   "cast": [
+    "Nico",
+    "Otis"
+   ],
+   "question": {
+    "text": "Who wins the derby trophy?",
+    "cat": "Length",
+    "value": "18 inches"
+   }
+  },
+  "cats": [
+   {
+    "label": "Angler",
+    "kind": "name",
+    "values": [
+     "Elsa",
+     "Nico",
+     "Oscar",
+     "Cyrus"
+    ]
+   },
+   {
+    "label": "Fish",
+    "values": [
+     "scup",
+     "bluefish",
+     "mackerel",
+     "flounder"
+    ],
+    "ref": "the angler with the {v}",
+    "pred": "landed the {v}",
+    "neg": "did not land the {v}",
+    "either": "landed either the {a} or the {b}",
+    "nor": "landed neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Length",
+    "ordered": true,
+    "nums": [
+     12,
+     14,
+     16,
+     18
+    ],
+    "labels": [
+     "12 inches",
+     "14 inches",
+     "16 inches",
+     "18 inches"
+    ],
+    "ref": "the angler whose fish was {x} long",
+    "pred": "landed a fish {x} long",
+    "neg": "did not land a fish {x} long",
+    "either": "landed a fish either {a} or {b} long",
+    "nor": "landed a fish neither {a} nor {b} long",
+    "short": "{x}",
+    "more": "landed a longer fish than {y}",
+    "less": "landed a shorter fish than {y}",
+    "dmore": "topped {y} by exactly {d}",
+    "dless": "fell short of {y} by exactly {d}",
+    "dunit": [
+     "inch",
+     "inches"
+    ],
+    "dmore1": "topped {y} by just 2 inches",
+    "dless1": "fell short of {y} by just 2 inches",
+    "step": 2,
+    "values": [
+     "12 inches",
+     "14 inches",
+     "16 inches",
+     "18 inches"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   1,
+   0,
+   2
+  ],
+  [
+   2,
+   3,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 2,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 2,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 2,
+   "op": "<",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Oscar landed a longer fish than the angler with the mackerel.",
+  "The angler with the bluefish landed a fish either 16 inches or 18 inches long.",
+  "Oscar landed a longer fish than Cyrus.",
+  "Elsa landed either the flounder or the scup.",
+  "The angler whose fish was 16 inches long landed either the mackerel or the flounder.",
+  "Oscar landed a shorter fish than Elsa."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    5
+   ],
+   "text": "The bluefish must go with 18 inches: clue 2 rules out 12 inches and 14 inches; clue 5 rules out 16 inches."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the mackerel can still be only 12 inches, 14 inches, or 16 inches, clue 1 means Oscar cannot be 12 inches."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Oscar can still be only 14 inches, 16 inches, or 18 inches, clue 3 means Cyrus cannot be 18 inches."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since Oscar can still be only 14 inches, 16 inches, or 18 inches and Elsa can still be only 12 inches, 14 inches, or 16 inches, clue 6 means Oscar cannot be 16 inches or 18 inches and Elsa cannot be 12 inches or 14 inches."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Elsa must go with 16 inches: clue 6 rules out 12 inches and 14 inches; 18 inches is already ruled out for the bluefish."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6
+   ],
+   "text": "Oscar must go with 14 inches: clue 1 rules out 12 inches; clue 6 rules out 16 inches and 18 inches."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Cyrus must go with 12 inches: clue 3 rules out 18 inches; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with 18 inches: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The bluefish goes with 18 inches, so the bluefish also goes with Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "The mackerel must go with Cyrus: clue 4 rules out Elsa; clue 1 rules out Oscar; Nico already goes with the bluefish."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Elsa must go with the flounder: clue 4 rules out the bluefish and the mackerel; the scup is already ruled out for 16 inches."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Oscar must go with the scup: clue 1 rules out the mackerel; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "16 inches must go with the flounder: clue 5 rules out the scup and the bluefish; the mackerel is already ruled out for Elsa."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "14 inches goes with Oscar, so 14 inches also goes with the scup."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The mackerel must go with 12 inches: 16 inches is already ruled out for Elsa; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 23,
+  "score": 63,
+  "revisits": 1,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 7
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Elsa",
+   "flounder",
+   "16 inches"
+  ],
+  [
+   "Nico",
+   "bluefish",
+   "18 inches"
+  ],
+  [
+   "Oscar",
+   "scup",
+   "14 inches"
+  ],
+  [
+   "Cyrus",
+   "mackerel",
+   "12 inches"
+  ]
+ ],
+ "score": 63
+}

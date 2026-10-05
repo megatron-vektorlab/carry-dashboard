@@ -1,0 +1,6 @@
+{"no": 35, "clues": [
+ {"kind": "compare", "a": "Diner=Vera", "b": "Diner=Felix", "cat": "Place", "rel": "a_greater"},
+ {"kind": "either", "a": "Diner=Priya", "one_of": ["Place=second", "Place=third"]},
+ {"kind": "either", "a": "Diner=Hugo", "one_of": ["Place=third", "Place=fourth"]},
+ {"kind": "compare", "a": "Diner=Hugo", "b": "Diner=Felix", "cat": "Place", "rel": "a_less"}
+]}

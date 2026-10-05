@@ -1,0 +1,324 @@
+{
+ "no": 17,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 17004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Rhubarb Social",
+ "story": "Hattie lettered the place cards for her May rhubarb social a full week ahead, in her very best penmanship. Then three bakers swept in, set their desserts down wherever they found room, and drifted off to admire the lilacs. Now every card sits by the wrong plate. Can you match each baker to a dessert and a topping before the first fork goes in?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Rosa",
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 17,
+   "title": "The Rhubarb Social",
+   "story": "Hattie lettered the place cards for her May rhubarb social a full week ahead, in her very best penmanship. Then three bakers swept in, set their desserts down wherever they found room, and drifted off to admire the lilacs. Now every card sits by the wrong plate. Can you match each baker to a dessert and a topping before the first fork goes in?",
+   "entity": [
+    "baker",
+    "bakers"
+   ],
+   "cast": [
+    "Rosa",
+    "Hattie"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Baker",
+    "kind": "name",
+    "values": [
+     "Rosa",
+     "Walt",
+     "Elsa"
+    ]
+   },
+   {
+    "label": "Dessert",
+    "values": [
+     "shortcake",
+     "pie",
+     "crumble"
+    ],
+    "ref": "the {v}'s baker",
+    "pred": "baked the {v}",
+    "neg": "did not bake the {v}",
+    "either": "baked either the {a} or the {b}",
+    "nor": "baked neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Topping",
+    "values": [
+     "custard",
+     "ice cream",
+     "honey"
+    ],
+    "ref": "the baker who brought the {v}",
+    "pred": "brought the {v}",
+    "neg": "did not bring the {v}",
+    "either": "brought either the {a} or the {b}",
+    "nor": "brought neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   2,
+   1
+  ],
+  [
+   1,
+   0,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Rosa did not bake the pie.",
+  "The baker who brought the custard is neither Rosa nor Elsa.",
+  "The baker who brought the ice cream baked either the pie or the shortcake.",
+  "Rosa brought either the ice cream or the custard.",
+  "The crumble's baker did not bring the honey."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The custard must go with Walt: clue 2 rules out Rosa and Elsa."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "The crumble must go with the custard: clue 3 rules out the ice cream; clue 5 rules out the honey."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Walt must go with the crumble: the shortcake and the pie are already ruled out for the custard."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Rosa must go with the shortcake: clue 1 rules out the pie; the crumble already goes with Walt."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Elsa must go with the pie: the other choices are already taken."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Rosa must go with the ice cream: clue 2 rules out the custard; clue 4 rules out the honey."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Elsa must go with the honey: clue 2 rules out the custard; the ice cream already goes with Rosa."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The shortcake goes with Rosa, so the shortcake also goes with the ice cream."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The pie must go with the honey: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 16,
+  "score": 34,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 2
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Rosa",
+   "shortcake",
+   "ice cream"
+  ],
+  [
+   "Walt",
+   "crumble",
+   "custard"
+  ],
+  [
+   "Elsa",
+   "pie",
+   "honey"
+  ]
+ ],
+ "score": 34
+}

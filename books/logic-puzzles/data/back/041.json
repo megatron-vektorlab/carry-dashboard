@@ -1,0 +1,47 @@
+{
+ "no": 41,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Patch=north field",
+   "b": "Patch=hilltop",
+   "cat": "Day",
+   "rel": "a_less"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Picker=Jade",
+    "Picker=Mabel"
+   ],
+   "options": [
+    "Patch=hilltop",
+    "Day=Wednesday"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Picker=Vito",
+   "not": [
+    "Day=Thursday",
+    "Day=Friday"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Picker=Mabel",
+   "not": [
+    "Day=Wednesday",
+    "Day=Friday"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Picker=Ruben",
+   "not": [
+    "Patch=north field",
+    "Patch=creekside"
+   ]
+  }
+ ]
+}

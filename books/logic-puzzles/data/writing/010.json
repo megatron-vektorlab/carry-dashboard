@@ -1,0 +1,25 @@
+{
+ "no": 10,
+ "clues": [
+  "Either Gus or Hal wrote the bake sale letter.",
+  "Hal wrote either the pothole letter or the parking letter.",
+  "The parking letter came from either Hal or Vera.",
+  "Tariq wrote neither the seagull letter nor the bake sale letter."
+ ],
+ "hints": [
+  "Look down the bake sale column. Clue 1 offers two writers. Can another clue cross out one of them?",
+  "Clue 2 gives Hal only the pothole or parking letter, so put an X at Hal and bake sale. Then read clue 1 again.",
+  "So Gus wrote the bake sale letter. The seagull letter is not Gus's, Tariq's (clue 4) or Hal's (clue 2), so Vera wrote it."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 keeps Hal off the bake sale letter, so clue 1 leaves only Gus to write it.",
+  "steps": [
+   "Clue 1 says Gus or Hal wrote the bake sale letter. Clue 2 rules out Hal, so Gus wrote it.",
+   "The seagull letter was not Tariq's (clue 4) or Hal's (clue 2), and Gus is taken, so Vera wrote it.",
+   "Clue 3 rules out the parking letter for Tariq, and clue 4 rules out two more, so Tariq wrote the pothole letter.",
+   "Hal wrote the parking letter."
+  ],
+  "epilogue": "Gus had written about the bake sale, Tariq the potholes, Hal the parking and Vera the seagulls. All four signed, and the Gazette printed them on Thursday, with only one paw print."
+ },
+ "tip": "Read the clues twice. The second reading knows more than the first."
+}

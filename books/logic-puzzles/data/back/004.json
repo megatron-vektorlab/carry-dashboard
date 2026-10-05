@@ -1,0 +1,18 @@
+{
+ "no": 4,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Hat=sou'wester",
+   "one_of": [
+    "Donor=Pearl",
+    "Donor=Linus"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Hat=beret",
+   "b": "Donor=Pearl"
+  }
+ ]
+}

@@ -1,0 +1,384 @@
+{
+ "no": 63,
+ "chapter": 5,
+ "family": "num43",
+ "stars": 3,
+ "seed": 63002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Ferry Schedule Shuffle",
+ "story": "Jonah's ferry leaves every half hour on September mornings, never a minute late. Last Tuesday, four regulars each rode a different morning run to a different stop, and Pilot greeted each of them in his little orange life vest. Now two of the four say they saw a light blink out at Thimble Point on the way, though the old lamp is supposed to be dark. Jonah wants his passenger log straight. Who rode when, and where?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Priya",
+  "Jonah"
+ ],
+ "state": {
+  "theme": {
+   "slot": 63,
+   "title": "The Ferry Schedule Shuffle",
+   "story": "Jonah's ferry leaves every half hour on September mornings, never a minute late. Last Tuesday, four regulars each rode a different morning run to a different stop, and Pilot greeted each of them in his little orange life vest. Now two of the four say they saw a light blink out at Thimble Point on the way, though the old lamp is supposed to be dark. Jonah wants his passenger log straight. Who rode when, and where?",
+   "entity": [
+    "passenger",
+    "passengers"
+   ],
+   "cast": [
+    "Priya",
+    "Jonah"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Passenger",
+    "kind": "name",
+    "values": [
+     "Ruben",
+     "Priya",
+     "Amara",
+     "Tova"
+    ]
+   },
+   {
+    "label": "Stop",
+    "values": [
+     "Gull Island",
+     "Cobb Point",
+     "Pine Key",
+     "the mainland"
+    ],
+    "ref": "the passenger bound for {v}",
+    "pred": "rode to {v}",
+    "neg": "did not ride to {v}",
+    "either": "rode to either {a} or {b}",
+    "nor": "rode to neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Ferry",
+    "ordered": true,
+    "nums": [
+     420,
+     450,
+     480,
+     510
+    ],
+    "labels": [
+     "7:00 a.m.",
+     "7:30 a.m.",
+     "8:00 a.m.",
+     "8:30 a.m."
+    ],
+    "ref": "the passenger on the {x} ferry",
+    "pred": "took the {x} ferry",
+    "neg": "did not take the {x} ferry",
+    "either": "took either the {a} or the {b} ferry",
+    "nor": "took neither the {a} nor the {b} ferry",
+    "short": "the {x} ferry",
+    "more": "took a later ferry than {y}",
+    "less": "took an earlier ferry than {y}",
+    "dmore": "sailed exactly {d} after {y}",
+    "dless": "sailed exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "sailed half an hour after {y}",
+    "dless1": "sailed half an hour before {y}",
+    "step": 30,
+    "values": [
+     "7:00 a.m.",
+     "7:30 a.m.",
+     "8:00 a.m.",
+     "8:30 a.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   1,
+   0,
+   2
+  ],
+  [
+   2,
+   1,
+   3,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 2,
+   "op": "d",
+   "d": 1
+  }
+ ],
+ "texts": [
+  "Of the passenger bound for Pine Key and the passenger bound for the mainland, one took the 7:00 a.m. ferry and the other took the 8:00 a.m. ferry.",
+  "Of the passenger on the 7:00 a.m. ferry and the passenger on the 8:30 a.m. ferry, one is Amara and the other is Tova.",
+  "Tova rode to neither Gull Island nor the mainland.",
+  "Ruben sailed half an hour before the passenger bound for Gull Island."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means Gull Island cannot be the 7:00 a.m. ferry and Ruben cannot be the 8:30 a.m. ferry."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Gull Island can still be only the 7:30 a.m. ferry or the 8:30 a.m. ferry and Ruben can still be only the 7:00 a.m. ferry, the 7:30 a.m. ferry, or the 8:00 a.m. ferry, clue 4 means Ruben cannot be the 7:30 a.m. ferry."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Ruben must go with the 8:00 a.m. ferry: clue 2 rules out the 7:00 a.m. ferry; clue 4 rules out the 7:30 a.m. ferry and the 8:30 a.m. ferry."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Priya must go with the 7:30 a.m. ferry: clue 2 rules out the 7:00 a.m. ferry and the 8:30 a.m. ferry; the 8:00 a.m. ferry already goes with Ruben."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Gull Island can still be only the 7:30 a.m. ferry or the 8:30 a.m. ferry and Ruben can still be only the 8:00 a.m. ferry, clue 4 means Gull Island cannot be the 7:30 a.m. ferry."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "Gull Island must go with the 8:30 a.m. ferry: clue 4 rules out the 7:00 a.m. ferry and the 7:30 a.m. ferry; clue 1 rules out the 8:00 a.m. ferry."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Cobb Point must go with the 7:30 a.m. ferry: clue 1 rules out the 7:00 a.m. ferry and the 8:00 a.m. ferry; the 8:30 a.m. ferry already goes with Gull Island."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with Cobb Point: Gull Island, Pine Key, and the mainland are already ruled out for the 7:30 a.m. ferry."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Tova must go with Pine Key: clue 3 rules out Gull Island and the mainland; Cobb Point already goes with Priya."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Ruben must go with the mainland: clue 4 rules out Gull Island; Cobb Point is already ruled out for the 8:00 a.m. ferry; Pine Key already goes with Tova."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Amara must go with Gull Island: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Pine Key must go with the 7:00 a.m. ferry: clue 1 rules out the 7:30 a.m. ferry and the 8:30 a.m. ferry; the 8:00 a.m. ferry is already ruled out for Ruben."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The mainland must go with the 8:00 a.m. ferry: clue 1 rules out the 7:30 a.m. ferry and the 8:30 a.m. ferry; the 7:00 a.m. ferry already goes with Pine Key."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 8:30 a.m. ferry goes with Gull Island, so the 8:30 a.m. ferry also goes with Amara."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Tova must go with the 7:00 a.m. ferry: clue 2 rules out the 7:30 a.m. ferry and the 8:00 a.m. ferry; the 8:30 a.m. ferry already goes with Amara."
+  }
+ ],
+ "features": {
+  "steps": 24,
+  "score": 65,
+  "revisits": 3,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 6
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Ruben",
+   "the mainland",
+   "8:00 a.m."
+  ],
+  [
+   "Priya",
+   "Cobb Point",
+   "7:30 a.m."
+  ],
+  [
+   "Amara",
+   "Gull Island",
+   "8:30 a.m."
+  ],
+  [
+   "Tova",
+   "Pine Key",
+   "7:00 a.m."
+  ]
+ ],
+ "score": 65
+}

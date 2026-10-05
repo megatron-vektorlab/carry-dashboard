@@ -1,0 +1,28 @@
+{
+ "no": 61,
+ "clues": [
+  "Jade is younger than Felix.",
+  "Hugo is older than Felix.",
+  "Una is younger than Jade.",
+  "The guitar student is exactly 15 years older than the watercolor student.",
+  "Jade did not sign up for Spanish."
+ ],
+ "hints": [
+  "Look at clues 1, 2 and 3. They all compare ages. Can you line the four students up from youngest to oldest?",
+  "Put three clues together. Una is younger than Jade, who is younger than Felix, who is younger than Hugo. Four students, four ages.",
+  "So Una is 40, Jade 45, Felix 50 and Hugo 55. Clue 4's 15-year gap then fits only 40 and 55."
+ ],
+ "solution": {
+  "key_idea": "Clues 1, 2 and 3 chain into one line, Una, Jade, Felix, Hugo, which fixes every age at once.",
+  "steps": [
+   "By clue 3, Una is younger than Jade. By clue 1, Jade is younger than Felix, and by clue 2, Felix is younger than Hugo.",
+   "That is a chain of four, so Una is 40, Jade 45, Felix 50 and Hugo 55.",
+   "Clue 4 needs a 15-year gap, which fits only 40 and 55. So the watercolor student is 40, and the guitar student is 55.",
+   "So Una takes watercolor, and Hugo takes guitar.",
+   "By clue 5, Jade is not taking Spanish, so Jade takes pottery, and Felix takes Spanish."
+  ],
+  "epilogue": "Mabel recopied the roll in ink: Una, 40, watercolor; Jade, 45, pottery; Felix, 50, Spanish; Hugo, 55, guitar. Felix offered her a pencil. She declined."
+ },
+ "tip": null,
+ "answer_line": null
+}

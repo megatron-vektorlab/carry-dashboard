@@ -1,0 +1,318 @@
+{
+ "no": 21,
+ "chapter": 2,
+ "family": "grid4",
+ "stars": 2,
+ "seed": 21001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Spring Bird Count",
+ "story": "At first light on bird count morning, four garden club members fanned out across Thimble Harbor with binoculars, thermoses and very sharp pencils. Each came back with one special sighting from one favorite spot, and all four tried to tell Mabel about it at once. Her report goes to the state by Friday, and Mabel has never mailed an untidy report in her life. Who spotted which bird, and where?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Mabel"
+ ],
+ "state": {
+  "theme": {
+   "slot": 21,
+   "title": "The Spring Bird Count",
+   "story": "At first light on bird count morning, four garden club members fanned out across Thimble Harbor with binoculars, thermoses and very sharp pencils. Each came back with one special sighting from one favorite spot, and all four tried to tell Mabel about it at once. Her report goes to the state by Friday, and Mabel has never mailed an untidy report in her life. Who spotted which bird, and where?",
+   "entity": [
+    "birder",
+    "birders"
+   ],
+   "cast": [
+    "Mabel"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Birder",
+    "kind": "name",
+    "values": [
+     "Mabel",
+     "Dev",
+     "Tova",
+     "Ivan"
+    ]
+   },
+   {
+    "label": "Bird",
+    "values": [
+     "osprey",
+     "heron",
+     "oriole",
+     "loon"
+    ],
+    "ref": "the {v}'s spotter",
+    "pred": "spotted the {v}",
+    "neg": "did not spot the {v}",
+    "either": "spotted either the {a} or the {b}",
+    "nor": "spotted neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Spot",
+    "values": [
+     "salt marsh",
+     "old pier",
+     "dunes",
+     "orchard"
+    ],
+    "ref": "the birder at the {v}",
+    "pred": "kept watch at the {v}",
+    "neg": "did not keep watch at the {v}",
+    "either": "kept watch at either the {a} or the {b}",
+    "nor": "kept watch at neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   3,
+   0,
+   1
+  ],
+  [
+   3,
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of Dev and the osprey's spotter, one kept watch at the dunes and the other kept watch at the old pier.",
+  "Of Mabel and the birder at the dunes, one spotted the loon and the other spotted the oriole.",
+  "Of Ivan and the loon's spotter, one kept watch at the dunes and the other kept watch at the salt marsh."
+ ],
+ "trace": [
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The osprey must go with the old pier: clue 1 rules out the salt marsh and the orchard; clue 2 rules out the dunes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Dev must go with the dunes: clue 1 rules out the salt marsh and the orchard; the old pier is already ruled out for the osprey."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Ivan must go with the salt marsh: clue 3 rules out the old pier and the orchard; the dunes already goes with Dev."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Mabel must go with the orchard: clue 2 rules out the dunes; the old pier is already ruled out for the osprey; the salt marsh already goes with Ivan."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Tova must go with the old pier: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The osprey goes with the old pier, so the osprey also goes with Tova."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The heron must go with Ivan: clue 2 rules out Mabel; Dev is already ruled out for the dunes; Tova already goes with the osprey."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The salt marsh goes with Ivan, so the salt marsh also goes with the heron."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The loon must go with the dunes: clue 3 rules out the orchard; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The oriole must go with the orchard: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Dev must go with the loon: clue 1 rules out the osprey; the heron and the oriole are already ruled out for the dunes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Mabel must go with the oriole: clue 2 rules out the osprey and the heron; the loon already goes with Dev."
+  }
+ ],
+ "features": {
+  "steps": 19,
+  "score": 50,
+  "revisits": 0,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 3
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Mabel",
+   "oriole",
+   "orchard"
+  ],
+  [
+   "Dev",
+   "loon",
+   "dunes"
+  ],
+  [
+   "Tova",
+   "osprey",
+   "old pier"
+  ],
+  [
+   "Ivan",
+   "heron",
+   "salt marsh"
+  ]
+ ],
+ "score": 50
+}

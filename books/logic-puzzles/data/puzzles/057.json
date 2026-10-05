@@ -1,0 +1,133 @@
+{
+ "no": 57,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 57000,
+ "kind": "liars",
+ "title": "Who Fed the Gulls?",
+ "story": "Nine pots of chowder were simmering for the cook-off on the town pier when someone tossed a bag of popcorn off the end, and two hundred gulls came down on the tasting tables. Otis whistled a sea shanty at them, slightly off-key, which only seemed to encourage them. Five people were out at the end of the pier, and each says one thing. Before the gulls come back for seconds, can you name the popcorn tosser?",
+ "cast": [
+  "Otis"
+ ],
+ "names": [
+  "Carmen",
+  "Otis",
+  "Imani",
+  "Basil",
+  "Zeke"
+ ],
+ "did": "fed the gulls",
+ "didnt": "didn't feed the gulls",
+ "statements": [
+  [
+   "not",
+   3
+  ],
+  [
+   "or",
+   2,
+   4
+  ],
+  [
+   "truth",
+   0
+  ],
+  [
+   "nor",
+   1,
+   2
+  ],
+  [
+   "truth",
+   3
+  ]
+ ],
+ "texts": [
+  "Basil didn't feed the gulls.",
+  "Either Imani or Zeke fed the gulls.",
+  "Carmen is telling the truth.",
+  "Neither Otis nor Imani fed the gulls.",
+  "Basil is telling the truth."
+ ],
+ "rule": [
+  "exactly",
+  4
+ ],
+ "rule_text": "Exactly four of these statements are true.",
+ "culprit": "Carmen",
+ "truth": [
+  true,
+  false,
+  true,
+  true,
+  true
+ ],
+ "cases": [
+  {
+   "case": "Carmen",
+   "truth": [
+    "true",
+    "false",
+    "true",
+    "true",
+    "true"
+   ],
+   "count": 4,
+   "fits": true
+  },
+  {
+   "case": "Otis",
+   "truth": [
+    "true",
+    "false",
+    "true",
+    "false",
+    "false"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Imani",
+   "truth": [
+    "true",
+    "true",
+    "true",
+    "false",
+    "false"
+   ],
+   "count": 3,
+   "fits": false
+  },
+  {
+   "case": "Basil",
+   "truth": [
+    "false",
+    "false",
+    "false",
+    "true",
+    "true"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Zeke",
+   "truth": [
+    "true",
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "count": 5,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who fed the gulls?"
+ },
+ "answer": "Carmen",
+ "score": 60
+}

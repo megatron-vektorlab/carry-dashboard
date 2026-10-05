@@ -1,0 +1,48 @@
+{
+ "no": 25,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Drink=cider",
+   "one_of": [
+    "Dish=lobster roll",
+    "Dish=fried clams"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Diner=Felix",
+    "Dish=crab cake"
+   ],
+   "options": [
+    "Drink=iced tea",
+    "Drink=lemonade"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Diner=Sam",
+   "not": [
+    "Drink=iced tea",
+    "Drink=cider"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Diner=Bea",
+   "one_of": [
+    "Dish=fish tacos",
+    "Dish=lobster roll"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Drink=lemonade",
+   "one_of": [
+    "Dish=lobster roll",
+    "Dish=fish tacos"
+   ]
+  }
+ ]
+}

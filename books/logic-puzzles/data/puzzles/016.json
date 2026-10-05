@@ -1,0 +1,302 @@
+{
+ "no": 16,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 16004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Boatyard Paint Cans",
+ "story": "Three hulls sit on sawhorses at Okafor Boatyard, scraped bare and ready for a fresh coat. The paint cans, unfortunately, have lost their tags, and Felix will not open a can on a guess. \"Shipshape or nothing,\" he says, reaching for the pencil behind his left ear. Which owner brought in which boat, and what color is going on it?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Gus",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 16,
+   "title": "The Boatyard Paint Cans",
+   "story": "Three hulls sit on sawhorses at Okafor Boatyard, scraped bare and ready for a fresh coat. The paint cans, unfortunately, have lost their tags, and Felix will not open a can on a guess. \"Shipshape or nothing,\" he says, reaching for the pencil behind his left ear. Which owner brought in which boat, and what color is going on it?",
+   "entity": [
+    "owner",
+    "owners"
+   ],
+   "cast": [
+    "Gus",
+    "Felix"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Owner",
+    "kind": "name",
+    "values": [
+     "Gus",
+     "Imani",
+     "Basil"
+    ]
+   },
+   {
+    "label": "Color",
+    "values": [
+     "sea green",
+     "navy",
+     "cream"
+    ],
+    "ref": "the owner who chose {v}",
+    "pred": "chose {v}",
+    "neg": "did not choose {v}",
+    "either": "chose either {a} or {b}",
+    "nor": "chose neither {a} nor {b}",
+    "short": "the {v} paint"
+   },
+   {
+    "label": "Boat",
+    "values": [
+     "Sea Pea",
+     "Lucky Gull",
+     "Wavelet"
+    ],
+    "ref": "the {v}'s owner",
+    "pred": "brought in the {v}",
+    "neg": "did not bring in the {v}",
+    "either": "brought in either the {a} or the {b}",
+    "nor": "brought in neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   0,
+   1
+  ],
+  [
+   0,
+   1,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Imani brought in neither the Sea Pea nor the Wavelet.",
+  "The owner who chose navy is neither Gus nor Imani.",
+  "The owner who chose navy brought in either the Lucky Gull or the Wavelet.",
+  "Imani chose either navy or sea green."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Imani must go with the Lucky Gull: clue 1 rules out the Sea Pea and the Wavelet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The navy paint must go with Basil: clue 2 rules out Gus and Imani."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The navy paint must go with the Wavelet: clue 3 rules out the Sea Pea; the Lucky Gull is already ruled out for Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Basil must go with the Wavelet: the Sea Pea is already ruled out for the navy paint; the Lucky Gull already goes with Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Gus must go with the Sea Pea: the other choices are already taken."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Imani must go with the sea green paint: clue 2 rules out the navy paint; clue 4 rules out the cream paint."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Gus must go with the cream paint: clue 2 rules out the navy paint; the sea green paint already goes with Imani."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Lucky Gull goes with Imani, so the Lucky Gull also goes with the sea green paint."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The cream paint must go with the Sea Pea: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 15,
+  "score": 33,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 2
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Gus",
+   "cream",
+   "Sea Pea"
+  ],
+  [
+   "Imani",
+   "sea green",
+   "Lucky Gull"
+  ],
+  [
+   "Basil",
+   "navy",
+   "Wavelet"
+  ]
+ ],
+ "score": 33
+}

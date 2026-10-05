@@ -1,0 +1,28 @@
+{
+ "no": 59,
+ "clues": [
+  "The Macoun picker's basket held exactly 15 pounds more than Pablo's.",
+  "Of Pablo and Sam, one picked 10 pounds and the other picked 20 pounds.",
+  "Pablo's basket held neither Baldwin nor Empire apples.",
+  "The Baldwin basket weighed neither 20 pounds nor 25 pounds.",
+  "Mabel's basket weighed either 20 pounds or 25 pounds."
+ ],
+ "hints": [
+  "Look at Pablo's row in the box where pickers meet apples. Clues 1 and 3 both mention him. Which apple could he have picked?",
+  "Put two clues together. Clue 3 crosses out Baldwin and Empire for Pablo. Clue 1 compares him with the Macoun picker. Could he be that picker himself?",
+  "So Pablo picked the Cortland apples. A 15-pound gap fits only 10 and 25 pounds, so Pablo picked 10 and the Macoun picker 25."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 3 together leave Pablo only the Cortland apples, and clue 1's 15-pound gap puts him at 10 pounds.",
+  "steps": [
+   "Clue 3 rules out Baldwin and Empire for Pablo, and clue 1 keeps him off Macoun. So Pablo picked the Cortland apples.",
+   "Clue 1's 15-pound gap fits only 10 and 25 pounds. So Pablo's Cortland apples weighed 10 pounds, and the Macoun apples 25.",
+   "Clue 4 keeps the Baldwin apples off 20 and 25 pounds, and 10 is taken, so they weighed 15. The Empire apples weighed 20.",
+   "Pablo picked 10 pounds, so by clue 2 Sam picked 20. Clue 5 then leaves Mabel only 25 pounds, and Kit picked 15.",
+   "Match the weights: Mabel picked the Macoun apples, Kit the Baldwin apples, and Sam the Empire apples."
+  ],
+  "epilogue": "The stand rang up Pablo's 10 pounds of Cortland, Kit's 15 of Baldwin, Sam's 20 of Empire and Mabel's 25 of Macoun. Mabel paid once the sign read \"Fresh Apples.\""
+ },
+ "tip": null,
+ "answer_line": null
+}

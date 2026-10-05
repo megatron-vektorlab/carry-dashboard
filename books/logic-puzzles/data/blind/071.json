@@ -1,0 +1,62 @@
+{
+ "no": 71,
+ "people": "hikers",
+ "categories": [
+  {
+   "label": "Hiker",
+   "values": [
+    "Felix",
+    "Wren",
+    "Enzo",
+    "Cass"
+   ]
+  },
+  {
+   "label": "Hill",
+   "values": [
+    "Bramble Hill",
+    "Crow's Nest",
+    "Fiddler Hill",
+    "Thimble Knob"
+   ]
+  },
+  {
+   "label": "Snack",
+   "values": [
+    "trail mix",
+    "jerky",
+    "cheese",
+    "figs"
+   ]
+  },
+  {
+   "label": "Height",
+   "values": [
+    "800 feet",
+    "1,000 feet",
+    "1,200 feet",
+    "1,400 feet"
+   ],
+   "ordered": true,
+   "numbers": [
+    800,
+    1000,
+    1200,
+    1400
+   ],
+   "note": "values in order from smallest to largest number; numbers [800, 1000, 1200, 1400] (unit: feet)"
+  }
+ ],
+ "clues": [
+  "Felix topped out at neither 1,000 feet nor 1,200 feet.",
+  "Whoever hiked Bramble Hill did not top out at 1,200 feet.",
+  "Cass topped out lower than whoever packed the jerky.",
+  "Neither Felix nor Enzo packed the figs.",
+  "The hiker with the trail mix topped out exactly 200 feet above the hiker with the jerky.",
+  "Of Wren and Enzo, one topped out at 1,400 feet and the other at 1,200 feet.",
+  "The hiker on Fiddler Hill topped out exactly 400 feet higher than Cass.",
+  "Crow's Nest was climbed by neither Felix nor Enzo.",
+  "Neither Enzo nor Cass topped out at 1,400 feet."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

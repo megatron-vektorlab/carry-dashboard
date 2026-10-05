@@ -1,0 +1,760 @@
+{
+ "no": 91,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 91002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Lantern Room",
+ "story": "Lena has two puzzles. The old one: since early November, the Keeper's Lamp's brass has shone as if someone polished it, and none of her volunteers did. The new one: muddy footprints on the spiral stair on Wednesday morning, though it was spotless when the museum closed at a quarter to six on Tuesday. Five people climbed the tower on Tuesday, each stopping at a different landing with something different in hand. Who went back up after closing time?",
+ "question": {
+  "text": "Who climbed the tower after closing?",
+  "cat": "Time",
+  "value": "6:00 p.m."
+ },
+ "answer": "Hugo",
+ "cast": [
+  "Jonah",
+  "Wren",
+  "Teddy",
+  "Lena"
+ ],
+ "state": {
+  "theme": {
+   "slot": 91,
+   "title": "The Case of the Lantern Room",
+   "story": "Lena has two puzzles. The old one: since early November, the Keeper's Lamp's brass has shone as if someone polished it, and none of her volunteers did. The new one: muddy footprints on the spiral stair on Wednesday morning, though it was spotless when the museum closed at a quarter to six on Tuesday. Five people climbed the tower on Tuesday, each stopping at a different landing with something different in hand. Who went back up after closing time?",
+   "entity": [
+    "climber",
+    "climbers"
+   ],
+   "cast": [
+    "Jonah",
+    "Wren",
+    "Teddy",
+    "Lena"
+   ],
+   "question": {
+    "text": "Who climbed the tower after closing?",
+    "cat": "Time",
+    "value": "6:00 p.m."
+   },
+   "answer": "Hugo"
+  },
+  "cats": [
+   {
+    "label": "Climber",
+    "kind": "name",
+    "values": [
+     "Hugo",
+     "Jonah",
+     "Wren",
+     "Teddy",
+     "Cass"
+    ]
+   },
+   {
+    "label": "Item",
+    "values": [
+     "sketchbook",
+     "thermos",
+     "field guide",
+     "flashlight",
+     "notebook"
+    ],
+    "ref": "the climber with the {v}",
+    "pred": "carried the {v}",
+    "neg": "did not carry the {v}",
+    "either": "carried either the {a} or the {b}",
+    "nor": "carried neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Landing",
+    "values": [
+     "1st landing",
+     "2nd landing",
+     "3rd landing",
+     "4th landing",
+     "top"
+    ],
+    "ref": "the climber who stopped at the {v}",
+    "pred": "stopped at the {v}",
+    "neg": "did not stop at the {v}",
+    "either": "stopped at either the {a} or the {b}",
+    "nor": "stopped at neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     960,
+     990,
+     1020,
+     1050,
+     1080
+    ],
+    "labels": [
+     "4:00 p.m.",
+     "4:30 p.m.",
+     "5:00 p.m.",
+     "5:30 p.m.",
+     "6:00 p.m."
+    ],
+    "ref": "the {x} climber",
+    "pred": "climbed at {x}",
+    "neg": "did not climb at {x}",
+    "either": "climbed at either {a} or {b}",
+    "nor": "climbed at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "climbed later than {y}",
+    "less": "climbed earlier than {y}",
+    "dmore": "climbed exactly {d} after {y}",
+    "dless": "climbed exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "climbed half an hour after {y}",
+    "dless1": "climbed half an hour before {y}",
+    "step": 30,
+    "values": [
+     "4:00 p.m.",
+     "4:30 p.m.",
+     "5:00 p.m.",
+     "5:30 p.m.",
+     "6:00 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   4,
+   2,
+   3,
+   0,
+   1
+  ],
+  [
+   3,
+   1,
+   2,
+   0,
+   4
+  ],
+  [
+   4,
+   0,
+   3,
+   2,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  }
+ ],
+ "texts": [
+  "Of Cass and the climber with the flashlight, one stopped at the 3rd landing and the other stopped at the top.",
+  "Of Jonah and the climber with the flashlight, one stopped at the 2nd landing and the other stopped at the 3rd landing.",
+  "Wren climbed later than the climber with the thermos.",
+  "Jonah climbed earlier than the climber with the thermos.",
+  "The climber with the thermos climbed at either 4:30 p.m. or 5:30 p.m.",
+  "Hugo did not climb at 5:30 p.m.",
+  "Cass climbed earlier than Hugo.",
+  "Of Teddy and the climber with the thermos, one stopped at the top and the other stopped at the 1st landing.",
+  "Jonah carried neither the sketchbook nor the thermos.",
+  "The climber with the notebook climbed exactly 60 minutes after the climber who stopped at the 1st landing."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the thermos can still be only 4:30 p.m. or 5:30 p.m., clue 3 means Wren cannot be 4:00 p.m. or 4:30 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since the thermos can still be only 4:30 p.m. or 5:30 p.m., clue 4 means Jonah cannot be 5:30 p.m. or 6:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Hugo can still be only 4:00 p.m., 4:30 p.m., 5:00 p.m., or 6:00 p.m., clue 7 means Cass cannot be 6:00 p.m. and Hugo cannot be 4:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Clue 10 means the notebook cannot be 4:00 p.m. or 4:30 p.m. and the 1st landing cannot be 5:30 p.m. or 6:00 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The flashlight must go with the 3rd landing: clue 1 rules out the 1st landing, the 2nd landing, and the 4th landing; clue 2 rules out the top."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Jonah must go with the 2nd landing: clue 2 rules out the 1st landing, the 4th landing, and the top; the 3rd landing is already ruled out for the flashlight."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Cass must go with the top: clue 1 rules out the 1st landing, the 2nd landing, and the 4th landing; the 3rd landing is already ruled out for the flashlight."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Teddy must go with the 1st landing: clue 8 rules out the 3rd landing and the 4th landing; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The thermos must go with the top: clue 8 rules out the 4th landing; the 1st landing is already ruled out for Teddy; the 2nd landing is already ruled out for Jonah; the 3rd landing already goes with the flashlight."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Cass goes with the top, so Cass also goes with the thermos."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Cass can still be only 4:30 p.m. or 5:30 p.m. and Hugo can still be only 4:30 p.m., 5:00 p.m., or 6:00 p.m., clue 7 means Hugo cannot be 4:30 p.m."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "text": "SUPPOSE TEST: try Hugo with 5:00 p.m..",
+   "chain": [
+    "Suppose Hugo goes with 5:00 p.m.",
+    "6:00 p.m. must go with Wren: clue 4 rules out Jonah; clue 7 rules out Cass; Teddy is already ruled out for the 1st landing; Hugo already goes with 5:00 p.m.",
+    "5:30 p.m. must go with Cass: clue 6 rules out Hugo; clue 4 rules out Jonah; Teddy is already ruled out for the 1st landing; Wren already goes with 6:00 p.m.",
+    "The top must go with 5:30 p.m.: 4:00 p.m. and 5:00 p.m. are already ruled out for the thermos; 4:30 p.m. and 6:00 p.m. are already ruled out for Cass.",
+    "The thermos must go with 5:30 p.m.: clue 5 rules out 4:00 p.m., 5:00 p.m., and 6:00 p.m.; 4:30 p.m. is already ruled out for the top.",
+    "But then clue 7 cannot be true."
+   ],
+   "result": "So Hugo does NOT go with 5:00 p.m.: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    7
+   ],
+   "text": "Hugo must go with 6:00 p.m.: clue 7 rules out 4:00 p.m. and 4:30 p.m.; the Suppose test ruled out 5:00 p.m.; clue 6 rules out 5:30 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the thermos can still be only 4:30 p.m. or 5:30 p.m. and Wren can still be only 5:00 p.m. or 5:30 p.m., clue 3 means the thermos cannot be 5:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "The thermos must go with 4:30 p.m.: clue 5 rules out 4:00 p.m., 5:00 p.m., and 6:00 p.m.; clue 3 rules out 5:30 p.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The top goes with the thermos, so the top also goes with 4:30 p.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Cass goes with the top, so Cass also goes with 4:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    6
+   ],
+   "text": "5:30 p.m. must go with Wren: clue 6 rules out Hugo; clue 4 rules out Jonah; Teddy is already ruled out for the 1st landing; Cass already goes with 4:30 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since the thermos can still be only 4:30 p.m. and Jonah can still be only 4:00 p.m. or 5:00 p.m., clue 4 means Jonah cannot be 5:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Jonah must go with 4:00 p.m.: clue 4 rules out 5:00 p.m., 5:30 p.m., and 6:00 p.m.; 4:30 p.m. is already ruled out for the 2nd landing."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Teddy must go with 5:00 p.m.: 5:30 p.m. and 6:00 p.m. are already ruled out for the 1st landing; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 2nd landing goes with Jonah, so the 2nd landing also goes with 4:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The 1st landing must go with 5:00 p.m.: clue 10 rules out 5:30 p.m. and 6:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    10
+   ],
+   "text": "4:00 p.m. must go with the field guide: clue 5 rules out the thermos; clue 10 rules out the notebook; the sketchbook is already ruled out for Jonah; the flashlight is already ruled out for the 3rd landing."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Jonah goes with 4:00 p.m., so Jonah also goes with the field guide."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Teddy must go with the sketchbook: clue 8 rules out the thermos; the flashlight is already ruled out for the 3rd landing; the notebook is already ruled out for the 1st landing; the field guide already goes with Jonah."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 2nd landing goes with Jonah, so the 2nd landing also goes with the field guide."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The notebook must go with the 4th landing: clue 10 rules out the 1st landing; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The sketchbook must go with the 1st landing: the 2nd landing is already ruled out for Jonah; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The sketchbook must go with 5:00 p.m.: 4:00 p.m. is already ruled out for Jonah; 5:30 p.m. is already ruled out for Wren; 6:00 p.m. is already ruled out for Hugo; 4:30 p.m. already goes with the thermos."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since the notebook can still be only 5:30 p.m. or 6:00 p.m. and the 1st landing can still be only 5:00 p.m., clue 10 means the notebook cannot be 5:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The notebook must go with 6:00 p.m.: clue 10 rules out 4:00 p.m., 4:30 p.m., and 5:30 p.m.; 5:00 p.m. already goes with the sketchbook."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The flashlight must go with 5:30 p.m.: 4:00 p.m. and 5:00 p.m. are already ruled out for the 3rd landing; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The 3rd landing goes with the flashlight, so the 3rd landing also goes with 5:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The 4th landing must go with 6:00 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hugo must go with the notebook: the field guide and the flashlight are already ruled out for 6:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Wren must go with the flashlight: clue 3 rules out the thermos; the field guide is already ruled out for 5:30 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hugo must go with the 4th landing: the 3rd landing is already ruled out for the flashlight; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Wren must go with the 3rd landing: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 75,
+  "score": 218,
+  "revisits": 6,
+  "transfer": 35,
+  "trial": 1,
+  "clue_steps": 14
+ },
+ "trial_chain": 10,
+ "table": [
+  [
+   "Hugo",
+   "notebook",
+   "4th landing",
+   "6:00 p.m."
+  ],
+  [
+   "Jonah",
+   "field guide",
+   "2nd landing",
+   "4:00 p.m."
+  ],
+  [
+   "Wren",
+   "flashlight",
+   "3rd landing",
+   "5:30 p.m."
+  ],
+  [
+   "Teddy",
+   "sketchbook",
+   "1st landing",
+   "5:00 p.m."
+  ],
+  [
+   "Cass",
+   "thermos",
+   "top",
+   "4:30 p.m."
+  ]
+ ],
+ "score": 218
+}

@@ -1,0 +1,380 @@
+{
+ "no": 23,
+ "chapter": 2,
+ "family": "grid4",
+ "stars": 2,
+ "seed": 23005,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Ferry Lost-and-Found",
+ "story": "Jonah's ferry leaves at 7:30, not 7:31, and his lost-and-found is kept just as strictly. After Tuesday's morning run, Pilot the beagle trotted from deck to deck in his little orange life vest and sniffed out four forgotten belongings, each left by a different regular passenger. No item goes on the shelf without a proper tag. Who left what behind, and where did each passenger ride?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Otis",
+  "Jonah"
+ ],
+ "state": {
+  "theme": {
+   "slot": 23,
+   "title": "The Ferry Lost-and-Found",
+   "story": "Jonah's ferry leaves at 7:30, not 7:31, and his lost-and-found is kept just as strictly. After Tuesday's morning run, Pilot the beagle trotted from deck to deck in his little orange life vest and sniffed out four forgotten belongings, each left by a different regular passenger. No item goes on the shelf without a proper tag. Who left what behind, and where did each passenger ride?",
+   "entity": [
+    "passenger",
+    "passengers"
+   ],
+   "cast": [
+    "Otis",
+    "Jonah"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Passenger",
+    "kind": "name",
+    "values": [
+     "Otis",
+     "Carmen",
+     "Yusuf",
+     "Linus"
+    ]
+   },
+   {
+    "label": "Item",
+    "values": [
+     "scarf",
+     "thermos",
+     "novel",
+     "sun hat"
+    ],
+    "ref": "the owner of the {v}",
+    "pred": "left the {v} behind",
+    "neg": "did not leave the {v} behind",
+    "either": "left either the {a} or the {b} behind",
+    "nor": "left neither the {a} nor the {b} behind",
+    "short": "the {v}"
+   },
+   {
+    "label": "Deck",
+    "values": [
+     "upper deck",
+     "lower deck",
+     "foredeck",
+     "aft deck"
+    ],
+    "ref": "the passenger on the {v}",
+    "pred": "rode on the {v}",
+    "neg": "did not ride on the {v}",
+    "either": "rode on either the {a} or the {b}",
+    "nor": "rode on neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   0,
+   3,
+   1
+  ],
+  [
+   3,
+   0,
+   2,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of Otis and Yusuf, one left the novel behind and the other left the sun hat behind.",
+  "Of the owner of the scarf and the owner of the sun hat, one is Yusuf and the other is Carmen.",
+  "Linus did not ride on the foredeck.",
+  "Of Otis and Carmen, one rode on the upper deck and the other rode on the aft deck.",
+  "The owner of the novel rode on either the lower deck or the aft deck."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Otis must go with the novel: clue 1 rules out the scarf and the thermos; clue 2 rules out the sun hat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Carmen must go with the scarf: clue 2 rules out the thermos; clue 1 rules out the novel and the sun hat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Yusuf must go with the sun hat: clue 1 rules out the scarf and the thermos; clue 2 rules out the novel."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Linus must go with the thermos: clue 2 rules out the scarf; clue 1 rules out the novel and the sun hat."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Otis must go with the aft deck: clue 4 rules out the lower deck; the upper deck and the foredeck are already ruled out for the novel."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Carmen must go with the upper deck: clue 4 rules out the lower deck and the foredeck; the aft deck already goes with Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Linus must go with the lower deck: clue 4 rules out the upper deck and the aft deck; clue 3 rules out the foredeck."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Yusuf must go with the foredeck: clue 4 rules out the upper deck and the aft deck; the lower deck already goes with Linus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The novel must go with the aft deck: clue 5 rules out the upper deck and the foredeck; the lower deck is already ruled out for Otis."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The scarf goes with Carmen, so the scarf also goes with the upper deck."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The thermos must go with the lower deck: the foredeck is already ruled out for Linus; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The sun hat must go with the foredeck: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 21,
+  "score": 53,
+  "revisits": 0,
+  "transfer": 5,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Otis",
+   "novel",
+   "aft deck"
+  ],
+  [
+   "Carmen",
+   "scarf",
+   "upper deck"
+  ],
+  [
+   "Yusuf",
+   "sun hat",
+   "foredeck"
+  ],
+  [
+   "Linus",
+   "thermos",
+   "lower deck"
+  ]
+ ],
+ "score": 53
+}

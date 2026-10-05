@@ -1,0 +1,26 @@
+{
+ "no": 8,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Starter=Bubbles",
+   "one_of": [
+    "Student=Enzo",
+    "Student=Quinn"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Student=Wren",
+   "one_of": [
+    "Starter=Admiral",
+    "Starter=Barnacle"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Student=Quinn",
+   "b": "Starter=Barnacle"
+  }
+ ]
+}

@@ -1,0 +1,397 @@
+{
+ "no": 45,
+ "chapter": 3,
+ "family": "days4",
+ "stars": 3,
+ "seed": 45000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Four Orders on the Back Shelf",
+ "story": "Rosa's order book is her pride, second only to Gloria, her oldest sourdough starter. On Friday morning four special orders waited on the back shelf at Salt & Sugar, among them a cinnamon bun the size of a dinner plate, and four customers came to collect them, each at a different hour. In the rush, Rosa never wrote down who took what. Can you set her book straight before the next rush?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Nico",
+  "Rosa"
+ ],
+ "state": {
+  "theme": {
+   "slot": 45,
+   "title": "Four Orders on the Back Shelf",
+   "story": "Rosa's order book is her pride, second only to Gloria, her oldest sourdough starter. On Friday morning four special orders waited on the back shelf at Salt & Sugar, among them a cinnamon bun the size of a dinner plate, and four customers came to collect them, each at a different hour. In the rush, Rosa never wrote down who took what. Can you set her book straight before the next rush?",
+   "entity": [
+    "customer",
+    "customers"
+   ],
+   "cast": [
+    "Nico",
+    "Rosa"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Customer",
+    "kind": "name",
+    "values": [
+     "Nico",
+     "Zeke",
+     "Lou",
+     "Milo"
+    ]
+   },
+   {
+    "label": "Order",
+    "values": [
+     "layer cake",
+     "baguettes",
+     "rye loaf",
+     "cinnamon bun"
+    ],
+    "ref": "the customer with the {v}",
+    "pred": "ordered the {v}",
+    "neg": "did not order the {v}",
+    "either": "ordered either the {a} or the {b}",
+    "nor": "ordered neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Pickup",
+    "ordered": true,
+    "nums": [
+     7,
+     8,
+     9,
+     10
+    ],
+    "labels": [
+     "7 a.m.",
+     "8 a.m.",
+     "9 a.m.",
+     "10 a.m."
+    ],
+    "ref": "the {x} customer",
+    "pred": "came in at {x}",
+    "neg": "did not come in at {x}",
+    "either": "came in at either {a} or {b}",
+    "nor": "came in at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "came in later than {y}",
+    "less": "came in earlier than {y}",
+    "dmore": "came in exactly {d} after {y}",
+    "dless": "came in exactly {d} before {y}",
+    "dunit": [
+     "hour",
+     "hours"
+    ],
+    "dmore1": "came in an hour after {y}",
+    "dless1": "came in an hour before {y}",
+    "step": 1,
+    "values": [
+     "7 a.m.",
+     "8 a.m.",
+     "9 a.m.",
+     "10 a.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   3,
+   0,
+   1
+  ],
+  [
+   3,
+   2,
+   0,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 2,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 2,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of Zeke and the 10 a.m. customer, one ordered the rye loaf and the other ordered the cinnamon bun.",
+  "Of the 7 a.m. customer and the 10 a.m. customer, one ordered the rye loaf and the other ordered the layer cake.",
+  "Lou came in earlier than the customer with the baguettes.",
+  "Zeke came in later than the customer with the baguettes.",
+  "Nico did not order the baguettes."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 means Lou cannot be 10 a.m. and the baguettes cannot be 7 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4,
+    5
+   ],
+   "text": "The baguettes must go with Milo: clue 5 rules out Nico; clue 4 rules out Zeke; clue 3 rules out Lou."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since the baguettes can still be only 8 a.m., 9 a.m., or 10 a.m., clue 4 means the baguettes cannot be 10 a.m. and Zeke cannot be 7 a.m. or 8 a.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Lou can still be only 7 a.m., 8 a.m., or 9 a.m. and the baguettes can still be only 8 a.m. or 9 a.m., clue 3 means Lou cannot be 9 a.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "Zeke must go with 9 a.m.: clue 4 rules out 7 a.m. and 8 a.m.; clue 1 rules out 10 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Milo must go with 8 a.m.: 7 a.m. and 10 a.m. are already ruled out for the baguettes; 9 a.m. already goes with Zeke."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Lou must go with 7 a.m.: clue 3 rules out 9 a.m. and 10 a.m.; 8 a.m. already goes with Milo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with 10 a.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The baguettes goes with Milo, so the baguettes also goes with 8 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The layer cake must go with 7 a.m.: clue 1 rules out 10 a.m.; 9 a.m. is already ruled out for Zeke; 8 a.m. already goes with the baguettes."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Lou goes with 7 a.m., so Lou also goes with the layer cake."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The rye loaf must go with 10 a.m.: clue 2 rules out 9 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The cinnamon bun must go with 9 a.m.: clue 2 rules out 10 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "Zeke must go with the cinnamon bun: clue 1 rules out the layer cake; clue 4 rules out the baguettes; the rye loaf is already ruled out for 9 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Nico must go with the rye loaf: clue 5 rules out the baguettes; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 24,
+  "score": 67,
+  "revisits": 3,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 7
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Nico",
+   "rye loaf",
+   "10 a.m."
+  ],
+  [
+   "Zeke",
+   "cinnamon bun",
+   "9 a.m."
+  ],
+  [
+   "Lou",
+   "layer cake",
+   "7 a.m."
+  ],
+  [
+   "Milo",
+   "baguettes",
+   "8 a.m."
+  ]
+ ],
+ "score": 67
+}

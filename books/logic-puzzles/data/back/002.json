@@ -1,0 +1,18 @@
+{
+ "no": 2,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Gardener=Rosa",
+   "one_of": [
+    "Seeds=marigold",
+    "Seeds=sweet pea"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Seeds=sweet pea",
+   "b": "Gardener=Hugo"
+  }
+ ]
+}

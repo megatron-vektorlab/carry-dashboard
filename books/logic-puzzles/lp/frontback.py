@@ -199,6 +199,7 @@ def front(P, W):
     out.append(prose_page("A Letter from Ada", "front:letter", F.get("Letter", "")))
     out.append(prose_page("How This Book Works", "front:howto", F.get("How This Book Works", "")))
     out.append(prose_page("Welcome to Thimble Harbor", "front:town", F.get("Welcome to Thimble Harbor", "")))
+    out.append(town_map())
     return "\n".join(out)
 
 
@@ -290,3 +291,66 @@ def write_parts(P, W):
         open(os.path.join(d, f"lesson{no}.tex"), "w").write(t)
     open(os.path.join(d, "bonus.tex"), "w").write(bonus())
     open(os.path.join(d, "back.tex"), "w").write(back(P, W))
+
+
+def town_map():
+    """A simple schematic map of Thimble Harbor (16 pt labels)."""
+    coast = ("(3.55,8.0) .. controls (3.35,7.4) and (3.7,6.9) .. (3.5,6.3) .. controls (3.35,5.7) and (3.7,5.2) .. "
+             "(3.55,4.7) .. controls (3.45,4.3) and (3.3,3.8) .. (3.5,3.2) .. controls (3.7,2.5) and (3.2,1.8) .. "
+             "(3.45,1.1) .. controls (3.6,0.6) and (3.4,0.3) .. (3.5,0)")
+    point = ("(3.53,4.55) .. controls (4.4,4.5) and (5.4,3.9) .. (6.05,3.45) -- (6.35,3.25) -- (6.5,3.4) -- "
+             "(6.25,3.65) .. controls (5.5,4.3) and (4.5,4.85) .. (3.56,4.95)")
+    return r"""
+\clearpage\setpuzzlefoot{}{\display\fontsize{34}{38}\selectfont Map of Thimble Harbor\par}\vspace{2pt}
+\noindent\rule{\linewidth}{1.2pt}\par\vspace{8pt}
+\begin{center}\begin{tikzpicture}[x=1in,y=0.98in, lbl/.style={font=\normalsize, align=center, inner sep=2pt},
+  place/.style={draw, line width=1.2pt, fill=white, minimum size=0.17in, inner sep=0pt}]
+  \fill[black!12] """ + coast + r""" -- (7.1,0) -- (7.1,8.0) -- cycle;
+  \draw[line width=1.6pt] """ + coast + r""";
+  \fill[white] """ + point + r""" -- cycle;
+  \draw[line width=1.6pt] """ + point + r""";
+  % lighthouse on the point
+  \begin{scope}[shift={(6.38,3.38)}, scale=0.34]
+    \fill (-0.3,0) -- (-0.2,1.3) -- (0.2,1.3) -- (0.3,0) -- cycle; \fill (-0.15,1.3) rectangle (0.15,1.6);
+    \fill (-0.2,1.6) -- (0,1.8) -- (0.2,1.6) -- cycle;
+  \end{scope}
+  \node[lbl, anchor=north] at (6.15,3.15) {Thimble Point Light};
+  \node[place] at (5.55,3.95) {}; \node[lbl, anchor=south] at (5.2,4.6) {Lighthouse Museum}; \draw[line width=0.8pt] (5.45,4.62) -- (5.55,4.06);
+  \draw[line width=1pt, dashed] (5.9,3.75) -- (6.25,3.5);
+  % Main Street and the town
+  \draw[line width=5pt, black!40] (0.15,6.3) -- (3.45,6.3);
+  \node[lbl, font=\bfseries] at (1.8,6.3) {\colorbox{white}{Main Street}};
+  \node[place] at (0.55,6.75) {}; \node[lbl, anchor=south] at (0.55,6.88) {Library};
+  \node[place] at (2.3,6.75) {}; \node[lbl, anchor=south] at (2.3,6.88) {Church Hall};
+  \node[place] at (0.55,5.85) {}; \node[lbl, anchor=north] at (0.55,5.72) {Gazette};
+  \node[place] at (1.55,5.85) {}; \node[lbl, anchor=north] at (1.55,5.72) {Bakery};
+  \node[place] at (2.75,5.85) {}; \node[lbl, anchor=north] at (2.75,5.72) {General Store};
+  \node[place] at (0.55,7.65) {}; \node[lbl, anchor=west] at (0.72,7.65) {Gull's Rest Inn};
+  \draw[line width=1.4pt] (0.2,4.25) rectangle (1.75,4.95); \node[lbl] at (0.97,4.6) {Town Green};
+  % piers
+  \draw[line width=3.5pt] (3.5,7.2) -- (4.25,7.2); \node[lbl, anchor=west] at (4.3,7.2) {Ferry Dock};
+  \draw[line width=3.5pt] (3.5,5.3) -- (4.35,5.3); \node[lbl, anchor=west] at (4.4,5.3) {Town Pier};
+  \node[place] at (3.1,5.05) {}; \node[lbl, anchor=east] at (2.95,5.05) {Harbor Office};
+  % shore
+  \draw[line width=1.2pt, dotted] (3.3,3.95) .. controls (3.15,3.5) and (3.2,3.1) .. (3.35,2.75);
+  \node[lbl, anchor=east] at (3.1,3.35) {Thimble Beach};
+  \node[place] at (3.1,1.6) {}; \node[lbl, anchor=east] at (2.95,1.6) {Okafor Boatyard};
+  % water
+  \node[lbl] at (4.45,1.35) {East Cove};
+  \draw[line width=1.4pt, fill=white] (5.75,6.65) ellipse (0.72 and 0.36); \node[lbl] at (5.75,6.65) {Gull Island};
+  \node[lbl] at (4.75,6.2) {the Narrows};
+  \fill (4.75,2.55) circle (0.07); \node[lbl, anchor=west] at (4.85,2.55) {Gull Rock};
+  \node[lbl, anchor=west, font=\itshape] at (4.85,2.22) {(the beacon)};
+  \draw[->, line width=1.2pt] (5.6,1.65) -- (6.4,1.0); \node[lbl, anchor=west] at (5.35,0.62) {to Cobb Point};
+  \node[lbl, anchor=west] at (5.35,0.3) {and Pine Key};
+  % inland
+  \draw[<-, line width=1.2pt] (0.15,2.6) -- (0.75,2.6); \node[lbl, anchor=west] at (0.8,2.6) {Hilltop Orchard};
+  \draw[<-, line width=1.2pt] (0.15,2.05) -- (0.75,2.05); \node[lbl, anchor=west] at (0.8,2.05) {County Fairgrounds};
+  % compass
+  \begin{scope}[shift={(6.7,7.4)}]
+    \draw[line width=1pt] (0,-0.3) -- (0,0.3) (-0.3,0) -- (0.3,0);
+    \fill (0,0.3) -- (-0.08,0.08) -- (0.08,0.08) -- cycle;
+    \node[lbl, anchor=south, font=\bfseries] at (0,0.32) {N};
+  \end{scope}
+\end{tikzpicture}\end{center}
+\clearpage"""

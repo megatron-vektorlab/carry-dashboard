@@ -1,0 +1,61 @@
+{
+ "no": 43,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Night=Sunday",
+   "one_of": [
+    "Note=gull nest",
+    "Note=stuck latch"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Note=stuck latch",
+   "b": "Note=odd flicker",
+   "cat": "Night",
+   "rel": "a_greater_by",
+   "by": 2
+  },
+  {
+   "kind": "either",
+   "a": "Volunteer=Priya",
+   "one_of": [
+    "Note=odd flicker",
+    "Note=wet paint"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Volunteer=Arlo",
+   "b": "Note=odd flicker",
+   "cat": "Night",
+   "rel": "a_greater_by",
+   "by": 1
+  },
+  {
+   "kind": "either",
+   "a": "Note=wet paint",
+   "one_of": [
+    "Night=Thursday",
+    "Night=Sunday"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Night=Thursday",
+   "one_of": [
+    "Volunteer=Priya",
+    "Volunteer=Della"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Night=Sunday",
+   "not": [
+    "Volunteer=Teddy",
+    "Volunteer=Arlo"
+   ]
+  }
+ ]
+}

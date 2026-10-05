@@ -1,0 +1,70 @@
+{
+ "no": 78,
+ "clues": [
+  {
+   "kind": "pair",
+   "people": [
+    "Candy=caramels",
+    "Candy=licorice"
+   ],
+   "options": [
+    "Costume=mermaid",
+    "Costume=robot"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Handed out=100 pieces",
+   "one_of": [
+    "Marcher=Dot",
+    "Marcher=Hugo"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Candy=taffy",
+   "one_of": [
+    "Marcher=Otis",
+    "Marcher=Mabel"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Marcher=Hugo",
+   "b": "Costume=pirate"
+  },
+  {
+   "kind": "compare",
+   "a": "Marcher=Hugo",
+   "b": "Costume=scarecrow",
+   "cat": "Handed out",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Candy=taffy",
+    "Candy=licorice"
+   ],
+   "options": [
+    "Handed out=50 pieces",
+    "Handed out=125 pieces"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Costume=mermaid",
+   "b": "Marcher=Otis",
+   "cat": "Handed out",
+   "rel": "a_less"
+  },
+  {
+   "kind": "compare",
+   "a": "Candy=caramels",
+   "b": "Costume=pirate",
+   "cat": "Handed out",
+   "rel": "a_greater_by",
+   "by": 25
+  }
+ ]
+}

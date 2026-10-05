@@ -1,0 +1,567 @@
+{
+ "no": 75,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 75002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Harvest Shuttle Fares",
+ "story": "Twice an hour on harvest weekend, a hay wagon rattles from Main Street to Hilltop Orchard's fields. Four riders paid different fares to different stops, and each rode home with an armful from the market barn, Teddy with his camera perched on top of his. Now the fare can is a dollar off, and the farmer wants it to balance before the next run. Where did each rider go, what did each carry home, and what did each pay?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Teddy"
+ ],
+ "state": {
+  "theme": {
+   "slot": 75,
+   "title": "The Harvest Shuttle Fares",
+   "story": "Twice an hour on harvest weekend, a hay wagon rattles from Main Street to Hilltop Orchard's fields. Four riders paid different fares to different stops, and each rode home with an armful from the market barn, Teddy with his camera perched on top of his. Now the fare can is a dollar off, and the farmer wants it to balance before the next run. Where did each rider go, what did each carry home, and what did each pay?",
+   "entity": [
+    "rider",
+    "riders"
+   ],
+   "cast": [
+    "Teddy"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Rider",
+    "kind": "name",
+    "values": [
+     "Teddy",
+     "Basil",
+     "Nadia",
+     "Zeke"
+    ]
+   },
+   {
+    "label": "Stop",
+    "values": [
+     "corn maze",
+     "cider stand",
+     "orchard gate",
+     "farm stand"
+    ],
+    "ref": "the rider bound for the {v}",
+    "pred": "rode to the {v}",
+    "neg": "did not ride to the {v}",
+    "either": "rode to either the {a} or the {b}",
+    "nor": "rode to neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Carried",
+    "values": [
+     "pumpkin",
+     "apple crate",
+     "cider jug",
+     "mums"
+    ],
+    "ref": "the rider with the {v}",
+    "pred": "carried home the {v}",
+    "neg": "did not carry home the {v}",
+    "either": "carried home either the {a} or the {b}",
+    "nor": "carried home neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Fare",
+    "ordered": true,
+    "nums": [
+     3,
+     5,
+     7,
+     9
+    ],
+    "labels": [
+     "$3",
+     "$5",
+     "$7",
+     "$9"
+    ],
+    "ref": "the rider who paid {x}",
+    "pred": "paid {x}",
+    "neg": "did not pay {x}",
+    "either": "paid either {a} or {b}",
+    "nor": "paid neither {a} nor {b}",
+    "short": "the {x} fare",
+    "more": "paid a higher fare than {y}",
+    "less": "paid a lower fare than {y}",
+    "dmore": "paid exactly {d} more than {y}",
+    "dless": "paid exactly {d} less than {y}",
+    "dunit": [
+     "dollar",
+     "dollars"
+    ],
+    "dmore1": "paid exactly 2 dollars more than {y}",
+    "dless1": "paid exactly 2 dollars less than {y}",
+    "step": 2,
+    "values": [
+     "$3",
+     "$5",
+     "$7",
+     "$9"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   1,
+   0,
+   2
+  ],
+  [
+   2,
+   0,
+   3,
+   1
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Basil paid exactly 2 dollars more than the rider bound for the farm stand.",
+  "Teddy paid exactly 6 dollars less than the rider bound for the corn maze.",
+  "Of Teddy and the rider bound for the orchard gate, one carried home the apple crate and the other carried home the cider jug.",
+  "Nadia paid a higher fare than Zeke.",
+  "The rider bound for the corn maze paid a higher fare than the rider with the pumpkin.",
+  "The rider bound for the farm stand paid a lower fare than the rider with the pumpkin.",
+  "Teddy paid a lower fare than the rider with the apple crate.",
+  "The rider with the apple crate did not pay $5."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means Basil cannot be the $3 fare and the farm stand cannot be the $9 fare."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the corn maze cannot be the $3 fare, the $5 fare, or the $7 fare and Teddy cannot be the $5 fare, the $7 fare, or the $9 fare."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Teddy must go with the $3 fare: clue 2 rules out the $5 fare, the $7 fare, and the $9 fare."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The corn maze must go with the $9 fare: clue 2 rules out the $3 fare, the $5 fare, and the $7 fare."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Nadia can still be only the $5 fare, the $7 fare, or the $9 fare and Zeke can still be only the $5 fare, the $7 fare, or the $9 fare, clue 4 means Nadia cannot be the $5 fare and Zeke cannot be the $9 fare."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since the farm stand can still be only the $3 fare, the $5 fare, or the $7 fare and the pumpkin can still be only the $3 fare, the $5 fare, or the $7 fare, clue 6 means the farm stand cannot be the $7 fare and the pumpkin cannot be the $3 fare."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Basil can still be only the $5 fare, the $7 fare, or the $9 fare and the farm stand can still be only the $3 fare or the $5 fare, clue 1 means Basil cannot be the $9 fare."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    4
+   ],
+   "text": "The $9 fare must go with Nadia: clue 2 rules out Teddy; clue 1 rules out Basil; clue 4 rules out Zeke."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The corn maze must go with Nadia: clue 2 rules out Teddy; Basil and Zeke are already ruled out for the $9 fare."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    7
+   ],
+   "text": "Teddy must go with the cider jug: clue 7 rules out the apple crate; clue 3 rules out the mums; the pumpkin is already ruled out for the $3 fare."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5,
+    6
+   ],
+   "text": "The pumpkin must go with the cider stand: clue 5 rules out the corn maze; clue 3 rules out the orchard gate; clue 6 rules out the farm stand."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The $3 fare goes with Teddy, so the $3 fare also goes with the cider jug."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3
+   ],
+   "text": "Teddy must go with the farm stand: clue 2 rules out the corn maze; clue 3 rules out the orchard gate; the cider stand is already ruled out for the cider jug."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The $3 fare must go with the farm stand: clue 2 rules out the corn maze; the cider stand and the orchard gate are already ruled out for Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The orchard gate must go with the apple crate: clue 3 rules out the pumpkin and the mums; the cider jug is already ruled out for Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The corn maze must go with the mums: clue 5 rules out the pumpkin; the cider jug is already ruled out for the $9 fare; the apple crate already goes with the orchard gate."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The farm stand must go with the cider jug: clue 6 rules out the pumpkin; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The apple crate must go with the $7 fare: clue 8 rules out the $5 fare; the $3 fare is already ruled out for Teddy; the $9 fare is already ruled out for the corn maze."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The pumpkin must go with the $5 fare: clue 6 rules out the $3 fare; the $9 fare is already ruled out for the corn maze; the $7 fare already goes with the apple crate."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The mums must go with the $9 fare: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nadia must go with the mums: the pumpkin and the apple crate are already ruled out for the $9 fare; the cider jug already goes with Teddy."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The cider stand goes with the pumpkin, so the cider stand also goes with the $5 fare."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The orchard gate must go with the $7 fare: the $3 fare is already ruled out for Teddy; the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Basil can still be only the $5 fare or the $7 fare and the farm stand can still be only the $3 fare, clue 1 means Basil cannot be the $7 fare."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Basil must go with the $5 fare: clue 1 rules out the $3 fare, the $7 fare, and the $9 fare."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Zeke must go with the $7 fare: clue 4 rules out the $9 fare; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Basil must go with the pumpkin: the apple crate is already ruled out for the $7 fare; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Zeke must go with the apple crate: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The cider stand goes with the pumpkin, so the cider stand also goes with Basil."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Zeke must go with the orchard gate: the corn maze is already ruled out for the $9 fare; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 51,
+  "score": 142,
+  "revisits": 5,
+  "transfer": 17,
+  "trial": 0,
+  "clue_steps": 12
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Teddy",
+   "farm stand",
+   "cider jug",
+   "$3"
+  ],
+  [
+   "Basil",
+   "cider stand",
+   "pumpkin",
+   "$5"
+  ],
+  [
+   "Nadia",
+   "corn maze",
+   "mums",
+   "$9"
+  ],
+  [
+   "Zeke",
+   "orchard gate",
+   "apple crate",
+   "$7"
+  ]
+ ],
+ "score": 142
+}

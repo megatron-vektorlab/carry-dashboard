@@ -1,0 +1,538 @@
+{
+ "no": 72,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 72002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Gazette Ad Rates",
+ "story": "Autumn is ad season at the Gazette, and four advertisers have bought space. Lena's ad is the proudest of the lot: it announces the Keeper's Lamp's 150th-birthday lighting at the Lantern Festival. Gus's sells rubber boots, because his knee says rain. But every invoice went out wrong, and Ada would like them fixed before anyone pays twice. Who chose which border, in which section, and what did each ad cost?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Gus",
+  "Lena"
+ ],
+ "state": {
+  "theme": {
+   "slot": 72,
+   "title": "The Gazette Ad Rates",
+   "story": "Autumn is ad season at the Gazette, and four advertisers have bought space. Lena's ad is the proudest of the lot: it announces the Keeper's Lamp's 150th-birthday lighting at the Lantern Festival. Gus's sells rubber boots, because his knee says rain. But every invoice went out wrong, and Ada would like them fixed before anyone pays twice. Who chose which border, in which section, and what did each ad cost?",
+   "entity": [
+    "advertiser",
+    "advertisers"
+   ],
+   "cast": [
+    "Gus",
+    "Lena"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Advertiser",
+    "kind": "name",
+    "values": [
+     "Gus",
+     "Lena",
+     "Tariq",
+     "Olive"
+    ]
+   },
+   {
+    "label": "Border",
+    "values": [
+     "plain",
+     "dotted",
+     "wavy",
+     "rope"
+    ],
+    "ref": "the advertiser with the {v} border",
+    "pred": "chose a {v} border",
+    "neg": "did not choose a {v} border",
+    "either": "chose either a {a} or a {b} border",
+    "nor": "chose neither a {a} nor a {b} border",
+    "short": "the {v} border"
+   },
+   {
+    "label": "Section",
+    "values": [
+     "sports",
+     "recipes",
+     "tides",
+     "puzzles"
+    ],
+    "ref": "the advertiser in the {v} section",
+    "pred": "ran an ad in the {v} section",
+    "neg": "did not run an ad in the {v} section",
+    "either": "ran an ad in either the {a} or the {b} section",
+    "nor": "ran an ad in neither the {a} nor the {b} section",
+    "short": "the {v} section"
+   },
+   {
+    "label": "Price",
+    "ordered": true,
+    "nums": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "labels": [
+     "$10",
+     "$20",
+     "$30",
+     "$40"
+    ],
+    "ref": "the advertiser who paid {x}",
+    "pred": "paid {x}",
+    "neg": "did not pay {x}",
+    "either": "paid either {a} or {b}",
+    "nor": "paid neither {a} nor {b}",
+    "short": "{x}",
+    "more": "paid more than {y}",
+    "less": "paid less than {y}",
+    "dmore": "paid exactly {d} more than {y}",
+    "dless": "paid exactly {d} less than {y}",
+    "dunit": [
+     "dollar",
+     "dollars"
+    ],
+    "dmore1": "paid exactly 10 dollars more than {y}",
+    "dless1": "paid exactly 10 dollars less than {y}",
+    "step": 10,
+    "values": [
+     "$10",
+     "$20",
+     "$30",
+     "$40"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   2,
+   0,
+   1
+  ],
+  [
+   1,
+   3,
+   2,
+   0
+  ],
+  [
+   0,
+   2,
+   3,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  }
+ ],
+ "texts": [
+  "Of the advertiser with the plain border and the advertiser with the wavy border, one ran an ad in the puzzles section and the other ran an ad in the tides section.",
+  "Olive paid exactly 20 dollars less than the advertiser in the tides section.",
+  "Tariq paid exactly 20 dollars more than the advertiser with the dotted border.",
+  "Gus did not choose a wavy border.",
+  "Of the advertiser in the tides section and the advertiser who paid $20, one chose a plain border and the other chose a dotted border.",
+  "Olive paid exactly 10 dollars more than the advertiser in the recipes section."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the tides section cannot be $10 or $20 and Olive cannot be $30 or $40."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 means Tariq cannot be $10 or $20 and the dotted border cannot be $30 or $40."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since Olive can still be only $10 or $20, clue 6 means Olive cannot be $10 and the recipes section cannot be $20, $30, or $40."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "Olive must go with $20: clue 6 rules out $10; clue 2 rules out $30 and $40."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The recipes section must go with $10: clue 6 rules out $20, $30, and $40."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the tides section can still be only $30 or $40 and Olive can still be only $20, clue 2 means the tides section cannot be $30."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The tides section must go with $40: clue 2 rules out $10, $20, and $30."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5
+   ],
+   "text": "The wavy border must go with the puzzles section: clue 1 rules out the sports section and the recipes section; clue 5 rules out the tides section."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The plain border must go with the tides section: clue 1 rules out the sports section and the recipes section; the puzzles section already goes with the wavy border."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "$40 goes with the tides section, so $40 also goes with the plain border."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The wavy border must go with $30: clue 5 rules out $20; $10 is already ruled out for the recipes section; $40 already goes with the plain border."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The rope border must go with $10: clue 5 rules out $20; $40 is already ruled out for the tides section; $30 already goes with the wavy border."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The dotted border must go with $20: clue 3 rules out $30 and $40; $10 already goes with the rope border."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Olive must go with the dotted border: the plain border, the wavy border, and the rope border are already ruled out for $20."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The dotted border must go with the sports section: clue 1 rules out the puzzles section; the recipes section is already ruled out for $10; the tides section is already ruled out for $40."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The rope border must go with the recipes section: clue 1 rules out the tides section and the puzzles section; the sports section already goes with the dotted border."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "Olive must go with the sports section: clue 6 rules out the recipes section; clue 2 rules out the tides section; the puzzles section is already ruled out for the wavy border."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "$20 goes with Olive, so $20 also goes with the sports section."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The puzzles section must go with $30: the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Tariq can still be only $30 or $40 and the dotted border can still be only $20, clue 3 means Tariq cannot be $30."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Tariq must go with $40: clue 3 rules out $10, $20, and $30."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Gus must go with $10: $30 is already ruled out for the wavy border; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Lena must go with $30: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The recipes section goes with $10, so the recipes section also goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Lena must go with the puzzles section: the tides section is already ruled out for $40; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Tariq must go with the tides section: the recipes section is already ruled out for $10; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The wavy border goes with the puzzles section, so the wavy border also goes with Lena."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Tariq must go with the plain border: clue 3 rules out the dotted border; the rope border is already ruled out for $10; the wavy border already goes with Lena."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Gus must go with the rope border: clue 4 rules out the wavy border; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 49,
+  "score": 135,
+  "revisits": 5,
+  "transfer": 18,
+  "trial": 0,
+  "clue_steps": 10
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Gus",
+   "rope",
+   "recipes",
+   "$10"
+  ],
+  [
+   "Lena",
+   "wavy",
+   "puzzles",
+   "$30"
+  ],
+  [
+   "Tariq",
+   "plain",
+   "tides",
+   "$40"
+  ],
+  [
+   "Olive",
+   "dotted",
+   "sports",
+   "$20"
+  ]
+ ],
+ "score": 135
+}

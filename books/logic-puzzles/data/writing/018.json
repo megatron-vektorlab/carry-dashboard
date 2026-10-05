@@ -1,0 +1,27 @@
+{
+ "no": 18,
+ "clues": [
+  "Whoever owns the striped buoy fishes at neither Gull Rock nor East Cove.",
+  "The East Cove lobsterman owns either the checkered or the striped buoy.",
+  "Oscar's buoy is either the checkered one or the striped one.",
+  "The checkered buoy belongs to either Nico or Oscar.",
+  "Oscar does not fish at East Cove."
+ ],
+ "hints": [
+  "Look at the box that matches buoys with spots. Where could the striped buoy's owner fish?",
+  "Clue 1 crosses out two spots for the striped buoy's owner. Read clue 2 beside it: which buoy must the East Cove lobsterman own?",
+  "Clue 2 gives East Cove the checkered buoy, and Oscar does not fish there (clue 5). So by clue 3, Oscar owns the striped buoy."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 2 tie the checkered buoy to East Cove, so clue 5 keeps Oscar off it, and clue 3 gives him striped.",
+  "steps": [
+   "Clue 1 leaves the striped buoy's owner only the Narrows.",
+   "By clue 2, the East Cove lobsterman owns the checkered or striped buoy. Striped goes with the Narrows, so East Cove goes with checkered.",
+   "That leaves Gull Rock for the orange buoy. Oscar does not fish at East Cove (clue 5), so he does not own the checkered buoy.",
+   "By clue 3, Oscar owns the striped buoy, so he fishes at the Narrows.",
+   "By clue 4, the checkered buoy is Nico's, so Nico fishes at East Cove. Pablo owns the orange buoy and fishes at Gull Rock."
+  ],
+  "epilogue": "Oscar got his striped buoy back for the Narrows, Nico his checkered one for East Cove, and Pablo his orange one for Gull Rock. Nico claimed his had drifted halfway to Pine Key."
+ },
+ "tip": "X's can be carried too, not just dots."
+}

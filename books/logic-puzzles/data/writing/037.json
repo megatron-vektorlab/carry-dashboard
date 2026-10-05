@@ -1,0 +1,29 @@
+{
+ "no": 37,
+ "clues": [
+  "Oscar was not second in line.",
+  "The first spot in line did not belong to Jonah.",
+  "Whoever stood fourth in line was either Jonah or Nadia.",
+  "Elsa was somewhere ahead of Oscar in line.",
+  "Elsa and Milo did not stand next to each other.",
+  "Nadia stood somewhere behind Oscar in line."
+ ],
+ "hints": [
+  "Look at Oscar's row. Three clues name him, and clue 3 decides who can be fourth. Which spots are left for him?",
+  "Comparisons rule out the ends. Clues 4 and 6 each compare Oscar with someone. Then add what clues 1 and 3 cross out in his row.",
+  "Clues 4 and 6 keep Oscar off both ends, and clues 1 and 3 rule out second and fourth. So Oscar held the third spot."
+ ],
+ "solution": {
+  "key_idea": "Clues 4 and 6 keep Oscar off both ends, and clues 1 and 3 rule out second and fourth, so Oscar was third.",
+  "steps": [
+   "Clue 4 puts Elsa ahead of Oscar and clue 6 puts Nadia behind him, so Oscar was neither first nor fifth.",
+   "Clue 1 rules out second for Oscar, and clue 3 rules out fourth, so Oscar held the third spot.",
+   "By clue 4, Elsa held first or second. Milo cannot hold either one: one is Elsa's, the other is next to her (clue 5).",
+   "Clue 3 keeps Milo off fourth, so Milo was fifth, and Nadia, behind Oscar by clue 6, was fourth.",
+   "Jonah was not first (clue 2), so he was second, and Elsa was first in line."
+  ],
+  "epilogue": "Elsa had been on the steps since seven, so first pick of the rare books was hers: a 1902 tide almanac. The other four agreed, after some firm whispering from Wren."
+ },
+ "tip": "Small X's add up: four clues that each cross out one spot can leave a single dot.",
+ "answer_line": "Elsa gets first pick of the rare books."
+}

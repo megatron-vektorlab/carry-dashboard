@@ -1,0 +1,50 @@
+{
+ "no": 62,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Angler=Oscar",
+   "b": "Fish=mackerel",
+   "cat": "Length",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "either",
+   "a": "Fish=bluefish",
+   "one_of": [
+    "Length=16 inches",
+    "Length=18 inches"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Angler=Cyrus",
+   "b": "Angler=Oscar",
+   "cat": "Length",
+   "rel": "a_less"
+  },
+  {
+   "kind": "either",
+   "a": "Angler=Elsa",
+   "one_of": [
+    "Fish=flounder",
+    "Fish=scup"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Length=16 inches",
+   "one_of": [
+    "Fish=mackerel",
+    "Fish=flounder"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Angler=Elsa",
+   "b": "Angler=Oscar",
+   "cat": "Length",
+   "rel": "a_greater"
+  }
+ ]
+}

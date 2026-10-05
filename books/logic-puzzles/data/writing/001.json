@@ -1,0 +1,22 @@
+{
+ "no": 1,
+ "clues": [
+  "Teddy did not choose the mint tea.",
+  "Lena drank neither the mint nor the chamomile."
+ ],
+ "hints": [
+  "Look at Lena's row. How many teas does clue 2 leave her?",
+  "Neither-nor means two X's. Mark both in Lena's row, then look for the only choice left.",
+  "So Lena drank Earl Grey. Her dot crosses out Earl Grey for Teddy, and clue 1 rules out mint, so Teddy drank chamomile."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 crosses out two of Lena's three teas, so she drank Earl Grey, and the rest follows.",
+  "steps": [
+   "Clue 2 puts X's on mint and chamomile in Lena's row, so Lena drank Earl Grey.",
+   "Clue 1 crosses out mint for Teddy, and Earl Grey is Lena's, so Teddy drank chamomile.",
+   "That leaves the mint tea for Una."
+  ],
+  "epilogue": "Teddy drank chamomile, Una mint, and Lena Earl Grey, with her gloves on in case the cup was older than she was. Ada wrote it all down for next time."
+ },
+ "tip": "Mark every X a clue gives you first; the dot is usually waiting where the X's run out."
+}

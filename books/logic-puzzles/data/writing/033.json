@@ -1,0 +1,26 @@
+{
+ "no": 33,
+ "clues": [
+  "Yusuf boarded exactly two turns before Lou.",
+  "Lou was either the first passenger aboard or the last.",
+  "Otis boarded sometime after Yusuf."
+ ],
+ "hints": [
+  "Look at Lou's row, where clue 2 allows only first or last. Which one leaves room for clue 1?",
+  "Clue 1 is an exact gap: Yusuf boarded two turns before Lou. If Lou had boarded first, where could Yusuf go?",
+  "Nobody boarded before the first passenger, so Lou boarded last. Then by clue 1, Yusuf boarded second."
+ ],
+ "solution": {
+  "key_idea": "Yusuf needs two turns before Lou, so clue 2 leaves Lou only the last turn, and Yusuf boarded second.",
+  "steps": [
+   "By clue 2, Lou boarded either first or last.",
+   "By clue 1, Yusuf boarded two turns before Lou. Nobody boarded before the first passenger, so Lou boarded fourth.",
+   "Then by clue 1, Yusuf boarded second.",
+   "By clue 3, Otis boarded after Yusuf. Third is the only later turn still open, so Otis boarded third.",
+   "Greta boarded first, and the twice-punched third ticket belonged to Otis."
+  ],
+  "epilogue": "Jonah apologized to Otis at the gangway on the way home. Otis said two holes just meant twice the ride, and whistled a shanty about it, slightly off-key."
+ },
+ "tip": "\"Sometime after\" is not \"right after.\" It promises later, and nothing more.",
+ "answer_line": "Otis's ticket was punched twice."
+}

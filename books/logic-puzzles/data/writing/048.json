@@ -1,0 +1,22 @@
+{
+ "no": 48,
+ "clues": [],
+ "hints": [
+  "Look at Faye's statement. With only three suspects, what does \"either Nico or I\" tell you about Linus?",
+  "Faye's statement means Linus didn't do it, which is just what Nico says. So those two statements are true together or false together.",
+  "Only one statement is false, and it can't come from that pair. So Linus's is false, and Nico left the pen open."
+ ],
+ "solution": {
+  "key_idea": "Faye's statement says the same as Nico's, that Linus didn't do it, so the one false statement must be Linus's.",
+  "steps": [
+   "Exactly two of the three statements are true, so exactly one is false.",
+   "Faye says Nico or Faye did it. With only three suspects, that means Linus didn't, which is exactly what Nico says.",
+   "So Nico's and Faye's statements are true together or false together. Both false would make two false statements, so both are true.",
+   "That leaves Linus's statement as the false one. Linus says Nico didn't leave the pen open, so Nico did.",
+   "Check Nico: two true statements and one false, as the rule says. Testing Faye gives three true, and testing Linus only one."
+  ],
+  "epilogue": "Nico, in the middle of a long story, had let himself into the pen to scratch Clementine's ears and left the latch undone. He paid for both pies, though he still swore it was twelve."
+ },
+ "tip": null,
+ "answer_line": "Nico left the goat pen open."
+}

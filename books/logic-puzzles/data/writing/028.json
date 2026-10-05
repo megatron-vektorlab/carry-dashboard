@@ -1,0 +1,28 @@
+{
+ "no": 28,
+ "clues": [
+  "Neither the crab nor the snail came from Moon Pool.",
+  "The snail was found in either Mermaid Pool or Moon Pool.",
+  "Whoever explored Kettle Pool found neither the crab nor the urchin.",
+  "Neither Lena nor Hugo explored Bathtub Pool.",
+  "Marta's find was either the snail or the sea star.",
+  "Kettle Pool was explored by either Zeke or Hugo."
+ ],
+ "hints": [
+  "Start in the box where creatures meet pools. Which pools could the snail have come from?",
+  "Clue 2 gives the snail two pools to choose from, and clue 1 crosses one of them off. Put the two clues together.",
+  "So the snail came from Mermaid Pool. Then clues 1 and 3 leave the crab only Bathtub Pool, and the urchin only Moon Pool."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 2 put the snail in Mermaid Pool, and the rest of the creatures and pools follow.",
+  "steps": [
+   "Clue 2 puts the snail in Mermaid Pool or Moon Pool, and clue 1 rules out Moon Pool, so the snail came from Mermaid Pool.",
+   "Clues 1 and 3 then send the crab to Bathtub Pool, the urchin to Moon Pool, and the sea star to Kettle Pool.",
+   "Clue 4 keeps Lena and Hugo out of Bathtub Pool and clue 5 keeps Marta from the crab, so the crab was Zeke's.",
+   "Zeke had Bathtub Pool, so by clue 6 Hugo explored Kettle Pool and found the sea star.",
+   "So by clue 5 Marta found the snail in Mermaid Pool, leaving Lena the urchin in Moon Pool."
+  ],
+  "epilogue": "Before the tide turned, every creature was home again. Zeke's crab went back to Bathtub Pool, Hugo's sea star to Kettle Pool, Marta's snail to Mermaid Pool, and Lena's urchin to Moon Pool."
+ },
+ "tip": "You need not start with the people: sometimes the creatures and pools sort themselves out first."
+}

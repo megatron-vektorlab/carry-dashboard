@@ -1,0 +1,31 @@
+{
+ "no": 11,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Pennant=red",
+   "one_of": [
+    "Boat=dory",
+    "Boat=catboat"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Boat=dory",
+   "b": "Pennant=gold"
+  },
+  {
+   "kind": "diff",
+   "a": "Sailor=Arlo",
+   "b": "Pennant=gold"
+  },
+  {
+   "kind": "nor",
+   "a": "Boat=sloop",
+   "not": [
+    "Sailor=Selma",
+    "Sailor=Arlo"
+   ]
+  }
+ ]
+}

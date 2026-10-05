@@ -1,0 +1,8 @@
+{"no": 73, "clues": [
+ {"kind": "pair", "people": ["Note=poem", "Gift=$25"], "options": ["Donor=Jonah", "Donor=Lena"]},
+ {"kind": "compare", "a": "Donor=Tova", "b": "Note=thank-you", "cat": "Gift", "rel": "a_less_by", "by": 25},
+ {"kind": "pair", "people": ["Donor=Lena", "Gift=$100"], "options": ["Paid=check", "Paid=cash"]},
+ {"kind": "diff", "a": "Donor=Tova", "b": "Paid=coin"},
+ {"kind": "either", "a": "Paid=check", "one_of": ["Note=riddle", "Note=drawing"]},
+ {"kind": "either", "a": "Gift=$50", "one_of": ["Note=thank-you", "Note=riddle"]}
+]}

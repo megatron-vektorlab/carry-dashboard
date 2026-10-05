@@ -1,0 +1,574 @@
+{
+ "no": 69,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 69002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Lobster Trap Tally",
+ "story": "Ask Nico about Tuesday's haul off Seal Ledge and the numbers grow with every telling, along with the lobster, which is now the size of a wheelbarrow. Four skippers went out that morning, each with a different bait and buoys of a different color. The lobster co-op's tally sheet wants facts, not fish stories. Who used which bait and which buoys, and how many traps did each skipper haul?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Nico"
+ ],
+ "state": {
+  "theme": {
+   "slot": 69,
+   "title": "The Lobster Trap Tally",
+   "story": "Ask Nico about Tuesday's haul off Seal Ledge and the numbers grow with every telling, along with the lobster, which is now the size of a wheelbarrow. Four skippers went out that morning, each with a different bait and buoys of a different color. The lobster co-op's tally sheet wants facts, not fish stories. Who used which bait and which buoys, and how many traps did each skipper haul?",
+   "entity": [
+    "skipper",
+    "skippers"
+   ],
+   "cast": [
+    "Nico"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Skipper",
+    "kind": "name",
+    "values": [
+     "Arlo",
+     "Yusuf",
+     "Greta",
+     "Nico"
+    ]
+   },
+   {
+    "label": "Bait",
+    "values": [
+     "herring",
+     "pogies",
+     "redfish",
+     "squid"
+    ],
+    "ref": "the skipper who baited with {v}",
+    "pred": "baited with {v}",
+    "neg": "did not bait with {v}",
+    "either": "baited with either {a} or {b}",
+    "nor": "baited with neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Buoy",
+    "values": [
+     "orange",
+     "white",
+     "purple",
+     "lime"
+    ],
+    "ref": "the skipper with {v} buoys",
+    "pred": "had {v} buoys",
+    "neg": "did not have {v} buoys",
+    "either": "had either {a} or {b} buoys",
+    "nor": "had neither {a} nor {b} buoys",
+    "short": "the {v} buoys"
+   },
+   {
+    "label": "Traps",
+    "ordered": true,
+    "nums": [
+     20,
+     30,
+     40,
+     50
+    ],
+    "ref": "the skipper who hauled {x} traps",
+    "pred": "hauled {x} traps",
+    "neg": "did not haul {x} traps",
+    "either": "hauled either {a} or {b} traps",
+    "nor": "hauled neither {a} nor {b} traps",
+    "short": "{x} traps",
+    "more": "hauled more traps than {y}",
+    "less": "hauled fewer traps than {y}",
+    "dmore": "hauled exactly {d} more than {y}",
+    "dless": "hauled exactly {d} fewer than {y}",
+    "dunit": [
+     "trap",
+     "traps"
+    ],
+    "dmore1": "hauled exactly 10 more traps than {y}",
+    "dless1": "hauled exactly 10 fewer traps than {y}",
+    "step": 10,
+    "values": [
+     "20",
+     "30",
+     "40",
+     "50"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   0,
+   3,
+   2
+  ],
+  [
+   2,
+   3,
+   0,
+   1
+  ],
+  [
+   3,
+   1,
+   2,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Nico did not bait with herring.",
+  "Nico hauled fewer traps than Yusuf.",
+  "The skipper with orange buoys hauled neither 20 nor 50 traps.",
+  "The skipper who baited with herring had lime buoys.",
+  "Arlo hauled more traps than the skipper who baited with squid.",
+  "Of the skipper who baited with pogies and the skipper who hauled 30 traps, one is Arlo and the other is Yusuf.",
+  "Of the skipper who baited with pogies and the skipper who baited with squid, one hauled 40 traps and the other hauled 50 traps.",
+  "The skipper who baited with pogies did not have white buoys."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 says directly that herring goes with the lime buoys."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means Nico cannot be 50 traps and Yusuf cannot be 20 traps."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 means Arlo cannot be 20 traps and squid cannot be 50 traps."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    7
+   ],
+   "text": "Squid must go with 40 traps: clue 7 rules out 20 traps and 30 traps; clue 5 rules out 50 traps."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    7
+   ],
+   "text": "Pogies must go with 50 traps: clue 7 rules out 20 traps; clue 6 rules out 30 traps; 40 traps already goes with squid."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Pogies must go with the purple buoys: clue 8 rules out the white buoys; the orange buoys is already ruled out for 50 traps; the lime buoys already goes with herring."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "50 traps must go with the purple buoys: clue 3 rules out the orange buoys; the white buoys is already ruled out for pogies; the lime buoys is already ruled out for herring."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since Arlo can still be only 30 traps or 50 traps and squid can still be only 40 traps, clue 5 means Arlo cannot be 30 traps."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Arlo must go with 50 traps: clue 5 rules out 20 traps and 30 traps; 40 traps is already ruled out for squid."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    6
+   ],
+   "text": "30 traps must go with Yusuf: clue 5 rules out Arlo; clue 6 rules out Greta and Nico."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Pogies goes with 50 traps, so pogies also goes with Arlo."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The purple buoys goes with pogies, so the purple buoys also goes with Arlo."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since Nico can still be only 20 traps or 40 traps and Yusuf can still be only 30 traps, clue 2 means Nico cannot be 40 traps."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "Nico must go with 20 traps: clue 6 rules out 30 traps; clue 2 rules out 40 traps and 50 traps."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Greta must go with 40 traps: clue 6 rules out 30 traps; 50 traps is already ruled out for pogies; 20 traps already goes with Nico."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Squid goes with 40 traps, so squid also goes with Greta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6
+   ],
+   "text": "Nico must go with redfish: clue 1 rules out herring; clue 6 rules out pogies; squid already goes with Greta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Yusuf must go with herring: squid is already ruled out for 40 traps; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The lime buoys goes with herring, so the lime buoys also goes with Yusuf."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "30 traps goes with Yusuf, so 30 traps also goes with herring."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Redfish must go with 20 traps: clue 7 rules out 40 traps and 50 traps; 30 traps already goes with herring."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The lime buoys must go with 30 traps: 20 traps, 40 traps, and 50 traps are already ruled out for herring."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The orange buoys must go with 40 traps: clue 3 rules out 20 traps and 50 traps; 30 traps already goes with the lime buoys."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The white buoys must go with 20 traps: 50 traps is already ruled out for pogies; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Squid goes with 40 traps, so squid also goes with the orange buoys."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Redfish must go with the white buoys: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with the white buoys: the orange buoys is already ruled out for 20 traps; the purple buoys is already ruled out for pogies; the lime buoys is already ruled out for herring."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Greta must go with the orange buoys: the purple buoys is already ruled out for pogies; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 48,
+  "score": 126,
+  "revisits": 3,
+  "transfer": 20,
+  "trial": 0,
+  "clue_steps": 7
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Arlo",
+   "pogies",
+   "purple",
+   "50"
+  ],
+  [
+   "Yusuf",
+   "herring",
+   "lime",
+   "30"
+  ],
+  [
+   "Greta",
+   "squid",
+   "orange",
+   "40"
+  ],
+  [
+   "Nico",
+   "redfish",
+   "white",
+   "20"
+  ]
+ ],
+ "score": 126
+}

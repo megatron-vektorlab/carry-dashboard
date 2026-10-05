@@ -1,0 +1,395 @@
+{
+ "no": 28,
+ "chapter": 2,
+ "family": "grid4",
+ "stars": 2,
+ "seed": 28000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Tide Pool Walk",
+ "story": "Lena left her white cotton gloves at the museum this morning, since nothing in a tide pool is likely to be older than she is. On her walk along Thimble Beach, she and three others each found one creature in a different pool. Everything must go back exactly where it came from before the tide turns. Who found what, and in which pool?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Lena"
+ ],
+ "state": {
+  "theme": {
+   "slot": 28,
+   "title": "The Tide Pool Walk",
+   "story": "Lena left her white cotton gloves at the museum this morning, since nothing in a tide pool is likely to be older than she is. On her walk along Thimble Beach, she and three others each found one creature in a different pool. Everything must go back exactly where it came from before the tide turns. Who found what, and in which pool?",
+   "entity": [
+    "walker",
+    "walkers"
+   ],
+   "cast": [
+    "Lena"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Walker",
+    "kind": "name",
+    "values": [
+     "Lena",
+     "Marta",
+     "Hugo",
+     "Zeke"
+    ]
+   },
+   {
+    "label": "Creature",
+    "values": [
+     "sea star",
+     "crab",
+     "snail",
+     "urchin"
+    ],
+    "ref": "the {v}'s finder",
+    "pred": "found the {v}",
+    "neg": "did not find the {v}",
+    "either": "found either the {a} or the {b}",
+    "nor": "found neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Pool",
+    "values": [
+     "Bathtub Pool",
+     "Kettle Pool",
+     "Mermaid Pool",
+     "Moon Pool"
+    ],
+    "ref": "the walker at {v}",
+    "pred": "explored {v}",
+    "neg": "did not explore {v}",
+    "either": "explored either {a} or {b}",
+    "nor": "explored neither {a} nor {b}",
+    "short": "{v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   2,
+   0,
+   1
+  ],
+  [
+   3,
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The walker at Moon Pool found neither the crab nor the snail.",
+  "The snail's finder explored either Mermaid Pool or Moon Pool.",
+  "The walker at Kettle Pool found neither the crab nor the urchin.",
+  "The walker at Bathtub Pool is neither Lena nor Hugo.",
+  "Marta found either the snail or the sea star.",
+  "The walker at Kettle Pool is either Zeke or Hugo."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The snail must go with Mermaid Pool: clue 2 rules out Bathtub Pool and Kettle Pool; clue 1 rules out Moon Pool."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "The crab must go with Bathtub Pool: clue 3 rules out Kettle Pool; clue 1 rules out Moon Pool; Mermaid Pool already goes with the snail."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The urchin must go with Moon Pool: clue 3 rules out Kettle Pool; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The sea star must go with Kettle Pool: the other choices are already taken."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The crab must go with Zeke: clue 5 rules out Marta; Lena and Hugo are already ruled out for Bathtub Pool."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Bathtub Pool must go with Zeke: clue 4 rules out Lena and Hugo; Marta is already ruled out for the crab."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Marta must go with Mermaid Pool: clue 6 rules out Kettle Pool; Bathtub Pool is already ruled out for the crab; Moon Pool is already ruled out for the urchin."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    6
+   ],
+   "text": "Lena must go with Moon Pool: clue 4 rules out Bathtub Pool; clue 6 rules out Kettle Pool; Mermaid Pool already goes with Marta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Hugo must go with Kettle Pool: clue 4 rules out Bathtub Pool; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The snail goes with Mermaid Pool, so the snail also goes with Marta."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The urchin goes with Moon Pool, so the urchin also goes with Lena."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hugo must go with the sea star: the crab is already ruled out for Bathtub Pool; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 24,
+  "score": 56,
+  "revisits": 0,
+  "transfer": 8,
+  "trial": 0,
+  "clue_steps": 3
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Lena",
+   "urchin",
+   "Moon Pool"
+  ],
+  [
+   "Marta",
+   "snail",
+   "Mermaid Pool"
+  ],
+  [
+   "Hugo",
+   "sea star",
+   "Kettle Pool"
+  ],
+  [
+   "Zeke",
+   "crab",
+   "Bathtub Pool"
+  ]
+ ],
+ "score": 56
+}

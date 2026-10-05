@@ -1,0 +1,28 @@
+{
+ "no": 24,
+ "clues": [
+  "Enzo's flowers are either irises or lupines.",
+  "There are no irises in Gideon's garden.",
+  "The sundial and the gnome stand in two different gardens: one with the roses, the other with the peonies.",
+  "Neither Gideon nor Pearl grows the roses.",
+  "Gideon's ornament is either a birdbath or a gnome.",
+  "The gnome is not in Gideon's garden, and not in Pearl's."
+ ],
+ "hints": [
+  "Look at clue 3. It names the sundial and the gnome. What does it tell you about the irises and the lupines?",
+  "Carry an X. Clues 5 and 6 settle Gideon's ornament, and clue 2 says he grows no irises. Can that ornament stand with the irises?",
+  "Gideon has the birdbath (clues 5 and 6) but no irises, and clue 3 keeps the irises from the sundial and the gnome. So the irises go with the trellis."
+ ],
+ "solution": {
+  "key_idea": "Gideon has the birdbath and no irises, so by clue 3 the irises must go with the trellis.",
+  "steps": [
+   "Clue 4 rules out Gideon and Pearl for the roses, and clue 1 rules out Enzo, so Hattie grows the roses.",
+   "Clue 5 gives Gideon the birdbath or the gnome, and clue 6 rules out the gnome, so Gideon has the birdbath.",
+   "Clue 3 keeps the irises from the sundial and the gnome, and clue 2 from Gideon's birdbath, so the irises go with the trellis.",
+   "Clue 3 also leaves the lupines only the birdbath, so Gideon grows lupines; then clue 1 gives Enzo the irises, and with them the trellis.",
+   "Pearl grows the peonies, and clue 6 keeps the gnome from her, so she has the sundial; Hattie's roses go with the gnome."
+  ],
+  "epilogue": "The signs were back up with four minutes to spare: Hattie's roses and gnome, Gideon's lupines and birdbath, Pearl's peonies and sundial, Enzo's irises and trellis. Mabel corrected two of them anyway."
+ },
+ "tip": "A clue about two gardens is also a clue about the other two."
+}

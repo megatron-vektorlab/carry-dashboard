@@ -1,0 +1,287 @@
+{
+ "no": 14,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 14003,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Mother's Day Corsages",
+ "story": "Mother's Day is tomorrow, and the garden club's corsage table has vanished under petals, ribbon ends and order slips. Three of the slips got shuffled on the counter. Mabel will not hand a single corsage to the wrong person, and she has her reading glasses on and her red pencil out. Who ordered which flower, and which ribbon goes with it?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Jonah",
+  "Mabel"
+ ],
+ "state": {
+  "theme": {
+   "slot": 14,
+   "title": "The Mother's Day Corsages",
+   "story": "Mother's Day is tomorrow, and the garden club's corsage table has vanished under petals, ribbon ends and order slips. Three of the slips got shuffled on the counter. Mabel will not hand a single corsage to the wrong person, and she has her reading glasses on and her red pencil out. Who ordered which flower, and which ribbon goes with it?",
+   "entity": [
+    "customer",
+    "customers"
+   ],
+   "cast": [
+    "Jonah",
+    "Mabel"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Customer",
+    "kind": "name",
+    "values": [
+     "Jonah",
+     "Bea",
+     "Cyrus"
+    ]
+   },
+   {
+    "label": "Flower",
+    "values": [
+     "carnation",
+     "rose",
+     "peony"
+    ],
+    "ref": "the customer who ordered the {v}",
+    "pred": "ordered the {v} corsage",
+    "neg": "did not order the {v} corsage",
+    "either": "ordered either the {a} or the {b} corsage",
+    "nor": "ordered neither the {a} nor the {b} corsage",
+    "short": "the {v} corsage"
+   },
+   {
+    "label": "Ribbon",
+    "values": [
+     "lavender",
+     "white",
+     "peach"
+    ],
+    "ref": "the customer who chose the {v} ribbon",
+    "pred": "chose the {v} ribbon",
+    "neg": "did not choose the {v} ribbon",
+    "either": "chose either the {a} or the {b} ribbon",
+    "nor": "chose neither the {a} nor the {b} ribbon",
+    "short": "the {v} ribbon"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   0,
+   1
+  ],
+  [
+   1,
+   2,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Bea chose the peach ribbon.",
+  "Jonah chose neither the lavender nor the peach ribbon.",
+  "The customer who ordered the rose chose neither the white nor the peach ribbon.",
+  "Jonah ordered either the rose or the peony corsage."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 says directly that Bea goes with the peach ribbon."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Jonah must go with the white ribbon: clue 2 rules out the lavender ribbon; the peach ribbon already goes with Bea."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Cyrus must go with the lavender ribbon: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The rose corsage must go with the lavender ribbon: clue 3 rules out the white ribbon and the peach ribbon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The rose corsage must go with Cyrus: Jonah is already ruled out for the white ribbon; Bea is already ruled out for the peach ribbon."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Jonah must go with the peony corsage: clue 4 rules out the carnation corsage; the rose corsage is already ruled out for the white ribbon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Bea must go with the carnation corsage: the rose corsage is already ruled out for the peach ribbon; the peony corsage already goes with Jonah."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The peach ribbon goes with Bea, so the peach ribbon also goes with the carnation corsage."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The peony corsage must go with the white ribbon: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 14,
+  "score": 29,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Jonah",
+   "peony",
+   "white"
+  ],
+  [
+   "Bea",
+   "carnation",
+   "peach"
+  ],
+  [
+   "Cyrus",
+   "rose",
+   "lavender"
+  ]
+ ],
+ "score": 29
+}

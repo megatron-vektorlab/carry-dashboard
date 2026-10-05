@@ -1,0 +1,31 @@
+{
+ "no": 13,
+ "clues": [
+  {
+   "kind": "same",
+   "a": "Reader=Kenji",
+   "b": "Book=atlas"
+  },
+  {
+   "kind": "diff",
+   "a": "Bookmark=ribbon",
+   "b": "Book=cookbook"
+  },
+  {
+   "kind": "either",
+   "a": "Reader=Della",
+   "one_of": [
+    "Book=whodunit",
+    "Book=atlas"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Bookmark=postcard",
+   "not": [
+    "Reader=Nico",
+    "Reader=Kenji"
+   ]
+  }
+ ]
+}

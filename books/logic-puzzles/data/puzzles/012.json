@@ -1,0 +1,277 @@
+{
+ "no": 12,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 12000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Swapped Jam Labels",
+ "story": "For the blind tasting at the St. Brendan's spring supper, Hattie peeled the labels off all the jams, her own included. For once in her life, she did not make a list. The judges have their ribbons ready, and nobody can say whose jam is whose. Can you match each cook with a jam and a jar before the ribbons go out?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 12,
+   "title": "The Swapped Jam Labels",
+   "story": "For the blind tasting at the St. Brendan's spring supper, Hattie peeled the labels off all the jams, her own included. For once in her life, she did not make a list. The judges have their ribbons ready, and nobody can say whose jam is whose. Can you match each cook with a jam and a jar before the ribbons go out?",
+   "entity": [
+    "cook",
+    "cooks"
+   ],
+   "cast": [
+    "Hattie"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Cook",
+    "kind": "name",
+    "values": [
+     "Hattie",
+     "Ruben",
+     "Lou"
+    ]
+   },
+   {
+    "label": "Jam",
+    "values": [
+     "plum",
+     "fig",
+     "quince"
+    ],
+    "ref": "the {v} jam's maker",
+    "pred": "made the {v} jam",
+    "neg": "did not make the {v} jam",
+    "either": "made either the {a} or the {b} jam",
+    "nor": "made neither the {a} nor the {b} jam",
+    "short": "the {v} jam"
+   },
+   {
+    "label": "Jar",
+    "values": [
+     "mason jar",
+     "crock",
+     "tin"
+    ],
+    "ref": "the cook with the {v}",
+    "pred": "used the {v}",
+    "neg": "did not use the {v}",
+    "either": "used either the {a} or the {b}",
+    "nor": "used neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   0
+  ],
+  [
+   0,
+   2,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The fig jam's maker did not use the mason jar.",
+  "Ruben used neither the mason jar nor the crock.",
+  "The plum jam's maker used the crock.",
+  "Hattie did not use the crock."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 says directly that the plum jam goes with the crock."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Ruben must go with the tin: clue 2 rules out the mason jar and the crock."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Hattie must go with the mason jar: clue 4 rules out the crock; the tin already goes with Ruben."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Lou must go with the crock: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The fig jam must go with the tin: clue 1 rules out the mason jar; the crock already goes with the plum jam."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The quince jam must go with the mason jar: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The plum jam must go with Lou: Hattie and Ruben are already ruled out for the crock."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Ruben goes with the tin, so Ruben also goes with the fig jam."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hattie must go with the quince jam: the plum jam is already ruled out for the crock; the fig jam already goes with Ruben."
+  }
+ ],
+ "features": {
+  "steps": 14,
+  "score": 27,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 0
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Hattie",
+   "quince",
+   "mason jar"
+  ],
+  [
+   "Ruben",
+   "fig",
+   "tin"
+  ],
+  [
+   "Lou",
+   "plum",
+   "crock"
+  ]
+ ],
+ "score": 27
+}

@@ -1,0 +1,770 @@
+{
+ "no": 94,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 94001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Leaky Rowboat",
+ "story": "Someone pulled the drain plug on the boatyard's work rowboat, one of the last boats still in the water, and it sank gently into two feet of water at the slip. Felix is fuming, politely. The plug turned up at the bottom of a bailing bucket left on the dock, and five people were at the slips that afternoon, each hauling a different boat out for the winter. Who pulled the plug?",
+ "question": {
+  "text": "Who pulled the plug?",
+  "cat": "Gear",
+  "value": "bucket"
+ },
+ "answer": "Kenji",
+ "cast": [
+  "Nico",
+  "Priya",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 94,
+   "title": "The Case of the Leaky Rowboat",
+   "story": "Someone pulled the drain plug on the boatyard's work rowboat, one of the last boats still in the water, and it sank gently into two feet of water at the slip. Felix is fuming, politely. The plug turned up at the bottom of a bailing bucket left on the dock, and five people were at the slips that afternoon, each hauling a different boat out for the winter. Who pulled the plug?",
+   "entity": [
+    "boat owner",
+    "boat owners"
+   ],
+   "cast": [
+    "Nico",
+    "Priya",
+    "Felix"
+   ],
+   "question": {
+    "text": "Who pulled the plug?",
+    "cat": "Gear",
+    "value": "bucket"
+   }
+  },
+  "cats": [
+   {
+    "label": "Owner",
+    "kind": "name",
+    "values": [
+     "Kenji",
+     "Nico",
+     "Priya",
+     "Hal",
+     "Una"
+    ]
+   },
+   {
+    "label": "Boat",
+    "values": [
+     "skiff",
+     "kayak",
+     "canoe",
+     "dory",
+     "punt"
+    ],
+    "ref": "the {v}'s owner",
+    "pred": "hauled out the {v}",
+    "neg": "did not haul out the {v}",
+    "either": "hauled out either the {a} or the {b}",
+    "nor": "hauled out neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Gear",
+    "values": [
+     "oars",
+     "net",
+     "cooler",
+     "anchor",
+     "bucket"
+    ],
+    "ref": "the person with the {v}",
+    "pred": "brought the {v}",
+    "neg": "did not bring the {v}",
+    "either": "brought either the {a} or the {b}",
+    "nor": "brought neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     780,
+     795,
+     810,
+     825,
+     840
+    ],
+    "labels": [
+     "1:00 p.m.",
+     "1:15 p.m.",
+     "1:30 p.m.",
+     "1:45 p.m.",
+     "2:00 p.m."
+    ],
+    "ref": "the person who arrived at {x}",
+    "pred": "arrived at {x}",
+    "neg": "did not arrive at {x}",
+    "either": "arrived at either {a} or {b}",
+    "nor": "arrived at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "arrived later than {y}",
+    "less": "arrived earlier than {y}",
+    "dmore": "arrived exactly {d} after {y}",
+    "dless": "arrived exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "arrived a quarter of an hour after {y}",
+    "dless1": "arrived a quarter of an hour before {y}",
+    "step": 15,
+    "values": [
+     "1:00 p.m.",
+     "1:15 p.m.",
+     "1:30 p.m.",
+     "1:45 p.m.",
+     "2:00 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   4,
+   0,
+   3,
+   2,
+   1
+  ],
+  [
+   4,
+   3,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0,
+   3,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     4
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Nico arrived earlier than the canoe's owner.",
+  "Kenji arrived at either 1:15 p.m. or 1:45 p.m.",
+  "Of Nico and Hal, one brought the anchor and the other brought the net.",
+  "Hal arrived later than the person with the bucket.",
+  "Of Priya and Hal, one brought the oars and the other brought the net.",
+  "The person with the net arrived at either 1:00 p.m. or 1:45 p.m.",
+  "The person who arrived at 2:00 p.m. hauled out neither the canoe nor the dory.",
+  "The person with the cooler arrived later than the skiff's owner.",
+  "The dory's owner arrived at neither 1:30 p.m. nor 1:45 p.m.",
+  "The canoe's owner arrived exactly 30 minutes after the punt's owner.",
+  "The person with the oars did not arrive at 1:30 p.m."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    11
+   ],
+   "text": "Clue 11 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the canoe can still be only 1:00 p.m., 1:15 p.m., 1:30 p.m., or 1:45 p.m., clue 1 means Nico cannot be 1:45 p.m. or 2:00 p.m. and the canoe cannot be 1:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means Hal cannot be 1:00 p.m. and the bucket cannot be 2:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 means the cooler cannot be 1:00 p.m. and the skiff cannot be 2:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since the canoe can still be only 1:15 p.m., 1:30 p.m., or 1:45 p.m., clue 10 means the canoe cannot be 1:15 p.m. and the punt cannot be 1:30 p.m., 1:45 p.m., or 2:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7,
+    8,
+    10
+   ],
+   "text": "2:00 p.m. must go with the kayak: clue 8 rules out the skiff; clue 7 rules out the canoe and the dory; clue 10 rules out the punt."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "Nico must go with the anchor: clue 3 rules out the oars, the cooler, and the bucket; clue 5 rules out the net."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "Priya must go with the oars: clue 3 rules out the net and the anchor; clue 5 rules out the cooler and the bucket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4,
+    5
+   ],
+   "text": "Hal must go with the net: clue 3 rules out the oars and the cooler; clue 5 rules out the anchor; clue 4 rules out the bucket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The net must go with 1:45 p.m.: clue 6 rules out 1:15 p.m., 1:30 p.m., and 2:00 p.m.; 1:00 p.m. is already ruled out for Hal."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Hal must go with 1:45 p.m.: clue 4 rules out 1:00 p.m.; 1:15 p.m. and 1:30 p.m. are already ruled out for the net; 2:00 p.m. is already ruled out for the kayak."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Kenji must go with 1:15 p.m.: clue 2 rules out 1:00 p.m., 1:30 p.m., and 2:00 p.m.; 1:45 p.m. already goes with Hal."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    8,
+    9,
+    10
+   ],
+   "text": "SUPPOSE TEST: try Priya with 2:00 p.m..",
+   "chain": [
+    "Suppose Priya goes with 2:00 p.m.",
+    "The kayak goes with 2:00 p.m., so the kayak also goes with Priya.",
+    "The oars goes with Priya, so the oars also goes with the kayak.",
+    "2:00 p.m. goes with the kayak, so 2:00 p.m. also goes with the oars.",
+    "Since the cooler can still be only 1:15 p.m. or 1:30 p.m. and the skiff can still be only 1:00 p.m., 1:15 p.m., 1:30 p.m., or 1:45 p.m., clue 8 means the skiff cannot be 1:30 p.m. or 1:45 p.m.",
+    "1:30 p.m. must go with the canoe: clue 8 rules out the skiff; clue 9 rules out the dory; clue 10 rules out the punt; the kayak already goes with 2:00 p.m.",
+    "But then 1:45 p.m. has no boat left."
+   ],
+   "result": "So Priya does NOT go with 2:00 p.m.: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with 1:00 p.m.: the Suppose test ruled out 2:00 p.m.; 1:30 p.m. and 1:45 p.m. are already ruled out for the oars; 1:15 p.m. already goes with Kenji."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Nico must go with 1:30 p.m.: clue 1 rules out 1:45 p.m. and 2:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Una must go with 2:00 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The kayak must go with Una: Kenji, Nico, and Priya are already ruled out for 2:00 p.m.; Hal is already ruled out for the net."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The anchor must go with 1:30 p.m.: 1:00 p.m., 1:15 p.m., and 1:45 p.m. are already ruled out for Nico; 2:00 p.m. is already ruled out for the kayak."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The kayak must go with the cooler: the oars is already ruled out for Priya; the net and the bucket are already ruled out for 2:00 p.m.; the anchor is already ruled out for Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    11
+   ],
+   "text": "The oars must go with 1:00 p.m.: clue 11 rules out 1:30 p.m.; 1:15 p.m. is already ruled out for Priya; 2:00 p.m. is already ruled out for the kayak; 1:45 p.m. already goes with the net."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The bucket must go with 1:15 p.m.: clue 4 rules out 2:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The cooler must go with 2:00 p.m.: clue 8 rules out 1:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "Kenji must go with the bucket: clue 5 rules out the oars; clue 3 rules out the net and the anchor; the cooler is already ruled out for 1:15 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "Una must go with the cooler: clue 5 rules out the oars; clue 3 rules out the net and the anchor; the bucket already goes with Kenji."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The canoe must go with Hal: clue 1 rules out Nico; Kenji is already ruled out for 1:15 p.m.; Priya is already ruled out for 1:00 p.m.; Una already goes with the kayak."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The net must go with the canoe: the skiff is already ruled out for Hal; the kayak is already ruled out for 2:00 p.m.; the dory and the punt are already ruled out for 1:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9,
+    10
+   ],
+   "text": "1:45 p.m. must go with the canoe: clue 9 rules out the dory; clue 10 rules out the punt; the skiff is already ruled out for the net; the kayak already goes with 2:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9,
+    10
+   ],
+   "text": "1:30 p.m. must go with the skiff: clue 9 rules out the dory; clue 10 rules out the punt; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The skiff must go with Nico: Kenji is already ruled out for 1:15 p.m.; Priya is already ruled out for 1:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The anchor goes with Nico, so the anchor also goes with the skiff."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since the canoe can still be only 1:45 p.m. and the punt can still be only 1:00 p.m. or 1:15 p.m., clue 10 means the punt cannot be 1:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The punt must go with 1:15 p.m.: clue 10 rules out 1:00 p.m., 1:30 p.m., 1:45 p.m., and 2:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7,
+    9
+   ],
+   "text": "The dory must go with 1:00 p.m.: clue 9 rules out 1:30 p.m. and 1:45 p.m.; clue 7 rules out 2:00 p.m.; 1:15 p.m. already goes with the punt."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Kenji must go with the punt: the skiff, the canoe, and the dory are already ruled out for 1:15 p.m.; the kayak is already ruled out for 2:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with the dory: the skiff and the canoe are already ruled out for 1:00 p.m.; the kayak is already ruled out for 2:00 p.m.; the punt already goes with Kenji."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The oars goes with Priya, so the oars also goes with the dory."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The punt must go with the bucket: the net is already ruled out for 1:45 p.m.; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 80,
+  "score": 223,
+  "revisits": 4,
+  "transfer": 36,
+  "trial": 1,
+  "clue_steps": 12
+ },
+ "trial_chain": 7,
+ "table": [
+  [
+   "Kenji",
+   "punt",
+   "bucket",
+   "1:15 p.m."
+  ],
+  [
+   "Nico",
+   "skiff",
+   "anchor",
+   "1:30 p.m."
+  ],
+  [
+   "Priya",
+   "dory",
+   "oars",
+   "1:00 p.m."
+  ],
+  [
+   "Hal",
+   "canoe",
+   "net",
+   "1:45 p.m."
+  ],
+  [
+   "Una",
+   "kayak",
+   "cooler",
+   "2:00 p.m."
+  ]
+ ],
+ "score": 223
+}

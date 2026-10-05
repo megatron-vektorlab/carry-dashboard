@@ -1,0 +1,622 @@
+{
+ "no": 78,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 78002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Costume Parade",
+ "story": "Candy rained on Main Street as the Halloween parade closed out October. Four grown-ups marched in costume, each handing out a different sweet from a different-sized bag, and every last piece was gone by the bandstand. Ada wants the counts for Thursday's write-up. \"The Gazette prints numbers, not guesses,\" she says. Who wore which costume, who brought which candy, and how many pieces did each one hand out?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Mabel",
+  "Otis"
+ ],
+ "state": {
+  "theme": {
+   "slot": 78,
+   "title": "The Costume Parade",
+   "story": "Candy rained on Main Street as the Halloween parade closed out October. Four grown-ups marched in costume, each handing out a different sweet from a different-sized bag, and every last piece was gone by the bandstand. Ada wants the counts for Thursday's write-up. \"The Gazette prints numbers, not guesses,\" she says. Who wore which costume, who brought which candy, and how many pieces did each one hand out?",
+   "entity": [
+    "marcher",
+    "marchers"
+   ],
+   "cast": [
+    "Mabel",
+    "Otis"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Marcher",
+    "kind": "name",
+    "values": [
+     "Mabel",
+     "Otis",
+     "Hugo",
+     "Dot"
+    ]
+   },
+   {
+    "label": "Costume",
+    "values": [
+     "pirate",
+     "mermaid",
+     "scarecrow",
+     "robot"
+    ],
+    "ref": "the {v}",
+    "pred": "dressed as a {v}",
+    "neg": "did not dress as a {v}",
+    "either": "dressed as either a {a} or a {b}",
+    "nor": "dressed as neither a {a} nor a {b}",
+    "short": "the {v} costume"
+   },
+   {
+    "label": "Candy",
+    "values": [
+     "taffy",
+     "caramels",
+     "licorice",
+     "gumdrops"
+    ],
+    "ref": "the marcher with the {v}",
+    "pred": "brought {v}",
+    "neg": "did not bring {v}",
+    "either": "brought either {a} or {b}",
+    "nor": "brought neither {a} nor {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Handed out",
+    "ordered": true,
+    "nums": [
+     50,
+     75,
+     100,
+     125
+    ],
+    "labels": [
+     "50 pieces",
+     "75 pieces",
+     "100 pieces",
+     "125 pieces"
+    ],
+    "ref": "the marcher who handed out {x}",
+    "pred": "handed out {x}",
+    "neg": "did not hand out {x}",
+    "either": "handed out either {a} or {b}",
+    "nor": "handed out neither {a} nor {b}",
+    "short": "{x}",
+    "more": "handed out more candy than {y}",
+    "less": "handed out less candy than {y}",
+    "dmore": "handed out exactly {d} more than {y}",
+    "dless": "handed out exactly {d} fewer than {y}",
+    "dunit": [
+     "piece",
+     "pieces"
+    ],
+    "dmore1": "handed out exactly 25 more pieces than {y}",
+    "dless1": "handed out exactly 25 fewer pieces than {y}",
+    "step": 25,
+    "values": [
+     "50 pieces",
+     "75 pieces",
+     "100 pieces",
+     "125 pieces"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   3,
+   1,
+   0
+  ],
+  [
+   0,
+   2,
+   1,
+   3
+  ],
+  [
+   0,
+   3,
+   2,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  }
+ ],
+ "texts": [
+  "Of the marcher with the caramels and the marcher with the licorice, one dressed as a mermaid and the other dressed as a robot.",
+  "The marcher who handed out 100 pieces is either Dot or Hugo.",
+  "The marcher with the taffy is either Otis or Mabel.",
+  "Hugo did not dress as a pirate.",
+  "Hugo handed out more candy than the scarecrow.",
+  "Of the marcher with the taffy and the marcher with the licorice, one handed out 50 pieces and the other handed out 125 pieces.",
+  "Otis handed out more candy than the mermaid.",
+  "The marcher with the caramels handed out exactly 25 more pieces than the pirate."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 means Hugo cannot be 50 pieces and the scarecrow costume cannot be 125 pieces."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Otis can still be only 50 pieces, 75 pieces, or 125 pieces, clue 7 means Otis cannot be 50 pieces and the mermaid costume cannot be 125 pieces."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 means the caramels cannot be 50 pieces and the pirate costume cannot be 125 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    7,
+    8
+   ],
+   "text": "125 pieces must go with the robot costume: clue 8 rules out the pirate costume; clue 7 rules out the mermaid costume; clue 5 rules out the scarecrow costume."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The taffy must go with 50 pieces: clue 6 rules out 75 pieces and 100 pieces; 125 pieces is already ruled out for the robot costume."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The licorice must go with 125 pieces: clue 6 rules out 75 pieces and 100 pieces; 50 pieces already goes with the taffy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The robot costume must go with the licorice: clue 1 rules out the taffy and the gumdrops; the caramels is already ruled out for 125 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The mermaid costume must go with the caramels: clue 1 rules out the taffy and the gumdrops; the licorice already goes with the robot costume."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The taffy must go with Mabel: clue 3 rules out Hugo and Dot; Otis is already ruled out for 50 pieces."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "50 pieces goes with the taffy, so 50 pieces also goes with Mabel."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Otis can still be only 75 pieces or 125 pieces and the mermaid costume can still be only 75 pieces or 100 pieces, clue 7 means Otis cannot be 75 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    7
+   ],
+   "text": "Otis must go with 125 pieces: clue 7 rules out 50 pieces and 75 pieces; clue 2 rules out 100 pieces."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The robot costume goes with 125 pieces, so the robot costume also goes with Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    5
+   ],
+   "text": "Hugo must go with the mermaid costume: clue 4 rules out the pirate costume; clue 5 rules out the scarecrow costume; the robot costume already goes with Otis."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The licorice goes with 125 pieces, so the licorice also goes with Otis."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The caramels goes with the mermaid costume, so the caramels also goes with Hugo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Dot must go with the gumdrops: clue 3 rules out the taffy; the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since Hugo can still be only 75 pieces or 100 pieces and the scarecrow costume can still be only 50 pieces, 75 pieces, or 100 pieces, clue 5 means the scarecrow costume cannot be 100 pieces."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since the caramels can still be only 75 pieces or 100 pieces and the pirate costume can still be only 50 pieces, 75 pieces, or 100 pieces, clue 8 means the pirate costume cannot be 100 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    8
+   ],
+   "text": "100 pieces must go with the mermaid costume: clue 8 rules out the pirate costume; clue 5 rules out the scarecrow costume; the robot costume already goes with 125 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    8
+   ],
+   "text": "The caramels must go with 100 pieces: clue 8 rules out 50 pieces; clue 6 rules out 125 pieces; 75 pieces is already ruled out for the mermaid costume."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The gumdrops must go with 75 pieces: clue 6 rules out 50 pieces; 125 pieces is already ruled out for the robot costume; 100 pieces already goes with the caramels."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Hugo must go with 100 pieces: clue 5 rules out 50 pieces; 75 pieces is already ruled out for the mermaid costume; 125 pieces already goes with Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Dot must go with 75 pieces: the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since the caramels can still be only 100 pieces and the pirate costume can still be only 50 pieces or 75 pieces, clue 8 means the pirate costume cannot be 50 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The pirate costume must go with 75 pieces: clue 8 rules out 50 pieces, 100 pieces, and 125 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The scarecrow costume must go with 50 pieces: clue 5 rules out 100 pieces and 125 pieces; 75 pieces already goes with the pirate costume."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    8
+   ],
+   "text": "The pirate costume must go with the gumdrops: clue 8 rules out the caramels; clue 1 rules out the licorice; the taffy is already ruled out for 50 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The scarecrow costume must go with the taffy: clue 1 rules out the caramels and the licorice; the gumdrops already goes with the pirate costume."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Mabel must go with the scarecrow costume: the pirate costume is already ruled out for the taffy; the mermaid costume is already ruled out for the caramels; the robot costume is already ruled out for 125 pieces."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Dot must go with the pirate costume: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 51,
+  "score": 143,
+  "revisits": 7,
+  "transfer": 16,
+  "trial": 0,
+  "clue_steps": 14
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Mabel",
+   "scarecrow",
+   "taffy",
+   "50 pieces"
+  ],
+  [
+   "Otis",
+   "robot",
+   "licorice",
+   "125 pieces"
+  ],
+  [
+   "Hugo",
+   "mermaid",
+   "caramels",
+   "100 pieces"
+  ],
+  [
+   "Dot",
+   "pirate",
+   "gumdrops",
+   "75 pieces"
+  ]
+ ],
+ "score": 143
+}

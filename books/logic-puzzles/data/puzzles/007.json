@@ -1,0 +1,212 @@
+{
+ "no": 7,
+ "chapter": 1,
+ "family": "first4",
+ "stars": 1,
+ "seed": 7003,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Opening Day at the Light",
+ "story": "Thimble Point Light opened for the season on a blustery April Saturday, and Lena Kowalski, white gloves and all, made an announcement from the top step. The 1876 Keeper's Lamp, a ceremonial light since the lighthouse retired from guiding ships, turns 150 this year: it will shine every evening of Lantern Festival week and get a birthday lighting on Festival night. Four volunteers each took one opening-day job. Who did which job?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Jonah",
+  "Lena"
+ ],
+ "state": {
+  "theme": {
+   "slot": 7,
+   "title": "Opening Day at the Light",
+   "story": "Thimble Point Light opened for the season on a blustery April Saturday, and Lena Kowalski, white gloves and all, made an announcement from the top step. The 1876 Keeper's Lamp, a ceremonial light since the lighthouse retired from guiding ships, turns 150 this year: it will shine every evening of Lantern Festival week and get a birthday lighting on Festival night. Four volunteers each took one opening-day job. Who did which job?",
+   "entity": [
+    "volunteer",
+    "volunteers"
+   ],
+   "cast": [
+    "Jonah",
+    "Lena"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Volunteer",
+    "kind": "name",
+    "values": [
+     "Jonah",
+     "Imani",
+     "Boris",
+     "Faye"
+    ]
+   },
+   {
+    "label": "Job",
+    "values": [
+     "ticket desk",
+     "gift shop",
+     "tours",
+     "cocoa stand"
+    ],
+    "ref": "the volunteer in charge of the {v}",
+    "pred": "took charge of the {v}",
+    "neg": "did not take charge of the {v}",
+    "either": "took charge of either the {a} or the {b}",
+    "nor": "took charge of neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   0,
+   3,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Imani took charge of the ticket desk.",
+  "Jonah took charge of either the gift shop or the tours.",
+  "Faye took charge of neither the tours nor the cocoa stand."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 says directly that Imani goes with the ticket desk."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Faye must go with the gift shop: clue 3 rules out the tours and the cocoa stand; the ticket desk already goes with Imani."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Jonah must go with the tours: clue 2 rules out the cocoa stand; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Boris must go with the cocoa stand: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 6,
+  "score": 11,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Jonah",
+   "tours"
+  ],
+  [
+   "Imani",
+   "ticket desk"
+  ],
+  [
+   "Boris",
+   "cocoa stand"
+  ],
+  [
+   "Faye",
+   "gift shop"
+  ]
+ ],
+ "score": 11
+}

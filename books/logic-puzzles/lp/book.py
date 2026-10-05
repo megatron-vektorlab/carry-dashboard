@@ -29,7 +29,7 @@ CONTENT = os.path.join(ROOT, "content")
 TEXT_W = 7.15                       # text block width (in)
 TEXT_H = 9.45                       # usable height above the footer (in)
 LINE = 0.285                        # one 16 pt line (in)
-SPREAD_FAMILIES = {"num44", "case54", "suppose"}
+SPREAD_FAMILIES = {"grid4", "days4", "num43", "num44", "case54", "suppose"}
 
 
 # ---------------------------------------------------------------- tiny markup
@@ -174,46 +174,105 @@ def question_line(P):
     return r"\par\vspace{4pt}\noindent\textbf{Your question:} " + inline(q["text"]) + r"\par"
 
 
+def top_block(P, W):
+    texts = (W or {}).get("clues") or P["texts"]
+    story = (W or {}).get("story") or P["story"]
+    return "\n".join([head(P["no"], P["title"], P["stars"]), inline(story) + r"\par", clue_list(texts), question_line(P)])
+
+
+def tip_block(P, W):
+    tip = (W or {}).get("tip") if P["chapter"] <= 3 else None
+    return (r"\tipbox{" + inline(tip) + "}") if tip else ""
+
+
+def table_block(B):
+    return r"\begin{center}\textbf{Your answers}\par\vspace{4pt}" + answer_table(B) + r"\end{center}"
+
+
+STRIP_H = 1.15          # "The line, front to back" + boxes
+MEASURED = {}           # no -> {"top": in, "tip": in, "table": in}; filled by measure()
+PT = 1 / 72.27
+
+
+def measure(P, W):
+    """Typeset every puzzle's text block once and record its real height."""
+    out = [preamble(), r"\begin{document}", r"\typeout{TH:\the\textheight}"]
+    for no in sorted(P):
+        p = P[no]
+        if p["kind"] != "grid":
+            continue
+        B = Bound.restore(p["state"])
+        for key, tex in (("top", top_block(p, W.get(no))), ("tip", tip_block(p, W.get(no))),
+                         ("table", table_block(B))):
+            if not tex:
+                continue
+            out.append(r"\setbox0=\vbox{\hsize=\textwidth\linewidth=\textwidth " + tex + "}")
+            out.append(rf"\typeout{{M:{no}:{key}:\the\ht0:\the\dp0}}")
+    out.append(r"\end{document}")
+    d = os.path.join(BUILD, "measure")
+    os.makedirs(d, exist_ok=True)
+    with open(os.path.join(d, "measure.tex"), "w") as f:
+        f.write("\n".join(out))
+    subprocess.run(["pdflatex", "-interaction=nonstopmode", "measure.tex"], cwd=d, capture_output=True, text=True)
+    log = open(os.path.join(d, "measure.log"), errors="replace").read()
+    global TEXT_H
+    m = re.search(r"TH:([\d.]+)pt", log)
+    if m:
+        TEXT_H = float(m.group(1)) * PT
+    MEASURED.clear()
+    for no, key, ht, dp in re.findall(r"M:(\d+):(\w+):([\d.]+)pt:([\d.]+)pt", log):
+        MEASURED.setdefault(int(no), {})[key] = (float(ht) + float(dp)) * PT
+
+
 def grid_puzzle(P, W, shrink=0.0):
     no, stars = P["no"], P["stars"]
     B = Bound.restore(P["state"])
-    texts = (W or {}).get("clues") or P["texts"]
-    story = (W or {}).get("story") or P["story"]
-    tip = (W or {}).get("tip") if P["chapter"] <= 3 else None
     spread = P["family"] in SPREAD_FAMILIES
-    parts = [rf"\puzzlestart{{{no}}}", foot(no, stars), head(no, P["title"], stars), inline(story) + r"\par",
-             clue_list(texts), question_line(P)]
+    M = MEASURED.get(no, {})
+    top = M.get("top", 4.0)
+    parts = [rf"\puzzlestart{{{no}}}", foot(no, stars), top_block(P, W)]
     if not spread:
-        used = 1.25 + LINE * est_lines(story) + sum(LINE * est_lines(t, indent=0.62) + 0.05 for t in texts) + 0.45
-        if P.get("question"):
-            used += LINE * 2
-        if tip:
-            used += LINE * est_lines(tip, w=TEXT_W - 0.5) + 0.55
-        extra = 0.95 if P.get("lineup") else 0.0
-        max_h = TEXT_H - used - extra - 0.25 - shrink
-        g, geo = grid_tikz(B, max_w=TEXT_W, max_h=max_h, max_cell=0.8 if B.k == 2 else 0.62)
+        tip = tip_block(P, W)
+        tip_h = M.get("tip", 0.0) + 0.25 if tip else 0.0
+        strip_h = STRIP_H if P.get("lineup") else 0.0
+        max_cell = 0.8 if B.k == 2 else 0.62
+        good = 0.5 if B.k == 2 else 0.42
+
+        def fit(tip_h, strip_h):
+            return grid_tikz(B, max_w=TEXT_W, max_h=TEXT_H - top - tip_h - strip_h - 0.6 - shrink,
+                             max_cell=max_cell)
+        g, geo = fit(tip_h, strip_h)
+        if geo["cell"] < good and tip:
+            tip, tip_h = "", 0.0
+            g, geo = fit(tip_h, strip_h)
+        if geo["cell"] < good and strip_h:
+            strip_h = 0.0
+            g, geo = fit(tip_h, strip_h)
         parts += [r"\vfill\begin{center}", g, r"\end{center}"]
-        if P.get("lineup"):
+        if strip_h:
             parts += [r"\begin{center}\textbf{The line, front to back}\par\vspace{3pt}",
                       lineup_strip(B, B.ordered[0]), r"\end{center}"]
         if tip:
-            parts += [r"\vfill\tipbox{" + inline(tip) + "}"]
+            parts += [r"\vfill" + tip]
         parts += [r"\vfill", rf"\label{{puzend:{no}}}", r"\clearpage"]
         return "\n".join(parts), 1
-    left = 1.25 + LINE * est_lines(story) + 0.15 + sum(LINE * est_lines(t, indent=0.62) + 0.06 for t in texts)
-    if P.get("question"):
-        left += LINE * 2
-    table_h = (B.n + 1) * 0.37 + 0.6
-    table = r"\begin{center}\textbf{Your answers}\par\vspace{4pt}" + answer_table(B) + r"\end{center}"
-    where = "left" if left + table_h <= TEXT_H - 0.35 else "right"
+    table = table_block(B)
+    table_h = M.get("table", (B.n + 1) * 0.37 + 0.6) + 0.2
+    tip = tip_block(P, W)
+    tip_h = M.get("tip", 0.0) + 0.25 if tip else 0.0
+    where = "left" if top + table_h <= TEXT_H - 0.3 else "right"
+    if tip and top + tip_h + (table_h if where == "left" else 0) > TEXT_H - 0.3:
+        tip = ""
+    if tip:
+        parts += [r"\vfill" + tip]
     if where == "left":
         parts += [r"\vfill", table]
     parts += [r"\vfill\clearpage"]
-    max_h = TEXT_H - 0.5 - shrink - (table_h if where == "right" else 0)
+    max_h = TEXT_H - 0.45 - shrink - (table_h if where == "right" else 0)
     g, geo = grid_tikz(B, max_w=TEXT_W, max_h=max_h, max_cell=0.58)
     if where == "right" and geo["cell"] < 0.33:
         where, table = "none", ""
-        g, geo = grid_tikz(B, max_w=TEXT_W, max_h=TEXT_H - 0.5 - shrink, max_cell=0.58)
+        g, geo = grid_tikz(B, max_w=TEXT_W, max_h=TEXT_H - 0.45 - shrink, max_cell=0.58)
     parts += [r"\vspace*{\fill}\begin{center}", g, r"\end{center}\vspace*{\fill}"]
     if where == "right":
         parts += [table, r"\vspace*{\fill}"]
@@ -229,7 +288,6 @@ def liar_puzzle(P, W, shrink=0.0):
     parts = [rf"\puzzlestart{{{no}}}", foot(no, stars), head(no, P["title"], stars), inline(story) + r"\par",
              r"\vspace{2pt}", "\n".join(lines),
              r"\rulebox{" + inline(P["rule_text"]) + "}",
-             question_line(P),
              r"\vfill\begin{center}\textbf{Test each suspect. Write T (true) or F (false) for each statement.}\par\vspace{6pt}",
              liar_table(P["names"]), r"\end{center}\vfill", rf"\label{{puzend:{no}}}", r"\clearpage"]
     return "\n".join(parts), 1
@@ -405,6 +463,7 @@ def main():
     from .frontback import write_parts
     P, W = load_all()
     write_parts(P, W)
+    measure(P, W)
     shrink = {}
     for rnd in range(6):
         compile_tex(build_tex(P, W, shrink), runs=2 if rnd else 3)
@@ -420,7 +479,7 @@ def main():
         if not bad:
             break
         for no in bad:
-            shrink[no] = shrink.get(no, 0) + 0.35
+            shrink[no] = shrink.get(no, 0) + 0.2
         print(f"round {rnd}: shrinking grids of {bad}")
     compile_tex(build_tex(P, W, shrink), runs=2)
     print("built", os.path.join(BUILD, "interior.pdf"))

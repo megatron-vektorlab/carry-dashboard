@@ -1,0 +1,324 @@
+{
+ "no": 18,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 18000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Buoys After the Storm",
+ "story": "Last night's gale sent lobster buoys bobbing all over the harbor, from Seal Ledge clear to the ferry dock. Otis spent the morning fishing them out with a boat hook, whistling a shanty slightly off-key. Three of the strays belong to three different lobstermen, and the harbor log has to say who fishes where. Whose buoy is whose, and where does each of them fish?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Nico",
+  "Otis"
+ ],
+ "state": {
+  "theme": {
+   "slot": 18,
+   "title": "The Buoys After the Storm",
+   "story": "Last night's gale sent lobster buoys bobbing all over the harbor, from Seal Ledge clear to the ferry dock. Otis spent the morning fishing them out with a boat hook, whistling a shanty slightly off-key. Three of the strays belong to three different lobstermen, and the harbor log has to say who fishes where. Whose buoy is whose, and where does each of them fish?",
+   "entity": [
+    "lobsterman",
+    "lobstermen"
+   ],
+   "cast": [
+    "Nico",
+    "Otis"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Lobsterman",
+    "kind": "name",
+    "values": [
+     "Oscar",
+     "Nico",
+     "Pablo"
+    ]
+   },
+   {
+    "label": "Buoy",
+    "values": [
+     "orange",
+     "striped",
+     "checkered"
+    ],
+    "ref": "the owner of the {v} buoy",
+    "pred": "owns the {v} buoy",
+    "neg": "does not own the {v} buoy",
+    "either": "owns either the {a} or the {b} buoy",
+    "nor": "owns neither the {a} nor the {b} buoy",
+    "short": "the {v} buoy"
+   },
+   {
+    "label": "Spot",
+    "values": [
+     "Gull Rock",
+     "East Cove",
+     "the Narrows"
+    ],
+    "ref": "the lobsterman who fishes at {v}",
+    "pred": "fishes at {v}",
+    "neg": "does not fish at {v}",
+    "either": "fishes at either {a} or {b}",
+    "nor": "fishes at neither {a} nor {b}",
+    "short": "{v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0
+  ],
+  [
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The owner of the striped buoy fishes at neither Gull Rock nor East Cove.",
+  "The lobsterman who fishes at East Cove owns either the checkered or the striped buoy.",
+  "Oscar owns either the checkered or the striped buoy.",
+  "The owner of the checkered buoy is either Nico or Oscar.",
+  "Oscar does not fish at East Cove."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The striped buoy must go with the Narrows: clue 1 rules out Gull Rock and East Cove."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The orange buoy must go with Gull Rock: clue 2 rules out East Cove; the Narrows already goes with the striped buoy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The checkered buoy must go with East Cove: the other choices are already taken."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Oscar must go with the striped buoy: clue 3 rules out the orange buoy; the checkered buoy is already ruled out for East Cove."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Narrows goes with the striped buoy, so the Narrows also goes with Oscar."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Pablo must go with the orange buoy: clue 4 rules out the checkered buoy; the striped buoy already goes with Oscar."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with the checkered buoy: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with East Cove: Gull Rock is already ruled out for the orange buoy; the Narrows already goes with Oscar."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Pablo must go with Gull Rock: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 16,
+  "score": 36,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 3
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Oscar",
+   "striped",
+   "the Narrows"
+  ],
+  [
+   "Nico",
+   "checkered",
+   "East Cove"
+  ],
+  [
+   "Pablo",
+   "orange",
+   "Gull Rock"
+  ]
+ ],
+ "score": 36
+}

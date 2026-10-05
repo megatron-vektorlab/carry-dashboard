@@ -1,0 +1,23 @@
+{
+ "no": 51,
+ "clues": [],
+ "hints": [
+  "Look at Hattie's and Cyrus's statements. Can they both be true at once?",
+  "They accuse different people, so at least one is false. The rule allows only one false statement, so Wren's and Elsa's must be true.",
+  "Wren's true statement puts the swap on Hattie or Wren, so Hattie's accusation of Cyrus is false. Then Cyrus is right: Wren did it."
+ ],
+ "solution": {
+  "key_idea": "Hattie and Cyrus accuse different people, so the only false statement is one of theirs, and Wren's must be true.",
+  "steps": [
+   "Exactly three of the four statements are true, so exactly one is false.",
+   "Hattie accuses Cyrus, and Cyrus accuses Wren. Only one person did it, so these two cannot both be true.",
+   "So the one false statement is Hattie's or Cyrus's, and Wren's and Elsa's statements are both true.",
+   "Wren's true statement says Hattie or Wren swapped the ribbons. So Cyrus didn't, and Hattie's statement is the false one.",
+   "That makes Cyrus's statement true, so Wren swapped the ribbons. Check: only Hattie's statement is false, leaving exactly three true.",
+   "The others fail: testing Hattie or Cyrus gives two true statements, and testing Elsa gives none."
+  ],
+  "epilogue": "Wren had found both ribbons on the floor after a draft from the door and pinned them back on the wrong quilts. Hattie added \"check ribbon pins\" to a fresh list."
+ },
+ "tip": null,
+ "answer_line": "Wren swapped the quilt ribbons."
+}

@@ -1,0 +1,182 @@
+{
+ "no": 5,
+ "chapter": 1,
+ "family": "first3",
+ "stars": 1,
+ "seed": 5001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The New Paper Route",
+ "story": "On his first morning delivering the Gazette, Teddy Sousa pedaled down Main Street with his camera bouncing on his back, and three customers each asked for a little extra with tomorrow's paper. He was sure he would remember, so he wrote nothing down. He did not remember. Can you help him get the right extra to the right porch?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Nico",
+  "Teddy"
+ ],
+ "state": {
+  "theme": {
+   "slot": 5,
+   "title": "The New Paper Route",
+   "story": "On his first morning delivering the Gazette, Teddy Sousa pedaled down Main Street with his camera bouncing on his back, and three customers each asked for a little extra with tomorrow's paper. He was sure he would remember, so he wrote nothing down. He did not remember. Can you help him get the right extra to the right porch?",
+   "entity": [
+    "customer",
+    "customers"
+   ],
+   "cast": [
+    "Nico",
+    "Teddy"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Customer",
+    "kind": "name",
+    "values": [
+     "Nico",
+     "Amara",
+     "Sam"
+    ]
+   },
+   {
+    "label": "Extra",
+    "values": [
+     "tide table",
+     "puzzle book",
+     "coupons"
+    ],
+    "ref": "the customer who wanted the {v}",
+    "pred": "asked for the {v}",
+    "neg": "did not ask for the {v}",
+    "either": "asked for either the {a} or the {b}",
+    "nor": "asked for neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The customer who wanted the tide table is either Sam or Amara.",
+  "The customer who wanted the coupons is neither Nico nor Sam."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The coupons must go with Amara: clue 2 rules out Nico and Sam."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Nico must go with the puzzle book: clue 1 rules out the tide table; clue 2 rules out the coupons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Sam must go with the tide table: clue 2 rules out the coupons; the puzzle book already goes with Nico."
+  }
+ ],
+ "features": {
+  "steps": 5,
+  "score": 10,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Nico",
+   "puzzle book"
+  ],
+  [
+   "Amara",
+   "coupons"
+  ],
+  [
+   "Sam",
+   "tide table"
+  ]
+ ],
+ "score": 10
+}

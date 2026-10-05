@@ -1,0 +1,111 @@
+{
+ "no": 53,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 53000,
+ "kind": "liars",
+ "title": "Who Took the Postcards?",
+ "story": "Lena Kowalski ordered five hundred postcards for the lighthouse's 150th anniversary, each one showing Thimble Point Light at sunset. By closing time on Tuesday, the whole stack had vanished from the gift shop counter. Lena counts four visitors that afternoon, and each has one sentence to offer. Can you tell her which visitor walked off with them?",
+ "cast": [
+  "Felix",
+  "Teddy",
+  "Lena"
+ ],
+ "names": [
+  "Felix",
+  "Teddy",
+  "Marta",
+  "Sam"
+ ],
+ "did": "took the postcards",
+ "didnt": "didn't take the postcards",
+ "statements": [
+  [
+   "not",
+   2
+  ],
+  [
+   "is",
+   2
+  ],
+  [
+   "nor",
+   1,
+   2
+  ],
+  [
+   "not",
+   3
+  ]
+ ],
+ "texts": [
+  "Marta didn't take the postcards.",
+  "Marta took the postcards.",
+  "Neither Teddy nor I took the postcards.",
+  "I didn't take the postcards."
+ ],
+ "rule": [
+  "exactly",
+  3
+ ],
+ "rule_text": "Exactly three of these statements are true.",
+ "culprit": "Felix",
+ "truth": [
+  true,
+  false,
+  true,
+  true
+ ],
+ "cases": [
+  {
+   "case": "Felix",
+   "truth": [
+    "true",
+    "false",
+    "true",
+    "true"
+   ],
+   "count": 3,
+   "fits": true
+  },
+  {
+   "case": "Teddy",
+   "truth": [
+    "true",
+    "false",
+    "false",
+    "true"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Marta",
+   "truth": [
+    "false",
+    "true",
+    "false",
+    "true"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Sam",
+   "truth": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 2,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who took the postcards?"
+ },
+ "answer": "Felix",
+ "score": 40
+}

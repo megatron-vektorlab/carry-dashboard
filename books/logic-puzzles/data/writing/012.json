@@ -1,0 +1,27 @@
+{
+ "no": 12,
+ "clues": [
+  "The fig jam was not in the mason jar.",
+  "Ruben's jam came in neither the mason jar nor the crock.",
+  "Whoever made the plum jam put it in the crock.",
+  "The crock was not Hattie's."
+ ],
+ "hints": [
+  "Look at Ruben's row in the jars box. How many jars does clue 2 leave him?",
+  "Use the only choice left: clue 2 leaves Ruben a single jar. Once his is marked, clue 4 does the same for Hattie.",
+  "Hattie used the mason jar, so Lou used the crock. Carry the dot: by clue 3, Lou made the plum jam."
+ ],
+ "solution": {
+  "key_idea": "Clues 2 and 4 settle every jar, and then clue 3 carries the plum jam to Lou's crock.",
+  "steps": [
+   "Clue 2 leaves Ruben only one jar: the tin.",
+   "Clue 4 says Hattie did not use the crock, and the tin is Ruben's, so Hattie used the mason jar and Lou the crock.",
+   "Clue 3 puts the plum jam in the crock, so Lou made the plum jam.",
+   "By clue 1 the fig jam was not in the mason jar, and the crock held plum, so fig was in Ruben's tin.",
+   "That leaves the quince jam for Hattie, in the mason jar."
+  ],
+  "epilogue": "The ribbons went out on time, and every jam went back to its cook: Hattie's quince, Ruben's fig and Lou's plum. That evening Hattie began a new list, titled \"Labels.\""
+ },
+ "tip": "Neither-nor means two X's, one for each, so mark them both before you read on.",
+ "answer_line": null
+}

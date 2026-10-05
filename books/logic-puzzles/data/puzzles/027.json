@@ -1,0 +1,399 @@
+{
+ "no": 27,
+ "chapter": 2,
+ "family": "grid4",
+ "stars": 2,
+ "seed": 27002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Graduation Cakes",
+ "story": "June means graduations, and in Thimble Harbor graduations mean cake from the Salt & Sugar Bakery. Rosa took four cake orders while feeding Gloria, her sourdough starter, and wrote down every flavor and every topper but not a single customer's name. Pickup starts at noon. Which customer ordered which flavor, and which topper goes on each cake?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Gus",
+  "Rosa"
+ ],
+ "state": {
+  "theme": {
+   "slot": 27,
+   "title": "The Graduation Cakes",
+   "story": "June means graduations, and in Thimble Harbor graduations mean cake from the Salt & Sugar Bakery. Rosa took four cake orders while feeding Gloria, her sourdough starter, and wrote down every flavor and every topper but not a single customer's name. Pickup starts at noon. Which customer ordered which flavor, and which topper goes on each cake?",
+   "entity": [
+    "customer",
+    "customers"
+   ],
+   "cast": [
+    "Gus",
+    "Rosa"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Customer",
+    "kind": "name",
+    "values": [
+     "Tariq",
+     "Gus",
+     "Jade",
+     "Elsa"
+    ]
+   },
+   {
+    "label": "Flavor",
+    "values": [
+     "lemon",
+     "carrot",
+     "chocolate",
+     "coconut"
+    ],
+    "ref": "the {v} cake's buyer",
+    "pred": "ordered the {v} cake",
+    "neg": "did not order the {v} cake",
+    "either": "ordered either the {a} or the {b} cake",
+    "nor": "ordered neither the {a} nor the {b} cake",
+    "short": "the {v} cake"
+   },
+   {
+    "label": "Topper",
+    "values": [
+     "mortarboard",
+     "diploma",
+     "owl",
+     "star"
+    ],
+    "ref": "the customer who chose the {v}",
+    "pred": "chose the {v} topper",
+    "neg": "did not choose the {v} topper",
+    "either": "chose either the {a} or the {b} topper",
+    "nor": "chose neither the {a} nor the {b} topper",
+    "short": "the {v} topper"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   1,
+   0,
+   3
+  ],
+  [
+   2,
+   1,
+   3,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The carrot cake's buyer chose neither the mortarboard nor the owl topper.",
+  "Of the carrot cake's buyer and the coconut cake's buyer, one is Elsa and the other is Gus.",
+  "Jade ordered either the lemon or the carrot cake.",
+  "The customer who chose the star ordered either the chocolate or the lemon cake.",
+  "The customer who chose the mortarboard is neither Tariq nor Gus.",
+  "Tariq chose either the owl or the diploma topper."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "The carrot cake must go with the diploma topper: clue 1 rules out the mortarboard topper and the owl topper; clue 4 rules out the star topper."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3
+   ],
+   "text": "Jade must go with the lemon cake: clue 2 rules out the carrot cake; clue 3 rules out the chocolate cake and the coconut cake."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Tariq must go with the chocolate cake: clue 2 rules out the carrot cake and the coconut cake; the lemon cake already goes with Jade."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    6
+   ],
+   "text": "Tariq must go with the owl topper: clue 5 rules out the mortarboard topper; clue 6 rules out the star topper; the diploma topper is already ruled out for the carrot cake."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The chocolate cake goes with Tariq, so the chocolate cake also goes with the owl topper."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The coconut cake must go with the mortarboard topper: clue 4 rules out the star topper; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The lemon cake must go with the star topper: the owl topper is already ruled out for Jade; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Jade must go with the star topper: the mortarboard topper is already ruled out for the lemon cake; the diploma topper is already ruled out for the carrot cake; the owl topper already goes with Tariq."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Gus must go with the diploma topper: clue 5 rules out the mortarboard topper; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Elsa must go with the mortarboard topper: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The carrot cake goes with the diploma topper, so the carrot cake also goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Elsa must go with the coconut cake: clue 2 rules out the lemon cake and the chocolate cake; the carrot cake already goes with Gus."
+  }
+ ],
+ "features": {
+  "steps": 23,
+  "score": 56,
+  "revisits": 0,
+  "transfer": 7,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Tariq",
+   "chocolate",
+   "owl"
+  ],
+  [
+   "Gus",
+   "carrot",
+   "diploma"
+  ],
+  [
+   "Jade",
+   "lemon",
+   "star"
+  ],
+  [
+   "Elsa",
+   "coconut",
+   "mortarboard"
+  ]
+ ],
+ "score": 56
+}

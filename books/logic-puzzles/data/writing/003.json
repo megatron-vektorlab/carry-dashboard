@@ -1,0 +1,23 @@
+{
+ "no": 3,
+ "clues": [
+  "The chowder was in either Ivan's pail or Tova's.",
+  "Tova's pail held the egg salad."
+ ],
+ "hints": [
+  "Look at Felix's row. Which of the three lunches could still be his?",
+  "Clue 1 names the chowder first. It was Ivan's or Tova's, so mark an X where Felix meets chowder.",
+  "Felix did not pack the chowder (clue 1) or the egg salad (Tova's, clue 2). So Felix packed the meatloaf, and Ivan the chowder."
+ ],
+ "solution": {
+  "key_idea": "Clue 1 keeps the chowder away from Felix, and clue 2 gives the egg salad to Tova, so Felix packed the meatloaf.",
+  "steps": [
+   "Clue 2 puts a dot at Tova and egg salad, with X's across her row and down the egg salad column.",
+   "Clue 1 says the chowder was Ivan's or Tova's, so Felix did not pack it.",
+   "That leaves Felix only one choice: the meatloaf.",
+   "The chowder goes to Ivan."
+  ],
+  "epilogue": "Felix ate his own meatloaf at last, Tova her egg salad and Ivan his chowder. By the next morning every pail wore a name label, in Felix's best pencil."
+ },
+ "tip": "When a clue starts with the lunch instead of the person, read down that lunch's column."
+}

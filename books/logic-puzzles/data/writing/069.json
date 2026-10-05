@@ -1,0 +1,32 @@
+{
+ "no": 69,
+ "clues": [
+  "Nico's bait was not herring.",
+  "Yusuf hauled more traps than Nico.",
+  "Whoever had the orange buoys hauled neither 20 traps nor 50 traps.",
+  "The herring skipper's buoys were lime.",
+  "Arlo hauled more traps than whoever baited with squid.",
+  "Of Arlo and Yusuf, one baited with pogies and the other hauled 30 traps.",
+  "Between the pogies skipper and the squid skipper, one hauled 40 traps and the other hauled 50.",
+  "Whoever baited with pogies did not have white buoys."
+ ],
+ "hints": [
+  "Look at clue 7. The pogies and squid skippers hauled 40 and 50 traps between them. Which clue tells you which way round?",
+  "Comparisons rule out the ends, and clue 5 is a comparison. Which end can the squid skipper never reach? Put that with clue 7.",
+  "Squid cannot be 50, so by clue 7 squid hauled 40 and pogies 50. Arlo hauled more than squid's 40, so Arlo hauled 50 with pogies.",
+  "With Arlo on pogies, clue 6 gives Yusuf the 30 traps. Clue 2 leaves Nico only 20, so Greta hauled 40 with the squid."
+ ],
+ "solution": {
+  "key_idea": "Clue 5 keeps squid off 50 traps, so by clue 7 squid hauled 40 and pogies 50, and those 50 traps are Arlo's.",
+  "steps": [
+   "By clue 5, Arlo hauled more than the squid skipper, so squid was not 50 traps. Clue 7 then gives squid 40 and pogies 50.",
+   "Arlo hauled more than squid's 40, so Arlo hauled 50 traps and baited with pogies.",
+   "Clue 8 rules out white for pogies, clue 3 rules out orange at 50 traps, and clue 4 gives lime to herring. So Arlo had purple buoys.",
+   "Clue 6 then gives Yusuf the 30 traps. By clue 2, Nico hauled fewer than Yusuf, so Nico hauled 20 and Greta 40.",
+   "Squid hauled 40, so Greta baited with squid. Clue 1 rules out herring for Nico, so Nico used redfish and Yusuf herring.",
+   "By clue 4, Yusuf had lime buoys. Clue 3 keeps orange off Nico's 20 traps, so Greta had orange and Nico white."
+  ],
+  "epilogue": "The co-op's tally sheet read Arlo 50, Greta 40, Yusuf 30 and Nico 20. Nico's count was the smallest, he admitted, but his lobster had reached the size of a rowboat."
+ },
+ "tip": null
+}

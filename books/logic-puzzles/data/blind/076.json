@@ -1,0 +1,59 @@
+{
+ "no": 76,
+ "people": "entrants",
+ "categories": [
+  {
+   "label": "Entrant",
+   "values": [
+    "Emil",
+    "Wren",
+    "Jade",
+    "Pablo"
+   ]
+  },
+  {
+   "label": "Quilt",
+   "values": [
+    "log cabin",
+    "star",
+    "nine patch",
+    "wedding ring"
+   ]
+  },
+  {
+   "label": "Wants it for",
+   "values": [
+    "bedroom",
+    "den",
+    "porch",
+    "guest room"
+   ]
+  },
+  {
+   "label": "Tickets",
+   "values": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "ordered": true,
+   "numbers": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "note": "values in order from smallest to largest number; numbers [2, 4, 6, 8] (unit: tickets)"
+  }
+ ],
+ "clues": [
+  "Of the entrant who bought 2 tickets and the one who bought 4, one entered for the star quilt and the other for the nine patch.",
+  "Whoever entered for the nine patch quilt bought exactly 2 more tickets than the one with the bedroom in mind.",
+  "The entrant with the porch in mind bought more tickets than the one who entered for the nine patch quilt.",
+  "Jade's tickets were for either the nine patch or the wedding ring quilt.",
+  "The entrant with the den in mind bought exactly 4 more tickets than Emil.",
+  "Pablo bought more tickets than whoever wanted a quilt for the porch."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

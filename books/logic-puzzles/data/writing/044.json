@@ -1,0 +1,29 @@
+{
+ "no": 44,
+ "clues": [
+  "The Ripple went out later in the morning than the Tern.",
+  "Pearl's lesson came before the Tern's.",
+  "Emil sailed later than whoever took the Bluebell.",
+  "Walt's lesson was at either 9 a.m. or 11 a.m.",
+  "Neither Emil nor Pearl sailed the Bluebell.",
+  "The Bluebell went out at either 10 a.m. or noon."
+ ],
+ "hints": [
+  "Look at the 9 a.m. row in the bottom box, where times meet boats. Which boats could possibly have gone out first?",
+  "Comparisons rule out the ends. Which boats do clues 1 and 2 keep off 9 a.m.? Then see what clue 6 says.",
+  "So the Whelk went out at 9 a.m. Then clue 3 keeps the Bluebell off noon, so by clue 6 it went out at 10 a.m."
+ ],
+ "solution": {
+  "key_idea": "Clues 1, 2 and 6 leave 9 a.m. to the Whelk, and clue 3 then pins the Bluebell to 10 a.m.",
+  "steps": [
+   "Clue 1 keeps the Ripple off 9 a.m., clue 2 the Tern, and clue 6 the Bluebell. So the Whelk went out at 9 a.m.",
+   "By clue 3, Emil sailed after the Bluebell, so the Bluebell was not out at noon. By clue 6, it went out at 10 a.m.",
+   "Clue 1 keeps the Tern off noon, so the Tern went out at 11 a.m. and the Ripple at noon.",
+   "Neither Emil nor Pearl sailed the Bluebell (clue 5), and Walt's lesson was not at 10 a.m. (clue 4). So Carmen sailed the Bluebell.",
+   "By clue 2, Pearl sailed before the 11 a.m. Tern, and 10 a.m. was Carmen's. So Pearl took the Whelk at 9 a.m.",
+   "By clue 4, Walt sailed the Tern at 11 a.m., which leaves Emil the Ripple at noon."
+  ],
+  "epilogue": "Felix wrote the certificates at last. Pearl had the Whelk at 9 a.m., Carmen the Bluebell at 10, Walt the Tern at 11, and Emil the Ripple at noon."
+ },
+ "tip": "Turn the question around. Not \"When did the Ripple sail?\" but \"Which boat could go first?\""
+}

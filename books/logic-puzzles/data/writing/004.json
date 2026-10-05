@@ -1,0 +1,23 @@
+{
+ "no": 4,
+ "clues": [
+  "Either Pearl or Linus gave the sou'wester.",
+  "The beret came from Pearl."
+ ],
+ "hints": [
+  "Look down the sou'wester column. Clue 1 names two possible donors. Who is left out?",
+  "Clue 1 is an either-or clue told from the hat's side: put an X at Otis and the sou'wester. Then place Pearl's dot from clue 2.",
+  "Otis gave neither the sou'wester (clue 1) nor the beret (Pearl's, clue 2). So Otis gave the straw hat, and Linus the sou'wester."
+ ],
+ "solution": {
+  "key_idea": "With the sou'wester ruled out by clue 1 and the beret taken by Pearl, Otis's only hat is the straw hat.",
+  "steps": [
+   "Clue 2 gives Pearl the beret: one dot, and X's on the rest of her row and the beret column.",
+   "Clue 1 says the sou'wester came from Pearl or Linus, so not from Otis.",
+   "So Otis gave the straw hat, his only choice left.",
+   "Linus gave the sou'wester."
+  ],
+  "epilogue": "Otis gave the straw hat, Linus the sou'wester, and Pearl the beret. Hattie wrote three thank-you cards and ticked one more item off one more list."
+ },
+ "tip": "Check your finished grid against every clue before you call it done."
+}

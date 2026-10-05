@@ -1,0 +1,28 @@
+{
+ "no": 27,
+ "clues": [
+  "Neither the mortarboard nor the owl went on the carrot cake.",
+  "The carrot and coconut cakes went to Elsa and Gus, in some order.",
+  "Jade's cake was either lemon or carrot.",
+  "The star topper went on either the chocolate or the lemon cake.",
+  "Neither Tariq nor Gus picked the mortarboard.",
+  "Tariq's topper was either the owl or the diploma."
+ ],
+ "hints": [
+  "Look at the carrot cake in the box where flavors meet toppers. Which toppers could it possibly have?",
+  "Clue 1 crosses off two toppers for the carrot cake, and clue 4 says the star went on chocolate or lemon. Put them together.",
+  "So the carrot cake had the diploma topper. Clue 2 keeps Jade off the carrot cake, so by clue 3 she ordered the lemon cake."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 4 together leave the carrot cake only the diploma topper.",
+  "steps": [
+   "Clue 1 rules out the mortarboard and owl for the carrot cake, and clue 4 the star, so the carrot cake had the diploma.",
+   "By clue 2, the carrot and coconut cakes went to Elsa and Gus, so by clue 3 Jade ordered lemon, which leaves Tariq the chocolate.",
+   "Clues 5 and 6 rule out the mortarboard and star for Tariq, and the diploma was on the carrot cake, so Tariq chose the owl.",
+   "Tariq's chocolate cake had the owl, so by clue 4 the star went on Jade's lemon cake.",
+   "Clue 5 keeps the mortarboard from Gus, so Gus chose the diploma and the carrot cake, and Elsa the mortarboard and coconut."
+  ],
+  "epilogue": "Rosa wrote the names on the boxes this time. Tariq took chocolate with an owl, Gus carrot with a diploma, Jade lemon with a star, and Elsa coconut with a mortarboard."
+ },
+ "tip": "An X carries just like a dot: whoever did not order a cake did not get its topper either."
+}

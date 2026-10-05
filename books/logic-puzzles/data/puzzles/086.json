@@ -1,0 +1,690 @@
+{
+ "no": 86,
+ "chapter": 6,
+ "family": "case54",
+ "stars": 4,
+ "seed": 86004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Muddy Bootprints",
+ "story": "Wren stepped out for lunch on Tuesday and came back to a trail of mud across the library's freshly waxed floor, and a soggy book about whales on the returns cart. Five patrons came by that afternoon, each at a different time, in different boots, bound for a different section. The prints have the deep ridged tread of rubber boots. \"Mud,\" Wren whispers, \"on my wax.\" Who tracked in the mud?",
+ "question": {
+  "text": "Who tracked in the mud?",
+  "cat": "Boots",
+  "value": "rubber"
+ },
+ "answer": "Nico",
+ "cast": [
+  "Nico",
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 86,
+   "title": "The Case of the Muddy Bootprints",
+   "story": "Wren stepped out for lunch on Tuesday and came back to a trail of mud across the library's freshly waxed floor, and a soggy book about whales on the returns cart. Five patrons came by that afternoon, each at a different time, in different boots, bound for a different section. The prints have the deep ridged tread of rubber boots. \"Mud,\" Wren whispers, \"on my wax.\" Who tracked in the mud?",
+   "entity": [
+    "patron",
+    "patrons"
+   ],
+   "cast": [
+    "Nico",
+    "Wren"
+   ],
+   "question": {
+    "text": "Who tracked in the mud?",
+    "cat": "Boots",
+    "value": "rubber"
+   }
+  },
+  "cats": [
+   {
+    "label": "Patron",
+    "kind": "name",
+    "values": [
+     "Pearl",
+     "Nico",
+     "Milo",
+     "Greta",
+     "Oscar"
+    ]
+   },
+   {
+    "label": "Boots",
+    "values": [
+     "rubber",
+     "hiking",
+     "cowboy",
+     "snow",
+     "work"
+    ],
+    "ref": "the patron in {v} boots",
+    "pred": "wore {v} boots",
+    "neg": "did not wear {v} boots",
+    "either": "wore either {a} or {b} boots",
+    "nor": "wore neither {a} nor {b} boots",
+    "short": "the {v} boots"
+   },
+   {
+    "label": "Section",
+    "values": [
+     "maps",
+     "history",
+     "cooking",
+     "travel",
+     "poetry"
+    ],
+    "ref": "the patron in the {v} section",
+    "pred": "browsed the {v} section",
+    "neg": "did not browse the {v} section",
+    "either": "browsed either the {a} or the {b} section",
+    "nor": "browsed neither the {a} nor the {b} section",
+    "short": "the {v} section"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     780,
+     810,
+     840,
+     870,
+     900
+    ],
+    "labels": [
+     "1:00 p.m.",
+     "1:30 p.m.",
+     "2:00 p.m.",
+     "2:30 p.m.",
+     "3:00 p.m."
+    ],
+    "ref": "the patron who came by at {x}",
+    "pred": "came by at {x}",
+    "neg": "did not come by at {x}",
+    "either": "came by at either {a} or {b}",
+    "nor": "came by at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "came by later than {y}",
+    "less": "came by earlier than {y}",
+    "dmore": "came by exactly {d} after {y}",
+    "dless": "came by exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "came by half an hour after {y}",
+    "dless1": "came by half an hour before {y}",
+    "step": 30,
+    "values": [
+     "1:00 p.m.",
+     "1:30 p.m.",
+     "2:00 p.m.",
+     "2:30 p.m.",
+     "3:00 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   0,
+   1,
+   4,
+   3
+  ],
+  [
+   1,
+   0,
+   4,
+   3,
+   2
+  ],
+  [
+   4,
+   3,
+   1,
+   0,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "alldiff",
+   "items": [
+    [
+     3,
+     4
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Nico browsed either the maps or the travel section.",
+  "The patron in hiking boots came by earlier than the patron in the history section.",
+  "The patron who came by at 2:30 p.m. is neither Greta nor Oscar.",
+  "Of Greta and the patron in rubber boots, one came by at 1:00 p.m. and the other came by at 2:30 p.m.",
+  "Of the patron in the history section and the patron in the poetry section, one came by at 1:30 p.m. and the other came by at 3:00 p.m.",
+  "The patron in snow boots came by at neither 1:30 p.m. nor 3:00 p.m.",
+  "The five patrons were the patron who came by at 3:00 p.m., Oscar, the patron in hiking boots, Nico, and the patron in the travel section.",
+  "Of the patron in work boots and the patron who came by at 3:00 p.m., one is Pearl and the other is Greta."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "alldiff",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7: mark X between the people it lists."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    7
+   ],
+   "text": "Nico must go with the maps section: clue 1 rules out the history section, the cooking section, and the poetry section; clue 7 rules out the travel section."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the hiking boots can still be only 1:00 p.m., 1:30 p.m., 2:00 p.m., or 2:30 p.m., clue 2 means the history section cannot be 1:00 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Greta must go with 1:00 p.m.: clue 4 rules out 1:30 p.m., 2:00 p.m., and 3:00 p.m.; clue 3 rules out 2:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The rubber boots must go with 2:30 p.m.: clue 4 rules out 1:30 p.m., 2:00 p.m., and 3:00 p.m.; 1:00 p.m. is already ruled out for Greta."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    7,
+    8
+   ],
+   "text": "3:00 p.m. must go with Pearl: clue 7 rules out Nico and Oscar; clue 8 rules out Milo; clue 4 rules out Greta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    6,
+    7,
+    8
+   ],
+   "text": "3:00 p.m. must go with the cowboy boots: clue 4 rules out the rubber boots; clue 7 rules out the hiking boots; clue 6 rules out the snow boots; clue 8 rules out the work boots."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Pearl goes with 3:00 p.m., so Pearl also goes with the cowboy boots."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7,
+    8
+   ],
+   "text": "Oscar must go with the snow boots: clue 7 rules out the hiking boots; clue 8 rules out the work boots; the rubber boots is already ruled out for 2:30 p.m.; the cowboy boots already goes with Pearl."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7,
+    8
+   ],
+   "text": "Nico must go with the rubber boots: clue 7 rules out the hiking boots; clue 8 rules out the work boots; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Milo must go with the hiking boots: clue 8 rules out the work boots; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Greta must go with the work boots: clue 4 rules out the rubber boots; the cowboy boots is already ruled out for 1:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The maps section goes with Nico, so the maps section also goes with the rubber boots."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The snow boots must go with 2:00 p.m.: clue 6 rules out 1:30 p.m. and 3:00 p.m.; 1:00 p.m. is already ruled out for Greta; 2:30 p.m. already goes with the rubber boots."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The hiking boots must go with 1:30 p.m.: clue 7 rules out 3:00 p.m.; 1:00 p.m. is already ruled out for Greta; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The work boots must go with 1:00 p.m.: clue 8 rules out 3:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "2:30 p.m. goes with the rubber boots, so 2:30 p.m. also goes with Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The maps section must go with 2:30 p.m.: clue 5 rules out 1:30 p.m.; 1:00 p.m., 2:00 p.m., and 3:00 p.m. are already ruled out for Nico."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The travel section must go with the work boots: clue 7 rules out the hiking boots; the cowboy boots is already ruled out for 3:00 p.m.; the snow boots is already ruled out for Oscar; the rubber boots already goes with the maps section."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    7
+   ],
+   "text": "Oscar must go with 2:00 p.m.: clue 3 rules out 2:30 p.m.; clue 7 rules out 3:00 p.m.; 1:30 p.m. is already ruled out for the snow boots; 1:00 p.m. already goes with Greta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Milo must go with 1:30 p.m.: clue 8 rules out 3:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The travel section must go with Greta: clue 7 rules out Nico and Oscar; Pearl is already ruled out for 3:00 p.m.; Milo is already ruled out for the hiking boots."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The cooking section must go with 2:00 p.m.: clue 5 rules out 1:30 p.m. and 3:00 p.m.; 1:00 p.m. is already ruled out for Greta; 2:30 p.m. already goes with the maps section."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    7
+   ],
+   "text": "The travel section must go with 1:00 p.m.: clue 5 rules out 1:30 p.m.; clue 7 rules out 3:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The history section must go with the cowboy boots: clue 2 rules out the hiking boots; the rubber boots is already ruled out for 2:30 p.m.; the snow boots is already ruled out for 2:00 p.m.; the work boots already goes with the travel section."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "3:00 p.m. goes with the cowboy boots, so 3:00 p.m. also goes with the history section."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The poetry section must go with 1:30 p.m.: clue 5 rules out 1:00 p.m., 2:00 p.m., and 2:30 p.m.; 3:00 p.m. already goes with the history section."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Pearl goes with 3:00 p.m., so Pearl also goes with the history section."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The snow boots goes with 2:00 p.m., so the snow boots also goes with the cooking section."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    7
+   ],
+   "text": "The hiking boots must go with the poetry section: clue 2 rules out the history section; clue 7 rules out the travel section; the maps section is already ruled out for Nico; the cooking section already goes with the snow boots."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Oscar goes with the snow boots, so Oscar also goes with the cooking section."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Milo must go with the poetry section: the history section and the travel section are already ruled out for the hiking boots; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 66,
+  "score": 175,
+  "revisits": 1,
+  "transfer": 34,
+  "trial": 0,
+  "clue_steps": 6
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Pearl",
+   "cowboy",
+   "history",
+   "3:00 p.m."
+  ],
+  [
+   "Nico",
+   "rubber",
+   "maps",
+   "2:30 p.m."
+  ],
+  [
+   "Milo",
+   "hiking",
+   "poetry",
+   "1:30 p.m."
+  ],
+  [
+   "Greta",
+   "work",
+   "travel",
+   "1:00 p.m."
+  ],
+  [
+   "Oscar",
+   "snow",
+   "cooking",
+   "2:00 p.m."
+  ]
+ ],
+ "score": 175
+}

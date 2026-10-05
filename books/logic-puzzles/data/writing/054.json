@@ -1,0 +1,22 @@
+{
+ "no": 54,
+ "clues": [],
+ "hints": [
+  "Look at Dot's and Enzo's statements. Each one clears a single person, so for which suspects are both of them true?",
+  "Dot's statement is true unless Dot did it, and Enzo's is true unless Rosa did. So if Enzo or Quinn did it, both are true.",
+  "Then a third comes true as well: Quinn's if it was Enzo, Rosa's if it was Quinn. That is one too many, so test Dot and Rosa."
+ ],
+ "solution": {
+  "key_idea": "If Enzo or Quinn did it, three statements come true, so only Dot and Rosa are left to test, and Rosa gives exactly two.",
+  "steps": [
+   "Dot's statement is true unless Dot did it, and Enzo's is true unless Rosa did it.",
+   "If Enzo did it, Dot's, Enzo's and Quinn's statements are true. That is three, so it was not Enzo.",
+   "If Quinn did it, Dot's, Rosa's and Enzo's statements are true. Three again, so it was not Quinn.",
+   "If Dot did it, only Enzo's statement is true. One is too few.",
+   "If Rosa did it, Dot's and Rosa's statements are true, and Enzo's and Quinn's are false. Exactly two, so Rosa borrowed the rake."
+  ],
+  "epilogue": "Rosa had borrowed the rake at dawn to pick berries for her festival muffins, meaning to hang it back before anyone noticed. She returned it at a quarter to ten, with a dozen muffins."
+ },
+ "tip": null,
+ "answer_line": "Rosa borrowed the berry rake."
+}

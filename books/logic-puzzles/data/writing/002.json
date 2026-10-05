@@ -1,0 +1,22 @@
+{
+ "no": 2,
+ "clues": [
+  "Rosa's envelope held either marigold or sweet pea seeds.",
+  "The sweet pea seeds came from Hugo."
+ ],
+ "hints": [
+  "Clue 2 is the only clue that gives a dot. Place it, then look at Rosa's row.",
+  "One dot brings its X's with it: Hugo's dot crosses out sweet pea for everyone else. Now read clue 1 for Rosa.",
+  "Clue 1 gives Rosa two choices, and the sweet pea seeds are Hugo's. So Rosa brought the marigold seeds, and Della the zinnia seeds."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 gives Hugo the sweet pea seeds, which leaves Rosa only the marigold seeds from clue 1.",
+  "steps": [
+   "Clue 2 puts a dot at Hugo and sweet pea, with X's on the rest of that row and column.",
+   "Clue 1 crosses out zinnia for Rosa. Sweet pea is Hugo's, so Rosa brought the marigold seeds.",
+   "Della, with one blank square left, brought the zinnia seeds."
+  ],
+  "epilogue": "Wren thanked Della for the zinnias, Rosa for the marigolds and Hugo for the sweet peas, in her tidiest hand. Hugo's note also mentioned, in very small letters, an overdue cookbook."
+ },
+ "tip": "An either-or clue is a row of X's in disguise: cross out everything but the two choices."
+}

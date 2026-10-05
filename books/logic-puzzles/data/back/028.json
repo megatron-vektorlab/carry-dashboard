@@ -1,0 +1,8 @@
+{"no": 28, "clues": [
+  {"kind": "nor", "a": "Pool=Moon Pool", "not": ["Creature=crab", "Creature=snail"]},
+  {"kind": "either", "a": "Creature=snail", "one_of": ["Pool=Mermaid Pool", "Pool=Moon Pool"]},
+  {"kind": "nor", "a": "Pool=Kettle Pool", "not": ["Creature=crab", "Creature=urchin"]},
+  {"kind": "nor", "a": "Pool=Bathtub Pool", "not": ["Walker=Lena", "Walker=Hugo"]},
+  {"kind": "either", "a": "Walker=Marta", "one_of": ["Creature=snail", "Creature=sea star"]},
+  {"kind": "either", "a": "Pool=Kettle Pool", "one_of": ["Walker=Zeke", "Walker=Hugo"]}
+]}

@@ -1,0 +1,27 @@
+{
+ "no": 63,
+ "clues": [
+  "Of the Pine Key passenger and the mainland passenger, one sailed at 7:00 a.m. and the other at 8:00 a.m.",
+  "Amara and Tova took the 7:00 a.m. and 8:30 a.m. ferries, one apiece.",
+  "Tova's ticket was for neither Gull Island nor the mainland.",
+  "The Gull Island passenger sailed exactly half an hour after Ruben."
+ ],
+ "hints": [
+  "Look at Ruben's row in the box where passengers meet ferries. Which runs could he possibly have taken?",
+  "Clue 2 is a pair clue that takes two ferries away from Ruben, and clue 1 takes two from Gull Island. Now hold both against clue 4.",
+  "So Ruben, half an hour before Gull Island, sailed at 7:00 or 8:00 a.m. Clue 2 rules out 7:00, so Ruben took the 8:00 a.m. ferry."
+ ],
+ "solution": {
+  "key_idea": "Clue 1 leaves Gull Island 7:30 or 8:30 a.m., so Ruben sailed at 7:00 or 8:00 (clue 4), and clue 2 rules out 7:00.",
+  "steps": [
+   "By clue 2, Amara and Tova took the 7:00 and 8:30 a.m. ferries, so Ruben and Priya took 7:30 and 8:00 a.m.",
+   "By clue 1, the Pine Key and mainland passengers took 7:00 and 8:00 a.m. So the Gull Island passenger sailed at 7:30 or 8:30 a.m.",
+   "Clue 4 puts Ruben half an hour before Gull Island, at 7:00 or 8:00 a.m. So Ruben sailed at 8:00, and Priya at 7:30.",
+   "Then the Gull Island passenger sailed at 8:30 a.m. (clue 4). By clue 1, the 7:30 passenger rode to Cobb Point, so Priya did.",
+   "By clue 1, Ruben, at 8:00, rode to Pine Key or the mainland. Clue 3 leaves Tova only Pine Key, so Ruben's was the mainland.",
+   "Amara rode to Gull Island at 8:30 a.m. By clue 1, the Pine Key passenger sailed at 7:00 a.m., so Tova took the 7:00 a.m. ferry."
+  ],
+  "epilogue": "Jonah's log read Tova, Priya, Ruben and Amara, from 7:00 to 8:30 a.m., bound for Pine Key, Cobb Point, the mainland and Gull Island. The blinking light went into Ada's notebook, unexplained."
+ },
+ "tip": null
+}

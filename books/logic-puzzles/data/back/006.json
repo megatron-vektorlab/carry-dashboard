@@ -1,0 +1,23 @@
+{
+ "no": 6,
+ "clues": [
+  {
+   "kind": "diff",
+   "a": "Umbrella=polka-dot",
+   "b": "Guest=Gus"
+  },
+  {
+   "kind": "same",
+   "a": "Guest=Mabel",
+   "b": "Umbrella=plaid"
+  },
+  {
+   "kind": "nor",
+   "a": "Guest=Kit",
+   "not": [
+    "Umbrella=yellow",
+    "Umbrella=polka-dot"
+   ]
+  }
+ ]
+}

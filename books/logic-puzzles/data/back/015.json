@@ -1,0 +1,34 @@
+{
+ "no": 15,
+ "clues": [
+  {
+   "kind": "nor",
+   "a": "Tail=bows",
+   "not": [
+    "Flier=Teddy",
+    "Flier=Una"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Flier=Una",
+   "one_of": [
+    "Kite=dragon",
+    "Kite=box"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Flier=Una",
+   "one_of": [
+    "Tail=tassels",
+    "Tail=bows"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Kite=dragon",
+   "b": "Tail=streamers"
+  }
+ ]
+}

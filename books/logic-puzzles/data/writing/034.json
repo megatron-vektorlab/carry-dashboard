@@ -1,0 +1,26 @@
+{
+ "no": 34,
+ "clues": [
+  "The fourth castle out from the pier was not Teddy's.",
+  "Teddy's castle and Mabel's did not stand side by side.",
+  "Mabel built her castle closer to the pier than Teddy did.",
+  "Enzo's castle was either the third or the fourth from the pier."
+ ],
+ "hints": [
+  "Look at clue 3 with clue 1 beside it. Teddy built farther from the pier than Mabel, but how far out can Teddy go?",
+  "Comparisons rule out the ends: clue 1 keeps Teddy off the fourth castle, so Mabel, closer in, has only two choices. Try clue 2 on each.",
+  "If Mabel built the second castle, Teddy would build the third, right beside her, against clue 2. So Mabel built the first castle."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 3 leave Mabel the first or second castle, and clue 2 rules out the second, so Mabel built the first.",
+  "steps": [
+   "Clue 1 keeps Teddy off the fourth castle, so by clue 3 Mabel, closer to the pier, built the first or second.",
+   "If Mabel built the second, Teddy would have to build the third, right beside her. Clue 2 forbids that, so Mabel built the first.",
+   "Clue 2 keeps Teddy off the second castle, beside Mabel's, and clue 1 keeps him off the fourth, so Teddy built the third.",
+   "By clue 4, Enzo built the third or fourth castle. The third is Teddy's, so Enzo built the fourth and Carmen the second."
+  ],
+  "epilogue": "From the pier outward, the castles were Mabel's, Carmen's, Teddy's and Enzo's. The tide took all four by supper, but Teddy had his photos, and Mabel's sign floated off with its commas intact."
+ },
+ "tip": "A \"not beside\" clue works best once other clues have narrowed both people down.",
+ "answer_line": null
+}

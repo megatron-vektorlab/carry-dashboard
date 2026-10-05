@@ -1,0 +1,7 @@
+{"no": 64, "clues": [
+ {"kind": "pair", "people": ["Patron=Marta", "Patron=Basil"], "options": ["Fine=50 cents", "Fine=75 cents"]},
+ {"kind": "compare", "a": "Book=biography", "b": "Book=atlas", "cat": "Fine", "rel": "a_greater_by", "by": 25},
+ {"kind": "pair", "people": ["Patron=Marta", "Patron=Ivan"], "options": ["Book=atlas", "Book=biography"]},
+ {"kind": "either", "a": "Book=poetry", "one_of": ["Fine=50 cents", "Fine=75 cents"]},
+ {"kind": "either", "a": "Fine=25 cents", "one_of": ["Book=atlas", "Book=biography"]}
+]}

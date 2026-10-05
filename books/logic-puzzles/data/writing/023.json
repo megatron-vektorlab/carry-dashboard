@@ -1,0 +1,27 @@
+{
+ "no": 23,
+ "clues": [
+  "One of Otis and Yusuf left the novel behind, and the other left the sun hat.",
+  "Yusuf left either the scarf or the sun hat, and Carmen left the other one.",
+  "Linus did not ride on the foredeck.",
+  "Otis and Carmen rode separately: one on the upper deck, the other on the aft deck.",
+  "Whoever left the novel rode on either the lower deck or the aft deck."
+ ],
+ "hints": [
+  "Look at Otis's row in the item box. Clue 1 gives him two possible items. Does clue 2 allow both?",
+  "Put two clues together. Clue 1 and clue 2 both mention the sun hat: could Otis have left it?",
+  "No: clue 2 gives the sun hat to Yusuf or Carmen. So Otis left the novel, and by clue 1 Yusuf left the sun hat."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 gives the sun hat to Yusuf or Carmen, so Otis's two choices in clue 1 shrink to the novel.",
+  "steps": [
+   "Clue 1 gives Otis the novel or the sun hat, but clue 2 gives the sun hat to Yusuf or Carmen. So Otis left the novel.",
+   "Then Yusuf left the sun hat (clue 1), so by clue 2 Carmen left the scarf, and Linus left the thermos.",
+   "Otis left the novel, so clue 5 puts him on the lower deck or the aft deck; clue 4 leaves only the aft deck.",
+   "So Carmen rode on the upper deck (clue 4), and Linus, kept off the foredeck by clue 3, rode on the lower deck.",
+   "That leaves the foredeck for Yusuf and his sun hat."
+  ],
+  "epilogue": "Every item was tagged by the next run. Otis came back first for his novel, and Pilot, very pleased with himself, led him to the aft deck where it had turned up."
+ },
+ "tip": "A clue that leaves someone out tells you something about them, too."
+}

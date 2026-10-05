@@ -1,0 +1,131 @@
+{
+ "no": 56,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 56000,
+ "kind": "liars",
+ "title": "Who Salted the Lemonade?",
+ "story": "Hattie's August ice cream social at St. Brendan's ran like clockwork until the first sip of lemonade made a whole row of faces pucker the wrong way. Someone had filled the big pitcher from the salt tin instead of the sugar tin, which sit side by side on the kitchen shelf. Five people worked in the hall kitchen that afternoon, and each makes one statement. Whose mix-up was it?",
+ "cast": [
+  "Hattie"
+ ],
+ "names": [
+  "Arlo",
+  "Hattie",
+  "Della",
+  "Pablo",
+  "Yusuf"
+ ],
+ "did": "salted the lemonade",
+ "didnt": "didn't salt the lemonade",
+ "statements": [
+  [
+   "is",
+   2
+  ],
+  [
+   "not",
+   1
+  ],
+  [
+   "not",
+   4
+  ],
+  [
+   "truth",
+   4
+  ],
+  [
+   "or",
+   0,
+   3
+  ]
+ ],
+ "texts": [
+  "Della salted the lemonade.",
+  "I didn't salt the lemonade.",
+  "Yusuf didn't salt the lemonade.",
+  "Yusuf is telling the truth.",
+  "Either Arlo or Pablo salted the lemonade."
+ ],
+ "rule": [
+  "culprit_lies"
+ ],
+ "rule_text": "The culprit is lying. Everyone else is telling the truth.",
+ "culprit": "Arlo",
+ "truth": [
+  false,
+  true,
+  true,
+  true,
+  true
+ ],
+ "cases": [
+  {
+   "case": "Arlo",
+   "truth": [
+    "false",
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "count": 4,
+   "fits": true
+  },
+  {
+   "case": "Hattie",
+   "truth": [
+    "false",
+    "false",
+    "true",
+    "false",
+    "false"
+   ],
+   "count": 1,
+   "fits": false
+  },
+  {
+   "case": "Della",
+   "truth": [
+    "true",
+    "true",
+    "true",
+    "false",
+    "false"
+   ],
+   "count": 3,
+   "fits": false
+  },
+  {
+   "case": "Pablo",
+   "truth": [
+    "false",
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "count": 4,
+   "fits": false
+  },
+  {
+   "case": "Yusuf",
+   "truth": [
+    "false",
+    "true",
+    "false",
+    "false",
+    "false"
+   ],
+   "count": 1,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who salted the lemonade?"
+ },
+ "answer": "Arlo",
+ "score": 55
+}

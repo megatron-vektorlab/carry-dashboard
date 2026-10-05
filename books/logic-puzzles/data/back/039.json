@@ -1,0 +1,40 @@
+{
+ "no": 39,
+ "clues": [
+  {
+   "kind": "pair",
+   "people": [
+    "Visitor=Cass",
+    "Visitor=Boris"
+   ],
+   "options": [
+    "Day=Monday",
+    "Day=Wednesday"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Visitor=Imani",
+   "b": "Hometown=Dover",
+   "cat": "Day",
+   "rel": "a_greater_by",
+   "by": 3
+  },
+  {
+   "kind": "diff",
+   "a": "Visitor=Boris",
+   "b": "Hometown=Reno"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Visitor=Boris",
+    "Hometown=Tulsa"
+   ],
+   "options": [
+    "Day=Tuesday",
+    "Day=Wednesday"
+   ]
+  }
+ ]
+}

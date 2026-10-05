@@ -1,0 +1,59 @@
+{
+ "no": 70,
+ "clues": [
+  {
+   "kind": "pair",
+   "people": [
+    "Crust=crumble",
+    "Bake=55 minutes"
+   ],
+   "options": [
+    "Spice=nutmeg",
+    "Spice=ginger"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Spice=cardamom",
+   "b": "Spice=ginger",
+   "cat": "Bake",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Baker=Imani",
+   "b": "Crust=lattice",
+   "cat": "Bake",
+   "rel": "a_less"
+  },
+  {
+   "kind": "diff",
+   "a": "Baker=Priya",
+   "b": "Crust=plain"
+  },
+  {
+   "kind": "compare",
+   "a": "Crust=lattice",
+   "b": "Spice=ginger",
+   "cat": "Bake",
+   "rel": "a_greater_by",
+   "by": 5
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Baker=Vito",
+    "Bake=40 minutes"
+   ],
+   "options": [
+    "Crust=crumble",
+    "Crust=braided"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Crust=lattice",
+   "b": "Bake=50 minutes"
+  }
+ ]
+}

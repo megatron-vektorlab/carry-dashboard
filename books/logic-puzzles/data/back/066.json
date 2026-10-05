@@ -1,0 +1,8 @@
+{"no": 66, "clues": [
+  {"kind": "compare", "a": "Cook=Dev", "b": "Carrier=wagon", "cat": "Arrival", "rel": "a_greater_by", "by": 30},
+  {"kind": "compare", "a": "Dish=squash soup", "b": "Cook=Lou", "cat": "Arrival", "rel": "a_greater_by", "by": 45},
+  {"kind": "either", "a": "Carrier=basket", "one_of": ["Cook=Rosa", "Cook=Selma"]},
+  {"kind": "compare", "a": "Dish=apple crisp", "b": "Cook=Rosa", "cat": "Arrival", "rel": "a_greater"},
+  {"kind": "diff", "a": "Dish=baked beans", "b": "Cook=Rosa"},
+  {"kind": "compare", "a": "Carrier=box", "b": "Carrier=basket", "cat": "Arrival", "rel": "a_greater_by", "by": 30}
+]}

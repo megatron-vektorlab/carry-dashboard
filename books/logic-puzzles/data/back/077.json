@@ -1,0 +1,64 @@
+{
+ "no": 77,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Label=owl",
+   "b": "Label=moon",
+   "cat": "Gallons",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Gallons=5 gallons",
+    "Gallons=10 gallons"
+   ],
+   "options": [
+    "Mix=wild",
+    "Mix=tart"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Mix=tart",
+    "Mix=spicy"
+   ],
+   "options": [
+    "Gallons=5 gallons",
+    "Gallons=15 gallons"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Neighbor=Cyrus",
+   "b": "Neighbor=Felix",
+   "cat": "Gallons",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Label=star",
+   "b": "Mix=spicy",
+   "cat": "Gallons",
+   "rel": "a_greater_by",
+   "by": 5
+  },
+  {
+   "kind": "compare",
+   "a": "Neighbor=Marta",
+   "b": "Label=moon",
+   "cat": "Gallons",
+   "rel": "a_less"
+  },
+  {
+   "kind": "compare",
+   "a": "Neighbor=Felix",
+   "b": "Label=moon",
+   "cat": "Gallons",
+   "rel": "a_greater_by",
+   "by": 5
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+{"no": 21, "clues": [
+  {"kind": "pair", "people": ["Birder=Dev", "Bird=osprey"], "options": ["Spot=dunes", "Spot=old pier"]},
+  {"kind": "pair", "people": ["Birder=Mabel", "Spot=dunes"], "options": ["Bird=loon", "Bird=oriole"]},
+  {"kind": "pair", "people": ["Birder=Ivan", "Bird=loon"], "options": ["Spot=dunes", "Spot=salt marsh"]}
+]}

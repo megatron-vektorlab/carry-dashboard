@@ -1,0 +1,27 @@
+{
+ "no": 14,
+ "clues": [
+  "Bea picked the peach ribbon.",
+  "Jonah's ribbon was neither lavender nor peach.",
+  "The rose was tied with neither the white nor the peach ribbon.",
+  "Jonah ordered either the rose or the peony."
+ ],
+ "hints": [
+  "Which ribbon could Jonah have chosen? Look at his row in the ribbons box and read clue 2.",
+  "Use the only choice left: clue 2 leaves Jonah one ribbon, and clue 1 settles Bea's. Now look at the rose and clue 3.",
+  "Clue 3 leaves the rose only lavender, which was Cyrus's. So Cyrus ordered the rose, and clue 4 leaves Jonah the peony."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 2 give Jonah the white ribbon and Cyrus the lavender; clue 3 then carries the rose to Cyrus.",
+  "steps": [
+   "Clue 2 leaves Jonah only the white ribbon, and clue 1 gives Bea the peach, so Cyrus chose lavender.",
+   "By clue 3, the rose was tied with neither white nor peach, so its ribbon was lavender.",
+   "Carry the dot: the lavender ribbon was Cyrus's, so Cyrus ordered the rose.",
+   "Clue 4 says Jonah ordered the rose or the peony; the rose is Cyrus's, so Jonah ordered the peony.",
+   "That leaves Bea the carnation, tied with her peach ribbon, and Jonah's peony wore white."
+  ],
+  "epilogue": "Mabel handed over every corsage before noon: Jonah's peony with white ribbon, Bea's carnation with peach, and Cyrus's rose with lavender. Then she corrected the spelling on all three slips."
+ },
+ "tip": "When you finish, check every box: one dot in each row and column, and all three boxes telling the same story.",
+ "answer_line": null
+}

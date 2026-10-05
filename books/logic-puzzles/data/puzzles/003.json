@@ -1,0 +1,165 @@
+{
+ "no": 3,
+ "chapter": 1,
+ "family": "first3",
+ "stars": 1,
+ "seed": 3000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Lunch Pail Mix-Up",
+ "story": "When the noon whistle blew at Okafor Boatyard, three workers reached for their lunch pails, which had spent the morning side by side on one sawhorse. The pails are identical, and nobody thought to label them. Felix pulls a pencil from behind one ear, calls the whole business \"not shipshape,\" and says he would like to eat his own lunch, thank you. Who packed which lunch?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 3,
+   "title": "The Lunch Pail Mix-Up",
+   "story": "When the noon whistle blew at Okafor Boatyard, three workers reached for their lunch pails, which had spent the morning side by side on one sawhorse. The pails are identical, and nobody thought to label them. Felix pulls a pencil from behind one ear, calls the whole business \"not shipshape,\" and says he would like to eat his own lunch, thank you. Who packed which lunch?",
+   "entity": [
+    "worker",
+    "workers"
+   ],
+   "cast": [
+    "Felix"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Worker",
+    "kind": "name",
+    "values": [
+     "Felix",
+     "Tova",
+     "Ivan"
+    ]
+   },
+   {
+    "label": "Lunch",
+    "values": [
+     "chowder",
+     "egg salad",
+     "meatloaf"
+    ],
+    "ref": "whoever packed the {v}",
+    "pred": "packed the {v}",
+    "neg": "did not pack the {v}",
+    "either": "packed either the {a} or the {b}",
+    "nor": "packed neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Whoever packed the chowder is either Ivan or Tova.",
+  "Tova packed the egg salad."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 says directly that Tova goes with the egg salad."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Felix must go with the meatloaf: clue 1 rules out the chowder; the egg salad already goes with Tova."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Ivan must go with the chowder: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 4,
+  "score": 8,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Felix",
+   "meatloaf"
+  ],
+  [
+   "Tova",
+   "egg salad"
+  ],
+  [
+   "Ivan",
+   "chowder"
+  ]
+ ],
+ "score": 8
+}

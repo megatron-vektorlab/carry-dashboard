@@ -1,0 +1,547 @@
+{
+ "no": 73,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 73001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Lamp Fund Jar",
+ "story": "Since spring, the Keeper's Lamp fund jar has sat by the register at Mahoney's, collecting for the lamp's 150th-birthday celebration. One October afternoon four donors fed it, each tucking a little note in with the money. Gus counted it all in a hurry, and now the notes and the gifts are hopelessly shuffled. The Gazette wants to thank each donor properly. Who gave how much, how did each one pay, and who left which note?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Lena",
+  "Jonah",
+  "Gus"
+ ],
+ "state": {
+  "theme": {
+   "slot": 73,
+   "title": "The Lamp Fund Jar",
+   "story": "Since spring, the Keeper's Lamp fund jar has sat by the register at Mahoney's, collecting for the lamp's 150th-birthday celebration. One October afternoon four donors fed it, each tucking a little note in with the money. Gus counted it all in a hurry, and now the notes and the gifts are hopelessly shuffled. The Gazette wants to thank each donor properly. Who gave how much, how did each one pay, and who left which note?",
+   "entity": [
+    "donor",
+    "donors"
+   ],
+   "cast": [
+    "Lena",
+    "Jonah",
+    "Gus"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Donor",
+    "kind": "name",
+    "values": [
+     "Lena",
+     "Jonah",
+     "Tova",
+     "Gus"
+    ]
+   },
+   {
+    "label": "Paid",
+    "values": [
+     "check",
+     "cash",
+     "coin",
+     "money order"
+    ],
+    "ref": "the donor who paid by {v}",
+    "pred": "paid by {v}",
+    "neg": "did not pay by {v}",
+    "either": "paid by either {a} or {b}",
+    "nor": "paid by neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Note",
+    "values": [
+     "poem",
+     "drawing",
+     "thank-you",
+     "riddle"
+    ],
+    "ref": "the donor who left a {v}",
+    "pred": "left a {v}",
+    "neg": "did not leave a {v}",
+    "either": "left either a {a} or a {b}",
+    "nor": "left neither a {a} nor a {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Gift",
+    "ordered": true,
+    "nums": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "labels": [
+     "$25",
+     "$50",
+     "$75",
+     "$100"
+    ],
+    "ref": "the donor who gave {x}",
+    "pred": "gave {x}",
+    "neg": "did not give {x}",
+    "either": "gave either {a} or {b}",
+    "nor": "gave neither {a} nor {b}",
+    "short": "{x}",
+    "more": "gave more than {y}",
+    "less": "gave less than {y}",
+    "dmore": "gave exactly {d} more than {y}",
+    "dless": "gave exactly {d} less than {y}",
+    "dunit": [
+     "dollar",
+     "dollars"
+    ],
+    "dmore1": "gave exactly 25 dollars more than {y}",
+    "dless1": "gave exactly 25 dollars less than {y}",
+    "step": 25,
+    "values": [
+     "$25",
+     "$50",
+     "$75",
+     "$100"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ],
+  [
+   1,
+   0,
+   3,
+   2
+  ],
+  [
+   0,
+   3,
+   1,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the donor who left a poem and the donor who gave $25, one is Jonah and the other is Lena.",
+  "Tova gave exactly 25 dollars less than the donor who left a thank-you.",
+  "Of Lena and the donor who gave $100, one paid by check and the other paid by cash.",
+  "Tova did not pay by coin.",
+  "The donor who paid by check left either a riddle or a drawing.",
+  "The donor who gave $50 left either a thank-you or a riddle."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the thank-you cannot be $25 and Tova cannot be $100."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the thank-you can still be only $50, $75, or $100 and Tova can still be only $50 or $75, clue 2 means the thank-you cannot be $50."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "$50 must go with the riddle: clue 6 rules out the poem and the drawing; clue 2 rules out the thank-you."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "$25 must go with the drawing: clue 1 rules out the poem; clue 2 rules out the thank-you; the riddle already goes with $50."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Tova must go with the riddle: clue 1 rules out the poem; clue 2 rules out the thank-you; the drawing is already ruled out for $25."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "$50 goes with the riddle, so $50 also goes with Tova."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Gus must go with the thank-you: clue 1 rules out the poem; the drawing is already ruled out for $25; the riddle already goes with Tova."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the thank-you can still be only $75 or $100 and Tova can still be only $50, clue 2 means the thank-you cannot be $100."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The thank-you must go with $75: clue 2 rules out $25, $50, and $100."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6
+   ],
+   "text": "The poem must go with $100: clue 1 rules out $25; clue 6 rules out $50; $75 already goes with the thank-you."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Gus goes with the thank-you, so Gus also goes with $75."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Lena must go with $25: clue 3 rules out $100; $50 is already ruled out for the riddle; $75 already goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Jonah must go with $100: $50 is already ruled out for the riddle; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "$100 must go with cash: clue 3 rules out coin and money order; check is already ruled out for the poem."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The drawing goes with $25, so the drawing also goes with Lena."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Jonah must go with the poem: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Cash must go with the poem: the drawing is already ruled out for $25; the thank-you is already ruled out for $75; the riddle is already ruled out for $50."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Lena must go with check: clue 3 rules out coin and money order; cash is already ruled out for $25."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Tova must go with money order: clue 4 rules out coin; cash is already ruled out for the riddle; check already goes with Lena."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Gus must go with coin: check and cash are already ruled out for the thank-you; money order already goes with Tova."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Jonah must go with cash: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Check must go with the drawing: clue 5 rules out the poem and the thank-you; the riddle is already ruled out for Tova."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Coin must go with the thank-you: the riddle is already ruled out for Tova; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Money order must go with the riddle: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Check must go with $25: $50 is already ruled out for the riddle; $75 is already ruled out for the thank-you; $100 is already ruled out for the poem."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Coin must go with $75: clue 3 rules out $100; $50 is already ruled out for the riddle; $25 already goes with check."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Money order must go with $50: clue 3 rules out $100; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 50,
+  "score": 133,
+  "revisits": 3,
+  "transfer": 20,
+  "trial": 0,
+  "clue_steps": 8
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Lena",
+   "check",
+   "drawing",
+   "$25"
+  ],
+  [
+   "Jonah",
+   "cash",
+   "poem",
+   "$100"
+  ],
+  [
+   "Tova",
+   "money order",
+   "riddle",
+   "$50"
+  ],
+  [
+   "Gus",
+   "coin",
+   "thank-you",
+   "$75"
+  ]
+ ],
+ "score": 133
+}

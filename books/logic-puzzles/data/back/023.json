@@ -1,0 +1,51 @@
+{
+ "no": 23,
+ "clues": [
+  {
+   "kind": "pair",
+   "people": [
+    "Passenger=Otis",
+    "Passenger=Yusuf"
+   ],
+   "options": [
+    "Item=novel",
+    "Item=sun hat"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Passenger=Yusuf",
+    "Passenger=Carmen"
+   ],
+   "options": [
+    "Item=scarf",
+    "Item=sun hat"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Passenger=Linus",
+   "b": "Deck=foredeck"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Passenger=Otis",
+    "Passenger=Carmen"
+   ],
+   "options": [
+    "Deck=upper deck",
+    "Deck=aft deck"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Item=novel",
+   "one_of": [
+    "Deck=lower deck",
+    "Deck=aft deck"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,690 @@
+{
+ "no": 88,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 88002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Fast Clock",
+ "story": "Jonah sets his watch by the big clock over the ferry dock, so when someone nudged it ten minutes fast, the ferry left early and stranded the town moderator on the dock, briefcase in hand. The clock hangs too high to reach without something to stand on. Five people came by the dock the evening before, each carrying something different and wearing a different hat. Who set the clock ahead?",
+ "question": {
+  "text": "Who set the dock clock fast?",
+  "cat": "Carried",
+  "value": "step stool"
+ },
+ "answer": "Kit",
+ "cast": [
+  "Rosa",
+  "Otis",
+  "Jonah"
+ ],
+ "state": {
+  "theme": {
+   "slot": 88,
+   "title": "The Case of the Fast Clock",
+   "story": "Jonah sets his watch by the big clock over the ferry dock, so when someone nudged it ten minutes fast, the ferry left early and stranded the town moderator on the dock, briefcase in hand. The clock hangs too high to reach without something to stand on. Five people came by the dock the evening before, each carrying something different and wearing a different hat. Who set the clock ahead?",
+   "entity": [
+    "visitor",
+    "visitors"
+   ],
+   "cast": [
+    "Rosa",
+    "Otis",
+    "Jonah"
+   ],
+   "question": {
+    "text": "Who set the dock clock fast?",
+    "cat": "Carried",
+    "value": "step stool"
+   }
+  },
+  "cats": [
+   {
+    "label": "Visitor",
+    "kind": "name",
+    "values": [
+     "Amara",
+     "Rosa",
+     "Kit",
+     "Vito",
+     "Otis"
+    ]
+   },
+   {
+    "label": "Carried",
+    "values": [
+     "toolbox",
+     "umbrella",
+     "basket",
+     "lantern",
+     "step stool"
+    ],
+    "ref": "the person with the {v}",
+    "pred": "carried the {v}",
+    "neg": "did not carry the {v}",
+    "either": "carried either the {a} or the {b}",
+    "nor": "carried neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Hat",
+    "values": [
+     "beret",
+     "cap",
+     "beanie",
+     "fedora",
+     "bonnet"
+    ],
+    "ref": "the person in the {v}",
+    "pred": "wore the {v}",
+    "neg": "did not wear the {v}",
+    "either": "wore either the {a} or the {b}",
+    "nor": "wore neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1080,
+     1110,
+     1140,
+     1170,
+     1200
+    ],
+    "labels": [
+     "6:00 p.m.",
+     "6:30 p.m.",
+     "7:00 p.m.",
+     "7:30 p.m.",
+     "8:00 p.m."
+    ],
+    "ref": "the {x} visitor",
+    "pred": "came by at {x}",
+    "neg": "did not come by at {x}",
+    "either": "came by at either {a} or {b}",
+    "nor": "came by at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "came by later than {y}",
+    "less": "came by earlier than {y}",
+    "dmore": "came by exactly {d} after {y}",
+    "dless": "came by exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "came by half an hour after {y}",
+    "dless1": "came by half an hour before {y}",
+    "step": 30,
+    "values": [
+     "6:00 p.m.",
+     "6:30 p.m.",
+     "7:00 p.m.",
+     "7:30 p.m.",
+     "8:00 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   0,
+   4,
+   1,
+   3
+  ],
+  [
+   3,
+   1,
+   0,
+   2,
+   4
+  ],
+  [
+   3,
+   2,
+   1,
+   4,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 4
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the person in the beret and the 7:00 p.m. visitor, one is Kit and the other is Rosa.",
+  "The person in the beret is either Amara or Kit.",
+  "The person in the cap came by earlier than the person with the basket.",
+  "Of Vito and the person with the lantern, one wore the bonnet and the other wore the beanie.",
+  "Of Otis and the person with the toolbox, one wore the bonnet and the other wore the cap.",
+  "The person with the umbrella wore neither the beret nor the fedora.",
+  "Otis came by exactly 120 minutes before the person with the umbrella.",
+  "The person in the fedora came by later than the person in the beret."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 means the cap cannot be 8:00 p.m. and the basket cannot be 6:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 means the umbrella cannot be 6:00 p.m., 6:30 p.m., 7:00 p.m., or 7:30 p.m. and Otis cannot be 6:30 p.m., 7:00 p.m., 7:30 p.m., or 8:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Otis must go with 6:00 p.m.: clue 7 rules out 6:30 p.m., 7:00 p.m., 7:30 p.m., and 8:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The umbrella must go with 8:00 p.m.: clue 7 rules out 6:00 p.m., 6:30 p.m., 7:00 p.m., and 7:30 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the cap can still be only 6:00 p.m., 6:30 p.m., 7:00 p.m., or 7:30 p.m. and the basket can still be only 6:30 p.m., 7:00 p.m., or 7:30 p.m., clue 3 means the cap cannot be 7:30 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since the fedora can still be only 6:00 p.m., 6:30 p.m., 7:00 p.m., or 7:30 p.m. and the beret can still be only 6:30 p.m., 7:00 p.m., or 7:30 p.m., clue 8 means the fedora cannot be 6:00 p.m. or 6:30 p.m. and the beret cannot be 7:30 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The beret must go with Kit: clue 1 rules out Amara; clue 2 rules out Rosa, Vito, and Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    8
+   ],
+   "text": "The beret must go with 6:30 p.m.: clue 1 rules out 7:00 p.m.; clue 8 rules out 7:30 p.m.; 6:00 p.m. is already ruled out for Otis; 8:00 p.m. is already ruled out for the umbrella."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Kit goes with the beret, so Kit also goes with 6:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    7
+   ],
+   "text": "7:00 p.m. must go with Rosa: clue 1 rules out Amara and Vito; clue 7 rules out Otis; Kit already goes with 6:30 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    5,
+    6
+   ],
+   "text": "SUPPOSE TEST: try Otis with the cap.",
+   "chain": [
+    "Suppose Otis goes with the cap.",
+    "6:00 p.m. goes with Otis, so 6:00 p.m. also goes with the cap.",
+    "The toolbox must go with the bonnet: clue 5 rules out the beret, the beanie, and the fedora; the cap is already ruled out for Otis.",
+    "The umbrella must go with the beanie: clue 6 rules out the beret and the fedora; the cap is already ruled out for 8:00 p.m.; the bonnet already goes with the toolbox.",
+    "But then the lantern has no hat left."
+   ],
+   "result": "So Otis does NOT go with the cap: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    5
+   ],
+   "text": "Otis must go with the bonnet: clue 2 rules out the beret; the Suppose test ruled out the cap; clue 5 rules out the beanie; the fedora is already ruled out for 6:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Vito must go with the beanie: clue 2 rules out the beret; clue 4 rules out the cap and the fedora; the bonnet already goes with Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The cap must go with 7:00 p.m.: clue 3 rules out 7:30 p.m. and 8:00 p.m.; 6:00 p.m. is already ruled out for Otis; 6:30 p.m. already goes with the beret."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The fedora must go with 7:30 p.m.: clue 8 rules out 6:00 p.m. and 6:30 p.m.; 8:00 p.m. is already ruled out for the umbrella; 7:00 p.m. already goes with the cap."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The beanie must go with 8:00 p.m.: 6:00 p.m. is already ruled out for Otis; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The bonnet must go with 6:00 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The umbrella goes with 8:00 p.m., so the umbrella also goes with the beanie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The lantern must go with the bonnet: clue 4 rules out the beret, the cap, and the fedora; the beanie already goes with the umbrella."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The toolbox must go with the cap: clue 5 rules out the beret, the beanie, and the fedora; the bonnet already goes with the lantern."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Rosa goes with 7:00 p.m., so Rosa also goes with the cap."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Amara must go with the fedora: clue 1 rules out the beret; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Otis goes with the bonnet, so Otis also goes with the lantern."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:00 p.m. goes with Otis, so 6:00 p.m. also goes with the lantern."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Vito goes with the beanie, so Vito also goes with the umbrella."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Amara must go with 7:30 p.m.: clue 1 rules out 7:00 p.m.; 8:00 p.m. is already ruled out for the umbrella; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Vito must go with 8:00 p.m.: clue 1 rules out 7:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "7:00 p.m. goes with the cap, so 7:00 p.m. also goes with the toolbox."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Rosa goes with 7:00 p.m., so Rosa also goes with the toolbox."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the cap can still be only 7:00 p.m. and the basket can still be only 6:30 p.m. or 7:30 p.m., clue 3 means the basket cannot be 6:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The basket must go with 7:30 p.m.: clue 3 rules out 6:00 p.m. and 6:30 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The step stool must go with 6:30 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The basket must go with the fedora: clue 3 rules out the cap; the beret is already ruled out for 6:30 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The step stool must go with the beret: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Kit must go with the step stool: the toolbox, the umbrella, the basket, and the lantern are already ruled out for the beret."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Amara must go with the basket: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 63,
+  "score": 182,
+  "revisits": 4,
+  "transfer": 28,
+  "trial": 1,
+  "clue_steps": 11
+ },
+ "trial_chain": 5,
+ "table": [
+  [
+   "Amara",
+   "basket",
+   "fedora",
+   "7:30 p.m."
+  ],
+  [
+   "Rosa",
+   "toolbox",
+   "cap",
+   "7:00 p.m."
+  ],
+  [
+   "Kit",
+   "step stool",
+   "beret",
+   "6:30 p.m."
+  ],
+  [
+   "Vito",
+   "umbrella",
+   "beanie",
+   "8:00 p.m."
+  ],
+  [
+   "Otis",
+   "lantern",
+   "bonnet",
+   "6:00 p.m."
+  ]
+ ],
+ "score": 182
+}

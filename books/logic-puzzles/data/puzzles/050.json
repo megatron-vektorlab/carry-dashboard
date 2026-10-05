@@ -1,0 +1,91 @@
+{
+ "no": 50,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 50000,
+ "kind": "liars",
+ "title": "Who Sounded the Ferry Horn?",
+ "story": "At the stroke of midnight, the ferry's horn let out one long, tremendous blast and woke half the harbor. Jonah was home asleep with Pilot the beagle at his feet, and only three other people have a key to the wheelhouse. Each of them has made one statement. Can you give Jonah a name before the 7:30 sailing?",
+ "cast": [
+  "Otis",
+  "Jonah"
+ ],
+ "names": [
+  "Otis",
+  "Jade",
+  "Vito"
+ ],
+ "did": "sounded the ferry horn",
+ "didnt": "didn't sound the ferry horn",
+ "statements": [
+  [
+   "or",
+   0,
+   2
+  ],
+  [
+   "or",
+   1,
+   2
+  ],
+  [
+   "nor",
+   1,
+   2
+  ]
+ ],
+ "texts": [
+  "Either Vito or I sounded the ferry horn.",
+  "Either Vito or I sounded the ferry horn.",
+  "Neither Jade nor I sounded the ferry horn."
+ ],
+ "rule": [
+  "exactly",
+  1
+ ],
+ "rule_text": "Exactly one of these statements is true.",
+ "culprit": "Jade",
+ "truth": [
+  false,
+  true,
+  false
+ ],
+ "cases": [
+  {
+   "case": "Otis",
+   "truth": [
+    "true",
+    "false",
+    "true"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Jade",
+   "truth": [
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 1,
+   "fits": true
+  },
+  {
+   "case": "Vito",
+   "truth": [
+    "true",
+    "true",
+    "false"
+   ],
+   "count": 2,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who sounded the ferry horn?"
+ },
+ "answer": "Jade",
+ "score": 30
+}

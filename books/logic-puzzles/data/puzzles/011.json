@@ -1,0 +1,287 @@
+{
+ "no": 11,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 11001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Regatta Pennants",
+ "story": "The Spring Regatta starts at ten sharp, and Otis has the starting horn in one hand and a mug of coffee in the other. Some of that coffee is now on the start sheet. Three sailors are flying three different pennants on three different boats, and Otis needs every line right before he sounds the horn. Can you match each sailor with a pennant and a boat?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Felix",
+  "Otis"
+ ],
+ "state": {
+  "theme": {
+   "slot": 11,
+   "title": "The Regatta Pennants",
+   "story": "The Spring Regatta starts at ten sharp, and Otis has the starting horn in one hand and a mug of coffee in the other. Some of that coffee is now on the start sheet. Three sailors are flying three different pennants on three different boats, and Otis needs every line right before he sounds the horn. Can you match each sailor with a pennant and a boat?",
+   "entity": [
+    "sailor",
+    "sailors"
+   ],
+   "cast": [
+    "Felix",
+    "Otis"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Sailor",
+    "kind": "name",
+    "values": [
+     "Felix",
+     "Selma",
+     "Arlo"
+    ]
+   },
+   {
+    "label": "Pennant",
+    "values": [
+     "red",
+     "blue",
+     "gold"
+    ],
+    "ref": "the sailor with the {v} pennant",
+    "pred": "flew the {v} pennant",
+    "neg": "did not fly the {v} pennant",
+    "either": "flew either the {a} or the {b} pennant",
+    "nor": "flew neither the {a} nor the {b} pennant",
+    "short": "the {v} pennant"
+   },
+   {
+    "label": "Boat",
+    "values": [
+     "sloop",
+     "catboat",
+     "dory"
+    ],
+    "ref": "the {v}'s skipper",
+    "pred": "sailed the {v}",
+    "neg": "did not sail the {v}",
+    "either": "sailed either the {a} or the {b}",
+    "nor": "sailed neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0
+  ],
+  [
+   0,
+   2,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The sailor with the red pennant sailed either the dory or the catboat.",
+  "The sailor with the gold pennant sailed the dory.",
+  "Arlo did not fly the gold pennant.",
+  "The sloop's skipper is neither Selma nor Arlo."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 says directly that the gold pennant goes with the dory."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The sloop must go with Felix: clue 4 rules out Selma and Arlo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The gold pennant must go with Selma: clue 3 rules out Arlo; Felix is already ruled out for the dory."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The dory goes with the gold pennant, so the dory also goes with Selma."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Arlo must go with the catboat: clue 4 rules out the sloop; the dory already goes with Selma."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The red pennant must go with the catboat: clue 1 rules out the sloop; the dory already goes with the gold pennant."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The blue pennant must go with the sloop: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Felix must go with the blue pennant: the red pennant is already ruled out for the sloop; the gold pennant is already ruled out for the dory."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Arlo must go with the red pennant: clue 3 rules out the gold pennant; the blue pennant already goes with Felix."
+  }
+ ],
+ "features": {
+  "steps": 14,
+  "score": 29,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Felix",
+   "blue",
+   "sloop"
+  ],
+  [
+   "Selma",
+   "gold",
+   "dory"
+  ],
+  [
+   "Arlo",
+   "red",
+   "catboat"
+  ]
+ ],
+ "score": 29
+}

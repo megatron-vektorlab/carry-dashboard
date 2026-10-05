@@ -1,0 +1,110 @@
+{
+ "no": 54,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 54000,
+ "kind": "liars",
+ "title": "Who Borrowed the Berry Rake?",
+ "story": "Mabel Fitch has won the Blueberry Festival picking contest three summers running, and she gives all the credit to her old berry rake. On festival morning, the rake was gone from its nail on her porch, and the contest starts at ten. Four neighbors walked past early, and each has a word to say about it. Mabel is sure it was only borrowed, but by whom?",
+ "cast": [
+  "Rosa",
+  "Mabel"
+ ],
+ "names": [
+  "Dot",
+  "Rosa",
+  "Enzo",
+  "Quinn"
+ ],
+ "did": "borrowed the berry rake",
+ "didnt": "didn't borrow the berry rake",
+ "statements": [
+  [
+   "not",
+   0
+  ],
+  [
+   "nor",
+   0,
+   2
+  ],
+  [
+   "not",
+   1
+  ],
+  [
+   "is",
+   2
+  ]
+ ],
+ "texts": [
+  "I didn't borrow the berry rake.",
+  "Neither Dot nor Enzo borrowed the berry rake.",
+  "Rosa didn't borrow the berry rake.",
+  "Enzo borrowed the berry rake."
+ ],
+ "rule": [
+  "exactly",
+  2
+ ],
+ "rule_text": "Exactly two of these statements are true.",
+ "culprit": "Rosa",
+ "truth": [
+  true,
+  true,
+  false,
+  false
+ ],
+ "cases": [
+  {
+   "case": "Dot",
+   "truth": [
+    "false",
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 1,
+   "fits": false
+  },
+  {
+   "case": "Rosa",
+   "truth": [
+    "true",
+    "true",
+    "false",
+    "false"
+   ],
+   "count": 2,
+   "fits": true
+  },
+  {
+   "case": "Enzo",
+   "truth": [
+    "true",
+    "false",
+    "true",
+    "true"
+   ],
+   "count": 3,
+   "fits": false
+  },
+  {
+   "case": "Quinn",
+   "truth": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "count": 3,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who borrowed the berry rake?"
+ },
+ "answer": "Rosa",
+ "score": 40
+}

@@ -1,0 +1,530 @@
+{
+ "no": 70,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 70001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Apple Pie Bake-Off",
+ "story": "Rosa judged the apple pie bake-off at the Salt & Sugar Bakery, and four pies came out of the ovens smelling like October itself. Each baker chose a different crust and a different spice, and each pie spent a different time in the oven. Rosa wants the secrets for her recipe box, and she has promised not to tell her sourdough starters. Who made which crust, with which spice, and how long did each pie bake?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Priya",
+  "Rosa"
+ ],
+ "state": {
+  "theme": {
+   "slot": 70,
+   "title": "The Apple Pie Bake-Off",
+   "story": "Rosa judged the apple pie bake-off at the Salt & Sugar Bakery, and four pies came out of the ovens smelling like October itself. Each baker chose a different crust and a different spice, and each pie spent a different time in the oven. Rosa wants the secrets for her recipe box, and she has promised not to tell her sourdough starters. Who made which crust, with which spice, and how long did each pie bake?",
+   "entity": [
+    "baker",
+    "bakers"
+   ],
+   "cast": [
+    "Priya",
+    "Rosa"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Baker",
+    "kind": "name",
+    "values": [
+     "Priya",
+     "Vito",
+     "Imani",
+     "Boris"
+    ]
+   },
+   {
+    "label": "Crust",
+    "values": [
+     "lattice",
+     "crumble",
+     "plain",
+     "braided"
+    ],
+    "ref": "the baker with the {v} crust",
+    "pred": "made a {v} crust",
+    "neg": "did not make a {v} crust",
+    "either": "made either a {a} or a {b} crust",
+    "nor": "made neither a {a} nor a {b} crust",
+    "short": "the {v} crust"
+   },
+   {
+    "label": "Spice",
+    "values": [
+     "cinnamon",
+     "nutmeg",
+     "ginger",
+     "cardamom"
+    ],
+    "ref": "the baker who added {v}",
+    "pred": "added {v}",
+    "neg": "did not add {v}",
+    "either": "added either {a} or {b}",
+    "nor": "added neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Bake",
+    "ordered": true,
+    "nums": [
+     40,
+     45,
+     50,
+     55
+    ],
+    "labels": [
+     "40 minutes",
+     "45 minutes",
+     "50 minutes",
+     "55 minutes"
+    ],
+    "ref": "the baker whose pie baked {x}",
+    "pred": "baked for {x}",
+    "neg": "did not bake for {x}",
+    "either": "baked for either {a} or {b}",
+    "nor": "baked for neither {a} nor {b}",
+    "short": "{x}",
+    "more": "baked longer than {y}",
+    "less": "baked for a shorter time than {y}",
+    "dmore": "baked exactly {d} longer than {y}",
+    "dless": "baked exactly {d} less than {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "baked exactly 5 minutes longer than {y}",
+    "dless1": "baked exactly 5 minutes less than {y}",
+    "step": 5,
+    "values": [
+     "40 minutes",
+     "45 minutes",
+     "50 minutes",
+     "55 minutes"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ],
+  [
+   3,
+   2,
+   0,
+   1
+  ],
+  [
+   2,
+   1,
+   0,
+   3
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the baker with the crumble crust and the baker whose pie baked 55 minutes, one added nutmeg and the other added ginger.",
+  "The baker who added cardamom baked longer than the baker who added ginger.",
+  "Imani baked for a shorter time than the baker with the lattice crust.",
+  "Priya did not make a plain crust.",
+  "The baker with the lattice crust baked exactly 5 minutes longer than the baker who added ginger.",
+  "Of Vito and the baker whose pie baked 40 minutes, one made a crumble crust and the other made a braided crust.",
+  "The baker with the lattice crust baked for 50 minutes."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 says directly that the lattice crust goes with 50 minutes."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means cardamom cannot be 40 minutes and ginger cannot be 55 minutes."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the lattice crust can still be only 50 minutes and Imani can still be only 40 minutes, 45 minutes, or 55 minutes, clue 3 means Imani cannot be 55 minutes."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the lattice crust can still be only 50 minutes and ginger can still be only 40 minutes or 45 minutes, clue 5 means ginger cannot be 40 minutes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    5
+   ],
+   "text": "Ginger must go with 45 minutes: clue 5 rules out 40 minutes; clue 2 rules out 55 minutes; 50 minutes is already ruled out for the lattice crust."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Cardamom must go with 50 minutes: clue 2 rules out 40 minutes; clue 1 rules out 55 minutes; 45 minutes already goes with ginger."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Cinnamon must go with 40 minutes: clue 1 rules out 55 minutes; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nutmeg must go with 55 minutes: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The lattice crust must go with cardamom: clue 5 rules out ginger; cinnamon and nutmeg are already ruled out for 50 minutes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The crumble crust must go with 45 minutes: clue 1 rules out 55 minutes; 40 minutes is already ruled out for cinnamon; 50 minutes already goes with the lattice crust."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Ginger goes with 45 minutes, so ginger also goes with the crumble crust."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The plain crust must go with 55 minutes: clue 6 rules out 40 minutes; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The braided crust must go with 40 minutes: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The plain crust must go with nutmeg: cinnamon is already ruled out for 40 minutes; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The braided crust must go with cinnamon: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Vito must go with 45 minutes: clue 6 rules out 40 minutes; 50 minutes is already ruled out for the lattice crust; 55 minutes is already ruled out for the plain crust."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Imani must go with 40 minutes: clue 3 rules out 55 minutes; 50 minutes is already ruled out for the lattice crust; 45 minutes already goes with Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with 50 minutes: 55 minutes is already ruled out for the plain crust; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Boris must go with 55 minutes: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The lattice crust goes with 50 minutes, so the lattice crust also goes with Priya."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Ginger goes with 45 minutes, so ginger also goes with Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Imani must go with cinnamon: nutmeg is already ruled out for 55 minutes; cardamom is already ruled out for 50 minutes; ginger already goes with Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Priya must go with cardamom: nutmeg is already ruled out for 55 minutes; ginger is already ruled out for 45 minutes; cinnamon already goes with Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Boris must go with nutmeg: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The crumble crust goes with 45 minutes, so the crumble crust also goes with Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Imani must go with the braided crust: clue 3 rules out the lattice crust; the plain crust is already ruled out for 55 minutes; the crumble crust already goes with Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Boris must go with the plain crust: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 48,
+  "score": 128,
+  "revisits": 2,
+  "transfer": 20,
+  "trial": 0,
+  "clue_steps": 7
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Priya",
+   "lattice",
+   "cardamom",
+   "50 minutes"
+  ],
+  [
+   "Vito",
+   "crumble",
+   "ginger",
+   "45 minutes"
+  ],
+  [
+   "Imani",
+   "braided",
+   "cinnamon",
+   "40 minutes"
+  ],
+  [
+   "Boris",
+   "plain",
+   "nutmeg",
+   "55 minutes"
+  ]
+ ],
+ "score": 128
+}

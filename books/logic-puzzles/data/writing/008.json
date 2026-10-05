@@ -1,0 +1,24 @@
+{
+ "no": 8,
+ "clues": [
+  "Bubbles went home with either Enzo or Quinn.",
+  "Wren's jar held either Admiral or Barnacle.",
+  "Quinn adopted Barnacle."
+ ],
+ "hints": [
+  "Look down the Bubbles column. Clue 1 names two possible students. Is one of them already spoken for?",
+  "Clue 3 gives Quinn a dot for Barnacle, and that dot crosses out Bubbles in Quinn's row. Now clue 1 has only one name left.",
+  "So Enzo took home Bubbles. Then clue 2 leaves Wren only Admiral, and Dev took Pip."
+ ],
+ "solution": {
+  "key_idea": "Clue 1 offers Bubbles to Enzo or Quinn, and Quinn already has Barnacle, so Bubbles went home with Enzo.",
+  "steps": [
+   "Clue 3 gives Quinn Barnacle, so Quinn has no other starter and nobody else has Barnacle.",
+   "Clue 1 says Bubbles went to Enzo or Quinn. Quinn is taken, so Enzo took Bubbles.",
+   "Clue 2 gives Wren Admiral or Barnacle. Barnacle is Quinn's, so Wren took Admiral.",
+   "Dev took Pip."
+  ],
+  "epilogue": "Wren took home Admiral, Dev took Pip, Quinn took Barnacle, and Enzo took Bubbles. Rosa mailed each of them a card with their starter's birthday on it."
+ },
+ "tip": "If a clue offers two choices and one is already taken, the other is your answer."
+}

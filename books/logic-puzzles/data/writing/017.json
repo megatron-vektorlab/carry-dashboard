@@ -1,0 +1,27 @@
+{
+ "no": 17,
+ "clues": [
+  "The pie was not Rosa's.",
+  "Neither Rosa nor Elsa brought the custard.",
+  "Whoever brought the ice cream baked either the pie or the shortcake.",
+  "Rosa's topping was either the ice cream or the custard.",
+  "The honey did not come from the crumble's baker."
+ ],
+ "hints": [
+  "Look at the box that matches desserts with toppings. Which topping could go with the crumble?",
+  "Clues 3 and 5 both keep a topping off the crumble. Put them together: how many toppings are left for it?",
+  "Clues 3 and 5 leave the crumble only the custard. Clue 2 gives the custard to Walt, so carry the dot: Walt baked the crumble."
+ ],
+ "solution": {
+  "key_idea": "Clues 3 and 5 leave the crumble only the custard, which is Walt's, so Walt baked the crumble.",
+  "steps": [
+   "Clue 2 rules out Rosa and Elsa for the custard, so Walt brought it.",
+   "Clue 3 rules out the ice cream for the crumble, and clue 5 rules out the honey. So the crumble came with the custard.",
+   "Walt brought the custard, so Walt baked the crumble.",
+   "Clue 1 rules out the pie for Rosa, so Rosa baked the shortcake, and Elsa baked the pie.",
+   "Clue 4 gives Rosa the ice cream or the custard. The custard is Walt's, so Rosa brought the ice cream, and Elsa the honey."
+  ],
+  "epilogue": "Rosa's shortcake wore the ice cream, Walt's crumble came with custard, and Elsa's pie got the honey. Hattie moved every place card and crossed one more item off her list."
+ },
+ "tip": "A clue that names no one still counts. Use the box without names."
+}

@@ -1,0 +1,42 @@
+{
+ "no": 42,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Book=poems",
+   "one_of": [
+    "Volunteer=Olive",
+    "Volunteer=Kenji"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Volunteer=Wren",
+    "Volunteer=Kenji"
+   ],
+   "options": [
+    "Week=July 8",
+    "Week=July 15"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Volunteer=Olive",
+    "Week=July 29"
+   ],
+   "options": [
+    "Book=pirate tale",
+    "Book=poems"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Volunteer=Wren",
+   "b": "Book=fairy tale",
+   "cat": "Week",
+   "rel": "a_less"
+  }
+ ]
+}

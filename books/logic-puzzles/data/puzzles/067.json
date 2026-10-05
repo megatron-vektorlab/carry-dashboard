@@ -1,0 +1,646 @@
+{
+ "no": 67,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 67002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Corn Maze Chalkboard",
+ "story": "Hilltop Orchard's corn maze has four ways in: two gates, the old barn door, and a gap beside the scarecrow. Four friends each took a different one and chose a different snack at the exit. The farmer chalked their times on the board, and then a squall washed it clean. Jonah, who keeps his ferry on time to the minute, had left his watch at home. Who went in where, with which snack, and how fast?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Jonah"
+ ],
+ "state": {
+  "theme": {
+   "slot": 67,
+   "title": "The Corn Maze Chalkboard",
+   "story": "Hilltop Orchard's corn maze has four ways in: two gates, the old barn door, and a gap beside the scarecrow. Four friends each took a different one and chose a different snack at the exit. The farmer chalked their times on the board, and then a squall washed it clean. Jonah, who keeps his ferry on time to the minute, had left his watch at home. Who went in where, with which snack, and how fast?",
+   "entity": [
+    "friend",
+    "friends"
+   ],
+   "cast": [
+    "Jonah"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Friend",
+    "kind": "name",
+    "values": [
+     "Jonah",
+     "Faye",
+     "Quinn",
+     "Hal"
+    ]
+   },
+   {
+    "label": "Entrance",
+    "values": [
+     "north gate",
+     "south gate",
+     "barn door",
+     "scarecrow"
+    ],
+    "ref": "the friend who went in by the {v}",
+    "pred": "went in by the {v}",
+    "neg": "did not go in by the {v}",
+    "either": "went in by either the {a} or the {b}",
+    "nor": "went in by neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Snack",
+    "values": [
+     "cider",
+     "kettle corn",
+     "candy apple",
+     "donut"
+    ],
+    "ref": "the friend who chose the {v}",
+    "pred": "chose the {v}",
+    "neg": "did not choose the {v}",
+    "either": "chose either the {a} or the {b}",
+    "nor": "chose neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     20,
+     25,
+     30,
+     35
+    ],
+    "labels": [
+     "20 minutes",
+     "25 minutes",
+     "30 minutes",
+     "35 minutes"
+    ],
+    "ref": "the friend who took {x}",
+    "pred": "finished the maze in {x}",
+    "neg": "did not finish the maze in {x}",
+    "either": "finished the maze in either {a} or {b}",
+    "nor": "finished the maze in neither {a} nor {b}",
+    "short": "{x}",
+    "more": "took longer than {y}",
+    "less": "finished faster than {y}",
+    "dmore": "took exactly {d} longer than {y}",
+    "dless": "finished exactly {d} faster than {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "took just 5 minutes longer than {y}",
+    "dless1": "finished just 5 minutes faster than {y}",
+    "step": 5,
+    "values": [
+     "20 minutes",
+     "25 minutes",
+     "30 minutes",
+     "35 minutes"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   1,
+   0,
+   3
+  ],
+  [
+   2,
+   1,
+   0,
+   3
+  ],
+  [
+   2,
+   3,
+   0,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The friend who went in by the scarecrow finished faster than the friend who went in by the barn door.",
+  "Quinn did not choose the kettle corn.",
+  "The friend who went in by the barn door finished the maze in either 20 minutes or 30 minutes.",
+  "Quinn finished faster than Jonah.",
+  "The friend who went in by the north gate chose neither the kettle corn nor the donut.",
+  "Of the friend who went in by the south gate and the friend who took 25 minutes, one chose the donut and the other chose the kettle corn.",
+  "The friend who took 25 minutes chose either the donut or the candy apple.",
+  "The friend who took 30 minutes is either Quinn or Jonah.",
+  "The friend who chose the candy apple finished the maze in either 30 minutes or 35 minutes.",
+  "Of the friend who took 20 minutes and the friend who took 35 minutes, one is Quinn and the other is Faye."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7,
+    9
+   ],
+   "text": "25 minutes must go with the donut: clue 7 rules out the cider and the kettle corn; clue 9 rules out the candy apple."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the barn door can still be only 20 minutes or 30 minutes, clue 1 means the scarecrow cannot be 30 minutes or 35 minutes and the barn door cannot be 20 minutes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "The barn door must go with 30 minutes: clue 1 rules out 20 minutes; clue 3 rules out 25 minutes and 35 minutes."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means Quinn cannot be 35 minutes and Jonah cannot be 20 minutes."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    6
+   ],
+   "text": "25 minutes must go with the scarecrow: clue 6 rules out the south gate; clue 3 rules out the barn door; the north gate is already ruled out for the donut."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The south gate must go with the kettle corn: clue 6 rules out the cider and the candy apple; the donut is already ruled out for 25 minutes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The donut must go with the scarecrow: clue 5 rules out the north gate; the south gate and the barn door are already ruled out for 25 minutes."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    10
+   ],
+   "text": "Clue 10 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    10
+   ],
+   "text": "Quinn must go with 20 minutes: clue 10 rules out 25 minutes and 30 minutes; clue 4 rules out 35 minutes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8,
+    10
+   ],
+   "text": "Faye must go with 35 minutes: clue 10 rules out 25 minutes; clue 8 rules out 30 minutes; 20 minutes already goes with Quinn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8,
+    10
+   ],
+   "text": "Hal must go with 25 minutes: clue 10 rules out 20 minutes and 35 minutes; clue 8 rules out 30 minutes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    10
+   ],
+   "text": "Jonah must go with 30 minutes: clue 4 rules out 20 minutes; clue 10 rules out 35 minutes; 25 minutes already goes with Hal."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The donut must go with Hal: Jonah, Faye, and Quinn are already ruled out for 25 minutes."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The barn door goes with 30 minutes, so the barn door also goes with Jonah."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Quinn must go with the north gate: the south gate is already ruled out for the kettle corn; the scarecrow is already ruled out for 25 minutes; the barn door already goes with Jonah."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Faye must go with the south gate: the barn door is already ruled out for 30 minutes; the scarecrow is already ruled out for 25 minutes; the north gate already goes with Quinn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hal must go with the scarecrow: the barn door is already ruled out for 30 minutes; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The kettle corn must go with Faye: clue 2 rules out Quinn; Jonah is already ruled out for the south gate; Hal already goes with the donut."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "20 minutes goes with Quinn, so 20 minutes also goes with the north gate."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The south gate must go with 35 minutes: clue 6 rules out 25 minutes; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The kettle corn must go with 35 minutes: clue 7 rules out 25 minutes; 20 minutes is already ruled out for the south gate; 30 minutes is already ruled out for the barn door."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "The candy apple must go with 30 minutes: clue 9 rules out 20 minutes and 25 minutes; 35 minutes already goes with the kettle corn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The cider must go with 20 minutes: clue 7 rules out 25 minutes; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The barn door must go with the candy apple: the cider is already ruled out for 30 minutes; the donut is already ruled out for 25 minutes; the kettle corn already goes with the south gate."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The north gate must go with the cider: clue 5 rules out the kettle corn and the donut; the candy apple already goes with the barn door."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Quinn goes with 20 minutes, so Quinn also goes with the cider."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Jonah must go with the candy apple: the kettle corn is already ruled out for the south gate; the donut is already ruled out for 25 minutes; the cider already goes with Quinn."
+  }
+ ],
+ "features": {
+  "steps": 49,
+  "score": 126,
+  "revisits": 0,
+  "transfer": 18,
+  "trial": 0,
+  "clue_steps": 8
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Jonah",
+   "barn door",
+   "candy apple",
+   "30 minutes"
+  ],
+  [
+   "Faye",
+   "south gate",
+   "kettle corn",
+   "35 minutes"
+  ],
+  [
+   "Quinn",
+   "north gate",
+   "cider",
+   "20 minutes"
+  ],
+  [
+   "Hal",
+   "scarecrow",
+   "donut",
+   "25 minutes"
+  ]
+ ],
+ "score": 126
+}

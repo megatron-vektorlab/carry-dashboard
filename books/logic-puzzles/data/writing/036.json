@@ -1,0 +1,26 @@
+{
+ "no": 36,
+ "clues": [
+  "Amara's blanket was somewhere to the right of Pablo's.",
+  "Pablo sat exactly three blankets to the right of Lena.",
+  "Tova sat exactly three blankets to the left of Amara."
+ ],
+ "hints": [
+  "Look at clue 2. In a row of only five blankets, which pairs of spots are exactly three apart?",
+  "Count the exact gap, and remember that comparisons rule out the ends. Which of Pablo's possible spots leaves room for Amara on his right?",
+  "Clue 1 keeps Pablo off the fifth blanket, so by clue 2 Pablo sat fourth and Lena first. Then Amara took the fifth blanket."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 leaves Pablo the fourth or fifth blanket, and clue 1 needs room for Amara on his right, so Pablo sat fourth.",
+  "steps": [
+   "By clue 2, Pablo sat exactly three blankets right of Lena, so Pablo was fourth or fifth.",
+   "By clue 1, Amara sat somewhere to Pablo's right, so Pablo was not fifth. He sat fourth, and Lena sat first.",
+   "Amara, to the right of Pablo, sat on the fifth blanket.",
+   "By clue 3, Tova sat three blankets left of Amara, on the second blanket.",
+   "Gus took the third blanket, right in the middle."
+  ],
+  "epilogue": "The caption ran Lena, Tova, Gus, Pablo and Amara, left to right. Gus, in the middle, told anyone who would listen that his knee had called the clear sky."
+ },
+ "tip": "In a row of five, a gap of exactly three fits only two ways.",
+ "answer_line": null
+}

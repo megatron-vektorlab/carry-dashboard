@@ -1,0 +1,18 @@
+{
+ "no": 3,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Lunch=chowder",
+   "one_of": [
+    "Worker=Ivan",
+    "Worker=Tova"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Worker=Tova",
+   "b": "Lunch=egg salad"
+  }
+ ]
+}

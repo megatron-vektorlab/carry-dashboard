@@ -1,0 +1,511 @@
+{
+ "no": 66,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 66003,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Harvest Supper Arrivals",
+ "story": "Of all the nights on Hattie's clipboard, the harvest supper is the biggest. Her four cooks arrived fifteen minutes apart, each with a different dish carried in a different way, and Hattie wrote down every detail on the one sheet she now cannot find. The doors of St. Brendan's Church Hall open at six, and the table plan is still blank. Who brought what, how, and when?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Rosa",
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 66,
+   "title": "The Harvest Supper Arrivals",
+   "story": "Of all the nights on Hattie's clipboard, the harvest supper is the biggest. Her four cooks arrived fifteen minutes apart, each with a different dish carried in a different way, and Hattie wrote down every detail on the one sheet she now cannot find. The doors of St. Brendan's Church Hall open at six, and the table plan is still blank. Who brought what, how, and when?",
+   "entity": [
+    "cook",
+    "cooks"
+   ],
+   "cast": [
+    "Rosa",
+    "Hattie"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Cook",
+    "kind": "name",
+    "values": [
+     "Rosa",
+     "Lou",
+     "Selma",
+     "Dev"
+    ]
+   },
+   {
+    "label": "Dish",
+    "values": [
+     "squash soup",
+     "cornbread",
+     "baked beans",
+     "apple crisp"
+    ],
+    "ref": "the cook who brought the {v}",
+    "pred": "brought the {v}",
+    "neg": "did not bring the {v}",
+    "either": "brought either the {a} or the {b}",
+    "nor": "brought neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Carrier",
+    "values": [
+     "basket",
+     "wagon",
+     "tote bag",
+     "box"
+    ],
+    "ref": "the cook with the {v}",
+    "pred": "came with a {v}",
+    "neg": "did not come with a {v}",
+    "either": "came with either a {a} or a {b}",
+    "nor": "came with neither a {a} nor a {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Arrival",
+    "ordered": true,
+    "nums": [
+     0,
+     15,
+     30,
+     45
+    ],
+    "labels": [
+     "5:00 p.m.",
+     "5:15 p.m.",
+     "5:30 p.m.",
+     "5:45 p.m."
+    ],
+    "ref": "the cook who arrived at {x}",
+    "pred": "arrived at {x}",
+    "neg": "did not arrive at {x}",
+    "either": "arrived at either {a} or {b}",
+    "nor": "arrived at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "arrived later than {y}",
+    "less": "arrived earlier than {y}",
+    "dmore": "arrived exactly {d} after {y}",
+    "dless": "arrived exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "arrived just 15 minutes after {y}",
+    "dless1": "arrived just 15 minutes before {y}",
+    "step": 15,
+    "values": [
+     "5:00 p.m.",
+     "5:15 p.m.",
+     "5:30 p.m.",
+     "5:45 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   2,
+   0,
+   3
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ],
+  [
+   1,
+   0,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  }
+ ],
+ "texts": [
+  "Dev arrived exactly 30 minutes after the cook with the wagon.",
+  "Lou arrived exactly 45 minutes before the cook who brought the squash soup.",
+  "The cook with the basket is either Rosa or Selma.",
+  "Rosa arrived earlier than the cook who brought the apple crisp.",
+  "Rosa did not bring the baked beans.",
+  "The cook with the box arrived exactly 30 minutes after the cook with the basket."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means Dev cannot be 5:00 p.m. or 5:15 p.m. and the wagon cannot be 5:30 p.m. or 5:45 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the squash soup cannot be 5:00 p.m., 5:15 p.m., or 5:30 p.m. and Lou cannot be 5:15 p.m., 5:30 p.m., or 5:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Lou must go with 5:00 p.m.: clue 2 rules out 5:15 p.m., 5:30 p.m., and 5:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The squash soup must go with 5:45 p.m.: clue 2 rules out 5:00 p.m., 5:15 p.m., and 5:30 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Rosa can still be only 5:15 p.m., 5:30 p.m., or 5:45 p.m. and the apple crisp can still be only 5:00 p.m., 5:15 p.m., or 5:30 p.m., clue 4 means Rosa cannot be 5:30 p.m. or 5:45 p.m. and the apple crisp cannot be 5:00 p.m. or 5:15 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Rosa must go with 5:15 p.m.: clue 4 rules out 5:30 p.m. and 5:45 p.m.; 5:00 p.m. already goes with Lou."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The apple crisp must go with 5:30 p.m.: clue 4 rules out 5:00 p.m. and 5:15 p.m.; 5:45 p.m. already goes with the squash soup."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    5
+   ],
+   "text": "Rosa must go with the cornbread: clue 5 rules out the baked beans; clue 4 rules out the apple crisp; the squash soup is already ruled out for 5:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Lou must go with the baked beans: clue 2 rules out the squash soup; the apple crisp is already ruled out for 5:00 p.m.; the cornbread already goes with Rosa."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The cornbread must go with 5:15 p.m.: 5:00 p.m. is already ruled out for Lou; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The baked beans must go with 5:00 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since the basket can still be only 5:15 p.m., 5:30 p.m., or 5:45 p.m., clue 6 means the box cannot be 5:00 p.m., 5:15 p.m., or 5:30 p.m. and the basket cannot be 5:30 p.m. or 5:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The basket must go with 5:15 p.m.: clue 6 rules out 5:30 p.m. and 5:45 p.m.; 5:00 p.m. is already ruled out for Lou."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The wagon must go with 5:00 p.m.: clue 1 rules out 5:30 p.m. and 5:45 p.m.; 5:15 p.m. already goes with the basket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The box must go with 5:45 p.m.: clue 6 rules out 5:00 p.m., 5:15 p.m., and 5:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The tote bag must go with 5:30 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Lou goes with 5:00 p.m., so Lou also goes with the wagon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The squash soup must go with the box: the basket, the wagon, and the tote bag are already ruled out for 5:45 p.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Rosa goes with 5:15 p.m., so Rosa also goes with the basket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The apple crisp must go with the tote bag: the basket and the wagon are already ruled out for 5:30 p.m.; the box already goes with the squash soup."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The baked beans must go with the wagon: the basket is already ruled out for Lou; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The cornbread must go with the basket: the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Dev can still be only 5:30 p.m. or 5:45 p.m. and the wagon can still be only 5:00 p.m., clue 1 means Dev cannot be 5:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Dev must go with 5:30 p.m.: clue 1 rules out 5:00 p.m., 5:15 p.m., and 5:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Selma must go with 5:45 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The squash soup goes with 5:45 p.m., so the squash soup also goes with Selma."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Dev must go with the apple crisp: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The box goes with 5:45 p.m., so the box also goes with Selma."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "Dev must go with the tote bag: clue 3 rules out the basket; clue 1 rules out the wagon; the box already goes with Selma."
+  }
+ ],
+ "features": {
+  "steps": 44,
+  "score": 118,
+  "revisits": 4,
+  "transfer": 14,
+  "trial": 0,
+  "clue_steps": 9
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Rosa",
+   "cornbread",
+   "basket",
+   "5:15 p.m."
+  ],
+  [
+   "Lou",
+   "baked beans",
+   "wagon",
+   "5:00 p.m."
+  ],
+  [
+   "Selma",
+   "squash soup",
+   "box",
+   "5:45 p.m."
+  ],
+  [
+   "Dev",
+   "apple crisp",
+   "tote bag",
+   "5:30 p.m."
+  ]
+ ],
+ "score": 118
+}

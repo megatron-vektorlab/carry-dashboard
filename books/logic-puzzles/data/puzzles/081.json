@@ -1,0 +1,752 @@
+{
+ "no": 81,
+ "chapter": 6,
+ "family": "case54",
+ "stars": 4,
+ "seed": 81002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Recipe Card",
+ "story": "Rosa's great-grandmother's cranberry bread recipe, in faded pencil on a card, has hung on the bakery corkboard for years. On Saturday morning it vanished, and Rosa swears even Gloria, her sourdough starter, looks worried. Five customers came in that morning, each at a different time, each ordering something different and sitting somewhere different. The corkboard hangs right beside the window table, out of reach of every other seat. Who pocketed the recipe card?",
+ "question": {
+  "text": "Who pocketed the recipe card?",
+  "cat": "Seat",
+  "value": "window"
+ },
+ "answer": "Lou",
+ "cast": [
+  "Priya",
+  "Mabel",
+  "Rosa"
+ ],
+ "state": {
+  "theme": {
+   "slot": 81,
+   "title": "The Case of the Recipe Card",
+   "story": "Rosa's great-grandmother's cranberry bread recipe, in faded pencil on a card, has hung on the bakery corkboard for years. On Saturday morning it vanished, and Rosa swears even Gloria, her sourdough starter, looks worried. Five customers came in that morning, each at a different time, each ordering something different and sitting somewhere different. The corkboard hangs right beside the window table, out of reach of every other seat. Who pocketed the recipe card?",
+   "entity": [
+    "customer",
+    "customers"
+   ],
+   "cast": [
+    "Priya",
+    "Mabel",
+    "Rosa"
+   ],
+   "question": {
+    "text": "Who pocketed the recipe card?",
+    "cat": "Seat",
+    "value": "window"
+   }
+  },
+  "cats": [
+   {
+    "label": "Customer",
+    "kind": "name",
+    "values": [
+     "Selma",
+     "Priya",
+     "Kenji",
+     "Lou",
+     "Mabel"
+    ]
+   },
+   {
+    "label": "Order",
+    "values": [
+     "muffin",
+     "scone",
+     "bagel",
+     "croissant",
+     "danish"
+    ],
+    "ref": "the customer with the {v}",
+    "pred": "ordered the {v}",
+    "neg": "did not order the {v}",
+    "either": "ordered either the {a} or the {b}",
+    "nor": "ordered neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Seat",
+    "values": [
+     "window",
+     "counter",
+     "corner",
+     "patio",
+     "booth"
+    ],
+    "ref": "the customer in the {v} seat",
+    "pred": "took the {v} seat",
+    "neg": "did not take the {v} seat",
+    "either": "took either the {a} or the {b} seat",
+    "nor": "took neither the {a} nor the {b} seat",
+    "short": "the {v} seat"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     420,
+     450,
+     480,
+     510,
+     540
+    ],
+    "labels": [
+     "7:00 a.m.",
+     "7:30 a.m.",
+     "8:00 a.m.",
+     "8:30 a.m.",
+     "9:00 a.m."
+    ],
+    "ref": "the customer who came in at {x}",
+    "pred": "came in at {x}",
+    "neg": "did not come in at {x}",
+    "either": "came in at either {a} or {b}",
+    "nor": "came in at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "came in later than {y}",
+    "less": "came in earlier than {y}",
+    "dmore": "came in exactly {d} after {y}",
+    "dless": "came in exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "came in half an hour after {y}",
+    "dless1": "came in half an hour before {y}",
+    "step": 30,
+    "values": [
+     "7:00 a.m.",
+     "7:30 a.m.",
+     "8:00 a.m.",
+     "8:30 a.m.",
+     "9:00 a.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   3,
+   2,
+   0,
+   4
+  ],
+  [
+   3,
+   2,
+   1,
+   0,
+   4
+  ],
+  [
+   4,
+   1,
+   2,
+   0,
+   3
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The customer with the scone is neither Lou nor Mabel.",
+  "Selma came in later than the customer in the window seat.",
+  "The customer with the croissant is either Kenji or Priya.",
+  "The customer who came in at 8:00 a.m. is neither Selma nor Priya.",
+  "Of Priya and the customer with the bagel, one came in at 8:00 a.m. and the other came in at 7:30 a.m.",
+  "The customer who came in at 8:30 a.m. took neither the counter nor the patio seat.",
+  "The customer who came in at 8:30 a.m. ordered either the danish or the croissant.",
+  "Mabel ordered neither the muffin nor the bagel.",
+  "The customer in the window seat is either Selma or Lou.",
+  "The customer in the corner seat came in half an hour after the customer in the window seat.",
+  "The customer with the bagel took either the corner or the counter seat."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3,
+    8
+   ],
+   "text": "Mabel must go with the danish: clue 8 rules out the muffin and the bagel; clue 1 rules out the scone; clue 3 rules out the croissant."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    11
+   ],
+   "text": "Clue 11 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    9
+   ],
+   "text": "The window seat must go with Lou: clue 2 rules out Selma; clue 9 rules out Priya, Kenji, and Mabel."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "Lou must go with the muffin: clue 1 rules out the scone; clue 3 rules out the croissant; the bagel is already ruled out for the window seat; the danish already goes with Mabel."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The window seat goes with Lou, so the window seat also goes with the muffin."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since Selma can still be only 7:00 a.m., 7:30 a.m., 8:30 a.m., or 9:00 a.m. and the window seat can still be only 7:00 a.m., 7:30 a.m., 8:00 a.m., or 9:00 a.m., clue 2 means Selma cannot be 7:00 a.m. and the window seat cannot be 9:00 a.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since the window seat can still be only 7:00 a.m., 7:30 a.m., or 8:00 a.m., clue 10 means the corner seat cannot be 7:00 a.m. or 9:00 a.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    5
+   ],
+   "text": "Priya must go with 7:30 a.m.: clue 5 rules out 7:00 a.m., 8:30 a.m., and 9:00 a.m.; clue 4 rules out 8:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    7
+   ],
+   "text": "The bagel must go with 8:00 a.m.: clue 5 rules out 7:00 a.m. and 9:00 a.m.; clue 7 rules out 8:30 a.m.; 7:30 a.m. is already ruled out for Priya."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The muffin must go with 7:00 a.m.: clue 7 rules out 8:30 a.m.; 7:30 a.m. and 9:00 a.m. are already ruled out for Lou; 8:00 a.m. already goes with the bagel."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Lou goes with the muffin, so Lou also goes with 7:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "8:00 a.m. must go with Kenji: clue 4 rules out Selma and Priya; Mabel is already ruled out for the danish; Lou already goes with 7:00 a.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The window seat goes with Lou, so the window seat also goes with 7:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Selma must go with the scone: clue 3 rules out the croissant; the bagel is already ruled out for 8:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Priya must go with the croissant: clue 5 rules out the bagel; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Kenji must go with the bagel: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The scone must go with 9:00 a.m.: clue 7 rules out 8:30 a.m.; 7:30 a.m. is already ruled out for Priya; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The danish must go with 8:30 a.m.: 7:30 a.m. is already ruled out for Mabel; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The croissant must go with 7:30 a.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Mabel goes with the danish, so Mabel also goes with 8:30 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Selma must go with 9:00 a.m.: clue 2 rules out 7:00 a.m.; clue 4 rules out 8:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Since the corner seat can still be only 7:30 a.m., 8:00 a.m., or 8:30 a.m. and the window seat can still be only 7:00 a.m., clue 10 means the corner seat cannot be 8:00 a.m. or 8:30 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The corner seat must go with 7:30 a.m.: clue 10 rules out 7:00 a.m., 8:00 a.m., 8:30 a.m., and 9:00 a.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The patio seat must go with 9:00 a.m.: clue 6 rules out 8:30 a.m.; 8:00 a.m. is already ruled out for the bagel; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The counter seat must go with 8:00 a.m.: clue 6 rules out 8:30 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The booth seat must go with 8:30 a.m.: 8:00 a.m. is already ruled out for the bagel; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Priya goes with 7:30 a.m., so Priya also goes with the corner seat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Kenji must go with the counter seat: clue 9 rules out the window seat; the patio seat and the booth seat are already ruled out for 8:00 a.m.; the corner seat already goes with Priya."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Mabel must go with the booth seat: clue 9 rules out the window seat; the counter seat and the patio seat are already ruled out for the danish; the corner seat already goes with Priya."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Selma must go with the patio seat: clue 2 rules out the window seat; the corner seat is already ruled out for the scone; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The danish must go with the booth seat: the window seat and the corner seat are already ruled out for Mabel; the counter seat and the patio seat are already ruled out for 8:30 a.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The bagel goes with 8:00 a.m., so the bagel also goes with the counter seat."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The scone must go with the patio seat: the window seat is already ruled out for Lou; the corner seat is already ruled out for 9:00 a.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The croissant must go with the corner seat: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 70,
+  "score": 183,
+  "revisits": 2,
+  "transfer": 33,
+  "trial": 0,
+  "clue_steps": 9
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Selma",
+   "scone",
+   "patio",
+   "9:00 a.m."
+  ],
+  [
+   "Priya",
+   "croissant",
+   "corner",
+   "7:30 a.m."
+  ],
+  [
+   "Kenji",
+   "bagel",
+   "counter",
+   "8:00 a.m."
+  ],
+  [
+   "Lou",
+   "muffin",
+   "window",
+   "7:00 a.m."
+  ],
+  [
+   "Mabel",
+   "danish",
+   "booth",
+   "8:30 a.m."
+  ]
+ ],
+ "score": 183
+}

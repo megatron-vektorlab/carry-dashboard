@@ -1,0 +1,22 @@
+{
+ "no": 49,
+ "clues": [],
+ "hints": [
+  "Look at each suspect's own statement. If that person had cut the pie, would their statement be true or false?",
+  "Test one suspect at a time. The culprit's own statement must be false, so anyone whose statement would be true if they did it is cleared.",
+  "So neither Mabel nor Kit is the culprit, which leaves Hal. Check: Hal's statement is false, and Mabel's and Kit's are true."
+ ],
+ "solution": {
+  "key_idea": "The culprit must be the liar, but Mabel's and Kit's statements would each be true if they had cut the pie.",
+  "steps": [
+   "The rule says the culprit lies and everyone else tells the truth. So the culprit's own statement must be false.",
+   "Test Mabel. Her statement, that Kit didn't cut the pie, would be true. A truthful culprit breaks the rule, so it wasn't Mabel.",
+   "Test Kit. Kit's statement, that Hal or Kit cut the pie, would be true. So it wasn't Kit either.",
+   "Test Hal. Hal's statement, that Mabel or Kit cut the pie, would be false. Mabel's and Kit's statements would both be true.",
+   "Only the culprit lies, exactly as the rule says. So Hal cut the contest pie."
+  ],
+  "epilogue": "Hal had mistaken the contest pie for the helpers' sampler pie and cut himself a neat slice. He confessed, pink to the ears, and the baker took it as a compliment."
+ },
+ "tip": null,
+ "answer_line": "Hal cut the contest pie."
+}

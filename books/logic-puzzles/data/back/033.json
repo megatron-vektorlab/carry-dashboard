@@ -1,0 +1,8 @@
+{
+ "no": 33,
+ "clues": [
+  {"kind": "compare", "a": "Passenger=Yusuf", "b": "Passenger=Lou", "cat": "Boarded", "rel": "a_less_by", "by": 2},
+  {"kind": "either", "a": "Passenger=Lou", "one_of": ["Boarded=first", "Boarded=fourth"]},
+  {"kind": "compare", "a": "Passenger=Otis", "b": "Passenger=Yusuf", "cat": "Boarded", "rel": "a_greater"}
+ ]
+}

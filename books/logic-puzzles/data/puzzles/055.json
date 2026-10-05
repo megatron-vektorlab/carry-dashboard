@@ -1,0 +1,110 @@
+{
+ "no": 55,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 55002,
+ "kind": "liars",
+ "title": "Who Unplugged the Ferris Wheel?",
+ "story": "On the last night of the county fair, the Ferris wheel's lights went dark, and the operator sensibly stopped the wheel with Gus Mahoney at the very top. Gus spent twenty peaceful minutes up there forecasting next week's weather for the whole fairground. Four people had been standing by the power box, and each has one thing to report. Who pulled the plug?",
+ "cast": [
+  "Lena",
+  "Gus"
+ ],
+ "names": [
+  "Nadia",
+  "Lena",
+  "Ivan",
+  "Oscar"
+ ],
+ "did": "unplugged the lights",
+ "didnt": "didn't unplug the lights",
+ "statements": [
+  [
+   "is",
+   3
+  ],
+  [
+   "nor",
+   0,
+   1
+  ],
+  [
+   "lies",
+   1
+  ],
+  [
+   "lies",
+   2
+  ]
+ ],
+ "texts": [
+  "Oscar unplugged the lights.",
+  "Neither Nadia nor I unplugged the lights.",
+  "Lena is lying.",
+  "Ivan is lying."
+ ],
+ "rule": [
+  "exactly",
+  2
+ ],
+ "rule_text": "Exactly two of these statements are true.",
+ "culprit": "Ivan",
+ "truth": [
+  false,
+  true,
+  false,
+  true
+ ],
+ "cases": [
+  {
+   "case": "Nadia",
+   "truth": [
+    "false",
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 1,
+   "fits": false
+  },
+  {
+   "case": "Lena",
+   "truth": [
+    "false",
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 1,
+   "fits": false
+  },
+  {
+   "case": "Ivan",
+   "truth": [
+    "false",
+    "true",
+    "false",
+    "true"
+   ],
+   "count": 2,
+   "fits": true
+  },
+  {
+   "case": "Oscar",
+   "truth": [
+    "true",
+    "true",
+    "false",
+    "true"
+   ],
+   "count": 3,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who unplugged the lights?"
+ },
+ "answer": "Ivan",
+ "score": 50
+}

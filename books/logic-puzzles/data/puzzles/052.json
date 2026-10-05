@@ -1,0 +1,109 @@
+{
+ "no": 52,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 52000,
+ "kind": "liars",
+ "title": "Who Hid the Gavel?",
+ "story": "Forty folding chairs, a long agenda and strong feelings about the new Main Street crosswalk were all in place for the August town meeting. The one thing missing was the moderator's gavel, and the moderator refuses to start without it. Four people were in the hall early setting out chairs, and each has a statement ready. Who is holding up the meeting?",
+ "cast": [
+  "Priya"
+ ],
+ "names": [
+  "Priya",
+  "Gideon",
+  "Una",
+  "Ruben"
+ ],
+ "did": "hid the gavel",
+ "didnt": "didn't hide the gavel",
+ "statements": [
+  [
+   "or",
+   0,
+   2
+  ],
+  [
+   "nor",
+   0,
+   3
+  ],
+  [
+   "not",
+   2
+  ],
+  [
+   "is",
+   2
+  ]
+ ],
+ "texts": [
+  "Either Una or I hid the gavel.",
+  "Neither Priya nor Ruben hid the gavel.",
+  "I didn't hide the gavel.",
+  "Una hid the gavel."
+ ],
+ "rule": [
+  "culprit_lies"
+ ],
+ "rule_text": "The culprit is lying. Everyone else is telling the truth.",
+ "culprit": "Una",
+ "truth": [
+  true,
+  true,
+  false,
+  true
+ ],
+ "cases": [
+  {
+   "case": "Priya",
+   "truth": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Gideon",
+   "truth": [
+    "false",
+    "true",
+    "true",
+    "false"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Una",
+   "truth": [
+    "true",
+    "true",
+    "false",
+    "true"
+   ],
+   "count": 3,
+   "fits": true
+  },
+  {
+   "case": "Ruben",
+   "truth": [
+    "false",
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 1,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who hid the gavel?"
+ },
+ "answer": "Una",
+ "score": 40
+}

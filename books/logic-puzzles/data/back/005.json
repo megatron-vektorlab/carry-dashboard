@@ -1,0 +1,21 @@
+{
+ "no": 5,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Extra=tide table",
+   "one_of": [
+    "Customer=Sam",
+    "Customer=Amara"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Extra=coupons",
+   "not": [
+    "Customer=Nico",
+    "Customer=Sam"
+   ]
+  }
+ ]
+}

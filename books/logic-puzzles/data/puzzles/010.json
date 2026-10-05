@@ -1,0 +1,257 @@
+{
+ "no": 10,
+ "chapter": 1,
+ "family": "first4",
+ "stars": 1,
+ "seed": 10003,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Unsigned Letters",
+ "story": "Four letters to the editor landed on the Gazette's front counter this week, each on a different burning issue of the day, and not one of them was signed. The Gazette never prints an unsigned letter, so Ada lifted Inkwell off the stack, spread the letters across the puzzle desk, and sent you out to ask around. Who wrote which letter?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Gus"
+ ],
+ "state": {
+  "theme": {
+   "slot": 10,
+   "title": "The Unsigned Letters",
+   "story": "Four letters to the editor landed on the Gazette's front counter this week, each on a different burning issue of the day, and not one of them was signed. The Gazette never prints an unsigned letter, so Ada lifted Inkwell off the stack, spread the letters across the puzzle desk, and sent you out to ask around. Who wrote which letter?",
+   "entity": [
+    "writer",
+    "writers"
+   ],
+   "cast": [
+    "Gus"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Writer",
+    "kind": "name",
+    "values": [
+     "Gus",
+     "Tariq",
+     "Hal",
+     "Vera"
+    ]
+   },
+   {
+    "label": "Letter",
+    "values": [
+     "pothole",
+     "parking",
+     "seagull",
+     "bake sale"
+    ],
+    "ref": "the author of the {v} letter",
+    "pred": "wrote the {v} letter",
+    "neg": "did not write the {v} letter",
+    "either": "wrote either the {a} or the {b} letter",
+    "nor": "wrote neither the {a} nor the {b} letter",
+    "short": "the {v} letter"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   0,
+   1,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The author of the bake sale letter is either Gus or Hal.",
+  "Hal wrote either the pothole or the parking letter.",
+  "The author of the parking letter is either Hal or Vera.",
+  "Tariq wrote neither the seagull nor the bake sale letter."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    4
+   ],
+   "text": "The bake sale letter must go with Gus: clue 4 rules out Tariq; clue 2 rules out Hal; clue 1 rules out Vera."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "The seagull letter must go with Vera: clue 4 rules out Tariq; clue 2 rules out Hal; Gus already goes with the bake sale letter."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Tariq must go with the pothole letter: clue 3 rules out the parking letter; clue 4 rules out the seagull letter and the bake sale letter."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Hal must go with the parking letter: clue 2 rules out the seagull letter and the bake sale letter; the pothole letter already goes with Tariq."
+  }
+ ],
+ "features": {
+  "steps": 8,
+  "score": 18,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 3
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Gus",
+   "bake sale"
+  ],
+  [
+   "Tariq",
+   "pothole"
+  ],
+  [
+   "Hal",
+   "parking"
+  ],
+  [
+   "Vera",
+   "seagull"
+  ]
+ ],
+ "score": 18
+}

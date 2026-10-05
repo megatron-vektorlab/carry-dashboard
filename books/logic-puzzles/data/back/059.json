@@ -1,0 +1,48 @@
+{
+ "no": 59,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Apple=Macoun",
+   "b": "Picker=Pablo",
+   "cat": "Weight",
+   "rel": "a_greater_by",
+   "by": 15
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Picker=Pablo",
+    "Picker=Sam"
+   ],
+   "options": [
+    "Weight=10 pounds",
+    "Weight=20 pounds"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Picker=Pablo",
+   "not": [
+    "Apple=Baldwin",
+    "Apple=Empire"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Apple=Baldwin",
+   "not": [
+    "Weight=20 pounds",
+    "Weight=25 pounds"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Picker=Mabel",
+   "one_of": [
+    "Weight=20 pounds",
+    "Weight=25 pounds"
+   ]
+  }
+ ]
+}

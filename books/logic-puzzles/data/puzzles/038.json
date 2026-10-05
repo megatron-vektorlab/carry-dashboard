@@ -1,0 +1,324 @@
+{
+ "no": 38,
+ "chapter": 3,
+ "family": "lineup",
+ "stars": 2,
+ "seed": 38001,
+ "kind": "grid",
+ "lineup": true,
+ "title": "The Committee Photo",
+ "story": "Teddy lined up the Lighthouse Anniversary Committee in one row in front of Thimble Point Light and took forty-two pictures to get one where nobody blinked. The Gazette needs the caption, left to right as the camera saw them. Studying the print with her magnifier, Ada notes that in every frame one member is glancing up at the lantern room. Can you name all five, left to right?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Otis",
+  "Hattie",
+  "Jonah",
+  "Lena",
+  "Gus",
+  "Teddy"
+ ],
+ "state": {
+  "theme": {
+   "slot": 38,
+   "title": "The Committee Photo",
+   "story": "Teddy lined up the Lighthouse Anniversary Committee in one row in front of Thimble Point Light and took forty-two pictures to get one where nobody blinked. The Gazette needs the caption, left to right as the camera saw them. Studying the print with her magnifier, Ada notes that in every frame one member is glancing up at the lantern room. Can you name all five, left to right?",
+   "entity": [
+    "member",
+    "members"
+   ],
+   "cast": [
+    "Otis",
+    "Hattie",
+    "Jonah",
+    "Lena",
+    "Gus",
+    "Teddy"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Member",
+    "kind": "name",
+    "values": [
+     "Otis",
+     "Hattie",
+     "Jonah",
+     "Lena",
+     "Gus"
+    ]
+   },
+   {
+    "label": "Spot",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "labels": [
+     "first",
+     "second",
+     "third",
+     "fourth",
+     "fifth"
+    ],
+    "ref": "the {x} person from the left",
+    "pred": "stood {x} from the left",
+    "neg": "did not stand {x} from the left",
+    "either": "stood either {a} or {b} from the left",
+    "nor": "stood neither {a} nor {b} from the left",
+    "short": "the {x} spot",
+    "more": "stood somewhere to the right of {y}",
+    "less": "stood somewhere to the left of {y}",
+    "dmore": "stood exactly {d} to the right of {y}",
+    "dless": "stood exactly {d} to the left of {y}",
+    "dunit": [
+     "place",
+     "places"
+    ],
+    "dmore1": "stood directly to the right of {y}",
+    "dless1": "stood directly to the left of {y}",
+    "adj": "stood shoulder to shoulder with {y}",
+    "nadj": "did not stand shoulder to shoulder with {y}",
+    "ends": "stood at one end of the row",
+    "step": 1,
+    "values": [
+     "first",
+     "second",
+     "third",
+     "fourth",
+     "fifth"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   3,
+   2,
+   4,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 1,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": 1,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 1,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Jonah stood somewhere to the right of Otis.",
+  "Otis stood directly to the right of Gus.",
+  "Lena stood somewhere to the right of Hattie.",
+  "Hattie stood either second or fourth from the left."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means Jonah cannot be the first spot and Otis cannot be the fifth spot."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since Otis can still be only the first spot, the second spot, the third spot, or the fourth spot, clue 2 means Otis cannot be the first spot and Gus cannot be the fourth spot or the fifth spot."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Jonah can still be only the second spot, the third spot, the fourth spot, or the fifth spot and Otis can still be only the second spot, the third spot, or the fourth spot, clue 1 means Jonah cannot be the second spot."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Hattie can still be only the second spot or the fourth spot, clue 3 means Lena cannot be the first spot or the second spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "text": "The first spot must go with Gus: clue 2 rules out Otis; clue 4 rules out Hattie; clue 1 rules out Jonah; clue 3 rules out Lena."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since Otis can still be only the second spot, the third spot, or the fourth spot and Gus can still be only the first spot, clue 2 means Otis cannot be the third spot or the fourth spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Otis must go with the second spot: clue 2 rules out the first spot, the third spot, and the fourth spot; clue 1 rules out the fifth spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Hattie must go with the fourth spot: clue 4 rules out the first spot, the third spot, and the fifth spot; the second spot already goes with Otis."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Lena can still be only the third spot or the fifth spot and Hattie can still be only the fourth spot, clue 3 means Lena cannot be the third spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Lena must go with the fifth spot: clue 3 rules out the first spot, the second spot, and the third spot; the fourth spot already goes with Hattie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Jonah must go with the third spot: clue 1 rules out the first spot and the second spot; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 12,
+  "score": 37,
+  "revisits": 3,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 7
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Otis",
+   "second"
+  ],
+  [
+   "Hattie",
+   "fourth"
+  ],
+  [
+   "Jonah",
+   "third"
+  ],
+  [
+   "Lena",
+   "fifth"
+  ],
+  [
+   "Gus",
+   "first"
+  ]
+ ],
+ "score": 37
+}

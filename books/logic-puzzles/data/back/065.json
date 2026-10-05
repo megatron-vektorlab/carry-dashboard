@@ -1,0 +1,11 @@
+{"no": 65, "clues": [
+ {"kind": "diff", "a": "Grower=Zeke", "b": "Fertilizer=compost"},
+ {"kind": "either", "a": "Fertilizer=coffee", "one_of": ["Pumpkin=Sunny", "Pumpkin=Big Mo"]},
+ {"kind": "either", "a": "Weight=400 pounds", "one_of": ["Fertilizer=seaweed", "Fertilizer=coffee"]},
+ {"kind": "either", "a": "Fertilizer=seaweed", "one_of": ["Pumpkin=Tubby", "Pumpkin=Sunny"]},
+ {"kind": "diff", "a": "Pumpkin=Tubby", "b": "Weight=600 pounds"},
+ {"kind": "compare", "a": "Grower=Gus", "b": "Fertilizer=seaweed", "cat": "Weight", "rel": "a_less"},
+ {"kind": "pair", "people": ["Pumpkin=Tubby", "Fertilizer=compost"], "options": ["Weight=500 pounds", "Weight=600 pounds"]},
+ {"kind": "pair", "people": ["Grower=Kenji", "Grower=Zeke"], "options": ["Fertilizer=fish meal", "Weight=600 pounds"]},
+ {"kind": "either", "a": "Pumpkin=Big Mo", "one_of": ["Grower=Kenji", "Grower=Mabel"]}
+]}

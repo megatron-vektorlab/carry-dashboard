@@ -1,0 +1,30 @@
+{
+ "no": 62,
+ "clues": [
+  "Oscar's fish was longer than the mackerel.",
+  "The bluefish measured either 16 inches or 18 inches.",
+  "Cyrus landed a shorter fish than Oscar did.",
+  "Elsa reeled in either the flounder or the scup.",
+  "The fish that measured 16 inches was either the mackerel or the flounder.",
+  "Elsa's fish was longer than Oscar's."
+ ],
+ "hints": [
+  "Look at the bluefish in the box where fish meet lengths. Clue 2 gives it two choices. Does another clue rule one out?",
+  "Put two clues together. Clue 5 says the 16-inch fish was the mackerel or the flounder, so it was not the bluefish.",
+  "So the bluefish was 18 inches, and clue 4 keeps Elsa off it. Then clues 3 and 6 put Cyrus at 12, Oscar 14, Elsa 16."
+ ],
+ "solution": {
+  "key_idea": "Clues 2 and 5 together leave the bluefish only 18 inches, the longest fish in the derby.",
+  "steps": [
+   "Clue 2 gives the bluefish 16 or 18 inches, and clue 5 rules out 16. So the bluefish was 18 inches.",
+   "By clue 4, Elsa did not land the bluefish, so her fish was shorter than 18 inches.",
+   "By clues 3 and 6, Cyrus's fish was shorter than Oscar's, and Oscar's than Elsa's. So Cyrus had 12 inches, Oscar 14, Elsa 16.",
+   "That leaves 18 inches for Nico, so Nico landed the bluefish and wins the trophy.",
+   "Clue 1 keeps Oscar off the mackerel, and clue 4 keeps Elsa off it. So Cyrus landed the mackerel.",
+   "By clue 5, the 16-inch fish was the mackerel or the flounder, so Elsa's was the flounder. Oscar landed the scup."
+  ],
+  "epilogue": "Otis handed Nico the trophy for his 18-inch bluefish, ahead of Elsa's flounder, Oscar's scup and Cyrus's mackerel. By supper, in Nico's telling, the bluefish was three feet long."
+ },
+ "tip": null,
+ "answer_line": "Nico won the derby trophy with his 18-inch bluefish."
+}

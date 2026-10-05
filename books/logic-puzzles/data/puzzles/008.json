@@ -1,0 +1,215 @@
+{
+ "no": 8,
+ "chapter": 1,
+ "family": "first4",
+ "stars": 1,
+ "seed": 8001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Sourdough Adoption",
+ "story": "Rosa Delgado's Saturday bread class ended the way all her classes end: with jars. Each of four students carried home a jar of her sourdough starter, and every starter, naturally, came with its own name and a birthday. Now Rosa cannot remember which starter went home with whom, and she worries about them the way other people worry about puppies. Can you work out who adopted which starter and set her mind at rest?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Wren",
+  "Rosa"
+ ],
+ "state": {
+  "theme": {
+   "slot": 8,
+   "title": "The Sourdough Adoption",
+   "story": "Rosa Delgado's Saturday bread class ended the way all her classes end: with jars. Each of four students carried home a jar of her sourdough starter, and every starter, naturally, came with its own name and a birthday. Now Rosa cannot remember which starter went home with whom, and she worries about them the way other people worry about puppies. Can you work out who adopted which starter and set her mind at rest?",
+   "entity": [
+    "student",
+    "students"
+   ],
+   "cast": [
+    "Wren",
+    "Rosa"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Student",
+    "kind": "name",
+    "values": [
+     "Wren",
+     "Dev",
+     "Quinn",
+     "Enzo"
+    ]
+   },
+   {
+    "label": "Starter",
+    "values": [
+     "Bubbles",
+     "Admiral",
+     "Pip",
+     "Barnacle"
+    ],
+    "ref": "whoever took home {v}",
+    "pred": "took home {v}",
+    "neg": "did not take home {v}",
+    "either": "took home either {a} or {b}",
+    "nor": "took home neither {a} nor {b}",
+    "short": "{v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   2,
+   3,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Whoever took home Bubbles is either Enzo or Quinn.",
+  "Wren took home either Admiral or Barnacle.",
+  "Quinn took home Barnacle."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 says directly that Quinn goes with Barnacle."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Bubbles must go with Enzo: clue 1 rules out Wren and Dev; Quinn already goes with Barnacle."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Wren must go with Admiral: clue 1 rules out Bubbles; clue 2 rules out Pip; Barnacle already goes with Quinn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Dev must go with Pip: clue 1 rules out Bubbles; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 6,
+  "score": 13,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 2
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Wren",
+   "Admiral"
+  ],
+  [
+   "Dev",
+   "Pip"
+  ],
+  [
+   "Quinn",
+   "Barnacle"
+  ],
+  [
+   "Enzo",
+   "Bubbles"
+  ]
+ ],
+ "score": 13
+}

@@ -1,0 +1,43 @@
+{
+ "no": 46,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Entry=quilt",
+   "one_of": [
+    "Exhibitor=Otis",
+    "Exhibitor=Hugo"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Exhibitor=Hugo",
+   "one_of": [
+    "Entry=honey",
+    "Entry=quilt"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Exhibitor=Dev",
+   "b": "Entry=zucchini",
+   "cat": "Time",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Entry=quilt",
+   "b": "Exhibitor=Dev",
+   "cat": "Time",
+   "rel": "a_greater_by",
+   "by": 2
+  },
+  {
+   "kind": "compare",
+   "a": "Exhibitor=Selma",
+   "b": "Entry=pickles",
+   "cat": "Time",
+   "rel": "a_greater"
+  }
+ ]
+}

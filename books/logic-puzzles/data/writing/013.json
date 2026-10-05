@@ -1,0 +1,27 @@
+{
+ "no": 13,
+ "clues": [
+  "Kenji brought back the atlas.",
+  "The ribbon was not tucked in the cookbook.",
+  "Della's book was either the whodunit or the atlas.",
+  "Neither Nico nor Kenji used the postcard as a bookmark."
+ ],
+ "hints": [
+  "Start with the postcard. Which readers does clue 4 cross out, and who does that leave?",
+  "Use the only choice left: clue 4 leaves the postcard just one reader. Then read clue 3 with clue 1 beside it.",
+  "Kenji returned the atlas, so by clue 3 Della returned the whodunit, with the postcard in it. That leaves the cookbook for Nico."
+ ],
+ "solution": {
+  "key_idea": "Clue 4 hands Della the postcard, and with the atlas already Kenji's, clue 3 leaves her the whodunit.",
+  "steps": [
+   "Clue 1 gives Kenji the atlas, and clue 4 leaves only Della for the postcard.",
+   "Clue 3 says Della returned the whodunit or the atlas; the atlas is Kenji's, so Della returned the whodunit.",
+   "That leaves the cookbook for Nico.",
+   "By clue 2 the ribbon was not in the cookbook, and the postcard was in Della's whodunit, so the cookbook held the receipt.",
+   "So Nico used the receipt, and the ribbon was in Kenji's atlas."
+  ],
+  "epilogue": "Wren cleared all three accounts and returned each bookmark: Della's postcard, Nico's receipt and Kenji's ribbon. She would remember all three by these books for twenty years."
+ },
+ "tip": "An either-or clue is a no in disguise: cross out every choice it does not name.",
+ "answer_line": null
+}

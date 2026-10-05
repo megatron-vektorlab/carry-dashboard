@@ -1,0 +1,394 @@
+{
+ "no": 19,
+ "chapter": 2,
+ "family": "grid4",
+ "stars": 2,
+ "seed": 19005,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Memorial Day Floats",
+ "story": "Every year the Gazette prints one big photo of the Memorial Day floats, and every year somebody's name ends up under somebody else's lighthouse. This morning four floats rolled down Main Street to the green, each builder riding on top and playing a different instrument. Ada would like the caption right the first time. Who built which float, and who played what?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Lena",
+  "Gus"
+ ],
+ "state": {
+  "theme": {
+   "slot": 19,
+   "title": "The Memorial Day Floats",
+   "story": "Every year the Gazette prints one big photo of the Memorial Day floats, and every year somebody's name ends up under somebody else's lighthouse. This morning four floats rolled down Main Street to the green, each builder riding on top and playing a different instrument. Ada would like the caption right the first time. Who built which float, and who played what?",
+   "entity": [
+    "builder",
+    "builders"
+   ],
+   "cast": [
+    "Lena",
+    "Gus"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Builder",
+    "kind": "name",
+    "values": [
+     "Lena",
+     "Gus",
+     "Zeke",
+     "Marta"
+    ]
+   },
+   {
+    "label": "Float",
+    "values": [
+     "tall ship",
+     "lobster",
+     "lighthouse",
+     "whale"
+    ],
+    "ref": "the builder of the {v} float",
+    "pred": "built the {v} float",
+    "neg": "did not build the {v} float",
+    "either": "built either the {a} or the {b} float",
+    "nor": "built neither the {a} nor the {b} float",
+    "short": "the {v} float"
+   },
+   {
+    "label": "Music",
+    "values": [
+     "fiddle",
+     "tuba",
+     "banjo",
+     "accordion"
+    ],
+    "ref": "the {v} player",
+    "pred": "played the {v}",
+    "neg": "did not play the {v}",
+    "either": "played either the {a} or the {b}",
+    "nor": "played neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   2,
+   3,
+   1
+  ],
+  [
+   2,
+   1,
+   0,
+   3
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The builder of the lighthouse float played either the fiddle or the tuba.",
+  "The banjo player built either the tall ship or the lobster float.",
+  "Marta did not build the tall ship float.",
+  "Of the fiddle player and the banjo player, one is Zeke and the other is Lena.",
+  "The builder of the lighthouse float is neither Zeke nor Marta.",
+  "Zeke built either the lighthouse or the whale float."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    6
+   ],
+   "text": "Zeke must go with the whale float: clue 6 rules out the tall ship float and the lobster float; clue 5 rules out the lighthouse float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "Marta must go with the lobster float: clue 3 rules out the tall ship float; clue 5 rules out the lighthouse float; the whale float already goes with Zeke."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Zeke must go with the fiddle: clue 4 rules out the tuba and the accordion; the banjo is already ruled out for the whale float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Lena must go with the banjo: clue 4 rules out the tuba and the accordion; the fiddle already goes with Zeke."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The whale float goes with Zeke, so the whale float also goes with the fiddle."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The lighthouse float must go with the tuba: clue 1 rules out the banjo and the accordion; the fiddle already goes with the whale float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Marta must go with the accordion: clue 4 rules out the fiddle and the banjo; the tuba is already ruled out for the lobster float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Gus must go with the tuba: clue 4 rules out the fiddle and the banjo; the accordion already goes with Marta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The lobster float must go with the accordion: the banjo is already ruled out for Marta; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The tall ship float must go with the banjo: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Lena goes with the banjo, so Lena also goes with the tall ship float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Gus must go with the lighthouse float: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 21,
+  "score": 50,
+  "revisits": 0,
+  "transfer": 5,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Lena",
+   "tall ship",
+   "banjo"
+  ],
+  [
+   "Gus",
+   "lighthouse",
+   "tuba"
+  ],
+  [
+   "Zeke",
+   "whale",
+   "fiddle"
+  ],
+  [
+   "Marta",
+   "lobster",
+   "accordion"
+  ]
+ ],
+ "score": 50
+}

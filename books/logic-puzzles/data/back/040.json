@@ -1,0 +1,48 @@
+{
+ "no": 40,
+ "clues": [
+  {
+   "kind": "same",
+   "a": "Sender=Gus",
+   "b": "Day=Thursday"
+  },
+  {
+   "kind": "either",
+   "a": "Sender=Tariq",
+   "one_of": [
+    "Cargo=canoe",
+    "Cargo=beehive"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Cargo=armchair",
+   "b": "Day=Friday"
+  },
+  {
+   "kind": "compare",
+   "a": "Sender=Una",
+   "b": "Sender=Tariq",
+   "cat": "Day",
+   "rel": "a_less"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Sender=Faye",
+    "Cargo=piano"
+   ],
+   "options": [
+    "Day=Thursday",
+    "Day=Friday"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Cargo=canoe",
+   "b": "Sender=Gus",
+   "cat": "Day",
+   "rel": "a_less"
+  }
+ ]
+}

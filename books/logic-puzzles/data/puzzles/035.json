@@ -1,0 +1,301 @@
+{
+ "no": 35,
+ "chapter": 3,
+ "family": "lineup",
+ "stars": 2,
+ "seed": 35000,
+ "kind": "grid",
+ "lineup": true,
+ "title": "The Last Ear of Corn",
+ "story": "Butter, wood smoke and a whiff of seaweed: the July clambake on Thimble Beach was ready, and five hungry people lined up at the buffet before the tarp was even off the pit. There was exactly one ear of corn apiece, so the person at the very back of the line got the last one. Felix calls that shipshape planning. Who stood where in the buffet line, and who got the last ear of corn?",
+ "question": {
+  "text": "Who got the last ear of corn?",
+  "cat": "Place",
+  "value": "fifth"
+ },
+ "answer": "Vera",
+ "cast": [
+  "Priya",
+  "Felix"
+ ],
+ "state": {
+  "theme": {
+   "slot": 35,
+   "title": "The Last Ear of Corn",
+   "story": "Butter, wood smoke and a whiff of seaweed: the July clambake on Thimble Beach was ready, and five hungry people lined up at the buffet before the tarp was even off the pit. There was exactly one ear of corn apiece, so the person at the very back of the line got the last one. Felix calls that shipshape planning. Who stood where in the buffet line, and who got the last ear of corn?",
+   "entity": [
+    "diner",
+    "diners"
+   ],
+   "cast": [
+    "Priya",
+    "Felix"
+   ],
+   "question": {
+    "text": "Who got the last ear of corn?",
+    "cat": "Place",
+    "value": "fifth"
+   }
+  },
+  "cats": [
+   {
+    "label": "Diner",
+    "kind": "name",
+    "values": [
+     "Priya",
+     "Felix",
+     "Dot",
+     "Hugo",
+     "Vera"
+    ]
+   },
+   {
+    "label": "Place",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "labels": [
+     "first",
+     "second",
+     "third",
+     "fourth",
+     "fifth"
+    ],
+    "ref": "the {x} person in line",
+    "pred": "was {x} in line",
+    "neg": "was not {x} in line",
+    "either": "was either {a} or {b} in line",
+    "nor": "was neither {a} nor {b} in line",
+    "short": "the {x} spot",
+    "more": "was farther back in line than {y}",
+    "less": "was closer to the front of the line than {y}",
+    "dmore": "was exactly {d} farther back than {y}",
+    "dless": "was exactly {d} closer to the front than {y}",
+    "dunit": [
+     "place",
+     "places"
+    ],
+    "dmore1": "was right behind {y}",
+    "dless1": "was right in front of {y}",
+    "adj": "was right next to {y} in line",
+    "nadj": "was not next to {y} in line",
+    "ends": "was at the very front or the very back of the line",
+    "step": 1,
+    "values": [
+     "first",
+     "second",
+     "third",
+     "fourth",
+     "fifth"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   3,
+   0,
+   2,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 1,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 1,
+   "op": "<",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Vera was farther back in line than Felix.",
+  "Priya was either second or third in line.",
+  "Hugo was either third or fourth in line.",
+  "Hugo was closer to the front of the line than Felix."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means Vera cannot be the first spot and Felix cannot be the fifth spot."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Hugo can still be only the third spot or the fourth spot and Felix can still be only the first spot, the second spot, the third spot, or the fourth spot, clue 4 means Hugo cannot be the fourth spot and Felix cannot be the first spot, the second spot, or the third spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "Felix must go with the fourth spot: clue 4 rules out the first spot, the second spot, and the third spot; clue 1 rules out the fifth spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Hugo must go with the third spot: clue 3 rules out the first spot, the second spot, and the fifth spot; clue 4 rules out the fourth spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Priya must go with the second spot: clue 2 rules out the first spot, the fourth spot, and the fifth spot; the third spot already goes with Hugo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Vera must go with the fifth spot: clue 1 rules out the first spot; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Dot must go with the first spot: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 9,
+  "score": 24,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Priya",
+   "second"
+  ],
+  [
+   "Felix",
+   "fourth"
+  ],
+  [
+   "Dot",
+   "first"
+  ],
+  [
+   "Hugo",
+   "third"
+  ],
+  [
+   "Vera",
+   "fifth"
+  ]
+ ],
+ "score": 24
+}

@@ -72,7 +72,7 @@ A pencil with a good eraser. A quiet half hour. That is all. If you want to work
 
 Thimble Harbor sits on a crooked thumb of the New England coast. It has one main street, one ferry, one lighthouse, and far too many opinions about pie.
 
-At the tip of the point stands **Thimble Point Light**, built in 1876. This year its brass Keeper's Lamp turns one hundred and fifty, and the whole town is planning a party for it.
+At the tip of the point stands **Thimble Point Light**, built in 1876. It retired from guiding ships long ago, but this year its brass Keeper's Lamp turns one hundred and fifty, and the whole town is planning a party for it.
 
 You will meet these neighbors again and again.
 
@@ -83,7 +83,7 @@ You will meet these neighbors again and again.
 - **Felix Okafor** builds boats at Okafor Boatyard and calls everything "shipshape."
 - **Gus Mahoney** runs the general store and forecasts the weather by his left knee.
 - **Priya Nair** keeps the Gull's Rest Inn and returns every one of its forty-one lost umbrellas.
-- **Jonah Bell** captains the ferry, is never a minute late, and is the great-grandson of the lighthouse's last keeper.
+- **Jonah**, the ferry captain, is never a minute late and tinkers with old brass in his workshop.
 - **Mabel Fitch**, retired schoolteacher, corrects the grammar on signs and grows competitive dahlias.
 - **Teddy Sousa** delivers the *Gazette* by bicycle and never goes anywhere without his camera.
 - **Lena Kowalski** runs the lighthouse museum and wears white gloves to touch anything older than she is.

@@ -1,0 +1,27 @@
+{
+ "no": 35,
+ "clues": [
+  "Vera stood somewhere behind Felix in the buffet line.",
+  "Priya was either second or third in line.",
+  "Hugo's place in line was either third or fourth.",
+  "Hugo was somewhere ahead of Felix in the line."
+ ],
+ "hints": [
+  "Look at Felix's row. Clue 4 puts someone ahead of him, and clue 1 puts someone behind him. Where can he stand?",
+  "Comparisons rule out the ends. Put clues 3 and 4 together: if Hugo is third or fourth, how close to the front can Felix be?",
+  "Hugo was third or fourth (clue 3), so Felix, behind him, was fourth or fifth. Clue 1 puts Vera behind Felix, so Felix was fourth and Hugo third."
+ ],
+ "solution": {
+  "key_idea": "Felix stood behind Hugo, who was third or fourth (clues 3 and 4), yet ahead of Vera (clue 1), so Felix was fourth.",
+  "steps": [
+   "By clue 3, Hugo was third or fourth. By clue 4, Felix stood somewhere behind him, so Felix was fourth or fifth.",
+   "By clue 1, Vera stood behind Felix, so Felix was not fifth. Felix was fourth.",
+   "Hugo stood ahead of Felix (clue 4), so Hugo was third.",
+   "By clue 2, Priya was second or third. Third is Hugo's, so Priya was second.",
+   "Vera, behind Felix, was fifth and got the last ear of corn. That leaves Dot first."
+  ],
+  "epilogue": "Vera, at the back of the line, got the last ear of corn and declared it the sweetest of the batch. Felix called the whole arrangement shipshape and went looking for more butter."
+ },
+ "tip": "When one person has a comparison on each side, squeeze from both ends at once.",
+ "answer_line": "Vera got the last ear of corn."
+}

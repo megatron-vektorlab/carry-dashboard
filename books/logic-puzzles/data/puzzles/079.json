@@ -1,0 +1,674 @@
+{
+ "no": 79,
+ "chapter": 6,
+ "family": "case54",
+ "stars": 4,
+ "seed": 79001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Pie Server",
+ "story": "Sixty years of church suppers, and Hattie's grandmother's silver pie server had never gone astray. Then came the early-November pie auction, where the town orders its Thanksgiving pies, and somewhere between bids it vanished. Five helpers each baked one pie, arrived at a different time and worked a different spot. The server turned up that night in a coat in the cloakroom, and only the cloakroom helper had handled the coats. Who slipped the pie server into a coat pocket?",
+ "question": {
+  "text": "Who slipped the pie server into a coat pocket?",
+  "cat": "Spot",
+  "value": "cloakroom"
+ },
+ "answer": "Gus",
+ "cast": [
+  "Rosa",
+  "Gus",
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 79,
+   "title": "The Case of the Pie Server",
+   "story": "Sixty years of church suppers, and Hattie's grandmother's silver pie server had never gone astray. Then came the early-November pie auction, where the town orders its Thanksgiving pies, and somewhere between bids it vanished. Five helpers each baked one pie, arrived at a different time and worked a different spot. The server turned up that night in a coat in the cloakroom, and only the cloakroom helper had handled the coats. Who slipped the pie server into a coat pocket?",
+   "entity": [
+    "helper",
+    "helpers"
+   ],
+   "cast": [
+    "Rosa",
+    "Gus",
+    "Hattie"
+   ],
+   "question": {
+    "text": "Who slipped the pie server into a coat pocket?",
+    "cat": "Spot",
+    "value": "cloakroom"
+   }
+  },
+  "cats": [
+   {
+    "label": "Helper",
+    "kind": "name",
+    "values": [
+     "Rosa",
+     "Gus",
+     "Della",
+     "Vito",
+     "Imani"
+    ]
+   },
+   {
+    "label": "Pie",
+    "values": [
+     "pecan",
+     "pumpkin",
+     "apple",
+     "mince",
+     "cherry"
+    ],
+    "ref": "the {v} pie's baker",
+    "pred": "baked the {v} pie",
+    "neg": "did not bake the {v} pie",
+    "either": "baked either the {a} or the {b} pie",
+    "nor": "baked neither the {a} nor the {b} pie",
+    "short": "the {v} pie"
+   },
+   {
+    "label": "Spot",
+    "values": [
+     "kitchen",
+     "stage",
+     "cloakroom",
+     "porch",
+     "bake table"
+    ],
+    "ref": "the {v} helper",
+    "pred": "worked the {v}",
+    "neg": "did not work the {v}",
+    "either": "worked either the {a} or the {b}",
+    "nor": "worked neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1080,
+     1095,
+     1110,
+     1125,
+     1140
+    ],
+    "labels": [
+     "6:00 p.m.",
+     "6:15 p.m.",
+     "6:30 p.m.",
+     "6:45 p.m.",
+     "7:00 p.m."
+    ],
+    "ref": "the helper who arrived at {x}",
+    "pred": "arrived at {x}",
+    "neg": "did not arrive at {x}",
+    "either": "arrived at either {a} or {b}",
+    "nor": "arrived at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "arrived later than {y}",
+    "less": "arrived earlier than {y}",
+    "dmore": "arrived exactly {d} after {y}",
+    "dless": "arrived exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "arrived 15 minutes after {y}",
+    "dless1": "arrived 15 minutes before {y}",
+    "step": 15,
+    "values": [
+     "6:00 p.m.",
+     "6:15 p.m.",
+     "6:30 p.m.",
+     "6:45 p.m.",
+     "7:00 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   0,
+   1,
+   4,
+   3,
+   2
+  ],
+  [
+   1,
+   2,
+   4,
+   0,
+   3
+  ],
+  [
+   3,
+   4,
+   1,
+   0,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The stage helper arrived exactly 45 minutes after the mince pie's baker.",
+  "The pecan pie's baker is neither Della nor Vito.",
+  "Of the pecan pie's baker and the bake table helper, one is Rosa and the other is Della.",
+  "The mince pie's baker worked either the kitchen or the bake table.",
+  "The pumpkin pie's baker arrived 15 minutes after the stage helper.",
+  "Of the pumpkin pie's baker and the porch helper, one is Gus and the other is Imani.",
+  "The porch helper arrived later than the bake table helper.",
+  "Of the apple pie's baker and the mince pie's baker, one is Vito and the other is Imani."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means the stage cannot be 6:00 p.m., 6:15 p.m., or 6:30 p.m. and the mince pie cannot be 6:30 p.m., 6:45 p.m., or 7:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the stage can still be only 6:45 p.m. or 7:00 p.m., clue 5 means the pumpkin pie cannot be 6:00 p.m., 6:15 p.m., 6:30 p.m., or 6:45 p.m. and the stage cannot be 7:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The pumpkin pie must go with 7:00 p.m.: clue 5 rules out 6:00 p.m., 6:15 p.m., 6:30 p.m., and 6:45 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5
+   ],
+   "text": "The stage must go with 6:45 p.m.: clue 1 rules out 6:00 p.m., 6:15 p.m., and 6:30 p.m.; clue 5 rules out 7:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the stage can still be only 6:45 p.m. and the mince pie can still be only 6:00 p.m. or 6:15 p.m., clue 1 means the mince pie cannot be 6:15 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The mince pie must go with 6:00 p.m.: clue 1 rules out 6:15 p.m., 6:30 p.m., 6:45 p.m., and 7:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since the porch can still be only 6:15 p.m., 6:30 p.m., or 7:00 p.m. and the bake table can still be only 6:00 p.m., 6:15 p.m., 6:30 p.m., or 7:00 p.m., clue 7 means the bake table cannot be 7:00 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3
+   ],
+   "text": "The pecan pie must go with Rosa: clue 3 rules out Gus and Imani; clue 2 rules out Della and Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The bake table must go with Della: clue 3 rules out Gus, Vito, and Imani; Rosa is already ruled out for the pecan pie."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since the porch can still be only 6:15 p.m. or 6:30 p.m. and the bake table can still be only 6:00 p.m., 6:15 p.m., or 6:30 p.m., clue 7 means the bake table cannot be 6:30 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    8
+   ],
+   "text": "Della must go with the cherry pie: clue 2 rules out the pecan pie; clue 8 rules out the apple pie and the mince pie; the pumpkin pie is already ruled out for the bake table."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    8
+   ],
+   "text": "Gus must go with the pumpkin pie: clue 3 rules out the pecan pie; clue 8 rules out the apple pie and the mince pie; the cherry pie already goes with Della."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "7:00 p.m. goes with the pumpkin pie, so 7:00 p.m. also goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Della must go with 6:15 p.m.: 6:00 p.m. is already ruled out for the mince pie; 6:30 p.m. is already ruled out for the bake table; 6:45 p.m. is already ruled out for the stage; 7:00 p.m. is already ruled out for the pumpkin pie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The mince pie must go with the kitchen: clue 4 rules out the stage, the cloakroom, and the porch; the bake table is already ruled out for Della."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    6
+   ],
+   "text": "The pumpkin pie must go with the cloakroom: clue 5 rules out the stage; clue 6 rules out the porch; the bake table is already ruled out for 7:00 p.m.; the kitchen already goes with the mince pie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The pecan pie must go with the stage: clue 3 rules out the bake table; the porch is already ruled out for Rosa; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The apple pie must go with the porch: the bake table is already ruled out for Della; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The cherry pie must go with the bake table: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    7
+   ],
+   "text": "7:00 p.m. must go with the cloakroom: clue 5 rules out the stage; clue 7 rules out the bake table; the kitchen and the porch are already ruled out for the pumpkin pie."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:45 p.m. goes with the stage, so 6:45 p.m. also goes with the pecan pie."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:00 p.m. goes with the mince pie, so 6:00 p.m. also goes with the kitchen."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The bake table must go with 6:15 p.m.: clue 7 rules out 6:30 p.m. and 7:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The porch must go with 6:30 p.m.: 6:00 p.m. is already ruled out for the mince pie; 7:00 p.m. is already ruled out for the pumpkin pie; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Rosa goes with the pecan pie, so Rosa also goes with the stage."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:45 p.m. goes with the stage, so 6:45 p.m. also goes with Rosa."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The cherry pie goes with Della, so the cherry pie also goes with 6:15 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The apple pie must go with 6:30 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Gus goes with the pumpkin pie, so Gus also goes with the cloakroom."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    6
+   ],
+   "text": "Vito must go with the kitchen: clue 6 rules out the porch; clue 3 rules out the bake table; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Imani must go with the porch: clue 3 rules out the bake table; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The mince pie goes with the kitchen, so the mince pie also goes with Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    8
+   ],
+   "text": "Imani must go with the apple pie: clue 3 rules out the pecan pie; clue 8 rules out the pumpkin pie and the cherry pie; the mince pie already goes with Vito."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:00 p.m. goes with the mince pie, so 6:00 p.m. also goes with Vito."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Imani must go with 6:30 p.m.: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 62,
+  "score": 172,
+  "revisits": 3,
+  "transfer": 30,
+  "trial": 0,
+  "clue_steps": 10
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Rosa",
+   "pecan",
+   "stage",
+   "6:45 p.m."
+  ],
+  [
+   "Gus",
+   "pumpkin",
+   "cloakroom",
+   "7:00 p.m."
+  ],
+  [
+   "Della",
+   "cherry",
+   "bake table",
+   "6:15 p.m."
+  ],
+  [
+   "Vito",
+   "mince",
+   "kitchen",
+   "6:00 p.m."
+  ],
+  [
+   "Imani",
+   "apple",
+   "porch",
+   "6:30 p.m."
+  ]
+ ],
+ "score": 172
+}

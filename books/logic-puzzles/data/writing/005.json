@@ -1,0 +1,23 @@
+{
+ "no": 5,
+ "clues": [
+  "Either Sam or Amara asked for the tide table.",
+  "Neither Nico nor Sam asked for the coupons."
+ ],
+ "hints": [
+  "Look down the coupons column. How many customers could have asked for them?",
+  "A neither-nor clue gives two X's. Clue 2 crosses out Nico and Sam in the coupons column, leaving one blank square.",
+  "So Amara asked for the coupons. Clue 1 then rules out the tide table for Nico, so Nico wanted the puzzle book."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 crosses out two of the three customers for the coupons, so Amara asked for them.",
+  "steps": [
+   "Clue 2 puts X's at Nico and Sam in the coupons column, so Amara asked for the coupons.",
+   "Clue 1 says the tide table went to Sam or Amara, so Nico did not ask for it.",
+   "Nico did not ask for the coupons either, so Nico wanted the puzzle book.",
+   "Sam, with one square left, wanted the tide table."
+  ],
+  "epilogue": "The next morning Nico got his puzzle book, Amara her coupons and Sam his tide table. Teddy spent part of his first week's pay on a small notebook."
+ },
+ "tip": "A neither-nor clue is generous: two X's for the price of one clue."
+}

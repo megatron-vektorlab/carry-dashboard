@@ -1,0 +1,42 @@
+{
+ "no": 18,
+ "clues": [
+  {
+   "kind": "nor",
+   "a": "Buoy=striped",
+   "not": [
+    "Spot=Gull Rock",
+    "Spot=East Cove"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Spot=East Cove",
+   "one_of": [
+    "Buoy=checkered",
+    "Buoy=striped"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Lobsterman=Oscar",
+   "one_of": [
+    "Buoy=checkered",
+    "Buoy=striped"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Buoy=checkered",
+   "one_of": [
+    "Lobsterman=Nico",
+    "Lobsterman=Oscar"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Lobsterman=Oscar",
+   "b": "Spot=East Cove"
+  }
+ ]
+}

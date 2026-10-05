@@ -1,0 +1,7 @@
+{"no": 20, "clues": [
+  {"kind": "nor", "a": "Guest=Amara", "not": ["Hometown=Boston", "Hometown=Portland"]},
+  {"kind": "pair", "people": ["Guest=Vito", "Guest=Amara"], "options": ["Room=Puffin", "Room=Gull"]},
+  {"kind": "either", "a": "Hometown=Boston", "one_of": ["Room=Puffin", "Room=Heron"]},
+  {"kind": "pair", "people": ["Guest=Vito", "Guest=Kit"], "options": ["Hometown=Boston", "Hometown=Albany"]},
+  {"kind": "either", "a": "Room=Heron", "one_of": ["Hometown=Hartford", "Hometown=Portland"]}
+]}

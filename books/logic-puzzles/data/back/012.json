@@ -1,0 +1,28 @@
+{
+ "no": 12,
+ "clues": [
+  {
+   "kind": "diff",
+   "a": "Jam=fig",
+   "b": "Jar=mason jar"
+  },
+  {
+   "kind": "nor",
+   "a": "Cook=Ruben",
+   "not": [
+    "Jar=mason jar",
+    "Jar=crock"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Jam=plum",
+   "b": "Jar=crock"
+  },
+  {
+   "kind": "diff",
+   "a": "Jar=crock",
+   "b": "Cook=Hattie"
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "no": 9,
+ "chapter": 1,
+ "family": "first4",
+ "stars": 1,
+ "seed": 9000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Tulip Planting Gloves",
+ "story": "The garden club planted four hundred tulip bulbs on the town green, and when the last bulb went in, four pairs of muddy gloves stayed behind on the bandstand bench. Mabel Fitch, club president and retired schoolteacher, has already written four polite notes about putting things away. Now she needs to know whose name goes on each envelope. Who wore which gloves?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Priya",
+  "Mabel"
+ ],
+ "state": {
+  "theme": {
+   "slot": 9,
+   "title": "The Tulip Planting Gloves",
+   "story": "The garden club planted four hundred tulip bulbs on the town green, and when the last bulb went in, four pairs of muddy gloves stayed behind on the bandstand bench. Mabel Fitch, club president and retired schoolteacher, has already written four polite notes about putting things away. Now she needs to know whose name goes on each envelope. Who wore which gloves?",
+   "entity": [
+    "gardener",
+    "gardeners"
+   ],
+   "cast": [
+    "Priya",
+    "Mabel"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Gardener",
+    "kind": "name",
+    "values": [
+     "Priya",
+     "Zeke",
+     "Olive",
+     "Cass"
+    ]
+   },
+   {
+    "label": "Gloves",
+    "values": [
+     "green",
+     "floral",
+     "leather",
+     "striped"
+    ],
+    "ref": "the gardener in the {v} gloves",
+    "pred": "wore the {v} gloves",
+    "neg": "did not wear the {v} gloves",
+    "either": "wore either the {a} or the {b} gloves",
+    "nor": "wore neither the {a} nor the {b} gloves",
+    "short": "the {v} gloves"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   3,
+   1,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Olive wore either the floral or the striped gloves.",
+  "The gardener in the floral gloves is neither Priya nor Zeke.",
+  "The gardener in the green gloves is neither Zeke nor Cass.",
+  "The gardener in the leather gloves is either Cass or Olive."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "The green gloves must go with Priya: clue 3 rules out Zeke and Cass; clue 1 rules out Olive."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3,
+    4
+   ],
+   "text": "Zeke must go with the striped gloves: clue 3 rules out the green gloves; clue 2 rules out the floral gloves; clue 4 rules out the leather gloves."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Olive must go with the floral gloves: clue 1 rules out the green gloves and the leather gloves; the striped gloves already goes with Zeke."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Cass must go with the leather gloves: clue 3 rules out the green gloves; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 8,
+  "score": 16,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 2
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Priya",
+   "green"
+  ],
+  [
+   "Zeke",
+   "striped"
+  ],
+  [
+   "Olive",
+   "floral"
+  ],
+  [
+   "Cass",
+   "leather"
+  ]
+ ],
+ "score": 16
+}

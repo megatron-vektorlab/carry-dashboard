@@ -1,0 +1,28 @@
+{
+ "no": 19,
+ "clues": [
+  "Whoever built the lighthouse float played either the fiddle or the tuba.",
+  "The banjo player's float was either the tall ship or the lobster.",
+  "The tall ship float was not Marta's.",
+  "Of the fiddle player and the banjo player, one was Zeke and the other was Lena.",
+  "Neither Zeke nor Marta built the lighthouse float.",
+  "Zeke built either the lighthouse float or the whale float."
+ ],
+ "hints": [
+  "Look at Zeke's row in the float box. Which clues talk about Zeke's float, and what do they allow?",
+  "Clue 6 is an either-or clue that gives Zeke two floats, and clue 5 crosses one of them off. Read them together.",
+  "So Zeke built the whale float. Then Marta, kept off the tall ship by clue 3 and the lighthouse by clue 5, built the lobster."
+ ],
+ "solution": {
+  "key_idea": "Clue 6 gives Zeke two floats and clue 5 takes the lighthouse away, so Zeke built the whale.",
+  "steps": [
+   "Clue 6 gives Zeke the lighthouse or the whale, and clue 5 rules out the lighthouse, so Zeke built the whale float.",
+   "Clues 3 and 5 keep Marta off the tall ship and the lighthouse, and the whale is Zeke's, so Marta built the lobster.",
+   "Clue 2 keeps the banjo off the whale, so by clue 4 Zeke played the fiddle and Lena the banjo.",
+   "By clue 2, Lena's banjo went with the tall ship or the lobster. The lobster is Marta's, so Lena built the tall ship and Gus the lighthouse.",
+   "By clue 1, Gus played the fiddle or the tuba; the fiddle is Zeke's, so Gus played the tuba and Marta the accordion."
+  ],
+  "epilogue": "The caption ran right the first time. Lena played the banjo on the tall ship, Gus the tuba on the lighthouse, Zeke the fiddle on the whale, and Marta the accordion on the lobster."
+ },
+ "tip": "An either-or clue is half a clue until another clue crosses off one of its choices."
+}

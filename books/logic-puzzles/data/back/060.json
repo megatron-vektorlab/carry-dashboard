@@ -1,0 +1,49 @@
+{
+ "no": 60,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Seller=Dot",
+   "b": "Seller=Gus",
+   "cat": "Price",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Seller=Vera",
+   "b": "Item=teapot",
+   "cat": "Price",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Price=$4",
+    "Price=$8"
+   ],
+   "options": [
+    "Seller=Vera",
+    "Seller=Linus"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Item=teapot",
+    "Item=records"
+   ],
+   "options": [
+    "Price=$8",
+    "Price=$2"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Item=lamp",
+   "not": [
+    "Seller=Linus",
+    "Seller=Dot"
+   ]
+  }
+ ]
+}

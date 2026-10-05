@@ -1,0 +1,18 @@
+{
+ "no": 1,
+ "clues": [
+  {
+   "kind": "diff",
+   "a": "Guest=Teddy",
+   "b": "Tea=mint"
+  },
+  {
+   "kind": "nor",
+   "a": "Guest=Lena",
+   "not": [
+    "Tea=mint",
+    "Tea=chamomile"
+   ]
+  }
+ ]
+}

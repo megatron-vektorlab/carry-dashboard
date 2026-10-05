@@ -1,0 +1,29 @@
+{
+ "no": 41,
+ "clues": [
+  "The north field patch was picked earlier in the week than the hilltop patch.",
+  "One of Jade and Mabel worked the hilltop patch, and the other picked on Wednesday.",
+  "Vito did not pick on Thursday or Friday.",
+  "Mabel's day was neither Wednesday nor Friday.",
+  "Ruben kept clear of both the north field and the creekside patch."
+ ],
+ "hints": [
+  "Look at clue 2. It is about Jade and Mabel, but what does it tell you about Ruben and Vito?",
+  "Clue 2 is a pair clue: the hilltop and Wednesday go to Jade and Mabel, one each. What does that leave for Ruben and Vito?",
+  "Clue 3 then leaves Vito only Saturday. Clues 2 and 5 keep Ruben off three patches, so Ruben worked the stone wall."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 gives the hilltop and Wednesday to Jade and Mabel, so Ruben and Vito have neither, and the rest falls into place.",
+  "steps": [
+   "By clue 2, the hilltop and Wednesday belong to Jade and Mabel. So neither Ruben nor Vito worked the hilltop or picked on Wednesday.",
+   "Clue 3 rules out Thursday and Friday for Vito, so Vito picked on Saturday. Clue 5 leaves Ruben only the stone wall.",
+   "By clue 4, Mabel did not pick on Wednesday or Friday. Saturday is Vito's, so Mabel picked on Thursday.",
+   "Ruben could not pick on Wednesday, so Ruben picked on Friday, and Jade on Wednesday.",
+   "Jade was the Wednesday picker, so by clue 2, Mabel worked the hilltop.",
+   "By clue 1, the north field was not picked on Saturday, so Vito worked the creekside and Jade the north field."
+  ],
+  "epilogue": "On Mabel's map, Jade's north field ripened first, on Wednesday, then Mabel's own hilltop, Ruben's stone wall and Vito's creekside. She checked the spelling on every label twice."
+ },
+ "tip": "A pair clue about two people also tells you something about everyone else.",
+ "answer_line": null
+}

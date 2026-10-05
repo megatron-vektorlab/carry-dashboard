@@ -1,0 +1,37 @@
+{
+ "no": 10,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Letter=bake sale",
+   "one_of": [
+    "Writer=Gus",
+    "Writer=Hal"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Writer=Hal",
+   "one_of": [
+    "Letter=pothole",
+    "Letter=parking"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Letter=parking",
+   "one_of": [
+    "Writer=Hal",
+    "Writer=Vera"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Writer=Tariq",
+   "not": [
+    "Letter=seagull",
+    "Letter=bake sale"
+   ]
+  }
+ ]
+}

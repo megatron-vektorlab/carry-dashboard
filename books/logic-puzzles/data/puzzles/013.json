@@ -1,0 +1,285 @@
+{
+ "no": 13,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 13002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Book Drop Surprise",
+ "story": "Sometime overnight, three long-overdue books thumped into the library's book drop, each with a stray bookmark still tucked inside. Wren would like to clear the right accounts. \"And return the bookmarks,\" she whispers. \"People always want their bookmarks back.\" Who returned which book, and which bookmark was tucked in each?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Nico",
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 13,
+   "title": "The Book Drop Surprise",
+   "story": "Sometime overnight, three long-overdue books thumped into the library's book drop, each with a stray bookmark still tucked inside. Wren would like to clear the right accounts. \"And return the bookmarks,\" she whispers. \"People always want their bookmarks back.\" Who returned which book, and which bookmark was tucked in each?",
+   "entity": [
+    "reader",
+    "readers"
+   ],
+   "cast": [
+    "Nico",
+    "Wren"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Reader",
+    "kind": "name",
+    "values": [
+     "Nico",
+     "Della",
+     "Kenji"
+    ]
+   },
+   {
+    "label": "Book",
+    "values": [
+     "atlas",
+     "cookbook",
+     "whodunit"
+    ],
+    "ref": "the borrower of the {v}",
+    "pred": "returned the {v}",
+    "neg": "did not return the {v}",
+    "either": "returned either the {a} or the {b}",
+    "nor": "returned neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Bookmark",
+    "values": [
+     "ribbon",
+     "postcard",
+     "receipt"
+    ],
+    "ref": "the reader who used the {v}",
+    "pred": "used the {v} as a bookmark",
+    "neg": "did not use the {v} as a bookmark",
+    "either": "used either the {a} or the {b} as a bookmark",
+    "nor": "used neither the {a} nor the {b} as a bookmark",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0
+  ],
+  [
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Kenji returned the atlas.",
+  "The borrower of the cookbook did not use the ribbon as a bookmark.",
+  "Della returned either the whodunit or the atlas.",
+  "The reader who used the postcard is neither Nico nor Kenji."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 says directly that Kenji goes with the atlas."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The postcard must go with Della: clue 4 rules out Nico and Kenji."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Della must go with the whodunit: clue 3 rules out the cookbook; the atlas already goes with Kenji."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with the cookbook: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The cookbook must go with the receipt: clue 2 rules out the ribbon; the postcard is already ruled out for Della."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The atlas must go with the ribbon: the postcard is already ruled out for Kenji; the receipt already goes with the cookbook."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The whodunit must go with the postcard: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Kenji goes with the atlas, so Kenji also goes with the ribbon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Nico must go with the receipt: clue 4 rules out the postcard; the ribbon already goes with Kenji."
+  }
+ ],
+ "features": {
+  "steps": 14,
+  "score": 29,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Nico",
+   "cookbook",
+   "receipt"
+  ],
+  [
+   "Della",
+   "whodunit",
+   "postcard"
+  ],
+  [
+   "Kenji",
+   "atlas",
+   "ribbon"
+  ]
+ ],
+ "score": 29
+}

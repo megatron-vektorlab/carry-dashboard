@@ -1,0 +1,6 @@
+{"no": 29, "clues": [
+  {"kind": "either", "a": "Prize=trophy", "one_of": ["Winner=Kenji", "Winner=Priya"]},
+  {"kind": "pair", "people": ["Winner=Vera", "Prize=medal"], "options": ["Race=sailboard", "Race=rowing"]},
+  {"kind": "pair", "people": ["Winner=Kenji", "Race=rowing"], "options": ["Prize=ribbon", "Prize=pie"]},
+  {"kind": "pair", "people": ["Winner=Kenji", "Race=swim"], "options": ["Prize=ribbon", "Prize=trophy"]}
+]}

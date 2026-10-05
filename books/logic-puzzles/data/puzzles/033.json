@@ -1,0 +1,253 @@
+{
+ "no": 33,
+ "chapter": 3,
+ "family": "lineup",
+ "stars": 2,
+ "seed": 33004,
+ "kind": "grid",
+ "lineup": true,
+ "title": "The Twice-Punched Ticket",
+ "story": "Jonah runs the 8 a.m. ferry to the minute. This morning four passengers came up the gangway one at a time, and Pilot the beagle greeted each of them in his little orange life vest. Somewhere in there, Jonah's old ticket punch jammed and bit the third ticket twice, and he would like to apologize to the right passenger. Who boarded in which order?",
+ "question": {
+  "text": "Whose ticket was punched twice?",
+  "cat": "Boarded",
+  "value": "third"
+ },
+ "answer": "Otis",
+ "cast": [
+  "Otis",
+  "Jonah"
+ ],
+ "state": {
+  "theme": {
+   "slot": 33,
+   "title": "The Twice-Punched Ticket",
+   "story": "Jonah runs the 8 a.m. ferry to the minute. This morning four passengers came up the gangway one at a time, and Pilot the beagle greeted each of them in his little orange life vest. Somewhere in there, Jonah's old ticket punch jammed and bit the third ticket twice, and he would like to apologize to the right passenger. Who boarded in which order?",
+   "entity": [
+    "passenger",
+    "passengers"
+   ],
+   "cast": [
+    "Otis",
+    "Jonah"
+   ],
+   "question": {
+    "text": "Whose ticket was punched twice?",
+    "cat": "Boarded",
+    "value": "third"
+   }
+  },
+  "cats": [
+   {
+    "label": "Passenger",
+    "kind": "name",
+    "values": [
+     "Otis",
+     "Lou",
+     "Yusuf",
+     "Greta"
+    ]
+   },
+   {
+    "label": "Boarded",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "first",
+     "second",
+     "third",
+     "fourth"
+    ],
+    "ref": "the {x} passenger to board",
+    "pred": "boarded {x}",
+    "neg": "did not board {x}",
+    "either": "boarded either {a} or {b}",
+    "nor": "boarded neither {a} nor {b}",
+    "short": "the {x} ticket",
+    "more": "boarded sometime after {y}",
+    "less": "boarded sometime before {y}",
+    "dmore": "boarded exactly {d} after {y}",
+    "dless": "boarded exactly {d} before {y}",
+    "dunit": [
+     "turn",
+     "turns"
+    ],
+    "dmore1": "boarded right after {y}",
+    "dless1": "boarded right before {y}",
+    "adj": "boarded right before or right after {y}",
+    "nadj": "did not board right before or right after {y}",
+    "ends": "boarded either first or last",
+    "step": 1,
+    "values": [
+     "first",
+     "second",
+     "third",
+     "fourth"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   3,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 1,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 1,
+   "op": "<",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Lou boarded exactly 2 turns after Yusuf.",
+  "Lou boarded either first or last.",
+  "Yusuf boarded sometime before Otis."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Lou can still be only the first ticket or the fourth ticket, clue 1 means Lou cannot be the first ticket and Yusuf cannot be the first ticket, the third ticket, or the fourth ticket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Lou must go with the fourth ticket: clue 1 rules out the first ticket; clue 2 rules out the second ticket and the third ticket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Yusuf must go with the second ticket: clue 1 rules out the first ticket, the third ticket, and the fourth ticket."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Yusuf can still be only the second ticket and Otis can still be only the first ticket or the third ticket, clue 3 means Otis cannot be the first ticket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Otis must go with the third ticket: clue 3 rules out the first ticket; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Greta must go with the first ticket: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 7,
+  "score": 19,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 3
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Otis",
+   "third"
+  ],
+  [
+   "Lou",
+   "fourth"
+  ],
+  [
+   "Yusuf",
+   "second"
+  ],
+  [
+   "Greta",
+   "first"
+  ]
+ ],
+ "score": 19
+}

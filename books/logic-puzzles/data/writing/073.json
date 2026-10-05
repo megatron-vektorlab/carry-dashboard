@@ -1,0 +1,32 @@
+{
+ "no": 73,
+ "clues": [
+  "Of the donor who tucked in a poem and the one who gave $25, one was Jonah and the other was Lena.",
+  "Tova gave exactly 25 dollars less than whoever left the thank-you.",
+  "Of Lena and the $100 donor, one paid by check and the other in cash.",
+  "Tova did not pay in coin.",
+  "The check came with either a riddle or a drawing.",
+  "Whoever gave $50 tucked in either a thank-you or a riddle."
+ ],
+ "hints": [
+  "Look at Tova's row where donors meet gifts. Clues 1 and 2 both limit her. What could she have given?",
+  "Two clues at once. Clue 1 keeps Tova off $25, and clue 2 keeps her off $100. Now where can the thank-you be?",
+  "Tova gave $50 or $75, so the thank-you came with $75 or $100. Then clue 6 gives the $50 gift the riddle.",
+  "The $25 gift had no poem (clue 1), thank-you or riddle, so it came with the drawing. That leaves Tova only the riddle."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 2 keep Tova off $25 and $100, so the thank-you came with $75 or $100, and clue 6 gives $50 the riddle.",
+  "steps": [
+   "Clue 1 gives the poem and the $25 gift to Jonah and Lena. So Tova and Gus left no poem and did not give $25.",
+   "Clue 2 keeps Tova off $100, so she gave $50 or $75. The thank-you, $25 above her, came with $75 or $100.",
+   "By clue 6, the $50 gift came with the riddle. The $25 gift, with no poem (clue 1), thank-you or riddle, came with the drawing.",
+   "Tova left no poem, no thank-you (clue 2) and no drawing, so she left the riddle and gave $50. The thank-you came with $75.",
+   "Gus left no poem and no $25 drawing, so he left the thank-you and gave $75. The poem came with $100.",
+   "By clue 3, Lena did not give $100, so by clue 1 she gave $25 with the drawing. Jonah gave $100 with the poem.",
+   "By clue 3, Lena and Jonah paid by check and cash. Clue 5 keeps the check from the poem: Lena paid by check, Jonah cash.",
+   "Clue 4 keeps Tova off coin, so she used the money order, and Gus paid in coin."
+  ],
+  "epilogue": "The Gazette thanked Lena for her $25 check and drawing, Tova for $50 and a riddle, Jonah for $100 and a poem, and Gus for $75 in coin and a thank-you."
+ },
+ "tip": null
+}

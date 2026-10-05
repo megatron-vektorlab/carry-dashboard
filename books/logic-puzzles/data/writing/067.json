@@ -1,0 +1,36 @@
+{
+ "no": 67,
+ "clues": [
+  "Whoever went in by the scarecrow got through faster than whoever went in by the barn door.",
+  "Quinn's snack was not the kettle corn.",
+  "The friend who used the barn door finished in either 20 minutes or 30 minutes.",
+  "Jonah took longer than Quinn.",
+  "The friend who entered by the north gate had neither the kettle corn nor the donut.",
+  "Of the south gate friend and the 25-minute friend, one picked the donut and the other picked the kettle corn.",
+  "The 25-minute finisher picked either the donut or the candy apple.",
+  "Either Quinn or Jonah took 30 minutes.",
+  "The friend with the candy apple needed either 30 minutes or 35 minutes.",
+  "Quinn and Faye were, in some order, the 20-minute finisher and the 35-minute finisher."
+ ],
+ "hints": [
+  "Look at 25 minutes in the box where times meet snacks. Which snack could the 25-minute friend have picked?",
+  "Two either-or clues meet here. Clue 7 allows the donut or the candy apple at 25 minutes. Clue 9 says where the candy apple can be.",
+  "So the 25-minute friend picked the donut. Then clue 6 gives the kettle corn to the south gate friend, who is someone else.",
+  "Clues 1 and 3 put the barn door at 30 minutes. The 25-minute donut was not the south gate or the north gate (clue 5), so it was the scarecrow."
+ ],
+ "solution": {
+  "key_idea": "Clues 7 and 9 put the donut at 25 minutes, and clue 6 then hands the kettle corn to the south gate.",
+  "steps": [
+   "By clue 7, the 25-minute friend picked the donut or the candy apple. Clue 9 rules out the candy apple, so 25 minutes went with the donut.",
+   "By clue 6, the south gate friend did not take 25 minutes, so that friend picked the other snack of the pair: the kettle corn.",
+   "By clue 3, the barn door took 20 or 30 minutes. Clue 1 says the scarecrow was faster, so not 20. The barn door took 30 minutes.",
+   "The 25-minute donut friend did not use the barn door, the south gate, or the north gate (clue 5). So the scarecrow took 25 minutes.",
+   "By clue 10, Quinn and Faye took 20 and 35 minutes. Clue 4 keeps Quinn off 35, so Quinn took 20 and Faye 35.",
+   "By clue 8, Jonah took 30 minutes, so Hal took 25. So Jonah used the barn door, and Hal the scarecrow, with the donut.",
+   "Quinn did not pick the kettle corn (clue 2), so Quinn did not use the south gate. Quinn used the north gate, and Faye the south gate.",
+   "By clue 9, the candy apple took 30 or 35 minutes, and Faye's 35 had the kettle corn. So Jonah picked the candy apple, and Quinn the cider."
+  ],
+  "epilogue": "Quinn, in by the north gate, won in 20 minutes and toasted with cider, while Faye, last at 35, cheered up with kettle corn. Jonah, without his watch, guessed his 30 minutes exactly."
+ },
+ "tip": null
+}

@@ -1,0 +1,59 @@
+{
+ "lesson": 4,
+ "names": [
+  "Bea",
+  "Otto",
+  "Juno"
+ ],
+ "texts": [
+  "Juno didn't eat the last scone.",
+  "Juno ate the last scone.",
+  "Either Bea or Otto ate the last scone."
+ ],
+ "rule_text": "Exactly one of these statements is true.",
+ "culprit": "Juno",
+ "cases": [
+  {
+   "case": "Bea",
+   "truth": [
+    true,
+    false,
+    true
+   ],
+   "fits": false
+  },
+  {
+   "case": "Otto",
+   "truth": [
+    true,
+    false,
+    true
+   ],
+   "fits": false
+  },
+  {
+   "case": "Juno",
+   "truth": [
+    false,
+    true,
+    false
+   ],
+   "fits": true
+  }
+ ],
+ "statements": [
+  [
+   "not",
+   2
+  ],
+  [
+   "is",
+   2
+  ],
+  [
+   "or",
+   0,
+   1
+  ]
+ ]
+}

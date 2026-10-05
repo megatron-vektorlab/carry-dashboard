@@ -1,0 +1,26 @@
+{
+ "no": 32,
+ "clues": [
+  "Hattie's float rolled exactly two floats ahead of Arlo's.",
+  "Hattie rode either at the very front of the parade or at the very back.",
+  "Selma rode on the float right in front of Arlo's."
+ ],
+ "hints": [
+  "Look at Hattie's row, where clue 2 allows only two places. Do both of them work with clue 1?",
+  "Put clues 1 and 2 together: clue 1 needs room behind Hattie for Arlo, two floats back. Which end of the parade has room behind it?",
+  "Nothing rolled behind the last float, so Hattie led the parade. Then by clue 1, Arlo rode on the third float."
+ ],
+ "solution": {
+  "key_idea": "Clue 1 needs room behind Hattie, so of clue 2's two ends she took the front, and Arlo rode third.",
+  "steps": [
+   "By clue 2, Hattie rode on the first float or the fourth.",
+   "By clue 1, Arlo rode two floats behind Hattie, and no float came behind the fourth, so Hattie rode on the first float.",
+   "Then by clue 1, Arlo rode on the third float.",
+   "By clue 3, Selma rode right in front of Arlo, so Selma rode on the second float.",
+   "That leaves the fourth float, at the very back, for Nico and his lobster."
+  ],
+  "epilogue": "The correction box ran on Monday: Hattie first, then Selma, Arlo and Nico. Nico's lobster brought up the rear, and by Tuesday it was the size of two canoes."
+ },
+ "tip": "An exact gap needs room. Before you put someone at an end, check that the gap still fits.",
+ "answer_line": null
+}

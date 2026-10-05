@@ -1,0 +1,27 @@
+{
+ "no": 25,
+ "clues": [
+  "Whoever drank the cider ordered either the lobster roll or the fried clams.",
+  "One of Felix and the diner who ordered the crab cake drank iced tea, and the other drank lemonade.",
+  "Sam's drink was neither iced tea nor cider.",
+  "Bea's supper was either the fish tacos or the lobster roll.",
+  "The lemonade drinker had either the lobster roll or the fish tacos."
+ ],
+ "hints": [
+  "Look at the crab cake in clue 2. What could its diner have drunk?",
+  "Read clue 5 next to clue 2. Both mention the lemonade. Could the crab cake's diner have had it?",
+  "No: clue 5 puts the lemonade with the lobster roll or fish tacos. So the crab cake came with iced tea, and Felix drank lemonade."
+ ],
+ "solution": {
+  "key_idea": "The lemonade belongs with the lobster roll or the fish tacos (clue 5), so clue 2 pairs the crab cake with iced tea.",
+  "steps": [
+   "By clue 2, the crab cake's diner drank iced tea or lemonade; clue 5 rules out lemonade, so the crab cake came with iced tea.",
+   "Then Felix drank the lemonade (clue 2), and Sam, who drank neither iced tea nor cider (clue 3), had the root beer.",
+   "Clue 4 keeps Bea from the crab cake, and so from the iced tea. So Bea drank cider, and Nico had iced tea and the crab cake.",
+   "The fried clams were not Bea's (clue 4), nor lemonade-drinking Felix's (clue 5), so Sam ordered them.",
+   "Clue 1 puts the cider with the lobster roll or the fried clams, so Bea had the lobster roll, and Felix the fish tacos."
+  ],
+  "epilogue": "The cook got every plate to the right diner, from Nico's crab cake to Sam's fried clams. By dessert, Nico's lobster was the size of a rowboat."
+ },
+ "tip": "A 'one and the other' clue always names two different people, and that is a free X."
+}

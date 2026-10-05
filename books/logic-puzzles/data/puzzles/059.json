@@ -1,0 +1,387 @@
+{
+ "no": 59,
+ "chapter": 5,
+ "family": "num43",
+ "stars": 3,
+ "seed": 59005,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Apples by the Pound",
+ "story": "Crisp September air brought four friends to Hilltop Orchard, and each came down from the ladders with one basket of one kind of apple. The farm stand charges by the pound, but the scale's paper tape has jammed, and Mabel is busy removing a stray apostrophe from the sign that reads \"Fresh Apple's.\" Who picked which apple, and how much did each friend pick?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Mabel"
+ ],
+ "state": {
+  "theme": {
+   "slot": 59,
+   "title": "Apples by the Pound",
+   "story": "Crisp September air brought four friends to Hilltop Orchard, and each came down from the ladders with one basket of one kind of apple. The farm stand charges by the pound, but the scale's paper tape has jammed, and Mabel is busy removing a stray apostrophe from the sign that reads \"Fresh Apple's.\" Who picked which apple, and how much did each friend pick?",
+   "entity": [
+    "picker",
+    "pickers"
+   ],
+   "cast": [
+    "Mabel"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Picker",
+    "kind": "name",
+    "values": [
+     "Pablo",
+     "Mabel",
+     "Kit",
+     "Sam"
+    ]
+   },
+   {
+    "label": "Apple",
+    "values": [
+     "Cortland",
+     "Macoun",
+     "Baldwin",
+     "Empire"
+    ],
+    "ref": "the {v} picker",
+    "pred": "picked {v} apples",
+    "neg": "did not pick {v} apples",
+    "either": "picked either {a} or {b} apples",
+    "nor": "picked neither {a} nor {b} apples",
+    "short": "the {v} apples"
+   },
+   {
+    "label": "Weight",
+    "ordered": true,
+    "nums": [
+     10,
+     15,
+     20,
+     25
+    ],
+    "labels": [
+     "10 pounds",
+     "15 pounds",
+     "20 pounds",
+     "25 pounds"
+    ],
+    "ref": "the friend who picked {x}",
+    "pred": "picked {x} of apples",
+    "neg": "did not pick {x} of apples",
+    "either": "picked either {a} or {b} of apples",
+    "nor": "picked neither {a} nor {b} of apples",
+    "short": "{x}",
+    "more": "had a heavier basket than {y}",
+    "less": "had a lighter basket than {y}",
+    "dmore": "picked exactly {d} more than {y}",
+    "dless": "picked exactly {d} less than {y}",
+    "dunit": [
+     "pound",
+     "pounds"
+    ],
+    "dmore1": "had a basket just 5 pounds heavier than {y}'s",
+    "dless1": "had a basket just 5 pounds lighter than {y}'s",
+    "step": 5,
+    "values": [
+     "10 pounds",
+     "15 pounds",
+     "20 pounds",
+     "25 pounds"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   3,
+   1,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 2,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Pablo picked exactly 15 pounds less than the Macoun picker.",
+  "Of Pablo and Sam, one picked 10 pounds of apples and the other picked 20 pounds of apples.",
+  "Pablo picked neither Baldwin nor Empire apples.",
+  "The Baldwin picker picked neither 20 pounds nor 25 pounds of apples.",
+  "Mabel picked either 20 pounds or 25 pounds of apples."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "Pablo must go with the Cortland apples: clue 1 rules out the Macoun apples; clue 3 rules out the Baldwin apples and the Empire apples."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means the Macoun apples cannot be 10 pounds, 15 pounds, or 20 pounds and Pablo cannot be 15 pounds, 20 pounds, or 25 pounds."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Pablo must go with 10 pounds: clue 1 rules out 15 pounds, 20 pounds, and 25 pounds."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The Macoun apples must go with 25 pounds: clue 1 rules out 10 pounds, 15 pounds, and 20 pounds."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Cortland apples goes with Pablo, so the Cortland apples also goes with 10 pounds."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The Baldwin apples must go with 15 pounds: clue 4 rules out 20 pounds and 25 pounds; 10 pounds already goes with the Cortland apples."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The Empire apples must go with 20 pounds: the other choices are already taken."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    5
+   ],
+   "text": "Mabel must go with 25 pounds: clue 5 rules out 10 pounds and 15 pounds; clue 2 rules out 20 pounds."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Kit must go with 15 pounds: clue 2 rules out 20 pounds; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Sam must go with 20 pounds: clue 2 rules out 15 pounds and 25 pounds; 10 pounds already goes with Pablo."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Macoun apples goes with 25 pounds, so the Macoun apples also goes with Mabel."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The Baldwin apples goes with 15 pounds, so the Baldwin apples also goes with Kit."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Sam must go with the Empire apples: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 19,
+  "score": 47,
+  "revisits": 1,
+  "transfer": 4,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Pablo",
+   "Cortland",
+   "10 pounds"
+  ],
+  [
+   "Mabel",
+   "Macoun",
+   "25 pounds"
+  ],
+  [
+   "Kit",
+   "Baldwin",
+   "15 pounds"
+  ],
+  [
+   "Sam",
+   "Empire",
+   "20 pounds"
+  ]
+ ],
+ "score": 47
+}

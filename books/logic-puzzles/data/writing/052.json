@@ -1,0 +1,22 @@
+{
+ "no": 52,
+ "clues": [],
+ "hints": [
+  "Look at Una's and Ruben's statements. What does each one say about Una?",
+  "Opposites: exactly one of those two is false. The rule allows only one liar, so Priya and Gideon both tell the truth.",
+  "Priya says Una or Priya hid it, and Gideon rules out Priya. So Una hid the gavel, and hers is the only false statement."
+ ],
+ "solution": {
+  "key_idea": "Una and Ruben say opposite things about Una, so one of them is the lone liar, and Priya and Gideon tell the truth.",
+  "steps": [
+   "The rule says only the culprit lies, so exactly one statement is false, and it is the culprit's.",
+   "Una says she didn't hide the gavel, and Ruben says she did. These are opposites, so exactly one of them is false.",
+   "So the liar is Una or Ruben, and Priya's and Gideon's statements are both true.",
+   "Priya's true statement says Una or Priya hid the gavel. Gideon's true statement rules out Priya. So Una hid it.",
+   "Check Una: her own statement is false, and Priya's, Gideon's and Ruben's are true. Only the culprit lies, so Una fits."
+  ],
+  "epilogue": "Una had hidden the gavel under the agendas as a joke on the moderator, who bangs it rather hard. She handed it back, and the meeting started twenty minutes late."
+ },
+ "tip": null,
+ "answer_line": "Una hid the gavel."
+}

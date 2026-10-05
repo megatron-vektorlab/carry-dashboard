@@ -1,0 +1,28 @@
+{
+ "no": 39,
+ "clues": [
+  "Cass and Boris went out on Monday and Wednesday, one on each day.",
+  "Imani went out exactly three days after the visitor from Dover.",
+  "Boris was not the visitor from Reno.",
+  "Of Boris and the visitor from Tulsa, one went out on Tuesday and the other on Wednesday."
+ ],
+ "hints": [
+  "Look at clue 2. In a week that runs only from Monday to Thursday, how much room does a gap of exactly three days need?",
+  "Clue 2 is an exact gap, so count. Try the Dover visitor on each day and see where Imani would land.",
+  "So the Dover visitor went out on Monday and Imani on Thursday, the only days three apart. Clue 1 then leaves Tuesday for Hal."
+ ],
+ "solution": {
+  "key_idea": "Only Monday and Thursday are three days apart, so clue 2 puts the Dover visitor on Monday and Imani on Thursday.",
+  "steps": [
+   "By clue 2, Imani went out exactly three days after the Dover visitor. Only Monday and Thursday are three days apart.",
+   "So the Dover visitor went out on Monday, and Imani on Thursday.",
+   "By clue 1, Cass and Boris took Monday and Wednesday, which leaves Tuesday for Hal.",
+   "Clue 4 puts Boris on Tuesday or Wednesday, and clue 1 on Monday or Wednesday. So Boris went out on Wednesday, and Cass on Monday.",
+   "Cass went out on Monday, so Cass is from Dover. By clue 4, the Tulsa visitor went out on Tuesday, so Hal is from Tulsa.",
+   "By clue 3, Boris is not from Reno, so he is from Buffalo and Imani is from Reno. Boris, Wednesday's guest, hauled up the lobster."
+  ],
+  "epilogue": "Boris from Buffalo hauled up Wednesday's lobster, and by the time Nico told it at the bakery, it was the size of a canoe. Boris's photo showed something nearer a loaf of bread."
+ },
+ "tip": "Days of the week work like places in a line, with Monday at the front and Thursday at the back.",
+ "answer_line": "Boris hauled up the canoe-sized lobster."
+}

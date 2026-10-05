@@ -1,0 +1,8 @@
+{"no": 37, "clues": [
+ {"kind": "diff", "a": "Early bird=Oscar", "b": "Spot=second"},
+ {"kind": "diff", "a": "Spot=first", "b": "Early bird=Jonah"},
+ {"kind": "either", "a": "Spot=fourth", "one_of": ["Early bird=Jonah", "Early bird=Nadia"]},
+ {"kind": "compare", "a": "Early bird=Elsa", "b": "Early bird=Oscar", "cat": "Spot", "rel": "a_less"},
+ {"kind": "compare", "a": "Early bird=Elsa", "b": "Early bird=Milo", "cat": "Spot", "rel": "not_next_to"},
+ {"kind": "compare", "a": "Early bird=Nadia", "b": "Early bird=Oscar", "cat": "Spot", "rel": "a_greater"}
+]}

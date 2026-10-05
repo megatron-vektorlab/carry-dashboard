@@ -1,0 +1,226 @@
+{
+ "no": 31,
+ "chapter": 3,
+ "family": "lineup",
+ "stars": 2,
+ "seed": 31000,
+ "kind": "grid",
+ "lineup": true,
+ "title": "The Creamery Line",
+ "story": "On the first hot afternoon of July, even Rosa left her ovens for a cone, and four customers waited in a tidy line at the creamery window by the pier. After they had gone, the scooper found a five-dollar bill on the boards right where the second customer had stood. Ada believes every lost dollar has an owner. Who stood where in line, and whose five dollars is it?",
+ "question": {
+  "text": "Who dropped the five-dollar bill?",
+  "cat": "Place",
+  "value": "second"
+ },
+ "answer": "Faye",
+ "cast": [
+  "Rosa"
+ ],
+ "state": {
+  "theme": {
+   "slot": 31,
+   "title": "The Creamery Line",
+   "story": "On the first hot afternoon of July, even Rosa left her ovens for a cone, and four customers waited in a tidy line at the creamery window by the pier. After they had gone, the scooper found a five-dollar bill on the boards right where the second customer had stood. Ada believes every lost dollar has an owner. Who stood where in line, and whose five dollars is it?",
+   "entity": [
+    "customer",
+    "customers"
+   ],
+   "cast": [
+    "Rosa"
+   ],
+   "question": {
+    "text": "Who dropped the five-dollar bill?",
+    "cat": "Place",
+    "value": "second"
+   }
+  },
+  "cats": [
+   {
+    "label": "Customer",
+    "kind": "name",
+    "values": [
+     "Rosa",
+     "Ivan",
+     "Faye",
+     "Kit"
+    ]
+   },
+   {
+    "label": "Place",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "first",
+     "second",
+     "third",
+     "fourth"
+    ],
+    "ref": "the {x} customer in line",
+    "pred": "stood {x} in line",
+    "neg": "did not stand {x} in line",
+    "either": "stood either {a} or {b} in line",
+    "nor": "stood neither {a} nor {b} in line",
+    "short": "the {x} spot",
+    "more": "stood somewhere behind {y}",
+    "less": "stood somewhere ahead of {y}",
+    "dmore": "stood exactly {d} behind {y}",
+    "dless": "stood exactly {d} ahead of {y}",
+    "dunit": [
+     "place",
+     "places"
+    ],
+    "dmore1": "stood right behind {y}",
+    "dless1": "stood right in front of {y}",
+    "adj": "stood right next to {y}",
+    "nadj": "did not stand next to {y}",
+    "ends": "stood at one end of the line",
+    "step": 1,
+    "values": [
+     "first",
+     "second",
+     "third",
+     "fourth"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   3,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 1,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Ivan stood exactly 3 places behind Kit.",
+  "The third customer in line is either Ivan or Rosa."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Kit can still be only the first spot, the second spot, or the fourth spot, clue 1 means Ivan cannot be the first spot, the second spot, or the third spot and Kit cannot be the second spot or the fourth spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Ivan must go with the fourth spot: clue 1 rules out the first spot, the second spot, and the third spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Kit must go with the first spot: clue 1 rules out the second spot and the fourth spot; clue 2 rules out the third spot."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Faye must go with the second spot: clue 2 rules out the third spot; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Rosa must go with the third spot: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 6,
+  "score": 15,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 2
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Rosa",
+   "third"
+  ],
+  [
+   "Ivan",
+   "fourth"
+  ],
+  [
+   "Faye",
+   "second"
+  ],
+  [
+   "Kit",
+   "first"
+  ]
+ ],
+ "score": 15
+}

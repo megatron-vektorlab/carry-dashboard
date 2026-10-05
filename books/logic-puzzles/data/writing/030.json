@@ -1,0 +1,28 @@
+{
+ "no": 30,
+ "clues": [
+  "Otis rowed either the Minnow or the Skipjack.",
+  "Amara and Felix rowed the Skipjack and the Teacup, in some order.",
+  "Neither the varnished nor the ash oars went out on the Skipjack.",
+  "Whoever had the blue-tipped oars rowed either the Pebble or the Teacup.",
+  "Neither Felix nor Otis used the varnished oars.",
+  "One of Felix and Amara used the varnished oars, and the other used the spruce oars."
+ ],
+ "hints": [
+  "Look at the Skipjack in the box where oars meet dinghies. Which oars could have gone out on it?",
+  "Clue 3 crosses off two kinds of oars for the Skipjack, and clue 4 keeps the blue-tipped oars away from it. Put them together.",
+  "So the Skipjack's rower used the spruce oars. Clues 5 and 6 give Felix the spruce oars, so Felix rowed the Skipjack."
+ ],
+ "solution": {
+  "key_idea": "Clues 3 and 4 leave the Skipjack only the spruce oars, and clues 5 and 6 make those Felix's.",
+  "steps": [
+   "Clue 3 rules out the varnished and ash oars for the Skipjack, and clue 4 the blue-tipped, so the Skipjack's rower used the spruce oars.",
+   "Clue 2 keeps Otis and Walt off the Skipjack and Teacup, so by clue 1 Otis rowed the Minnow, and Walt the Pebble.",
+   "The Minnow's oars were not blue-tipped (clue 4), varnished (clue 5) or spruce (the Skipjack's), so Otis used the ash oars.",
+   "By clues 5 and 6, Felix used the spruce oars and Amara the varnished, so Felix rowed the Skipjack.",
+   "By clue 2, Amara rowed the Teacup, and Walt used the blue-tipped oars on the Pebble."
+  ],
+  "epilogue": "Felix rowed the Skipjack with spruce, Otis the Minnow with ash, Walt the Pebble with blue-tipped oars, and Amara the Teacup with varnished. Who moved Felix's own dinghy stayed a puzzle."
+ },
+ "tip": "When two people share two dinghies in some order, cross everyone else off those dinghies at once."
+}

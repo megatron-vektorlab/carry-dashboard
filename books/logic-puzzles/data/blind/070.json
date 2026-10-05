@@ -1,0 +1,60 @@
+{
+ "no": 70,
+ "people": "bakers",
+ "categories": [
+  {
+   "label": "Baker",
+   "values": [
+    "Priya",
+    "Vito",
+    "Imani",
+    "Boris"
+   ]
+  },
+  {
+   "label": "Crust",
+   "values": [
+    "lattice",
+    "crumble",
+    "plain",
+    "braided"
+   ]
+  },
+  {
+   "label": "Spice",
+   "values": [
+    "cinnamon",
+    "nutmeg",
+    "ginger",
+    "cardamom"
+   ]
+  },
+  {
+   "label": "Bake",
+   "values": [
+    "40 minutes",
+    "45 minutes",
+    "50 minutes",
+    "55 minutes"
+   ],
+   "ordered": true,
+   "numbers": [
+    40,
+    45,
+    50,
+    55
+   ],
+   "note": "values in order from smallest to largest number; numbers [40, 45, 50, 55] (unit: minutes)"
+  }
+ ],
+ "clues": [
+  "Of the pie with the crumble crust and the pie that baked 55 minutes, one had nutmeg and the other had ginger.",
+  "The cardamom pie stayed in the oven longer than the ginger pie.",
+  "Imani's pie baked for less time than the lattice pie.",
+  "Priya's crust was not the plain one.",
+  "The lattice pie baked exactly 5 minutes longer than the ginger pie.",
+  "Of Vito and the baker whose pie baked 40 minutes, one made the crumble crust and the other the braided one.",
+  "The lattice pie baked for 50 minutes."
+ ],
+ "format": "Items are written \"Category=value\" using the category labels and values exactly as listed\n(for number categories use the value as shown, e.g. \"Time=9 a.m.\").\n  {\"kind\": \"same\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to the same person\n  {\"kind\": \"diff\", \"a\": ITEM, \"b\": ITEM}                 a and b belong to different people\n  {\"kind\": \"nor\", \"a\": ITEM, \"not\": [ITEM, ITEM]}         a's person has neither of the two\n  {\"kind\": \"either\", \"a\": ITEM, \"one_of\": [ITEM, ITEM]}  a's person has one of the two\n  {\"kind\": \"compare\", \"a\": ITEM, \"b\": ITEM, \"cat\": CATEGORY,\n     \"rel\": \"a_greater\" | \"a_less\" | \"a_greater_by\" | \"a_less_by\" | \"next_to\" | \"not_next_to\",\n     \"by\": NUMBER}   compare the CATEGORY numbers of a's person and b's person; \"by\" (only for\n                     *_by) is the exact difference in the category's own numbers (e.g. 2 for\n                     \"two hours later\" when times are whole hours; 1 for \"right behind\" in a line)\n  {\"kind\": \"pair\", \"people\": [ITEM, ITEM], \"options\": [ITEM, ITEM]}\n                     of the two people named by \"people\", one has the first option and the\n                     other has the second (in some order); they are two different people\n  {\"kind\": \"all_different\", \"items\": [ITEM, ITEM, ...]}  all belong to different people\n  {\"kind\": \"other\", \"text\": \"...\"}                       anything that fits none of these"
+}

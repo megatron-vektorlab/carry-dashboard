@@ -1,0 +1,110 @@
+{
+ "no": 51,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 51000,
+ "kind": "liars",
+ "title": "Who Swapped the Quilt Ribbons?",
+ "story": "Overnight, the blue ribbon and the red ribbon at the fair's quilt show traded places, and two quilters are now being extremely polite to each other. Four people were in the quilt hall after closing, Hattie and her clipboard among them. Each of them has something to say. Can you sort out who did it before the doors open at nine?",
+ "cast": [
+  "Hattie",
+  "Wren"
+ ],
+ "names": [
+  "Hattie",
+  "Wren",
+  "Cyrus",
+  "Elsa"
+ ],
+ "did": "swapped the quilt ribbons",
+ "didnt": "didn't swap the quilt ribbons",
+ "statements": [
+  [
+   "is",
+   2
+  ],
+  [
+   "or",
+   0,
+   1
+  ],
+  [
+   "is",
+   1
+  ],
+  [
+   "not",
+   3
+  ]
+ ],
+ "texts": [
+  "Cyrus swapped the quilt ribbons.",
+  "Either Hattie or I swapped the quilt ribbons.",
+  "Wren swapped the quilt ribbons.",
+  "I didn't swap the quilt ribbons."
+ ],
+ "rule": [
+  "exactly",
+  3
+ ],
+ "rule_text": "Exactly three of these statements are true.",
+ "culprit": "Wren",
+ "truth": [
+  false,
+  true,
+  true,
+  true
+ ],
+ "cases": [
+  {
+   "case": "Hattie",
+   "truth": [
+    "false",
+    "true",
+    "false",
+    "true"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Wren",
+   "truth": [
+    "false",
+    "true",
+    "true",
+    "true"
+   ],
+   "count": 3,
+   "fits": true
+  },
+  {
+   "case": "Cyrus",
+   "truth": [
+    "true",
+    "false",
+    "false",
+    "true"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Elsa",
+   "truth": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "count": 0,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who swapped the quilt ribbons?"
+ },
+ "answer": "Wren",
+ "score": 40
+}

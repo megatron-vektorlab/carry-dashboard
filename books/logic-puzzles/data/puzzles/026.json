@@ -1,0 +1,376 @@
+{
+ "no": 26,
+ "chapter": 2,
+ "family": "grid4",
+ "stars": 2,
+ "seed": 26000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Grown-Up Spelling Bee",
+ "story": "Four grown-ups made it to the final round of the library's spelling bee, each given one fiendish word and each clutching a lucky charm. Wren spelled in a whisper, as usual, and Mabel judged with her red pencil poised. Then Mabel's score sheet slipped under the cookie table and came out with a coffee ring on it. Who spelled which word, and which charm did each finalist hold?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Wren",
+  "Mabel"
+ ],
+ "state": {
+  "theme": {
+   "slot": 26,
+   "title": "The Grown-Up Spelling Bee",
+   "story": "Four grown-ups made it to the final round of the library's spelling bee, each given one fiendish word and each clutching a lucky charm. Wren spelled in a whisper, as usual, and Mabel judged with her red pencil poised. Then Mabel's score sheet slipped under the cookie table and came out with a coffee ring on it. Who spelled which word, and which charm did each finalist hold?",
+   "entity": [
+    "finalist",
+    "finalists"
+   ],
+   "cast": [
+    "Wren",
+    "Mabel"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Finalist",
+    "kind": "name",
+    "values": [
+     "Wren",
+     "Oscar",
+     "Imani",
+     "Cyrus"
+    ]
+   },
+   {
+    "label": "Word",
+    "values": [
+     "rhythm",
+     "kayak",
+     "pharaoh",
+     "zucchini"
+    ],
+    "ref": "the finalist who spelled {v}",
+    "pred": "spelled {v}",
+    "neg": "did not spell {v}",
+    "either": "spelled either {a} or {b}",
+    "nor": "spelled neither {a} nor {b}",
+    "short": "the word {v}"
+   },
+   {
+    "label": "Charm",
+    "values": [
+     "lucky penny",
+     "acorn",
+     "sea glass",
+     "wishbone"
+    ],
+    "ref": "the finalist with the {v}",
+    "pred": "clutched the {v}",
+    "neg": "did not clutch the {v}",
+    "either": "clutched either the {a} or the {b}",
+    "nor": "clutched neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   3,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the finalist with the acorn and the finalist with the wishbone, one spelled kayak and the other spelled zucchini.",
+  "The finalist who spelled rhythm clutched either the sea glass or the wishbone.",
+  "The finalist with the sea glass is either Cyrus or Oscar.",
+  "Wren spelled either zucchini or rhythm.",
+  "Of Oscar and Imani, one clutched the wishbone and the other clutched the sea glass."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The word rhythm must go with the sea glass: clue 2 rules out the lucky penny and the acorn; clue 1 rules out the wishbone."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The word pharaoh must go with the lucky penny: clue 1 rules out the acorn and the wishbone; the sea glass already goes with the word rhythm."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Wren must go with the word zucchini: clue 4 rules out the word kayak and the word pharaoh; the word rhythm is already ruled out for the sea glass."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "Wren must go with the acorn: clue 3 rules out the sea glass; clue 5 rules out the wishbone; the lucky penny is already ruled out for the word pharaoh."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "Imani must go with the wishbone: clue 5 rules out the lucky penny and the acorn; clue 3 rules out the sea glass."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Oscar must go with the sea glass: clue 5 rules out the lucky penny and the acorn; the wishbone already goes with Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Cyrus must go with the lucky penny: clue 5 rules out the sea glass and the wishbone; the acorn already goes with Wren."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The word rhythm goes with the sea glass, so the word rhythm also goes with Oscar."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Imani must go with the word kayak: the word rhythm is already ruled out for the sea glass; the word pharaoh is already ruled out for the lucky penny; the word zucchini already goes with Wren."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Cyrus must go with the word pharaoh: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The word zucchini goes with Wren, so the word zucchini also goes with the acorn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The word kayak must go with the wishbone: clue 1 rules out the lucky penny and the sea glass; the acorn already goes with the word zucchini."
+  }
+ ],
+ "features": {
+  "steps": 21,
+  "score": 55,
+  "revisits": 0,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 5
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Wren",
+   "zucchini",
+   "acorn"
+  ],
+  [
+   "Oscar",
+   "rhythm",
+   "sea glass"
+  ],
+  [
+   "Imani",
+   "kayak",
+   "wishbone"
+  ],
+  [
+   "Cyrus",
+   "pharaoh",
+   "lucky penny"
+  ]
+ ],
+ "score": 55
+}

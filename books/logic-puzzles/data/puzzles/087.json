@@ -1,0 +1,727 @@
+{
+ "no": 87,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 87000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Vanishing Cameo",
+ "story": "Thanksgiving afternoon at the Gull's Rest Inn: the turkey was resting, and so were the guests. Then Priya's heirloom cameo brooch vanished, velvet pouch and all, from the parlor mantel. Five guests had settled in the parlor, each at a different time, with a different drink and a different book from the shelf. The pouch turned up, empty, tucked inside the parlor's almanac. Who tucked the cameo away?",
+ "question": {
+  "text": "Who tucked the cameo away?",
+  "cat": "Book",
+  "value": "almanac"
+ },
+ "answer": "Zeke",
+ "cast": [
+  "Mabel",
+  "Priya"
+ ],
+ "state": {
+  "theme": {
+   "slot": 87,
+   "title": "The Case of the Vanishing Cameo",
+   "story": "Thanksgiving afternoon at the Gull's Rest Inn: the turkey was resting, and so were the guests. Then Priya's heirloom cameo brooch vanished, velvet pouch and all, from the parlor mantel. Five guests had settled in the parlor, each at a different time, with a different drink and a different book from the shelf. The pouch turned up, empty, tucked inside the parlor's almanac. Who tucked the cameo away?",
+   "entity": [
+    "guest",
+    "guests"
+   ],
+   "cast": [
+    "Mabel",
+    "Priya"
+   ],
+   "question": {
+    "text": "Who tucked the cameo away?",
+    "cat": "Book",
+    "value": "almanac"
+   }
+  },
+  "cats": [
+   {
+    "label": "Guest",
+    "kind": "name",
+    "values": [
+     "Mabel",
+     "Zeke",
+     "Carmen",
+     "Ivan",
+     "Basil"
+    ]
+   },
+   {
+    "label": "Drink",
+    "values": [
+     "cocoa",
+     "cider",
+     "tea",
+     "coffee",
+     "eggnog"
+    ],
+    "ref": "the {v} drinker",
+    "pred": "drank {v}",
+    "neg": "did not drink {v}",
+    "either": "drank either {a} or {b}",
+    "nor": "drank neither {a} nor {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Book",
+    "values": [
+     "almanac",
+     "sea stories",
+     "poems",
+     "cookbook",
+     "mystery"
+    ],
+    "ref": "the reader of the {v}",
+    "pred": "read the {v}",
+    "neg": "did not read the {v}",
+    "either": "read either the {a} or the {b}",
+    "nor": "read neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     840,
+     860,
+     880,
+     900,
+     920
+    ],
+    "labels": [
+     "2:00 p.m.",
+     "2:20 p.m.",
+     "2:40 p.m.",
+     "3:00 p.m.",
+     "3:20 p.m."
+    ],
+    "ref": "the guest who sat down at {x}",
+    "pred": "sat down at {x}",
+    "neg": "did not sit down at {x}",
+    "either": "sat down at either {a} or {b}",
+    "nor": "sat down at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "sat down later than {y}",
+    "less": "sat down earlier than {y}",
+    "dmore": "sat down exactly {d} after {y}",
+    "dless": "sat down exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "sat down 20 minutes after {y}",
+    "dless1": "sat down 20 minutes before {y}",
+    "step": 20,
+    "values": [
+     "2:00 p.m.",
+     "2:20 p.m.",
+     "2:40 p.m.",
+     "3:00 p.m.",
+     "3:20 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   0,
+   3,
+   4,
+   2
+  ],
+  [
+   2,
+   0,
+   1,
+   3,
+   4
+  ],
+  [
+   2,
+   0,
+   3,
+   1,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "alldiff",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Basil drank either tea or cider.",
+  "Of the reader of the sea stories and the reader of the mystery, one is Basil and the other is Carmen.",
+  "Zeke sat down exactly 60 minutes before the coffee drinker.",
+  "The eggnog drinker, Mabel, and the reader of the mystery are three different guests.",
+  "The eggnog drinker read either the sea stories or the cookbook.",
+  "Of the reader of the sea stories and the reader of the mystery, one sat down at 3:00 p.m. and the other sat down at 3:20 p.m.",
+  "The reader of the mystery drank either eggnog or tea.",
+  "The reader of the poems sat down later than the reader of the cookbook.",
+  "Of Basil and the cocoa drinker, one sat down at 2:00 p.m. and the other sat down at 3:20 p.m."
+ ],
+ "trace": [
+  {
+   "kind": "alldiff",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4: mark X between the people it lists."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    7
+   ],
+   "text": "The mystery must go with the tea: clue 7 rules out the cocoa, the cider, and the coffee; clue 4 rules out the eggnog."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 means the coffee cannot be 2:00 p.m., 2:20 p.m., or 2:40 p.m. and Zeke cannot be 2:40 p.m., 3:00 p.m., or 3:20 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 means the poems cannot be 2:00 p.m. and the cookbook cannot be 3:20 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since the poems can still be only 2:20 p.m. or 2:40 p.m. and the cookbook can still be only 2:00 p.m., 2:20 p.m., or 2:40 p.m., clue 8 means the cookbook cannot be 2:40 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    3,
+    9
+   ],
+   "text": "SUPPOSE TEST: try Basil with 2:00 p.m..",
+   "chain": [
+    "Suppose Basil goes with 2:00 p.m.",
+    "Zeke must go with 2:20 p.m.: clue 3 rules out 2:40 p.m., 3:00 p.m., and 3:20 p.m.; 2:00 p.m. already goes with Basil.",
+    "The cocoa must go with 3:20 p.m.: clue 9 rules out 2:20 p.m., 2:40 p.m., and 3:00 p.m.; 2:00 p.m. is already ruled out for Basil.",
+    "The tea must go with 3:00 p.m.: 2:00 p.m., 2:20 p.m., and 2:40 p.m. are already ruled out for the mystery; 3:20 p.m. already goes with the cocoa.",
+    "But then the coffee has no time left."
+   ],
+   "result": "So Basil does NOT go with 2:00 p.m.: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Basil must go with 3:20 p.m.: the Suppose test ruled out 2:00 p.m.; clue 9 rules out 2:20 p.m., 2:40 p.m., and 3:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "The cocoa must go with 2:00 p.m.: clue 9 rules out 2:20 p.m., 2:40 p.m., and 3:00 p.m.; 3:20 p.m. is already ruled out for Basil."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The coffee must go with 3:00 p.m.: clue 3 rules out 2:00 p.m., 2:20 p.m., and 2:40 p.m.; 3:20 p.m. is already ruled out for Basil."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The tea must go with 3:20 p.m.: 2:00 p.m., 2:20 p.m., and 2:40 p.m. are already ruled out for the mystery; 3:00 p.m. already goes with the coffee."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The mystery must go with 3:20 p.m.: clue 6 rules out 2:00 p.m., 2:20 p.m., and 2:40 p.m.; 3:00 p.m. is already ruled out for the tea."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The sea stories must go with 3:00 p.m.: clue 6 rules out 2:00 p.m., 2:20 p.m., and 2:40 p.m.; 3:20 p.m. already goes with the mystery."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Basil must go with the tea: clue 1 rules out the cocoa, the coffee, and the eggnog; the cider is already ruled out for 3:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Carmen must go with the sea stories: clue 2 rules out the almanac, the poems, and the cookbook; the mystery is already ruled out for the tea."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Basil must go with the mystery: clue 2 rules out the almanac, the poems, and the cookbook; the sea stories already goes with Carmen."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The coffee goes with 3:00 p.m., so the coffee also goes with the sea stories."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    5
+   ],
+   "text": "The eggnog must go with the cookbook: clue 5 rules out the almanac and the poems; clue 4 rules out the mystery; the sea stories already goes with the coffee."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The cocoa must go with the almanac: clue 7 rules out the mystery; the sea stories and the poems are already ruled out for 2:00 p.m.; the cookbook already goes with the eggnog."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The cider must go with the poems: clue 7 rules out the mystery; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "2:00 p.m. goes with the cocoa, so 2:00 p.m. also goes with the almanac."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    8
+   ],
+   "text": "The cookbook must go with 2:20 p.m.: clue 8 rules out 2:40 p.m. and 3:20 p.m.; clue 6 rules out 3:00 p.m.; 2:00 p.m. already goes with the almanac."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    8
+   ],
+   "text": "The poems must go with 2:40 p.m.: clue 8 rules out 2:00 p.m.; clue 6 rules out 3:00 p.m. and 3:20 p.m.; 2:20 p.m. already goes with the cookbook."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "3:00 p.m. goes with the sea stories, so 3:00 p.m. also goes with Carmen."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The coffee goes with 3:00 p.m., so the coffee also goes with Carmen."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The eggnog goes with the cookbook, so the eggnog also goes with 2:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The cider must go with 2:40 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the coffee can still be only 3:00 p.m. and Zeke can still be only 2:00 p.m. or 2:20 p.m., clue 3 means Zeke cannot be 2:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Zeke must go with 2:00 p.m.: clue 3 rules out 2:20 p.m., 2:40 p.m., 3:00 p.m., and 3:20 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Mabel must go with 2:40 p.m.: 2:20 p.m. is already ruled out for the cookbook; 3:00 p.m. is already ruled out for the sea stories; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Ivan must go with 2:20 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Mabel must go with the cider: clue 4 rules out the eggnog; the cocoa is already ruled out for 2:00 p.m.; the tea is already ruled out for the mystery; the coffee is already ruled out for 3:00 p.m."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The cocoa goes with 2:00 p.m., so the cocoa also goes with Zeke."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Ivan must go with the eggnog: the tea is already ruled out for the mystery; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Zeke must go with the almanac: clue 2 rules out the sea stories and the mystery; the poems is already ruled out for 2:40 p.m.; the cookbook is already ruled out for the eggnog."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Mabel must go with the poems: clue 2 rules out the sea stories; clue 4 rules out the mystery; the cookbook is already ruled out for the eggnog; the almanac already goes with Zeke."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Ivan must go with the cookbook: clue 2 rules out the sea stories and the mystery; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 66,
+  "score": 188,
+  "revisits": 3,
+  "transfer": 29,
+  "trial": 1,
+  "clue_steps": 11
+ },
+ "trial_chain": 5,
+ "table": [
+  [
+   "Mabel",
+   "cider",
+   "poems",
+   "2:40 p.m."
+  ],
+  [
+   "Zeke",
+   "cocoa",
+   "almanac",
+   "2:00 p.m."
+  ],
+  [
+   "Carmen",
+   "coffee",
+   "sea stories",
+   "3:00 p.m."
+  ],
+  [
+   "Ivan",
+   "eggnog",
+   "cookbook",
+   "2:20 p.m."
+  ],
+  [
+   "Basil",
+   "tea",
+   "mystery",
+   "3:20 p.m."
+  ]
+ ],
+ "score": 188
+}

@@ -1,0 +1,553 @@
+{
+ "no": 68,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 68002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Sticky Auction Receipts",
+ "story": "Going once, going twice: four antique clocks sold at the St. Brendan's autumn auction, each made in a different year from a different wood, and each to a different buyer. Hattie wrote a receipt for every sale, then set her mug of hot cider down on the stack. The receipts are now one sticky brick. Can you match each buyer to a clock, a wood, and a year?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Otis",
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 68,
+   "title": "The Sticky Auction Receipts",
+   "story": "Going once, going twice: four antique clocks sold at the St. Brendan's autumn auction, each made in a different year from a different wood, and each to a different buyer. Hattie wrote a receipt for every sale, then set her mug of hot cider down on the stack. The receipts are now one sticky brick. Can you match each buyer to a clock, a wood, and a year?",
+   "entity": [
+    "buyer",
+    "buyers"
+   ],
+   "cast": [
+    "Otis",
+    "Hattie"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Buyer",
+    "kind": "name",
+    "values": [
+     "Otis",
+     "Della",
+     "Carmen",
+     "Pablo"
+    ]
+   },
+   {
+    "label": "Clock",
+    "values": [
+     "mantel clock",
+     "cuckoo clock",
+     "banjo clock",
+     "ship's clock"
+    ],
+    "ref": "the buyer of the {v}",
+    "pred": "bought the {v}",
+    "neg": "did not buy the {v}",
+    "either": "bought either the {a} or the {b}",
+    "nor": "bought neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Wood",
+    "values": [
+     "oak",
+     "walnut",
+     "cherry",
+     "maple"
+    ],
+    "ref": "the buyer whose clock is {v}",
+    "pred": "bought a clock made of {v}",
+    "neg": "did not buy a clock made of {v}",
+    "either": "bought a clock made of either {a} or {b}",
+    "nor": "bought a clock made of neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Year",
+    "ordered": true,
+    "nums": [
+     1880,
+     1890,
+     1900,
+     1910
+    ],
+    "ref": "the buyer whose clock dates from {x}",
+    "pred": "bought a clock made in {x}",
+    "neg": "did not buy a clock made in {x}",
+    "either": "bought a clock made in either {a} or {b}",
+    "nor": "bought a clock made in neither {a} nor {b}",
+    "short": "{x}",
+    "more": "bought a newer clock than {y} did",
+    "less": "bought an older clock than {y} did",
+    "dmore": "bought a clock exactly {d} newer than {y} did",
+    "dless": "bought a clock exactly {d} older than {y} did",
+    "dunit": [
+     "year",
+     "years"
+    ],
+    "dmore1": "bought a clock a decade newer than {y} did",
+    "dless1": "bought a clock a decade older than {y} did",
+    "step": 10,
+    "values": [
+     "1880",
+     "1890",
+     "1900",
+     "1910"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   3,
+   0
+  ],
+  [
+   1,
+   0,
+   2,
+   3
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  }
+ ],
+ "texts": [
+  "Of the buyer whose clock dates from 1880 and the buyer whose clock dates from 1890, one is Della and the other is Otis.",
+  "Otis bought a newer clock than the buyer of the mantel clock did.",
+  "The buyer of the cuckoo clock is neither Otis nor Della.",
+  "The buyer whose clock is oak bought a clock exactly 30 years newer than the buyer whose clock is walnut did.",
+  "Of Otis and Carmen, one bought a clock made of cherry and the other bought a clock made of maple.",
+  "Otis bought a clock exactly 20 years older than the buyer of the banjo clock did.",
+  "The buyer whose clock is maple bought a clock a decade newer than the buyer whose clock is cherry did."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the mantel clock cannot be 1910 and Otis cannot be 1880."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means oak cannot be 1880, 1890, or 1900 and walnut cannot be 1890, 1900, or 1910."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Oak must go with 1910: clue 4 rules out 1880, 1890, and 1900."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Walnut must go with 1880: clue 4 rules out 1890, 1900, and 1910."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    3,
+    6
+   ],
+   "text": "Otis must go with the ship's clock: clue 2 rules out the mantel clock; clue 3 rules out the cuckoo clock; clue 6 rules out the banjo clock."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since Otis can still be only 1890, 1900, or 1910, clue 6 means the banjo clock cannot be 1880, 1890, or 1900 and Otis cannot be 1900 or 1910."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "Otis must go with 1890: clue 2 rules out 1880; clue 6 rules out 1900 and 1910."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The banjo clock must go with 1910: clue 6 rules out 1880, 1890, and 1900."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Oak goes with 1910, so oak also goes with the banjo clock."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The ship's clock goes with Otis, so the ship's clock also goes with 1890."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the mantel clock can still be only 1880 or 1900 and Otis can still be only 1890, clue 2 means the mantel clock cannot be 1900."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The mantel clock must go with 1880: clue 2 rules out 1900 and 1910; 1890 already goes with the ship's clock."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The cuckoo clock must go with 1900: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Walnut goes with 1880, so walnut also goes with the mantel clock."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since maple can still be only 1890 or 1900 and cherry can still be only 1890 or 1900, clue 7 means maple cannot be 1890 and cherry cannot be 1900."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Cherry must go with 1890: clue 7 rules out 1900; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Maple must go with 1900: clue 7 rules out 1890; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Otis goes with 1890, so Otis also goes with cherry."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The ship's clock goes with Otis, so the ship's clock also goes with cherry."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The cuckoo clock must go with maple: oak is already ruled out for 1910; the other choices are already taken."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Della must go with 1880: clue 1 rules out 1910; 1900 is already ruled out for the cuckoo clock; 1890 already goes with Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Della must go with walnut: oak is already ruled out for 1910; maple is already ruled out for 1900; cherry already goes with Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Della must go with the mantel clock: clue 3 rules out the cuckoo clock; the banjo clock is already ruled out for 1910; the ship's clock already goes with Otis."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Carmen must go with maple: clue 5 rules out oak; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Pablo must go with oak: clue 5 rules out maple; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Carmen must go with 1900: clue 1 rules out 1880; 1910 is already ruled out for oak; 1890 already goes with Otis."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Pablo must go with 1910: clue 1 rules out 1880; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Carmen must go with the cuckoo clock: the banjo clock is already ruled out for 1910; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Pablo must go with the banjo clock: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 46,
+  "score": 126,
+  "revisits": 3,
+  "transfer": 17,
+  "trial": 0,
+  "clue_steps": 9
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Otis",
+   "ship's clock",
+   "cherry",
+   "1890"
+  ],
+  [
+   "Della",
+   "mantel clock",
+   "walnut",
+   "1880"
+  ],
+  [
+   "Carmen",
+   "cuckoo clock",
+   "maple",
+   "1900"
+  ],
+  [
+   "Pablo",
+   "banjo clock",
+   "oak",
+   "1910"
+  ]
+ ],
+ "score": 126
+}

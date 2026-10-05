@@ -1,0 +1,24 @@
+{
+ "no": 7,
+ "clues": [
+  "Imani ran the ticket desk.",
+  "Jonah's job was either the gift shop or the tours.",
+  "Faye ran neither the tours nor the cocoa stand."
+ ],
+ "hints": [
+  "Look at Faye's row. Which jobs do clues 1 and 3 leave open for her?",
+  "Clue 3 gives Faye two X's, and Imani's dot from clue 1 crosses out the ticket desk. That leaves Faye one blank square.",
+  "So Faye took the gift shop. Clue 2 then leaves Jonah only the tours, and Boris gets the cocoa stand."
+ ],
+ "solution": {
+  "key_idea": "Clue 3 and Imani's ticket desk leave Faye just one job, the gift shop.",
+  "steps": [
+   "Clue 1 puts Imani at the ticket desk, so no one else had it.",
+   "Clue 3 rules out the tours and the cocoa stand for Faye, so Faye took the gift shop.",
+   "Clue 2 gives Jonah the gift shop or the tours. The gift shop is Faye's, so Jonah led the tours.",
+   "Boris ran the cocoa stand."
+  ],
+  "epilogue": "Imani sold tickets, Faye ran the gift shop, Boris poured cocoa, and Jonah led the tours, finishing each one exactly on the minute."
+ },
+ "tip": "The last person's answer is often just what everyone else left behind."
+}

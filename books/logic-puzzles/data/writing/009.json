@@ -1,0 +1,25 @@
+{
+ "no": 9,
+ "clues": [
+  "Olive's gloves were either the floral ones or the striped ones.",
+  "Neither Priya nor Zeke wore the floral gloves.",
+  "The green gloves belonged to neither Zeke nor Cass.",
+  "Either Cass or Olive wore the leather gloves."
+ ],
+ "hints": [
+  "Look down the green column. Which clues say something about who wore the green gloves?",
+  "Clue 3 crosses out Zeke and Cass for green. Clue 1 gives Olive only floral or striped, so she is out too.",
+  "So Priya wore the green gloves. Then clues 3, 2 and 4 rule Zeke out of green, floral and leather, so Zeke wore striped."
+ ],
+ "solution": {
+  "key_idea": "Clues 1 and 3 together cross out three gardeners for the green gloves, so Priya wore them.",
+  "steps": [
+   "Clue 3 rules out Zeke and Cass for the green gloves, and clue 1 rules out Olive. So Priya wore green.",
+   "Clue 2 rules out floral for Zeke, and clue 4 rules out leather. Green is Priya's, so Zeke wore striped.",
+   "Clue 1 now leaves Olive only the floral gloves.",
+   "Cass wore the leather gloves."
+  ],
+  "epilogue": "Priya's green, Zeke's striped, Olive's floral and Cass's leather gloves all went home with Mabel's polite notes tucked inside. Every note was grammatically perfect."
+ },
+ "tip": "When one clue stalls, look for another clue that talks about the same column."
+}

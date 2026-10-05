@@ -1,0 +1,26 @@
+{
+ "no": 7,
+ "clues": [
+  {
+   "kind": "same",
+   "a": "Volunteer=Imani",
+   "b": "Job=ticket desk"
+  },
+  {
+   "kind": "either",
+   "a": "Volunteer=Jonah",
+   "one_of": [
+    "Job=gift shop",
+    "Job=tours"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Volunteer=Faye",
+   "not": [
+    "Job=tours",
+    "Job=cocoa stand"
+   ]
+  }
+ ]
+}

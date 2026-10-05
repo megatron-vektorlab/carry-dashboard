@@ -1,0 +1,244 @@
+{
+ "no": 32,
+ "chapter": 3,
+ "family": "lineup",
+ "stars": 2,
+ "seed": 32001,
+ "kind": "grid",
+ "lineup": true,
+ "title": "The Fourth of July Parade",
+ "story": "Four homemade floats rolled down Main Street for the Fourth of July, each with its builder riding proudly on top, and Nico swears the cardboard lobster on his was the size of a canoe. Then the Gazette's parade program came out with the floats in the wrong order. Hattie is already at the front desk with her clipboard. For the correction box, who rode on which float, front to back?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Hattie",
+  "Nico"
+ ],
+ "state": {
+  "theme": {
+   "slot": 32,
+   "title": "The Fourth of July Parade",
+   "story": "Four homemade floats rolled down Main Street for the Fourth of July, each with its builder riding proudly on top, and Nico swears the cardboard lobster on his was the size of a canoe. Then the Gazette's parade program came out with the floats in the wrong order. Hattie is already at the front desk with her clipboard. For the correction box, who rode on which float, front to back?",
+   "entity": [
+    "rider",
+    "riders"
+   ],
+   "cast": [
+    "Hattie",
+    "Nico"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Rider",
+    "kind": "name",
+    "values": [
+     "Hattie",
+     "Nico",
+     "Selma",
+     "Arlo"
+    ]
+   },
+   {
+    "label": "Float",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "first",
+     "second",
+     "third",
+     "fourth"
+    ],
+    "ref": "the rider on the {x} float",
+    "pred": "rode on the {x} float",
+    "neg": "did not ride on the {x} float",
+    "either": "rode on either the {a} or the {b} float",
+    "nor": "rode on neither the {a} nor the {b} float",
+    "short": "the {x} float",
+    "more": "rode somewhere behind {y}",
+    "less": "rode somewhere ahead of {y}",
+    "dmore": "rode exactly {d} behind {y}",
+    "dless": "rode exactly {d} ahead of {y}",
+    "dunit": [
+     "float",
+     "floats"
+    ],
+    "dmore1": "rode on the float right behind {y}'s",
+    "dless1": "rode on the float right in front of {y}'s",
+    "adj": "rode right before or right after {y}",
+    "nadj": "did not ride right before or right after {y}",
+    "ends": "rode at the very front or the very back of the parade",
+    "step": 1,
+    "values": [
+     "first",
+     "second",
+     "third",
+     "fourth"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   3,
+   1,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 1,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 1,
+   "op": "d",
+   "d": 1
+  }
+ ],
+ "texts": [
+  "Arlo rode exactly 2 floats behind Hattie.",
+  "Hattie rode at the very front or the very back of the parade.",
+  "Arlo rode on the float right behind Selma's."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Hattie can still be only the first float or the fourth float, clue 1 means Arlo cannot be the first float, the second float, or the fourth float and Hattie cannot be the fourth float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Hattie must go with the first float: clue 2 rules out the second float and the third float; clue 1 rules out the fourth float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Arlo must go with the third float: clue 1 rules out the first float, the second float, and the fourth float."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Arlo can still be only the third float and Selma can still be only the second float or the fourth float, clue 3 means Selma cannot be the fourth float."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Selma must go with the second float: clue 3 rules out the fourth float; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Nico must go with the fourth float: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 7,
+  "score": 19,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 3
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Hattie",
+   "first"
+  ],
+  [
+   "Nico",
+   "fourth"
+  ],
+  [
+   "Selma",
+   "second"
+  ],
+  [
+   "Arlo",
+   "third"
+  ]
+ ],
+ "score": 19
+}

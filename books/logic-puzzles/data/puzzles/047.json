@@ -1,0 +1,88 @@
+{
+ "no": 47,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 47000,
+ "kind": "liars",
+ "title": "Who Ate the Last Scone?",
+ "story": "Every Friday, Rosa sets aside one cranberry scone for Ada, still warm from the Salt & Sugar ovens. This week Ada left it on the puzzle desk while she took a phone call, and she came back to a plate of crumbs. Inkwell, the usual suspect, slept on the proofs through the whole thing, which leaves the three people in the Gazette office, and each of them says one thing. Who owes Ada a scone?",
+ "cast": [
+  "Teddy",
+  "Gus",
+  "Rosa"
+ ],
+ "names": [
+  "Teddy",
+  "Bea",
+  "Gus"
+ ],
+ "did": "ate the last scone",
+ "didnt": "didn't eat the last scone",
+ "statements": [
+  [
+   "is",
+   2
+  ],
+  [
+   "not",
+   0
+  ],
+  [
+   "is",
+   0
+  ]
+ ],
+ "texts": [
+  "Gus ate the last scone.",
+  "Teddy didn't eat the last scone.",
+  "Teddy ate the last scone."
+ ],
+ "rule": [
+  "culprit_lies"
+ ],
+ "rule_text": "The culprit is lying. Everyone else is telling the truth.",
+ "culprit": "Gus",
+ "truth": [
+  true,
+  true,
+  false
+ ],
+ "cases": [
+  {
+   "case": "Teddy",
+   "truth": [
+    "false",
+    "false",
+    "true"
+   ],
+   "count": 1,
+   "fits": false
+  },
+  {
+   "case": "Bea",
+   "truth": [
+    "false",
+    "true",
+    "false"
+   ],
+   "count": 1,
+   "fits": false
+  },
+  {
+   "case": "Gus",
+   "truth": [
+    "true",
+    "true",
+    "false"
+   ],
+   "count": 2,
+   "fits": true
+  }
+ ],
+ "question": {
+  "text": "Who ate the last scone?"
+ },
+ "answer": "Gus",
+ "score": 30
+}

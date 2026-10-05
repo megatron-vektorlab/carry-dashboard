@@ -1,0 +1,9 @@
+{
+ "no": 34,
+ "clues": [
+  {"kind": "diff", "a": "Castle=fourth", "b": "Builder=Teddy"},
+  {"kind": "compare", "a": "Builder=Teddy", "b": "Builder=Mabel", "cat": "Castle", "rel": "not_next_to"},
+  {"kind": "compare", "a": "Builder=Mabel", "b": "Builder=Teddy", "cat": "Castle", "rel": "a_less"},
+  {"kind": "either", "a": "Builder=Enzo", "one_of": ["Castle=third", "Castle=fourth"]}
+ ]
+}

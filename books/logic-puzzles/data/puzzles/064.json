@@ -1,0 +1,411 @@
+{
+ "no": 64,
+ "chapter": 5,
+ "family": "num43",
+ "stars": 3,
+ "seed": 64003,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Whispered Fines",
+ "story": "Rain drummed on the library roof, and four patrons came in to pay overdue fines, each for a different book. Wren whispered every amount as she took it, so softly that not even Wren heard herself. She whispers one more puzzle, too: the 1876 keeper's logbook is checked out to an \"S. Bell,\" and Silas Bell, the last keeper, has been gone for eighty years. First things first: who paid how much, and for which book?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Teddy",
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 64,
+   "title": "The Whispered Fines",
+   "story": "Rain drummed on the library roof, and four patrons came in to pay overdue fines, each for a different book. Wren whispered every amount as she took it, so softly that not even Wren heard herself. She whispers one more puzzle, too: the 1876 keeper's logbook is checked out to an \"S. Bell,\" and Silas Bell, the last keeper, has been gone for eighty years. First things first: who paid how much, and for which book?",
+   "entity": [
+    "patron",
+    "patrons"
+   ],
+   "cast": [
+    "Teddy",
+    "Wren"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Patron",
+    "kind": "name",
+    "values": [
+     "Teddy",
+     "Basil",
+     "Marta",
+     "Ivan"
+    ]
+   },
+   {
+    "label": "Book",
+    "values": [
+     "biography",
+     "atlas",
+     "poetry",
+     "thriller"
+    ],
+    "ref": "the patron with the {v} fine",
+    "pred": "paid the {v} fine",
+    "neg": "did not pay the {v} fine",
+    "either": "paid either the {a} or the {b} fine",
+    "nor": "paid neither the {a} nor the {b} fine",
+    "short": "the {v} fine"
+   },
+   {
+    "label": "Fine",
+    "ordered": true,
+    "nums": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "labels": [
+     "25 cents",
+     "50 cents",
+     "75 cents",
+     "$1.00"
+    ],
+    "ref": "the patron who paid {x}",
+    "pred": "paid {x}",
+    "neg": "did not pay {x}",
+    "either": "paid either {a} or {b}",
+    "nor": "paid neither {a} nor {b}",
+    "short": "{x}",
+    "more": "paid a bigger fine than {y}",
+    "less": "paid a smaller fine than {y}",
+    "dmore": "paid exactly {d} more than {y}",
+    "dless": "paid exactly {d} less than {y}",
+    "dunit": [
+     "cent",
+     "cents"
+    ],
+    "dmore1": "paid just a quarter more than {y}",
+    "dless1": "paid just a quarter less than {y}",
+    "step": 25,
+    "values": [
+     "25 cents",
+     "50 cents",
+     "75 cents",
+     "$1.00"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   2,
+   0,
+   1
+  ],
+  [
+   3,
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 2,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of the patron who paid 50 cents and the patron who paid 75 cents, one is Marta and the other is Basil.",
+  "The patron with the biography fine paid just a quarter more than the patron with the atlas fine.",
+  "Of Marta and Ivan, one paid the atlas fine and the other paid the biography fine.",
+  "The patron with the poetry fine paid either 50 cents or 75 cents.",
+  "The patron who paid 25 cents paid either the atlas or the biography fine."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the biography fine cannot be 25 cents and the atlas fine cannot be $1.00."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4,
+    5
+   ],
+   "text": "25 cents must go with the atlas fine: clue 2 rules out the biography fine; clue 4 rules out the poetry fine; clue 5 rules out the thriller fine."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the biography fine can still be only 50 cents, 75 cents, or $1.00 and the atlas fine can still be only 25 cents, clue 2 means the biography fine cannot be 75 cents or $1.00."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The biography fine must go with 50 cents: clue 2 rules out 25 cents, 75 cents, and $1.00."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The poetry fine must go with 75 cents: clue 4 rules out 25 cents and $1.00; 50 cents already goes with the biography fine."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The thriller fine must go with $1.00: clue 5 rules out 25 cents; the other choices are already taken."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Teddy must go with the thriller fine: clue 3 rules out the atlas fine; the biography fine is already ruled out for 50 cents; the poetry fine is already ruled out for 75 cents."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Basil must go with the poetry fine: clue 3 rules out the biography fine; the atlas fine is already ruled out for 25 cents; the thriller fine is already ruled out for $1.00."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Marta must go with the biography fine: clue 3 rules out the poetry fine; the atlas fine is already ruled out for 25 cents; the thriller fine is already ruled out for $1.00."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Ivan must go with the atlas fine: clue 3 rules out the thriller fine; the biography fine is already ruled out for 50 cents; the poetry fine is already ruled out for 75 cents."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Teddy must go with $1.00: clue 1 rules out 50 cents and 75 cents; 25 cents is already ruled out for the atlas fine."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Ivan must go with 25 cents: clue 1 rules out 50 cents and 75 cents; $1.00 already goes with Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Basil must go with 75 cents: clue 1 rules out 25 cents and $1.00; 50 cents is already ruled out for the biography fine."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Marta must go with 50 cents: clue 1 rules out 25 cents and $1.00; 75 cents already goes with Basil."
+  }
+ ],
+ "features": {
+  "steps": 28,
+  "score": 76,
+  "revisits": 1,
+  "transfer": 10,
+  "trial": 0,
+  "clue_steps": 6
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Teddy",
+   "thriller",
+   "$1.00"
+  ],
+  [
+   "Basil",
+   "poetry",
+   "75 cents"
+  ],
+  [
+   "Marta",
+   "biography",
+   "50 cents"
+  ],
+  [
+   "Ivan",
+   "atlas",
+   "25 cents"
+  ]
+ ],
+ "score": 76
+}

@@ -20,6 +20,13 @@ BLEED = 0.125
 TRIM_W, TRIM_H = 8.5, 11.0
 
 
+def T(tpl, env):
+    """Fill <<python expression>> slots in a TeX template (TeX braces stay literal)."""
+    import re as _re
+    env = dict(globals(), **env)
+    return _re.sub(r"<<(.+?)>>", lambda m: str(eval(m.group(1), env)), tpl)
+
+
 def page_count():
     import fitz
     return fitz.open(os.path.join(ROOT, "build", "book", "interior.pdf")).page_count
@@ -66,82 +73,80 @@ def lighthouse(x, y, s):
 def front_panel(x0):
     """TikZ for the front cover; x0 = left edge of the front trim."""
     cx = x0 + TRIM_W / 2
-    return rf"""
+    return T(r"""
 % sky and sea
-\shade[top color=navy, bottom color=dusk] ({x0 - 0.01},{BLEED + 3.2}) rectangle ({x0 + TRIM_W + BLEED},{TRIM_H + 2 * BLEED});
-\fill[sea] ({x0 - 0.01},0) rectangle ({x0 + TRIM_W + BLEED},{BLEED + 3.25});
+\shade[top color=navy, bottom color=dusk] (<<x0 - 0.01>>,<<BLEED + 3.2>>) rectangle (<<x0 + TRIM_W + BLEED>>,<<TRIM_H + 2 * BLEED>>);
+\fill[sea] (<<x0 - 0.01>>,0) rectangle (<<x0 + TRIM_W + BLEED>>,<<BLEED + 3.25>>);
 % stars
-\foreach \sx/\sy in {{0.6/9.0, 1.4/8.4, 2.3/8.9, 6.9/9.2, 7.6/8.5, 5.9/8.7, 3.4/8.2, 7.9/7.6, 0.9/7.7}}
-  \fill[cream, opacity=0.8] ({x0}+\sx,{BLEED}+\sy) circle (0.022);
-\fill[cream] ({x0 + 7.1},{BLEED + 7.95}) circle (0.30);
-\fill[navy] ({x0 + 7.22},{BLEED + 8.03}) circle (0.27);
+\foreach \sx/\sy in {0.6/9.0, 1.4/8.4, 2.3/8.9, 6.9/9.2, 7.6/8.5, 5.9/8.7, 3.4/8.2, 7.9/7.6, 0.9/7.7}
+  \fill[cream, opacity=0.8] (<<x0>>+\sx,<<BLEED>>+\sy) circle (0.022);
 % headland, lighthouse and town
-\fill[land] ({x0 + 4.6},{BLEED + 3.2}) .. controls ({x0 + 5.6},{BLEED + 3.9}) and ({x0 + 7.4},{BLEED + 3.95}) .. ({x0 + TRIM_W + BLEED},{BLEED + 3.9}) -- ({x0 + TRIM_W + BLEED},{BLEED + 3.2}) -- cycle;
-{lighthouse(x0 + 6.75, BLEED + 3.85, 0.95)}
-\foreach \hx/\hw/\hh in {{5.1/0.42/0.38, 5.6/0.36/0.30}}
-  {{\fill[cream!85!navy] ({x0}+\hx,{BLEED + 3.55}) rectangle ++(\hw,\hh);
-   \fill[cream!85!navy] ({x0}+\hx-0.04,{BLEED + 3.55}+\hh) -- ++(\hw/2+0.04,0.2) -- ++(\hw/2+0.04,-0.2) -- cycle;
-   \fill[mustard] ({x0}+\hx+0.12,{BLEED + 3.62}) rectangle ++(0.09,0.1);}}
+\fill[land] (<<x0 + 4.6>>,<<BLEED + 3.2>>) .. controls (<<x0 + 5.6>>,<<BLEED + 3.9>>) and (<<x0 + 7.4>>,<<BLEED + 3.95>>) .. (<<x0 + TRIM_W + BLEED>>,<<BLEED + 3.9>>) -- (<<x0 + TRIM_W + BLEED>>,<<BLEED + 3.2>>) -- cycle;
+<<lighthouse(x0 + 6.75, BLEED + 3.85, 0.95)>>
+\foreach \hx/\hw/\hh in {5.1/0.42/0.38, 5.6/0.36/0.30}
+  {\fill[cream!85!navy] (<<x0>>+\hx,<<BLEED + 3.55>>) rectangle ++(\hw,\hh);
+   \fill[cream!85!navy] (<<x0>>+\hx-0.04,<<BLEED + 3.55>>+\hh) -- ++(\hw/2+0.04,0.2) -- ++(\hw/2+0.04,-0.2) -- cycle;
+   \fill[mustard] (<<x0>>+\hx+0.12,<<BLEED + 3.62>>) rectangle ++(0.09,0.1);}
 % waves
-\foreach \wy in {{2.75, 2.25, 1.75}}
-  \draw[cream, opacity=0.35, line width=1.2pt] ({x0 + 0.4},{BLEED}+\wy) .. controls ({x0 + 0.9},{BLEED}+\wy+0.12) and ({x0 + 1.3},{BLEED}+\wy-0.12) .. ({x0 + 1.8},{BLEED}+\wy)
-     .. controls ({x0 + 2.3},{BLEED}+\wy+0.12) and ({x0 + 2.7},{BLEED}+\wy-0.12) .. ({x0 + 3.2},{BLEED}+\wy);
+\foreach \wy in {2.75, 2.25, 1.75}
+  \draw[cream, opacity=0.35, line width=1.2pt] (<<x0 + 0.4>>,<<BLEED>>+\wy) .. controls (<<x0 + 0.9>>,<<BLEED>>+\wy+0.12) and (<<x0 + 1.3>>,<<BLEED>>+\wy-0.12) .. (<<x0 + 1.8>>,<<BLEED>>+\wy)
+     .. controls (<<x0 + 2.3>>,<<BLEED>>+\wy+0.12) and (<<x0 + 2.7>>,<<BLEED>>+\wy-0.12) .. (<<x0 + 3.2>>,<<BLEED>>+\wy);
 % large print band
-\fill[mustard] ({x0 - 0.01},{BLEED + TRIM_H - 0.95}) rectangle ({x0 + TRIM_W + BLEED},{BLEED + TRIM_H - 0.38});
-\node[navy, font=\sffamily\bfseries\fontsize{24}{24}\selectfont] at ({cx},{BLEED + TRIM_H - 0.665}) {L\,A\,R\,G\,E\quad P\,R\,I\,N\,T};
-\node[cream, font=\sffamily\bfseries\fontsize{13.5}{16}\selectfont] at ({cx},{BLEED + TRIM_H - 1.32}) {{{config.SERIES.upper()}\enspace\textperiodcentered\enspace BOOK {config.SERIES_NO}}};
+\fill[mustard] (<<x0 - 0.01>>,<<BLEED + TRIM_H - 0.95>>) rectangle (<<x0 + TRIM_W + BLEED>>,<<BLEED + TRIM_H - 0.38>>);
+\node[navy, font=\sffamily\bfseries\fontsize{24}{24}\selectfont] at (<<cx>>,<<BLEED + TRIM_H - 0.665>>) {L\,A\,R\,G\,E\quad P\,R\,I\,N\,T};
+\node[cream, font=\sffamily\bfseries\fontsize{13.5}{16}\selectfont] at (<<cx>>,<<BLEED + TRIM_H - 1.32>>) {<<config.SERIES.upper()>>\enspace\textperiodcentered\enspace BOOK <<config.SERIES_NO>>};
 % title
-\node[cream, align=center, font=\rmfamily\fontsize{58}{62}\selectfont] at ({cx},{BLEED + TRIM_H - 2.75})
-  {{Cozy Mystery\\[2pt]Logic Puzzles}};
-\node[mustard, font=\rmfamily\itshape\fontsize{40}{44}\selectfont] at ({cx},{BLEED + TRIM_H - 4.3}) {{for Beginners}};
+\node[cream, align=center, font=\rmfamily\fontsize{58}{62}\selectfont] at (<<cx>>,<<BLEED + TRIM_H - 2.75>>)
+  {Cozy Mystery\\[2pt]Logic Puzzles};
+\node[mustard, font=\rmfamily\itshape\fontsize{40}{44}\selectfont] at (<<cx>>,<<BLEED + TRIM_H - 4.3>>) {for Beginners};
 % badge
-\fill[coral] ({x0 + 7.15},{BLEED + 6.25}) circle (0.78);
-\draw[cream, line width=1.5pt] ({x0 + 7.15},{BLEED + 6.25}) circle (0.70);
-\node[cream, align=center, font=\sffamily\bfseries] at ({x0 + 7.15},{BLEED + 6.25}) {{\fontsize{34}{34}\selectfont 100\\[2pt]\fontsize{13}{13}\selectfont PUZZLES}};
+\fill[coral] (<<x0 + 7.15>>,<<BLEED + 6.25>>) circle (0.78);
+\draw[cream, line width=1.5pt] (<<x0 + 7.15>>,<<BLEED + 6.25>>) circle (0.70);
+\node[cream, align=center, font=\sffamily\bfseries] at (<<x0 + 7.15>>,<<BLEED + 6.25>>) {\fontsize{34}{34}\selectfont 100\\[2pt]\fontsize{13}{13}\selectfont PUZZLES};
 % grid card and magnifier
-\begin{{scope}}[shift={{({x0 + 1.05},{BLEED + 4.15})}}, rotate=-6]
-{grid_card()}
+\begin{scope}[shift={(<<x0 + 1.05>>,<<BLEED + 4.15>>)}, rotate=-6]
+<<grid_card()>>
 \draw[mustard, line width=5pt] (1.55,1.15) circle (0.62);
 \fill[cream, opacity=0.18] (1.55,1.15) circle (0.6);
 \draw[mustard, line width=9pt, line cap=round] (2.0,0.7) -- (2.55,0.15);
-\end{{scope}}
+\end{scope}
 % subtitle strip
-\fill[navy, opacity=0.85] ({x0 - 0.01},{BLEED + 1.55}) rectangle ({x0 + TRIM_W + BLEED},{BLEED + 2.62});
-\node[cream, align=center, font=\sffamily\bfseries\fontsize{15.5}{20}\selectfont] at ({cx},{BLEED + 2.09})
-  {{Step-by-Step Lessons\enspace\textperiodcentered\enspace 3-Step Hints for Every Puzzle\\Every Solution Explained\enspace\textperiodcentered\enspace Whodunits from Easy to Expert}};
+\fill[navy, opacity=0.85] (<<x0 - 0.01>>,<<BLEED + 1.55>>) rectangle (<<x0 + TRIM_W + BLEED>>,<<BLEED + 2.62>>);
+\node[cream, align=center, font=\sffamily\bfseries\fontsize{15.5}{20}\selectfont] at (<<cx>>,<<BLEED + 2.09>>)
+  {Step-by-Step Lessons\enspace\textperiodcentered\enspace 3-Step Hints for Every Puzzle\\Every Solution Explained\enspace\textperiodcentered\enspace Whodunits from Easy to Expert};
 % difficulty bar
-\node[cream, font=\sffamily\bfseries\fontsize{13}{13}\selectfont, anchor=east] at ({cx - 1.55},{BLEED + 1.12}) {{EASY}};
-\node[cream, font=\sffamily\bfseries\fontsize{13}{13}\selectfont, anchor=west] at ({cx + 1.55},{BLEED + 1.12}) {{EXPERT}};
-\foreach \k in {{0,...,4}}
-  \node[star, star points=5, star point ratio=2.3, minimum size={{0.2+0.06*\k}}in, inner sep=0pt, fill=mustard]
-     at ({cx - 1.2}+0.6*\k,{BLEED + 1.12}) {{}};
+\node[cream, font=\sffamily\bfseries\fontsize{13}{13}\selectfont, anchor=east] at (<<cx - 1.55>>,<<BLEED + 1.12>>) {EASY};
+\node[cream, font=\sffamily\bfseries\fontsize{13}{13}\selectfont, anchor=west] at (<<cx + 1.55>>,<<BLEED + 1.12>>) {EXPERT};
+\foreach \k in {0,...,4}
+  \node[star, star points=5, star point ratio=2.3, minimum size=0.2in+0.06in*\k, inner sep=0pt, fill=mustard]
+     at (<<cx - 1.2>>+0.6*\k,<<BLEED + 1.12>>) {};
 % author
-\node[cream, font=\rmfamily\fontsize{22}{24}\selectfont] at ({cx},{BLEED + 0.55}) {{{config.AUTHOR}}};
-"""
+\node[cream, font=\rmfamily\fontsize{22}{24}\selectfont] at (<<cx>>,<<BLEED + 0.55>>) {<<config.AUTHOR>>};
+""", locals())
 
 
 def back_panel(x0, thumb):
     cx = x0 + TRIM_W / 2
     img = (rf"\node[draw=cream, line width=3pt, inner sep=0pt, rotate=3] at ({x0 + 6.0},{BLEED + 3.6}) "
            rf"{{\includegraphics[width=2.55in]{{{thumb}}}}};") if thumb else ""
-    return rf"""
-\fill[navy] ({-0.01},0) rectangle ({x0 + TRIM_W + 0.01},{TRIM_H + 2 * BLEED});
-\node[mustard, anchor=north west, align=left, font=\rmfamily\fontsize{30}{34}\selectfont] at ({x0 + 0.6},{BLEED + TRIM_H - 0.6})
-  {{Learn it. Solve it.\\Never get stuck.}};
-\node[cream, anchor=north west, text width=7.1in, align=left, font=\sffamily\fontsize{14.5}{19.5}\selectfont] at ({x0 + 0.6},{BLEED + TRIM_H - 2.05})
-  {{Welcome to Thimble Harbor, a small New England town with one ferry, one lighthouse, and far too many opinions about pie.
-  Retired puzzle editor Ada Quill needs an apprentice, and she will teach you everything, one clue at a time.\par\vspace{{8pt}}
+    return T(r"""
+\fill[navy] ({-0.01},0) rectangle (<<x0 + TRIM_W + 0.01>>,<<TRIM_H + 2 * BLEED>>);
+\node[mustard, anchor=north west, align=left, font=\rmfamily\fontsize{30}{34}\selectfont] at (<<x0 + 0.6>>,<<BLEED + TRIM_H - 0.6>>)
+  {Learn it. Solve it.\\Never get stuck.};
+\node[cream, anchor=north west, text width=7.1in, align=left, font=\sffamily\fontsize{14.5}{19.5}\selectfont] at (<<x0 + 0.6>>,<<BLEED + TRIM_H - 2.05>>)
+  {Welcome to Thimble Harbor, a small New England town with one ferry, one lighthouse, and far too many opinions about pie.
+  Retired puzzle editor Ada Quill needs an apprentice, and she will teach you everything, one clue at a time.\par\vspace{8pt}
   Start with swapped jam labels and a goat in the pie tent. Finish with the Lighthouse Affair: five linked cases and
-  one final question. Who took the town's beloved Keeper's Lamp?}};
-\node[cream, anchor=north west, text width=3.85in, align=left, font=\sffamily\fontsize{14}{18.5}\selectfont] at ({x0 + 0.6},{BLEED + 5.75})
-  {{\textbf{{\color{{mustard}}Six friendly lessons}} with pictures of the grid, step by step.\par\vspace{{6pt}}
-  \textbf{{\color{{mustard}}A three-step hint ladder}} for every puzzle, so you take only the help you need.\par\vspace{{6pt}}
-  \textbf{{\color{{mustard}}Every solution explained}} in plain words, not just the answer.\par\vspace{{6pt}}
-  \textbf{{\color{{mustard}}Large 16-point print}}, big grids, and room to write.}};
-{img}
-\node[cream, anchor=south west, text width=4.3in, align=left, font=\sffamily\itshape\fontsize{12.5}{16}\selectfont] at ({x0 + 0.6},{BLEED + 0.6})
-  {{Every puzzle was checked by computer to have exactly one solution.}};
-"""
+  one final question. Who took the town's beloved Keeper's Lamp?};
+\node[cream, anchor=north west, text width=3.85in, align=left, font=\sffamily\fontsize{14}{18.5}\selectfont] at (<<x0 + 0.6>>,<<BLEED + 5.75>>)
+  {\textbf{\color{mustard}Six friendly lessons} with pictures of the grid, step by step.\par\vspace{6pt}
+  \textbf{\color{mustard}A three-step hint ladder} for every puzzle, so you take only the help you need.\par\vspace{6pt}
+  \textbf{\color{mustard}Every solution explained} in plain words, not just the answer.\par\vspace{6pt}
+  \textbf{\color{mustard}Large 16-point print}, big grids, and room to write.};
+<<img>>
+\node[cream, anchor=south west, text width=4.3in, align=left, font=\sffamily\itshape\fontsize{12.5}{16}\selectfont] at (<<x0 + 0.6>>,<<BLEED + 0.6>>)
+  {Every puzzle was checked by computer to have exactly one solution.};
+""", locals())
 
 
 def spine(x0, w):
@@ -149,15 +154,15 @@ def spine(x0, w):
         return ""
     cx = x0 + w / 2
     fs = min(15, w * 72 * 0.42)
-    return rf"""
-\fill[navy!85!black] ({x0},0) rectangle ({x0 + w},{TRIM_H + 2 * BLEED});
-\node[cream, rotate=-90, font=\rmfamily\fontsize{{{fs:.1f}}}{{{fs:.1f}}}\selectfont] at ({cx},{BLEED + TRIM_H / 2 + 0.6})
-  {{Cozy Mystery Logic Puzzles for Beginners}};
-\node[mustard, rotate=-90, font=\sffamily\bfseries\fontsize{{{fs * 0.8:.1f}}}{{{fs * 0.8:.1f}}}\selectfont] at ({cx},{BLEED + 1.75})
-  {{{config.AUTHOR}}};
-\node[mustard, rotate=-90, font=\sffamily\bfseries\fontsize{{{fs * 0.8:.1f}}}{{{fs * 0.8:.1f}}}\selectfont] at ({cx},{BLEED + TRIM_H - 0.85})
-  {{BOOK {config.SERIES_NO}}};
-"""
+    return T(r"""
+\fill[navy!85!black] (<<x0>>,0) rectangle (<<x0 + w>>,<<TRIM_H + 2 * BLEED>>);
+\node[cream, rotate=-90, font=\rmfamily\fontsize{<<round(fs, 1)>>}{<<round(fs, 1)>>}\selectfont] at (<<cx>>,<<BLEED + TRIM_H / 2 + 0.6>>)
+  {Cozy Mystery Logic Puzzles for Beginners};
+\node[mustard, rotate=-90, font=\sffamily\bfseries\fontsize{<<round(fs * 0.8, 1)>>}{<<round(fs * 0.8, 1)>>}\selectfont] at (<<cx>>,<<BLEED + 1.75>>)
+  {<<config.AUTHOR>>};
+\node[mustard, rotate=-90, font=\sffamily\bfseries\fontsize{<<round(fs * 0.8, 1)>>}{<<round(fs * 0.8, 1)>>}\selectfont] at (<<cx>>,<<BLEED + TRIM_H - 0.85>>)
+  {BOOK <<config.SERIES_NO>>};
+""", locals())
 
 
 def build(pages, thumb=None):

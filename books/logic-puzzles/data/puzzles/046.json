@@ -1,0 +1,381 @@
+{
+ "no": 46,
+ "chapter": 3,
+ "family": "days4",
+ "stars": 3,
+ "seed": 46004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Last Call for Pickles",
+ "story": "The county fair office stops taking entries at five o'clock on the eve of the fair, and this year four last-minute exhibitors came puffing up the steps an hour apart, starting at one. The clerk stamped every entry, listened politely to Otis's off-key sea shanty, and then knocked a lemonade across the entry sheet. The judges arrive at eight tomorrow morning. Who brought which entry, and at what time?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Otis"
+ ],
+ "state": {
+  "theme": {
+   "slot": 46,
+   "title": "Last Call for Pickles",
+   "story": "The county fair office stops taking entries at five o'clock on the eve of the fair, and this year four last-minute exhibitors came puffing up the steps an hour apart, starting at one. The clerk stamped every entry, listened politely to Otis's off-key sea shanty, and then knocked a lemonade across the entry sheet. The judges arrive at eight tomorrow morning. Who brought which entry, and at what time?",
+   "entity": [
+    "exhibitor",
+    "exhibitors"
+   ],
+   "cast": [
+    "Otis"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Exhibitor",
+    "kind": "name",
+    "values": [
+     "Hugo",
+     "Selma",
+     "Dev",
+     "Otis"
+    ]
+   },
+   {
+    "label": "Entry",
+    "values": [
+     "pickles",
+     "quilt",
+     "honey",
+     "zucchini"
+    ],
+    "ref": "the exhibitor with the {v}",
+    "pred": "entered the {v}",
+    "neg": "did not enter the {v}",
+    "either": "entered either the {a} or the {b}",
+    "nor": "entered neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "1 p.m.",
+     "2 p.m.",
+     "3 p.m.",
+     "4 p.m."
+    ],
+    "ref": "the {x} exhibitor",
+    "pred": "arrived at {x}",
+    "neg": "did not arrive at {x}",
+    "either": "arrived at either {a} or {b}",
+    "nor": "arrived at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "arrived later than {y}",
+    "less": "arrived earlier than {y}",
+    "dmore": "arrived exactly {d} after {y}",
+    "dless": "arrived exactly {d} before {y}",
+    "dunit": [
+     "hour",
+     "hours"
+    ],
+    "dmore1": "arrived an hour after {y}",
+    "dless1": "arrived an hour before {y}",
+    "step": 1,
+    "values": [
+     "1 p.m.",
+     "2 p.m.",
+     "3 p.m.",
+     "4 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   2,
+   0,
+   3
+  ],
+  [
+   3,
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 2,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 2,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": 2,
+   "op": ">",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The exhibitor with the quilt is either Otis or Hugo.",
+  "Hugo entered either the honey or the quilt.",
+  "Dev arrived later than the exhibitor with the zucchini.",
+  "Dev arrived exactly 2 hours before the exhibitor with the quilt.",
+  "Selma arrived later than the exhibitor with the pickles."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 means the zucchini cannot be 4 p.m. and Dev cannot be 1 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Dev can still be only 2 p.m., 3 p.m., or 4 p.m., clue 4 means the quilt cannot be 1 p.m., 2 p.m., or 3 p.m. and Dev cannot be 3 p.m. or 4 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Dev must go with 2 p.m.: clue 3 rules out 1 p.m.; clue 4 rules out 3 p.m. and 4 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The quilt must go with 4 p.m.: clue 4 rules out 1 p.m., 2 p.m., and 3 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the zucchini can still be only 1 p.m. or 3 p.m. and Dev can still be only 2 p.m., clue 3 means the zucchini cannot be 3 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The zucchini must go with 1 p.m.: clue 3 rules out 3 p.m. and 4 p.m.; 2 p.m. is already ruled out for Dev."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since Selma can still be only 1 p.m. or 3 p.m. and the pickles can still be only 2 p.m. or 3 p.m., clue 5 means Selma cannot be 1 p.m. and the pickles cannot be 3 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Selma must go with 3 p.m.: clue 5 rules out 1 p.m.; 4 p.m. is already ruled out for the quilt; 2 p.m. already goes with Dev."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hugo must go with 4 p.m.: 1 p.m. is already ruled out for the zucchini; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Otis must go with 1 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The pickles must go with 2 p.m.: clue 5 rules out 3 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The honey must go with 3 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Dev goes with 2 p.m., so Dev also goes with the pickles."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The quilt goes with 4 p.m., so the quilt also goes with Hugo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5
+   ],
+   "text": "Selma must go with the honey: clue 5 rules out the pickles; clue 1 rules out the quilt; the zucchini is already ruled out for 1 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Otis must go with the zucchini: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 24,
+  "score": 68,
+  "revisits": 3,
+  "transfer": 6,
+  "trial": 0,
+  "clue_steps": 8
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Hugo",
+   "quilt",
+   "4 p.m."
+  ],
+  [
+   "Selma",
+   "honey",
+   "3 p.m."
+  ],
+  [
+   "Dev",
+   "pickles",
+   "2 p.m."
+  ],
+  [
+   "Otis",
+   "zucchini",
+   "1 p.m."
+  ]
+ ],
+ "score": 68
+}

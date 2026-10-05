@@ -1,0 +1,22 @@
+{
+ "no": 56,
+ "clues": [],
+ "hints": [
+  "Look at Pablo's statement, which is about Yusuf rather than the lemonade. Could either of those two be the culprit?",
+  "Pablo's statement is true exactly when Yusuf's is, so they fib together or not at all. The rule allows only one fibber.",
+  "So Pablo and Yusuf both tell the truth, and neither is the culprit. Yusuf names Arlo or Pablo, which leaves Arlo."
+ ],
+ "solution": {
+  "key_idea": "Pablo vouches for Yusuf, so they would fib together; with only one fibber allowed, both are truthful, and Yusuf's statement points to Arlo.",
+  "steps": [
+   "The rule says only the culprit fibs, so exactly one statement is false, and it belongs to the culprit.",
+   "Pablo says Yusuf is telling the truth, so Pablo's and Yusuf's statements are both true or both false.",
+   "Both false would mean two fibbers. So both are true, and neither Pablo nor Yusuf is the culprit.",
+   "Yusuf says Arlo or Pablo salted the lemonade. It was not Pablo, so it was Arlo.",
+   "Check Arlo: his statement blaming Della is false, and the other four are true. Only the culprit fibs, so Arlo fits."
+  ],
+  "epilogue": "Arlo had reached for the left-hand tin, where the sugar sits in his own kitchen. Hattie mixed a fresh pitcher and added one line to her clipboard: label the tins."
+ },
+ "tip": null,
+ "answer_line": "Arlo salted the lemonade."
+}

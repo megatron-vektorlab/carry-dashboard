@@ -1,0 +1,26 @@
+{
+ "no": 15,
+ "clues": [
+  "Neither Teddy nor Una chose bows for a tail.",
+  "Una's kite was either the dragon or the box kite.",
+  "Una's tail was made of either tassels or bows.",
+  "The dragon kite had a tail of streamers."
+ ],
+ "hints": [
+  "Look at the bows column in the box that matches fliers with tails. Which fliers could have chosen bows?",
+  "Clue 1 crosses out two fliers for bows. Read clue 3 beside clue 1: which tail is left for Una?",
+  "Clue 1 gives Hugo the bows, so clue 3 gives Una the tassels, leaving Teddy the streamers. Carry the dot: clue 4 puts Teddy on the dragon kite."
+ ],
+ "solution": {
+  "key_idea": "Clue 1 leaves only Hugo for the bows, so clue 3 gives Una the tassels, and Teddy's streamers put him on the dragon kite.",
+  "steps": [
+   "Clue 1 rules out Teddy and Una for the bows, so Hugo chose bows.",
+   "Clue 3 gives Una tassels or bows. The bows are Hugo's, so Una chose tassels, and Teddy chose streamers.",
+   "Clue 4 says the dragon kite had the streamers. Teddy chose streamers, so Teddy flew the dragon kite.",
+   "Clue 2 gives Una the dragon or the box kite. The dragon is Teddy's, so Una flew the box kite.",
+   "Hugo flew the diamond kite. So the box kite had the tassels, and the diamond kite had the bows."
+  ],
+  "epilogue": "Teddy reeled in his dragon kite with its streamers, Una her box kite with tassels, and Hugo his diamond kite with bows. Teddy photographed the untangling too, all fourteen minutes of it."
+ },
+ "tip": "Every new dot is worth carrying into the other boxes."
+}

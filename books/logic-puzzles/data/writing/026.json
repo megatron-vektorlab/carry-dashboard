@@ -1,0 +1,27 @@
+{
+ "no": 26,
+ "clues": [
+  "Of the acorn holder and the wishbone holder, one spelled kayak and the other spelled zucchini.",
+  "Whoever spelled rhythm was clutching either the sea glass or the wishbone.",
+  "Either Cyrus or Oscar clutched the sea glass.",
+  "Wren's word was either zucchini or rhythm.",
+  "Between them, Oscar and Imani held the wishbone and the sea glass, one each."
+ ],
+ "hints": [
+  "Look at clue 2. The rhythm speller held the sea glass or the wishbone. Does clue 1 leave room for both?",
+  "Two clues together: clue 1 tells you which words went with the wishbone. Is rhythm one of them?",
+  "No: by clue 1 the wishbone went with kayak or zucchini. So rhythm goes with the sea glass, and pharaoh with the lucky penny."
+ ],
+ "solution": {
+  "key_idea": "Clue 1 keeps rhythm away from the wishbone, so by clue 2 the rhythm speller clutched the sea glass.",
+  "steps": [
+   "By clue 1, the wishbone went with kayak or zucchini, so by clue 2 the rhythm speller clutched the sea glass.",
+   "Clue 1 gives the acorn and the wishbone to kayak and zucchini, so pharaoh went with the last charm, the lucky penny.",
+   "Clue 3 keeps the sea glass, and so rhythm, away from Wren, so by clue 4 Wren spelled zucchini.",
+   "Clues 3 and 5 keep Wren from the sea glass and the wishbone, and the lucky penny went with pharaoh, so Wren had the acorn.",
+   "By clues 3 and 5, Imani had the wishbone and Oscar the sea glass, leaving Cyrus the lucky penny. So Oscar spelled rhythm, Imani kayak, Cyrus pharaoh."
+  ],
+  "epilogue": "With the sheet rebuilt, Mabel found that all four had spelled their words perfectly, pharaoh included. She declared a four-way tie, and Wren whispered that her acorn deserved the credit."
+ },
+ "tip": "Read each clue twice: once for what it says, and once for what it rules out."
+}

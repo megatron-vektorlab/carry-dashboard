@@ -1,0 +1,37 @@
+{
+ "no": 16,
+ "clues": [
+  {
+   "kind": "nor",
+   "a": "Owner=Imani",
+   "not": [
+    "Boat=Sea Pea",
+    "Boat=Wavelet"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Color=navy",
+   "not": [
+    "Owner=Gus",
+    "Owner=Imani"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Color=navy",
+   "one_of": [
+    "Boat=Lucky Gull",
+    "Boat=Wavelet"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Owner=Imani",
+   "one_of": [
+    "Color=navy",
+    "Color=sea green"
+   ]
+  }
+ ]
+}

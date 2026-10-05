@@ -1,0 +1,39 @@
+{
+ "no": 61,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Student=Jade",
+   "b": "Student=Felix",
+   "cat": "Age",
+   "rel": "a_less"
+  },
+  {
+   "kind": "compare",
+   "a": "Student=Hugo",
+   "b": "Student=Felix",
+   "cat": "Age",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Student=Una",
+   "b": "Student=Jade",
+   "cat": "Age",
+   "rel": "a_less"
+  },
+  {
+   "kind": "compare",
+   "a": "Class=guitar",
+   "b": "Class=watercolor",
+   "cat": "Age",
+   "rel": "a_greater_by",
+   "by": 15
+  },
+  {
+   "kind": "diff",
+   "a": "Student=Jade",
+   "b": "Class=Spanish"
+  }
+ ]
+}

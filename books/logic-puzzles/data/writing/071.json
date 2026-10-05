@@ -1,0 +1,34 @@
+{
+ "no": 71,
+ "clues": [
+  "Felix topped out at neither 1,000 feet nor 1,200 feet.",
+  "Whoever hiked Bramble Hill did not top out at 1,200 feet.",
+  "Cass topped out lower than whoever packed the jerky.",
+  "Neither Felix nor Enzo packed the figs.",
+  "The hiker with the trail mix topped out exactly 200 feet above the hiker with the jerky.",
+  "Of Wren and Enzo, one topped out at 1,400 feet and the other at 1,200 feet.",
+  "The hiker on Fiddler Hill topped out exactly 400 feet higher than Cass.",
+  "Crow's Nest was climbed by neither Felix nor Enzo.",
+  "Neither Enzo nor Cass topped out at 1,400 feet."
+ ],
+ "hints": [
+  "Look at clue 6. Wren and Enzo share 1,400 feet and 1,200 feet. Is there a clue that keeps one of them off the top?",
+  "Two clues together. Clue 9 keeps Enzo off 1,400 feet, so put it beside clue 6. Then read clue 1 for Felix.",
+  "So Wren topped out at 1,400 feet and Enzo at 1,200. Clue 1 leaves Felix only 800 feet, so Cass topped out at 1,000.",
+  "Clue 3 puts the jerky above Cass's 1,000 feet, and clue 5 needs the trail mix 200 feet higher still. So Enzo packed jerky and Wren trail mix."
+ ],
+ "solution": {
+  "key_idea": "Clue 9 keeps Enzo off 1,400 feet, so clue 6 puts Wren at the top and Enzo at 1,200.",
+  "steps": [
+   "By clue 6, Wren and Enzo hold 1,400 and 1,200 feet. Clue 9 keeps Enzo off 1,400, so Enzo topped out at 1,200 and Wren at 1,400.",
+   "Clue 1 rules out 1,000 and 1,200 feet for Felix, so Felix topped out at 800 feet and Cass at 1,000.",
+   "Clue 3 puts the jerky above Cass's 1,000 feet, and clue 5 puts the trail mix 200 feet higher. So Enzo packed jerky and Wren trail mix.",
+   "Clue 4 says neither Felix nor Enzo packed the figs, so Cass did, and Felix packed the cheese.",
+   "By clue 7, the Fiddler Hill hiker topped out 400 feet above Cass's 1,000, at 1,400 feet. So Wren climbed Fiddler Hill.",
+   "Clue 8 keeps Felix and Enzo off Crow's Nest, and Wren is on Fiddler Hill, so Cass climbed Crow's Nest.",
+   "Clue 2 keeps Bramble Hill off 1,200 feet, so Felix climbed Bramble Hill and Enzo climbed Thimble Knob."
+  ],
+  "epilogue": "That evening the logbook got its names: Felix on Bramble Hill, Cass on Crow's Nest, Enzo on Thimble Knob and Wren on Fiddler Hill. Felix called it shipshape."
+ },
+ "tip": null
+}

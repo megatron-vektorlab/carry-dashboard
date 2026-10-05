@@ -1,0 +1,76 @@
+{
+ "no": 71,
+ "clues": [
+  {
+   "kind": "nor",
+   "a": "Hiker=Felix",
+   "not": [
+    "Height=1,000 feet",
+    "Height=1,200 feet"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Hill=Bramble Hill",
+   "b": "Height=1,200 feet"
+  },
+  {
+   "kind": "compare",
+   "a": "Hiker=Cass",
+   "b": "Snack=jerky",
+   "cat": "Height",
+   "rel": "a_less"
+  },
+  {
+   "kind": "nor",
+   "a": "Snack=figs",
+   "not": [
+    "Hiker=Felix",
+    "Hiker=Enzo"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Snack=trail mix",
+   "b": "Snack=jerky",
+   "cat": "Height",
+   "rel": "a_greater_by",
+   "by": 200
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Hiker=Wren",
+    "Hiker=Enzo"
+   ],
+   "options": [
+    "Height=1,400 feet",
+    "Height=1,200 feet"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Hill=Fiddler Hill",
+   "b": "Hiker=Cass",
+   "cat": "Height",
+   "rel": "a_greater_by",
+   "by": 400
+  },
+  {
+   "kind": "nor",
+   "a": "Hill=Crow's Nest",
+   "not": [
+    "Hiker=Felix",
+    "Hiker=Enzo"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Height=1,400 feet",
+   "not": [
+    "Hiker=Enzo",
+    "Hiker=Cass"
+   ]
+  }
+ ]
+}

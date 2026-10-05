@@ -1,0 +1,620 @@
+{
+ "no": 71,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 71001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Hiking Club Summits",
+ "story": "Fall color peaked on the long October weekend, and four members of the hiking club set off up four different hills. Wren whispered the whole way up hers, though there was nobody to disturb but a chipmunk. Back at the trailhead, the club's logbook shows four summit heights and not one name, and Felix calls that anything but shipshape. Who hiked which hill, what did each pack for a snack, and how high did each one top out?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Felix",
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 71,
+   "title": "The Hiking Club Summits",
+   "story": "Fall color peaked on the long October weekend, and four members of the hiking club set off up four different hills. Wren whispered the whole way up hers, though there was nobody to disturb but a chipmunk. Back at the trailhead, the club's logbook shows four summit heights and not one name, and Felix calls that anything but shipshape. Who hiked which hill, what did each pack for a snack, and how high did each one top out?",
+   "entity": [
+    "hiker",
+    "hikers"
+   ],
+   "cast": [
+    "Felix",
+    "Wren"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Hiker",
+    "kind": "name",
+    "values": [
+     "Felix",
+     "Wren",
+     "Enzo",
+     "Cass"
+    ]
+   },
+   {
+    "label": "Hill",
+    "values": [
+     "Bramble Hill",
+     "Crow's Nest",
+     "Fiddler Hill",
+     "Thimble Knob"
+    ],
+    "ref": "the hiker on {v}",
+    "pred": "hiked {v}",
+    "neg": "did not hike {v}",
+    "either": "hiked either {a} or {b}",
+    "nor": "hiked neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Snack",
+    "values": [
+     "trail mix",
+     "jerky",
+     "cheese",
+     "figs"
+    ],
+    "ref": "the hiker who packed {v}",
+    "pred": "packed {v}",
+    "neg": "did not pack {v}",
+    "either": "packed either {a} or {b}",
+    "nor": "packed neither {a} nor {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Height",
+    "ordered": true,
+    "nums": [
+     800,
+     1000,
+     1200,
+     1400
+    ],
+    "labels": [
+     "800 feet",
+     "1,000 feet",
+     "1,200 feet",
+     "1,400 feet"
+    ],
+    "ref": "the hiker who topped out at {x}",
+    "pred": "topped out at {x}",
+    "neg": "did not top out at {x}",
+    "either": "topped out at either {a} or {b}",
+    "nor": "topped out at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "topped out higher than {y}",
+    "less": "topped out lower than {y}",
+    "dmore": "topped out exactly {d} higher than {y}",
+    "dless": "topped out exactly {d} lower than {y}",
+    "dunit": [
+     "foot",
+     "feet"
+    ],
+    "dmore1": "topped out exactly 200 feet higher than {y}",
+    "dless1": "topped out exactly 200 feet lower than {y}",
+    "step": 200,
+    "values": [
+     "800 feet",
+     "1,000 feet",
+     "1,200 feet",
+     "1,400 feet"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   2,
+   3,
+   1
+  ],
+  [
+   2,
+   0,
+   1,
+   3
+  ],
+  [
+   0,
+   3,
+   2,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Felix topped out at neither 1,000 feet nor 1,200 feet.",
+  "The hiker on Bramble Hill did not top out at 1,200 feet.",
+  "Cass topped out lower than the hiker who packed jerky.",
+  "The hiker who packed figs is neither Felix nor Enzo.",
+  "The hiker who packed trail mix topped out exactly 200 feet higher than the hiker who packed jerky.",
+  "Of Wren and Enzo, one topped out at 1,400 feet and the other topped out at 1,200 feet.",
+  "Cass topped out exactly 400 feet lower than the hiker on Fiddler Hill.",
+  "The hiker on Crow's Nest is neither Felix nor Enzo.",
+  "The hiker who topped out at 1,400 feet is neither Enzo nor Cass."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Cass can still be only 800 feet, 1,000 feet, or 1,200 feet, clue 3 means the jerky cannot be 800 feet."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the jerky can still be only 1,000 feet, 1,200 feet, or 1,400 feet, clue 5 means the trail mix cannot be 800 feet or 1,000 feet and the jerky cannot be 1,400 feet."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Cass can still be only 800 feet, 1,000 feet, or 1,200 feet and the jerky can still be only 1,000 feet or 1,200 feet, clue 3 means Cass cannot be 1,200 feet."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Cass can still be only 800 feet or 1,000 feet, clue 7 means Fiddler Hill cannot be 800 feet or 1,000 feet."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6
+   ],
+   "text": "Felix must go with 800 feet: clue 1 rules out 1,000 feet and 1,200 feet; clue 6 rules out 1,400 feet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    9
+   ],
+   "text": "Enzo must go with 1,200 feet: clue 6 rules out 800 feet and 1,000 feet; clue 9 rules out 1,400 feet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Wren must go with 1,400 feet: clue 6 rules out 800 feet and 1,000 feet; 1,200 feet already goes with Enzo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    9
+   ],
+   "text": "Cass must go with 1,000 feet: clue 3 rules out 1,200 feet; clue 9 rules out 1,400 feet; 800 feet already goes with Felix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Felix must go with the cheese: clue 4 rules out the figs; the trail mix and the jerky are already ruled out for 800 feet."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "800 feet goes with Felix, so 800 feet also goes with the cheese."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The jerky must go with Enzo: clue 3 rules out Cass; Felix is already ruled out for 800 feet; Wren is already ruled out for 1,400 feet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The trail mix must go with 1,400 feet: clue 5 rules out 800 feet and 1,000 feet; 1,200 feet is already ruled out for Enzo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The figs must go with 1,000 feet: 1,200 feet is already ruled out for Enzo; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "The jerky must go with 1,200 feet: clue 3 rules out 800 feet; clue 5 rules out 1,400 feet; 1,000 feet already goes with the figs."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Wren goes with 1,400 feet, so Wren also goes with the trail mix."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Cass must go with the figs: clue 3 rules out the jerky; the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Since Fiddler Hill can still be only 1,200 feet or 1,400 feet and Cass can still be only 1,000 feet, clue 7 means Fiddler Hill cannot be 1,200 feet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Fiddler Hill must go with 1,400 feet: clue 7 rules out 800 feet, 1,000 feet, and 1,200 feet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Crow's Nest must go with 1,000 feet: 800 feet is already ruled out for Felix; 1,200 feet is already ruled out for Enzo; 1,400 feet already goes with Fiddler Hill."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Bramble Hill must go with 800 feet: clue 2 rules out 1,200 feet; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Thimble Knob must go with 1,200 feet: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Felix goes with 800 feet, so Felix also goes with Bramble Hill."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Enzo must go with Thimble Knob: clue 8 rules out Crow's Nest; Bramble Hill and Fiddler Hill are already ruled out for 1,200 feet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Cass must go with Crow's Nest: clue 7 rules out Fiddler Hill; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Wren must go with Fiddler Hill: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The cheese goes with Felix, so the cheese also goes with Bramble Hill."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Fiddler Hill must go with the trail mix: the jerky is already ruled out for Enzo; the cheese is already ruled out for Felix; the figs is already ruled out for 1,000 feet."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Crow's Nest must go with the figs: the jerky is already ruled out for Enzo; the cheese is already ruled out for Felix; the trail mix already goes with Fiddler Hill."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Thimble Knob must go with the jerky: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 53,
+  "score": 137,
+  "revisits": 4,
+  "transfer": 20,
+  "trial": 0,
+  "clue_steps": 8
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Felix",
+   "Bramble Hill",
+   "cheese",
+   "800 feet"
+  ],
+  [
+   "Wren",
+   "Fiddler Hill",
+   "trail mix",
+   "1,400 feet"
+  ],
+  [
+   "Enzo",
+   "Thimble Knob",
+   "jerky",
+   "1,200 feet"
+  ],
+  [
+   "Cass",
+   "Crow's Nest",
+   "figs",
+   "1,000 feet"
+  ]
+ ],
+ "score": 137
+}

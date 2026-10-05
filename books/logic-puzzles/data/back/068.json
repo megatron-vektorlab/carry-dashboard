@@ -1,0 +1,9 @@
+{"no": 68, "clues": [
+  {"kind": "pair", "people": ["Buyer=Della", "Buyer=Otis"], "options": ["Year=1880", "Year=1890"]},
+  {"kind": "compare", "a": "Buyer=Otis", "b": "Clock=mantel clock", "cat": "Year", "rel": "a_greater"},
+  {"kind": "nor", "a": "Clock=cuckoo clock", "not": ["Buyer=Otis", "Buyer=Della"]},
+  {"kind": "compare", "a": "Wood=oak", "b": "Wood=walnut", "cat": "Year", "rel": "a_greater_by", "by": 30},
+  {"kind": "pair", "people": ["Buyer=Otis", "Buyer=Carmen"], "options": ["Wood=cherry", "Wood=maple"]},
+  {"kind": "compare", "a": "Clock=banjo clock", "b": "Buyer=Otis", "cat": "Year", "rel": "a_greater_by", "by": 20},
+  {"kind": "compare", "a": "Wood=maple", "b": "Wood=cherry", "cat": "Year", "rel": "a_greater_by", "by": 10}
+]}

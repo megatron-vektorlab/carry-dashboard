@@ -1,0 +1,623 @@
+{
+ "no": 65,
+ "chapter": 5,
+ "family": "num44",
+ "stars": 4,
+ "seed": 65000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Pumpkin Weigh-Off",
+ "story": "Wagons groaned onto the town green for the October weigh-off with four giant pumpkins, each with a pet name painted on its side and a secret fertilizer its grower will not discuss. The big scale worked perfectly; its printout came out blank. Mabel, whose dahlia rivalry has spread to squash, wants every ribbon pinned on the right pumpkin. Whose pumpkin is whose, what was each one fed, and how much does each weigh?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Gus",
+  "Mabel"
+ ],
+ "state": {
+  "theme": {
+   "slot": 65,
+   "title": "The Pumpkin Weigh-Off",
+   "story": "Wagons groaned onto the town green for the October weigh-off with four giant pumpkins, each with a pet name painted on its side and a secret fertilizer its grower will not discuss. The big scale worked perfectly; its printout came out blank. Mabel, whose dahlia rivalry has spread to squash, wants every ribbon pinned on the right pumpkin. Whose pumpkin is whose, what was each one fed, and how much does each weigh?",
+   "entity": [
+    "grower",
+    "growers"
+   ],
+   "cast": [
+    "Gus",
+    "Mabel"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Grower",
+    "kind": "name",
+    "values": [
+     "Zeke",
+     "Gus",
+     "Kenji",
+     "Mabel"
+    ]
+   },
+   {
+    "label": "Pumpkin",
+    "values": [
+     "Big Mo",
+     "Sunny",
+     "Tubby",
+     "Duchess"
+    ],
+    "ref": "the grower of {v}",
+    "pred": "grew {v}",
+    "neg": "did not grow {v}",
+    "either": "grew either {a} or {b}",
+    "nor": "grew neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Fertilizer",
+    "values": [
+     "seaweed",
+     "compost",
+     "fish meal",
+     "coffee"
+    ],
+    "ref": "the grower who used {v}",
+    "pred": "fertilized with {v}",
+    "neg": "did not fertilize with {v}",
+    "either": "fertilized with either {a} or {b}",
+    "nor": "fertilized with neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Weight",
+    "ordered": true,
+    "nums": [
+     300,
+     400,
+     500,
+     600
+    ],
+    "labels": [
+     "300 pounds",
+     "400 pounds",
+     "500 pounds",
+     "600 pounds"
+    ],
+    "ref": "the grower whose pumpkin weighed {x}",
+    "pred": "brought in {x} of pumpkin",
+    "neg": "did not bring in {x} of pumpkin",
+    "either": "brought in either {a} or {b} of pumpkin",
+    "nor": "brought in neither {a} nor {b} of pumpkin",
+    "short": "{x}",
+    "more": "grew a heavier pumpkin than {y}",
+    "less": "grew a lighter pumpkin than {y}",
+    "dmore": "beat {y} by exactly {d}",
+    "dless": "trailed {y} by exactly {d}",
+    "dunit": [
+     "pound",
+     "pounds"
+    ],
+    "dmore1": "beat {y} by just 100 pounds",
+    "dless1": "trailed {y} by just 100 pounds",
+    "step": 100,
+    "values": [
+     "300 pounds",
+     "400 pounds",
+     "500 pounds",
+     "600 pounds"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   1,
+   0,
+   2
+  ],
+  [
+   2,
+   3,
+   1,
+   0
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Zeke did not fertilize with compost.",
+  "The grower who used coffee grew either Sunny or Big Mo.",
+  "The grower whose pumpkin weighed 400 pounds fertilized with either seaweed or coffee.",
+  "The grower who used seaweed grew either Tubby or Sunny.",
+  "The grower of Tubby did not bring in 600 pounds of pumpkin.",
+  "Gus grew a lighter pumpkin than the grower who used seaweed.",
+  "Of the grower of Tubby and the grower who used compost, one brought in 500 pounds of pumpkin and the other brought in 600 pounds of pumpkin.",
+  "Of the grower who used fish meal and the grower whose pumpkin weighed 600 pounds, one is Kenji and the other is Zeke.",
+  "The grower of Big Mo is either Kenji or Mabel."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 means Gus cannot be 600 pounds and seaweed cannot be 300 pounds."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    7
+   ],
+   "text": "Tubby must go with 500 pounds: clue 7 rules out 300 pounds and 400 pounds; clue 5 rules out 600 pounds."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    7
+   ],
+   "text": "Compost must go with 600 pounds: clue 7 rules out 300 pounds; clue 3 rules out 400 pounds; 500 pounds is already ruled out for Tubby."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since Gus can still be only 300 pounds, 400 pounds, or 500 pounds and seaweed can still be only 400 pounds or 500 pounds, clue 6 means Gus cannot be 500 pounds."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    8
+   ],
+   "text": "Gus must go with coffee: clue 6 rules out seaweed; clue 8 rules out fish meal; compost is already ruled out for 600 pounds."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    8
+   ],
+   "text": "600 pounds must go with Kenji: clue 6 rules out Gus; clue 8 rules out Mabel; Zeke is already ruled out for compost."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Compost goes with 600 pounds, so compost also goes with Kenji."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Mabel must go with seaweed: clue 8 rules out fish meal; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Zeke must go with fish meal: clue 1 rules out compost; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Coffee must go with Sunny: clue 2 rules out Tubby and Duchess; Big Mo is already ruled out for Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Seaweed must go with Tubby: clue 4 rules out Big Mo and Duchess; Sunny already goes with coffee."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "500 pounds goes with Tubby, so 500 pounds also goes with seaweed."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Fish meal must go with 300 pounds: clue 3 rules out 400 pounds; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Coffee must go with 400 pounds: 500 pounds is already ruled out for Tubby; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Gus goes with coffee, so Gus also goes with Sunny."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Gus must go with 400 pounds: clue 6 rules out 500 pounds and 600 pounds; 300 pounds is already ruled out for coffee."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Big Mo must go with Kenji: clue 9 rules out Zeke and Gus; Mabel is already ruled out for seaweed."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "600 pounds goes with Kenji, so 600 pounds also goes with Big Mo."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Compost goes with 600 pounds, so compost also goes with Big Mo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Duchess must go with fish meal: clue 4 rules out seaweed; clue 2 rules out coffee; compost already goes with Big Mo."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Mabel goes with seaweed, so Mabel also goes with Tubby."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Zeke must go with Duchess: clue 9 rules out Big Mo; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Zeke must go with 300 pounds: 500 pounds is already ruled out for Tubby; 600 pounds is already ruled out for compost; 400 pounds already goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Mabel must go with 500 pounds: clue 8 rules out 600 pounds; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Sunny must go with 400 pounds: 300 pounds is already ruled out for coffee; 600 pounds is already ruled out for compost; 500 pounds already goes with Tubby."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Duchess must go with 300 pounds: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 47,
+  "score": 124,
+  "revisits": 2,
+  "transfer": 18,
+  "trial": 0,
+  "clue_steps": 9
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Zeke",
+   "Duchess",
+   "fish meal",
+   "300 pounds"
+  ],
+  [
+   "Gus",
+   "Sunny",
+   "coffee",
+   "400 pounds"
+  ],
+  [
+   "Kenji",
+   "Big Mo",
+   "compost",
+   "600 pounds"
+  ],
+  [
+   "Mabel",
+   "Tubby",
+   "seaweed",
+   "500 pounds"
+  ]
+ ],
+ "score": 124
+}

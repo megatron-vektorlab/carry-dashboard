@@ -1,0 +1,8 @@
+{"no": 72, "clues": [
+ {"kind": "pair", "people": ["Border=plain", "Border=wavy"], "options": ["Section=puzzles", "Section=tides"]},
+ {"kind": "compare", "a": "Advertiser=Olive", "b": "Section=tides", "cat": "Price", "rel": "a_less_by", "by": 20},
+ {"kind": "compare", "a": "Advertiser=Tariq", "b": "Border=dotted", "cat": "Price", "rel": "a_greater_by", "by": 20},
+ {"kind": "diff", "a": "Advertiser=Gus", "b": "Border=wavy"},
+ {"kind": "pair", "people": ["Section=tides", "Price=$20"], "options": ["Border=plain", "Border=dotted"]},
+ {"kind": "compare", "a": "Section=recipes", "b": "Advertiser=Olive", "cat": "Price", "rel": "a_less_by", "by": 10}
+]}

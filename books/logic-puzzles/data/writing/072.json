@@ -1,0 +1,31 @@
+{
+ "no": 72,
+ "clues": [
+  "Of the plain-bordered ad and the wavy-bordered ad, one ran in the puzzles section and the other in the tides section.",
+  "Olive paid exactly 20 dollars less than whoever advertised in the tides section.",
+  "Tariq's ad cost exactly 20 dollars more than the one with the dotted border.",
+  "Gus did not pick the wavy border.",
+  "The ad in the tides section and the $20 ad came from different advertisers: one had a plain border, the other a dotted border.",
+  "The ad in the recipes section cost exactly 10 dollars less than Olive's."
+ ],
+ "hints": [
+  "Look at Olive's row where advertisers meet prices. Clues 2 and 6 both measure from her. What could she have paid?",
+  "Comparisons rule out the ends. Clue 2 keeps Olive off $30 and $40. Clue 6 says someone paid less than she did.",
+  "So Olive paid $20. By clue 6 the recipes ad cost $10, and by clue 2 the tides ad cost $40.",
+  "Clue 1 puts the wavy border in puzzles or tides, but clue 5 gives the tides ad a plain or dotted border. So wavy ran in puzzles."
+ ],
+ "solution": {
+  "key_idea": "Clues 2 and 6 pin Olive at $20 from both sides, which puts the recipes ad at $10 and the tides ad at $40.",
+  "steps": [
+   "By clue 2, Olive paid $10 or $20, and the tides ad cost $30 or $40. Clue 6 rules out $10 for Olive.",
+   "So Olive paid $20, the recipes ad cost $10 (clue 6), and the tides ad cost $40 (clue 2).",
+   "Clue 5 gives the tides ad a plain or dotted border, so by clue 1 the wavy border ran in puzzles, the plain in tides.",
+   "The tides ad had the plain border, so by clue 5 the $20 ad had the dotted one. That is Olive's.",
+   "By clue 3, Tariq paid $40, so he ran the plain-bordered ad in tides.",
+   "At $20 with a dotted border, Olive was not in recipes, tides or puzzles. So she took sports, and the puzzles ad cost $30.",
+   "Clue 4 keeps Gus off the wavy $30 puzzles ad, so Lena placed it. Gus paid $10 for a rope border in recipes."
+  ],
+  "epilogue": "Ada sent out corrected invoices: $10 for Gus's rubber boots in recipes, $20 for Olive in sports, $30 for Lena's lamp notice in puzzles, and $40 for Tariq in tides. Nobody paid twice."
+ },
+ "tip": null
+}

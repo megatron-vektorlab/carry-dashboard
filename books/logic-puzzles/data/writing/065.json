@@ -1,0 +1,35 @@
+{
+ "no": 65,
+ "clues": [
+  "Zeke did not use compost.",
+  "The coffee-fed pumpkin was either Sunny or Big Mo.",
+  "The pumpkin that weighed 400 pounds was fed either seaweed or coffee.",
+  "Whoever used seaweed grew either Tubby or Sunny.",
+  "Tubby did not weigh 600 pounds.",
+  "Gus's pumpkin weighed less than the one fed seaweed.",
+  "Of Tubby's grower and the compost user, one brought in 500 pounds and the other 600 pounds.",
+  "Kenji and Zeke were, in some order, the grower who used fish meal and the grower whose pumpkin weighed 600 pounds.",
+  "Big Mo belonged to either Kenji or Mabel."
+ ],
+ "hints": [
+  "Look at the Tubby row in the box where pumpkins meet weights. Which two clues say something about how much Tubby weighed?",
+  "Clue 7 is a pair clue, so Tubby weighed 500 or 600 pounds. Put it together with clue 5, which also limits Tubby.",
+  "So Tubby weighed 500 pounds and the compost pumpkin 600. Clue 6 keeps Gus off 600, so Gus did not use compost.",
+  "Gus used neither seaweed (clue 6) nor fish meal (clue 8), so he used coffee. Then clues 1, 6 and 8 give the 600-pound pumpkin to Kenji."
+ ],
+ "solution": {
+  "key_idea": "Clue 7 gives Tubby and compost 500 and 600 pounds, and clue 5 keeps Tubby off 600, so compost weighed 600.",
+  "steps": [
+   "Clue 7 gives Tubby and the compost pumpkin 500 and 600 pounds. Clue 5 keeps Tubby off 600, so Tubby weighed 500 and compost 600.",
+   "By clue 6, seaweed was not 300 pounds, and 600 is compost's. So seaweed weighed 400 or 500, and Gus's lighter pumpkin 300 or 400.",
+   "Gus could not use seaweed (clue 6), fish meal (clue 8) or the 600-pound compost. So Gus used coffee.",
+   "The 600-pound grower was not Gus (clue 6), not Mabel (clue 8), and not Zeke, who used no compost (clue 1). So it was Kenji.",
+   "Kenji used compost, so by clue 8 Zeke used fish meal, and Mabel used seaweed.",
+   "Clue 9 keeps Gus off Big Mo, so by clue 2 his coffee pumpkin was Sunny. By clue 4, Mabel's seaweed pumpkin was Tubby.",
+   "By clue 3, the 400-pound pumpkin was fed seaweed or coffee. Mabel's Tubby weighed 500, so Gus's Sunny weighed 400, and Zeke's 300.",
+   "By clue 9, Big Mo was Kenji's, since Mabel grew Tubby. So Zeke grew Duchess."
+  ],
+  "epilogue": "Kenji's Big Mo took the blue ribbon at 600 pounds, fed on plain compost. Mabel's seaweed-fed Tubby came second, and she announced a rematch for next October."
+ },
+ "tip": null
+}

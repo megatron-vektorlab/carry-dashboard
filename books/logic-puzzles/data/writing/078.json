@@ -1,0 +1,33 @@
+{
+ "no": 78,
+ "clues": [
+  "Of the marcher with the caramels and the one with the licorice, one was a mermaid and the other a robot.",
+  "Either Dot or Hugo handed out 100 pieces.",
+  "The taffy came from either Otis or Mabel.",
+  "Hugo was not the pirate.",
+  "Hugo handed out more pieces than the scarecrow did.",
+  "The taffy and the licorice came from two different marchers: one gave away 50 pieces, the other 125 pieces.",
+  "The mermaid handed out fewer pieces than Otis.",
+  "Whoever had the caramels handed out exactly 25 more pieces than the pirate."
+ ],
+ "hints": [
+  "Look at the 125-piece column in the costume box. Which costume could possibly have handed out the most?",
+  "Comparisons rule out the ends. Clue 5 keeps the scarecrow off 125 pieces. What do clues 7 and 8 say about the mermaid and the pirate?",
+  "So the robot handed out 125, with caramels or licorice (clue 1). By clue 6, the taffy was 50 and the licorice 125.",
+  "Clue 7 keeps Otis off 50, so by clue 3 Mabel had the 50-piece taffy. Then clues 7 and 2 leave Otis only 125: the robot."
+ ],
+ "solution": {
+  "key_idea": "Clues 5, 7 and 8 keep the scarecrow, mermaid and pirate off 125 pieces, so the robot handed out the most.",
+  "steps": [
+   "Clue 5 keeps the scarecrow off 125 pieces, clue 7 the mermaid, and clue 8 the pirate. So the robot handed out 125.",
+   "By clue 1, the robot had caramels or licorice, not taffy. So by clue 6, the taffy was 50 and the licorice 125, the robot's.",
+   "By clue 1, the mermaid had the caramels. Clue 7 keeps Otis off 50, so by clue 3 Mabel had the taffy, at 50.",
+   "The mermaid's caramels made 75 or 100. By clues 7 and 2, Otis handed out 125: he was the robot, with licorice.",
+   "Clues 4 and 5 keep Hugo from the pirate and the scarecrow, so Hugo was the mermaid with the caramels. Dot had the gumdrops.",
+   "Hugo handed out 75 or 100. The scarecrow (clue 5) and the pirate (clue 8) both handed out fewer, so neither had 100.",
+   "So Hugo handed out 100, and Dot 75. By clue 8, the pirate handed out 75: Dot. Mabel was the scarecrow."
+  ],
+  "epilogue": "The Gazette printed it straight: Otis the robot, 125 licorice; Hugo the mermaid, 100 caramels; Dot the pirate, 75 gumdrops; Mabel the scarecrow, 50 taffy. Mabel checked the commas."
+ },
+ "tip": null
+}

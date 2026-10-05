@@ -1,0 +1,8 @@
+{"no": 30, "clues": [
+  {"kind": "either", "a": "Rower=Otis", "one_of": ["Dinghy=Minnow", "Dinghy=Skipjack"]},
+  {"kind": "pair", "people": ["Rower=Amara", "Rower=Felix"], "options": ["Dinghy=Skipjack", "Dinghy=Teacup"]},
+  {"kind": "nor", "a": "Dinghy=Skipjack", "not": ["Oars=varnished", "Oars=ash"]},
+  {"kind": "either", "a": "Oars=blue-tipped", "one_of": ["Dinghy=Pebble", "Dinghy=Teacup"]},
+  {"kind": "nor", "a": "Oars=varnished", "not": ["Rower=Felix", "Rower=Otis"]},
+  {"kind": "pair", "people": ["Rower=Felix", "Rower=Amara"], "options": ["Oars=varnished", "Oars=spruce"]}
+]}

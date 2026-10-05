@@ -1,0 +1,65 @@
+{
+ "no": 75,
+ "clues": [
+  {
+   "kind": "compare",
+   "a": "Rider=Basil",
+   "b": "Stop=farm stand",
+   "cat": "Fare",
+   "rel": "a_greater_by",
+   "by": 2
+  },
+  {
+   "kind": "compare",
+   "a": "Stop=corn maze",
+   "b": "Rider=Teddy",
+   "cat": "Fare",
+   "rel": "a_greater_by",
+   "by": 6
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Rider=Teddy",
+    "Stop=orchard gate"
+   ],
+   "options": [
+    "Carried=apple crate",
+    "Carried=cider jug"
+   ]
+  },
+  {
+   "kind": "compare",
+   "a": "Rider=Nadia",
+   "b": "Rider=Zeke",
+   "cat": "Fare",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Stop=corn maze",
+   "b": "Carried=pumpkin",
+   "cat": "Fare",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Carried=pumpkin",
+   "b": "Stop=farm stand",
+   "cat": "Fare",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "compare",
+   "a": "Carried=apple crate",
+   "b": "Rider=Teddy",
+   "cat": "Fare",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "diff",
+   "a": "Carried=apple crate",
+   "b": "Fare=$5"
+  }
+ ]
+}

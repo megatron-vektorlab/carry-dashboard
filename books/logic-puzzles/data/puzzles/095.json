@@ -1,0 +1,769 @@
+{
+ "no": 95,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 95002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Midnight Ovens",
+ "story": "Four a.m. is Rosa's hour, so she was startled to find her ovens already warm and a tray of gingerbread lighthouses cooling on the rack, each with a tiny icing lamp. Five friends know where she hides the bakery's spare key, and each has a different baking specialty. The icing, Rosa admits, is very nearly as good as hers. Who baked at midnight?",
+ "question": {
+  "text": "Who baked at midnight?",
+  "cat": "Treat",
+  "value": "gingerbread"
+ },
+ "answer": "Lou",
+ "cast": [
+  "Mabel",
+  "Gus",
+  "Rosa"
+ ],
+ "state": {
+  "theme": {
+   "slot": 95,
+   "title": "The Case of the Midnight Ovens",
+   "story": "Four a.m. is Rosa's hour, so she was startled to find her ovens already warm and a tray of gingerbread lighthouses cooling on the rack, each with a tiny icing lamp. Five friends know where she hides the bakery's spare key, and each has a different baking specialty. The icing, Rosa admits, is very nearly as good as hers. Who baked at midnight?",
+   "entity": [
+    "baker",
+    "bakers"
+   ],
+   "cast": [
+    "Mabel",
+    "Gus",
+    "Rosa"
+   ],
+   "question": {
+    "text": "Who baked at midnight?",
+    "cat": "Treat",
+    "value": "gingerbread"
+   }
+  },
+  "cats": [
+   {
+    "label": "Baker",
+    "kind": "name",
+    "values": [
+     "Emil",
+     "Ruben",
+     "Mabel",
+     "Lou",
+     "Gus"
+    ]
+   },
+   {
+    "label": "Apron",
+    "values": [
+     "blue",
+     "flowered",
+     "plaid",
+     "white",
+     "striped"
+    ],
+    "ref": "the baker in the {v} apron",
+    "pred": "bakes in the {v} apron",
+    "neg": "does not bake in the {v} apron",
+    "either": "bakes in either the {a} or the {b} apron",
+    "nor": "bakes in neither the {a} nor the {b} apron",
+    "short": "the {v} apron"
+   },
+   {
+    "label": "Treat",
+    "values": [
+     "gingerbread",
+     "biscotti",
+     "brownies",
+     "rolls",
+     "fudge"
+    ],
+    "ref": "the baker known for {v}",
+    "pred": "is known for {v}",
+    "neg": "is not known for {v}",
+    "either": "is known for either {a} or {b}",
+    "nor": "is known for neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Age",
+    "ordered": true,
+    "nums": [
+     60,
+     65,
+     70,
+     75,
+     80
+    ],
+    "ref": "the {x}-year-old",
+    "pred": "is {x} years old",
+    "neg": "is not {x} years old",
+    "either": "is either {a} or {b} years old",
+    "nor": "is neither {a} nor {b} years old",
+    "short": "age {x}",
+    "more": "is older than {y}",
+    "less": "is younger than {y}",
+    "dmore": "is exactly {d} older than {y}",
+    "dless": "is exactly {d} younger than {y}",
+    "dunit": [
+     "year",
+     "years"
+    ],
+    "dmore1": "is five years older than {y}",
+    "dless1": "is five years younger than {y}",
+    "step": 5,
+    "values": [
+     "60",
+     "65",
+     "70",
+     "75",
+     "80"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   2,
+   0,
+   4,
+   3
+  ],
+  [
+   3,
+   1,
+   2,
+   0,
+   4
+  ],
+  [
+   2,
+   3,
+   1,
+   0,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 4
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The baker known for rolls is five years older than the baker known for brownies.",
+  "Ruben is either 75 or 80 years old.",
+  "Emil is older than the baker known for brownies.",
+  "Of Emil and the baker in the white apron, one is 70 years old and the other is 80 years old.",
+  "Gus is older than the baker in the plaid apron.",
+  "The baker known for gingerbread is neither 70 nor 75 years old.",
+  "The baker known for fudge is exactly 20 years older than the baker in the striped apron.",
+  "The baker known for gingerbread is either Emil or Lou.",
+  "The baker in the blue apron is either Lou or Mabel.",
+  "Of the 70-year-old and the 80-year-old, one bakes in the flowered apron and the other bakes in the white apron."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means rolls cannot be age 60 and brownies cannot be age 80."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since brownies can still be only age 60, age 65, age 70, or age 75, clue 3 means Emil cannot be age 60."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 means the plaid apron cannot be age 80 and Gus cannot be age 60."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 means fudge cannot be age 60, age 65, age 70, or age 75 and the striped apron cannot be age 65, age 70, age 75, or age 80."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The striped apron must go with age 60: clue 7 rules out age 65, age 70, age 75, and age 80."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Fudge must go with age 80: clue 7 rules out age 60, age 65, age 70, and age 75."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since rolls can still be only age 65, age 70, or age 75 and brownies can still be only age 60, age 65, age 70, or age 75, clue 1 means brownies cannot be age 75."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the plaid apron can still be only age 65, age 70, or age 75 and Gus can still be only age 65, age 70, age 75, or age 80, clue 5 means Gus cannot be age 65."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    10
+   ],
+   "text": "Clue 10 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    3,
+    4,
+    5,
+    9
+   ],
+   "text": "SUPPOSE TEST: try Ruben with age 80.",
+   "chain": [
+    "Suppose Ruben goes with age 80.",
+    "Emil must go with age 70: clue 3 rules out age 60; clue 4 rules out age 65 and age 75; age 80 already goes with Ruben.",
+    "Gus must go with age 75: clue 5 rules out age 60 and age 65; the other choices are already taken.",
+    "Fudge goes with age 80, so fudge also goes with Ruben.",
+    "Emil must go with the flowered apron: clue 9 rules out the blue apron; clue 4 rules out the white apron; the plaid apron is already ruled out for age 70; the striped apron is already ruled out for age 60.",
+    "Ruben must go with the white apron: clue 9 rules out the blue apron; the plaid apron is already ruled out for age 80; the striped apron is already ruled out for age 60; the flowered apron already goes with Emil.",
+    "But then Gus has no apron left."
+   ],
+   "result": "So Ruben does NOT go with age 80: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Ruben must go with age 75: clue 2 rules out age 60, age 65, and age 70; the Suppose test ruled out age 80."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The blue apron must go with age 65: clue 10 rules out age 70 and age 80; age 75 is already ruled out for Ruben; age 60 already goes with the striped apron."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    10
+   ],
+   "text": "The plaid apron must go with age 75: clue 10 rules out age 70; clue 5 rules out age 80; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Ruben goes with age 75, so Ruben also goes with the plaid apron."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    9
+   ],
+   "text": "Emil must go with the flowered apron: clue 9 rules out the blue apron; clue 4 rules out the white apron; the striped apron is already ruled out for age 60; the plaid apron already goes with Ruben."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    9
+   ],
+   "text": "Gus must go with the white apron: clue 9 rules out the blue apron; clue 5 rules out the plaid apron; the striped apron is already ruled out for age 60; the flowered apron already goes with Emil."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the plaid apron can still be only age 75 and Gus can still be only age 70 or age 80, clue 5 means Gus cannot be age 70."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Gus must go with age 80: clue 5 rules out age 60, age 65, and age 70; age 75 already goes with Ruben."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Emil must go with age 70: clue 3 rules out age 60; clue 4 rules out age 65 and age 75; age 80 already goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Fudge must go with Gus: Emil, Ruben, Mabel, and Lou are already ruled out for age 80."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Fudge must go with the white apron: clue 7 rules out the striped apron; the blue apron and the plaid apron are already ruled out for age 80; the flowered apron is already ruled out for Emil."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "The flowered apron must go with age 70: clue 10 rules out age 65 and age 75; age 80 is already ruled out for fudge; age 60 already goes with the striped apron."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The white apron must go with age 80: clue 4 rules out age 65 and age 75; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Gingerbread must go with Lou: clue 8 rules out Ruben, Mabel, and Gus; Emil is already ruled out for age 70."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Brownies must go with Mabel: clue 3 rules out Emil; Ruben is already ruled out for age 75; the other choices are already taken."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since rolls can still be only age 65, age 70, or age 75 and brownies can still be only age 60 or age 65, clue 1 means rolls cannot be age 75."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6,
+    7
+   ],
+   "text": "Age 75 must go with biscotti: clue 6 rules out gingerbread; clue 1 rules out brownies and rolls; clue 7 rules out fudge."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    7
+   ],
+   "text": "Age 70 must go with rolls: clue 6 rules out gingerbread; clue 7 rules out fudge; brownies is already ruled out for Emil; biscotti already goes with age 75."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Ruben goes with age 75, so Ruben also goes with biscotti."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Emil must go with rolls: clue 3 rules out brownies; gingerbread is already ruled out for age 70; fudge is already ruled out for age 80; biscotti already goes with Ruben."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The plaid apron goes with age 75, so the plaid apron also goes with biscotti."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The flowered apron must go with rolls: gingerbread, brownies, and fudge are already ruled out for Emil; biscotti already goes with the plaid apron."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since rolls can still be only age 70 and brownies can still be only age 60 or age 65, clue 1 means brownies cannot be age 60."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Brownies must go with age 65: clue 1 rules out age 60, age 75, and age 80; age 70 is already ruled out for Emil."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Gingerbread must go with age 60: clue 6 rules out age 70 and age 75; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The striped apron goes with age 60, so the striped apron also goes with gingerbread."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The blue apron must go with brownies: biscotti and rolls are already ruled out for age 65; fudge is already ruled out for age 80; gingerbread already goes with the striped apron."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Lou must go with the striped apron: the blue apron is already ruled out for gingerbread; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Mabel must go with the blue apron: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Mabel must go with age 65: age 60 is already ruled out for the striped apron; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Lou must go with age 60: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 76,
+  "score": 221,
+  "revisits": 8,
+  "transfer": 31,
+  "trial": 1,
+  "clue_steps": 17
+ },
+ "trial_chain": 9,
+ "table": [
+  [
+   "Emil",
+   "flowered",
+   "rolls",
+   "70"
+  ],
+  [
+   "Ruben",
+   "plaid",
+   "biscotti",
+   "75"
+  ],
+  [
+   "Mabel",
+   "blue",
+   "brownies",
+   "65"
+  ],
+  [
+   "Lou",
+   "striped",
+   "gingerbread",
+   "60"
+  ],
+  [
+   "Gus",
+   "white",
+   "fudge",
+   "80"
+  ]
+ ],
+ "score": 221
+}

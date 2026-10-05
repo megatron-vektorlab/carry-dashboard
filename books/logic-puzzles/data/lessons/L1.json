@@ -1,0 +1,445 @@
+{
+ "lesson": 1,
+ "state": {
+  "theme": {
+   "title": "Pie Day",
+   "story": "",
+   "entity": [
+    "neighbor",
+    "neighbors"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Name",
+    "kind": "name",
+    "values": [
+     "Hattie",
+     "Gus",
+     "Wren"
+    ]
+   },
+   {
+    "label": "Pie",
+    "values": [
+     "apple",
+     "cherry",
+     "peach"
+    ],
+    "ref": "the {v} pie's baker",
+    "pred": "brought the {v} pie",
+    "neg": "did not bring the {v} pie",
+    "either": "brought either the {a} or the {b} pie",
+    "nor": "brought neither the {a} nor the {b} pie",
+    "short": "the {v} pie"
+   }
+  ]
+ },
+ "clues": [
+  "Gus brought the cherry pie.",
+  "Wren did not bring the apple pie."
+ ],
+ "formal": [
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   2
+  ]
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 says directly that Gus goes with the cherry pie."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Wren must go with the peach pie: clue 2 rules out the apple pie; the cherry pie already goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hattie must go with the apple pie: the other choices are already taken."
+  }
+ ],
+ "snaps": [
+  [
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    "O"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ]
+  ],
+  [
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    "O"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    "X"
+   ]
+  ],
+  [
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    "O"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    "O"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    "X"
+   ]
+  ],
+  [
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    "O"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    "O"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    "X"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    "O"
+   ]
+  ]
+ ],
+ "steps": [
+  "fact",
+  "fact",
+  "only",
+  "only"
+ ],
+ "probe": null
+}

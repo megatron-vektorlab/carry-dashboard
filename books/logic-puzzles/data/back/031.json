@@ -1,0 +1,7 @@
+{
+ "no": 31,
+ "clues": [
+  {"kind": "compare", "a": "Customer=Kit", "b": "Customer=Ivan", "cat": "Place", "rel": "a_less_by", "by": 3},
+  {"kind": "either", "a": "Place=third", "one_of": ["Customer=Ivan", "Customer=Rosa"]}
+ ]
+}

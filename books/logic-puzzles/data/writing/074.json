@@ -1,0 +1,32 @@
+{
+ "no": 74,
+ "clues": [
+  "Of the neighbor who chose oak and the one who ordered 3 cords, one stacked the wood by the garage and the other by the porch.",
+  "Amara ordered exactly 2 fewer cords than whoever chose ash.",
+  "Hattie's wood was either ash or oak.",
+  "Ruben ordered fewer cords than the neighbor who chose maple.",
+  "The neighbor who stacked wood by the garage ordered fewer cords than the one who chose birch.",
+  "The neighbor who chose maple and the one who stacked by the shed were different people; one ordered 3 cords and the other 2 cords."
+ ],
+ "hints": [
+  "Look where the woods meet 1 cord. Which wood could possibly be the smallest order?",
+  "Comparisons rule out the ends. Clue 2 keeps the ash off 1 cord. What do clues 4 and 5 say about the maple and the birch?",
+  "So the oak was the 1-cord order. By clue 1, the 1-cord and 3-cord loads were stacked by the garage and the porch.",
+  "The shed and barn must hold 2 and 4 cords. Clue 6 keeps the shed off 4, so the shed had 2 and the maple 3."
+ ],
+ "solution": {
+  "key_idea": "Clues 2, 4 and 5 keep the ash, maple and birch off 1 cord, so the oak was the smallest order.",
+  "steps": [
+   "Clue 2 keeps the ash off 1 cord, clue 4 the maple, and clue 5 the birch. So the oak was the 1-cord order.",
+   "By clue 1, the 1-cord and 3-cord loads went by the garage and porch, so the shed and barn held 2 and 4 cords.",
+   "Clue 6 keeps the shed off 4 cords, so the shed had 2 and the barn 4. By clue 6, the maple was 3 cords.",
+   "Clue 2 keeps the ash off 2 cords, so the ash was 4, by the barn. The birch was 2, by the shed.",
+   "Clues 2, 3 and 4 keep Amara, Hattie and Ruben off the 3-cord maple, so Kit chose the maple.",
+   "By clue 2, Amara ordered 2 cords, two fewer than the 4-cord ash. So she had the birch, by the shed.",
+   "Clue 4 keeps Ruben below Kit's 3 cords, so Ruben had the 1-cord oak, and Hattie the 4-cord ash by the barn.",
+   "By clue 5, the garage load was smaller than the 2-cord birch, so Ruben stacked by the garage and Kit by the porch."
+  ],
+  "epilogue": "The bill for ten cords was right: Ruben's oak by the garage, Amara's birch by the shed, Kit's maple by the porch, Hattie's ash by the barn. The list turned up, clipped to another."
+ },
+ "tip": null
+}

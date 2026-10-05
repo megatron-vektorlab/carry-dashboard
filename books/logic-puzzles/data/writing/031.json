@@ -1,0 +1,25 @@
+{
+ "no": 31,
+ "clues": [
+  "Kit stood exactly three places ahead of Ivan.",
+  "Whoever stood third in line was either Ivan or Rosa."
+ ],
+ "hints": [
+  "Look at clue 1. In a line of only four people, how much room does a gap of exactly three places need?",
+  "Clue 1 is an exact gap, so count. Try Kit in each place and see where Ivan would have to stand.",
+  "Only first and fourth are three places apart, so Kit was first and Ivan fourth. Clue 2 then gives third place to Rosa."
+ ],
+ "solution": {
+  "key_idea": "In a line of four, only first and fourth are three places apart, so clue 1 puts Kit first and Ivan fourth.",
+  "steps": [
+   "Clue 2 says the third customer was Ivan or Rosa, so neither Faye nor Kit stood third.",
+   "By clue 1, Kit stood exactly three places ahead of Ivan. In a line of four, only first and fourth are three places apart.",
+   "So Kit was first in line and Ivan was fourth.",
+   "By clue 2, the third customer was Ivan or Rosa. Ivan was fourth, so Rosa was third.",
+   "Faye was left with second place, right where the bill was found. The five dollars were Faye's."
+  ],
+  "epilogue": "The five had slipped from Faye's pocket while she dug out coins for a double scoop. Ada returned it the next morning, and Faye bought the scooper a lemonade in thanks."
+ },
+ "tip": "Count an exact gap on your fingers. In a short line, a big gap has very few places to fit.",
+ "answer_line": "Faye dropped the five-dollar bill."
+}

@@ -1,0 +1,24 @@
+{
+ "no": 6,
+ "clues": [
+  "The polka-dot umbrella was not Gus's.",
+  "Mabel's umbrella was the plaid one.",
+  "Kit's umbrella was neither the yellow one nor the polka-dot one."
+ ],
+ "hints": [
+  "Look at Kit's row. After clues 2 and 3, how many umbrellas could still be Kit's?",
+  "Clue 3 gives Kit two X's, and Mabel's dot from clue 2 crosses out plaid for everyone else. Look for the only choice left.",
+  "So Kit left the navy umbrella. Gus then has only yellow left, since clue 1 rules out polka-dot."
+ ],
+ "solution": {
+  "key_idea": "Clue 3 and Mabel's plaid umbrella cross out three of Kit's four squares, so Kit's umbrella was navy.",
+  "steps": [
+   "Clue 2 gives Mabel the plaid umbrella, so no one else left the plaid one.",
+   "Clue 3 rules out yellow and polka-dot for Kit, so Kit left the navy umbrella.",
+   "Clue 1 rules out polka-dot for Gus. Plaid and navy are taken, so Gus left the yellow one.",
+   "Oscar left the polka-dot umbrella."
+  ],
+  "epilogue": "All four umbrellas went home before the noon ferry: plaid to Mabel, yellow to Gus, navy to Kit and polka-dot to Oscar. Priya's lost-and-found stayed at forty-one."
+ },
+ "tip": "Each time a dot goes in, cross out the rest of its row and column before reading on."
+}

@@ -1,0 +1,22 @@
+{
+ "no": 50,
+ "clues": [],
+ "hints": [
+  "Look at Jade's and Vito's statements. With only three suspects, what does each one really say about Otis?",
+  "Jade's statement means Otis didn't do it, and Vito's means Otis did. Those are opposites, so exactly one is true.",
+  "That pair uses up the rule's one true statement, so Otis's is false. Neither Vito nor Otis sounded the horn, so Jade did."
+ ],
+ "solution": {
+  "key_idea": "Jade's and Vito's statements are opposites about Otis, so they use up the one true statement, and Otis's must be false.",
+  "steps": [
+   "With three suspects, Jade's \"Vito or I\" means Otis didn't sound the horn, and Vito's \"neither Jade nor I\" means Otis did.",
+   "So Jade and Vito say opposite things, and exactly one of them is telling the truth.",
+   "The rule allows exactly one true statement, and that pair uses it up. So Otis's statement is false.",
+   "Otis says Vito or Otis sounded the horn. That is false, so neither did, and Jade sounded the horn.",
+   "Check Jade: only Jade's own statement is true, so Jade fits. Testing Otis or Vito gives two true statements each."
+  ],
+  "epilogue": "Jade, the ferry's relief deckhand, had come aboard for her forgotten thermos and leaned on the horn button in the dark. She apologized to Jonah, and to Pilot, before the 7:30 sailing."
+ },
+ "tip": null,
+ "answer_line": "Jade sounded the ferry horn."
+}

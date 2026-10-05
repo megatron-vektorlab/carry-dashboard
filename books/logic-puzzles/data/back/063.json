@@ -1,0 +1,6 @@
+{"no": 63, "clues": [
+ {"kind": "pair", "people": ["Stop=Pine Key", "Stop=the mainland"], "options": ["Ferry=7:00 a.m.", "Ferry=8:00 a.m."]},
+ {"kind": "pair", "people": ["Passenger=Amara", "Passenger=Tova"], "options": ["Ferry=7:00 a.m.", "Ferry=8:30 a.m."]},
+ {"kind": "nor", "a": "Passenger=Tova", "not": ["Stop=Gull Island", "Stop=the mainland"]},
+ {"kind": "compare", "a": "Stop=Gull Island", "b": "Passenger=Ruben", "cat": "Ferry", "rel": "a_greater_by", "by": 30}
+]}

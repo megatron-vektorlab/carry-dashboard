@@ -1,0 +1,399 @@
+{
+ "no": 40,
+ "chapter": 3,
+ "family": "days4",
+ "stars": 3,
+ "seed": 40000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "A Piano on the Ferry",
+ "story": "Pilot the beagle has greeted plenty of odd cargo from the ferry's deck, but never a week like this one: a piano, a beehive, a canoe and an armchair, one a day from Tuesday to Friday, each from a different sender and each bound for Gull Island. The island postmaster signed every slip on the wrong line. Jonah keeps his log to the minute and wants it right. Who sent what, and on which day?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Gus",
+  "Jonah"
+ ],
+ "state": {
+  "theme": {
+   "slot": 40,
+   "title": "A Piano on the Ferry",
+   "story": "Pilot the beagle has greeted plenty of odd cargo from the ferry's deck, but never a week like this one: a piano, a beehive, a canoe and an armchair, one a day from Tuesday to Friday, each from a different sender and each bound for Gull Island. The island postmaster signed every slip on the wrong line. Jonah keeps his log to the minute and wants it right. Who sent what, and on which day?",
+   "entity": [
+    "sender",
+    "senders"
+   ],
+   "cast": [
+    "Gus",
+    "Jonah"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Sender",
+    "kind": "name",
+    "values": [
+     "Gus",
+     "Faye",
+     "Tariq",
+     "Una"
+    ]
+   },
+   {
+    "label": "Cargo",
+    "values": [
+     "piano",
+     "beehive",
+     "canoe",
+     "armchair"
+    ],
+    "ref": "the sender of the {v}",
+    "pred": "sent the {v}",
+    "neg": "did not send the {v}",
+    "either": "sent either the {a} or the {b}",
+    "nor": "sent neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Day",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ],
+    "ref": "the {x} sender",
+    "pred": "shipped on {x}",
+    "neg": "did not ship on {x}",
+    "either": "shipped on either {a} or {b}",
+    "nor": "shipped on neither {a} nor {b}",
+    "short": "{x}",
+    "more": "shipped later in the week than {y}",
+    "less": "shipped earlier in the week than {y}",
+    "dmore": "shipped exactly {d} after {y}",
+    "dless": "shipped exactly {d} before {y}",
+    "dunit": [
+     "day",
+     "days"
+    ],
+    "dmore1": "shipped the day after {y}",
+    "dless1": "shipped the day before {y}",
+    "step": 1,
+    "values": [
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   3,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": 2,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 2,
+   "op": "<",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Gus shipped on Thursday.",
+  "Tariq sent either the canoe or the beehive.",
+  "The sender of the armchair did not ship on Friday.",
+  "Tariq shipped later in the week than Una.",
+  "Of Faye and the sender of the piano, one shipped on Thursday and the other shipped on Friday.",
+  "Gus shipped later in the week than the sender of the canoe."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 says directly that Gus goes with Thursday."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Tariq can still be only Tuesday, Wednesday, or Friday and Una can still be only Tuesday, Wednesday, or Friday, clue 4 means Tariq cannot be Tuesday and Una cannot be Friday."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since the canoe can still be only Tuesday, Wednesday, or Friday and Gus can still be only Thursday, clue 6 means the canoe cannot be Friday."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Faye must go with Friday: clue 5 rules out Tuesday and Wednesday; Thursday already goes with Gus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Tariq must go with Wednesday: clue 4 rules out Tuesday; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Una must go with Tuesday: clue 4 rules out Friday; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The piano must go with Thursday: clue 5 rules out Tuesday and Wednesday; Friday is already ruled out for Faye."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    6
+   ],
+   "text": "Friday must go with the beehive: clue 6 rules out the canoe; clue 3 rules out the armchair; the piano is already ruled out for Faye."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Gus goes with Thursday, so Gus also goes with the piano."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Faye goes with Friday, so Faye also goes with the beehive."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Tariq must go with the canoe: clue 2 rules out the piano and the armchair; the beehive already goes with Faye."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Una must go with the armchair: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Wednesday goes with Tariq, so Wednesday also goes with the canoe."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The armchair must go with Tuesday: clue 3 rules out Friday; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 20,
+  "score": 52,
+  "revisits": 1,
+  "transfer": 5,
+  "trial": 0,
+  "clue_steps": 5
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Gus",
+   "piano",
+   "Thursday"
+  ],
+  [
+   "Faye",
+   "beehive",
+   "Friday"
+  ],
+  [
+   "Tariq",
+   "canoe",
+   "Wednesday"
+  ],
+  [
+   "Una",
+   "armchair",
+   "Tuesday"
+  ]
+ ],
+ "score": 52
+}

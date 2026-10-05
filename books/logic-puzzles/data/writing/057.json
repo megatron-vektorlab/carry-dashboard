@@ -1,0 +1,23 @@
+{
+ "no": 57,
+ "clues": [],
+ "hints": [
+  "Look at Imani's and Zeke's statements. Neither is about the gulls, so whose word is each one backing?",
+  "Imani's statement stands or falls with Carmen's, and Zeke's with Basil's. Exactly four true means just one statement is false.",
+  "A false statement from Carmen, Imani, Basil or Zeke would bring a second one with it. So the one false statement is Otis's."
+ ],
+ "solution": {
+  "key_idea": "Imani backs Carmen and Zeke backs Basil, so a false statement among those four would come in a pair; the single false one is Otis's.",
+  "steps": [
+   "Exactly four true statements means exactly one is false.",
+   "Imani says Carmen is truthful, so their statements are both true or both false. Zeke and Basil are tied the same way.",
+   "A false statement from any of those four would bring a second with it. So Otis's statement is the only false one.",
+   "Otis is wrong, so neither Imani nor Zeke fed the gulls. Basil is right, so neither Otis nor Imani did.",
+   "Carmen is right, so Basil did not. That leaves Carmen herself.",
+   "Check Carmen: every statement but Otis's is true, which makes exactly four. So Carmen fits."
+  ],
+  "epilogue": "Carmen had tossed her stale popcorn off the pier for the fish, she said. The gulls got there first, and she spent the rest of the cook-off shooing them from the tasting tables."
+ },
+ "tip": null,
+ "answer_line": "Carmen fed the gulls."
+}

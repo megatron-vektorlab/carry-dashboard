@@ -1,0 +1,681 @@
+{
+ "no": 83,
+ "chapter": 6,
+ "family": "case54",
+ "stars": 4,
+ "seed": 83004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Crossword",
+ "story": "The night before press day, someone changed three answers in Ada's crossword, and the Gazette came within one proofread of printing GULL as a kind of cheese. Five visitors used the puzzle desk that evening, each at a different time, with a different pen and a different snack. Inkwell the cat was a suspect for about a minute. All three changes are in green ink. Who scrambled the crossword?",
+ "question": {
+  "text": "Who scrambled the crossword?",
+  "cat": "Pen",
+  "value": "green"
+ },
+ "answer": "Tariq",
+ "cast": [
+  "Otis",
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 83,
+   "title": "The Case of the Crossword",
+   "story": "The night before press day, someone changed three answers in Ada's crossword, and the Gazette came within one proofread of printing GULL as a kind of cheese. Five visitors used the puzzle desk that evening, each at a different time, with a different pen and a different snack. Inkwell the cat was a suspect for about a minute. All three changes are in green ink. Who scrambled the crossword?",
+   "entity": [
+    "visitor",
+    "visitors"
+   ],
+   "cast": [
+    "Otis",
+    "Wren"
+   ],
+   "question": {
+    "text": "Who scrambled the crossword?",
+    "cat": "Pen",
+    "value": "green"
+   }
+  },
+  "cats": [
+   {
+    "label": "Visitor",
+    "kind": "name",
+    "values": [
+     "Otis",
+     "Faye",
+     "Emil",
+     "Tariq",
+     "Wren"
+    ]
+   },
+   {
+    "label": "Pen",
+    "values": [
+     "green",
+     "red",
+     "blue",
+     "black",
+     "purple"
+    ],
+    "ref": "the visitor with the {v} pen",
+    "pred": "carried the {v} pen",
+    "neg": "did not carry the {v} pen",
+    "either": "carried either the {a} or the {b} pen",
+    "nor": "carried neither the {a} nor the {b} pen",
+    "short": "the {v} pen"
+   },
+   {
+    "label": "Snack",
+    "values": [
+     "pretzels",
+     "fudge",
+     "grapes",
+     "popcorn",
+     "almonds"
+    ],
+    "ref": "the visitor who brought {v}",
+    "pred": "brought {v}",
+    "neg": "did not bring {v}",
+    "either": "brought either {a} or {b}",
+    "nor": "brought neither {a} nor {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Time",
+    "ordered": true,
+    "nums": [
+     1020,
+     1050,
+     1080,
+     1110,
+     1140
+    ],
+    "labels": [
+     "5:00 p.m.",
+     "5:30 p.m.",
+     "6:00 p.m.",
+     "6:30 p.m.",
+     "7:00 p.m."
+    ],
+    "ref": "the visitor who stopped by at {x}",
+    "pred": "stopped by at {x}",
+    "neg": "did not stop by at {x}",
+    "either": "stopped by at either {a} or {b}",
+    "nor": "stopped by at neither {a} nor {b}",
+    "short": "{x}",
+    "more": "stopped by later than {y}",
+    "less": "stopped by earlier than {y}",
+    "dmore": "stopped by exactly {d} after {y}",
+    "dless": "stopped by exactly {d} before {y}",
+    "dunit": [
+     "minute",
+     "minutes"
+    ],
+    "dmore1": "stopped by half an hour after {y}",
+    "dless1": "stopped by half an hour before {y}",
+    "step": 30,
+    "values": [
+     "5:00 p.m.",
+     "5:30 p.m.",
+     "6:00 p.m.",
+     "6:30 p.m.",
+     "7:00 p.m."
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   4,
+   3,
+   0,
+   2
+  ],
+  [
+   3,
+   4,
+   0,
+   2,
+   1
+  ],
+  [
+   3,
+   0,
+   1,
+   2,
+   4
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "alldiff",
+   "items": [
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of Otis and Faye, one stopped by at 5:00 p.m. and the other stopped by at 6:30 p.m.",
+  "Of the visitor with the purple pen and the visitor who stopped by at 5:30 p.m., one brought pretzels and the other brought almonds.",
+  "The visitor who brought almonds stopped by earlier than the visitor who brought grapes.",
+  "Of Tariq and the visitor with the black pen, one brought grapes and the other brought pretzels.",
+  "The visitor who stopped by at 6:00 p.m. carried either the blue or the green pen.",
+  "The visitor who brought popcorn stopped by at either 5:30 p.m. or 6:30 p.m.",
+  "The five visitors were the visitor who stopped by at 5:30 p.m., the visitor who brought almonds, the visitor who brought grapes, Otis, and the visitor with the blue pen.",
+  "Wren stopped by later than the visitor who brought grapes."
+ ],
+ "trace": [
+  {
+   "kind": "alldiff",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7: mark X between the people it lists."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the almonds can still be only 5:00 p.m., 6:00 p.m., 6:30 p.m., or 7:00 p.m. and the grapes can still be only 5:00 p.m., 6:00 p.m., 6:30 p.m., or 7:00 p.m., clue 3 means the almonds cannot be 7:00 p.m. and the grapes cannot be 5:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since the grapes can still be only 6:00 p.m., 6:30 p.m., or 7:00 p.m., clue 8 means the grapes cannot be 7:00 p.m. and Wren cannot be 5:00 p.m., 5:30 p.m., or 6:00 p.m."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since the almonds can still be only 5:00 p.m., 6:00 p.m., or 6:30 p.m. and the grapes can still be only 6:00 p.m. or 6:30 p.m., clue 3 means the almonds cannot be 6:30 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    8
+   ],
+   "text": "Wren must go with 7:00 p.m.: clue 8 rules out 5:00 p.m., 5:30 p.m., and 6:00 p.m.; clue 1 rules out 6:30 p.m."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "The popcorn must go with 6:30 p.m.: clue 6 rules out 5:00 p.m., 6:00 p.m., and 7:00 p.m.; clue 2 rules out 5:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    7,
+    8
+   ],
+   "text": "The grapes must go with 6:00 p.m.: clue 3 rules out 5:00 p.m.; clue 7 rules out 5:30 p.m.; clue 8 rules out 7:00 p.m.; 6:30 p.m. already goes with the popcorn."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    7
+   ],
+   "text": "The almonds must go with 5:00 p.m.: clue 7 rules out 5:30 p.m.; clue 3 rules out 6:30 p.m. and 7:00 p.m.; 6:00 p.m. already goes with the grapes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The fudge must go with 7:00 p.m.: clue 2 rules out 5:30 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The pretzels must go with 5:30 p.m.: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Wren must go with the fudge: clue 8 rules out the grapes; the pretzels, the popcorn, and the almonds are already ruled out for 7:00 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "6:00 p.m. must go with the green pen: clue 5 rules out the red pen, the black pen, and the purple pen; the blue pen is already ruled out for the grapes."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The grapes goes with 6:00 p.m., so the grapes also goes with the green pen."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    7
+   ],
+   "text": "Otis must go with 6:30 p.m.: clue 7 rules out 5:30 p.m.; clue 1 rules out 6:00 p.m. and 7:00 p.m.; 5:00 p.m. is already ruled out for the almonds."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Faye must go with 5:00 p.m.: clue 1 rules out 5:30 p.m., 6:00 p.m., and 7:00 p.m.; 6:30 p.m. already goes with Otis."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The popcorn goes with 6:30 p.m., so the popcorn also goes with Otis."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The almonds goes with 5:00 p.m., so the almonds also goes with Faye."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    5
+   ],
+   "text": "The purple pen must go with 5:00 p.m.: clue 2 rules out 5:30 p.m.; clue 5 rules out 6:00 p.m.; 6:30 p.m. is already ruled out for the popcorn; 7:00 p.m. is already ruled out for the fudge."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The almonds must go with the purple pen: clue 7 rules out the blue pen; the red pen and the black pen are already ruled out for 5:00 p.m.; the green pen already goes with the grapes."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The blue pen must go with 7:00 p.m.: clue 7 rules out 5:30 p.m.; 5:00 p.m. is already ruled out for the almonds; 6:00 p.m. is already ruled out for the grapes; 6:30 p.m. is already ruled out for Otis."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Wren goes with 7:00 p.m., so Wren also goes with the blue pen."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The blue pen must go with the fudge: clue 7 rules out the grapes and the almonds; the pretzels is already ruled out for 5:30 p.m.; the popcorn is already ruled out for 6:30 p.m."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Faye must go with the purple pen: the green pen is already ruled out for 6:00 p.m.; the red pen and the black pen are already ruled out for 5:00 p.m.; the blue pen already goes with Wren."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "The black pen must go with the pretzels: clue 4 rules out the popcorn; the almonds is already ruled out for 5:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The red pen must go with the popcorn: the grapes is already ruled out for 6:00 p.m.; the almonds is already ruled out for 5:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "6:30 p.m. goes with the popcorn, so 6:30 p.m. also goes with the red pen."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "The black pen must go with 5:30 p.m.: clue 5 rules out 6:00 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Otis goes with 6:30 p.m., so Otis also goes with the red pen."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Tariq must go with the green pen: clue 4 rules out the black pen; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Emil must go with the black pen: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Emil must go with 5:30 p.m.: clue 1 rules out 5:00 p.m. and 6:30 p.m.; 6:00 p.m. is already ruled out for the green pen; 7:00 p.m. already goes with Wren."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Tariq must go with 6:00 p.m.: clue 1 rules out 5:00 p.m. and 6:30 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Emil must go with the pretzels: the grapes is already ruled out for 6:00 p.m.; the popcorn is already ruled out for 6:30 p.m.; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Tariq must go with the grapes: the popcorn is already ruled out for 6:30 p.m.; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 68,
+  "score": 186,
+  "revisits": 2,
+  "transfer": 34,
+  "trial": 0,
+  "clue_steps": 9
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Otis",
+   "red",
+   "popcorn",
+   "6:30 p.m."
+  ],
+  [
+   "Faye",
+   "purple",
+   "almonds",
+   "5:00 p.m."
+  ],
+  [
+   "Emil",
+   "black",
+   "pretzels",
+   "5:30 p.m."
+  ],
+  [
+   "Tariq",
+   "green",
+   "grapes",
+   "6:00 p.m."
+  ],
+  [
+   "Wren",
+   "blue",
+   "fudge",
+   "7:00 p.m."
+  ]
+ ],
+ "score": 186
+}

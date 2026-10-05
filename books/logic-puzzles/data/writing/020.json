@@ -1,0 +1,27 @@
+{
+ "no": 20,
+ "clues": [
+  "Amara's hometown is neither Boston nor Portland.",
+  "Vito and Amara are staying in the Puffin Room and the Gull Room, one in each.",
+  "The guest from Boston has either the Puffin Room or the Heron Room.",
+  "Of Vito and Kit, one comes from Boston and the other from Albany.",
+  "Whoever is in the Heron Room comes from either Hartford or Portland."
+ ],
+ "hints": [
+  "Look at the Boston row in the box where rooms meet hometowns. Which rooms does clue 3 allow the guest from Boston?",
+  "Clue 5 talks about one of those same rooms. Put clues 3 and 5 together: could the Heron guest be from Boston?",
+  "Clue 5 keeps the Boston guest out of the Heron Room, so clue 3 leaves the Puffin Room. By clues 1 and 2, that guest is Vito."
+ ],
+ "solution": {
+  "key_idea": "Clues 3 and 5 together put the guest from Boston in the Puffin Room.",
+  "steps": [
+   "Clue 3 allows the Boston guest the Puffin or Heron Room; clue 5 rules out Heron, so that guest has the Puffin Room.",
+   "Amara is not from Boston (clue 1), so by clue 2 she has the Gull Room, and Vito, from Boston, has the Puffin Room.",
+   "Clue 4 then makes Kit the guest from Albany, and clue 1 leaves Amara only Hartford, so Hal is from Portland.",
+   "By clue 5, the Heron guest is from Hartford or Portland. Amara, from Hartford, is in the Gull Room, so Hal has the Heron Room.",
+   "That leaves Kit in the Tern Room."
+  ],
+  "epilogue": "Priya had every key in the right hand by suppertime. Vito from Boston took the Puffin Room, Amara from Hartford the Gull, Kit from Albany the Tern, and Hal from Portland the Heron."
+ },
+ "tip": "When two clues mention the same room, read them side by side."
+}

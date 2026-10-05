@@ -1,0 +1,167 @@
+{
+ "no": 4,
+ "chapter": 1,
+ "family": "first3",
+ "stars": 1,
+ "seed": 4002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Rummage Sale Hats",
+ "story": "Hattie Pruitt's spring rummage sale runs on lists: a list of tables, a list of volunteers, and a list of her other lists. So when three hats turned up in the donation box without a single donor slip, the clipboard came out at once. Every donor gets a handwritten thank-you card, and Hattie does not guess. Who gave which hat?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Otis",
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 4,
+   "title": "The Rummage Sale Hats",
+   "story": "Hattie Pruitt's spring rummage sale runs on lists: a list of tables, a list of volunteers, and a list of her other lists. So when three hats turned up in the donation box without a single donor slip, the clipboard came out at once. Every donor gets a handwritten thank-you card, and Hattie does not guess. Who gave which hat?",
+   "entity": [
+    "donor",
+    "donors"
+   ],
+   "cast": [
+    "Otis",
+    "Hattie"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Donor",
+    "kind": "name",
+    "values": [
+     "Otis",
+     "Linus",
+     "Pearl"
+    ]
+   },
+   {
+    "label": "Hat",
+    "values": [
+     "sou'wester",
+     "straw hat",
+     "beret"
+    ],
+    "ref": "the {v}'s donor",
+    "pred": "donated the {v}",
+    "neg": "did not donate the {v}",
+    "either": "donated either the {a} or the {b}",
+    "nor": "donated neither the {a} nor the {b}",
+    "short": "the {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   0,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The sou'wester's donor is either Pearl or Linus.",
+  "Pearl donated the beret."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 says directly that Pearl goes with the beret."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Otis must go with the straw hat: clue 1 rules out the sou'wester; the beret already goes with Pearl."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Linus must go with the sou'wester: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 4,
+  "score": 8,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Otis",
+   "straw hat"
+  ],
+  [
+   "Linus",
+   "sou'wester"
+  ],
+  [
+   "Pearl",
+   "beret"
+  ]
+ ],
+ "score": 8
+}

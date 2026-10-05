@@ -1,0 +1,744 @@
+{
+ "no": 90,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 90001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Painted Buoys",
+ "story": "Nico woke to find his orange lobster buoys painted a bright, cheerful purple, and now nobody on the pier can tell whose traps are whose. He swears you can see them from Portugal. Gus remembers selling paint to five customers at Mahoney's this week, and exactly one can of purple, but his famous knee forecasts rain, not faces. Who turned Nico's buoys purple?",
+ "question": {
+  "text": "Who painted the buoys?",
+  "cat": "Paint",
+  "value": "purple"
+ },
+ "answer": "Della",
+ "cast": [
+  "Felix",
+  "Nico",
+  "Gus"
+ ],
+ "state": {
+  "theme": {
+   "slot": 90,
+   "title": "The Case of the Painted Buoys",
+   "story": "Nico woke to find his orange lobster buoys painted a bright, cheerful purple, and now nobody on the pier can tell whose traps are whose. He swears you can see them from Portugal. Gus remembers selling paint to five customers at Mahoney's this week, and exactly one can of purple, but his famous knee forecasts rain, not faces. Who turned Nico's buoys purple?",
+   "entity": [
+    "customer",
+    "customers"
+   ],
+   "cast": [
+    "Felix",
+    "Nico",
+    "Gus"
+   ],
+   "question": {
+    "text": "Who painted the buoys?",
+    "cat": "Paint",
+    "value": "purple"
+   }
+  },
+  "cats": [
+   {
+    "label": "Customer",
+    "kind": "name",
+    "values": [
+     "Enzo",
+     "Della",
+     "Yusuf",
+     "Marta",
+     "Felix"
+    ]
+   },
+   {
+    "label": "Paint",
+    "values": [
+     "purple",
+     "teal",
+     "white",
+     "black",
+     "yellow"
+    ],
+    "ref": "the buyer of the {v} paint",
+    "pred": "bought the {v} paint",
+    "neg": "did not buy the {v} paint",
+    "either": "bought either the {a} or the {b} paint",
+    "nor": "bought neither the {a} nor the {b} paint",
+    "short": "the {v} paint"
+   },
+   {
+    "label": "Brush",
+    "values": [
+     "roller",
+     "sponge",
+     "wide brush",
+     "spray can",
+     "rag"
+    ],
+    "ref": "the customer with the {v}",
+    "pred": "picked up the {v}",
+    "neg": "did not pick up the {v}",
+    "either": "picked up either the {a} or the {b}",
+    "nor": "picked up neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Cost",
+    "ordered": true,
+    "nums": [
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "labels": [
+     "$8",
+     "$10",
+     "$12",
+     "$14",
+     "$16"
+    ],
+    "ref": "the customer who spent {x}",
+    "pred": "spent {x}",
+    "neg": "did not spend {x}",
+    "either": "spent either {a} or {b}",
+    "nor": "spent neither {a} nor {b}",
+    "short": "{x}",
+    "more": "spent more than {y}",
+    "less": "spent less than {y}",
+    "dmore": "spent exactly {d} more than {y}",
+    "dless": "spent exactly {d} less than {y}",
+    "dunit": [
+     "dollar",
+     "dollars"
+    ],
+    "dmore1": "spent two dollars more than {y}",
+    "dless1": "spent two dollars less than {y}",
+    "step": 2,
+    "values": [
+     "$8",
+     "$10",
+     "$12",
+     "$14",
+     "$16"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   0,
+   3,
+   1,
+   4
+  ],
+  [
+   1,
+   2,
+   3,
+   4,
+   0
+  ],
+  [
+   4,
+   3,
+   2,
+   0,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "alldiff",
+   "items": [
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": ">",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of Yusuf and the buyer of the white paint, one picked up the sponge and the other picked up the spray can.",
+  "The customer with the rag spent less than the buyer of the purple paint.",
+  "Of the buyer of the black paint and the customer who spent $14, one is Yusuf and the other is Della.",
+  "Enzo spent more than the customer with the roller.",
+  "The customer who spent $10, the customer who spent $14, Marta, and Yusuf are four different customers.",
+  "The customer with the spray can bought either the black or the yellow paint.",
+  "Of Yusuf and the customer with the wide brush, one bought the black paint and the other bought the purple paint.",
+  "Yusuf spent two dollars less than the customer with the wide brush.",
+  "The customer with the roller spent more than the buyer of the teal paint."
+ ],
+ "trace": [
+  {
+   "kind": "alldiff",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5: mark X between the people it lists."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means the rag cannot be $16 and the purple paint cannot be $8."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 means Enzo cannot be $8 and the roller cannot be $16."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since Yusuf can still be only $8, $12, or $16, clue 8 means the wide brush cannot be $8, $12, or $16 and Yusuf cannot be $16."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    9
+   ],
+   "text": "Since the roller can still be only $8, $10, $12, or $14, clue 9 means the roller cannot be $8 and the teal paint cannot be $14 or $16."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Since Enzo can still be only $10, $12, $14, or $16 and the roller can still be only $10, $12, or $14, clue 4 means Enzo cannot be $10."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    6
+   ],
+   "text": "The white paint must go with the sponge: clue 1 rules out the roller, the wide brush, and the rag; clue 6 rules out the spray can."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    8
+   ],
+   "text": "Yusuf must go with the spray can: clue 1 rules out the roller and the rag; clue 8 rules out the wide brush; the sponge is already ruled out for the white paint."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4,
+    8
+   ],
+   "text": "$16 must go with the sponge: clue 4 rules out the roller; clue 8 rules out the wide brush; clue 2 rules out the rag; the spray can is already ruled out for Yusuf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The white paint must go with $16: $8, $10, $12, and $14 are already ruled out for the sponge."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the rag can still be only $8, $10, $12, or $14 and the purple paint can still be only $10, $12, or $14, clue 2 means the rag cannot be $14."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    5
+   ],
+   "text": "$14 must go with Della: clue 3 rules out Enzo and Felix; clue 5 rules out Yusuf and Marta."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    5
+   ],
+   "text": "$10 must go with Felix: clue 4 rules out Enzo; clue 5 rules out Yusuf and Marta; Della already goes with $14."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The black paint must go with Yusuf: clue 3 rules out Enzo, Marta, and Felix; Della is already ruled out for $14."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The spray can goes with Yusuf, so the spray can also goes with the black paint."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    7,
+    9
+   ],
+   "text": "The teal paint must go with the rag: clue 9 rules out the roller; clue 7 rules out the wide brush; clue 6 rules out the spray can; the sponge already goes with the white paint."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "The yellow paint must go with the roller: clue 7 rules out the wide brush; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    6
+   ],
+   "text": "The purple paint must go with the wide brush: clue 6 rules out the spray can; clue 2 rules out the rag; the other choices are already taken."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "SUPPOSE TEST: try Yusuf with $8.",
+   "chain": [
+    "Suppose Yusuf goes with $8.",
+    "The spray can goes with Yusuf, so the spray can also goes with $8.",
+    "The black paint goes with Yusuf, so the black paint also goes with $8.",
+    "Since the rag can still be only $10 or $12 and the purple paint can still be only $10 or $14, clue 2 means the purple paint cannot be $10.",
+    "The purple paint must go with $14: clue 2 rules out $8 and $10; $12 is already ruled out for the wide brush; $16 already goes with the white paint.",
+    "Della goes with $14, so Della also goes with the purple paint.",
+    "Della must go with the wide brush: the roller is already ruled out for the yellow paint; the sponge is already ruled out for $16; the rag is already ruled out for $14; the spray can already goes with Yusuf.",
+    "$14 must go with the wide brush: clue 2 rules out the rag; the roller is already ruled out for Della; the spray can is already ruled out for Yusuf; the sponge already goes with $16.",
+    "But then clue 8 cannot be true."
+   ],
+   "result": "So Yusuf does NOT go with $8: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5,
+    8
+   ],
+   "text": "Yusuf must go with $12: the Suppose test ruled out $8; clue 5 rules out $10 and $14; clue 8 rules out $16."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Enzo must go with $16: clue 4 rules out $8 and $10; clue 3 rules out $14; $12 already goes with Yusuf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Marta must go with $8: clue 5 rules out $10 and $14; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The spray can must go with $12: $8, $10, $14, and $16 are already ruled out for Yusuf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8,
+    9
+   ],
+   "text": "$8 must go with the rag: clue 9 rules out the roller; clue 8 rules out the wide brush; the spray can is already ruled out for Yusuf; the sponge already goes with $16."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The sponge goes with $16, so the sponge also goes with Enzo."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The white paint goes with the sponge, so the white paint also goes with Enzo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The rag must go with Marta: clue 1 rules out Yusuf; Della is already ruled out for $14; Felix is already ruled out for $10; Enzo already goes with the sponge."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "The black paint must go with $12: clue 3 rules out $14; $8 is already ruled out for Yusuf; $10 is already ruled out for Felix; $16 already goes with the white paint."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "$8 must go with the teal paint: clue 2 rules out the purple paint; the white paint is already ruled out for the sponge; the black paint is already ruled out for Yusuf; the yellow paint is already ruled out for the roller."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The teal paint must go with Marta: Della is already ruled out for $14; Yusuf is already ruled out for the spray can; Felix is already ruled out for $10; Enzo already goes with the white paint."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Since the wide brush can still be only $10 or $14 and Yusuf can still be only $12, clue 8 means the wide brush cannot be $10."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The wide brush must go with $14: clue 8 rules out $8, $10, $12, and $16."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    9
+   ],
+   "text": "The roller must go with $10: clue 9 rules out $8; clue 4 rules out $16; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Della must go with the wide brush: the roller and the rag are already ruled out for $14; the sponge is already ruled out for $16; the spray can already goes with Yusuf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Felix must go with the roller: the sponge is already ruled out for $16; the rag is already ruled out for $10; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Della must go with the purple paint: the teal paint and the black paint are already ruled out for $14; the white paint is already ruled out for the sponge; the yellow paint is already ruled out for the roller."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Felix must go with the yellow paint: clue 3 rules out the black paint; the teal paint is already ruled out for $10; the white paint is already ruled out for the sponge; the purple paint already goes with Della."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "$14 goes with Della, so $14 also goes with the purple paint."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The yellow paint must go with $10: $8 is already ruled out for the roller; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 74,
+  "score": 216,
+  "revisits": 7,
+  "transfer": 31,
+  "trial": 1,
+  "clue_steps": 15
+ },
+ "trial_chain": 10,
+ "table": [
+  [
+   "Enzo",
+   "white",
+   "sponge",
+   "$16"
+  ],
+  [
+   "Della",
+   "purple",
+   "wide brush",
+   "$14"
+  ],
+  [
+   "Yusuf",
+   "black",
+   "spray can",
+   "$12"
+  ],
+  [
+   "Marta",
+   "teal",
+   "rag",
+   "$8"
+  ],
+  [
+   "Felix",
+   "yellow",
+   "roller",
+   "$10"
+  ]
+ ],
+ "score": 216
+}

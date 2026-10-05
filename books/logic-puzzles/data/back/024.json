@@ -1,0 +1,53 @@
+{
+ "no": 24,
+ "clues": [
+  {
+   "kind": "either",
+   "a": "Gardener=Enzo",
+   "one_of": [
+    "Flower=irises",
+    "Flower=lupines"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Gardener=Gideon",
+   "b": "Flower=irises"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Ornament=sundial",
+    "Ornament=gnome"
+   ],
+   "options": [
+    "Flower=roses",
+    "Flower=peonies"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Flower=roses",
+   "not": [
+    "Gardener=Gideon",
+    "Gardener=Pearl"
+   ]
+  },
+  {
+   "kind": "either",
+   "a": "Gardener=Gideon",
+   "one_of": [
+    "Ornament=birdbath",
+    "Ornament=gnome"
+   ]
+  },
+  {
+   "kind": "nor",
+   "a": "Ornament=gnome",
+   "not": [
+    "Gardener=Gideon",
+    "Gardener=Pearl"
+   ]
+  }
+ ]
+}

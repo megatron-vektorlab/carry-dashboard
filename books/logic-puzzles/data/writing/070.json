@@ -1,0 +1,31 @@
+{
+ "no": 70,
+ "clues": [
+  "Of the pie with the crumble crust and the pie that baked 55 minutes, one had nutmeg and the other had ginger.",
+  "The cardamom pie stayed in the oven longer than the ginger pie.",
+  "Imani's pie baked for less time than the lattice pie.",
+  "Priya's crust was not the plain one.",
+  "The lattice pie baked exactly 5 minutes longer than the ginger pie.",
+  "Of Vito and the baker whose pie baked 40 minutes, one made the crumble crust and the other the braided one.",
+  "The lattice pie baked for 50 minutes."
+ ],
+ "hints": [
+  "Clue 7 pins the lattice pie to 50 minutes. Which other clues measure time from the lattice pie?",
+  "Put two clues together. Clue 5 is an exact gap: the ginger pie baked 5 minutes less than the lattice. Use clue 7's 50 minutes.",
+  "So the ginger pie baked 45 minutes. Then by clue 1, the 55-minute pie had nutmeg, and the crumble crust went with ginger.",
+  "Clue 6: the 40-minute pie is not the crumble crust, which baked 45. So it was braided, Vito made the crumble, and clue 3 puts Imani at 40."
+ ],
+ "solution": {
+  "key_idea": "Clue 7 puts the lattice pie at 50 minutes, so clue 5's exact gap puts the ginger pie at 45.",
+  "steps": [
+   "Clue 7 puts the lattice pie at 50 minutes. By clue 5, the ginger pie baked 5 minutes less, so 45 minutes.",
+   "By clue 1, the 55-minute pie had nutmeg or ginger. Ginger baked 45, so the 55-minute pie had nutmeg, and the crumble crust went with ginger.",
+   "By clue 2, cardamom baked longer than ginger's 45, and 55 minutes was nutmeg's. So cardamom was the 50-minute lattice pie, and cinnamon baked 40.",
+   "The crumble pie baked 45, so by clue 6 the 40-minute pie was braided, and Vito made the crumble. The plain crust baked 55 minutes.",
+   "By clue 3, Imani baked under 50 minutes, and 45 was Vito's. So Imani made the braided cinnamon pie at 40 minutes.",
+   "Clue 4 keeps Priya off the plain crust, so Priya made the lattice with cardamom, and Boris the plain crust with nutmeg."
+  ],
+  "epilogue": "Rosa copied all four secrets into her recipe box: Imani's braided cinnamon, Vito's crumble with ginger, Priya's lattice with cardamom, and Boris's plain nutmeg. The starters were not told."
+ },
+ "tip": null
+}

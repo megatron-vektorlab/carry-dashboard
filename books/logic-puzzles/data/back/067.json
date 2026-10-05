@@ -1,0 +1,12 @@
+{"no": 67, "clues": [
+  {"kind": "compare", "a": "Entrance=scarecrow", "b": "Entrance=barn door", "cat": "Time", "rel": "a_less"},
+  {"kind": "diff", "a": "Friend=Quinn", "b": "Snack=kettle corn"},
+  {"kind": "either", "a": "Entrance=barn door", "one_of": ["Time=20 minutes", "Time=30 minutes"]},
+  {"kind": "compare", "a": "Friend=Jonah", "b": "Friend=Quinn", "cat": "Time", "rel": "a_greater"},
+  {"kind": "nor", "a": "Entrance=north gate", "not": ["Snack=kettle corn", "Snack=donut"]},
+  {"kind": "pair", "people": ["Entrance=south gate", "Time=25 minutes"], "options": ["Snack=donut", "Snack=kettle corn"]},
+  {"kind": "either", "a": "Time=25 minutes", "one_of": ["Snack=donut", "Snack=candy apple"]},
+  {"kind": "either", "a": "Time=30 minutes", "one_of": ["Friend=Quinn", "Friend=Jonah"]},
+  {"kind": "either", "a": "Snack=candy apple", "one_of": ["Time=30 minutes", "Time=35 minutes"]},
+  {"kind": "pair", "people": ["Friend=Quinn", "Friend=Faye"], "options": ["Time=20 minutes", "Time=35 minutes"]}
+]}

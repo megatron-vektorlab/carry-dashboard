@@ -1,0 +1,699 @@
+{
+ "no": 93,
+ "chapter": 6,
+ "family": "suppose",
+ "stars": 5,
+ "seed": 93001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Bottled Ship",
+ "story": "On Monday morning the library's prized ship in a bottle, the *Constance*, was gone from its glass case. In its place sat a short length of rope tied in a neat bowline, borrowed from the knots display. Over the weekend, five volunteers each dusted one display with a different duster, and Wren whispers that she would like her ship back before story hour, please. Who moved the ship in a bottle?",
+ "question": {
+  "text": "Who moved the ship in a bottle?",
+  "cat": "Display",
+  "value": "knots"
+ },
+ "answer": "Otis",
+ "cast": [
+  "Otis",
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 93,
+   "title": "The Case of the Bottled Ship",
+   "story": "On Monday morning the library's prized ship in a bottle, the *Constance*, was gone from its glass case. In its place sat a short length of rope tied in a neat bowline, borrowed from the knots display. Over the weekend, five volunteers each dusted one display with a different duster, and Wren whispers that she would like her ship back before story hour, please. Who moved the ship in a bottle?",
+   "entity": [
+    "volunteer",
+    "volunteers"
+   ],
+   "cast": [
+    "Otis",
+    "Wren"
+   ],
+   "question": {
+    "text": "Who moved the ship in a bottle?",
+    "cat": "Display",
+    "value": "knots"
+   }
+  },
+  "cats": [
+   {
+    "label": "Volunteer",
+    "kind": "name",
+    "values": [
+     "Faye",
+     "Otis",
+     "Cyrus",
+     "Bea",
+     "Jade"
+    ]
+   },
+   {
+    "label": "Display",
+    "values": [
+     "maps",
+     "anchors",
+     "shells",
+     "lanterns",
+     "knots"
+    ],
+    "ref": "the volunteer who dusted the {v}",
+    "pred": "dusted the {v}",
+    "neg": "did not dust the {v}",
+    "either": "dusted either the {a} or the {b}",
+    "nor": "dusted neither the {a} nor the {b}",
+    "short": "the {v} display"
+   },
+   {
+    "label": "Duster",
+    "values": [
+     "chamois",
+     "cloth",
+     "brush",
+     "mitt",
+     "wand"
+    ],
+    "ref": "the volunteer with the {v}",
+    "pred": "dusted with the {v}",
+    "neg": "did not dust with the {v}",
+    "either": "dusted with either the {a} or the {b}",
+    "nor": "dusted with neither the {a} nor the {b}",
+    "short": "the {v}"
+   },
+   {
+    "label": "Age",
+    "ordered": true,
+    "nums": [
+     35,
+     45,
+     55,
+     65,
+     75
+    ],
+    "ref": "the {x}-year-old",
+    "pred": "is {x} years old",
+    "neg": "is not {x} years old",
+    "either": "is either {a} or {b} years old",
+    "nor": "is neither {a} nor {b} years old",
+    "short": "age {x}",
+    "more": "is older than {y}",
+    "less": "is younger than {y}",
+    "dmore": "is exactly {d} older than {y}",
+    "dless": "is exactly {d} younger than {y}",
+    "dunit": [
+     "year",
+     "years"
+    ],
+    "dmore1": "is ten years older than {y}",
+    "dless1": "is ten years younger than {y}",
+    "step": 10,
+    "values": [
+     "35",
+     "45",
+     "55",
+     "65",
+     "75"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   1,
+   4,
+   3,
+   2,
+   0
+  ],
+  [
+   2,
+   3,
+   4,
+   0,
+   1
+  ],
+  [
+   1,
+   0,
+   4,
+   2,
+   3
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": 3,
+   "op": "<",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The 45-year-old dusted with either the brush or the wand.",
+  "The volunteer with the cloth is younger than the volunteer who dusted the lanterns.",
+  "Faye dusted either the maps or the anchors.",
+  "Of the volunteer who dusted the shells and the 35-year-old, one dusted with the chamois and the other dusted with the mitt.",
+  "Otis is ten years younger than the volunteer with the brush.",
+  "The volunteer who dusted the shells is younger than the volunteer who dusted the maps.",
+  "Of Jade and the 45-year-old, one dusted with the cloth and the other dusted with the brush.",
+  "Of Cyrus and the volunteer with the chamois, one dusted the shells and the other dusted the lanterns."
+ ],
+ "trace": [
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the cloth can still be only age 35, age 55, age 65, or age 75, clue 2 means the cloth cannot be age 75 and the lanterns display cannot be age 35."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 means the brush cannot be age 35 and Otis cannot be age 75."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 means the shells display cannot be age 75 and the maps display cannot be age 35."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the cloth can still be only age 55 or age 65 and the lanterns display can still be only age 45, age 55, age 65, or age 75, clue 2 means the lanterns display cannot be age 45 or age 55."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since the shells display can still be only age 45, age 55, or age 65 and the maps display can still be only age 45, age 55, age 65, or age 75, clue 6 means the maps display cannot be age 45."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    7
+   ],
+   "text": "Age 45 must go with the brush: clue 1 rules out the chamois, the cloth, and the mitt; clue 7 rules out the wand."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Jade must go with the cloth: clue 7 rules out the chamois, the mitt, and the wand; the brush is already ruled out for age 45."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Since the brush can still be only age 45 and Otis can still be only age 35, age 55, or age 65, clue 5 means Otis cannot be age 55 or age 65."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Otis must go with age 35: clue 5 rules out age 55, age 65, and age 75; age 45 is already ruled out for the brush."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Since the shells display can still be only age 55 or age 65 and the maps display can still be only age 55, age 65, or age 75, clue 6 means the maps display cannot be age 55."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "suppose",
+   "trivial": false,
+   "clues": [
+    4,
+    6
+   ],
+   "text": "SUPPOSE TEST: try Jade with age 55.",
+   "chain": [
+    "Suppose Jade goes with age 55.",
+    "The cloth goes with Jade, so the cloth also goes with age 55.",
+    "The shells display must go with age 65: clue 4 rules out age 35; clue 6 rules out age 75; age 45 is already ruled out for the brush; age 55 is already ruled out for Jade.",
+    "The maps display must go with age 75: clue 6 rules out age 35, age 45, and age 55; age 65 already goes with the shells display.",
+    "But then the lanterns display has no age left."
+   ],
+   "result": "So Jade does NOT go with age 55: mark that X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Jade must go with age 65: clue 7 rules out age 45; the Suppose test ruled out age 55; age 35 and age 75 are already ruled out for the cloth."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2,
+    4
+   ],
+   "text": "The cloth must go with age 65: clue 4 rules out age 35; clue 1 rules out age 45; clue 2 rules out age 75; age 55 is already ruled out for Jade."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    6
+   ],
+   "text": "The shells display must go with age 55: clue 4 rules out age 35; clue 6 rules out age 75; age 45 is already ruled out for the brush; age 65 is already ruled out for Jade."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The lanterns display must go with age 75: clue 2 rules out age 35, age 45, and age 55; age 65 is already ruled out for Jade."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "The maps display must go with age 65: clue 6 rules out age 35, age 45, and age 55; age 75 already goes with the lanterns display."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Jade goes with age 65, so Jade also goes with the maps display."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Faye must go with the anchors display: clue 3 rules out the shells display, the lanterns display, and the knots display; the maps display already goes with Jade."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Otis must go with the knots display: the maps display, the shells display, and the lanterns display are already ruled out for age 35; the anchors display already goes with Faye."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The cloth goes with Jade, so the cloth also goes with the maps display."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The anchors display must go with age 45: age 35 is already ruled out for Otis; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The knots display must go with age 35: the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The brush goes with age 45, so the brush also goes with the anchors display."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4,
+    7
+   ],
+   "text": "The wand must go with age 75: clue 4 rules out age 35; clue 7 rules out age 45; age 55 is already ruled out for the shells display; age 65 already goes with the cloth."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Faye must go with age 45: age 55 is already ruled out for the shells display; age 75 is already ruled out for the lanterns display; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The brush goes with age 45, so the brush also goes with Faye."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The chamois must go with the shells display: clue 8 rules out the maps display, the anchors display, and the knots display; the lanterns display is already ruled out for age 75."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Age 55 goes with the shells display, so age 55 also goes with the chamois."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The mitt must go with age 35: clue 1 rules out age 45; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    5
+   ],
+   "text": "Otis must go with the mitt: clue 5 rules out the brush; the chamois and the wand are already ruled out for age 35; the cloth already goes with Jade."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Cyrus must go with the wand: clue 8 rules out the chamois; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Bea must go with the chamois: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The lanterns display must go with the wand: clue 2 rules out the cloth; the chamois and the mitt are already ruled out for age 75; the brush is already ruled out for age 45."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "The knots display must go with the mitt: clue 8 rules out the chamois; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Age 75 goes with the wand, so age 75 also goes with Cyrus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Bea must go with age 55: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8
+   ],
+   "text": "Cyrus must go with the lanterns display: clue 8 rules out the maps display, the anchors display, and the knots display; the shells display is already ruled out for age 55."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Bea must go with the shells display: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 69,
+  "score": 202,
+  "revisits": 6,
+  "transfer": 30,
+  "trial": 1,
+  "clue_steps": 14
+ },
+ "trial_chain": 7,
+ "table": [
+  [
+   "Faye",
+   "anchors",
+   "brush",
+   "45"
+  ],
+  [
+   "Otis",
+   "knots",
+   "mitt",
+   "35"
+  ],
+  [
+   "Cyrus",
+   "lanterns",
+   "wand",
+   "75"
+  ],
+  [
+   "Bea",
+   "shells",
+   "chamois",
+   "55"
+  ],
+  [
+   "Jade",
+   "maps",
+   "cloth",
+   "65"
+  ]
+ ],
+ "score": 202
+}

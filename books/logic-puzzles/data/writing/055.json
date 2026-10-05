@@ -1,0 +1,22 @@
+{
+ "no": 55,
+ "clues": [],
+ "hints": [
+  "Look at Ivan's and Oscar's statements. Neither one is about the lights: each says that someone else is lying.",
+  "Ivan's statement is the opposite of Lena's, and Oscar's is the opposite of Ivan's. So Lena and Oscar are both truthful or both fibbing.",
+  "If Lena and Oscar both fibbed, Nadia would need to be truthful, naming Oscar, and that makes Lena's statement true. So Lena and Oscar are truthful."
+ ],
+ "solution": {
+  "key_idea": "Ivan contradicts Lena and Oscar contradicts Ivan, so Lena and Oscar stand or fall together, and they must be the two truthful ones.",
+  "steps": [
+   "Ivan says Lena is lying, so Ivan's and Lena's statements are opposites. Oscar says Ivan is lying, so Oscar's statement matches Lena's.",
+   "If Lena and Oscar both fibbed, Ivan's would be the only true one of the three, so Nadia's would have to be true.",
+   "Then Oscar did it, so neither Nadia nor Lena did, and Lena's statement would be true after all. That cannot be.",
+   "So Lena and Oscar tell the truth, and Ivan fibs. That makes two true statements, so Nadia fibs too.",
+   "Lena's statement clears Nadia and Lena, and Nadia's fib clears Oscar. So Ivan unplugged the lights."
+  ],
+  "epilogue": "Ivan had pulled the plug to run his cotton candy machine, sure it belonged to the closed pony ride. Gus came down with a sunny forecast and a free pink cone."
+ },
+ "tip": null,
+ "answer_line": "Ivan unplugged the lights."
+}

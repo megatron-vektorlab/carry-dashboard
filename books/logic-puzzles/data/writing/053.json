@@ -1,0 +1,22 @@
+{
+ "no": 53,
+ "clues": [],
+ "hints": [
+  "Read Felix's and Teddy's statements side by side. Can both of them be true, or both of them false?",
+  "That is the opposites shortcut: exactly one of Felix and Teddy is telling the truth. The rule needs three true statements in all.",
+  "So Marta's and Sam's statements must both be true. Sam's clears Sam, and Marta's clears Marta and Teddy, which leaves Felix."
+ ],
+ "solution": {
+  "key_idea": "Felix and Teddy contradict each other, so only one of them is truthful, and the other two true statements must be Marta's and Sam's.",
+  "steps": [
+   "Felix says Marta didn't take the postcards, and Teddy says she did. They are opposites, so exactly one of them is telling the truth.",
+   "The rule needs three true statements, so the other two, Marta's and Sam's, must both be true.",
+   "Sam's statement clears Sam. Marta's statement clears Marta and Teddy. That leaves Felix.",
+   "Check Felix: Felix's, Marta's and Sam's statements are true, and only Teddy's is false. That is exactly three, so Felix fits.",
+   "Test Teddy, Marta or Sam instead, and each one gives only two true statements."
+  ],
+  "epilogue": "Felix had scooped up the whole stack, sure they were free, to hand out with every rowboat rental. He brought them back, paid for fifty, and called the deal shipshape."
+ },
+ "tip": null,
+ "answer_line": "Felix took the postcards."
+}

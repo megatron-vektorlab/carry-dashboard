@@ -1,0 +1,64 @@
+{
+ "no": 69,
+ "clues": [
+  {
+   "kind": "diff",
+   "a": "Skipper=Nico",
+   "b": "Bait=herring"
+  },
+  {
+   "kind": "compare",
+   "a": "Skipper=Yusuf",
+   "b": "Skipper=Nico",
+   "cat": "Traps",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "nor",
+   "a": "Buoy=orange",
+   "not": [
+    "Traps=20",
+    "Traps=50"
+   ]
+  },
+  {
+   "kind": "same",
+   "a": "Bait=herring",
+   "b": "Buoy=lime"
+  },
+  {
+   "kind": "compare",
+   "a": "Skipper=Arlo",
+   "b": "Bait=squid",
+   "cat": "Traps",
+   "rel": "a_greater"
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Skipper=Arlo",
+    "Skipper=Yusuf"
+   ],
+   "options": [
+    "Bait=pogies",
+    "Traps=30"
+   ]
+  },
+  {
+   "kind": "pair",
+   "people": [
+    "Bait=pogies",
+    "Bait=squid"
+   ],
+   "options": [
+    "Traps=40",
+    "Traps=50"
+   ]
+  },
+  {
+   "kind": "diff",
+   "a": "Bait=pogies",
+   "b": "Buoy=white"
+  }
+ ]
+}

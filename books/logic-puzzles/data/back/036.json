@@ -1,0 +1,5 @@
+{"no": 36, "clues": [
+ {"kind": "compare", "a": "Friend=Amara", "b": "Friend=Pablo", "cat": "Blanket", "rel": "a_greater"},
+ {"kind": "compare", "a": "Friend=Pablo", "b": "Friend=Lena", "cat": "Blanket", "rel": "a_greater_by", "by": 3},
+ {"kind": "compare", "a": "Friend=Tova", "b": "Friend=Amara", "cat": "Blanket", "rel": "a_less_by", "by": 3}
+]}

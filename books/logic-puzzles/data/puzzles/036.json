@@ -1,0 +1,266 @@
+{
+ "no": 36,
+ "chapter": 3,
+ "family": "lineup",
+ "stars": 2,
+ "seed": 36003,
+ "kind": "grid",
+ "lineup": true,
+ "title": "The Fireworks Blankets",
+ "story": "Gus's knee promised clear skies for the Fourth, and his knee was right. Five friends spread their blankets in a single row on the town green and waited for the first rocket. From the bandstand, the Gazette's panorama photo caught all five faces lit up red and gold, and the caption needs their names, left to right as the camera saw them. Who sat on which blanket?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Lena",
+  "Gus"
+ ],
+ "state": {
+  "theme": {
+   "slot": 36,
+   "title": "The Fireworks Blankets",
+   "story": "Gus's knee promised clear skies for the Fourth, and his knee was right. Five friends spread their blankets in a single row on the town green and waited for the first rocket. From the bandstand, the Gazette's panorama photo caught all five faces lit up red and gold, and the caption needs their names, left to right as the camera saw them. Who sat on which blanket?",
+   "entity": [
+    "friend",
+    "friends"
+   ],
+   "cast": [
+    "Lena",
+    "Gus"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Friend",
+    "kind": "name",
+    "values": [
+     "Lena",
+     "Gus",
+     "Tova",
+     "Amara",
+     "Pablo"
+    ]
+   },
+   {
+    "label": "Blanket",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "labels": [
+     "first",
+     "second",
+     "third",
+     "fourth",
+     "fifth"
+    ],
+    "ref": "the person on the {x} blanket",
+    "pred": "sat on the {x} blanket from the left",
+    "neg": "did not sit on the {x} blanket from the left",
+    "either": "sat on either the {a} or the {b} blanket from the left",
+    "nor": "sat on neither the {a} nor the {b} blanket from the left",
+    "short": "the {x} blanket",
+    "more": "sat somewhere to the right of {y}",
+    "less": "sat somewhere to the left of {y}",
+    "dmore": "sat exactly {d} to the right of {y}",
+    "dless": "sat exactly {d} to the left of {y}",
+    "dunit": [
+     "blanket",
+     "blankets"
+    ],
+    "dmore1": "sat on the blanket directly to the right of {y}'s",
+    "dless1": "sat on the blanket directly to the left of {y}'s",
+    "adj": "spread a blanket right beside {y}'s",
+    "nadj": "did not spread a blanket right beside {y}'s",
+    "ends": "sat at one end of the row",
+    "step": 1,
+    "values": [
+     "first",
+     "second",
+     "third",
+     "fourth",
+     "fifth"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   0,
+   2,
+   1,
+   4,
+   3
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": 1,
+   "op": ">",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "cat": 1,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "cat": 1,
+   "op": "d",
+   "d": 3
+  }
+ ],
+ "texts": [
+  "Amara sat somewhere to the right of Pablo.",
+  "Pablo sat exactly 3 blankets to the right of Lena.",
+  "Amara sat exactly 3 blankets to the right of Tova."
+ ],
+ "trace": [
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means Amara cannot be the first blanket and Pablo cannot be the fifth blanket."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since Pablo can still be only the first blanket, the second blanket, the third blanket, or the fourth blanket, clue 2 means Pablo cannot be the first blanket, the second blanket, or the third blanket and Lena cannot be the second blanket, the third blanket, the fourth blanket, or the fifth blanket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Lena must go with the first blanket: clue 2 rules out the second blanket, the third blanket, the fourth blanket, and the fifth blanket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "Pablo must go with the fourth blanket: clue 2 rules out the first blanket, the second blanket, and the third blanket; clue 1 rules out the fifth blanket."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since Amara can still be only the second blanket, the third blanket, or the fifth blanket and Pablo can still be only the fourth blanket, clue 1 means Amara cannot be the second blanket or the third blanket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Amara must go with the fifth blanket: clue 1 rules out the first blanket, the second blanket, and the third blanket; the fourth blanket already goes with Pablo."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Since Amara can still be only the fifth blanket and Tova can still be only the second blanket or the third blanket, clue 3 means Tova cannot be the third blanket."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Tova must go with the second blanket: clue 3 rules out the third blanket; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Gus must go with the third blanket: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 9,
+  "score": 26,
+  "revisits": 1,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Lena",
+   "first"
+  ],
+  [
+   "Gus",
+   "third"
+  ],
+  [
+   "Tova",
+   "second"
+  ],
+  [
+   "Amara",
+   "fifth"
+  ],
+  [
+   "Pablo",
+   "fourth"
+  ]
+ ],
+ "score": 26
+}

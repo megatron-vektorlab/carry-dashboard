@@ -1,0 +1,27 @@
+{
+ "no": 46,
+ "clues": [
+  "The quilt was entered by either Otis or Hugo.",
+  "Hugo brought either the honey or the quilt.",
+  "Dev arrived later than whoever brought the zucchini.",
+  "The quilt came in exactly two hours after Dev did.",
+  "Selma arrived sometime after the pickles."
+ ],
+ "hints": [
+  "Look at Dev's row in the box where exhibitors meet times. Clues 3 and 4 both time him against an entry. Which hours could be his?",
+  "Comparisons rule out the ends. Clue 3 needs someone before Dev, and clue 4 needs two hours after him. Which hours fit?",
+  "So Dev arrived at 2 p.m., and by clue 4 the quilt came at 4 p.m. Then clue 3 puts the zucchini at 1 p.m."
+ ],
+ "solution": {
+  "key_idea": "Clue 4's two-hour gap and clue 3 leave Dev only 2 p.m., so the quilt came in at 4 p.m.",
+  "steps": [
+   "By clue 4, the quilt came two hours after Dev, so Dev arrived at 1 p.m. or 2 p.m. Clue 3 rules out 1 p.m.",
+   "So Dev arrived at 2 p.m. and the quilt at 4 p.m. By clue 3, the zucchini came earlier than Dev, at 1 p.m.",
+   "Clue 1 gives the 4 p.m. quilt to Otis or Hugo, so Selma came at 1 p.m. or 3 p.m. Clue 5 rules out 1 p.m.",
+   "So Selma came at 3 p.m. By clue 5, the pickles came earlier, so they were Dev's at 2 p.m., and Selma brought the honey.",
+   "Clue 2 keeps Hugo off the 1 p.m. zucchini, so Hugo brought the quilt at 4 p.m., and Otis the zucchini at 1 p.m."
+  ],
+  "epilogue": "The clerk wrote out a dry new sheet: Otis's zucchini at 1 p.m., Dev's pickles at 2, Selma's honey at 3, and Hugo's quilt at 4. The lemonade was not entered."
+ },
+ "tip": "When a person and an entry share an hour, the entry is that person's. Carry the dot across."
+}

@@ -1,0 +1,167 @@
+{
+ "no": 2,
+ "chapter": 1,
+ "family": "first3",
+ "stars": 1,
+ "seed": 2002,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Seed Swap Envelopes",
+ "story": "April showers moved the library's spring seed swap indoors, and three gardeners left envelopes of saved seeds on the returns cart. Then someone opened the front door, and a draft sent every label skating under the shelves. Wren, who can recite every overdue book in town, whispers that each thank-you note must reach the right gardener. Who brought which seeds?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Rosa",
+  "Wren"
+ ],
+ "state": {
+  "theme": {
+   "slot": 2,
+   "title": "The Seed Swap Envelopes",
+   "story": "April showers moved the library's spring seed swap indoors, and three gardeners left envelopes of saved seeds on the returns cart. Then someone opened the front door, and a draft sent every label skating under the shelves. Wren, who can recite every overdue book in town, whispers that each thank-you note must reach the right gardener. Who brought which seeds?",
+   "entity": [
+    "gardener",
+    "gardeners"
+   ],
+   "cast": [
+    "Rosa",
+    "Wren"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Gardener",
+    "kind": "name",
+    "values": [
+     "Rosa",
+     "Della",
+     "Hugo"
+    ]
+   },
+   {
+    "label": "Seeds",
+    "values": [
+     "zinnia",
+     "sweet pea",
+     "marigold"
+    ],
+    "ref": "the gardener with the {v} seeds",
+    "pred": "brought the {v} seeds",
+    "neg": "did not bring the {v} seeds",
+    "either": "brought either the {a} or the {b} seeds",
+    "nor": "brought neither the {a} nor the {b} seeds",
+    "short": "the {v} seeds"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   0,
+   1
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Rosa brought either the marigold or the sweet pea seeds.",
+  "Hugo brought the sweet pea seeds."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 says directly that Hugo goes with the sweet pea seeds."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Rosa must go with the marigold seeds: clue 1 rules out the zinnia seeds; the sweet pea seeds already goes with Hugo."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Della must go with the zinnia seeds: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 4,
+  "score": 8,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 1
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Rosa",
+   "marigold"
+  ],
+  [
+   "Della",
+   "zinnia"
+  ],
+  [
+   "Hugo",
+   "sweet pea"
+  ]
+ ],
+ "score": 8
+}

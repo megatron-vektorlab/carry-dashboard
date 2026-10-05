@@ -1,0 +1,32 @@
+{
+ "no": 68,
+ "clues": [
+  "Della and Otis were, in some order, the buyers of the 1880 clock and the 1890 clock.",
+  "Otis went home with a newer clock than the mantel clock.",
+  "Neither Otis nor Della bought the cuckoo clock.",
+  "The oak clock is exactly 30 years newer than the walnut clock.",
+  "Of Otis and Carmen, one bought the cherry clock and the other bought the maple clock.",
+  "The banjo clock is exactly 20 years newer than the clock Otis bought.",
+  "The maple clock was made exactly 10 years after the cherry clock."
+ ],
+ "hints": [
+  "Look at Otis's row where buyers meet years. Clues 2 and 6 both measure his clock against another one. Which years can his be?",
+  "Comparisons rule out the ends. Ask which end clue 2 rules out for Otis, and how much room clue 6 needs above his clock's year.",
+  "So Otis's clock is from 1890 and the banjo clock from 1910. Clues 2, 3 and 6 then leave Otis only the ship's clock.",
+  "Clue 4 spans all 30 years, so oak is 1910 and walnut 1880. By clue 2 the mantel clock is older than Otis's, so it is the 1880 walnut."
+ ],
+ "solution": {
+  "key_idea": "Clue 2 keeps Otis off 1880 and clue 6 keeps him off 1900 and 1910, so his clock is from 1890.",
+  "steps": [
+   "Clue 4's 30-year gap spans the whole range, so the oak clock is from 1910 and the walnut clock from 1880.",
+   "Clue 2 keeps Otis off 1880, and clue 6 keeps him off 1900 and 1910. So Otis's clock is from 1890, and the banjo clock from 1910.",
+   "Otis did not buy the mantel clock (clue 2), the cuckoo clock (clue 3) or the banjo clock (clue 6). So his is the ship's clock.",
+   "The 1910 banjo clock is oak. By clue 2, the mantel clock is older than Otis's, so it is the 1880 walnut. The cuckoo clock is from 1900.",
+   "By clue 7, maple is 10 years newer than cherry. Only 1890 and 1900 are left, so Otis's ship's clock is cherry and the cuckoo clock maple.",
+   "By clue 1, Della's clock is from 1880: the walnut mantel clock.",
+   "By clue 5, Carmen's clock is maple: the 1900 cuckoo clock. Pablo bought the 1910 oak banjo clock."
+  ],
+  "epilogue": "Pablo carried off the 1910 oak banjo clock, and Della the oldest, an 1880 walnut mantel clock. Otis hung his cherry ship's clock in the harbor office, where it ran two minutes fast."
+ },
+ "tip": null
+}

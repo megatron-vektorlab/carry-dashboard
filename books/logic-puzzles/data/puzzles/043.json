@@ -1,0 +1,443 @@
+{
+ "no": 43,
+ "chapter": 3,
+ "family": "days4",
+ "stars": 3,
+ "seed": 43001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "A Flicker After Closing",
+ "story": "At the lighthouse museum, whoever locks up for the night writes one line in the lock-up log. Four volunteers took the nights from Thursday to Sunday, and each wrote about something different, but not one of them signed or dated a line. Lena, gloves on, is most curious about one note: an odd flicker, high in the dark lantern room, after closing time. Who locked up on which night, and who saw the flicker?",
+ "question": {
+  "text": "Who noticed the odd flicker?",
+  "cat": "Note",
+  "value": "odd flicker"
+ },
+ "answer": "Teddy",
+ "cast": [
+  "Teddy",
+  "Priya",
+  "Lena"
+ ],
+ "state": {
+  "theme": {
+   "slot": 43,
+   "title": "A Flicker After Closing",
+   "story": "At the lighthouse museum, whoever locks up for the night writes one line in the lock-up log. Four volunteers took the nights from Thursday to Sunday, and each wrote about something different, but not one of them signed or dated a line. Lena, gloves on, is most curious about one note: an odd flicker, high in the dark lantern room, after closing time. Who locked up on which night, and who saw the flicker?",
+   "entity": [
+    "volunteer",
+    "volunteers"
+   ],
+   "cast": [
+    "Teddy",
+    "Priya",
+    "Lena"
+   ],
+   "question": {
+    "text": "Who noticed the odd flicker?",
+    "cat": "Note",
+    "value": "odd flicker"
+   }
+  },
+  "cats": [
+   {
+    "label": "Volunteer",
+    "kind": "name",
+    "values": [
+     "Teddy",
+     "Della",
+     "Priya",
+     "Arlo"
+    ]
+   },
+   {
+    "label": "Note",
+    "values": [
+     "stuck latch",
+     "gull nest",
+     "wet paint",
+     "odd flicker"
+    ],
+    "ref": "the volunteer who noted the {v}",
+    "pred": "noted the {v}",
+    "neg": "did not note the {v}",
+    "either": "noted either the {a} or the {b}",
+    "nor": "noted neither the {a} nor the {b}",
+    "short": "the {v} note"
+   },
+   {
+    "label": "Night",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ],
+    "ref": "the {x} volunteer",
+    "pred": "locked up on {x}",
+    "neg": "did not lock up on {x}",
+    "either": "locked up on either {a} or {b}",
+    "nor": "locked up on neither {a} nor {b}",
+    "short": "{x}",
+    "more": "locked up on a later night than {y}",
+    "less": "locked up on an earlier night than {y}",
+    "dmore": "locked up exactly {d} after {y}",
+    "dless": "locked up exactly {d} before {y}",
+    "dunit": [
+     "night",
+     "nights"
+    ],
+    "dmore1": "locked up the night after {y}",
+    "dless1": "locked up the night before {y}",
+    "step": 1,
+    "values": [
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   3,
+   0,
+   2,
+   1
+  ],
+  [
+   1,
+   3,
+   0,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 2,
+   "op": "d",
+   "d": 2
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": 2,
+   "op": "d",
+   "d": 1
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The Sunday volunteer noted either the gull nest or the stuck latch.",
+  "The volunteer who noted the stuck latch locked up exactly 2 nights after the volunteer who noted the odd flicker.",
+  "Priya noted either the odd flicker or the wet paint.",
+  "Arlo locked up the night after the volunteer who noted the odd flicker.",
+  "The volunteer who noted the wet paint locked up on either Thursday or Sunday.",
+  "The Thursday volunteer is either Priya or Della.",
+  "The Sunday volunteer is neither Teddy nor Arlo."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5
+   ],
+   "text": "The wet paint note must go with Thursday: clue 5 rules out Friday and Saturday; clue 1 rules out Sunday."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Since the stuck latch note can still be only Friday, Saturday, or Sunday and the odd flicker note can still be only Friday or Saturday, clue 2 means the stuck latch note cannot be Friday or Saturday and the odd flicker note cannot be Saturday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "The stuck latch note must go with Sunday: clue 2 rules out Friday and Saturday; Thursday already goes with the wet paint note."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    2
+   ],
+   "text": "The odd flicker note must go with Friday: clue 2 rules out Saturday; clue 1 rules out Sunday; Thursday already goes with the wet paint note."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The gull nest note must go with Saturday: the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7
+   ],
+   "text": "Sunday must go with Della: clue 7 rules out Teddy and Arlo; Priya is already ruled out for the stuck latch note."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6
+   ],
+   "text": "Thursday must go with Priya: clue 6 rules out Teddy and Arlo; Della already goes with Sunday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The wet paint note must go with Priya: Teddy, Della, and Arlo are already ruled out for Thursday."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The stuck latch note goes with Sunday, so the stuck latch note also goes with Della."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Arlo must go with the gull nest note: clue 4 rules out the odd flicker note; the wet paint note is already ruled out for Thursday; the stuck latch note already goes with Della."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Teddy must go with the odd flicker note: the stuck latch note is already ruled out for Sunday; the wet paint note is already ruled out for Thursday; the gull nest note already goes with Arlo."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Friday goes with the odd flicker note, so Friday also goes with Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    7
+   ],
+   "text": "Arlo must go with Saturday: clue 6 rules out Thursday; clue 7 rules out Sunday; Friday already goes with Teddy."
+  }
+ ],
+ "features": {
+  "steps": 24,
+  "score": 62,
+  "revisits": 0,
+  "transfer": 7,
+  "trial": 0,
+  "clue_steps": 6
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Teddy",
+   "odd flicker",
+   "Friday"
+  ],
+  [
+   "Della",
+   "stuck latch",
+   "Sunday"
+  ],
+  [
+   "Priya",
+   "wet paint",
+   "Thursday"
+  ],
+  [
+   "Arlo",
+   "gull nest",
+   "Saturday"
+  ]
+ ],
+ "score": 62
+}

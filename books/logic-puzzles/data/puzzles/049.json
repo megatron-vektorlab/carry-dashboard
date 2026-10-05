@@ -1,0 +1,88 @@
+{
+ "no": 49,
+ "chapter": 4,
+ "family": "liars",
+ "stars": 3,
+ "seed": 49000,
+ "kind": "liars",
+ "title": "Who Tasted the Pie Early?",
+ "story": "The pie tent had barely recovered from Clementine's visit when a contest pie on the judges' table turned up with a slice missing, a slice far too neat for any goat. The judging is an hour away, and the judges are not amused. Three people had been setting out entries near the table, and each has one thing to say. Which of them is the early taster?",
+ "cast": [
+  "Mabel"
+ ],
+ "names": [
+  "Hal",
+  "Mabel",
+  "Kit"
+ ],
+ "did": "cut the contest pie",
+ "didnt": "didn't cut the contest pie",
+ "statements": [
+  [
+   "or",
+   1,
+   2
+  ],
+  [
+   "not",
+   2
+  ],
+  [
+   "or",
+   0,
+   2
+  ]
+ ],
+ "texts": [
+  "Either Mabel or Kit cut the contest pie.",
+  "Kit didn't cut the contest pie.",
+  "Either Hal or I cut the contest pie."
+ ],
+ "rule": [
+  "culprit_lies"
+ ],
+ "rule_text": "The culprit is lying. Everyone else is telling the truth.",
+ "culprit": "Hal",
+ "truth": [
+  false,
+  true,
+  true
+ ],
+ "cases": [
+  {
+   "case": "Hal",
+   "truth": [
+    "false",
+    "true",
+    "true"
+   ],
+   "count": 2,
+   "fits": true
+  },
+  {
+   "case": "Mabel",
+   "truth": [
+    "true",
+    "true",
+    "false"
+   ],
+   "count": 2,
+   "fits": false
+  },
+  {
+   "case": "Kit",
+   "truth": [
+    "true",
+    "false",
+    "true"
+   ],
+   "count": 2,
+   "fits": false
+  }
+ ],
+ "question": {
+  "text": "Who cut the contest pie?"
+ },
+ "answer": "Hal",
+ "score": 30
+}

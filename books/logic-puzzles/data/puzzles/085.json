@@ -1,0 +1,776 @@
+{
+ "no": 85,
+ "chapter": 6,
+ "family": "case54",
+ "stars": 4,
+ "seed": 85001,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Case of the Silent Bell",
+ "story": "On the Sunday before Thanksgiving, the bell ringer at St. Brendan's heaved on the rope and got nothing but a soft thump: someone had wrapped the clapper in a wool scarf. The tower sign-in sheet (Hattie's idea, naturally) lists five climbers that week, each on a different weekday, each with a different scarf and a different reason. The scarf on the clapper is cable-knit. Who muffled the bell?",
+ "question": {
+  "text": "Who muffled the bell?",
+  "cat": "Scarf",
+  "value": "cable"
+ },
+ "answer": "Tova",
+ "cast": [
+  "Hattie"
+ ],
+ "state": {
+  "theme": {
+   "slot": 85,
+   "title": "The Case of the Silent Bell",
+   "story": "On the Sunday before Thanksgiving, the bell ringer at St. Brendan's heaved on the rope and got nothing but a soft thump: someone had wrapped the clapper in a wool scarf. The tower sign-in sheet (Hattie's idea, naturally) lists five climbers that week, each on a different weekday, each with a different scarf and a different reason. The scarf on the clapper is cable-knit. Who muffled the bell?",
+   "entity": [
+    "climber",
+    "climbers"
+   ],
+   "cast": [
+    "Hattie"
+   ],
+   "question": {
+    "text": "Who muffled the bell?",
+    "cat": "Scarf",
+    "value": "cable"
+   }
+  },
+  "cats": [
+   {
+    "label": "Climber",
+    "kind": "name",
+    "values": [
+     "Tova",
+     "Linus",
+     "Hattie",
+     "Gideon",
+     "Pablo"
+    ]
+   },
+   {
+    "label": "Scarf",
+    "values": [
+     "striped",
+     "plaid",
+     "argyle",
+     "red",
+     "cable"
+    ],
+    "ref": "the climber in the {v} scarf",
+    "pred": "wore the {v} scarf",
+    "neg": "did not wear the {v} scarf",
+    "either": "wore either the {a} or the {b} scarf",
+    "nor": "wore neither the {a} nor the {b} scarf",
+    "short": "the {v} scarf"
+   },
+   {
+    "label": "Reason",
+    "values": [
+     "dusting",
+     "repairs",
+     "bats",
+     "the view",
+     "pigeons"
+    ],
+    "ref": "the climber with {v} in mind",
+    "pred": "went up with {v} in mind",
+    "neg": "did not go up with {v} in mind",
+    "either": "went up with either {a} or {b} in mind",
+    "nor": "went up with neither {a} nor {b} in mind",
+    "short": "{v}"
+   },
+   {
+    "label": "Day",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "labels": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ],
+    "ref": "the {x} climber",
+    "pred": "went up on {x}",
+    "neg": "did not go up on {x}",
+    "either": "went up on either {a} or {b}",
+    "nor": "went up on neither {a} nor {b}",
+    "short": "{x}",
+    "more": "went up later in the week than {y}",
+    "less": "went up earlier in the week than {y}",
+    "dmore": "went up exactly {d} after {y}",
+    "dless": "went up exactly {d} before {y}",
+    "dunit": [
+     "day",
+     "days"
+    ],
+    "dmore1": "went up the day after {y}",
+    "dless1": "went up the day before {y}",
+    "step": 1,
+    "values": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   4,
+   3,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0,
+   4,
+   3
+  ],
+  [
+   2,
+   1,
+   3,
+   4,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": 3,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The climber in the striped scarf went up exactly 3 days after the climber with the view in mind.",
+  "Tova did not go up with the view in mind.",
+  "The climber with pigeons in mind wore either the plaid or the cable scarf.",
+  "Linus went up on either Monday or Tuesday.",
+  "The climber with dusting in mind went up on either Tuesday or Thursday.",
+  "The climber in the cable scarf did not go up with bats in mind.",
+  "Linus did not go up with pigeons in mind.",
+  "Hattie went up with either repairs or dusting in mind.",
+  "The climber with repairs in mind is either Tova or Pablo.",
+  "Gideon went up on either Thursday or Friday.",
+  "Of the climber with the view in mind and the climber with pigeons in mind, one wore the plaid scarf and the other wore the argyle scarf.",
+  "Of the climber with bats in mind and the climber with pigeons in mind, one is Linus and the other is Gideon."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    6
+   ],
+   "text": "Clue 6 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    7
+   ],
+   "text": "Clue 7 gives an X."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    5
+   ],
+   "text": "Clue 5 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    8
+   ],
+   "text": "Clue 8 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    9
+   ],
+   "text": "Clue 9 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    8,
+    9
+   ],
+   "text": "Hattie must go with dusting: clue 9 rules out repairs; clue 8 rules out bats, the view, and pigeons."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    10
+   ],
+   "text": "Clue 10 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 means the striped scarf cannot be Monday, Tuesday, or Wednesday and the view cannot be Wednesday, Thursday, or Friday."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    11
+   ],
+   "text": "Clue 11 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    11
+   ],
+   "text": "The argyle scarf must go with the view: clue 11 rules out dusting, repairs, and bats; clue 3 rules out pigeons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    11
+   ],
+   "text": "The plaid scarf must go with pigeons: clue 11 rules out dusting, repairs, and bats; the view already goes with the argyle scarf."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    12
+   ],
+   "text": "Clue 12 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    12
+   ],
+   "text": "Tova must go with repairs: clue 12 rules out bats and pigeons; clue 2 rules out the view; dusting already goes with Hattie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    7,
+    9,
+    12
+   ],
+   "text": "Linus must go with bats: clue 9 rules out repairs; clue 12 rules out the view; clue 7 rules out pigeons; dusting already goes with Hattie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    9,
+    12
+   ],
+   "text": "Gideon must go with pigeons: clue 9 rules out repairs; clue 12 rules out the view; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    12
+   ],
+   "text": "Pablo must go with the view: clue 12 rules out bats and pigeons; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The argyle scarf must go with Pablo: Tova, Linus, and Gideon are already ruled out for the view; Hattie is already ruled out for dusting."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The plaid scarf must go with Gideon: Tova and Linus are already ruled out for pigeons; Hattie is already ruled out for dusting; Pablo already goes with the argyle scarf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5
+   ],
+   "text": "Wednesday must go with repairs: clue 5 rules out dusting; clue 1 rules out the view; bats is already ruled out for Linus; pigeons is already ruled out for Gideon."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    5
+   ],
+   "text": "Friday must go with pigeons: clue 5 rules out dusting; clue 1 rules out the view; bats is already ruled out for Linus; repairs already goes with Wednesday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Thursday must go with dusting: clue 1 rules out the view; bats is already ruled out for Linus; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hattie must go with Thursday: Monday, Tuesday, Wednesday, and Friday are already ruled out for dusting."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    10
+   ],
+   "text": "Gideon must go with Friday: clue 10 rules out Monday, Tuesday, and Wednesday; Thursday already goes with Hattie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The plaid scarf must go with Friday: Monday, Tuesday, Wednesday, and Thursday are already ruled out for pigeons."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The striped scarf must go with Thursday: clue 1 rules out Monday, Tuesday, and Wednesday; Friday already goes with the plaid scarf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Tova must go with Wednesday: Monday and Tuesday are already ruled out for repairs; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Dusting goes with Thursday, so dusting also goes with the striped scarf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    6,
+    11
+   ],
+   "text": "The cable scarf must go with repairs: clue 6 rules out bats; clue 11 rules out the view and pigeons; dusting already goes with the striped scarf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    11
+   ],
+   "text": "The red scarf must go with bats: clue 11 rules out the view; clue 3 rules out pigeons; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Hattie goes with dusting, so Hattie also goes with the striped scarf."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Linus must go with the red scarf: the plaid scarf is already ruled out for pigeons; the argyle scarf is already ruled out for the view; the cable scarf is already ruled out for bats; the striped scarf already goes with Hattie."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Tova must go with the cable scarf: the striped scarf is already ruled out for repairs; the plaid scarf is already ruled out for pigeons; the argyle scarf is already ruled out for the view; the red scarf already goes with Linus."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Wednesday must go with the cable scarf: clue 1 rules out the striped scarf; the plaid scarf is already ruled out for pigeons; the argyle scarf is already ruled out for the view; the red scarf is already ruled out for repairs."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Since the striped scarf can still be only Thursday and the view can still be only Monday or Tuesday, clue 1 means the view cannot be Tuesday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The view must go with Monday: clue 1 rules out Tuesday, Wednesday, Thursday, and Friday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Bats must go with Tuesday: Wednesday, Thursday, and Friday are already ruled out for Linus; Monday already goes with the view."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The argyle scarf goes with the view, so the argyle scarf also goes with Monday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The red scarf must go with Tuesday: Wednesday is already ruled out for repairs; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Linus must go with Tuesday: clue 4 rules out Wednesday, Thursday, and Friday; Monday is already ruled out for bats."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Pablo must go with Monday: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 75,
+  "score": 197,
+  "revisits": 2,
+  "transfer": 34,
+  "trial": 0,
+  "clue_steps": 11
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Tova",
+   "cable",
+   "repairs",
+   "Wednesday"
+  ],
+  [
+   "Linus",
+   "red",
+   "bats",
+   "Tuesday"
+  ],
+  [
+   "Hattie",
+   "striped",
+   "dusting",
+   "Thursday"
+  ],
+  [
+   "Gideon",
+   "plaid",
+   "pigeons",
+   "Friday"
+  ],
+  [
+   "Pablo",
+   "argyle",
+   "the view",
+   "Monday"
+  ]
+ ],
+ "score": 197
+}

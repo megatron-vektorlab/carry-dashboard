@@ -1,0 +1,210 @@
+{
+ "no": 6,
+ "chapter": 1,
+ "family": "first4",
+ "stars": 1,
+ "seed": 6004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Muddled Umbrellas",
+ "story": "Gus's left knee called for rain, and the knee was right: four people ducked into the Gull's Rest Inn for breakfast, and when the sun came out, all four left without their umbrellas. Priya Nair already keeps forty-one lost umbrellas, and she has no intention of making it forty-five. She means to return every one before the noon ferry. Whose umbrella is whose?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Mabel",
+  "Gus",
+  "Priya"
+ ],
+ "state": {
+  "theme": {
+   "slot": 6,
+   "title": "The Muddled Umbrellas",
+   "story": "Gus's left knee called for rain, and the knee was right: four people ducked into the Gull's Rest Inn for breakfast, and when the sun came out, all four left without their umbrellas. Priya Nair already keeps forty-one lost umbrellas, and she has no intention of making it forty-five. She means to return every one before the noon ferry. Whose umbrella is whose?",
+   "entity": [
+    "guest",
+    "guests"
+   ],
+   "cast": [
+    "Mabel",
+    "Gus",
+    "Priya"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Guest",
+    "kind": "name",
+    "values": [
+     "Mabel",
+     "Gus",
+     "Kit",
+     "Oscar"
+    ]
+   },
+   {
+    "label": "Umbrella",
+    "values": [
+     "plaid",
+     "yellow",
+     "polka-dot",
+     "navy"
+    ],
+    "ref": "the {v} umbrella's owner",
+    "pred": "left the {v} umbrella",
+    "neg": "did not leave the {v} umbrella",
+    "either": "left either the {a} or the {b} umbrella",
+    "nor": "left neither the {a} nor the {b} umbrella",
+    "short": "the {v} umbrella"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Gus did not leave the polka-dot umbrella.",
+  "Mabel left the plaid umbrella.",
+  "Kit left neither the yellow nor the polka-dot umbrella."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 says directly that Mabel goes with the plaid umbrella."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3
+   ],
+   "text": "Kit must go with the navy umbrella: clue 3 rules out the yellow umbrella and the polka-dot umbrella; the plaid umbrella already goes with Mabel."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Gus must go with the yellow umbrella: clue 1 rules out the polka-dot umbrella; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Oscar must go with the polka-dot umbrella: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 6,
+  "score": 9,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 0
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Mabel",
+   "plaid"
+  ],
+  [
+   "Gus",
+   "yellow"
+  ],
+  [
+   "Kit",
+   "navy"
+  ],
+  [
+   "Oscar",
+   "polka-dot"
+  ]
+ ],
+ "score": 9
+}

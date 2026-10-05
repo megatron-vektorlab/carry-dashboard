@@ -1,0 +1,372 @@
+{
+ "no": 39,
+ "chapter": 3,
+ "family": "days4",
+ "stars": 3,
+ "seed": 39000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "The Canoe-Sized Lobster",
+ "story": "From Monday to Thursday, Nico took one summer visitor out on Persistence each morning, and no two came from the same town. He keeps his bookings in his head, right next to his lobster stories, and the two have begun to mix. He does know that Wednesday's guest hauled up the week's biggest lobster, which has since grown to the size of a canoe. Who went out on which day, and where was each visitor from?",
+ "question": {
+  "text": "Who hauled up the canoe-sized lobster?",
+  "cat": "Day",
+  "value": "Wednesday"
+ },
+ "answer": "Boris",
+ "cast": [
+  "Nico"
+ ],
+ "state": {
+  "theme": {
+   "slot": 39,
+   "title": "The Canoe-Sized Lobster",
+   "story": "From Monday to Thursday, Nico took one summer visitor out on Persistence each morning, and no two came from the same town. He keeps his bookings in his head, right next to his lobster stories, and the two have begun to mix. He does know that Wednesday's guest hauled up the week's biggest lobster, which has since grown to the size of a canoe. Who went out on which day, and where was each visitor from?",
+   "entity": [
+    "visitor",
+    "visitors"
+   ],
+   "cast": [
+    "Nico"
+   ],
+   "question": {
+    "text": "Who hauled up the canoe-sized lobster?",
+    "cat": "Day",
+    "value": "Wednesday"
+   }
+  },
+  "cats": [
+   {
+    "label": "Visitor",
+    "kind": "name",
+    "values": [
+     "Cass",
+     "Hal",
+     "Imani",
+     "Boris"
+    ]
+   },
+   {
+    "label": "Hometown",
+    "values": [
+     "Buffalo",
+     "Tulsa",
+     "Dover",
+     "Reno"
+    ],
+    "ref": "the visitor from {v}",
+    "pred": "came from {v}",
+    "neg": "did not come from {v}",
+    "either": "came from either {a} or {b}",
+    "nor": "came from neither {a} nor {b}",
+    "short": "{v}"
+   },
+   {
+    "label": "Day",
+    "ordered": true,
+    "nums": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday"
+    ],
+    "ref": "the {x} visitor",
+    "pred": "went out on {x}",
+    "neg": "did not go out on {x}",
+    "either": "went out on either {a} or {b}",
+    "nor": "went out on neither {a} nor {b}",
+    "short": "{x}",
+    "more": "went out later in the week than {y}",
+    "less": "went out earlier in the week than {y}",
+    "dmore": "went out exactly {d} after {y}",
+    "dless": "went out exactly {d} before {y}",
+    "dunit": [
+     "day",
+     "days"
+    ],
+    "dmore1": "went out the day after {y}",
+    "dless1": "went out the day before {y}",
+    "step": 1,
+    "values": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday"
+    ]
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   2,
+   1,
+   3,
+   0
+  ],
+  [
+   0,
+   1,
+   3,
+   2
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "cmp",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": 2,
+   "op": "d",
+   "d": 3
+  },
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "pair",
+   "items": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Of Cass and Boris, one went out on Monday and the other went out on Wednesday.",
+  "Imani went out exactly 3 days after the visitor from Dover.",
+  "Boris did not come from Reno.",
+  "Of Boris and the visitor from Tulsa, one went out on Wednesday and the other went out on Tuesday."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 gives an X."
+  },
+  {
+   "kind": "cmp",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 means Imani cannot be Monday, Tuesday, or Wednesday and Dover cannot be Tuesday, Wednesday, or Thursday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Imani must go with Thursday: clue 2 rules out Monday, Tuesday, and Wednesday."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Dover must go with Monday: clue 2 rules out Tuesday, Wednesday, and Thursday."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Hal must go with Tuesday: clue 1 rules out Monday and Wednesday; Thursday already goes with Imani."
+  },
+  {
+   "kind": "pair",
+   "trivial": true,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    4
+   ],
+   "text": "Boris must go with Wednesday: clue 4 rules out Monday; clue 1 rules out Tuesday; Thursday already goes with Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Cass must go with Monday: clue 1 rules out Tuesday; the other choices are already taken."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "Dover goes with Monday, so Dover also goes with Cass."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    3,
+    4
+   ],
+   "text": "Boris must go with Buffalo: clue 4 rules out Tulsa; clue 3 rules out Reno; Dover already goes with Cass."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Imani must go with Reno: clue 2 rules out Dover; Tulsa is already ruled out for Thursday; Buffalo already goes with Boris."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hal must go with Tulsa: Dover is already ruled out for Monday; the other choices are already taken."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2,
+    4
+   ],
+   "text": "Thursday must go with Reno: clue 4 rules out Tulsa; clue 2 rules out Dover; Buffalo is already ruled out for Imani."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Buffalo must go with Wednesday: Tuesday is already ruled out for Hal; Thursday is already ruled out for Imani; Monday already goes with Dover."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Tulsa must go with Tuesday: clue 4 rules out Thursday; the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 21,
+  "score": 54,
+  "revisits": 1,
+  "transfer": 5,
+  "trial": 0,
+  "clue_steps": 4
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Cass",
+   "Dover",
+   "Monday"
+  ],
+  [
+   "Hal",
+   "Tulsa",
+   "Tuesday"
+  ],
+  [
+   "Imani",
+   "Reno",
+   "Thursday"
+  ],
+  [
+   "Boris",
+   "Buffalo",
+   "Wednesday"
+  ]
+ ],
+ "score": 54
+}

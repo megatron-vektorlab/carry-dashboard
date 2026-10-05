@@ -1,0 +1,175 @@
+{
+ "no": 1,
+ "chapter": 1,
+ "family": "first3",
+ "stars": 1,
+ "seed": 1000,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Ada's Welcome Tea",
+ "story": "Ada Quill edited the Gazette's puzzle page for forty-one years, and this morning she put the kettle on at the puzzle desk to welcome her new apprentice: you. Three neighbors dropped by to say hello, and each chose a different tea. \"Your first assignment, partner, is to remember who drinks what,\" Ada says, handing you a sharp pencil. Who drank which tea?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Teddy",
+  "Lena"
+ ],
+ "state": {
+  "theme": {
+   "slot": 1,
+   "title": "Ada's Welcome Tea",
+   "story": "Ada Quill edited the Gazette's puzzle page for forty-one years, and this morning she put the kettle on at the puzzle desk to welcome her new apprentice: you. Three neighbors dropped by to say hello, and each chose a different tea. \"Your first assignment, partner, is to remember who drinks what,\" Ada says, handing you a sharp pencil. Who drank which tea?",
+   "entity": [
+    "guest",
+    "guests"
+   ],
+   "cast": [
+    "Teddy",
+    "Lena"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Guest",
+    "kind": "name",
+    "values": [
+     "Teddy",
+     "Una",
+     "Lena"
+    ]
+   },
+   {
+    "label": "Tea",
+    "values": [
+     "Earl Grey",
+     "mint",
+     "chamomile"
+    ],
+    "ref": "the guest who drank {v} tea",
+    "pred": "drank {v} tea",
+    "neg": "did not drink {v} tea",
+    "either": "drank either {a} or {b} tea",
+    "nor": "drank neither {a} nor {b} tea",
+    "short": "{v} tea"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "diff",
+   "items": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "nor",
+   "items": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "Teddy did not drink mint tea.",
+  "Lena drank neither mint nor chamomile tea."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 gives an X."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Lena must go with Earl Grey tea: clue 2 rules out mint tea and chamomile tea."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Teddy must go with chamomile tea: clue 1 rules out mint tea; Earl Grey tea already goes with Lena."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Una must go with mint tea: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 5,
+  "score": 8,
+  "revisits": 0,
+  "transfer": 0,
+  "trial": 0,
+  "clue_steps": 0
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Teddy",
+   "chamomile"
+  ],
+  [
+   "Una",
+   "mint"
+  ],
+  [
+   "Lena",
+   "Earl Grey"
+  ]
+ ],
+ "score": 8
+}

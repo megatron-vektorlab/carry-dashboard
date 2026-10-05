@@ -1,0 +1,288 @@
+{
+ "no": 15,
+ "chapter": 2,
+ "family": "grid3",
+ "stars": 1,
+ "seed": 15004,
+ "kind": "grid",
+ "lineup": false,
+ "title": "Kite Day Tangle",
+ "story": "A stiff May breeze on Kite Day sent three kites swooping over the town green, then into one another, then into a single glorious knot. Teddy took eleven photos of it before he remembered that one of the kites was his. Before anyone starts tugging, untangle the knot on paper: who flew which kite, with which tail?",
+ "question": null,
+ "answer": null,
+ "cast": [
+  "Teddy"
+ ],
+ "state": {
+  "theme": {
+   "slot": 15,
+   "title": "Kite Day Tangle",
+   "story": "A stiff May breeze on Kite Day sent three kites swooping over the town green, then into one another, then into a single glorious knot. Teddy took eleven photos of it before he remembered that one of the kites was his. Before anyone starts tugging, untangle the knot on paper: who flew which kite, with which tail?",
+   "entity": [
+    "flier",
+    "fliers"
+   ],
+   "cast": [
+    "Teddy"
+   ]
+  },
+  "cats": [
+   {
+    "label": "Flier",
+    "kind": "name",
+    "values": [
+     "Teddy",
+     "Una",
+     "Hugo"
+    ]
+   },
+   {
+    "label": "Kite",
+    "values": [
+     "dragon",
+     "box",
+     "diamond"
+    ],
+    "ref": "the {v} kite's flier",
+    "pred": "flew the {v} kite",
+    "neg": "did not fly the {v} kite",
+    "either": "flew either the {a} or the {b} kite",
+    "nor": "flew neither the {a} nor the {b} kite",
+    "short": "the {v} kite"
+   },
+   {
+    "label": "Tail",
+    "values": [
+     "bows",
+     "streamers",
+     "tassels"
+    ],
+    "ref": "the flier who chose {v}",
+    "pred": "chose {v} for a tail",
+    "neg": "did not choose {v} for a tail",
+    "either": "chose either {a} or {b} for a tail",
+    "nor": "chose neither {a} nor {b} for a tail",
+    "short": "the tail of {v}"
+   }
+  ]
+ },
+ "solution": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0
+  ]
+ ],
+ "clues": [
+  {
+   "kind": "nor",
+   "items": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "either",
+   "items": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  },
+  {
+   "kind": "same",
+   "items": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "cat": -1,
+   "op": "",
+   "d": 0
+  }
+ ],
+ "texts": [
+  "The flier who chose bows is neither Teddy nor Una.",
+  "Una flew either the dragon or the box kite.",
+  "Una chose either tassels or bows for a tail.",
+  "The dragon kite's flier chose streamers for a tail."
+ ],
+ "trace": [
+  {
+   "kind": "fact",
+   "trivial": true,
+   "clues": [
+    1
+   ],
+   "text": "Clue 1 gives an X."
+  },
+  {
+   "kind": "fact",
+   "trivial": false,
+   "clues": [
+    4
+   ],
+   "text": "Clue 4 says directly that the dragon kite goes with the tail of streamers."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "The tail of bows must go with Hugo: clue 1 rules out Teddy and Una."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    2
+   ],
+   "text": "Clue 2 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "either",
+   "trivial": true,
+   "clues": [
+    3
+   ],
+   "text": "Clue 3 limits the choices (mark the X's it gives)."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1,
+    3
+   ],
+   "text": "Una must go with the tail of tassels: clue 1 rules out the tail of bows; clue 3 rules out the tail of streamers."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    1
+   ],
+   "text": "Teddy must go with the tail of streamers: clue 1 rules out the tail of bows; the tail of tassels already goes with Una."
+  },
+  {
+   "kind": "transfer",
+   "trivial": true,
+   "clues": [],
+   "text": "The dragon kite goes with the tail of streamers, so the dragon kite also goes with Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [
+    2
+   ],
+   "text": "Una must go with the box kite: clue 2 rules out the diamond kite; the dragon kite already goes with Teddy."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "Hugo must go with the diamond kite: the dragon kite is already ruled out for the tail of streamers; the box kite already goes with Una."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The box kite must go with the tail of tassels: the tail of bows is already ruled out for Hugo; the tail of streamers already goes with the dragon kite."
+  },
+  {
+   "kind": "only",
+   "trivial": false,
+   "clues": [],
+   "text": "The diamond kite must go with the tail of bows: the other choices are already taken."
+  }
+ ],
+ "features": {
+  "steps": 14,
+  "score": 31,
+  "revisits": 0,
+  "transfer": 3,
+  "trial": 0,
+  "clue_steps": 2
+ },
+ "trial_chain": 0,
+ "table": [
+  [
+   "Teddy",
+   "dragon",
+   "streamers"
+  ],
+  [
+   "Una",
+   "box",
+   "tassels"
+  ],
+  [
+   "Hugo",
+   "diamond",
+   "bows"
+  ]
+ ],
+ "score": 31
+}

@@ -1,0 +1,33 @@
+{
+ "no": 75,
+ "clues": [
+  "Basil paid exactly $2 more than the rider bound for the farm stand.",
+  "The rider headed for the corn maze paid exactly $6 more than Teddy.",
+  "Teddy and the orchard gate rider were two different people: one carried home the apple crate, the other the cider jug.",
+  "Nadia's fare was higher than Zeke's.",
+  "Whoever rode to the corn maze paid more than whoever took home the pumpkin.",
+  "The rider with the pumpkin paid more than the one bound for the farm stand.",
+  "Whoever carried home the apple crate paid more than Teddy.",
+  "The rider with the apple crate did not pay $5."
+ ],
+ "hints": [
+  "Look at clue 2. The fares are $3, $5, $7 and $9. Which two fares are exactly $6 apart?",
+  "An exact gap is a fixed gap. On this scale a $6 gap has only one fit, so clue 2 settles two squares at once.",
+  "So Teddy paid $3 and the corn maze rider $9. Clues 7 and 3 then give Teddy the cider jug.",
+  "Clues 5, 3 and 6 send the pumpkin to the cider stand, so Teddy rode to the farm stand. Now clue 1 sets Basil's fare."
+ ],
+ "solution": {
+  "key_idea": "Fares run from $3 to $9, so clue 2's exact $6 gap means Teddy paid $3 and the corn maze rider paid $9.",
+  "steps": [
+   "Only $3 and $9 are exactly $6 apart, so by clue 2 Teddy paid $3 and the corn maze rider paid $9.",
+   "Clue 7 keeps the apple crate from Teddy, so by clue 3 Teddy carried the cider jug and the orchard gate rider the apple crate.",
+   "Clues 5, 3 and 6 keep the pumpkin from the corn maze, orchard gate and farm stand, so it went to the cider stand.",
+   "Teddy was not the $9 corn maze rider, the pumpkin's rider, or the orchard gate rider (clue 3), so he rode to the farm stand.",
+   "By clue 1, Basil paid $5, two dollars more than Teddy's $3. Clue 4 then gives Nadia $9 and Zeke $7.",
+   "So Nadia rode to the corn maze. The apple crate, at the orchard gate, is off Basil's $5 (clue 8), so Zeke had it.",
+   "That leaves Basil at the cider stand with the pumpkin, and Nadia at the corn maze with the mums."
+  ],
+  "epilogue": "The fares came to $24: Teddy $3, Basil $5, Zeke $7 and Nadia $9. The missing dollar turned up under a hay bale, and the can balanced before the next run."
+ },
+ "tip": null
+}
