@@ -1,0 +1,13 @@
+#import "/layout/book.typ": *
+#v(2.2in)
+#align(center, text(font: display, size: 34pt, weight: "bold")[This Book Belongs To])
+#v(0.5in)
+#align(center, line(length: 5in, stroke: 1pt + ink))
+#v(1.2in)
+#align(center, text(font: display, size: 28pt, weight: "semibold")[Given with Love By])
+#v(0.5in)
+#align(center, line(length: 5in, stroke: 1pt + ink))
+#v(0.5in)
+#align(center, line(length: 5in, stroke: 1pt + ink))
+#v(0.9in)
+#rule-ornament(width: 3in)

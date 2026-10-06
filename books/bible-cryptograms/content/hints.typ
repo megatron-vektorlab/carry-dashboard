@@ -1,0 +1,39 @@
+#import "/layout/book.typ": *
+#let D = json("/build/book/data.json")
+#let pairs(ls) = ls.map(h => h.at(0) + " = " + h.at(1)).join(", ")
+
+#metadata(none) <sec-hints>
+#chapter-title("Hints", sub: "Three gentle steps for every puzzle")
+Every puzzle has three hints, each in its own section so you never see more than you want. Take one hint, go back to the puzzle, and enjoy the rest of it yourself.
+
+#table(columns: (auto, 1fr), stroke: none, inset: (x: 0pt, y: 4pt), column-gutter: 12pt,
+  [*Hint 1*], [The book of the Bible, and one more letter.],
+  [*Hint 2*], [Two more letters.],
+  [*Hint 3*], [The longest word, and the full reference, so you can look the verse up in your own Bible.],
+)
+
+#section("Hint 1 · The book and one letter")
+#v(4pt)
+#columns(2, gutter: 0.35in)[
+  #for p in D.puzzles [
+    #block(breakable: false, spacing: 0.6em)[#metadata(p.num) #label("hint-" + str(p.num))*#p.num.* #h(3pt) #p.hints.at("1").book · #pairs(p.hints.at("1").letters)]
+  ]
+]
+
+#pagebreak()
+#section("Hint 2 · Two more letters")
+#v(4pt)
+#columns(3, gutter: 0.3in)[
+  #for p in D.puzzles [
+    #block(breakable: false, spacing: 0.6em)[*#p.num.* #h(3pt) #pairs(p.hints.at("2").letters)]
+  ]
+]
+
+#pagebreak()
+#section("Hint 3 · The longest word and the reference")
+#v(4pt)
+#columns(2, gutter: 0.35in)[
+  #for p in D.puzzles [
+    #block(breakable: false, spacing: 0.6em)[*#p.num.* #h(3pt) #p.hints.at("3").word \ #h(1.2em) #p.ref]
+  ]
+]

@@ -1,0 +1,38 @@
+{
+  "farskipper": {
+    "description": "farskipper/kjv, verses-1769.json (1769 text, italics in [ ])",
+    "urls": [
+      "https://raw.githubusercontent.com/farskipper/kjv/master/json/verses-1769.json"
+    ],
+    "sha256": "43fbd2fd6a7aebaf62c0c828a85072336143c1fe8233a4856a12db1d5e5df470"
+  },
+  "thiagobodruk": {
+    "description": "thiagobodruk/bible, json/en_kjv.json",
+    "urls": [
+      "https://raw.githubusercontent.com/thiagobodruk/bible/master/json/en_kjv.json"
+    ],
+    "sha256": "fc99486e7d3b86e4ad1f0f424b36ab41b4ec4db858a776bd13aee1b7910f136b"
+  },
+  "aruljohn": {
+    "description": "aruljohn/Bible-kjv, one JSON file per book",
+    "urls": [
+      "https://raw.githubusercontent.com/aruljohn/Bible-kjv/master/Genesis.json",
+      "... (66 files)"
+    ],
+    "sha256": "911bd43bbbf22655d82cd3786843d53b4a5cde62388167adaa40373f269e0dd4"
+  },
+  "bibleapi": {
+    "description": "bibleapi/bibleapi-bibles-json, kjv.json",
+    "urls": [
+      "https://raw.githubusercontent.com/bibleapi/bibleapi-bibles-json/master/kjv.json"
+    ],
+    "sha256": "07b1321a92fb1af3b26a8963ee70e667a3572d03e872a32f38c2f5d5f0beba1e"
+  },
+  "scrollmapper": {
+    "description": "scrollmapper/bible_databases, sources/en/KJV/KJV.json (Psalm titles inside verse 1)",
+    "urls": [
+      "https://raw.githubusercontent.com/scrollmapper/bible_databases/master/sources/en/KJV/KJV.json"
+    ],
+    "sha256": "de476d306687f8b45978f45f3346dcd30c685b9532afb05197849522c6e93ec0"
+  }
+}

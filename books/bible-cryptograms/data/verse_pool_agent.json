@@ -1,0 +1,1383 @@
+{
+ "themes": [
+  {
+   "theme": "Comfort in Hard Times",
+   "intro_idea": "For the waiting room, the long night and the empty chair: verses God's people have leaned on in sorrow.",
+   "refs": [
+    {
+     "ref": "Matthew 11:28",
+     "popularity": 3
+    },
+    {
+     "ref": "Isaiah 41:10",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 34:18",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 46:1",
+     "popularity": 3
+    },
+    {
+     "ref": "Revelation 21:4",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 147:3",
+     "popularity": 3
+    },
+    {
+     "ref": "1 Peter 5:6-7",
+     "popularity": 3
+    },
+    {
+     "ref": "John 14:1",
+     "popularity": 3
+    },
+    {
+     "ref": "Isaiah 43:2",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 55:22",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 30:5",
+     "popularity": 2
+    },
+    {
+     "ref": "2 Corinthians 1:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 34:17",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 34:4",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 46:4",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 9:9",
+     "popularity": 2
+    },
+    {
+     "ref": "Nahum 1:7",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 61:1-2",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 40:1-2",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 73:26",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 94:19",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 119:50",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 139:9-10",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "Hope",
+   "intro_idea": "In the King James Bible, hope means confident expectation, not wishful thinking. These verses look past today to what God has promised.",
+   "refs": [
+    {
+     "ref": "Jeremiah 29:11",
+     "popularity": 3
+    },
+    {
+     "ref": "Romans 15:13",
+     "popularity": 3
+    },
+    {
+     "ref": "Lamentations 3:22-23",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 27:14",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 42:11",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 5:5",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 8:18",
+     "popularity": 2
+    },
+    {
+     "ref": "Hebrews 6:19",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 62:5-6",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 33:20-22",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 43:19",
+     "popularity": 2
+    },
+    {
+     "ref": "Lamentations 3:25-26",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 126:5-6",
+     "popularity": 2
+    },
+    {
+     "ref": "2 Corinthians 4:16",
+     "popularity": 2
+    },
+    {
+     "ref": "2 Corinthians 4:18",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 71:14",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 130:5",
+     "popularity": 1
+    },
+    {
+     "ref": "Titus 2:13",
+     "popularity": 1
+    },
+    {
+     "ref": "Proverbs 23:18",
+     "popularity": 1
+    },
+    {
+     "ref": "Job 23:10",
+     "popularity": 1
+    },
+    {
+     "ref": "Song of Solomon 2:11-12",
+     "popularity": 1,
+     "caution": "\"turtle\" means turtledove; if used, add a one-line footnote on the solution page"
+    }
+   ]
+  },
+  {
+   "theme": "Strength & Courage",
+   "intro_idea": "From Joshua at the Jordan to Paul in prison: God tells his people to be strong, and promises to be their strength.",
+   "refs": [
+    {
+     "ref": "Isaiah 40:31",
+     "popularity": 3
+    },
+    {
+     "ref": "Joshua 1:9",
+     "popularity": 3
+    },
+    {
+     "ref": "Philippians 4:13",
+     "popularity": 3
+    },
+    {
+     "ref": "Deuteronomy 31:6",
+     "popularity": 3
+    },
+    {
+     "ref": "2 Corinthians 12:9",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 27:1",
+     "popularity": 3
+    },
+    {
+     "ref": "2 Timothy 1:7",
+     "popularity": 3
+    },
+    {
+     "ref": "Romans 8:31",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 18:2",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 28:7",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 40:29",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 12:2",
+     "popularity": 2
+    },
+    {
+     "ref": "Ephesians 6:10",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 31:24",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 41:13",
+     "popularity": 2
+    },
+    {
+     "ref": "Deuteronomy 31:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 8:37",
+     "popularity": 2
+    },
+    {
+     "ref": "Galatians 6:9",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 18:10",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 16:8",
+     "popularity": 2
+    },
+    {
+     "ref": "2 Corinthians 4:8-9",
+     "popularity": 2
+    },
+    {
+     "ref": "Exodus 14:14",
+     "popularity": 2
+    },
+    {
+     "ref": "Hebrews 13:6",
+     "popularity": 2
+    },
+    {
+     "ref": "1 John 4:4",
+     "popularity": 2
+    }
+   ]
+  },
+  {
+   "theme": "Peace",
+   "intro_idea": "Verses for quieting an anxious mind, plus the old priestly blessing: The LORD bless thee, and keep thee.",
+   "refs": [
+    {
+     "ref": "John 14:27",
+     "popularity": 3
+    },
+    {
+     "ref": "Philippians 4:7",
+     "popularity": 3
+    },
+    {
+     "ref": "Isaiah 26:3",
+     "popularity": 3
+    },
+    {
+     "ref": "John 16:33",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 46:10",
+     "popularity": 3
+    },
+    {
+     "ref": "Numbers 6:24-26",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 4:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Colossians 3:15",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 5:1",
+     "popularity": 2
+    },
+    {
+     "ref": "2 Thessalonians 3:16",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 29:11",
+     "popularity": 2
+    },
+    {
+     "ref": "Exodus 33:14",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 54:10",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 12:18",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 119:165",
+     "popularity": 1
+    },
+    {
+     "ref": "Isaiah 32:17",
+     "popularity": 1
+    },
+    {
+     "ref": "Hebrews 12:14",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 37:11",
+     "popularity": 1
+    },
+    {
+     "ref": "Proverbs 3:24",
+     "popularity": 1
+    },
+    {
+     "ref": "Ephesians 2:14",
+     "popularity": 1
+    },
+    {
+     "ref": "2 Peter 1:2",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "Faith & Trust",
+   "intro_idea": "What faith is (Hebrews 11) and what trusting God looks like on an ordinary day (Proverbs 3:5-6).",
+   "refs": [
+    {
+     "ref": "Proverbs 3:5-6",
+     "popularity": 3
+    },
+    {
+     "ref": "Hebrews 11:1",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 37:4-5",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 19:26",
+     "popularity": 3
+    },
+    {
+     "ref": "Hebrews 13:8",
+     "popularity": 3
+    },
+    {
+     "ref": "2 Timothy 4:7",
+     "popularity": 3
+    },
+    {
+     "ref": "Hebrews 11:6",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 10:17",
+     "popularity": 2
+    },
+    {
+     "ref": "2 Corinthians 5:6-7",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 56:3-4",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 26:4",
+     "popularity": 2
+    },
+    {
+     "ref": "Jeremiah 17:7",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 20:7",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 9:10",
+     "popularity": 2
+    },
+    {
+     "ref": "Mark 9:23",
+     "popularity": 2
+    },
+    {
+     "ref": "Galatians 2:20",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 62:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Genesis 50:20",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 112:7",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 118:8",
+     "popularity": 1
+    },
+    {
+     "ref": "1 John 5:4",
+     "popularity": 1
+    },
+    {
+     "ref": "Isaiah 6:8",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "God's Love & Grace",
+   "intro_idea": "From John 3:16 to 1 Corinthians 13. A tip for solvers: where modern Bibles say love, the KJV often says CHARITY.",
+   "refs": [
+    {
+     "ref": "John 3:16",
+     "popularity": 3
+    },
+    {
+     "ref": "Romans 5:8",
+     "popularity": 3
+    },
+    {
+     "ref": "1 John 4:7-8",
+     "popularity": 3
+    },
+    {
+     "ref": "1 Corinthians 13:4-5",
+     "popularity": 3
+    },
+    {
+     "ref": "1 Corinthians 13:13",
+     "popularity": 3
+    },
+    {
+     "ref": "John 15:13",
+     "popularity": 3
+    },
+    {
+     "ref": "Ephesians 2:8-9",
+     "popularity": 3
+    },
+    {
+     "ref": "2 Corinthians 5:17",
+     "popularity": 3
+    },
+    {
+     "ref": "1 John 1:9",
+     "popularity": 3
+    },
+    {
+     "ref": "Galatians 5:22-23",
+     "popularity": 3
+    },
+    {
+     "ref": "Ephesians 4:32",
+     "popularity": 3
+    },
+    {
+     "ref": "Romans 8:39",
+     "popularity": 2
+    },
+    {
+     "ref": "1 Corinthians 13:6-7",
+     "popularity": 2
+    },
+    {
+     "ref": "1 John 4:16",
+     "popularity": 2
+    },
+    {
+     "ref": "1 John 4:18",
+     "popularity": 2
+    },
+    {
+     "ref": "Ephesians 2:4-5",
+     "popularity": 2
+    },
+    {
+     "ref": "Jeremiah 31:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Zephaniah 3:17",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 103:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 103:11-12",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 1:18",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 8:1",
+     "popularity": 2
+    },
+    {
+     "ref": "1 Peter 4:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Ruth 1:16",
+     "popularity": 2
+    }
+   ]
+  },
+  {
+   "theme": "Joy, Praise & Thanksgiving",
+   "intro_idea": "Songs of praise from the Psalms and Paul's 'in every thing give thanks'. A good section for the Thanksgiving season.",
+   "refs": [
+    {
+     "ref": "Psalms 118:24",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 100:1-2",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 100:4-5",
+     "popularity": 3
+    },
+    {
+     "ref": "1 Thessalonians 5:16-18",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 150:6",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 103:1-2",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 139:14",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 16:11",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 34:1",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 34:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 95:1-2",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 136:1",
+     "popularity": 2
+    },
+    {
+     "ref": "Philippians 4:4-5",
+     "popularity": 2
+    },
+    {
+     "ref": "Colossians 3:17",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 9:1-2",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 30:11",
+     "popularity": 2
+    },
+    {
+     "ref": "James 1:17",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 63:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 19:1",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 8:1",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 55:12",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 95:6",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 126:3",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 145:3",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "Prayer",
+   "intro_idea": "The Lord's Prayer in three puzzles, and the promises that God hears those who call on him.",
+   "refs": [
+    {
+     "ref": "Matthew 6:9-10",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 6:11-12",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 7:7-8",
+     "popularity": 3
+    },
+    {
+     "ref": "Jeremiah 33:3",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 19:14",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 51:10",
+     "popularity": 3
+    },
+    {
+     "ref": "Philippians 4:6",
+     "popularity": 3
+    },
+    {
+     "ref": "2 Chronicles 7:14",
+     "popularity": 3,
+     "caution": "Very popular, but often quoted in political settings as a promise to a nation (it was spoken at the dedication of Solomon's temple). Include only after a person reviews it."
+    },
+    {
+     "ref": "Matthew 6:13",
+     "popularity": 2
+    },
+    {
+     "ref": "James 5:16",
+     "popularity": 2
+    },
+    {
+     "ref": "1 John 5:14",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 145:18",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 8:26",
+     "popularity": 2
+    },
+    {
+     "ref": "Hebrews 4:16",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 6:6",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 18:20",
+     "popularity": 2
+    },
+    {
+     "ref": "John 14:13-14",
+     "popularity": 2
+    },
+    {
+     "ref": "Jeremiah 29:12-13",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 116:1-2",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 27:4",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 12:12",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 139:23-24",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 5:3",
+     "popularity": 1
+    },
+    {
+     "ref": "Isaiah 65:24",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "Wisdom & Guidance",
+   "intro_idea": "Short, memorable Proverbs and prayers for direction. Many of them are quick, satisfying solves.",
+   "refs": [
+    {
+     "ref": "James 1:5",
+     "popularity": 3
+    },
+    {
+     "ref": "Micah 6:8",
+     "popularity": 3
+    },
+    {
+     "ref": "Romans 12:2",
+     "popularity": 3
+    },
+    {
+     "ref": "Ecclesiastes 3:1",
+     "popularity": 3
+    },
+    {
+     "ref": "Proverbs 15:1",
+     "popularity": 3
+    },
+    {
+     "ref": "Proverbs 22:6",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 16:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 16:9",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 4:23",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 9:10",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 17:22",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 27:17",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 17:17",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 31:25",
+     "popularity": 2
+    },
+    {
+     "ref": "Proverbs 31:30",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 32:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 25:4-5",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 143:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 90:12",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 30:21",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 37:23-24",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 119:11",
+     "popularity": 2
+    },
+    {
+     "ref": "Colossians 3:23",
+     "popularity": 2
+    },
+    {
+     "ref": "James 1:19",
+     "popularity": 2
+    }
+   ]
+  },
+  {
+   "theme": "God's Promises & Eternal Life",
+   "intro_idea": "Promises of provision, faithfulness and heaven: In my Father's house are many mansions.",
+   "refs": [
+    {
+     "ref": "Romans 8:28",
+     "popularity": 3
+    },
+    {
+     "ref": "John 14:2",
+     "popularity": 3
+    },
+    {
+     "ref": "Romans 6:23",
+     "popularity": 3
+    },
+    {
+     "ref": "Philippians 4:19",
+     "popularity": 3
+    },
+    {
+     "ref": "Philippians 1:6",
+     "popularity": 3
+    },
+    {
+     "ref": "1 Corinthians 2:9",
+     "popularity": 3
+    },
+    {
+     "ref": "John 14:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 28:20",
+     "popularity": 2
+    },
+    {
+     "ref": "Hebrews 13:5",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 40:8",
+     "popularity": 2
+    },
+    {
+     "ref": "Numbers 23:19",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 84:11-12",
+     "popularity": 2
+    },
+    {
+     "ref": "2 Peter 3:9",
+     "popularity": 2
+    },
+    {
+     "ref": "John 5:24",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 10:13",
+     "popularity": 2
+    },
+    {
+     "ref": "1 John 5:11",
+     "popularity": 2
+    },
+    {
+     "ref": "Hebrews 10:23",
+     "popularity": 2
+    },
+    {
+     "ref": "James 1:12",
+     "popularity": 2
+    },
+    {
+     "ref": "Revelation 21:5",
+     "popularity": 1
+    },
+    {
+     "ref": "2 Corinthians 5:1",
+     "popularity": 1
+    },
+    {
+     "ref": "2 Corinthians 1:20",
+     "popularity": 1
+    },
+    {
+     "ref": "Acts 16:31",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "Words of Jesus",
+   "intro_idea": "Red-letter sayings: the I AM statements, the Beatitudes and the Sermon on the Mount.",
+   "refs": [
+    {
+     "ref": "John 14:6",
+     "popularity": 3
+    },
+    {
+     "ref": "John 8:12",
+     "popularity": 3
+    },
+    {
+     "ref": "John 13:34-35",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 6:33",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 6:34",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 11:29-30",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 5:16",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 5:3-4",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 22:37",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 22:39",
+     "popularity": 2
+    },
+    {
+     "ref": "John 3:17",
+     "popularity": 2
+    },
+    {
+     "ref": "John 6:35",
+     "popularity": 2
+    },
+    {
+     "ref": "John 10:10",
+     "popularity": 2
+    },
+    {
+     "ref": "John 15:5",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 5:14",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 5:7-9",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 6:26",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 7:12",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 19:14",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 25:40",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 12:32",
+     "popularity": 2
+    },
+    {
+     "ref": "Revelation 3:20",
+     "popularity": 2
+    },
+    {
+     "ref": "John 8:32",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 10:30-31",
+     "popularity": 2
+    }
+   ]
+  },
+  {
+   "theme": "The Lord Is My Shepherd",
+   "intro_idea": "Psalm 23 verse by verse, Psalms 91 and 121, and Jesus the Good Shepherd of John 10.",
+   "refs": [
+    {
+     "ref": "Psalms 23:1-2",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 23:4",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 23:6",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 91:1-2",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 121:1-2",
+     "popularity": 3
+    },
+    {
+     "ref": "John 10:11",
+     "popularity": 3
+    },
+    {
+     "ref": "Psalms 23:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 23:5",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 91:4",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 91:11-12",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 121:3-4",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 121:7-8",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 100:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 40:11",
+     "popularity": 2
+    },
+    {
+     "ref": "John 10:27-28",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 34:7",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 3:3",
+     "popularity": 2
+    },
+    {
+     "ref": "Psalms 121:5-6",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 91:15",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 27:5",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 61:3-4",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 32:7",
+     "popularity": 1
+    },
+    {
+     "ref": "Psalms 57:1",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "Christmas & the Nativity",
+   "intro_idea": "The Christmas story: the prophets' promise, the angel's visit, Bethlehem, the shepherds and the wise men.",
+   "refs": [
+    {
+     "ref": "Isaiah 9:6",
+     "popularity": 3
+    },
+    {
+     "ref": "Luke 2:10-11",
+     "popularity": 3
+    },
+    {
+     "ref": "Luke 2:13-14",
+     "popularity": 3
+    },
+    {
+     "ref": "Luke 2:7",
+     "popularity": 3
+    },
+    {
+     "ref": "Isaiah 7:14",
+     "popularity": 3
+    },
+    {
+     "ref": "Luke 2:8",
+     "popularity": 3
+    },
+    {
+     "ref": "John 1:14",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 2:2",
+     "popularity": 3
+    },
+    {
+     "ref": "Matthew 1:21",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 1:23",
+     "popularity": 2
+    },
+    {
+     "ref": "Isaiah 9:2",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 2:9",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 2:12",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 2:16",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 2:19",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 2:20",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 1:30-31",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 1:37-38",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 1:46-47",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 2:10",
+     "popularity": 2
+    },
+    {
+     "ref": "John 1:1",
+     "popularity": 2
+    },
+    {
+     "ref": "Matthew 2:9",
+     "popularity": 1
+    },
+    {
+     "ref": "John 1:4-5",
+     "popularity": 1
+    },
+    {
+     "ref": "Galatians 4:4-5",
+     "popularity": 1
+    }
+   ]
+  },
+  {
+   "theme": "Easter & Resurrection",
+   "intro_idea": "From the cross ('It is finished') to the empty tomb ('He is not here: for he is risen').",
+   "refs": [
+    {
+     "ref": "Matthew 28:5-6",
+     "popularity": 3
+    },
+    {
+     "ref": "John 11:25-26",
+     "popularity": 3
+    },
+    {
+     "ref": "Isaiah 53:5",
+     "popularity": 3
+    },
+    {
+     "ref": "1 Corinthians 15:55-57",
+     "popularity": 3
+    },
+    {
+     "ref": "Isaiah 53:6",
+     "popularity": 2
+    },
+    {
+     "ref": "Romans 10:9",
+     "popularity": 2
+    },
+    {
+     "ref": "1 Peter 1:3",
+     "popularity": 2
+    },
+    {
+     "ref": "John 20:29",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 23:42-43",
+     "popularity": 2
+    },
+    {
+     "ref": "John 19:30",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 23:34",
+     "popularity": 2
+    },
+    {
+     "ref": "Mark 16:6",
+     "popularity": 2
+    },
+    {
+     "ref": "Luke 24:34",
+     "popularity": 2
+    },
+    {
+     "ref": "1 Peter 2:24",
+     "popularity": 2
+    },
+    {
+     "ref": "John 1:29",
+     "popularity": 2
+    },
+    {
+     "ref": "Hebrews 12:2",
+     "popularity": 2
+    },
+    {
+     "ref": "Job 19:25",
+     "popularity": 2
+    },
+    {
+     "ref": "Revelation 5:12",
+     "popularity": 2
+    },
+    {
+     "ref": "Philippians 2:8",
+     "popularity": 2
+    },
+    {
+     "ref": "1 Corinthians 15:20",
+     "popularity": 1
+    },
+    {
+     "ref": "Isaiah 53:4",
+     "popularity": 1
+    },
+    {
+     "ref": "2 Corinthians 5:21",
+     "popularity": 1
+    },
+    {
+     "ref": "John 12:24",
+     "popularity": 1
+    }
+   ]
+  }
+ ],
+ "notes": "## Verse pool: 323 KJV passages in 14 themes\n\nI made 14 themes. Joy & Praise and Thankfulness became one theme, \"Joy, Praise & Thanksgiving\", so the count stays in the 10\u201314 range. Psalms of the Shepherd is now \"The Lord Is My Shepherd\".\n\n### How I checked it (verified by running the project's own code)\nI ran every reference through `bc.kjv.passage`, `bc.cipher` and `bc.layout`, using the five KJV copies in `books/bible-cryptograms/sources_cache/`. Script: `/tmp/claude-0/-home-user-carry-dashboard/5acedaa5-415a-5db9-a53f-d97e9a4aa618/scratchpad/check.py`.\n- **All 323 references exist** in the 66-book canon. None is longer than 3 verses, and no verse appears twice anywhere in the pool, including inside ranges.\n- **Copies agree:** for 321 passages all 5 copies agree on the letters. The other 2 have 4 of 5, because bibleapi has a typo: Galatians 2:20 (\"neverthless\") and Ruth 1:16 (\"Entreat\"). The majority text is the one used.\n- **321 of 323 pass the current rules in `bc/select.py` and `bc/layout.py`:** at least 45 letters and at most 9 lines. The 2 that fail are Isaiah 9:6 and Isaiah 43:2, which need 10 lines (see below).\n- **Dry run of selection:** I fed the pool to `bc.select.candidates` with the quotas below. Every theme fills its quota. Only Isaiah 9:6 and Isaiah 43:2 are dropped.\n\n### Length and popularity\n| | Count |\n|---|---|\n| Short (15 words or fewer) | 52 |\n| Medium (16\u201335 words) | 243 |\n| Long (36\u201344 words) | 26 |\n| Letters per passage | 45\u2013172 |\n| Lines needed: 3/4/5/6/7/8/9 | 30/64/57/54/63/32/21 (plus 2 at 10) |\n| Popularity 3 / 2 / 1 | 97 / 185 / 41 |\n\nThe longest usable passage is 44 words. The 9-line layout limit rules out anything near 60 words.\n\n**The popularity scores are my editorial judgement, not data.** The web search limit for this run was already used up, and openbible.info (which has vote-ranked verses by topic) was blocked by the network proxy. So no external ranking was checked and there are no web sources to cite. The scores should be cross-checked against OpenBible.info topic pages or Bible Gateway / YouVersion \"most popular verse\" lists in a follow-up. I recall that YouVersion's most-shared verse in several recent years was Isaiah 41:10, but I could not confirm it in this run.\n\n### Things in the code to know (verified by reading it)\n- **Any caution excludes a verse.** `select.py` skips every candidate with a non-empty `caution`, so I used it only twice, on purpose:\n  - **2 Chronicles 7:14:** often used in political settings; needs a person to review it.\n  - **Song of Solomon 2:11-12:** \"turtle\" means turtledove.\n- **Within a theme**, `select.py` picks by popularity first and then by pool order, so I put the strongest verses first within each popularity level.\n- **The layout limits changed while I was working:** `MAX_LINES` went from 10 to 9 today, and the cell size grew from 0.29 to 0.31 in. **21 passages need exactly 9 lines and would drop if the layout grows again:**\n  - Revelation 21:4, Psalms 40:1-2, Psalms 33:20-22, 2 Corinthians 12:9, Galatians 2:20, 1 Corinthians 13:4-5, Ruth 1:16\n  - Psalms 100:4-5, Matthew 7:7-8, 2 Chronicles 7:14, Romans 8:26, Matthew 6:6, 2 Peter 3:9, John 5:24\n  - John 13:34-35, Matthew 5:7-9, Luke 2:10-11, John 11:25-26, 1 Corinthians 15:55-57, 1 Peter 1:3, Hebrews 12:2\n- **Isaiah 9:6 needs a decision.** It is the signature Christmas verse and needs 10 lines. Either allow 10 lines for a short list of must-have verses (for example, one puzzle alone on a page), or the Christmas section ships without it. Isaiah 43:2 has the same problem.\n\n### Suggested quotas (total 200, matching \"200 King James Verses\" in `bc/config.py`)\n| Theme | Quota | Usable in pool |\n|---|---|---|\n| Comfort in Hard Times | 16 | 22 |\n| Hope | 14 | 20 |\n| Strength & Courage | 16 | 24 |\n| Peace | 14 | 21 |\n| Faith & Trust | 14 | 22 |\n| God's Love & Grace | 15 | 24 |\n| Joy, Praise & Thanksgiving | 15 | 24 |\n| Prayer | 14 | 23 |\n| Wisdom & Guidance | 14 | 24 |\n| God's Promises & Eternal Life | 14 | 22 |\n| Words of Jesus | 15 | 24 |\n| The Lord Is My Shepherd | 14 | 23 |\n| Christmas & the Nativity | 14 | 23 |\n| Easter & Resurrection | 11 | 23 |\n\n\"Usable in pool\" counts passages that pass all rules and have no caution. In the dry run, the number of popularity-3 verses chosen per theme was 4\u201311.\n\n### Splits I made to fit the 9-line limit\n| Too long as a whole | Used instead |\n|---|---|\n| Psalm 23 | 23:1-2, 23:3, 23:4, 23:5, 23:6 |\n| Philippians 4:6-7 | 4:6 (Prayer) and 4:7 (Peace) |\n| John 14:2-3 | 14:2 and 14:3 |\n| Matthew 22:37-39 | 22:37 and 22:39 |\n| Luke 2:8-9 | 2:8 and 2:9 |\n| Lord's Prayer (Matthew 6:9-13) | 6:9-10, 6:11-12, 6:13 |\n| Romans 8:38-39 | 8:39 only |\n| 2 Corinthians 1:3-4 | 1:3 only |\n| Isaiah 43:18-19 | 43:19 only |\n| 2 Corinthians 4:17-18 | 4:16 and 4:18 |\n| Psalms 30:11-12 | 30:11 only |\n| Matthew 2:1-2 | 2:2 only |\n| Philippians 2:9-11 | 2:8 |\n\n`select.py` orders puzzles by length. **Psalm 23, Luke 2 and the Lord's Prayer read much better in Bible order**, so I suggest a Bible-order exception for those themes.\n\n### Beloved verses left out on purpose\n- **Too short (under 45 letters):**\n  - Psalms 23:1 (32 letters) and Psalms 119:105 (43). Psalm 23:1 is used inside Psalms 23:1-2.\n  - Genesis 1:1 (44), Philippians 4:4 (40; used as 4:4-5), 1 Peter 5:7 (42; used as 5:6-7)\n  - Luke 1:37 (34; used as 1:37-38), Psalms 56:3 (33; used as 56:3-4), 2 Corinthians 5:7 (26; used as 5:6-7)\n  - 1 Corinthians 15:55 (44; used as 15:55-57), Matthew 5:8 (42; inside 5:7-9)\n  - 1 John 4:19 (30), John 14:18 (41), Psalms 34:14 (43), John 11:35 (9)\n  - If you lower `MIN_LETTERS` to 40, Psalms 119:105, Genesis 1:1, Philippians 4:4, 1 Peter 5:7 and John 14:18 become usable on their own.\n- **Too long even after trying to split (lines needed):** Philippians 4:8 (13), Joshua 24:15 (12), Joshua 1:8 (12), Habakkuk 3:17-18 (13), Hebrews 4:12 (11), Hebrews 12:1 (10), 1 Corinthians 10:13 (10), Nehemiah 8:10 (10), Matthew 2:11 (10), Micah 5:2 (10), Isaiah 9:7 (12), Hebrews 13:20-21 (14).\n- **Copies disagree:** Luke 2:1 has only 3 of 5 copies agreeing (Caesar / C\u00e6sar / Cesar).\n- **Wording that sounds harsh or causes disputes when read alone:**\n  - Deuteronomy 33:27 ends \"Destroy them\"; Joel 2:25 has \"my great army\"\n  - 1 Thessalonians 4:16-17 (rapture), Malachi 3:10 (tithing), Romans 6:4 (baptism)\n  - 1 Corinthians 16:13 (\"quit you like men\"), Ecclesiastes 4:9-10 (\"woe to him that is alone\")\n  - Psalms 71:9 (old age; may feel bleak to older readers), Habakkuk 3:19 (ends with a note to the choir leader)\n\n### Editorial notes\n- **Near-duplicates:** Isaiah 7:14 and Matthew 1:23 are the same prophecy. Deuteronomy 31:6 and 31:8 are very alike, and so are Psalms 27:14 and 31:24. Pick at most one from each pair if the quotas allow.\n- **Old words worth a one-line glossary:**\n  - charity = love (1 Corinthians 13, 1 Peter 4:8)\n  - careful = anxious (Philippians 4:6)\n  - conversation = conduct (Hebrews 13:5)\n  - suffer = allow (Matthew 19:14)\n  - quickened = made alive (Psalms 119:50, Ephesians 2:5)\n  - stayed = fixed (Isaiah 26:3)\n  - Selah (Psalms 32:7, 61:4, 62:8)\n- **Where the verses come from:** Psalms 93, Matthew 29, John 27, Isaiah 25, Romans 18, Luke 16, Proverbs 15. Psalms makes up 29% of the pool, which is expected for comfort themes.\n\n### Files (scratchpad)\n- `/tmp/claude-0/-home-user-carry-dashboard/5acedaa5-415a-5db9-a53f-d97e9a4aa618/scratchpad/verse_pool_draft.json`: the full pool in the format `select.py` reads (theme, quota, intro, refs with popularity and caution). Copy it to `books/bible-cryptograms/data/verse_pool.json` if you accept it.\n- `/tmp/claude-0/-home-user-carry-dashboard/5acedaa5-415a-5db9-a53f-d97e9a4aa618/scratchpad/pool3.txt.json`: each reference with its majority text, word, letter and line counts, and agreement level."
+}

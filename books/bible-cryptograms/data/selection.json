@@ -1,0 +1,839 @@
+{
+ "themes": [
+  {
+   "name": "Comfort in Hard Times",
+   "intro": ""
+  },
+  {
+   "name": "Peace for an Anxious Heart",
+   "intro": ""
+  },
+  {
+   "name": "Hope That Does Not Fade",
+   "intro": ""
+  },
+  {
+   "name": "Strength & Courage",
+   "intro": ""
+  },
+  {
+   "name": "Faith & Trust",
+   "intro": ""
+  },
+  {
+   "name": "Love, Joy & Praise",
+   "intro": ""
+  },
+  {
+   "name": "Christmas: Good Tidings of Great Joy",
+   "intro": ""
+  }
+ ],
+ "puzzles": [
+  {
+   "ref": "Matthew 11:28",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Isaiah 41:10",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 23:4",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 34:18",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 46:1",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 91:1-2",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Revelation 21:4",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 121:1-2",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 147:3",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "John 14:1",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Isaiah 43:2",
+   "to": "overflow thee",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 23:6",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "John 10:11",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "1 Peter 5:6-7",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Matthew 11:29-30",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 91:4",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "John 14:27",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 55:22",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "John 16:33",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 30:5",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 121:7-8",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "2 Corinthians 12:9",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Isaiah 46:4",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 9:9",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Nahum 1:7",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 3:3",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 40:1-2",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 73:26",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 18:2",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 27:5",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 62:8",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Psalms 94:19",
+   "theme": "Comfort in Hard Times"
+  },
+  {
+   "ref": "Philippians 4:7",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Isaiah 26:3",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Psalms 46:10",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Numbers 6:24-26",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Philippians 4:6",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Matthew 7:7-8",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Jeremiah 33:3",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Psalms 19:14",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Psalms 51:10",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Psalms 4:8",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Colossians 3:15",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Psalms 29:11",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Romans 5:1",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "2 Thessalonians 3:16",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "1 John 5:14",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Psalms 145:18",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Psalms 119:165",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Isaiah 54:10",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Romans 8:26",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Proverbs 3:24",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Romans 12:18",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Isaiah 32:17",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Isaiah 55:12",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Matthew 6:34",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Matthew 6:33",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Matthew 6:26",
+   "theme": "Peace for an Anxious Heart"
+  },
+  {
+   "ref": "Jeremiah 29:11",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Romans 8:28",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Romans 15:13",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "John 14:2",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "John 11:25-26",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Lamentations 3:22-23",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Psalms 27:14",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Philippians 1:6",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Matthew 28:5-6",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Romans 6:23",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Isaiah 53:5",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Philippians 4:19",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "1 Corinthians 15:55-57",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "1 Corinthians 2:9",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Romans 5:5",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Psalms 42:11",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Romans 12:12",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Romans 8:18",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "John 14:3",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "1 Peter 1:3",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Hebrews 6:19",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "John 20:29",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Hebrews 10:23",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Hebrews 13:5",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Hebrews 11:1",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Isaiah 43:19",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "2 Corinthians 4:18",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Hebrews 12:2",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "James 1:12",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Psalms 71:14",
+   "theme": "Hope That Does Not Fade"
+  },
+  {
+   "ref": "Isaiah 40:31",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Joshua 1:9",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Philippians 4:13",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Deuteronomy 31:6",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 27:1",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "2 Timothy 1:7",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Romans 8:31",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Deuteronomy 31:8",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Isaiah 40:29",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Isaiah 41:13",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Isaiah 12:2",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 28:7",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Ephesians 6:10",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 31:24",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Romans 8:37",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Galatians 6:9",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Proverbs 18:10",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Exodus 14:14",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "1 John 4:4",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "1 John 5:4",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 18:32",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 59:16",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 16:8",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 118:14",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "2 Corinthians 4:8-9",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Psalms 138:3",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Hebrews 13:6",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Habakkuk 3:19",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Exodus 15:2",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "1 Chronicles 16:11",
+   "theme": "Strength & Courage"
+  },
+  {
+   "ref": "Proverbs 3:5-6",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "James 1:5",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Hebrews 13:8",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "John 14:6",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Micah 6:8",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "John 8:12",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Psalms 37:4-5",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Romans 12:2",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "John 13:34-35",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Matthew 19:26",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Ecclesiastes 3:1",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Proverbs 15:1",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "2 Timothy 4:7",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Matthew 5:16",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Matthew 5:3-4",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Matthew 22:37",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Hebrews 11:6",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Proverbs 16:3",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Romans 10:17",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Proverbs 16:9",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Psalms 9:10",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Psalms 20:7",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Isaiah 26:4",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Psalms 32:8",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Jeremiah 17:7",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Psalms 34:8",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Proverbs 17:17",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Mark 9:23",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Galatians 2:20",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "Psalms 143:8",
+   "theme": "Faith & Trust"
+  },
+  {
+   "ref": "John 3:16",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 118:24",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Romans 5:8",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 100:1-2",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "1 Thessalonians 5:16-18",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "1 Corinthians 13:13",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 150:6",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "John 15:13",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Galatians 5:22-23",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "1 John 4:7-8",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 100:4-5",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "1 Corinthians 13:4-5",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 103:1-2",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Ephesians 2:8-9",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 139:14",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "2 Corinthians 5:17",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "1 John 1:9",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Ephesians 4:32",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 16:11",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 34:1",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "1 John 4:16",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Romans 8:39",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 136:1",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "1 John 4:18",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Colossians 3:17",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Ephesians 2:4-5",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Psalms 30:11",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Jeremiah 31:3",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "James 1:17",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Zephaniah 3:17",
+   "theme": "Love, Joy & Praise"
+  },
+  {
+   "ref": "Isaiah 9:6",
+   "from": "and his name",
+   "to": "Prince of Peace.",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Luke 2:10-11",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Luke 2:13-14",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Luke 2:7",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Isaiah 7:14",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "John 1:14",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Matthew 2:2",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Matthew 2:11",
+   "from": "and when they had opened",
+   "to": "myrrh.",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Isaiah 9:2",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Matthew 1:21",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Luke 1:30-31",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Matthew 1:23",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Luke 1:46-47",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Matthew 2:10",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "John 1:1",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "John 1:4-5",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Galatians 4:4-5",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Isaiah 11:1",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Isaiah 40:5",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Isaiah 60:1",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Luke 1:32",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  },
+  {
+   "ref": "Titus 2:11",
+   "theme": "Christmas: Good Tidings of Great Joy"
+  }
+ ]
+}
