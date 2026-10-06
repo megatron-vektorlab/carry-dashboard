@@ -95,6 +95,8 @@ def check_interior(errors: list[str], notes: list[str]):
             errors.append(f"puzzle {num}: page not found")
             continue
         t = pages_text[found[num]]
+        if not re.search(r"^Real\b", t, re.M):
+            errors.append(f"puzzle {num}: its code key is not on the same page (page overflow)")
         body = t.split("Code key")[0]
         want = re.sub(r"[^A-Z]", "", "".join(c[0] for w in p["words"] for c in w))
         # letters printed in the page body: code letters + given letters in the answer slots
@@ -150,10 +152,10 @@ def check_interior(errors: list[str], notes: list[str]):
         n = len(r.split())
         if not 6 <= n <= 24:
             errors.append(f"puzzle {p['num']}: reflection has {n} words")
-        if re.search(r"[^A-Za-z0-9 .,;:?'()\-]", r):
+        if re.search(r"[^A-Za-z0-9 .,;:?'\u2019()\-]", r):
             errors.append(f"puzzle {p['num']}: reflection has unexpected characters: {r!r}")
-        vw = re.findall(r"[a-z']+", p["text"].lower())
-        rw = re.findall(r"[a-z']+", r.lower())
+        vw = re.findall(r"[a-z']+", p["text"].lower().replace("\u2019", "'"))
+        rw = re.findall(r"[a-z']+", r.lower().replace("\u2019", "'"))
         grams = {tuple(vw[i:i + 5]) for i in range(len(vw) - 4)}
         if any(tuple(rw[i:i + 5]) in grams for i in range(len(rw) - 4)):
             errors.append(f"puzzle {p['num']}: reflection repeats five words of the verse")

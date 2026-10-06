@@ -27,7 +27,7 @@
 #let setup(body) = {
   set document(title: "Large Print Bible Cryptograms", author: "Ivan Sikuten")
   set page(width: 8.5in, height: 11in,
-    margin: (inside: 0.8in, outside: 0.55in, top: 0.72in, bottom: 0.7in),
+    margin: (inside: 0.9in, outside: 0.45in, top: 0.72in, bottom: 0.7in),
     header-ascent: 0.16in, footer-descent: 0.18in)
   set text(font: sans, size: body-size, fill: ink, lang: "en", hyphenate: false)
   set par(leading: 0.62em, spacing: 0.95em, justify: false)
@@ -83,14 +83,14 @@
 
 // ---------- the puzzle ----------
 #let cell(c, g) = box(width: cw, stack(dir: ttb, spacing: 0.03in,
-  box(width: cw - 4pt, height: ah, stroke: (bottom: 1.3pt + ink),
+  box(width: cw - 7pt, height: ah, stroke: (bottom: 1.3pt + ink),
     align(center + bottom, pad(bottom: 3pt, text(size: answer-size, weight: "bold", g)))),
   box(width: cw, height: ch, align(center + horizon, text(size: cipher-size, c)))
 ))
 
-// A cell whose letter was just found (worked example): shaded write-in space.
+// A cell whose letter was just found (worked example): the write-in space is boxed.
 #let cell-new(c, g) = box(width: cw, stack(dir: ttb, spacing: 0.03in,
-  box(width: cw - 4pt, height: ah, fill: paper-tint, stroke: (bottom: 1.3pt + ink),
+  box(width: cw - 4pt, height: ah, stroke: 1.6pt + ink, radius: 2pt,
     align(center + bottom, pad(bottom: 3pt, text(size: answer-size, weight: "bold", g)))),
   box(width: cw, height: ch, align(center + horizon, text(size: cipher-size, weight: "bold", c)))
 ))
@@ -99,7 +99,7 @@
 // at the top of an empty space and look like an apostrophe (blind-test finding).
 #let pcell(c) = box(width: pw, stack(dir: ttb, spacing: 0.03in,
   box(height: ah),
-  box(height: ch, align(center + horizon, text(size: cipher-size, c)))
+  box(height: ch, align(center + horizon, text(size: cipher-size, weight: "bold", if c == "'" { "\u{2019}" } else { c })))
 ))
 
 #let word(..cells) = box(cells.pos().join())
@@ -107,20 +107,35 @@
 #let cipher-block(words) = par(leading: line-gap, justify: false, words.join(h(gap-word, weak: true)))
 
 // The code key: every code letter, how often it appears, and a space to write its real letter.
-#let key-table(counts, given) = {
-  let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".clusters()
+// wide: two bands (A-M, N-Z) with columns twice as wide, used whenever the page has room.
+#let key-band(letters, counts, given) = {
   let sep = 0.9pt + rule-grey      // visible column rules keep two-digit counts apart
-  block(width: 100%, breakable: false, grid(columns: (auto,) + (1fr,) * 26, row-gutter: 0pt,
-    box(height: 0.27in, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Code])),
-    ..letters.map(l => box(width: 100%, height: 0.27in, stroke: (top: 1pt + ink, left: sep, right: sep),
-      align(center + horizon, text(size: 16pt, weight: "bold", l)))),
-    box(height: 0.25in, inset: (right: 5pt), align(right + horizon, text(size: 16pt)[Used])),
-    ..letters.map(l => box(width: 100%, height: 0.25in, stroke: (left: sep, right: sep),
-      align(center + horizon, text(size: 16pt, tracking: -1pt, if counts.at(l, default: 0) > 0 { str(counts.at(l)) } else { "–" })))),
-    box(height: 0.36in, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Real])),
-    ..letters.map(l => box(width: 100%, height: 0.36in, stroke: (bottom: 1pt + ink, top: 0.6pt + faint, left: sep, right: sep),
-      align(center + horizon, text(size: 18pt, weight: "bold", given.at(l, default: ""))))),
-  ))
+  let n = letters.len()
+  // row heights: roomier in the two-band key, compact in the one-row key (long verses)
+  let (hc, hu, hr) = if n > 13 { (0.27in, 0.25in, 0.36in) } else { (0.29in, 0.27in, 0.40in) }
+  grid(columns: (auto,) + (1fr,) * n, row-gutter: 0pt,
+    box(height: hc, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Code])),
+    ..letters.map(l => box(width: 100%, height: hc, stroke: (top: 1pt + ink, left: sep, right: sep),
+      align(center + horizon, text(size: if n > 13 { 16pt } else { 18pt }, weight: "bold", l)))),
+    box(height: hu, inset: (right: 5pt), align(right + horizon, text(size: 16pt)[Used])),
+    ..letters.map(l => box(width: 100%, height: hu, stroke: (left: sep, right: sep),
+      align(center + horizon, text(size: 16pt, tracking: if n > 13 { -1pt } else { 0pt },
+        if counts.at(l, default: 0) > 0 { str(counts.at(l)) } else { "–" })))),
+    box(height: hr, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Real])),
+    ..letters.map(l => box(width: 100%, height: hr, stroke: (bottom: 1pt + ink, top: 0.6pt + faint, left: sep, right: sep),
+      align(center + horizon, text(size: 20pt, weight: "bold", given.at(l, default: ""))))),
+  )
+}
+
+#let key-table(counts, given, wide: false) = {
+  let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".clusters()
+  block(width: 100%, breakable: false, if wide {
+    key-band(letters.slice(0, 13), counts, given)
+    v(0.12in)
+    key-band(letters.slice(13), counts, given)
+  } else {
+    key-band(letters, counts, given)
+  })
 }
 
 // Ruled notes area filling the rest of the page.
@@ -129,24 +144,25 @@
   let n = calc.floor((size.height - 0.45in) / gap)
   if n >= 2 {
     text(size: 16pt, weight: "bold")[Notes]
-    for i in range(n) { v(gap - 0.6pt, weak: false); line(length: 100%, stroke: 0.6pt + faint) }
+    for i in range(n) { v(gap - 1pt, weak: false); line(length: 100%, stroke: 1pt + rule-grey) }
   }
 }))
 
 // One puzzle per page.
 #let puzzle(num: 0, level: 1, level-name: "", words: (), counts: (:), given: (:), given-note: "",
-            hint-label: none, sol-label: none) = {
+            hint-label: none, hint2-label: none, hint3-label: none, sol-label: none, wide-key: false) = {
+  let pg(l) = context counter(page).at(l).first()
   block(width: 100%, stroke: (top: 1.6pt + ink, bottom: 0.8pt + ink), inset: (x: 0pt, y: 5pt),
     grid(columns: (auto, auto, 1fr), column-gutter: 12pt, align: (left + horizon, left + horizon, right + horizon),
       text(font: serif, size: 22pt, weight: "bold")[Puzzle #num],
       [#stars(level) #h(4pt) #text(size: 16pt)[#level-name]],
-      text(size: 16pt)[Hints p. #context counter(page).at(hint-label).first() · Answer p. #context counter(page).at(sol-label).first()]))
+      text(size: 16pt)[Answer p. #pg(sol-label)]))
   v(2pt)
-  text(size: 16pt, given-note)
+  block(width: 100%, text(size: 16pt)[#given-note #h(1fr) Hints p. #pg(hint-label) · #pg(hint2-label) · #pg(hint3-label)])
   v(0.10in)
   cipher-block(words)
   v(0.22in)
-  key-table(counts, given)
+  key-table(counts, given, wide: wide-key)
   v(0.25in)
   notes-area()
 }
@@ -154,7 +170,7 @@
 // ---------- theme opener ----------
 #let theme-opener(num: 1, name: "", intro: [], verses: "", first: 0, last: 0) = {
   v(1.3in)
-  align(center, text(font: display, size: 22pt, weight: "semibold", fill: soft, tracking: 3pt, upper("Part " + str(num))))
+  align(center, text(font: display, size: 22pt, weight: "semibold", fill: soft, tracking: 3pt, upper("Part " + ("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine").at(num - 1))))
   v(0.1in)
   align(center, text(font: display, size: 46pt, weight: "bold", name))
   v(0.15in)

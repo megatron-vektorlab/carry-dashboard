@@ -25,7 +25,7 @@ def main():
         "TITLE_LEN": str(len(config.TITLE) + len(config.SUBTITLE)),
         "COUNT": str(len(pz)),
         "PARTS": str(len(parts)),
-        "PART_NAMES": ", ".join(parts[:-1]) + " and " + parts[-1] if len(parts) > 1 else parts[0],
+        "PART_NAMES": "; ".join(parts[:-1]) + "; and " + parts[-1] if len(parts) > 1 else parts[0],
         "PAGES": str(pages),
         "SPINE": f"{g['spine']:.4f}",
         "PRICE_USD": f"${PRICES['USD']:.2f}",

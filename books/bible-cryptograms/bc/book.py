@@ -16,11 +16,12 @@ import sys
 
 import typst
 
-from . import config, kjv
+from . import config, kjv, layout
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, "build", "book")
 LEVEL_NAMES = {1: "Easy", 2: "Medium", 3: "Hard", 4: "Expert"}
+WIDE_KEY_MAX_LINES = 7     # up to 7 lines of code text, the page has room for the two-band code key
 
 
 def _load(name, default=None):
@@ -30,6 +31,11 @@ def _load(name, default=None):
             return default
         raise FileNotFoundError(path)
     return json.load(open(path))
+
+
+def typo(s: str) -> str:
+    """Typewriter apostrophes -> typographic ones (text from data files bypasses Typst's smart quotes)."""
+    return s.replace("'", "\u2019")
 
 
 def display_ref(ref: str) -> str:
@@ -58,7 +64,7 @@ def build_data():
         nums = [p["num"] for p in pz if p["theme"] == t["name"]]
         if not nums:
             continue
-        themes.append({"name": t["name"], "intro": intros.get(t["name"], ""), "first": min(nums), "last": max(nums)})
+        themes.append({"name": t["name"], "intro": typo(intros.get(t["name"], "")), "first": min(nums), "last": max(nums)})
     puzzles = []
     for p in pz:
         counts = collections.Counter(c for c in p["cipher"] if c.isalpha())
@@ -68,11 +74,12 @@ def build_data():
             "counts": dict(counts), "given": p["given"],
             "given_list": [f"{c} = {v}" for c, v in sorted(p["given"].items())],
             "ref": display_ref(p["ref"]) + (" (part)" if p.get("partial") else ""),
-            "text": ("\u2026" if p.get("starts_mid") else "") + p["text"] + ("\u2026" if p.get("ends_mid") else ""),
+            "text": typo(("\u2026" if p.get("starts_mid") else "") + p["text"] + ("\u2026" if p.get("ends_mid") else "")),
             "verse_text": p["text"], "book": p["book"],
             "chapter": kjv.parse_ref(p["ref"])[1], "verse": kjv.parse_ref(p["ref"])[2],
             "hints": p["hints"],
-            "reflection": refl.get(p["ref"], ""),
+            "wide_key": layout.lines_needed(p["cipher"]) <= WIDE_KEY_MAX_LINES,
+            "reflection": typo(refl.get(p["ref"], "")),
         })
     from . import cipher, example
     book_words = collections.Counter(w for p in pz for w in cipher.words(p["text"]))

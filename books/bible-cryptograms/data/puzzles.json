@@ -73,6 +73,7 @@
     },
     "3": {
      "word": "SHEPHERD",
+     "position": 5,
      "ref": "John 10:11"
     }
    },
@@ -177,6 +178,7 @@
     },
     "3": {
      "word": "LABOUR",
+     "position": 7,
      "ref": "Matthew 11:28"
     }
    },
@@ -279,6 +281,7 @@
     },
     "3": {
      "word": "BINDETH",
+     "position": 8,
      "ref": "Psalms 147:3"
     }
    },
@@ -383,6 +386,7 @@
     },
     "3": {
      "word": "SHIELD",
+     "position": 7,
      "ref": "Psalms 3:3"
     }
    },
@@ -480,6 +484,7 @@
     },
     "3": {
      "word": "STRENGTH",
+     "position": 6,
      "ref": "Psalms 46:1"
     }
    },
@@ -582,6 +587,7 @@
     },
     "3": {
      "word": "STRENGTH",
+     "position": 11,
      "ref": "Psalms 73:26"
     }
    },
@@ -681,6 +687,7 @@
     },
     "3": {
      "word": "MULTITUDE",
+     "position": 3,
      "ref": "Psalms 94:19"
     }
    },
@@ -781,7 +788,8 @@
      ]
     },
     "3": {
-     "word": "TROUBLE",
+     "word": "OPPRESSED",
+     "position": 10,
      "ref": "Psalms 9:9"
     }
    },
@@ -883,6 +891,7 @@
     },
     "3": {
      "word": "TROUBLE",
+     "position": 12,
      "ref": "Nahum 1:7"
     }
    },
@@ -985,6 +994,7 @@
     },
     "3": {
      "word": "TROUBLED",
+     "position": 6,
      "ref": "John 14:1"
     }
    },
@@ -1082,6 +1092,7 @@
     },
     "3": {
      "word": "YOURSELVES",
+     "position": 2,
      "ref": "1 Peter 5:6-7"
     }
    },
@@ -1198,6 +1209,7 @@
     },
     "3": {
      "word": "INFIRMITIES",
+     "position": 29,
      "ref": "2 Corinthians 12:9"
     }
    },
@@ -1297,6 +1309,7 @@
     },
     "3": {
      "word": "RIGHTEOUSNESS",
+     "position": 37,
      "ref": "Isaiah 41:10"
     }
    },
@@ -1397,6 +1410,7 @@
     },
     "3": {
      "word": "OVERFLOW",
+     "position": 19,
      "ref": "Isaiah 43:2"
     }
    },
@@ -1496,6 +1510,7 @@
     },
     "3": {
      "word": "TRIBULATION",
+     "position": 21,
      "ref": "John 16:33"
     }
    },
@@ -1592,7 +1607,8 @@
      ]
     },
     "3": {
-     "word": "COMING",
+     "word": "PRESERVE",
+     "position": 4,
      "ref": "Psalms 121:7-8"
     }
    },
@@ -1707,6 +1723,7 @@
     },
     "3": {
      "word": "SALVATION",
+     "position": 28,
      "ref": "Psalms 18:2"
     }
    },
@@ -1803,6 +1820,7 @@
     },
     "3": {
      "word": "THROUGH",
+     "position": 5,
      "ref": "Psalms 23:4"
     }
    },
@@ -1902,6 +1920,7 @@
     },
     "3": {
      "word": "GOODNESS",
+     "position": 2,
      "ref": "Psalms 23:6"
     }
    },
@@ -1998,6 +2017,7 @@
     },
     "3": {
      "word": "TABERNACLE",
+     "position": 19,
      "ref": "Psalms 27:5"
     }
    },
@@ -2098,6 +2118,7 @@
     },
     "3": {
      "word": "ENDURETH",
+     "position": 4,
      "ref": "Psalms 30:5"
     }
    },
@@ -2194,6 +2215,7 @@
     },
     "3": {
      "word": "FEATHERS",
+     "position": 7,
      "ref": "Psalms 91:4"
     }
    },
@@ -2290,6 +2312,7 @@
     },
     "3": {
      "word": "BEFORE",
+     "position": 13,
      "ref": "Psalms 62:8"
     }
    },
@@ -2386,6 +2409,7 @@
     },
     "3": {
      "word": "TROUBLED",
+     "position": 26,
      "ref": "John 14:27"
     }
    },
@@ -2482,6 +2506,7 @@
     },
     "3": {
      "word": "COMETH",
+     "position": 12,
      "ref": "Psalms 121:1-2"
     }
    },
@@ -2601,6 +2626,7 @@
     },
     "3": {
      "word": "DELIVER",
+     "position": 32,
      "ref": "Isaiah 46:4"
     }
    },
@@ -2702,6 +2728,7 @@
     },
     "3": {
      "word": "CONTRITE",
+     "position": 20,
      "ref": "Psalms 34:18"
     }
    },
@@ -2799,6 +2826,7 @@
     },
     "3": {
      "word": "NEITHER",
+     "position": 18,
      "ref": "Revelation 21:4"
     }
    },
@@ -2897,6 +2925,7 @@
     },
     "3": {
      "word": "RIGHTEOUS",
+     "position": 17,
      "ref": "Psalms 55:22"
     }
    },
@@ -2989,6 +3018,7 @@
     },
     "3": {
      "word": "BURDEN",
+     "position": 33,
      "ref": "Matthew 11:29-30"
     }
    },
@@ -3102,6 +3132,7 @@
     },
     "3": {
      "word": "ESTABLISHED",
+     "position": 39,
      "ref": "Psalms 40:1-2"
     }
    },
@@ -3214,6 +3245,7 @@
     },
     "3": {
      "word": "ALMIGHTY",
+     "position": 19,
      "ref": "Psalms 91:1-2"
     }
    },
@@ -3330,6 +3362,7 @@
     },
     "3": {
      "word": "HIMSELF",
+     "position": 6,
      "ref": "2 Thessalonians 3:16"
     }
    },
@@ -3429,6 +3462,7 @@
     },
     "3": {
      "word": "NOTHING",
+     "position": 10,
      "ref": "Psalms 119:165"
     }
    },
@@ -3533,6 +3567,7 @@
     },
     "3": {
      "word": "TRUTH",
+     "position": 19,
      "ref": "Psalms 145:18"
     }
    },
@@ -3631,6 +3666,7 @@
     },
     "3": {
      "word": "STRENGTH",
+     "position": 5,
      "ref": "Psalms 29:11"
     }
    },
@@ -3732,6 +3768,7 @@
     },
     "3": {
      "word": "PEACEABLY",
+     "position": 12,
      "ref": "Romans 12:18"
     }
    },
@@ -3831,6 +3868,7 @@
     },
     "3": {
      "word": "JUSTIFIED",
+     "position": 3,
      "ref": "Romans 5:1"
     }
    },
@@ -3932,6 +3970,7 @@
     },
     "3": {
      "word": "CREATE",
+     "position": 1,
      "ref": "Psalms 51:10"
     }
    },
@@ -4033,6 +4072,7 @@
     },
     "3": {
      "word": "MAKEST",
+     "position": 15,
      "ref": "Psalms 4:8"
     }
    },
@@ -4132,7 +4172,8 @@
      ]
     },
     "3": {
-     "word": "ACCORDING",
+     "word": "CONFIDENCE",
+     "position": 5,
      "ref": "1 John 5:14"
     }
    },
@@ -4237,6 +4278,7 @@
     },
     "3": {
      "word": "RIGHTEOUSNESS",
+     "position": 5,
      "ref": "Isaiah 32:17"
     }
    },
@@ -4336,6 +4378,7 @@
     },
     "3": {
      "word": "RIGHTEOUSNESS",
+     "position": 11,
      "ref": "Matthew 6:33"
     }
    },
@@ -4440,6 +4483,7 @@
     },
     "3": {
      "word": "SUFFICIENT",
+     "position": 19,
      "ref": "Matthew 6:34"
     }
    },
@@ -4538,7 +4582,8 @@
      ]
     },
     "3": {
-     "word": "GRACIOUS",
+     "word": "COUNTENANCE",
+     "position": 26,
      "ref": "Numbers 6:24-26"
     }
    },
@@ -4671,6 +4716,7 @@
     },
     "3": {
      "word": "SUPPLICATION",
+     "position": 12,
      "ref": "Philippians 4:6"
     }
    },
@@ -4770,6 +4816,7 @@
     },
     "3": {
      "word": "UNDERSTANDING",
+     "position": 9,
      "ref": "Philippians 4:7"
     }
    },
@@ -4869,6 +4916,7 @@
     },
     "3": {
      "word": "MEDITATION",
+     "position": 9,
      "ref": "Psalms 19:14"
     }
    },
@@ -4964,6 +5012,7 @@
     },
     "3": {
      "word": "INTERCESSION",
+     "position": 25,
      "ref": "Romans 8:26"
     }
    },
@@ -5060,6 +5109,7 @@
     },
     "3": {
      "word": "TRUSTETH",
+     "position": 16,
      "ref": "Isaiah 26:3"
     }
    },
@@ -5158,6 +5208,7 @@
     },
     "3": {
      "word": "EXALTED",
+     "position": 12,
      "ref": "Psalms 46:10"
     }
    },
@@ -5254,6 +5305,7 @@
     },
     "3": {
      "word": "KNOWEST",
+     "position": 18,
      "ref": "Jeremiah 33:3"
     }
    },
@@ -5352,6 +5404,7 @@
     },
     "3": {
      "word": "AFRAID",
+     "position": 9,
      "ref": "Proverbs 3:24"
     }
    },
@@ -5450,6 +5503,7 @@
     },
     "3": {
      "word": "RECEIVETH",
+     "position": 26,
      "ref": "Matthew 7:7-8"
     }
    },
@@ -5567,6 +5621,7 @@
     },
     "3": {
      "word": "THANKFUL",
+     "position": 24,
      "ref": "Colossians 3:15"
     }
    },
@@ -5661,6 +5716,7 @@
     },
     "3": {
      "word": "MOUNTAINS",
+     "position": 3,
      "ref": "Isaiah 54:10"
     }
    },
@@ -5754,6 +5810,7 @@
     },
     "3": {
      "word": "MOUNTAINS",
+     "position": 15,
      "ref": "Isaiah 55:12"
     }
    },
@@ -5848,6 +5905,7 @@
     },
     "3": {
      "word": "HEAVENLY",
+     "position": 21,
      "ref": "Matthew 6:26"
     }
    },
@@ -5947,6 +6005,7 @@
     },
     "3": {
      "word": "PROFESSION",
+     "position": 6,
      "ref": "Hebrews 10:23"
     }
    },
@@ -6048,6 +6107,7 @@
     },
     "3": {
      "word": "SUBSTANCE",
+     "position": 5,
      "ref": "Hebrews 11:1"
     }
    },
@@ -6150,6 +6210,7 @@
     },
     "3": {
      "word": "STEDFAST",
+     "position": 14,
      "ref": "Hebrews 6:19"
     }
    },
@@ -6249,6 +6310,7 @@
     },
     "3": {
      "word": "FATHER'S",
+     "position": 3,
      "ref": "John 14:2"
     }
    },
@@ -6347,6 +6409,7 @@
     },
     "3": {
      "word": "ACCORDING",
+     "position": 9,
      "ref": "Philippians 4:19"
     }
    },
@@ -6450,6 +6513,7 @@
     },
     "3": {
      "word": "STRENGTHEN",
+     "position": 12,
      "ref": "Psalms 27:14"
     }
    },
@@ -6550,6 +6614,7 @@
     },
     "3": {
      "word": "CONTINUALLY",
+     "position": 5,
      "ref": "Psalms 71:14"
     }
    },
@@ -6649,6 +6714,7 @@
     },
     "3": {
      "word": "TRIBULATION",
+     "position": 6,
      "ref": "Romans 12:12"
     }
    },
@@ -6750,6 +6816,7 @@
     },
     "3": {
      "word": "ETERNAL",
+     "position": 14,
      "ref": "Romans 6:23"
     }
    },
@@ -6847,6 +6914,7 @@
     },
     "3": {
      "word": "RESURRECTION",
+     "position": 28,
      "ref": "1 Peter 1:3"
     }
    },
@@ -6944,6 +7012,7 @@
     },
     "3": {
      "word": "DESPISING",
+     "position": 23,
      "ref": "Hebrews 12:2"
     }
    },
@@ -7044,6 +7113,7 @@
     },
     "3": {
      "word": "CONVERSATION",
+     "position": 3,
      "ref": "Hebrews 13:5"
     }
    },
@@ -7143,6 +7213,7 @@
     },
     "3": {
      "word": "TRANSGRESSIONS",
+     "position": 7,
      "ref": "Isaiah 53:5"
     }
    },
@@ -7240,6 +7311,7 @@
     },
     "3": {
      "word": "TEMPTATION",
+     "position": 7,
      "ref": "James 1:12"
     }
    },
@@ -7339,6 +7411,7 @@
     },
     "3": {
      "word": "RESURRECTION",
+     "position": 8,
      "ref": "John 11:25-26"
     }
    },
@@ -7455,6 +7528,7 @@
     },
     "3": {
      "word": "FAITHFULNESS",
+     "position": 25,
      "ref": "Lamentations 3:22-23"
     }
    },
@@ -7569,6 +7643,7 @@
     },
     "3": {
      "word": "CRUCIFIED",
+     "position": 22,
      "ref": "Matthew 28:5-6"
     }
    },
@@ -7687,6 +7762,7 @@
     },
     "3": {
      "word": "COUNTENANCE",
+     "position": 32,
      "ref": "Psalms 42:11"
     }
    },
@@ -7784,6 +7860,7 @@
     },
     "3": {
      "word": "ACCORDING",
+     "position": 22,
      "ref": "Romans 8:28"
     }
    },
@@ -7880,6 +7957,7 @@
     },
     "3": {
      "word": "BELIEVING",
+     "position": 14,
      "ref": "Romans 15:13"
     }
    },
@@ -7977,7 +8055,8 @@
      ]
     },
     "3": {
-     "word": "MYSELF",
+     "word": "RECEIVE",
+     "position": 16,
      "ref": "John 14:3"
     }
    },
@@ -8078,6 +8157,7 @@
     },
     "3": {
      "word": "STRENGTH",
+     "position": 21,
      "ref": "1 Corinthians 15:55-57"
     }
    },
@@ -8214,6 +8294,7 @@
     },
     "3": {
      "word": "SUFFERINGS",
+     "position": 6,
      "ref": "Romans 8:18"
     }
    },
@@ -8312,6 +8393,7 @@
     },
     "3": {
      "word": "ASHAMED",
+     "position": 5,
      "ref": "Romans 5:5"
     }
    },
@@ -8410,6 +8492,7 @@
     },
     "3": {
      "word": "WILDERNESS",
+     "position": 26,
      "ref": "Isaiah 43:19"
     }
    },
@@ -8508,6 +8591,7 @@
     },
     "3": {
      "word": "BELIEVED",
+     "position": 13,
      "ref": "John 20:29"
     }
    },
@@ -8606,6 +8690,7 @@
     },
     "3": {
      "word": "TEMPORAL",
+     "position": 26,
      "ref": "2 Corinthians 4:18"
     }
    },
@@ -8699,7 +8784,8 @@
      ]
     },
     "3": {
-     "word": "WRITTEN",
+     "word": "PREPARED",
+     "position": 26,
      "ref": "1 Corinthians 2:9"
     }
    },
@@ -8794,6 +8880,7 @@
     },
     "3": {
      "word": "THOUGHTS",
+     "position": 5,
      "ref": "Jeremiah 29:11"
     }
    },
@@ -8886,6 +8973,7 @@
     },
     "3": {
      "word": "CONFIDENT",
+     "position": 2,
      "ref": "Philippians 1:6"
     }
    },
@@ -8987,6 +9075,7 @@
     },
     "3": {
      "word": "CONTINUALLY",
+     "position": 10,
      "ref": "1 Chronicles 16:11"
     }
    },
@@ -9087,6 +9176,7 @@
     },
     "3": {
      "word": "BRETHREN",
+     "position": 3,
      "ref": "Ephesians 6:10"
     }
    },
@@ -9189,6 +9279,7 @@
     },
     "3": {
      "word": "STRENGTHENETH",
+     "position": 9,
      "ref": "Philippians 4:13"
     }
    },
@@ -9288,6 +9379,7 @@
     },
     "3": {
      "word": "SALVATION",
+     "position": 12,
      "ref": "Psalms 118:14"
     }
    },
@@ -9388,6 +9480,7 @@
     },
     "3": {
      "word": "STRENGTH",
+     "position": 8,
      "ref": "Psalms 18:32"
     }
    },
@@ -9491,6 +9584,7 @@
     },
     "3": {
      "word": "AGAINST",
+     "position": 17,
      "ref": "Romans 8:31"
     }
    },
@@ -9592,6 +9686,7 @@
     },
     "3": {
      "word": "RIGHTEOUS",
+     "position": 11,
      "ref": "Proverbs 18:10"
     }
    },
@@ -9695,6 +9790,7 @@
     },
     "3": {
      "word": "CONQUERORS",
+     "position": 10,
      "ref": "Romans 8:37"
     }
    },
@@ -9799,6 +9895,7 @@
     },
     "3": {
      "word": "FIGHT",
+     "position": 4,
      "ref": "Exodus 14:14"
     }
    },
@@ -9897,6 +9994,7 @@
     },
     "3": {
      "word": "CHILDREN",
+     "position": 6,
      "ref": "1 John 4:4"
     }
    },
@@ -9996,6 +10094,7 @@
     },
     "3": {
      "word": "WHATSOEVER",
+     "position": 2,
      "ref": "1 John 5:4"
     }
    },
@@ -10093,6 +10192,7 @@
     },
     "3": {
      "word": "PERSECUTED",
+     "position": 17,
      "ref": "2 Corinthians 4:8-9"
     }
    },
@@ -10210,7 +10310,8 @@
      ]
     },
     "3": {
-     "word": "SALVATION",
+     "word": "HABITATION",
+     "position": 24,
      "ref": "Exodus 15:2"
     }
    },
@@ -10308,6 +10409,7 @@
     },
     "3": {
      "word": "BOLDLY",
+     "position": 5,
      "ref": "Hebrews 13:6"
     }
    },
@@ -10407,6 +10509,7 @@
     },
     "3": {
      "word": "WHITHERSOEVER",
+     "position": 28,
      "ref": "Joshua 1:9"
     }
    },
@@ -10505,6 +10608,7 @@
     },
     "3": {
      "word": "STRENGTHENEDST",
+     "position": 11,
      "ref": "Psalms 138:3"
     }
    },
@@ -10602,6 +10706,7 @@
     },
     "3": {
      "word": "BECAUSE",
+     "position": 9,
      "ref": "Psalms 16:8"
     }
    },
@@ -10698,6 +10803,7 @@
     },
     "3": {
      "word": "REJOICETH",
+     "position": 22,
      "ref": "Psalms 28:7"
     }
    },
@@ -10801,6 +10907,7 @@
     },
     "3": {
      "word": "STRENGTHEN",
+     "position": 8,
      "ref": "Psalms 31:24"
     }
    },
@@ -10901,6 +11008,7 @@
     },
     "3": {
      "word": "SPIRIT",
+     "position": 8,
      "ref": "2 Timothy 1:7"
     }
    },
@@ -11001,6 +11109,7 @@
     },
     "3": {
      "word": "SAYING",
+     "position": 12,
      "ref": "Isaiah 41:13"
     }
    },
@@ -11100,6 +11209,7 @@
     },
     "3": {
      "word": "SEASON",
+     "position": 13,
      "ref": "Galatians 6:9"
     }
    },
@@ -11200,6 +11310,7 @@
     },
     "3": {
      "word": "INCREASETH",
+     "position": 15,
      "ref": "Isaiah 40:29"
     }
    },
@@ -11298,6 +11409,7 @@
     },
     "3": {
      "word": "COURAGE",
+     "position": 7,
      "ref": "Deuteronomy 31:6"
     }
    },
@@ -11395,6 +11507,7 @@
     },
     "3": {
      "word": "SALVATION",
+     "position": 8,
      "ref": "Psalms 27:1"
     }
    },
@@ -11493,6 +11606,7 @@
     },
     "3": {
      "word": "SALVATION",
+     "position": 5,
      "ref": "Isaiah 12:2"
     }
    },
@@ -11590,6 +11704,7 @@
     },
     "3": {
      "word": "STRENGTH",
+     "position": 11,
      "ref": "Isaiah 40:31"
     }
    },
@@ -11618,98 +11733,6 @@
     }
    ],
    "num": 115
-  },
-  {
-   "ref": "Habakkuk 3:19",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Habakkuk",
-   "theme": "Strength & Courage",
-   "level": 4,
-   "text": "The LORD God is my strength, and he will make my feet like hinds' feet, and he will make me to walk upon mine high places. To the chief singer on my stringed instruments.",
-   "cipher": "CSF AWUX BWX GO YR OCUFPBCS, DPX SF LGAA YDZF YR KFFC AGZF SGPXO' KFFC, DPX SF LGAA YDZF YF CW LDAZ HIWP YGPF SGBS IADTFO. CW CSF TSGFK OGPBFU WP YR OCUGPBFX GPOCUHYFPCO.",
-   "key": {
-    "A": "D",
-    "B": "Q",
-    "C": "T",
-    "D": "X",
-    "E": "F",
-    "F": "K",
-    "G": "B",
-    "H": "S",
-    "I": "G",
-    "J": "M",
-    "K": "Z",
-    "L": "A",
-    "M": "Y",
-    "N": "P",
-    "O": "W",
-    "P": "I",
-    "Q": "E",
-    "R": "U",
-    "S": "O",
-    "T": "C",
-    "U": "H",
-    "V": "N",
-    "W": "L",
-    "X": "J",
-    "Y": "R",
-    "Z": "V"
-   },
-   "given": {},
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Habakkuk",
-     "letters": [
-      [
-       "F",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "C",
-       "T"
-      ],
-      [
-       "G",
-       "I"
-      ]
-     ]
-    },
-    "3": {
-     "word": "INSTRUMENTS",
-     "ref": "Habakkuk 3:19"
-    }
-   },
-   "letters": 132,
-   "lines": 8,
-   "distinct": 20,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Habakkuk 3:19",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 116
   },
   {
    "ref": "Deuteronomy 31:8",
@@ -11775,6 +11798,7 @@
     },
     "3": {
      "word": "DISMAYED",
+     "position": 29,
      "ref": "Deuteronomy 31:8"
     }
    },
@@ -11785,6 +11809,99 @@
    "agreement": [
     {
      "ref": "Deuteronomy 31:8",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 116
+  },
+  {
+   "ref": "Habakkuk 3:19",
+   "partial": true,
+   "starts_mid": false,
+   "ends_mid": true,
+   "book": "Habakkuk",
+   "theme": "Strength & Courage",
+   "level": 4,
+   "text": "The LORD God is my strength, and he will make my feet like hinds' feet, and he will make me to walk upon mine high places.",
+   "cipher": "CSF AWUX BWX GO YR OCUFPBCS, DPX SF LGAA YDZF YR KFFC AGZF SGPXO' KFFC, DPX SF LGAA YDZF YF CW LDAZ HIWP YGPF SGBS IADTFO.",
+   "key": {
+    "A": "D",
+    "B": "Q",
+    "C": "T",
+    "D": "X",
+    "E": "F",
+    "F": "K",
+    "G": "B",
+    "H": "S",
+    "I": "G",
+    "J": "M",
+    "K": "Z",
+    "L": "A",
+    "M": "Y",
+    "N": "P",
+    "O": "W",
+    "P": "I",
+    "Q": "E",
+    "R": "U",
+    "S": "O",
+    "T": "C",
+    "U": "H",
+    "V": "N",
+    "W": "L",
+    "X": "J",
+    "Y": "R",
+    "Z": "V"
+   },
+   "given": {},
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Habakkuk",
+     "letters": [
+      [
+       "F",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "A",
+       "L"
+      ],
+      [
+       "S",
+       "H"
+      ]
+     ]
+    },
+    "3": {
+     "word": "STRENGTH",
+     "position": 6,
+     "ref": "Habakkuk 3:19"
+    }
+   },
+   "letters": 93,
+   "lines": 6,
+   "distinct": 20,
+   "forced_fraction": 0.0,
+   "agreement": [
+    {
+     "ref": "Habakkuk 3:19",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -11867,6 +11984,7 @@
     },
     "3": {
      "word": "TROUBLE",
+     "position": 32,
      "ref": "Psalms 59:16"
     }
    },
@@ -11973,6 +12091,7 @@
     },
     "3": {
      "word": "FINISHED",
+     "position": 9,
      "ref": "2 Timothy 4:7"
     }
    },
@@ -12075,6 +12194,7 @@
     },
     "3": {
      "word": "YESTERDAY",
+     "position": 5,
      "ref": "Hebrews 13:8"
     }
    },
@@ -12177,6 +12297,7 @@
     },
     "3": {
      "word": "TRUSTETH",
+     "position": 6,
      "ref": "Jeremiah 17:7"
     }
    },
@@ -12278,6 +12399,7 @@
     },
     "3": {
      "word": "GRIEVOUS",
+     "position": 8,
      "ref": "Proverbs 15:1"
     }
    },
@@ -12379,6 +12501,7 @@
     },
     "3": {
      "word": "ESTABLISHED",
+     "position": 12,
      "ref": "Proverbs 16:3"
     }
    },
@@ -12480,6 +12603,7 @@
     },
     "3": {
      "word": "DIRECTETH",
+     "position": 10,
      "ref": "Proverbs 16:9"
     }
    },
@@ -12578,6 +12702,7 @@
     },
     "3": {
      "word": "ADVERSITY",
+     "position": 13,
      "ref": "Proverbs 17:17"
     }
    },
@@ -12680,6 +12805,7 @@
     },
     "3": {
      "word": "TRUSTETH",
+     "position": 15,
      "ref": "Psalms 34:8"
     }
    },
@@ -12786,6 +12912,7 @@
     },
     "3": {
      "word": "HEARING",
+     "position": 6,
      "ref": "Romans 10:17"
     }
    },
@@ -12883,6 +13010,7 @@
     },
     "3": {
      "word": "IMPOSSIBLE",
+     "position": 6,
      "ref": "Hebrews 11:6"
     }
    },
@@ -12982,6 +13110,7 @@
     },
     "3": {
      "word": "EVERLASTING",
+     "position": 14,
      "ref": "Isaiah 26:4"
     }
    },
@@ -13078,6 +13207,7 @@
     },
     "3": {
      "word": "UPBRAIDETH",
+     "position": 19,
      "ref": "James 1:5"
     }
    },
@@ -13175,6 +13305,7 @@
     },
     "3": {
      "word": "COMMANDMENT",
+     "position": 3,
      "ref": "John 13:34-35"
     }
    },
@@ -13293,6 +13424,7 @@
     },
     "3": {
      "word": "IMPOSSIBLE",
+     "position": 13,
      "ref": "Matthew 19:26"
     }
    },
@@ -13362,11 +13494,10 @@
    },
    "given": {
     "E": "P",
-    "Z": "M"
+    "K": "H"
    },
    "needed_for_uniqueness": [
-    "E",
-    "Z"
+    "E"
    ],
    "hints": {
     "1": {
@@ -13385,13 +13516,14 @@
        "N"
       ],
       [
-       "K",
-       "H"
+       "R",
+       "A"
       ]
      ]
     },
     "3": {
      "word": "UNDERSTANDING",
+     "position": 15,
      "ref": "Proverbs 3:5-6"
     }
    },
@@ -13509,6 +13641,7 @@
     },
     "3": {
      "word": "LOVINGKINDNESS",
+     "position": 6,
      "ref": "Psalms 143:8"
     }
    },
@@ -13606,6 +13739,7 @@
     },
     "3": {
      "word": "TRANSFORMED",
+     "position": 11,
      "ref": "Romans 12:2"
     }
    },
@@ -13707,6 +13841,7 @@
     },
     "3": {
      "word": "CHARIOTS",
+     "position": 4,
      "ref": "Psalms 20:7"
     }
    },
@@ -13807,6 +13942,7 @@
     },
     "3": {
      "word": "PURPOSE",
+     "position": 13,
      "ref": "Ecclesiastes 3:1"
     }
    },
@@ -13905,6 +14041,7 @@
     },
     "3": {
      "word": "GLORIFY",
+     "position": 16,
      "ref": "Matthew 5:16"
     }
    },
@@ -14003,6 +14140,7 @@
     },
     "3": {
      "word": "BELIEVETH",
+     "position": 16,
      "ref": "Mark 9:23"
     }
    },
@@ -14101,6 +14239,7 @@
     },
     "3": {
      "word": "COMETH",
+     "position": 16,
      "ref": "John 14:6"
     }
    },
@@ -14199,6 +14338,7 @@
     },
     "3": {
      "word": "INSTRUCT",
+     "position": 3,
      "ref": "Psalms 32:8"
     }
    },
@@ -14297,6 +14437,7 @@
     },
     "3": {
      "word": "FORSAKEN",
+     "position": 18,
      "ref": "Psalms 9:10"
     }
    },
@@ -14392,7 +14533,8 @@
      ]
     },
     "3": {
-     "word": "JUSTLY",
+     "word": "REQUIRE",
+     "position": 15,
      "ref": "Micah 6:8"
     }
    },
@@ -14490,6 +14632,7 @@
     },
     "3": {
      "word": "FOLLOWETH",
+     "position": 17,
      "ref": "John 8:12"
     }
    },
@@ -14588,6 +14731,7 @@
     },
     "3": {
      "word": "DELIGHT",
+     "position": 1,
      "ref": "Psalms 37:4-5"
     }
    },
@@ -14696,6 +14840,7 @@
     },
     "3": {
      "word": "NEVERTHELESS",
+     "position": 6,
      "ref": "Galatians 2:20"
     }
    },
@@ -14790,6 +14935,7 @@
     },
     "3": {
      "word": "SHALT",
+     "position": 6,
      "ref": "Matthew 22:37"
     }
    },
@@ -14884,6 +15030,7 @@
     },
     "3": {
      "word": "COMFORTED",
+     "position": 23,
      "ref": "Matthew 5:3-4"
     }
    },
@@ -15002,7 +15149,8 @@
      ]
     },
     "3": {
-     "word": "ABIDETH",
+     "word": "GREATEST",
+     "position": 11,
      "ref": "1 Corinthians 13:13"
     }
    },
@@ -15105,6 +15253,7 @@
     },
     "3": {
      "word": "UNRIGHTEOUSNESS",
+     "position": 22,
      "ref": "1 John 1:9"
     }
    },
@@ -15207,6 +15356,7 @@
     },
     "3": {
      "word": "FRIENDS",
+     "position": 17,
      "ref": "John 15:13"
     }
    },
@@ -15312,6 +15462,7 @@
     },
     "3": {
      "word": "BREATH",
+     "position": 6,
      "ref": "Psalms 150:6"
     }
    },
@@ -15411,6 +15562,7 @@
     },
     "3": {
      "word": "SACKCLOTH",
+     "position": 15,
      "ref": "Psalms 30:11"
     }
    },
@@ -15512,6 +15664,7 @@
     },
     "3": {
      "word": "CONTINUALLY",
+     "position": 12,
      "ref": "Psalms 34:1"
     }
    },
@@ -15614,6 +15767,7 @@
     },
     "3": {
      "word": "COMMENDETH",
+     "position": 3,
      "ref": "Romans 5:8"
     }
    },
@@ -15716,6 +15870,7 @@
     },
     "3": {
      "word": "ENDURETH",
+     "position": 14,
      "ref": "Psalms 136:1"
     }
    },
@@ -15820,6 +15975,7 @@
     },
     "3": {
      "word": "REJOICE",
+     "position": 12,
      "ref": "Psalms 118:24"
     }
    },
@@ -15925,6 +16081,7 @@
     },
     "3": {
      "word": "BELIEVED",
+     "position": 6,
      "ref": "1 John 4:16"
     }
    },
@@ -16025,6 +16182,7 @@
     },
     "3": {
      "word": "CONCERNING",
+     "position": 21,
      "ref": "1 Thessalonians 5:16-18"
     }
    },
@@ -16160,6 +16318,7 @@
     },
     "3": {
      "word": "QUICKENED",
+     "position": 24,
      "ref": "Ephesians 2:4-5"
     }
    },
@@ -16279,6 +16438,7 @@
     },
     "3": {
      "word": "YOURSELVES",
+     "position": 13,
      "ref": "Ephesians 2:8-9"
     }
    },
@@ -16395,6 +16555,7 @@
     },
     "3": {
      "word": "LONGSUFFERING",
+     "position": 11,
      "ref": "Galatians 5:22-23"
     }
    },
@@ -16511,6 +16672,7 @@
     },
     "3": {
      "word": "VARIABLENESS",
+     "position": 23,
      "ref": "James 1:17"
     }
    },
@@ -16610,6 +16772,7 @@
     },
     "3": {
      "word": "LOVINGKINDNESS",
+     "position": 21,
      "ref": "Jeremiah 31:3"
     }
    },
@@ -16707,6 +16870,7 @@
     },
     "3": {
      "word": "EVERLASTING",
+     "position": 24,
      "ref": "John 3:16"
     }
    },
@@ -16803,7 +16967,8 @@
      ]
     },
     "3": {
-     "word": "EVERLASTING",
+     "word": "THANKSGIVING",
+     "position": 6,
      "ref": "Psalms 100:4-5"
     }
    },
@@ -16919,6 +17084,7 @@
     },
     "3": {
      "word": "WONDERFULLY",
+     "position": 10,
      "ref": "Psalms 139:14"
     }
    },
@@ -17015,6 +17181,7 @@
     },
     "3": {
      "word": "WHATSOEVER",
+     "position": 2,
      "ref": "Colossians 3:17"
     }
    },
@@ -17116,7 +17283,8 @@
      ]
     },
     "3": {
-     "word": "FORGIVEN",
+     "word": "TENDERHEARTED",
+     "position": 8,
      "ref": "Ephesians 4:32"
     }
    },
@@ -17215,6 +17383,7 @@
     },
     "3": {
      "word": "PLEASURES",
+     "position": 22,
      "ref": "Psalms 16:11"
     }
    },
@@ -17311,6 +17480,7 @@
     },
     "3": {
      "word": "THEREFORE",
+     "position": 1,
      "ref": "2 Corinthians 5:17"
     }
    },
@@ -17407,6 +17577,7 @@
     },
     "3": {
      "word": "GLADNESS",
+     "position": 15,
      "ref": "Psalms 100:1-2"
     }
    },
@@ -17524,6 +17695,7 @@
     },
     "3": {
      "word": "ANOTHER",
+     "position": 6,
      "ref": "1 John 4:7-8"
     }
    },
@@ -17643,6 +17815,7 @@
     },
     "3": {
      "word": "PERFECT",
+     "position": 8,
      "ref": "1 John 4:18"
     }
    },
@@ -17741,6 +17914,7 @@
     },
     "3": {
      "word": "REJOICE",
+     "position": 17,
      "ref": "Zephaniah 3:17"
     }
    },
@@ -17834,6 +18008,7 @@
     },
     "3": {
      "word": "SUFFERETH",
+     "position": 2,
      "ref": "1 Corinthians 13:4-5"
     }
    },
@@ -17947,6 +18122,7 @@
     },
     "3": {
      "word": "BENEFITS",
+     "position": 28,
      "ref": "Psalms 103:1-2"
     }
    },
@@ -18057,6 +18233,7 @@
     },
     "3": {
      "word": "CREATURE",
+     "position": 8,
      "ref": "Romans 8:39"
     }
    },
@@ -18159,6 +18336,7 @@
     },
     "3": {
      "word": "ARISE",
+     "position": 1,
      "ref": "Isaiah 60:1"
     }
    },
@@ -18262,6 +18440,7 @@
     },
     "3": {
      "word": "BEGINNING",
+     "position": 3,
      "ref": "John 1:1"
     }
    },
@@ -18361,6 +18540,7 @@
     },
     "3": {
      "word": "REJOICED",
+     "position": 14,
      "ref": "Luke 1:46-47"
     }
    },
@@ -18479,6 +18659,7 @@
     },
     "3": {
      "word": "EXCEEDING",
+     "position": 9,
      "ref": "Matthew 2:10"
     }
    },
@@ -18578,6 +18759,7 @@
     },
     "3": {
      "word": "FRANKINCENSE",
+     "position": 15,
      "ref": "Matthew 2:11"
     }
    },
@@ -18678,6 +18860,7 @@
     },
     "3": {
      "word": "SALVATION",
+     "position": 8,
      "ref": "Titus 2:11"
     }
    },
@@ -18780,6 +18963,7 @@
     },
     "3": {
      "word": "BRANCH",
+     "position": 16,
      "ref": "Isaiah 11:1"
     }
    },
@@ -18879,6 +19063,7 @@
     },
     "3": {
      "word": "REVEALED",
+     "position": 9,
      "ref": "Isaiah 40:5"
     }
    },
@@ -18973,7 +19158,8 @@
      ]
     },
     "3": {
-     "word": "IMMANUEL",
+     "word": "THEREFORE",
+     "position": 1,
      "ref": "Isaiah 7:14"
     }
    },
@@ -19073,6 +19259,7 @@
     },
     "3": {
      "word": "EVERLASTING",
+     "position": 13,
      "ref": "Isaiah 9:6"
     }
    },
@@ -19170,6 +19357,7 @@
     },
     "3": {
      "word": "SAVIOUR",
+     "position": 38,
      "ref": "Luke 2:10-11"
     }
    },
@@ -19286,6 +19474,7 @@
     },
     "3": {
      "word": "FIRSTBORN",
+     "position": 6,
      "ref": "Luke 2:7"
     }
    },
@@ -19391,7 +19580,8 @@
      ]
     },
     "3": {
-     "word": "BRING",
+     "word": "PEOPLE",
+     "position": 20,
      "ref": "Matthew 1:21"
     }
    },
@@ -19489,6 +19679,7 @@
     },
     "3": {
      "word": "INTERPRETED",
+     "position": 23,
      "ref": "Matthew 1:23"
     }
    },
@@ -19585,6 +19776,7 @@
     },
     "3": {
      "word": "COMPREHENDED",
+     "position": 22,
      "ref": "John 1:4-5"
     }
    },
@@ -19706,6 +19898,7 @@
     },
     "3": {
      "word": "HIGHEST",
+     "position": 13,
      "ref": "Luke 1:32"
     }
    },
@@ -19735,108 +19928,6 @@
     }
    ],
    "num": 194
-  },
-  {
-   "ref": "Matthew 2:2",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Matthew",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 3,
-   "text": "Saying, Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.",
-   "cipher": "ROFAXD, BMUHU AR MU IMOI AR TZHX YAXD ZV IMU CUBR? VZH BU MONU RUUX MAR RIOH AX IMU UORI, OXP OHU SZLU IZ BZHRMAK MAL.",
-   "key": {
-    "A": "O",
-    "B": "T",
-    "C": "S",
-    "D": "P",
-    "E": "U",
-    "F": "V",
-    "G": "D",
-    "H": "M",
-    "I": "A",
-    "J": "C",
-    "K": "Y",
-    "L": "E",
-    "M": "L",
-    "N": "X",
-    "O": "Z",
-    "P": "K",
-    "Q": "W",
-    "R": "H",
-    "S": "R",
-    "T": "I",
-    "U": "J",
-    "V": "N",
-    "W": "B",
-    "X": "G",
-    "Y": "F",
-    "Z": "Q"
-   },
-   "given": {
-    "F": "Y",
-    "N": "V",
-    "P": "D"
-   },
-   "needed_for_uniqueness": [
-    "F",
-    "N",
-    "P"
-   ],
-   "hints": {
-    "1": {
-     "book": "Matthew",
-     "letters": [
-      [
-       "U",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "R",
-       "S"
-      ],
-      [
-       "M",
-       "H"
-      ]
-     ]
-    },
-    "3": {
-     "word": "WORSHIP",
-     "ref": "Matthew 2:2"
-    }
-   },
-   "letters": 89,
-   "lines": 5,
-   "distinct": 21,
-   "forced_fraction": 0.034,
-   "agreement": [
-    {
-     "ref": "Matthew 2:2",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 195
   },
   {
    "ref": "Isaiah 9:2",
@@ -19908,6 +19999,7 @@
     },
     "3": {
      "word": "DARKNESS",
+     "position": 6,
      "ref": "Isaiah 9:2"
     }
    },
@@ -19918,6 +20010,107 @@
    "agreement": [
     {
      "ref": "Isaiah 9:2",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 195
+  },
+  {
+   "ref": "Matthew 2:2",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Matthew",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 3,
+   "text": "Saying, Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.",
+   "cipher": "ROFAXD, BMUHU AR MU IMOI AR TZHX YAXD ZV IMU CUBR? VZH BU MONU RUUX MAR RIOH AX IMU UORI, OXP OHU SZLU IZ BZHRMAK MAL.",
+   "key": {
+    "A": "O",
+    "B": "T",
+    "C": "S",
+    "D": "P",
+    "E": "U",
+    "F": "V",
+    "G": "D",
+    "H": "M",
+    "I": "A",
+    "J": "C",
+    "K": "Y",
+    "L": "E",
+    "M": "L",
+    "N": "X",
+    "O": "Z",
+    "P": "K",
+    "Q": "W",
+    "R": "H",
+    "S": "R",
+    "T": "I",
+    "U": "J",
+    "V": "N",
+    "W": "B",
+    "X": "G",
+    "Y": "F",
+    "Z": "Q"
+   },
+   "given": {
+    "F": "Y",
+    "N": "V"
+   },
+   "needed_for_uniqueness": [
+    "F",
+    "N"
+   ],
+   "hints": {
+    "1": {
+     "book": "Matthew",
+     "letters": [
+      [
+       "U",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "R",
+       "S"
+      ],
+      [
+       "M",
+       "H"
+      ]
+     ]
+    },
+    "3": {
+     "word": "WORSHIP",
+     "position": 25,
+     "ref": "Matthew 2:2"
+    }
+   },
+   "letters": 89,
+   "lines": 5,
+   "distinct": 21,
+   "forced_fraction": 0.022,
+   "agreement": [
+    {
+     "ref": "Matthew 2:2",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -20006,6 +20199,7 @@
     },
     "3": {
      "word": "BEGOTTEN",
+     "position": 22,
      "ref": "John 1:14"
     }
    },
@@ -20104,6 +20298,7 @@
     },
     "3": {
      "word": "MULTITUDE",
+     "position": 9,
      "ref": "Luke 2:13-14"
     }
    },
@@ -20217,6 +20412,7 @@
     },
     "3": {
      "word": "ADOPTION",
+     "position": 36,
      "ref": "Galatians 4:4-5"
     }
    },
@@ -20330,6 +20526,7 @@
     },
     "3": {
      "word": "CONCEIVE",
+     "position": 21,
      "ref": "Luke 1:30-31"
     }
    },

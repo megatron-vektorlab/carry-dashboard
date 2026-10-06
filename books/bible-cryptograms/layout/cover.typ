@@ -56,34 +56,34 @@
 }
 
 // Cream letter tiles with the code letter underneath, like a puzzle line.
-#let tiles(word, code, tw: 0.55in, th: 0.76in, gap: 0.06in, size: 44pt, code-size: 22pt) = stack(dir: ltr, spacing: gap,
-  ..word.clusters().enumerate().map(((i, ch)) => stack(spacing: 0.07in,
+#let tiles(word, code, tw: 0.53in, th: 0.9in, gap: 0.05in, size: 48pt, code-size: 17pt) = stack(dir: ltr, spacing: gap,
+  ..word.clusters().enumerate().map(((i, ch)) => stack(spacing: 0.09in,
     box(width: tw, height: th, fill: cream, radius: 0.06in,
       align(center + horizon, text(size: size, weight: "bold", fill: lead, ch))),
-    box(width: tw, align(center, text(size: code-size, weight: "bold", fill: gold, code.clusters().at(i)))))))
+    box(width: tw, align(center, text(size: code-size, weight: "bold", fill: gold.transparentize(15%), code.clusters().at(i)))))))
 
 // ================= FRONT =================
 #let fx = front-x
 #let fcx = fx + TW / 2
-#place(top + left, dx: fx + 0.5in, dy: B + 0.5in, rect(width: TW - 1in, height: TH - 1in, stroke: 2pt + gold, radius: 0.14in))
-#place(top + left, dx: fx, dy: B + 0.85in, box(width: TW, align(center,
+#place(top + left, dx: fx + 0.65in, dy: B + 0.65in, rect(width: TW - 1.3in, height: TH - 1.3in, stroke: 2pt + gold, radius: 0.14in))
+#place(top + left, dx: fx, dy: B + 0.92in, box(width: TW, align(center,
   pill(text(size: 34pt, weight: "bold", fill: navy, tracking: 3pt)[LARGE PRINT], gold))))
-#place(top + left, dx: fx, dy: B + 1.72in, box(width: TW, align(center,
-  text(font: "Cinzel", weight: "bold", size: 104pt, fill: cream)[BIBLE])))
-#place(top + left, dx: fx, dy: B + 3.25in, box(width: TW, align(center, tiles("CRYPTOGRAMS", C.tile_code))))
-#place(top + left, dx: fx, dy: B + 4.62in, box(width: TW, align(center, {
+#place(top + left, dx: fx, dy: B + 1.75in, box(width: TW, align(center,
+  text(font: "Cinzel", weight: "bold", size: 100pt, fill: cream)[BIBLE])))
+#place(top + left, dx: fx, dy: B + 3.2in, box(width: TW, align(center, tiles("CRYPTOGRAMS", C.tile_code))))
+#place(top + left, dx: fx, dy: B + 4.72in, box(width: TW, align(center, {
   set par(leading: 0.45em)
   text(font: "Libre Baskerville", style: "italic", size: 23pt, fill: cream)[#C.front_line.at(0) \ #C.front_line.at(1)]
 })))
-#place(top + left, dx: fx, dy: B + 5.62in, box(width: TW, align(center,
-  text(size: 20pt, weight: "bold", fill: gold, tracking: 0.5pt)[ONE PUZZLE PER PAGE #h(8pt) · #h(8pt) HINTS #h(8pt) · #h(8pt) SOLUTIONS])))
-#rose-window(fcx, B + 8.0in, 1.82in)
+#place(top + left, dx: fx, dy: B + 5.7in, box(width: TW, align(center,
+  text(size: 18pt, weight: "bold", fill: gold)[ONE PUZZLE PER PAGE #h(6pt) · #h(6pt) HINTS #h(6pt) · #h(6pt) SOLUTIONS])))
+#rose-window(fcx, B + 8.05in, 1.75in)
 // count seal
-#place(top + left, dx: fx + 5.72in, dy: B + 8.05in, circle(radius: 0.9in, fill: cream, stroke: 4pt + gold,
+#place(top + left, dx: fx + 5.55in, dy: B + 7.95in, circle(radius: 0.9in, fill: cream, stroke: 4pt + gold,
   align(center + horizon, stack(spacing: 0.08in,
     text(font: "Libre Baskerville", size: 44pt, weight: "bold", fill: navy)[#C.count],
     text(size: 16pt, weight: "bold", fill: navy, tracking: 1pt)[PUZZLES]))))
-#place(top + left, dx: fx, dy: B + 9.95in, box(width: TW, align(center,
+#place(top + left, dx: fx, dy: B + 9.88in, box(width: TW, align(center,
   text(font: "Libre Baskerville", size: 21pt, fill: cream, tracking: 2.5pt)[#upper(C.author)])))
 
 // ================= SPINE =================
@@ -96,7 +96,6 @@
 
 // ================= BACK =================
 #let bx = back-x
-#place(top + left, dx: bx + 0.5in, dy: B + 0.5in, rect(width: TW - 1in, height: TH - 1in, stroke: 2pt + gold, radius: 0.14in))
 #place(top + left, dx: bx + 0.9in, dy: B + 0.9in, block(width: TW - 1.8in, {
   set text(fill: cream, size: 17pt)
   set par(leading: 0.5em, spacing: 0.8em)
@@ -115,7 +114,7 @@
         align(center + bottom, pad(bottom: 2pt, text(size: 20pt, weight: "bold", g)))),
       box(width: cw, height: 0.27in, align(center + horizon, text(size: 20pt, c)))))
     let pcell(c) = box(width: 0.15in, stack(dir: ttb, spacing: 0.02in,
-      box(height: 0.34in, align(center + bottom, pad(bottom: 2pt, text(size: 20pt, weight: "bold", c)))),
+      box(height: 0.34in),
       box(height: 0.27in, align(center + horizon, text(size: 20pt, c)))))
     let ws = C.sample_words.map(w => box(w.map(c => if c.at(2) { cell(c.at(0), c.at(1)) } else { pcell(c.at(0)) }).join()))
     par(leading: 0.1in, ws.join(h(0.2in, weak: true)))
@@ -130,7 +129,7 @@
 }))
 // barcode zone: keep empty (KDP prints the barcode here)
 #place(top + left, dx: bx + TW - 0.25in - 2.25in, dy: B + TH - 0.25in - 1.45in,
-  rect(width: 2.25in, height: 1.45in, fill: cream, stroke: 2pt + gold, radius: 0.1in))
+  rect(width: 2.25in, height: 1.45in, fill: white))
 #place(top + left, dx: bx + 0.9in, dy: B + TH - 1.35in, block(width: 4.6in, {
   set text(fill: cream, size: 16pt)
   text(font: "Libre Baskerville", style: "italic")[#C.epigraph]

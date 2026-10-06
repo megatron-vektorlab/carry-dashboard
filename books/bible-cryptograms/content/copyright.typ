@@ -15,7 +15,7 @@ Copyright © #D.year #D.author. All rights reserved. The selection and arrangeme
 Scripture quotations are from the King James Version (Authorized Version), standard 1769 text, which is in the public domain in the United States.
 #if R.at("uk_permission", default: false) [Rights in the Authorized Version in the United Kingdom are vested in the Crown. Reproduced by permission of the Crown's patentee, Cambridge University Press.] else [Rights in the Authorized Version in the United Kingdom are vested in the Crown.]
 
-*How the puzzles were checked.* Every verse was compared letter by letter with five independent public-domain copies of the King James text. Every puzzle was checked by computer: it decodes to the verse exactly, no letter stands for itself, and with the given letters only one reading fits, tested against every word in the King James Bible.
+*How the puzzles were checked.* Every verse was compared letter by letter with five separate digital copies of the public-domain King James text. Every puzzle was checked by computer: it decodes to the verse exactly, no letter stands for itself, and with the given letters only one reading fits, tested against every word in the King James Bible.
 
 Publisher: #R.publisher, #R.address · #R.email \
 #if R.at("isbn", default: "KDP") == "KDP" [ISBN: see the back cover. Independently published.] else [ISBN #R.isbn]

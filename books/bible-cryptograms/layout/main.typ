@@ -21,7 +21,7 @@
 #v(0.2in)
 #rule-ornament(width: 3.2in)
 #v(0.25in)
-#align(center, text(font: serif, size: 20pt)[#D.subtitle])
+#align(center, text(font: serif, size: 20pt)[200 King James Verses of \ Comfort, Hope and Strength])
 #v(0.2in)
 #align(center, text(font: serif, size: 17pt, fill: soft)[Volume 1 · King James Version])
 #v(1fr)
@@ -57,11 +57,13 @@
   for p in D.puzzles.filter(p => p.theme == t.name) {
     let ws = p.words.map(w => word(..w.map(c => if c.at(2) { cell(c.at(0), c.at(1)) } else { pcell(c.at(0)) })))
     let n = p.given_list.len()
-    let note = if n == 0 [No letters given: this one is all yours.] else if n == 1 [One letter is already filled in for you.] else [#n letters are already filled in for you.]
+    let words = ("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight")
+    let note = if n == 0 [No letters are given.] else if n == 1 [One letter is given.] else [#words.at(n - 1) letters are given.]
     pagebreak()
     [#metadata(p.num) #label("puzzle-" + str(p.num))]
     puzzle(num: p.num, level: p.level, level-name: p.level_name, words: ws, counts: p.counts, given: p.given, given-note: note,
-      hint-label: label("hint-" + str(p.num)), sol-label: label("sol-" + str(p.num)))
+      hint-label: label("hint-" + str(p.num)), hint2-label: label("hint2-" + str(p.num)),
+      hint3-label: label("hint3-" + str(p.num)), sol-label: label("sol-" + str(p.num)), wide-key: p.wide_key)
   }
 }
 

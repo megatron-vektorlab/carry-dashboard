@@ -141,7 +141,8 @@ def finalize(r: dict) -> dict:
     freq = collections.Counter(c for c in ct if c.isalpha())
     rest = [c for c, _ in freq.most_common() if c not in given]
     words_plain = cipher.words(text)
-    longest = max(words_plain, key=lambda w: (len(set(w)), len(w)))
+    longest = max(words_plain, key=lambda w: (len(w), len(set(w))))
+    position = words_plain.index(longest) + 1        # first occurrence, counted in the puzzle
     p = r["passage"]
     return {
         "ref": r["item"]["ref"],
@@ -157,7 +158,7 @@ def finalize(r: dict) -> dict:
         "hints": {
             "1": {"book": p["book"], "letters": [[c, inv[c]] for c in rest[:1]]},
             "2": {"letters": [[c, inv[c]] for c in rest[1:3]]},
-            "3": {"word": longest, "ref": r["item"]["ref"]},
+            "3": {"word": longest, "position": position, "ref": r["item"]["ref"]},
         },
         "letters": r["letters"],
         "lines": r["lines"],

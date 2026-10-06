@@ -20,7 +20,7 @@ STEPS = [
     ("THE", "The most common three-letter word is THE. The first word, {w:THE}, has three different letters, so try "
             "{T} = T, {H} = H and {E} = E. Notice H and E twice inside the long word {w:SHEPHERD}."),
     ("SAL", "Look at {w:I} {w:SHALL}: I, then a five-letter word ending in a double letter. With H in second place, "
-            "*SHALL* fits: {S} = S, {A} = A, {L} = L. (L L is the most common double letter in these verses.)"),
+            "*SHALL* fits: {S} = S, {A} = A, {L} = L. (LL is the most common double letter in these verses.)"),
     ("ORD", "After THE comes {w:LORD}, and its first letter is already L. Think of the most famous four-letter word "
             "starting with L in the Bible: LORD. So {O} = O, {R} = R, {D} = D."),
     ("MYPNW", "Only a few letters are left. {w:MY} is a two-letter word: MY. The long word is SHEPHERD, and the last "
@@ -57,7 +57,7 @@ def build() -> dict:
 
     def fill(s: str) -> str:
         s = re.sub(r"\{w:([A-Z]+)\}", lambda m: cipher.encrypt(m.group(1), key), s)
-        return re.sub(r"\{([A-Z])\}", lambda m: key[m.group(1)], s)
+        return re.sub(r"\{([A-Z])\} = ", lambda m: key[m.group(1)] + "~=~", re.sub(r"\{([A-Z])\}(?! =)", lambda m: key[m.group(1)], s))
 
     known: dict[str, str] = {}
     states = []
@@ -70,7 +70,9 @@ def build() -> dict:
         raise AssertionError(f"worked example leaves code letters unsolved: {sorted(missing)}")
     assert "".join(inv.get(c, c) for c in ct) == text.upper()
     assert not set(cipher.AVOID) & set(ct)
-    return {"ref": REF, "text": text, "cipher": ct, "states": states}
+    import collections
+    counts = dict(collections.Counter(c for c in ct if c.isalpha()))
+    return {"ref": REF, "text": text, "cipher": ct, "states": states, "counts": counts, "final": dict(known)}
 
 
 if __name__ == "__main__":

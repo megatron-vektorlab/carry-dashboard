@@ -7,7 +7,7 @@ a page.
 from __future__ import annotations
 
 PAGE_W, PAGE_H = 8.5, 11.0
-INSIDE, OUTSIDE, TOP, BOTTOM = 0.8, 0.55, 0.72, 0.7
+INSIDE, OUTSIDE, TOP, BOTTOM = 0.9, 0.45, 0.72, 0.7
 TEXT_WIDTH = PAGE_W - INSIDE - OUTSIDE            # 7.15
 BODY_HEIGHT = PAGE_H - TOP - BOTTOM               # 9.58
 

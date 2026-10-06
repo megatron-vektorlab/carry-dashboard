@@ -26,7 +26,7 @@ We counted every letter and every word of the King James Bible (all #str(S.verse
 )
 
 #section("The most common words in this book")
-In these #D.puzzles.len() verses the words you will meet most often are #D.book_top_words.join(", "). Keep this list handy.
+In these #D.puzzles.len() verses the words you will meet most often are #D.book_top_words.slice(0, -1).join(", ") and #D.book_top_words.last(). Keep this list handy.
 
 #block(breakable: false)[
 #section("Letter patterns to look for")
@@ -44,4 +44,4 @@ THEE · THOU · THY · THINE · YE · UNTO · HATH · SHALL · SAITH. If a three
 Many King James verbs end in *-ETH* (LOVETH, MAKETH, GIVETH) or *-EST* (KNOWEST). A long code word that ends in the same three code letters as another one may share that ending. An ending in *-ED* or *-ING* is just as common as in modern English.
 
 #section("Double letters and apostrophes")
-The most common double letters are #S.doubles.slice(0, 6).map(d => d.at(0)).join(", "). A double letter at the end of a short word is almost always *LL* (ALL, SHALL, WILL). A code word ending with an apostrophe and one letter, like XYZW'Q, ends in *'S*: LORD'S, FATHER'S.
+The most common double letters are #S.doubles.slice(0, 6).map(d => d.at(0)).join(", "). A double letter at the end of a short word is usually *LL* (ALL, SHALL, WILL) or *EE* (THEE). A code word ending with an apostrophe and one letter, like XYZW’K, usually ends in *’S*: LORD’S, FATHER’S.

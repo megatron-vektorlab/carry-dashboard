@@ -8,7 +8,7 @@
 #row("Tips for King James Verses", <sec-tips>)
 #v(0.3em)
 #for (ti, t) in D.themes.enumerate() [
-  #row([Part #(ti + 1): #t.name #h(4pt) (puzzles #t.first–#t.last)], label("part-" + str(ti + 1)), bold: true)
+  #row([Part #(ti + 1): #t.name], label("part-" + str(ti + 1)), bold: true)
 ]
 #v(0.3em)
 #row("Hints", <sec-hints>)

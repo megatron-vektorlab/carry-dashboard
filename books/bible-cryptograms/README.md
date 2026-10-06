@@ -4,9 +4,9 @@ Ideja br. 2 s popisa KDP ideja (26. 9. 2026.): biblijski kriptogrami krupnim tis
 King James Version. Na popisu je ova ideja bila preporučena kao prva za izradu jer se izrađuje
 najbrže i stiže u božićnu sezonu.
 
-Svaka zagonetka skriva jedan stih. Šifru, provjere i prijelom radi kod. **Model nikad ne
-tipka stih:** svaki stih se povlači po referenci iz pet neovisnih kopija KJV teksta, a koristi
-se tekst oko kojeg se kopije slažu.
+Svaka zagonetka skriva jedan stih ili kratak odlomak. Šifru, provjere i prijelom radi kod.
+**Model nikad ne tipka stih:** svaki stih se povlači po referenci iz pet zasebnih digitalnih
+kopija KJV teksta, a koristi se tekst oko kojeg se kopije slažu.
 
 ## Gotove datoteke za KDP (`output/`)
 
@@ -18,11 +18,37 @@ se tekst oko kojeg se kopije slažu.
 | `marketing/*.png` | primjeri stranica: zagonetka, riješeni primjer, savjeti, rješenja |
 | `../KDP-LISTING.md` | sve vrijednosti za KDP obrazac: naslov, opis, ključne riječi, kategorije, cijena, AI-izjava, teritoriji |
 
-Stanje: ⟨STATUS⟩
+Stanje: **knjiga je spremna za probni tisak** (6. 10. 2026.).
+- Unutrašnjost ima 275 stranica, a omot hrbat od 0,619 in (bijeli papir).
+- `python3 -m bc.qa` prolazi bez greške.
+- Vodenog žiga nema, jer su podaci za impresum upisani.
+- Prije objave: probni primjerak i Vaš popis ispod.
 
 ## Što je u knjizi
 
-⟨CONTENTS⟩
+| Dio | Stranice |
+|---|---|
+| Uvod | naslov, impresum, stranica za posvetu („This Book Belongs To”), sadržaj, dobrodošlica |
+| *How to Solve* | pravila, opis stranice, riješeni primjer u 5 koraka (Psalam 23,1) sa slikama, kratka metoda |
+| *Tips for King James Verses* | učestalost slova i riječi izračunata iz cijelog KJV-a, uzorci (THAT/HATH, SHALL), stari oblici (THEE, UNTO, -ETH) |
+| **7 dijelova, 200 zagonetki** | Comfort in Hard Times (32), Peace for an Anxious Heart (26), Hope That Does Not Fade (30), Strength & Courage (30), Faith & Trust (30), Love, Joy & Praise (30), Christmas: Good Tidings of Great Joy (22) |
+| Savjeti | 3 zasebna odjeljka: (1) knjiga Biblije + jedno slovo, (2) još dva slova, (3) najduža riječ s položajem + referenca |
+| Rješenja | stih doslovno, referenca i kratko razmišljanje („Reflect:”) |
+| Završne stranice | kazalo stihova po redu biblijskih knjiga, tablica napretka, „Verses I Want to Remember” |
+
+**Svaka zagonetka ima svoju stranicu:**
+- broj, razina (Easy / Medium / Hard / Expert, sa zvjezdicama) i stranice savjeta i rješenja;
+- kodna slova od 21 pt s crtom za upis iznad svakog slova;
+- tablica ključa: kodno slovo, koliko se puta pojavljuje i polje za pravo slovo. Ako stih ima do 7 redaka, tablica je u dva reda sa širim stupcima;
+- prostor za bilješke, ako ostane mjesta.
+
+Svaki dio počinje lakim zagonetkama i postaje teži. Razine: 61 laka, 67 srednjih, 52 teške, 20 ekspertnih.
+
+Svaki dio ima i kratki uvod.
+
+**Dodatno:**
+- Q i J nikad nisu kodna slova, jer se na slabijem vidu brkaju s O i I.
+- Interpunkcija je samo u kodnom retku.
 
 ## Kako je osigurana točnost
 
@@ -44,7 +70,17 @@ Stanje: ⟨STATUS⟩
    - svaki stih u rješenjima je doslovno točan;
    - svaka uputa „Hints p. / Answer p.” pokazuje na pravu stranicu;
    - hrbat omota odgovara broju stranica.
-6. **Slijepo rješavanje.** ⟨BLIND⟩
+6. **Slijepo rješavanje.** 14 nasumično odabranih zagonetki (sve razine) riješilo je 7 neovisnih AI testera samo sa slike tiskane stranice, bez ključa i bez podataka. **Svih 14 je točno riješeno.** Doživljena težina raste po razinama.
+
+Njihove primjedbe su ugrađene:
+- izbačena su slova Q i J;
+- ispravljen je zapis zadanih slova;
+- brojevi u tablici ključa su jasniji;
+- interpunkcija je samo u kodnom retku.
+
+Nakon toga je 6 recenzenata (lektor, teolog, stručnjak za slabovidne, KDP marketing, provjera tvrdnji, odabir stihova) pregledalo cijelu knjigu. Ispravke su primijenjene.
+
+To nije zamjena za ljudske testere.
 7. **Tekstovi.** Uvode u dijelove i kratka razmišljanja uz svaki stih napisao je Claude.
    Svaki je provjerio zaseban recenzent u ulozi „iskusnog pastora i lektora”. Pazilo se:
    - je li tekst vjeran kontekstu stiha;
@@ -69,11 +105,14 @@ Stanje: ⟨STATUS⟩
       besplatno dopuštenje vrijedi samo za nekomercijalnu upotrebu. Ako želite i UK, pošaljite
       upit na permissions@cambridge.org. Kad dopuštenje stigne, u `data/release.json` stavite
       `"uk_permission": true` i ponovno složite knjigu (impresum tada sadrži njihovu obaveznu rečenicu).
-- [ ] **Impresum** (`data/release.json`): ⟨IMPRINT⟩ Podaci su preuzeti iz prethodne knjige.
+- [ ] **Impresum** (`data/release.json`): nakladnik Ivan Sikuten, Miškinova 4, Šašinovec, 10360 Sesvete, Croatia, ivansikuten@gmail.com. Podaci su preuzeti iz prethodne knjige.
       Ako želite drugu adresu (zbog privatnosti) ili ime, promijenite ih i ponovno složite knjigu.
 - [ ] **Ograničenje KDP-a:** najviše 2 nova meka uveza tjedno. Ako su ovaj tjedan već dva iskorištena
       (npr. ASVAB i logičke zagonetke), pričekajte nedjelju 00:00 UTC.
-- [ ] Cijena: ⟨PRICE⟩
+- [ ] Cijena: preporuka je **13,99 $** (honorar oko 2,71 $ po primjerku).
+  - Tisak 275 stranica 8,5×11 stoji 1,00 $ + 0,017 $ × 275 = 5,68 $.
+  - Jeftinija opcija za početak: 12,99 $ (oko 2,10 $ po primjerku). Cijenu podignite nakon prvih recenzija.
+  - Ispod 9,99 $ honorar pada na 50 %, pa tamo nikako.
 
 ## Objava na KDP-u — kratko
 

@@ -14,18 +14,19 @@ AUTHOR = "Ivan Sikuten"
 YEAR = 2026
 
 # ---- cover texts (every claim here must stay true for the interior; bc.qa checks the numbers) ----
-FRONT_LINE = ["200 King James Verses of", "Comfort, Hope & Strength"]
+FRONT_LINE = ["200 King James Verses of", "Comfort, Hope and Strength"]
 BACK_HEADLINE = "Unlock God's Word, letter by letter"
 BLURB = ("Every puzzle in this book hides a well-loved verse from the King James Bible. Crack the code, "
          "letter by letter, and words of comfort, hope and strength appear in your own handwriting. "
-         "Big, bold letters, roomy write-in lines and gentle hints make each puzzle a peaceful few "
+         "Big, clear letters, roomy write-in lines and gentle hints make each puzzle a peaceful few "
          "minutes with Scripture.")
 BULLETS = [
-    "200 cryptograms from the King James Version, in themed parts",
+    "200 King James cryptograms in 7 themed parts",
     "Large print: 21-point code letters, every word at least 16 point",
-    "One puzzle per page, with a code key and room for notes",
+    "One puzzle per page, each with its own code key",
     "Easy to Expert, with given letters to start you off",
-    "Three gentle hints for every puzzle, and every verse in the solutions",
+    "Three gentle hints per puzzle, and full solutions",
+    "A reflection with every answer, and a Christmas part",
 ]
 EPIGRAPH_REF = "Psalms 119:105"     # text is looked up in the KJV copies, never typed
 

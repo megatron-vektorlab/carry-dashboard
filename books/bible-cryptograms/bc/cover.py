@@ -61,8 +61,8 @@ def main(pages: int | None = None):
     from . import book, cipher, kjv
     key = cipher.make_key("cover:CRYPTOGRAMS", used="CRYPTOGRAMS")
     data = dict(g, title=config.TITLE, subtitle=config.SUBTITLE, author=config.AUTHOR,
-                count=len(pz), front_line=config.FRONT_LINE, back_headline=config.BACK_HEADLINE,
-                blurb=config.BLURB, bullets=config.BULLETS,
+                count=len(pz), front_line=config.FRONT_LINE, back_headline=book.typo(config.BACK_HEADLINE),
+                blurb=book.typo(config.BLURB), bullets=[book.typo(b) for b in config.BULLETS],
                 epigraph="\u201c" + kjv.passage(config.EPIGRAPH_REF)["text"] + "\u201d (" + config.EPIGRAPH_REF.replace("Psalms", "Psalm") + ")",
                 tile_code=cipher.encrypt("CRYPTOGRAMS", key),
                 sample_words=book.cells(sample["cipher"], sample["given"]), sample_num=sample["num"],
