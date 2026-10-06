@@ -80,7 +80,7 @@ def analyze(item: dict) -> dict:
         if agree < 4:
             raise RuntimeError(f"{item['ref']}: only {agree}/5 copies agree on the letters")
     text = p["text"]
-    key = cipher.make_key(f"v1:{item['ref']}:{item.get('from', '')}")
+    key = cipher.make_key(f"v1:{item['ref']}:{item.get('from', '')}", used=kjv.letters(text))
     inv = {c: pl for pl, c in key.items()}
     ct = cipher.encrypt(text, key)
     lines = lines_needed(ct)
@@ -132,6 +132,7 @@ def finalize(r: dict) -> dict:
     text = r["text"]
     assert "".join(inv.get(c, c) for c in ct) == text.upper(), "decryption mismatch"
     assert all(k != v for k, v in key.items()), "a letter maps to itself"
+    assert not set(cipher.AVOID) & {c for c in ct if c.isalpha()}, "a confusable code letter (Q/J) is used"
     n, sols, done = cipher.count_solutions(ct, given, limit=2)
     assert n == 1 and done, f"{r['item']['ref']}: not unique with the printed letters"
     assert all(sols[0][c] == inv[c] for c in sols[0]), "solver reading differs from the verse"

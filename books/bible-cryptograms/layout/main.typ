@@ -21,9 +21,9 @@
 #v(0.2in)
 #rule-ornament(width: 3.2in)
 #v(0.25in)
-#align(center, text(size: 20pt)[#D.subtitle])
+#align(center, text(font: serif, size: 20pt)[#D.subtitle])
 #v(0.2in)
-#align(center, text(size: 17pt, fill: soft)[Volume 1 · King James Version])
+#align(center, text(font: serif, size: 17pt, fill: soft)[Volume 1 · King James Version])
 #v(1fr)
 #align(center, text(font: serif, size: 20pt)[#D.author])
 #v(0.5in)
@@ -56,7 +56,8 @@
   }, footer: plain-footer)
   for p in D.puzzles.filter(p => p.theme == t.name) {
     let ws = p.words.map(w => word(..w.map(c => if c.at(2) { cell(c.at(0), c.at(1)) } else { pcell(c.at(0)) })))
-    let note = if p.given_list.len() == 0 [No letters given: this one is all yours.] else if p.given_list.len() == 1 [Given letter: #p.given_list.at(0)] else [Given letters: #p.given_list.join(", ")]
+    let n = p.given_list.len()
+    let note = if n == 0 [No letters given: this one is all yours.] else if n == 1 [One letter is already filled in for you.] else [#n letters are already filled in for you.]
     pagebreak()
     [#metadata(p.num) #label("puzzle-" + str(p.num))]
     puzzle(num: p.num, level: p.level, level-name: p.level_name, words: ws, counts: p.counts, given: p.given, given-note: note,

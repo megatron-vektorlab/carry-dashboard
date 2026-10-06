@@ -6,6 +6,8 @@
 #chapter-title("Hints", sub: "Three gentle steps for every puzzle")
 Every puzzle has three hints, each in its own section so you never see more than you want. Take one hint, go back to the puzzle, and enjoy the rest of it yourself.
 
+How to read a letter hint: *Y = E* means that the code letter *Y* stands for the real letter *E*. Write E on the line above every Y in the puzzle, and in the *Real* box under Y in the code key.
+
 #table(columns: (auto, 1fr), stroke: none, inset: (x: 0pt, y: 4pt), column-gutter: 12pt,
   [*Hint 1*], [The book of the Bible, and one more letter.],
   [*Hint 2*], [Two more letters.],

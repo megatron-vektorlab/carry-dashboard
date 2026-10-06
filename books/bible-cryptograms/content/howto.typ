@@ -14,7 +14,7 @@ A cryptogram is a sentence written in a secret code. Every letter has been swapp
 
 #section("What is on each page")
 #table(columns: (auto, 1fr), stroke: none, inset: (x: 0pt, y: 5pt), column-gutter: 14pt,
-  [*Given letters*], [These are filled in for you, in bold, everywhere they appear.],
+  [*Given letters*], [Some puzzles start with a few real letters already filled in, in bold, everywhere they appear. They are also in the code key.],
   [*The lines*], [Write each real letter on the line above its code letter.],
   [*Code key*], [The row *Code* lists every code letter. *Used* tells you how often it appears in this puzzle, so you do not have to count. In the row *Real*, write the real letter as soon as you know it.],
   [*Notes*], [Room to try out words before you write them in.],

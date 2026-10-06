@@ -24,17 +24,27 @@ AZ = string.ascii_uppercase
 WORD_RE = re.compile(r"[A-Z]+(?:['\-][A-Z]+)*")
 
 
-def make_key(seed) -> dict[str, str]:
-    """plain -> cipher; a derangement (no letter maps to itself), reproducible from `seed`."""
+# Code letters that are easy to confuse in large print (Q with O, J with I) are not used
+# for any letter that occurs in the verse.
+AVOID = "QJ"
+
+
+def make_key(seed, used: str | set | None = None) -> dict[str, str]:
+    """plain -> cipher; a derangement (no letter maps to itself), reproducible from `seed`.
+    used: the plain letters of the verse; none of them is enciphered as Q or J."""
     rng = random.Random(f"key:{seed}")
+    used = set(used or "")
     while True:
         perm = list(AZ)
         rng.shuffle(perm)
-        if all(p != c for p, c in zip(AZ, perm)):
-            # also avoid keys that keep alphabet neighbours (A->B, B->C ...) in more than 2 places
-            shifts = sum(1 for p, c in zip(AZ, perm) if (ord(c) - ord(p)) % 26 in (1, 25))
-            if shifts <= 2:
-                return dict(zip(AZ, perm))
+        if not all(p != c for p, c in zip(AZ, perm)):
+            continue
+        # also avoid keys that keep alphabet neighbours (A->B, B->C ...) in more than 2 places
+        if sum(1 for p, c in zip(AZ, perm) if (ord(c) - ord(p)) % 26 in (1, 25)) > 2:
+            continue
+        if any(c in AVOID for p, c in zip(AZ, perm) if p in used):
+            continue
+        return dict(zip(AZ, perm))
 
 
 def encrypt(plain: str, key: dict[str, str]) -> str:

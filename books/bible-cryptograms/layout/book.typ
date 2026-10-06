@@ -32,8 +32,8 @@
   set text(font: sans, size: body-size, fill: ink, lang: "en", hyphenate: false)
   set par(leading: 0.62em, spacing: 0.95em, justify: false)
   set strong(delta: 300)
-  // Atkinson draws a slashed zero (Ø); numbers are set in Libre Baskerville instead.
-  show regex("[0-9]+"): set text(font: serif, number-type: "lining")
+  // Numbers stay in Atkinson: narrow lining digits, and its slashed zero is a deliberate
+  // low-vision feature (0 never looks like O).
   body
 }
 
@@ -95,8 +95,10 @@
   box(width: cw, height: ch, align(center + horizon, text(size: cipher-size, weight: "bold", c)))
 ))
 
+// Punctuation is printed only in the code line: on the write-in line a comma would sit
+// at the top of an empty space and look like an apostrophe (blind-test finding).
 #let pcell(c) = box(width: pw, stack(dir: ttb, spacing: 0.03in,
-  box(height: ah, align(center + bottom, pad(bottom: 3pt, text(size: answer-size, weight: "bold", c)))),
+  box(height: ah),
   box(height: ch, align(center + horizon, text(size: cipher-size, c)))
 ))
 
@@ -107,15 +109,16 @@
 // The code key: every code letter, how often it appears, and a space to write its real letter.
 #let key-table(counts, given) = {
   let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".clusters()
+  let sep = 0.9pt + rule-grey      // visible column rules keep two-digit counts apart
   block(width: 100%, breakable: false, grid(columns: (auto,) + (1fr,) * 26, row-gutter: 0pt,
     box(height: 0.27in, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Code])),
-    ..letters.map(l => box(width: 100%, height: 0.27in, stroke: (top: 1pt + ink, left: 0.6pt + faint, right: 0.6pt + faint),
+    ..letters.map(l => box(width: 100%, height: 0.27in, stroke: (top: 1pt + ink, left: sep, right: sep),
       align(center + horizon, text(size: 16pt, weight: "bold", l)))),
     box(height: 0.25in, inset: (right: 5pt), align(right + horizon, text(size: 16pt)[Used])),
-    ..letters.map(l => box(width: 100%, height: 0.25in, stroke: (left: 0.6pt + faint, right: 0.6pt + faint),
-      align(center + horizon, text(size: 16pt, tracking: -0.6pt, if counts.at(l, default: 0) > 0 { str(counts.at(l)) } else { "–" })))),
+    ..letters.map(l => box(width: 100%, height: 0.25in, stroke: (left: sep, right: sep),
+      align(center + horizon, text(size: 16pt, tracking: -1pt, if counts.at(l, default: 0) > 0 { str(counts.at(l)) } else { "–" })))),
     box(height: 0.36in, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Real])),
-    ..letters.map(l => box(width: 100%, height: 0.36in, stroke: (bottom: 1pt + ink, top: 0.6pt + faint, left: 0.6pt + faint, right: 0.6pt + faint),
+    ..letters.map(l => box(width: 100%, height: 0.36in, stroke: (bottom: 1pt + ink, top: 0.6pt + faint, left: sep, right: sep),
       align(center + horizon, text(size: 18pt, weight: "bold", given.at(l, default: ""))))),
   ))
 }

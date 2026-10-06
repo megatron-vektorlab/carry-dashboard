@@ -123,6 +123,46 @@ def check_interior(errors: list[str], notes: list[str]):
                     errors.append(f"puzzle {num}: verse text not found verbatim on answer page {ap}")
     notes.append(f"puzzle pages checked: {len(found)}/{len(puzzles)}")
 
+    # claims printed on the cover / in the listing
+    per_page = [len(re.findall(r"^Puzzle \d+$", t, re.M)) for t in pages_text]
+    if max(per_page) > 1:
+        errors.append("a page holds more than one puzzle, but the cover says 'one puzzle per page'")
+    sizes = set()
+    for i in found.values():
+        for b in doc[i].get_text("dict")["blocks"]:
+            for line in b.get("lines", []):
+                for sp in line["spans"]:
+                    if re.fullmatch(r"[A-Z]", sp["text"].strip()):
+                        sizes.add(round(sp["size"]))
+    if 21 not in sizes:
+        errors.append(f"cover promises 21-point code letters; found letter sizes {sorted(sizes)}")
+    from . import config
+    if not config.BULLETS[0].startswith(str(len(puzzles))) or not config.FRONT_LINE[0].startswith(str(len(puzzles))):
+        errors.append("puzzle count on the cover does not match the book")
+    missing_refl = [p["num"] for p in puzzles.values() if not p.get("reflection")]
+    if missing_refl:
+        errors.append(f"{len(missing_refl)} puzzles have no reflection line (data/reflections.json), e.g. {missing_refl[:5]}")
+    # reflection lines: length, safe characters, and they must not restate the verse
+    for p in puzzles.values():
+        r = p.get("reflection", "")
+        if not r:
+            continue
+        n = len(r.split())
+        if not 6 <= n <= 24:
+            errors.append(f"puzzle {p['num']}: reflection has {n} words")
+        if re.search(r"[^A-Za-z0-9 .,;:?'()\-]", r):
+            errors.append(f"puzzle {p['num']}: reflection has unexpected characters: {r!r}")
+        vw = re.findall(r"[a-z']+", p["text"].lower())
+        rw = re.findall(r"[a-z']+", r.lower())
+        grams = {tuple(vw[i:i + 5]) for i in range(len(vw) - 4)}
+        if any(tuple(rw[i:i + 5]) in grams for i in range(len(rw) - 4)):
+            errors.append(f"puzzle {p['num']}: reflection repeats five words of the verse")
+    missing_intro = [t["name"] for t in data["themes"] if not t.get("intro")]
+    if missing_intro:
+        errors.append(f"parts without an introduction (data/intros.json): {missing_intro}")
+    if data["release"].get("draft"):
+        errors.append(f"release data incomplete (draft watermark on): {data['release'].get('missing')}")
+
 
 def check_cover(errors: list[str], notes: list[str]):
     if not os.path.exists(COVER):

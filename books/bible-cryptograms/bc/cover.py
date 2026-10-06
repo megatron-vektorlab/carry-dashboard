@@ -59,7 +59,7 @@ def main(pages: int | None = None):
     pz = json.load(open(os.path.join(ROOT, "data", "puzzles.json")))["puzzles"]
     sample = pick_sample(pz)
     from . import book, cipher, kjv
-    key = cipher.make_key("cover:CRYPTOGRAMS")
+    key = cipher.make_key("cover:CRYPTOGRAMS", used="CRYPTOGRAMS")
     data = dict(g, title=config.TITLE, subtitle=config.SUBTITLE, author=config.AUTHOR,
                 count=len(pz), front_line=config.FRONT_LINE, back_headline=config.BACK_HEADLINE,
                 blurb=config.BLURB, bullets=config.BULLETS,

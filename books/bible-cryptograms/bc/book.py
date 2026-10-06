@@ -51,13 +51,14 @@ def cells(cipher: str, given: dict[str, str]):
 def build_data():
     pz = _load("puzzles.json")["puzzles"]
     sel = _load("selection.json")
-    refl = {int(k): v for k, v in _load("reflections.json", {}).items()}
+    refl = _load("reflections.json", {})          # {reference: one-line reflection}
+    intros = _load("intros.json", {})              # {part name: introduction}
     themes = []
     for t in sel["themes"]:
         nums = [p["num"] for p in pz if p["theme"] == t["name"]]
         if not nums:
             continue
-        themes.append({"name": t["name"], "intro": t.get("intro", ""), "first": min(nums), "last": max(nums)})
+        themes.append({"name": t["name"], "intro": intros.get(t["name"], ""), "first": min(nums), "last": max(nums)})
     puzzles = []
     for p in pz:
         counts = collections.Counter(c for c in p["cipher"] if c.isalpha())
@@ -71,7 +72,7 @@ def build_data():
             "verse_text": p["text"], "book": p["book"],
             "chapter": kjv.parse_ref(p["ref"])[1], "verse": kjv.parse_ref(p["ref"])[2],
             "hints": p["hints"],
-            "reflection": refl.get(p["num"], ""),
+            "reflection": refl.get(p["ref"], ""),
         })
     from . import cipher, example
     book_words = collections.Counter(w for p in pz for w in cipher.words(p["text"]))
