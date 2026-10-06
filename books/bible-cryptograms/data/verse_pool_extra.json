@@ -194,6 +194,11 @@
      "ref": "Isaiah 43:2",
      "to": "overflow thee",
      "popularity": 3
+    },
+    {
+     "ref": "Psalms 30:5",
+     "from": "weeping may endure",
+     "popularity": 3
     }
    ]
   },
@@ -349,6 +354,10 @@
     },
     {
      "ref": "Psalms 127:2"
+    },
+    {
+     "ref": "Psalms 34:4",
+     "popularity": 3
     }
    ]
   },
@@ -534,6 +543,15 @@
     },
     {
      "ref": "Job 14:7"
+    },
+    {
+     "ref": "2 Corinthians 4:16",
+     "popularity": 3
+    },
+    {
+     "ref": "Hebrews 6:19",
+     "to": "stedfast",
+     "popularity": 3
     }
    ]
   },
@@ -936,6 +954,10 @@
      "ref": "2 Timothy 1:12",
      "from": "I know whom",
      "to": "against that day."
+    },
+    {
+     "ref": "Psalms 56:3-4",
+     "popularity": 3
     }
    ]
   },
@@ -1201,9 +1223,6 @@
      "ref": "Luke 2:7"
     },
     {
-     "ref": "Luke 2:8"
-    },
-    {
      "ref": "Luke 2:9"
     },
     {
@@ -1229,9 +1248,6 @@
     },
     {
      "ref": "Luke 2:16"
-    },
-    {
-     "ref": "Luke 2:19"
     },
     {
      "ref": "Luke 2:20"
@@ -1310,9 +1326,21 @@
     },
     {
      "ref": "Matthew 2:11",
-     "from": "and when they had opened",
-     "to": "myrrh.",
+     "to": "worshipped him",
      "popularity": 3
+    },
+    {
+     "ref": "Isaiah 9:6",
+     "to": "upon his shoulder",
+     "popularity": 5
+    },
+    {
+     "ref": "Luke 2:8",
+     "popularity": 4
+    },
+    {
+     "ref": "Luke 2:19",
+     "popularity": 4
     }
    ]
   }

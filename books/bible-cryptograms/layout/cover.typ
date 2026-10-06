@@ -14,7 +14,7 @@
 #set page(width: W, height: H, margin: 0pt, fill: rgb("#1D2B4F"))
 #set text(font: "Atkinson Hyperlegible Next")
 // Atkinson draws a slashed zero; numbers on the cover use Libre Baskerville.
-#show regex("[0-9]+"): set text(font: "Libre Baskerville", size: 0.92em, number-type: "lining")
+#show regex("[0-9]+"): set text(font: "Libre Baskerville", number-type: "lining")
 
 // ---------- palette ----------
 #let navy = rgb("#1D2B4F")

@@ -15,8 +15,8 @@ How to read a letter hint: *Y = E* means that the code letter *Y* stands for the
   [*Hint 3*], [The longest word and where it is (word 7 means the seventh word of the puzzle), and the full reference, so you can look the verse up in your own Bible.], [page #pg(<hints-3>)],
 )
 
-#metadata(none) <hints-1>
 #set page(header: context { if locate(<hints-1>).page() != here().page() { set text(size: 16pt); if calc.even(here().page()) [Hint 1 · The book and one letter #h(1fr)] else [#h(1fr) Hint 1 · The book and one letter] } })
+#metadata(none) <hints-1>
 #section("Hint 1 · The book and one letter")
 #v(4pt)
 #columns(2, gutter: 0.35in)[

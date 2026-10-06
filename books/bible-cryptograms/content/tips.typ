@@ -41,7 +41,26 @@ In these #D.puzzles.len() verses the words you will meet most often are #D.book_
 THEE · THOU · THY · THINE · YE · UNTO · HATH · SHALL · SAITH. If a three-letter code word sits where "your" would go, try *THY*; if a four-letter word starts like THE, try *THEE*, *THEM*, *THEY* or *THEN*.
 
 #section("Word endings")
-Many King James verbs end in *-ETH* (LOVETH, MAKETH, GIVETH) or *-EST* (KNOWEST). A long code word that ends in the same three code letters as another one may share that ending. An ending in *-ED* or *-ING* is just as common as in modern English.
+Many King James verbs end in *-ETH* (LOVETH, MAKETH, GIVETH) or *-EST* (KNOWEST). A long code word that ends in the same three code letters as another one may share that ending. Endings in *-ED* and *-ING* are common too.
 
 #section("Double letters and apostrophes")
 The most common double letters are #S.doubles.slice(0, 6).map(d => d.at(0)).join(", "). A double letter at the end of a short word is usually *LL* (ALL, SHALL, WILL) or *EE* (THEE). A code word ending with an apostrophe and one letter, like XYZW’K, usually ends in *’S*: LORD’S, FATHER’S.
+
+#block(breakable: false)[
+#section("Old words with new meanings")
+A few King James words meant something different four hundred years ago:
+#table(columns: (auto, 1fr), stroke: none, inset: (x: 0pt, y: 4pt), column-gutter: 14pt,
+  [*careful*], [anxious, worried ("Be careful for nothing")],
+  [*conversation*], [way of life],
+  [*expected end*], [a hoped-for future],
+  [*stayed*], [kept steady, fixed],
+  [*suffer*], [allow, let],
+  [*offend*], [cause to stumble],
+  [*charity*], [love],
+  [*quickened*], [made alive],
+  [*shew*], [show],
+  [*nigh*], [near],
+)]
+
+#section("A verse may end with a comma")
+Each verse keeps its own King James punctuation. When a sentence carries on into the next verse, the puzzle ends with a comma, colon or semicolon. Nothing is missing.

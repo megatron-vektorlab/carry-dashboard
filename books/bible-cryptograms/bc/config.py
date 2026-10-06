@@ -16,7 +16,7 @@ YEAR = 2026
 # ---- cover texts (every claim here must stay true for the interior; bc.qa checks the numbers) ----
 FRONT_LINE = ["200 King James Verses of", "Comfort, Hope and Strength"]
 BACK_HEADLINE = "Unlock God's Word, letter by letter"
-BLURB = ("Every puzzle in this book hides a well-loved verse from the King James Bible. Crack the code, "
+BLURB = ("Every puzzle in this book hides a well-loved verse or short passage from the King James Bible. Crack the code, "
          "letter by letter, and words of comfort, hope and strength appear in your own handwriting. "
          "Big, clear letters, roomy write-in lines and gentle hints make each puzzle a peaceful few "
          "minutes with Scripture.")

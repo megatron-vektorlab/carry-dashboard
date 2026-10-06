@@ -146,11 +146,17 @@ def verse(book: str, chapter: int, v: int) -> dict:
     present = {k: t for k, t in texts.items() if t}
     if not present:
         raise KeyError(f"{book} {chapter}:{v} not found in any copy")
-    exact = collections.Counter(present.values())
-    best_n = max(exact.values())
-    best = [t for t, n in exact.items() if n == best_n]
-    text = best[0] if len(best) == 1 else next(present[k] for k in PREFERENCE if present.get(k) in best)
-    same_exact = sorted(k for k, t in present.items() if t == text)
+    # Vote on the text with case and spacing before punctuation ignored (copies differ in
+    # "LORD"/"Lord" and "LORD ;"), then print the most trusted copy among the winners.
+    def norm(t: str) -> str:
+        return re.sub(r"\s+([;:,.!?)])", r"\1", t).lower()
+    groups = collections.Counter(norm(t) for t in present.values())
+    best_n = max(groups.values())
+    winners = [g for g, n in groups.items() if n == best_n]
+    win = next(norm(present[k]) for k in PREFERENCE if present.get(k) and norm(present[k]) in winners)
+    text = next(present[k] for k in PREFERENCE if present.get(k) and norm(present[k]) == win)
+    same_exact = sorted(k for k, t in present.items() if norm(t) == win)
+    text = text.replace("LORD'S", "LORD's")      # small-caps convention in plain text
     # Letters only (case-blind): what the puzzle is built from.
     lt = letters(text)
     same_letters = sorted(k for k, t in present.items() if letters(t) == lt)

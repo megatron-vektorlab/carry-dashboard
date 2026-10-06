@@ -31,7 +31,7 @@ another publisher, so keep ours exactly "Large Print Bible Cryptograms".
 ```html
 <b>Truly large print, carefully checked: 200 Bible cryptograms from the King James Version.</b>
 
-<p>Every puzzle hides a well-loved verse from the King James Bible. Crack the code, letter by letter, and words of comfort, hope and strength appear in your own handwriting: a few peaceful minutes with a pencil and with Scripture.</p>
+<p>Every puzzle hides a well-loved verse or short passage from the King James Bible. Crack the code, letter by letter, and words of comfort, hope and strength appear in your own handwriting: a few peaceful minutes with a pencil and with Scripture.</p>
 
 <h4>What's inside</h4>
 <ul>
@@ -83,8 +83,8 @@ comfort, hope, strength) are indexed anyway, so these boxes add other search ter
 | Book cover | "Upload a cover you already have" → `output/Large-Print-Bible-Cryptograms-cover.pdf` |
 | AI-generated content | **Yes.** Texts: *Some sections, with minimal or no editing* (written by an AI model, Claude: the Welcome, How to Solve, worked example and Tips pages, the hint instructions, the 7 part introductions, the 200 Reflect lines and the cover texts; change to "with extensive editing" only if you rewrite them yourself). Images: *One or a few AI-generated images, with minimal or no editing* (the cover art and ornaments were drawn by AI-written code). Translations: *None*. The verses are the human King James text and the puzzles were made by deterministic software. |
 
-The cover PDF's spine width is computed from the interior page count (275 pages,
-spine 0.6193 in). If the interior changes, rebuild everything with `python3 -m bc.build`
+The cover PDF's spine width is computed from the interior page count (276 pages,
+spine 0.6216 in). If the interior changes, rebuild everything with `python3 -m bc.build`
 before uploading — KDP rejects a cover whose spine does not match.
 
 ## Rights & pricing
@@ -98,8 +98,8 @@ before uploading — KDP rejects a cover whose spine does not match.
   then prints Cambridge's required acknowledgement).
 * Royalty: 60 %.
 * Suggested list price: **$13.99** (EU €13.99, CA C$18.99, AU A$21.99; check VAT handling and the royalty column in KDP's calculator). A lower launch price of $12.99 (about $2.10 per sale) is a reasonable alternative; raise it after the first reviews.
-* Royalty estimate (US): 275 pages → print cost $1.00 + $0.017 × 275 = **$5.68**;
-  60 % × $13.99 − $5.68 ≈ **$2.72 per sale**. KDP's pricing calculator is authoritative.
+* Royalty estimate (US): 276 pages → print cost $1.00 + $0.017 × 276 = **$5.69**;
+  60 % × $13.99 − $5.69 ≈ **$2.70 per sale**. KDP's pricing calculator is authoritative.
 * Expanded distribution: off (royalty would be near zero at this price).
 
 ## Marketing images

@@ -4,7 +4,7 @@
 
 #metadata(none) <sec-howto>
 #chapter-title("How to Solve a Cryptogram")
-A cryptogram is a sentence written in a secret code. Every letter has been swapped for a different letter. Your task is to swap them back.
+A cryptogram is a sentence written in a secret code. Every letter has been swapped for a different letter. Your task is to swap them back. Use a pencil with a good eraser: guessing is allowed, and it is half the fun.
 
 #section("The rules of the code")
 - One code letter always stands for the same real letter, all through the puzzle. If *K* means *E* once, it means *E* everywhere.
@@ -17,9 +17,8 @@ A cryptogram is a sentence written in a secret code. Every letter has been swapp
   [*Given letters*], [Some puzzles start with a few real letters already filled in, in bold, everywhere they appear. They are also in the code key.],
   [*The lines*], [Write each real letter on the line above its code letter.],
   [*Code key*], [Under each puzzle (in one or two bands). The row *Code* shows the alphabet. *Used* tells you how often each code letter appears in this puzzle (a dash means it is not used), so you do not have to count. In the row *Real*, write the real letter as soon as you know it.],
-  [*Notes*], [On most pages there is room to try out words before you write them in.],
+  [*Notes*], [Where there is room, lines to try out words before you write them in.],
 )
-Use a pencil with a good eraser. Guessing is allowed; that is half the fun.
 
 #pagebreak()
 #chapter-title("A Puzzle Solved Step by Step", sub: [#E.ref.replace("Psalms", "Psalm")])

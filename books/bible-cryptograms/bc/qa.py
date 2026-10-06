@@ -79,6 +79,12 @@ def check_interior(errors: list[str], notes: list[str]):
                         errors.append(f"p{i + 1}: text outside safe area: {t[:30]!r} at x={x0:.2f}-{x1:.2f} y={y0:.2f}-{y1:.2f}")
         pages_text.append(page.get_text("text"))
     notes.append(f"smallest text: {min_size:.1f} pt")
+    if n % 2:
+        errors.append(f"odd page count {n}: KDP would add a blank page and the spine would not match")
+    for i, t in enumerate(pages_text):
+        body = re.sub(r"DRAFT · NOT FOR\s*SALE", "", t).strip()
+        if len(body) < 150 and not any(k in body for k in ("This Book Belongs To", "Verses I Want", "Notes", "Cryptograms")):
+            errors.append(f"p{i + 1}: page is almost empty ({len(body)} characters): {body[:60]!r}")
     for ext, name in sorted(fonts):
         if ext not in ("ttf", "cff", "otf", "cid", "ttc") and "Type3" not in ext:
             errors.append(f"font not embedded? {name} ({ext})")
@@ -95,7 +101,7 @@ def check_interior(errors: list[str], notes: list[str]):
             errors.append(f"puzzle {num}: page not found")
             continue
         t = pages_text[found[num]]
-        if not re.search(r"^Real\b", t, re.M):
+        if "N O P Q R S T U V W X Y Z" not in re.sub(r"\s+", " ", t):
             errors.append(f"puzzle {num}: its code key is not on the same page (page overflow)")
         body = t.split("Code key")[0]
         want = re.sub(r"[^A-Z]", "", "".join(c[0] for w in p["words"] for c in w))

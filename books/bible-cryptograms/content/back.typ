@@ -22,4 +22,10 @@
 #pagebreak()
 #metadata(none) <sec-remember>
 #chapter-title("Verses I Want to Remember")
-#for i in range(11) { v(0.48in); line(length: 100%, stroke: 1pt + rule-grey) }
+#ruled-lines()
+
+#if D.at("pad_page", default: false) {
+  pagebreak()
+  chapter-title("Notes")
+  ruled-lines()
+}

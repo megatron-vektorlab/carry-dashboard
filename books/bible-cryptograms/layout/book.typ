@@ -32,8 +32,14 @@
   set text(font: sans, size: body-size, fill: ink, lang: "en", hyphenate: false)
   set par(leading: 0.62em, spacing: 0.95em, justify: false)
   set strong(delta: 300)
-  // Numbers stay in Atkinson: narrow lining digits, and its slashed zero is a deliberate
-  // low-vision feature (0 never looks like O).
+  // Atkinson draws a slashed zero, which a blind tester read as the letter O next to the
+  // code key's O column; numbers use Source Sans 3 (plain zero, narrow lining figures).
+  show regex("[0-9]+"): it => context {
+    let f = text.font
+    let first = if type(f) == array { f.first() } else { f }
+    let name = if type(first) == str { first } else { first.name }
+    if lower(name) == lower(sans) { text(font: "Source Sans 3", it) } else { it }
+  }
   body
 }
 
@@ -111,17 +117,20 @@
 #let key-band(letters, counts, given) = {
   let sep = 0.9pt + rule-grey      // visible column rules keep two-digit counts apart
   let n = letters.len()
-  // row heights: roomier in the two-band key, compact in the one-row key (long verses)
-  let (hc, hu, hr) = if n > 13 { (0.27in, 0.25in, 0.36in) } else { (0.29in, 0.27in, 0.40in) }
-  grid(columns: (auto,) + (1fr,) * n, row-gutter: 0pt,
-    box(height: hc, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Code])),
+  let wide = n <= 13
+  // The two-band key has row labels and roomy rows; the one-row key (long verses) gives the
+  // label column's width to the 26 letter columns instead, so two-digit counts have room.
+  let (hc, hu, hr) = if wide { (0.29in, 0.27in, 0.40in) } else { (0.27in, 0.25in, 0.36in) }
+  let lab(t, h, bold: true) = if wide { (box(height: h, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: if bold { "bold" } else { "regular" }, t))),) } else { () }
+  grid(columns: (if wide { (auto,) } else { () }) + (1fr,) * n, row-gutter: 0pt,
+    ..lab([Code], hc),
     ..letters.map(l => box(width: 100%, height: hc, stroke: (top: 1pt + ink, left: sep, right: sep),
-      align(center + horizon, text(size: if n > 13 { 16pt } else { 18pt }, weight: "bold", l)))),
-    box(height: hu, inset: (right: 5pt), align(right + horizon, text(size: 16pt)[Used])),
+      align(center + horizon, text(size: if wide { 18pt } else { 16pt }, weight: "bold", l)))),
+    ..lab([Used], hu, bold: false),
     ..letters.map(l => box(width: 100%, height: hu, stroke: (left: sep, right: sep),
-      align(center + horizon, text(size: 16pt, tracking: if n > 13 { -1pt } else { 0pt },
+      align(center + horizon, text(size: 16pt, tracking: if wide { 0pt } else { -0.5pt },
         if counts.at(l, default: 0) > 0 { str(counts.at(l)) } else { "–" })))),
-    box(height: hr, inset: (right: 5pt), align(right + horizon, text(size: 16pt, weight: "bold")[Real])),
+    ..lab([Real], hr),
     ..letters.map(l => box(width: 100%, height: hr, stroke: (bottom: 1pt + ink, top: 0.6pt + faint, left: sep, right: sep),
       align(center + horizon, text(size: 20pt, weight: "bold", given.at(l, default: ""))))),
   )
@@ -146,6 +155,12 @@
     text(size: 16pt, weight: "bold")[Notes]
     for i in range(n) { v(gap - 1pt, weak: false); line(length: 100%, stroke: 1pt + rule-grey) }
   }
+}))
+
+// Writing lines filling the rest of the page (never spills onto the next page).
+#let ruled-lines(gap: 0.48in) = block(width: 100%, height: 1fr, breakable: false, clip: true, layout(size => {
+  let n = calc.floor((size.height - 0.1in) / gap)
+  for i in range(n) { v(gap - 1pt, weak: false); line(length: 100%, stroke: 1pt + rule-grey) }
 }))
 
 // One puzzle per page.

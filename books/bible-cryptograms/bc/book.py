@@ -74,12 +74,13 @@ def build_data():
             "counts": dict(counts), "given": p["given"],
             "given_list": [f"{c} = {v}" for c, v in sorted(p["given"].items())],
             "ref": display_ref(p["ref"]) + (" (part)" if p.get("partial") else ""),
-            "text": typo(("\u2026" if p.get("starts_mid") else "") + p["text"] + ("\u2026" if p.get("ends_mid") else "")),
+            "text": typo(("\u2026" if p.get("starts_mid") else "") + p["text"]
+                         + ("\u2026" if p.get("ends_mid") and not p["text"].endswith(".") else "")),
             "verse_text": p["text"], "book": p["book"],
             "chapter": kjv.parse_ref(p["ref"])[1], "verse": kjv.parse_ref(p["ref"])[2],
             "hints": p["hints"],
             "wide_key": layout.lines_needed(p["cipher"]) <= WIDE_KEY_MAX_LINES,
-            "reflection": typo(refl.get(p["ref"], "")),
+            "reflection": typo(refl.get(p.get("text_key", p["ref"]), "")),
         })
     from . import cipher, example
     book_words = collections.Counter(w for p in pz for w in cipher.words(p["text"]))
@@ -103,6 +104,14 @@ def main():
                   ignore_system_fonts=True)
     import pymupdf
     n = pymupdf.open(out).page_count
+    if n % 2 and not data.get("pad_page"):
+        # KDP prints an even number of pages; add a lined Notes page instead of a blank one
+        data["pad_page"] = True
+        with open(os.path.join(BUILD, "data.json"), "w") as f:
+            json.dump(data, f, ensure_ascii=False)
+        typst.compile(main_typ, output=out, root=ROOT, font_paths=[os.path.join(ROOT, "fonts")],
+                      ignore_system_fonts=True)
+        n = pymupdf.open(out).page_count
     print(f"interior: {n} pages -> {os.path.relpath(out, ROOT)}", file=sys.stderr)
     return out
 

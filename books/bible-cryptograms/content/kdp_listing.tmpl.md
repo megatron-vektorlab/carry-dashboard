@@ -31,7 +31,7 @@ another publisher, so keep ours exactly "Large Print Bible Cryptograms".
 ```html
 <b>Truly large print, carefully checked: 200 Bible cryptograms from the King James Version.</b>
 
-<p>Every puzzle hides a well-loved verse from the King James Bible. Crack the code, letter by letter, and words of comfort, hope and strength appear in your own handwriting: a few peaceful minutes with a pencil and with Scripture.</p>
+<p>Every puzzle hides a well-loved verse or short passage from the King James Bible. Crack the code, letter by letter, and words of comfort, hope and strength appear in your own handwriting: a few peaceful minutes with a pencil and with Scripture.</p>
 
 <h4>What's inside</h4>
 <ul>

@@ -2,6 +2,7 @@
  "puzzles": [
   {
    "ref": "John 10:11",
+   "text_key": "John 10:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -106,6 +107,7 @@
   },
   {
    "ref": "Matthew 11:28",
+   "text_key": "Matthew 11:28",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -211,6 +213,7 @@
   },
   {
    "ref": "Psalms 147:3",
+   "text_key": "Psalms 147:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -313,7 +316,214 @@
    "num": 3
   },
   {
+   "ref": "Psalms 30:5",
+   "text_key": "Psalms 30:5 | weeping may endure ... ",
+   "partial": true,
+   "starts_mid": true,
+   "ends_mid": false,
+   "book": "Psalms",
+   "theme": "Comfort in Hard Times",
+   "level": 1,
+   "text": "weeping may endure for a night, but joy cometh in the morning.",
+   "cipher": "DOOFCLP IRM OLSHNO VEN R LCPBZ, KHZ UEM XEIOZB CL ZBO IENLCLP.",
+   "key": {
+    "A": "R",
+    "B": "K",
+    "C": "X",
+    "D": "S",
+    "E": "O",
+    "F": "V",
+    "G": "P",
+    "H": "B",
+    "I": "C",
+    "J": "U",
+    "K": "J",
+    "L": "W",
+    "M": "I",
+    "N": "L",
+    "O": "E",
+    "P": "F",
+    "Q": "Y",
+    "R": "N",
+    "S": "T",
+    "T": "Z",
+    "U": "H",
+    "V": "Q",
+    "W": "D",
+    "X": "A",
+    "Y": "M",
+    "Z": "G"
+   },
+   "given": {
+    "C": "I",
+    "D": "W",
+    "E": "O",
+    "U": "J"
+   },
+   "needed_for_uniqueness": [
+    "D",
+    "U"
+   ],
+   "hints": {
+    "1": {
+     "book": "Psalms",
+     "letters": [
+      [
+       "O",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "L",
+       "N"
+      ],
+      [
+       "Z",
+       "T"
+      ]
+     ]
+    },
+    "3": {
+     "word": "WEEPING",
+     "position": 1,
+     "ref": "Psalms 30:5"
+    }
+   },
+   "letters": 49,
+   "lines": 3,
+   "distinct": 19,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Psalms 30:5",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 4
+  },
+  {
+   "ref": "Psalms 34:4",
+   "text_key": "Psalms 34:4",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Psalms",
+   "theme": "Comfort in Hard Times",
+   "level": 1,
+   "text": "I sought the LORD, and he heard me, and delivered me from all my fears.",
+   "cipher": "C UBWXMG GMN FBPT, IZT MN MNIPT VN, IZT TNFCDNPNT VN OPBV IFF VH ONIPU.",
+   "key": {
+    "A": "I",
+    "B": "J",
+    "C": "S",
+    "D": "T",
+    "E": "N",
+    "F": "O",
+    "G": "X",
+    "H": "M",
+    "I": "C",
+    "J": "K",
+    "K": "R",
+    "L": "F",
+    "M": "V",
+    "N": "Z",
+    "O": "B",
+    "P": "A",
+    "Q": "E",
+    "R": "P",
+    "S": "U",
+    "T": "G",
+    "U": "W",
+    "V": "D",
+    "W": "Q",
+    "X": "Y",
+    "Y": "H",
+    "Z": "L"
+   },
+   "given": {
+    "F": "L",
+    "I": "A",
+    "M": "H",
+    "P": "R",
+    "V": "M"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Psalms",
+     "letters": [
+      [
+       "N",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "T",
+       "D"
+      ],
+      [
+       "B",
+       "O"
+      ]
+     ]
+    },
+    "3": {
+     "word": "DELIVERED",
+     "position": 10,
+     "ref": "Psalms 34:4"
+    }
+   },
+   "letters": 54,
+   "lines": 3,
+   "distinct": 17,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Psalms 34:4",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 5
+  },
+  {
    "ref": "Psalms 3:3",
+   "text_key": "Psalms 3:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -400,7 +610,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -413,10 +625,11 @@
      "differ": {}
     }
    ],
-   "num": 4
+   "num": 6
   },
   {
    "ref": "Psalms 46:1",
+   "text_key": "Psalms 46:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -513,213 +726,11 @@
      "differ": {}
     }
    ],
-   "num": 5
-  },
-  {
-   "ref": "Psalms 73:26",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Psalms",
-   "theme": "Comfort in Hard Times",
-   "level": 1,
-   "text": "My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever.",
-   "cipher": "LD VOBCA FRM LD ABFTS VFEOBSA: ZXS NIM EC SAB CSTBRNSA IV LD ABFTS, FRM LD GITSEIR VIT BKBT.",
-   "key": {
-    "A": "F",
-    "B": "Z",
-    "C": "P",
-    "D": "M",
-    "E": "B",
-    "F": "V",
-    "G": "N",
-    "H": "A",
-    "I": "E",
-    "J": "Y",
-    "K": "H",
-    "L": "O",
-    "M": "L",
-    "N": "R",
-    "O": "I",
-    "P": "G",
-    "Q": "W",
-    "R": "T",
-    "S": "C",
-    "T": "S",
-    "U": "X",
-    "V": "K",
-    "W": "J",
-    "X": "Q",
-    "Y": "D",
-    "Z": "U"
-   },
-   "given": {
-    "A": "H",
-    "K": "V",
-    "T": "R",
-    "Z": "B"
-   },
-   "needed_for_uniqueness": [
-    "K",
-    "Z"
-   ],
-   "hints": {
-    "1": {
-     "book": "Psalms",
-     "letters": [
-      [
-       "B",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "S",
-       "T"
-      ],
-      [
-       "F",
-       "A"
-      ]
-     ]
-    },
-    "3": {
-     "word": "STRENGTH",
-     "position": 11,
-     "ref": "Psalms 73:26"
-    }
-   },
-   "letters": 71,
-   "lines": 4,
-   "distinct": 19,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Psalms 73:26",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 6
-  },
-  {
-   "ref": "Psalms 94:19",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Psalms",
-   "theme": "Comfort in Hard Times",
-   "level": 1,
-   "text": "In the multitude of my thoughts within me thy comforts delight my soul.",
-   "cipher": "WC NDR PKVNWNKIR TS PG NDTKEDNU LWNDWC PR NDG BTPSTANU IRVWEDN PG UTKV.",
-   "key": {
-    "A": "Y",
-    "B": "M",
-    "C": "B",
-    "D": "I",
-    "E": "R",
-    "F": "S",
-    "G": "E",
-    "H": "D",
-    "I": "W",
-    "J": "F",
-    "K": "H",
-    "L": "V",
-    "M": "P",
-    "N": "C",
-    "O": "T",
-    "P": "Z",
-    "Q": "X",
-    "R": "A",
-    "S": "U",
-    "T": "N",
-    "U": "K",
-    "V": "J",
-    "W": "L",
-    "X": "Q",
-    "Y": "G",
-    "Z": "O"
-   },
-   "given": {
-    "P": "M",
-    "R": "E",
-    "T": "O",
-    "W": "I"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Psalms",
-     "letters": [
-      [
-       "N",
-       "T"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "D",
-       "H"
-      ],
-      [
-       "K",
-       "U"
-      ]
-     ]
-    },
-    "3": {
-     "word": "MULTITUDE",
-     "position": 3,
-     "ref": "Psalms 94:19"
-    }
-   },
-   "letters": 58,
-   "lines": 4,
-   "distinct": 17,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Psalms 94:19",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
    "num": 7
   },
   {
    "ref": "Psalms 9:9",
+   "text_key": "Psalms 9:9",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -804,6 +815,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -821,6 +833,7 @@
   },
   {
    "ref": "Nahum 1:7",
+   "text_key": "Nahum 1:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -906,6 +919,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -923,6 +937,7 @@
   },
   {
    "ref": "John 14:1",
+   "text_key": "John 14:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1027,6 +1042,7 @@
   },
   {
    "ref": "1 Peter 5:6-7",
+   "text_key": "1 Peter 5:6-7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1144,6 +1160,7 @@
   },
   {
    "ref": "2 Corinthians 12:9",
+   "text_key": "2 Corinthians 12:9",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1242,6 +1259,7 @@
   },
   {
    "ref": "Isaiah 41:10",
+   "text_key": "Isaiah 41:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1342,6 +1360,7 @@
   },
   {
    "ref": "Isaiah 43:2",
+   "text_key": "Isaiah 43:2 |  ... overflow thee",
    "partial": true,
    "starts_mid": false,
    "ends_mid": true,
@@ -1443,6 +1462,7 @@
   },
   {
    "ref": "John 16:33",
+   "text_key": "John 16:33",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1543,6 +1563,7 @@
   },
   {
    "ref": "Psalms 121:7-8",
+   "text_key": "Psalms 121:7-8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1623,6 +1644,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -1641,6 +1663,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -1658,6 +1681,7 @@
   },
   {
    "ref": "Psalms 18:2",
+   "text_key": "Psalms 18:2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1738,6 +1762,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -1755,6 +1780,7 @@
   },
   {
    "ref": "Psalms 23:4",
+   "text_key": "Psalms 23:4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1853,6 +1879,7 @@
   },
   {
    "ref": "Psalms 23:6",
+   "text_key": "Psalms 23:6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -1935,6 +1962,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -1952,6 +1980,7 @@
   },
   {
    "ref": "Psalms 27:5",
+   "text_key": "Psalms 27:5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2049,114 +2078,14 @@
    "num": 20
   },
   {
-   "ref": "Psalms 30:5",
+   "ref": "Psalms 91:4",
+   "text_key": "Psalms 91:4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
    "book": "Psalms",
    "theme": "Comfort in Hard Times",
    "level": 2,
-   "text": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.",
-   "cipher": "SKX DEN IPVRX RPBTXRLD WTL I ZKZRPL; EP DEN SIAKTX EN CESR: YRROEPV ZIG RPBTXR SKX I PEVDL, WTL HKG UKZRLD EP LDR ZKXPEPV.",
-   "key": {
-    "A": "I",
-    "B": "W",
-    "C": "U",
-    "D": "B",
-    "E": "R",
-    "F": "S",
-    "G": "V",
-    "H": "D",
-    "I": "E",
-    "J": "H",
-    "K": "F",
-    "L": "C",
-    "M": "Z",
-    "N": "P",
-    "O": "K",
-    "P": "O",
-    "Q": "M",
-    "R": "X",
-    "S": "N",
-    "T": "L",
-    "U": "T",
-    "V": "A",
-    "W": "Y",
-    "X": "J",
-    "Y": "G",
-    "Z": "Q"
-   },
-   "given": {
-    "C": "L",
-    "Y": "W"
-   },
-   "needed_for_uniqueness": [
-    "C",
-    "Y"
-   ],
-   "hints": {
-    "1": {
-     "book": "Psalms",
-     "letters": [
-      [
-       "R",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "P",
-       "N"
-      ],
-      [
-       "E",
-       "I"
-      ]
-     ]
-    },
-    "3": {
-     "word": "ENDURETH",
-     "position": 4,
-     "ref": "Psalms 30:5"
-    }
-   },
-   "letters": 95,
-   "lines": 6,
-   "distinct": 22,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Psalms 30:5",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 21
-  },
-  {
-   "ref": "Psalms 91:4",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Psalms",
-   "theme": "Comfort in Hard Times",
-   "level": 3,
    "text": "He shall cover thee with his feathers, and under his wings shalt thou trust: his truth shall be thy shield and buckler.",
    "cipher": "RZ WRNFF UHDZL GRZZ KCGR RCW MZNGRZLW, NEX AEXZL RCW KCEYW WRNFG GRHA GLAWG: RCW GLAGR WRNFF TZ GRV WRCZFX NEX TAUIFZL.",
    "key": {
@@ -2188,6 +2117,7 @@
     "Z": "Q"
    },
    "given": {
+    "G": "T",
     "W": "S"
    },
    "needed_for_uniqueness": [],
@@ -2208,8 +2138,8 @@
        "E"
       ],
       [
-       "G",
-       "T"
+       "F",
+       "L"
       ]
      ]
     },
@@ -2222,7 +2152,7 @@
    "letters": 95,
    "lines": 5,
    "distinct": 20,
-   "forced_fraction": 0.105,
+   "forced_fraction": 1.0,
    "agreement": [
     {
      "ref": "Psalms 91:4",
@@ -2244,10 +2174,11 @@
      "differ": {}
     }
    ],
-   "num": 22
+   "num": 21
   },
   {
    "ref": "Psalms 62:8",
+   "text_key": "Psalms 62:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2341,10 +2272,11 @@
      "differ": {}
     }
    ],
-   "num": 23
+   "num": 22
   },
   {
    "ref": "John 14:27",
+   "text_key": "John 14:27",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2438,10 +2370,11 @@
      "differ": {}
     }
    ],
-   "num": 24
+   "num": 23
   },
   {
    "ref": "Psalms 121:1-2",
+   "text_key": "Psalms 121:1-2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2539,7 +2472,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -2552,10 +2487,11 @@
      "differ": {}
     }
    ],
-   "num": 25
+   "num": 24
   },
   {
    "ref": "Isaiah 46:4",
+   "text_key": "Isaiah 46:4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2641,7 +2577,8 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
-      "scrollmapper"
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -2654,10 +2591,11 @@
      "differ": {}
     }
    ],
-   "num": 26
+   "num": 25
   },
   {
    "ref": "Psalms 34:18",
+   "text_key": "Psalms 34:18",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2743,6 +2681,109 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 26
+  },
+  {
+   "ref": "Psalms 73:26",
+   "text_key": "Psalms 73:26",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Psalms",
+   "theme": "Comfort in Hard Times",
+   "level": 3,
+   "text": "My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever.",
+   "cipher": "LD VOBCA FRM LD ABFTS VFEOBSA: ZXS NIM EC SAB CSTBRNSA IV LD ABFTS, FRM LD GITSEIR VIT BKBT.",
+   "key": {
+    "A": "F",
+    "B": "Z",
+    "C": "P",
+    "D": "M",
+    "E": "B",
+    "F": "V",
+    "G": "N",
+    "H": "A",
+    "I": "E",
+    "J": "Y",
+    "K": "H",
+    "L": "O",
+    "M": "L",
+    "N": "R",
+    "O": "I",
+    "P": "G",
+    "Q": "W",
+    "R": "T",
+    "S": "C",
+    "T": "S",
+    "U": "X",
+    "V": "K",
+    "W": "J",
+    "X": "Q",
+    "Y": "D",
+    "Z": "U"
+   },
+   "given": {
+    "K": "V",
+    "Z": "B"
+   },
+   "needed_for_uniqueness": [
+    "K",
+    "Z"
+   ],
+   "hints": {
+    "1": {
+     "book": "Psalms",
+     "letters": [
+      [
+       "B",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "S",
+       "T"
+      ],
+      [
+       "A",
+       "H"
+      ]
+     ]
+    },
+    "3": {
+     "word": "STRENGTH",
+     "position": 11,
+     "ref": "Psalms 73:26"
+    }
+   },
+   "letters": 71,
+   "lines": 4,
+   "distinct": 19,
+   "forced_fraction": 0.028,
+   "agreement": [
+    {
+     "ref": "Psalms 73:26",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -2760,6 +2801,7 @@
   },
   {
    "ref": "Revelation 21:4",
+   "text_key": "Revelation 21:4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2859,6 +2901,7 @@
   },
   {
    "ref": "Psalms 55:22",
+   "text_key": "Psalms 55:22",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -2939,7 +2982,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -2956,6 +3001,7 @@
   },
   {
    "ref": "Matthew 11:29-30",
+   "text_key": "Matthew 11:29-30",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3070,6 +3116,7 @@
   },
   {
    "ref": "Psalms 40:1-2",
+   "text_key": "Psalms 40:1-2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3146,7 +3193,8 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -3183,6 +3231,7 @@
   },
   {
    "ref": "Psalms 91:1-2",
+   "text_key": "Psalms 91:1-2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3278,7 +3327,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -3295,6 +3346,7 @@
   },
   {
    "ref": "2 Thessalonians 3:16",
+   "text_key": "2 Thessalonians 3:16",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3395,6 +3447,7 @@
   },
   {
    "ref": "Psalms 119:165",
+   "text_key": "Psalms 119:165",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3495,6 +3548,7 @@
   },
   {
    "ref": "Psalms 145:18",
+   "text_key": "Psalms 145:18",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3582,6 +3636,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -3599,6 +3654,7 @@
   },
   {
    "ref": "Psalms 29:11",
+   "text_key": "Psalms 29:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3681,6 +3737,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -3697,59 +3754,57 @@
    "num": 36
   },
   {
-   "ref": "Romans 12:18",
+   "ref": "Romans 12:12",
+   "text_key": "Romans 12:12",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
    "book": "Romans",
    "theme": "Peace for an Anxious Heart",
    "level": 1,
-   "text": "If it be possible, as much as lieth in you, live peaceably with all men.",
-   "cipher": "VH VE WS FTAAVWBS, RA UOMC RA BVSEC VK GTO, BVIS FSRMSRWBG ZVEC RBB USK.",
+   "text": "Rejoicing in hope; patient in tribulation; continuing instant in prayer;",
+   "cipher": "DOICZSZAB ZA FCWO; WKMZOAM ZA MDZREXKMZCA; SCAMZAEZAB ZAGMKAM ZA WDKHOD;",
    "key": {
-    "A": "R",
-    "B": "W",
-    "C": "M",
-    "D": "Y",
-    "E": "S",
-    "F": "H",
-    "G": "L",
-    "H": "C",
-    "I": "V",
-    "J": "D",
+    "A": "K",
+    "B": "R",
+    "C": "S",
+    "D": "V",
+    "E": "O",
+    "F": "Y",
+    "G": "B",
+    "H": "F",
+    "I": "Z",
+    "J": "I",
     "K": "N",
-    "L": "B",
+    "L": "X",
     "M": "U",
-    "N": "K",
-    "O": "T",
-    "P": "F",
+    "N": "A",
+    "O": "C",
+    "P": "W",
     "Q": "P",
-    "R": "X",
-    "S": "A",
-    "T": "E",
-    "U": "O",
-    "V": "I",
-    "W": "Z",
-    "X": "J",
-    "Y": "G",
-    "Z": "Q"
+    "R": "D",
+    "S": "G",
+    "T": "M",
+    "U": "E",
+    "V": "J",
+    "W": "T",
+    "X": "Q",
+    "Y": "H",
+    "Z": "L"
    },
    "given": {
-    "B": "L",
-    "H": "F",
-    "I": "V",
-    "R": "A"
+    "C": "O",
+    "D": "R",
+    "M": "T",
+    "O": "E"
    },
-   "needed_for_uniqueness": [
-    "H",
-    "I"
-   ],
+   "needed_for_uniqueness": [],
    "hints": {
     "1": {
      "book": "Romans",
      "letters": [
       [
-       "V",
+       "Z",
        "I"
       ]
      ]
@@ -3757,28 +3812,28 @@
     "2": {
      "letters": [
       [
-       "S",
-       "E"
+       "A",
+       "N"
       ],
       [
-       "A",
-       "S"
+       "K",
+       "A"
       ]
      ]
     },
     "3": {
-     "word": "PEACEABLY",
-     "position": 12,
-     "ref": "Romans 12:18"
+     "word": "TRIBULATION",
+     "position": 6,
+     "ref": "Romans 12:12"
     }
    },
-   "letters": 55,
+   "letters": 60,
    "lines": 4,
-   "distinct": 18,
+   "distinct": 17,
    "forced_fraction": 1.0,
    "agreement": [
     {
-     "ref": "Romans 12:18",
+     "ref": "Romans 12:12",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -3801,6 +3856,7 @@
   },
   {
    "ref": "Romans 5:1",
+   "text_key": "Romans 5:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -3901,6 +3957,7 @@
   },
   {
    "ref": "Psalms 51:10",
+   "text_key": "Psalms 51:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4003,6 +4060,7 @@
   },
   {
    "ref": "Psalms 4:8",
+   "text_key": "Psalms 4:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4086,7 +4144,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -4103,6 +4163,7 @@
   },
   {
    "ref": "1 John 5:14",
+   "text_key": "1 John 5:14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4206,6 +4267,7 @@
   },
   {
    "ref": "Isaiah 32:17",
+   "text_key": "Isaiah 32:17",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4311,6 +4373,7 @@
   },
   {
    "ref": "Matthew 6:33",
+   "text_key": "Matthew 6:33",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4411,6 +4474,7 @@
   },
   {
    "ref": "Matthew 6:34",
+   "text_key": "Matthew 6:34",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4449,13 +4513,11 @@
    },
    "given": {
     "P": "Y",
-    "T": "K",
     "W": "M",
     "X": "D"
    },
    "needed_for_uniqueness": [
     "P",
-    "T",
     "W",
     "X"
    ],
@@ -4516,6 +4578,7 @@
   },
   {
    "ref": "Numbers 6:24-26",
+   "text_key": "Numbers 6:24-26",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4598,6 +4661,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -4616,6 +4680,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -4634,6 +4699,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -4651,6 +4717,7 @@
   },
   {
    "ref": "Philippians 4:6",
+   "text_key": "Philippians 4:6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4749,6 +4816,7 @@
   },
   {
    "ref": "Philippians 4:7",
+   "text_key": "Philippians 4:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4849,6 +4917,7 @@
   },
   {
    "ref": "Psalms 19:14",
+   "text_key": "Psalms 19:14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -4930,7 +4999,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -4947,6 +5018,7 @@
   },
   {
    "ref": "Romans 8:26",
+   "text_key": "Romans 8:26",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5045,6 +5117,7 @@
   },
   {
    "ref": "Isaiah 26:3",
+   "text_key": "Isaiah 26:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5142,6 +5215,7 @@
   },
   {
    "ref": "Psalms 46:10",
+   "text_key": "Psalms 46:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5241,6 +5315,7 @@
   },
   {
    "ref": "Jeremiah 33:3",
+   "text_key": "Jeremiah 33:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5338,6 +5413,7 @@
   },
   {
    "ref": "Proverbs 3:24",
+   "text_key": "Proverbs 3:24",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5437,6 +5513,7 @@
   },
   {
    "ref": "Matthew 7:7-8",
+   "text_key": "Matthew 7:7-8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5555,6 +5632,7 @@
   },
   {
    "ref": "Colossians 3:15",
+   "text_key": "Colossians 3:15",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5654,6 +5732,7 @@
   },
   {
    "ref": "Isaiah 54:10",
+   "text_key": "Isaiah 54:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5731,6 +5810,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -5748,6 +5828,7 @@
   },
   {
    "ref": "Isaiah 55:12",
+   "text_key": "Isaiah 55:12",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5843,6 +5924,7 @@
   },
   {
    "ref": "Matthew 6:26",
+   "text_key": "Matthew 6:26",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -5938,6 +6020,7 @@
   },
   {
    "ref": "Hebrews 10:23",
+   "text_key": "Hebrews 10:23",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -6038,6 +6121,7 @@
   },
   {
    "ref": "Hebrews 11:1",
+   "text_key": "Hebrews 11:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -6140,14 +6224,15 @@
   },
   {
    "ref": "Hebrews 6:19",
-   "partial": false,
+   "text_key": "Hebrews 6:19 |  ... stedfast",
+   "partial": true,
    "starts_mid": false,
-   "ends_mid": false,
+   "ends_mid": true,
    "book": "Hebrews",
    "theme": "Hope That Does Not Fade",
    "level": 1,
-   "text": "Which hope we have as an anchor of the soul, both sure and stedfast, and which entereth into that within the veil;",
-   "cipher": "IPEWP PGFY IY PXAY XN XR XRWPGT GM OPY NGDB, UGOP NDTY XRS NOYSMXNO, XRS IPEWP YROYTYOP EROG OPXO IEOPER OPY AYEB;",
+   "text": "Which hope we have as an anchor of the soul, both sure and stedfast",
+   "cipher": "IPEWP PGFY IY PXAY XN XR XRWPGT GM OPY NGDB, UGOP NDTY XRS NOYSMXNO",
    "key": {
     "A": "X",
     "B": "U",
@@ -6178,7 +6263,7 @@
    },
    "given": {
     "F": "P",
-    "O": "T",
+    "G": "O",
     "U": "B",
     "X": "A"
    },
@@ -6203,8 +6288,8 @@
        "E"
       ],
       [
-       "R",
-       "N"
+       "N",
+       "S"
       ]
      ]
     },
@@ -6214,8 +6299,8 @@
      "ref": "Hebrews 6:19"
     }
    },
-   "letters": 90,
-   "lines": 5,
+   "letters": 53,
+   "lines": 3,
    "distinct": 18,
    "forced_fraction": 1.0,
    "agreement": [
@@ -6243,6 +6328,7 @@
   },
   {
    "ref": "John 14:2",
+   "text_key": "John 14:2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -6309,8 +6395,8 @@
      ]
     },
     "3": {
-     "word": "FATHER'S",
-     "position": 3,
+     "word": "MANSIONS",
+     "position": 7,
      "ref": "John 14:2"
     }
    },
@@ -6325,7 +6411,8 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
-      "scrollmapper"
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -6342,6 +6429,7 @@
   },
   {
    "ref": "Philippians 4:19",
+   "text_key": "Philippians 4:19",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -6441,7 +6529,117 @@
    "num": 63
   },
   {
+   "ref": "Psalms 130:5",
+   "text_key": "Psalms 130:5",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Psalms",
+   "theme": "Hope That Does Not Fade",
+   "level": 1,
+   "text": "I wait for the LORD, my soul doth wait, and in his word do I hope.",
+   "cipher": "Z YTZF GSA FXO HSAR, DI MSKH RSFX YTZF, TCR ZC XZM YSAR RS Z XSUO.",
+   "key": {
+    "A": "T",
+    "B": "J",
+    "C": "E",
+    "D": "R",
+    "E": "O",
+    "F": "G",
+    "G": "B",
+    "H": "X",
+    "I": "Z",
+    "J": "Q",
+    "K": "V",
+    "L": "H",
+    "M": "D",
+    "N": "C",
+    "O": "S",
+    "P": "U",
+    "Q": "N",
+    "R": "A",
+    "S": "M",
+    "T": "F",
+    "U": "K",
+    "V": "W",
+    "W": "Y",
+    "X": "L",
+    "Y": "I",
+    "Z": "P"
+   },
+   "given": {
+    "D": "M",
+    "F": "T",
+    "G": "F",
+    "R": "D",
+    "T": "A",
+    "U": "P",
+    "X": "H",
+    "Y": "W"
+   },
+   "needed_for_uniqueness": [
+    "D",
+    "G",
+    "U"
+   ],
+   "hints": {
+    "1": {
+     "book": "Psalms",
+     "letters": [
+      [
+       "S",
+       "O"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "Z",
+       "I"
+      ],
+      [
+       "A",
+       "R"
+      ]
+     ]
+    },
+    "3": {
+     "word": "WAIT",
+     "position": 2,
+     "ref": "Psalms 130:5"
+    }
+   },
+   "letters": 48,
+   "lines": 3,
+   "distinct": 17,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Psalms 130:5",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 64
+  },
+  {
    "ref": "Psalms 27:14",
+   "text_key": "Psalms 27:14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -6527,7 +6725,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -6540,10 +6740,11 @@
      "differ": {}
     }
    ],
-   "num": 64
+   "num": 65
   },
   {
    "ref": "Psalms 71:14",
+   "text_key": "Psalms 71:14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -6643,110 +6844,11 @@
      "differ": {}
     }
    ],
-   "num": 65
-  },
-  {
-   "ref": "Romans 12:12",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Romans",
-   "theme": "Hope That Does Not Fade",
-   "level": 1,
-   "text": "Rejoicing in hope; patient in tribulation; continuing instant in prayer;",
-   "cipher": "DOICZSZAB ZA FCWO; WKMZOAM ZA MDZREXKMZCA; SCAMZAEZAB ZAGMKAM ZA WDKHOD;",
-   "key": {
-    "A": "K",
-    "B": "R",
-    "C": "S",
-    "D": "V",
-    "E": "O",
-    "F": "Y",
-    "G": "B",
-    "H": "F",
-    "I": "Z",
-    "J": "I",
-    "K": "N",
-    "L": "X",
-    "M": "U",
-    "N": "A",
-    "O": "C",
-    "P": "W",
-    "Q": "P",
-    "R": "D",
-    "S": "G",
-    "T": "M",
-    "U": "E",
-    "V": "J",
-    "W": "T",
-    "X": "Q",
-    "Y": "H",
-    "Z": "L"
-   },
-   "given": {
-    "C": "O",
-    "D": "R",
-    "M": "T",
-    "O": "E"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Romans",
-     "letters": [
-      [
-       "Z",
-       "I"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "A",
-       "N"
-      ],
-      [
-       "K",
-       "A"
-      ]
-     ]
-    },
-    "3": {
-     "word": "TRIBULATION",
-     "position": 6,
-     "ref": "Romans 12:12"
-    }
-   },
-   "letters": 60,
-   "lines": 4,
-   "distinct": 17,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Romans 12:12",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
    "num": 66
   },
   {
    "ref": "Romans 6:23",
+   "text_key": "Romans 6:23",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -6848,105 +6950,8 @@
    "num": 67
   },
   {
-   "ref": "1 Peter 1:3",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "1 Peter",
-   "theme": "Hope That Does Not Fade",
-   "level": 2,
-   "text": "Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead,",
-   "cipher": "PIFEEFG PF SXF MUG NBG ZNSXFH UZ URH IUHG DFERE VXHCES, YXCVX NVVUHGCBM SU XCE NPRBGNBS AFHVL XNSX PFMUSSFB RE NMNCB RBSU N ICTFIL XUKF PL SXF HFERHHFVSCUB UZ DFERE VXHCES ZHUA SXF GFNG,",
-   "key": {
-    "A": "N",
-    "B": "P",
-    "C": "V",
-    "D": "G",
-    "E": "F",
-    "F": "Z",
-    "G": "M",
-    "H": "X",
-    "I": "C",
-    "J": "D",
-    "K": "W",
-    "L": "I",
-    "M": "A",
-    "N": "B",
-    "O": "U",
-    "P": "K",
-    "Q": "O",
-    "R": "H",
-    "S": "E",
-    "T": "S",
-    "U": "R",
-    "V": "T",
-    "W": "Y",
-    "X": "Q",
-    "Y": "L",
-    "Z": "J"
-   },
-   "given": {
-    "U": "O",
-    "X": "H"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "1 Peter",
-     "letters": [
-      [
-       "F",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "S",
-       "T"
-      ],
-      [
-       "E",
-       "S"
-      ]
-     ]
-    },
-    "3": {
-     "word": "RESURRECTION",
-     "position": 28,
-     "ref": "1 Peter 1:3"
-    }
-   },
-   "letters": 151,
-   "lines": 9,
-   "distinct": 22,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "1 Peter 1:3",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 68
-  },
-  {
    "ref": "Hebrews 12:2",
+   "text_key": "Hebrews 12:2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7041,10 +7046,11 @@
      "differ": {}
     }
    ],
-   "num": 69
+   "num": 68
   },
   {
    "ref": "Hebrews 13:5",
+   "text_key": "Hebrews 13:5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7142,10 +7148,11 @@
      "differ": {}
     }
    ],
-   "num": 70
+   "num": 69
   },
   {
    "ref": "Isaiah 53:5",
+   "text_key": "Isaiah 53:5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7242,10 +7249,11 @@
      "differ": {}
     }
    ],
-   "num": 71
+   "num": 70
   },
   {
    "ref": "James 1:12",
+   "text_key": "James 1:12",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7340,10 +7348,11 @@
      "differ": {}
     }
    ],
-   "num": 72
+   "num": 71
   },
   {
    "ref": "John 11:25-26",
+   "text_key": "John 11:25-26",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7459,10 +7468,11 @@
      "differ": {}
     }
    ],
-   "num": 73
+   "num": 72
   },
   {
    "ref": "Lamentations 3:22-23",
+   "text_key": "Lamentations 3:22-23",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7542,6 +7552,8 @@
      "exact": [
       "aruljohn",
       "bibleapi",
+      "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -7574,10 +7586,11 @@
      "differ": {}
     }
    ],
-   "num": 74
+   "num": 73
   },
   {
    "ref": "Matthew 28:5-6",
+   "text_key": "Matthew 28:5-6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7691,10 +7704,11 @@
      "differ": {}
     }
    ],
-   "num": 75
+   "num": 74
   },
   {
    "ref": "Psalms 42:11",
+   "text_key": "Psalms 42:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7791,10 +7805,11 @@
      "differ": {}
     }
    ],
-   "num": 76
+   "num": 75
   },
   {
    "ref": "Romans 8:28",
+   "text_key": "Romans 8:28",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -7889,16 +7904,17 @@
      "differ": {}
     }
    ],
-   "num": 77
+   "num": 76
   },
   {
    "ref": "Romans 15:13",
+   "text_key": "Romans 15:13",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
    "book": "Romans",
    "theme": "Hope That Does Not Fade",
-   "level": 3,
+   "level": 2,
    "text": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
    "cipher": "FWZ NBK CWU WT BWIK TMYY XWE ZMNB SYY DWX SFU IKSPK MF OKYMKLMFC, NBSN XK HSX SOWEFU MF BWIK, NBVWECB NBK IWZKV WT NBK BWYX CBWRN.",
    "key": {
@@ -7930,7 +7946,8 @@
     "Z": "G"
    },
    "given": {
-    "K": "E"
+    "K": "E",
+    "N": "T"
    },
    "needed_for_uniqueness": [],
    "hints": {
@@ -7950,8 +7967,8 @@
        "H"
       ],
       [
-       "N",
-       "T"
+       "F",
+       "N"
       ]
      ]
     },
@@ -7986,10 +8003,109 @@
      "differ": {}
     }
    ],
+   "num": 77
+  },
+  {
+   "ref": "1 Corinthians 2:9",
+   "text_key": "1 Corinthians 2:9",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "1 Corinthians",
+   "theme": "Hope That Does Not Fade",
+   "level": 3,
+   "text": "But as it is written, Eye hath not seen, nor ear heard, neither have entered into the heart of man, the things which God hath prepared for them that love him.",
+   "cipher": "HYB MU FB FU TGFBBZC, ZXZ OMBO CLB UZZC, CLG ZMG OZMGI, CZFBOZG OMDZ ZCBZGZI FCBL BOZ OZMGB LV EMC, BOZ BOFCKU TOFRO KLI OMBO NGZNMGZI VLG BOZE BOMB WLDZ OFE.",
+   "key": {
+    "A": "M",
+    "B": "H",
+    "C": "R",
+    "D": "I",
+    "E": "Z",
+    "F": "V",
+    "G": "K",
+    "H": "O",
+    "I": "F",
+    "J": "Q",
+    "K": "S",
+    "L": "W",
+    "M": "E",
+    "N": "C",
+    "O": "L",
+    "P": "N",
+    "Q": "P",
+    "R": "G",
+    "S": "U",
+    "T": "B",
+    "U": "Y",
+    "V": "D",
+    "W": "T",
+    "X": "A",
+    "Y": "X",
+    "Z": "J"
+   },
+   "given": {
+    "O": "H"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "1 Corinthians",
+     "letters": [
+      [
+       "Z",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "B",
+       "T"
+      ],
+      [
+       "M",
+       "A"
+      ]
+     ]
+    },
+    "3": {
+     "word": "PREPARED",
+     "position": 26,
+     "ref": "1 Corinthians 2:9"
+    }
+   },
+   "letters": 123,
+   "lines": 7,
+   "distinct": 21,
+   "forced_fraction": 0.967,
+   "agreement": [
+    {
+     "ref": "1 Corinthians 2:9",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
    "num": 78
   },
   {
    "ref": "John 14:3",
+   "text_key": "John 14:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8089,6 +8205,7 @@
   },
   {
    "ref": "1 Corinthians 15:55-57",
+   "text_key": "1 Corinthians 15:55-57",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8228,6 +8345,7 @@
   },
   {
    "ref": "Romans 8:18",
+   "text_key": "Romans 8:18",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8327,6 +8445,7 @@
   },
   {
    "ref": "Romans 5:5",
+   "text_key": "Romans 5:5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8426,6 +8545,7 @@
   },
   {
    "ref": "Isaiah 43:19",
+   "text_key": "Isaiah 43:19",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8525,6 +8645,7 @@
   },
   {
    "ref": "John 20:29",
+   "text_key": "John 20:29",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8624,6 +8745,7 @@
   },
   {
    "ref": "2 Corinthians 4:18",
+   "text_key": "2 Corinthians 4:18",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8722,80 +8844,81 @@
    "num": 85
   },
   {
-   "ref": "1 Corinthians 2:9",
+   "ref": "2 Corinthians 4:16",
+   "text_key": "2 Corinthians 4:16",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "1 Corinthians",
+   "book": "2 Corinthians",
    "theme": "Hope That Does Not Fade",
    "level": 4,
-   "text": "But as it is written, Eye hath not seen, nor ear heard, neither have entered into the heart of man, the things which God hath prepared for them that love him.",
-   "cipher": "HYB MU FB FU TGFBBZC, ZXZ OMBO CLB UZZC, CLG ZMG OZMGI, CZFBOZG OMDZ ZCBZGZI FCBL BOZ OZMGB LV EMC, BOZ BOFCKU TOFRO KLI OMBO NGZNMGZI VLG BOZE BOMB WLDZ OFE.",
+   "text": "For which cause we faint not; but though our outward man perish, yet the inward man is renewed day by day.",
+   "cipher": "WGX DLSNL NTHUI DI WTSZF ZGF; EHF FLGHML GHX GHFDTXR KTZ OIXSUL, PIF FLI SZDTXR KTZ SU XIZIDIR RTP EP RTP.",
    "key": {
-    "A": "M",
-    "B": "H",
-    "C": "R",
-    "D": "I",
-    "E": "Z",
-    "F": "V",
-    "G": "K",
-    "H": "O",
-    "I": "F",
-    "J": "Q",
-    "K": "S",
-    "L": "W",
-    "M": "E",
-    "N": "C",
-    "O": "L",
-    "P": "N",
-    "Q": "P",
-    "R": "G",
+    "A": "T",
+    "B": "E",
+    "C": "N",
+    "D": "R",
+    "E": "I",
+    "F": "W",
+    "G": "M",
+    "H": "L",
+    "I": "S",
+    "J": "V",
+    "K": "B",
+    "L": "Y",
+    "M": "K",
+    "N": "Z",
+    "O": "G",
+    "P": "O",
+    "Q": "A",
+    "R": "X",
     "S": "U",
-    "T": "B",
-    "U": "Y",
-    "V": "D",
-    "W": "T",
-    "X": "A",
-    "Y": "X",
-    "Z": "J"
+    "T": "F",
+    "U": "H",
+    "V": "J",
+    "W": "D",
+    "X": "C",
+    "Y": "P",
+    "Z": "Q"
    },
    "given": {},
    "needed_for_uniqueness": [],
    "hints": {
     "1": {
-     "book": "1 Corinthians",
+     "book": "2 Corinthians",
      "letters": [
       [
-       "Z",
-       "E"
+       "T",
+       "A"
       ]
      ]
     },
     "2": {
      "letters": [
       [
-       "B",
-       "T"
+       "I",
+       "E"
       ],
       [
-       "O",
-       "H"
+       "F",
+       "T"
       ]
      ]
     },
     "3": {
-     "word": "PREPARED",
-     "position": 26,
-     "ref": "1 Corinthians 2:9"
+     "word": "OUTWARD",
+     "position": 10,
+     "ref": "2 Corinthians 4:16"
     }
    },
-   "letters": 123,
-   "lines": 7,
-   "distinct": 21,
-   "forced_fraction": 0.967,
+   "letters": 83,
+   "lines": 5,
+   "distinct": 19,
+   "forced_fraction": 0.0,
    "agreement": [
     {
-     "ref": "1 Corinthians 2:9",
+     "ref": "2 Corinthians 4:16",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -8818,6 +8941,7 @@
   },
   {
    "ref": "Jeremiah 29:11",
+   "text_key": "Jeremiah 29:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -8894,7 +9018,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -8911,6 +9037,7 @@
   },
   {
    "ref": "Philippians 1:6",
+   "text_key": "Philippians 1:6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9006,6 +9133,7 @@
   },
   {
    "ref": "1 Chronicles 16:11",
+   "text_key": "1 Chronicles 16:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9090,6 +9218,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -9107,6 +9236,7 @@
   },
   {
    "ref": "Ephesians 6:10",
+   "text_key": "Ephesians 6:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9208,7 +9338,115 @@
    "num": 90
   },
   {
+   "ref": "Galatians 6:9",
+   "text_key": "Galatians 6:9",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Galatians",
+   "theme": "Strength & Courage",
+   "level": 1,
+   "text": "And let us not be weary in well doing: for in due season we shall reap, if we faint not.",
+   "cipher": "HYC FRK MG YDK VR ORHXL BY ORFF CDBYP: IDX BY CMR GRHGDY OR GSHFF XRHZ, BI OR IHBYK YDK.",
+   "key": {
+    "A": "H",
+    "B": "V",
+    "C": "J",
+    "D": "C",
+    "E": "R",
+    "F": "I",
+    "G": "P",
+    "H": "S",
+    "I": "B",
+    "J": "W",
+    "K": "Q",
+    "L": "F",
+    "M": "T",
+    "N": "Y",
+    "O": "D",
+    "P": "Z",
+    "Q": "E",
+    "R": "X",
+    "S": "G",
+    "T": "K",
+    "U": "M",
+    "V": "A",
+    "W": "O",
+    "X": "N",
+    "Y": "L",
+    "Z": "U"
+   },
+   "given": {
+    "B": "I",
+    "D": "O",
+    "F": "L",
+    "H": "A",
+    "K": "T",
+    "S": "H",
+    "V": "B"
+   },
+   "needed_for_uniqueness": [
+    "S",
+    "V"
+   ],
+   "hints": {
+    "1": {
+     "book": "Galatians",
+     "letters": [
+      [
+       "R",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "Y",
+       "N"
+      ],
+      [
+       "G",
+       "S"
+      ]
+     ]
+    },
+    "3": {
+     "word": "SEASON",
+     "position": 13,
+     "ref": "Galatians 6:9"
+    }
+   },
+   "letters": 66,
+   "lines": 4,
+   "distinct": 18,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Galatians 6:9",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 91
+  },
+  {
    "ref": "Philippians 4:13",
+   "text_key": "Philippians 4:13",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9308,109 +9546,11 @@
      "differ": {}
     }
    ],
-   "num": 91
-  },
-  {
-   "ref": "Psalms 118:14",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Psalms",
-   "theme": "Strength & Courage",
-   "level": 1,
-   "text": "The LORD is my strength and song, and is become my salvation.",
-   "cipher": "NSA HYTV ZM WU MNTAOBNS COV MYOB, COV ZM KARYWA WU MCHECNZYO.",
-   "key": {
-    "A": "C",
-    "B": "K",
-    "C": "R",
-    "D": "V",
-    "E": "A",
-    "F": "J",
-    "G": "B",
-    "H": "S",
-    "I": "Z",
-    "J": "P",
-    "K": "Q",
-    "L": "H",
-    "M": "W",
-    "N": "O",
-    "O": "Y",
-    "P": "X",
-    "Q": "L",
-    "R": "T",
-    "S": "M",
-    "T": "N",
-    "U": "G",
-    "V": "E",
-    "W": "D",
-    "X": "F",
-    "Y": "U",
-    "Z": "I"
-   },
-   "given": {
-    "A": "E",
-    "C": "A",
-    "N": "T",
-    "Y": "O"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Psalms",
-     "letters": [
-      [
-       "M",
-       "S"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "O",
-       "N"
-      ],
-      [
-       "V",
-       "D"
-      ]
-     ]
-    },
-    "3": {
-     "word": "SALVATION",
-     "position": 12,
-     "ref": "Psalms 118:14"
-    }
-   },
-   "letters": 48,
-   "lines": 3,
-   "distinct": 17,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Psalms 118:14",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
    "num": 92
   },
   {
    "ref": "Psalms 18:32",
+   "text_key": "Psalms 18:32",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9513,6 +9653,7 @@
   },
   {
    "ref": "Romans 8:31",
+   "text_key": "Romans 8:31",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9617,6 +9758,7 @@
   },
   {
    "ref": "Proverbs 18:10",
+   "text_key": "Proverbs 18:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9701,6 +9843,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -9718,6 +9861,7 @@
   },
   {
    "ref": "Romans 8:37",
+   "text_key": "Romans 8:37",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9761,7 +9905,9 @@
     "I": "S",
     "O": "A",
     "P": "W",
-    "S": "N"
+    "R": "I",
+    "S": "N",
+    "U": "L"
    },
    "needed_for_uniqueness": [
     "P"
@@ -9783,8 +9929,8 @@
        "E"
       ],
       [
-       "R",
-       "I"
+       "E",
+       "U"
       ]
      ]
     },
@@ -9797,7 +9943,7 @@
    "letters": 63,
    "lines": 4,
    "distinct": 19,
-   "forced_fraction": 0.889,
+   "forced_fraction": 0.968,
    "agreement": [
     {
      "ref": "Romans 8:37",
@@ -9823,6 +9969,7 @@
   },
   {
    "ref": "Exodus 14:14",
+   "text_key": "Exodus 14:14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -9863,10 +10010,12 @@
     "A": "D",
     "G": "C",
     "H": "O",
+    "I": "T",
     "M": "A",
     "O": "R",
     "S": "Y",
-    "V": "E"
+    "V": "E",
+    "X": "S"
    },
    "needed_for_uniqueness": [
     "G"
@@ -9888,8 +10037,8 @@
        "H"
       ],
       [
-       "I",
-       "T"
+       "T",
+       "F"
       ]
      ]
     },
@@ -9902,7 +10051,7 @@
    "letters": 46,
    "lines": 3,
    "distinct": 17,
-   "forced_fraction": 0.587,
+   "forced_fraction": 0.674,
    "agreement": [
     {
      "ref": "Exodus 14:14",
@@ -9910,6 +10059,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -9927,6 +10077,7 @@
   },
   {
    "ref": "1 John 4:4",
+   "text_key": "1 John 4:4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -10027,6 +10178,7 @@
   },
   {
    "ref": "1 John 5:4",
+   "text_key": "1 John 5:4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -10127,6 +10279,7 @@
   },
   {
    "ref": "2 Corinthians 4:8-9",
+   "text_key": "2 Corinthians 4:8-9",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -10243,89 +10396,89 @@
    "num": 100
   },
   {
-   "ref": "Exodus 15:2",
+   "ref": "Colossians 1:11",
+   "text_key": "Colossians 1:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Exodus",
+   "book": "Colossians",
    "theme": "Strength & Courage",
    "level": 2,
-   "text": "The LORD is my strength and song, and he is become my salvation: he is my God, and I will prepare him an habitation; my father's God, and I will exalt him.",
-   "cipher": "GKP MZTA NF VU FGTPXYGK LXA FZXY, LXA KP NF EPOZVP VU FLMCLGNZX: KP NF VU YZA, LXA N INMM BTPBLTP KNV LX KLENGLGNZX; VU RLGKPT'F YZA, LXA N INMM PDLMG KNV.",
+   "text": "Strengthened with all might, according to his glorious power, unto all patience and longsuffering with joyfulness;",
+   "cipher": "NRZWVIRLWVWX EORL FGG COILR, FUUBZXOVI RB LON IGBZOBMN KBEWZ, MVRB FGG KFROWVUW FVX GBVINMDDWZOVI EORL TBADMGVWNN;",
    "key": {
-    "A": "L",
-    "B": "E",
-    "C": "O",
-    "D": "A",
-    "E": "P",
-    "F": "R",
-    "G": "Y",
-    "H": "K",
-    "I": "N",
-    "J": "S",
-    "K": "Q",
-    "L": "M",
-    "M": "V",
-    "N": "X",
-    "O": "Z",
-    "P": "B",
-    "Q": "H",
-    "R": "T",
-    "S": "F",
-    "T": "G",
-    "U": "W",
-    "V": "C",
-    "W": "I",
-    "X": "D",
-    "Y": "U",
-    "Z": "J"
+    "A": "F",
+    "B": "Q",
+    "C": "U",
+    "D": "X",
+    "E": "W",
+    "F": "D",
+    "G": "I",
+    "H": "L",
+    "I": "O",
+    "J": "T",
+    "K": "P",
+    "L": "G",
+    "M": "C",
+    "N": "V",
+    "O": "B",
+    "P": "K",
+    "Q": "J",
+    "R": "Z",
+    "S": "N",
+    "T": "R",
+    "U": "M",
+    "V": "S",
+    "W": "E",
+    "X": "H",
+    "Y": "A",
+    "Z": "Y"
    },
    "given": {
-    "I": "W",
-    "P": "E"
+    "O": "I",
+    "W": "E"
    },
-   "needed_for_uniqueness": [
-    "I"
-   ],
+   "needed_for_uniqueness": [],
    "hints": {
     "1": {
-     "book": "Exodus",
+     "book": "Colossians",
      "letters": [
       [
-       "N",
-       "I"
+       "V",
+       "N"
       ]
      ]
     },
     "2": {
      "letters": [
       [
-       "L",
-       "A"
+       "R",
+       "T"
       ],
       [
-       "X",
-       "N"
+       "B",
+       "O"
       ]
      ]
     },
     "3": {
-     "word": "HABITATION",
-     "position": 24,
-     "ref": "Exodus 15:2"
+     "word": "LONGSUFFERING",
+     "position": 14,
+     "ref": "Colossians 1:11"
     }
    },
-   "letters": 117,
-   "lines": 8,
-   "distinct": 21,
+   "letters": 96,
+   "lines": 6,
+   "distinct": 20,
    "forced_fraction": 1.0,
    "agreement": [
     {
-     "ref": "Exodus 15:2",
+     "ref": "Colossians 1:11",
      "exact": [
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -10342,84 +10495,87 @@
    "num": 101
   },
   {
-   "ref": "Hebrews 13:6",
+   "ref": "Ephesians 3:16",
+   "text_key": "Ephesians 3:16",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Hebrews",
+   "book": "Ephesians",
    "theme": "Strength & Courage",
    "level": 2,
-   "text": "So that we may boldly say, The Lord is my helper, and I will not fear what man shall do unto me.",
-   "cipher": "UH FNLF MB RLC AHWKWC ULC, FNB WHVK YU RC NBWDBV, LIK Y MYWW IHF OBLV MNLF RLI UNLWW KH EIFH RB.",
+   "text": "That he would grant you, according to the riches of his glory, to be strengthened with might by his Spirit in the inner man;",
+   "cipher": "FCWF CS LXAGB MNWIF VXA, WUUXNBRIM FX FCS NRUCSP XY CRP MGXNV, FX ZS PFNSIMFCSISB LRFC TRMCF ZV CRP PKRNRF RI FCS RIISN TWI;",
    "key": {
-    "A": "L",
-    "B": "A",
-    "C": "S",
-    "D": "K",
-    "E": "B",
-    "F": "O",
-    "G": "P",
-    "H": "N",
-    "I": "Y",
-    "J": "T",
-    "K": "X",
-    "L": "W",
-    "M": "R",
+    "A": "W",
+    "B": "Z",
+    "C": "U",
+    "D": "B",
+    "E": "S",
+    "F": "Y",
+    "G": "M",
+    "H": "C",
+    "I": "R",
+    "J": "H",
+    "K": "D",
+    "L": "G",
+    "M": "T",
     "N": "I",
-    "O": "H",
-    "P": "D",
-    "Q": "G",
-    "R": "V",
-    "S": "U",
+    "O": "X",
+    "P": "K",
+    "Q": "O",
+    "R": "N",
+    "S": "P",
     "T": "F",
-    "U": "E",
-    "V": "Z",
-    "W": "M",
-    "X": "J",
-    "Y": "C",
+    "U": "A",
+    "V": "J",
+    "W": "L",
+    "X": "E",
+    "Y": "V",
     "Z": "Q"
    },
    "given": {
-    "B": "E",
-    "F": "T",
-    "H": "O"
+    "Y": "F",
+    "Z": "B"
    },
-   "needed_for_uniqueness": [],
+   "needed_for_uniqueness": [
+    "Y",
+    "Z"
+   ],
    "hints": {
     "1": {
-     "book": "Hebrews",
+     "book": "Ephesians",
      "letters": [
       [
-       "L",
-       "A"
+       "F",
+       "T"
       ]
      ]
     },
     "2": {
      "letters": [
       [
-       "W",
-       "L"
+       "C",
+       "H"
       ],
       [
-       "N",
-       "H"
+       "R",
+       "I"
       ]
      ]
     },
     "3": {
-     "word": "BOLDLY",
-     "position": 5,
-     "ref": "Hebrews 13:6"
+     "word": "STRENGTHENED",
+     "position": 15,
+     "ref": "Ephesians 3:16"
     }
    },
-   "letters": 72,
-   "lines": 5,
-   "distinct": 18,
+   "letters": 98,
+   "lines": 6,
+   "distinct": 20,
    "forced_fraction": 1.0,
    "agreement": [
     {
-     "ref": "Hebrews 13:6",
+     "ref": "Ephesians 3:16",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -10442,6 +10598,7 @@
   },
   {
    "ref": "Joshua 1:9",
+   "text_key": "Joshua 1:9",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -10524,6 +10681,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -10541,6 +10699,7 @@
   },
   {
    "ref": "Psalms 138:3",
+   "text_key": "Psalms 138:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -10641,6 +10800,7 @@
   },
   {
    "ref": "Psalms 16:8",
+   "text_key": "Psalms 16:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -10721,6 +10881,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -10738,6 +10899,7 @@
   },
   {
    "ref": "Psalms 28:7",
+   "text_key": "Psalms 28:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -10818,6 +10980,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -10834,61 +10997,59 @@
    "num": 106
   },
   {
-   "ref": "Psalms 31:24",
+   "ref": "2 Chronicles 15:7",
+   "text_key": "2 Chronicles 15:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Psalms",
+   "book": "2 Chronicles",
    "theme": "Strength & Courage",
    "level": 2,
-   "text": "Be of good courage, and he shall strengthen your heart, all ye that hope in the LORD.",
-   "cipher": "SU EW DEET IELAKDU, KHT NU GNKPP GCAUHDCNUH FELA NUKAC, KPP FU CNKC NEVU RH CNU PEAT.",
+   "text": "Be ye strong therefore, and let not your hands be weak: for your work shall be rewarded.",
+   "cipher": "UZ WZ EAPDLK ABZPZTDPZ, FLI NZA LDA WDMP BFLIE UZ SZFV: TDP WDMP SDPV EBFNN UZ PZSFPIZI.",
    "key": {
-    "A": "K",
-    "B": "S",
-    "C": "I",
-    "D": "T",
-    "E": "U",
-    "F": "W",
-    "G": "D",
-    "H": "N",
-    "I": "R",
-    "J": "Z",
-    "K": "X",
-    "L": "P",
-    "M": "Y",
-    "N": "H",
-    "O": "E",
-    "P": "V",
-    "Q": "B",
-    "R": "A",
-    "S": "G",
-    "T": "C",
-    "U": "L",
-    "V": "Q",
-    "W": "J",
-    "X": "M",
-    "Y": "F",
-    "Z": "O"
+    "A": "F",
+    "B": "U",
+    "C": "O",
+    "D": "I",
+    "E": "Z",
+    "F": "T",
+    "G": "K",
+    "H": "B",
+    "I": "Q",
+    "J": "R",
+    "K": "V",
+    "L": "N",
+    "M": "C",
+    "N": "L",
+    "O": "D",
+    "P": "Y",
+    "Q": "X",
+    "R": "P",
+    "S": "E",
+    "T": "A",
+    "U": "M",
+    "V": "H",
+    "W": "S",
+    "X": "G",
+    "Y": "W",
+    "Z": "J"
    },
    "given": {
-    "F": "Y",
-    "S": "B",
-    "V": "P",
-    "W": "F"
+    "D": "O",
+    "U": "B",
+    "W": "Y"
    },
    "needed_for_uniqueness": [
-    "F",
-    "S",
-    "V",
+    "U",
     "W"
    ],
    "hints": {
     "1": {
-     "book": "Psalms",
+     "book": "2 Chronicles",
      "letters": [
       [
-       "U",
+       "Z",
        "E"
       ]
      ]
@@ -10896,32 +11057,34 @@
     "2": {
      "letters": [
       [
-       "E",
-       "O"
+       "P",
+       "R"
       ],
       [
-       "N",
-       "H"
+       "F",
+       "A"
       ]
      ]
     },
     "3": {
-     "word": "STRENGTHEN",
-     "position": 8,
-     "ref": "Psalms 31:24"
+     "word": "THEREFORE",
+     "position": 4,
+     "ref": "2 Chronicles 15:7"
     }
    },
-   "letters": 66,
+   "letters": 69,
    "lines": 4,
-   "distinct": 18,
-   "forced_fraction": 1.0,
+   "distinct": 17,
+   "forced_fraction": 0.507,
    "agreement": [
     {
-     "ref": "Psalms 31:24",
+     "ref": "2 Chronicles 15:7",
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -10937,7 +11100,106 @@
    "num": 107
   },
   {
+   "ref": "Hebrews 13:6",
+   "text_key": "Hebrews 13:6",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Hebrews",
+   "theme": "Strength & Courage",
+   "level": 3,
+   "text": "So that we may boldly say, The Lord is my helper, and I will not fear what man shall do unto me.",
+   "cipher": "UH FNLF MB RLC AHWKWC ULC, FNB WHVK YU RC NBWDBV, LIK Y MYWW IHF OBLV MNLF RLI UNLWW KH EIFH RB.",
+   "key": {
+    "A": "L",
+    "B": "A",
+    "C": "S",
+    "D": "K",
+    "E": "B",
+    "F": "O",
+    "G": "P",
+    "H": "N",
+    "I": "Y",
+    "J": "T",
+    "K": "X",
+    "L": "W",
+    "M": "R",
+    "N": "I",
+    "O": "H",
+    "P": "D",
+    "Q": "G",
+    "R": "V",
+    "S": "U",
+    "T": "F",
+    "U": "E",
+    "V": "Z",
+    "W": "M",
+    "X": "J",
+    "Y": "C",
+    "Z": "Q"
+   },
+   "given": {
+    "H": "O"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Hebrews",
+     "letters": [
+      [
+       "L",
+       "A"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "W",
+       "L"
+      ],
+      [
+       "F",
+       "T"
+      ]
+     ]
+    },
+    "3": {
+     "word": "BOLDLY",
+     "position": 5,
+     "ref": "Hebrews 13:6"
+    }
+   },
+   "letters": 72,
+   "lines": 5,
+   "distinct": 18,
+   "forced_fraction": 0.083,
+   "agreement": [
+    {
+     "ref": "Hebrews 13:6",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 108
+  },
+  {
    "ref": "2 Timothy 1:7",
+   "text_key": "2 Timothy 1:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -11037,10 +11299,11 @@
      "differ": {}
     }
    ],
-   "num": 108
+   "num": 109
   },
   {
    "ref": "Isaiah 41:13",
+   "text_key": "Isaiah 41:13",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -11124,106 +11387,6 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 109
-  },
-  {
-   "ref": "Galatians 6:9",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Galatians",
-   "theme": "Strength & Courage",
-   "level": 3,
-   "text": "And let us not be weary in well doing: for in due season we shall reap, if we faint not.",
-   "cipher": "HYC FRK MG YDK VR ORHXL BY ORFF CDBYP: IDX BY CMR GRHGDY OR GSHFF XRHZ, BI OR IHBYK YDK.",
-   "key": {
-    "A": "H",
-    "B": "V",
-    "C": "J",
-    "D": "C",
-    "E": "R",
-    "F": "I",
-    "G": "P",
-    "H": "S",
-    "I": "B",
-    "J": "W",
-    "K": "Q",
-    "L": "F",
-    "M": "T",
-    "N": "Y",
-    "O": "D",
-    "P": "Z",
-    "Q": "E",
-    "R": "X",
-    "S": "G",
-    "T": "K",
-    "U": "M",
-    "V": "A",
-    "W": "O",
-    "X": "N",
-    "Y": "L",
-    "Z": "U"
-   },
-   "given": {
-    "S": "H",
-    "V": "B"
-   },
-   "needed_for_uniqueness": [
-    "S",
-    "V"
-   ],
-   "hints": {
-    "1": {
-     "book": "Galatians",
-     "letters": [
-      [
-       "R",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "Y",
-       "N"
-      ],
-      [
-       "H",
-       "A"
-      ]
-     ]
-    },
-    "3": {
-     "word": "SEASON",
-     "position": 13,
-     "ref": "Galatians 6:9"
-    }
-   },
-   "letters": 66,
-   "lines": 4,
-   "distinct": 18,
-   "forced_fraction": 0.03,
-   "agreement": [
-    {
-     "ref": "Galatians 6:9",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
       "scrollmapper",
       "thiagobodruk"
      ],
@@ -11242,6 +11405,7 @@
   },
   {
    "ref": "Isaiah 40:29",
+   "text_key": "Isaiah 40:29",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -11343,6 +11507,7 @@
   },
   {
    "ref": "Deuteronomy 31:6",
+   "text_key": "Deuteronomy 31:6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -11424,6 +11589,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -11441,6 +11607,7 @@
   },
   {
    "ref": "Psalms 27:1",
+   "text_key": "Psalms 27:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -11540,6 +11707,7 @@
   },
   {
    "ref": "Isaiah 12:2",
+   "text_key": "Isaiah 12:2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -11621,6 +11789,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -11638,6 +11807,7 @@
   },
   {
    "ref": "Isaiah 40:31",
+   "text_key": "Isaiah 40:31",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -11719,6 +11889,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -11735,51 +11906,52 @@
    "num": 115
   },
   {
-   "ref": "Deuteronomy 31:8",
+   "ref": "2 Corinthians 12:10",
+   "text_key": "2 Corinthians 12:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Deuteronomy",
+   "book": "2 Corinthians",
    "theme": "Strength & Courage",
    "level": 4,
-   "text": "And the LORD, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed.",
-   "cipher": "GZW YCI UXPW, CI TY TL YCGY WXYC NX KIMXPI YCII; CI OTUU KI OTYC YCII, CI OTUU ZXY MGTU YCII, ZITYCIP MXPLGDI YCII: MIGP ZXY, ZITYCIP KI WTLHGRIW.",
+   "text": "Therefore I take pleasure in infirmities, in reproaches, in necessities, in persecutions, in distresses for Christ's sake: for when I am weak, then am I strong.",
+   "cipher": "ITPMPHUMP K INLP AXPNVDMP KG KGHKMCKIKPV, KG MPAMUNRTPV, KG GPRPVVKIKPV, KG APMVPRDIKUGV, KG WKVIMPVVPV HUM RTMKVI'V VNLP: HUM ZTPG K NC ZPNL, ITPG NC K VIMUGF.",
    "key": {
-    "A": "G",
-    "B": "K",
-    "C": "F",
+    "A": "N",
+    "B": "J",
+    "C": "R",
     "D": "W",
-    "E": "I",
-    "F": "M",
-    "G": "N",
-    "H": "C",
-    "I": "T",
-    "J": "S",
-    "K": "D",
-    "L": "U",
-    "M": "H",
-    "N": "Z",
-    "O": "X",
-    "P": "J",
-    "Q": "B",
-    "R": "P",
-    "S": "L",
-    "T": "Y",
-    "U": "Q",
-    "V": "E",
-    "W": "O",
-    "X": "V",
-    "Y": "R",
-    "Z": "A"
+    "E": "P",
+    "F": "H",
+    "G": "F",
+    "H": "T",
+    "I": "K",
+    "J": "O",
+    "K": "L",
+    "L": "X",
+    "M": "C",
+    "N": "G",
+    "O": "U",
+    "P": "A",
+    "Q": "Y",
+    "R": "M",
+    "S": "V",
+    "T": "I",
+    "U": "D",
+    "V": "B",
+    "W": "Z",
+    "X": "E",
+    "Y": "Q",
+    "Z": "S"
    },
    "given": {},
    "needed_for_uniqueness": [],
    "hints": {
     "1": {
-     "book": "Deuteronomy",
+     "book": "2 Corinthians",
      "letters": [
       [
-       "I",
+       "P",
        "E"
       ]
      ]
@@ -11787,32 +11959,34 @@
     "2": {
      "letters": [
       [
-       "Y",
-       "T"
+       "K",
+       "I"
       ],
       [
-       "C",
-       "H"
+       "V",
+       "S"
       ]
      ]
     },
     "3": {
-     "word": "DISMAYED",
-     "position": 29,
-     "ref": "Deuteronomy 31:8"
+     "word": "PERSECUTIONS",
+     "position": 12,
+     "ref": "2 Corinthians 12:10"
     }
    },
-   "letters": 111,
-   "lines": 7,
-   "distinct": 18,
-   "forced_fraction": 0.0,
+   "letters": 127,
+   "lines": 8,
+   "distinct": 19,
+   "forced_fraction": 1.0,
    "agreement": [
     {
-     "ref": "Deuteronomy 31:8",
+     "ref": "2 Corinthians 12:10",
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -11829,6 +12003,7 @@
   },
   {
    "ref": "Habakkuk 3:19",
+   "text_key": "Habakkuk 3:19 |  ... high places.",
    "partial": true,
    "starts_mid": false,
    "ends_mid": true,
@@ -11905,7 +12080,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -11922,6 +12099,7 @@
   },
   {
    "ref": "Psalms 59:16",
+   "text_key": "Psalms 59:16",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12017,6 +12195,7 @@
   },
   {
    "ref": "2 Timothy 4:7",
+   "text_key": "2 Timothy 4:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12123,7 +12302,113 @@
    "num": 119
   },
   {
+   "ref": "Ecclesiastes 3:1",
+   "text_key": "Ecclesiastes 3:1",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Ecclesiastes",
+   "theme": "Faith & Trust",
+   "level": 1,
+   "text": "To every thing there is a season, and a time to every purpose under the heaven:",
+   "cipher": "ZM YBYKA ZFEIN ZFYKY EX U XYUXMI, UIT U ZECY ZM YBYKA LWKLMXY WITYK ZFY FYUBYI:",
+   "key": {
+    "A": "U",
+    "B": "O",
+    "C": "P",
+    "D": "T",
+    "E": "Y",
+    "F": "V",
+    "G": "N",
+    "H": "F",
+    "I": "E",
+    "J": "D",
+    "K": "R",
+    "L": "J",
+    "M": "C",
+    "N": "I",
+    "O": "M",
+    "P": "L",
+    "Q": "S",
+    "R": "K",
+    "S": "X",
+    "T": "Z",
+    "U": "W",
+    "V": "B",
+    "W": "H",
+    "X": "G",
+    "Y": "A",
+    "Z": "Q"
+   },
+   "given": {
+    "C": "M",
+    "I": "N",
+    "K": "R",
+    "N": "G",
+    "U": "A"
+   },
+   "needed_for_uniqueness": [
+    "C",
+    "N"
+   ],
+   "hints": {
+    "1": {
+     "book": "Ecclesiastes",
+     "letters": [
+      [
+       "Y",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "Z",
+       "T"
+      ],
+      [
+       "M",
+       "O"
+      ]
+     ]
+    },
+    "3": {
+     "word": "PURPOSE",
+     "position": 13,
+     "ref": "Ecclesiastes 3:1"
+    }
+   },
+   "letters": 62,
+   "lines": 4,
+   "distinct": 16,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Ecclesiastes 3:1",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 120
+  },
+  {
    "ref": "Hebrews 13:8",
+   "text_key": "Hebrews 13:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12223,10 +12508,11 @@
      "differ": {}
     }
    ],
-   "num": 120
+   "num": 121
   },
   {
    "ref": "Jeremiah 17:7",
+   "text_key": "Jeremiah 17:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12311,108 +12597,6 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 121
-  },
-  {
-   "ref": "Proverbs 15:1",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Proverbs",
-   "theme": "Faith & Trust",
-   "level": 1,
-   "text": "A soft answer turneth away wrath: but grievous words stir up anger.",
-   "cipher": "P LHMV PRLZUB VXBRUVK PZPC ZBPVK: OXV EBDUAHXL ZHBFL LVDB XG PREUB.",
-   "key": {
-    "A": "P",
-    "B": "O",
-    "C": "J",
-    "D": "F",
-    "E": "U",
-    "F": "M",
-    "G": "E",
-    "H": "K",
-    "I": "D",
-    "J": "S",
-    "K": "I",
-    "L": "N",
-    "M": "W",
-    "N": "R",
-    "O": "H",
-    "P": "G",
-    "Q": "Y",
-    "R": "B",
-    "S": "L",
-    "T": "V",
-    "U": "X",
-    "V": "A",
-    "W": "Z",
-    "X": "Q",
-    "Y": "C",
-    "Z": "T"
-   },
-   "given": {
-    "F": "D",
-    "G": "P",
-    "O": "B",
-    "V": "T"
-   },
-   "needed_for_uniqueness": [
-    "F",
-    "G",
-    "O"
-   ],
-   "hints": {
-    "1": {
-     "book": "Proverbs",
-     "letters": [
-      [
-       "B",
-       "R"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "P",
-       "A"
-      ],
-      [
-       "L",
-       "S"
-      ]
-     ]
-    },
-    "3": {
-     "word": "GRIEVOUS",
-     "position": 8,
-     "ref": "Proverbs 15:1"
-    }
-   },
-   "letters": 54,
-   "lines": 3,
-   "distinct": 18,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Proverbs 15:1",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
       "farskipper",
       "scrollmapper",
       "thiagobodruk"
@@ -12432,6 +12616,7 @@
   },
   {
    "ref": "Proverbs 16:3",
+   "text_key": "Proverbs 16:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12515,7 +12700,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -12532,6 +12719,7 @@
   },
   {
    "ref": "Proverbs 16:9",
+   "text_key": "Proverbs 16:9",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12618,6 +12806,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -12634,85 +12823,92 @@
    "num": 124
   },
   {
-   "ref": "Proverbs 17:17",
+   "ref": "Psalms 119:11",
+   "text_key": "Psalms 119:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Proverbs",
+   "book": "Psalms",
    "theme": "Faith & Trust",
    "level": 1,
-   "text": "A friend loveth at all times, and a brother is born for adversity.",
-   "cipher": "M AZNTEX DWLTVR MV MDD VNHTC, MEX M SZWVRTZ NC SWZE AWZ MXLTZCNVB.",
+   "text": "Thy word have I hid in mine heart, that I might not sin against thee.",
+   "cipher": "HIK SDPR IXMY G IGR GV NGVY IYXPH, HIXH G NGAIH VDH UGV XAXGVUH HIYY.",
    "key": {
-    "A": "M",
-    "B": "S",
-    "C": "P",
-    "D": "X",
-    "E": "T",
-    "F": "A",
-    "G": "K",
-    "H": "R",
-    "I": "N",
-    "J": "I",
-    "K": "G",
-    "L": "D",
-    "M": "H",
-    "N": "E",
-    "O": "W",
-    "P": "J",
-    "Q": "O",
-    "R": "Z",
-    "S": "C",
-    "T": "V",
-    "U": "Y",
-    "V": "L",
-    "W": "U",
-    "X": "Q",
-    "Y": "B",
-    "Z": "F"
+    "A": "X",
+    "B": "Q",
+    "C": "F",
+    "D": "R",
+    "E": "Y",
+    "F": "B",
+    "G": "A",
+    "H": "I",
+    "I": "G",
+    "J": "C",
+    "K": "O",
+    "L": "W",
+    "M": "N",
+    "N": "V",
+    "O": "D",
+    "P": "E",
+    "Q": "T",
+    "R": "P",
+    "S": "U",
+    "T": "H",
+    "U": "Z",
+    "V": "M",
+    "W": "S",
+    "X": "J",
+    "Y": "K",
+    "Z": "L"
    },
    "given": {
-    "N": "I",
-    "T": "E",
-    "V": "T",
-    "W": "O"
+    "I": "H",
+    "M": "V",
+    "N": "M",
+    "R": "D",
+    "S": "W"
    },
-   "needed_for_uniqueness": [],
+   "needed_for_uniqueness": [
+    "M",
+    "N",
+    "R",
+    "S"
+   ],
    "hints": {
     "1": {
-     "book": "Proverbs",
+     "book": "Psalms",
      "letters": [
       [
-       "M",
-       "A"
+       "H",
+       "T"
       ]
      ]
     },
     "2": {
      "letters": [
       [
-       "Z",
-       "R"
+       "G",
+       "I"
       ],
       [
-       "E",
-       "N"
+       "X",
+       "A"
       ]
      ]
     },
     "3": {
-     "word": "ADVERSITY",
-     "position": 13,
-     "ref": "Proverbs 17:17"
+     "word": "AGAINST",
+     "position": 14,
+     "ref": "Psalms 119:11"
     }
    },
-   "letters": 52,
+   "letters": 53,
    "lines": 3,
-   "distinct": 16,
+   "distinct": 15,
    "forced_fraction": 1.0,
    "agreement": [
     {
-     "ref": "Proverbs 17:17",
+     "ref": "Psalms 119:11",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -12735,6 +12931,7 @@
   },
   {
    "ref": "Psalms 34:8",
+   "text_key": "Psalms 34:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12820,6 +13017,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -12837,6 +13035,7 @@
   },
   {
    "ref": "Romans 10:17",
+   "text_key": "Romans 10:17",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -12879,6 +13078,7 @@
     "F": "M",
     "H": "N",
     "O": "W",
+    "R": "A",
     "U": "T",
     "W": "S"
    },
@@ -12905,8 +13105,8 @@
        "O"
       ],
       [
-       "R",
-       "A"
+       "X",
+       "I"
       ]
      ]
     },
@@ -12919,7 +13119,7 @@
    "letters": 50,
    "lines": 3,
    "distinct": 17,
-   "forced_fraction": 0.64,
+   "forced_fraction": 1.0,
    "agreement": [
     {
      "ref": "Romans 10:17",
@@ -12945,6 +13145,7 @@
   },
   {
    "ref": "Hebrews 11:6",
+   "text_key": "Hebrews 11:6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13025,7 +13226,8 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
-      "scrollmapper"
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -13042,6 +13244,7 @@
   },
   {
    "ref": "Isaiah 26:4",
+   "text_key": "Isaiah 26:4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13125,6 +13328,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -13142,6 +13346,7 @@
   },
   {
    "ref": "James 1:5",
+   "text_key": "James 1:5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13239,102 +13444,84 @@
    "num": 130
   },
   {
-   "ref": "John 13:34-35",
+   "ref": "Luke 12:32",
+   "text_key": "Luke 12:32",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "John",
+   "book": "Luke",
    "theme": "Faith & Trust",
    "level": 2,
-   "text": "A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another. By this shall all men know that ye are my disciples, if ye have love one to another.",
-   "cipher": "H OSM KUBBHOFBSOA D NDLS YOAU RUY, APHA RS CULS UOS HOUAPSE; HG D PHLS CULSF RUY, APHA RS HCGU CULS UOS HOUAPSE. WR APDG GPHCC HCC BSO XOUM APHA RS HES BR FDGKDVCSG, DI RS PHLS CULS UOS AU HOUAPSE.",
+   "text": "Fear not, little flock; for it is your Father's good pleasure to give you the kingdom.",
+   "cipher": "OVSY GIZ, KXZZKV OKIEB; OIY XZ XM CIWY OSZTVY'M NIIR UKVSMWYV ZI NXHV CIW ZTV BXGNRID.",
    "key": {
-    "A": "H",
-    "B": "W",
-    "C": "K",
-    "D": "F",
-    "E": "S",
-    "F": "I",
+    "A": "S",
+    "B": "Q",
+    "C": "E",
+    "D": "R",
+    "E": "V",
+    "F": "O",
     "G": "N",
-    "H": "P",
-    "I": "D",
-    "J": "Q",
-    "K": "X",
-    "L": "C",
-    "M": "B",
-    "N": "O",
-    "O": "U",
-    "P": "V",
-    "Q": "T",
-    "R": "E",
-    "S": "G",
-    "T": "A",
-    "U": "Y",
-    "V": "L",
-    "W": "M",
-    "X": "Z",
-    "Y": "R",
-    "Z": "J"
+    "H": "T",
+    "I": "X",
+    "J": "P",
+    "K": "B",
+    "L": "K",
+    "M": "D",
+    "N": "G",
+    "O": "I",
+    "P": "U",
+    "Q": "L",
+    "R": "Y",
+    "S": "M",
+    "T": "Z",
+    "U": "W",
+    "V": "H",
+    "W": "F",
+    "X": "J",
+    "Y": "C",
+    "Z": "A"
    },
    "given": {
-    "A": "T",
-    "H": "A"
+    "Y": "R",
+    "Z": "T"
    },
    "needed_for_uniqueness": [],
    "hints": {
     "1": {
-     "book": "John",
+     "book": "Luke",
      "letters": [
       [
-       "S",
-       "E"
+       "I",
+       "O"
       ]
      ]
     },
     "2": {
      "letters": [
       [
-       "U",
-       "O"
+       "V",
+       "E"
       ],
       [
-       "O",
-       "N"
+       "X",
+       "I"
       ]
      ]
     },
     "3": {
-     "word": "COMMANDMENT",
-     "position": 3,
-     "ref": "John 13:34-35"
+     "word": "PLEASURE",
+     "position": 11,
+     "ref": "Luke 12:32"
     }
    },
-   "letters": 151,
-   "lines": 9,
-   "distinct": 22,
+   "letters": 67,
+   "lines": 4,
+   "distinct": 20,
    "forced_fraction": 1.0,
    "agreement": [
     {
-     "ref": "John 13:34",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    },
-    {
-     "ref": "John 13:35",
+     "ref": "Luke 12:32",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -13357,6 +13544,7 @@
   },
   {
    "ref": "Matthew 19:26",
+   "text_key": "Matthew 19:26",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13439,7 +13627,8 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
-      "scrollmapper"
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -13455,7 +13644,109 @@
    "num": 132
   },
   {
+   "ref": "Matthew 5:16",
+   "text_key": "Matthew 5:16",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Matthew",
+   "theme": "Faith & Trust",
+   "level": 2,
+   "text": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
+   "cipher": "SNO MCYB SUEZO AC AZUWN VNDCBN HNW, OZLO OZNM HLM ANN MCYB ECCK XCBRA, LWK ESCBUDM MCYB DLOZNB XZUTZ UA UW ZNLPNW.",
+   "key": {
+    "A": "L",
+    "B": "V",
+    "C": "T",
+    "D": "K",
+    "E": "N",
+    "F": "D",
+    "G": "E",
+    "H": "Z",
+    "I": "U",
+    "J": "F",
+    "K": "R",
+    "L": "S",
+    "M": "H",
+    "N": "W",
+    "O": "C",
+    "P": "Q",
+    "Q": "J",
+    "R": "B",
+    "S": "A",
+    "T": "O",
+    "U": "Y",
+    "V": "P",
+    "W": "X",
+    "X": "I",
+    "Y": "M",
+    "Z": "G"
+   },
+   "given": {
+    "H": "M",
+    "Z": "H"
+   },
+   "needed_for_uniqueness": [
+    "H"
+   ],
+   "hints": {
+    "1": {
+     "book": "Matthew",
+     "letters": [
+      [
+       "N",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "C",
+       "O"
+      ],
+      [
+       "B",
+       "R"
+      ]
+     ]
+    },
+    "3": {
+     "word": "GLORIFY",
+     "position": 16,
+     "ref": "Matthew 5:16"
+    }
+   },
+   "letters": 90,
+   "lines": 5,
+   "distinct": 21,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Matthew 5:16",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 133
+  },
+  {
    "ref": "Proverbs 3:5-6",
+   "text_key": "Proverbs 3:5-6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13494,10 +13785,11 @@
    },
    "given": {
     "E": "P",
-    "K": "H"
+    "Z": "M"
    },
    "needed_for_uniqueness": [
-    "E"
+    "E",
+    "Z"
    ],
    "hints": {
     "1": {
@@ -13516,8 +13808,8 @@
        "N"
       ],
       [
-       "R",
-       "A"
+       "K",
+       "H"
       ]
      ]
     },
@@ -13538,6 +13830,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -13570,10 +13863,11 @@
      "differ": {}
     }
    ],
-   "num": 133
+   "num": 134
   },
   {
    "ref": "Psalms 143:8",
+   "text_key": "Psalms 143:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13670,10 +13964,11 @@
      "differ": {}
     }
    ],
-   "num": 134
+   "num": 135
   },
   {
    "ref": "Romans 12:2",
+   "text_key": "Romans 12:2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13768,10 +14063,11 @@
      "differ": {}
     }
    ],
-   "num": 135
+   "num": 136
   },
   {
    "ref": "Psalms 20:7",
+   "text_key": "Psalms 20:7",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -13856,107 +14152,6 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 136
-  },
-  {
-   "ref": "Ecclesiastes 3:1",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Ecclesiastes",
-   "theme": "Faith & Trust",
-   "level": 2,
-   "text": "To every thing there is a season, and a time to every purpose under the heaven:",
-   "cipher": "ZM YBYKA ZFEIN ZFYKY EX U XYUXMI, UIT U ZECY ZM YBYKA LWKLMXY WITYK ZFY FYUBYI:",
-   "key": {
-    "A": "U",
-    "B": "O",
-    "C": "P",
-    "D": "T",
-    "E": "Y",
-    "F": "V",
-    "G": "N",
-    "H": "F",
-    "I": "E",
-    "J": "D",
-    "K": "R",
-    "L": "J",
-    "M": "C",
-    "N": "I",
-    "O": "M",
-    "P": "L",
-    "Q": "S",
-    "R": "K",
-    "S": "X",
-    "T": "Z",
-    "U": "W",
-    "V": "B",
-    "W": "H",
-    "X": "G",
-    "Y": "A",
-    "Z": "Q"
-   },
-   "given": {
-    "C": "M",
-    "K": "R",
-    "N": "G"
-   },
-   "needed_for_uniqueness": [
-    "C",
-    "N"
-   ],
-   "hints": {
-    "1": {
-     "book": "Ecclesiastes",
-     "letters": [
-      [
-       "Y",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "Z",
-       "T"
-      ],
-      [
-       "I",
-       "N"
-      ]
-     ]
-    },
-    "3": {
-     "word": "PURPOSE",
-     "position": 13,
-     "ref": "Ecclesiastes 3:1"
-    }
-   },
-   "letters": 62,
-   "lines": 4,
-   "distinct": 16,
-   "forced_fraction": 0.113,
-   "agreement": [
-    {
-     "ref": "Ecclesiastes 3:1",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
       "scrollmapper",
       "thiagobodruk"
      ],
@@ -13974,84 +14169,104 @@
    "num": 137
   },
   {
-   "ref": "Matthew 5:16",
+   "ref": "Psalms 56:3-4",
+   "text_key": "Psalms 56:3-4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Matthew",
+   "book": "Psalms",
    "theme": "Faith & Trust",
    "level": 3,
-   "text": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
-   "cipher": "SNO MCYB SUEZO AC AZUWN VNDCBN HNW, OZLO OZNM HLM ANN MCYB ECCK XCBRA, LWK ESCBUDM MCYB DLOZNB XZUTZ UA UW ZNLPNW.",
+   "text": "What time I am afraid, I will trust in thee. In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me.",
+   "cipher": "NBPV VGXU G PX POLPGZ, G NGII VLTKV GR VBUU. GR YFZ G NGII SLPGKU BGK NFLZ, GR YFZ G BPCU STV XA VLTKV; G NGII RFV OUPL NBPV OIUKB HPR ZF TRVF XU.",
    "key": {
-    "A": "L",
-    "B": "V",
-    "C": "T",
-    "D": "K",
-    "E": "N",
-    "F": "D",
-    "G": "E",
-    "H": "Z",
-    "I": "U",
-    "J": "F",
-    "K": "R",
-    "L": "S",
-    "M": "H",
-    "N": "W",
-    "O": "C",
-    "P": "Q",
-    "Q": "J",
-    "R": "B",
-    "S": "A",
-    "T": "O",
-    "U": "Y",
-    "V": "P",
-    "W": "X",
-    "X": "I",
-    "Y": "M",
-    "Z": "G"
+    "A": "P",
+    "B": "E",
+    "C": "H",
+    "D": "Z",
+    "E": "U",
+    "F": "O",
+    "G": "Y",
+    "H": "B",
+    "I": "G",
+    "J": "Q",
+    "K": "M",
+    "L": "I",
+    "M": "X",
+    "N": "R",
+    "O": "F",
+    "P": "S",
+    "Q": "D",
+    "R": "L",
+    "S": "K",
+    "T": "V",
+    "U": "T",
+    "V": "C",
+    "W": "N",
+    "X": "J",
+    "Y": "A",
+    "Z": "W"
    },
    "given": {
-    "H": "M"
+    "Y": "G"
    },
    "needed_for_uniqueness": [
-    "H"
+    "Y"
    ],
    "hints": {
     "1": {
-     "book": "Matthew",
+     "book": "Psalms",
      "letters": [
       [
-       "N",
-       "E"
+       "G",
+       "I"
       ]
      ]
     },
     "2": {
      "letters": [
       [
-       "C",
-       "O"
+       "V",
+       "T"
       ],
       [
-       "Z",
-       "H"
+       "P",
+       "A"
       ]
      ]
     },
     "3": {
-     "word": "GLORIFY",
-     "position": 16,
-     "ref": "Matthew 5:16"
+     "word": "PRAISE",
+     "position": 15,
+     "ref": "Psalms 56:3-4"
     }
    },
-   "letters": 90,
-   "lines": 5,
-   "distinct": 21,
-   "forced_fraction": 0.022,
+   "letters": 108,
+   "lines": 7,
+   "distinct": 20,
+   "forced_fraction": 0.019,
    "agreement": [
     {
-     "ref": "Matthew 5:16",
+     "ref": "Psalms 56:3",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    },
+    {
+     "ref": "Psalms 56:4",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -14074,6 +14289,7 @@
   },
   {
    "ref": "Mark 9:23",
+   "text_key": "Mark 9:23",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14173,6 +14389,7 @@
   },
   {
    "ref": "John 14:6",
+   "text_key": "John 14:6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14272,6 +14489,7 @@
   },
   {
    "ref": "Psalms 32:8",
+   "text_key": "Psalms 32:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14371,6 +14589,7 @@
   },
   {
    "ref": "Psalms 9:10",
+   "text_key": "Psalms 9:10",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14451,7 +14670,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -14468,6 +14689,7 @@
   },
   {
    "ref": "Micah 6:8",
+   "text_key": "Micah 6:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14549,6 +14771,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -14566,6 +14789,7 @@
   },
   {
    "ref": "John 8:12",
+   "text_key": "John 8:12",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14665,14 +14889,15 @@
   },
   {
    "ref": "Psalms 37:4-5",
+   "text_key": "Psalms 37:4-5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
    "book": "Psalms",
    "theme": "Faith & Trust",
    "level": 3,
-   "text": "Delight thyself also in the LORD: and he shall give thee the desires of thine heart. Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.",
-   "cipher": "VZGWICF FCXOZGH MGOL WT FCZ GLNV: MTV CZ OCMGG IWRZ FCZZ FCZ VZOWNZO LH FCWTZ CZMNF. ELYYWF FCX SMX ATFL FCZ GLNV; FNAOF MGOL WT CWY; MTV CZ OCMGG UNWTI WF FL KMOO.",
+   "text": "Delight thyself also in the LORD; and he shall give thee the desires of thine heart. Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.",
+   "cipher": "VZGWICF FCXOZGH MGOL WT FCZ GLNV; MTV CZ OCMGG IWRZ FCZZ FCZ VZOWNZO LH FCWTZ CZMNF. ELYYWF FCX SMX ATFL FCZ GLNV; FNAOF MGOL WT CWY; MTV CZ OCMGG UNWTI WF FL KMOO.",
    "key": {
     "A": "M",
     "B": "U",
@@ -14743,8 +14968,9 @@
     {
      "ref": "Psalms 37:4",
      "exact": [
-      "aruljohn",
-      "bibleapi"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -14761,7 +14987,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -14778,6 +15006,7 @@
   },
   {
    "ref": "Galatians 2:20",
+   "text_key": "Galatians 2:20",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14873,6 +15102,7 @@
   },
   {
    "ref": "Matthew 22:37",
+   "text_key": "Matthew 22:37",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -14968,6 +15198,7 @@
   },
   {
    "ref": "Matthew 5:3-4",
+   "text_key": "Matthew 5:3-4",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15081,6 +15312,7 @@
   },
   {
    "ref": "1 Corinthians 13:13",
+   "text_key": "1 Corinthians 13:13",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15183,6 +15415,7 @@
   },
   {
    "ref": "1 John 1:9",
+   "text_key": "1 John 1:9",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15286,6 +15519,7 @@
   },
   {
    "ref": "John 15:13",
+   "text_key": "John 15:13",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15389,6 +15623,7 @@
   },
   {
    "ref": "Psalms 150:6",
+   "text_key": "Psalms 150:6",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15476,7 +15711,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -15493,6 +15730,7 @@
   },
   {
    "ref": "Psalms 30:11",
+   "text_key": "Psalms 30:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15595,6 +15833,7 @@
   },
   {
    "ref": "Psalms 34:1",
+   "text_key": "Psalms 34:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15697,6 +15936,7 @@
   },
   {
    "ref": "Romans 5:8",
+   "text_key": "Romans 5:8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15800,6 +16040,7 @@
   },
   {
    "ref": "Psalms 136:1",
+   "text_key": "Psalms 136:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15884,7 +16125,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -15901,6 +16144,7 @@
   },
   {
    "ref": "Psalms 118:24",
+   "text_key": "Psalms 118:24",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -15939,9 +16183,11 @@
    },
    "given": {
     "A": "Y",
+    "C": "W",
     "F": "D",
     "G": "B",
     "I": "T",
+    "N": "L",
     "T": "E",
     "U": "M",
     "W": "A"
@@ -15968,8 +16214,8 @@
        "I"
       ],
       [
-       "N",
-       "L"
+       "B",
+       "S"
       ]
      ]
     },
@@ -15990,6 +16236,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -16007,6 +16254,7 @@
   },
   {
    "ref": "1 John 4:16",
+   "text_key": "1 John 4:16",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16114,6 +16362,7 @@
   },
   {
    "ref": "1 Thessalonians 5:16-18",
+   "text_key": "1 Thessalonians 5:16-18",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16253,6 +16502,7 @@
   },
   {
    "ref": "Ephesians 2:4-5",
+   "text_key": "Ephesians 2:4-5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16370,6 +16620,7 @@
   },
   {
    "ref": "Ephesians 2:8-9",
+   "text_key": "Ephesians 2:8-9",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16490,6 +16741,7 @@
   },
   {
    "ref": "Galatians 5:22-23",
+   "text_key": "Galatians 5:22-23",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16607,6 +16859,7 @@
   },
   {
    "ref": "James 1:17",
+   "text_key": "James 1:17",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16705,6 +16958,7 @@
   },
   {
    "ref": "Jeremiah 31:3",
+   "text_key": "Jeremiah 31:3",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16786,7 +17040,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -16803,6 +17059,7 @@
   },
   {
    "ref": "John 3:16",
+   "text_key": "John 3:16",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -16903,6 +17160,7 @@
   },
   {
    "ref": "Psalms 100:4-5",
+   "text_key": "Psalms 100:4-5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17002,6 +17260,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -17019,6 +17278,7 @@
   },
   {
    "ref": "Psalms 139:14",
+   "text_key": "Psalms 139:14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17117,6 +17377,7 @@
   },
   {
    "ref": "Colossians 3:17",
+   "text_key": "Colossians 3:17",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17214,6 +17475,7 @@
   },
   {
    "ref": "Ephesians 4:32",
+   "text_key": "Ephesians 4:32",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17317,6 +17579,7 @@
   },
   {
    "ref": "Psalms 16:11",
+   "text_key": "Psalms 16:11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17416,6 +17679,7 @@
   },
   {
    "ref": "2 Corinthians 5:17",
+   "text_key": "2 Corinthians 5:17",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17513,6 +17777,7 @@
   },
   {
    "ref": "Psalms 100:1-2",
+   "text_key": "Psalms 100:1-2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17591,7 +17856,8 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -17610,6 +17876,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -17627,6 +17894,7 @@
   },
   {
    "ref": "1 John 4:7-8",
+   "text_key": "1 John 4:7-8",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17747,6 +18015,7 @@
   },
   {
    "ref": "1 John 4:18",
+   "text_key": "1 John 4:18",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17848,6 +18117,7 @@
   },
   {
    "ref": "Zephaniah 3:17",
+   "text_key": "Zephaniah 3:17",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -17929,6 +18199,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -17946,6 +18217,7 @@
   },
   {
    "ref": "1 Corinthians 13:4-5",
+   "text_key": "1 Corinthians 13:4-5",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -18060,6 +18332,7 @@
   },
   {
    "ref": "Psalms 103:1-2",
+   "text_key": "Psalms 103:1-2",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -18136,7 +18409,8 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -18154,7 +18428,9 @@
      "exact": [
       "aruljohn",
       "bibleapi",
-      "farskipper"
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
      ],
      "letters_agree": [
       "aruljohn",
@@ -18171,6 +18447,7 @@
   },
   {
    "ref": "Romans 8:39",
+   "text_key": "Romans 8:39",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -18265,7 +18542,515 @@
    "num": 178
   },
   {
+   "ref": "Isaiah 7:14",
+   "text_key": "Isaiah 7:14",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Isaiah",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 2,
+   "text": "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel.",
+   "cipher": "LYIGIUEGI LYI FEGK YMSZIFU ZYTFF HMRI VEC T ZMHD; OIYEFK, T RMGHMD ZYTFF WEDWIMRI, TDK OITG T ZED, TDK ZYTFF WTFF YMZ DTSI MSSTDCIF.",
+   "key": {
+    "A": "T",
+    "B": "O",
+    "C": "W",
+    "D": "K",
+    "E": "I",
+    "F": "U",
+    "G": "H",
+    "H": "Y",
+    "I": "M",
+    "J": "B",
+    "K": "A",
+    "L": "F",
+    "M": "S",
+    "N": "D",
+    "O": "E",
+    "P": "J",
+    "Q": "N",
+    "R": "G",
+    "S": "Z",
+    "T": "L",
+    "U": "C",
+    "V": "R",
+    "W": "X",
+    "X": "P",
+    "Y": "V",
+    "Z": "Q"
+   },
+   "given": {
+    "T": "A",
+    "Y": "H"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Isaiah",
+     "letters": [
+      [
+       "I",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "F",
+       "L"
+      ],
+      [
+       "M",
+       "I"
+      ]
+     ]
+    },
+    "3": {
+     "word": "THEREFORE",
+     "position": 1,
+     "ref": "Isaiah 7:14"
+    }
+   },
+   "letters": 104,
+   "lines": 6,
+   "distinct": 19,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Isaiah 7:14",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 179
+  },
+  {
+   "ref": "Isaiah 9:2",
+   "text_key": "Isaiah 9:2",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Isaiah",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 3,
+   "text": "The people that walked in darkness have seen a great light: they that dwell in the land of the shadow of death, upon them hath the light shined.",
+   "cipher": "XOM FMHFGM XODX CDGRMZ LY ZDNRYMPP ODSM PMMY D UNMDX GLUOX: XOMB XODX ZCMGG LY XOM GDYZ HV XOM PODZHC HV ZMDXO, KFHY XOMI ODXO XOM GLUOX POLYMZ.",
+   "key": {
+    "A": "D",
+    "B": "J",
+    "C": "A",
+    "D": "Z",
+    "E": "M",
+    "F": "V",
+    "G": "U",
+    "H": "O",
+    "I": "L",
+    "J": "E",
+    "K": "R",
+    "L": "G",
+    "M": "I",
+    "N": "Y",
+    "O": "H",
+    "P": "F",
+    "Q": "T",
+    "R": "N",
+    "S": "P",
+    "T": "X",
+    "U": "K",
+    "V": "S",
+    "W": "C",
+    "X": "Q",
+    "Y": "B",
+    "Z": "W"
+   },
+   "given": {
+    "B": "Y",
+    "V": "F"
+   },
+   "needed_for_uniqueness": [
+    "B",
+    "V"
+   ],
+   "hints": {
+    "1": {
+     "book": "Isaiah",
+     "letters": [
+      [
+       "M",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "O",
+       "H"
+      ],
+      [
+       "X",
+       "T"
+      ]
+     ]
+    },
+    "3": {
+     "word": "DARKNESS",
+     "position": 6,
+     "ref": "Isaiah 9:2"
+    }
+   },
+   "letters": 114,
+   "lines": 7,
+   "distinct": 20,
+   "forced_fraction": 0.026,
+   "agreement": [
+    {
+     "ref": "Isaiah 9:2",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 180
+  },
+  {
+   "ref": "Isaiah 9:6",
+   "text_key": "Isaiah 9:6 |  ... upon his shoulder",
+   "partial": true,
+   "starts_mid": false,
+   "ends_mid": true,
+   "book": "Isaiah",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 1,
+   "text": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder",
+   "cipher": "YKB SGRK SD L AFVZC VD XKBG, SGRK SD L DKG VD NVHIG: LGC RFI NKHIBGOIGR DFLZZ XI SWKG FVD DFKSZCIB",
+   "key": {
+    "A": "L",
+    "B": "X",
+    "C": "A",
+    "D": "C",
+    "E": "I",
+    "F": "Y",
+    "G": "N",
+    "H": "F",
+    "I": "V",
+    "J": "E",
+    "K": "Q",
+    "L": "Z",
+    "M": "O",
+    "N": "G",
+    "O": "K",
+    "P": "W",
+    "Q": "J",
+    "R": "B",
+    "S": "D",
+    "T": "R",
+    "U": "S",
+    "V": "H",
+    "W": "T",
+    "X": "M",
+    "Y": "P",
+    "Z": "U"
+   },
+   "given": {
+    "D": "S",
+    "F": "H",
+    "I": "E",
+    "S": "U"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Isaiah",
+     "letters": [
+      [
+       "G",
+       "N"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "K",
+       "O"
+      ],
+      [
+       "V",
+       "I"
+      ]
+     ]
+    },
+    "3": {
+     "word": "GOVERNMENT",
+     "position": 16,
+     "ref": "Isaiah 9:6"
+    }
+   },
+   "letters": 76,
+   "lines": 5,
+   "distinct": 19,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Isaiah 9:6",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 181
+  },
+  {
+   "ref": "Isaiah 9:6",
+   "text_key": "Isaiah 9:6 | and his name ... Prince of Peace.",
+   "partial": true,
+   "starts_mid": true,
+   "ends_mid": false,
+   "book": "Isaiah",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 2,
+   "text": "and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.",
+   "cipher": "XOK WLF OXGR FWXBB HR EXBBRK YZOKRTMAB, EZAOFRBBZT, DWR GLCWDS CZK, DWR RPRTBXFDLOC MXDWRT, DWR NTLOER ZM NRXER.",
+   "key": {
+    "A": "X",
+    "B": "H",
+    "C": "E",
+    "D": "K",
+    "E": "R",
+    "F": "M",
+    "G": "C",
+    "H": "W",
+    "I": "L",
+    "J": "V",
+    "K": "U",
+    "L": "B",
+    "M": "G",
+    "N": "O",
+    "O": "Z",
+    "P": "N",
+    "Q": "I",
+    "R": "T",
+    "S": "F",
+    "T": "D",
+    "U": "A",
+    "V": "P",
+    "W": "Y",
+    "X": "Q",
+    "Y": "S",
+    "Z": "J"
+   },
+   "given": {
+    "H": "B",
+    "X": "A"
+   },
+   "needed_for_uniqueness": [
+    "H"
+   ],
+   "hints": {
+    "1": {
+     "book": "Isaiah",
+     "letters": [
+      [
+       "R",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "B",
+       "L"
+      ],
+      [
+       "W",
+       "H"
+      ]
+     ]
+    },
+    "3": {
+     "word": "EVERLASTING",
+     "position": 13,
+     "ref": "Isaiah 9:6"
+    }
+   },
+   "letters": 90,
+   "lines": 6,
+   "distinct": 21,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Isaiah 9:6",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 182
+  },
+  {
+   "ref": "Isaiah 11:1",
+   "text_key": "Isaiah 11:1",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Isaiah",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 1,
+   "text": "And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots:",
+   "cipher": "PBI ONZFZ WNPRR LYVZ SYFON P FYI YDO YS ONZ WOZV YS XZWWZ, PBI P AFPBLN WNPRR CFYM YDO YS NTW FYYOW:",
+   "key": {
+    "A": "P",
+    "B": "A",
+    "C": "L",
+    "D": "I",
+    "E": "Z",
+    "F": "S",
+    "G": "C",
+    "H": "N",
+    "I": "T",
+    "J": "X",
+    "K": "H",
+    "L": "R",
+    "M": "V",
+    "N": "B",
+    "O": "Y",
+    "P": "U",
+    "Q": "K",
+    "R": "F",
+    "S": "W",
+    "T": "O",
+    "U": "D",
+    "V": "J",
+    "W": "M",
+    "X": "G",
+    "Y": "E",
+    "Z": "Q"
+   },
+   "given": {
+    "F": "R",
+    "N": "H",
+    "O": "T",
+    "R": "L",
+    "S": "F",
+    "W": "S",
+    "Z": "E"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Isaiah",
+     "letters": [
+      [
+       "Y",
+       "O"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "P",
+       "A"
+      ],
+      [
+       "B",
+       "N"
+      ]
+     ]
+    },
+    "3": {
+     "word": "BRANCH",
+     "position": 16,
+     "ref": "Isaiah 11:1"
+    }
+   },
+   "letters": 77,
+   "lines": 5,
+   "distinct": 19,
+   "forced_fraction": 0.935,
+   "agreement": [
+    {
+     "ref": "Isaiah 11:1",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 183
+  },
+  {
    "ref": "Isaiah 60:1",
+   "text_key": "Isaiah 60:1",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -18351,6 +19136,7 @@
       "aruljohn",
       "bibleapi",
       "farskipper",
+      "scrollmapper",
       "thiagobodruk"
      ],
      "letters_agree": [
@@ -18364,65 +19150,56 @@
      "differ": {}
     }
    ],
-   "num": 179
+   "num": 184
   },
   {
-   "ref": "John 1:1",
+   "ref": "Luke 1:30-31",
+   "text_key": "Luke 1:30-31",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "John",
+   "book": "Luke",
    "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 1,
-   "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
-   "cipher": "EG UNW OWREGGEGR BYA UNW BKMX, YGX UNW BKMX BYA BEUN RKX, YGX UNW BKMX BYA RKX.",
+   "level": 4,
+   "text": "And the angel said unto her, Fear not, Mary: for thou hast found favour with God. And, behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS.",
+   "cipher": "DXA HNP DXMPG UDBA RXHK NPS, LPDS XKH, ZDSC: LKS HNKR NDUH LKRXA LDFKRS TBHN MKA. DXA, WPNKGA, HNKR UNDGH EKXEPBFP BX HNC TKZW, DXA WSBXM LKSHN D UKX, DXA UNDGH EDGG NBU XDZP YPURU.",
    "key": {
-    "A": "Y",
-    "B": "O",
-    "C": "S",
-    "D": "X",
-    "E": "W",
-    "F": "Z",
-    "G": "R",
+    "A": "D",
+    "B": "W",
+    "C": "E",
+    "D": "A",
+    "E": "P",
+    "F": "L",
+    "G": "M",
     "H": "N",
-    "I": "E",
-    "J": "V",
-    "K": "D",
-    "L": "P",
-    "M": "L",
-    "N": "G",
-    "O": "K",
-    "P": "H",
-    "Q": "T",
-    "R": "M",
-    "S": "A",
-    "T": "U",
-    "U": "F",
-    "V": "I",
-    "W": "B",
-    "X": "C",
-    "Y": "J",
-    "Z": "Q"
-   },
-   "given": {
-    "A": "S",
-    "G": "N",
+    "I": "B",
+    "J": "Y",
     "K": "O",
-    "N": "H",
-    "U": "T",
-    "W": "E",
-    "Y": "A"
+    "L": "G",
+    "M": "Z",
+    "N": "X",
+    "O": "K",
+    "P": "Q",
+    "Q": "I",
+    "R": "S",
+    "S": "U",
+    "T": "H",
+    "U": "R",
+    "V": "F",
+    "W": "T",
+    "X": "V",
+    "Y": "C",
+    "Z": "J"
    },
-   "needed_for_uniqueness": [
-    "A"
-   ],
+   "given": {},
+   "needed_for_uniqueness": [],
    "hints": {
     "1": {
-     "book": "John",
+     "book": "Luke",
      "letters": [
       [
-       "B",
-       "W"
+       "D",
+       "A"
       ]
      ]
     },
@@ -18430,27 +19207,46 @@
      "letters": [
       [
        "X",
-       "D"
+       "N"
       ],
       [
-       "E",
-       "I"
+       "K",
+       "O"
       ]
      ]
     },
     "3": {
-     "word": "BEGINNING",
-     "position": 3,
-     "ref": "John 1:1"
+     "word": "CONCEIVE",
+     "position": 21,
+     "ref": "Luke 1:30-31"
     }
    },
-   "letters": 60,
-   "lines": 4,
-   "distinct": 13,
-   "forced_fraction": 1.0,
+   "letters": 138,
+   "lines": 8,
+   "distinct": 21,
+   "forced_fraction": 0.0,
    "agreement": [
     {
-     "ref": "John 1:1",
+     "ref": "Luke 1:30",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    },
+    {
+     "ref": "Luke 1:31",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -18469,10 +19265,11 @@
      "differ": {}
     }
    ],
-   "num": 180
+   "num": 185
   },
   {
    "ref": "Luke 1:46-47",
+   "text_key": "Luke 1:46-47",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -18588,160 +19385,68 @@
      "differ": {}
     }
    ],
-   "num": 181
+   "num": 186
   },
   {
-   "ref": "Matthew 2:10",
+   "ref": "Matthew 1:21",
+   "text_key": "Matthew 1:21",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
    "book": "Matthew",
    "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 1,
-   "text": "When they saw the star, they rejoiced with exceeding great joy.",
-   "cipher": "PGAU VGAR YTP VGA YVTI, VGAR IABLXZAS PXVG AEZAASXUM MIATV BLR.",
+   "level": 2,
+   "text": "And she shall bring forth a son, and thou shalt call his name JESUS: for he shall save his people from their sins.",
+   "cipher": "DOG LUK LUDHH FNWOC SMNVU D LMO, DOG VUME LUDHV IDHH UWL ODTK ZKLEL: SMN UK LUDHH LDBK UWL XKMXHK SNMT VUKWN LWOL.",
    "key": {
-    "A": "T",
-    "B": "D",
-    "C": "Z",
-    "D": "S",
-    "E": "A",
-    "F": "H",
-    "G": "M",
-    "H": "G",
-    "I": "X",
-    "J": "B",
-    "K": "W",
-    "L": "F",
-    "M": "Q",
-    "N": "U",
-    "O": "L",
-    "P": "K",
-    "Q": "J",
-    "R": "I",
-    "S": "Y",
-    "T": "V",
-    "U": "N",
-    "V": "C",
-    "W": "P",
-    "X": "E",
-    "Y": "R",
-    "Z": "O"
-   },
-   "given": {
-    "G": "H",
-    "P": "W",
-    "R": "Y",
-    "T": "A"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Matthew",
-     "letters": [
-      [
-       "A",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "V",
-       "T"
-      ],
-      [
-       "I",
-       "R"
-      ]
-     ]
-    },
-    "3": {
-     "word": "EXCEEDING",
-     "position": 9,
-     "ref": "Matthew 2:10"
-    }
-   },
-   "letters": 51,
-   "lines": 3,
-   "distinct": 16,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Matthew 2:10",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 182
-  },
-  {
-   "ref": "Matthew 2:11",
-   "partial": true,
-   "starts_mid": true,
-   "ends_mid": false,
-   "book": "Matthew",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 1,
-   "text": "and when they had opened their treasures, they presented unto him gifts; gold, and frankincense, and myrrh.",
-   "cipher": "EUW PKHU BKHD KEW ICHUHW BKHFL BLHEVALHV, BKHD CLHVHUBHW AUBI KFT OFRBV; OIGW, EUW RLEUXFUMHUVH, EUW TDLLK.",
-   "key": {
-    "A": "E",
-    "B": "J",
-    "C": "M",
-    "D": "W",
-    "E": "H",
-    "F": "R",
-    "G": "O",
-    "H": "K",
-    "I": "F",
-    "J": "Y",
-    "K": "X",
-    "L": "G",
+    "A": "D",
+    "B": "F",
+    "C": "I",
+    "D": "G",
+    "E": "K",
+    "F": "S",
+    "G": "C",
+    "H": "U",
+    "I": "W",
+    "J": "Z",
+    "K": "R",
+    "L": "H",
     "M": "T",
-    "N": "U",
-    "O": "I",
-    "P": "C",
-    "Q": "Z",
-    "R": "L",
-    "S": "V",
-    "T": "B",
-    "U": "A",
-    "V": "S",
-    "W": "P",
-    "X": "Q",
-    "Y": "D",
-    "Z": "N"
+    "N": "O",
+    "O": "M",
+    "P": "X",
+    "Q": "A",
+    "R": "N",
+    "S": "L",
+    "T": "V",
+    "U": "E",
+    "V": "B",
+    "W": "Y",
+    "X": "P",
+    "Y": "J",
+    "Z": "Q"
    },
    "given": {
-    "B": "T",
-    "K": "H",
-    "L": "R",
-    "W": "D"
+    "B": "V",
+    "C": "G",
+    "F": "B",
+    "G": "D",
+    "I": "C"
    },
-   "needed_for_uniqueness": [],
+   "needed_for_uniqueness": [
+    "B",
+    "C",
+    "F",
+    "G",
+    "I"
+   ],
    "hints": {
     "1": {
      "book": "Matthew",
      "letters": [
       [
-       "H",
-       "E"
+       "L",
+       "S"
       ]
      ]
     },
@@ -18749,427 +19454,27 @@
      "letters": [
       [
        "U",
-       "N"
-      ],
-      [
-       "E",
-       "A"
-      ]
-     ]
-    },
-    "3": {
-     "word": "FRANKINCENSE",
-     "position": 15,
-     "ref": "Matthew 2:11"
-    }
-   },
-   "letters": 86,
-   "lines": 5,
-   "distinct": 20,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Matthew 2:11",
-     "exact": [
-      "aruljohn",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 183
-  },
-  {
-   "ref": "Titus 2:11",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Titus",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 1,
-   "text": "For the grace of God that bringeth salvation hath appeared to all men,",
-   "cipher": "KVZ FXU YZHBU VK YVS FXHF NZLTYUFX MHGRHFLVT XHFX HOOUHZUS FV HGG AUT,",
-   "key": {
-    "A": "H",
-    "B": "N",
-    "C": "B",
-    "D": "S",
-    "E": "U",
-    "F": "K",
-    "G": "Y",
-    "H": "X",
-    "I": "L",
-    "J": "E",
-    "K": "I",
-    "L": "G",
-    "M": "A",
-    "N": "T",
-    "O": "V",
-    "P": "O",
-    "Q": "D",
-    "R": "Z",
-    "S": "M",
-    "T": "F",
-    "U": "C",
-    "V": "R",
-    "W": "P",
-    "X": "Q",
-    "Y": "W",
-    "Z": "J"
-   },
-   "given": {
-    "A": "M",
-    "U": "E",
-    "V": "O",
-    "X": "H"
-   },
-   "needed_for_uniqueness": [
-    "A"
-   ],
-   "hints": {
-    "1": {
-     "book": "Titus",
-     "letters": [
-      [
-       "H",
-       "A"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "F",
-       "T"
-      ],
-      [
-       "Z",
-       "R"
-      ]
-     ]
-    },
-    "3": {
-     "word": "SALVATION",
-     "position": 8,
-     "ref": "Titus 2:11"
-    }
-   },
-   "letters": 57,
-   "lines": 3,
-   "distinct": 18,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Titus 2:11",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 184
-  },
-  {
-   "ref": "Isaiah 11:1",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Isaiah",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 1,
-   "text": "And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots:",
-   "cipher": "PBI ONZFZ WNPRR LYVZ SYFON P FYI YDO YS ONZ WOZV YS XZWWZ, PBI P AFPBLN WNPRR CFYM YDO YS NTW FYYOW:",
-   "key": {
-    "A": "P",
-    "B": "A",
-    "C": "L",
-    "D": "I",
-    "E": "Z",
-    "F": "S",
-    "G": "C",
-    "H": "N",
-    "I": "T",
-    "J": "X",
-    "K": "H",
-    "L": "R",
-    "M": "V",
-    "N": "B",
-    "O": "Y",
-    "P": "U",
-    "Q": "K",
-    "R": "F",
-    "S": "W",
-    "T": "O",
-    "U": "D",
-    "V": "J",
-    "W": "M",
-    "X": "G",
-    "Y": "E",
-    "Z": "Q"
-   },
-   "given": {
-    "F": "R",
-    "N": "H",
-    "O": "T",
-    "R": "L",
-    "S": "F",
-    "W": "S",
-    "Z": "E"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Isaiah",
-     "letters": [
-      [
-       "Y",
-       "O"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "P",
-       "A"
-      ],
-      [
-       "B",
-       "N"
-      ]
-     ]
-    },
-    "3": {
-     "word": "BRANCH",
-     "position": 16,
-     "ref": "Isaiah 11:1"
-    }
-   },
-   "letters": 77,
-   "lines": 5,
-   "distinct": 19,
-   "forced_fraction": 0.935,
-   "agreement": [
-    {
-     "ref": "Isaiah 11:1",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 185
-  },
-  {
-   "ref": "Isaiah 40:5",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Isaiah",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 2,
-   "text": "And the glory of the LORD shall be revealed, and all flesh shall see it together: for the mouth of the LORD hath spoken it.",
-   "cipher": "LGI CRN UFKOX KH CRN FKOI MRLFF TN ONSNLFNI, LGI LFF HFNMR MRLFF MNN EC CKUNCRNO: HKO CRN PKVCR KH CRN FKOI RLCR MYKBNG EC.",
-   "key": {
-    "A": "L",
-    "B": "T",
-    "C": "Z",
-    "D": "I",
-    "E": "N",
-    "F": "H",
-    "G": "U",
-    "H": "R",
-    "I": "E",
-    "J": "Q",
-    "K": "B",
-    "L": "F",
-    "M": "P",
-    "N": "G",
-    "O": "K",
-    "P": "Y",
-    "Q": "D",
-    "R": "O",
-    "S": "M",
-    "T": "C",
-    "U": "V",
-    "V": "S",
-    "W": "A",
-    "X": "J",
-    "Y": "X",
-    "Z": "W"
-   },
-   "given": {
-    "F": "L",
-    "T": "B"
-   },
-   "needed_for_uniqueness": [
-    "T"
-   ],
-   "hints": {
-    "1": {
-     "book": "Isaiah",
-     "letters": [
-      [
-       "N",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "R",
        "H"
       ],
       [
-       "C",
-       "T"
+       "D",
+       "A"
       ]
      ]
     },
     "3": {
-     "word": "REVEALED",
-     "position": 9,
-     "ref": "Isaiah 40:5"
+     "word": "PEOPLE",
+     "position": 20,
+     "ref": "Matthew 1:21"
     }
    },
-   "letters": 96,
+   "letters": 89,
    "lines": 6,
    "distinct": 20,
    "forced_fraction": 1.0,
    "agreement": [
     {
-     "ref": "Isaiah 40:5",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 186
-  },
-  {
-   "ref": "Isaiah 7:14",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Isaiah",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 2,
-   "text": "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel.",
-   "cipher": "LYIGIUEGI LYI FEGK YMSZIFU ZYTFF HMRI VEC T ZMHD; OIYEFK, T RMGHMD ZYTFF WEDWIMRI, TDK OITG T ZED, TDK ZYTFF WTFF YMZ DTSI MSSTDCIF.",
-   "key": {
-    "A": "T",
-    "B": "O",
-    "C": "W",
-    "D": "K",
-    "E": "I",
-    "F": "U",
-    "G": "H",
-    "H": "Y",
-    "I": "M",
-    "J": "B",
-    "K": "A",
-    "L": "F",
-    "M": "S",
-    "N": "D",
-    "O": "E",
-    "P": "J",
-    "Q": "N",
-    "R": "G",
-    "S": "Z",
-    "T": "L",
-    "U": "C",
-    "V": "R",
-    "W": "X",
-    "X": "P",
-    "Y": "V",
-    "Z": "Q"
-   },
-   "given": {
-    "T": "A",
-    "Y": "H"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Isaiah",
-     "letters": [
-      [
-       "I",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "F",
-       "L"
-      ],
-      [
-       "M",
-       "I"
-      ]
-     ]
-    },
-    "3": {
-     "word": "THEREFORE",
-     "position": 1,
-     "ref": "Isaiah 7:14"
-    }
-   },
-   "letters": 104,
-   "lines": 6,
-   "distinct": 19,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Isaiah 7:14",
+     "ref": "Matthew 1:21",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -19191,56 +19496,52 @@
    "num": 187
   },
   {
-   "ref": "Isaiah 9:6",
-   "partial": true,
-   "starts_mid": true,
+   "ref": "Galatians 4:4-5",
+   "text_key": "Galatians 4:4-5",
+   "partial": false,
+   "starts_mid": false,
    "ends_mid": false,
-   "book": "Isaiah",
+   "book": "Galatians",
    "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 2,
-   "text": "and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.",
-   "cipher": "XOK WLF OXGR FWXBB HR EXBBRK YZOKRTMAB, EZAOFRBBZT, DWR GLCWDS CZK, DWR RPRTBXFDLOC MXDWRT, DWR NTLOER ZM NRXER.",
+   "level": 4,
+   "text": "But when the fulness of the time was come, God sent forth his Son, made of a woman, made under the law, To redeem them that were under the law, that we might receive the adoption of sons.",
+   "cipher": "IWX EKTM XKT SWYMTVV AS XKT XZUT EGV FAUT, NAP VTMX SAHXK KZV VAM, UGPT AS G EAUGM, UGPT WMPTH XKT YGE, XA HTPTTU XKTU XKGX ETHT WMPTH XKT YGE, XKGX ET UZNKX HTFTZDT XKT GPARXZAM AS VAMV.",
    "key": {
-    "A": "X",
-    "B": "H",
-    "C": "E",
-    "D": "K",
-    "E": "R",
-    "F": "M",
-    "G": "C",
-    "H": "W",
-    "I": "L",
-    "J": "V",
-    "K": "U",
-    "L": "B",
-    "M": "G",
-    "N": "O",
-    "O": "Z",
-    "P": "N",
-    "Q": "I",
-    "R": "T",
-    "S": "F",
-    "T": "D",
-    "U": "A",
-    "V": "P",
-    "W": "Y",
-    "X": "Q",
-    "Y": "S",
-    "Z": "J"
+    "A": "G",
+    "B": "I",
+    "C": "F",
+    "D": "P",
+    "E": "T",
+    "F": "S",
+    "G": "N",
+    "H": "K",
+    "I": "Z",
+    "J": "C",
+    "K": "L",
+    "L": "Y",
+    "M": "U",
+    "N": "M",
+    "O": "A",
+    "P": "R",
+    "Q": "J",
+    "R": "H",
+    "S": "V",
+    "T": "X",
+    "U": "W",
+    "V": "D",
+    "W": "E",
+    "X": "O",
+    "Y": "Q",
+    "Z": "B"
    },
-   "given": {
-    "H": "B",
-    "X": "A"
-   },
-   "needed_for_uniqueness": [
-    "H"
-   ],
+   "given": {},
+   "needed_for_uniqueness": [],
    "hints": {
     "1": {
-     "book": "Isaiah",
+     "book": "Galatians",
      "letters": [
       [
-       "R",
+       "T",
        "E"
       ]
      ]
@@ -19248,28 +19549,47 @@
     "2": {
      "letters": [
       [
-       "B",
-       "L"
+       "X",
+       "T"
       ],
       [
-       "W",
+       "K",
        "H"
       ]
      ]
     },
     "3": {
-     "word": "EVERLASTING",
-     "position": 13,
-     "ref": "Isaiah 9:6"
+     "word": "ADOPTION",
+     "position": 36,
+     "ref": "Galatians 4:4-5"
     }
    },
-   "letters": 90,
-   "lines": 6,
-   "distinct": 21,
-   "forced_fraction": 1.0,
+   "letters": 144,
+   "lines": 8,
+   "distinct": 20,
+   "forced_fraction": 0.0,
    "agreement": [
     {
-     "ref": "Isaiah 9:6",
+     "ref": "Galatians 4:4",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    },
+    {
+     "ref": "Galatians 4:5",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -19291,7 +19611,306 @@
    "num": 188
   },
   {
+   "ref": "Luke 2:7",
+   "text_key": "Luke 2:7",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Luke",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 2,
+   "text": "And she brought forth her firstborn son, and wrapped him in swaddling clothes, and laid him in a manger; because there was no room for them in the inn.",
+   "cipher": "PTU DKS EFIYMKO XIFOK KSF XHFDOEIFT DIT, PTU AFPCCSU KHL HT DAPUURHTM WRIOKSD, PTU RPHU KHL HT P LPTMSF; ESWPYDS OKSFS APD TI FIIL XIF OKSL HT OKS HTT.",
+   "key": {
+    "A": "P",
+    "B": "E",
+    "C": "W",
+    "D": "U",
+    "E": "S",
+    "F": "X",
+    "G": "M",
+    "H": "K",
+    "I": "H",
+    "J": "V",
+    "K": "B",
+    "L": "R",
+    "M": "L",
+    "N": "T",
+    "O": "I",
+    "P": "C",
+    "Q": "G",
+    "R": "F",
+    "S": "D",
+    "T": "O",
+    "U": "Y",
+    "V": "Q",
+    "W": "A",
+    "X": "Z",
+    "Y": "N",
+    "Z": "J"
+   },
+   "given": {
+    "K": "H",
+    "P": "A"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Luke",
+     "letters": [
+      [
+       "T",
+       "N"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "S",
+       "E"
+      ],
+      [
+       "F",
+       "R"
+      ]
+     ]
+    },
+    "3": {
+     "word": "FIRSTBORN",
+     "position": 6,
+     "ref": "Luke 2:7"
+    }
+   },
+   "letters": 119,
+   "lines": 7,
+   "distinct": 19,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Luke 2:7",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 189
+  },
+  {
+   "ref": "Luke 2:8",
+   "text_key": "Luke 2:8",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Luke",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 2,
+   "text": "And there were in the same country shepherds abiding in the field, keeping watch over their flock by night.",
+   "cipher": "LXE BNKHK OKHK GX BNK ILDK SZRXBHT INKVNKHEI LWGEGXM GX BNK AGKCE, PKKVGXM OLBSN ZUKH BNKGH ACZSP WT XGMNB.",
+   "key": {
+    "A": "L",
+    "B": "W",
+    "C": "S",
+    "D": "E",
+    "E": "K",
+    "F": "A",
+    "G": "M",
+    "H": "N",
+    "I": "G",
+    "J": "Y",
+    "K": "P",
+    "L": "C",
+    "M": "D",
+    "N": "X",
+    "O": "Z",
+    "P": "V",
+    "Q": "J",
+    "R": "H",
+    "S": "I",
+    "T": "B",
+    "U": "R",
+    "V": "U",
+    "W": "O",
+    "X": "F",
+    "Y": "T",
+    "Z": "Q"
+   },
+   "given": {
+    "D": "M",
+    "G": "I"
+   },
+   "needed_for_uniqueness": [
+    "D"
+   ],
+   "hints": {
+    "1": {
+     "book": "Luke",
+     "letters": [
+      [
+       "K",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "N",
+       "H"
+      ],
+      [
+       "X",
+       "N"
+      ]
+     ]
+    },
+    "3": {
+     "word": "SHEPHERDS",
+     "position": 8,
+     "ref": "Luke 2:8"
+    }
+   },
+   "letters": 87,
+   "lines": 5,
+   "distinct": 22,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Luke 2:8",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 190
+  },
+  {
+   "ref": "Luke 2:9",
+   "text_key": "Luke 2:9",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Luke",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 3,
+   "text": "And, lo, the angel of the Lord came upon them, and the glory of the Lord shone round about them: and they were sore afraid.",
+   "cipher": "FKO, NR, GVP FKZPN RW GVP NRAO IFSP MBRK GVPS, FKO GVP ZNRAH RW GVP NRAO YVRKP ARMKO FERMG GVPS: FKO GVPH LPAP YRAP FWAFCO.",
+   "key": {
+    "A": "F",
+    "B": "E",
+    "C": "I",
+    "D": "O",
+    "E": "P",
+    "F": "W",
+    "G": "Z",
+    "H": "V",
+    "I": "C",
+    "J": "Q",
+    "K": "J",
+    "L": "N",
+    "M": "S",
+    "N": "K",
+    "O": "R",
+    "P": "B",
+    "Q": "X",
+    "R": "A",
+    "S": "Y",
+    "T": "G",
+    "U": "M",
+    "V": "D",
+    "W": "L",
+    "X": "T",
+    "Y": "H",
+    "Z": "U"
+   },
+   "given": {
+    "F": "A"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "Luke",
+     "letters": [
+      [
+       "P",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "R",
+       "O"
+      ],
+      [
+       "G",
+       "T"
+      ]
+     ]
+    },
+    "3": {
+     "word": "AFRAID",
+     "position": 25,
+     "ref": "Luke 2:9"
+    }
+   },
+   "letters": 94,
+   "lines": 6,
+   "distinct": 20,
+   "forced_fraction": 0.085,
+   "agreement": [
+    {
+     "ref": "Luke 2:9",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 191
+  },
+  {
    "ref": "Luke 2:10-11",
+   "text_key": "Luke 2:10-11",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -19405,833 +20024,11 @@
      "differ": {}
     }
    ],
-   "num": 189
-  },
-  {
-   "ref": "Luke 2:7",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Luke",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 2,
-   "text": "And she brought forth her firstborn son, and wrapped him in swaddling clothes, and laid him in a manger; because there was no room for them in the inn.",
-   "cipher": "PTU DKS EFIYMKO XIFOK KSF XHFDOEIFT DIT, PTU AFPCCSU KHL HT DAPUURHTM WRIOKSD, PTU RPHU KHL HT P LPTMSF; ESWPYDS OKSFS APD TI FIIL XIF OKSL HT OKS HTT.",
-   "key": {
-    "A": "P",
-    "B": "E",
-    "C": "W",
-    "D": "U",
-    "E": "S",
-    "F": "X",
-    "G": "M",
-    "H": "K",
-    "I": "H",
-    "J": "V",
-    "K": "B",
-    "L": "R",
-    "M": "L",
-    "N": "T",
-    "O": "I",
-    "P": "C",
-    "Q": "G",
-    "R": "F",
-    "S": "D",
-    "T": "O",
-    "U": "Y",
-    "V": "Q",
-    "W": "A",
-    "X": "Z",
-    "Y": "N",
-    "Z": "J"
-   },
-   "given": {
-    "K": "H",
-    "P": "A"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Luke",
-     "letters": [
-      [
-       "T",
-       "N"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "S",
-       "E"
-      ],
-      [
-       "F",
-       "R"
-      ]
-     ]
-    },
-    "3": {
-     "word": "FIRSTBORN",
-     "position": 6,
-     "ref": "Luke 2:7"
-    }
-   },
-   "letters": 119,
-   "lines": 7,
-   "distinct": 19,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Luke 2:7",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 190
-  },
-  {
-   "ref": "Matthew 1:21",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Matthew",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 2,
-   "text": "And she shall bring forth a son, and thou shalt call his name JESUS: for he shall save his people from their sins.",
-   "cipher": "DOG LUK LUDHH FNWOC SMNVU D LMO, DOG VUME LUDHV IDHH UWL ODTK ZKLEL: SMN UK LUDHH LDBK UWL XKMXHK SNMT VUKWN LWOL.",
-   "key": {
-    "A": "D",
-    "B": "F",
-    "C": "I",
-    "D": "G",
-    "E": "K",
-    "F": "S",
-    "G": "C",
-    "H": "U",
-    "I": "W",
-    "J": "Z",
-    "K": "R",
-    "L": "H",
-    "M": "T",
-    "N": "O",
-    "O": "M",
-    "P": "X",
-    "Q": "A",
-    "R": "N",
-    "S": "L",
-    "T": "V",
-    "U": "E",
-    "V": "B",
-    "W": "Y",
-    "X": "P",
-    "Y": "J",
-    "Z": "Q"
-   },
-   "given": {
-    "B": "V",
-    "C": "G",
-    "F": "B",
-    "G": "D",
-    "I": "C"
-   },
-   "needed_for_uniqueness": [
-    "B",
-    "C",
-    "F",
-    "G",
-    "I"
-   ],
-   "hints": {
-    "1": {
-     "book": "Matthew",
-     "letters": [
-      [
-       "L",
-       "S"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "U",
-       "H"
-      ],
-      [
-       "D",
-       "A"
-      ]
-     ]
-    },
-    "3": {
-     "word": "PEOPLE",
-     "position": 20,
-     "ref": "Matthew 1:21"
-    }
-   },
-   "letters": 89,
-   "lines": 6,
-   "distinct": 20,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Matthew 1:21",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 191
-  },
-  {
-   "ref": "Matthew 1:23",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Matthew",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 2,
-   "text": "Behold, a virgin shall be with child, and shall bring forth a son, and they shall call his name Emmanuel, which being interpreted is, God with us.",
-   "cipher": "UOWSNR, Y TXBEXZ HWYNN UO MXGW VWXNR, YZR HWYNN UBXZE CSBGW Y HSZ, YZR GWOP HWYNN VYNN WXH ZYFO OFFYZDON, MWXVW UOXZE XZGOBLBOGOR XH, ESR MXGW DH.",
-   "key": {
-    "A": "Y",
-    "B": "U",
-    "C": "V",
-    "D": "R",
-    "E": "O",
-    "F": "C",
-    "G": "E",
-    "H": "W",
-    "I": "X",
-    "J": "I",
-    "K": "A",
-    "L": "N",
-    "M": "F",
-    "N": "Z",
-    "O": "S",
-    "P": "L",
-    "Q": "K",
-    "R": "B",
-    "S": "H",
-    "T": "G",
-    "U": "D",
-    "V": "T",
-    "W": "M",
-    "X": "Q",
-    "Y": "P",
-    "Z": "J"
-   },
-   "given": {
-    "O": "E",
-    "X": "I"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "Matthew",
-     "letters": [
-      [
-       "W",
-       "H"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "N",
-       "L"
-      ],
-      [
-       "Y",
-       "A"
-      ]
-     ]
-    },
-    "3": {
-     "word": "INTERPRETED",
-     "position": 23,
-     "ref": "Matthew 1:23"
-    }
-   },
-   "letters": 114,
-   "lines": 7,
-   "distinct": 21,
-   "forced_fraction": 1.0,
-   "agreement": [
-    {
-     "ref": "Matthew 1:23",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
    "num": 192
   },
   {
-   "ref": "John 1:4-5",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "John",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 3,
-   "text": "In him was life; and the life was the light of men. And the light shineth in darkness; and the darkness comprehended it not.",
-   "cipher": "DX FDV YUB CDNG; UXK HFG CDNG YUB HFG CDPFH MN VGX. UXK HFG CDPFH BFDXGHF DX KUSTXGBB; UXK HFG KUSTXGBB OMVRSGFGXKGK DH XMH.",
-   "key": {
-    "A": "U",
-    "B": "W",
-    "C": "O",
-    "D": "K",
-    "E": "G",
-    "F": "N",
-    "G": "P",
-    "H": "F",
-    "I": "D",
-    "J": "Z",
-    "K": "T",
-    "L": "C",
-    "M": "V",
-    "N": "X",
-    "O": "M",
-    "P": "R",
-    "Q": "A",
-    "R": "S",
-    "S": "B",
-    "T": "H",
-    "U": "I",
-    "V": "J",
-    "W": "Y",
-    "X": "L",
-    "Y": "E",
-    "Z": "Q"
-   },
-   "given": {
-    "F": "H"
-   },
-   "needed_for_uniqueness": [],
-   "hints": {
-    "1": {
-     "book": "John",
-     "letters": [
-      [
-       "G",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "X",
-       "N"
-      ],
-      [
-       "D",
-       "I"
-      ]
-     ]
-    },
-    "3": {
-     "word": "COMPREHENDED",
-     "position": 22,
-     "ref": "John 1:4-5"
-    }
-   },
-   "letters": 97,
-   "lines": 6,
-   "distinct": 18,
-   "forced_fraction": 0.907,
-   "agreement": [
-    {
-     "ref": "John 1:4",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    },
-    {
-     "ref": "John 1:5",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 193
-  },
-  {
-   "ref": "Luke 1:32",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Luke",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 3,
-   "text": "He shall be great, and shall be called the Son of the Highest: and the Lord God shall give unto him the throne of his father David:",
-   "cipher": "ED HEUCC OD MTDUX, ULN HEUCC OD BUCCDN XED HWL WS XED EZMEDHX: ULN XED CWTN MWN HEUCC MZAD PLXW EZK XED XETWLD WS EZH SUXEDT NUAZN:",
-   "key": {
-    "A": "U",
-    "B": "O",
-    "C": "B",
-    "D": "N",
-    "E": "D",
-    "F": "S",
-    "G": "M",
-    "H": "E",
-    "I": "Z",
-    "J": "Y",
-    "K": "G",
-    "L": "C",
-    "M": "K",
-    "N": "L",
-    "O": "W",
-    "P": "J",
-    "Q": "I",
-    "R": "T",
-    "S": "H",
-    "T": "X",
-    "U": "P",
-    "V": "A",
-    "W": "F",
-    "X": "Q",
-    "Y": "R",
-    "Z": "V"
-   },
-   "given": {
-    "B": "C",
-    "K": "M",
-    "O": "B"
-   },
-   "needed_for_uniqueness": [
-    "B",
-    "K",
-    "O"
-   ],
-   "hints": {
-    "1": {
-     "book": "Luke",
-     "letters": [
-      [
-       "E",
-       "H"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "D",
-       "E"
-      ],
-      [
-       "U",
-       "A"
-      ]
-     ]
-    },
-    "3": {
-     "word": "HIGHEST",
-     "position": 13,
-     "ref": "Luke 1:32"
-    }
-   },
-   "letters": 102,
-   "lines": 6,
-   "distinct": 18,
-   "forced_fraction": 0.039,
-   "agreement": [
-    {
-     "ref": "Luke 1:32",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 194
-  },
-  {
-   "ref": "Isaiah 9:2",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Isaiah",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 3,
-   "text": "The people that walked in darkness have seen a great light: they that dwell in the land of the shadow of death, upon them hath the light shined.",
-   "cipher": "XOM FMHFGM XODX CDGRMZ LY ZDNRYMPP ODSM PMMY D UNMDX GLUOX: XOMB XODX ZCMGG LY XOM GDYZ HV XOM PODZHC HV ZMDXO, KFHY XOMI ODXO XOM GLUOX POLYMZ.",
-   "key": {
-    "A": "D",
-    "B": "J",
-    "C": "A",
-    "D": "Z",
-    "E": "M",
-    "F": "V",
-    "G": "U",
-    "H": "O",
-    "I": "L",
-    "J": "E",
-    "K": "R",
-    "L": "G",
-    "M": "I",
-    "N": "Y",
-    "O": "H",
-    "P": "F",
-    "Q": "T",
-    "R": "N",
-    "S": "P",
-    "T": "X",
-    "U": "K",
-    "V": "S",
-    "W": "C",
-    "X": "Q",
-    "Y": "B",
-    "Z": "W"
-   },
-   "given": {
-    "B": "Y",
-    "V": "F"
-   },
-   "needed_for_uniqueness": [
-    "B",
-    "V"
-   ],
-   "hints": {
-    "1": {
-     "book": "Isaiah",
-     "letters": [
-      [
-       "M",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "O",
-       "H"
-      ],
-      [
-       "X",
-       "T"
-      ]
-     ]
-    },
-    "3": {
-     "word": "DARKNESS",
-     "position": 6,
-     "ref": "Isaiah 9:2"
-    }
-   },
-   "letters": 114,
-   "lines": 7,
-   "distinct": 20,
-   "forced_fraction": 0.026,
-   "agreement": [
-    {
-     "ref": "Isaiah 9:2",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 195
-  },
-  {
-   "ref": "Matthew 2:2",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "Matthew",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 3,
-   "text": "Saying, Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.",
-   "cipher": "ROFAXD, BMUHU AR MU IMOI AR TZHX YAXD ZV IMU CUBR? VZH BU MONU RUUX MAR RIOH AX IMU UORI, OXP OHU SZLU IZ BZHRMAK MAL.",
-   "key": {
-    "A": "O",
-    "B": "T",
-    "C": "S",
-    "D": "P",
-    "E": "U",
-    "F": "V",
-    "G": "D",
-    "H": "M",
-    "I": "A",
-    "J": "C",
-    "K": "Y",
-    "L": "E",
-    "M": "L",
-    "N": "X",
-    "O": "Z",
-    "P": "K",
-    "Q": "W",
-    "R": "H",
-    "S": "R",
-    "T": "I",
-    "U": "J",
-    "V": "N",
-    "W": "B",
-    "X": "G",
-    "Y": "F",
-    "Z": "Q"
-   },
-   "given": {
-    "F": "Y",
-    "N": "V"
-   },
-   "needed_for_uniqueness": [
-    "F",
-    "N"
-   ],
-   "hints": {
-    "1": {
-     "book": "Matthew",
-     "letters": [
-      [
-       "U",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "R",
-       "S"
-      ],
-      [
-       "M",
-       "H"
-      ]
-     ]
-    },
-    "3": {
-     "word": "WORSHIP",
-     "position": 25,
-     "ref": "Matthew 2:2"
-    }
-   },
-   "letters": 89,
-   "lines": 5,
-   "distinct": 21,
-   "forced_fraction": 0.022,
-   "agreement": [
-    {
-     "ref": "Matthew 2:2",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 196
-  },
-  {
-   "ref": "John 1:14",
-   "partial": false,
-   "starts_mid": false,
-   "ends_mid": false,
-   "book": "John",
-   "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 3,
-   "text": "And the Word was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only begotten of the Father,) full of grace and truth.",
-   "cipher": "ELR KUW FCOR FEN IERW YMWNU, ELR RFWMK EICLV TN, (ELR FW SWUWMR UDN VMCOP, KUW VMCOP EN CY KUW CLMP SWVCKKWL CY KUW YEKUWO,) YTMM CY VOEZW ELR KOTKU.",
-   "key": {
-    "A": "E",
-    "B": "S",
-    "C": "Z",
-    "D": "R",
-    "E": "W",
-    "F": "Y",
-    "G": "V",
-    "H": "U",
-    "I": "D",
-    "J": "X",
-    "K": "A",
-    "L": "M",
-    "M": "I",
-    "N": "L",
-    "O": "C",
-    "P": "G",
-    "Q": "J",
-    "R": "O",
-    "S": "N",
-    "T": "K",
-    "U": "T",
-    "V": "H",
-    "W": "F",
-    "X": "B",
-    "Y": "P",
-    "Z": "Q"
-   },
-   "given": {
-    "Z": "C"
-   },
-   "needed_for_uniqueness": [
-    "Z"
-   ],
-   "hints": {
-    "1": {
-     "book": "John",
-     "letters": [
-      [
-       "W",
-       "E"
-      ]
-     ]
-    },
-    "2": {
-     "letters": [
-      [
-       "E",
-       "A"
-      ],
-      [
-       "K",
-       "T"
-      ]
-     ]
-    },
-    "3": {
-     "word": "BEGOTTEN",
-     "position": 22,
-     "ref": "John 1:14"
-    }
-   },
-   "letters": 113,
-   "lines": 7,
-   "distinct": 19,
-   "forced_fraction": 0.009,
-   "agreement": [
-    {
-     "ref": "John 1:14",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    }
-   ],
-   "num": 197
-  },
-  {
    "ref": "Luke 2:13-14",
+   "text_key": "Luke 2:13-14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
@@ -20346,54 +20143,575 @@
      "differ": {}
     }
    ],
-   "num": 198
+   "num": 193
   },
   {
-   "ref": "Galatians 4:4-5",
+   "ref": "Luke 2:19",
+   "text_key": "Luke 2:19",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Galatians",
+   "book": "Luke",
    "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 4,
-   "text": "But when the fulness of the time was come, God sent forth his Son, made of a woman, made under the law, To redeem them that were under the law, that we might receive the adoption of sons.",
-   "cipher": "IWX EKTM XKT SWYMTVV AS XKT XZUT EGV FAUT, NAP VTMX SAHXK KZV VAM, UGPT AS G EAUGM, UGPT WMPTH XKT YGE, XA HTPTTU XKTU XKGX ETHT WMPTH XKT YGE, XKGX ET UZNKX HTFTZDT XKT GPARXZAM AS VAMV.",
+   "level": 1,
+   "text": "But Mary kept all these things, and pondered them in her heart.",
+   "cipher": "ZMR HXKP YWUR XVV RIWDW RICGAD, XGE UFGEWKWE RIWH CG IWK IWXKR.",
    "key": {
-    "A": "G",
-    "B": "I",
-    "C": "F",
-    "D": "P",
-    "E": "T",
+    "A": "X",
+    "B": "Z",
+    "C": "O",
+    "D": "E",
+    "E": "W",
     "F": "S",
+    "G": "A",
+    "H": "I",
+    "I": "C",
+    "J": "L",
+    "K": "Y",
+    "L": "V",
+    "M": "H",
+    "N": "G",
+    "O": "F",
+    "P": "U",
+    "Q": "B",
+    "R": "K",
+    "S": "D",
+    "T": "R",
+    "U": "M",
+    "V": "T",
+    "W": "Q",
+    "X": "N",
+    "Y": "P",
+    "Z": "J"
+   },
+   "given": {
+    "E": "D",
     "G": "N",
-    "H": "K",
-    "I": "Z",
-    "J": "C",
-    "K": "L",
-    "L": "Y",
-    "M": "U",
-    "N": "M",
-    "O": "A",
-    "P": "R",
-    "Q": "J",
-    "R": "H",
-    "S": "V",
-    "T": "X",
-    "U": "W",
-    "V": "D",
-    "W": "E",
-    "X": "O",
-    "Y": "Q",
+    "H": "M",
+    "I": "H",
+    "K": "R",
+    "U": "P",
+    "X": "A",
+    "Y": "K",
     "Z": "B"
    },
-   "given": {},
+   "needed_for_uniqueness": [
+    "Y",
+    "Z"
+   ],
+   "hints": {
+    "1": {
+     "book": "Luke",
+     "letters": [
+      [
+       "W",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "R",
+       "T"
+      ],
+      [
+       "V",
+       "L"
+      ]
+     ]
+    },
+    "3": {
+     "word": "PONDERED",
+     "position": 8,
+     "ref": "Luke 2:19"
+    }
+   },
+   "letters": 50,
+   "lines": 3,
+   "distinct": 18,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Luke 2:19",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 194
+  },
+  {
+   "ref": "Matthew 2:2",
+   "text_key": "Matthew 2:2",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Matthew",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 3,
+   "text": "Saying, Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.",
+   "cipher": "ROFAXD, BMUHU AR MU IMOI AR TZHX YAXD ZV IMU CUBR? VZH BU MONU RUUX MAR RIOH AX IMU UORI, OXP OHU SZLU IZ BZHRMAK MAL.",
+   "key": {
+    "A": "O",
+    "B": "T",
+    "C": "S",
+    "D": "P",
+    "E": "U",
+    "F": "V",
+    "G": "D",
+    "H": "M",
+    "I": "A",
+    "J": "C",
+    "K": "Y",
+    "L": "E",
+    "M": "L",
+    "N": "X",
+    "O": "Z",
+    "P": "K",
+    "Q": "W",
+    "R": "H",
+    "S": "R",
+    "T": "I",
+    "U": "J",
+    "V": "N",
+    "W": "B",
+    "X": "G",
+    "Y": "F",
+    "Z": "Q"
+   },
+   "given": {
+    "F": "Y",
+    "N": "V"
+   },
+   "needed_for_uniqueness": [
+    "F",
+    "N"
+   ],
+   "hints": {
+    "1": {
+     "book": "Matthew",
+     "letters": [
+      [
+       "U",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "R",
+       "S"
+      ],
+      [
+       "M",
+       "H"
+      ]
+     ]
+    },
+    "3": {
+     "word": "WORSHIP",
+     "position": 25,
+     "ref": "Matthew 2:2"
+    }
+   },
+   "letters": 89,
+   "lines": 5,
+   "distinct": 21,
+   "forced_fraction": 0.022,
+   "agreement": [
+    {
+     "ref": "Matthew 2:2",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 195
+  },
+  {
+   "ref": "Matthew 2:10",
+   "text_key": "Matthew 2:10",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "Matthew",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 1,
+   "text": "When they saw the star, they rejoiced with exceeding great joy.",
+   "cipher": "PGAU VGAR YTP VGA YVTI, VGAR IABLXZAS PXVG AEZAASXUM MIATV BLR.",
+   "key": {
+    "A": "T",
+    "B": "D",
+    "C": "Z",
+    "D": "S",
+    "E": "A",
+    "F": "H",
+    "G": "M",
+    "H": "G",
+    "I": "X",
+    "J": "B",
+    "K": "W",
+    "L": "F",
+    "M": "Q",
+    "N": "U",
+    "O": "L",
+    "P": "K",
+    "Q": "J",
+    "R": "I",
+    "S": "Y",
+    "T": "V",
+    "U": "N",
+    "V": "C",
+    "W": "P",
+    "X": "E",
+    "Y": "R",
+    "Z": "O"
+   },
+   "given": {
+    "G": "H",
+    "P": "W",
+    "R": "Y",
+    "T": "A"
+   },
    "needed_for_uniqueness": [],
    "hints": {
     "1": {
-     "book": "Galatians",
+     "book": "Matthew",
      "letters": [
       [
-       "T",
+       "A",
+       "E"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "V",
+       "T"
+      ],
+      [
+       "I",
+       "R"
+      ]
+     ]
+    },
+    "3": {
+     "word": "EXCEEDING",
+     "position": 9,
+     "ref": "Matthew 2:10"
+    }
+   },
+   "letters": 51,
+   "lines": 3,
+   "distinct": 16,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Matthew 2:10",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 196
+  },
+  {
+   "ref": "Matthew 2:11",
+   "text_key": "Matthew 2:11 |  ... worshipped him",
+   "partial": true,
+   "starts_mid": false,
+   "ends_mid": true,
+   "book": "Matthew",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 2,
+   "text": "And when they were come into the house, they saw the young child with Mary his mother, and fell down, and worshipped him",
+   "cipher": "USG IYZS CYZO IZTZ KBXZ FSCB CYZ YBVDZ, CYZO DUI CYZ OBVSE KYFNG IFCY XUTO YFD XBCYZT, USG WZNN GBIS, USG IBTDYFHHZG YFX",
+   "key": {
+    "A": "U",
+    "B": "M",
+    "C": "K",
+    "D": "G",
+    "E": "Z",
+    "F": "W",
+    "G": "E",
+    "H": "Y",
+    "I": "F",
+    "J": "P",
+    "K": "L",
+    "L": "N",
+    "M": "X",
+    "N": "S",
+    "O": "B",
+    "P": "H",
+    "Q": "J",
+    "R": "T",
+    "S": "D",
+    "T": "C",
+    "U": "V",
+    "V": "A",
+    "W": "I",
+    "X": "R",
+    "Y": "O",
+    "Z": "Q"
+   },
+   "given": {
+    "S": "N",
+    "W": "F"
+   },
+   "needed_for_uniqueness": [
+    "W"
+   ],
+   "hints": {
+    "1": {
+     "book": "Matthew",
+     "letters": [
+      [
+       "Y",
+       "H"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "Z",
+       "E"
+      ],
+      [
+       "C",
+       "T"
+      ]
+     ]
+    },
+    "3": {
+     "word": "WORSHIPPED",
+     "position": 22,
+     "ref": "Matthew 2:11"
+    }
+   },
+   "letters": 95,
+   "lines": 5,
+   "distinct": 19,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "Matthew 2:11",
+     "exact": [
+      "aruljohn",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 197
+  },
+  {
+   "ref": "John 1:1",
+   "text_key": "John 1:1",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "John",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 1,
+   "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+   "cipher": "EG UNW OWREGGEGR BYA UNW BKMX, YGX UNW BKMX BYA BEUN RKX, YGX UNW BKMX BYA RKX.",
+   "key": {
+    "A": "Y",
+    "B": "O",
+    "C": "S",
+    "D": "X",
+    "E": "W",
+    "F": "Z",
+    "G": "R",
+    "H": "N",
+    "I": "E",
+    "J": "V",
+    "K": "D",
+    "L": "P",
+    "M": "L",
+    "N": "G",
+    "O": "K",
+    "P": "H",
+    "Q": "T",
+    "R": "M",
+    "S": "A",
+    "T": "U",
+    "U": "F",
+    "V": "I",
+    "W": "B",
+    "X": "C",
+    "Y": "J",
+    "Z": "Q"
+   },
+   "given": {
+    "A": "S",
+    "G": "N",
+    "K": "O",
+    "N": "H",
+    "U": "T",
+    "W": "E",
+    "Y": "A"
+   },
+   "needed_for_uniqueness": [
+    "A"
+   ],
+   "hints": {
+    "1": {
+     "book": "John",
+     "letters": [
+      [
+       "B",
+       "W"
+      ]
+     ]
+    },
+    "2": {
+     "letters": [
+      [
+       "X",
+       "D"
+      ],
+      [
+       "E",
+       "I"
+      ]
+     ]
+    },
+    "3": {
+     "word": "BEGINNING",
+     "position": 3,
+     "ref": "John 1:1"
+    }
+   },
+   "letters": 60,
+   "lines": 4,
+   "distinct": 13,
+   "forced_fraction": 1.0,
+   "agreement": [
+    {
+     "ref": "John 1:1",
+     "exact": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "letters_agree": [
+      "aruljohn",
+      "bibleapi",
+      "farskipper",
+      "scrollmapper",
+      "thiagobodruk"
+     ],
+     "title_prefixed": [],
+     "differ": {}
+    }
+   ],
+   "num": 198
+  },
+  {
+   "ref": "John 1:4-5",
+   "text_key": "John 1:4-5",
+   "partial": false,
+   "starts_mid": false,
+   "ends_mid": false,
+   "book": "John",
+   "theme": "Christmas: Good Tidings of Great Joy",
+   "level": 3,
+   "text": "In him was life; and the life was the light of men. And the light shineth in darkness; and the darkness comprehended it not.",
+   "cipher": "DX FDV YUB CDNG; UXK HFG CDNG YUB HFG CDPFH MN VGX. UXK HFG CDPFH BFDXGHF DX KUSTXGBB; UXK HFG KUSTXGBB OMVRSGFGXKGK DH XMH.",
+   "key": {
+    "A": "U",
+    "B": "W",
+    "C": "O",
+    "D": "K",
+    "E": "G",
+    "F": "N",
+    "G": "P",
+    "H": "F",
+    "I": "D",
+    "J": "Z",
+    "K": "T",
+    "L": "C",
+    "M": "V",
+    "N": "X",
+    "O": "M",
+    "P": "R",
+    "Q": "A",
+    "R": "S",
+    "S": "B",
+    "T": "H",
+    "U": "I",
+    "V": "J",
+    "W": "Y",
+    "X": "L",
+    "Y": "E",
+    "Z": "Q"
+   },
+   "given": {
+    "F": "H"
+   },
+   "needed_for_uniqueness": [],
+   "hints": {
+    "1": {
+     "book": "John",
+     "letters": [
+      [
+       "G",
        "E"
       ]
      ]
@@ -20402,27 +20720,27 @@
      "letters": [
       [
        "X",
-       "T"
+       "N"
       ],
       [
-       "K",
-       "H"
+       "D",
+       "I"
       ]
      ]
     },
     "3": {
-     "word": "ADOPTION",
-     "position": 36,
-     "ref": "Galatians 4:4-5"
+     "word": "COMPREHENDED",
+     "position": 22,
+     "ref": "John 1:4-5"
     }
    },
-   "letters": 144,
-   "lines": 8,
-   "distinct": 20,
-   "forced_fraction": 0.0,
+   "letters": 97,
+   "lines": 6,
+   "distinct": 18,
+   "forced_fraction": 0.907,
    "agreement": [
     {
-     "ref": "Galatians 4:4",
+     "ref": "John 1:4",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -20441,7 +20759,7 @@
      "differ": {}
     },
     {
-     "ref": "Galatians 4:5",
+     "ref": "John 1:5",
      "exact": [
       "aruljohn",
       "bibleapi",
@@ -20463,99 +20781,85 @@
    "num": 199
   },
   {
-   "ref": "Luke 1:30-31",
+   "ref": "John 1:14",
+   "text_key": "John 1:14",
    "partial": false,
    "starts_mid": false,
    "ends_mid": false,
-   "book": "Luke",
+   "book": "John",
    "theme": "Christmas: Good Tidings of Great Joy",
-   "level": 4,
-   "text": "And the angel said unto her, Fear not, Mary: for thou hast found favour with God. And, behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS.",
-   "cipher": "DXA HNP DXMPG UDBA RXHK NPS, LPDS XKH, ZDSC: LKS HNKR NDUH LKRXA LDFKRS TBHN MKA. DXA, WPNKGA, HNKR UNDGH EKXEPBFP BX HNC TKZW, DXA WSBXM LKSHN D UKX, DXA UNDGH EDGG NBU XDZP YPURU.",
+   "level": 3,
+   "text": "And the Word was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only begotten of the Father,) full of grace and truth.",
+   "cipher": "ELR KUW FCOR FEN IERW YMWNU, ELR RFWMK EICLV TN, (ELR FW SWUWMR UDN VMCOP, KUW VMCOP EN CY KUW CLMP SWVCKKWL CY KUW YEKUWO,) YTMM CY VOEZW ELR KOTKU.",
    "key": {
-    "A": "D",
-    "B": "W",
-    "C": "E",
-    "D": "A",
-    "E": "P",
-    "F": "L",
-    "G": "M",
-    "H": "N",
-    "I": "B",
-    "J": "Y",
-    "K": "O",
-    "L": "G",
-    "M": "Z",
-    "N": "X",
-    "O": "K",
-    "P": "Q",
-    "Q": "I",
-    "R": "S",
-    "S": "U",
-    "T": "H",
-    "U": "R",
-    "V": "F",
-    "W": "T",
-    "X": "V",
-    "Y": "C",
-    "Z": "J"
+    "A": "E",
+    "B": "S",
+    "C": "Z",
+    "D": "R",
+    "E": "W",
+    "F": "Y",
+    "G": "V",
+    "H": "U",
+    "I": "D",
+    "J": "X",
+    "K": "A",
+    "L": "M",
+    "M": "I",
+    "N": "L",
+    "O": "C",
+    "P": "G",
+    "Q": "J",
+    "R": "O",
+    "S": "N",
+    "T": "K",
+    "U": "T",
+    "V": "H",
+    "W": "F",
+    "X": "B",
+    "Y": "P",
+    "Z": "Q"
    },
-   "given": {},
-   "needed_for_uniqueness": [],
+   "given": {
+    "Z": "C"
+   },
+   "needed_for_uniqueness": [
+    "Z"
+   ],
    "hints": {
     "1": {
-     "book": "Luke",
+     "book": "John",
      "letters": [
       [
-       "D",
-       "A"
+       "W",
+       "E"
       ]
      ]
     },
     "2": {
      "letters": [
       [
-       "X",
-       "N"
+       "E",
+       "A"
       ],
       [
        "K",
-       "O"
+       "T"
       ]
      ]
     },
     "3": {
-     "word": "CONCEIVE",
-     "position": 21,
-     "ref": "Luke 1:30-31"
+     "word": "BEGOTTEN",
+     "position": 22,
+     "ref": "John 1:14"
     }
    },
-   "letters": 138,
-   "lines": 8,
-   "distinct": 21,
-   "forced_fraction": 0.0,
+   "letters": 113,
+   "lines": 7,
+   "distinct": 19,
+   "forced_fraction": 0.009,
    "agreement": [
     {
-     "ref": "Luke 1:30",
-     "exact": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "letters_agree": [
-      "aruljohn",
-      "bibleapi",
-      "farskipper",
-      "scrollmapper",
-      "thiagobodruk"
-     ],
-     "title_prefixed": [],
-     "differ": {}
-    },
-    {
-     "ref": "Luke 1:31",
+     "ref": "John 1:14",
      "exact": [
       "aruljohn",
       "bibleapi",

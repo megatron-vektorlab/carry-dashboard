@@ -57,7 +57,7 @@
   for p in D.puzzles.filter(p => p.theme == t.name) {
     let ws = p.words.map(w => word(..w.map(c => if c.at(2) { cell(c.at(0), c.at(1)) } else { pcell(c.at(0)) })))
     let n = p.given_list.len()
-    let words = ("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight")
+    let words = ("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten")
     let note = if n == 0 [No letters are given.] else if n == 1 [One letter is given.] else [#words.at(n - 1) letters are given.]
     pagebreak()
     [#metadata(p.num) #label("puzzle-" + str(p.num))]

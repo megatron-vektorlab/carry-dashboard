@@ -19,7 +19,7 @@ kopija KJV teksta, a koristi se tekst oko kojeg se kopije slažu.
 | `../KDP-LISTING.md` | sve vrijednosti za KDP obrazac: naslov, opis, ključne riječi, kategorije, cijena, AI-izjava, teritoriji |
 
 Stanje: **knjiga je spremna za probni tisak** (6. 10. 2026.).
-- Unutrašnjost ima 275 stranica, a omot hrbat od 0,619 in (bijeli papir).
+- Unutrašnjost ima 276 stranica, a omot hrbat od 0,622 in (bijeli papir).
 - `python3 -m bc.qa` prolazi bez greške.
 - Vodenog žiga nema, jer su podaci za impresum upisani.
 - Prije objave: probni primjerak i Vaš popis ispod.
@@ -42,7 +42,7 @@ Stanje: **knjiga je spremna za probni tisak** (6. 10. 2026.).
 - tablica ključa: kodno slovo, koliko se puta pojavljuje i polje za pravo slovo. Ako stih ima do 7 redaka, tablica je u dva reda sa širim stupcima;
 - prostor za bilješke, ako ostane mjesta.
 
-Svaki dio počinje lakim zagonetkama i postaje teži. Razine: 61 laka, 67 srednjih, 52 teške, 20 ekspertnih.
+Svaki dio počinje lakim zagonetkama i postaje teži. Iznimka je božićni dio, koji ide redom priče: proroci, navještenje, jaslice, pastiri, Marija, mudraci, Ivan 1. Razine: 61 laka, 67 srednjih, 52 teške, 20 ekspertnih.
 
 Svaki dio ima i kratki uvod.
 
@@ -62,7 +62,7 @@ Svaki dio ima i kratki uvod.
    13.406 različitih riječi. Zadana slova su odabrana tako da uz njih odgovara **točno jedno**
    čitanje. Strože od toga ne može: uzimaju se u obzir i besmislene kombinacije pravih riječi.
 4. **Razina težine je izračunata.** Ekspertne zagonetke su rješive bez ijednog zadanog slova.
-   Lake su rješive čistom dedukcijom (≥ 90 %, bez pogađanja).
+   59 od 61 lakih rješivo je čistom dedukcijom (≥ 90 % slova bez pogađanja).
 5. **Provjera PDF-a** (`python3 -m bc.qa`):
    - nijedan tekst nije manji od 16 pt, pa je KDP-ova oznaka „Large print” istinita;
    - sve je unutar sigurnih margina i svi fontovi su ugrađeni;
@@ -70,7 +70,11 @@ Svaki dio ima i kratki uvod.
    - svaki stih u rješenjima je doslovno točan;
    - svaka uputa „Hints p. / Answer p.” pokazuje na pravu stranicu;
    - hrbat omota odgovara broju stranica.
-6. **Slijepo rješavanje.** 14 nasumično odabranih zagonetki (sve razine) riješilo je 7 neovisnih AI testera samo sa slike tiskane stranice, bez ključa i bez podataka. **Svih 14 je točno riješeno.** Doživljena težina raste po razinama.
+6. **Slijepo rješavanje.** Testirano je u dva kruga, uvijek samo sa slike tiskane stranice, bez ključa i bez podataka:
+   - na ranijoj verziji 7 neovisnih AI testera riješilo je 14 nasumičnih zagonetki (sve razine) i **svih 14 je točno**;
+   - na konačnom PDF-u još 6 zagonetki (sve razine, duga stranica s tablicom u jednom redu, dvije božićne): **6 od 6 točno**. Testeri su usput provjerili i sve brojeve u tablici ključa.
+
+   Doživljena težina raste po razinama.
 
 Njihove primjedbe su ugrađene:
 - izbačena su slova Q i J;
@@ -78,7 +82,15 @@ Njihove primjedbe su ugrađene:
 - brojevi u tablici ključa su jasniji;
 - interpunkcija je samo u kodnom retku.
 
-Nakon toga je 6 recenzenata (lektor, teolog, stručnjak za slabovidne, KDP marketing, provjera tvrdnji, odabir stihova) pregledalo cijelu knjigu. Ispravke su primijenjene.
+Nakon toga je 6 recenzenata pregledalo cijelu knjigu, a ozbiljne nalaze je dodatno provjerio skeptični provjeravatelj. Recenzenti:
+   - lektor;
+   - teolog;
+   - stručnjak za slabovidne;
+   - KDP marketing;
+   - provjera svih tvrdnji;
+   - odabir stihova.
+
+   Ispravke su primijenjene, a nove tekstove je još jednom pregledao pastoralni recenzent.
 
 To nije zamjena za ljudske testere.
 7. **Tekstovi.** Uvode u dijelove i kratka razmišljanja uz svaki stih napisao je Claude.
@@ -99,29 +111,30 @@ To nije zamjena za ljudske testere.
 ## Prije objave — Vaš popis
 
 - [ ] **Probni primjerak** (KDP → „Order proof copy”). Provjerite debljinu slova, olovku na
-      papiru i kako izgleda tamnoplava naslovnica (mat).
+      papiru i kako izgleda tamnoplava naslovnica (preporuka je glossy, jer se mat na tamnim omotima lako ogrebe).
 - [ ] **Ujedinjeno Kraljevstvo:** u KDP-u kod „Territories” odaberite *Individual territories* i
-      sve osim UK. U UK-u je KJV pod pravima Krune (izdavač Cambridge University Press), a njihovo
-      besplatno dopuštenje vrijedi samo za nekomercijalnu upotrebu. Ako želite i UK, pošaljite
+      sve osim UK. U UK-u je KJV pod pravima Krune (izdavač Cambridge University Press). Prema njihovoj
+      stranici, besplatno dopuštenje vrijedi za liturgijsku i nekomercijalnu obrazovnu upotrebu
+      do 500 stihova i manje od 25 % djela (provjerite na cambridge.org). Ova knjiga to ne zadovoljava. Ako želite i UK, pošaljite
       upit na permissions@cambridge.org. Kad dopuštenje stigne, u `data/release.json` stavite
       `"uk_permission": true` i ponovno složite knjigu (impresum tada sadrži njihovu obaveznu rečenicu).
 - [ ] **Impresum** (`data/release.json`): nakladnik Ivan Sikuten, Miškinova 4, Šašinovec, 10360 Sesvete, Croatia, ivansikuten@gmail.com. Podaci su preuzeti iz prethodne knjige.
       Ako želite drugu adresu (zbog privatnosti) ili ime, promijenite ih i ponovno složite knjigu.
-- [ ] **Ograničenje KDP-a:** najviše 2 nova meka uveza tjedno. Ako su ovaj tjedan već dva iskorištena
+- [ ] **Ograničenje KDP-a:** najviše 2 nova meka uveza tjedno (KDP-ova obavijest od 21. 9. 2026.; provjerite u KDP-u). Ako su ovaj tjedan već dva iskorištena
       (npr. ASVAB i logičke zagonetke), pričekajte nedjelju 00:00 UTC.
-- [ ] Cijena: preporuka je **13,99 $** (honorar oko 2,71 $ po primjerku).
-  - Tisak 275 stranica 8,5×11 stoji 1,00 $ + 0,017 $ × 275 = 5,68 $.
+- [ ] Cijena: preporuka je **13,99 $** (honorar oko 2,70 $ po primjerku).
+  - Tisak 276 stranica 8,5×11 stoji 1,00 $ + 0,017 $ × 276 = 5,69 $.
   - Jeftinija opcija za početak: 12,99 $ (oko 2,10 $ po primjerku). Cijenu podignite nakon prvih recenzija.
   - Ispod 9,99 $ honorar pada na 50 %, pa tamo nikako.
 
 ## Objava na KDP-u — kratko
 
-1. KDP → Bookshelf → **+ Create → Paperback** (tek kad ste spremni, jer i nacrt troši tjedno mjesto).
+1. KDP → Bookshelf → **+ Create → Paperback** (tek kad ste spremni: prema izvještajima izdavača i nacrt troši tjedno mjesto).
 2. **Paperback Details:** sve vrijednosti iz `KDP-LISTING.md` (naslov, podnaslov, autor, opis, ključne
    riječi, kategorije, *Large print: Yes*, *Low-content: No*).
 3. **Paperback Content:**
    - besplatni KDP ISBN;
-   - 8.5 × 11 in, crno-bijelo, bijeli papir, bez bleeda, mat;
+   - 8.5 × 11 in, crno-bijelo, bijeli papir, bez bleeda, sjajni (glossy) omot;
    - upload oba PDF-a iz `output/`;
    - AI-izjava prema `KDP-LISTING.md`;
    - **Launch Previewer**: provjerite hrbat i da nema upozorenja.
@@ -171,5 +184,6 @@ u `data/reflections.json`, jer se ključ ondje veže uz referencu.
   - Atkinson Hyperlegible Next (Braille Institute; čitljivost za slabovidne);
   - Libre Baskerville;
   - Cormorant Garamond;
-  - Cinzel.
+  - Cinzel;
+  - Source Sans 3 (brojke u tekstu, bez precrtane nule).
 - **Naslovnica i ukrasi** nacrtani su kodom (vektorski oblici), bez fotografija i bez generatora slika.

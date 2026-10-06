@@ -33,7 +33,22 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
 LEVEL_NAMES = {1: "Easy", 2: "Medium", 3: "Hard", 4: "Expert"}
+# Parts printed in story order (text keys as in bc.puzzles.text_key); anything not listed goes last.
+STORY_ORDER = {"Christmas: Good Tidings of Great Joy": [
+    "Isaiah 7:14", "Isaiah 9:2", "Isaiah 9:6 |  ... upon his shoulder", "Isaiah 9:6 | and his name ... Prince of Peace.",
+    "Isaiah 11:1", "Isaiah 40:5", "Isaiah 60:1", "Micah 5:2",
+    "Luke 1:30-31", "Luke 1:32", "Luke 1:46-47", "Matthew 1:21", "Galatians 4:4-5",
+    "Luke 2:7", "Luke 2:8", "Luke 2:9", "Luke 2:10-11", "Luke 2:13-14", "Luke 2:14", "Luke 2:19",
+    "Matthew 2:2", "Matthew 2:10", "Matthew 2:11 |  ... worshipped him",
+    "John 1:1", "John 1:4-5", "John 1:9", "John 1:14", "1 John 4:9"]}
 SHARE = {4: 0.10, 1: 0.30, 2: 0.35, 3: 0.25}
+
+
+def text_key(item: dict) -> str:
+    """Key for data/reflections.json: the reference, plus the fragment for parts of a verse."""
+    if item.get("from") or item.get("to"):
+        return f"{item['ref']} | {item.get('from', '')} ... {item.get('to', '')}"
+    return item["ref"]
 
 
 def _pick_unique_hints(ct: str, inv: dict[str, str], given: dict[str, str]) -> dict[str, str]:
@@ -119,7 +134,7 @@ def finalize(r: dict) -> dict:
         given = {}
     elif level == 1:
         given = _top_up(ct, inv, u, max(len(u), 4))
-        while cipher.forced_solve(ct, given)[0] < 0.90 and len(given) < 7:
+        while cipher.forced_solve(ct, given)[0] < 0.90 and len(given) < 9:
             given = _top_up(ct, inv, given, len(given) + 1)
     elif level == 2:
         given = _top_up(ct, inv, u, max(len(u), 2))
@@ -141,11 +156,14 @@ def finalize(r: dict) -> dict:
     freq = collections.Counter(c for c in ct if c.isalpha())
     rest = [c for c, _ in freq.most_common() if c not in given]
     words_plain = cipher.words(text)
-    longest = max(words_plain, key=lambda w: (len(w), len(set(w))))
+    def n_letters(w):
+        return sum(ch.isalpha() for ch in w)
+    longest = max(words_plain, key=lambda w: (n_letters(w), len(set(w))))
     position = words_plain.index(longest) + 1        # first occurrence, counted in the puzzle
     p = r["passage"]
     return {
         "ref": r["item"]["ref"],
+        "text_key": text_key(r["item"]),
         "partial": p["partial"], "starts_mid": p["starts_mid"], "ends_mid": p["ends_mid"],
         "book": p["book"],
         "theme": r["item"]["theme"],
@@ -186,8 +204,13 @@ def main():
             continue
         assign_levels(mine)
         done = [finalize(r) for r in mine]
-        # inside a theme: Easy -> Expert; inside a level, the most deducible first
-        done.sort(key=lambda d: (d["level"], -d["forced_fraction"], d["ref"]))
+        if theme in STORY_ORDER:
+            # the Christmas part follows the story instead of the difficulty ramp
+            order = STORY_ORDER[theme]
+            done.sort(key=lambda d: (order.index(d["text_key"]) if d["text_key"] in order else len(order), d["ref"]))
+        else:
+            # inside a theme: Easy -> Expert; inside a level, the most deducible first
+            done.sort(key=lambda d: (d["level"], -d["forced_fraction"], d["ref"]))
         out.extend(done)
     for i, d in enumerate(out, 1):
         d["num"] = i

@@ -41,13 +41,19 @@ def check(c: dict):
         return None, f"too short ({lines} lines)"
     if lines > layout.MAX_LINES:
         return None, f"too long ({lines} lines)"
-    return {"keys": {(book, ch, v) for v in range(v1, v2 + 1)}, "chapter": (book, ch),
+    if p["partial"]:
+        a = p["full_text"].index(p["text"])
+        keys = {(book, ch, v1, "chars", i) for i in range(a, a + len(p["text"]))}
+    else:
+        keys = {(book, ch, v) for v in range(v1, v2 + 1)}
+    return {"keys": keys, "verses": {(book, ch, v) for v in range(v1, v2 + 1)}, "partial": p["partial"], "chapter": (book, ch),
             "letters": len(kjv.letters(p["text"])), "lines": lines}, None
 
 
 def main():
     pool = json.load(open(os.path.join(DATA, "verse_pool.json")))
     used: set[tuple] = set()
+    used_part: set[tuple] = set()
     chosen, dropped, spare = [], [], []
     for t in pool["themes"]:
         per_chapter = collections.Counter()
@@ -62,10 +68,15 @@ def main():
                 continue
             if info["keys"] & used:
                 continue
-            if per_chapter[info["chapter"]] >= MAX_PER_CHAPTER:
+            # a whole verse and a fragment of it never appear together
+            if (not info["partial"] and info["verses"] & used_part) or (info["partial"] and info["verses"] & used):
+                continue
+            if per_chapter[info["chapter"]] >= t.get("max_per_chapter", MAX_PER_CHAPTER):
                 spare.append((t["theme"], c["ref"] + " (chapter limit)"))
                 continue
             used |= info["keys"]
+            if info["partial"]:
+                used_part |= info["verses"]
             per_chapter[info["chapter"]] += 1
             mine.append({k: v for k, v in (("ref", c["ref"]), ("from", c.get("from")), ("to", c.get("to")),
                                              ("theme", t["theme"])) if v})
