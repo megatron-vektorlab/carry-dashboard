@@ -106,14 +106,17 @@ def sources() -> dict:
     return {"strong": strong, "gloss": gloss, "hist": hist}
 
 
-def attest(wording: str, variants=()) -> dict:
-    """{'level': 'strong'|'historical'|'none', 'sources': [...], 'matched': str, 'gloss': [...]}"""
+def attest(wording: str, variants=(), exact: bool = False) -> dict:
+    """{'level': 'strong'|'historical'|'none', 'sources': [...], 'matched': str, 'gloss': [...]}
+    exact: only whole-saying matches (used to test whether a decoy sentence is a real saying)."""
     S = sources()
     for w in [wording, *variants]:
         for k in (norm(w), core(w)):
             if k in S["strong"]:
                 return {"level": "strong", "sources": sorted(S["strong"][k]), "matched": w,
                         "gloss": S["gloss"].get(core(w), [])}
+    if exact:
+        return {"level": "none", "sources": [], "matched": "", "gloss": []}
     # the source lists the idiom without its verb: "wie ein begossener Pudel" (+ dastehen)
     for w in [wording, *variants]:
         words = core(w).split()

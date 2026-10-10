@@ -1,7 +1,7 @@
 // The back of every worksheet: notes for the group leader, solutions, hints, prompts.
 #import "book.typ": *
 
-#let lead-section(t) = block(sticky: true, above: 1.1em, below: 0.5em, text(font: serif, size: 19pt, weight: "bold", t))
+#let lead-section(t) = block(sticky: true, above: 0.95em, below: 0.45em, text(font: serif, size: 18pt, weight: "bold", t))
 
 #let sol-line(x) = {
   [#x.before#strong(x.word)#x.after]
@@ -9,8 +9,8 @@
 }
 
 #let render-leader(L) = {
-  set text(size: 17pt)
-  set par(leading: 0.6em, spacing: 0.7em)
+  set text(size: 16pt)
+  set par(leading: 0.55em, spacing: 0.65em)
   block(width: 100%, stroke: (bottom: 1.5pt + ink), inset: (bottom: 6pt),
     grid(columns: (1fr, auto), align: (left + bottom, right + bottom),
       text(font: serif, size: 21pt, weight: "bold")[Für die Gruppenleitung],

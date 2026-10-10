@@ -82,7 +82,7 @@ def make(words: list[str], size: int, level: int, seed: str, tries: int = 400) -
         if any(_count(grid, w, ALL_DIRS) != 1 for w in words):
             continue
         if any(_count(grid, b, ALL_DIRS if b not in BAD_SHORT_OK else DIRS[level]) for b in BAD
-               if not any(b in w for w in words)):
+               if not any(b in w or b in w[::-1] for w in words)):     # REGEN read backwards
             continue
         places.sort(key=lambda p: words.index(p["word"]))
         return {"grid": grid, "places": places, "size": size, "level": level}

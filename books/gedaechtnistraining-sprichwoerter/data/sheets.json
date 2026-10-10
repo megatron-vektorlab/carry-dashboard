@@ -1,0 +1,1528 @@
+{
+ "sheets": [
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Tiere",
+   "items": [
+    "i015",
+    "i147",
+    "i043",
+    "i074",
+    "i141"
+   ],
+   "example": "i047",
+   "category": "Tier",
+   "num": 1
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Tiere",
+   "items": [
+    "i134",
+    "i162",
+    "i047",
+    "p012",
+    "i154"
+   ],
+   "example": "i130",
+   "num": 2
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Tiere",
+   "items": [
+    "p065",
+    "p032",
+    "p029",
+    "p031",
+    "p165"
+   ],
+   "example": null,
+   "num": 3
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Tiere",
+   "items": [
+    "p029"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Tiere",
+    "item": "p029",
+    "title": "Vaters großer Fang",
+    "paragraphs": [
+     "Jeden Sonntag in aller Frühe fuhr Vater mit dem Fahrrad zum Baggersee. Hinten auf dem Gepäckträger klemmte die Angelrute, am Lenker baumelte ein Eimer. In der Tasche hatte er Butterbrote und eine Dose mit Würmern. Mutter winkte ihm vom Küchenfenster nach.",
+     "Am Nachmittag kam er zurück, meistens mit leerem Eimer. Mal war das Wasser zu kalt, mal war der Wind zu stark. Mutter nickte freundlich und stellte Bratkartoffeln auf den Tisch. Wir Kinder kannten seine Erklärungen schon auswendig.",
+     "Doch eines Sonntags hörten wir schon von Weitem seine Fahrradklingel. Im Eimer lag ein Karpfen, so groß wie ein Brotlaib. Die Nachbarn kamen aus ihren Gärten und staunten. Frau Krüger holte sogar ihren Fotoapparat.",
+     "Vater stand stolz am Gartenzaun und erzählte, wie lange er gekämpft hatte. Dann zwinkerte er Mutter zu."
+    ],
+    "ending": "Er lachte und sagte: „Ein blindes Huhn findet auch mal ein Korn.“"
+   },
+   "num": 4
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Tiere",
+   "items": [
+    "i049",
+    "p056",
+    "p078",
+    "i125",
+    "i003",
+    "i184"
+   ],
+   "example": "i134",
+   "num": 5
+  },
+  {
+   "type": "gaps",
+   "level": 2,
+   "chapter": "Tiere",
+   "items": [
+    "i029",
+    "i117",
+    "p173",
+    "i021",
+    "i022",
+    "i094"
+   ],
+   "example": "i015",
+   "num": 6
+  },
+  {
+   "type": "choice",
+   "level": 2,
+   "chapter": "Tiere",
+   "items": [
+    "i163",
+    "i035",
+    "i082",
+    "i103"
+   ],
+   "example": null,
+   "num": 7
+  },
+  {
+   "type": "scramble",
+   "level": 2,
+   "chapter": "Tiere",
+   "items": [
+    "p211",
+    "p180",
+    "p060",
+    "p019",
+    "p223",
+    "p191"
+   ],
+   "example": "p065",
+   "num": 8
+  },
+  {
+   "type": "complete",
+   "level": 3,
+   "chapter": "Tiere",
+   "items": [
+    "p033",
+    "p071",
+    "p197",
+    "p058",
+    "p067",
+    "p198"
+   ],
+   "example": null,
+   "num": 9
+  },
+  {
+   "type": "firstletters",
+   "level": 3,
+   "chapter": "Tiere",
+   "items": [
+    "p065",
+    "p211",
+    "p033",
+    "p071",
+    "p197",
+    "p056"
+   ],
+   "example": null,
+   "num": 10
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Körper",
+   "items": [
+    "i164",
+    "p072",
+    "i038",
+    "i039",
+    "i113"
+   ],
+   "example": "i131",
+   "category": "Körperteil",
+   "num": 11
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Körper",
+   "items": [
+    "p164",
+    "i148",
+    "i185",
+    "i108",
+    "i144"
+   ],
+   "example": "i010",
+   "num": 12
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Körper",
+   "items": [
+    "p184",
+    "p008",
+    "p206",
+    "p124",
+    "p030"
+   ],
+   "example": null,
+   "num": 13
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Körper",
+   "items": [
+    "p072"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Körper",
+    "item": "p072",
+    "title": "Oma und der Kirschkorb",
+    "paragraphs": [
+     "Im Juli hing der Kirschbaum hinter dem Haus voller Früchte. Oma pflückte einen ganzen Korb voll. Daraus wollte sie am Sonntag einen Kirschkuchen backen. Den Korb stellte sie auf die Bank vor der Küchentür.",
+     "Am Nachmittag war der Korb nur noch halb voll. Oma rief ihren Enkel Hans aus dem Garten herein. „Weißt du, wo meine Kirschen geblieben sind?“ Hans schüttelte heftig den Kopf. „Das waren bestimmt die Amseln, Oma!“",
+     "Oma sah ihn lange über ihre Brille hinweg an. Sein Mund war dunkelrot verschmiert. Auf seinem weißen Hemd leuchteten rote Flecken. Und aus seiner Hosentasche fielen drei Kirschkerne auf den Boden.",
+     "Hans wurde so rot wie die Kirschen. Oma gab ihm ein kleines Messer und eine Schüssel. Gemeinsam entsteinten sie den Rest für den Kuchen."
+    ],
+    "ending": "Dabei schmunzelte Oma und sagte: „Lügen haben kurze Beine.“"
+   },
+   "num": 14
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Körper",
+   "items": [
+    "i131",
+    "i011",
+    "p011",
+    "i129",
+    "p068",
+    "i010"
+   ],
+   "example": "i041",
+   "num": 15
+  },
+  {
+   "type": "circle",
+   "level": 2,
+   "chapter": "Körper",
+   "items": [
+    "i041",
+    "i109",
+    "i080",
+    "i187",
+    "i101",
+    "i016"
+   ],
+   "example": "i131",
+   "num": 16
+  },
+  {
+   "type": "situation",
+   "level": 2,
+   "chapter": "Körper",
+   "items": [
+    "p102",
+    "p103",
+    "p171"
+   ],
+   "example": null,
+   "num": 17
+  },
+  {
+   "type": "complete",
+   "level": 2,
+   "chapter": "Körper",
+   "items": [
+    "p164",
+    "p206",
+    "p124",
+    "p171",
+    "p225",
+    "p068"
+   ],
+   "example": "p072",
+   "num": 18
+  },
+  {
+   "type": "scramble",
+   "level": 3,
+   "chapter": "Körper",
+   "items": [
+    "p011",
+    "p008",
+    "p102",
+    "p171",
+    "p103",
+    "p030"
+   ],
+   "example": null,
+   "num": 19
+  },
+  {
+   "type": "wordsearch",
+   "level": 3,
+   "chapter": "Körper",
+   "items": [
+    "i070",
+    "i085",
+    "i086",
+    "i023",
+    "i032",
+    "i088",
+    "i107",
+    "i072"
+   ],
+   "example": null,
+   "num": 20
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "i106",
+    "i122",
+    "p182",
+    "i064",
+    "i040"
+   ],
+   "example": "i002",
+   "category": "Wort",
+   "num": 21
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "i084",
+    "p057",
+    "p229",
+    "i161",
+    "i115"
+   ],
+   "example": "i002",
+   "num": 22
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "p069",
+    "p176",
+    "p041",
+    "p163",
+    "p167"
+   ],
+   "example": null,
+   "num": 23
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "p101"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Essen & Trinken",
+    "item": "p101",
+    "title": "Die Erbsensuppe zum Geburtstag",
+    "paragraphs": [
+     "Zu Opas Geburtstag kam die ganze Verwandtschaft. Mutter stand schon früh am Herd. In einem großen Topf blubberte ihre berühmte Erbsensuppe. Dann ging sie ins Wohnzimmer, um den Tisch zu decken.",
+     "Tante Hilde hob den Deckel und probierte. „Da fehlt Salz“, meinte sie und streute kräftig nach. Kurz danach kam Onkel Walter vorbei. Er fand, die Suppe brauche mehr Pfeffer, und griff zum Pfefferstreuer. Auch Oma rührte noch eine Handvoll Majoran hinein.",
+     "Zuletzt schlich Cousin Bernd in die Küche. Er wusste von nichts und salzte sicherheitshalber noch einmal. Alle waren sehr zufrieden mit sich.",
+     "Beim Mittagessen nahm Opa den ersten Löffel. Er verzog das Gesicht und griff schnell zum Wasserglas. Mutter kostete selbst und schüttelte verwundert den Kopf. Nach und nach gestanden alle verlegen, was sie hineingetan hatten. Da musste Mutter herzlich lachen."
+    ],
+    "ending": "Sie stellte den Topf beiseite und sagte: „Viele Köche verderben den Brei.“"
+   },
+   "num": 24
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "i002",
+    "p101",
+    "i006",
+    "i068",
+    "i097",
+    "i001"
+   ],
+   "example": "i106",
+   "num": 25
+  },
+  {
+   "type": "gaps",
+   "level": 2,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "i165",
+    "p004",
+    "p120",
+    "i030",
+    "p190",
+    "p106"
+   ],
+   "example": "i002",
+   "num": 26
+  },
+  {
+   "type": "choice",
+   "level": 2,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "i001",
+    "i182",
+    "i126",
+    "i122"
+   ],
+   "example": null,
+   "num": 27
+  },
+  {
+   "type": "match",
+   "level": 2,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "p101",
+    "p041",
+    "p014",
+    "p181",
+    "p158",
+    "p176"
+   ],
+   "example": null,
+   "num": 28
+  },
+  {
+   "type": "complete",
+   "level": 3,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "p057",
+    "p069",
+    "p167",
+    "p106",
+    "p120",
+    "p182"
+   ],
+   "example": null,
+   "num": 29
+  },
+  {
+   "type": "gaps",
+   "level": 3,
+   "chapter": "Essen & Trinken",
+   "items": [
+    "i002",
+    "i040",
+    "i084",
+    "i006",
+    "i165",
+    "i106"
+   ],
+   "example": null,
+   "num": 30
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "i102",
+    "i105",
+    "i121",
+    "p085",
+    "p186"
+   ],
+   "example": "p098",
+   "num": 31
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "i066",
+    "i063",
+    "p061",
+    "i139",
+    "p021"
+   ],
+   "example": "p098",
+   "num": 32
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "p082",
+    "p207",
+    "p105",
+    "p202",
+    "p043"
+   ],
+   "example": null,
+   "num": 33
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "p082"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Haus, Hof & Garten",
+    "item": "p082",
+    "title": "Der eifrige Lehrling",
+    "paragraphs": [
+     "Am ersten Montag im April begann Klaus seine Lehre bei Tischlermeister Schulte. Er war fünfzehn Jahre alt und schrecklich aufgeregt. Schon um sechs Uhr stand er vor der Werkstatt. Dabei fing die Arbeit erst um sieben an.",
+     "Klaus fegte die Hobelspäne zusammen, bis kein Span mehr herumlag. Er ölte jede Säge und sortierte alle Schrauben nach Größe. Mittags putzte er sogar die Fenster. Frau Schulte staunte und brachte ihm ein Stück Streuselkuchen.",
+     "Der alte Geselle Franz sah ihm schmunzelnd zu. „Das war bei mir damals genauso“, sagte er. „In drei Wochen schläfst du morgens länger.“ Klaus schüttelte entschlossen den Kopf.",
+     "Am Abend stand Meister Schulte in der blitzblanken Werkstatt. So ordentlich war alles, dass er seinen Zollstock nicht mehr fand. Da klopfte er Klaus anerkennend auf die Schulter."
+    ],
+    "ending": "Dann lachte er und sagte: „Neue Besen kehren gut.“"
+   },
+   "num": 34
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "p098",
+    "i020",
+    "i159",
+    "i045",
+    "i166",
+    "p097"
+   ],
+   "example": "i066",
+   "num": 35
+  },
+  {
+   "type": "circle",
+   "level": 2,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "i169",
+    "p205",
+    "p132",
+    "i079",
+    "p119",
+    "i056"
+   ],
+   "example": "p098",
+   "num": 36
+  },
+  {
+   "type": "situation",
+   "level": 2,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "p224",
+    "p024",
+    "p174"
+   ],
+   "example": null,
+   "num": 37
+  },
+  {
+   "type": "scramble",
+   "level": 2,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "p098",
+    "p082",
+    "p061",
+    "p207",
+    "p215",
+    "p021"
+   ],
+   "example": "p186",
+   "num": 38
+  },
+  {
+   "type": "scramble",
+   "level": 3,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "p043",
+    "p202",
+    "p174",
+    "p132",
+    "p119",
+    "p224"
+   ],
+   "example": null,
+   "num": 39
+  },
+  {
+   "type": "firstletters",
+   "level": 3,
+   "chapter": "Haus, Hof & Garten",
+   "items": [
+    "p186",
+    "p085",
+    "p105",
+    "p205",
+    "p149",
+    "p097"
+   ],
+   "example": null,
+   "num": 40
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "p166",
+    "i044",
+    "i175",
+    "i189",
+    "i128"
+   ],
+   "example": "p007",
+   "num": 41
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "p007",
+    "p096",
+    "i018",
+    "p095",
+    "i014"
+   ],
+   "example": "p166",
+   "num": 42
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "p161",
+    "p131",
+    "p196",
+    "p208",
+    "p139"
+   ],
+   "example": null,
+   "num": 43
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "p007"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Wetter, Natur & Jahreszeiten",
+    "item": "p007",
+    "title": "Die Kaffeetafel im Garten",
+    "paragraphs": [
+     "Im August feierten Oma und Opa Goldene Hochzeit. Die Kaffeetafel stand im Garten unter dem Apfelbaum. Es gab Frankfurter Kranz, Bienenstich und Schlagsahne. Alle Nachbarn waren eingeladen.",
+     "Gerade hatte Tante Gerda den Kaffee eingeschenkt, da wurde der Himmel schwarz. Über dem Dorf grollte der Donner. Dann goss es wie aus Eimern. Alle packten Teller und Kuchen und rannten in die Scheune.",
+     "Da saßen sie nun zwischen Heu und Fahrrädern. Die Sahne war zerlaufen, die Tischdecke klitschnass. Oma seufzte leise. Doch dann stimmte Onkel Fritz ein altes Volkslied an, und alle sangen mit.",
+     "Nach einer halben Stunde wurde es draußen still. Die Wolken zogen weiter, und der Himmel strahlte blau. Die Wiese glänzte, und die Vögel zwitscherten. Opa nahm Oma bei der Hand und führte sie hinaus."
+    ],
+    "ending": "Er lächelte und sagte: „Auf Regen folgt Sonnenschein.“"
+   },
+   "num": 44
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "i174",
+    "i145",
+    "i190",
+    "i099",
+    "i155",
+    "i123"
+   ],
+   "example": "p166",
+   "num": 45
+  },
+  {
+   "type": "gaps",
+   "level": 2,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "i019",
+    "p219",
+    "i181",
+    "p141",
+    "p217",
+    "i114"
+   ],
+   "example": "i174",
+   "num": 46
+  },
+  {
+   "type": "choice",
+   "level": 2,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "i018",
+    "i155",
+    "i017",
+    "i099"
+   ],
+   "example": null,
+   "num": 47
+  },
+  {
+   "type": "complete",
+   "level": 2,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "p007",
+    "p095",
+    "p161",
+    "p131",
+    "p157",
+    "p096"
+   ],
+   "example": "p166",
+   "num": 48
+  },
+  {
+   "type": "complete",
+   "level": 3,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "p166",
+    "p196",
+    "p157",
+    "p141",
+    "p217",
+    "p139"
+   ],
+   "example": null,
+   "num": 49
+  },
+  {
+   "type": "wordsearch",
+   "level": 3,
+   "chapter": "Wetter, Natur & Jahreszeiten",
+   "items": [
+    "i014",
+    "i044",
+    "i175",
+    "i123",
+    "i145",
+    "i189",
+    "i114",
+    "i019"
+   ],
+   "example": null,
+   "num": 50
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "i024",
+    "p088",
+    "p152",
+    "p138",
+    "p053"
+   ],
+   "example": "i158",
+   "num": 51
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "i158",
+    "p084",
+    "p093",
+    "p062",
+    "p002"
+   ],
+   "example": "i024",
+   "num": 52
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "p053",
+    "p122",
+    "p052",
+    "p144",
+    "p192"
+   ],
+   "example": null,
+   "num": 53
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "p138"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Arbeit & Fleiß",
+    "item": "p138",
+    "title": "Socken für den Vater",
+    "paragraphs": [
+     "Im Herbst 1956 wollte Hanna ihrem Vater Socken stricken. Sie war damals zehn Jahre alt. Die Großmutter gab ihr graue Wolle und ein Nadelspiel.",
+     "Der erste Socken wurde ein seltsames Ding. Die Ferse saß schief. Oben war er weit, unten viel zu eng. Der Vater zog ihn trotzdem an und lachte. „Damit kann ich um die Ecke laufen“, sagte er.",
+     "Hanna gab nicht auf. Jeden Abend saß sie am warmen Kohleofen und strickte. Manchmal rutschten Maschen von der Nadel. Dann zog sie alles wieder auf und begann von vorn. Die Großmutter sah zu und sagte wenig.",
+     "Zum Geburtstag des Vaters im Februar lag ein Päckchen auf dem Kaffeetisch. Darin steckte ein Paar graue Socken. Beide waren gleich lang, und die Fersen saßen genau richtig. Der Vater drehte sie staunend hin und her."
+    ],
+    "ending": "Die Großmutter nickte zufrieden und sagte: „Übung macht den Meister.“"
+   },
+   "num": 54
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "i061",
+    "i110",
+    "p221",
+    "p126",
+    "i034",
+    "i012"
+   ],
+   "example": "i024",
+   "num": 55
+  },
+  {
+   "type": "circle",
+   "level": 2,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "p037",
+    "i083",
+    "p177",
+    "p075",
+    "p080",
+    "i052"
+   ],
+   "example": "i024",
+   "num": 56
+  },
+  {
+   "type": "situation",
+   "level": 2,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "p135",
+    "p143",
+    "p039"
+   ],
+   "example": null,
+   "num": 57
+  },
+  {
+   "type": "match",
+   "level": 2,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "p084",
+    "p204",
+    "p168",
+    "p151",
+    "p226",
+    "p135"
+   ],
+   "example": null,
+   "num": 58
+  },
+  {
+   "type": "scramble",
+   "level": 3,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "p052",
+    "p037",
+    "p039",
+    "p075",
+    "p080",
+    "p062"
+   ],
+   "example": null,
+   "num": 59
+  },
+  {
+   "type": "gaps",
+   "level": 3,
+   "chapter": "Arbeit & Fleiß",
+   "items": [
+    "p093",
+    "i053",
+    "i057",
+    "i153",
+    "i168",
+    "p138"
+   ],
+   "example": null,
+   "num": 60
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p092",
+    "p046",
+    "i009",
+    "i172",
+    "i176"
+   ],
+   "example": "p048",
+   "num": 61
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p099",
+    "p130",
+    "i028",
+    "p028",
+    "i152"
+   ],
+   "example": "p048",
+   "num": 62
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p048",
+    "p045",
+    "p170",
+    "p121",
+    "p136"
+   ],
+   "example": null,
+   "num": 63
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p092"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Geld & Glück",
+    "item": "p092",
+    "title": "Der erste Besuch",
+    "paragraphs": [
+     "An einem Sonntag im Mai 1962 brachte Gerda ihren Freund Werner mit nach Hause. Die Eltern sollten ihn endlich kennenlernen. Die Mutter hatte den Tisch fein gedeckt. Es gab Frankfurter Kranz und echten Bohnenkaffee.",
+     "Werner saß steif auf dem Sofa. Er lobte den Kuchen, die Gardinen und sogar den Gummibaum. Dann wollte er der Mutter höflich Kaffee einschenken. Dabei stieß er mit dem Ellbogen an ihre beste Sammeltasse.",
+     "Die Tasse kippte über die Tischkante und zersprang auf dem Boden. Im Wohnzimmer wurde es ganz still. Werner wurde rot bis über beide Ohren. Gerda hielt den Atem an. Der Vater schaute gespannt zur Mutter.",
+     "Die Mutter stand langsam auf. Sie holte Handfeger und Kehrschaufel aus der Küche. Dann legte sie Werner freundlich die Hand auf die Schulter."
+    ],
+    "ending": "Sie lächelte und sagte: „Scherben bringen Glück.“"
+   },
+   "num": 64
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Geld & Glück",
+   "items": [
+    "i031",
+    "i104",
+    "p042",
+    "i008",
+    "i178",
+    "i004"
+   ],
+   "example": "p048",
+   "num": 65
+  },
+  {
+   "type": "gaps",
+   "level": 2,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p009",
+    "p038",
+    "p142",
+    "p115",
+    "p116",
+    "i167"
+   ],
+   "example": "p048",
+   "num": 66
+  },
+  {
+   "type": "choice",
+   "level": 2,
+   "chapter": "Geld & Glück",
+   "items": [
+    "i152",
+    "i077",
+    "i065",
+    "i007"
+   ],
+   "example": null,
+   "num": 67
+  },
+  {
+   "type": "scramble",
+   "level": 2,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p042",
+    "p047",
+    "p222",
+    "p114",
+    "p209",
+    "p140"
+   ],
+   "example": "p048",
+   "num": 68
+  },
+  {
+   "type": "complete",
+   "level": 3,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p092",
+    "p121",
+    "p038",
+    "p087",
+    "p094",
+    "p170"
+   ],
+   "example": null,
+   "num": 69
+  },
+  {
+   "type": "firstletters",
+   "level": 3,
+   "chapter": "Geld & Glück",
+   "items": [
+    "p099",
+    "p009",
+    "p142",
+    "p087",
+    "p115",
+    "p136"
+   ],
+   "example": null,
+   "num": 70
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p023",
+    "i071",
+    "i025",
+    "p185",
+    "p175"
+   ],
+   "example": "p025",
+   "num": 71
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p025",
+    "p018",
+    "p089",
+    "i033",
+    "p100"
+   ],
+   "example": "i170",
+   "num": 72
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p015",
+    "p110",
+    "p150",
+    "p118",
+    "p199"
+   ],
+   "example": null,
+   "num": 73
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p089"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Reden & Schweigen",
+    "item": "p089",
+    "title": "Das große Geheimnis",
+    "paragraphs": [
+     "Im Sommer 1958 wurde Vater Hermann fünfzig Jahre alt. Die Mutter plante eine große Überraschung. Die ganze Verwandtschaft sollte heimlich zum Kaffee kommen. Außer ihr wusste nur der kleine Peter davon.",
+     "Das Geheimnis brannte ihm den ganzen Tag auf der Zunge. Beim Abendbrot wunderte sich der Vater über die vielen Kuchen im Keller. Peter öffnete schon den Mund. Dann biss er schnell in sein Leberwurstbrot.",
+     "Am nächsten Morgen fragte der Vater beim Rasieren noch einmal nach. Peter zuckte nur mit den Schultern. Dann lief er in den Hof und fütterte lange die Hühner.",
+     "Am Sonntagnachmittag klingelte es ständig an der Haustür. Onkel, Tanten und Nachbarn standen mit Blumen davor. Der Vater staunte und musste sich erst einmal setzen. Später nahm er Peter auf den Schoß. „Du hast es gewusst und nichts verraten?“, fragte er."
+    ],
+    "ending": "Die Mutter lachte und sagte: „Reden ist Silber, Schweigen ist Gold.“"
+   },
+   "num": 74
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "i170",
+    "i055",
+    "i156",
+    "i051",
+    "i089",
+    "i026"
+   ],
+   "example": "p025",
+   "num": 75
+  },
+  {
+   "type": "circle",
+   "level": 2,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "i054",
+    "i073",
+    "p086",
+    "p147",
+    "p123",
+    "i179"
+   ],
+   "example": "p025",
+   "num": 76
+  },
+  {
+   "type": "situation",
+   "level": 2,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p018",
+    "p027",
+    "p150"
+   ],
+   "example": null,
+   "num": 77
+  },
+  {
+   "type": "complete",
+   "level": 2,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p100",
+    "p199",
+    "p185",
+    "p089",
+    "p118",
+    "p015"
+   ],
+   "example": "p025",
+   "num": 78
+  },
+  {
+   "type": "scramble",
+   "level": 3,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p018",
+    "p185",
+    "p089",
+    "p110",
+    "p027",
+    "p199"
+   ],
+   "example": null,
+   "num": 79
+  },
+  {
+   "type": "wordsearch",
+   "level": 3,
+   "chapter": "Reden & Schweigen",
+   "items": [
+    "p023",
+    "i025",
+    "i026",
+    "i179",
+    "i089",
+    "i073",
+    "i137",
+    "i071"
+   ],
+   "example": null,
+   "num": 80
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p044",
+    "i076",
+    "p178",
+    "i069",
+    "i171"
+   ],
+   "example": "p070",
+   "num": 81
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p005",
+    "i180",
+    "p109",
+    "p128",
+    "i146"
+   ],
+   "example": "p044",
+   "num": 82
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p070",
+    "p013",
+    "p189",
+    "p076",
+    "p051"
+   ],
+   "example": null,
+   "num": 83
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p013"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Familie & Freundschaft",
+    "item": "p013",
+    "title": "Der kleine Tüftler",
+    "paragraphs": [
+     "Vater Willi war der beste Bastler im ganzen Dorf. In seiner Werkstatt roch es nach Öl und Holz. Er reparierte Fahrräder, Radios und Nähmaschinen. Die Nachbarn kamen mit allem zu ihm.",
+     "An einem Sonntagmorgen suchte die Mutter ihren Wecker. Er stand nicht mehr auf dem Nachttisch. Dann hörte sie ein leises Klappern aus der Küche.",
+     "Dort saß der achtjährige Rudi auf dem Fußboden. Vor ihm lagen Zahnräder, Federn und viele kleine Schrauben. Er hatte den Wecker ganz auseinandergenommen. Die Mutter schlug die Hände über dem Kopf zusammen.",
+     "Doch Rudi schraubte und drehte mit ernstem Gesicht. Nach einer Stunde tickte der Wecker wieder. Nur eine winzige Schraube war übrig geblieben. Der Vater kam dazu und betrachtete stolz das Werk seines Sohnes. Schmunzelnd steckte er die Schraube in seine Westentasche."
+    ],
+    "ending": "Die Mutter seufzte, lächelte und sagte: „Der Apfel fällt nicht weit vom Stamm.“"
+   },
+   "num": 84
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p049",
+    "i136",
+    "i027",
+    "i042",
+    "i095",
+    "p050"
+   ],
+   "example": "p070",
+   "num": 85
+  },
+  {
+   "type": "gaps",
+   "level": 2,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p111",
+    "p108",
+    "p154",
+    "i149",
+    "p210",
+    "p159"
+   ],
+   "example": "p070",
+   "num": 86
+  },
+  {
+   "type": "choice",
+   "level": 2,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "i146",
+    "i076",
+    "i095",
+    "i180"
+   ],
+   "example": null,
+   "num": 87
+  },
+  {
+   "type": "match",
+   "level": 2,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p034",
+    "p064",
+    "p218",
+    "p148",
+    "p220",
+    "p212"
+   ],
+   "example": null,
+   "num": 88
+  },
+  {
+   "type": "complete",
+   "level": 3,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p178",
+    "p076",
+    "p111",
+    "p159",
+    "p108",
+    "p189"
+   ],
+   "example": null,
+   "num": 89
+  },
+  {
+   "type": "gaps",
+   "level": 3,
+   "chapter": "Familie & Freundschaft",
+   "items": [
+    "p049",
+    "i069",
+    "p128",
+    "i027",
+    "i042",
+    "i136"
+   ],
+   "example": null,
+   "num": 90
+  },
+  {
+   "type": "gaps",
+   "level": 1,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p026",
+    "p063",
+    "p200",
+    "p160",
+    "p035"
+   ],
+   "example": "p017",
+   "num": 91
+  },
+  {
+   "type": "circle",
+   "level": 1,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p017",
+    "p006",
+    "p228",
+    "p172",
+    "p133"
+   ],
+   "example": "p026",
+   "num": 92
+  },
+  {
+   "type": "match",
+   "level": 1,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p035",
+    "p083",
+    "p160",
+    "p227",
+    "p059"
+   ],
+   "example": null,
+   "num": 93
+  },
+  {
+   "type": "story",
+   "level": 1,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p026"
+   ],
+   "example": null,
+   "story": {
+    "chapter": "Zeit & Lebensweisheiten",
+    "item": "p026",
+    "title": "Der Tintenklecks",
+    "paragraphs": [
+     "Es war ein heißer Tag im Juli 1964. Günthers Freunde warteten schon mit den Fahrrädern vor dem Haus. Sie wollten ins Freibad. Doch zuerst musste Günther seine Hausaufgaben machen.",
+     "Er setzte sich an den Küchentisch und schrieb, so schnell er konnte. Der Füller kratzte über das Papier. Die Buchstaben wurden immer schiefer. Plötzlich tropfte ein dicker Klecks ins Heft. Hastig wischte Günther mit dem Ärmel darüber.",
+     "Nun war die ganze Seite blau verschmiert. Auch das Hemd hatte einen großen Fleck. Die Mutter schüttelte den Kopf. Günther musste alles noch einmal schreiben.",
+     "Diesmal schrieb er langsam und sorgfältig. Er benutzte sogar das Löschblatt. Die Freunde fuhren schon einmal vor. Günther kam erst eine Stunde später ins Freibad. Am Abend hörte der Großvater die ganze Geschichte. Er schmunzelte."
+    ],
+    "ending": "Dann klopfte er Günther auf die Schulter und sagte: „Eile mit Weile.“"
+   },
+   "num": 94
+  },
+  {
+   "type": "wrong",
+   "level": 2,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "i151",
+    "p036",
+    "i132",
+    "p066",
+    "p188",
+    "i067"
+   ],
+   "example": "p017",
+   "num": 95
+  },
+  {
+   "type": "circle",
+   "level": 2,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "i046",
+    "p016",
+    "p055",
+    "i062",
+    "p137",
+    "i133"
+   ],
+   "example": "p017",
+   "num": 96
+  },
+  {
+   "type": "situation",
+   "level": 2,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p203",
+    "p113",
+    "p187"
+   ],
+   "example": null,
+   "num": 97
+  },
+  {
+   "type": "scramble",
+   "level": 2,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p010",
+    "p104",
+    "p079",
+    "p195",
+    "p127",
+    "p020"
+   ],
+   "example": "p017",
+   "num": 98
+  },
+  {
+   "type": "scramble",
+   "level": 3,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p003",
+    "p054",
+    "p081",
+    "p214",
+    "p077",
+    "p022"
+   ],
+   "example": null,
+   "num": 99
+  },
+  {
+   "type": "firstletters",
+   "level": 3,
+   "chapter": "Zeit & Lebensweisheiten",
+   "items": [
+    "p183",
+    "p091",
+    "p194",
+    "p134",
+    "p107",
+    "p117"
+   ],
+   "example": null,
+   "num": 100
+  }
+ ]
+}

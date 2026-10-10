@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import collections
 import json
+import re
 import os
 import random
 import sys
@@ -62,10 +63,17 @@ def conflict(a: dict, b: dict, known: set[str]) -> bool:
     ('einen ___ haben' twice), or a's key word fits b's gap as another real saying."""
     if _frame(a) == _frame(b):
         return True
+    ka, kb = (x["keyword"].lower().translate(str.maketrans("äöü", "aou")) for x in (a, b))
+    if ka[:4] == kb[:4] or ka.startswith(kb) or kb.startswith(ka):     # Hund / Hunde on one sheet
+        return True
+    # one saying must not show another's answer ("die Katze im Sack" next to "Die K... lässt das Mausen")
+    if exercises.blank and (re.search(rf"(?<![{exercises.W}]){re.escape(a['keyword'])}", b["wording"], re.I)
+                            or re.search(rf"(?<![{exercises.W}]){re.escape(b['keyword'])}", a["wording"], re.I)):
+        return True
     for x, y in ((a, b), (b, a)):
         fa, fb = exercises.blank(x["wording"], x["keyword"])
         filled = f"{fa} {y['keyword']} {fb}"
-        if attest.norm(filled) in known or attest.core(filled) in known or attest.attest(filled)["level"] == "strong":
+        if attest.norm(filled) in known or attest.core(filled) in known or attest.attest(filled, exact=True)["level"] == "strong":
             return True
     return False
 
@@ -116,6 +124,9 @@ def order_easy(items: list[dict]) -> list[dict]:
 
 
 def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known: set[str]) -> list[dict]:
+    # a gap needs a real word: no one-letter key words ("Wer A sagt, muss auch B sagen")
+    story_ids = {stories[chapter]["item"]}
+    items = [i for i in items if len(i["keyword"]) >= 3 or i["id"] in story_ids]
     pk = Picker(items, chapter, known)
     prov = [i for i in items if i["kind"] == "proverb"]
     idio = [i for i in items if i["kind"] == "idiom"]

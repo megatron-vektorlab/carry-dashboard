@@ -246,7 +246,7 @@
 
 // Read-aloud story: paragraphs, then the last sentence with a gap and three words to circle.
 #let ex-story(s) = {
-  set par(leading: 0.95em, spacing: 1.2em)
+  set par(leading: 0.7em, spacing: 0.9em)
   for p in s.paragraphs { par(text(size: ex-size, p)) }
   v(0.6em)
   block(width: 100%, stroke: 1.4pt + ink, radius: 4pt, inset: 10pt, breakable: false, {

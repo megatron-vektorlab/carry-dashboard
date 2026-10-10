@@ -147,9 +147,14 @@ def build_data(flags: dict | None = None) -> dict:
         s = make_sheet(spec, by_id, corpus, drop=flags.get(str(spec["num"]), {}).get("drop", 0))
         items = [by_id[i] for i in s["item_ids"]]
         L = leader_page(s, items, used[spec["chapter"]], chap_by[spec["chapter"]])
-        if flags.get(str(s["num"]), {}).get("short"):
+        short = flags.get(str(s["num"]), {}).get("short", 0)
+        if short >= 1:                       # step by step until the leader page fits
             L["prompts"] = L["prompts"][:2]
             L["easier"] = L["harder"] = ""
+        if short >= 2:
+            L["solution"] = [dict(x, variants=x.get("variants", [])[:1]) for x in L["solution"]]
+        if short >= 3:
+            L["hints"] = []
         units.append({"sheet": s, "leader": L})
     chs = []
     for k, c in enumerate(chapters, 1):
@@ -245,7 +250,8 @@ def main():
             f = flags.setdefault(str(n), {})
             f["drop"] = f.get("drop", 0) + 1
         for n in bad:
-            flags.setdefault(str(n), {})["short"] = True
+            f = flags.setdefault(str(n), {})
+            f["short"] = f.get("short", 0) + 1
     else:
         raise RuntimeError("layout did not settle")
     import pymupdf

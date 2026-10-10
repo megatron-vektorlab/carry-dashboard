@@ -67,7 +67,7 @@ def check(e: dict, known: set[str]) -> tuple[list[str], list[str]]:
         for d in e.get("decoys", []):
             filled = f"{frame[0]} {d} {frame[1]}"
             if (" " in d.strip() or d.lower() == k.lower() or not text.spelled_ok(d)
-                    or attest.norm(filled) in known or attest.attest(filled)["level"] == "strong"):
+                    or attest.norm(filled) in known or attest.attest(filled, exact=True)["level"] == "strong"):
                 soft.append(f"decoy {d!r} dropped")
                 continue
             decoys.append(d)
@@ -89,7 +89,7 @@ def check(e: dict, known: set[str]) -> tuple[list[str], list[str]]:
     else:
         a2, b2 = exercises.blank(w, sw["right"])
         filled = f"{a2} {sw['wrong']} {b2}"
-        if attest.norm(filled) in known or attest.attest(filled)["level"] == "strong":
+        if attest.norm(filled) in known or attest.attest(filled, exact=True)["level"] == "strong":
             soft.append(f"swap makes a real saying: {filled!r}")
             e["swap"] = None
     if e.get("chapter") not in plan.CHAPTERS:
