@@ -137,3 +137,35 @@ if __name__ == "__main__":
     import sys
     for w in sys.argv[1:]:
         print(w, attest(w))
+
+
+def phrase_with(sentence: str, word: str) -> bool:
+    """True if the sentence contains a recognised multi-word phrase that includes `word`
+    ("Feuer und Wasser" in "Feuer und Wasser sein"): then `word` really fits that gap."""
+    S = sources()
+    words = core(sentence).split()
+    w = core(word)
+    if not w:
+        return False
+    for n in range(2, min(6, len(words)) + 1):
+        for i in range(len(words) - n + 1):
+            gram = words[i:i + n]
+            if w in gram and " ".join(gram) in S["strong"]:
+                return True
+    return False
+
+
+def starts_other(start: str, wording: str) -> bool:
+    """True if another recognised saying begins like `start` ("In der Not ..."), so that
+    'Wie geht es weiter?' would have more than one right answer."""
+    import difflib
+    S = sources()
+    k, me = norm(start), norm(wording)
+    if len(k.split()) < 2:
+        return True
+    for key in S["strong"]:
+        if key.startswith(k + " ") and key != me and not me.startswith(key):
+            if difflib.SequenceMatcher(None, key, me).ratio() >= 0.8:     # a variant of the same saying
+                continue
+            return True
+    return False

@@ -1,0 +1,132 @@
+{
+ "_about": "Corrections from the final review (build/review/review_result.json), applied by gt/finalize.py. Text replacements are matched exactly; item changes are keyed by the saying's wording.",
+ "prompt_replace": {
+  "Erinnern Sie sich an einen Tag, an dem einfach alles schiefging?": "Was tun Sie, wenn an einem Tag einfach alles schiefgeht?",
+  "Erinnern Sie sich an eine Situation, die gerade noch gut ausgegangen ist?": "Welche Sache ist bei Ihnen einmal gerade noch gut ausgegangen?",
+  "Erinnern Sie sich an eine Überraschung, die Sie sprachlos gemacht hat?": "Welche Überraschung hat Sie einmal sprachlos gemacht?",
+  "Erinnern Sie sich an einen Moment, in dem Sie überglücklich waren?": "In welchem Moment waren Sie einmal überglücklich?",
+  "Erinnern Sie sich an einen Ausflug, der wegen schlechten Wetters abgesagt wurde?": "Was haben Sie gemacht, wenn ein Ausflug ins Wasser fiel?",
+  "Erinnern Sie sich an eine Prüfung oder einen Auftritt, vor dem Sie sehr aufgeregt waren?": "Wovor waren Sie einmal so richtig aufgeregt, zum Beispiel vor einer Prüfung oder einem Auftritt?",
+  "Erinnern Sie sich an eine Gefälligkeit, die Ihnen einmal zurückgegeben wurde?": "Welche Gefälligkeit wurde Ihnen einmal zurückgegeben?",
+  "Erinnern Sie sich an einen besonders warmen Mantel oder Lieblingsschal von früher?": "Welches Kleidungsstück hat Sie früher bei Wind und Wetter warm gehalten?",
+  "Erinnern Sie sich an einen lustigen, ehrlichen Satz eines Kindes?": "Welche lustigen, ehrlichen Sätze von Kindern haben Sie schon gehört?",
+  "Erinnern Sie sich an ein richtig heftiges Unwetter oder Gewitter?": "Was haben Sie früher bei einem heftigen Gewitter gemacht?",
+  "Erinnern Sie sich an ein Spiel oder Ereignis, das doch noch gut ausging?": "Welches Spiel oder Ereignis ging einmal doch noch gut aus?",
+  "Erinnern Sie sich an eine kleine Schummelei, die sofort aufgeflogen ist?": "Welche kleine Schummelei ist schon einmal sofort aufgeflogen?",
+  "Was meinen Sie: Wo endet gesunder Stolz und wo beginnt Überheblichkeit?": "Auf welche eigene Leistung sind Sie zu Recht stolz?",
+  "Haben Sie erlebt, dass Zusammenhalt eine schwierige Lage leichter gemacht hat?": "Wann hat Zusammenhalt eine schwierige Lage leichter gemacht?",
+  "Haben Sie einmal etwas ganz Neues gewagt, ohne zu wissen, was kommt?": "Was haben Sie einmal ganz neu gewagt, ohne zu wissen, was kommt?",
+  "Haben Sie schon einmal etwas unerwartet bekommen und schnell wieder verloren?": "Was meinen Sie: Warum ist schnell gewonnenes Geld oft auch schnell wieder weg?",
+  "Haben Sie erlebt, dass ein Lächeln ein Lächeln zurückbringt?": "Was meinen Sie: Bringt ein Lächeln meistens ein Lächeln zurück?",
+  "Kennen Sie Sprüche aus dem Poesiealbum? Welcher ist Ihnen in Erinnerung geblieben?": "Was schrieb man früher gern ins Poesiealbum?",
+  "Kennen Sie weitere Faustregeln rund ums Essen und Trinken?": "Welche Regeln rund ums Essen und Trinken galten bei Ihnen zu Hause?",
+  "Haben Sie schon einmal erlebt, dass jemand ganz unverdient Glück hatte?": "Was meinen Sie: Haben manche Menschen einfach unverdient Glück?",
+  "Gab es früher einen Hund, an den Sie sich gern erinnern?": "Welche Hunde gab es früher bei Ihnen oder in der Nachbarschaft?",
+  "Kennen Sie Menschen, die sich schnell angesprochen fühlen? Wie gehen Sie damit um?": "Wie geht man am besten mit Menschen um, die sich schnell angesprochen fühlen?",
+  "Gibt es ein Hobby, das Sie irgendwann aufgegeben haben? Was war der Grund?": "Welches Hobby hat Ihnen früher besonders viel Freude gemacht?",
+  "Welche glückliche Überraschung ist Ihnen besonders lieb?": "An welche glückliche Überraschung denken Sie besonders gern zurück?",
+  "Welchen Fisch essen Sie am liebsten, und wie zubereitet?": "Welchen Fisch essen Sie am liebsten, und wie muss er zubereitet sein?",
+  "Was muss auf dem Teller hübsch aussehen, damit es Ihnen Appetit macht?": "Wie muss ein Teller angerichtet sein, damit Ihnen das Essen Appetit macht?",
+  "Welches peinliche Missgeschick können Sie heute mit Humor erzählen?": "In welches Fettnäpfchen tritt man bei Besuch besonders leicht?",
+  "Was meinen Sie: Gibt es für jeden Menschen das passende Gegenstück?": "Was passt für Sie zusammen wie Topf und Deckel?",
+  "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?": "Was meinen Sie: Gibt es wirklich kein Licht ohne Schatten?",
+  "Mögen Sie Regenwetter, oder sind Ihnen Sonnentage lieber?": "Wie hilft man jemandem, der im Regen steht?",
+  "Welche Nachricht hat Sie in Ihrem Leben einmal richtig überrascht?": "Welche schöne Nachricht hat Sie einmal richtig überrascht?",
+  "Haben Sie früher jemanden in den April geschickt oder sind selbst hereingefallen?": "Haben Sie früher jemanden in den April geschickt, oder sind Sie selbst darauf hereingefallen?",
+  "Wofür haben Sie sich im Leben besonders gern angestrengt?": "Woran erkennt man, dass sich jemand richtig ins Zeug legt?",
+  "Was haben Sie durch viel Übung richtig gut gelernt?": "Welche Arbeit gelingt Ihrer Meinung nach erst nach vielen Versuchen?",
+  "Was meinen Sie: Ist Talent oder Fleiß wichtiger?": "Was meinen Sie: Kann man sein Glück wirklich selbst schmieden?",
+  "Wobei hatten Sie in Ihrem Leben schon einmal so richtig Glück?": "Was meinen Sie: Kann man das große Los auch ohne Lotterie ziehen?",
+  "Was meinen Sie: Bereut man eher, was man getan oder was man nicht getan hat?": "Was haben Sie einmal gewagt, und wie ist es ausgegangen?",
+  "Was halten Sie von solchen Sprüchen über Glück und Pech?": "Was halten Sie von Sprüchen wie „Pech im Spiel, Glück in der Liebe“?",
+  "Was halten Sie von solchen merkwürdigen Zufällen?": "Was halten Sie davon, dass oft gerade der kommt, über den man spricht?",
+  "Was meinen Sie: Verlässt man sich besser auf ein Wort oder auf Geschriebenes?": "Verlässt man sich besser auf ein gegebenes Wort oder auf etwas Schriftliches?",
+  "Haben Sie früher gern Karten gespielt? Welches Spiel mochten Sie am liebsten?": "Wann sollte man die Karten lieber gleich auf den Tisch legen?",
+  "Welche Apfelsorte mögen Sie am liebsten, und wie essen Sie Äpfel gern?": "Was meinen Sie: Macht Liebe wirklich blind?",
+  "Welche Feier ist Ihnen als besonders fröhlich in Erinnerung?": "Was meinen Sie: Warum wird Freude größer, wenn man sie teilt?",
+  "Welche Sorgen hatten junge Leute früher Ihrer Meinung nach?": "Welche Sorgen hatten junge Leute früher, was meinen Sie?",
+  "Schenken Sie lieber, oder lassen Sie sich lieber überraschen?": "Schenken Sie lieber, oder werden Sie lieber beschenkt?",
+  "Welches Fest haben Sie in besonders schöner Erinnerung?": "Was meinen Sie: Soll man Feste feiern, wie sie fallen, oder lieber gut planen?",
+  "Welche Kleidungsstücke haben Sie früher besonders gern getragen?": "Was ist Ihnen ganz egal, also Jacke wie Hose?",
+  "Welche Kleidungsstücke von früher vermissen Sie heute ein wenig?": "Wie wichtig ist Ihnen ein guter Ruf?",
+  "Welcher Plan ist einmal ganz anders, aber trotzdem gut ausgegangen?": "Welcher Plan ist einmal ganz anders ausgegangen als gedacht und war am Ende trotzdem gut?",
+  "Welche Dinge möchten Sie lieber gar nicht so genau erfahren?": "Was meinen Sie: Ist es manchmal besser, nicht alles so genau zu wissen?",
+  "Was meinen Sie: Wie viel von unserem Wesen bringen wir schon mit?": "Was haben Sie von Ihrer Mutter oder Ihrem Vater, zum Beispiel ein Talent oder eine Angewohnheit?"
+ },
+ "hint_replace": {
+  "dort trägt man die Handtasche": "zwischen Hals und Arm, darauf trägt man den Rucksack",
+  "so viel wie nie": "nicht ein einziges Mal",
+  "Einfluss und Stärke über andere": "Einfluss und Herrschaft über andere",
+  "das Gegenteil von dem Längeren": "das Gegenteil vom Längeren",
+  "wer stets die Wahrheit sagt": "so ist, wer stets die Wahrheit sagt",
+  "damit liest man die Zeitung": "damit sieht man"
+ },
+ "note_replace": {
+  "Bibelwort aus dem Buch Prediger, wird auch bei Trauerfeiern oft vorgelesen.": "Ein Bibelwort aus dem Buch Prediger, das oft bei Trauerfeiern vorgelesen wird; behutsam besprechen.",
+  "Berührt Krankheit und Genesung; meist scherzhaft über sich selbst gesagt.": "Berührt Krankheit und Genesung; man sagt es meist scherzhaft über sich selbst."
+ },
+ "situation_replace": {
+  "Eine Frau war immer freundlich zu allen, und nun helfen ihr die Nachbarn gern beim Einkaufen.": "Frau Becker war immer freundlich zu allen. Jetzt helfen ihr die Nachbarn gern beim Einkaufen.",
+  "Frau Krüger zeigt ein altes Foto vom Strandurlaub. Sofort lachen alle über die gestreiften Badeanzüge.": "Frau Krüger beschreibt lange den Strandkorb, den sie früher an der Ostsee hatte, aber niemand kann ihn sich vorstellen. Dann zeigt sie ein altes Foto, und sofort nicken alle."
+ },
+ "meaning_replace": {
+  "Man unterliegt und muss am Ende den Nachteil tragen.": "Man unterliegt und hat am Ende das Nachsehen."
+ },
+ "items": {
+  "einen Kater haben": {
+   "swap": {
+    "right": "Kater",
+    "wrong": "Hamster"
+   }
+  },
+  "eine Gänsehaut bekommen": {
+   "category": "anderes"
+  },
+  "jemandem Honig um den Bart schmieren": {
+   "variants_add": [
+    "jemandem Honig um den Mund schmieren"
+   ]
+  },
+  "aus dem Häuschen sein": {
+   "variants_add": [
+    "aus dem Häuschen geraten"
+   ]
+  },
+  "dumm aus der Wäsche gucken": {
+   "variants_add": [
+    "dumm aus der Wäsche schauen"
+   ]
+  },
+  "den Bogen überspannen": {
+   "variants_add": [
+    "den Bogen überziehen"
+   ]
+  },
+  "etwas aus dem Ärmel schütteln": {
+   "variants_add": [
+    "etwas aus dem Handgelenk schütteln"
+   ]
+  },
+  "Auf Regen folgt Sonnenschein": {
+   "note": "Kann an Krieg, Flucht oder Verluste erinnern; zuhören, nicht nachbohren."
+  },
+  "die Ohren steif halten": {
+   "note": "Kann an schwere Zeiten erinnern; zuhören, nicht nachbohren."
+  },
+  "Feuer und Flamme sein": {
+   "also_fits": [
+    "Wasser"
+   ]
+  },
+  "da ist der Wurm drin": {
+   "variants_add": [
+    "da steckt der Wurm drin"
+   ]
+  }
+ },
+ "distractor_avoid": {
+  "Hilf dir selbst, so hilft dir Gott": [
+   "Frisch gewagt ist halb gewonnen"
+  ]
+ }
+}

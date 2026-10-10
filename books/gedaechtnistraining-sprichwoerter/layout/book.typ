@@ -2,8 +2,8 @@
 // Data: build/book/data.json (gt/book.py). All reading text is at least 16 pt (KDP large print).
 
 #let ink = luma(0%)
-#let rule-grey = luma(45%)
-#let faint = luma(80%)
+#let rule-grey = luma(0%)   // copy masters: lines in pure black too (thin where they must be quiet)
+#let faint = luma(0%)
 
 #let serif = "Libre Baskerville"
 #let sans = "Atkinson Hyperlegible Next"
@@ -14,7 +14,7 @@
 #let small = 16pt          // the smallest size in the book
 
 #let setup(body) = {
-  set document(title: "Gedächtnistraining für Senioren in Großdruck: Sprichwörter & Redensarten", author: "Ivan Sikuten")
+  set document(title: "Sprichwörter und Redewendungen für Senioren", author: "Ivan Sikuten")
   set page(paper: "a4",
     margin: (inside: 22mm, outside: 15mm, top: 15mm, bottom: 19mm),
     header-ascent: 4mm, footer-descent: 4mm)
@@ -76,7 +76,7 @@
     text(size: small, weight: "bold")[Beispiel:], body))
 #let answer(t) = text(weight: "bold", t)
 
-#let task(body) = block(width: 100%, above: 0.7em, below: 0.9em, text(size: 19pt, weight: "bold", body))
+#let task(body) = block(width: 100%, above: 0.7em, below: 0.9em, text(size: ex-size, weight: "bold", body))
 
 // A box of words to choose from.
 #let word-bank(words, title: "Diese Wörter fehlen:") = block(width: 100%, stroke: 1.4pt + ink, radius: 4pt, inset: (x: 10pt, y: 8pt), below: 1em, {
@@ -124,7 +124,8 @@
     align(center + horizon, text(weight: "bold", if i == 0 { first } else { "" }))))))
 #let joined(before, mid, after) = {
   let tight = after == "" or after.starts-with(",") or after.starts-with(".") or after.starts-with("!") or after.starts-with("?")
-  [#before#if before != "" [ ]#mid#if not tight [ ]#after]
+  let open = before == "" or before.ends-with("„") or before.ends-with(" ")
+  [#before#if not open [ ]#mid#if not tight [ ]#after]
 }
 #let blanked(it) = {
   let g = if it.at("boxes", default: 0) > 0 { letter-boxes(it.boxes, first: it.at("first", default: "")) } else { gap-line(n: it.at("gap", default: 8)) }
@@ -171,7 +172,10 @@
 
 #let ex-complete(s) = {
   if s.example != none {
-    example-box({ text(size: ex-size, s.example.start); linebreak(); text(size: ex-size, answer(s.example.answer)) })
+    example-box({
+      text(size: ex-size, s.example.start); linebreak()
+      text(size: ex-size)[#if s.example.at("given", default: "") != "" [#s.example.given ]#answer(s.example.answer)]
+    })
   }
   spread(s.items.enumerate().map(((i, it)) => block(breakable: false, item(i + 1, {
     text(size: ex-size, it.start)
@@ -191,9 +195,9 @@
 
 #let ex-wrong(s) = {
   if s.example != none {
-    let parts = s.example.shown.split(s.example.wrong)
+    let p = s.example.parts
     example-box({
-      text(size: ex-size)[#parts.at(0)#strike(stroke: 2pt, s.example.wrong)#parts.slice(1).join(s.example.wrong)]
+      text(size: ex-size)[#p.at(0)#strike(stroke: 2pt, p.at(1))#p.at(2)]
       linebreak()
       text(size: small)[Richtig heißt es: ]
       text(size: ex-size, answer(s.example.answer))
@@ -234,7 +238,7 @@
 // Word search grid.
 #let ws-grid(grid-rows, cell: 15mm, size: 24pt) = {
   let n = grid-rows.len()
-  align(center, box(stroke: 1.6pt + ink, grid(columns: (cell,) * n, rows: (cell,) * n, stroke: 0.8pt + rule-grey,
+  align(center, box(stroke: 1.6pt + ink, grid(columns: (cell,) * n, rows: (cell,) * n, stroke: 0.75pt + ink,
     ..grid-rows.flatten().map(ch => align(center + horizon, text(size: size, weight: "bold", ch))))))
 }
 #let ex-wordsearch(s) = {

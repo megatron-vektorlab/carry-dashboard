@@ -46,6 +46,7 @@ def typo(s: str) -> str:
 
 
 def make_sheet(spec: dict, by_id: dict, pool: list[dict], drop: int = 0) -> dict:
+    avoid = {i["id"]: i.get("avoid_with", []) for i in pool if i.get("avoid_with")}
     ids = spec["items"][: len(spec["items"]) - drop] if drop else spec["items"]
     if len(ids) < 3 and spec["type"] != "story":
         raise RuntimeError(f"Blatt {spec['num']}: does not fit on the page even with {len(ids)} items")
@@ -78,9 +79,9 @@ def make_sheet(spec: dict, by_id: dict, pool: list[dict], drop: int = 0) -> dict
     elif t == "firstletters":
         s = ex.firstletters(items, lv, seed)
     elif t == "choice":
-        s = ex.meaning(items, lv, seed, pool)
+        s = ex.meaning(items, lv, seed, pool, avoid=avoid)
     elif t == "situation":
-        s = ex.situation(items, lv, seed, pool)
+        s = ex.situation(items, lv, seed, pool, avoid=avoid)
     elif t == "wordsearch":
         s = ex.wsearch(items, lv, seed)
     elif t == "story":
@@ -91,39 +92,66 @@ def make_sheet(spec: dict, by_id: dict, pool: list[dict], drop: int = 0) -> dict
     return s
 
 
-def leader_page(s: dict, items: list[dict], used_prompts: set, chapter: dict) -> dict:
-    typ = "match" if s["type"] == "match" else s["type"]
-    prompts = []
+def _content_words(p: str) -> set[str]:
+    stop = {"sie", "ihnen", "ihr", "ihre", "was", "wie", "welche", "welcher", "welches", "welchen", "haben", "sind",
+            "meinen", "eher", "lieber", "oder", "und", "der", "die", "das", "den", "dem", "ein", "eine", "einen",
+            "mit", "von", "zu", "für", "früher", "einmal", "gern", "besonders", "man", "es", "ist", "am", "im", "in"}
+    return {w.lower()[:6] for w in text.words(p) if w.lower() not in stop and len(w) > 2}
+
+
+def similar(p: str, q: str) -> bool:
+    a, b = _content_words(p), _content_words(q)
+    return bool(a and b) and len(a & b) / min(len(a), len(b)) >= 0.6
+
+
+def leader_page(s: dict, items: list[dict], used_prompts: list, chapter_pool: list[dict], story: dict | None) -> dict:
+    """The back of a worksheet. Prompts come from the sheet's own sayings (for a story: the
+    story's own two prompts first); a prompt that repeats or closely resembles one already
+    used anywhere in the book is skipped, and other sayings of the chapter fill the gap."""
+    typ = s["type"]
+    candidates = []
+    if story:
+        candidates += story.get("prompts", [])
     for it in items:
-        for p in it.get("prompts", []):
-            if p not in used_prompts and len(prompts) < 3:
-                prompts.append(p)
-                used_prompts.add(p)
-                break
-    for p in chapter["talk"]:
+        candidates += it.get("prompts", [])[:1]
+    for it in items:
+        candidates += it.get("prompts", [])[1:]
+    for it in chapter_pool:
+        candidates += it.get("prompts", [])
+    prompts = []
+    for p in candidates:
         if len(prompts) >= 3:
             break
-        if p not in used_prompts and p not in prompts:
-            prompts.append(p)
-    hints = [it["hint"] for it in items] if s["type"] in HINT_TYPES else []
-    if s["type"] == "story":
-        hints = [items[0]["hint"]]
-    notes = sorted({it["note"] for it in items if it.get("note")})
+        if any(similar(p, q) for q in used_prompts + prompts):
+            continue
+        prompts.append(p)
+    used_prompts.extend(prompts)
+    hints = [it["hint"] for it in items if it.get("hint")] if typ in HINT_TYPES else []
+    if typ in HINT_TYPES and len(hints) != len(items):
+        hints = [it.get("hint") or "–" for it in items]
+    if typ == "story":
+        hints = [items[0]["hint"]] if items[0].get("hint") else []
+    notes = []
+    for it in items:
+        n = it.get("note")
+        if n and not any(similar(n, m) for _, m in notes):
+            notes.append((it["wording"], n))
+    notes = [f"„{ex.cap(w)}“: {n}" for w, n in notes[:2]]
     return {
         "num": s["num"], "level": s["level"], "title": s["title"], "chapter": s["chapter"],
-        "minutes": leader.MINUTES[s["level"]] if s["type"] != "story" else "10 bis 15",
+        "minutes": leader.MINUTES[s["level"]] if typ != "story" else "10 bis 15",
         "trains": leader.TRAINS[typ],
         "steps": leader.pick(leader.STEPS, typ, s["level"]),
         "solution": s["solution"], "hints": hints, "prompts": [typo(p) for p in prompts],
         "easier": leader.pick(leader.EASIER, typ, s["level"]), "harder": leader.pick(leader.HARDER, typ, s["level"]),
-        "note": " ".join(notes),
+        "notes": notes, "note": " ".join(notes),
     }
 
 
 def warmup(items: list[dict], n: int = 8) -> list[dict]:
     prov = sorted([i for i in items if i["kind"] == "proverb" and len(i.get("split") or []) == 2],
                   key=lambda i: (-i["familiarity"], len(i["wording"])))
-    return [{"a": p["split"][0] + " …", "b": p["split"][1]} for p in prov[:n]]
+    return [{"a": p["split"][0] + " …", "b": p["split"][1], "id": p["id"]} for p in prov[:n]]
 
 
 def index_key(w: str) -> str:
@@ -142,18 +170,26 @@ def build_data(flags: dict | None = None) -> dict:
     specs = _load("sheets.json")["sheets"]
     chapters = _load("chapters.json")["chapters"]
     chap_by = {c["name"]: c for c in chapters}
-    units, used = [], collections.defaultdict(set)
+    units = []
+    used = [typo(t) for c in chapters for t in c["talk"]]      # never repeat a chapter-page question
     for spec in specs:
         s = make_sheet(spec, by_id, corpus, drop=flags.get(str(spec["num"]), {}).get("drop", 0))
         items = [by_id[i] for i in s["item_ids"]]
-        L = leader_page(s, items, used[spec["chapter"]], chap_by[spec["chapter"]])
+        pool = [i for i in corpus if i["chapter"] == spec["chapter"] and i["id"] not in s["item_ids"]]
+        L = leader_page(s, items, used, pool, spec.get("story"))
         short = flags.get(str(s["num"]), {}).get("short", 0)
-        if short >= 1:                       # step by step until the leader page fits
-            L["prompts"] = L["prompts"][:2]
-            L["easier"] = L["harder"] = ""
-        if short >= 2:
+        # step by step until the leader page fits: variants first, then the second note,
+        # then the third prompt; the easier/harder ideas and the hints stay as long as possible
+        if short >= 1:
             L["solution"] = [dict(x, variants=x.get("variants", [])[:1]) for x in L["solution"]]
+        if short >= 2:
+            L["note"] = L["notes"][0] if L["notes"] else ""
+            L["solution"] = [dict(x, variants=[]) for x in L["solution"]]
         if short >= 3:
+            L["prompts"] = L["prompts"][:2]
+        if short >= 4:
+            L["easier"] = L["harder"] = ""
+        if short >= 5:
             L["hints"] = []
         units.append({"sheet": s, "leader": L})
     chs = []
@@ -165,11 +201,18 @@ def build_data(flags: dict | None = None) -> dict:
                         sheets=[{"num": s["num"], "title": s["title"], "level": s["level"]} for s in mine]))
     uses = collections.defaultdict(list)
     for u in units:
-        for i in u["sheet"]["item_ids"]:
+        for i in u["sheet"]["item_ids"] + u["sheet"].get("shown_ids", []):
             if u["sheet"]["num"] not in uses[i]:
                 uses[i].append(u["sheet"]["num"])
+    warm = collections.defaultdict(list)
+    for c in chs:
+        for w in c["warmup"]:
+            warm[w["id"]].append(c["num"])
+    for i, kap in warm.items():
+        uses.setdefault(i, [])
     index = sorted(({"w": ex.cap(by_id[i]["wording"]) if by_id[i]["kind"] == "proverb" else by_id[i]["wording"],
-                     "sheets": v, "kind": by_id[i]["kind"]} for i, v in uses.items()),
+                     "sheets": sorted(v), "chapters": warm.get(i, []) if not v else [], "kind": by_id[i]["kind"]}
+                    for i, v in uses.items()),
                    key=lambda e: index_key(e["w"]))
     by_level = collections.defaultdict(list)
     by_type = collections.defaultdict(list)
@@ -181,7 +224,8 @@ def build_data(flags: dict | None = None) -> dict:
             "author": config.AUTHOR, "year": config.YEAR, "release": config.release(),
             "chapters": chs, "units": units, "index": index,
             "by_level": by_level, "by_type": [{"name": k, "nums": v} for k, v in by_type.items()],
-            "n_sayings": len(uses), "pad_page": flags.get("pad_page", False)}
+            "n_sayings": len(uses), "n_sheet_sayings": sum(1 for v in uses.values() if v),
+            "pad_page": flags.get("pad_page", False)}
 
 
 def compile_pdf(data: dict) -> str:
@@ -235,7 +279,7 @@ def sheet_overflow() -> list[int]:
 
 def main():
     flags = {}
-    for attempt in range(6):
+    for attempt in range(9):
         data = build_data(flags)
         out = compile_pdf(data)
         full = sheet_overflow()

@@ -61,7 +61,11 @@
      "Doch eines Sonntags hörten wir schon von Weitem seine Fahrradklingel. Im Eimer lag ein Karpfen, so groß wie ein Brotlaib. Die Nachbarn kamen aus ihren Gärten und staunten. Frau Krüger holte sogar ihren Fotoapparat.",
      "Vater stand stolz am Gartenzaun und erzählte, wie lange er gekämpft hatte. Dann zwinkerte er Mutter zu."
     ],
-    "ending": "Er lachte und sagte: „Ein blindes Huhn findet auch mal ein Korn.“"
+    "ending": "Er lachte und sagte: „Ein blindes Huhn findet auch mal ein Korn.“",
+    "prompts": [
+     "Welche Ausreden haben Sie schon gehört, wenn etwas nicht geklappt hat?",
+     "Was meinen Sie: Braucht man beim Angeln mehr Geduld oder mehr Glück?"
+    ]
    },
    "num": 4
   },
@@ -128,12 +132,12 @@
    "level": 3,
    "chapter": "Tiere",
    "items": [
-    "p033",
+    "p078",
+    "p198",
     "p071",
     "p197",
-    "p058",
     "p067",
-    "p198"
+    "p033"
    ],
    "example": null,
    "num": 9
@@ -144,11 +148,11 @@
    "chapter": "Tiere",
    "items": [
     "p065",
-    "p211",
-    "p033",
-    "p071",
-    "p197",
-    "p056"
+    "p173",
+    "p029",
+    "p198",
+    "p058",
+    "p165"
    ],
    "example": null,
    "num": 10
@@ -158,11 +162,11 @@
    "level": 1,
    "chapter": "Körper",
    "items": [
-    "i164",
-    "p072",
-    "i038",
+    "p164",
+    "i144",
     "i039",
-    "i113"
+    "i070",
+    "p072"
    ],
    "example": "i131",
    "category": "Körperteil",
@@ -173,13 +177,13 @@
    "level": 1,
    "chapter": "Körper",
    "items": [
-    "p164",
+    "i041",
     "i148",
+    "i038",
     "i185",
-    "i108",
-    "i144"
+    "i164"
    ],
-   "example": "i010",
+   "example": "i131",
    "num": 12
   },
   {
@@ -214,7 +218,11 @@
      "Oma sah ihn lange über ihre Brille hinweg an. Sein Mund war dunkelrot verschmiert. Auf seinem weißen Hemd leuchteten rote Flecken. Und aus seiner Hosentasche fielen drei Kirschkerne auf den Boden.",
      "Hans wurde so rot wie die Kirschen. Oma gab ihm ein kleines Messer und eine Schüssel. Gemeinsam entsteinten sie den Rest für den Kuchen."
     ],
-    "ending": "Dabei schmunzelte Oma und sagte: „Lügen haben kurze Beine.“"
+    "ending": "Dabei schmunzelte Oma und sagte: „Lügen haben kurze Beine.“",
+    "prompts": [
+     "Welches Obst haben Sie am liebsten frisch vom Baum oder Strauch gegessen?",
+     "Welcher Obstkuchen schmeckt Ihnen am besten?"
+    ]
    },
    "num": 14
   },
@@ -224,7 +232,7 @@
    "chapter": "Körper",
    "items": [
     "i131",
-    "i011",
+    "i108",
     "p011",
     "i129",
     "p068",
@@ -238,7 +246,7 @@
    "level": 2,
    "chapter": "Körper",
    "items": [
-    "i041",
+    "i011",
     "i109",
     "i080",
     "i187",
@@ -265,14 +273,14 @@
    "level": 2,
    "chapter": "Körper",
    "items": [
-    "p164",
-    "p206",
+    "p184",
+    "p102",
     "p124",
     "p171",
     "p225",
-    "p068"
+    "p206"
    ],
-   "example": "p072",
+   "example": "p011",
    "num": 18
   },
   {
@@ -281,9 +289,9 @@
    "chapter": "Körper",
    "items": [
     "p011",
+    "p068",
     "p008",
-    "p102",
-    "p171",
+    "p124",
     "p103",
     "p030"
    ],
@@ -295,14 +303,14 @@
    "level": 3,
    "chapter": "Körper",
    "items": [
-    "i070",
-    "i085",
-    "i086",
+    "i188",
+    "i093",
     "i023",
-    "i032",
     "i088",
     "i107",
-    "i072"
+    "i060",
+    "i186",
+    "i085"
    ],
    "example": null,
    "num": 20
@@ -368,7 +376,11 @@
      "Zuletzt schlich Cousin Bernd in die Küche. Er wusste von nichts und salzte sicherheitshalber noch einmal. Alle waren sehr zufrieden mit sich.",
      "Beim Mittagessen nahm Opa den ersten Löffel. Er verzog das Gesicht und griff schnell zum Wasserglas. Mutter kostete selbst und schüttelte verwundert den Kopf. Nach und nach gestanden alle verlegen, was sie hineingetan hatten. Da musste Mutter herzlich lachen."
     ],
-    "ending": "Sie stellte den Topf beiseite und sagte: „Viele Köche verderben den Brei.“"
+    "ending": "Sie stellte den Topf beiseite und sagte: „Viele Köche verderben den Brei.“",
+    "prompts": [
+     "Mit welchen Kräutern oder Gewürzen schmeckt Ihnen ein Essen am besten?",
+     "Was meinen Sie: Sollte in der Küche nur einer das Sagen haben?"
+    ]
    },
    "num": 24
   },
@@ -435,12 +447,12 @@
    "level": 3,
    "chapter": "Essen & Trinken",
    "items": [
-    "p057",
-    "p069",
-    "p167",
+    "p182",
+    "p229",
     "p106",
     "p120",
-    "p182"
+    "p163",
+    "p069"
    ],
    "example": null,
    "num": 29
@@ -451,11 +463,11 @@
    "chapter": "Essen & Trinken",
    "items": [
     "i002",
-    "i040",
-    "i084",
+    "i115",
     "i006",
-    "i165",
-    "i106"
+    "i064",
+    "i097",
+    "i040"
    ],
    "example": null,
    "num": 30
@@ -520,7 +532,11 @@
      "Der alte Geselle Franz sah ihm schmunzelnd zu. „Das war bei mir damals genauso“, sagte er. „In drei Wochen schläfst du morgens länger.“ Klaus schüttelte entschlossen den Kopf.",
      "Am Abend stand Meister Schulte in der blitzblanken Werkstatt. So ordentlich war alles, dass er seinen Zollstock nicht mehr fand. Da klopfte er Klaus anerkennend auf die Schulter."
     ],
-    "ending": "Dann lachte er und sagte: „Neue Besen kehren gut.“"
+    "ending": "Dann lachte er und sagte: „Neue Besen kehren gut.“",
+    "prompts": [
+     "Was meinen Sie: Lässt der Eifer bei einer neuen Aufgabe wirklich bald nach?",
+     "Welche Gerüche erinnern Sie an Arbeit, zum Beispiel frisches Holz, Öl oder Seifenlauge?"
+    ]
    },
    "num": 34
   },
@@ -617,10 +633,10 @@
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
     "p166",
-    "i044",
     "i175",
+    "p095",
     "i189",
-    "i128"
+    "i044"
    ],
    "example": "p007",
    "num": 41
@@ -633,7 +649,7 @@
     "p007",
     "p096",
     "i018",
-    "p095",
+    "i123",
     "i014"
    ],
    "example": "p166",
@@ -671,7 +687,11 @@
      "Da saßen sie nun zwischen Heu und Fahrrädern. Die Sahne war zerlaufen, die Tischdecke klitschnass. Oma seufzte leise. Doch dann stimmte Onkel Fritz ein altes Volkslied an, und alle sangen mit.",
      "Nach einer halben Stunde wurde es draußen still. Die Wolken zogen weiter, und der Himmel strahlte blau. Die Wiese glänzte, und die Vögel zwitscherten. Opa nahm Oma bei der Hand und führte sie hinaus."
     ],
-    "ending": "Er lächelte und sagte: „Auf Regen folgt Sonnenschein.“"
+    "ending": "Er lächelte und sagte: „Auf Regen folgt Sonnenschein.“",
+    "prompts": [
+     "Was gehört für Sie zu einer schönen Kaffeetafel?",
+     "Welches Volkslied singen Sie gern mit?"
+    ]
    },
    "num": 44
   },
@@ -685,7 +705,7 @@
     "i190",
     "i099",
     "i155",
-    "i123"
+    "i019"
    ],
    "example": "p166",
    "num": 45
@@ -695,14 +715,14 @@
    "level": 2,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "i019",
+    "i128",
     "p219",
     "i181",
     "p141",
     "p217",
     "i114"
    ],
-   "example": "i174",
+   "example": "p007",
    "num": 46
   },
   {
@@ -730,7 +750,7 @@
     "p157",
     "p096"
    ],
-   "example": "p166",
+   "example": "p139",
    "num": 48
   },
   {
@@ -738,12 +758,12 @@
    "level": 3,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "p166",
-    "p196",
+    "p139",
     "p157",
+    "p208",
     "p141",
     "p217",
-    "p139"
+    "p196"
    ],
    "example": null,
    "num": 49
@@ -753,14 +773,14 @@
    "level": 3,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
+    "i174",
     "i014",
-    "i044",
-    "i175",
+    "i019",
     "i123",
     "i145",
     "i189",
-    "i114",
-    "i019"
+    "i190",
+    "p166"
    ],
    "example": null,
    "num": 50
@@ -770,13 +790,13 @@
    "level": 1,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "i024",
-    "p088",
-    "p152",
-    "p138",
-    "p053"
+    "i158",
+    "p093",
+    "p192",
+    "p052",
+    "i012"
    ],
-   "example": "i158",
+   "example": "i061",
    "num": 51
   },
   {
@@ -784,13 +804,13 @@
    "level": 1,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "i158",
-    "p084",
-    "p093",
-    "p062",
-    "p002"
+    "i061",
+    "p088",
+    "p152",
+    "p144",
+    "p053"
    ],
-   "example": "i024",
+   "example": "i158",
    "num": 52
   },
   {
@@ -798,11 +818,11 @@
    "level": 1,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p053",
+    "p002",
     "p122",
-    "p052",
-    "p144",
-    "p192"
+    "p138",
+    "p062",
+    "p084"
    ],
    "example": null,
    "num": 53
@@ -825,7 +845,11 @@
      "Hanna gab nicht auf. Jeden Abend saß sie am warmen Kohleofen und strickte. Manchmal rutschten Maschen von der Nadel. Dann zog sie alles wieder auf und begann von vorn. Die Großmutter sah zu und sagte wenig.",
      "Zum Geburtstag des Vaters im Februar lag ein Päckchen auf dem Kaffeetisch. Darin steckte ein Paar graue Socken. Beide waren gleich lang, und die Fersen saßen genau richtig. Der Vater drehte sie staunend hin und her."
     ],
-    "ending": "Die Großmutter nickte zufrieden und sagte: „Übung macht den Meister.“"
+    "ending": "Die Großmutter nickte zufrieden und sagte: „Übung macht den Meister.“",
+    "prompts": [
+     "Welche Handarbeiten oder Bastelarbeiten kennen Sie von früher?",
+     "Über welches selbst gemachte Geschenk haben Sie sich einmal gefreut?"
+    ]
    },
    "num": 54
   },
@@ -834,14 +858,14 @@
    "level": 2,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "i061",
-    "i110",
+    "p093",
     "p221",
     "p126",
     "i034",
-    "i012"
+    "i053",
+    "i110"
    ],
-   "example": "i024",
+   "example": "i061",
    "num": 55
   },
   {
@@ -851,12 +875,12 @@
    "items": [
     "p037",
     "i083",
-    "p177",
+    "p039",
     "p075",
     "p080",
-    "i052"
+    "p135"
    ],
-   "example": "i024",
+   "example": "i158",
    "num": 56
   },
   {
@@ -864,9 +888,9 @@
    "level": 2,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p135",
+    "p177",
     "p143",
-    "p039"
+    "p204"
    ],
    "example": null,
    "num": 57
@@ -877,11 +901,11 @@
    "chapter": "Arbeit & Fleiß",
    "items": [
     "p084",
-    "p204",
+    "p138",
     "p168",
     "p151",
     "p226",
-    "p135"
+    "p088"
    ],
    "example": null,
    "num": 58
@@ -891,12 +915,12 @@
    "level": 3,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p052",
-    "p037",
+    "p062",
+    "p126",
     "p039",
     "p075",
     "p080",
-    "p062"
+    "p144"
    ],
    "example": null,
    "num": 59
@@ -906,12 +930,12 @@
    "level": 3,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p093",
-    "i053",
+    "p053",
     "i057",
     "i153",
-    "i168",
-    "p138"
+    "i052",
+    "p177",
+    "p152"
    ],
    "example": null,
    "num": 60
@@ -976,7 +1000,11 @@
      "Die Tasse kippte über die Tischkante und zersprang auf dem Boden. Im Wohnzimmer wurde es ganz still. Werner wurde rot bis über beide Ohren. Gerda hielt den Atem an. Der Vater schaute gespannt zur Mutter.",
      "Die Mutter stand langsam auf. Sie holte Handfeger und Kehrschaufel aus der Küche. Dann legte sie Werner freundlich die Hand auf die Schulter."
     ],
-    "ending": "Sie lächelte und sagte: „Scherben bringen Glück.“"
+    "ending": "Sie lächelte und sagte: „Scherben bringen Glück.“",
+    "prompts": [
+     "Was gehört für Sie dazu, wenn man zum ersten Mal irgendwo eingeladen ist?",
+     "Was kam früher auf den Tisch, wenn Besuch kam?"
+    ]
    },
    "num": 64
   },
@@ -1043,12 +1071,12 @@
    "level": 3,
    "chapter": "Geld & Glück",
    "items": [
-    "p092",
-    "p121",
+    "p130",
     "p038",
     "p087",
     "p094",
-    "p170"
+    "p115",
+    "p009"
    ],
    "example": null,
    "num": 69
@@ -1058,11 +1086,11 @@
    "level": 3,
    "chapter": "Geld & Glück",
    "items": [
-    "p099",
-    "p009",
-    "p142",
+    "p092",
+    "p046",
+    "p028",
     "p087",
-    "p115",
+    "p116",
     "p136"
    ],
    "example": null,
@@ -1074,7 +1102,7 @@
    "chapter": "Reden & Schweigen",
    "items": [
     "p023",
-    "i071",
+    "p199",
     "i025",
     "p185",
     "p175"
@@ -1088,7 +1116,7 @@
    "chapter": "Reden & Schweigen",
    "items": [
     "p025",
-    "p018",
+    "i071",
     "p089",
     "i033",
     "p100"
@@ -1105,7 +1133,7 @@
     "p110",
     "p150",
     "p118",
-    "p199"
+    "p018"
    ],
    "example": null,
    "num": 73
@@ -1128,7 +1156,11 @@
      "Am nächsten Morgen fragte der Vater beim Rasieren noch einmal nach. Peter zuckte nur mit den Schultern. Dann lief er in den Hof und fütterte lange die Hühner.",
      "Am Sonntagnachmittag klingelte es ständig an der Haustür. Onkel, Tanten und Nachbarn standen mit Blumen davor. Der Vater staunte und musste sich erst einmal setzen. Später nahm er Peter auf den Schoß. „Du hast es gewusst und nichts verraten?“, fragte er."
     ],
-    "ending": "Die Mutter lachte und sagte: „Reden ist Silber, Schweigen ist Gold.“"
+    "ending": "Die Mutter lachte und sagte: „Reden ist Silber, Schweigen ist Gold.“",
+    "prompts": [
+     "Was meinen Sie: Fällt es Kindern schwer, ein Geheimnis für sich zu behalten?",
+     "Welche gelungene Überraschung ist Ihnen in schöner Erinnerung?"
+    ]
    },
    "num": 74
   },
@@ -1179,14 +1211,14 @@
    "level": 2,
    "chapter": "Reden & Schweigen",
    "items": [
-    "p100",
+    "p015",
     "p199",
     "p185",
     "p089",
     "p118",
-    "p015"
+    "p023"
    ],
-   "example": "p025",
+   "example": "p018",
    "num": 78
   },
   {
@@ -1195,11 +1227,11 @@
    "chapter": "Reden & Schweigen",
    "items": [
     "p018",
-    "p185",
     "p089",
     "p110",
+    "p150",
     "p027",
-    "p199"
+    "p185"
    ],
    "example": null,
    "num": 79
@@ -1209,9 +1241,9 @@
    "level": 3,
    "chapter": "Reden & Schweigen",
    "items": [
-    "p023",
-    "i025",
+    "p025",
     "i026",
+    "i055",
     "i179",
     "i089",
     "i073",
@@ -1240,11 +1272,11 @@
    "level": 1,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p005",
-    "i180",
+    "p070",
+    "i136",
     "p109",
     "p128",
-    "i146"
+    "i180"
    ],
    "example": "p044",
    "num": 82
@@ -1254,7 +1286,7 @@
    "level": 1,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p070",
+    "p005",
     "p013",
     "p189",
     "p076",
@@ -1281,7 +1313,11 @@
      "Dort saß der achtjährige Rudi auf dem Fußboden. Vor ihm lagen Zahnräder, Federn und viele kleine Schrauben. Er hatte den Wecker ganz auseinandergenommen. Die Mutter schlug die Hände über dem Kopf zusammen.",
      "Doch Rudi schraubte und drehte mit ernstem Gesicht. Nach einer Stunde tickte der Wecker wieder. Nur eine winzige Schraube war übrig geblieben. Der Vater kam dazu und betrachtete stolz das Werk seines Sohnes. Schmunzelnd steckte er die Schraube in seine Westentasche."
     ],
-    "ending": "Die Mutter seufzte, lächelte und sagte: „Der Apfel fällt nicht weit vom Stamm.“"
+    "ending": "Die Mutter seufzte, lächelte und sagte: „Der Apfel fällt nicht weit vom Stamm.“",
+    "prompts": [
+     "Was haben Sie als Kind aus Neugier einmal auseinandergenommen oder ausprobiert?",
+     "Welche Geräte von früher, etwa Radio, Wecker oder Nähmaschine, haben Sie gern benutzt?"
+    ]
    },
    "num": 84
   },
@@ -1290,12 +1326,12 @@
    "level": 2,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p049",
-    "i136",
+    "i146",
+    "p050",
     "i027",
     "i042",
     "i095",
-    "p050"
+    "p049"
    ],
    "example": "p070",
    "num": 85
@@ -1348,12 +1384,12 @@
    "level": 3,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p178",
-    "p076",
+    "p049",
+    "p128",
     "p111",
     "p159",
     "p108",
-    "p189"
+    "p050"
    ],
    "example": null,
    "num": 89
@@ -1363,12 +1399,12 @@
    "level": 3,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p049",
-    "i069",
-    "p128",
-    "i027",
+    "p005",
     "i042",
-    "i136"
+    "p013",
+    "p189",
+    "p076",
+    "i069"
    ],
    "example": null,
    "num": 90
@@ -1380,8 +1416,8 @@
    "items": [
     "p026",
     "p063",
+    "i133",
     "p200",
-    "p160",
     "p035"
    ],
    "example": "p017",
@@ -1393,9 +1429,9 @@
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
     "p017",
-    "p006",
-    "p228",
-    "p172",
+    "p160",
+    "p227",
+    "p010",
     "p133"
    ],
    "example": "p026",
@@ -1406,11 +1442,11 @@
    "level": 1,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p035",
-    "p083",
+    "p059",
     "p160",
-    "p227",
-    "p059"
+    "p006",
+    "p228",
+    "p083"
    ],
    "example": null,
    "num": 93
@@ -1433,7 +1469,11 @@
      "Nun war die ganze Seite blau verschmiert. Auch das Hemd hatte einen großen Fleck. Die Mutter schüttelte den Kopf. Günther musste alles noch einmal schreiben.",
      "Diesmal schrieb er langsam und sorgfältig. Er benutzte sogar das Löschblatt. Die Freunde fuhren schon einmal vor. Günther kam erst eine Stunde später ins Freibad. Am Abend hörte der Großvater die ganze Geschichte. Er schmunzelte."
     ],
-    "ending": "Dann klopfte er Günther auf die Schulter und sagte: „Eile mit Weile.“"
+    "ending": "Dann klopfte er Günther auf die Schulter und sagte: „Eile mit Weile.“",
+    "prompts": [
+     "Womit haben Sie in der Schule geschrieben: mit Griffel, Füller oder Kugelschreiber?",
+     "Was haben Sie an heißen Sommertagen am liebsten unternommen?"
+    ]
    },
    "num": 94
   },
@@ -1443,10 +1483,10 @@
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
     "i151",
+    "p172",
     "p036",
     "i132",
     "p066",
-    "p188",
     "i067"
    ],
    "example": "p017",
@@ -1457,12 +1497,12 @@
    "level": 2,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "i046",
+    "i005",
     "p016",
     "p055",
     "i062",
     "p137",
-    "i133"
+    "i087"
    ],
    "example": "p017",
    "num": 96
@@ -1484,7 +1524,7 @@
    "level": 2,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p010",
+    "p188",
     "p104",
     "p079",
     "p195",

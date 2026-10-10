@@ -49,6 +49,32 @@ def _frame(it: dict) -> tuple[str, str]:
     return attest.norm(a), attest.norm(b)
 
 
+def framed(it: dict) -> bool:
+    a, b = exercises.blank(it["wording"], it["keyword"])
+    return bool(text.words(a + " " + b))
+
+
+def swap_ok(it: dict) -> bool:
+    if not it.get("swap"):
+        return False
+    a, b = exercises.blank(it["wording"], it["swap"]["right"])
+    return bool(text.words(a + " " + b))
+
+
+def complete_ok(it: dict, level: int) -> bool:
+    """'Wie geht es weiter?': the start must point to one saying only, and at level 2 the
+    printed first word must not already be the whole ending ("Versprochen ist ... versprochen")."""
+    sp = it.get("split") or []
+    if len(sp) != 2:
+        return False
+    if level == 2 and len(text.words(sp[1])) < 2:
+        return False
+    first = text.words(sp[0])
+    if first and first[0] == "Man" and len(first) <= 3:          # "Man kann nicht ..." is far too open
+        return False
+    return not attest.starts_other(sp[0], it["wording"])
+
+
 def _known_sayings(pool: list[dict]) -> set[str]:
     out = set()
     for i in pool:
@@ -71,9 +97,12 @@ def conflict(a: dict, b: dict, known: set[str]) -> bool:
                             or re.search(rf"(?<![{exercises.W}]){re.escape(b['keyword'])}", a["wording"], re.I)):
         return True
     for x, y in ((a, b), (b, a)):
+        if y["keyword"] in x.get("also_fits", []):        # "Feuer und Wasser" next to "Feuer und Flamme"
+            return True
         fa, fb = exercises.blank(x["wording"], x["keyword"])
         filled = f"{fa} {y['keyword']} {fb}"
-        if attest.norm(filled) in known or attest.core(filled) in known or attest.attest(filled, exact=True)["level"] == "strong":
+        if (attest.norm(filled) in known or attest.core(filled) in known
+                or attest.attest(filled, exact=True)["level"] == "strong" or attest.phrase_with(filled, y["keyword"])):
             return True
     return False
 
@@ -124,14 +153,18 @@ def order_easy(items: list[dict]) -> list[dict]:
 
 
 def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known: set[str]) -> list[dict]:
-    # a gap needs a real word: no one-letter key words ("Wer A sagt, muss auch B sagen")
+    # a gap needs a real word: no one-letter key words ("Wer A sagt, muss auch B sagen"),
+    # and words around it: no one-word idioms ("blaumachen") on gap, circle or wrong-word sheets
     story_ids = {stories[chapter]["item"]}
-    items = [i for i in items if len(i["keyword"]) >= 3 or i["id"] in story_ids]
+    all_items = items
+    items = [i for i in items if (len(i["keyword"]) >= 3 and framed(i)) or i["id"] in story_ids]
     pk = Picker(items, chapter, known)
     prov = [i for i in items if i["kind"] == "proverb"]
     idio = [i for i in items if i["kind"] == "idiom"]
     easy = sorted(items, key=ease)
     with_split = [p for p in prov if len(p.get("split") or []) == 2]
+    complete2 = [p for p in prov if complete_ok(p, 2)]
+    complete3 = [p for p in prov if complete_ok(p, 3)]
     sheets = []
 
     def add(typ, level, chosen, example=None, **extra):
@@ -159,7 +192,7 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
         ch = pk.pick(easy[:14], N_ITEMS[1], wider=easy)
         add("gaps", 1, ch, example_for(ch))
     with_decoys = [i for i in easy if len(i.get("decoys") or []) >= 2]
-    with_swap = [i for i in easy if i.get("swap")]
+    with_swap = [i for i in easy if swap_ok(i)]
     # 2 ◆ circle, two words
     ch = pk.pick(with_decoys[:16], N_ITEMS[1], wider=with_decoys)
     add("circle", 1, ch, example_for(ch, lambda i: len(i.get("decoys") or []) >= 2))
@@ -173,7 +206,7 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
     add("story", 1, [next(i for i in items if i["id"] == st["item"])], story=st)
     # 5 ◆◆ wrong word
     ch = pk.pick(with_swap[:20], N_ITEMS[2], strict=False, wider=with_swap)
-    add("wrong", 2, ch, example_for(ch, lambda i: bool(i.get("swap"))))
+    add("wrong", 2, ch, example_for(ch, swap_ok))
     # 6 ◆◆ letter boxes or three words
     if ci % 2 == 0:
         ch = pk.pick(items, N_ITEMS[2])
@@ -193,21 +226,21 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
     if rot8 == "scramble" and len(short) >= 8:
         ch = pk.pick(short, N_ITEMS[2], strict=False)
         add("scramble", 2, ch, example_for(ch, lambda i: i in short))
-    elif rot8 == "complete" and len(with_split) >= 8 or rot8 == "scramble" and len(with_split) >= 8:
-        ch = pk.pick(with_split, N_ITEMS[2], strict=False)
-        add("complete", 2, ch, example_for(ch, lambda i: i in with_split))
+    elif rot8 == "complete" and len(complete2) >= 8 or rot8 == "scramble" and len(complete2) >= 8:
+        ch = pk.pick(complete2, N_ITEMS[2], strict=False)
+        add("complete", 2, ch, example_for(ch, lambda i: i in complete2))
     elif len(with_split) >= 6:
         add("match", 2, pk.pick(with_split, 6, strict=False))
     else:
         add("match_meaning", 2, pk.pick(idio, 6, strict=False))
     # 9 ◆◆◆ complete or scramble
     longer = [p for p in prov if 5 <= len(text.words(p["wording"])) <= 9]
-    if ci % 2 == 0 and len(with_split) >= 6:
-        add("complete", 3, pk.pick(with_split, 6, strict=False))
+    if ci % 2 == 0 and len(complete3) >= 6:
+        add("complete", 3, pk.pick(complete3, 6, strict=False))
     elif len(longer) >= 6:
         add("scramble", 3, pk.pick(longer, 6, strict=False))
-    elif len(with_split) >= 6:
-        add("complete", 3, pk.pick(with_split, 6, strict=False))
+    elif len(complete3) >= 6:
+        add("complete", 3, pk.pick(complete3, 6, strict=False))
     else:
         add("gaps", 3, pk.pick(items, N_ITEMS[3]))
     # 10 ◆◆◆ rotating

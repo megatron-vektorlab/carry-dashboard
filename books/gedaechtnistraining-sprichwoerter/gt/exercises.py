@@ -55,9 +55,32 @@ def blank(wording: str, word: str) -> list[str]:
 
 def spaced(a: str, b: str) -> tuple[str, str]:
     """Spaces around a bold word: 'Morgenstund hat ' + Gold + ' im Mund'."""
-    a = a + " " if a and not a.endswith(" ") else a
+    a = a + " " if a and not a.endswith((" ", "„", "(")) else a
     b = " " + b if b and b[0] not in ",.!?;:" else b
     return a, b
+
+
+def _n(s: str) -> str:
+    return re.sub(r"[^a-zäöüß ]+", "", re.sub(r"\s+", " ", s.lower())).strip()
+
+
+def fitting_variants(it: dict, kind: str, word: str | None = None) -> list[str]:
+    """Only variants that fit what the sheet already prints: same text around the gap
+    (gaps, circle, story, wrong), same beginning (complete), same first letters."""
+    out = []
+    for v in it.get("variants", []):
+        if kind in ("gap", "wrong"):
+            w = word or it["keyword"]
+            a, b = blank(it["wording"], w)
+            if _n(v).startswith(_n(a)) and _n(v).endswith(_n(b)) and _n(v) != _n(it["wording"]):
+                out.append(v)
+        elif kind == "complete":
+            if _n(v).startswith(_n(it["split"][0])):
+                out.append(v)
+        elif kind == "firstletters":
+            if [x[0].lower() for x in text.words(v)] == [x[0].lower() for x in text.words(it["wording"])]:
+                out.append(v)
+    return out
 
 
 def sol_word(it: dict, word: str | None = None) -> dict:
@@ -66,11 +89,12 @@ def sol_word(it: dict, word: str | None = None) -> dict:
     a, b = spaced(*blank(it["wording"], w))
     if it.get("kind") == "proverb":
         b = end_dot(b) if b else "."
-    return {"before": a, "word": w, "after": b, "variants": it.get("variants", [])}
+    return {"before": a, "word": w, "after": b, "variants": fitting_variants(it, "gap", w)}
 
 
-def sol_full(it: dict, prefix: str = "") -> dict:
-    return {"before": prefix, "word": "", "after": end_dot(it["wording"]), "variants": it.get("variants", [])}
+def sol_full(it: dict, prefix: str = "", kind: str = "") -> dict:
+    return {"before": prefix, "word": "", "after": end_dot(it["wording"]) if it.get("kind") == "proverb" else it["wording"],
+            "variants": fitting_variants(it, kind) if kind else []}
 
 
 def _gap(it: dict, level: int, word: str | None = None) -> dict:
@@ -94,11 +118,11 @@ def gaps(items, level, seed, example=None, title="Was fehlt?", category=None):
     bank = [it["keyword"] for it in items]
     rnd.shuffle(bank)
     tasks = {1: "Welches Wort fehlt? Die Wörter im Kasten helfen Ihnen.",
-             2: "Welches Wort fehlt? Für jeden Buchstaben gibt es ein Kästchen.",
+             2: "Welches Wort fehlt? Für jeden Buchstaben gibt es ein Kästchen, der erste steht schon da.",
              3: "Welches Wort fehlt? Schreiben Sie es auf die Linie."}
     if category:
         tasks = {1: f"Welches {category} fehlt? Die Wörter im Kasten helfen Ihnen.",
-                 2: f"Welches {category} fehlt? Für jeden Buchstaben gibt es ein Kästchen.",
+                 2: f"Welches {category} fehlt? Für jeden Buchstaben gibt es ein Kästchen, der erste steht schon da.",
                  3: f"Welches {category} fehlt? Schreiben Sie es auf die Linie."}
     ex = None
     if example is not None and level < 3:
@@ -141,7 +165,7 @@ def match(items, level, seed, example=None):
     return {"type": "match", "title": "Was gehört zusammen?", "level": level, "left": left, "right": right,
             "items": [], "example": None,
             "task": "Verbinden Sie Anfang und Ende mit einem Strich.",
-            "solution": [sol_full(it, f"{i + 1} – {answer[i]}: ") for i, it in enumerate(items)]}
+            "solution": [sol_full(it, f"{answer[i]} – ") for i, it in enumerate(items)]}
 
 
 def complete(items, level, seed, example=None):
@@ -153,11 +177,13 @@ def complete(items, level, seed, example=None):
         out.append({"start": a + " …", "hint": text.words(b)[0] + " …" if level == 2 else ""})
     ex = None
     if example is not None and level < 3:
-        ex = {"start": example["split"][0] + " …", "answer": example["split"][1]}
+        b = example["split"][1]
+        first = text.words(b)[0] if level == 2 else ""
+        ex = {"start": example["split"][0] + " …", "given": first, "answer": b[len(first):].strip() if first else b}
     return {"type": "complete", "title": "Wie geht es weiter?", "level": level, "items": out, "example": ex,
             "task": {2: "Wie geht das Sprichwort weiter? Das erste Wort steht schon da.",
                      3: "Wie geht das Sprichwort weiter? Schreiben Sie das Ende auf."}.get(level, "Wie geht es weiter?"),
-            "solution": [sol_full(it) for it in items]}
+            "solution": [sol_full(it, kind="complete") for it in items]}
 
 
 def scramble(items, level, seed, example=None):
@@ -187,18 +213,34 @@ def scramble(items, level, seed, example=None):
 
 def wrongword(items, level, seed, example=None):
     """Da stimmt was nicht! One word was swapped for a wrong one."""
-    def shown(it):
+    def parts(it):
         sw = it["swap"]
-        a, b = blank(it["wording"], sw["right"])
-        return (a + " " if a else "") + sw["wrong"] + ("" if b[:1] in ",.!?" or not b else " ") + b
-    out = [{"shown": cap(shown(it))} for it in items]
+        a, b = spaced(*blank(it["wording"], sw["right"]))
+        if a:
+            a = cap(a)
+            wrong = sw["wrong"]
+        else:
+            wrong = cap(sw["wrong"])
+        return [a, wrong, b]
+    out = [{"shown": "".join(parts(it)), "parts": parts(it)} for it in items]
     ex = None
     if example is not None and level < 3:
-        ex = {"shown": cap(shown(example)), "wrong": example["swap"]["wrong"], "answer": example["swap"]["right"]}
+        ex = {"parts": parts(example), "answer": example["swap"]["right"]}
+    sol = []
+    for it in items:
+        sw = it["swap"]
+        alts = []
+        for v in fitting_variants(it, "wrong", sw["right"]):
+            a, b = blank(it["wording"], sw["right"])
+            mid = re.sub(r"\s+", " ", v)[len(a):len(v) - len(b) if b else None].strip(" ,.")
+            if mid and mid != sw["right"]:
+                alts.append(mid)
+        sol.append({"before": sw["wrong"] + " → ", "word": sw["right"],
+                    "after": (f" (auch: {' / '.join(alts)})" if alts else "") + ": " + end_dot(cap(it["wording"])),
+                    "variants": []})
     return {"type": "wrong", "title": "Da stimmt was nicht!", "level": level, "items": out, "example": ex,
             "task": "In jedem Satz ist ein Wort falsch. Streichen Sie es durch und schreiben Sie das richtige Wort auf.",
-            "solution": [{"before": it["swap"]["wrong"] + " → ", "word": it["swap"]["right"], "after": ": " + end_dot(it["wording"]),
-                          "variants": []} for it in items]}
+            "solution": sol}
 
 
 def firstletters(items, level, seed, example=None):
@@ -214,7 +256,7 @@ def firstletters(items, level, seed, example=None):
         out.append({"stubs": stubs})
     return {"type": "firstletters", "title": "Erste Buchstaben", "level": level, "items": out, "example": None,
             "task": "Von jedem Wort steht nur der erste Buchstabe da. Welches Sprichwort ist es?",
-            "solution": [sol_full(it) for it in items]}
+            "solution": [sol_full(it, kind="firstletters") for it in items]}
 
 
 # ---------------------------------------------------------------- meaning
@@ -229,9 +271,10 @@ def _content(s: str) -> set[str]:
     return {w.lower()[:5] for w in text.words(s) if w.lower() not in _STOP and len(w) > 2}
 
 
-def _distractors(it, pool, used, field, n, rnd):
+def _distractors(it, pool, used, field, n, rnd, avoid=None):
     mine = _content(it[field]) | _content(it["wording"])
-    cands = [p for p in pool if p["id"] not in used and p["id"] != it["id"] and p["kind"] == it["kind"]
+    bad = set((avoid or {}).get(it["id"], []))
+    cands = [p for p in pool if p["id"] not in used and p["id"] != it["id"] and p["kind"] == it["kind"] and p["id"] not in bad
              and p["chapter"] != it["chapter"] and not (_content(p[field]) & mine)]
     rnd.shuffle(cands)
     picks = []
@@ -245,38 +288,44 @@ def _distractors(it, pool, used, field, n, rnd):
     return picks
 
 
-def meaning(items, level, seed, pool, example=None):
+def meaning(items, level, seed, pool, example=None, avoid=None):
     """Was bedeutet das? Three explanations, one is right; the wrong ones are meanings of
-    unrelated sayings from other chapters (never a literal reading)."""
+    unrelated sayings from other chapters (never a literal reading). The right answer moves
+    between a), b) and c) so that it cannot be guessed from a pattern."""
     rnd = _rnd(seed)
-    out, sol = [], []
+    out, sol, out_right = [], [], []
     used = {it["id"] for it in items}
     for it in items:
-        picks = _distractors(it, pool, used, "meaning", 2, rnd)
+        picks = _distractors(it, pool, used, "meaning", 2, rnd, avoid)
         used.update(p["id"] for p in picks)
-        opts = [it["meaning"]] + [p["meaning"] for p in picks]
-        rnd.shuffle(opts)
-        right = opts.index(it["meaning"])
+        wrong = [p["meaning"] for p in picks]
+        rnd.shuffle(wrong)
+        right = rnd.randrange(3) if not out_right else (out_right[-1] + 1 + rnd.randrange(2)) % 3
+        opts = wrong[:right] + [it["meaning"]] + wrong[right:]
+        out_right.append(right)
         out.append({"phrase": cap(it["wording"]), "options": [cap(o) for o in opts]})
         sol.append({"before": cap(it["wording"]) + ": ", "word": "abc"[right] + ")", "after": " " + cap(it["meaning"]), "variants": []})
     return {"type": "choice", "title": "Was bedeutet das?", "level": level, "items": out, "example": None,
             "task": "Was ist damit gemeint? Kreuzen Sie an.", "solution": sol}
 
 
-def situation(items, level, seed, pool, example=None):
+def situation(items, level, seed, pool, example=None, avoid=None):
     """Wann sagt man das? An everyday scene and three sayings; one fits."""
     rnd = _rnd(seed)
-    out, sol = [], []
+    out, sol, out_right = [], [], []
     used = {it["id"] for it in items}
     for it in items:
-        picks = _distractors(it, pool, used, "meaning", 2, rnd)
+        picks = _distractors(it, pool, used, "meaning", 2, rnd, avoid)
         used.update(p["id"] for p in picks)
-        opts = [it["wording"]] + [p["wording"] for p in picks]
-        rnd.shuffle(opts)
-        right = opts.index(it["wording"])
+        wrong = [p["wording"] for p in picks]
+        rnd.shuffle(wrong)
+        right = rnd.randrange(3) if not out_right else (out_right[-1] + 1 + rnd.randrange(2)) % 3
+        opts = wrong[:right] + [it["wording"]] + wrong[right:]
+        out_right.append(right)
         out.append({"phrase": it["situation"], "options": [end_dot(cap(o)) for o in opts]})
         sol.append({"before": "", "word": "abc"[right] + ")", "after": " " + end_dot(cap(it["wording"])), "variants": []})
     return {"type": "situation", "title": "Wann sagt man das?", "level": level, "items": out, "example": None,
+            "shown_ids": sorted(used),
             "task": "Welches Sprichwort passt? Kreuzen Sie an.", "solution": sol}
 
 
@@ -302,7 +351,7 @@ def match_meaning(items, level, seed, example=None):
     return {"type": "match", "title": "Was gehört zusammen?", "level": level, "left": left, "right": right,
             "items": [], "example": None, "wide_right": True,
             "task": "Was ist gemeint? Verbinden Sie jede Redewendung mit ihrer Bedeutung.",
-            "solution": [{"before": f"{i + 1} – {answer[i]}: ", "word": "", "after": f"{cap(it['wording'])}: {cap(it['meaning'])}",
+            "solution": [{"before": f"{answer[i]} – ", "word": "", "after": f"{cap(it['wording'])}: {cap(it['meaning'])}",
                           "variants": []} for i, it in enumerate(items)]}
 
 
@@ -319,4 +368,4 @@ def story(it, st, level, seed):
             "paragraphs": st["paragraphs"], "parts": blank(ending, it["keyword"]), "options": opts,
             "task": "Hören Sie zu oder lesen Sie mit. Welches Wort fehlt am Ende? Kreisen Sie es ein.",
             "solution": [dict(zip(("before", "after"), spaced(*blank(ending, it["keyword"]))), word=it["keyword"],
-                              variants=it.get("variants", []))]}
+                              variants=[])]}

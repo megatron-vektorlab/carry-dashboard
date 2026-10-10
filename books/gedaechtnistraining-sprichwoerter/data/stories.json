@@ -10,7 +10,11 @@
     "Doch eines Sonntags hörten wir schon von Weitem seine Fahrradklingel. Im Eimer lag ein Karpfen, so groß wie ein Brotlaib. Die Nachbarn kamen aus ihren Gärten und staunten. Frau Krüger holte sogar ihren Fotoapparat.",
     "Vater stand stolz am Gartenzaun und erzählte, wie lange er gekämpft hatte. Dann zwinkerte er Mutter zu."
    ],
-   "ending": "Er lachte und sagte: „Ein blindes Huhn findet auch mal ein Korn.“"
+   "ending": "Er lachte und sagte: „Ein blindes Huhn findet auch mal ein Korn.“",
+   "prompts": [
+    "Welche Ausreden haben Sie schon gehört, wenn etwas nicht geklappt hat?",
+    "Was meinen Sie: Braucht man beim Angeln mehr Geduld oder mehr Glück?"
+   ]
   },
   {
    "chapter": "Körper",
@@ -22,7 +26,11 @@
     "Oma sah ihn lange über ihre Brille hinweg an. Sein Mund war dunkelrot verschmiert. Auf seinem weißen Hemd leuchteten rote Flecken. Und aus seiner Hosentasche fielen drei Kirschkerne auf den Boden.",
     "Hans wurde so rot wie die Kirschen. Oma gab ihm ein kleines Messer und eine Schüssel. Gemeinsam entsteinten sie den Rest für den Kuchen."
    ],
-   "ending": "Dabei schmunzelte Oma und sagte: „Lügen haben kurze Beine.“"
+   "ending": "Dabei schmunzelte Oma und sagte: „Lügen haben kurze Beine.“",
+   "prompts": [
+    "Welches Obst haben Sie am liebsten frisch vom Baum oder Strauch gegessen?",
+    "Welcher Obstkuchen schmeckt Ihnen am besten?"
+   ]
   },
   {
    "chapter": "Essen & Trinken",
@@ -34,7 +42,11 @@
     "Zuletzt schlich Cousin Bernd in die Küche. Er wusste von nichts und salzte sicherheitshalber noch einmal. Alle waren sehr zufrieden mit sich.",
     "Beim Mittagessen nahm Opa den ersten Löffel. Er verzog das Gesicht und griff schnell zum Wasserglas. Mutter kostete selbst und schüttelte verwundert den Kopf. Nach und nach gestanden alle verlegen, was sie hineingetan hatten. Da musste Mutter herzlich lachen."
    ],
-   "ending": "Sie stellte den Topf beiseite und sagte: „Viele Köche verderben den Brei.“"
+   "ending": "Sie stellte den Topf beiseite und sagte: „Viele Köche verderben den Brei.“",
+   "prompts": [
+    "Mit welchen Kräutern oder Gewürzen schmeckt Ihnen ein Essen am besten?",
+    "Was meinen Sie: Sollte in der Küche nur einer das Sagen haben?"
+   ]
   },
   {
    "chapter": "Haus, Hof & Garten",
@@ -46,7 +58,11 @@
     "Der alte Geselle Franz sah ihm schmunzelnd zu. „Das war bei mir damals genauso“, sagte er. „In drei Wochen schläfst du morgens länger.“ Klaus schüttelte entschlossen den Kopf.",
     "Am Abend stand Meister Schulte in der blitzblanken Werkstatt. So ordentlich war alles, dass er seinen Zollstock nicht mehr fand. Da klopfte er Klaus anerkennend auf die Schulter."
    ],
-   "ending": "Dann lachte er und sagte: „Neue Besen kehren gut.“"
+   "ending": "Dann lachte er und sagte: „Neue Besen kehren gut.“",
+   "prompts": [
+    "Was meinen Sie: Lässt der Eifer bei einer neuen Aufgabe wirklich bald nach?",
+    "Welche Gerüche erinnern Sie an Arbeit, zum Beispiel frisches Holz, Öl oder Seifenlauge?"
+   ]
   },
   {
    "chapter": "Wetter, Natur & Jahreszeiten",
@@ -58,7 +74,11 @@
     "Da saßen sie nun zwischen Heu und Fahrrädern. Die Sahne war zerlaufen, die Tischdecke klitschnass. Oma seufzte leise. Doch dann stimmte Onkel Fritz ein altes Volkslied an, und alle sangen mit.",
     "Nach einer halben Stunde wurde es draußen still. Die Wolken zogen weiter, und der Himmel strahlte blau. Die Wiese glänzte, und die Vögel zwitscherten. Opa nahm Oma bei der Hand und führte sie hinaus."
    ],
-   "ending": "Er lächelte und sagte: „Auf Regen folgt Sonnenschein.“"
+   "ending": "Er lächelte und sagte: „Auf Regen folgt Sonnenschein.“",
+   "prompts": [
+    "Was gehört für Sie zu einer schönen Kaffeetafel?",
+    "Welches Volkslied singen Sie gern mit?"
+   ]
   },
   {
    "chapter": "Arbeit & Fleiß",
@@ -70,7 +90,11 @@
     "Hanna gab nicht auf. Jeden Abend saß sie am warmen Kohleofen und strickte. Manchmal rutschten Maschen von der Nadel. Dann zog sie alles wieder auf und begann von vorn. Die Großmutter sah zu und sagte wenig.",
     "Zum Geburtstag des Vaters im Februar lag ein Päckchen auf dem Kaffeetisch. Darin steckte ein Paar graue Socken. Beide waren gleich lang, und die Fersen saßen genau richtig. Der Vater drehte sie staunend hin und her."
    ],
-   "ending": "Die Großmutter nickte zufrieden und sagte: „Übung macht den Meister.“"
+   "ending": "Die Großmutter nickte zufrieden und sagte: „Übung macht den Meister.“",
+   "prompts": [
+    "Welche Handarbeiten oder Bastelarbeiten kennen Sie von früher?",
+    "Über welches selbst gemachte Geschenk haben Sie sich einmal gefreut?"
+   ]
   },
   {
    "chapter": "Geld & Glück",
@@ -82,7 +106,11 @@
     "Die Tasse kippte über die Tischkante und zersprang auf dem Boden. Im Wohnzimmer wurde es ganz still. Werner wurde rot bis über beide Ohren. Gerda hielt den Atem an. Der Vater schaute gespannt zur Mutter.",
     "Die Mutter stand langsam auf. Sie holte Handfeger und Kehrschaufel aus der Küche. Dann legte sie Werner freundlich die Hand auf die Schulter."
    ],
-   "ending": "Sie lächelte und sagte: „Scherben bringen Glück.“"
+   "ending": "Sie lächelte und sagte: „Scherben bringen Glück.“",
+   "prompts": [
+    "Was gehört für Sie dazu, wenn man zum ersten Mal irgendwo eingeladen ist?",
+    "Was kam früher auf den Tisch, wenn Besuch kam?"
+   ]
   },
   {
    "chapter": "Reden & Schweigen",
@@ -94,7 +122,11 @@
     "Am nächsten Morgen fragte der Vater beim Rasieren noch einmal nach. Peter zuckte nur mit den Schultern. Dann lief er in den Hof und fütterte lange die Hühner.",
     "Am Sonntagnachmittag klingelte es ständig an der Haustür. Onkel, Tanten und Nachbarn standen mit Blumen davor. Der Vater staunte und musste sich erst einmal setzen. Später nahm er Peter auf den Schoß. „Du hast es gewusst und nichts verraten?“, fragte er."
    ],
-   "ending": "Die Mutter lachte und sagte: „Reden ist Silber, Schweigen ist Gold.“"
+   "ending": "Die Mutter lachte und sagte: „Reden ist Silber, Schweigen ist Gold.“",
+   "prompts": [
+    "Was meinen Sie: Fällt es Kindern schwer, ein Geheimnis für sich zu behalten?",
+    "Welche gelungene Überraschung ist Ihnen in schöner Erinnerung?"
+   ]
   },
   {
    "chapter": "Familie & Freundschaft",
@@ -106,7 +138,11 @@
     "Dort saß der achtjährige Rudi auf dem Fußboden. Vor ihm lagen Zahnräder, Federn und viele kleine Schrauben. Er hatte den Wecker ganz auseinandergenommen. Die Mutter schlug die Hände über dem Kopf zusammen.",
     "Doch Rudi schraubte und drehte mit ernstem Gesicht. Nach einer Stunde tickte der Wecker wieder. Nur eine winzige Schraube war übrig geblieben. Der Vater kam dazu und betrachtete stolz das Werk seines Sohnes. Schmunzelnd steckte er die Schraube in seine Westentasche."
    ],
-   "ending": "Die Mutter seufzte, lächelte und sagte: „Der Apfel fällt nicht weit vom Stamm.“"
+   "ending": "Die Mutter seufzte, lächelte und sagte: „Der Apfel fällt nicht weit vom Stamm.“",
+   "prompts": [
+    "Was haben Sie als Kind aus Neugier einmal auseinandergenommen oder ausprobiert?",
+    "Welche Geräte von früher, etwa Radio, Wecker oder Nähmaschine, haben Sie gern benutzt?"
+   ]
   },
   {
    "chapter": "Zeit & Lebensweisheiten",
@@ -118,7 +154,11 @@
     "Nun war die ganze Seite blau verschmiert. Auch das Hemd hatte einen großen Fleck. Die Mutter schüttelte den Kopf. Günther musste alles noch einmal schreiben.",
     "Diesmal schrieb er langsam und sorgfältig. Er benutzte sogar das Löschblatt. Die Freunde fuhren schon einmal vor. Günther kam erst eine Stunde später ins Freibad. Am Abend hörte der Großvater die ganze Geschichte. Er schmunzelte."
    ],
-   "ending": "Dann klopfte er Günther auf die Schulter und sagte: „Eile mit Weile.“"
+   "ending": "Dann klopfte er Günther auf die Schulter und sagte: „Eile mit Weile.“",
+   "prompts": [
+    "Womit haben Sie in der Schule geschrieben: mit Griffel, Füller oder Kugelschreiber?",
+    "Was haben Sie an heißen Sommertagen am liebsten unternommen?"
+   ]
   }
  ]
 }

@@ -44,7 +44,7 @@ def sheet_text(s) -> str:
         L += [f"{'ABCDEFGHIJ'[i]}) {r}" for i, r in enumerate(s["right"])]
     elif t == "complete":
         if ex:
-            L.append(f"Beispiel: {ex['start']} → {ex['answer']}")
+            L.append(f"Beispiel: {ex['start']} → {(ex.get('given', '') + ' ' + ex['answer']).strip()}")
         L += [f"{i}. {it['start']}   Linie: {it.get('hint', '')}______" for i, it in enumerate(s["items"], 1)]
     elif t == "scramble":
         if ex:
@@ -52,7 +52,7 @@ def sheet_text(s) -> str:
         L += [f"{i}. [{'] ['.join(it['tiles'])}]   Linie: {it.get('first', '')} ______" for i, it in enumerate(s["items"], 1)]
     elif t == "wrong":
         if ex:
-            L.append(f"Beispiel: {ex['shown']}  (falsch: {ex['wrong']}, richtig: {ex['answer']})")
+            L.append(f"Beispiel: {''.join(ex['parts'])}  (falsch: {ex['parts'][1]}, richtig: {ex['answer']})")
         L += [f"{i}. {it['shown']}   Richtig heißt es: ______" for i, it in enumerate(s["items"], 1)]
     elif t == "firstletters":
         L += [f"{i}. " + " ".join(st["first"] + "_" * (st["len"] - 1) + st.get("punct", "") for st in it["stubs"])

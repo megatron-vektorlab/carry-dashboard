@@ -25,7 +25,7 @@ BULLETS = [
     "100 Kopiervorlagen in A4, in 10 Themen",
     "3 Stufen, viele Blätter mit gelöstem Beispiel",
     "Großdruck: Aufgaben in 20 Punkt",
-    "Auf jeder Rückseite: Lösungen, Hilfen, Fragen zum Gespräch",
+    "Auf jeder Rückseite: Lösungen und Fragen zum Gespräch",
     "10 Vorlesegeschichten mit Sprichwort",
     "Kopiererlaubnis für die eigene Gruppe",
 ]

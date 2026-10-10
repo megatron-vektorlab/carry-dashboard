@@ -14,7 +14,7 @@ import pyphen
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VOWELS = "aeiouäöüyAEIOUÄÖÜY"
 _HY = pyphen.Pyphen(lang="de_DE")
-WORD_RE = re.compile(r"[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*")
+WORD_RE = re.compile(r"[A-Za-zÄÖÜäöüß]+(?:[-'’][A-Za-zÄÖÜäöüß]+)*")   # keeps "Wer's", "so's" whole
 
 
 def words(s: str) -> list[str]:
@@ -24,7 +24,7 @@ def words(s: str) -> list[str]:
 
 def tokens(s: str) -> list[str]:
     """Words and punctuation marks, in order; spaces dropped."""
-    return re.findall(r"[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*|[^\sA-Za-zÄÖÜäöüß]", s)
+    return re.findall(r"[A-Za-zÄÖÜäöüß]+(?:[-'’][A-Za-zÄÖÜäöüß]+)*|[^\sA-Za-zÄÖÜäöüß]", s)
 
 
 def syllables(word: str) -> list[str]:

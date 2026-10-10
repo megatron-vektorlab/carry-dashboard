@@ -156,7 +156,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -713,7 +713,7 @@
    "hint": "weiße Gebilde am Himmel",
    "situation": "",
    "prompts": [
-    "Welche Nachricht hat Sie in Ihrem Leben einmal richtig überrascht?",
+    "Welche schöne Nachricht hat Sie einmal richtig überrascht?",
     "Mögen Sie Überraschungen, oder wissen Sie lieber vorher Bescheid?"
    ],
    "note": "",
@@ -733,7 +733,8 @@
    "reason": "",
    "wording": "aus dem Häuschen sein",
    "variants": [
-    "ganz aus dem Häuschen sein"
+    "ganz aus dem Häuschen sein",
+    "aus dem Häuschen geraten"
    ],
    "meaning": "Man ist vor Freude oder Begeisterung ganz aufgeregt.",
    "familiarity": 3,
@@ -763,7 +764,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -911,7 +912,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -1059,7 +1060,7 @@
    "hint": "ein Zettel, mit dem man gewinnen kann",
    "situation": "",
    "prompts": [
-    "Wobei hatten Sie in Ihrem Leben schon einmal so richtig Glück?",
+    "Was meinen Sie: Kann man das große Los auch ohne Lotterie ziehen?",
     "Welche Verlosungen oder Tombolas auf Festen von früher kommen Ihnen in den Sinn?"
    ],
    "note": "",
@@ -1070,7 +1071,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -1479,7 +1480,7 @@
     "Was hat Ihnen in schwierigen Zeiten geholfen, den Mut nicht zu verlieren?",
     "Mit welchem Spruch oder Gruß verabschieden Sie sich gern von lieben Menschen?"
    ],
-   "note": "",
+   "note": "Kann an schwere Zeiten erinnern; zuhören, nicht nachbohren.",
    "kind": "idiom",
    "consensus_wordings": [
     "die Ohren steif halten"
@@ -1750,7 +1751,7 @@
    "hint": "ärmelloses Kleidungsstück unter dem Jackett",
    "situation": "",
    "prompts": [
-    "Welche Kleidungsstücke von früher vermissen Sie heute ein wenig?",
+    "Wie wichtig ist Ihnen ein guter Ruf?",
     "Was bedeutet Ehrlichkeit für Sie im täglichen Leben?"
    ],
    "note": "",
@@ -1798,7 +1799,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -1856,7 +1857,7 @@
    ],
    "swap": {
     "right": "Kater",
-    "wrong": "Wellensittich"
+    "wrong": "Hamster"
    },
    "hint": "eine männliche Katze",
    "situation": "",
@@ -1872,7 +1873,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -1991,7 +1992,9 @@
    "keep": true,
    "reason": "",
    "wording": "etwas aus dem Ärmel schütteln",
-   "variants": [],
+   "variants": [
+    "etwas aus dem Handgelenk schütteln"
+   ],
    "meaning": "Man schafft etwas ganz leicht und ohne lange Vorbereitung.",
    "familiarity": 3,
    "chapter": "Arbeit & Fleiß",
@@ -2057,7 +2060,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -2083,7 +2086,7 @@
    "hint": "die Farbe von frischem Schnee",
    "situation": "",
    "prompts": [
-    "Was meinen Sie: Verlässt man sich besser auf ein Wort oder auf Geschriebenes?",
+    "Verlässt man sich besser auf ein gegebenes Wort oder auf etwas Schriftliches?",
     "Welche Rolle spielten handgeschriebene Briefe früher für Sie?"
    ],
    "note": "",
@@ -2513,7 +2516,7 @@
    "hint": "kleines Gefäß mit Schmalz in der Küche",
    "situation": "",
    "prompts": [
-    "Welches peinliche Missgeschick können Sie heute mit Humor erzählen?",
+    "In welches Fettnäpfchen tritt man bei Besuch besonders leicht?",
     "Was meinen Sie: Wie reagiert man am besten, wenn jemand etwas Unpassendes sagt?"
    ],
    "note": "",
@@ -2642,7 +2645,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -2742,7 +2745,7 @@
     "right": "kalte",
     "wrong": "lauwarme"
    },
-   "hint": "dort trägt man die Handtasche",
+   "hint": "zwischen Hals und Arm, darauf trägt man den Rucksack",
    "situation": "",
    "prompts": [
     "Was meinen Sie: Wie geht man am besten mit Menschen um, die abweisend sind?",
@@ -3093,7 +3096,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -3434,7 +3437,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -3537,7 +3540,7 @@
    "hint": "damit sieht man",
    "situation": "",
    "prompts": [
-    "Erinnern Sie sich an eine Situation, die gerade noch gut ausgegangen ist?",
+    "Welche Sache ist bei Ihnen einmal gerade noch gut ausgegangen?",
     "Glauben Sie, dass man im Leben manchmal einfach Glück braucht?"
    ],
    "note": "",
@@ -3588,7 +3591,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -3628,7 +3631,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -3896,7 +3899,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -4011,7 +4014,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -4190,7 +4193,7 @@
    "hint": "ein anderes Wort für Kram oder Sachen",
    "situation": "",
    "prompts": [
-    "Wofür haben Sie sich im Leben besonders gern angestrengt?",
+    "Woran erkennt man, dass sich jemand richtig ins Zeug legt?",
     "Was spornt einen Menschen Ihrer Meinung nach am meisten an?"
    ],
    "note": "",
@@ -4302,7 +4305,7 @@
     "right": "vier",
     "wrong": "elf"
    },
-   "hint": "damit liest man die Zeitung",
+   "hint": "damit sieht man",
    "situation": "",
    "prompts": [
     "Welche Dinge bespricht man Ihrer Meinung nach besser nur zu zweit?",
@@ -4435,7 +4438,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -4513,7 +4516,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -4742,7 +4745,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -4751,7 +4754,8 @@
    "reason": "",
    "wording": "da ist der Wurm drin",
    "variants": [
-    "da sitzt der Wurm drin"
+    "da sitzt der Wurm drin",
+    "da steckt der Wurm drin"
    ],
    "meaning": "Bei einer Sache läuft immer wieder etwas schief.",
    "familiarity": 3,
@@ -4781,7 +4785,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -4818,7 +4822,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -4889,6 +4893,9 @@
     "Was begeistert Sie heute noch genauso wie in jungen Jahren?"
    ],
    "note": "",
+   "also_fits": [
+    "Wasser"
+   ],
    "kind": "idiom",
    "consensus_wordings": [
     "Feuer und Flamme sein"
@@ -5037,7 +5044,7 @@
    "hint": "trägt man an den Beinen",
    "situation": "",
    "prompts": [
-    "Welche Kleidungsstücke haben Sie früher besonders gern getragen?",
+    "Was ist Ihnen ganz egal, also Jacke wie Hose?",
     "Bei welchen Entscheidungen ist es Ihnen eher gleich, wie sie ausgehen?"
    ],
    "note": "",
@@ -5131,7 +5138,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -5171,7 +5178,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -5625,7 +5632,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -5749,7 +5756,9 @@
    "keep": true,
    "reason": "",
    "wording": "den Bogen überspannen",
-   "variants": [],
+   "variants": [
+    "den Bogen überziehen"
+   ],
    "meaning": "Jemand übertreibt so sehr, dass es anderen zu viel wird.",
    "familiarity": 3,
    "chapter": "Zeit & Lebensweisheiten",
@@ -5790,7 +5799,7 @@
    "reason": "",
    "wording": "den Kürzeren ziehen",
    "variants": [],
-   "meaning": "Man unterliegt und muss am Ende den Nachteil tragen.",
+   "meaning": "Man unterliegt und hat am Ende das Nachsehen.",
    "familiarity": 3,
    "chapter": "Geld & Glück",
    "split": [],
@@ -5804,7 +5813,7 @@
     "right": "ziehen",
     "wrong": "stricken"
    },
-   "hint": "das Gegenteil von dem Längeren",
+   "hint": "das Gegenteil vom Längeren",
    "situation": "",
    "prompts": [
     "Wie gehen Sie damit um, wenn Sie bei einem Spiel verlieren?",
@@ -5964,7 +5973,7 @@
    "hint": "Möbelstück, an dem man isst",
    "situation": "",
    "prompts": [
-    "Haben Sie früher gern Karten gespielt? Welches Spiel mochten Sie am liebsten?",
+    "Wann sollte man die Karten lieber gleich auf den Tisch legen?",
     "Ist es Ihrer Meinung nach immer klug, gleich alle Karten offen auf den Tisch zu legen?"
    ],
    "note": "",
@@ -6086,7 +6095,7 @@
    "hint": "hängt zum Trocknen auf der Leine",
    "situation": "",
    "prompts": [
-    "Erinnern Sie sich an eine Überraschung, die Sie sprachlos gemacht hat?",
+    "Welche Überraschung hat Sie einmal sprachlos gemacht?",
     "Wie lief früher ein Waschtag ab, mit Waschbrett, Kessel und Wäscheleine?"
    ],
    "note": "",
@@ -6097,7 +6106,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -6203,7 +6212,7 @@
    "hint": "ein Mensch, dem oft Missgeschicke passieren",
    "situation": "",
    "prompts": [
-    "Erinnern Sie sich an einen Tag, an dem einfach alles schiefging?",
+    "Was tun Sie, wenn an einem Tag einfach alles schiefgeht?",
     "Was halten Sie von Glücksbringern wie Hufeisen, Kleeblatt oder Schornsteinfeger?"
    ],
    "note": "",
@@ -6217,7 +6226,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -6254,7 +6263,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -6271,7 +6280,7 @@
    "chapter": "Körper",
    "split": [],
    "keyword": "Gänsehaut",
-   "category": "Körperteil",
+   "category": "anderes",
    "decoys": [
     "Sommersprosse",
     "Schweinshaxe"
@@ -6360,7 +6369,7 @@
    "hint": "spitzes Metallstück für Hammer und Wand",
    "situation": "",
    "prompts": [
-    "Gibt es ein Hobby, das Sie irgendwann aufgegeben haben? Was war der Grund?",
+    "Welches Hobby hat Ihnen früher besonders viel Freude gemacht?",
     "Was sollte man Ihrer Meinung nach im Leben niemals ganz aufgeben?"
    ],
    "note": "",
@@ -6559,7 +6568,7 @@
    "hint": "kleines Wasserfahrzeug mit Rudern",
    "situation": "",
    "prompts": [
-    "Haben Sie erlebt, dass Zusammenhalt eine schwierige Lage leichter gemacht hat?",
+    "Wann hat Zusammenhalt eine schwierige Lage leichter gemacht?",
     "Sind Sie früher gern Boot gefahren, oder blieben Sie lieber am Ufer?"
    ],
    "note": "",
@@ -6600,7 +6609,7 @@
    "hint": "dort oben ziehen die Wolken",
    "situation": "",
    "prompts": [
-    "Erinnern Sie sich an einen Moment, in dem Sie überglücklich waren?",
+    "In welchem Moment waren Sie einmal überglücklich?",
     "Was bringt Sie zum Strahlen, zum Beispiel Musik, Blumen oder gutes Essen?"
    ],
    "note": "",
@@ -6637,7 +6646,7 @@
    "hint": "fließt im Bach und aus dem Hahn",
    "situation": "",
    "prompts": [
-    "Erinnern Sie sich an einen Ausflug, der wegen schlechten Wetters abgesagt wurde?",
+    "Was haben Sie gemacht, wenn ein Ausflug ins Wasser fiel?",
     "Womit beschäftigen Sie sich gern, wenn es draußen regnet?"
    ],
    "note": "",
@@ -6677,7 +6686,7 @@
    "hint": "darin badet und schwimmt man",
    "situation": "",
    "prompts": [
-    "Haben Sie einmal etwas ganz Neues gewagt, ohne zu wissen, was kommt?",
+    "Was haben Sie einmal ganz neu gewagt, ohne zu wissen, was kommt?",
     "Sind Sie früher gern im See, im Fluss oder im Meer geschwommen?"
    ],
    "note": "",
@@ -6729,7 +6738,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -6845,7 +6854,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -7098,7 +7107,7 @@
    "hint": "Kleidungsstück mit zwei Beinen",
    "situation": "",
    "prompts": [
-    "Erinnern Sie sich an eine Prüfung oder einen Auftritt, vor dem Sie sehr aufgeregt waren?",
+    "Wovor waren Sie einmal so richtig aufgeregt, zum Beispiel vor einer Prüfung oder einem Auftritt?",
     "Was hilft Ihnen, wenn Sie nervös oder ängstlich sind?"
    ],
    "note": "",
@@ -7109,7 +7118,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -7146,7 +7155,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -7246,7 +7255,7 @@
    "hint": "Tropfen, die aus den Wolken fallen",
    "situation": "",
    "prompts": [
-    "Mögen Sie Regenwetter, oder sind Ihnen Sonnentage lieber?",
+    "Wie hilft man jemandem, der im Regen steht?",
     "Was zeichnet für Sie einen echten Freund oder eine echte Freundin aus?"
    ],
    "note": "",
@@ -7548,7 +7557,7 @@
     "Was hat Ihnen in schwierigen Zeiten geholfen, wieder Mut zu fassen?",
     "Welches Wetter mögen Sie am liebsten, und warum?"
    ],
-   "note": "",
+   "note": "Kann an Krieg, Flucht oder Verluste erinnern; zuhören, nicht nachbohren.",
    "kind": "proverb",
    "consensus_wordings": [
     "Nach Regen kommt Sonnenschein",
@@ -7642,7 +7651,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -7798,8 +7807,8 @@
    "hint": "der dicke Teil des Baumes",
    "situation": "Der Vater spielte früher leidenschaftlich Fußball. Nun schießt auch der kleine Sohn jeden Ball ins Tor.",
    "prompts": [
-    "Welche Apfelsorte mögen Sie am liebsten, und wie essen Sie Äpfel gern?",
-    "Was meinen Sie: Wie viel von unserem Wesen bringen wir schon mit?"
+    "Was meinen Sie: Macht Liebe wirklich blind?",
+    "Was haben Sie von Ihrer Mutter oder Ihrem Vater, zum Beispiel ein Talent oder eine Angewohnheit?"
    ],
    "note": "",
    "kind": "proverb",
@@ -7924,7 +7933,7 @@
    "hint": "jeder von uns, ob Mann oder Frau",
    "situation": "Familie Schmidt plant seit Wochen ein Picknick. Am Sonntag gießt es in Strömen, also wird im Wohnzimmer gepicknickt.",
    "prompts": [
-    "Welcher Plan ist einmal ganz anders, aber trotzdem gut ausgegangen?",
+    "Welcher Plan ist einmal ganz anders ausgegangen als gedacht und war am Ende trotzdem gut?",
     "Was meinen Sie: Wie viel im Leben kann man selbst planen?"
    ],
    "note": "Religiöser Bezug; Glaubensfragen offen und respektvoll behandeln.",
@@ -8216,7 +8225,7 @@
     "right": "währt",
     "wrong": "schmeckt"
    },
-   "hint": "wer stets die Wahrheit sagt",
+   "hint": "so ist, wer stets die Wahrheit sagt",
    "situation": "Die Kassiererin gibt zu viel Wechselgeld heraus. Frau Vogel bringt es zurück und bekommt dafür ein Stück Kuchen geschenkt.",
    "prompts": [
     "Was bedeutet Ehrlichkeit für Sie?",
@@ -8381,7 +8390,7 @@
     "wrong": "Kartoffeln"
    },
    "hint": "hängt gerahmt an der Wand",
-   "situation": "Frau Krüger zeigt ein altes Foto vom Strandurlaub. Sofort lachen alle über die gestreiften Badeanzüge.",
+   "situation": "Frau Krüger beschreibt lange den Strandkorb, den sie früher an der Ostsee hatte, aber niemand kann ihn sich vorstellen. Dann zeigt sie ein altes Foto, und sofort nicken alle.",
    "prompts": [
     "Welches Foto oder Gemälde gefällt Ihnen besonders gut?",
     "Welches Motiv würden Sie sich als Bild an die Wand hängen?"
@@ -8470,7 +8479,7 @@
    "situation": "Herr Albrecht spielt zum ersten Mal Skat und gewinnt gleich die erste Runde. Alle staunen, er selbst am meisten.",
    "prompts": [
     "Was meinen Sie: Ist Glück wichtiger als Können?",
-    "Welche glückliche Überraschung ist Ihnen besonders lieb?"
+    "An welche glückliche Überraschung denken Sie besonders gern zurück?"
    ],
    "note": "",
    "kind": "proverb",
@@ -8715,7 +8724,7 @@
     "right": "Einmal",
     "wrong": "Sonntags"
    },
-   "hint": "so viel wie nie",
+   "hint": "nicht ein einziges Mal",
    "situation": "Frau Ludwig nimmt sich beim Kaffeeklatsch ein zweites Stück Torte. Lächelnd meint sie, heute werde nicht gezählt.",
    "prompts": [
     "Welche kleine Ausnahme gönnen Sie sich gern?",
@@ -8890,8 +8899,8 @@
    "hint": "dort oben ziehen die Wolken",
    "situation": "Beim ersten Versuch gerät der Hefezopf krumm und schief. Beim fünften sieht er aus wie vom Bäcker.",
    "prompts": [
-    "Was haben Sie durch viel Übung richtig gut gelernt?",
-    "Was meinen Sie: Ist Talent oder Fleiß wichtiger?"
+    "Welche Arbeit gelingt Ihrer Meinung nach erst nach vielen Versuchen?",
+    "Was meinen Sie: Kann man sein Glück wirklich selbst schmieden?"
    ],
    "note": "",
    "kind": "proverb",
@@ -9016,9 +9025,12 @@
    "situation": "Herr Keller fordert beim Tanztee mutig die beste Tänzerin zum Walzer auf. Sie sagt sofort ja.",
    "prompts": [
     "Wozu haben Sie einmal Ihren ganzen Mut zusammengenommen?",
-    "Was meinen Sie: Bereut man eher, was man getan oder was man nicht getan hat?"
+    "Was haben Sie einmal gewagt, und wie ist es ausgegangen?"
    ],
    "note": "",
+   "avoid_with": [
+    "p143"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Frisch gewagt ist halb gewonnen"
@@ -9311,7 +9323,7 @@
    "hint": "zweimal so viel",
    "situation": "Frau Sommer gewinnt beim Bingo einen Präsentkorb. Sie öffnet ihn sofort und reicht die Pralinen am Tisch herum.",
    "prompts": [
-    "Welche Feier ist Ihnen als besonders fröhlich in Erinnerung?",
+    "Was meinen Sie: Warum wird Freude größer, wenn man sie teilt?",
     "Was meinen Sie: Warum macht gemeinsames Lachen so viel Freude?"
    ],
    "note": "",
@@ -9562,7 +9574,7 @@
    "hint": "ein Sturz nach unten",
    "situation": "Herr Gerber prahlt, er gewinne jede Partie Schach. Prompt verliert er gegen die neue Mitspielerin.",
    "prompts": [
-    "Was meinen Sie: Wo endet gesunder Stolz und wo beginnt Überheblichkeit?",
+    "Auf welche eigene Leistung sind Sie zu Recht stolz?",
     "Was schätzen Sie an bescheidenen Menschen?"
    ],
    "note": "",
@@ -9818,7 +9830,7 @@
    "hint": "liegt oben auf dem Kochtopf",
    "situation": "Die stille Bibliothekarin und der laute Feuerwehrmann feiern Goldene Hochzeit. Niemand hätte gedacht, dass die beiden so gut zusammenpassen.",
    "prompts": [
-    "Was meinen Sie: Gibt es für jeden Menschen das passende Gegenstück?",
+    "Was passt für Sie zusammen wie Topf und Deckel?",
     "Welches Küchengerät von früher mochten Sie besonders?"
    ],
    "note": "Kann an Partnerschaft, Verlust oder Alleinsein erinnern.",
@@ -10080,7 +10092,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -10449,7 +10461,7 @@
    "hint": "Geburtstag, Hochzeit oder Kirmes",
    "situation": "Mitten in der Woche bringt Frau Engel einen Kuchen mit. Einfach so, weil draußen die Sonne scheint.",
    "prompts": [
-    "Welches Fest haben Sie in besonders schöner Erinnerung?",
+    "Was meinen Sie: Soll man Feste feiern, wie sie fallen, oder lieber gut planen?",
     "Braucht man Ihrer Meinung nach einen Anlass, um fröhlich beisammen zu sein?"
    ],
    "note": "",
@@ -10586,7 +10598,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -10912,7 +10924,7 @@
    "situation": "Beim Rommé verliert Frau Busch jede Runde. Ihr Tischnachbar zwinkert ihr zu und schenkt ihr eine Rose.",
    "prompts": [
     "Welche Karten- oder Brettspiele haben Sie früher gern gespielt?",
-    "Was halten Sie von solchen Sprüchen über Glück und Pech?"
+    "Was halten Sie von Sprüchen wie „Pech im Spiel, Glück in der Liebe“?"
    ],
    "note": "",
    "kind": "proverb",
@@ -11219,7 +11231,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -11375,7 +11387,7 @@
     "Was macht einen Menschen Ihrer Meinung nach besonders zäh und widerstandsfähig?",
     "Welche Pflanzen wuchsen in Gärten, an die Sie sich gern erinnern?"
    ],
-   "note": "Berührt Krankheit und Genesung; meist scherzhaft über sich selbst gesagt.",
+   "note": "Berührt Krankheit und Genesung; man sagt es meist scherzhaft über sich selbst.",
    "kind": "proverb",
    "consensus_wordings": [
     "Unkraut vergeht nicht"
@@ -11466,7 +11478,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -11591,7 +11603,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -11876,7 +11888,7 @@
    "hint": "hat Hörner und einen Pferdefuß",
    "situation": "Beim Kaffee erzählt Frau Jäger gerade von ihrem alten Schulfreund. Da klingelt es, und er steht mit Blumen vor der Tür.",
    "prompts": [
-    "Was halten Sie von solchen merkwürdigen Zufällen?",
+    "Was halten Sie davon, dass oft gerade der kommt, über den man spricht?",
     "Welcher lustige Zufall ist Ihnen schon einmal passiert?"
    ],
    "note": "",
@@ -12311,7 +12323,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -12437,7 +12449,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -12676,7 +12688,7 @@
    "situation": "Herr Vogel hat dem Nachbarn beim Umzug geholfen. Nun mäht der Nachbar ihm ungefragt den Rasen.",
    "prompts": [
     "Finden Sie es richtig, Freundlichkeit mit Freundlichkeit zu erwidern – und Ärger mit Ärger?",
-    "Erinnern Sie sich an eine Gefälligkeit, die Ihnen einmal zurückgegeben wurde?"
+    "Welche Gefälligkeit wurde Ihnen einmal zurückgegeben?"
    ],
    "note": "",
    "kind": "proverb",
@@ -12717,7 +12729,7 @@
    "hint": "verschwunden, weg, aufgebraucht",
    "situation": "Herr Scholz findet morgens einen Geldschein auf der Straße. Abends verliert er ihn beim Kartenspiel.",
    "prompts": [
-    "Haben Sie schon einmal etwas unerwartet bekommen und schnell wieder verloren?",
+    "Was meinen Sie: Warum ist schnell gewonnenes Geld oft auch schnell wieder weg?",
     "Was meinen Sie: Schätzt man Dinge mehr, für die man sich lange angestrengt hat?"
    ],
    "note": "",
@@ -12761,7 +12773,7 @@
    "hint": "viele Bäume dicht beieinander",
    "situation": "Herr Brandt grüßt die neue Nachbarin jeden Morgen herzlich. Bald stellt sie ihm selbst gebackenen Kuchen vor die Tür.",
    "prompts": [
-    "Haben Sie erlebt, dass ein Lächeln ein Lächeln zurückbringt?",
+    "Was meinen Sie: Bringt ein Lächeln meistens ein Lächeln zurück?",
     "Was gehörte für Sie früher zu einem freundlichen Umgang miteinander?"
    ],
    "note": "",
@@ -12843,7 +12855,7 @@
     "right": "Wissen",
     "wrong": "Kuchen"
    },
-   "hint": "Einfluss und Stärke über andere",
+   "hint": "Einfluss und Herrschaft über andere",
    "situation": "Frau Albers kennt sich mit allen Formularen auf dem Amt aus. Deshalb fragen alle Nachbarn sie um Rat.",
    "prompts": [
     "Welches Wissen aus früheren Zeiten halten Sie heute noch für besonders wertvoll?",
@@ -13196,7 +13208,7 @@
    "situation": "Draußen nieselt es. Frau Jung zieht Gummistiefel und Regenjacke an und spaziert fröhlich los.",
    "prompts": [
     "Welches Wetter mögen Sie am liebsten für einen Spaziergang?",
-    "Erinnern Sie sich an einen besonders warmen Mantel oder Lieblingsschal von früher?"
+    "Welches Kleidungsstück hat Sie früher bei Wind und Wetter warm gehalten?"
    ],
    "note": "",
    "kind": "proverb",
@@ -13207,7 +13219,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -13236,7 +13248,7 @@
    "hint": "durchsichtig, zerbrechlich, man trinkt daraus",
    "situation": "Der Ausflug beginnt mit strahlender Sonne. Kurz vor dem Picknick zieht plötzlich ein heftiges Gewitter auf.",
    "prompts": [
-    "Kennen Sie Sprüche aus dem Poesiealbum? Welcher ist Ihnen in Erinnerung geblieben?",
+    "Was schrieb man früher gern ins Poesiealbum?",
     "Was bedeutet Glück für Sie ganz persönlich?"
    ],
    "note": "",
@@ -13283,6 +13295,9 @@
     "Was ist Ihnen lieber: selbst anpacken oder um Unterstützung bitten?"
    ],
    "note": "",
+   "avoid_with": [
+    "p042"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Hilf dir selbst, so hilft dir Gott"
@@ -13455,7 +13470,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -13498,7 +13513,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -13585,7 +13600,7 @@
    "agree": 3,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -13736,7 +13751,7 @@
    "hint": "das Gegenteil von Lüge",
    "situation": "Die Nachbarin fragt, ob ihr Kuchen schmeckt. Die kleine Lotte antwortet ehrlich: „Nein, der ist zu trocken.“",
    "prompts": [
-    "Erinnern Sie sich an einen lustigen, ehrlichen Satz eines Kindes?",
+    "Welche lustigen, ehrlichen Sätze von Kindern haben Sie schon gehört?",
     "Finden Sie Ehrlichkeit immer gut, auch wenn sie wehtut?"
    ],
    "note": "",
@@ -13859,7 +13874,7 @@
    "situation": "Herr Krämer beschwert sich ständig laut über die Nachbarskinder. Nun beschweren sich alle Nachbarn über ihn.",
    "prompts": [
     "Was hilft Ihrer Meinung nach, einen Streit gar nicht erst entstehen zu lassen?",
-    "Erinnern Sie sich an ein richtig heftiges Unwetter oder Gewitter?"
+    "Was haben Sie früher bei einem heftigen Gewitter gemacht?"
    ],
    "note": "",
    "kind": "proverb",
@@ -13995,7 +14010,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -14028,7 +14043,7 @@
    "situation": "Morgens scheint die Sonne, mittags hagelt es, abends schneit es sogar. Herr Krüger schüttelt lachend den Kopf.",
    "prompts": [
     "Welcher Monat ist Ihnen der liebste, und warum?",
-    "Haben Sie früher jemanden in den April geschickt oder sind selbst hereingefallen?"
+    "Haben Sie früher jemanden in den April geschickt, oder sind Sie selbst darauf hereingefallen?"
    ],
    "note": "",
    "kind": "proverb",
@@ -14070,7 +14085,7 @@
    "situation": "Beim Dorffest bestellt Herr Maier nach zwei Gläsern Riesling noch ein großes Pils. Seine Tischnachbarin hebt warnend den Finger.",
    "prompts": [
     "Welche Getränke gab es früher bei Festen in Ihrer Gegend?",
-    "Kennen Sie weitere Faustregeln rund ums Essen und Trinken?"
+    "Welche Regeln rund ums Essen und Trinken galten bei Ihnen zu Hause?"
    ],
    "note": "Alkohol als Thema: bei Betroffenen in der Gruppe behutsam einsetzen.",
    "kind": "proverb",
@@ -14080,7 +14095,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -14110,7 +14125,7 @@
    "situation": "Frau Huber legt Petersilie und Tomatenscheiben hübsch auf die Platte. Ihre Gäste lächeln zufrieden.",
    "prompts": [
     "Wie wurde früher ein festlicher Tisch gedeckt?",
-    "Was muss auf dem Teller hübsch aussehen, damit es Ihnen Appetit macht?"
+    "Wie muss ein Teller angerichtet sein, damit Ihnen das Essen Appetit macht?"
    ],
    "note": "",
    "kind": "proverb",
@@ -14287,7 +14302,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -14370,7 +14385,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -14410,7 +14425,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -14440,7 +14455,7 @@
    "situation": "Der Lieblingsverein liegt kurz vor Schluss zwei Tore zurück. Herr Becker sitzt trotzdem gespannt vor dem Radio.",
    "prompts": [
     "Was gibt Ihnen Zuversicht, wenn etwas nicht gut läuft?",
-    "Erinnern Sie sich an ein Spiel oder Ereignis, das doch noch gut ausging?"
+    "Welches Spiel oder Ereignis ging einmal doch noch gut aus?"
    ],
    "note": "Kann an Krankheit oder Verlust erinnern; ermutigend und behutsam besprechen.",
    "kind": "proverb",
@@ -14526,7 +14541,7 @@
    "situation": "Herr Krause kauft zum ersten Mal ein Los und gewinnt sofort den Hauptpreis. Sein Nachbar spielt seit Jahren vergeblich.",
    "prompts": [
     "Welche Kartoffelgerichte mögen Sie am liebsten?",
-    "Haben Sie schon einmal erlebt, dass jemand ganz unverdient Glück hatte?"
+    "Was meinen Sie: Haben manche Menschen einfach unverdient Glück?"
    ],
    "note": "Humorvoll gemeint; Teilnehmende aus der Landwirtschaft nicht kränken.",
    "fixed": [
@@ -14696,7 +14711,7 @@
    "situation": "Frau Lorenz hat für die ganze Nachbarschaft Plätzchen gebacken und verteilt sie. Sie strahlt dabei mehr als alle anderen.",
    "prompts": [
     "Über welches Geschenk, das Sie gemacht haben, haben Sie sich selbst sehr gefreut?",
-    "Schenken Sie lieber, oder lassen Sie sich lieber überraschen?"
+    "Schenken Sie lieber, oder werden Sie lieber beschenkt?"
    ],
    "note": "",
    "kind": "proverb",
@@ -14738,8 +14753,8 @@
    "hint": "Tiere, die Haus und Hof bewachen",
    "situation": "Jemand fragt ganz allgemein, wer die letzten Kekse gegessen hat. Herr Klein ruft sofort empört: „Ich war's nicht!“",
    "prompts": [
-    "Kennen Sie Menschen, die sich schnell angesprochen fühlen? Wie gehen Sie damit um?",
-    "Gab es früher einen Hund, an den Sie sich gern erinnern?"
+    "Wie geht man am besten mit Menschen um, die sich schnell angesprochen fühlen?",
+    "Welche Hunde gab es früher bei Ihnen oder in der Nachbarschaft?"
    ],
    "note": "",
    "kind": "proverb",
@@ -14914,7 +14929,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -15026,7 +15041,7 @@
    "hint": "Verfehlungen, die man beichten kann",
    "situation": "Herr Lehmann nascht heimlich vom Kuchen für die Gäste. Prompt kleckert er sich Sahne aufs frische Hemd.",
    "prompts": [
-    "Erinnern Sie sich an eine kleine Schummelei, die sofort aufgeflogen ist?",
+    "Welche kleine Schummelei ist schon einmal sofort aufgeflogen?",
     "Welche kleinen Naschereien gönnen Sie sich gern?"
    ],
    "note": "",
@@ -15121,7 +15136,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -15161,7 +15176,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -15313,7 +15328,7 @@
    "hint": "das Gegenteil von kalt",
    "situation": "Eine Frau will lieber nicht erfahren, was die Nachbarn über ihren Garten reden.",
    "prompts": [
-    "Welche Dinge möchten Sie lieber gar nicht so genau erfahren?",
+    "Was meinen Sie: Ist es manchmal besser, nicht alles so genau zu wissen?",
     "Wann ist es Ihrer Meinung nach besser, nicht alles zu wissen?"
    ],
    "note": "",
@@ -15324,7 +15339,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -15396,7 +15411,7 @@
    "hint": "dort oben ziehen die Wolken",
    "situation": "Die Kegelgruppe startet zum Ausflug an den See, und die Sonne scheint den ganzen Tag.",
    "prompts": [
-    "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?",
+    "Was meinen Sie: Gibt es wirklich kein Licht ohne Schatten?",
     "Welches Wetter wünschen Sie sich für einen Ausflug?"
    ],
    "note": "",
@@ -15407,7 +15422,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -15569,7 +15584,7 @@
     "Welche Jahreszeit mögen Sie am liebsten, und warum?",
     "Was sollte man Ihrer Meinung nach in Ruhe und ohne Eile tun?"
    ],
-   "note": "Bibelwort aus dem Buch Prediger, wird auch bei Trauerfeiern oft vorgelesen.",
+   "note": "Ein Bibelwort aus dem Buch Prediger, das oft bei Trauerfeiern vorgelesen wird; behutsam besprechen.",
    "kind": "proverb",
    "consensus_wordings": [
     "Alles hat seine Zeit"
@@ -15738,7 +15753,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -15943,7 +15958,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -16015,7 +16030,7 @@
    "situation": "Im Verein streiten alle Mitglieder, weil sich der Vorstand selbst nie einig wird.",
    "prompts": [
     "Was macht Ihrer Meinung nach eine gute Leitung in einem Verein oder Betrieb aus?",
-    "Welchen Fisch essen Sie am liebsten, und wie zubereitet?"
+    "Welchen Fisch essen Sie am liebsten, und wie muss er zubereitet sein?"
    ],
    "note": "",
    "kind": "proverb",
@@ -16105,7 +16120,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -16147,7 +16162,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -16275,7 +16290,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -16304,7 +16319,7 @@
    "hint": "das Gegenteil von groß",
    "situation": "Eine Mutter seufzt: Früher ging es um Schürfwunden, heute um Führerschein und Liebeskummer.",
    "prompts": [
-    "Welche Sorgen hatten junge Leute früher Ihrer Meinung nach?",
+    "Welche Sorgen hatten junge Leute früher, was meinen Sie?",
     "Hat man es als Kind leichter als als Erwachsener, was meinen Sie?"
    ],
    "note": "Kann bei Kinderlosigkeit oder dem Verlust eines Kindes schmerzlich sein.",
@@ -16357,7 +16372,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -16399,7 +16414,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -16526,7 +16541,7 @@
    "agree": 2,
    "attested": "strong",
    "sources": [
-    "de.wiktionary (Seite)"
+    "web lookup"
    ]
   },
   {
@@ -16555,7 +16570,7 @@
     "wrong": "strickt"
    },
    "hint": "im Herbst die Früchte einholen",
-   "situation": "Eine Frau war immer freundlich zu allen, und nun helfen ihr die Nachbarn gern beim Einkaufen.",
+   "situation": "Frau Becker war immer freundlich zu allen. Jetzt helfen ihr die Nachbarn gern beim Einkaufen.",
    "prompts": [
     "Kommt Freundlichkeit irgendwann zurück, was meinen Sie?",
     "Welches Gemüse würden Sie am liebsten selbst anbauen?"

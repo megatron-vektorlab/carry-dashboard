@@ -8,15 +8,15 @@ Dieses Buch lädt dazu ein, die alten Bekannten wiederzuentdecken: beim Raten, E
 #section[So ist das Buch aufgebaut]
 - *#D.chapters.len() Kapitel mit je 10 Arbeitsblättern:* #D.chapters.map(c => c.name).join(", ", last: " und ").
 - *Jedes Arbeitsblatt steht auf einer rechten Seite* und ist eine Kopiervorlage.
-- *Auf der Rückseite jedes Blattes* stehen die Lösungen, Hilfen, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird.
+- *Auf der Rückseite jedes Blattes* stehen die Lösungen, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird, bei vielen Blättern auch Hilfen, wenn ein Wort nicht einfällt.
 - *Jedes Kapitel beginnt* mit einer Aufwärmrunde und mit Ideen zum Erzählen, Bewegen und Mitbringen. In jedem Kapitel gibt es eine kleine Geschichte zum Vorlesen.
 - *Hinten im Buch* finden Sie alle Sprichwörter und Redewendungen von A bis Z.
 
 #section[Drei Stufen]
 #grid(columns: (22mm, 1fr), row-gutter: 0.7em,
   level-mark(1), [*Mit Hilfen:* Wörter zur Auswahl, oft auch ein gelöstes Beispiel.],
-  level-mark(2), [*Mit kleinen Hilfen:* zum Beispiel der erste Buchstabe oder drei Wörter zur Auswahl.],
-  level-mark(3), [*Ohne Hilfen:* frei ergänzen und aufschreiben.])
+  level-mark(2), [*Mit kleinen Hilfen:* zum Beispiel der erste Buchstabe, das erste Wort oder drei Antworten zur Auswahl.],
+  level-mark(3), [*Mit wenigen Hilfen:* frei ergänzen, ordnen oder Wörter suchen und aufschreiben.])
 #v(0.4em)
 Das Zeichen für die Stufe steht unten auf jedem Blatt. Jedes Blatt steht für sich: Sie können überall anfangen, gern auch mit der ersten Stufe.
 

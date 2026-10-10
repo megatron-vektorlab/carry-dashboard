@@ -111,6 +111,41 @@ def check(e: dict, known: set[str]) -> tuple[list[str], list[str]]:
     return hard, soft
 
 
+def apply_overrides(entries: dict) -> None:
+    """Corrections from the final review (data/review_overrides.json)."""
+    path = os.path.join(ROOT, "data", "review_overrides.json")
+    if not os.path.exists(path):
+        return
+    ov = json.load(open(path))
+    used = set()
+    for e in entries.values():
+        e["prompts"] = [ov["prompt_replace"].get(p, p) for p in e.get("prompts", [])]
+        used.update(p for p in ov["prompt_replace"] if p in e.get("prompts_orig", []))
+        for field, table in (("hint", "hint_replace"), ("note", "note_replace"), ("situation", "situation_replace"),
+                             ("meaning", "meaning_replace")):
+            if e.get(field) in ov.get(table, {}):
+                e[field] = ov[table][e[field]]
+    by_wording = {e["wording"]: e for e in entries.values()}
+    for w, change in ov.get("items", {}).items():
+        e = by_wording.get(w)
+        if e is None:
+            print(f"  review override: no entry {w!r}", file=sys.stderr)
+            continue
+        for k, v in change.items():
+            if k == "variants_add":
+                e["variants"] = list(dict.fromkeys(e.get("variants", []) + v))
+            else:
+                e[k] = v
+    for w, others in ov.get("distractor_avoid", {}).items():
+        e = by_wording.get(w)
+        ids = [by_wording[o]["id"] for o in others if o in by_wording]
+        if e is not None:
+            e["avoid_with"] = ids
+            for o in others:
+                if o in by_wording:
+                    by_wording[o].setdefault("avoid_with", []).append(e["id"])
+
+
 def main():
     res = json.load(open(sys.argv[1]))
     cons = json.load(open(os.path.join(ROOT, "data", "corpus_consensus.json")))
@@ -126,6 +161,7 @@ def main():
             if fx["id"] in entries:
                 entries[fx["id"]][fx["field"]] = fx["value"]
                 entries[fx["id"]].setdefault("fixed", []).append(f"{fx['field']}: {fx['problem']}")
+    apply_overrides(entries)
     # the proverb of each chapter's story belongs to that chapter
     sp = os.path.join(ROOT, "data", "stories.json")
     if os.path.exists(sp):
