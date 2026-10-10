@@ -7238,6 +7238,43 @@
    },
    {
     "kind": "proverb",
+    "wording": "Allzu viel ist ungesund",
+    "wordings": {
+     "Allzu viel ist ungesund": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Wer es übertreibt, dem bekommt es nicht gut.",
+     "Zu viel von einer Sache schadet."
+    ],
+    "themes": [
+     "Gesundheit"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Allzu viel",
+      "ist ungesund"
+     ],
+     [
+      "Allzu viel",
+      "ist ungesund"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "April, April, der macht, was er will",
     "wordings": {
      "April, April, der macht, was er will": 2
@@ -7311,6 +7348,43 @@
     "attested": "strong",
     "sources": [
      "en.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Bier auf Wein, das lass sein; Wein auf Bier, das rat ich dir",
+    "wordings": {
+     "Bier auf Wein, das lass sein; Wein auf Bier, das rat ich dir": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man soll zuerst Bier und danach Wein trinken.",
+     "Man soll nach Wein kein Bier mehr trinken."
+    ],
+    "themes": [
+     "Essen & Trinken"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Bier auf Wein, das lass sein;",
+      "Wein auf Bier, das rat ich dir"
+     ],
+     [
+      "Bier auf Wein, das lass sein",
+      "Wein auf Bier, das rat ich dir"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -7472,6 +7546,44 @@
    },
    {
     "kind": "proverb",
+    "wording": "Der Teufel steckt im Detail",
+    "wordings": {
+     "Der Teufel steckt im Detail": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Die kleinen Dinge machen oft die meisten Probleme.",
+     "Die Schwierigkeiten zeigen sich oft erst bei den Kleinigkeiten."
+    ],
+    "themes": [
+     "Arbeit & Fleiß",
+     "Religion & Kirche"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Der Teufel steckt",
+      "im Detail"
+     ],
+     [
+      "Der Teufel steckt",
+      "im Detail"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "Der Weg ist das Ziel",
     "wordings": {
      "Der Weg ist das Ziel": 2
@@ -7504,6 +7616,84 @@
     "attested": "strong",
     "sources": [
      "de.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Des einen Freud, des andern Leid",
+    "wordings": {
+     "Des einen Freud, des andern Leid": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "Des einen Freud ist des andern Leid",
+     "Des einen Leid, des andern Freud"
+    ],
+    "meanings": [
+     "Was den einen freut, macht einen anderen traurig.",
+     "Was den einen freut, macht den anderen traurig."
+    ],
+    "themes": [
+     "Glück & Unglück"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Des einen Freud,",
+      "des andern Leid"
+     ],
+     [
+      "Des einen Freud",
+      "des andern Leid"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Die Augen sind größer als der Magen",
+    "wordings": {
+     "Die Augen sind größer als der Magen": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man nimmt sich mehr zu essen, als man schafft.",
+     "Man nimmt sich mehr zu essen, als man schafft."
+    ],
+    "themes": [
+     "Körper",
+     "Essen & Trinken"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Die Augen sind größer",
+      "als der Magen"
+     ],
+     [
+      "Die Augen sind größer",
+      "als der Magen"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -7977,6 +8167,44 @@
    },
    {
     "kind": "proverb",
+    "wording": "Kalte Hände, warmes Herz",
+    "wordings": {
+     "Kalte Hände, warmes Herz": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Wer kalte Hände hat, ist ein liebevoller Mensch.",
+     "Wer kalte Hände hat, ist ein herzlicher Mensch."
+    ],
+    "themes": [
+     "Körper",
+     "Liebe"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Kalte Hände,",
+      "warmes Herz"
+     ],
+     [
+      "Kalte Hände",
+      "warmes Herz"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "Keine Antwort ist auch eine Antwort",
     "wordings": {
      "Keine Antwort ist auch eine Antwort": 2
@@ -8128,6 +8356,84 @@
    },
    {
     "kind": "proverb",
+    "wording": "Man kann nicht auf zwei Hochzeiten tanzen",
+    "wordings": {
+     "Man kann nicht auf zwei Hochzeiten tanzen": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "Man kann nicht auf zwei Hochzeiten gleichzeitig tanzen"
+    ],
+    "meanings": [
+     "Man kann nicht zwei Dinge gleichzeitig tun.",
+     "Man kann nicht zwei Dinge zugleich tun."
+    ],
+    "themes": [
+     "Zahlen",
+     "Liebe"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Man kann nicht",
+      "auf zwei Hochzeiten tanzen"
+     ],
+     [
+      "Man kann nicht",
+      "auf zwei Hochzeiten tanzen"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Nach dem Essen sollst du ruhn oder tausend Schritte tun",
+    "wordings": {
+     "Nach dem Essen sollst du ruhn oder tausend Schritte tun": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Nach dem Essen soll man ausruhen oder spazieren gehen.",
+     "Nach einer Mahlzeit soll man ruhen oder spazieren gehen."
+    ],
+    "themes": [
+     "Essen & Trinken",
+     "Gesundheit"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Nach dem Essen sollst du ruhn",
+      "oder tausend Schritte tun"
+     ],
+     [
+      "Nach dem Essen sollst du ruhn",
+      "oder tausend Schritte tun"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "Schlafende Hunde soll man nicht wecken",
     "wordings": {
      "Schlafende Hunde soll man nicht wecken": 2
@@ -8242,6 +8548,43 @@
    },
    {
     "kind": "proverb",
+    "wording": "Was ich nicht weiß, macht mich nicht heiß",
+    "wordings": {
+     "Was ich nicht weiß, macht mich nicht heiß": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Worüber man nichts weiß, darüber ärgert man sich nicht.",
+     "Worüber man nichts weiß, darüber ärgert man sich nicht."
+    ],
+    "themes": [
+     "Klugheit & Dummheit"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Was ich nicht weiß,",
+      "macht mich nicht heiß"
+     ],
+     [
+      "Was ich nicht weiß",
+      "macht mich nicht heiß"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "Was lange währt, wird endlich gut",
     "wordings": {
      "Was lange währt, wird endlich gut": 2
@@ -8274,6 +8617,45 @@
     "attested": "strong",
     "sources": [
      "de.wikiquote"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Wenn Engel reisen, lacht der Himmel",
+    "wordings": {
+     "Wenn Engel reisen, lacht der Himmel": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Gute Menschen haben auf Reisen schönes Wetter.",
+     "Gute Menschen haben auf Reisen schönes Wetter."
+    ],
+    "themes": [
+     "Reisen & Wege",
+     "Wetter & Natur",
+     "Religion & Kirche"
+    ],
+    "familiarity": 3.0,
+    "splits": [
+     [
+      "Wenn Engel reisen,",
+      "lacht der Himmel"
+     ],
+     [
+      "Wenn Engel reisen",
+      "lacht der Himmel"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -8551,6 +8933,43 @@
    },
    {
     "kind": "proverb",
+    "wording": "Ehre, wem Ehre gebührt",
+    "wordings": {
+     "Ehre, wem Ehre gebührt": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Wer etwas geleistet hat, soll dafür gelobt werden.",
+     "Wer etwas Gutes geleistet hat, soll dafür gelobt werden."
+    ],
+    "themes": [
+     "Freundschaft & Menschen"
+    ],
+    "familiarity": 2.5,
+    "splits": [
+     [
+      "Ehre,",
+      "wem Ehre gebührt"
+     ],
+     [
+      "Ehre",
+      "wem Ehre gebührt"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "Ein gutes Gewissen ist ein sanftes Ruhekissen",
     "wordings": {
      "Ein gutes Gewissen ist ein sanftes Ruhekissen": 2
@@ -8699,6 +9118,44 @@
     "attested": "strong",
     "sources": [
      "de.wikiquote"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Das Glück ist mit den Tüchtigen",
+    "wordings": {
+     "Das Glück ist mit den Tüchtigen": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Wer fleißig ist, hat auch öfter Glück.",
+     "Wer fleißig ist, hat auch öfter Glück."
+    ],
+    "themes": [
+     "Glück & Unglück",
+     "Arbeit & Fleiß"
+    ],
+    "familiarity": 2.0,
+    "splits": [
+     [
+      "Das Glück ist",
+      "mit den Tüchtigen"
+     ],
+     [
+      "Das Glück ist",
+      "mit den Tüchtigen"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -8856,6 +9313,44 @@
    },
    {
     "kind": "proverb",
+    "wording": "Es ist nicht alle Tage Sonntag",
+    "wordings": {
+     "Es ist nicht alle Tage Sonntag": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Es gibt nicht nur schöne Tage.",
+     "Man kann nicht jeden Tag etwas Besonderes erleben."
+    ],
+    "themes": [
+     "Zeit",
+     "Religion & Kirche"
+    ],
+    "familiarity": 2.0,
+    "splits": [
+     [
+      "Es ist nicht",
+      "alle Tage Sonntag"
+     ],
+     [
+      "Es ist nicht",
+      "alle Tage Sonntag"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "Geduld bringt Rosen",
     "wordings": {
      "Geduld bringt Rosen": 2
@@ -8935,6 +9430,46 @@
    },
    {
     "kind": "proverb",
+    "wording": "Ist der Mai kühl und nass, füllt's dem Bauern Scheun und Fass",
+    "wordings": {
+     "Ist der Mai kühl und nass, füllt's dem Bauern Scheun und Fass": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "Mai kühl und nass füllt dem Bauern Scheun und Fass"
+    ],
+    "meanings": [
+     "Ein kühler, nasser Mai bringt eine gute Ernte.",
+     "Ein kühler, feuchter Mai bringt eine gute Ernte."
+    ],
+    "themes": [
+     "Wetter & Natur",
+     "Zeit"
+    ],
+    "familiarity": 2.0,
+    "splits": [
+     [
+      "Ist der Mai kühl und nass,",
+      "füllt's dem Bauern Scheun und Fass"
+     ],
+     [
+      "Ist der Mai kühl und nass",
+      "füllt's dem Bauern Scheun und Fass"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
     "wording": "Kleine Kinder, kleine Sorgen, große Kinder, große Sorgen",
     "wordings": {
      "Kleine Kinder, kleine Sorgen, große Kinder, große Sorgen": 2
@@ -8967,6 +9502,85 @@
     "attested": "strong",
     "sources": [
      "de.wikiquote"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Morgenrot, Schlechtwetter droht",
+    "wordings": {
+     "Morgenrot, Schlechtwetter droht": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "Abendrot, Gutwetterbot"
+    ],
+    "meanings": [
+     "Ein roter Himmel am Morgen kündigt Regen an.",
+     "Ein roter Himmel am Morgen kündigt schlechtes Wetter an."
+    ],
+    "themes": [
+     "Wetter & Natur",
+     "Farben"
+    ],
+    "familiarity": 2.0,
+    "splits": [
+     [
+      "Morgenrot,",
+      "Schlechtwetter droht"
+     ],
+     [
+      "Morgenrot",
+      "Schlechtwetter droht"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Sage mir, mit wem du umgehst, und ich sage dir, wer du bist",
+    "wordings": {
+     "Sage mir, mit wem du umgehst, und ich sage dir, wer du bist": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "Sag mir, mit wem du umgehst, und ich sag dir, wer du bist"
+    ],
+    "meanings": [
+     "Man erkennt einen Menschen an seinen Freunden.",
+     "An den Freunden eines Menschen erkennt man ihn selbst."
+    ],
+    "themes": [
+     "Freundschaft & Menschen"
+    ],
+    "familiarity": 2.0,
+    "splits": [
+     [
+      "Sage mir, mit wem du umgehst,",
+      "und ich sage dir, wer du bist"
+     ],
+     [
+      "Sage mir, mit wem du umgehst",
+      "und ich sage dir, wer du bist"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -9044,6 +9658,43 @@
     "attested": "strong",
     "sources": [
      "de.wikiquote"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "proverb",
+    "wording": "Viele Hunde sind des Hasen Tod",
+    "wordings": {
+     "Viele Hunde sind des Hasen Tod": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Gegen eine große Übermacht kann ein Einzelner nichts tun.",
+     "Gegen eine große Übermacht kann ein Einzelner nichts tun."
+    ],
+    "themes": [
+     "Tiere"
+    ],
+    "familiarity": 2.0,
+    "splits": [
+     [
+      "Viele Hunde",
+      "sind des Hasen Tod"
+     ],
+     [
+      "Viele Hunde",
+      "sind des Hasen Tod"
+     ]
+    ],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -9430,41 +10081,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Allzu viel ist ungesund",
-    "wordings": {
-     "Allzu viel ist ungesund": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Wer es übertreibt, dem bekommt es nicht gut.",
-     "Zu viel von einer Sache schadet."
-    ],
-    "themes": [
-     "Gesundheit"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Allzu viel",
-      "ist ungesund"
-     ],
-     [
-      "Allzu viel",
-      "ist ungesund"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Alte Bäume verpflanzt man nicht",
     "wordings": {
      "Alte Bäume verpflanzt man nicht": 2
@@ -9828,77 +10444,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Bier auf Wein, das lass sein; Wein auf Bier, das rat ich dir",
-    "wordings": {
-     "Bier auf Wein, das lass sein; Wein auf Bier, das rat ich dir": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man soll zuerst Bier und danach Wein trinken.",
-     "Man soll nach Wein kein Bier mehr trinken."
-    ],
-    "themes": [
-     "Essen & Trinken"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Bier auf Wein, das lass sein;",
-      "Wein auf Bier, das rat ich dir"
-     ],
-     [
-      "Bier auf Wein, das lass sein",
-      "Wein auf Bier, das rat ich dir"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Das Glück ist mit den Tüchtigen",
-    "wordings": {
-     "Das Glück ist mit den Tüchtigen": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Wer fleißig ist, hat auch öfter Glück.",
-     "Wer fleißig ist, hat auch öfter Glück."
-    ],
-    "themes": [
-     "Glück & Unglück",
-     "Arbeit & Fleiß"
-    ],
-    "familiarity": 2.0,
-    "splits": [
-     [
-      "Das Glück ist",
-      "mit den Tüchtigen"
-     ],
-     [
-      "Das Glück ist",
-      "mit den Tüchtigen"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Das Spiel dauert 90 Minuten",
     "wordings": {
      "Das Spiel dauert 90 Minuten": 1
@@ -10222,42 +10767,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Der Teufel steckt im Detail",
-    "wordings": {
-     "Der Teufel steckt im Detail": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Die kleinen Dinge machen oft die meisten Probleme.",
-     "Die Schwierigkeiten zeigen sich oft erst bei den Kleinigkeiten."
-    ],
-    "themes": [
-     "Arbeit & Fleiß",
-     "Religion & Kirche"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Der Teufel steckt",
-      "im Detail"
-     ],
-     [
-      "Der Teufel steckt",
-      "im Detail"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Der Wunsch ist der Vater des Gedankens",
     "wordings": {
      "Der Wunsch ist der Vater des Gedankens": 1
@@ -10344,80 +10853,6 @@
      [
       "Der kluge Mann",
       "baut vor"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Des einen Freud, des andern Leid",
-    "wordings": {
-     "Des einen Freud, des andern Leid": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "Des einen Freud ist des andern Leid",
-     "Des einen Leid, des andern Freud"
-    ],
-    "meanings": [
-     "Was den einen freut, macht einen anderen traurig.",
-     "Was den einen freut, macht den anderen traurig."
-    ],
-    "themes": [
-     "Glück & Unglück"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Des einen Freud,",
-      "des andern Leid"
-     ],
-     [
-      "Des einen Freud",
-      "des andern Leid"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Die Augen sind größer als der Magen",
-    "wordings": {
-     "Die Augen sind größer als der Magen": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man nimmt sich mehr zu essen, als man schafft.",
-     "Man nimmt sich mehr zu essen, als man schafft."
-    ],
-    "themes": [
-     "Körper",
-     "Essen & Trinken"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Die Augen sind größer",
-      "als der Magen"
-     ],
-     [
-      "Die Augen sind größer",
-      "als der Magen"
      ]
     ],
     "attested": "none",
@@ -10643,41 +11078,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Ehre, wem Ehre gebührt",
-    "wordings": {
-     "Ehre, wem Ehre gebührt": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Wer etwas geleistet hat, soll dafür gelobt werden.",
-     "Wer etwas Gutes geleistet hat, soll dafür gelobt werden."
-    ],
-    "themes": [
-     "Freundschaft & Menschen"
-    ],
-    "familiarity": 2.5,
-    "splits": [
-     [
-      "Ehre,",
-      "wem Ehre gebührt"
-     ],
-     [
-      "Ehre",
-      "wem Ehre gebührt"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Ein Apfel am Tag hält den Doktor fern",
     "wordings": {
      "Ein Apfel am Tag hält den Doktor fern": 1
@@ -10818,42 +11218,6 @@
      [
       "Es gibt",
       "keine dummen Fragen"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Es ist nicht alle Tage Sonntag",
-    "wordings": {
-     "Es ist nicht alle Tage Sonntag": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Es gibt nicht nur schöne Tage.",
-     "Man kann nicht jeden Tag etwas Besonderes erleben."
-    ],
-    "themes": [
-     "Zeit",
-     "Religion & Kirche"
-    ],
-    "familiarity": 2.0,
-    "splits": [
-     [
-      "Es ist nicht",
-      "alle Tage Sonntag"
-     ],
-     [
-      "Es ist nicht",
-      "alle Tage Sonntag"
      ]
     ],
     "attested": "none",
@@ -11254,44 +11618,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Ist der Mai kühl und nass, füllt's dem Bauern Scheun und Fass",
-    "wordings": {
-     "Ist der Mai kühl und nass, füllt's dem Bauern Scheun und Fass": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "Mai kühl und nass füllt dem Bauern Scheun und Fass"
-    ],
-    "meanings": [
-     "Ein kühler, nasser Mai bringt eine gute Ernte.",
-     "Ein kühler, feuchter Mai bringt eine gute Ernte."
-    ],
-    "themes": [
-     "Wetter & Natur",
-     "Zeit"
-    ],
-    "familiarity": 2.0,
-    "splits": [
-     [
-      "Ist der Mai kühl und nass,",
-      "füllt's dem Bauern Scheun und Fass"
-     ],
-     [
-      "Ist der Mai kühl und nass",
-      "füllt's dem Bauern Scheun und Fass"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Jeder Krämer lobt seine Ware",
     "wordings": {
      "Jeder Krämer lobt seine Ware": 1
@@ -11404,42 +11730,6 @@
      [
       "Junges Blut",
       "hat keinen Hut"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Kalte Hände, warmes Herz",
-    "wordings": {
-     "Kalte Hände, warmes Herz": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Wer kalte Hände hat, ist ein liebevoller Mensch.",
-     "Wer kalte Hände hat, ist ein herzlicher Mensch."
-    ],
-    "themes": [
-     "Körper",
-     "Liebe"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Kalte Hände,",
-      "warmes Herz"
-     ],
-     [
-      "Kalte Hände",
-      "warmes Herz"
      ]
     ],
     "attested": "none",
@@ -11563,44 +11853,6 @@
      [
       "Lieber arm dran",
       "als Arm ab"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Man kann nicht auf zwei Hochzeiten tanzen",
-    "wordings": {
-     "Man kann nicht auf zwei Hochzeiten tanzen": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "Man kann nicht auf zwei Hochzeiten gleichzeitig tanzen"
-    ],
-    "meanings": [
-     "Man kann nicht zwei Dinge gleichzeitig tun.",
-     "Man kann nicht zwei Dinge zugleich tun."
-    ],
-    "themes": [
-     "Zahlen",
-     "Liebe"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Man kann nicht",
-      "auf zwei Hochzeiten tanzen"
-     ],
-     [
-      "Man kann nicht",
-      "auf zwei Hochzeiten tanzen"
      ]
     ],
     "attested": "none",
@@ -11970,44 +12222,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Morgenrot, Schlechtwetter droht",
-    "wordings": {
-     "Morgenrot, Schlechtwetter droht": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "Abendrot, Gutwetterbot"
-    ],
-    "meanings": [
-     "Ein roter Himmel am Morgen kündigt Regen an.",
-     "Ein roter Himmel am Morgen kündigt schlechtes Wetter an."
-    ],
-    "themes": [
-     "Wetter & Natur",
-     "Farben"
-    ],
-    "familiarity": 2.0,
-    "splits": [
-     [
-      "Morgenrot,",
-      "Schlechtwetter droht"
-     ],
-     [
-      "Morgenrot",
-      "Schlechtwetter droht"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Mühsam ernährt sich das Eichhörnchen",
     "wordings": {
      "Mühsam ernährt sich das Eichhörnchen": 1
@@ -12036,42 +12250,6 @@
     "sources": [
      "de.wiktionary"
     ],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Nach dem Essen sollst du ruhn oder tausend Schritte tun",
-    "wordings": {
-     "Nach dem Essen sollst du ruhn oder tausend Schritte tun": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Nach dem Essen soll man ausruhen oder spazieren gehen.",
-     "Nach einer Mahlzeit soll man ruhen oder spazieren gehen."
-    ],
-    "themes": [
-     "Essen & Trinken",
-     "Gesundheit"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Nach dem Essen sollst du ruhn",
-      "oder tausend Schritte tun"
-     ],
-     [
-      "Nach dem Essen sollst du ruhn",
-      "oder tausend Schritte tun"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
     "blacklisted": false
    },
    {
@@ -12388,43 +12566,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Sage mir, mit wem du umgehst, und ich sage dir, wer du bist",
-    "wordings": {
-     "Sage mir, mit wem du umgehst, und ich sage dir, wer du bist": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "Sag mir, mit wem du umgehst, und ich sag dir, wer du bist"
-    ],
-    "meanings": [
-     "Man erkennt einen Menschen an seinen Freunden.",
-     "An den Freunden eines Menschen erkennt man ihn selbst."
-    ],
-    "themes": [
-     "Freundschaft & Menschen"
-    ],
-    "familiarity": 2.0,
-    "splits": [
-     [
-      "Sage mir, mit wem du umgehst,",
-      "und ich sage dir, wer du bist"
-     ],
-     [
-      "Sage mir, mit wem du umgehst",
-      "und ich sage dir, wer du bist"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Sauer macht lustig",
     "wordings": {
      "Sauer macht lustig": 1
@@ -12706,41 +12847,6 @@
    },
    {
     "kind": "proverb",
-    "wording": "Viele Hunde sind des Hasen Tod",
-    "wordings": {
-     "Viele Hunde sind des Hasen Tod": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Gegen eine große Übermacht kann ein Einzelner nichts tun.",
-     "Gegen eine große Übermacht kann ein Einzelner nichts tun."
-    ],
-    "themes": [
-     "Tiere"
-    ],
-    "familiarity": 2.0,
-    "splits": [
-     [
-      "Viele Hunde",
-      "sind des Hasen Tod"
-     ],
-     [
-      "Viele Hunde",
-      "sind des Hasen Tod"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
     "wording": "Viele Hände, schnelles Ende",
     "wordings": {
      "Viele Hände, schnelles Ende": 1
@@ -12930,41 +13036,6 @@
      [
       "Was ich denk und tu,",
       "trau ich andern zu"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Was ich nicht weiß, macht mich nicht heiß",
-    "wordings": {
-     "Was ich nicht weiß, macht mich nicht heiß": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Worüber man nichts weiß, darüber ärgert man sich nicht.",
-     "Worüber man nichts weiß, darüber ärgert man sich nicht."
-    ],
-    "themes": [
-     "Klugheit & Dummheit"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Was ich nicht weiß,",
-      "macht mich nicht heiß"
-     ],
-     [
-      "Was ich nicht weiß",
-      "macht mich nicht heiß"
      ]
     ],
     "attested": "none",
@@ -13259,43 +13330,6 @@
      [
       "Wem der Schuh passt,",
       "der zieht ihn sich an"
-     ]
-    ],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "proverb",
-    "wording": "Wenn Engel reisen, lacht der Himmel",
-    "wordings": {
-     "Wenn Engel reisen, lacht der Himmel": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Gute Menschen haben auf Reisen schönes Wetter.",
-     "Gute Menschen haben auf Reisen schönes Wetter."
-    ],
-    "themes": [
-     "Reisen & Wege",
-     "Wetter & Natur",
-     "Religion & Kirche"
-    ],
-    "familiarity": 3.0,
-    "splits": [
-     [
-      "Wenn Engel reisen,",
-      "lacht der Himmel"
-     ],
-     [
-      "Wenn Engel reisen",
-      "lacht der Himmel"
      ]
     ],
     "attested": "none",
@@ -17364,6 +17398,39 @@
    },
    {
     "kind": "idiom",
+    "wording": "leben wie die Made im Speck",
+    "wordings": {
+     "leben wie die Made im Speck": 2,
+     "wie die Made im Speck leben": 1
+    },
+    "listers": [
+     1,
+     2,
+     3
+    ],
+    "agree": 3,
+    "wording_differs": true,
+    "variants": [],
+    "meanings": [
+     "Man lebt sehr bequem und im Überfluss.",
+     "Man lebt im Überfluss und sehr bequem.",
+     "Man lebt im Überfluss und hat alles, was man braucht."
+    ],
+    "themes": [
+     "Tiere",
+     "Essen & Trinken",
+     "Geld & Besitz"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
     "wording": "mit dem linken Fuß zuerst aufgestanden sein",
     "wordings": {
      "mit dem linken Fuß zuerst aufgestanden sein": 3
@@ -18438,6 +18505,64 @@
    },
    {
     "kind": "idiom",
+    "wording": "Da ist der Wurm drin",
+    "wordings": {
+     "Da ist der Wurm drin": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "Da sitzt der Wurm drin"
+    ],
+    "meanings": [
+     "Bei einer Sache gibt es immer wieder Fehler und Probleme.",
+     "Bei einer Sache stimmt etwas nicht."
+    ],
+    "themes": [
+     "Tiere"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "Das ist nicht mein Bier",
+    "wordings": {
+     "Das ist nicht mein Bier": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Das geht mich nichts an, darum kümmere ich mich nicht.",
+     "Das geht mich nichts an."
+    ],
+    "themes": [
+     "Essen & Trinken"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
     "wording": "Das pfeifen die Spatzen von den Dächern",
     "wordings": {
      "Das pfeifen die Spatzen von den Dächern": 2
@@ -18642,6 +18767,67 @@
     "attested": "strong",
     "sources": [
      "de.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "Katzenwäsche machen",
+    "wordings": {
+     "Katzenwäsche machen": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man wäscht sich nur ganz kurz und oberflächlich.",
+     "Man wäscht sich nur ganz schnell und flüchtig."
+    ],
+    "themes": [
+     "Tiere",
+     "Körper",
+     "Haus & Familie"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "Keine zehn Pferde bringen mich dahin",
+    "wordings": {
+     "Keine zehn Pferde bringen mich dahin": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "Keine zehn Pferde kriegen mich dahin"
+    ],
+    "meanings": [
+     "Dorthin gehe ich auf gar keinen Fall.",
+     "Ich gehe auf keinen Fall dorthin."
+    ],
+    "themes": [
+     "Tiere",
+     "Zahlen"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -19315,6 +19501,37 @@
    },
    {
     "kind": "idiom",
+    "wording": "dumm aus der Wäsche gucken",
+    "wordings": {
+     "dumm aus der Wäsche gucken": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "dumm aus der Wäsche schauen"
+    ],
+    "meanings": [
+     "Man schaut verdutzt und ratlos.",
+     "Man schaut verdutzt und ratlos."
+    ],
+    "themes": [
+     "Kleidung",
+     "Klugheit & Dummheit"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
     "wording": "ein Buch mit sieben Siegeln sein",
     "wordings": {
      "ein Buch mit sieben Siegeln sein": 2
@@ -19368,6 +19585,65 @@
     "attested": "strong",
     "sources": [
      "de.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "ein Pechvogel sein",
+    "wordings": {
+     "ein Pechvogel sein": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man hat ständig Unglück.",
+     "Man hat immer wieder Pech."
+    ],
+    "themes": [
+     "Glück & Unglück",
+     "Tiere"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "ein Wolf im Schafspelz sein",
+    "wordings": {
+     "ein Wolf im Schafspelz sein": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man wirkt harmlos und freundlich, ist aber gefährlich.",
+     "Man ist böse, tut aber freundlich und harmlos."
+    ],
+    "themes": [
+     "Tiere",
+     "Freundschaft & Menschen",
+     "Religion & Kirche"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -19732,6 +20008,37 @@
    },
    {
     "kind": "idiom",
+    "wording": "jeden Pfennig umdrehen",
+    "wordings": {
+     "jeden Pfennig umdrehen": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "jeden Cent umdrehen",
+     "jeden Groschen umdrehen"
+    ],
+    "meanings": [
+     "Man ist sehr sparsam und gibt kaum Geld aus.",
+     "Man ist sehr sparsam."
+    ],
+    "themes": [
+     "Geld & Besitz"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
     "wording": "jemandem auf der Nase herumtanzen",
     "wordings": {
      "jemandem auf der Nase herumtanzen": 2
@@ -19785,6 +20092,37 @@
     "attested": "strong",
     "sources": [
      "de.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "jemandem das Wort im Mund herumdrehen",
+    "wordings": {
+     "jemandem das Wort im Mund herumdrehen": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "jemandem das Wort im Mund umdrehen"
+    ],
+    "meanings": [
+     "Man legt jemandes Worte absichtlich falsch aus.",
+     "Man verfälscht absichtlich, was jemand gesagt hat."
+    ],
+    "themes": [
+     "Reden & Schweigen",
+     "Körper"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -19958,6 +20296,63 @@
     "attested": "strong",
     "sources": [
      "de.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "jemandem rutscht das Herz in die Hose",
+    "wordings": {
+     "jemandem rutscht das Herz in die Hose": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Jemand bekommt plötzlich große Angst.",
+     "Jemand bekommt plötzlich große Angst."
+    ],
+    "themes": [
+     "Körper",
+     "Kleidung"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "jemandem stehen die Haare zu Berge",
+    "wordings": {
+     "jemandem stehen die Haare zu Berge": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Jemand ist entsetzt oder sehr erschrocken.",
+     "Jemand ist sehr erschrocken oder entsetzt."
+    ],
+    "themes": [
+     "Körper"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -20279,6 +20674,35 @@
    },
    {
     "kind": "idiom",
+    "wording": "nicht auf den Kopf gefallen sein",
+    "wordings": {
+     "nicht auf den Kopf gefallen sein": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man ist klug und weiß sich zu helfen.",
+     "Man ist klug und schlau."
+    ],
+    "themes": [
+     "Körper",
+     "Klugheit & Dummheit"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
     "wording": "nicht auf den Mund gefallen sein",
     "wordings": {
      "nicht auf den Mund gefallen sein": 2
@@ -20360,6 +20784,92 @@
     "attested": "strong",
     "sources": [
      "de.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "rotsehen",
+    "wordings": {
+     "rotsehen": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [
+     "rot sehen"
+    ],
+    "meanings": [
+     "Man wird plötzlich sehr wütend.",
+     "Man wird sehr wütend."
+    ],
+    "themes": [
+     "Farben"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "schwarzsehen",
+    "wordings": {
+     "schwarzsehen": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man erwartet nur Schlechtes.",
+     "Man erwartet nur Schlechtes."
+    ],
+    "themes": [
+     "Farben"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "sich wie ein Fisch im Wasser fühlen",
+    "wordings": {
+     "sich wie ein Fisch im Wasser fühlen": 2
+    },
+    "listers": [
+     2,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man fühlt sich rundum wohl und zu Hause.",
+     "Man fühlt sich in einer Umgebung sehr wohl."
+    ],
+    "themes": [
+     "Tiere"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -20451,6 +20961,34 @@
     "attested": "strong",
     "sources": [
      "de.wiktionary"
+    ],
+    "blacklisted": false
+   },
+   {
+    "kind": "idiom",
+    "wording": "vor jemandem den Hut ziehen",
+    "wordings": {
+     "vor jemandem den Hut ziehen": 2
+    },
+    "listers": [
+     1,
+     3
+    ],
+    "agree": 2,
+    "wording_differs": false,
+    "variants": [],
+    "meanings": [
+     "Man hat großen Respekt vor jemandes Leistung.",
+     "Man hat großen Respekt vor jemandem."
+    ],
+    "themes": [
+     "Kleidung"
+    ],
+    "familiarity": 3.0,
+    "splits": [],
+    "attested": "strong",
+    "sources": [
+     "de.wiktionary (Seite)"
     ],
     "blacklisted": false
    },
@@ -20967,34 +21505,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "Da ist der Wurm drin",
-    "wordings": {
-     "Da ist der Wurm drin": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "Da sitzt der Wurm drin"
-    ],
-    "meanings": [
-     "Bei einer Sache gibt es immer wieder Fehler und Probleme.",
-     "Bei einer Sache stimmt etwas nicht."
-    ],
-    "themes": [
-     "Tiere"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "Da lachen ja die Hühner",
     "wordings": {
      "Da lachen ja die Hühner": 1
@@ -21013,32 +21523,6 @@
     "themes": [
      "Tiere",
      "Klugheit & Dummheit"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "Das ist nicht mein Bier",
-    "wordings": {
-     "Das ist nicht mein Bier": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Das geht mich nichts an, darum kümmere ich mich nicht.",
-     "Das geht mich nichts an."
-    ],
-    "themes": [
-     "Essen & Trinken"
     ],
     "familiarity": 3.0,
     "splits": [],
@@ -21201,63 +21685,6 @@
     "sources": [
      "de.wiktionary"
     ],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "Katzenwäsche machen",
-    "wordings": {
-     "Katzenwäsche machen": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man wäscht sich nur ganz kurz und oberflächlich.",
-     "Man wäscht sich nur ganz schnell und flüchtig."
-    ],
-    "themes": [
-     "Tiere",
-     "Körper",
-     "Haus & Familie"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "Keine zehn Pferde bringen mich dahin",
-    "wordings": {
-     "Keine zehn Pferde bringen mich dahin": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "Keine zehn Pferde kriegen mich dahin"
-    ],
-    "meanings": [
-     "Dorthin gehe ich auf gar keinen Fall.",
-     "Ich gehe auf keinen Fall dorthin."
-    ],
-    "themes": [
-     "Tiere",
-     "Zahlen"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
     "blacklisted": false
    },
    {
@@ -22485,35 +22912,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "dumm aus der Wäsche gucken",
-    "wordings": {
-     "dumm aus der Wäsche gucken": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "dumm aus der Wäsche schauen"
-    ],
-    "meanings": [
-     "Man schaut verdutzt und ratlos.",
-     "Man schaut verdutzt und ratlos."
-    ],
-    "themes": [
-     "Kleidung",
-     "Klugheit & Dummheit"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "ein Auge auf jemanden werfen",
     "wordings": {
      "ein Auge auf jemanden werfen": 1
@@ -22615,61 +23013,6 @@
     "themes": [
      "Tiere",
      "Reisen & Wege"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "ein Pechvogel sein",
-    "wordings": {
-     "ein Pechvogel sein": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man hat ständig Unglück.",
-     "Man hat immer wieder Pech."
-    ],
-    "themes": [
-     "Glück & Unglück",
-     "Tiere"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "ein Wolf im Schafspelz sein",
-    "wordings": {
-     "ein Wolf im Schafspelz sein": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man wirkt harmlos und freundlich, ist aber gefährlich.",
-     "Man ist böse, tut aber freundlich und harmlos."
-    ],
-    "themes": [
-     "Tiere",
-     "Freundschaft & Menschen",
-     "Religion & Kirche"
     ],
     "familiarity": 3.0,
     "splits": [],
@@ -23384,35 +23727,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "jeden Pfennig umdrehen",
-    "wordings": {
-     "jeden Pfennig umdrehen": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "jeden Cent umdrehen",
-     "jeden Groschen umdrehen"
-    ],
-    "meanings": [
-     "Man ist sehr sparsam und gibt kaum Geld aus.",
-     "Man ist sehr sparsam."
-    ],
-    "themes": [
-     "Geld & Besitz"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "jeden Pfennig zweimal umdrehen",
     "wordings": {
      "jeden Pfennig zweimal umdrehen": 1
@@ -23627,35 +23941,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "jemandem das Wort im Mund herumdrehen",
-    "wordings": {
-     "jemandem das Wort im Mund herumdrehen": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "jemandem das Wort im Mund umdrehen"
-    ],
-    "meanings": [
-     "Man legt jemandes Worte absichtlich falsch aus.",
-     "Man verfälscht absichtlich, was jemand gesagt hat."
-    ],
-    "themes": [
-     "Reden & Schweigen",
-     "Körper"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "jemandem den Kopf verdrehen",
     "wordings": {
      "jemandem den Kopf verdrehen": 1
@@ -23836,33 +24121,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "jemandem rutscht das Herz in die Hose",
-    "wordings": {
-     "jemandem rutscht das Herz in die Hose": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Jemand bekommt plötzlich große Angst.",
-     "Jemand bekommt plötzlich große Angst."
-    ],
-    "themes": [
-     "Körper",
-     "Kleidung"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "jemandem schöne Augen machen",
     "wordings": {
      "jemandem schöne Augen machen": 1
@@ -23913,32 +24171,6 @@
     "attested": "none",
     "sources": [],
     "blacklisted": true
-   },
-   {
-    "kind": "idiom",
-    "wording": "jemandem stehen die Haare zu Berge",
-    "wordings": {
-     "jemandem stehen die Haare zu Berge": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Jemand ist entsetzt oder sehr erschrocken.",
-     "Jemand ist sehr erschrocken oder entsetzt."
-    ],
-    "themes": [
-     "Körper"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
    },
    {
     "kind": "idiom",
@@ -24076,37 +24308,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "leben wie die Made im Speck",
-    "wordings": {
-     "leben wie die Made im Speck": 2,
-     "wie die Made im Speck leben": 1
-    },
-    "listers": [
-     1,
-     2,
-     3
-    ],
-    "agree": 3,
-    "wording_differs": true,
-    "variants": [],
-    "meanings": [
-     "Man lebt sehr bequem und im Überfluss.",
-     "Man lebt im Überfluss und sehr bequem.",
-     "Man lebt im Überfluss und hat alles, was man braucht."
-    ],
-    "themes": [
-     "Tiere",
-     "Essen & Trinken",
-     "Geld & Besitz"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "mit Pauken und Trompeten durchfallen",
     "wordings": {
      "mit Pauken und Trompeten durchfallen": 1
@@ -24204,33 +24405,6 @@
     "themes": [
      "Wetter & Natur",
      "Geld & Besitz"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "nicht auf den Kopf gefallen sein",
-    "wordings": {
-     "nicht auf den Kopf gefallen sein": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man ist klug und weiß sich zu helfen.",
-     "Man ist klug und schlau."
-    ],
-    "themes": [
-     "Körper",
-     "Klugheit & Dummheit"
     ],
     "familiarity": 3.0,
     "splits": [],
@@ -24348,34 +24522,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "rotsehen",
-    "wordings": {
-     "rotsehen": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [
-     "rot sehen"
-    ],
-    "meanings": [
-     "Man wird plötzlich sehr wütend.",
-     "Man wird sehr wütend."
-    ],
-    "themes": [
-     "Farben"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "schlafen wie ein Murmeltier",
     "wordings": {
      "schlafen wie ein Murmeltier": 1
@@ -24398,32 +24544,6 @@
     "sources": [
      "de.wiktionary"
     ],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "schwarzsehen",
-    "wordings": {
-     "schwarzsehen": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man erwartet nur Schlechtes.",
-     "Man erwartet nur Schlechtes."
-    ],
-    "themes": [
-     "Farben"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
     "blacklisted": false
    },
    {
@@ -24773,32 +24893,6 @@
    },
    {
     "kind": "idiom",
-    "wording": "sich wie ein Fisch im Wasser fühlen",
-    "wordings": {
-     "sich wie ein Fisch im Wasser fühlen": 2
-    },
-    "listers": [
-     2,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man fühlt sich rundum wohl und zu Hause.",
-     "Man fühlt sich in einer Umgebung sehr wohl."
-    ],
-    "themes": [
-     "Tiere"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
     "wording": "tief in die Tasche greifen",
     "wordings": {
      "tief in die Tasche greifen": 1
@@ -24928,32 +25022,6 @@
     "sources": [
      "de.wiktionary"
     ],
-    "blacklisted": false
-   },
-   {
-    "kind": "idiom",
-    "wording": "vor jemandem den Hut ziehen",
-    "wordings": {
-     "vor jemandem den Hut ziehen": 2
-    },
-    "listers": [
-     1,
-     3
-    ],
-    "agree": 2,
-    "wording_differs": false,
-    "variants": [],
-    "meanings": [
-     "Man hat großen Respekt vor jemandes Leistung.",
-     "Man hat großen Respekt vor jemandem."
-    ],
-    "themes": [
-     "Kleidung"
-    ],
-    "familiarity": 3.0,
-    "splits": [],
-    "attested": "none",
-    "sources": [],
     "blacklisted": false
    },
    {

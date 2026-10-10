@@ -126,6 +126,12 @@ def main():
             if fx["id"] in entries:
                 entries[fx["id"]][fx["field"]] = fx["value"]
                 entries[fx["id"]].setdefault("fixed", []).append(f"{fx['field']}: {fx['problem']}")
+    # the proverb of each chapter's story belongs to that chapter
+    sp = os.path.join(ROOT, "data", "stories.json")
+    if os.path.exists(sp):
+        for st in json.load(open(sp))["stories"]:
+            if st["item"] in entries:
+                entries[st["item"]]["chapter"] = st["chapter"]
     known = set()
     for e in entries.values():
         for w in [e["wording"], *e.get("variants", [])]:
