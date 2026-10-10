@@ -6,10 +6,10 @@
    "chapter": "Tiere",
    "items": [
     "i154",
-    "i147",
     "i029",
     "p012",
-    "i047"
+    "p078",
+    "i147"
    ],
    "example": "i043",
    "category": "Tier",
@@ -23,10 +23,10 @@
     "i162",
     "i130",
     "p065",
-    "p056",
+    "i141",
     "i049"
    ],
-   "example": "i184",
+   "example": "i047",
    "num": 2
   },
   {
@@ -36,9 +36,9 @@
    "items": [
     "p165",
     "p032",
-    "p029",
-    "p031",
-    "p211"
+    "p191",
+    "p033",
+    "p173"
    ],
    "example": null,
    "num": 3
@@ -74,12 +74,12 @@
    "level": 2,
    "chapter": "Tiere",
    "items": [
-    "i141",
-    "i003",
+    "i184",
     "i036",
     "i163",
     "i048",
-    "i125"
+    "i094",
+    "p056"
    ],
    "example": "i074",
    "num": 5
@@ -89,14 +89,14 @@
    "level": 2,
    "chapter": "Tiere",
    "items": [
-    "p078",
-    "i035",
-    "i082",
-    "p198",
-    "p071",
-    "p191"
+    "i103",
+    "i127",
+    "i096",
+    "i111",
+    "p197",
+    "i090"
    ],
-   "example": "i094",
+   "example": "i125",
    "num": 6
   },
   {
@@ -105,8 +105,7 @@
    "chapter": "Tiere",
    "items": [
     "i117",
-    "i090",
-    "i096",
+    "i135",
     "i021"
    ],
    "example": null,
@@ -117,12 +116,12 @@
    "level": 2,
    "chapter": "Tiere",
    "items": [
-    "p056",
+    "p078",
     "p180",
     "p060",
     "p019",
     "p223",
-    "p173"
+    "p211"
    ],
    "example": "p065",
    "num": 8
@@ -132,12 +131,12 @@
    "level": 3,
    "chapter": "Tiere",
    "items": [
-    "p032",
     "p029",
-    "p033",
+    "p198",
+    "p071",
     "p197",
     "p067",
-    "p191"
+    "p031"
    ],
    "example": null,
    "num": 9
@@ -147,12 +146,12 @@
    "level": 3,
    "chapter": "Tiere",
    "items": [
-    "p078",
-    "p031",
-    "p198",
-    "p197",
+    "p012",
+    "p211",
+    "p019",
+    "p223",
     "p058",
-    "p165"
+    "p056"
    ],
    "example": null,
    "num": 10
@@ -163,8 +162,8 @@
    "chapter": "Körper",
    "items": [
     "i039",
-    "p072",
-    "i038",
+    "p184",
+    "i144",
     "i070",
     "i113"
    ],
@@ -177,11 +176,11 @@
    "level": 1,
    "chapter": "Körper",
    "items": [
-    "i041",
+    "i164",
+    "i011",
     "i148",
-    "i185",
-    "i108",
-    "i144"
+    "i038",
+    "p164"
    ],
    "example": "i010",
    "num": 12
@@ -191,10 +190,10 @@
    "level": 1,
    "chapter": "Körper",
    "items": [
-    "p184",
-    "p008",
+    "p011",
     "p206",
-    "p124",
+    "p102",
+    "p171",
     "p030"
    ],
    "example": null,
@@ -231,14 +230,14 @@
    "level": 2,
    "chapter": "Körper",
    "items": [
-    "i164",
-    "i011",
-    "p011",
+    "i041",
+    "i185",
+    "i108",
     "i129",
     "p068",
-    "p164"
+    "i144"
    ],
-   "example": "i177",
+   "example": "i016",
    "num": 15
   },
   {
@@ -246,14 +245,14 @@
    "level": 2,
    "chapter": "Körper",
    "items": [
-    "i016",
+    "i086",
+    "i032",
     "i080",
-    "i187",
-    "i101",
-    "i060",
-    "i109"
+    "i088",
+    "i186",
+    "p008"
    ],
-   "example": "i072",
+   "example": "i177",
    "num": 16
   },
   {
@@ -261,9 +260,9 @@
    "level": 2,
    "chapter": "Körper",
    "items": [
-    "p102",
-    "p103",
-    "p171"
+    "p072",
+    "p225",
+    "p124"
    ],
    "example": null,
    "num": 17
@@ -274,26 +273,26 @@
    "chapter": "Körper",
    "items": [
     "p184",
+    "p206",
     "p102",
-    "p124",
     "p171",
-    "p225",
-    "p206"
+    "p103",
+    "p011"
    ],
-   "example": "p011",
+   "example": "p124",
    "num": 18
   },
   {
-   "type": "scramble",
+   "type": "gaps",
    "level": 3,
    "chapter": "Körper",
    "items": [
-    "p030",
-    "p008",
-    "p124",
-    "p171",
-    "p103",
-    "p068"
+    "i093",
+    "i187",
+    "i101",
+    "i107",
+    "i091",
+    "i109"
    ],
    "example": null,
    "num": 19
@@ -303,14 +302,14 @@
    "level": 3,
    "chapter": "Körper",
    "items": [
-    "i188",
-    "i093",
+    "i011",
+    "i072",
+    "i085",
     "i023",
-    "i032",
-    "i088",
-    "i107",
-    "i186",
-    "i085"
+    "i150",
+    "i060",
+    "i124",
+    "i129"
    ],
    "example": null,
    "num": 20
@@ -335,13 +334,13 @@
    "level": 1,
    "chapter": "Essen & Trinken",
    "items": [
-    "i084",
-    "p057",
-    "p101",
+    "i001",
+    "p069",
+    "i006",
     "p229",
-    "i115"
+    "p057"
    ],
-   "example": "p069",
+   "example": "i115",
    "num": 22
   },
   {
@@ -350,10 +349,10 @@
    "chapter": "Essen & Trinken",
    "items": [
     "p167",
-    "p106",
+    "p004",
     "p041",
     "p163",
-    "p176"
+    "p106"
    ],
    "example": null,
    "num": 23
@@ -389,14 +388,14 @@
    "level": 2,
    "chapter": "Essen & Trinken",
    "items": [
-    "i001",
+    "i084",
     "i165",
     "i068",
     "i097",
-    "p004",
-    "i006"
+    "p176",
+    "i161"
    ],
-   "example": "i161",
+   "example": "p120",
    "num": 25
   },
   {
@@ -404,14 +403,14 @@
    "level": 2,
    "chapter": "Essen & Trinken",
    "items": [
-    "p120",
+    "i006",
     "i182",
-    "p181",
+    "p014",
+    "i126",
     "p158",
-    "p190",
     "i030"
    ],
-   "example": "i126",
+   "example": "i001",
    "num": 26
   },
   {
@@ -419,55 +418,54 @@
    "level": 2,
    "chapter": "Essen & Trinken",
    "items": [
-    "i001",
-    "i122",
-    "i165",
-    "i115"
+    "i106",
+    "i064",
+    "i040"
    ],
    "example": null,
    "num": 27
   },
   {
-   "type": "match",
+   "type": "complete",
    "level": 2,
    "chapter": "Essen & Trinken",
    "items": [
-    "p101",
+    "p182",
     "p176",
-    "p041",
-    "p163",
-    "p014",
-    "p229"
+    "p106",
+    "p181",
+    "p190",
+    "p101"
    ],
-   "example": null,
+   "example": "p167",
    "num": 28
   },
   {
-   "type": "complete",
+   "type": "scramble",
    "level": 3,
    "chapter": "Essen & Trinken",
    "items": [
-    "p182",
-    "p106",
+    "p057",
+    "p229",
     "p004",
-    "p120",
-    "p190",
-    "p167"
+    "p014",
+    "p158",
+    "p069"
    ],
    "example": null,
    "num": 29
   },
   {
-   "type": "gaps",
+   "type": "firstletters",
    "level": 3,
    "chapter": "Essen & Trinken",
    "items": [
-    "i040",
-    "i006",
-    "i064",
-    "i068",
-    "i097",
-    "p057"
+    "p182",
+    "p176",
+    "p120",
+    "p181",
+    "p190",
+    "p101"
    ],
    "example": null,
    "num": 30
@@ -478,8 +476,8 @@
    "chapter": "Haus, Hof & Garten",
    "items": [
     "i102",
-    "i105",
     "i121",
+    "p043",
     "p085",
     "p186"
    ],
@@ -491,13 +489,13 @@
    "level": 1,
    "chapter": "Haus, Hof & Garten",
    "items": [
-    "p021",
-    "p061",
-    "i139",
+    "i066",
+    "p097",
+    "i020",
     "i159",
-    "i063"
+    "p021"
    ],
-   "example": "p082",
+   "example": "i105",
    "num": 32
   },
   {
@@ -505,7 +503,7 @@
    "level": 1,
    "chapter": "Haus, Hof & Garten",
    "items": [
-    "p043",
+    "p186",
     "p105",
     "p224",
     "p202",
@@ -546,13 +544,13 @@
    "chapter": "Haus, Hof & Garten",
    "items": [
     "i066",
-    "i020",
+    "i139",
     "i045",
     "i166",
     "i169",
-    "p097"
+    "p061"
    ],
-   "example": "i056",
+   "example": "i092",
    "num": 35
   },
   {
@@ -560,14 +558,14 @@
    "level": 2,
    "chapter": "Haus, Hof & Garten",
    "items": [
-    "i092",
-    "p205",
-    "p132",
-    "i079",
+    "i063",
+    "i098",
+    "p174",
     "p119",
-    "p174"
+    "p215",
+    "i056"
    ],
-   "example": "p215",
+   "example": "p149",
    "num": 36
   },
   {
@@ -575,9 +573,9 @@
    "level": 2,
    "chapter": "Haus, Hof & Garten",
    "items": [
-    "p043",
-    "p149",
-    "p024"
+    "p082",
+    "p132",
+    "p205"
    ],
    "example": null,
    "num": 37
@@ -588,41 +586,41 @@
    "chapter": "Haus, Hof & Garten",
    "items": [
     "p021",
-    "p061",
+    "p085",
     "p207",
     "p105",
-    "p224",
-    "p097"
+    "p024",
+    "p043"
    ],
-   "example": "p098",
+   "example": "p186",
    "num": 38
   },
   {
-   "type": "scramble",
+   "type": "complete",
    "level": 3,
    "chapter": "Haus, Hof & Garten",
    "items": [
-    "p085",
+    "p082",
+    "p224",
     "p174",
     "p205",
-    "p132",
     "p119",
-    "p202"
+    "p097"
    ],
    "example": null,
    "num": 39
   },
   {
-   "type": "firstletters",
+   "type": "gaps",
    "level": 3,
    "chapter": "Haus, Hof & Garten",
    "items": [
-    "p186",
-    "p224",
-    "p119",
-    "p024",
-    "p149",
-    "p061"
+    "i139",
+    "i166",
+    "i169",
+    "p202",
+    "i079",
+    "i045"
    ],
    "example": null,
    "num": 40
@@ -634,11 +632,11 @@
    "items": [
     "p166",
     "i175",
-    "p095",
-    "i189",
-    "i044"
+    "i123",
+    "i145",
+    "i014"
    ],
-   "example": "i014",
+   "example": "i018",
    "num": 41
   },
   {
@@ -646,13 +644,13 @@
    "level": 1,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "p007",
-    "i018",
     "i019",
-    "i123",
-    "p096"
+    "p095",
+    "i189",
+    "i099",
+    "i044"
    ],
-   "example": "i145",
+   "example": "p161",
    "num": 42
   },
   {
@@ -660,10 +658,10 @@
    "level": 1,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "p161",
+    "p096",
     "p131",
-    "p196",
-    "p208",
+    "p219",
+    "p141",
     "p139"
    ],
    "example": null,
@@ -691,7 +689,8 @@
     "prompts": [
      "Was gehört für Sie zu einer schönen Kaffeetafel?",
      "Welches Volkslied singen Sie gern mit?"
-    ]
+    ],
+    "note": "Die Geschichte von der Goldenen Hochzeit kann an einen verstorbenen Partner erinnern; behutsam begleiten."
    },
    "num": 44
   },
@@ -701,11 +700,11 @@
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
     "i174",
+    "i128",
+    "i123",
     "i190",
-    "i099",
     "i155",
-    "p219",
-    "i128"
+    "p166"
    ],
    "example": "i017",
    "num": 45
@@ -715,12 +714,12 @@
    "level": 2,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "i044",
+    "i114",
     "p157",
+    "p208",
     "i181",
-    "p141",
     "p217",
-    "i114"
+    "p196"
    ],
    "example": "p166",
    "num": 46
@@ -730,10 +729,9 @@
    "level": 2,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "i018",
+    "i019",
     "i099",
-    "i155",
-    "i190"
+    "i044"
    ],
    "example": null,
    "num": 47
@@ -745,25 +743,24 @@
    "items": [
     "p007",
     "p095",
-    "p161",
     "p139",
     "p131",
+    "p217",
     "p096"
    ],
    "example": "p157",
    "num": 48
   },
   {
-   "type": "complete",
+   "type": "scramble",
    "level": 3,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "p096",
-    "p196",
+    "p161",
+    "p157",
     "p208",
     "p141",
-    "p217",
-    "p161"
+    "p196"
    ],
    "example": null,
    "num": 49
@@ -773,14 +770,14 @@
    "level": 3,
    "chapter": "Wetter, Natur & Jahreszeiten",
    "items": [
-    "i174",
-    "i123",
-    "p095",
+    "i128",
+    "i145",
     "i189",
+    "i114",
     "i155",
     "p219",
     "i181",
-    "i019"
+    "i014"
    ],
    "example": null,
    "num": 50
@@ -791,10 +788,10 @@
    "chapter": "Arbeit & Fleiß",
    "items": [
     "i158",
+    "i012",
     "p093",
     "p192",
-    "p052",
-    "i012"
+    "p053"
    ],
    "example": "p002",
    "num": 51
@@ -805,12 +802,12 @@
    "chapter": "Arbeit & Fleiß",
    "items": [
     "i061",
-    "p088",
     "p152",
+    "p052",
     "p144",
-    "p053"
+    "p084"
    ],
-   "example": "p084",
+   "example": "p088",
    "num": 52
   },
   {
@@ -818,11 +815,11 @@
    "level": 1,
    "chapter": "Arbeit & Fleiß",
    "items": [
+    "p053",
+    "p192",
     "p122",
-    "p052",
     "p062",
-    "p144",
-    "p138"
+    "p093"
    ],
    "example": null,
    "num": 53
@@ -858,12 +855,12 @@
    "level": 2,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p093",
+    "i110",
     "p221",
     "p126",
     "i034",
     "i053",
-    "i110"
+    "p052"
    ],
    "example": "i057",
    "num": 55
@@ -874,13 +871,13 @@
    "chapter": "Arbeit & Fleiß",
    "items": [
     "p037",
-    "i083",
+    "i153",
     "p039",
     "p075",
     "p080",
     "p135"
    ],
-   "example": "i153",
+   "example": "i052",
    "num": 56
   },
   {
@@ -888,9 +885,9 @@
    "level": 2,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p177",
+    "p138",
     "p143",
-    "p204"
+    "p177"
    ],
    "example": null,
    "num": 57
@@ -900,25 +897,25 @@
    "level": 2,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p088",
-    "p221",
+    "p144",
+    "p204",
     "p168",
     "p151",
     "p226",
-    "p138"
+    "p075"
    ],
    "example": null,
    "num": 58
   },
   {
-   "type": "scramble",
+   "type": "complete",
    "level": 3,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p062",
-    "p037",
+    "p084",
+    "p135",
     "p039",
-    "p075",
+    "p177",
     "p080",
     "p126"
    ],
@@ -930,12 +927,12 @@
    "level": 3,
    "chapter": "Arbeit & Fleiß",
    "items": [
-    "p053",
-    "p192",
-    "i052",
-    "p177",
+    "p122",
+    "p138",
+    "p062",
+    "i083",
     "i168",
-    "p152"
+    "i110"
    ],
    "example": null,
    "num": 60
@@ -945,11 +942,11 @@
    "level": 1,
    "chapter": "Geld & Glück",
    "items": [
-    "p092",
-    "p046",
+    "p099",
+    "i007",
     "i009",
-    "i172",
-    "i176"
+    "p130",
+    "p046"
    ],
    "example": "p048",
    "num": 61
@@ -959,11 +956,11 @@
    "level": 1,
    "chapter": "Geld & Glück",
    "items": [
-    "p099",
-    "p130",
-    "i028",
+    "i152",
+    "i031",
+    "i172",
     "p028",
-    "i152"
+    "i176"
    ],
    "example": "p136",
    "num": 62
@@ -1013,12 +1010,12 @@
    "level": 2,
    "chapter": "Geld & Glück",
    "items": [
-    "i007",
-    "i004",
+    "i028",
+    "i172",
     "i104",
     "i008",
     "i178",
-    "i031"
+    "i004"
    ],
    "example": "i167",
    "num": 65
@@ -1029,7 +1026,7 @@
    "chapter": "Geld & Glück",
    "items": [
     "p038",
-    "i077",
+    "p087",
     "p094",
     "p115",
     "p116",
@@ -1043,10 +1040,9 @@
    "level": 2,
    "chapter": "Geld & Glück",
    "items": [
-    "i152",
-    "i104",
+    "i007",
     "i065",
-    "i028"
+    "i077"
    ],
    "example": null,
    "num": 67
@@ -1056,14 +1052,14 @@
    "level": 2,
    "chapter": "Geld & Glück",
    "items": [
-    "p130",
+    "p092",
     "p140",
     "p222",
     "p114",
     "p209",
-    "p042"
+    "p045"
    ],
-   "example": "p048",
+   "example": "p099",
    "num": 68
   },
   {
@@ -1071,12 +1067,12 @@
    "level": 3,
    "chapter": "Geld & Glück",
    "items": [
-    "p028",
-    "p142",
+    "p046",
+    "p170",
     "p087",
-    "p094",
+    "p115",
     "p116",
-    "p045"
+    "p028"
    ],
    "example": null,
    "num": 69
@@ -1087,11 +1083,11 @@
    "chapter": "Geld & Glück",
    "items": [
     "p092",
-    "p170",
-    "p121",
     "p038",
-    "p115",
-    "p046"
+    "p142",
+    "p094",
+    "p140",
+    "p130"
    ],
    "example": null,
    "num": 70
@@ -1104,7 +1100,7 @@
     "p015",
     "i071",
     "i026",
-    "p089",
+    "i055",
     "p199"
    ],
    "example": "p100",
@@ -1116,12 +1112,12 @@
    "chapter": "Reden & Schweigen",
    "items": [
     "i170",
-    "p018",
+    "p175",
+    "i054",
     "i033",
-    "i156",
     "p023"
    ],
-   "example": "p175",
+   "example": "p018",
    "num": 72
   },
   {
@@ -1129,11 +1125,11 @@
    "level": 1,
    "chapter": "Reden & Schweigen",
    "items": [
-    "p185",
+    "p199",
+    "p110",
     "p150",
     "p118",
-    "p086",
-    "p110"
+    "p185"
    ],
    "example": null,
    "num": 73
@@ -1169,14 +1165,14 @@
    "level": 2,
    "chapter": "Reden & Schweigen",
    "items": [
-    "i025",
-    "i055",
-    "i179",
+    "p023",
+    "i156",
+    "i051",
     "i089",
     "i073",
-    "i054"
+    "i025"
    ],
-   "example": "i051",
+   "example": "p086",
    "num": 75
   },
   {
@@ -1184,14 +1180,14 @@
    "level": 2,
    "chapter": "Reden & Schweigen",
    "items": [
-    "i170",
-    "p089",
+    "i055",
+    "p110",
+    "p150",
+    "p118",
     "p147",
-    "p123",
-    "p027",
-    "i054"
+    "i179"
    ],
-   "example": "p100",
+   "example": "i170",
    "num": 76
   },
   {
@@ -1199,9 +1195,9 @@
    "level": 2,
    "chapter": "Reden & Schweigen",
    "items": [
-    "p015",
-    "p185",
-    "p018"
+    "p089",
+    "p027",
+    "p123"
    ],
    "example": null,
    "num": 77
@@ -1211,14 +1207,14 @@
    "level": 2,
    "chapter": "Reden & Schweigen",
    "items": [
-    "p023",
-    "p150",
+    "p015",
+    "p199",
+    "p185",
     "p118",
-    "p123",
-    "p027",
-    "p199"
+    "p147",
+    "p023"
    ],
-   "example": "p015",
+   "example": "p150",
    "num": 78
   },
   {
@@ -1227,11 +1223,10 @@
    "chapter": "Reden & Schweigen",
    "items": [
     "p018",
-    "p089",
     "p110",
     "p150",
     "p027",
-    "p185"
+    "p089"
    ],
    "example": null,
    "num": 79
@@ -1243,11 +1238,11 @@
    "items": [
     "i071",
     "i026",
-    "i055",
+    "i054",
     "i033",
     "i156",
+    "i051",
     "i089",
-    "i073",
     "i025"
    ],
    "example": null,
@@ -1272,13 +1267,13 @@
    "level": 1,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "i146",
-    "i136",
-    "p109",
-    "p128",
-    "i180"
+    "p005",
+    "p049",
+    "p050",
+    "i027",
+    "i146"
    ],
-   "example": "p049",
+   "example": "p051",
    "num": 82
   },
   {
@@ -1286,11 +1281,11 @@
    "level": 1,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p005",
-    "p013",
-    "p189",
+    "p044",
+    "p109",
+    "p128",
     "p076",
-    "p051"
+    "p178"
    ],
    "example": null,
    "num": 83
@@ -1326,12 +1321,12 @@
    "level": 2,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "i180",
-    "i027",
+    "i146",
+    "i136",
     "i042",
-    "p013",
+    "p189",
     "i095",
-    "p050"
+    "i180"
    ],
    "example": "p111",
    "num": 85
@@ -1343,9 +1338,9 @@
    "items": [
     "p159",
     "p154",
-    "i149",
+    "p064",
     "p210",
-    "p220",
+    "p148",
     "p108"
    ],
    "example": "p034",
@@ -1356,27 +1351,26 @@
    "level": 2,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "i146",
-    "i042",
-    "i095",
-    "i076"
+    "i171",
+    "i149",
+    "i180"
    ],
    "example": null,
    "num": 87
   },
   {
-   "type": "match",
+   "type": "scramble",
    "level": 2,
    "chapter": "Familie & Freundschaft",
    "items": [
+    "p005",
     "p050",
+    "p109",
+    "p128",
     "p212",
-    "p064",
-    "p218",
-    "p148",
-    "p108"
+    "p049"
    ],
-   "example": null,
+   "example": "p044",
    "num": 88
   },
   {
@@ -1384,27 +1378,27 @@
    "level": 3,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p178",
-    "p109",
-    "p128",
-    "p076",
+    "p013",
     "p159",
-    "p051"
+    "p108",
+    "p218",
+    "p220",
+    "p076"
    ],
    "example": null,
    "num": 89
   },
   {
-   "type": "gaps",
+   "type": "firstletters",
    "level": 3,
    "chapter": "Familie & Freundschaft",
    "items": [
-    "p005",
-    "i171",
-    "i069",
-    "i027",
     "p189",
-    "p044"
+    "p212",
+    "p064",
+    "p210",
+    "p148",
+    "p154"
    ],
    "example": null,
    "num": 90
@@ -1414,11 +1408,11 @@
    "level": 1,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p026",
-    "p063",
-    "i133",
+    "p035",
+    "p083",
     "p200",
-    "p035"
+    "p160",
+    "p059"
    ],
    "example": "p017",
    "num": 91
@@ -1428,13 +1422,13 @@
    "level": 1,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p133",
-    "p006",
+    "p063",
+    "i133",
     "p227",
     "p010",
-    "p160"
+    "p133"
    ],
-   "example": "p059",
+   "example": "i151",
    "num": 92
   },
   {
@@ -1443,10 +1437,10 @@
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
     "p035",
-    "p160",
-    "p227",
+    "p200",
+    "p006",
     "p228",
-    "p083"
+    "p059"
    ],
    "example": null,
    "num": 93
@@ -1482,12 +1476,12 @@
    "level": 2,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "i151",
+    "i067",
     "p172",
     "i132",
     "p188",
     "p125",
-    "i067"
+    "p228"
    ],
    "example": "p066",
    "num": 95
@@ -1497,14 +1491,14 @@
    "level": 2,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "i005",
-    "p016",
-    "p055",
-    "i062",
-    "p137",
-    "i087"
+    "p074",
+    "p195",
+    "p127",
+    "p187",
+    "p091",
+    "i037"
    ],
-   "example": "p036",
+   "example": "i140",
    "num": 96
   },
   {
@@ -1512,9 +1506,9 @@
    "level": 2,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p203",
+    "p036",
     "p113",
-    "p187"
+    "p003"
    ],
    "example": null,
    "num": 97
@@ -1524,42 +1518,42 @@
    "level": 2,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p020",
-    "p104",
+    "p001",
+    "p193",
+    "p214",
     "p079",
-    "p195",
-    "p127",
-    "p081"
+    "p145",
+    "p020"
    ],
-   "example": "p074",
+   "example": "p016",
    "num": 98
   },
   {
-   "type": "scramble",
+   "type": "complete",
    "level": 3,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p003",
-    "p054",
-    "p193",
-    "p214",
-    "p077",
-    "p022"
+    "p022",
+    "p104",
+    "p073",
+    "p134",
+    "p107",
+    "p081"
    ],
    "example": null,
    "num": 99
   },
   {
-   "type": "firstletters",
+   "type": "gaps",
    "level": 3,
    "chapter": "Zeit & Lebensweisheiten",
    "items": [
-    "p183",
-    "p091",
-    "p194",
-    "p134",
-    "p107",
-    "p117"
+    "p026",
+    "i087",
+    "i062",
+    "p137",
+    "i112",
+    "i046"
    ],
    "example": null,
    "num": 100

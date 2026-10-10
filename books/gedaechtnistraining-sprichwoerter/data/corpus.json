@@ -215,7 +215,7 @@
    ],
    "swap": {
     "right": "geht",
-    "wrong": "tanzt"
+    "wrong": "hüpft"
    },
    "hint": "beim Metzger gibt es sie in Scheiben",
    "situation": "",
@@ -943,7 +943,7 @@
    "hint": "dort oben ziehen Wolken vorbei",
    "situation": "",
    "prompts": [
-    "Ist eine kleine Notlüge Ihrer Meinung nach manchmal erlaubt?",
+    "Was meinen Sie: Warum versprechen Prospekte und Werbung oft so viel?",
     "Welche Werbeversprechen von früher bringen Sie heute zum Schmunzeln?"
    ],
    "note": "",
@@ -1061,7 +1061,7 @@
    "hint": "ein Zettel, mit dem man gewinnen kann",
    "situation": "",
    "prompts": [
-    "Haben Sie früher Lotto gespielt oder auf der Kirmes ein Los gekauft? Was haben Sie gewonnen?",
+    "Haben Sie früher Lotto gespielt oder auf dem Jahrmarkt Lose gekauft? Was gab es dort zu gewinnen?",
     "Welche Verlosungen oder Tombolas auf Festen von früher kommen Ihnen in den Sinn?"
    ],
    "note": "",
@@ -1462,7 +1462,7 @@
     "Halt die Ohren steif!",
     "die Ohren steif halten"
    ],
-   "meaning": "Man bleibt mutig und lässt sich nicht entmutigen.",
+   "meaning": "Man lässt sich nicht unterkriegen und hält durch.",
    "familiarity": 3,
    "chapter": "Körper",
    "split": [],
@@ -1794,6 +1794,9 @@
     "Was meinen Sie: Warum ist es gut, auch über eigene Fehler lachen zu können?"
    ],
    "note": "",
+   "also_fits": [
+    "Vogel"
+   ],
    "kind": "idiom",
    "consensus_wordings": [
     "einen Bock schießen"
@@ -1867,7 +1870,7 @@
     "Was gehört für Sie zu einem richtig schönen Fest dazu?",
     "Was meinen Sie: Wie hat man früher gefeiert, und wie feiert man heute?"
    ],
-   "note": "Behutsam, falls Alkohol in einer Lebensgeschichte eine schwere Rolle spielt.",
+   "note": "Behutsam einsetzen, falls Alkohol im Leben von Teilnehmenden eine schwere Rolle gespielt hat.",
    "kind": "idiom",
    "consensus_wordings": [
     "einen Kater haben"
@@ -2048,10 +2051,10 @@
     "right": "sagen",
     "wrong": "gurgeln"
    },
-   "hint": "wächst im Garten und duftet",
+   "hint": "pflückt man auf der Wiese und stellt sie in die Vase",
    "situation": "",
    "prompts": [
-    "Was meinen Sie: Ist es besser, etwas offen auszusprechen oder lieber vorsichtig anzudeuten?",
+    "Wie hat man früher mit Blumen etwas gesagt, ohne es auszusprechen?",
     "Welche Blumen haben Sie schon immer besonders gern gemocht?"
    ],
    "note": "",
@@ -2089,7 +2092,7 @@
    "situation": "",
    "prompts": [
     "Verlässt man sich besser auf ein gegebenes Wort oder auf etwas Schriftliches?",
-    "Welche Rolle spielten handgeschriebene Briefe früher für Sie?"
+    "Was lässt man sich besser schriftlich geben?"
    ],
    "note": "",
    "kind": "idiom",
@@ -2329,7 +2332,7 @@
    "hint": "kommt von der Lampe oder der Sonne",
    "situation": "",
    "prompts": [
-    "Was meinen Sie: Sollte man einen Plan lieber gut überlegen, bevor man loslegt?",
+    "Wofür haben Sie als Kind gern um Erlaubnis gebeten?",
     "Wie hat sich der Straßenverkehr seit Ihrer Jugend verändert, was fällt Ihnen ein?"
    ],
    "note": "",
@@ -2500,7 +2503,9 @@
    "keep": true,
    "reason": "",
    "wording": "ins Fettnäpfchen treten",
-   "variants": [],
+   "variants": [
+    "ins Fettnäpfchen tappen"
+   ],
    "meaning": "Man sagt oder tut ungeschickt etwas, das andere peinlich berührt.",
    "familiarity": 3,
    "chapter": "Haus, Hof & Garten",
@@ -2617,9 +2622,9 @@
    "reason": "",
    "wording": "jemandem auf den Schlips treten",
    "variants": [
-    "sich auf den Schlips getreten fühlen",
+    "jemandem auf den Fuß treten",
     "jemandem auf den Schwanz treten",
-    "jemandem auf den Fuß treten"
+    "sich auf den Schlips getreten fühlen"
    ],
    "meaning": "Man sagt oder tut etwas, das einen anderen kränkt.",
    "familiarity": 3,
@@ -2795,6 +2800,9 @@
     "Was meinen Sie: Warum ist Neugier im Leben eine gute Eigenschaft?"
    ],
    "note": "",
+   "swap_also": [
+    "reden"
+   ],
    "kind": "idiom",
    "consensus_wordings": [
     "jemandem ein Loch in den Bauch fragen",
@@ -3049,7 +3057,7 @@
     "right": "Herzen",
     "wrong": "Fahrrad"
    },
-   "hint": "hart und schwer, liegt am Wegesrand",
+   "hint": "hart und grau, daraus baut man Mauern",
    "situation": "",
    "prompts": [
     "Wann waren Sie im Leben einmal so richtig erleichtert?",
@@ -3384,7 +3392,7 @@
    ],
    "swap": {
     "right": "Mund",
-    "wrong": "Bauch"
+    "wrong": "Kochtopf"
    },
    "hint": "hängt im Herbst bunt am Baum",
    "situation": "",
@@ -4236,7 +4244,7 @@
    "hint": "großes graues Tier mit Rüssel",
    "situation": "",
    "prompts": [
-    "Welches kleine Missgeschick bringt Sie heute noch zum Schmunzeln?",
+    "Wo muss man besonders behutsam sein, damit nichts zu Bruch geht?",
     "Was gehört für Sie zu gutem Benehmen in Gesellschaft?"
    ],
    "note": "",
@@ -4391,7 +4399,7 @@
    "hint": "frisch aus dem Ofen, nicht kalt",
    "situation": "",
    "prompts": [
-    "Welche Waren waren früher besonders begehrt und schnell ausverkauft?",
+    "Was war früher besonders begehrt und schnell ausverkauft?",
     "Woran denken Sie beim Duft frischer Brötchen vom Bäcker?"
    ],
    "note": "",
@@ -5903,6 +5911,9 @@
    "fixed": [
     "meaning: The meaning gave only the ironic, negative use. Duden lists 'alle anderen übertreffen' as the core sense, with the ironic use as frequent but not the only one."
    ],
+   "also_fits": [
+    "Bock"
+   ],
    "kind": "idiom",
    "consensus_wordings": [
     "den Vogel abschießen"
@@ -6217,7 +6228,7 @@
    "situation": "",
    "prompts": [
     "Was tun Sie, wenn an einem Tag einfach alles schiefgeht?",
-    "Was halten Sie von Glücksbringern wie Hufeisen, Kleeblatt oder Schornsteinfeger?"
+    "Wer hat Sie getröstet, wenn einmal alles schiefging?"
    ],
    "note": "",
    "fixed": [
@@ -6277,7 +6288,8 @@
    "wording": "eine Gänsehaut bekommen",
    "variants": [
     "eine Gänsehaut kriegen",
-    "Gänsehaut bekommen"
+    "Gänsehaut bekommen",
+    "eine Gänsehaut haben"
    ],
    "meaning": "Vor Kälte, Angst oder Rührung stellen sich die feinen Härchen auf der Haut auf.",
    "familiarity": 3,
@@ -6434,7 +6446,8 @@
    "wording": "etwas aus dem Effeff können",
    "variants": [
     "etwas aus dem Effeff beherrschen",
-    "etwas aus dem Effeff verstehen"
+    "etwas aus dem Effeff verstehen",
+    "etwas aus dem ff können"
    ],
    "meaning": "Man beherrscht eine Sache sehr gut und ganz sicher.",
    "familiarity": 2,
@@ -6879,7 +6892,7 @@
    ],
    "swap": {
     "right": "machen",
-    "wrong": "fegen"
+    "wrong": "tapezieren"
    },
    "hint": "Platz beim Bauernhaus, auch beim König",
    "situation": "",
@@ -6921,7 +6934,7 @@
    "hint": "große Tücher am Mast eines Schiffes",
    "situation": "",
    "prompts": [
-    "Sind Sie schon einmal mit einem Segelboot oder Schiff gefahren? Wie war es?",
+    "Was gefällt Ihnen am Wasser: Schiffe beobachten, am Ufer sitzen oder selbst mitfahren?",
     "Sprechen Sie Streitpunkte lieber gleich an, oder warten Sie erst ab?"
    ],
    "note": "",
@@ -7223,7 +7236,7 @@
    "situation": "",
    "prompts": [
     "Was bringt Sie im Alltag schnell auf die Palme?",
-    "Haben Sie schon einmal echte Palmen gesehen, vielleicht im Urlaub oder Gewächshaus?"
+    "Woran denken Sie bei Palmen: an Urlaub, Strand oder Gewächshaus?"
    ],
    "note": "",
    "kind": "idiom",
@@ -7813,7 +7826,7 @@
    "situation": "Der Vater spielte früher leidenschaftlich Fußball. Nun schießt auch der kleine Sohn jeden Ball ins Tor.",
    "prompts": [
     "Was meinen Sie: Macht Liebe wirklich blind?",
-    "Was haben Sie von Ihrer Mutter oder Ihrem Vater, zum Beispiel ein Talent oder eine Angewohnheit?"
+    "Was meinen Sie: Erbt man Talente, oder lernt man sie durch Zuschauen?"
    ],
    "note": "",
    "kind": "proverb",
@@ -7894,7 +7907,7 @@
     "wrong": "singt"
    },
    "hint": "wer mehr Verstand zeigt",
-   "situation": "Zwei Herren streiten am Gartenzaun, wem der Apfelbaum gehört. Schließlich lacht einer und sagt: Pflücken Sie ruhig!",
+   "situation": "Zwei Herren streiten am Gartenzaun, wem der Apfelbaum gehört. Schließlich lacht einer und sagt: „Pflücken Sie ruhig!“",
    "prompts": [
     "Was meinen Sie: Ist Nachgeben eher eine Stärke oder eine Schwäche?",
     "Wie legt man einen Streit Ihrer Meinung nach am besten bei?"
@@ -8234,7 +8247,7 @@
    "situation": "Die Kassiererin gibt zu viel Wechselgeld heraus. Frau Vogel bringt es zurück und bekommt dafür ein Stück Kuchen geschenkt.",
    "prompts": [
     "Was bedeutet Ehrlichkeit für Sie?",
-    "Was meinen Sie: Ist eine kleine Notlüge manchmal erlaubt?"
+    "Was meinen Sie: Warum ist es manchmal schwer, ehrlich zu sein?"
    ],
    "note": "",
    "kind": "proverb",
@@ -8435,7 +8448,7 @@
     "right": "allein",
     "wrong": "pünktlich"
    },
-   "hint": "wenn etwas Schlimmes passiert",
+   "hint": "etwas Schlimmes, das plötzlich passiert",
    "situation": "Erst fällt Herrn Graf das Frühstücksei herunter, dann kocht auch noch die Milch über. Er nimmt es mit Humor.",
    "prompts": [
     "Wie bewahrt man an einem verkorksten Tag die gute Laune?",
@@ -8525,7 +8538,7 @@
    "situation": "Herr Lorenz repariert der Nachbarin den Gartenzaun. Am Sonntag steht ein frischer Pflaumenkuchen vor seiner Tür.",
    "prompts": [
     "Wie hat man sich früher in der Nachbarschaft gegenseitig geholfen?",
-    "Was meinen Sie: Sollte man für Hilfe immer etwas zurückgeben?"
+    "Was hat man früher unter Nachbarn getauscht, zum Beispiel Eier, Obst oder Werkzeug?"
    ],
    "note": "",
    "kind": "proverb",
@@ -8733,7 +8746,7 @@
    "situation": "Frau Ludwig nimmt sich beim Kaffeeklatsch ein zweites Stück Torte. Lächelnd meint sie, heute werde nicht gezählt.",
    "prompts": [
     "Welche kleine Ausnahme gönnen Sie sich gern?",
-    "Was meinen Sie: Wann ist eine Ausnahme in Ordnung?"
+    "Was haben Sie beim ersten Versuch nicht geschafft und später noch einmal probiert?"
    ],
    "note": "",
    "kind": "proverb",
@@ -9494,7 +9507,7 @@
     "right": "goldenen",
     "wrong": "karierten"
    },
-   "hint": "steckt im Schuh, vorne sind die Zehen",
+   "hint": "darauf stehen Tisch und Stühle",
    "situation": "Der Malermeister aus dem Nachbarort ist bis Weihnachten ausgebucht. Wer streichen lassen möchte, muss sich gedulden.",
    "prompts": [
     "Welches Handwerk bewundern Sie besonders, und warum?",
@@ -9537,7 +9550,7 @@
     "wrong": "hungriger"
    },
    "hint": "danach, wenn alles vorbei ist",
-   "situation": "Herr Seidel lässt den Regenschirm daheim, und prompt gießt es. Lachend sagt er: Das konnte doch keiner ahnen!",
+   "situation": "Herr Seidel lässt den Regenschirm daheim, und prompt gießt es. Lachend sagt er: „Das konnte doch keiner ahnen!“",
    "prompts": [
     "Welchen guten Rat hätten Sie früher gern bekommen?",
     "Was meinen Sie: Sollte man alten Entscheidungen lange nachtrauern?"
@@ -9749,7 +9762,7 @@
    "situation": "Der Bäcker gibt Frau Köhler versehentlich Mohnbrötchen statt Sesambrötchen. Beide lachen und tauschen sie schnell um.",
    "prompts": [
     "Was meinen Sie: Warum fällt es manchen so schwer, Fehler zuzugeben?",
-    "Über welches kleine Missgeschick können Sie heute lachen?"
+    "Wer hat Ihnen einmal einen Fehler freundlich verziehen?"
    ],
    "note": "",
    "kind": "proverb",
@@ -10043,7 +10056,7 @@
     "wrong": "Kaffee"
    },
    "hint": "ein guter Tipp oder Vorschlag",
-   "situation": "Herr Meier weiß noch nicht, wohin der Sommerurlaub gehen soll. Gelassen sagt er: Darüber denke ich nächste Woche nach.",
+   "situation": "Herr Meier weiß noch nicht, wohin der Sommerurlaub gehen soll. Gelassen sagt er: „Darüber denke ich nächste Woche nach.“",
    "prompts": [
     "Wie gehen Sie mit Fragen um, auf die es nicht sofort eine Antwort gibt?",
     "Was hat sich in Ihrem Leben mit etwas Abstand von selbst geklärt?"
@@ -10086,7 +10099,7 @@
     "wrong": "Sofa"
    },
    "hint": "Vogel mit rotem Kamm auf dem Hof",
-   "situation": "Im Radio heißt es: Morgen gibt es Sonne, vielleicht aber auch Regen. Am Kaffeetisch lachen alle herzlich.",
+   "situation": "Im Radio heißt es: „Morgen gibt es Sonne, vielleicht aber auch Regen.“ Am Kaffeetisch lachen alle herzlich.",
    "prompts": [
     "Welche Bauernregeln oder Wettersprüche kennen Sie noch von früher?",
     "Woran erkennen Sie, ob das Wetter bald umschlägt?"
@@ -10129,7 +10142,7 @@
    "hint": "gibt es in der Apotheke",
    "situation": "Beim Kaffeetrinken erzählt Herr Schulz einen Witz. Danach fühlen sich alle am Tisch gleich viel wohler.",
    "prompts": [
-    "Worüber können Sie von Herzen schmunzeln?",
+    "Worüber können Sie von Herzen lachen?",
     "Welche lustige Geschichte erzählen Sie besonders gern?"
    ],
    "note": "",
@@ -10423,7 +10436,7 @@
     "right": "schmieden",
     "wrong": "bügeln"
    },
-   "hint": "hartes Metall für Hufe und Nägel",
+   "hint": "hartes Metall, das der Schmied im Feuer bearbeitet",
    "situation": "Nach Tagen voller Regen scheint endlich die Sonne. Herr Krüger hängt sofort die ganze Wäsche draußen auf.",
    "prompts": [
     "Was halten Sie davon, Entscheidungen schnell zu treffen?",
@@ -10511,7 +10524,7 @@
    "hint": "wenn die Sonne untergeht",
    "situation": "Beim Kartenspiel liegt Herr Vogel lange vorn und jubelt schon. In der letzten Runde gewinnt dann doch seine Nachbarin.",
    "prompts": [
-    "Freuen Sie sich schon vorher auf ein Fest, oder erst, wenn alles gut geklappt hat?",
+    "Was meinen Sie: Warum soll man den Tag nicht vor dem Abend loben?",
     "Welche Geschichte kennen Sie, in der sich jemand zu früh gefreut hat?"
    ],
    "note": "",
@@ -10632,7 +10645,7 @@
     "right": "faulen",
     "wrong": "klugen"
    },
-   "hint": "viele Menschen, Personen",
+   "hint": "reimt sich auf „heute“",
    "situation": "Der Rasen müsste dringend gemäht werden. Doch Herr Klein legt sich lieber noch einmal in die Hängematte.",
    "prompts": [
     "Welche Arbeiten haben Sie früher gern ein wenig hinausgezögert?",
@@ -10890,9 +10903,9 @@
     "wrong": "kitzlig"
    },
    "hint": "darauf schreibt man Briefe",
-   "situation": "Im Prospekt steht: Strandhotel mit Meerblick. Vor Ort sieht Familie Lange vom Balkon nur einen Parkplatz.",
+   "situation": "Im Prospekt steht „Strandhotel mit Meerblick“. Vor Ort sieht Familie Lange vom Balkon nur einen Parkplatz.",
    "prompts": [
-    "Was haben Sie früher gern aufgeschrieben, etwa Briefe, Rezepte oder Gedichte?",
+    "Was meinen Sie: Glaubt man zu schnell, was in der Zeitung steht?",
     "Vertrauen Sie eher dem geschriebenen oder dem gesprochenen Wort? Warum?"
    ],
    "note": "",
@@ -11146,7 +11159,7 @@
     "wrong": "Schluckauf"
    },
    "hint": "Stücke von zerbrochenem Geschirr",
-   "situation": "Beim Abwasch rutscht Frau Lange ein Teller aus der Hand. Ihre Freundin lacht: Das ist doch ein gutes Zeichen!",
+   "situation": "Beim Abwasch rutscht Frau Lange ein Teller aus der Hand. Ihre Freundin lacht: „Das ist doch ein gutes Zeichen!“",
    "prompts": [
     "Welchen Aberglauben oder Brauch kennen Sie noch von früher?",
     "Was halten Sie von Bräuchen wie dem Polterabend?"
@@ -11186,7 +11199,7 @@
     "right": "Selbst",
     "wrong": "Barfuß"
    },
-   "hint": "ein erwachsener Herr",
+   "hint": "Gegenteil von Frau",
    "situation": "Der Wasserhahn tropft, und der Handwerker hat erst nächste Woche Zeit. Frau Seidel holt kurzerhand den Werkzeugkasten.",
    "prompts": [
     "Welche Dinge erledigen Sie am liebsten ganz allein?",
@@ -11295,7 +11308,9 @@
    "keep": true,
    "reason": "",
    "wording": "Stille Wasser sind tief",
-   "variants": [],
+   "variants": [
+    "Stille Wasser gründen tief"
+   ],
    "meaning": "Ruhige Menschen sind oft klüger oder vielschichtiger, als man denkt.",
    "familiarity": 3,
    "chapter": "Wetter, Natur & Jahreszeiten",
@@ -11518,7 +11533,7 @@
     "right": "Köche",
     "wrong": "Katzen"
    },
-   "hint": "weiche Speise aus Grieß oder Hafer",
+   "hint": "weiche Speise aus Haferflocken und Milch",
    "situation": "Beim Schmücken des Saals hat jeder eine andere Idee. Am Ende hängen die Girlanden kreuz und quer durcheinander.",
    "prompts": [
     "Erledigen Sie Dinge lieber allein oder gemeinsam mit anderen? Warum?",
@@ -12153,7 +12168,7 @@
    "situation": "Beim Bäcker platzt Frau Weiß die Einkaufstüte, und die Brötchen kullern über den Boden. Die Kinder in der Schlange kichern.",
    "prompts": [
     "Wie gehen Sie damit um, wenn Ihnen ein kleines Missgeschick passiert?",
-    "Über welches eigene Missgeschick können Sie heute schmunzeln?"
+    "Was meinen Sie: Warum lachen manche Leute über das Pech anderer?"
    ],
    "note": "",
    "kind": "proverb",
@@ -12236,7 +12251,7 @@
    "situation": "Fritz prahlt schon zum dritten Mal mit einem Riesenhecht. Diesmal stimmt es, doch am Stammtisch grinsen alle nur.",
    "prompts": [
     "Wie kann man Ihrer Meinung nach verlorenes Vertrauen zurückgewinnen?",
-    "Welche Rolle spielt Ehrlichkeit für Sie in einer Freundschaft?"
+    "Was meinen Sie: Kann man jemandem wieder vertrauen, der einmal gelogen hat?"
    ],
    "note": "",
    "kind": "proverb",
@@ -12368,7 +12383,7 @@
    "hint": "siegt und wird Erster",
    "situation": "Frau Dietrich meldet sich zum ersten Mal beim Tanzkurs an, obwohl sie nervös ist. Am Ende des Abends strahlt sie.",
    "prompts": [
-    "Was halten Sie davon, im Leben auch einmal etwas zu riskieren?",
+    "Was meinen Sie: Ist man im Alter vorsichtiger als in der Jugend?",
     "Welche mutige Entscheidung anderer Menschen bewundern Sie?"
    ],
    "note": "",
@@ -12919,7 +12934,7 @@
    "hint": "führt von einem Ort zum anderen",
    "situation": "Mit 75 Jahren lernt Frau Petersen noch schwimmen. Nach vielen Übungsstunden schafft sie stolz die erste Bahn.",
    "prompts": [
-    "Gab es etwas, das Sie unbedingt schaffen wollten – und dann auch geschafft haben?",
+    "Was haben Sie sich früher fest vorgenommen und dann auch geschafft?",
     "Was hilft Ihrer Meinung nach am meisten, wenn etwas schwierig wird?"
    ],
    "note": "",
@@ -13477,7 +13492,7 @@
    "hint": "geht nicht verloren, hat Bestand",
    "situation": "Frau Lenz notiert jedes Rezept ihrer Mutter in ein dickes Heft. Heute kochen die Enkel danach.",
    "prompts": [
-    "Haben Sie früher gern Briefe, Postkarten oder Tagebuch geschrieben?",
+    "Was haben Sie früher gern geschrieben: Briefe, Postkarten oder Tagebuch?",
     "Welche Schreibschrift haben Sie in der Schule gelernt?"
    ],
    "note": "",
@@ -13562,10 +13577,13 @@
    "hint": "dort holte man früher Wasser",
    "situation": "Jeden Tag stellt Herr Ott sein Fahrrad unabgeschlossen vor die Tür. Eines Morgens steht es nicht mehr da.",
    "prompts": [
-    "Wie wurde früher bei Ihnen Wasser geholt – vom Brunnen, der Pumpe oder aus der Leitung?",
+    "Woher kam bei Ihnen früher das Wasser: vom Brunnen, von der Pumpe oder aus der Leitung?",
     "Sind Sie eher vorsichtig, oder probieren Sie gern etwas Gewagtes aus?"
    ],
    "note": "",
+   "avoid_with": [
+    "p187"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Der Krug geht so lange zum Brunnen, bis er bricht"
@@ -13976,7 +13994,7 @@
    "hint": "der Nachwuchs, die Kleinen",
    "situation": "Der kleine Paul hält die Zeitung genau wie sein Großvater und brummelt dabei. Alle am Tisch schmunzeln.",
    "prompts": [
-    "Welche Gewohnheit haben Sie von älteren Menschen übernommen, die Sie geprägt haben?",
+    "Welche Gewohnheit haben Sie von einem älteren Menschen übernommen, der Ihnen wichtig war?",
     "Welche Lieder wurden früher in Ihrer Umgebung gern gesungen?"
    ],
    "note": "",
@@ -14105,7 +14123,7 @@
     "Welche Getränke gab es früher bei Festen in Ihrer Gegend?",
     "Welche Regeln rund ums Essen und Trinken galten bei Ihnen zu Hause?"
    ],
-   "note": "Alkohol als Thema: bei Betroffenen in der Gruppe behutsam einsetzen.",
+   "note": "Behutsam einsetzen, falls Alkohol im Leben von Teilnehmenden eine schwere Rolle gespielt hat.",
    "kind": "proverb",
    "consensus_wordings": [
     "Bier auf Wein, das lass sein; Wein auf Bier, das rat ich dir"
@@ -14137,7 +14155,7 @@
    ],
    "swap": {
     "right": "isst",
-    "wrong": "tanzt"
+    "wrong": "singt"
    },
    "hint": "damit sieht man",
    "situation": "Frau Huber legt Petersilie und Tomatenscheiben hübsch auf die Platte. Ihre Gäste lächeln zufrieden.",
@@ -14857,7 +14875,7 @@
     "Welche Weinfeste oder Dorffeste haben Sie früher gern besucht?",
     "Finden Sie, dass Menschen in fröhlicher Runde ehrlicher werden?"
    ],
-   "note": "Alkohol als Thema: bei Betroffenen in der Gruppe behutsam einsetzen.",
+   "note": "Behutsam einsetzen, falls Alkohol im Leben von Teilnehmenden eine schwere Rolle gespielt hat.",
    "kind": "proverb",
    "consensus_wordings": [
     "Im Wein liegt die Wahrheit"
@@ -14977,7 +14995,7 @@
    "situation": "Frau Kurz fragt ihren Mann, ob er den Müll hinausbringt. Er blättert nur stumm weiter in der Zeitung.",
    "prompts": [
     "Kann Schweigen manchmal mehr sagen als viele Worte? Was meinen Sie?",
-    "Haben Sie früher gern Briefe bekommen und gespannt auf Post gewartet?"
+    "Was meinen Sie: Was bedeutet es, wenn jemand auf eine Frage gar nicht antwortet?"
    ],
    "note": "",
    "kind": "proverb",
@@ -15018,7 +15036,7 @@
    "situation": "Der neue Hund ist wunderbar verschmust. Leider zerkaut er jeden Morgen einen Hausschuh.",
    "prompts": [
     "Welche Blumen mögen Sie am liebsten?",
-    "Fällt Ihnen etwas Schönes ein, das auch eine kleine Schattenseite hatte?"
+    "Was ist schön und hat trotzdem eine kleine Schattenseite, so wie die Rose ihre Dornen?"
    ],
    "note": "",
    "kind": "proverb",
@@ -15063,6 +15081,9 @@
     "Welche kleinen Naschereien gönnen Sie sich gern?"
    ],
    "note": "",
+   "avoid_with": [
+    "p149"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Kleine Sünden bestraft der liebe Gott sofort"
@@ -16304,6 +16325,7 @@
     "Was gefällt Ihnen am Monat Mai besonders?"
    ],
    "note": "",
+   "sol_note": "früher „Faß“ geschrieben; dann bleibt ein Kästchen frei",
    "kind": "proverb",
    "consensus_wordings": [
     "Ist der Mai kühl und nass, füllt's dem Bauern Scheun und Fass"
@@ -16338,7 +16360,7 @@
     "wrong": "große Hunde"
    },
    "hint": "das Gegenteil von groß",
-   "situation": "Eine Mutter seufzt: Früher ging es um Schürfwunden, heute um Führerschein und Liebeskummer.",
+   "situation": "Eine Mutter seufzt: „Früher ging es um Schürfwunden, heute um Führerschein und Liebeskummer.“",
    "prompts": [
     "Welche Sorgen hatten junge Leute früher, was meinen Sie?",
     "Hat man es als Kind leichter als als Erwachsener, was meinen Sie?"

@@ -14,6 +14,11 @@ VAT = 0.07
 OUT_NAME = "Sprichwoerter-Redewendungen-Senioren"
 
 
+def _q(t: str) -> str:
+    """Exercise names in German quotes ("„Was fehlt?“, „Wortsalat“"), the stories plain."""
+    return t if t == "Vorlesegeschichten" else f"„{t}“"
+
+
 def eur(x: float) -> str:
     return f"{x:.2f} €".replace(".", ",")
 
@@ -32,7 +37,7 @@ def main():
         "TITLE_LEN": str(len(config.TITLE) + len(config.SUBTITLE)),
         "CHAPTERS": "; ".join(names),
         "N_TYPES": str(len(types)),
-        "TYPES": ", ".join(types[:-1]) + " und " + types[-1],
+        "TYPES": ", ".join(map(_q, types[:-1])) + " und " + _q(types[-1]),
         "N_SAYINGS": str(data["n_sayings"]),
         "N_EXAMPLES": str(sum(1 for u in data["units"] if u["sheet"].get("example"))),
         "PAGES": str(pages),
@@ -49,6 +54,9 @@ def main():
     for k, v in vals.items():
         s = s.replace(f"⟨{k}⟩", v)
     assert "⟨" not in s, "unfilled placeholder in the KDP listing"
+    import re
+    for kw in re.findall(r"^\d\. `([^`]+)`", s.split("### Keywords")[1].split("###")[0], re.M):
+        assert len(kw.encode()) <= 50, f"keyword field over 50 bytes: {kw!r}"
     with open(os.path.join(ROOT, "KDP-LISTING.md"), "w") as f:
         f.write(s)
     return vals

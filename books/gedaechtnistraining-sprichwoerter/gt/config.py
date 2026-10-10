@@ -16,17 +16,18 @@ YEAR = 2026
 
 # ---- cover texts (every claim must stay true for the interior; gt.qa checks the numbers) ----
 FRONT_LINES = ["Gedächtnistraining in Großdruck", "100 Kopiervorlagen in A4"]
-FRONT_BADGES = ["3 Stufen", "mit Lösungen", "Gesprächsimpulse"]
+FRONT_BADGES = ["3 Stufen", "10 Vorlesegeschichten", "Sprichwort-Bingo"]
 BACK_HEADLINE = "Wer anderen eine Grube gräbt …"
 BLURB = ("… und wie geht es weiter? Sprichwörter und Redewendungen kennt fast jeder seit Kindertagen. "
          "Sie wecken Erinnerungen, bringen Menschen zum Lachen und ins Gespräch. Dieses Buch macht daraus "
          "100 abwechslungsreiche Arbeitsblätter für die Gruppe, zu zweit oder allein.")
 BULLETS = [
-    "100 Kopiervorlagen in A4, in 10 Themen",
-    "3 Stufen, viele Blätter mit gelöstem Beispiel",
+    "100 A4-Kopiervorlagen in 10 Themen",
+    "3 Stufen, viele gelöste Beispiele",
     "Großdruck: Aufgaben in 20 Punkt",
     "Auf jeder Rückseite: Lösungen und Fragen zum Gespräch",
     "10 Vorlesegeschichten mit Sprichwort",
+    "Bingo, Raterunden, alle Bedeutungen",
     "Kopiererlaubnis für die eigene Gruppe",
 ]
 

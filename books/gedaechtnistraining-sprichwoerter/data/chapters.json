@@ -5,10 +5,10 @@
    "intro": "Hund und Katze, Huhn und Spatz: Kaum ein Thema hat so viele Sprichwörter und Redewendungen hervorgebracht wie die Tiere. Kein Wunder, denn früher lebten die meisten Menschen eng mit ihnen zusammen, auf dem Hof, im Stall oder im Garten.",
    "talk": [
     "Welche Tiere gab es bei Ihnen früher, im Haus, auf dem Hof oder in der Nachbarschaft?",
-    "Hatten Sie ein Lieblingstier? Wie hieß es?",
+    "Von welchem Tier aus Ihrem Leben erzählen Sie gern?",
     "Welches Tier mögen Sie gar nicht, und warum?",
     "Welche Tiergeräusche kennen Sie noch vom Land oder aus dem Garten?",
-    "Gibt es ein Tier, das gut zu Ihnen passt?"
+    "Welches Tier passt gut zu Ihnen, und warum?"
    ],
    "move": [
     "Tiere nachmachen: Die Gruppe ahmt nach, wie ein Huhn pickt, eine Katze sich streckt oder ein Pferd trabt.",
@@ -53,7 +53,7 @@
     "Einen Apfel pflücken: den Arm hochstrecken, den Apfel pflücken und in den Korb legen."
    ],
    "props": [
-    "Gewürze und Kräuter zum Riechen, zum Beispiel Zimt, Nelken oder Pfefferminze",
+    "Gewürze und Kräuter zum Riechen in Döschen oder Stoffsäckchen, zum Beispiel Zimtstangen, Nelken oder Pfefferminze (nur unter Aufsicht, nichts in den Mund)",
     "ein Holzlöffel, ein Brotkorb oder eine alte Kaffeemühle"
    ]
   },
@@ -62,7 +62,7 @@
    "intro": "Haus und Hof, Ofen und Fenster, Zaun und Garten: Hier spielte sich früher das tägliche Leben ab. Viele Sprichwörter erzählen davon, wie man wohnte, wirtschaftete und mit den Nachbarn auskam.",
    "talk": [
     "Wie sah das Haus aus, in dem Sie aufgewachsen sind?",
-    "Gab es einen Garten? Was wuchs darin?",
+    "Was wuchs in den Gärten Ihrer Kindheit?",
     "Welche Arbeiten gab es im Haus oder auf dem Hof?",
     "Wie war das Verhältnis zu den Nachbarn?",
     "Welcher Ort im Haus war Ihr liebster?"
@@ -83,7 +83,7 @@
     "Welche Jahreszeit mögen Sie am liebsten, und warum?",
     "Welcher Winter war bei Ihnen besonders streng, welcher Sommer besonders heiß?",
     "Was haben Sie als Kind im Schnee gemacht?",
-    "Kennen Sie eine Bauernregel oder einen Wetterspruch?",
+    "Woran hat man früher gesehen, dass das Wetter umschlägt?",
     "Wo sind Sie gern spazieren gegangen?"
    ],
    "move": [
@@ -118,10 +118,10 @@
    "name": "Geld & Glück",
    "intro": "Wer den Pfennig nicht ehrt, ist des Talers nicht wert: Sparsamkeit war für viele selbstverständlich. Doch ob man glücklich ist, hängt nicht vom Geld allein ab. Sprichwörter über Geld und Glück regen zum Nachdenken an.",
    "talk": [
-    "Hatten Sie als Kind eine Spardose? Wofür haben Sie gespart?",
+    "Wofür haben Sie als Kind gespart?",
     "Was hat früher ein Brot oder eine Kugel Eis gekostet?",
     "Was bringt Ihrer Meinung nach Glück?",
-    "Hatten Sie einen Glücksbringer?",
+    "Welcher Glücksbringer gefällt Ihnen, und warum?",
     "Wann hatten Sie einmal so richtig Schwein?"
    ],
    "move": [
@@ -141,7 +141,7 @@
     "Wer konnte in Ihrer Familie oder Nachbarschaft besonders gut erzählen?",
     "Welchen guten Rat haben Sie einmal bekommen?",
     "Was ist Ihrer Meinung nach schlimmer: eine kleine Notlüge oder die harte Wahrheit?",
-    "Gibt es ein Sprichwort, das Sie oft gehört haben?"
+    "Welches Sprichwort hat man bei Ihnen zu Hause oft gesagt?"
    ],
    "move": [
     "Sprichwort klatschen: Alle sprechen gemeinsam „Reden ist Silber, Schweigen ist Gold“ und klatschen jede Silbe mit; bei „Schweigen“ legen alle den Finger auf die Lippen.",

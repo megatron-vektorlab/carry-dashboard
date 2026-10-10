@@ -1,6 +1,7 @@
 #import "book.typ": *
 #import "sheet.typ": *
 #import "leader.typ": *
+#import "extras.typ": *
 
 #let D = json("/build/book/data.json")
 #let R = D.release
@@ -48,7 +49,11 @@
     entry([*Kapitel #c.num: #c.name* #h(3mm) Blatt #c.sheets.first().num–#c.sheets.last().num], label("chapter-" + str(c.num)))
   }
   v(0.5em)
-  entry([Alle Sprichwörter und Redewendungen von A bis Z], <index>)
+  entry([Mein Sprichwort: ein Blatt zum Erzählen], <mein>)
+  entry([Sprichwort-Bingo mit 12 Karten], <bingo>)
+  entry([Raterunden für zwischendurch], <rounds>)
+  entry([Welche Blätter haben wir schon gemacht?], <checklist>)
+  entry([Alle Sprichwörter und Redewendungen von A bis Z, mit Bedeutung], <index>)
 }
 #pagebreak()
 
@@ -67,20 +72,19 @@
 #chapter-title("Die Blätter nach Stufe und Aufgabe")
 #section[Nach Stufe]
 #for lv in ("1", "2", "3") {
-  block(below: 0.8em, grid(columns: (22mm, 1fr), level-mark(int(lv)), D.by_level.at(lv).map(str).join(", ")))
+  block(below: 0.55em, grid(columns: (22mm, 1fr), level-mark(int(lv)), D.by_level.at(lv).map(str).join(", ")))
 }
 #section[Nach Aufgabe]
-#for t in D.by_type {
-  block(below: 0.6em, [*#t.name:* #t.nums.map(str).join(", ")])
-}
+#grid(columns: (66mm, 1fr), row-gutter: 0.5em, column-gutter: 3mm,
+  ..D.by_type.map(t => (strong(t.name),
+    t.levels.map(l => [#level-mark(l.level)#h(1.5mm)#l.nums.map(str).join(", ")]).join(h(4mm)))).flatten())
 
-// A left-hand page before chapter 1 would otherwise stay blank: a page for favourite sayings.
+// A left-hand page before chapter 1 would otherwise stay blank.
 #[#metadata("overview-end") <overview-end>]
 #context if calc.odd(locate(<overview-end>).page()) {
   pagebreak()
-  chapter-title("Meine Lieblingssprichwörter")
-  [Welche Sprichwörter und Redewendungen haben Sie früher oft gehört, vielleicht von den Eltern, in der Schule oder bei der Arbeit? Schreiben Sie sie hier auf oder lassen Sie sie sich aufschreiben.]
-  ruled-lines(gap: 15mm)
+  chapter-title("Notizen")
+  ruled-lines()
 }
 
 // ================= CHAPTERS =================
@@ -125,14 +129,51 @@
   }
 }
 
+// ================= EXTRAS =================
+#pagebreak(to: "odd")
+#set page(footer: extra-footer([Mein Sprichwort], D.author, D.year))
+#[#metadata("mein") <mein>]
+#mein-sprichwort()
+#pagebreak()
+#set page(footer: plain-footer)
+#mein-sprichwort-leader()
+
+#pagebreak(to: "odd")
+#[#metadata("bingo") <bingo>]
+#bingo-rules(D.bingo)
+#pagebreak()
+#bingo-calls(D.bingo)
+#pagebreak()
+#set page(footer: extra-footer([Sprichwort-Bingo], D.author, D.year))
+#bingo-cards(D.bingo)
+
+#pagebreak()
+#set page(footer: plain-footer)
+#[#metadata("rounds") <rounds>]
+#rounds(D.rounds)
+
+#pagebreak()
+#set page(footer: extra-footer([Blatt-Übersicht], D.author, D.year))
+#[#metadata("checklist") <checklist>]
+#checklist(D)
+
 // ================= INDEX =================
 #pagebreak(to: "odd")
 #set page(footer: plain-footer)
 #[#metadata("index") <index>]
-#chapter-title("Alle Sprichwörter und Redewendungen von A bis Z", sub: "mit den Nummern der Blätter. Geordnet nach dem ersten wichtigen Wort: der, die, das, ein, eine, jemandem, etwas und sich am Anfang zählen nicht.")
-#columns(2, gutter: 8mm, {
-  set par(leading: 0.45em, spacing: 0.55em, hanging-indent: 4mm)
-  for e in D.index [#e.w #h(2mm) #if e.sheets.len() > 0 { text(weight: "bold", e.sheets.map(str).join(", ")) } else [(Aufwärmen, Kapitel #e.chapters.map(str).join(", "))] \ ]
+#chapter-title("Alle Sprichwörter und Redewendungen von A bis Z",
+  sub: "mit ihrer Bedeutung und den Nummern der Blätter. In Klammern: Dort steht es nur zur Auswahl. Geordnet nach dem ersten wichtigen Wort; der, die, das, den, dem, ein, eine, einen, jemandem, jemanden, etwas und sich am Anfang zählen nicht.")
+#columns(2, gutter: 7mm, {
+  set par(leading: 0.42em)
+  for e in D.index {
+    let where = ()
+    if e.sheets.len() > 0 { where.push(e.sheets.map(str).join(",\u{a0}")) }
+    if e.also.len() > 0 { where.push("(" + e.also.map(str).join(",\u{a0}") + ")") }
+    if e.chapters.len() > 0 { where.push("Aufwärmen\u{a0}Kapitel\u{a0}" + e.chapters.map(str).join(",\u{a0}")) }
+    if e.extra.len() > 0 { where.push(e.extra.map(x => x.replace(" ", "\u{a0}")).join(", ")) }
+    block(breakable: false, above: 0pt, below: 0.6em,
+      par(hanging-indent: 4mm)[*#e.w* #h(1mm) #where.join(" · ") – #e.m])
+  }
 })
 #if D.pad_page {
   pagebreak()

@@ -16,7 +16,7 @@
       text(font: serif, size: 21pt, weight: "bold")[Für die Gruppenleitung],
       [Blatt #L.num #h(4pt) #level-mark(L.level)]))
   v(0.3em)
-  [*#L.title* · #L.chapter · etwa #L.minutes Minuten \ Übt: #L.trains]
+  [*#L.title* · #L.chapter · #box[etwa #L.minutes Minuten] \ Übt: #L.trains]
   lead-section[So geht’s]
   enum(..L.steps, spacing: 0.5em)
   lead-section[Lösungen]
@@ -25,7 +25,9 @@
   }
   if L.at("hints", default: ()).len() > 0 {
     lead-section(L.at("hints_title", default: "Hilfen, wenn ein Wort nicht einfällt"))
-    [#L.hints.enumerate().map(((i, h)) => [#(i + 1). #h]).join([ · ])]
+    if L.at("hints_intro", default: "") != "" [#L.hints_intro \ ]
+    // a number never stands at the end of a line apart from its hint
+    [#L.hints.enumerate().map(((i, h)) => [#(i + 1).~#h]).join([ · ])]
   }
   lead-section[Zum Gespräch]
   list(..L.prompts, spacing: 0.5em)

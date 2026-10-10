@@ -42,6 +42,12 @@ def inside_margin_in(pages: int) -> float:
     return 0.875
 
 
+def _norm(t: str) -> str:
+    """Lower case, letters only, single spaces: for finding a saying in page text."""
+    t = t.lower().replace("’", "'").replace("-\n", "")
+    return " ".join(re.findall(r"[a-zäöüß']+", t))
+
+
 def check_interior(errors, notes, warnings):
     doc = pymupdf.open(INTERIOR)
     n = doc.page_count
@@ -90,6 +96,8 @@ def check_interior(errors, notes, warnings):
     if blank:
         errors.append(f"blank pages: {blank}")
     full = "\n".join(pages_text)
+    if "'" in full:
+        errors.append("a straight apostrophe (') is printed; use ’")
     if re.search(r"demenz", full, re.I):
         errors.append("the word 'Demenz' appears in the book")
 
@@ -103,6 +111,15 @@ def check_interior(errors, notes, warnings):
         if m:
             leader_page.setdefault(int(m.group(1)), []).append(i)
     units = {u["sheet"]["num"]: u for u in data["units"]}
+    by_id = {i["id"]: i for i in json.load(open(os.path.join(ROOT, "data", "corpus.json")))["items"]}
+    # a hint must lead to one word only: no hint shared by different key words
+    hints = collections.defaultdict(set)
+    for it in by_id.values():
+        if it.get("hint") and it.get("keep", True):
+            hints[it["hint"]].add(it["keyword"].lower()[:4])
+    for h, kws in hints.items():
+        if len(kws) > 1:
+            errors.append(f"the hint {h!r} is used for different words: {sorted(kws)}")
     for num, u in units.items():
         sp, lp = sheet_page.get(num, []), leader_page.get(num, [])
         if len(sp) != 1 or len(lp) != 1:
@@ -117,10 +134,25 @@ def check_interior(errors, notes, warnings):
             w = sol.get("word") or ""
             if w and w not in lt:
                 errors.append(f"Blatt {num}: answer {w!r} missing on the leader page")
-        st = re.sub(r"\s+", " ", pages_text[sp[0]])
-        lv = u["sheet"]["level"]
-        if st.count("◆") and False:
-            pass
+        sh = u["sheet"]
+        # the page facing the worksheet (leader page of the sheet before, or the chapter
+        # page) must not print one of its answers
+        facing = _norm(pages_text[sp[0] - 1])
+        for i in sh["item_ids"]:
+            w = _norm(by_id[i]["wording"])
+            if len(w) >= 8 and w in facing:
+                errors.append(f"Blatt {num}: the facing page p{sp[0]} shows the answer {by_id[i]['wording']!r}")
+        page = doc[sp[0]]
+        # every word of a word box is set apart (no "MORGENROTSEGELN")
+        tokens = {w[4] for w in page.get_text("words")}
+        for w in sh.get("bank", []) + sh.get("words", []):
+            if w not in tokens:
+                errors.append(f"Blatt {num}: the word {w!r} in the word box runs into its neighbour")
+        # the sheet title stands on one line
+        title_lines = {round(l["bbox"][1]) for b in page.get_text("dict")["blocks"] for l in b.get("lines", [])
+                       if any(abs(s["size"] - 26) < 0.5 for s in l["spans"])}
+        if len(title_lines) > 1:
+            errors.append(f"Blatt {num}: the title {sh['title']!r} breaks onto {len(title_lines)} lines")
     notes.append(f"worksheets: {len(sheet_page)}, leader pages: {len(leader_page)}")
     big = sum(v for k, v in sizes_on_sheets.items() if k >= 20)
     notes.append("worksheet text by size (characters): " + ", ".join(f"{k} pt: {v}" for k, v in sorted(sizes_on_sheets.items())))
@@ -133,8 +165,13 @@ def check_interior(errors, notes, warnings):
     if len(data["chapters"]) != 10 or "in 10 Themen" not in config.BULLETS[0]:
         errors.append("the cover says 10 Themen")
     n_story = sum(1 for u in data["units"] if u["sheet"]["type"] == "story")
-    if not any(b.startswith(f"{n_story} Vorlesegeschichten") for b in config.BULLETS):
+    if not any(b.startswith(f"{n_story} Vorlesegeschichten") for b in config.BULLETS) or \
+            (any("Vorlesegeschichten" in b for b in config.FRONT_BADGES) and f"{n_story} Vorlesegeschichten" not in config.FRONT_BADGES):
         errors.append(f"the cover's story count does not match ({n_story} stories)")
+    if any("Bingo" in b for b in config.FRONT_BADGES + config.BULLETS) and len(data.get("bingo", {}).get("cards", [])) < 10:
+        errors.append("the cover promises Sprichwort-Bingo, but the book has no bingo cards")
+    if any("Bedeutungen" in b for b in config.BULLETS) and not all(e.get("m") for e in data["index"]):
+        errors.append("the cover promises all meanings, but some index entries have none")
     n_ex = sum(1 for u in data["units"] if u["sheet"].get("example"))
     if n_ex < 30:
         errors.append(f"the cover says 'viele Blätter mit gelöstem Beispiel', but only {n_ex} have one")

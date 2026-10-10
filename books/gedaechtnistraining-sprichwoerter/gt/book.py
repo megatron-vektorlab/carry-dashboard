@@ -16,7 +16,7 @@ import sys
 
 import typst
 
-from . import config, exercises as ex, leader, text
+from . import config, exercises as ex, extras, leader, text
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, "build", "book")
@@ -88,7 +88,7 @@ def make_sheet(spec: dict, by_id: dict, pool: list[dict], drop: int = 0) -> dict
         s = ex.story(items[0], spec["story"], lv, seed)
     else:
         raise ValueError(t)
-    s.update(num=spec["num"], chapter=spec["chapter"], item_ids=spec["items"])
+    s.update(num=spec["num"], chapter=spec["chapter"], item_ids=spec["items"], example_id=spec.get("example"))
     return s
 
 
@@ -106,48 +106,57 @@ def similar(p: str, q: str) -> bool:
 
 def leader_page(s: dict, items: list[dict], used_prompts: list, chapter_pool: list[dict], story: dict | None) -> dict:
     """The back of a worksheet. Prompts come from the sheet's own sayings (for a story: the
-    story's own two prompts first); a prompt that repeats or closely resembles one already
-    used anywhere in the book is skipped, and other sayings of the chapter fill the gap."""
+    story's own prompts first); a prompt that repeats or closely resembles one already used
+    anywhere in the book is skipped. Only if fewer than two remain do other sayings of the
+    chapter fill the gap, so the questions stay with what the group has just done."""
     typ = s["type"]
-    candidates = []
-    if story:
-        candidates += story.get("prompts", [])
+    own = list(story.get("prompts", [])) if story else []
     for it in items:
-        candidates += it.get("prompts", [])[:1]
+        own += it.get("prompts", [])[:1]
     for it in items:
-        candidates += it.get("prompts", [])[1:]
-    for it in chapter_pool:
-        candidates += it.get("prompts", [])
+        own += it.get("prompts", [])[1:]
     prompts = []
-    for p in candidates:
-        if len(prompts) >= 3:
-            break
-        if any(similar(p, q) for q in used_prompts + prompts):
-            continue
-        prompts.append(p)
+    for pool, limit in ((own, 3), ([p for it in chapter_pool for p in it.get("prompts", [])], 2)):
+        for p in pool:
+            if len(prompts) >= limit:
+                break
+            if any(similar(p, q) for q in used_prompts + prompts):
+                continue
+            prompts.append(p)
     used_prompts.extend(prompts)
     hints = [it["hint"] for it in items if it.get("hint")] if typ in HINT_TYPES else []
     if typ in HINT_TYPES and len(hints) != len(items):
         hints = [it.get("hint") or "–" for it in items]
     if typ == "story":
         hints = [items[0]["hint"]] if items[0].get("hint") else []
-    hints_title = "Hilfen, wenn ein Wort nicht einfällt"
+    hints_title, hints_intro = "Hilfen, wenn ein Wort nicht einfällt", ""
     if typ == "wordsearch":
-        hints_title = "Wo die Wörter stehen (Zeile 1 ist oben, Spalte 1 ist links)"
-        hints = [f"{p['word']}: Zeile {p['row'] + 1}, Spalte {p['col'] + 1}, {'nach rechts' if p['dc'] else 'nach unten'}"
-                 for p in s["places"]]
-    notes = []
+        hints_title, hints_intro = "Wo die Wörter stehen", "Zeile 1 ist oben, Spalte 1 ist links."
+        nb = "\u00a0"
+        hints = [f"{p['word']}: Zeile{nb}{p['row'] + 1}, Spalte{nb}{p['col'] + 1}, nach{nb}"
+                 + ("rechts" if p["dc"] else "unten") for p in s["places"]]
+    # care notes: one per kind of concern; sayings with the same concern share one note
+    notes = []                                           # [[sayings], note]
+    if story and story.get("note"):
+        notes.append([[], story["note"]])
     for it in items:
         n = it.get("note")
-        if n and not any(similar(n, m) for _, m in notes):
-            notes.append((it["wording"], n))
-    notes = [f"„{ex.cap(w)}“: {n}" for w, n in notes[:2]]
+        if not n:
+            continue
+        for entry in notes:
+            if entry[0] and similar(n, entry[1]):
+                entry[0].append(it["wording"])
+                break
+        else:
+            notes.append([[it["wording"]], n])
+    notes = [(" und ".join(f"„{ex.cap(w)}“" for w in ws) + ": " if ws else "") + n for ws, n in notes[:3]]
     return {
         "num": s["num"], "level": s["level"], "title": s["title"], "chapter": s["chapter"],
         "minutes": leader.MINUTES[s["level"]] if typ != "story" else "10 bis 15",
         "trains": leader.TRAINS[typ],
         "steps": leader.pick(leader.STEPS, typ, s["level"]),
-        "solution": s["solution"], "hints": hints, "hints_title": hints_title, "prompts": [typo(p) for p in prompts],
+        "solution": s["solution"], "hints": hints, "hints_title": hints_title, "hints_intro": hints_intro,
+        "prompts": [typo(p) for p in prompts],
         "easier": leader.pick(leader.EASIER, typ, s["level"]), "harder": leader.pick(leader.HARDER, typ, s["level"]),
         "notes": notes, "note": " ".join(notes),
     }
@@ -183,19 +192,22 @@ def build_data(flags: dict | None = None) -> dict:
         pool = [i for i in corpus if i["chapter"] == spec["chapter"] and i["id"] not in s["item_ids"]]
         L = leader_page(s, items, used, pool, spec.get("story"))
         short = flags.get(str(s["num"]), {}).get("short", 0)
-        # step by step until the leader page fits: variants first, then the second note,
-        # then the third prompt; the easier/harder ideas and the hints stay as long as possible
+        # step by step until the leader page fits. What decides whether an answer counts
+        # (accepted variants) and the care notes stay longest.
         if short >= 1:
-            L["solution"] = [dict(x, variants=x.get("variants", [])[:1]) for x in L["solution"]]
-        if short >= 2:
-            L["note"] = L["notes"][0] if L["notes"] else ""
-            L["solution"] = [dict(x, variants=[]) for x in L["solution"]]
-        if short >= 3:
             L["prompts"] = L["prompts"][:2]
-        if short >= 4:
+        if short >= 2:
             L["easier"] = L["harder"] = ""
+        if short >= 3:
+            L["solution"] = [dict(x, variants=x.get("variants", [])[:1]) for x in L["solution"]]
+        if short >= 4:
+            L["prompts"] = L["prompts"][:1]
         if short >= 5 and s["type"] != "wordsearch":
             L["hints"] = []
+        if short >= 6:
+            L["note"] = " ".join(L["notes"][:1])
+        if short >= 7:
+            L["solution"] = [dict(x, variants=[]) for x in L["solution"]]
         units.append({"sheet": s, "leader": L})
     chs = []
     for k, c in enumerate(chapters, 1):
@@ -204,32 +216,49 @@ def build_data(flags: dict | None = None) -> dict:
         chs.append(dict(c, num=k, intro=typo(c["intro"]), talk=[typo(t) for t in c["talk"]],
                         move=[typo(m) for m in c["move"]], props=c["props"], warmup=warmup(items),
                         sheets=[{"num": s["num"], "title": s["title"], "level": s["level"]} for s in mine]))
-    uses = collections.defaultdict(list)
+    # the index: every saying printed in the book. Bold numbers: sheets where it is an answer
+    # or the solved example; in brackets: sheets where it is only offered as a wrong choice.
+    uses, also = collections.defaultdict(list), collections.defaultdict(list)
     for u in units:
-        for i in u["sheet"]["item_ids"] + u["sheet"].get("shown_ids", []):
-            if u["sheet"]["num"] not in uses[i]:
-                uses[i].append(u["sheet"]["num"])
+        sh = u["sheet"]
+        for i in sh["item_ids"] + ([sh["example_id"]] if sh.get("example_id") else []):
+            if sh["num"] not in uses[i]:
+                uses[i].append(sh["num"])
+        for i in sh.get("shown_ids", []):
+            if i not in sh["item_ids"]:
+                also[i].append(sh["num"])
     warm = collections.defaultdict(list)
     for c in chs:
         for w in c["warmup"]:
             warm[w["id"]].append(c["num"])
-    for i, kap in warm.items():
-        uses.setdefault(i, [])
+    # extras at the back: bingo (sayings from the sheets) and read-aloud rounds
+    shown = set(uses) | set(also)
+    bingo = extras.bingo(corpus, set(uses), set(warm))
+    rounds = extras.rounds(corpus, shown, set(warm))
+    extra = collections.defaultdict(list)
+    for k, r in enumerate(rounds["rounds"], 1):
+        for w in r:
+            extra[w["id"]].append(f"Raterunde {k}")
+    ids = set(uses) | set(also) | set(warm) | set(extra)
     index = sorted(({"w": ex.cap(by_id[i]["wording"]) if by_id[i]["kind"] == "proverb" else by_id[i]["wording"],
-                     "sheets": sorted(v), "chapters": warm.get(i, []) if not v else [], "kind": by_id[i]["kind"]}
-                    for i, v in uses.items()),
+                     "sheets": sorted(uses.get(i, [])), "also": sorted(set(also.get(i, [])) - set(uses.get(i, []))),
+                     "chapters": warm.get(i, []) if not uses.get(i) else [], "extra": extra.get(i, []),
+                     "m": typo(by_id[i]["meaning"]), "kind": by_id[i]["kind"], "id": i}
+                    for i in ids),
                    key=lambda e: index_key(e["w"]))
     by_level = collections.defaultdict(list)
-    by_type = collections.defaultdict(list)
+    by_type = collections.defaultdict(lambda: collections.defaultdict(list))
     for u in units:
         s = u["sheet"]
         by_level[str(s["level"])].append(s["num"])
-        by_type[TYPE_NAMES.get(s["type"], s["title"])].append(s["num"])
+        by_type[TYPE_NAMES.get(s["type"], s["title"])][s["level"]].append(s["num"])
     return {"title": config.TITLE, "subtitle": config.SUBTITLE, "series": config.SERIES, "volume": config.VOLUME,
             "author": config.AUTHOR, "year": config.YEAR, "release": config.release(),
-            "chapters": chs, "units": units, "index": index,
-            "by_level": by_level, "by_type": [{"name": k, "nums": v} for k, v in by_type.items()],
-            "n_sayings": len(uses), "n_sheet_sayings": sum(1 for v in uses.values() if v),
+            "chapters": chs, "units": units, "index": index, "bingo": bingo, "rounds": rounds["rounds"],
+            "by_level": by_level,
+            "by_type": [{"name": k, "nums": [n for lv in sorted(v) for n in v[lv]],
+                         "levels": [{"level": lv, "nums": v[lv]} for lv in sorted(v)]} for k, v in by_type.items()],
+            "n_sayings": len(index), "n_sheet_sayings": sum(1 for e in index if e["sheets"]),
             "pad_page": flags.get("pad_page", False)}
 
 
@@ -284,7 +313,7 @@ def sheet_overflow() -> list[int]:
 
 def main():
     flags = {}
-    for attempt in range(9):
+    for attempt in range(14):
         data = build_data(flags)
         out = compile_pdf(data)
         full = sheet_overflow()

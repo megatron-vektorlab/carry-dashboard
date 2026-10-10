@@ -36,13 +36,15 @@ KDP-ov uređivač opisa je „rich text”. Zalijepite tekst i provjerite pregle
 <ul>
 <li><b>100 Arbeitsblätter in 10 Themen:</b> Tiere; Körper; Essen & Trinken; Haus, Hof & Garten; Wetter, Natur & Jahreszeiten; Arbeit & Fleiß; Geld & Glück; Reden & Schweigen; Familie & Freundschaft; Zeit & Lebensweisheiten.</li>
 <li><b>Echtes A4-Format:</b> jedes Blatt eine Kopiervorlage auf einer rechten Seite, mit breitem Innenrand zum Kopieren, gern auch auf A3 vergrößert.</li>
-<li><b>Auf der Rückseite jedes Blattes:</b> die Lösungen mit gängigen Varianten, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird, bei vielen Blättern auch Hilfen, wenn ein Wort nicht einfällt.</li>
-<li><b>Drei Stufen:</b> von „Wörter zur Auswahl“ bis „frei ergänzen“. 47 Blätter beginnen mit einem gelösten Beispiel.</li>
-<li><b>11 Aufgabenarten:</b> Was fehlt?, Das richtige Wort, Was gehört zusammen?, Vorlesegeschichten, Da stimmt was nicht!, Was bedeutet das?, Wortsalat, Wie geht es weiter?, Erste Buchstaben, Wann sagt man das? und Wörter suchen.</li>
-<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, Aufgaben und Texte in klarer serifenloser Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
+<li><b>Auf der Rückseite jedes Blattes:</b> die Lösungen mit gängigen Varianten, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird; bei vielen Blättern außerdem Hilfen, wenn ein Wort nicht einfällt.</li>
+<li><b>Drei Stufen:</b> von „Wörter zur Auswahl“ bis „frei ergänzen“. 49 Blätter beginnen mit einem gelösten Beispiel.</li>
+<li><b>11 Aufgabenarten:</b> „Was fehlt?“, „Das richtige Wort“, „Was gehört zusammen?“, Vorlesegeschichten, „Da stimmt was nicht!“, „Was bedeutet das?“, „Wortsalat“, „Wie geht es weiter?“, „Erste Buchstaben“, „Wann sagt man das?“ und „Wörter suchen“.</li>
+<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, eine klare serifenlose Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
 <li><b>Zu jedem Kapitel:</b> eine Aufwärmrunde zum Vorlesen, Gesprächsfragen, Bewegungsideen und Vorschläge zum Mitbringen.</li>
-<li><b>Hinweise für die Gruppenleitung</b>, ein Beispiel für eine Stunde von 45 Minuten und ein Verzeichnis aller 345 Sprichwörter und Redewendungen im Buch, von A bis Z.</li>
-<li><b>Kopiererlaubnis</b> für die eigene Einrichtung oder Gruppe.</li>
+<li><b>Zum Kopieren und Spielen:</b> Sprichwort-Bingo mit 12 verschiedenen Karten, Raterunden für zwischendurch, ein Blatt „Mein Sprichwort“ zum Erzählen und eine Liste zum Abhaken, welche Blätter die Gruppe schon gemacht hat.</li>
+<li><b>Alle 378 Sprichwörter und Redewendungen von A bis Z,</b> jeweils mit einer kurzen Erklärung: zum Nachschlagen, wenn jemand fragt „Was heißt das eigentlich?“</li>
+<li><b>Hinweise für die Gruppenleitung</b> und ein Beispiel für eine Stunde von 45 Minuten.</li>
+<li><b>Kopiererlaubnis</b> für die eigene Gruppe oder für einen Standort der eigenen Einrichtung.</li>
 </ul>
 
 <p>Für Betreuungskräfte und Alltagsbegleiter, Ergotherapie, Tagespflege, Seniorengruppen und für Angehörige, die zu Hause gemeinsam rätseln möchten. Auch für Menschen mit beginnender Demenz geeignet: ohne Leistungsdruck und mit vielen Erfolgserlebnissen.</p>
@@ -54,13 +56,15 @@ Riječ „Demenz” stoji samo u opisu, ne u knjizi ni na naslovnici. Recenzenti
 
 Riječi iz naslova i podnaslova (Sprichwörter, Redewendungen, Senioren, Gedächtnistraining, Großdruck, Kopiervorlagen …) Amazon ionako indeksira, pa polja nose druge pojmove:
 
-1. `sprichwörter ergänzen rätsel gruppe`
-2. `redewendungen bedeutung gedächtnisspiel`
-3. `rätselbuch senioren große schrift a4`
-4. `demenz beschäftigung arbeitsblätter`
-5. `betreuungskraft alltagsbegleiter aktivierung`
-6. `seniorenbeschäftigung tagespflege ideen`
-7. `geschenk oma opa gehirnjogging`
+1. `redensarten lückentext rätsel volksmund`
+2. `beschäftigung pflegeheim altenheim gruppenstunde`
+3. `betreuungskraft alltagsbegleiter aktivierung`
+4. `demenz arbeitsblätter gehirnjogging ideen`
+5. `vorlesegeschichten erinnerung biografiearbeit`
+6. `seniorenbeschäftigung tagespflege ergotherapie`
+7. `bingo rätselbuch große schrift geschenk oma opa`
+
+Svako polje ima najviše 50 bajtova (UTF-8; `gt.listing` to provjerava). „Demenz” je samo skrivena ključna riječ i jedna rečenica opisa, nikada u knjizi ni na naslovnici.
 
 Nema zaštićenih imena ni imena konkurenata. „Herkunft” je namjerno izostavljen jer knjiga ne objašnjava podrijetlo izreka.
 
@@ -88,7 +92,7 @@ Alternative: Alzheimer, Ergotherapie.
 | Book Cover | „Upload a cover you already have” → `output/Sprichwoerter-Redewendungen-Senioren-cover.pdf` |
 | AI-Generated Content | **Yes.** Texts: *Some sections, with minimal or no editing*. Napisao ih je AI model (Claude): upute, objašnjenja značenja, pomoć, pitanja za razgovor, 10 priča, uvodi poglavlja i tekstovi korica. Ako ih sami preradite, promijenite u „with extensive editing”. Images: *One or a few AI-generated images, with minimal or no editing* (naslovnicu i grafike nacrtao je kod koji je napisala umjetna inteligencija). Translations: *None*. Same poslovice i izreke su narodna predaja; vježbe je složio deterministički program. |
 
-Širina hrpta izračunata je iz broja stranica unutrašnjosti (240 stranica, hrbat 0.5405 in). Ako se unutrašnjost promijeni, ponovno izgradite sve naredbom `python3 -m gt.build` prije učitavanja. KDP odbija naslovnicu čiji hrbat ne odgovara.
+Širina hrpta izračunata je iz broja stranica unutrašnjosti (272 stranica, hrbat 0.6125 in). Ako se unutrašnjost promijeni, ponovno izgradite sve naredbom `python3 -m gt.build` prije učitavanja. KDP odbija naslovnicu čiji hrbat ne odgovara.
 
 ## Rights & Pricing
 
@@ -99,10 +103,10 @@ Alternative: Alzheimer, Ergotherapie.
   * uz 19 % (knjige s vježbama mogu biti razvrstane kao „activity books”): unesite **15,96 €**.
   * Na zaslonu s cijenama KDP prikazuje procijenjenu stopu PDV-a; prema njoj odaberite iznos.
 * **Fiksna cijena knjige (Buchpreisbindung)** vrijedi u Njemačkoj i Austriji: ista cijena svugdje, bez popusta (ni za domove), a vlastite primjerke krajnjim kupcima u DE/AT prodajete samo po punoj cijeni. Promjena cijene je dopuštena ako vrijedi za sve kanale. Tako možete početi sa 16,99 € radi prvih recenzija, a cijenu poslije podići.
-* Procjena honorara (Amazon.de): 240 stranica, tisak = 0,75 € + 0,016 € × 240 = **4,59 €**.
-  * Honorar = 60 % × 17,75 € − 4,59 € ≈ **6,06 € po prodanom primjerku** (uz 19 % PDV-a: ≈ 4,99 €).
+* Procjena honorara (Amazon.de): 272 stranica, tisak = 0,75 € + 0,016 € × 272 = **5,10 €**.
+  * Honorar = 60 % × 17,75 € − 5,10 € ≈ **5,55 € po prodanom primjerku** (uz 19 % PDV-a: ≈ 4,47 €).
   * Mjerodavan je KDP-ov kalkulator.
-* Ostale trgovine: KDP preračunava cijene. Za Amazon.com predložite oko 19,99 $ (tisak $5.08).
+* Ostale trgovine: KDP preračunava cijene. Za Amazon.com predložite oko 19,99 $ (tisak $5.62).
 * Expanded Distribution: isključeno (honorar bi bio gotovo nula).
 
 ## Slike za marketing

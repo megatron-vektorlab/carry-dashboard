@@ -36,13 +36,15 @@ KDP-ov uređivač opisa je „rich text”. Zalijepite tekst i provjerite pregle
 <ul>
 <li><b>100 Arbeitsblätter in 10 Themen:</b> ⟨CHAPTERS⟩.</li>
 <li><b>Echtes A4-Format:</b> jedes Blatt eine Kopiervorlage auf einer rechten Seite, mit breitem Innenrand zum Kopieren, gern auch auf A3 vergrößert.</li>
-<li><b>Auf der Rückseite jedes Blattes:</b> die Lösungen mit gängigen Varianten, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird, bei vielen Blättern auch Hilfen, wenn ein Wort nicht einfällt.</li>
+<li><b>Auf der Rückseite jedes Blattes:</b> die Lösungen mit gängigen Varianten, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird; bei vielen Blättern außerdem Hilfen, wenn ein Wort nicht einfällt.</li>
 <li><b>Drei Stufen:</b> von „Wörter zur Auswahl“ bis „frei ergänzen“. ⟨N_EXAMPLES⟩ Blätter beginnen mit einem gelösten Beispiel.</li>
 <li><b>⟨N_TYPES⟩ Aufgabenarten:</b> ⟨TYPES⟩.</li>
-<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, Aufgaben und Texte in klarer serifenloser Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
+<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, eine klare serifenlose Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
 <li><b>Zu jedem Kapitel:</b> eine Aufwärmrunde zum Vorlesen, Gesprächsfragen, Bewegungsideen und Vorschläge zum Mitbringen.</li>
-<li><b>Hinweise für die Gruppenleitung</b>, ein Beispiel für eine Stunde von 45 Minuten und ein Verzeichnis aller ⟨N_SAYINGS⟩ Sprichwörter und Redewendungen im Buch, von A bis Z.</li>
-<li><b>Kopiererlaubnis</b> für die eigene Einrichtung oder Gruppe.</li>
+<li><b>Zum Kopieren und Spielen:</b> Sprichwort-Bingo mit 12 verschiedenen Karten, Raterunden für zwischendurch, ein Blatt „Mein Sprichwort“ zum Erzählen und eine Liste zum Abhaken, welche Blätter die Gruppe schon gemacht hat.</li>
+<li><b>Alle ⟨N_SAYINGS⟩ Sprichwörter und Redewendungen von A bis Z,</b> jeweils mit einer kurzen Erklärung: zum Nachschlagen, wenn jemand fragt „Was heißt das eigentlich?“</li>
+<li><b>Hinweise für die Gruppenleitung</b> und ein Beispiel für eine Stunde von 45 Minuten.</li>
+<li><b>Kopiererlaubnis</b> für die eigene Gruppe oder für einen Standort der eigenen Einrichtung.</li>
 </ul>
 
 <p>Für Betreuungskräfte und Alltagsbegleiter, Ergotherapie, Tagespflege, Seniorengruppen und für Angehörige, die zu Hause gemeinsam rätseln möchten. Auch für Menschen mit beginnender Demenz geeignet: ohne Leistungsdruck und mit vielen Erfolgserlebnissen.</p>
@@ -54,13 +56,15 @@ Riječ „Demenz” stoji samo u opisu, ne u knjizi ni na naslovnici. Recenzenti
 
 Riječi iz naslova i podnaslova (Sprichwörter, Redewendungen, Senioren, Gedächtnistraining, Großdruck, Kopiervorlagen …) Amazon ionako indeksira, pa polja nose druge pojmove:
 
-1. `sprichwörter ergänzen rätsel gruppe`
-2. `redewendungen bedeutung gedächtnisspiel`
-3. `rätselbuch senioren große schrift a4`
-4. `demenz beschäftigung arbeitsblätter`
-5. `betreuungskraft alltagsbegleiter aktivierung`
-6. `seniorenbeschäftigung tagespflege ideen`
-7. `geschenk oma opa gehirnjogging`
+1. `redensarten lückentext rätsel volksmund`
+2. `beschäftigung pflegeheim altenheim gruppenstunde`
+3. `betreuungskraft alltagsbegleiter aktivierung`
+4. `demenz arbeitsblätter gehirnjogging ideen`
+5. `vorlesegeschichten erinnerung biografiearbeit`
+6. `seniorenbeschäftigung tagespflege ergotherapie`
+7. `bingo rätselbuch große schrift geschenk oma opa`
+
+Svako polje ima najviše 50 bajtova (UTF-8; `gt.listing` to provjerava). „Demenz” je samo skrivena ključna riječ i jedna rečenica opisa, nikada u knjizi ni na naslovnici.
 
 Nema zaštićenih imena ni imena konkurenata. „Herkunft” je namjerno izostavljen jer knjiga ne objašnjava podrijetlo izreka.
 

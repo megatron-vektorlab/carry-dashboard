@@ -127,8 +127,12 @@ def gaps(items, level, seed, example=None, title="Was fehlt?", category=None):
     ex = None
     if example is not None and level < 3:
         ex = {"parts": blank(example["wording"], example["keyword"]), "answer": example["keyword"]}
+    sol = [sol_word(it) for it in items]
+    if level == 2:          # letter boxes: e.g. the old spelling "Faß" leaves a box free
+        sol = [dict(x, after=x["after"] + f" ({it['sol_note']})") if it.get("sol_note") else x
+               for x, it in zip(sol, items)]
     sheet = {"type": "gaps", "title": title, "level": level, "task": tasks[level], "example": ex,
-             "items": [_gap(it, level) for it in items], "solution": [sol_word(it) for it in items]}
+             "items": [_gap(it, level) for it in items], "solution": sol}
     if level == 1:
         sheet["bank"] = bank
     return sheet
@@ -182,7 +186,7 @@ def complete(items, level, seed, example=None):
         first = text.words(b)[0] if level == 2 else ""
         ex = {"start": example["split"][0] + " …", "given": first, "answer": b[len(first):].strip() if first else b}
     return {"type": "complete", "title": "Wie geht es weiter?", "level": level, "items": out, "example": ex,
-            "task": {2: "Wie geht das Sprichwort weiter? Das erste Wort steht schon da.",
+            "task": {2: "Wie geht das Sprichwort weiter? Schreiben Sie das Ende auf. Das erste Wort steht schon da.",
                      3: "Wie geht das Sprichwort weiter? Schreiben Sie das Ende auf."}.get(level, "Wie geht es weiter?"),
             "solution": [sol_full(it, kind="complete") for it in items]}
 
@@ -208,7 +212,7 @@ def scramble(items, level, seed, example=None):
         rnd.shuffle(order)
         ex = {"tiles": [w[i] for i in order], "first": w[0], "answer": end_dot(example["wording"])}
     return {"type": "scramble", "title": "Wortsalat", "level": level, "items": out, "example": ex,
-            "task": {2: "Die Wörter sind durcheinander. Das erste Wort steht schon auf der Linie.",
+            "task": {2: "Die Wörter sind durcheinander. Schreiben Sie das Sprichwort auf. Das erste Wort steht schon da.",
                      3: "Die Wörter sind durcheinander. Schreiben Sie das Sprichwort richtig auf."}[level],
             "solution": [sol_full(it) for it in items]}
 
@@ -235,8 +239,10 @@ def wrongword(items, level, seed, example=None):
         for v in fitting_variants(it, "wrong", sw["right"]):
             a, b = blank(it["wording"], sw["right"])
             mid = re.sub(r"\s+", " ", v)[len(a):len(v) - len(b) if b else None].strip(" ,.")
-            if mid and mid != sw["right"]:
+            # only another word for the gap ("kriegen"), not a longer variant ("für etwas Feuer")
+            if mid and mid != sw["right"] and sw["right"] not in mid.split():
                 alts.append(mid)
+        alts += [w for w in it.get("swap_also", []) if w not in alts]    # "fragen", also right: "reden"
         sol.append({"before": sw["wrong"] + " → ", "word": sw["right"],
                     "after": (f" (auch: {' / '.join(alts)})" if alts else "") + ": " + end_dot(cap(it["wording"])),
                     "variants": []})

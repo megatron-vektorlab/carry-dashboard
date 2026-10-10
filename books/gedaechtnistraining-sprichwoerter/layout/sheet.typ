@@ -1,9 +1,10 @@
 // Renders one participant page (Kopiervorlage) from its data (see gt/exercises.py).
 #import "book.typ": *
 
+// Five words: 3 + 2, so the fifth word does not stand alone in a second row.
 #let bank-cols(words, wide: 4) = {
   let m = calc.max(..words.map(w => w.clusters().len()))
-  if m > 16 { 2 } else if m > 10 { 3 } else { wide }
+  if m > 16 { 2 } else if m > 10 or words.len() == 5 { 3 } else { wide }
 }
 
 #let render-sheet(s) = {

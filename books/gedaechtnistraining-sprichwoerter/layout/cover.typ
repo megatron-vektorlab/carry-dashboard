@@ -63,7 +63,9 @@
 #at(fx, B + 10.25in, box(width: TW, align(center, text(size: 19pt, fill: cream)[Band #C.volume #h(0.12in) · #h(0.12in) #C.author])))
 
 // ================= SPINE =================
-#at(spine-x, 0pt, rect(width: SP, height: H, fill: deep))
+// spine in the front colour, and a band of it on the back cover's spine edge, so that the
+// usual binding tolerance (about 1/16 in) never shows a cream stripe on the spine
+#at(spine-x, 0pt, rect(width: SP, height: H, fill: petrol))
 #if C.spine_text {
   at(spine-x, B, box(width: SP, height: TH, align(center + horizon,
     rotate(90deg, reflow: true, text(size: if SP > 0.5in { 17pt } else { 14pt }, fill: cream)[
@@ -72,6 +74,7 @@
 
 // ================= BACK =================
 #at(0pt, 0pt, rect(width: B + TW, height: H, fill: cream))
+#at(B + TW - 0.125in, 0pt, rect(width: 0.125in, height: H, fill: petrol))
 #let bx = B + 0.6in
 #let bw = TW - 1.2in
 #at(bx, B + 0.6in, box(width: bw, {
@@ -91,7 +94,7 @@
   image(C.sample, width: bw * 0.4))))
 #at(bx, B + 7.3in, box(width: bw * 0.62, {
   set par(leading: 0.5em)
-  text(size: 14pt, fill: ink)[Für Betreuungskräfte, Alltagsbegleiter, Ergotherapie, Tagespflege, Seniorengruppen und für Angehörige zu Hause. Kopiererlaubnis für die eigene Einrichtung oder Gruppe.]
+  text(size: 14pt, fill: ink)[Für Betreuungskräfte, Alltagsbegleiter, Ergotherapie, Tagespflege, Seniorengruppen und für Angehörige zu Hause.]
 }))
 // barcode area (KDP): lower right, keep empty and white
 #at(B + TW - 0.25in - 2.1in, B + TH - 0.25in - 1.3in, rect(width: 2.1in, height: 1.3in, fill: white))
