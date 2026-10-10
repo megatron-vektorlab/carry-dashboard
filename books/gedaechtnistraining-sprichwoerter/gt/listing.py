@@ -40,6 +40,8 @@ def main():
         "PRICE_NET": eur(net),
         "PRINT_EUR": eur(print_eur),
         "ROYALTY_EUR": eur(0.6 * net - print_eur),
+        "PRICE_NET19": eur(round(PRICE_SHELF_EUR / 1.19, 2)),
+        "ROYALTY_EUR19": eur(0.6 * round(PRICE_SHELF_EUR / 1.19, 2) - print_eur),
         "PRINT_USD": f"${1.00 + 0.017 * pages:.2f}",
     }
     s = open(os.path.join(ROOT, "content", "kdp_listing.tmpl.md")).read()

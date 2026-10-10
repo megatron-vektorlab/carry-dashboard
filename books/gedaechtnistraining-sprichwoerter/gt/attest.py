@@ -3,14 +3,14 @@
 The model may not author proverb text. A wording (or one of its variants) counts as
 attested if, after normalising case, punctuation, ß/ss and the placeholders
 jemandem/jemanden/etwas/sich, it equals an entry in one of:
-  * IDS OWID Sprichwörterbuch headwords (corpus-validated proverbs; used internally only),
   * German Wiktionary (Sprichwort, Redewendung, Wortverbindung, Geflügeltes Wort; CC BY-SA),
   * English Wiktionary, German proverbs (CC BY-SA),
+  * German Wikiquote, "Deutsche Sprichwörter" (about 900 proverbs, many with a Wander reference; CC BY-SA),
   * Baur/Chlosta 57 and GfM 15 best-known proverbs (via Schatte 2008),
   * Hallsteinsdóttir et al. 2006, 143 core idioms (CC BY 4.0),
 or appears word for word in Borchardt (1888/1895) or Wander (vol. 1) (weaker: "historical").
 The source files live in sources_cache/proverb_sources/ (not in git; see README).
-Wiktionary glosses are kept only to help the reviewers check meanings; they are never printed.
+Wiktionary glosses are never printed and never given to the model (CC BY-SA share-alike).
 """
 from __future__ import annotations
 
@@ -56,11 +56,8 @@ def sources() -> dict:
                 if k:
                     strong.setdefault(k, set()).add(src)
 
-    p = os.path.join(SRC, "ids_owid_sprw_headwords.tsv")
-    if os.path.exists(p):
-        for row in csv.reader(open(p), delimiter="\t"):
-            if row:
-                add(row[0], "OWID")
+    # The IDS OWID headword list is NOT used: its terms require written consent and the
+    # database right (§87a/b UrhG) may cover the list; owid.de may be consulted by hand.
     p = os.path.join(SRC, "kaikki_dewiktionary_Deutsch_pos-phrase.jsonl")
     if os.path.exists(p):
         for line in open(p):
@@ -91,6 +88,13 @@ def sources() -> dict:
             for line in open(p):
                 if line.strip():
                     add(line.strip(), src)
+    p = os.path.join(SRC, "dewikiquote_deutsche_sprichwoerter.wiki")
+    if os.path.exists(p):
+        for line in open(p):
+            m = re.match(r'\*\s*"(.+?)"', line)
+            if m:
+                q = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", m.group(1))
+                add(q, "de.wikiquote")
     p = os.path.join(ROOT, "data", "attested_web.json")       # pages checked one by one (gt.attest_web)
     if os.path.exists(p):
         for w, url in json.load(open(p)).items():

@@ -104,7 +104,6 @@ def build(lists: list[dict]) -> dict:
             a = attest.attest(rec["wording"], list(wordings) + rec["variants"])
             rec["attested"] = a["level"]
             rec["sources"] = a["sources"]
-            rec["gloss"] = a["gloss"]
             rec["blacklisted"] = blacklisted([rec["wording"], *wordings, *rec["variants"]])
             tested = {"Baur/Chlosta/GfM", "Hallsteinsdóttir 2006"} & set(a["sources"])
             keep = (not rec["blacklisted"] and a["level"] != "none"

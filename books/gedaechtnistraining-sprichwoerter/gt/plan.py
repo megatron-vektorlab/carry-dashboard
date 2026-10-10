@@ -12,7 +12,7 @@ Per chapter (levels follow the practice research: 40 % one diamond, 40 % two, 20
    6 ◆◆   Was fehlt? (letter boxes) or Das richtige Wort (three words), alternating
    7 ◆◆   Was bedeutet das? (idioms) or Wann sagt man das? (proverbs), alternating
    8 ◆◆   Wortsalat / Wie geht es weiter? / Was gehört zusammen? (6), rotating
-   9 ◆◆◆  Wie geht es weiter? / Wortsalat, rotating
+   9 ◆◆◆  Wie geht es weiter? / Wortsalat, rotating (at most 6 items at level 3)
   10 ◆◆◆  Erste Buchstaben / Wörter suchen / Was fehlt? (free), rotating
 Sayings repeat across sheets on purpose (familiarity, success), but never twice on one sheet.
 Each sheet starts with its easiest saying and ends with an easy one.
@@ -35,7 +35,7 @@ CHAPTERS = ["Tiere", "Körper", "Essen & Trinken", "Haus, Hof & Garten", "Wetter
 # chapter -> (keyword category, the word used in "Welches ... fehlt?")
 THEME_WORD = {"Tiere": ("Tier", "Tier"), "Körper": ("Körperteil", "Körperteil"),
               "Essen & Trinken": ("Essen und Trinken", "Wort")}
-N_ITEMS = {1: 5, 2: 6, 3: 8}
+N_ITEMS = {1: 5, 2: 6, 3: 6}
 
 
 def ease(it: dict) -> tuple:
@@ -191,19 +191,19 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
         add("match_meaning", 2, pk.pick(idio, 6, strict=False))
     # 9 ◆◆◆ complete or scramble
     longer = [p for p in prov if 5 <= len(text.words(p["wording"])) <= 9]
-    if ci % 2 == 0 and len(with_split) >= 7:
-        add("complete", 3, pk.pick(with_split, 7, strict=False))
+    if ci % 2 == 0 and len(with_split) >= 6:
+        add("complete", 3, pk.pick(with_split, 6, strict=False))
     elif len(longer) >= 6:
         add("scramble", 3, pk.pick(longer, 6, strict=False))
-    elif len(with_split) >= 7:
-        add("complete", 3, pk.pick(with_split, 7, strict=False))
+    elif len(with_split) >= 6:
+        add("complete", 3, pk.pick(with_split, 6, strict=False))
     else:
         add("gaps", 3, pk.pick(items, N_ITEMS[3]))
     # 10 ◆◆◆ rotating
     rot10 = ["firstletters", "wordsearch", "gaps"][ci % 3]
     fit_ws = [i for i in items if len(text.letters_upper(i["keyword"])) <= 10]
     if rot10 == "wordsearch" and len(fit_ws) >= 8:
-        add("wordsearch", 3, pk.pick(fit_ws, 8))
+        add("wordsearch", 3, pk.pick(fit_ws, 8, wider=None))
     elif rot10 == "firstletters" and len(prov) >= 6:
         add("firstletters", 3, pk.pick(prov, 6, strict=False))
     else:

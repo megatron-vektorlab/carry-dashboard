@@ -7,8 +7,8 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TITLE = "Sprichwörter und Redewendungen für Senioren"
-SUBTITLE = ("Gedächtnistraining in Großdruck: 100 Kopiervorlagen in A4 mit Lösungen und "
-            "Gesprächsimpulsen für Betreuung, Pflegeheim und Tagespflege")
+# The subtitle must appear on the cover exactly like this (KDP metadata rules).
+SUBTITLE = "Gedächtnistraining in Großdruck: 100 Kopiervorlagen in A4 mit Lösungen und Gesprächsimpulsen"
 SERIES = "Gedächtnistraining für Senioren in Großdruck"
 VOLUME = 1
 AUTHOR = "Ivan Sikuten"

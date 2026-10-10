@@ -78,7 +78,7 @@ Alternative: Alzheimer, Ergotherapie.
 
 | Polje | Vrijednost |
 |---|---|
-| ISBN | **Get a free KDP ISBN** |
+| ISBN | **Get a free KDP ISBN** (najjednostavnije; izdavač tada glasi „Independently published”). Alternativa: kao hrvatski izdavač možete besplatno dobiti ISBN od Nacionalne i sveučilišne knjižnice (NSK). Odlučite prije prvog slanja, jer se ISBN poslije ne može promijeniti. |
 | Publication Date | ostaviti prazno (= danas) |
 | Print Options | **Black & white interior**, **white paper** |
 | Trim Size | **A4: 21 × 29,7 cm (8,27 × 11,69 in)** (u izborniku „Select a different size”) |
@@ -94,10 +94,13 @@ Alternative: Alzheimer, Ergotherapie.
 
 * Territories: **All territories (worldwide rights)**.
 * Royalty: **60 %**.
-* Preporučena cijena na Amazon.de: **⟨PRICE_SHELF⟩** s PDV-om. Unesite cijenu **bez PDV-a: ⟨PRICE_NET⟩**, uz pretpostavku 7 % PDV-a za knjige. Pomoću KDP-ova kalkulatora provjerite koju stopu primjenjuje: knjige s vježbama mogu dobiti i 19 %.
-  * Za lansiranje možete staviti 16,99 € s PDV-om da prikupite prve recenzije, a poslije cijenu podići.
+* Preporučena cijena na Amazon.de: **⟨PRICE_SHELF⟩** s PDV-om. KDP traži cijenu **bez PDV-a**, a stopa ovisi o tome kako Amazon razvrsta knjigu:
+  * uz 7 % (obična knjiga): unesite **⟨PRICE_NET⟩**;
+  * uz 19 % (knjige s vježbama mogu biti razvrstane kao „activity books”): unesite **⟨PRICE_NET19⟩**.
+  * Na zaslonu s cijenama KDP prikazuje procijenjenu stopu PDV-a; prema njoj odaberite iznos.
+* **Fiksna cijena knjige (Buchpreisbindung)** vrijedi u Njemačkoj i Austriji: ista cijena svugdje, bez popusta (ni za domove), a vlastite primjerke krajnjim kupcima u DE/AT prodajete samo po punoj cijeni. Promjena cijene je dopuštena ako vrijedi za sve kanale. Tako možete početi sa 16,99 € radi prvih recenzija, a cijenu poslije podići.
 * Procjena honorara (Amazon.de): ⟨PAGES⟩ stranica, tisak = 0,75 € + 0,016 € × ⟨PAGES⟩ = **⟨PRINT_EUR⟩**.
-  * Honorar = 60 % × ⟨PRICE_NET⟩ − ⟨PRINT_EUR⟩ ≈ **⟨ROYALTY_EUR⟩ po prodanom primjerku**.
+  * Honorar = 60 % × ⟨PRICE_NET⟩ − ⟨PRINT_EUR⟩ ≈ **⟨ROYALTY_EUR⟩ po prodanom primjerku** (uz 19 % PDV-a: ≈ ⟨ROYALTY_EUR19⟩).
   * Mjerodavan je KDP-ov kalkulator.
 * Ostale trgovine: KDP preračunava cijene. Za Amazon.com predložite oko 19,99 $ (tisak ⟨PRINT_USD⟩).
 * Expanded Distribution: isključeno (honorar bi bio gotovo nula).
