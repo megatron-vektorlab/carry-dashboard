@@ -75,8 +75,9 @@
 }
 
 // A left-hand page before chapter 1 would otherwise stay blank: a page for favourite sayings.
-#pagebreak()
-#context if calc.even(here().page()) {
+#[#metadata("overview-end") <overview-end>]
+#context if calc.odd(locate(<overview-end>).page()) {
+  pagebreak()
   chapter-title("Meine Lieblingssprichwörter")
   [Welche Sprichwörter und Redewendungen haben Sie früher oft gehört, vielleicht von den Eltern, in der Schule oder bei der Arbeit? Schreiben Sie sie hier auf oder lassen Sie sie sich aufschreiben.]
   ruled-lines(gap: 15mm)

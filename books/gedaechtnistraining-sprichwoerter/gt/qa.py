@@ -85,6 +85,10 @@ def check_interior(errors, notes, warnings):
     for ext, name in sorted(fonts):
         if ext not in ("ttf", "cff", "otf", "cid", "ttc") and "Type3" not in ext:
             errors.append(f"font not embedded? {name} ({ext})")
+    # no page may be empty apart from its page number (KDP flags blank pages)
+    blank = [i + 1 for i, t in enumerate(pages_text) if len(re.sub(r"\d+|\s", "", t)) < 3]
+    if blank:
+        errors.append(f"blank pages: {blank}")
     full = "\n".join(pages_text)
     if re.search(r"demenz", full, re.I):
         errors.append("the word 'Demenz' appears in the book")

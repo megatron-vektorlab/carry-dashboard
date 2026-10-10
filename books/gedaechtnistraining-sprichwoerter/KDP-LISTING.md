@@ -88,7 +88,7 @@ Alternative: Alzheimer, Ergotherapie.
 | Book Cover | „Upload a cover you already have” → `output/Sprichwoerter-Redewendungen-Senioren-cover.pdf` |
 | AI-Generated Content | **Yes.** Texts: *Some sections, with minimal or no editing*. Napisao ih je AI model (Claude): upute, objašnjenja značenja, pomoć, pitanja za razgovor, 10 priča, uvodi poglavlja i tekstovi korica. Ako ih sami preradite, promijenite u „with extensive editing”. Images: *One or a few AI-generated images, with minimal or no editing* (naslovnicu i grafike nacrtao je kod koji je napisala umjetna inteligencija). Translations: *None*. Same poslovice i izreke su narodna predaja; vježbe je složio deterministički program. |
 
-Širina hrpta izračunata je iz broja stranica unutrašnjosti (242 stranica, hrbat 0.5450 in). Ako se unutrašnjost promijeni, ponovno izgradite sve naredbom `python3 -m gt.build` prije učitavanja. KDP odbija naslovnicu čiji hrbat ne odgovara.
+Širina hrpta izračunata je iz broja stranica unutrašnjosti (240 stranica, hrbat 0.5405 in). Ako se unutrašnjost promijeni, ponovno izgradite sve naredbom `python3 -m gt.build` prije učitavanja. KDP odbija naslovnicu čiji hrbat ne odgovara.
 
 ## Rights & Pricing
 
@@ -99,10 +99,10 @@ Alternative: Alzheimer, Ergotherapie.
   * uz 19 % (knjige s vježbama mogu biti razvrstane kao „activity books”): unesite **15,96 €**.
   * Na zaslonu s cijenama KDP prikazuje procijenjenu stopu PDV-a; prema njoj odaberite iznos.
 * **Fiksna cijena knjige (Buchpreisbindung)** vrijedi u Njemačkoj i Austriji: ista cijena svugdje, bez popusta (ni za domove), a vlastite primjerke krajnjim kupcima u DE/AT prodajete samo po punoj cijeni. Promjena cijene je dopuštena ako vrijedi za sve kanale. Tako možete početi sa 16,99 € radi prvih recenzija, a cijenu poslije podići.
-* Procjena honorara (Amazon.de): 242 stranica, tisak = 0,75 € + 0,016 € × 242 = **4,62 €**.
-  * Honorar = 60 % × 17,75 € − 4,62 € ≈ **6,03 € po prodanom primjerku** (uz 19 % PDV-a: ≈ 4,95 €).
+* Procjena honorara (Amazon.de): 240 stranica, tisak = 0,75 € + 0,016 € × 240 = **4,59 €**.
+  * Honorar = 60 % × 17,75 € − 4,59 € ≈ **6,06 € po prodanom primjerku** (uz 19 % PDV-a: ≈ 4,99 €).
   * Mjerodavan je KDP-ov kalkulator.
-* Ostale trgovine: KDP preračunava cijene. Za Amazon.com predložite oko 19,99 $ (tisak $5.11).
+* Ostale trgovine: KDP preračunava cijene. Za Amazon.com predložite oko 19,99 $ (tisak $5.08).
 * Expanded Distribution: isključeno (honorar bi bio gotovo nula).
 
 ## Slike za marketing
