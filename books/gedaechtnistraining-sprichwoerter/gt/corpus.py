@@ -24,14 +24,18 @@ from . import attest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+UMLAUT = str.maketrans({"ä": "a", "ö": "o", "ü": "u"})
+
+
 def _blacklist() -> list[str]:
     path = os.path.join(ROOT, "data", "blacklist.txt")
-    return [norm(line) for line in open(path) if line.strip() and not line.startswith("#")]
+    return [norm(line).translate(UMLAUT) for line in open(path) if line.strip() and not line.startswith("#")]
 
 
 def blacklisted(texts) -> bool:
+    """Matched without umlauts on both sides ('hänschen' ~ 'hanschen')."""
     bl = _blacklist()
-    return any(b in f" {norm(t)} " or b in norm(t) for t in texts for b in bl)
+    return any(b in norm(t).translate(UMLAUT) for t in texts for b in bl)
 
 
 def norm(s: str) -> str:
