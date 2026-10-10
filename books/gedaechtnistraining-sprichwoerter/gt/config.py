@@ -17,7 +17,7 @@ YEAR = 2026
 # ---- cover texts (every claim must stay true for the interior; gt.qa checks the numbers) ----
 FRONT_LINES = ["Gedächtnistraining in Großdruck", "100 Kopiervorlagen in A4"]
 FRONT_BADGES = ["3 Stufen", "mit Lösungen", "Gesprächsimpulse"]
-BACK_HEADLINE = "Morgenstund hat Gold im Mund …"
+BACK_HEADLINE = "Wer anderen eine Grube gräbt …"
 BLURB = ("… und wie geht es weiter? Sprichwörter und Redewendungen kennt fast jeder seit Kindertagen. "
          "Sie wecken Erinnerungen, bringen Menschen zum Lachen und ins Gespräch. Dieses Buch macht daraus "
          "100 abwechslungsreiche Arbeitsblätter für die Gruppe, zu zweit oder allein.")

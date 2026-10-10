@@ -10,7 +10,11 @@ Knjiga ima 100 radnih listova (Kopiervorlagen) u formatu A4. Namijenjena je njeg
 voditeljima aktivnosti u domovima za starije i dnevnim boravcima (Betreuungskräfte,
 Alltagsbegleiter, radni terapeuti) te obiteljima koje rješavaju zajedno kod kuće.
 
-⟨STANJE⟩
+Stanje: **knjiga je spremna za probni tisak** (10. 10. 2026.).
+- Unutrašnjost ima 242 stranice A4, a omot ima hrbat od 0,545 in (bijeli papir).
+- `python3 -m gt.qa` prolazi bez greške.
+- Vodenog žiga nema, jer su podaci za impresum upisani.
+- Prije objave pogledajte popis „Prije objave” dolje.
 
 ## Gotove datoteke za KDP (`output/`)
 
@@ -56,7 +60,7 @@ bez sivih površina (dobro se kopira). Unutarnja margina od 22 mm omogućuje kop
    - Tri agenta su neovisno jedan o drugome sastavila popise poslovica i izreka.
    - U knjigu ulazi samo izreka koju su navela barem dva od tri agenta (ili jedan, ako je na znanstveno ispitanom popisu najpoznatijih izreka).
    - Izreka mora biti i **potvrđena u izvoru**: njemački Wiktionary, njemački Wikiquote, engleski Wiktionary, Baur/Chlosta i GfM popisi najpoznatijih poslovica, Hallsteinsdóttir 2006, Borchardt (1888/1895) ili Wander (1867).
-   - ⟨WEB⟩ izreka koje nisu bile u preuzetim izvorima potvrđene su pojedinačnom provjerom na webu (DWDS, Duden, Wiktionary, Redensarten-Index). Poveznice su u `data/attested_web.json`.
+   - 65 izreka koje nisu bile u preuzetim izvorima potvrđene su pojedinačnom provjerom na webu (DWDS, Duden, Wiktionary, Redensarten-Index). Poveznice su u `data/attested_web.json`.
    - Citati poznatih autora i neprovjerljive izreke su izbačeni.
 2. **Crna lista** (`data/blacklist.txt`). Nema izreka:
    - opterećenih nacističkom prošlošću („Jedem das Seine”, „bis zur Vergasung”);
@@ -78,7 +82,22 @@ bez sivih površina (dobro se kopira). Unutarnja margina od 22 mm omogućuje kop
    - riječ „Demenz” ne postoji u knjizi ni na korici;
    - brojevi na korici odgovaraju knjizi;
    - pravopis je provjeren njemačkim rječnikom (LibreOffice).
-6. **Završni pregled** s 5 neovisnih recenzenata: ⟨PREGLED⟩
+6. **Završni pregled** s 5 neovisnih recenzenata: dva kruga.
+   - **Prvi krug (5 recenzenata):** njemački jezik radnih listova, njemački jezik stranica za voditelja, ispravnost i jednoznačnost svih zadataka, rješavanje 18 listova naslijepo (98 od 99 točno) te praksa u skrbi i istinitost tvrdnji. Pronađeno je oko 75 primjedbi, od kojih su 2 bile blokeri.
+   - Sve primjedbe su ispravljene, većinom općim pravilima u kodu, a ne ručno:
+     - nema izreka od jedne riječi u zadacima s prazninom;
+     - nema početaka koji odgovaraju više izreka;
+     - točni odgovori raspoređeni su na a/b/c;
+     - nema ponovljenih pitanja ni pitanja „Erinnern Sie sich …”, koja provjeravaju pamćenje;
+     - sigurniji rekviziti, a kretanje je u sjedećem položaju;
+     - jasnija dozvola za kopiranje i točne tvrdnje na korici.
+   - Ispravci teksta su u `data/review_overrides.json`.
+   - **Drugi krug (4 recenzenta)** na novom rasporedu: rješavanje 18 drugih listova naslijepo bez ijedne pogreške (84 od 84). Preostale primjedbe su također ispravljene:
+     - još jedan dvoznačan izbor;
+     - veće kućice za slova (oko 10 mm);
+     - položaji riječi u osmosmjerci na stranici za voditelja;
+     - dvije crte za duge odgovore;
+     - dozvola za kopiranje sada pokriva i poklonjene primjerke i volontere.
 
 **Iskreno: što nije napravljeno.** Knjigu nije pregledao čovjek kojemu je njemački materinski
 jezik, a listovi nisu isprobani u stvarnoj grupi. Prije objave preporučujem oboje (vidi popis dolje).

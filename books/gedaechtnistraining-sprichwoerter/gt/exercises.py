@@ -174,7 +174,8 @@ def complete(items, level, seed, example=None):
     out = []
     for it in items:
         a, b = it["split"]
-        out.append({"start": a + " …", "hint": text.words(b)[0] + " …" if level == 2 else ""})
+        out.append({"start": a + " …", "hint": text.words(b)[0] + " …" if level == 2 else "",
+                    "long": len(b) > 30})
     ex = None
     if example is not None and level < 3:
         b = example["split"][1]
@@ -198,7 +199,8 @@ def scramble(items, level, seed, example=None):
             rnd.shuffle(order)
             if order != rest:
                 break
-        out.append({"tiles": [w[i] for i in order], "first": w[0] if level == 2 else ""})
+        out.append({"tiles": [w[i] for i in order], "first": w[0] if level == 2 else "",
+                    "long": len(it["wording"]) > 40})
     ex = None
     if example is not None and level < 3:
         w = text.words(example["wording"])
@@ -253,7 +255,7 @@ def firstletters(items, level, seed, example=None):
                 stubs.append({"first": tok[0], "len": len(tok)})
             elif stubs:
                 stubs[-1]["punct"] = stubs[-1].get("punct", "") + tok
-        out.append({"stubs": stubs})
+        out.append({"stubs": stubs, "long": len(it["wording"]) > 40})
     return {"type": "firstletters", "title": "Erste Buchstaben", "level": level, "items": out, "example": None,
             "task": "Von jedem Wort steht nur der erste Buchstabe da. Welches Sprichwort ist es?",
             "solution": [sol_full(it, kind="firstletters") for it in items]}

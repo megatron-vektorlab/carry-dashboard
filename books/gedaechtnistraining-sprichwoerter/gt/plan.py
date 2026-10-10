@@ -50,8 +50,9 @@ def _frame(it: dict) -> tuple[str, str]:
 
 
 def framed(it: dict) -> bool:
+    """At least two words around the gap ("_____ haben" gives no clue)."""
     a, b = exercises.blank(it["wording"], it["keyword"])
-    return bool(text.words(a + " " + b))
+    return len(text.words(a + " " + b)) >= 2
 
 
 def swap_ok(it: dict) -> bool:
@@ -65,7 +66,7 @@ def complete_ok(it: dict, level: int) -> bool:
     """'Wie geht es weiter?': the start must point to one saying only, and at level 2 the
     printed first word must not already be the whole ending ("Versprochen ist ... versprochen")."""
     sp = it.get("split") or []
-    if len(sp) != 2:
+    if len(sp) != 2 or it.get("no_complete"):
         return False
     if level == 2 and len(text.words(sp[1])) < 2:
         return False
@@ -91,6 +92,14 @@ def conflict(a: dict, b: dict, known: set[str]) -> bool:
         return True
     ka, kb = (x["keyword"].lower().translate(str.maketrans("äöü", "aou")) for x in (a, b))
     if ka[:4] == kb[:4] or ka.startswith(kb) or kb.startswith(ka):     # Hund / Hunde on one sheet
+        return True
+    # a hint must not name another answer on the sheet, and two hints must not sound alike
+    for x, y in ((a, b), (b, a)):
+        h = (x.get("hint") or "").lower()
+        if h and y["keyword"].lower()[:max(4, len(y["keyword"]) - 3)] in h:
+            return True
+    from .book import similar
+    if a.get("hint") and b.get("hint") and similar(a["hint"], b["hint"]):
         return True
     # one saying must not show another's answer ("die Katze im Sack" next to "Die K... lässt das Mausen")
     if exercises.blank and (re.search(rf"(?<![{exercises.W}]){re.escape(a['keyword'])}", b["wording"], re.I)
@@ -174,13 +183,17 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
                            example=example["id"] if example else None, **extra))
 
     def example_for(chosen, need=lambda i: True):
+        """A solved example: preferably a saying not used anywhere else in the chapter;
+        it is then kept off later sheets, so no item comes pre-solved."""
         ids = {c["id"] for c in chosen}
         kws = {text.letters_upper(c["keyword"]) for c in chosen}
-        for c in easy:
-            if (c["id"] not in ids and need(c) and text.letters_upper(c["keyword"]) not in kws
-                    and not any(conflict(c, x, known) for x in chosen)):
-                return c
-        return None
+        cands = [c for c in easy if c["id"] not in ids and need(c) and text.letters_upper(c["keyword"]) not in kws
+                 and not any(conflict(c, x, known) for x in chosen)]
+        cands.sort(key=lambda c: (pk.uses[c["id"]] > 0, ease(c)))
+        if not cands:
+            return None
+        pk.uses[cands[0]["id"]] += 5
+        return cands[0]
 
     # 1 ◆ gaps with word bank (theme word if possible)
     cat = THEME_WORD.get(chapter)
@@ -204,8 +217,14 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
     # 4 ◆ story
     st = stories[chapter]
     add("story", 1, [next(i for i in items if i["id"] == st["item"])], story=st)
-    # 5 ◆◆ wrong word
-    ch = pk.pick(with_swap[:20], N_ITEMS[2], strict=False, wider=with_swap)
+    # 5 ◆◆ wrong word (every sentence with a different wrong word)
+    seen_wrong, swap_pool = set(), []
+    for i in with_swap:
+        w = i["swap"]["wrong"].lower()
+        if w not in seen_wrong:
+            seen_wrong.add(w)
+            swap_pool.append(i)
+    ch = pk.pick(swap_pool[:20], N_ITEMS[2], strict=False, wider=swap_pool)
     add("wrong", 2, ch, example_for(ch, swap_ok))
     # 6 ◆◆ letter boxes or three words
     if ci % 2 == 0:

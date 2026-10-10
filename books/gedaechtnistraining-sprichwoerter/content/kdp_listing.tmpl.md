@@ -39,7 +39,7 @@ KDP-ov uređivač opisa je „rich text”. Zalijepite tekst i provjerite pregle
 <li><b>Auf der Rückseite jedes Blattes:</b> die Lösungen mit gängigen Varianten, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird, bei vielen Blättern auch Hilfen, wenn ein Wort nicht einfällt.</li>
 <li><b>Drei Stufen:</b> von „Wörter zur Auswahl“ bis „frei ergänzen“. ⟨N_EXAMPLES⟩ Blätter beginnen mit einem gelösten Beispiel.</li>
 <li><b>⟨N_TYPES⟩ Aufgabenarten:</b> ⟨TYPES⟩.</li>
-<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, klare serifenlose Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
+<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, Aufgaben und Texte in klarer serifenloser Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
 <li><b>Zu jedem Kapitel:</b> eine Aufwärmrunde zum Vorlesen, Gesprächsfragen, Bewegungsideen und Vorschläge zum Mitbringen.</li>
 <li><b>Hinweise für die Gruppenleitung</b>, ein Beispiel für eine Stunde von 45 Minuten und ein Verzeichnis aller ⟨N_SAYINGS⟩ Sprichwörter und Redewendungen im Buch, von A bis Z.</li>
 <li><b>Kopiererlaubnis</b> für die eigene Einrichtung oder Gruppe.</li>

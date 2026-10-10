@@ -13,7 +13,9 @@
 - Familie & Freundschaft: 24 proverbs, 10 idioms
 - Zeit & Lebensweisheiten: 56 proverbs, 19 idioms
 
+- note i002 'alles in Butter': variant 'alles in Ordnung' has another word in the gap (listed as also correct)
 - note i053 'etwas aus dem Ärmel schütteln': variant 'etwas aus dem Handgelenk schütteln' has another word in the gap (listed as also correct)
+- note i069 'jemandem auf den Schlips treten': variant 'jemandem auf den Schwanz treten' has another word in the gap (listed as also correct); variant 'jemandem auf den Fuß treten' has another word in the gap (listed as also correct)
 - note i096 'mit jemandem ein Hühnchen zu rupfen haben': decoy 'Täubchen' dropped; fewer than 2 decoys: not used on 'Das richtige Wort' sheets
 - DROP i173 'in die Hose gehen': editor: Slangy; image of soiling one's pants is embarrassing in care settings with incontinence.
 - note i183 'jemandem ein X für ein U vormachen': hint gives the word away: 'Buchstabe zwischen T und V'; hint removed

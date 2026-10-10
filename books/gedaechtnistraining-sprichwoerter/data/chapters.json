@@ -21,7 +21,7 @@
   },
   {
    "name": "Körper",
-   "intro": "Kopf und Herz, Hand und Fuß, Augen und Ohren: Viele Redewendungen stecken voller Körperteile. Wer etwas auf die leichte Schulter nimmt oder ein Auge zudrückt, spricht in Bildern, die jeder sofort versteht.",
+   "intro": "Kopf und Herz, Hand und Fuß, Augen und Ohren: Viele Redewendungen stecken voller Körperteile. Wer jemandem die Daumen drückt oder ein Auge zudrückt, spricht in Bildern, die jeder sofort versteht.",
    "talk": [
     "Was haben Ihre Hände in Ihrem Leben alles geschaffen?",
     "Wobei braucht man ein gutes Auge oder ein feines Ohr?",
@@ -35,7 +35,7 @@
    ],
    "props": [
     "Handcreme ohne starken Duft für eine kleine Handmassage (nur wer möchte; auf Allergien und wunde Haut achten)",
-    "ein Paar alte Lederhandschuhe oder ein Fingerhut"
+    "ein Paar alte Lederhandschuhe oder ein großes Wollknäuel"
    ]
   },
   {
@@ -72,13 +72,13 @@
     "Fenster putzen: mit beiden Händen große Kreise in die Luft wischen."
    ],
    "props": [
-    "Samentüten, frische Kräuter wie Schnittlauch oder Petersilie oder ein Blumentopf mit Erde",
+    "Samentüten (geschlossen lassen), frische Kräuter wie Schnittlauch oder Petersilie oder ein Blumentopf mit Erde (nur unter Aufsicht, nichts in den Mund)",
     "eine alte Wäscheklammer, ein Schlüsselbund oder ein Topflappen"
    ]
   },
   {
    "name": "Wetter, Natur & Jahreszeiten",
-   "intro": "Ob Sonne oder Regen, Frühling oder Winter: Das Wetter war früher für viele Menschen sehr wichtig: für die Ernte, für die Arbeit und für den Weg zur Schule. Entsprechend viele Sprichwörter und Bauernregeln drehen sich um Himmel, Wald und Feld.",
+   "intro": "Ob Sonne oder Regen, Frühling oder Winter: Das Wetter war früher für viele Menschen sehr wichtig – für die Ernte, für die Arbeit und für den Weg zur Schule. Entsprechend viele Sprichwörter und Bauernregeln drehen sich um Himmel, Wald und Feld.",
    "talk": [
     "Welche Jahreszeit mögen Sie am liebsten, und warum?",
     "Welcher Winter war bei Ihnen besonders streng, welcher Sommer besonders heiß?",
@@ -106,11 +106,11 @@
     "Was gehört für Sie zu einem schönen Feierabend?"
    ],
    "move": [
-    "Berufe raten: Eine Person macht eine Tätigkeit vor, zum Beispiel hämmern, nähen oder melken, die anderen raten.",
+    "Berufe raten: Eine Person macht eine Tätigkeit vor, zum Beispiel Hämmern, Nähen oder Melken, die anderen raten.",
     "Wäsche aufhängen: Tuch aus dem Korb nehmen, ausschütteln, auf die Leine hängen."
    ],
    "props": [
-    "Werkzeug zum Anfassen, zum Beispiel Zollstock, Wasserwaage, Garnrolle oder Fingerhut (ohne Nadeln, Scheren und Klingen)",
+    "Werkzeug zum Anfassen, zum Beispiel Zollstock, Wasserwaage oder eine große Garnrolle (ohne Nadeln, Scheren und Klingen; nur unter Aufsicht, kleine Teile nicht in den Mund)",
     "Bilder von alten Handwerksberufen"
    ]
   },
@@ -129,8 +129,8 @@
     "Glück greifen: nach oben greifen, als wolle man einen Glücksstern fangen."
    ],
    "props": [
-    "alte Geldscheine oder große Münzen in einer Schale, zum Beispiel Mark und Pfennig (nur unter Aufsicht, kleine Teile nicht in den Mund)",
-    "ein Glücksklee, ein Hufeisen oder ein kleiner Glücksbringer"
+    "alte Geldscheine oder große Münzen in einer Schale, zum Beispiel Fünfmarkstücke (nur unter Aufsicht, nichts in den Mund)",
+    "ein Bild von einem vierblättrigen Kleeblatt, ein Hufeisen oder ein Glücksschwein aus Stoff"
    ]
   },
   {
@@ -144,7 +144,7 @@
     "Gibt es ein Sprichwort, das Sie oft gehört haben?"
    ],
    "move": [
-    "Stille Post mit einem kurzen Sprichwort, nur wenn alle gut hören; sonst schreibt die Leitung das Sprichwort auf einen Zettel, der weitergereicht wird. Am Ende wird verglichen, was angekommen ist.",
+    "Sprichwort klatschen: Alle sprechen gemeinsam „Reden ist Silber, Schweigen ist Gold“ und klatschen jede Silbe mit; bei „Schweigen“ legen alle den Finger auf die Lippen.",
     "Pantomime: ohne Worte zeigen, was „Pst!“, „Komm her!“ oder „Ich weiß nicht“ bedeutet."
    ],
    "props": [

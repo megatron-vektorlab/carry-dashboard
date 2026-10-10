@@ -6,7 +6,7 @@
 Dieses Buch lädt dazu ein, die alten Bekannten wiederzuentdecken: beim Raten, Ergänzen und Verbinden, beim Vorlesen und vor allem im Gespräch.
 
 #section[So ist das Buch aufgebaut]
-- *#D.chapters.len() Kapitel mit je 10 Arbeitsblättern:* #D.chapters.map(c => c.name).join(", ", last: " und ").
+- *#D.chapters.len() Kapitel mit je 10 Arbeitsblättern:* #D.chapters.map(c => c.name).join("; ").
 - *Jedes Arbeitsblatt steht auf einer rechten Seite* und ist eine Kopiervorlage.
 - *Auf der Rückseite jedes Blattes* stehen die Lösungen, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird, bei vielen Blättern auch Hilfen, wenn ein Wort nicht einfällt.
 - *Jedes Kapitel beginnt* mit einer Aufwärmrunde und mit Ideen zum Erzählen, Bewegen und Mitbringen. In jedem Kapitel gibt es eine kleine Geschichte zum Vorlesen.

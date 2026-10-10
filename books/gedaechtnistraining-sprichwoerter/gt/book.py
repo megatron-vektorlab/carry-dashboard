@@ -131,6 +131,11 @@ def leader_page(s: dict, items: list[dict], used_prompts: list, chapter_pool: li
         hints = [it.get("hint") or "–" for it in items]
     if typ == "story":
         hints = [items[0]["hint"]] if items[0].get("hint") else []
+    hints_title = "Hilfen, wenn ein Wort nicht einfällt"
+    if typ == "wordsearch":
+        hints_title = "Wo die Wörter stehen (Zeile 1 ist oben, Spalte 1 ist links)"
+        hints = [f"{p['word']}: Zeile {p['row'] + 1}, Spalte {p['col'] + 1}, {'nach rechts' if p['dc'] else 'nach unten'}"
+                 for p in s["places"]]
     notes = []
     for it in items:
         n = it.get("note")
@@ -142,7 +147,7 @@ def leader_page(s: dict, items: list[dict], used_prompts: list, chapter_pool: li
         "minutes": leader.MINUTES[s["level"]] if typ != "story" else "10 bis 15",
         "trains": leader.TRAINS[typ],
         "steps": leader.pick(leader.STEPS, typ, s["level"]),
-        "solution": s["solution"], "hints": hints, "prompts": [typo(p) for p in prompts],
+        "solution": s["solution"], "hints": hints, "hints_title": hints_title, "prompts": [typo(p) for p in prompts],
         "easier": leader.pick(leader.EASIER, typ, s["level"]), "harder": leader.pick(leader.HARDER, typ, s["level"]),
         "notes": notes, "note": " ".join(notes),
     }
@@ -189,7 +194,7 @@ def build_data(flags: dict | None = None) -> dict:
             L["prompts"] = L["prompts"][:2]
         if short >= 4:
             L["easier"] = L["harder"] = ""
-        if short >= 5:
+        if short >= 5 and s["type"] != "wordsearch":
             L["hints"] = []
         units.append({"sheet": s, "leader": L})
     chs = []

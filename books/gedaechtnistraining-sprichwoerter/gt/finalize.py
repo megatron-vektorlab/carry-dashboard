@@ -134,6 +134,8 @@ def apply_overrides(entries: dict) -> None:
         for k, v in change.items():
             if k == "variants_add":
                 e["variants"] = list(dict.fromkeys(e.get("variants", []) + v))
+            elif k == "swap_wrong":
+                e["swap"] = dict(e.get("swap") or {}, wrong=v)
             else:
                 e[k] = v
     for w, others in ov.get("distractor_avoid", {}).items():

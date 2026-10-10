@@ -128,7 +128,7 @@
 #pagebreak(to: "odd")
 #set page(footer: plain-footer)
 #[#metadata("index") <index>]
-#chapter-title("Alle Sprichwörter und Redewendungen von A bis Z", sub: "mit den Nummern der Blätter, auf denen sie vorkommen")
+#chapter-title("Alle Sprichwörter und Redewendungen von A bis Z", sub: "mit den Nummern der Blätter. Geordnet nach dem ersten wichtigen Wort: der, die, das, ein, eine, jemandem, etwas und sich am Anfang zählen nicht.")
 #columns(2, gutter: 8mm, {
   set par(leading: 0.45em, spacing: 0.55em, hanging-indent: 4mm)
   for e in D.index [#e.w #h(2mm) #if e.sheets.len() > 0 { text(weight: "bold", e.sheets.map(str).join(", ")) } else [(Aufwärmen, Kapitel #e.chapters.map(str).join(", "))] \ ]

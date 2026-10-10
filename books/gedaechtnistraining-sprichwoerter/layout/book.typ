@@ -119,8 +119,8 @@
 // ---------- pieces ----------
 #let gap-line(n: 8) = box(width: n * 0.62em + 0.5em, height: 0.9em, baseline: 0.2em, stroke: (bottom: 1.1pt + ink))
 // One box per letter; the first letter may be printed in its box.
-#let letter-boxes(n, first: "") = box(baseline: 0.25em, stack(dir: ltr, spacing: 0pt,
-  ..range(n).map(i => box(width: 0.8em, height: 1.1em, stroke: 1.1pt + ink,
+#let letter-boxes(n, first: "") = box(baseline: 0.35em, stack(dir: ltr, spacing: 0pt,
+  ..range(n).map(i => box(width: 1.35em, height: 1.45em, stroke: 1.1pt + ink,
     align(center + horizon, text(weight: "bold", if i == 0 { first } else { "" }))))))
 #let joined(before, mid, after) = {
   let tight = after == "" or after.starts-with(",") or after.starts-with(".") or after.starts-with("!") or after.starts-with("?")
@@ -180,6 +180,7 @@
   spread(s.items.enumerate().map(((i, it)) => block(breakable: false, item(i + 1, {
     text(size: ex-size, it.start)
     write-line(lead: it.at("hint", default: ""))
+    if it.at("long", default: false) { write-line() }
   }))))
 }
 
@@ -190,6 +191,7 @@
   spread(s.items.enumerate().map(((i, it)) => block(breakable: false, item(i + 1, {
     par(leading: 0.9em, it.tiles.map(tile).join(h(7pt)))
     write-line(lead: it.at("first", default: ""))
+    if it.at("long", default: false) { write-line() }
   }))))
 }
 
@@ -215,6 +217,7 @@
   block(breakable: false, item(i + 1, {
     par(leading: 1.1em, it.stubs.map(stub).join(h(0.55em)))
     write-line()
+    if it.at("long", default: false) { write-line() }
   }))))
 
 #let options-block(opts) = {

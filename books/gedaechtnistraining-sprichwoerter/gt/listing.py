@@ -30,7 +30,7 @@ def main():
         "SUBTITLE": config.SUBTITLE,
         "SERIES": config.SERIES,
         "TITLE_LEN": str(len(config.TITLE) + len(config.SUBTITLE)),
-        "CHAPTERS": ", ".join(names[:-1]) + " sowie " + names[-1],
+        "CHAPTERS": "; ".join(names),
         "N_TYPES": str(len(types)),
         "TYPES": ", ".join(types[:-1]) + " und " + types[-1],
         "N_SAYINGS": str(data["n_sayings"]),

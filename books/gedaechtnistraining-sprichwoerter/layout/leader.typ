@@ -24,7 +24,7 @@
     enum(..L.solution.map(sol-line), spacing: 0.45em)
   }
   if L.at("hints", default: ()).len() > 0 {
-    lead-section[Hilfen, wenn ein Wort nicht einfällt]
+    lead-section(L.at("hints_title", default: "Hilfen, wenn ein Wort nicht einfällt"))
     [#L.hints.enumerate().map(((i, h)) => [#(i + 1). #h]).join([ · ])]
   }
   lead-section[Zum Gespräch]

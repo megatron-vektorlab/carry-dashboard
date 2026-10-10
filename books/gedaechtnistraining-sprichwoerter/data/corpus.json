@@ -45,7 +45,8 @@
    "wording": "alles in Butter",
    "variants": [
     "es ist alles in Butter",
-    "alles ist in Butter"
+    "alles ist in Butter",
+    "alles in Ordnung"
    ],
    "meaning": "Alles ist in Ordnung, es gibt keine Probleme.",
    "familiarity": 3,
@@ -297,7 +298,7 @@
    "hint": "Glasscheibe in der Hauswand",
    "situation": "",
    "prompts": [
-    "Wofür geben Sie gern Geld aus, auch wenn es nicht nötig wäre?",
+    "Wofür haben Sie früher gern Geld ausgegeben, auch wenn es nicht nötig war?",
     "Was halten Sie für die größte Geldverschwendung?"
    ],
    "note": "",
@@ -409,7 +410,7 @@
     "right": "Hand",
     "wrong": "Hut"
    },
-   "hint": "darauf steht und läuft man",
+   "hint": "steckt im Schuh, vorne sind die Zehen",
    "situation": "",
    "prompts": [
     "Woran erkennen Sie, dass ein Plan gut durchdacht ist?",
@@ -1023,7 +1024,7 @@
     "Was hilft Ihnen, sich in einer neuen Runde wohlzufühlen?",
     "Wie kann man jemanden gut in eine Gruppe aufnehmen?"
    ],
-   "note": "Kann das Gefühl berühren, nicht mehr gebraucht zu werden.",
+   "note": "Kann das Gefühl berühren, überflüssig zu sein oder anderen zur Last zu fallen; behutsam besprechen.",
    "kind": "idiom",
    "consensus_wordings": [
     "das fünfte Rad am Wagen sein"
@@ -1060,7 +1061,7 @@
    "hint": "ein Zettel, mit dem man gewinnen kann",
    "situation": "",
    "prompts": [
-    "Was meinen Sie: Kann man das große Los auch ohne Lotterie ziehen?",
+    "Haben Sie früher Lotto gespielt oder auf der Kirmes ein Los gekauft? Was haben Sie gewonnen?",
     "Welche Verlosungen oder Tombolas auf Festen von früher kommen Ihnen in den Sinn?"
    ],
    "note": "",
@@ -1456,9 +1457,10 @@
    "id": "i039",
    "keep": true,
    "reason": "",
-   "wording": "die Ohren steif halten",
+   "wording": "die Ohren steifhalten",
    "variants": [
-    "Halt die Ohren steif!"
+    "Halt die Ohren steif!",
+    "die Ohren steif halten"
    ],
    "meaning": "Man bleibt mutig und lässt sich nicht entmutigen.",
    "familiarity": 3,
@@ -1471,8 +1473,8 @@
     "Haare"
    ],
    "swap": {
-    "right": "halten",
-    "wrong": "bügeln"
+    "right": "Ohren",
+    "wrong": "Socken"
    },
    "hint": "damit hört man",
    "situation": "",
@@ -1856,8 +1858,8 @@
     "Hamster"
    ],
    "swap": {
-    "right": "Kater",
-    "wrong": "Hamster"
+    "right": "haben",
+    "wrong": "kämmen"
    },
    "hint": "eine männliche Katze",
    "situation": "",
@@ -2162,7 +2164,7 @@
     "right": "bringen",
     "wrong": "kochen"
    },
-   "hint": "trägt man auf dem Kopf",
+   "hint": "trägt der Herr beim Ausgehen und lüftet ihn zum Gruß",
    "situation": "",
    "prompts": [
     "Was meinen Sie: Wie bekommt man viele verschiedene Wünsche am besten zusammen?",
@@ -2615,7 +2617,9 @@
    "reason": "",
    "wording": "jemandem auf den Schlips treten",
    "variants": [
-    "sich auf den Schlips getreten fühlen"
+    "sich auf den Schlips getreten fühlen",
+    "jemandem auf den Schwanz treten",
+    "jemandem auf den Fuß treten"
    ],
    "meaning": "Man sagt oder tut etwas, das einen anderen kränkt.",
    "familiarity": 3,
@@ -2711,7 +2715,7 @@
    "hint": "Priestergehilfen aus dem Alten Testament",
    "situation": "",
    "prompts": [
-    "Was meinen Sie: Hilft eine strenge Ermahnung, oder erreicht man mit Freundlichkeit mehr?",
+    "Wofür wurden Sie als Kind besonders gelobt?",
     "Welche Ratschläge von früher fanden Sie damals streng, heute aber richtig?"
    ],
    "note": "",
@@ -5502,7 +5506,7 @@
     "right": "großem",
     "wrong": "gestreiftem"
    },
-   "hint": "darauf steht und läuft man",
+   "hint": "steckt im Schuh, vorne sind die Zehen",
    "situation": "",
    "prompts": [
     "Was bedeutet für Sie Luxus im Alltag?",
@@ -5579,7 +5583,7 @@
     "right": "zwei",
     "wrong": "siebzehn"
    },
-   "hint": "Feste, bei denen ein Paar heiratet",
+   "hint": "dort tanzen Braut und Bräutigam (Mehrzahl)",
    "situation": "",
    "prompts": [
     "Welche Lieder wurden früher auf Hochzeitsfeiern gern gespielt?",
@@ -5851,7 +5855,7 @@
     "right": "Nagel",
     "wrong": "Knopf"
    },
-   "hint": "darauf setzt man einen Hut",
+   "hint": "sitzt oben auf dem Hals",
    "situation": "",
    "prompts": [
     "Was schätzen Sie an Menschen, die klar und treffend sprechen?",
@@ -7643,6 +7647,7 @@
     "Wie geht man Ihrer Meinung nach am besten mit geliehenem Geld um?"
    ],
    "note": "",
+   "no_complete": true,
    "kind": "proverb",
    "consensus_wordings": [
     "Bei Geld hört die Freundschaft auf",
@@ -8055,7 +8060,7 @@
    "hint": "kriecht durch die Gartenerde",
    "situation": "Frau Becker steht als Erste vor dem Bäckerladen. Sie bekommt die letzten frischen Mohnbrötchen.",
    "prompts": [
-    "Sind Sie eher ein Morgenmensch oder eine Nachteule? Was gefällt Ihnen daran?",
+    "Was haben Sie früher am liebsten frühmorgens gemacht?",
     "Was ist für Sie das Schönste am frühen Morgen?"
    ],
    "note": "",
@@ -8347,7 +8352,7 @@
     "right": "Eile",
     "wrong": "Tanze"
    },
-   "hint": "eine Zeitspanne mit Ruhe und Geduld",
+   "hint": "reimt sich auf „Eile“",
    "situation": "Herr Schneider will den Bus noch erwischen und knöpft den Mantel falsch zu. Lachend fängt er von vorne an.",
    "prompts": [
     "Was tun Sie am liebsten in aller Ruhe?",
@@ -8390,7 +8395,7 @@
     "wrong": "Kartoffeln"
    },
    "hint": "hängt gerahmt an der Wand",
-   "situation": "Frau Krüger beschreibt lange den Strandkorb, den sie früher an der Ostsee hatte, aber niemand kann ihn sich vorstellen. Dann zeigt sie ein altes Foto, und sofort nicken alle.",
+   "situation": "Frau Krüger beschreibt lange das kleine Ferienhaus an der Ostsee, in dem sie früher jeden Sommer war. Erst als sie ein altes Foto zeigt, können sich alle vorstellen, wie schön es dort war.",
    "prompts": [
     "Welches Foto oder Gemälde gefällt Ihnen besonders gut?",
     "Welches Motiv würden Sie sich als Bild an die Wand hängen?"
@@ -9111,7 +9116,7 @@
    "hint": "zwei Dinge, die ganz verschieden sind",
    "situation": "Sie liebt Oper und Ordnung, er Fußball und Durcheinander. Trotzdem sind die beiden seit Jahrzehnten unzertrennlich.",
    "prompts": [
-    "Was meinen Sie: Passen eher ähnliche oder eher unterschiedliche Menschen gut zusammen?",
+    "Mit wem haben Sie früher am liebsten zusammengearbeitet oder gespielt?",
     "Welcher Mensch, der ganz anders war als Sie, hat Sie beeindruckt?"
    ],
    "note": "",
@@ -9489,7 +9494,7 @@
     "right": "goldenen",
     "wrong": "karierten"
    },
-   "hint": "darauf steht und geht man",
+   "hint": "steckt im Schuh, vorne sind die Zehen",
    "situation": "Der Malermeister aus dem Nachbarort ist bis Weihnachten ausgebucht. Wer streichen lassen möchte, muss sich gedulden.",
    "prompts": [
     "Welches Handwerk bewundern Sie besonders, und warum?",
@@ -9874,6 +9879,9 @@
     "Welche Entscheidung hat Ihr Leben in eine gute Richtung gelenkt?"
    ],
    "note": "",
+   "avoid_with": [
+    "p143"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Jeder ist seines Glückes Schmied"
@@ -10116,7 +10124,7 @@
    ],
    "swap": {
     "right": "Lachen",
-    "wrong": "Gähnen"
+    "wrong": "Niesen"
    },
    "hint": "gibt es in der Apotheke",
    "situation": "Beim Kaffeetrinken erzählt Herr Schulz einen Witz. Danach fühlen sich alle am Tisch gleich viel wohler.",
@@ -10287,7 +10295,7 @@
     "right": "Lügen",
     "wrong": "Dackel"
    },
-   "hint": "damit läuft und steht man",
+   "hint": "davon hat der Mensch zwei, ein Tisch vier",
    "situation": "Paul erzählt, er sei den ganzen Tag im Garten gewesen. Doch seine Schuhe glänzen frisch geputzt.",
    "prompts": [
     "Welche kleinen Notlügen halten Sie für harmlos, welche nicht?",
@@ -10458,7 +10466,7 @@
     "right": "feiern",
     "wrong": "fegen"
    },
-   "hint": "Geburtstag, Hochzeit oder Kirmes",
+   "hint": "Feiern wie Geburtstag, Jubiläum oder Kirmes",
    "situation": "Mitten in der Woche bringt Frau Engel einen Kuchen mit. Einfach so, weil draußen die Sonne scheint.",
    "prompts": [
     "Was meinen Sie: Soll man Feste feiern, wie sie fallen, oder lieber gut planen?",
@@ -10503,7 +10511,7 @@
    "hint": "wenn die Sonne untergeht",
    "situation": "Beim Kartenspiel liegt Herr Vogel lange vorn und jubelt schon. In der letzten Runde gewinnt dann doch seine Nachbarin.",
    "prompts": [
-    "Freuen Sie sich lieber früh, oder warten Sie ab, bis alles vorbei ist?",
+    "Freuen Sie sich schon vorher auf ein Fest, oder erst, wenn alles gut geklappt hat?",
     "Welche Geschichte kennen Sie, in der sich jemand zu früh gefreut hat?"
    ],
    "note": "",
@@ -10671,7 +10679,7 @@
    "hint": "glänzendes, gelbes Edelmetall",
    "situation": "Um sechs Uhr sitzt Frau Peters schon im Garten. Bis zum Frühstück sind alle Beete gejätet.",
    "prompts": [
-    "Sind Sie eher ein Frühaufsteher, oder schlafen Sie gern länger?",
+    "Wann mussten Sie früher morgens aufstehen, für die Schule oder für die Arbeit?",
     "Was haben Sie früher am Morgen als Erstes gemacht?"
    ],
    "note": "",
@@ -10759,6 +10767,9 @@
     "Welche einfallsreichen Behelfslösungen aus dem Alltag kennen Sie?"
    ],
    "note": "Kann Erinnerungen an Kriegs- und Nachkriegszeit wecken.",
+   "avoid_with": [
+    "p143"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Not macht erfinderisch"
@@ -11009,7 +11020,7 @@
    "situation": "Die Nachbarin fragt, wie ihr neuer Hut gefällt. Frau Mertens lächelt nur freundlich und nickt.",
    "prompts": [
     "In welchen Momenten ist es Ihrer Meinung nach besser, nichts zu sagen?",
-    "Unterhalten Sie sich lieber, oder hören Sie lieber zu?"
+    "Wer konnte in Ihrer Familie am besten ein Geheimnis für sich behalten?"
    ],
    "note": "",
    "kind": "proverb",
@@ -11182,6 +11193,9 @@
     "Was halten Sie davon, Hilfe anzunehmen oder alles selbst zu machen?"
    ],
    "note": "Die Abwandlung „Selbst ist die Frau“ gern ebenfalls gelten lassen.",
+   "avoid_with": [
+    "p143"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Selbst ist der Mann"
@@ -12058,7 +12072,7 @@
    "hint": "kostet wenig, ist günstig",
    "situation": "Die Schuhe vom Wühltisch waren ein echtes Schnäppchen. Nach zwei Wochen löst sich schon die Sohle.",
    "prompts": [
-    "Achten Sie beim Einkaufen eher auf den Preis oder auf die Qualität?",
+    "Haben Sie früher beim Einkaufen eher auf den Preis oder auf die Qualität geachtet?",
     "Welcher Gegenstand hat bei Ihnen besonders lange gehalten?"
    ],
    "note": "",
@@ -13296,7 +13310,11 @@
    ],
    "note": "",
    "avoid_with": [
-    "p042"
+    "p042",
+    "p202",
+    "p093",
+    "p062",
+    "p083"
    ],
    "kind": "proverb",
    "consensus_wordings": [
@@ -13915,7 +13933,7 @@
    "hint": "Laib vom Bäcker, oft mit Butter",
    "situation": "Der Vereinsvorsitzende spendiert eine Runde. Prompt loben alle Mitglieder seine Rede in den höchsten Tönen.",
    "prompts": [
-    "Finden Sie es verständlich, wenn man zu dem hält, der einen versorgt?",
+    "Wann haben Sie früher auch einmal widersprochen, obwohl es unbequem war?",
     "Welches Brot hat Ihnen früher am besten geschmeckt?"
    ],
    "note": "",
@@ -15122,7 +15140,7 @@
     "right": "tanzen",
     "wrong": "bügeln"
    },
-   "hint": "Feste, bei denen ein Paar heiratet",
+   "hint": "dort tanzen Braut und Bräutigam (Mehrzahl)",
    "situation": "Herr Seidel will gleichzeitig das Fußballspiel sehen und beim Skat mitspielen. Am Ende verpasst er beides.",
    "prompts": [
     "Welche schöne Feier ist Ihnen besonders in Erinnerung geblieben?",
@@ -15168,7 +15186,7 @@
     "Was machen Sie nach dem Mittagessen am liebsten: ein Nickerchen oder einen Spaziergang?",
     "Wohin führte früher Ihr liebster Sonntagsspaziergang?"
    ],
-   "note": "",
+   "note": "Behutsam einsetzen, wenn Teilnehmende schlecht zu Fuß sind.",
    "kind": "proverb",
    "consensus_wordings": [
     "Nach dem Essen sollst du ruhn oder tausend Schritte tun"
@@ -15411,7 +15429,7 @@
    "hint": "dort oben ziehen die Wolken",
    "situation": "Die Kegelgruppe startet zum Ausflug an den See, und die Sonne scheint den ganzen Tag.",
    "prompts": [
-    "Was meinen Sie: Gibt es wirklich kein Licht ohne Schatten?",
+    "Was haben Sie früher gemacht, wenn es im April plötzlich hagelte oder schneite?",
     "Welches Wetter wünschen Sie sich für einen Ausflug?"
    ],
    "note": "",
@@ -15538,7 +15556,7 @@
     "right": "glaubt",
     "wrong": "isst"
    },
-   "hint": "überglücklich, wie im Himmel",
+   "hint": "so glücklich, wie man nur sein kann",
    "situation": "Ein Bekannter erzählt, er habe beim Angeln einen Fisch so groß wie ein Kalb gefangen.",
    "prompts": [
     "Welche unglaubliche Geschichte haben Sie einmal gehört?",
@@ -15665,6 +15683,9 @@
     "Erledigen Sie Dinge lieber selbst, oder holen Sie sich gern Hilfe?"
    ],
    "note": "",
+   "avoid_with": [
+    "p143"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Die Axt im Haus erspart den Zimmermann"
@@ -15699,7 +15720,7 @@
     "wrong": "Schnecken"
    },
    "hint": "ganz vorne in der Reihe",
-   "situation": "Beim Sackhüpfen stolpert der Favorit, und der langsamste Teilnehmer gewinnt doch noch.",
+   "situation": "Beim Sackhüpfen liegt Herr Albers lange ganz hinten. Kurz vor dem Ziel stolpern alle anderen, und er gewinnt doch noch.",
    "prompts": [
     "Welche Geschichte kennen Sie, in der ein Außenseiter am Ende gewonnen hat?",
     "Wie finden Sie es, anderen in der Schlange den Vortritt zu lassen?"

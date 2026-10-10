@@ -29,14 +29,14 @@
   "Was muss auf dem Teller hübsch aussehen, damit es Ihnen Appetit macht?": "Wie muss ein Teller angerichtet sein, damit Ihnen das Essen Appetit macht?",
   "Welches peinliche Missgeschick können Sie heute mit Humor erzählen?": "In welches Fettnäpfchen tritt man bei Besuch besonders leicht?",
   "Was meinen Sie: Gibt es für jeden Menschen das passende Gegenstück?": "Was passt für Sie zusammen wie Topf und Deckel?",
-  "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?": "Was meinen Sie: Gibt es wirklich kein Licht ohne Schatten?",
+  "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?": "Was haben Sie früher gemacht, wenn es im April plötzlich hagelte oder schneite?",
   "Mögen Sie Regenwetter, oder sind Ihnen Sonnentage lieber?": "Wie hilft man jemandem, der im Regen steht?",
   "Welche Nachricht hat Sie in Ihrem Leben einmal richtig überrascht?": "Welche schöne Nachricht hat Sie einmal richtig überrascht?",
   "Haben Sie früher jemanden in den April geschickt oder sind selbst hereingefallen?": "Haben Sie früher jemanden in den April geschickt, oder sind Sie selbst darauf hereingefallen?",
   "Wofür haben Sie sich im Leben besonders gern angestrengt?": "Woran erkennt man, dass sich jemand richtig ins Zeug legt?",
   "Was haben Sie durch viel Übung richtig gut gelernt?": "Welche Arbeit gelingt Ihrer Meinung nach erst nach vielen Versuchen?",
   "Was meinen Sie: Ist Talent oder Fleiß wichtiger?": "Was meinen Sie: Kann man sein Glück wirklich selbst schmieden?",
-  "Wobei hatten Sie in Ihrem Leben schon einmal so richtig Glück?": "Was meinen Sie: Kann man das große Los auch ohne Lotterie ziehen?",
+  "Wobei hatten Sie in Ihrem Leben schon einmal so richtig Glück?": "Haben Sie früher Lotto gespielt oder auf der Kirmes ein Los gekauft? Was haben Sie gewonnen?",
   "Was meinen Sie: Bereut man eher, was man getan oder was man nicht getan hat?": "Was haben Sie einmal gewagt, und wie ist es ausgegangen?",
   "Was halten Sie von solchen Sprüchen über Glück und Pech?": "Was halten Sie von Sprüchen wie „Pech im Spiel, Glück in der Liebe“?",
   "Was halten Sie von solchen merkwürdigen Zufällen?": "Was halten Sie davon, dass oft gerade der kommt, über den man spricht?",
@@ -51,7 +51,18 @@
   "Welche Kleidungsstücke von früher vermissen Sie heute ein wenig?": "Wie wichtig ist Ihnen ein guter Ruf?",
   "Welcher Plan ist einmal ganz anders, aber trotzdem gut ausgegangen?": "Welcher Plan ist einmal ganz anders ausgegangen als gedacht und war am Ende trotzdem gut?",
   "Welche Dinge möchten Sie lieber gar nicht so genau erfahren?": "Was meinen Sie: Ist es manchmal besser, nicht alles so genau zu wissen?",
-  "Was meinen Sie: Wie viel von unserem Wesen bringen wir schon mit?": "Was haben Sie von Ihrer Mutter oder Ihrem Vater, zum Beispiel ein Talent oder eine Angewohnheit?"
+  "Was meinen Sie: Wie viel von unserem Wesen bringen wir schon mit?": "Was haben Sie von Ihrer Mutter oder Ihrem Vater, zum Beispiel ein Talent oder eine Angewohnheit?",
+  "Finden Sie es verständlich, wenn man zu dem hält, der einen versorgt?": "Wann haben Sie früher auch einmal widersprochen, obwohl es unbequem war?",
+  "Freuen Sie sich lieber früh, oder warten Sie ab, bis alles vorbei ist?": "Freuen Sie sich schon vorher auf ein Fest, oder erst, wenn alles gut geklappt hat?",
+  "Wofür geben Sie gern Geld aus, auch wenn es nicht nötig wäre?": "Wofür haben Sie früher gern Geld ausgegeben, auch wenn es nicht nötig war?",
+  "Achten Sie beim Einkaufen eher auf den Preis oder auf die Qualität?": "Haben Sie früher beim Einkaufen eher auf den Preis oder auf die Qualität geachtet?",
+  "Was meinen Sie: Gibt es wirklich kein Licht ohne Schatten?": "Was haben Sie früher gemacht, wenn es im April plötzlich hagelte oder schneite?",
+  "Was meinen Sie: Kann man das große Los auch ohne Lotterie ziehen?": "Haben Sie früher Lotto gespielt oder auf der Kirmes ein Los gekauft? Was haben Sie gewonnen?",
+  "Was meinen Sie: Hilft eine strenge Ermahnung, oder erreicht man mit Freundlichkeit mehr?": "Wofür wurden Sie als Kind besonders gelobt?",
+  "Was meinen Sie: Passen eher ähnliche oder eher unterschiedliche Menschen gut zusammen?": "Mit wem haben Sie früher am liebsten zusammengearbeitet oder gespielt?",
+  "Unterhalten Sie sich lieber, oder hören Sie lieber zu?": "Wer konnte in Ihrer Familie am besten ein Geheimnis für sich behalten?",
+  "Sind Sie eher ein Frühaufsteher, oder schlafen Sie gern länger?": "Wann mussten Sie früher morgens aufstehen, für die Schule oder für die Arbeit?",
+  "Sind Sie eher ein Morgenmensch oder eine Nachteule? Was gefällt Ihnen daran?": "Was haben Sie früher am liebsten frühmorgens gemacht?"
  },
  "hint_replace": {
   "dort trägt man die Handtasche": "zwischen Hals und Arm, darauf trägt man den Rucksack",
@@ -59,7 +70,16 @@
   "Einfluss und Stärke über andere": "Einfluss und Herrschaft über andere",
   "das Gegenteil von dem Längeren": "das Gegenteil vom Längeren",
   "wer stets die Wahrheit sagt": "so ist, wer stets die Wahrheit sagt",
-  "damit liest man die Zeitung": "damit sieht man"
+  "damit liest man die Zeitung": "damit sieht man",
+  "darauf steht und läuft man": "steckt im Schuh, vorne sind die Zehen",
+  "darauf steht und geht man": "steckt im Schuh, vorne sind die Zehen",
+  "damit läuft und steht man": "davon hat der Mensch zwei, ein Tisch vier",
+  "eine Zeitspanne mit Ruhe und Geduld": "reimt sich auf „Eile“",
+  "überglücklich, wie im Himmel": "so glücklich, wie man nur sein kann",
+  "trägt man auf dem Kopf": "trägt der Herr beim Ausgehen und lüftet ihn zum Gruß",
+  "darauf setzt man einen Hut": "sitzt oben auf dem Hals",
+  "Feste, bei denen ein Paar heiratet": "dort tanzen Braut und Bräutigam (Mehrzahl)",
+  "Geburtstag, Hochzeit oder Kirmes": "Feiern wie Geburtstag, Jubiläum oder Kirmes"
  },
  "note_replace": {
   "Bibelwort aus dem Buch Prediger, wird auch bei Trauerfeiern oft vorgelesen.": "Ein Bibelwort aus dem Buch Prediger, das oft bei Trauerfeiern vorgelesen wird; behutsam besprechen.",
@@ -67,7 +87,8 @@
  },
  "situation_replace": {
   "Eine Frau war immer freundlich zu allen, und nun helfen ihr die Nachbarn gern beim Einkaufen.": "Frau Becker war immer freundlich zu allen. Jetzt helfen ihr die Nachbarn gern beim Einkaufen.",
-  "Frau Krüger zeigt ein altes Foto vom Strandurlaub. Sofort lachen alle über die gestreiften Badeanzüge.": "Frau Krüger beschreibt lange den Strandkorb, den sie früher an der Ostsee hatte, aber niemand kann ihn sich vorstellen. Dann zeigt sie ein altes Foto, und sofort nicken alle."
+  "Frau Krüger zeigt ein altes Foto vom Strandurlaub. Sofort lachen alle über die gestreiften Badeanzüge.": "Frau Krüger beschreibt lange das kleine Ferienhaus an der Ostsee, in dem sie früher jeden Sommer war. Erst als sie ein altes Foto zeigt, können sich alle vorstellen, wie schön es dort war.",
+  "Beim Sackhüpfen stolpert der Favorit, und der langsamste Teilnehmer gewinnt doch noch.": "Beim Sackhüpfen liegt Herr Albers lange ganz hinten. Kurz vor dem Ziel stolpern alle anderen, und er gewinnt doch noch."
  },
  "meaning_replace": {
   "Man unterliegt und muss am Ende den Nachteil tragen.": "Man unterliegt und hat am Ende das Nachsehen."
@@ -75,8 +96,8 @@
  "items": {
   "einen Kater haben": {
    "swap": {
-    "right": "Kater",
-    "wrong": "Hamster"
+    "right": "haben",
+    "wrong": "kämmen"
    }
   },
   "eine Gänsehaut bekommen": {
@@ -111,7 +132,15 @@
    "note": "Kann an Krieg, Flucht oder Verluste erinnern; zuhören, nicht nachbohren."
   },
   "die Ohren steif halten": {
-   "note": "Kann an schwere Zeiten erinnern; zuhören, nicht nachbohren."
+   "wording": "die Ohren steifhalten",
+   "variants_add": [
+    "die Ohren steif halten"
+   ],
+   "note": "Kann an schwere Zeiten erinnern; zuhören, nicht nachbohren.",
+   "swap": {
+    "right": "Ohren",
+    "wrong": "Socken"
+   }
   },
   "Feuer und Flamme sein": {
    "also_fits": [
@@ -122,11 +151,38 @@
    "variants_add": [
     "da steckt der Wurm drin"
    ]
+  },
+  "Lachen ist die beste Medizin": {
+   "swap_wrong": "Niesen"
+  },
+  "jemandem auf den Schlips treten": {
+   "variants_add": [
+    "jemandem auf den Schwanz treten",
+    "jemandem auf den Fuß treten"
+   ]
+  },
+  "alles in Butter": {
+   "variants_add": [
+    "alles in Ordnung"
+   ]
+  },
+  "Beim Geld hört die Freundschaft auf": {
+   "no_complete": true
+  },
+  "das fünfte Rad am Wagen sein": {
+   "note": "Kann das Gefühl berühren, überflüssig zu sein oder anderen zur Last zu fallen; behutsam besprechen."
+  },
+  "Nach dem Essen sollst du ruhn oder tausend Schritte tun": {
+   "note": "Behutsam einsetzen, wenn Teilnehmende schlecht zu Fuß sind."
   }
  },
  "distractor_avoid": {
   "Hilf dir selbst, so hilft dir Gott": [
-   "Frisch gewagt ist halb gewonnen"
+   "Frisch gewagt ist halb gewonnen",
+   "Die Axt im Haus erspart den Zimmermann",
+   "Selbst ist der Mann",
+   "Jeder ist seines Glückes Schmied",
+   "Not macht erfinderisch"
   ]
  }
 }
