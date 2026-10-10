@@ -1,0 +1,45 @@
+# Sayings that never go into the book (matched on normalised text, as a substring).
+# NS-contaminated
+arbeit macht frei
+jedem das seine
+gemeinnutz geht vor eigennutz
+bis zur vergasung
+recht ist was dem volke nutzt
+gelobt sei was hart macht
+hart wie kruppstahl
+# ethnic, antisemitic, antiziganist, racist
+jud
+mauscheln
+schachern
+zigeuner
+neger
+hottentotten
+mohren
+polnische wirtschaft
+turken bauen
+getturkt
+geturkt
+spanisch vorkommen
+# sexist
+langes haar und kurzen sinn
+kinder kuche kirche
+weiber
+# corporal punishment and violence
+wer nicht horen will muss fuhlen
+rute schont
+windelweich
+zuruckbomben
+# hurtful in a care home (memory, mental capacity, moving, death, consent)
+was hanschen nicht lernt
+einen alten baum verpflanzt man nicht
+alten baum verpflanzt
+gedachtnis wie ein sieb
+verkalkt
+nicht alle tassen im schrank
+dachschaden
+nicht ganz dicht
+eine schraube locker
+den loffel abgeben
+ins gras beissen
+das zeitliche segnen
+kusschen in ehren
