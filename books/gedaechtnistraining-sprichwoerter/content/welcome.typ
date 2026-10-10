@@ -14,8 +14,8 @@ Dieses Buch lädt dazu ein, die alten Bekannten wiederzuentdecken: beim Raten, E
 
 #section[Drei Stufen]
 #grid(columns: (22mm, 1fr), row-gutter: 0.7em,
-  level-mark(1), [*Mit Hilfen:* ein gelöstes Beispiel, Wörter zur Auswahl.],
-  level-mark(2), [*Mit kleinen Hilfen:* der erste Buchstabe oder drei Wörter zur Auswahl.],
+  level-mark(1), [*Mit Hilfen:* Wörter zur Auswahl, oft auch ein gelöstes Beispiel.],
+  level-mark(2), [*Mit kleinen Hilfen:* zum Beispiel der erste Buchstabe oder drei Wörter zur Auswahl.],
   level-mark(3), [*Ohne Hilfen:* frei ergänzen und aufschreiben.])
 #v(0.4em)
 Das Zeichen für die Stufe steht unten auf jedem Blatt. Jedes Blatt steht für sich: Sie können überall anfangen, gern auch mit der ersten Stufe.

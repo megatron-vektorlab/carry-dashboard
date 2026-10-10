@@ -37,7 +37,7 @@ KDP-ov uređivač opisa je „rich text”. Zalijepite tekst i provjerite pregle
 <li><b>100 Arbeitsblätter in 10 Themen:</b> Tiere, Körper, Essen & Trinken, Haus, Hof & Garten, Wetter, Natur & Jahreszeiten, Arbeit & Fleiß, Geld & Glück, Reden & Schweigen, Familie & Freundschaft sowie Zeit & Lebensweisheiten.</li>
 <li><b>Echtes A4-Format:</b> jedes Blatt eine Kopiervorlage auf einer rechten Seite, mit breitem Innenrand zum Kopieren, gern auch auf A3 vergrößert.</li>
 <li><b>Auf der Rückseite jedes Blattes:</b> die Lösungen mit gängigen Varianten, Hilfen, wenn ein Wort nicht einfällt, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird.</li>
-<li><b>Drei Stufen:</b> von „Wörter zur Auswahl“ bis „frei ergänzen“. Jedes Blatt der ersten und zweiten Stufe beginnt mit einem gelösten Beispiel.</li>
+<li><b>Drei Stufen:</b> von „Wörter zur Auswahl“ bis „frei ergänzen“. 47 Blätter beginnen mit einem gelösten Beispiel.</li>
 <li><b>11 Aufgabenarten:</b> Was fehlt?, Das richtige Wort, Was gehört zusammen?, Vorlesegeschichten, Da stimmt was nicht!, Was bedeutet das?, Wortsalat, Wie geht es weiter?, Erste Buchstaben, Wann sagt man das? und Wörter suchen.</li>
 <li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, klare serifenlose Schrift, reines Schwarz auf Weiß, keine grauen Flächen.</li>
 <li><b>Zu jedem Kapitel:</b> eine Aufwärmrunde zum Vorlesen, Gesprächsfragen, Bewegungsideen und Vorschläge zum Mitbringen.</li>

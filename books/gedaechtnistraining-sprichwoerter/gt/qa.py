@@ -131,6 +131,9 @@ def check_interior(errors, notes, warnings):
     n_story = sum(1 for u in data["units"] if u["sheet"]["type"] == "story")
     if not any(b.startswith(f"{n_story} Vorlesegeschichten") for b in config.BULLETS):
         errors.append(f"the cover's story count does not match ({n_story} stories)")
+    n_ex = sum(1 for u in data["units"] if u["sheet"].get("example"))
+    if n_ex < 30:
+        errors.append(f"the cover says 'viele Blätter mit gelöstem Beispiel', but only {n_ex} have one")
     levels = {u["sheet"]["level"] for u in data["units"]}
     if levels != {1, 2, 3}:
         errors.append(f"levels used: {levels}")

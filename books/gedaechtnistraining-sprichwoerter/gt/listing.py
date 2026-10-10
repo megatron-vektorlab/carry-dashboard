@@ -34,6 +34,7 @@ def main():
         "N_TYPES": str(len(types)),
         "TYPES": ", ".join(types[:-1]) + " und " + types[-1],
         "N_SAYINGS": str(data["n_sayings"]),
+        "N_EXAMPLES": str(sum(1 for u in data["units"] if u["sheet"].get("example"))),
         "PAGES": str(pages),
         "SPINE": f"{g['spine']:.4f}",
         "PRICE_SHELF": eur(PRICE_SHELF_EUR),

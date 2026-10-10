@@ -23,7 +23,7 @@ BLURB = ("… und wie geht es weiter? Sprichwörter und Redewendungen kennt fast
          "100 abwechslungsreiche Arbeitsblätter für die Gruppe, zu zweit oder allein.")
 BULLETS = [
     "100 Kopiervorlagen in A4, in 10 Themen",
-    "3 Stufen, jedes Blatt mit Beispiel",
+    "3 Stufen, viele Blätter mit gelöstem Beispiel",
     "Großdruck: Aufgaben in 20 Punkt",
     "Auf jeder Rückseite: Lösungen, Hilfen, Fragen zum Gespräch",
     "10 Vorlesegeschichten mit Sprichwort",

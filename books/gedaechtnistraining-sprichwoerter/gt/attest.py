@@ -95,10 +95,10 @@ def sources() -> dict:
             if m:
                 q = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", m.group(1))
                 add(q, "de.wikiquote")
-    p = os.path.join(ROOT, "data", "attested_web.json")       # pages checked one by one (gt.attest_web)
+    p = os.path.join(ROOT, "data", "attested_web.json")       # single web lookups (DWDS, Duden, Wiktionary ...), URL kept
     if os.path.exists(p):
         for w, url in json.load(open(p)).items():
-            add(w, "de.wiktionary (Seite)")
+            add(w, "web lookup")
     hist = ""
     for name in os.listdir(SRC) if os.path.isdir(SRC) else []:
         if name.startswith(("borchardt", "wander")):
