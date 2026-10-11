@@ -282,12 +282,14 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
         ('Meister' in two sayings next to 'Übung macht den ___') is avoided where possible."""
         ids = set(sheets[-1]["items"]) | ({sheets[-1]["example"]} if sheets and sheets[-1].get("example") else set()) \
             if sheets else set(on_chapter_page)
-        return {w.lower() for i in items if i["id"] in ids for w in text.words(i["wording"]) if len(w) >= 4}
+        return {w.lower() for i in items if i["id"] in ids
+                for w in text.words(i["wording"] + " " + (i.get("hint") or "") + " " + (i.get("note") or "")) if len(w) >= 3}
 
     def answer_seen(c) -> bool:
+        """The answer word, or a form of it (Auge/Augen, Wurst/Bratwurst), on the facing page."""
         words = facing_words()
-        ans = [c["keyword"]] + ([c["swap"]["right"]] if c.get("swap") else [])
-        return any(a.lower() in words for a in ans if len(a) >= 4)
+        ans = [a.lower() for a in [c["keyword"]] + ([c["swap"]["right"]] if c.get("swap") else []) if len(a) >= 3]
+        return any(a == w or (len(a) >= 4 and (w.startswith(a) or w.endswith(a))) for a in ans for w in words)
 
     def pick(cands, n, exclude=(), **kw):
         """Never a saying from the facing page, and preferably no answer word that stands
@@ -342,7 +344,7 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
         ch = pick(items, N_ITEMS[2], ids_of(0) | {story_id})
         add("gaps", 2, ch, example_for(ch))
     else:
-        ch = pick(with_decoys, N_ITEMS[2], ids_of(1) | {story_id}, clash=circle_clash(3))
+        ch = pick(with_decoys, N_ITEMS[2], ids_of(0, 1) | {story_id}, clash=circle_clash(3))
         add("circle", 2, ch, example_for(ch, lambda i: len(i.get("decoys") or []) >= 2, clash=circle_clash(3)))
     # 7 ◆◆ meaning (idioms) or situation (proverbs)
     want_meaning = (ci % 2 == 0 and len(idio) >= 4) or len([p for p in prov if p.get("situation")]) < 3

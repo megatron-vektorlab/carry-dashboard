@@ -370,7 +370,7 @@
     "right": "Beinbruch",
     "wrong": "Butterbrot"
    },
-   "hint": "Knochenverletzung unterhalb des Knies",
+   "hint": "wenn ein Knochen im Bein gebrochen ist",
    "situation": "",
    "prompts": [
     "Was wünschen Sie anderen am liebsten vor einer Prüfung oder Reise?",
@@ -1179,7 +1179,7 @@
     "Welche Spartipps von früher finden Sie auch heute noch nützlich?",
     "Was gönnen Sie sich gern, auch wenn das Geld einmal knapp ist?"
    ],
-   "note": "Kann an Not- und Nachkriegszeiten erinnern.",
+   "note": "Kann Erinnerungen an Armut und knappe Nachkriegsjahre wecken.",
    "kind": "idiom",
    "consensus_wordings": [
     "den Gürtel enger schnallen"
@@ -2982,7 +2982,7 @@
     "right": "schieben",
     "wrong": "gießen"
    },
-   "hint": "die zieht man an die Füße",
+   "hint": "haben Sohlen und oft Schnürsenkel; darin geht man draußen",
    "situation": "",
    "prompts": [
     "Was meinen Sie: Warum fällt es manchen Menschen so schwer, Fehler zuzugeben?",
@@ -4902,7 +4902,7 @@
    "situation": "",
    "prompts": [
     "Wofür konnten Sie sich früher sofort begeistern?",
-    "Was begeistert Sie heute noch genauso wie in jungen Jahren?"
+    "Wer konnte Sie früher mit seiner Begeisterung anstecken?"
    ],
    "note": "",
    "also_fits": [
@@ -4980,7 +4980,7 @@
    "hint": "darin trägt man Einkäufe oder Eier",
    "situation": "",
    "prompts": [
-    "Wie fühlt man sich Ihrer Meinung nach als Einziger in einer großen Runde?",
+    "Wie fühlt man sich Ihrer Meinung nach als einziger Mann unter lauter Frauen, oder als einzige Frau unter lauter Männern?",
     "Was gehörte früher zu einem gelungenen Tanzabend?"
    ],
    "note": "",
@@ -5948,7 +5948,7 @@
    "situation": "",
    "prompts": [
     "Was hilft Ihnen, bei vielen Kleinigkeiten das Wichtige im Blick zu behalten?",
-    "Welche Jahreszeit im Wald gefällt Ihnen am besten?"
+    "Was haben Sie früher im Wald gesammelt: Pilze, Beeren oder Brennholz?"
    ],
    "note": "",
    "kind": "idiom",
@@ -6352,6 +6352,7 @@
     "Wurden bei Ihnen früher in der Weihnachtszeit Nüsse geknackt? Wie war das?"
    ],
    "note": "",
+   "sol_note": "früher „Nuß“ geschrieben; dann bleibt ein Kästchen frei",
    "kind": "idiom",
    "consensus_wordings": [
     "eine harte Nuss zu knacken haben"
@@ -6747,7 +6748,7 @@
     "Was haben Sie sich früher gegönnt, wenn einmal etwas Geld übrig war?",
     "Welche Spartipps von früher finden Sie heute noch nützlich?"
    ],
-   "note": "Kann Erinnerungen an Not und knappe Nachkriegsjahre wecken.",
+   "note": "Kann Erinnerungen an Armut und knappe Nachkriegsjahre wecken.",
    "kind": "idiom",
    "consensus_wordings": [
     "jeden Pfennig umdrehen"
@@ -8474,7 +8475,9 @@
    "reason": "",
    "wording": "Ein blindes Huhn findet auch mal ein Korn",
    "variants": [
-    "Auch ein blindes Huhn findet mal ein Korn"
+    "Auch ein blindes Huhn findet mal ein Korn",
+    "Ein blindes Huhn findet auch ein Korn",
+    "Ein blindes Huhn findet auch einmal ein Korn"
    ],
    "meaning": "Auch ein Ungeschickter hat manchmal zufällig Erfolg.",
    "familiarity": 3,
@@ -8496,7 +8499,7 @@
    "hint": "das picken Hühner vom Boden",
    "situation": "Herr Albrecht spielt zum ersten Mal Skat und gewinnt gleich die erste Runde. Alle staunen, er selbst am meisten.",
    "prompts": [
-    "An welche glückliche Überraschung denken Sie besonders gern zurück?",
+    "Wann hatten Sie einmal ganz unverhofft Glück?",
     "An welche glückliche Überraschung denken Sie besonders gern zurück?"
    ],
    "note": "",
@@ -9680,7 +9683,7 @@
    "situation": "Nach der langen Wanderung essen alle mit Genuss die einfachen Butterbrote. Selten hat etwas so gut geschmeckt.",
    "prompts": [
     "Welches einfache Essen hat Ihnen einmal besonders gut geschmeckt?",
-    "Was essen Sie am liebsten nach einem Spaziergang an der frischen Luft?"
+    "Bei welcher Arbeit im Freien haben Sie früher so richtig Hunger bekommen?"
    ],
    "note": "Kann Erinnerungen an Hungerzeiten in Krieg und Nachkriegszeit wecken.",
    "kind": "proverb",
@@ -9867,7 +9870,9 @@
    "keep": true,
    "reason": "",
    "wording": "Jeder ist seines Glückes Schmied",
-   "variants": [],
+   "variants": [
+    "Jeder ist seines Glücks Schmied"
+   ],
    "meaning": "Jeder bestimmt durch sein Handeln selbst, wie gut es ihm geht.",
    "familiarity": 3,
    "chapter": "Arbeit & Fleiß",
@@ -10184,7 +10189,7 @@
    "situation": "Herr Becker bringt der neuen Nachbarin einen Teller Eintopf vorbei. Seitdem winkt sie ihm jeden Morgen strahlend zu.",
    "prompts": [
     "Mit welchem Gericht konnte man Ihnen früher eine besondere Freude machen?",
-    "Welches Essen verbinden Sie mit einem schönen Fest?"
+    "Wem haben Sie gern mit etwas Selbstgekochtem oder Gebackenem eine Freude gemacht?"
    ],
    "note": "",
    "kind": "proverb",
@@ -11098,7 +11103,8 @@
    "wording": "Rom wurde auch nicht an einem Tag erbaut",
    "variants": [
     "Rom wurde nicht an einem Tag erbaut",
-    "Rom ist auch nicht an einem Tag erbaut worden"
+    "Rom ist auch nicht an einem Tag erbaut worden",
+    "Rom wurde auch nicht an einem Tag gebaut"
    ],
    "meaning": "Große Vorhaben brauchen Zeit und Geduld.",
    "familiarity": 3,
@@ -12236,7 +12242,9 @@
    "keep": true,
    "reason": "",
    "wording": "Wer einmal lügt, dem glaubt man nicht, und wenn er auch die Wahrheit spricht",
-   "variants": [],
+   "variants": [
+    "Wer einmal lügt, dem glaubt man nicht, auch wenn er die Wahrheit spricht"
+   ],
    "meaning": "Wer einmal gelogen hat, dem vertraut man so schnell nicht mehr.",
    "familiarity": 3,
    "chapter": "Reden & Schweigen",
@@ -12368,7 +12376,8 @@
    "reason": "",
    "wording": "Wer nicht wagt, der nicht gewinnt",
    "variants": [
-    "Wer wagt, gewinnt"
+    "Wer wagt, gewinnt",
+    "Wer nicht wagt, gewinnt nicht"
    ],
    "meaning": "Wer Erfolg haben will, muss auch etwas riskieren.",
    "familiarity": 3,
@@ -13137,7 +13146,8 @@
    "reason": "",
    "wording": "Wo Rauch ist, ist auch Feuer",
    "variants": [
-    "Kein Rauch ohne Feuer"
+    "Kein Rauch ohne Feuer",
+    "Wo Rauch ist, da ist auch Feuer"
    ],
    "meaning": "An einem Gerücht ist meistens doch etwas Wahres dran.",
    "familiarity": 3,
@@ -13520,7 +13530,8 @@
    "wording": "Allen Leuten recht getan ist eine Kunst, die niemand kann",
    "variants": [
     "Allen Menschen recht getan ist eine Kunst, die niemand kann",
-    "Allen recht getan ist eine Kunst, die niemand kann"
+    "Allen recht getan ist eine Kunst, die niemand kann",
+    "Allen Leuten recht getan ist eine Kunst, die keiner kann"
    ],
    "meaning": "Niemand schafft es, allen Menschen gleichzeitig zu gefallen.",
    "familiarity": 2,
@@ -14273,7 +14284,9 @@
    "keep": true,
    "reason": "",
    "wording": "Der Mensch lebt nicht vom Brot allein",
-   "variants": [],
+   "variants": [
+    "Der Mensch lebt nicht allein vom Brot"
+   ],
    "meaning": "Zum Leben braucht der Mensch mehr als nur Essen und Trinken.",
    "familiarity": 3,
    "chapter": "Essen & Trinken",
@@ -14627,7 +14640,7 @@
    "situation": "Der Handwerker verspricht, am Montag um acht zu kommen. Um Punkt acht klingelt es an der Tür.",
    "prompts": [
     "Wie wichtig war früher ein Handschlag als Abmachung?",
-    "Fällt es Ihnen leicht, Versprechen zu halten?"
+    "Was meinen Sie: Warum fällt es manchmal schwer, ein Versprechen zu halten?"
    ],
    "note": "",
    "kind": "proverb",
@@ -15457,7 +15470,7 @@
    "hint": "dort oben ziehen die Wolken",
    "situation": "Die Kegelgruppe startet zum Ausflug an den See, und die Sonne scheint den ganzen Tag.",
    "prompts": [
-    "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?",
+    "An welchen schönen Ausflug bei strahlendem Wetter erinnern Sie sich gern?",
     "Welches Wetter wünschen Sie sich für einen Ausflug?"
    ],
    "note": "",
@@ -15729,7 +15742,9 @@
    "keep": true,
    "reason": "",
    "wording": "Die Letzten werden die Ersten sein",
-   "variants": [],
+   "variants": [
+    "Die Ersten werden die Letzten sein"
+   ],
    "meaning": "Wer heute hinten steht, kann später ganz vorne sein.",
    "familiarity": 3,
    "chapter": "Zeit & Lebensweisheiten",
@@ -15934,7 +15949,8 @@
    "reason": "",
    "wording": "Wo Licht ist, ist auch Schatten",
    "variants": [
-    "Wo viel Licht ist, ist auch viel Schatten"
+    "Wo viel Licht ist, ist auch viel Schatten",
+    "Wo Schatten ist, ist auch Licht"
    ],
    "meaning": "Jede gute Sache hat auch ihre Nachteile.",
    "familiarity": 2,
@@ -16056,7 +16072,8 @@
    "reason": "",
    "wording": "Der Fisch stinkt vom Kopf her",
    "variants": [
-    "Der Fisch fängt vom Kopf an zu stinken"
+    "Der Fisch fängt vom Kopf an zu stinken",
+    "Der Fisch stinkt vom Kopf"
    ],
    "meaning": "Wenn etwas schlecht läuft, liegt der Fehler meistens bei der Führung.",
    "familiarity": 3,
@@ -16411,7 +16428,7 @@
    "hint": "Farbe des Himmels bei Sonnenaufgang",
    "situation": "Beim Frühstück leuchtet der Himmel feuerfarben, und ein Herr packt vorsichtshalber den Schirm ein.",
    "prompts": [
-    "Woran haben Sie früher erkannt, wie das Wetter wird?",
+    "Wo haben Sie einmal einen besonders schönen Sonnenaufgang oder Sonnenuntergang erlebt?",
     "Mögen Sie lieber Sonnenaufgänge oder Sonnenuntergänge, und warum?"
    ],
    "note": "",

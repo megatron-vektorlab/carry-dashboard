@@ -88,7 +88,7 @@
   "Freuen Sie sich schon vorher auf ein Fest, oder erst, wenn alles gut geklappt hat?": "Was meinen Sie: Warum soll man den Tag nicht vor dem Abend loben?",
   "Haben Sie früher Lotto gespielt oder auf der Kirmes ein Los gekauft? Was haben Sie gewonnen?": "Was konnte man früher beim Lotto oder an der Losbude auf dem Jahrmarkt gewinnen?",
   "Wer hat Sie getröstet, wenn einmal alles schiefging?": "Was meinen Sie: Gibt es Glückspilze und Pechvögel wirklich?",
-  "Was meinen Sie: Ist Glück wichtiger als Können?": "An welche glückliche Überraschung denken Sie besonders gern zurück?",
+  "Was meinen Sie: Ist Glück wichtiger als Können?": "Wann hatten Sie einmal ganz unverhofft Glück?",
   "Von welchem schönen Erlebnis erzählen Sie besonders gern?": "Wie hat man Ihnen als Kind beigebracht, ehrlich zu sein?",
   "Was bedeutet es Ihnen, auf eigenen Füßen zu stehen?": "Was haben Sie sich von Ihrem ersten selbst verdienten Geld gekauft?",
   "Was haben Sie durch viel Wiederholen richtig gut gelernt?": "Wer hat Ihnen früher etwas mit viel Geduld beigebracht?",
@@ -107,7 +107,15 @@
   "Was meinen Sie: Kann ein geplatzter Plan manchmal auch etwas Gutes haben?": "Wer hat Ihnen schon einmal einen schönen Plan verdorben, und wie ging es aus?",
   "Welches Motiv würden Sie sich als Bild an die Wand hängen?": "Was lässt sich mit einem Foto besser zeigen als mit vielen Worten?",
   "Finden Sie, dass man Geheimnisse immer für sich behalten sollte?": "Mit wem haben Sie als Kind am liebsten Streiche ausgeheckt?",
-  "Wer konnte in Ihrer Familie am besten ein Geheimnis für sich behalten?": "In welchen Momenten ist es Ihrer Meinung nach besser, nichts zu sagen?"
+  "Wer konnte in Ihrer Familie am besten ein Geheimnis für sich behalten?": "In welchen Momenten ist es Ihrer Meinung nach besser, nichts zu sagen?",
+  "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?": "An welchen schönen Ausflug bei strahlendem Wetter erinnern Sie sich gern?",
+  "Welche Jahreszeit im Wald gefällt Ihnen am besten?": "Was haben Sie früher im Wald gesammelt: Pilze, Beeren oder Brennholz?",
+  "Was begeistert Sie heute noch genauso wie in jungen Jahren?": "Wer konnte Sie früher mit seiner Begeisterung anstecken?",
+  "Woran haben Sie früher erkannt, wie das Wetter wird?": "Wo haben Sie einmal einen besonders schönen Sonnenaufgang oder Sonnenuntergang erlebt?",
+  "Welches Essen verbinden Sie mit einem schönen Fest?": "Wem haben Sie gern mit etwas Selbstgekochtem oder Gebackenem eine Freude gemacht?",
+  "Was essen Sie am liebsten nach einem Spaziergang an der frischen Luft?": "Bei welcher Arbeit im Freien haben Sie früher so richtig Hunger bekommen?",
+  "Wie fühlt man sich Ihrer Meinung nach als Einziger in einer großen Runde?": "Wie fühlt man sich Ihrer Meinung nach als einziger Mann unter lauter Frauen, oder als einzige Frau unter lauter Männern?",
+  "Fällt es Ihnen leicht, Versprechen zu halten?": "Was meinen Sie: Warum fällt es manchmal schwer, ein Versprechen zu halten?"
  },
  "hint_replace": {
   "dort trägt man die Handtasche": "zwischen Hals und Arm, darauf trägt man den Rucksack",
@@ -123,7 +131,8 @@
   "trägt man auf dem Kopf": "trägt der Herr beim Ausgehen und lüftet ihn zum Gruß",
   "darauf setzt man einen Hut": "sitzt oben auf dem Hals",
   "Feste, bei denen ein Paar heiratet": "dort tanzen Braut und Bräutigam (Mehrzahl)",
-  "Geburtstag, Hochzeit oder Kirmes": "Feiern wie Geburtstag, Jubiläum oder Kirmes"
+  "Geburtstag, Hochzeit oder Kirmes": "Feiern wie Geburtstag, Jubiläum oder Kirmes",
+  "Knochenverletzung unterhalb des Knies": "wenn ein Knochen im Bein gebrochen ist"
  },
  "note_replace": {
   "Bibelwort aus dem Buch Prediger, wird auch bei Trauerfeiern oft vorgelesen.": "Ein Bibelwort aus dem Buch Prediger, das oft bei Trauerfeiern vorgelesen wird; behutsam besprechen.",
@@ -366,6 +375,74 @@
    "variants_add": [
     "Schweigen ist Gold, Reden ist Silber"
    ]
+  },
+  "Die Letzten werden die Ersten sein": {
+   "variants_add": [
+    "Die Ersten werden die Letzten sein"
+   ]
+  },
+  "Wo Licht ist, ist auch Schatten": {
+   "variants_add": [
+    "Wo Schatten ist, ist auch Licht"
+   ]
+  },
+  "Der Fisch stinkt vom Kopf her": {
+   "variants_add": [
+    "Der Fisch stinkt vom Kopf"
+   ]
+  },
+  "Ein blindes Huhn findet auch mal ein Korn": {
+   "variants_add": [
+    "Ein blindes Huhn findet auch ein Korn",
+    "Ein blindes Huhn findet auch einmal ein Korn"
+   ]
+  },
+  "Rom wurde auch nicht an einem Tag erbaut": {
+   "variants_add": [
+    "Rom wurde auch nicht an einem Tag gebaut"
+   ]
+  },
+  "Wo Rauch ist, ist auch Feuer": {
+   "variants_add": [
+    "Wo Rauch ist, da ist auch Feuer"
+   ]
+  },
+  "Der Mensch lebt nicht vom Brot allein": {
+   "variants_add": [
+    "Der Mensch lebt nicht allein vom Brot"
+   ]
+  },
+  "Wer einmal lügt, dem glaubt man nicht, und wenn er auch die Wahrheit spricht": {
+   "variants_add": [
+    "Wer einmal lügt, dem glaubt man nicht, auch wenn er die Wahrheit spricht"
+   ]
+  },
+  "Jeder ist seines Glückes Schmied": {
+   "variants_add": [
+    "Jeder ist seines Glücks Schmied"
+   ]
+  },
+  "Allen Leuten recht getan ist eine Kunst, die niemand kann": {
+   "variants_add": [
+    "Allen Leuten recht getan ist eine Kunst, die keiner kann"
+   ]
+  },
+  "Wer nicht wagt, der nicht gewinnt": {
+   "variants_add": [
+    "Wer nicht wagt, gewinnt nicht"
+   ]
+  },
+  "eine harte Nuss zu knacken haben": {
+   "sol_note": "früher „Nuß“ geschrieben; dann bleibt ein Kästchen frei"
+  },
+  "jemandem etwas in die Schuhe schieben": {
+   "hint": "haben Sohlen und oft Schnürsenkel; darin geht man draußen"
+  },
+  "jeden Pfennig umdrehen": {
+   "note": "Kann Erinnerungen an Armut und knappe Nachkriegsjahre wecken."
+  },
+  "den Gürtel enger schnallen": {
+   "note": "Kann Erinnerungen an Armut und knappe Nachkriegsjahre wecken."
   }
  },
  "distractor_avoid": {

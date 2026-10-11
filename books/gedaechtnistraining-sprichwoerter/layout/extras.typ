@@ -30,7 +30,7 @@
     text(size: small)[Name (wenn Sie möchten):], line(length: 100%, stroke: 1.1pt + ink)))
   prompt-lines([Dieses Sprichwort habe ich früher oft gehört:], 2)
   prompt-lines([Wer hat es gesagt, und wann?], 2)
-  prompt-lines([Ein Sprichwort aus meiner Heimat, gern auch in Mundart:], 2)
+  prompt-lines([Ein Sprichwort aus meiner Heimat, \ gern auch in Mundart:], 2)
   text(size: ex-size, weight: "bold")[Diesen Rat gebe ich gern weiter:]
   ruled-lines(gap: 15mm)
 }
@@ -114,19 +114,20 @@
 // ---------- Raterunden ----------
 #let rounds(R) = {
   chapter-title("Raterunden für zwischendurch", sub: "Ich sage den Anfang, Sie das Ende")
-  [Ohne Kopien, für fünf Minuten vor dem Essen, im Morgenkreis oder beim Besuch zu zweit. Lesen Sie den Anfang vor und lassen Sie die Gruppe ergänzen. Das Ende steht fett gedruckt. Kennt jemand ein anderes passendes Ende, gilt es natürlich auch.]
+  [Ohne Kopien, für fünf Minuten vor dem Essen, im Morgenkreis oder beim Besuch zu zweit. Lesen Sie den Anfang vor und lassen Sie die Gruppe ergänzen. Das Ende steht fett gedruckt. Kennt jemand ein anderes passendes Ende, gilt es natürlich auch. Fast alle diese Sprichwörter kommen auch auf den Blättern vor: Spielen Sie eine Raterunde deshalb lieber nach einem Blatt „Wie geht es weiter?“, „Was gehört zusammen?“, „Wortsalat“ oder „Erste Buchstaben“ als direkt davor.]
   for (k, r) in R.enumerate() {
     block(breakable: false, {
       section[Runde #(k + 1)]
-      grid(columns: (1fr, 1fr), row-gutter: 0.6em, column-gutter: 6mm,
-        ..r.map(w => (text(size: 18pt, w.a), text(size: 18pt, weight: "bold", w.b))).flatten())
+      // each pair clearly apart from the next: tight lines inside, more space between
+      grid(columns: (1fr, 1fr), row-gutter: 1em, column-gutter: 6mm,
+        ..r.map(w => (par(leading: 0.4em, text(size: 18pt, w.a)), par(leading: 0.4em, text(size: 18pt, weight: "bold", glue-last(w.b))))).flatten())
     })
   }
 }
 
 // ---------- checklist of all sheets ----------
 #let checklist(D) = {
-  chapter-title("Welche Blätter haben wir schon gemacht?", sub: "Zum Abhaken: Tragen Sie ein, wann eine Gruppe ein Blatt bearbeitet hat.")
+  chapter-title([Welche Blätter haben \ wir schon gemacht?], sub: "Zum Abhaken: Tragen Sie ein, wann eine Gruppe ein Blatt bearbeitet hat.")
   set text(size: 16pt)
   table(columns: (16mm, 1fr, 20mm, 30mm, 30mm), inset: (x: 4pt, y: 5pt), stroke: 0.75pt + ink,
     align: (center + horizon, left + horizon, left + horizon, left + horizon, left + horizon),

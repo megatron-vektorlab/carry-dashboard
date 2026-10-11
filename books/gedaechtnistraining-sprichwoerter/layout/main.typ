@@ -43,7 +43,7 @@
   entry([Willkommen!], <welcome>)
   entry([Hinweise für die Gruppenleitung], <leitung>)
   entry([So kann eine Stunde aussehen], <stunde>)
-  entry([Die Blätter nach Stufe und Aufgabe], <overview>)
+  entry([Blätter nach Stufe und Aufgabe], <overview>)
   v(0.5em)
   for c in D.chapters {
     entry([*Kapitel #c.num: #c.name* #h(3mm) Blatt #c.sheets.first().num–#c.sheets.last().num], label("chapter-" + str(c.num)))
@@ -53,7 +53,7 @@
   entry([Sprichwort-Bingo mit 12 Karten], <bingo>)
   entry([Raterunden für zwischendurch], <rounds>)
   entry([Welche Blätter haben wir schon gemacht?], <checklist>)
-  entry([Alle Sprichwörter und Redewendungen von A bis Z, mit Bedeutung], <index>)
+  entry([Alle Sprichwörter und Redewendungen von A bis Z], <index>)
 }
 #pagebreak()
 
@@ -69,7 +69,7 @@
 
 // Overview by level and by exercise type
 #[#metadata("overview") <overview>]
-#chapter-title("Die Blätter nach Stufe und Aufgabe")
+#chapter-title("Blätter nach Stufe und Aufgabe")
 #section[Nach Stufe]
 #for lv in ("1", "2", "3") {
   block(below: 0.55em, grid(columns: (22mm, 1fr), level-mark(int(lv)), D.by_level.at(lv).map(str).join(", ")))
@@ -115,7 +115,7 @@
   section[Zum Mitbringen]
   list(..c.props, spacing: 0.6em)
   section[Die Blätter in diesem Kapitel]
-  grid(columns: (26mm, 1fr, auto), row-gutter: 0.55em,
+  grid(columns: (30mm, 1fr, auto), row-gutter: 0.55em,
     ..c.sheets.map(s => ([Blatt #s.num], s.title, level-mark(s.level))).flatten())
 
   for u in D.units.filter(u => u.sheet.chapter == c.name) {
@@ -162,7 +162,7 @@
 #set page(footer: plain-footer)
 #[#metadata("index") <index>]
 #chapter-title("Alle Sprichwörter und Redewendungen von A bis Z",
-  sub: "Mit ihrer Bedeutung und den Nummern der Blätter. Nummern in Klammern: Dort steht das Sprichwort nur als falsche Antwort zum Ankreuzen. „Raterunde“ verweist auf die Raterunden, „Aufwärmen“ auf die Aufwärmrunde am Anfang des Kapitels. Geordnet nach dem ersten wichtigen Wort; der, die, das, den, dem, ein, eine, einen, jemandem, jemanden, etwas und sich am Anfang zählen nicht.")
+  sub: "Mit ihrer Bedeutung und den Nummern der Blätter. Nummern in Klammern: Dort steht das Sprichwort nur als falsche Antwort zum Ankreuzen. „Raterunde“ verweist auf die Raterunden, „Aufwärmen“ auf die Aufwärmrunde am Anfang des Kapitels. Geordnet nach dem ersten wichtigen Wort; die Artikel der, die, das, den, dem, ein, eine, einen sowie jemandem, jemanden, etwas und sich zählen am Anfang nicht.")
 #columns(2, gutter: 7mm, {
   set par(leading: 0.42em)
   for e in D.index {

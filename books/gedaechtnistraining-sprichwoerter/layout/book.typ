@@ -159,7 +159,8 @@
   let open = b == "" or b.ends-with("„")
   let ws = after.split(" ")
   let a = if ws.len() >= 2 { ws.slice(0, -1).join(" ") + "\u{a0}" + ws.last() } else { after }
-  [#b#if not open [~]#mid#if not tight [ ]#a]
+  // a single word after the gap goes with the gap
+  [#b#if not open [~]#mid#if not tight { if ws.len() >= 2 [ ] else [~] }#a]
 }
 #let blanked(it) = {
   let g = if it.at("boxes", default: 0) > 0 { letter-boxes(it.boxes, first: it.at("first", default: "")) } else { gap-line(n: it.at("gap", default: 8)) }
@@ -175,8 +176,11 @@
 #let circled(w) = box(stroke: 1.6pt + ink, radius: 50%, inset: (x: 7pt, y: 4pt), text(size: ex-size, weight: "bold", w))
 #let wline(width: 1fr) = box(width: width, height: 0.9em, baseline: 0.2em, stroke: (bottom: 1.1pt + ink))
 #let write-line(lead: none, gap: 15mm) = block(width: 100%, height: gap, above: 0pt, below: 0pt, align(bottom,
-  grid(columns: (auto, 1fr), column-gutter: 4pt, align: bottom,
-    if lead == none or lead == "" { [] } else { text(size: ex-size, lead) }, line(length: 100%, stroke: 1.1pt + ink))))
+  if lead == none or lead == "" { line(length: 100%, stroke: 1.1pt + ink) } else {
+    grid(columns: (auto, 1fr), column-gutter: 4pt, align: bottom, text(size: ex-size, lead), line(length: 100%, stroke: 1.1pt + ink))
+  }))
+// The last word of a text never stands alone on its line.
+#let glue-last(t) = { let w = t.split(" "); if w.len() >= 3 { w.slice(0, -1).join(" ") + "\u{a0}" + w.last() } else { t } }
 
 // ---------- exercise types (participant page) ----------
 #let ex-gaps(s) = {
@@ -185,8 +189,10 @@
     // on letter-box sheets the example shows the answer in boxes, the way it is to be written
     let a = s.example.answer
     let mid = if boxes { letter-boxes(a.clusters().len(), letters: a.clusters()) } else { none }
-    example-box(shift: if boxes { 11.4pt } else { 2.7pt }, par(leading: 1.0em, text(size: ex-size,
-      if boxes { joined(s.example.parts.at(0), mid, s.example.parts.at(1)) } else { filled(s.example.parts, a) })))
+    let body = text(size: ex-size, if boxes { joined(s.example.parts.at(0), mid, s.example.parts.at(1)) } else { filled(s.example.parts, a) })
+    // the label goes down to the boxes only if they are on the first line
+    layout(size => example-box(shift: if boxes and measure(body).width <= size.width - 32mm { 11.4pt } else { 2.7pt },
+      par(leading: 1.0em, body)))
   }
   spread(s.items.enumerate().map(((i, it)) => block(breakable: false, item-inline(i + 1, blanked(it)))))
 }
@@ -195,7 +201,12 @@
   let row(it, ans: none) = {
     par(leading: 1.0em, text(size: ex-size, joined(it.parts.at(0), gap-line(n: 6), it.parts.at(1))))
     v(0.15em)
-    pad(left: 6mm, it.options.map(o => if ans == o { circled(o) } else { wordchoice(o) }).join(h(14mm)))
+    // the three words always on one row: smaller gaps where long words need them
+    layout(size => {
+      let o = it.options.map(o => if ans == o { circled(o) } else { wordchoice(o) })
+      let g = if measure(o.join(h(14mm))).width > size.width - 6mm { h(5mm) } else { h(14mm) }
+      pad(left: 6mm, o.join(g))
+    })
   }
   // the example's words get the full width of the box, so they always stay on one line
   if s.example != none {
@@ -221,7 +232,9 @@
   let ht(t, w) = measure(block(width: w, text(size: ex-size, t))).height
   let lw = calc.max(..s.left.map(wd)) + 1pt
   let rw = calc.max(..s.right.map(wd)) + 1pt
-  let (lcol, rcol, gap) = if lw + rw <= avail { (lw, rw, corridor + avail - lw - rw) } else {
+  // texts that almost fit on one line each may narrow the space between the dots to 23 mm
+  let (lcol, rcol, gap) = if lw + rw <= avail { (lw, rw, corridor + avail - lw - rw) }
+    else if lw + rw <= avail + 7mm { (lw, rw, corridor - (lw + rw - avail)) } else {
     let lmin = calc.max(..s.left.map(t => calc.max(..t.split(" ").map(wd)))) + 1pt
     let rmin = calc.max(..s.right.map(t => calc.max(..t.split(" ").map(wd)))) + 1pt
     let best = (lmin, 1e9pt)
@@ -258,10 +271,10 @@
   if s.example != none {
     example-box(shift: 7.7pt, { par(leading: 0.9em, s.example.tiles.map(tile).join(h(7pt))); v(0.2em); text(size: ex-size, answer(s.example.answer)) })
   }
-  spread(gap: 4mm, s.items.enumerate().map(((i, it)) => block(breakable: false, item-inline(i + 1, leading: 0.9em,
+  spread(gap: 8mm, s.items.enumerate().map(((i, it)) => block(breakable: false, item-inline(i + 1, leading: 0.9em,
     it.tiles.map(tile).join(h(7pt)), rest: {
       // the first line close to its own tiles, clearly apart from the next item
-      write-line(lead: it.at("first", default: ""), gap: 11mm)
+      write-line(lead: it.at("first", default: ""), gap: 7mm)
       if it.at("long", default: false) { write-line(gap: 12mm) }
     }))))
 }
@@ -270,7 +283,7 @@
   if s.example != none {
     let p = s.example.parts
     example-box({
-      text(size: ex-size)[#p.at(0)#strike(stroke: 2pt, p.at(1))#p.at(2)]
+      text(size: ex-size)[#p.at(0)#strike(stroke: 2pt, p.at(1))#glue-last(p.at(2))]
       linebreak()
       text(size: small)[Richtig heißt es: ]
       text(size: ex-size, answer(s.example.answer))
@@ -284,10 +297,23 @@
 }
 
 #let stub(w) = box([#text(size: ex-size, weight: "bold", w.first)#box(width: (w.len - 1) * 0.55em + 0.2em, height: 0.9em, baseline: 0.2em, stroke: (bottom: 1.1pt + ink))#w.at("punct", default: "")])
-#let ex-firstletters(s) = spread(gap: 4mm, s.items.enumerate().map(((i, it)) =>
+// A stub row that does not fit on one line breaks after its comma, never before a lone stub;
+// the writing line sits close under its own stubs and clearly apart from the next item.
+#let ex-firstletters(s) = spread(gap: 8mm, s.items.enumerate().map(((i, it)) =>
   block(breakable: false, item(i + 1, {
-    par(leading: 1.1em, it.stubs.map(stub).join(h(0.55em)))
-    write-line(gap: 13mm)
+    layout(size => {
+      let parts = it.stubs.map(stub)
+      let row = parts.join(h(0.55em))
+      // the comma or semicolon nearest the middle
+      let ks = range(it.stubs.len() - 1).filter(i => it.stubs.at(i).at("punct", default: "").contains(",")
+        or it.stubs.at(i).at("punct", default: "").contains(";"))
+      let mid = it.stubs.len() / 2
+      let k = if ks.len() > 0 { ks.sorted(key: i => calc.abs(i + 1 - mid)).first() } else { none }
+      if measure(par(row)).width > size.width and k != none {
+        par(leading: 1.1em, parts.slice(0, k + 1).join(h(0.55em)) + linebreak() + parts.slice(k + 1).join(h(0.55em)))
+      } else { par(leading: 1.1em, row) }
+    })
+    write-line(gap: 9mm)
     if it.at("long", default: false) { write-line(gap: 12mm) }
   }))))
 
@@ -297,7 +323,7 @@
   for (k, o) in opts.enumerate() {
     block(above: 0.85em, below: 0pt, grid(columns: (12mm, 8mm, 1fr), align: (left + top, left + top, left + top),
       pad(top: -0.5mm, box(width: 9mm, height: 9mm, stroke: 1.4pt + ink, radius: 1.5pt)),
-      text(size: ex-size, weight: "bold")[#("abc".clusters().at(k)))], text(size: ex-size, o)))
+      text(size: ex-size, weight: "bold")[#("abc".clusters().at(k)))], text(size: ex-size, glue-last(o))))
   }
 }
 #let ex-choice(s) = spread(s.items.enumerate().map(((i, it)) =>
@@ -308,7 +334,7 @@
 
 #let ex-situation(s) = spread(s.items.enumerate().map(((i, it)) =>
   block(breakable: false, item(i + 1, {
-    text(size: ex-size, it.phrase)
+    text(size: ex-size, glue-last(it.phrase))
     options-block(it.options)
   }))))
 
@@ -330,7 +356,7 @@
 // Read-aloud story: paragraphs, then the last sentence with a gap and three words to circle.
 #let ex-story(s) = {
   set par(leading: 0.7em, spacing: 0.9em)
-  for p in s.paragraphs { par(text(size: ex-size, p)) }
+  for p in s.paragraphs { par(text(size: ex-size, glue-last(p))) }
   v(0.6em)
   block(width: 100%, stroke: 1.4pt + ink, radius: 4pt, inset: 10pt, breakable: false, {
     // the saying starts on a line of its own: "Er lachte und sagte:" / "„Neue ___ kehren gut.“"

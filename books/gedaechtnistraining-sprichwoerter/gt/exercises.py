@@ -77,6 +77,13 @@ def fitting_variants(it: dict, kind: str, word: str | None = None) -> list[str]:
         elif kind == "complete":
             if _n(v).startswith(_n(it["split"][0])):
                 out.append(v)
+        elif kind in ("scramble", "scramble_first"):
+            # the same tiles give another known wording ("Was sich neckt, das liebt sich");
+            # with the first word printed (level 2) it must start the same way
+            same = sorted(w.lower() for w in text.words(v)) == sorted(w.lower() for w in text.words(it["wording"]))
+            first_ok = kind == "scramble" or text.words(v)[0].lower() == text.words(it["wording"])[0].lower()
+            if same and first_ok and _n(v) != _n(it["wording"]):
+                out.append(v)
         elif kind == "firstletters":
             if [x[0].lower() for x in text.words(v)] == [x[0].lower() for x in text.words(it["wording"])]:
                 out.append(v)
@@ -118,11 +125,11 @@ def gaps(items, level, seed, example=None, title="Was fehlt?", category=None):
     rnd = _rnd(seed)
     bank = [it["keyword"] for it in items]
     rnd.shuffle(bank)
-    tasks = {1: "Welches Wort fehlt? Die Wörter im Kasten helfen Ihnen.",
+    tasks = {1: "Welches Wort fehlt?\nDie Wörter im Kasten helfen Ihnen.",
              2: "Welches Wort fehlt? Für jeden Buchstaben gibt es ein Kästchen, der erste steht schon da.",
              3: "Welches Wort fehlt? Schreiben Sie es auf die Linie."}
     if category:
-        tasks = {1: f"Welches {category} fehlt? Die Wörter im Kasten helfen Ihnen.",
+        tasks = {1: f"Welches {category} fehlt?\nDie Wörter im Kasten helfen Ihnen.",
                  2: f"Welches {category} fehlt? Für jeden Buchstaben gibt es ein Kästchen, der erste steht schon da.",
                  3: f"Welches {category} fehlt? Schreiben Sie es auf die Linie."}
     ex = None
@@ -221,7 +228,7 @@ def scramble(items, level, seed, example=None):
     return {"type": "scramble", "title": "Wortsalat", "level": level, "items": out, "example": ex,
             "task": {2: "Die Wörter sind durcheinander. Schreiben Sie das Sprichwort auf. Das erste Wort steht schon da.",
                      3: "Die Wörter sind durcheinander. Schreiben Sie das Sprichwort richtig auf."}[level],
-            "solution": [sol_full(it) for it in items]}
+            "solution": [sol_full(it, kind="scramble_first" if level == 2 else "scramble") for it in items]}
 
 
 def wrongword(items, level, seed, example=None):

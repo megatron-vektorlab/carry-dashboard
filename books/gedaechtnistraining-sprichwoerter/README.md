@@ -11,7 +11,7 @@ voditeljima aktivnosti u domovima za starije i dnevnim boravcima (Betreuungskrä
 Alltagsbegleiter, radni terapeuti) te obiteljima koje rješavaju zajedno kod kuće.
 
 Stanje: **knjiga je spremna za probni tisak** (11. 10. 2026., nakon četiri kruga provjere).
-- Unutrašnjost ima 274 stranice A4, a omot ima hrbat od 0,617 in (bijeli papir).
+- Unutrašnjost ima 272 stranice A4, a omot ima hrbat od 0,613 in (bijeli papir).
 - Brojevi u ovom dokumentu odnose se na trenutačnu izgradnju; `gt.build` ih ponovno računa u `KDP-LISTING.md`.
 - `python3 -m gt.qa` prolazi bez greške.
 - Vodenog žiga nema, jer su podaci za impresum upisani.
@@ -36,7 +36,7 @@ Stanje: **knjiga je spremna za probni tisak** (11. 10. 2026., nakon četiri krug
 | Početak poglavlja | kratki uvod, zagrijavanje „Ich sage den Anfang, Sie das Ende” (8 poslovica za čitanje naglas), pitanja za razgovor, ideje za kretanje, predmeti koje se može donijeti, popis listova |
 | Svaki list | **desna stranica** = radni list (Kopiervorlage), **poleđina** = stranica za voditelja: tijek, rješenja s inačicama, pomoć ako se riječ ne sjeti, 2–3 pitanja za razgovor, lakša/teža inačica, napomena ako tema može biti osjetljiva |
 | Dodaci (novo u 3. krugu) | **„Mein Sprichwort”**: list za kopiranje za biografski rad, sa stranicom za voditelja · **Sprichwort-Bingo**: pravila, 24 rečenice za čitanje naglas i 12 različitih kartica (po dvije na stranici, za izrezivanje) · **Raterunden**: 6 krugova po 10 poslovica za čitanje naglas, bez kopiranja · **popis svih 100 listova** s rubrikama za dvije grupe |
-| Kazalo | svih 377 poslovica i izreka iz knjige od A do Ž, **svaka s kratkim objašnjenjem značenja**, brojevima listova (u zagradi: list na kojem je samo pogrešan odgovor), zagrijavanjem ili krugom pogađanja |
+| Kazalo | svih 371 poslovica i izreka iz knjige od A do Ž, **svaka s kratkim objašnjenjem značenja**, brojevima listova (u zagradi: list na kojem je samo pogrešan odgovor), zagrijavanjem ili krugom pogađanja |
 
 **Razine** (oznaka ◆ / ◆◆ / ◆◆◆ u podnožju, bez riječi „lako/teško” na listu): 40 / 40 / 20 listova.
 Razina 1 uvijek ima okvir s riječima ili izbor između dvije riječi i koristi samo najpoznatije izreke.
@@ -113,7 +113,7 @@ bez sivih površina (dobro se kopira). Unutarnja margina od 22 mm omogućuje kop
      - napomene „Achtsam” koje su se gubile, pitanja koja ne pripadaju listu, nedostajuće ispravne varijante.
      Sve je ispravljeno općim pravilima u kodu, a panel od tri persone odabrao je proširenja (kazalo sa značenjima, bingo, „Mein Sprichwort”, popis listova, krugovi pogađanja).
    - **Četvrti krug (17 recenzenata + provjeravatelji)** na proširenom izdanju: 377 novih tekstova značenja, dodaci, sve stranice kao slike, slijepi test 101 od 101 te provjera jesu li ispravci trećeg kruga stvarno riješeni. Potvrđeno je 118 primjedbi (bez blokera); sve su ugrađene, među njima 14 preciznijih značenja, tri bolje scene „Wann sagt man das?”, širi prostor za crtanje kod spajanja i jednoznačne rečenice za bingo.
-   - **Završna kontrola** nakon posljednjeg rasporeda: vidi bilješku na kraju ovog popisa.
+   - **Završna kontrola (8 recenzenata + provjeravatelji)** nakon posljednjeg rasporeda: slijepi test 139 od 139. Potvrđene su 3 kritične primjedbe: dva zadatka Wortsalat čije pločice daju i drugu pravu izreku („Die Ersten werden die Letzten sein”, „Was sich neckt, das liebt sich”), sada priznate kao „auch”. Potvrđene su i 4 važne (crte za pisanje preblizu sljedećem zadatku, pomoć „Schuhe” koja je pristajala i „Socken”) te oko 50 sitnica (riječi same u retku, dodatne česte varijante, ponovljena pitanja, razmaci). Sve je ugrađeno, a QA i dalje prolazi.
 
 **Iskreno: što nije napravljeno.** Knjigu nije pregledao čovjek kojemu je njemački materinski
 jezik, a listovi nisu isprobani u stvarnoj grupi. Prije objave preporučujem oboje (vidi popis dolje).
@@ -170,4 +170,4 @@ IDS OWID popis namjerno se **ne** koristi: uvjeti korištenja traže pisanu dozv
 - **Bez riječi „Demenz” u knjizi i na korici.** Najčešća pritužba u recenzijama je da korisnici moraju prelijepiti tu riječ. Spominje se samo u opisu na Amazonu.
 - **Bez zdravstvenih obećanja** (njemački HWG): nigdje „gegen Demenz”, „beugt vor”, „bewiesen”.
 - **Dozvola za kopiranje** izričito dopušta kopije za sudionike i povećanje na A3 za jednu ustanovu ili vlastitu grupu. Zabranjuje prosljeđivanje drugim ustanovama, prodaju i digitalno širenje.
-- **Cijena:** 18,99 € (KDP traži neto cijenu; vidi `KDP-LISTING.md`). Tisak 274 stranice A4 stoji 5,13 €, a honorar je oko 5,50 € uz 7 % PDV-a, odnosno oko 4,45 € uz 19 %. Proširenja (oko 32 stranice) stoje oko 0,50 € tiska po primjerku.
+- **Cijena:** 18,99 € (KDP traži neto cijenu; vidi `KDP-LISTING.md`). Tisak 272 stranice A4 stoji 5,10 €, a honorar je oko 5,55 € uz 7 % PDV-a, odnosno oko 4,47 € uz 19 %. Proširenja (oko 32 stranice) stoje oko 0,50 € tiska po primjerku.

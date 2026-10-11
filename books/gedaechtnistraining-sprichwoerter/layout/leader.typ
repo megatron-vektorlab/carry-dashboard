@@ -7,7 +7,7 @@
 // "Wo gehobelt wird, da fallen Späne (auch: Wo gehobelt wird, fallen Späne)."
 #let sol-line(x) = {
   let v = x.at("variants", default: ())
-  let after = x.after
+  let after = glue-last(x.after)
   let end = ""
   if v.len() > 0 and after.len() > 0 and after.last() in (".", "!", "?") {
     end = after.last()
@@ -37,8 +37,8 @@
   if L.solution.len() == 1 { sol-line(L.solution.at(0)) }
   else if L.solution.len() > 1 and L.at("sol_cols", default: 1) == 2 {
     // short solutions (word search): two columns
-    grid(columns: (1fr, 1fr), column-gutter: 6mm, row-gutter: 0.45em,
-      ..L.solution.enumerate().map(((i, x)) => [#(i + 1). #sol-line(x)]))
+    grid(columns: (1fr, 1fr), column-gutter: 6mm, row-gutter: 0.8em,
+      ..L.solution.enumerate().map(((i, x)) => grid(columns: (1.4em, 1fr), [#(i + 1).], sol-line(x))))
   }
   else if L.solution.len() > 1 { enum(..L.solution.map(sol-line), spacing: 0.45em) }
   let hints = L.at("hints", default: ())

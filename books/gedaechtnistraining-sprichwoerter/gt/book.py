@@ -172,7 +172,7 @@ def leader_page(s: dict, items: list[dict], used_prompts: list, chapter_pool: li
         else:
             notes.append([[it["wording"]], n])
     out = []
-    for ws, n in notes[:3]:
+    for ws, n in notes[:4]:
         if len(ws) > 1 and n.startswith("Kann "):
             n = "Können " + n[5:]
         out.append((_join_labels(ws) + ": " if ws else "") + n)
