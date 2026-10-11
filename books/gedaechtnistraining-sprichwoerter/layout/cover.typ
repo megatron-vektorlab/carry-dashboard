@@ -86,7 +86,7 @@
 #at(bx, B + 3.35in, box(width: bw * 0.56, {
   set par(leading: 0.45em)
   for b in C.bullets {
-    block(below: 0.11in, grid(columns: (0.24in, 1fr), text(size: 16pt, fill: brick)[■], text(size: 15.5pt, fill: ink, b)))
+    block(below: 0.11in, grid(columns: (0.24in, 1fr), text(size: 16pt, fill: brick)[■], text(size: 16pt, fill: ink, b)))
   }
 }))
 // a small look into the book: worksheet 1
@@ -94,7 +94,7 @@
   image(C.sample, width: bw * 0.4))))
 #at(bx, B + 7.3in, box(width: bw * 0.62, {
   set par(leading: 0.5em)
-  text(size: 14pt, fill: ink)[Für Betreuungskräfte, Alltagsbegleiter, Ergotherapie, Tagespflege, Seniorengruppen und für Angehörige zu Hause.]
+  text(size: 16pt, fill: ink)[Für Betreuungskräfte, Alltagsbegleiter, Ergotherapie, Tagespflege, Seniorengruppen und für Angehörige zu Hause.]
 }))
 // barcode area (KDP): lower right, keep empty and white
 #at(B + TW - 0.25in - 2.1in, B + TH - 0.25in - 1.3in, rect(width: 2.1in, height: 1.3in, fill: white))

@@ -11,14 +11,14 @@
 }
 
 #let leader-head(title) = {
-  block(width: 100%, stroke: (bottom: 1.5pt + ink), inset: (bottom: 6pt),
+  block(width: 100%, stroke: (bottom: 1.5pt + ink), inset: (bottom: 12pt),
     grid(columns: (1fr, auto), align: (left + bottom, right + bottom),
       text(font: serif, size: 21pt, weight: "bold")[Für die Gruppenleitung], text(size: small, title)))
   v(0.3em)
 }
 
 // ---------- Mein Sprichwort ----------
-#let prompt-lines(q, n) = block(breakable: false, below: 0.4em, {
+#let prompt-lines(q, n) = block(breakable: false, below: 9mm, {
   text(size: ex-size, weight: "bold", q)
   for i in range(n) { full-line(gap: 15mm) }
 })
@@ -26,6 +26,8 @@
 #let mein-sprichwort() = {
   sheet-head(title: "Mein Sprichwort", chapter: "Zum Erzählen")
   task[Schreiben Sie auf, was Ihnen einfällt, oder erzählen Sie es und lassen Sie es aufschreiben.]
+  block(below: 7mm, grid(columns: (auto, 1fr), column-gutter: 4pt, align: bottom,
+    text(size: small)[Name (wenn Sie möchten):], line(length: 100%, stroke: 1.1pt + ink)))
   prompt-lines([Dieses Sprichwort habe ich früher oft gehört:], 2)
   prompt-lines([Wer hat es gesagt, und wann?], 2)
   prompt-lines([Ein Sprichwort aus meiner Heimat, gern auch in Mundart:], 2)
@@ -46,7 +48,7 @@
     [Fragen Sie nach: „Wie hat man das bei Ihnen zu Hause gesagt?“ Mundart und regionale Formen sind ausdrücklich willkommen.])
   lead-section[Ideen]
   list(spacing: 0.5em,
-    [Die Blätter der Gruppe zu einem eigenen Sprichwort-Buch zusammenheften.],
+    [Mit Einverständnis der Teilnehmenden die Blätter zu einem Sprichwort-Buch der Gruppe zusammenheften; wer möchte, bekommt sein Blatt zurück oder eine Kopie.],
     [Jede Woche ein Sprichwort aus der Gruppe als „Spruch der Woche“ aufhängen, wenn die Person einverstanden ist.],
     [Angehörige mitmachen lassen: Welche Sprichwörter kennen die Enkel?])
   lead-section[Zum Gespräch]
@@ -55,26 +57,26 @@
     [Von wem haben Sie die meisten Sprichwörter gehört?],
     [Welches Sprichwort würden Sie einem jungen Menschen mitgeben?])
   v(0.6em)
-  block(width: 100%, stroke: 1pt + ink, inset: 7pt, radius: 3pt)[*Achtsam:* Erinnerungen an Eltern und Großeltern können auch traurig sein. Lassen Sie Zeit, hören Sie zu und drängen Sie niemanden. Das Blatt gehört der Person, die es ausgefüllt hat.]
+  block(width: 100%, stroke: 1pt + ink, inset: 7pt, radius: 3pt)[*Achtsam:* Erinnerungen an Eltern, Großeltern oder an die Heimat können auch traurig sein, etwa bei Menschen, die flüchten mussten. Lassen Sie Zeit, hören Sie zu und drängen Sie niemanden. Das Blatt gehört der Person, die es ausgefüllt hat.]
 }
 
 // ---------- Sprichwort-Bingo ----------
 #let bingo-rules(B) = {
-  chapter-title("Sprichwort-Bingo", sub: "Ein Spiel für die Gruppe, mit 12 verschiedenen Karten zum Kopieren")
+  chapter-title("Sprichwort-Bingo", sub: "Ein Spiel für die Gruppe, mit 12 verschiedenen Karten zum Kopieren · etwa 20 bis 30 Minuten")
   section[Was Sie brauchen]
   list(spacing: 0.5em,
     [Für jede Person eine Karte. Auf jeder Seite stehen zwei Karten: kopieren und an der gestrichelten Linie durchschneiden. Gern auf A3 vergrößern.],
-    [Einen dicken Stift zum Durchstreichen. Wer lieber abdeckt, nimmt große Knöpfe oder Spielsteine, nur unter Aufsicht, damit nichts in den Mund gelangt.],
+    [Einen dicken Stift zum Durchstreichen. Wer lieber abdeckt, nimmt Kärtchen aus Pappe statt Knöpfen oder Spielsteinen, die man verschlucken könnte.],
     [Die Liste mit den Sätzen zum Vorlesen auf der nächsten Seite.])
   section[So wird gespielt]
   enum(spacing: 0.5em,
     [Die Spielleitung liest einen Satz aus der Liste vor und macht an der Lücke eine kleine Pause. Die Gruppe ergänzt das Wort.],
     [Wer das Wort auf seiner Karte hat, streicht es durch. Danach sprechen alle das ganze Sprichwort gemeinsam.],
     [Die Spielleitung hakt den Satz in der Liste ab und wählt den nächsten, in beliebiger Reihenfolge.],
-    [Wer drei durchgestrichene Wörter in einer Reihe hat, waagerecht, senkrecht oder schräg, ruft „Bingo!“.],
+    [Wer drei durchgestrichene Wörter in einer Reihe hat, waagerecht, senkrecht oder schräg, ruft „Bingo!“],
     [Gespielt wird weiter, bis alle eine Reihe haben. So gibt es keine Verlierer.])
   section[Leichter oder anspruchsvoller]
-  [*Leichter:* zu zweit eine Karte; die Spielleitung zeigt auf das Wort. \ *Anspruchsvoller:* Bingo erst bei einer vollen Karte, oder nach jedem Wort fragen: Wann sagt man das?]
+  [*Leichter:* Zu zweit eine Karte; die Spielleitung zeigt beim Suchen auf das Wort. \ *Anspruchsvoller:* Bingo erst bei einer vollen Karte. Oder nach jedem Wort fragen: Wann sagt man das?]
 }
 
 #let bingo-calls(B) = {
@@ -87,18 +89,20 @@
     ..B.calls.map(c => (box(width: 5mm, height: 5mm, baseline: 15%, stroke: 1pt + ink), c.call, strong(c.word))).flatten())
 }
 
-#let bingo-card(words, n) = block(breakable: false, width: 100%, {
+#let bingo-card(words, n, holder, year) = block(breakable: false, width: 100%, {
   grid(columns: (1fr, auto), align: (left + bottom, right + bottom),
     text(font: serif, size: 24pt, weight: "bold")[Sprichwort-Bingo], text(size: small)[Karte #n])
   v(2mm)
   grid(columns: (1fr,) * 3, rows: (33mm,) * 3, stroke: 1.6pt + ink,
     ..words.map(w => align(center + horizon, text(size: 26pt, weight: "bold", w))))
+  // the upper card keeps its own copyright line when the page is cut; the lower one has the footer
+  if calc.odd(n) { v(1.5mm); text(size: small)[© #year #holder · Kopiervorlage] }
 })
 
-#let bingo-cards(B) = {
+#let bingo-cards(B, holder, year) = {
   for (k, c) in B.cards.enumerate() {
     if calc.even(k) and k > 0 { pagebreak() }
-    bingo-card(c, k + 1)
+    bingo-card(c, k + 1, holder, year)
     if calc.even(k) {
       v(1fr)
       line(length: 100%, stroke: (paint: ink, thickness: 1pt, dash: "dashed"))
@@ -110,7 +114,7 @@
 // ---------- Raterunden ----------
 #let rounds(R) = {
   chapter-title("Raterunden für zwischendurch", sub: "Ich sage den Anfang, Sie das Ende")
-  [Ohne Kopien, für fünf Minuten vor dem Essen, im Morgenkreis oder beim Besuch zu zweit. Lesen Sie den Anfang vor und lassen Sie die Gruppe ergänzen. Das Ende steht fett gedruckt.]
+  [Ohne Kopien, für fünf Minuten vor dem Essen, im Morgenkreis oder beim Besuch zu zweit. Lesen Sie den Anfang vor und lassen Sie die Gruppe ergänzen. Das Ende steht fett gedruckt. Kennt jemand ein anderes passendes Ende, gilt es natürlich auch.]
   for (k, r) in R.enumerate() {
     block(breakable: false, {
       section[Runde #(k + 1)]

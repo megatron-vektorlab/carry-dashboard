@@ -99,7 +99,8 @@ def sol_full(it: dict, prefix: str = "", kind: str = "") -> dict:
 
 def _gap(it: dict, level: int, word: str | None = None) -> dict:
     k = word or it["keyword"]
-    g = {"parts": blank(it["wording"], k), "gap": max(6, min(12, len(k) + 2))}
+    # about 7 mm per letter: room for large, unsteady handwriting
+    g = {"parts": blank(it["wording"], k), "gap": max(7, min(16, len(k) + 5))}
     if level == 2:
         g.update(boxes=len(k), first=k[0])     # one box per letter, the first one filled in
     return g
@@ -142,11 +143,14 @@ def circle(items, level, seed, example=None):
     """Kreisen Sie das richtige Wort ein: two (level 1) or three (level 2) words to choose from."""
     rnd = _rnd(seed)
     n = 2 if level == 1 else 3
-    out = []
-    for it in items:
-        opts = [it["keyword"]] + it["decoys"][: n - 1]
-        rnd.shuffle(opts)
-        out.append({"parts": blank(it["wording"], it["keyword"]), "options": opts})
+    for _ in range(50):           # the right word must not always stand in the same place
+        out = []
+        for it in items:
+            opts = [it["keyword"]] + it["decoys"][: n - 1]
+            rnd.shuffle(opts)
+            out.append({"parts": blank(it["wording"], it["keyword"]), "options": opts})
+        if len({o["options"].index(it["keyword"]) for o, it in zip(out, items)}) > 1:
+            break
     ex = None
     if example is not None:
         opts = [example["keyword"]] + example["decoys"][: n - 1]
@@ -198,13 +202,16 @@ def scramble(items, level, seed, example=None):
     for it in items:
         w = text.words(it["wording"])
         rest = list(range(1, len(w))) if level == 2 else list(range(len(w)))
-        order = list(rest)
-        for _ in range(50):
-            rnd.shuffle(order)
-            if order != rest:
-                break
+        if level == 3 and len(rest) > 1:       # no tile stays in its place
+            order = [rest[i] for i in _derange(len(rest), rnd)]
+        else:
+            order = list(rest)
+            for _ in range(50):
+                rnd.shuffle(order)
+                if order != rest:
+                    break
         out.append({"tiles": [w[i] for i in order], "first": w[0] if level == 2 else "",
-                    "long": len(it["wording"]) > 40})
+                    "long": len(it["wording"]) > 30})
     ex = None
     if example is not None and level < 3:
         w = text.words(example["wording"])
@@ -261,7 +268,7 @@ def firstletters(items, level, seed, example=None):
                 stubs.append({"first": tok[0], "len": len(tok)})
             elif stubs:
                 stubs[-1]["punct"] = stubs[-1].get("punct", "") + tok
-        out.append({"stubs": stubs, "long": len(it["wording"]) > 40})
+        out.append({"stubs": stubs, "long": len(it["wording"]) > 30})
     return {"type": "firstletters", "title": "Erste Buchstaben", "level": level, "items": out, "example": None,
             "task": "Von jedem Wort steht nur der erste Buchstabe da. Welches Sprichwort ist es?",
             "solution": [sol_full(it, kind="firstletters") for it in items]}
@@ -282,8 +289,9 @@ def _content(s: str) -> set[str]:
 def _distractors(it, pool, used, field, n, rnd, avoid=None):
     mine = _content(it[field]) | _content(it["wording"])
     bad = set((avoid or {}).get(it["id"], []))
+    # wrong answers are read aloud too: none that needs a care note
     cands = [p for p in pool if p["id"] not in used and p["id"] != it["id"] and p["kind"] == it["kind"] and p["id"] not in bad
-             and p["chapter"] != it["chapter"] and not (_content(p[field]) & mine)]
+             and p["chapter"] != it["chapter"] and not (_content(p[field]) & mine) and not p.get("note")]
     rnd.shuffle(cands)
     picks = []
     for c in cands:

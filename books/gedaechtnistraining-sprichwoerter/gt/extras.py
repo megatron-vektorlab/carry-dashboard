@@ -18,6 +18,9 @@ import random
 from . import exercises as ex, plan, text
 
 N_WORDS, N_CARDS, CARD = 24, 12, 9
+# calls whose frame is too common: "es geht um die …" also takes "Wahrheit" or "Mäuse"
+BINGO_SKIP = {"i006"}
+LINES = [(0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6)]
 N_ROUNDS, PER_ROUND = 6, 10
 
 
@@ -41,7 +44,7 @@ def bingo(corpus: list[dict], sheet_ids: set[str], warm_ids: set[str], seed: str
     known = plan._known_sayings(corpus)
     rnd = random.Random("gt1:" + seed)
     cands = [i for i in corpus if i["id"] in sheet_ids and i["familiarity"] >= 3 and i["keyword"][:1].isupper()
-             and 3 <= len(text.letters_upper(i["keyword"])) <= 9 and _context(i) >= 3
+             and 3 <= len(text.letters_upper(i["keyword"])) <= 9 and _context(i) >= 4 and i["id"] not in BINGO_SKIP
              and ex.blank(i["wording"], i["keyword"])[0]]          # a noun, not the first word
     # spread over the chapters, best known and shortest first
     by_ch = collections.defaultdict(list)
@@ -66,16 +69,19 @@ def bingo(corpus: list[dict], sheet_ids: set[str], warm_ids: set[str], seed: str
     words = [c["keyword"] for c in chosen]
     count = collections.Counter()
     cards, seen = [], set()
+    # no two cards with more than 6 words in common or with the same winning line
+    tries = 0
     while len(cards) < N_CARDS:
-        order = sorted(words, key=lambda w: (count[w], rnd.random()))
+        tries += 1
+        order = sorted(words, key=lambda w: (count[w] + rnd.random() * min(3, tries / 200), rnd.random()))
         pick = order[:CARD]
-        key = frozenset(pick)
-        if key in seen:
-            rnd.shuffle(words)
-            continue
-        seen.add(key)
-        count.update(pick)
         rnd.shuffle(pick)
+        lines = {frozenset(pick[i] for i in ln) for ln in LINES}
+        if any(len(set(pick) & set(c)) > 6 or lines & {frozenset(c[i] for i in ln) for ln in LINES} for c in cards):
+            if tries > 5000:
+                raise RuntimeError("bingo: no set of different cards found")
+            continue
+        count.update(pick)
         cards.append(pick)
     return {"calls": calls, "cards": cards, "ids": [c["id"] for c in chosen]}
 
@@ -84,7 +90,9 @@ def rounds(corpus: list[dict], sheet_ids: set[str], warm_ids: set[str], seed: st
     """Two-part proverbs for oral rounds: first those not printed anywhere else in the book,
     then well-known ones that are not in a warm-up; mixed chapters in every round."""
     rnd = random.Random("gt1:" + seed)
-    prov = [i for i in corpus if i["kind"] == "proverb" and len(i.get("split") or []) == 2
+    # read aloud as an open question, the start must lead to this ending only
+    # ("Alles hat …" also leads to "ein Ende, nur die Wurst hat zwei")
+    prov = [i for i in corpus if i["kind"] == "proverb" and plan.complete_ok(i, 3)
             and i["familiarity"] >= 3 and i["id"] not in warm_ids
             and len(i["split"][0]) <= 40 and len(i["split"][1]) <= 40]
     new = [p for p in prov if p["id"] not in sheet_ids]
@@ -100,5 +108,5 @@ def rounds(corpus: list[dict], sheet_ids: set[str], warm_ids: set[str], seed: st
     res = []
     for r in out:
         rnd.shuffle(r)
-        res.append([{"a": p["split"][0] + " …", "b": p["split"][1], "id": p["id"]} for p in r])
+        res.append([{"a": p["split"][0] + "\u00a0…", "b": p["split"][1], "id": p["id"]} for p in r])
     return {"rounds": res, "n_new": sum(1 for p in pool if p["id"] not in sheet_ids)}

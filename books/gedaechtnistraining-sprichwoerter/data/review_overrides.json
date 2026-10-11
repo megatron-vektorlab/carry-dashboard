@@ -29,20 +29,18 @@
   "Was muss auf dem Teller hübsch aussehen, damit es Ihnen Appetit macht?": "Wie muss ein Teller angerichtet sein, damit Ihnen das Essen Appetit macht?",
   "Welches peinliche Missgeschick können Sie heute mit Humor erzählen?": "In welches Fettnäpfchen tritt man bei Besuch besonders leicht?",
   "Was meinen Sie: Gibt es für jeden Menschen das passende Gegenstück?": "Was passt für Sie zusammen wie Topf und Deckel?",
-  "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?": "Was haben Sie früher gemacht, wenn es im April plötzlich hagelte oder schneite?",
   "Mögen Sie Regenwetter, oder sind Ihnen Sonnentage lieber?": "Wie hilft man jemandem, der im Regen steht?",
   "Welche Nachricht hat Sie in Ihrem Leben einmal richtig überrascht?": "Welche schöne Nachricht hat Sie einmal richtig überrascht?",
   "Haben Sie früher jemanden in den April geschickt oder sind selbst hereingefallen?": "Haben Sie früher jemanden in den April geschickt, oder sind Sie selbst darauf hereingefallen?",
   "Wofür haben Sie sich im Leben besonders gern angestrengt?": "Woran erkennt man, dass sich jemand richtig ins Zeug legt?",
   "Was haben Sie durch viel Übung richtig gut gelernt?": "Welche Arbeit gelingt Ihrer Meinung nach erst nach vielen Versuchen?",
-  "Was meinen Sie: Ist Talent oder Fleiß wichtiger?": "Was meinen Sie: Kann man sein Glück wirklich selbst schmieden?",
-  "Wobei hatten Sie in Ihrem Leben schon einmal so richtig Glück?": "Haben Sie früher Lotto gespielt oder auf dem Jahrmarkt Lose gekauft? Was gab es dort zu gewinnen?",
+  "Wobei hatten Sie in Ihrem Leben schon einmal so richtig Glück?": "Was konnte man früher beim Lotto oder an der Losbude auf dem Jahrmarkt gewinnen?",
   "Was meinen Sie: Bereut man eher, was man getan oder was man nicht getan hat?": "Was haben Sie einmal gewagt, und wie ist es ausgegangen?",
   "Was halten Sie von solchen Sprüchen über Glück und Pech?": "Was halten Sie von Sprüchen wie „Pech im Spiel, Glück in der Liebe“?",
   "Was halten Sie von solchen merkwürdigen Zufällen?": "Was halten Sie davon, dass oft gerade der kommt, über den man spricht?",
   "Was meinen Sie: Verlässt man sich besser auf ein Wort oder auf Geschriebenes?": "Verlässt man sich besser auf ein gegebenes Wort oder auf etwas Schriftliches?",
   "Haben Sie früher gern Karten gespielt? Welches Spiel mochten Sie am liebsten?": "Wann sollte man die Karten lieber gleich auf den Tisch legen?",
-  "Welche Apfelsorte mögen Sie am liebsten, und wie essen Sie Äpfel gern?": "Was meinen Sie: Macht Liebe wirklich blind?",
+  "Welche Apfelsorte mögen Sie am liebsten, und wie essen Sie Äpfel gern?": "Wem haben Sie als Kind gern etwas nachgemacht?",
   "Welche Feier ist Ihnen als besonders fröhlich in Erinnerung?": "Was meinen Sie: Warum wird Freude größer, wenn man sie teilt?",
   "Welche Sorgen hatten junge Leute früher Ihrer Meinung nach?": "Welche Sorgen hatten junge Leute früher, was meinen Sie?",
   "Schenken Sie lieber, oder lassen Sie sich lieber überraschen?": "Schenken Sie lieber, oder werden Sie lieber beschenkt?",
@@ -56,11 +54,10 @@
   "Freuen Sie sich lieber früh, oder warten Sie ab, bis alles vorbei ist?": "Was meinen Sie: Warum soll man den Tag nicht vor dem Abend loben?",
   "Wofür geben Sie gern Geld aus, auch wenn es nicht nötig wäre?": "Wofür haben Sie früher gern Geld ausgegeben, auch wenn es nicht nötig war?",
   "Achten Sie beim Einkaufen eher auf den Preis oder auf die Qualität?": "Haben Sie früher beim Einkaufen eher auf den Preis oder auf die Qualität geachtet?",
-  "Was meinen Sie: Gibt es wirklich kein Licht ohne Schatten?": "Was haben Sie früher gemacht, wenn es im April plötzlich hagelte oder schneite?",
-  "Was meinen Sie: Kann man das große Los auch ohne Lotterie ziehen?": "Haben Sie früher Lotto gespielt oder auf dem Jahrmarkt Lose gekauft? Was gab es dort zu gewinnen?",
+  "Was meinen Sie: Kann man das große Los auch ohne Lotterie ziehen?": "Was konnte man früher beim Lotto oder an der Losbude auf dem Jahrmarkt gewinnen?",
   "Was meinen Sie: Hilft eine strenge Ermahnung, oder erreicht man mit Freundlichkeit mehr?": "Wofür wurden Sie als Kind besonders gelobt?",
   "Was meinen Sie: Passen eher ähnliche oder eher unterschiedliche Menschen gut zusammen?": "Mit wem haben Sie früher am liebsten zusammengearbeitet oder gespielt?",
-  "Unterhalten Sie sich lieber, oder hören Sie lieber zu?": "Wer konnte in Ihrer Familie am besten ein Geheimnis für sich behalten?",
+  "Unterhalten Sie sich lieber, oder hören Sie lieber zu?": "In welchen Momenten ist es Ihrer Meinung nach besser, nichts zu sagen?",
   "Sind Sie eher ein Frühaufsteher, oder schlafen Sie gern länger?": "Wann mussten Sie früher morgens aufstehen, für die Schule oder für die Arbeit?",
   "Sind Sie eher ein Morgenmensch oder eine Nachteule? Was gefällt Ihnen daran?": "Was haben Sie früher am liebsten frühmorgens gemacht?",
   "Fällt Ihnen etwas Schönes ein, das auch eine kleine Schattenseite hatte?": "Was ist schön und hat trotzdem eine kleine Schattenseite, so wie die Rose ihre Dornen?",
@@ -85,11 +82,32 @@
   "Welches kleine Missgeschick bringt Sie heute noch zum Schmunzeln?": "Wo muss man besonders behutsam sein, damit nichts zu Bruch geht?",
   "Über welches kleine Missgeschick können Sie heute lachen?": "Wer hat Ihnen einmal einen Fehler freundlich verziehen?",
   "Über welches eigene Missgeschick können Sie heute schmunzeln?": "Was meinen Sie: Warum lachen manche Leute über das Pech anderer?",
-  "Was halten Sie von Glücksbringern wie Hufeisen, Kleeblatt oder Schornsteinfeger?": "Wer hat Sie getröstet, wenn einmal alles schiefging?",
+  "Was halten Sie von Glücksbringern wie Hufeisen, Kleeblatt oder Schornsteinfeger?": "Was meinen Sie: Gibt es Glückspilze und Pechvögel wirklich?",
   "Was haben Sie von Ihrer Mutter oder Ihrem Vater, zum Beispiel ein Talent oder eine Angewohnheit?": "Was meinen Sie: Erbt man Talente, oder lernt man sie durch Zuschauen?",
   "Welche Gewohnheit haben Sie von älteren Menschen übernommen, die Sie geprägt haben?": "Welche Gewohnheit haben Sie von einem älteren Menschen übernommen, der Ihnen wichtig war?",
   "Freuen Sie sich schon vorher auf ein Fest, oder erst, wenn alles gut geklappt hat?": "Was meinen Sie: Warum soll man den Tag nicht vor dem Abend loben?",
-  "Haben Sie früher Lotto gespielt oder auf der Kirmes ein Los gekauft? Was haben Sie gewonnen?": "Haben Sie früher Lotto gespielt oder auf dem Jahrmarkt Lose gekauft? Was gab es dort zu gewinnen?"
+  "Haben Sie früher Lotto gespielt oder auf der Kirmes ein Los gekauft? Was haben Sie gewonnen?": "Was konnte man früher beim Lotto oder an der Losbude auf dem Jahrmarkt gewinnen?",
+  "Wer hat Sie getröstet, wenn einmal alles schiefging?": "Was meinen Sie: Gibt es Glückspilze und Pechvögel wirklich?",
+  "Was meinen Sie: Ist Glück wichtiger als Können?": "An welche glückliche Überraschung denken Sie besonders gern zurück?",
+  "Von welchem schönen Erlebnis erzählen Sie besonders gern?": "Wie hat man Ihnen als Kind beigebracht, ehrlich zu sein?",
+  "Was bedeutet es Ihnen, auf eigenen Füßen zu stehen?": "Was haben Sie sich von Ihrem ersten selbst verdienten Geld gekauft?",
+  "Was haben Sie durch viel Wiederholen richtig gut gelernt?": "Wer hat Ihnen früher etwas mit viel Geduld beigebracht?",
+  "Welche Gesellschaftsspiele haben Sie gern gespielt?": "Was macht für Sie einen guten Gewinner aus?",
+  "Wie dachte man früher über Anschreiben im Laden oder Ratenkauf?": "Was hielt man früher davon, im Laden anschreiben zu lassen oder auf Raten zu kaufen?",
+  "Welche Glocken oder welches Geläut von früher klingen Ihnen noch im Ohr?": "Welches Glockengeläut von früher klingt Ihnen noch im Ohr?",
+  "Welche Mode oder welches Möbelstück fanden Sie früher schön, das heute kaum jemand mehr hat?": "Welche Möbel oder Tapeten von früher fanden Sie schön, die man heute kaum noch sieht?",
+  "Finden Sie es gut, wenn jemand offen widerspricht?": "Welche schlagfertigen Menschen haben Sie früher beeindruckt?",
+  "Sagen Sie gern Ihre Meinung, auch wenn niemand danach fragt?": "Wann sagt man seine Meinung besser, und wann behält man sie lieber für sich?",
+  "Finden Sie es wichtig, Unstimmigkeiten offen auszusprechen?": "Wie räumt man einen Streit am besten aus der Welt?",
+  "Welche Bauernregeln oder Wettersprüche kennen Sie noch von früher?": "Welche Bauernregeln oder Wettersprüche hat man bei Ihnen früher gern gesagt?",
+  "Was bedeutet für Sie, gut für später vorzusorgen?": "Was bedeutet es für Sie, gut für später vorzusorgen?",
+  "Wie gehen Sie am liebsten mit Sorgen um: lieber gleich anpacken oder erst abwarten?": "Wie gehen Sie mit Sorgen um: lieber gleich anpacken oder erst einmal abwarten?",
+  "Haben Sie früher Lotto gespielt oder auf dem Jahrmarkt Lose gekauft? Was gab es dort zu gewinnen?": "Was konnte man früher beim Lotto oder an der Losbude auf dem Jahrmarkt gewinnen?",
+  "Fällt Ihnen ein Ereignis ein, über das sich nicht alle gleich gefreut haben?": "Wie erleben Sie es, wenn bei einem Spiel die eine Seite jubelt und die andere traurig ist?",
+  "Was meinen Sie: Kann ein geplatzter Plan manchmal auch etwas Gutes haben?": "Wer hat Ihnen schon einmal einen schönen Plan verdorben, und wie ging es aus?",
+  "Welches Motiv würden Sie sich als Bild an die Wand hängen?": "Was lässt sich mit einem Foto besser zeigen als mit vielen Worten?",
+  "Finden Sie, dass man Geheimnisse immer für sich behalten sollte?": "Mit wem haben Sie als Kind am liebsten Streiche ausgeheckt?",
+  "Wer konnte in Ihrer Familie am besten ein Geheimnis für sich behalten?": "In welchen Momenten ist es Ihrer Meinung nach besser, nichts zu sagen?"
  },
  "hint_replace": {
   "dort trägt man die Handtasche": "zwischen Hals und Arm, darauf trägt man den Rucksack",
@@ -121,7 +139,10 @@
   "Beim Abwasch rutscht Frau Lange ein Teller aus der Hand. Ihre Freundin lacht: Das ist doch ein gutes Zeichen!": "Beim Abwasch rutscht Frau Lange ein Teller aus der Hand. Ihre Freundin lacht: „Das ist doch ein gutes Zeichen!“",
   "Eine Mutter seufzt: Früher ging es um Schürfwunden, heute um Führerschein und Liebeskummer.": "Eine Mutter seufzt: „Früher ging es um Schürfwunden, heute um Führerschein und Liebeskummer.“",
   "Im Radio heißt es: Morgen gibt es Sonne, vielleicht aber auch Regen. Am Kaffeetisch lachen alle herzlich.": "Im Radio heißt es: „Morgen gibt es Sonne, vielleicht aber auch Regen.“ Am Kaffeetisch lachen alle herzlich.",
-  "Im Prospekt steht: Strandhotel mit Meerblick. Vor Ort sieht Familie Lange vom Balkon nur einen Parkplatz.": "Im Prospekt steht „Strandhotel mit Meerblick“. Vor Ort sieht Familie Lange vom Balkon nur einen Parkplatz."
+  "Im Prospekt steht: Strandhotel mit Meerblick. Vor Ort sieht Familie Lange vom Balkon nur einen Parkplatz.": "Im Prospekt steht „Strandhotel mit Meerblick“. Vor Ort sieht Familie Lange vom Balkon nur einen Parkplatz.",
+  "Frau Engel hat ihren Garten im Herbst sorgfältig vorbereitet. Im Frühling blüht dort alles prächtig.": "Herr Engel wollte beim Zelten die Luftmatratze nicht mitschleppen. Jetzt liegt er die ganze Nacht auf dem harten Boden und schläft kaum.",
+  "Die Nachbarin fragt, wie ihr neuer Hut gefällt. Frau Mertens lächelt nur freundlich und nickt.": "Die Nachbarin zeigt stolz ihren neuen Hut. Frau Mertens findet ihn nicht schön, lächelt aber nur freundlich und sagt nichts.",
+  "Frau Haas strickt ihre ersten Socken noch ganz krumm. Beim zehnten Paar sitzt jede Masche perfekt.": "Herr Brandt backt zum ersten Mal Brot. Der erste Laib ist flach und hart. Nach vielen Versuchen schmeckt sein Brot wie vom Bäcker."
  },
  "meaning_replace": {
   "Man unterliegt und muss am Ende den Nachteil tragen.": "Man unterliegt und hat am Ende das Nachsehen."
@@ -288,10 +309,63 @@
    "sol_note": "früher „Faß“ geschrieben; dann bleibt ein Kästchen frei"
   },
   "Bier auf Wein, das lass sein; Wein auf Bier, das rat ich dir": {
-   "note": "Behutsam einsetzen, falls Alkohol im Leben von Teilnehmenden eine schwere Rolle gespielt hat."
+   "note": "Behutsam einsetzen, falls Alkohol im Leben von Teilnehmenden eine schwere Rolle gespielt hat.",
+   "meaning": "Der Spruch rät, nach Wein kein Bier mehr zu trinken, nach Bier aber ruhig Wein."
   },
   "Im Wein liegt die Wahrheit": {
    "note": "Behutsam einsetzen, falls Alkohol im Leben von Teilnehmenden eine schwere Rolle gespielt hat."
+  },
+  "jemandem auf der Tasche liegen": {
+   "meaning": "Man lebt auf Kosten eines anderen und lässt sich alles von ihm bezahlen."
+  },
+  "das Blaue vom Himmel herunterlügen": {
+   "meaning": "Man lügt ganz dreist und ohne jede Hemmung."
+  },
+  "Erst die Arbeit, dann das Vergnügen": {
+   "meaning": "Zuerst erledigt man die Pflichten, danach kommen Spaß und Freude."
+  },
+  "Aus den Augen, aus dem Sinn": {
+   "meaning": "Wen man lange nicht sieht, an den denkt man mit der Zeit seltener."
+  },
+  "Ein Bild sagt mehr als tausend Worte": {
+   "meaning": "Etwas zu zeigen, erklärt oft mehr als eine lange Beschreibung."
+  },
+  "Geld stinkt nicht": {
+   "meaning": "Geld ist Geld, auch wenn es auf unschöne oder unehrliche Weise verdient wurde."
+  },
+  "Keine Antwort ist auch eine Antwort": {
+   "meaning": "Wer nicht antwortet, sagt damit auch etwas, oft ein stilles Nein."
+  },
+  "Kalte Hände, warmes Herz": {
+   "meaning": "Man sagt: Wer kalte Hände hat, ist ein besonders liebevoller Mensch."
+  },
+  "keine zehn Pferde bringen mich dahin": {
+   "meaning": "Ich gehe dort ganz bestimmt nicht hin, egal, was passiert."
+  },
+  "mit dem linken Fuß zuerst aufgestanden sein": {
+   "meaning": "Jemand ist ohne erkennbaren Grund mürrisch und schlecht gelaunt."
+  },
+  "Was man sät, das erntet man": {
+   "meaning": "Was man tut, hat später Folgen für einen selbst, im Guten wie im Schlechten."
+  },
+  "den Teufel an die Wand malen": {
+   "meaning": "Man sieht schwarz und redet ein Unglück herbei, das noch gar nicht passiert ist."
+  },
+  "Was sich liebt, das neckt sich": {
+   "meaning": "Menschen, die sich gern haben, ziehen sich oft im Spaß gegenseitig auf."
+  },
+  "Kleider machen Leute": {
+   "hint": "das hängt im Schrank auf dem Bügel"
+  },
+  "Sage mir, mit wem du umgehst, und ich sage dir, wer du bist": {
+   "variants_add": [
+    "Sage mir, mit wem du umgehst, so sage ich dir, wer du bist"
+   ]
+  },
+  "Reden ist Silber, Schweigen ist Gold": {
+   "variants_add": [
+    "Schweigen ist Gold, Reden ist Silber"
+   ]
   }
  },
  "distractor_avoid": {
@@ -304,6 +378,9 @@
   ],
   "Der Krug geht so lange zum Brunnen, bis er bricht": [
    "Kleine Sünden bestraft der liebe Gott sofort"
+  ],
+  "Wer anderen eine Grube gräbt, fällt selbst hinein": [
+   "Wer den Schaden hat, braucht für den Spott nicht zu sorgen"
   ]
  }
 }

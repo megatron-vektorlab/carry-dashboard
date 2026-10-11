@@ -926,7 +926,7 @@
     "das Blaue vom Himmel versprechen",
     "das Blaue vom Himmel herunterversprechen"
    ],
-   "meaning": "Man lügt ohne Hemmungen oder verspricht völlig Unmögliches.",
+   "meaning": "Man lügt ganz dreist und ohne jede Hemmung.",
    "familiarity": 3,
    "chapter": "Reden & Schweigen",
    "split": [],
@@ -1061,7 +1061,7 @@
    "hint": "ein Zettel, mit dem man gewinnen kann",
    "situation": "",
    "prompts": [
-    "Haben Sie früher Lotto gespielt oder auf dem Jahrmarkt Lose gekauft? Was gab es dort zu gewinnen?",
+    "Was konnte man früher beim Lotto oder an der Losbude auf dem Jahrmarkt gewinnen?",
     "Welche Verlosungen oder Tombolas auf Festen von früher kommen Ihnen in den Sinn?"
    ],
    "note": "",
@@ -1213,7 +1213,7 @@
    "hint": "liegt am Strand und in der Wüste",
    "situation": "",
    "prompts": [
-    "Wie gehen Sie am liebsten mit Sorgen um: lieber gleich anpacken oder erst abwarten?",
+    "Wie gehen Sie mit Sorgen um: lieber gleich anpacken oder erst einmal abwarten?",
     "Was meinen Sie: Hilft es manchmal, ein Problem erst einmal ruhen zu lassen?"
    ],
    "note": "",
@@ -1233,7 +1233,7 @@
    "reason": "",
    "wording": "den Teufel an die Wand malen",
    "variants": [],
-   "meaning": "Man redet von einem Unglück, das noch gar nicht passiert ist.",
+   "meaning": "Man sieht schwarz und redet ein Unglück herbei, das noch gar nicht passiert ist.",
    "familiarity": 3,
    "chapter": "Reden & Schweigen",
    "split": [],
@@ -1941,7 +1941,7 @@
    "hint": "läutet oben im Kirchturm",
    "situation": "",
    "prompts": [
-    "Welche Glocken oder welches Geläut von früher klingen Ihnen noch im Ohr?",
+    "Welches Glockengeläut von früher klingt Ihnen noch im Ohr?",
     "Was meinen Sie: Was sollte man lieber für sich behalten?"
    ],
    "note": "",
@@ -2949,7 +2949,7 @@
    "situation": "",
    "prompts": [
     "Was tun Sie, wenn ein schöner Plan plötzlich nicht klappt?",
-    "Was meinen Sie: Kann ein geplatzter Plan manchmal auch etwas Gutes haben?"
+    "Wer hat Ihnen schon einmal einen schönen Plan verdorben, und wie ging es aus?"
    ],
    "note": "",
    "kind": "idiom",
@@ -3461,7 +3461,7 @@
     "mit dem linken Bein zuerst aufgestanden sein",
     "mit dem falschen Fuß aufgestanden sein"
    ],
-   "meaning": "Jemand ist gleich nach dem Aufwachen mürrisch und schlecht gelaunt.",
+   "meaning": "Jemand ist ohne erkennbaren Grund mürrisch und schlecht gelaunt.",
    "familiarity": 3,
    "chapter": "Körper",
    "split": [],
@@ -3747,7 +3747,7 @@
    "situation": "",
    "prompts": [
     "Welche kleinen Streiche oder Geheimnisse aus Kindertagen fallen Ihnen ein?",
-    "Finden Sie, dass man Geheimnisse immer für sich behalten sollte?"
+    "Mit wem haben Sie als Kind am liebsten Streiche ausgeheckt?"
    ],
    "note": "",
    "kind": "idiom",
@@ -3900,7 +3900,7 @@
    "hint": "daran sitzt man beim Essen",
    "situation": "",
    "prompts": [
-    "Finden Sie es wichtig, Unstimmigkeiten offen auszusprechen?",
+    "Wie räumt man einen Streit am besten aus der Welt?",
     "Wie fühlt es sich für Sie an, wenn eine Sache endlich geklärt ist?"
    ],
    "note": "",
@@ -3940,7 +3940,7 @@
    "hint": "ein junges Tier mit weicher Wolle",
    "situation": "",
    "prompts": [
-    "Was bedeutet für Sie, gut für später vorzusorgen?",
+    "Was bedeutet es für Sie, gut für später vorzusorgen?",
     "Wofür haben Menschen früher besonders gern gespart?"
    ],
    "note": "",
@@ -4052,7 +4052,7 @@
    "hint": "scharfe gelbe Würze zur Bratwurst",
    "situation": "",
    "prompts": [
-    "Sagen Sie gern Ihre Meinung, auch wenn niemand danach fragt?",
+    "Wann sagt man seine Meinung besser, und wann behält man sie lieber für sich?",
     "Wann ist ein guter Rat willkommen und wann eher lästig?"
    ],
    "note": "",
@@ -4941,7 +4941,7 @@
    "hint": "damit beißt und kaut man",
    "situation": "",
    "prompts": [
-    "Finden Sie es gut, wenn jemand offen widerspricht?",
+    "Welche schlagfertigen Menschen haben Sie früher beeindruckt?",
     "Welche schlagfertigen Menschen haben Sie früher beeindruckt?"
    ],
    "note": "",
@@ -5162,7 +5162,7 @@
     "keine zehn Pferde kriegen mich dahin",
     "keine zehn Pferde bringen mich dorthin"
    ],
-   "meaning": "Ich gehe dort ganz bestimmt nicht hin, egal was passiert.",
+   "meaning": "Ich gehe dort ganz bestimmt nicht hin, egal, was passiert.",
    "familiarity": 3,
    "chapter": "Tiere",
    "split": [],
@@ -6228,7 +6228,7 @@
    "situation": "",
    "prompts": [
     "Was tun Sie, wenn an einem Tag einfach alles schiefgeht?",
-    "Wer hat Sie getröstet, wenn einmal alles schiefging?"
+    "Was meinen Sie: Gibt es Glückspilze und Pechvögel wirklich?"
    ],
    "note": "",
    "fixed": [
@@ -6803,7 +6803,7 @@
    "reason": "",
    "wording": "jemandem auf der Tasche liegen",
    "variants": [],
-   "meaning": "Man lässt sich von einem anderen Menschen versorgen und bezahlen.",
+   "meaning": "Man lebt auf Kosten eines anderen und lässt sich alles von ihm bezahlen.",
    "familiarity": 3,
    "chapter": "Geld & Glück",
    "split": [],
@@ -6820,7 +6820,7 @@
    "hint": "darin steckt man Schlüssel oder Geldbörse",
    "situation": "",
    "prompts": [
-    "Was bedeutet es Ihnen, auf eigenen Füßen zu stehen?",
+    "Was haben Sie sich von Ihrem ersten selbst verdienten Geld gekauft?",
     "Was hatten Sie früher immer in Ihrer Jacken- oder Handtasche dabei?"
    ],
    "note": "Kann das Gefühl wecken, anderen zur Last zu fallen; behutsam besprechen.",
@@ -7592,7 +7592,7 @@
    "reason": "",
    "wording": "Aus den Augen, aus dem Sinn",
    "variants": [],
-   "meaning": "Wen man lange nicht sieht, an den denkt man bald seltener.",
+   "meaning": "Wen man lange nicht sieht, an den denkt man mit der Zeit seltener.",
    "familiarity": 3,
    "chapter": "Körper",
    "split": [
@@ -7825,7 +7825,7 @@
    "hint": "der dicke Teil des Baumes",
    "situation": "Der Vater spielte früher leidenschaftlich Fußball. Nun schießt auch der kleine Sohn jeden Ball ins Tor.",
    "prompts": [
-    "Was meinen Sie: Macht Liebe wirklich blind?",
+    "Wem haben Sie als Kind gern etwas nachgemacht?",
     "Was meinen Sie: Erbt man Talente, oder lernt man sie durch Zuschauen?"
    ],
    "note": "",
@@ -8390,7 +8390,7 @@
    "reason": "",
    "wording": "Ein Bild sagt mehr als tausend Worte",
    "variants": [],
-   "meaning": "Etwas zu zeigen erklärt oft mehr als eine lange Beschreibung.",
+   "meaning": "Etwas zu zeigen, erklärt oft mehr als eine lange Beschreibung.",
    "familiarity": 2,
    "chapter": "Reden & Schweigen",
    "split": [
@@ -8411,7 +8411,7 @@
    "situation": "Frau Krüger beschreibt lange das kleine Ferienhaus an der Ostsee, in dem sie früher jeden Sommer war. Erst als sie ein altes Foto zeigt, können sich alle vorstellen, wie schön es dort war.",
    "prompts": [
     "Welches Foto oder Gemälde gefällt Ihnen besonders gut?",
-    "Welches Motiv würden Sie sich als Bild an die Wand hängen?"
+    "Was lässt sich mit einem Foto besser zeigen als mit vielen Worten?"
    ],
    "note": "",
    "kind": "proverb",
@@ -8496,7 +8496,7 @@
    "hint": "das picken Hühner vom Boden",
    "situation": "Herr Albrecht spielt zum ersten Mal Skat und gewinnt gleich die erste Runde. Alle staunen, er selbst am meisten.",
    "prompts": [
-    "Was meinen Sie: Ist Glück wichtiger als Können?",
+    "An welche glückliche Überraschung denken Sie besonders gern zurück?",
     "An welche glückliche Überraschung denken Sie besonders gern zurück?"
    ],
    "note": "",
@@ -8810,7 +8810,7 @@
    "reason": "",
    "wording": "Erst die Arbeit, dann das Vergnügen",
    "variants": [],
-   "meaning": "Zuerst erledigt man die Pflichten, danach darf man sich ausruhen.",
+   "meaning": "Zuerst erledigt man die Pflichten, danach kommen Spaß und Freude.",
    "familiarity": 3,
    "chapter": "Arbeit & Fleiß",
    "split": [
@@ -8918,7 +8918,7 @@
    "situation": "Beim ersten Versuch gerät der Hefezopf krumm und schief. Beim fünften sieht er aus wie vom Bäcker.",
    "prompts": [
     "Welche Arbeit gelingt Ihrer Meinung nach erst nach vielen Versuchen?",
-    "Was meinen Sie: Kann man sein Glück wirklich selbst schmieden?"
+    "Was meinen Sie: Ist Talent oder Fleiß wichtiger?"
    ],
    "note": "",
    "kind": "proverb",
@@ -9237,7 +9237,7 @@
    "reason": "",
    "wording": "Geld stinkt nicht",
    "variants": [],
-   "meaning": "Woher Geld stammt, sieht man ihm nicht an.",
+   "meaning": "Geld ist Geld, auch wenn es auf unschöne oder unehrliche Weise verdient wurde.",
    "familiarity": 2,
    "chapter": "Geld & Glück",
    "split": [
@@ -9930,7 +9930,7 @@
     "right": "Leute",
     "wrong": "Pfannkuchen"
    },
-   "hint": "das zieht man sich morgens an",
+   "hint": "das hängt im Schrank auf dem Bügel",
    "situation": "Herr Peters trägt zum ersten Mal seinen neuen Anzug mit Krawatte. Plötzlich halten ihm alle die Tür auf.",
    "prompts": [
     "Welches Kleidungsstück haben Sie früher besonders gern getragen?",
@@ -10101,7 +10101,7 @@
    "hint": "Vogel mit rotem Kamm auf dem Hof",
    "situation": "Im Radio heißt es: „Morgen gibt es Sonne, vielleicht aber auch Regen.“ Am Kaffeetisch lachen alle herzlich.",
    "prompts": [
-    "Welche Bauernregeln oder Wettersprüche kennen Sie noch von früher?",
+    "Welche Bauernregeln oder Wettersprüche hat man bei Ihnen früher gern gesagt?",
     "Woran erkennen Sie, ob das Wetter bald umschlägt?"
    ],
    "note": "",
@@ -11010,7 +11010,8 @@
    "reason": "",
    "wording": "Reden ist Silber, Schweigen ist Gold",
    "variants": [
-    "Sprechen ist Silber, Schweigen ist Gold"
+    "Sprechen ist Silber, Schweigen ist Gold",
+    "Schweigen ist Gold, Reden ist Silber"
    ],
    "meaning": "Manchmal ist es klüger, nichts zu sagen.",
    "familiarity": 3,
@@ -11030,10 +11031,10 @@
     "wrong": "Schnarchen"
    },
    "hint": "glänzt gelb und ist sehr wertvoll",
-   "situation": "Die Nachbarin fragt, wie ihr neuer Hut gefällt. Frau Mertens lächelt nur freundlich und nickt.",
+   "situation": "Die Nachbarin zeigt stolz ihren neuen Hut. Frau Mertens findet ihn nicht schön, lächelt aber nur freundlich und sagt nichts.",
    "prompts": [
     "In welchen Momenten ist es Ihrer Meinung nach besser, nichts zu sagen?",
-    "Wer konnte in Ihrer Familie am besten ein Geheimnis für sich behalten?"
+    "In welchen Momenten ist es Ihrer Meinung nach besser, nichts zu sagen?"
    ],
    "note": "",
    "kind": "proverb",
@@ -11853,7 +11854,7 @@
    "variants": [
     "Was sich neckt, das liebt sich"
    ],
-   "meaning": "Wer sich gern hat, zieht sich oft im Spaß gegenseitig auf.",
+   "meaning": "Menschen, die sich gern haben, ziehen sich oft im Spaß gegenseitig auf.",
    "familiarity": 3,
    "chapter": "Familie & Freundschaft",
    "split": [
@@ -12048,6 +12049,9 @@
     "Welche Geschichte kennen Sie, in der ein Streich auf den Urheber zurückfiel?"
    ],
    "note": "",
+   "avoid_with": [
+    "p116"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Wer anderen eine Grube gräbt, fällt selbst hinein"
@@ -12171,6 +12175,9 @@
     "Was meinen Sie: Warum lachen manche Leute über das Pech anderer?"
    ],
    "note": "",
+   "avoid_with": [
+    "p113"
+   ],
    "kind": "proverb",
    "consensus_wordings": [
     "Wer den Schaden hat, braucht für den Spott nicht zu sorgen"
@@ -12631,7 +12638,7 @@
    "hint": "ganz am Schluss, nach allen anderen",
    "situation": "Beim Mensch-ärgere-dich-nicht liegt Herr Lenz weit hinten. Doch mit drei Sechsen zieht er an allen vorbei ins Ziel.",
    "prompts": [
-    "Welche Gesellschaftsspiele haben Sie gern gespielt?",
+    "Was macht für Sie einen guten Gewinner aus?",
     "Was macht für Sie einen guten Gewinner aus?"
    ],
    "note": "",
@@ -12844,7 +12851,7 @@
     "wrong": "schnarcht"
    },
    "hint": "das Lager zum Schlafen herrichten",
-   "situation": "Frau Engel hat ihren Garten im Herbst sorgfältig vorbereitet. Im Frühling blüht dort alles prächtig.",
+   "situation": "Herr Engel wollte beim Zelten die Luftmatratze nicht mitschleppen. Jetzt liegt er die ganze Nacht auf dem harten Boden und schläft kaum.",
    "prompts": [
     "Welche Entscheidung in Ihrem Leben hat sich im Nachhinein als besonders gut erwiesen?",
     "Wie sah früher ein gemütlich gemachtes Bett aus – mit Federbett, Kissen und Tagesdecke?"
@@ -13067,7 +13074,7 @@
    "hint": "was man schön oder lecker findet",
    "situation": "Frau Simon liebt ihr knallgelbes Sofa. Ihre Freundin findet es scheußlich, und beide lachen herzlich darüber.",
    "prompts": [
-    "Welche Mode oder welches Möbelstück fanden Sie früher schön, das heute kaum jemand mehr hat?",
+    "Welche Möbel oder Tapeten von früher fanden Sie schön, die man heute kaum noch sieht?",
     "Gibt es ein Essen, das Sie lieben, andere aber gar nicht mögen?"
    ],
    "note": "",
@@ -13105,9 +13112,9 @@
     "wrong": "Kuchen"
    },
    "hint": "ein Könner in seinem Handwerk",
-   "situation": "Frau Haas strickt ihre ersten Socken noch ganz krumm. Beim zehnten Paar sitzt jede Masche perfekt.",
+   "situation": "Herr Brandt backt zum ersten Mal Brot. Der erste Laib ist flach und hart. Nach vielen Versuchen schmeckt sein Brot wie vom Bäcker.",
    "prompts": [
-    "Was haben Sie durch viel Wiederholen richtig gut gelernt?",
+    "Wer hat Ihnen früher etwas mit viel Geduld beigebracht?",
     "Welche Fertigkeit würden Sie gern noch einmal ausprobieren?"
    ],
    "note": "",
@@ -13193,7 +13200,7 @@
    "hint": "Kummer und schwere Gedanken",
    "situation": "Herr Kunz hat sich vom Nachbarn den Rasenmäher geliehen. Nun ist er kaputt, und Herr Kunz grübelt.",
    "prompts": [
-    "Wie dachte man früher über Anschreiben im Laden oder Ratenkauf?",
+    "Was hielt man früher davon, im Laden anschreiben zu lassen oder auf Raten zu kaufen?",
     "Verleihen Sie gern Dinge, oder behalten Sie sie lieber bei sich?"
    ],
    "note": "",
@@ -14100,7 +14107,7 @@
    "variants": [
     "Wein auf Bier, das rat ich dir; Bier auf Wein, das lass sein"
    ],
-   "meaning": "Nach Wein sollte man kein Bier mehr trinken, umgekehrt aber schon.",
+   "meaning": "Der Spruch rät, nach Wein kein Bier mehr zu trinken, nach Bier aber ruhig Wein.",
    "familiarity": 3,
    "chapter": "Essen & Trinken",
    "split": [
@@ -14410,7 +14417,7 @@
    "hint": "Kummer, Schmerz und Traurigkeit",
    "situation": "Endlich scheint die Sonne, und die Badegäste jubeln. Der Bauer nebenan wartet dagegen seit Wochen auf Regen.",
    "prompts": [
-    "Fällt Ihnen ein Ereignis ein, über das sich nicht alle gleich gefreut haben?",
+    "Wie erleben Sie es, wenn bei einem Spiel die eine Seite jubelt und die andere traurig ist?",
     "Wie erleben Sie es, wenn bei einem Spiel die eine Seite jubelt und die andere traurig ist?"
    ],
    "note": "",
@@ -14934,7 +14941,7 @@
    "reason": "",
    "wording": "Kalte Hände, warmes Herz",
    "variants": [],
-   "meaning": "Wer kalte Hände hat, soll ein besonders liebevoller Mensch sein.",
+   "meaning": "Man sagt: Wer kalte Hände hat, ist ein besonders liebevoller Mensch.",
    "familiarity": 3,
    "chapter": "Körper",
    "split": [
@@ -14974,7 +14981,7 @@
    "reason": "",
    "wording": "Keine Antwort ist auch eine Antwort",
    "variants": [],
-   "meaning": "Wer schweigt, gibt damit ebenfalls eine Botschaft.",
+   "meaning": "Wer nicht antwortet, sagt damit auch etwas, oft ein stilles Nein.",
    "familiarity": 3,
    "chapter": "Reden & Schweigen",
    "split": [
@@ -15450,7 +15457,7 @@
    "hint": "dort oben ziehen die Wolken",
    "situation": "Die Kegelgruppe startet zum Ausflug an den See, und die Sonne scheint den ganzen Tag.",
    "prompts": [
-    "Was haben Sie früher gemacht, wenn es im April plötzlich hagelte oder schneite?",
+    "An welchen schönen Ausflug bei Sonnenschein erinnern Sie sich gern?",
     "Welches Wetter wünschen Sie sich für einen Ausflug?"
    ],
    "note": "",
@@ -16424,7 +16431,8 @@
    "reason": "",
    "wording": "Sage mir, mit wem du umgehst, und ich sage dir, wer du bist",
    "variants": [
-    "Sag mir, mit wem du umgehst, und ich sag dir, wer du bist"
+    "Sag mir, mit wem du umgehst, und ich sag dir, wer du bist",
+    "Sage mir, mit wem du umgehst, so sage ich dir, wer du bist"
    ],
    "meaning": "An den Freunden eines Menschen erkennt man seinen Charakter.",
    "familiarity": 2,
@@ -16595,7 +16603,7 @@
    "variants": [
     "Man erntet, was man sät"
    ],
-   "meaning": "Wie man sich verhält, so wird man später auch behandelt.",
+   "meaning": "Was man tut, hat später Folgen für einen selbst, im Guten wie im Schlechten.",
    "familiarity": 3,
    "chapter": "Haus, Hof & Garten",
    "split": [
@@ -16660,7 +16668,7 @@
    "situation": "Nach dem Urlaub erzählt die Nachbarin stundenlang von Bergen, Seen und dem Hotelfrühstück.",
    "prompts": [
     "Worüber könnten Sie stundenlang erzählen?",
-    "Von welchem schönen Erlebnis erzählen Sie besonders gern?"
+    "Wie hat man Ihnen als Kind beigebracht, ehrlich zu sein?"
    ],
    "note": "",
    "kind": "proverb",

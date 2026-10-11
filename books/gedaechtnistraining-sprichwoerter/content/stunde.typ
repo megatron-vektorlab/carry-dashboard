@@ -12,8 +12,8 @@
 #pagebreak()
 #section[Gut zu wissen]
 - Ein Kapitel reicht für mehrere Stunden. Es ist kein Problem, wenn ein Sprichwort mehrmals vorkommt: Wiedererkennen macht Freude.
-- Die Sprichwörter der Aufwärmrunde kommen auch auf den Blättern des Kapitels vor. Wenn danach ein Blatt „Wie geht es weiter?“ oder „Was gehört zusammen?“ an der Reihe ist, nehmen Sie lieber die Aufwärmrunde eines anderen Kapitels, damit das Blatt nicht schon gelöst ist.
-- Für kurze Pausen ohne Kopien gibt es hinten im Buch Raterunden, dazu ein Sprichwort-Bingo und eine Liste zum Abhaken, welche Blätter eine Gruppe schon bearbeitet hat.
+- Die meisten Sprichwörter der Aufwärmrunde kommen auch auf den Blättern des Kapitels vor, oft auch am Ende der Vorlesegeschichte. Wenn danach die Geschichte oder ein Blatt „Wie geht es weiter?“, „Was gehört zusammen?“, „Wortsalat“ oder „Erste Buchstaben“ an der Reihe ist, nehmen Sie lieber die Aufwärmrunde eines anderen Kapitels, damit die Lösung nicht schon verraten ist.
+- Hinten im Buch finden Sie Raterunden für kurze Pausen ohne Kopien, ein Sprichwort-Bingo mit Karten zum Kopieren und eine Liste zum Abhaken, welche Blätter eine Gruppe schon bearbeitet hat.
 - Planen Sie lieber zu wenig als zu viel. Wenn das Gespräch gut läuft, darf das Arbeitsblatt warten.
 - Gegenstände zum Anfassen oder Riechen wecken Erinnerungen. Vorschläge stehen am Anfang jedes Kapitels. Achten Sie darauf, dass nichts verschluckt werden kann und nichts spitz oder giftig ist.
 - Alle Bewegungsideen sind für das Sitzen gedacht. Jede Person macht nur so viel mit, wie es angenehm ist; niemand muss aufstehen.

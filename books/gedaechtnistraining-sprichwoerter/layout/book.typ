@@ -61,7 +61,7 @@
   let t = text(font: serif, size: 26pt, weight: "bold", title)
   let c = text(size: small, chapter)
   let fits = measure(t).width + 10pt + measure(c).width <= size.width
-  block(width: 100%, stroke: (bottom: 1.5pt + ink), inset: (x: 0pt, top: 0pt, bottom: 6pt),
+  block(width: 100%, stroke: (bottom: 1.5pt + ink), inset: (x: 0pt, top: 0pt, bottom: 12pt),
     if fits {
       grid(columns: (1fr, auto), column-gutter: 10pt, align: (left + bottom, right + bottom), t, c)
     } else {
@@ -79,10 +79,13 @@
   if calc.even(here().page()) [#n #h(8mm) #left #h(1fr) #right] else [#left #h(1fr) #right #h(8mm) #n]
 }
 
-#let example-box(body) = block(width: 100%, stroke: (paint: ink, thickness: 1.2pt, dash: "dashed"), radius: 4pt,
+// shift: moves the label down onto the baseline of the example's first line (more where
+// that line holds letter boxes or tiles); wide: a full-width row under it (answer choices).
+#let example-box(body, shift: 2.7pt, wide: none) = block(width: 100%, stroke: (paint: ink, thickness: 1.2pt, dash: "dashed"), radius: 4pt,
   inset: (x: 10pt, y: 8pt), above: 0.2em, below: 0.9em, breakable: false,
   grid(columns: (auto, 1fr), column-gutter: 10pt, align: (left + top, left + top),
-    text(size: small, weight: "bold")[Beispiel:], body))
+    pad(top: shift, text(size: small, weight: "bold")[Beispiel:]), body,
+    ..if wide != none { (grid.cell(colspan: 2, wide),) }))
 #let answer(t) = text(weight: "bold", t)
 
 #let task(body) = block(width: 100%, above: 0.7em, below: 0.9em, text(size: ex-size, weight: "bold", body))
@@ -127,10 +130,17 @@
 // `gap` of white space after each item so that items stay visibly apart. If they do not fit,
 // a metadata mark <overflow> with the sheet number is left for gt/book.py, which then
 // sets the sheet with one item fewer.
-#let spread(blocks, gap: 6mm) = block(width: 100%, height: 1fr, breakable: false, layout(size => {
+// max-gap: never more than this between items; the rest stays free at the bottom (for
+// matching sheets, so that the lines to draw do not get too steep).
+#let spread(blocks, gap: 6mm, max-gap: none) = block(width: 100%, height: 1fr, breakable: false, layout(size => {
   let total = blocks.map(b => measure(block(width: size.width, b)).height).sum(default: 0pt)
   if total + blocks.len() * gap > size.height { context [#metadata(current-sheet.get()) <overflow>] }
-  for b in blocks { b; v(gap, weak: false); v(1fr) }
+  if max-gap != none and (size.height - total) / blocks.len() > max-gap {
+    for b in blocks { b; v(max-gap, weak: false) }
+    v(1fr)
+  } else {
+    for b in blocks { b; v(gap, weak: false); v(1fr) }
+  }
 }))
 
 // ---------- pieces ----------
@@ -141,10 +151,15 @@
   ..range(n).map(i => box(width: 1.35em, height: 1.45em, stroke: 1.1pt + ink,
     align(center + horizon, text(weight: "bold",
       if letters != none { letters.at(i) } else if i == 0 { first } else { "" }))))))
+// The gap never starts a line on its own (no-break space before it), and the last word of
+// the sentence never stands alone on a line.
 #let joined(before, mid, after) = {
   let tight = after == "" or after.starts-with(",") or after.starts-with(".") or after.starts-with("!") or after.starts-with("?")
-  let open = before == "" or before.ends-with("„") or before.ends-with(" ")
-  [#before#if not open [ ]#mid#if not tight [ ]#after]
+  let b = before.trim(at: end)
+  let open = b == "" or b.ends-with("„")
+  let ws = after.split(" ")
+  let a = if ws.len() >= 2 { ws.slice(0, -1).join(" ") + "\u{a0}" + ws.last() } else { after }
+  [#b#if not open [~]#mid#if not tight [ ]#a]
 }
 #let blanked(it) = {
   let g = if it.at("boxes", default: 0) > 0 { letter-boxes(it.boxes, first: it.at("first", default: "")) } else { gap-line(n: it.at("gap", default: 8)) }
@@ -170,7 +185,7 @@
     // on letter-box sheets the example shows the answer in boxes, the way it is to be written
     let a = s.example.answer
     let mid = if boxes { letter-boxes(a.clusters().len(), letters: a.clusters()) } else { none }
-    example-box(par(leading: 1.0em, text(size: ex-size,
+    example-box(shift: if boxes { 11.4pt } else { 2.7pt }, par(leading: 1.0em, text(size: ex-size,
       if boxes { joined(s.example.parts.at(0), mid, s.example.parts.at(1)) } else { filled(s.example.parts, a) })))
   }
   spread(s.items.enumerate().map(((i, it)) => block(breakable: false, item-inline(i + 1, blanked(it)))))
@@ -182,30 +197,43 @@
     v(0.15em)
     pad(left: 6mm, it.options.map(o => if ans == o { circled(o) } else { wordchoice(o) }).join(h(14mm)))
   }
-  let ex-row(it, ans) = {
-    par(leading: 1.0em, text(size: ex-size, joined(it.parts.at(0), gap-line(n: 6), it.parts.at(1))))
-    v(0.15em)
-    pad(left: 6mm, it.options.map(o => if ans == o { circled(o) } else { wordchoice(o) }).join(h(8mm)))
+  // the example's words get the full width of the box, so they always stay on one line
+  if s.example != none {
+    let e = s.example
+    example-box(par(leading: 1.0em, text(size: ex-size, joined(e.parts.at(0), gap-line(n: 6), e.parts.at(1)))),
+      wide: { v(0.15em); align(center, e.options.map(o => if e.answer == o { circled(o) } else { wordchoice(o) }).join(h(12mm))) })
   }
-  if s.example != none { example-box(ex-row(s.example, s.example.answer)) }
   spread(s.items.enumerate().map(((i, it)) => block(breakable: false, item(i + 1, row(it)))))
 }
 
 #let dotm = pad(top: 1.6mm, circle(radius: 2.2mm, fill: ink))
-// Number, beginning, dot | space for the line | dot, letter, ending. Everything sits on the
-// first text line; the dot keeps clear of the letter so a drawn line does not hit it. The two
-// text columns share the width in proportion to their longest entry, so short halves stay
-// on one line.
+// Number, beginning, dot | space to draw the line | dot, letter, ending. Everything sits on
+// the first text line, and the dot keeps clear of its letter. The space for the lines is at
+// least 30 mm and gets any width the texts do not need; when the texts are too long for one
+// line each, the split between them is the one with the fewest extra lines (no column
+// narrower than its longest word). Rows are at most 22 mm apart, so the lines stay short.
 #let ex-match(s) = layout(size => {
   let letters = "ABCDEFGHIJ".clusters()
-  let fixed = 11mm + 6mm + 14mm + 6mm + 3mm + 8mm + 2mm
+  let corridor = 30mm
+  let fixed = 11mm + 2mm + 6mm + corridor + 6mm + 3mm + 8mm
   let avail = size.width - fixed
-  let w(t) = measure(text(size: ex-size, t)).width
-  let lw = calc.max(..s.left.map(w))
-  let rw = calc.max(..s.right.map(w))
-  let lcol = if lw + rw <= avail { calc.max(lw, avail - rw) } else { avail * calc.max(0.35, calc.min(0.65, lw / (lw + rw))) }
-  let cols = (11mm, lcol + 2mm, 6mm, 14mm, 6mm, 3mm, 8mm, avail - lcol)
-  spread(s.left.enumerate().map(((i, l)) => grid(columns: cols, align: left + top,
+  let wd(t) = measure(text(size: ex-size, t)).width
+  let ht(t, w) = measure(block(width: w, text(size: ex-size, t))).height
+  let lw = calc.max(..s.left.map(wd)) + 1pt
+  let rw = calc.max(..s.right.map(wd)) + 1pt
+  let (lcol, rcol, gap) = if lw + rw <= avail { (lw, rw, corridor + avail - lw - rw) } else {
+    let lmin = calc.max(..s.left.map(t => calc.max(..t.split(" ").map(wd)))) + 1pt
+    let rmin = calc.max(..s.right.map(t => calc.max(..t.split(" ").map(wd)))) + 1pt
+    let best = (lmin, 1e9pt)
+    for k in range(0, 41) {
+      let l = lmin + (avail - lmin - rmin) * k / 40
+      let cost = range(s.left.len()).map(i => calc.max(ht(s.left.at(i), l), ht(s.right.at(i), avail - l))).sum()
+      if cost < best.at(1) - 0.5pt { best = (l, cost) }
+    }
+    (best.at(0), avail - best.at(0), corridor)
+  }
+  let cols = (11mm, lcol + 2mm, 6mm, gap, 6mm, 3mm, 8mm, rcol)
+  spread(max-gap: 22mm, s.left.enumerate().map(((i, l)) => grid(columns: cols, align: left + top,
     text(size: ex-size, weight: "bold")[#(i + 1).],
     pad(right: 2mm, text(size: ex-size, l)), align(center, dotm), [], align(center, dotm), [],
     text(size: ex-size, weight: "bold")[#letters.at(i)],
@@ -228,12 +256,13 @@
 
 #let ex-scramble(s) = {
   if s.example != none {
-    example-box({ par(leading: 0.9em, s.example.tiles.map(tile).join(h(7pt))); v(0.2em); text(size: ex-size, answer(s.example.answer)) })
+    example-box(shift: 7.7pt, { par(leading: 0.9em, s.example.tiles.map(tile).join(h(7pt))); v(0.2em); text(size: ex-size, answer(s.example.answer)) })
   }
-  spread(s.items.enumerate().map(((i, it)) => block(breakable: false, item-inline(i + 1, leading: 0.9em,
+  spread(gap: 4mm, s.items.enumerate().map(((i, it)) => block(breakable: false, item-inline(i + 1, leading: 0.9em,
     it.tiles.map(tile).join(h(7pt)), rest: {
-      write-line(lead: it.at("first", default: ""))
-      if it.at("long", default: false) { write-line() }
+      // the first line close to its own tiles, clearly apart from the next item
+      write-line(lead: it.at("first", default: ""), gap: 11mm)
+      if it.at("long", default: false) { write-line(gap: 12mm) }
     }))))
 }
 
@@ -255,11 +284,11 @@
 }
 
 #let stub(w) = box([#text(size: ex-size, weight: "bold", w.first)#box(width: (w.len - 1) * 0.55em + 0.2em, height: 0.9em, baseline: 0.2em, stroke: (bottom: 1.1pt + ink))#w.at("punct", default: "")])
-#let ex-firstletters(s) = spread(s.items.enumerate().map(((i, it)) =>
+#let ex-firstletters(s) = spread(gap: 4mm, s.items.enumerate().map(((i, it)) =>
   block(breakable: false, item(i + 1, {
     par(leading: 1.1em, it.stubs.map(stub).join(h(0.55em)))
-    write-line()
-    if it.at("long", default: false) { write-line() }
+    write-line(gap: 13mm)
+    if it.at("long", default: false) { write-line(gap: 12mm) }
   }))))
 
 // Three answers to tick: box and letter stand on the first line of their answer, and the
@@ -304,7 +333,12 @@
   for p in s.paragraphs { par(text(size: ex-size, p)) }
   v(0.6em)
   block(width: 100%, stroke: 1.4pt + ink, radius: 4pt, inset: 10pt, breakable: false, {
-    par(leading: 1.0em, text(size: ex-size, joined(s.parts.at(0), gap-line(n: 7), s.parts.at(1))))
+    // the saying starts on a line of its own: "Er lachte und sagte:" / "„Neue ___ kehren gut.“"
+    let p0 = s.parts.at(0)
+    let k = p0.position(": „")
+    par(leading: 1.0em, text(size: ex-size, if k != none {
+      [#p0.slice(0, k + 1)#linebreak()#joined(p0.slice(k + 2), gap-line(n: 7), s.parts.at(1))]
+    } else { joined(p0, gap-line(n: 7), s.parts.at(1)) }))
     v(0.3em)
     align(center, s.options.map(o => wordchoice(o)).join(h(16mm)))
   })

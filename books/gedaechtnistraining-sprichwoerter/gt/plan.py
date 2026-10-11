@@ -150,7 +150,23 @@ def wrong_clash(a: dict, b: dict) -> bool:
     wa, wb = a["swap"]["wrong"].lower(), b["swap"]["wrong"].lower()
     words_a = {w.lower() for w in text.words(a["wording"])}
     words_b = {w.lower() for w in text.words(b["wording"])}
-    return ra == rb or wa == wb or wa in words_b or wb in words_a
+    return ra == rb or wa == wb or wa in words_b or wb in words_a or ra in words_b or rb in words_a
+
+
+def _core(w: str) -> str:
+    ws = text.words(w)
+    while len(ws) > 2 and ws[0].lower() in ("jemandem", "jemanden", "etwas", "sich", "man", "kann", "nicht"):
+        ws = ws[1:]
+    return attest.norm(" ".join(ws))
+
+
+def same_saying(a: dict, b: dict) -> bool:
+    """One saying twice on a sheet ('auf zwei Hochzeiten tanzen' / 'Man kann nicht auf zwei
+    Hochzeiten tanzen'), or the same key word: each would give the other away."""
+    if a["keyword"].lower() == b["keyword"].lower():
+        return True
+    ca, cb = _core(a["wording"]), _core(b["wording"])
+    return ca in cb or cb in ca
 
 
 class Picker:
@@ -182,6 +198,8 @@ class Picker:
             if kw in seen or (strict and any(conflict(k[3], c, self.known) for c in chosen)):
                 continue
             if clash and any(clash(k[3], c) for c in chosen):
+                continue
+            if any(same_saying(k[3], c) for c in chosen):
                 continue
             seen.add(kw)
             chosen.append(k[3])
@@ -238,27 +256,47 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
                            example=example["id"] if example else None, **extra))
         return True
 
-    def example_for(chosen, need=lambda i: True, clash=None):
+    def example_for(chosen, need=lambda i: True, clash=None, strict=True):
         """A solved example: preferably a saying not used anywhere else in the chapter;
         it is then kept off later sheets, so no item comes pre-solved. Never the story's
-        saying, never an example twice in a chapter."""
+        saying, and an example only once per chapter where the pool allows it. strict: the
+        sheet fills in single words, so no shared key word and no ambiguity with an item."""
         ids = {c["id"] for c in chosen}
         kws = {text.letters_upper(c["keyword"]) for c in chosen}
-        cands = [c for c in easy if c["id"] not in ids | examples | {story_id} and need(c)
-                 and text.letters_upper(c["keyword"]) not in kws
-                 and not any(conflict(c, x, known) for x in chosen)
-                 and not (clash and any(clash(c, x) for x in chosen))]
+
+        def ok(c, avoid):
+            return (c["id"] not in avoid and need(c) and not any(same_saying(c, x) for x in chosen)
+                    and not (strict and (text.letters_upper(c["keyword"]) in kws or any(conflict(c, x, known) for x in chosen)))
+                    and not (clash and any(clash(c, x) for x in chosen)))
+        cands = [c for c in easy if ok(c, ids | examples | {story_id})]
+        if not cands:        # a small pool: an example used earlier in the chapter, rather than none
+            cands = [c for c in easy if ok(c, ids | {story_id})]
         cands.sort(key=lambda c: (pk.uses[c["id"]] > 0, ease(c)))
         if not cands:
             return None
         pk.uses[cands[0]["id"]] += 5
         return cands[0]
 
+    def facing_words() -> set:
+        """Words printed in the sayings on the facing page: an answer word standing there
+        ('Meister' in two sayings next to 'Übung macht den ___') is avoided where possible."""
+        ids = set(sheets[-1]["items"]) | ({sheets[-1]["example"]} if sheets and sheets[-1].get("example") else set()) \
+            if sheets else set(on_chapter_page)
+        return {w.lower() for i in items if i["id"] in ids for w in text.words(i["wording"]) if len(w) >= 4}
+
+    def answer_seen(c) -> bool:
+        words = facing_words()
+        ans = [c["keyword"]] + ([c["swap"]["right"]] if c.get("swap") else [])
+        return any(a.lower() in words for a in ans if len(a) >= 4)
+
     def pick(cands, n, exclude=(), **kw):
-        """Never a saying from the facing page; drop the extra exclusions if they leave too few."""
-        got = pk.pick(cands, n, exclude=facing() | set(exclude), **kw)
-        if not got and exclude:
-            got = pk.pick(cands, n, exclude=facing(), **kw)
+        """Never a saying from the facing page, and preferably no answer word that stands
+        there; drop the extra conditions if they leave too few."""
+        seen = {c["id"] for c in cands if answer_seen(c)}
+        for ex_ in (facing() | set(exclude) | seen, facing() | set(exclude), facing() | seen, facing()):
+            got = pk.pick(cands, n, exclude=ex_, **kw)
+            if got:
+                return got
         return got
 
     def ids_of(*positions):
@@ -298,7 +336,7 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
             seen_wrong.add(w)
             swap_pool.append(i)
     ch = pick(swap_pool[:20], N_ITEMS[2], strict=False, wider=swap_pool, clash=wrong_clash)
-    add("wrong", 2, ch, example_for(ch, swap_ok, clash=wrong_clash))
+    add("wrong", 2, ch, example_for(ch, swap_ok, clash=wrong_clash, strict=False))
     # 6 ◆◆ letter boxes or three words (not the sayings of sheet 2 or of the story again)
     if ci % 2 == 0:
         ch = pick(items, N_ITEMS[2], ids_of(0) | {story_id})
@@ -324,10 +362,10 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
     def sheet8(t8):
         if t8 == "scramble" and len(short) >= 8:
             ch = pick(short, N_ITEMS[2], strict=False)
-            return ch and add("scramble", 2, ch, example_for(ch, lambda i: i in short))
+            return ch and add("scramble", 2, ch, example_for(ch, lambda i: i in short, strict=False))
         if t8 == "complete" and len(complete2) >= 8:
             ch = pick(complete2, N_ITEMS[2], strict=False)
-            return ch and add("complete", 2, ch, example_for(ch, lambda i: i in complete2))
+            return ch and add("complete", 2, ch, example_for(ch, lambda i: i in complete2, strict=False))
         if t8 == "match":
             if len(with_split) >= 6:
                 ch = pick(with_split, 6, ids_of(2), strict=False, clash=match_clash)
@@ -366,7 +404,7 @@ def plan_chapter(ci: int, chapter: str, items: list[dict], stories: dict, known:
     if rot10 == "wordsearch" and len(fit_ws) >= 8:
         add("wordsearch", 3, pick(fit_ws, 8, wider=None))
     elif rot10 == "firstletters" and len(prov) >= 6:
-        add("firstletters", 3, pick(prov, 6, ids_of(2), strict=False))
+        add("firstletters", 3, pick(prov, 6, ids_of(2, 7), strict=False))
     else:
         add("gaps", 3, pick(items, N_ITEMS[3], ids_of(0, 1, 5)))
     return sheets

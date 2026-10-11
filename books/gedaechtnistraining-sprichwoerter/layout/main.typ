@@ -77,7 +77,7 @@
 #section[Nach Aufgabe]
 #grid(columns: (66mm, 1fr), row-gutter: 0.5em, column-gutter: 3mm,
   ..D.by_type.map(t => (strong(t.name),
-    t.levels.map(l => [#level-mark(l.level)#h(1.5mm)#l.nums.map(str).join(", ")]).join(h(4mm)))).flatten())
+    t.levels.map(l => [#level-mark(l.level)#h(1.5mm)#l.nums.map(str).join(", ")]).join(linebreak()))).flatten())
 
 // A left-hand page before chapter 1 would otherwise stay blank.
 #[#metadata("overview-end") <overview-end>]
@@ -101,7 +101,7 @@
   v(3mm)
   text(size: 19pt, c.intro)
   v(4mm)
-  section[Zum Aufwärmen: Ich sage den Anfang, Sie das Ende]
+  section[Zum Aufwärmen: \ Ich sage den Anfang, Sie das Ende]
   text(size: small)[Lesen Sie den Anfang vor und lassen Sie die Gruppe ergänzen. Das Ende steht fett gedruckt.]
   v(2mm)
   grid(columns: (1fr, 1fr), row-gutter: 0.75em, column-gutter: 6mm,
@@ -145,7 +145,7 @@
 #bingo-calls(D.bingo)
 #pagebreak()
 #set page(footer: extra-footer([Sprichwort-Bingo], D.author, D.year))
-#bingo-cards(D.bingo)
+#bingo-cards(D.bingo, D.author, D.year)
 
 #pagebreak()
 #set page(footer: plain-footer)
@@ -162,7 +162,7 @@
 #set page(footer: plain-footer)
 #[#metadata("index") <index>]
 #chapter-title("Alle Sprichwörter und Redewendungen von A bis Z",
-  sub: "mit ihrer Bedeutung und den Nummern der Blätter. In Klammern: Dort steht es nur zur Auswahl. Geordnet nach dem ersten wichtigen Wort; der, die, das, den, dem, ein, eine, einen, jemandem, jemanden, etwas und sich am Anfang zählen nicht.")
+  sub: "Mit ihrer Bedeutung und den Nummern der Blätter. Nummern in Klammern: Dort steht das Sprichwort nur als falsche Antwort zum Ankreuzen. „Raterunde“ verweist auf die Raterunden, „Aufwärmen“ auf die Aufwärmrunde am Anfang des Kapitels. Geordnet nach dem ersten wichtigen Wort; der, die, das, den, dem, ein, eine, einen, jemandem, jemanden, etwas und sich am Anfang zählen nicht.")
 #columns(2, gutter: 7mm, {
   set par(leading: 0.42em)
   for e in D.index {
@@ -172,7 +172,7 @@
     if e.chapters.len() > 0 { where.push("Aufwärmen\u{a0}Kapitel\u{a0}" + e.chapters.map(str).join(",\u{a0}")) }
     if e.extra.len() > 0 { where.push(e.extra.map(x => x.replace(" ", "\u{a0}")).join(", ")) }
     block(breakable: false, above: 0pt, below: 0.6em,
-      par(hanging-indent: 4mm)[*#e.w* #h(1mm) #where.join(" · ") – #e.m])
+      par(hanging-indent: 4mm)[*#e.w* #h(1mm) #where.join("\u{a0}· ")\u{a0}– #e.m])
   }
 })
 #if D.pad_page {

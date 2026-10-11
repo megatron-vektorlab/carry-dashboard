@@ -9,7 +9,7 @@
 
 #let render-sheet(s) = {
   current-sheet.update(s.num)
-  sheet-head(num: s.num, title: s.title, level: s.level, chapter: s.chapter)
+  sheet-head(num: s.num, title: s.title, level: s.level, chapter: s.at("chapter_short", default: s.chapter))
   task(s.task)
   if s.type == "gaps" {
     if "bank" in s { bank-grid(s.bank, cols: bank-cols(s.bank), title: "Diese Wörter fehlen:") }

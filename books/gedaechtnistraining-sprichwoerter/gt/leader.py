@@ -40,7 +40,7 @@ STEPS = {
     ("firstletters", 0): ["Lesen Sie die Aufgabe vor.", "Lesen Sie die Anfangsbuchstaben langsam vor und fragen Sie: Welches Sprichwort beginnt so?", "Ist es gefunden, wird es gemeinsam gesprochen und aufgeschrieben."],
     ("choice", 0): ["Lesen Sie die Aufgabe vor.", "Lesen Sie die Redewendung vor und danach die drei Erklärungen. Die Gruppe entscheidet gemeinsam.", "Fragen Sie: In welcher Lage sagt man das?"],
     ("situation", 0): ["Lesen Sie die Aufgabe vor.", "Lesen Sie die kleine Szene vor und danach die drei Sprichwörter. Welches passt am besten?", "Fragen Sie: Wem ist so etwas auch schon passiert?"],
-    ("wordsearch", 0): ["Lesen Sie die Wörter im Kasten vor. Fragen Sie: In welchem Sprichwort kommt das Wort vor?", "Dann wird gesucht: nur von links nach rechts und von oben nach unten. Gefundene Wörter werden eingekreist.", "Am Ende sagt die Gruppe zu jedem Wort das passende Sprichwort."],
+    ("wordsearch", 0): ["Lesen Sie die Wörter im Kasten vor: In welchem Sprichwort kommt das Wort vor?", "Gesucht wird nur von links nach rechts und von oben nach unten. Gefundene Wörter werden eingekreist.", "Zum Schluss sagt die Gruppe zu jedem Wort das Sprichwort."],
     ("story", 0): ["Lesen Sie die Geschichte langsam und deutlich vor. Die Teilnehmenden können mitlesen.", "Halten Sie vor dem letzten Satz inne: Welches Sprichwort passt? Die Wörter unter der Geschichte helfen.", "Sprechen Sie das Sprichwort zum Schluss gemeinsam."],
     ("talk", 0): ["Lesen Sie das Sprichwort langsam vor und sprechen Sie es gemeinsam.", "Stellen Sie eine Frage nach der anderen. Es gibt keine richtigen oder falschen Antworten; wer nichts sagen möchte, hört einfach zu.", "Fassen Sie zum Schluss freundlich zusammen, was erzählt wurde."],
 }

@@ -30,7 +30,7 @@ KDP-ov uređivač opisa je „rich text”. Zalijepite tekst i provjerite pregle
 ```html
 <b>100 Kopiervorlagen in A4 rund um bekannte Sprichwörter und Redewendungen – für die Gruppenstunde, zu zweit oder allein.</b>
 
-<p>„Morgenstund hat Gold im Mund“, „Da liegt der Hund begraben“: Sprichwörter und Redewendungen sitzen tief im Gedächtnis. Sie wecken Erinnerungen und bringen Menschen zum Lachen und ins Gespräch. Dieses Buch macht daraus 100 abwechslungsreiche Arbeitsblätter in drei Stufen, mit allem, was die Gruppenleitung braucht.</p>
+<p>„Morgenstund hat Gold im Mund“, „Wer anderen eine Grube gräbt …“: Sprichwörter und Redewendungen sitzen tief im Gedächtnis. Sie wecken Erinnerungen und bringen Menschen zum Lachen und ins Gespräch. Dieses Buch macht daraus 100 abwechslungsreiche Arbeitsblätter in drei Stufen, mit allem, was die Gruppenleitung braucht.</p>
 
 <h4>Das steckt im Buch</h4>
 <ul>
@@ -39,10 +39,10 @@ KDP-ov uređivač opisa je „rich text”. Zalijepite tekst i provjerite pregle
 <li><b>Auf der Rückseite jedes Blattes:</b> die Lösungen mit gängigen Varianten, Fragen zum Gespräch und Ideen, wie die Aufgabe leichter oder anspruchsvoller wird; bei vielen Blättern außerdem Hilfen, wenn ein Wort nicht einfällt.</li>
 <li><b>Drei Stufen:</b> von „Wörter zur Auswahl“ bis „frei ergänzen“. 49 Blätter beginnen mit einem gelösten Beispiel.</li>
 <li><b>11 Aufgabenarten:</b> „Was fehlt?“, „Das richtige Wort“, „Was gehört zusammen?“, Vorlesegeschichten, „Da stimmt was nicht!“, „Was bedeutet das?“, „Wortsalat“, „Wie geht es weiter?“, „Erste Buchstaben“, „Wann sagt man das?“ und „Wörter suchen“.</li>
-<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, eine klare serifenlose Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
+<li><b>Großdruck:</b> Aufgaben in 20 Punkt, nichts kleiner als 16 Punkt, Aufgaben und Erklärungen in einer klaren serifenlosen Schrift, schwarzer Druck auf Weiß, keine grauen Flächen.</li>
 <li><b>Zu jedem Kapitel:</b> eine Aufwärmrunde zum Vorlesen, Gesprächsfragen, Bewegungsideen und Vorschläge zum Mitbringen.</li>
 <li><b>Zum Kopieren und Spielen:</b> Sprichwort-Bingo mit 12 verschiedenen Karten, Raterunden für zwischendurch, ein Blatt „Mein Sprichwort“ zum Erzählen und eine Liste zum Abhaken, welche Blätter die Gruppe schon gemacht hat.</li>
-<li><b>Alle 378 Sprichwörter und Redewendungen von A bis Z,</b> jeweils mit einer kurzen Erklärung: zum Nachschlagen, wenn jemand fragt „Was heißt das eigentlich?“</li>
+<li><b>Alle 377 Sprichwörter und Redewendungen von A bis Z,</b> jeweils mit einer kurzen Erklärung: zum Nachschlagen, wenn jemand fragt „Was heißt das eigentlich?“</li>
 <li><b>Hinweise für die Gruppenleitung</b> und ein Beispiel für eine Stunde von 45 Minuten.</li>
 <li><b>Kopiererlaubnis</b> für die eigene Gruppe oder für einen Standort der eigenen Einrichtung.</li>
 </ul>
@@ -90,9 +90,9 @@ Alternative: Alzheimer, Ergotherapie.
 | Paperback cover finish | **Matte** (manje odsjaja za slabovidne čitatelje) |
 | Manuscript | `output/Sprichwoerter-Redewendungen-Senioren-interior.pdf` |
 | Book Cover | „Upload a cover you already have” → `output/Sprichwoerter-Redewendungen-Senioren-cover.pdf` |
-| AI-Generated Content | **Yes.** Texts: *Some sections, with minimal or no editing*. Napisao ih je AI model (Claude): upute, objašnjenja značenja, pomoć, pitanja za razgovor, 10 priča, uvodi poglavlja i tekstovi korica. Ako ih sami preradite, promijenite u „with extensive editing”. Images: *One or a few AI-generated images, with minimal or no editing* (naslovnicu i grafike nacrtao je kod koji je napisala umjetna inteligencija). Translations: *None*. Same poslovice i izreke su narodna predaja; vježbe je složio deterministički program. |
+| AI-Generated Content | **Yes.** Texts: *Entire work, with minimal or no editing*. Napisao ih je AI model (Claude): upute, sva objašnjenja značenja, pomoć, pitanja za razgovor, 10 priča, uvodi poglavlja, bingo, raterunde i tekstovi korica; listove je složio program koji je također napisao AI. Ako ih sami preradite, promijenite u „with extensive editing”. Images: *One or a few AI-generated images, with minimal or no editing* (naslovnicu i grafike nacrtao je kod koji je napisala umjetna inteligencija). Translations: *None*. Same poslovice i izreke su narodna predaja; vježbe je složio deterministički program. |
 
-Širina hrpta izračunata je iz broja stranica unutrašnjosti (272 stranica, hrbat 0.6125 in). Ako se unutrašnjost promijeni, ponovno izgradite sve naredbom `python3 -m gt.build` prije učitavanja. KDP odbija naslovnicu čiji hrbat ne odgovara.
+Širina hrpta izračunata je iz broja stranica unutrašnjosti (274 stranica, hrbat 0.6170 in). Ako se unutrašnjost promijeni, ponovno izgradite sve naredbom `python3 -m gt.build` prije učitavanja. KDP odbija naslovnicu čiji hrbat ne odgovara.
 
 ## Rights & Pricing
 
@@ -103,11 +103,11 @@ Alternative: Alzheimer, Ergotherapie.
   * uz 19 % (knjige s vježbama mogu biti razvrstane kao „activity books”): unesite **15,96 €**.
   * Na zaslonu s cijenama KDP prikazuje procijenjenu stopu PDV-a; prema njoj odaberite iznos.
 * **Fiksna cijena knjige (Buchpreisbindung)** vrijedi u Njemačkoj i Austriji: ista cijena svugdje, bez popusta (ni za domove), a vlastite primjerke krajnjim kupcima u DE/AT prodajete samo po punoj cijeni. Promjena cijene je dopuštena ako vrijedi za sve kanale. Tako možete početi sa 16,99 € radi prvih recenzija, a cijenu poslije podići.
-* Procjena honorara (Amazon.de): 272 stranica, tisak = 0,75 € + 0,016 € × 272 = **5,10 €**.
-  * Honorar = 60 % × 17,75 € − 5,10 € ≈ **5,55 € po prodanom primjerku** (uz 19 % PDV-a: ≈ 4,47 €).
+* Procjena honorara (Amazon.de): 274 stranica, tisak = 0,75 € + 0,016 € × 274 = **5,13 €**.
+  * Honorar = 60 % × 17,75 € − 5,13 € ≈ **5,52 € po prodanom primjerku** (uz 19 % PDV-a: ≈ 4,44 €).
   * Mjerodavan je KDP-ov kalkulator.
-* Ostale trgovine: KDP preračunava cijene. Za Amazon.com predložite oko 19,99 $ (tisak $5.62).
-* Expanded Distribution: isključeno (honorar bi bio gotovo nula).
+* Ostale trgovine: KDP preračunava cijene. Za Amazon.com predložite oko 19,99 $ (tisak $5.66).
+* Expanded Distribution: isključeno. Ako ga KDP za A4 uopće ponudi, honorar bi bio samo oko 2 € po primjerku (40 % cijene minus tisak), a knjižare i knjižnice ovakve knjige rijetko naručuju.
 
 ## Slike za marketing
 
