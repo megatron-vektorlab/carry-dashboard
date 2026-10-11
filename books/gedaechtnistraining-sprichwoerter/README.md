@@ -10,8 +10,9 @@ Knjiga ima 100 radnih listova (Kopiervorlagen) u formatu A4. Namijenjena je njeg
 voditeljima aktivnosti u domovima za starije i dnevnim boravcima (Betreuungskräfte,
 Alltagsbegleiter, radni terapeuti) te obiteljima koje rješavaju zajedno kod kuće.
 
-Stanje: **knjiga je spremna za probni tisak** (10. 10. 2026.).
-- Unutrašnjost ima 242 stranice A4, a omot ima hrbat od 0,545 in (bijeli papir).
+Stanje: **knjiga je spremna za probni tisak** (11. 10. 2026., nakon četiri kruga provjere).
+- Unutrašnjost ima 274 stranice A4, a omot ima hrbat od 0,617 in (bijeli papir).
+- Brojevi u ovom dokumentu odnose se na trenutačnu izgradnju; `gt.build` ih ponovno računa u `KDP-LISTING.md`.
 - `python3 -m gt.qa` prolazi bez greške.
 - Vodenog žiga nema, jer su podaci za impresum upisani.
 - Prije objave pogledajte popis „Prije objave” dolje.
@@ -30,14 +31,16 @@ Stanje: **knjiga je spremna za probni tisak** (10. 10. 2026.).
 
 | Dio | Sadržaj |
 |---|---|
-| Uvod | naslovna stranica, impresum s **dozvolom za kopiranje** i napomenom da vježbe nisu test ni terapija, sadržaj, „Willkommen!” (kako je knjiga složena, 3 razine, rad sam / u dvoje / u grupi), upute za voditelja grupe (stav bez ocjenjivanja, pomoć u 5 koraka, izbor razine, praktični savjeti, kad se jave osjećaji, kopiranje), primjer sata od 45 minuta, pregled listova po razini i vrsti zadatka, stranica „Meine Lieblingssprichwörter” |
+| Uvod | naslovna stranica, impresum s **dozvolom za kopiranje** i napomenom da vježbe nisu test ni terapija, sadržaj, „Willkommen!” (kako je knjiga složena, 3 razine, rad sam / u dvoje / u grupi), upute za voditelja grupe (stav bez ocjenjivanja, pomoć u 5 koraka, izbor razine, praktični savjeti, kad se jave osjećaji, kopiranje), primjer sata od 45 minuta, pregled listova po razini i vrsti zadatka (svaka razina u svom retku) |
 | **10 poglavlja × 10 listova** | Tiere · Körper · Essen & Trinken · Haus, Hof & Garten · Wetter, Natur & Jahreszeiten · Arbeit & Fleiß · Geld & Glück · Reden & Schweigen · Familie & Freundschaft · Zeit & Lebensweisheiten |
 | Početak poglavlja | kratki uvod, zagrijavanje „Ich sage den Anfang, Sie das Ende” (8 poslovica za čitanje naglas), pitanja za razgovor, ideje za kretanje, predmeti koje se može donijeti, popis listova |
 | Svaki list | **desna stranica** = radni list (Kopiervorlage), **poleđina** = stranica za voditelja: tijek, rješenja s inačicama, pomoć ako se riječ ne sjeti, 2–3 pitanja za razgovor, lakša/teža inačica, napomena ako tema može biti osjetljiva |
-| Kazalo | sve upotrijebljene poslovice i izreke od A do Ž s brojevima listova |
+| Dodaci (novo u 3. krugu) | **„Mein Sprichwort”**: list za kopiranje za biografski rad, sa stranicom za voditelja · **Sprichwort-Bingo**: pravila, 24 rečenice za čitanje naglas i 12 različitih kartica (po dvije na stranici, za izrezivanje) · **Raterunden**: 6 krugova po 10 poslovica za čitanje naglas, bez kopiranja · **popis svih 100 listova** s rubrikama za dvije grupe |
+| Kazalo | svih 377 poslovica i izreka iz knjige od A do Ž, **svaka s kratkim objašnjenjem značenja**, brojevima listova (u zagradi: list na kojem je samo pogrešan odgovor), zagrijavanjem ili krugom pogađanja |
 
 **Razine** (oznaka ◆ / ◆◆ / ◆◆◆ u podnožju, bez riječi „lako/teško” na listu): 40 / 40 / 20 listova.
-Razina 1 uvijek ima okvir s riječima ili izbor između dvije riječi.
+Razina 1 uvijek ima okvir s riječima ili izbor između dvije riječi i koristi samo najpoznatije izreke.
+Listovi treće razine namjerno ponavljaju izreke iz poglavlja (slobodno prisjećanje, ponavljanje).
 
 **Vrste zadataka** (po poglavlju je redoslijed uvijek sličan):
 - Was fehlt? (s okvirom riječi, s kućicama za slova ili slobodno);
@@ -74,12 +77,17 @@ bez sivih površina (dobro se kopira). Unutarnja margina od 22 mm omogućuje kop
    - na istom listu ne smiju biti dvije izreke istog oblika („einen ___ haben”);
    - na istom listu ne smiju biti riječi istog korijena („Hund/Hunde”);
    - odgovor jednog zadatka ne smije se vidjeti u drugom zadatku;
-   - osmosmjerka sadrži svaku riječ točno jednom i nema slučajnih ružnih riječi.
+   - osmosmjerka sadrži svaku riječ točno jednom i nema slučajnih ružnih riječi;
+   - list nikad nema rješenja otisnuta na stranici nasuprot sebi (stranica za voditelja prethodnog lista);
+   - ista izreka, ključna riječ ili isti odgovor ne pojavljuju se dvaput na istom listu;
+   - priča poglavlja ne otkriva se na listovima prije nje, a riješeni primjer koristi se jednom po poglavlju.
 5. **Provjera PDF-a** (`python3 -m gt.qa`):
    - format A4, sav tekst najmanje 16 pt, sigurne margine, ugrađeni fontovi;
    - svaki list je na desnoj stranici, a njegova stranica za voditelja na poleđini;
    - svako rješenje stoji na stranici za voditelja;
    - riječ „Demenz” ne postoji u knjizi ni na korici;
+   - nema praznih stranica, ravnih apostrofa ni naslova lista u dva retka;
+   - riječi u okviru nikad se ne stapaju, a pomoć nikad ne vrijedi za dvije različite riječi;
    - brojevi na korici odgovaraju knjizi;
    - pravopis je provjeren njemačkim rječnikom (LibreOffice).
 6. **Završni pregled** s 5 neovisnih recenzenata: dva kruga.
@@ -98,6 +106,14 @@ bez sivih površina (dobro se kopira). Unutarnja margina od 22 mm omogućuje kop
      - položaji riječi u osmosmjerci na stranici za voditelja;
      - dvije crte za duge odgovore;
      - dozvola za kopiranje sada pokriva i poklonjene primjerke i volontere.
+   - **Treći krug (19 recenzenata + provjeravatelji)**: pregled svake stranice kao slike, svake izreke i njezinih podataka, stranica za voditelje, tiska i KDP-a, pedagogije i opisa za Amazon; slijepi test 91 od 91. Potvrđeno je 147 primjedbi (6 blokera, 29 važnih). Najvažnije:
+     - kriva pomoć za „Boden” (opisivala je „Fuß”) i spojene riječi u okviru osmosmjerke;
+     - na 14 mjesta stranica nasuprot listu otkrivala je njegovo rješenje;
+     - preuski razmaci, naslovi u dva retka, brojevi pomaknuti od kućica, kazalo s prelomljenim natuknicama;
+     - napomene „Achtsam” koje su se gubile, pitanja koja ne pripadaju listu, nedostajuće ispravne varijante.
+     Sve je ispravljeno općim pravilima u kodu, a panel od tri persone odabrao je proširenja (kazalo sa značenjima, bingo, „Mein Sprichwort”, popis listova, krugovi pogađanja).
+   - **Četvrti krug (17 recenzenata + provjeravatelji)** na proširenom izdanju: 377 novih tekstova značenja, dodaci, sve stranice kao slike, slijepi test 101 od 101 te provjera jesu li ispravci trećeg kruga stvarno riješeni. Potvrđeno je 118 primjedbi (bez blokera); sve su ugrađene, među njima 14 preciznijih značenja, tri bolje scene „Wann sagt man das?”, širi prostor za crtanje kod spajanja i jednoznačne rečenice za bingo.
+   - **Završna kontrola** nakon posljednjeg rasporeda: vidi bilješku na kraju ovog popisa.
 
 **Iskreno: što nije napravljeno.** Knjigu nije pregledao čovjek kojemu je njemački materinski
 jezik, a listovi nisu isprobani u stvarnoj grupi. Prije objave preporučujem oboje (vidi popis dolje).
@@ -142,6 +158,7 @@ IDS OWID popis namjerno se **ne** koristi: uvjeti korištenja traže pisanu dozv
 | `gt/plan.py` | raspored 100 listova (10 × 10), bez dvosmislenih odgovora → `data/sheets.json` |
 | `gt/exercises.py`, `gt/wordsearch.py`, `gt/text.py` | generatori vježbi, osmosmjerka, slogovi i pravopis |
 | `gt/leader.py`, `gt/book.py` | stranice za voditelja, slaganje unutrašnjosti (s automatskim skraćivanjem ako nešto ne stane) |
+| `gt/extras.py`, `layout/extras.typ` | bingo, krugovi pogađanja, „Mein Sprichwort”, popis listova |
 | `gt/cover.py`, `gt/qa.py`, `gt/listing.py`, `gt/build.py`, `gt/dump.py` | omot, provjere, KDP unos, cijela izgradnja, tekstualni ispis za recenzente |
 | `layout/*.typ`, `content/*.typ` | Typst prijelom i njemački tekstovi uvoda |
 | `data/chapters.json`, `data/stories.json` | uvodi poglavlja, pitanja, ideje za kretanje i 10 priča |
@@ -153,4 +170,4 @@ IDS OWID popis namjerno se **ne** koristi: uvjeti korištenja traže pisanu dozv
 - **Bez riječi „Demenz” u knjizi i na korici.** Najčešća pritužba u recenzijama je da korisnici moraju prelijepiti tu riječ. Spominje se samo u opisu na Amazonu.
 - **Bez zdravstvenih obećanja** (njemački HWG): nigdje „gegen Demenz”, „beugt vor”, „bewiesen”.
 - **Dozvola za kopiranje** izričito dopušta kopije za sudionike i povećanje na A3 za jednu ustanovu ili vlastitu grupu. Zabranjuje prosljeđivanje drugim ustanovama, prodaju i digitalno širenje.
-- **Cijena:** 18,99 € (KDP traži neto cijenu; vidi `KDP-LISTING.md`). Tisak 240 stranica A4 stoji 4,59 €, a honorar je oko 6 € uz 7 % PDV-a, odnosno oko 5 € uz 19 %.
+- **Cijena:** 18,99 € (KDP traži neto cijenu; vidi `KDP-LISTING.md`). Tisak 274 stranice A4 stoji 5,13 €, a honorar je oko 5,50 € uz 7 % PDV-a, odnosno oko 4,45 € uz 19 %. Proširenja (oko 32 stranice) stoje oko 0,50 € tiska po primjerku.
