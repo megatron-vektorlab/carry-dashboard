@@ -1,0 +1,27 @@
+{
+ "_note": "Release data. While a required field is null the build is a DRAFT (watermark). catalog_verified / human_proofread must be an explicit true or false; the book states exactly what was (not) done.",
+ "edition": "1. izdanje / 1. Auflage",
+ "edition_date": "29.09.2026",
+ "author": "Ivan Sikuten",
+ "publisher": "Ivan Sikuten",
+ "address": "Miškinova 4, Šašinovec, 10360 Sesvete, Kroatien",
+ "email": "ivansikuten@gmail.com",
+ "isbn": "KDP",
+ "catalog_verified": false,
+ "catalog_stand": null,
+ "catalog_compared_on": null,
+ "public_copy_retrieved": "17.09.2026",
+ "human_proofread": false,
+ "human_proofread_by": null,
+ "human_proofread_date": null,
+ "images": true,
+ "required": [
+  "edition_date",
+  "author",
+  "publisher",
+  "address",
+  "email",
+  "catalog_verified",
+  "human_proofread"
+ ]
+}

@@ -1,0 +1,922 @@
+[
+ {
+  "id": "G-093",
+  "question_de": "Je mehr \"Zweitstimmen\" eine Partei bei einer Bundestagswahl bekommt, desto ...",
+  "options_de": {
+   "A": "weniger Erststimmen kann sie haben.",
+   "B": "mehr Direktkandidaten der Partei ziehen ins Parlament ein.",
+   "C": "größer ist das Risiko, eine Koalition bilden zu müssen.",
+   "D": "mehr Sitze erhält die Partei im Parlament."
+  }
+ },
+ {
+  "id": "G-094",
+  "question_de": "Ab welchem Alter darf man in Deutschland an der Wahl zum Deutschen Bundestag teilnehmen?",
+  "options_de": {
+   "A": "16",
+   "B": "18",
+   "C": "21",
+   "D": "23"
+  }
+ },
+ {
+  "id": "G-095",
+  "question_de": "Was gilt für die meisten Kinder in Deutschland?",
+  "options_de": {
+   "A": "Wahlpflicht",
+   "B": "Schulpflicht",
+   "C": "Schweigepflicht",
+   "D": "Religionspflicht"
+  }
+ },
+ {
+  "id": "G-096",
+  "question_de": "Wie kann jemand, der den Holocaust leugnet, bestraft werden?",
+  "options_de": {
+   "A": "Kürzung sozialer Leistungen",
+   "B": "bis zu 100 Sozialstunden",
+   "C": "gar nicht, Holocaustleugnung ist erlaubt",
+   "D": "mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe"
+  }
+ },
+ {
+  "id": "G-097",
+  "question_de": "Was bezahlt man in Deutschland automatisch, wenn man fest angestellt ist?",
+  "options_de": {
+   "A": "Sozialversicherung",
+   "B": "Sozialhilfe",
+   "C": "Kindergeld",
+   "D": "Wohngeld"
+  }
+ },
+ {
+  "id": "G-098",
+  "question_de": "Wenn Abgeordnete im Deutschen Bundestag ihre Fraktion wechseln, ...",
+  "options_de": {
+   "A": "dürfen sie nicht mehr an den Sitzungen des Parlaments teilnehmen.",
+   "B": "kann die Regierung ihre Mehrheit verlieren.",
+   "C": "muss die Bundespräsidentin/der Bundespräsident zuvor ihr/sein Einverständnis geben.",
+   "D": "dürfen die Wählerinnen/Wähler dieser Abgeordneten noch einmal wählen."
+  }
+ },
+ {
+  "id": "G-099",
+  "question_de": "Wer bezahlt in Deutschland die Sozialversicherungen?",
+  "options_de": {
+   "A": "Arbeitgeberinnen/Arbeitgeber und Arbeitnehmerinnen/Arbeitnehmer",
+   "B": "nur Arbeitnehmerinnen/Arbeitnehmer",
+   "C": "alle Staatsangehörigen",
+   "D": "nur Arbeitgeberinnen/Arbeitgeber"
+  }
+ },
+ {
+  "id": "G-100",
+  "question_de": "Was gehört nicht zur gesetzlichen Sozialversicherung?",
+  "options_de": {
+   "A": "die Lebensversicherung",
+   "B": "die gesetzliche Rentenversicherung",
+   "C": "die Arbeitslosenversicherung",
+   "D": "die Pflegeversicherung"
+  }
+ },
+ {
+  "id": "G-101",
+  "question_de": "Gewerkschaften sind Interessenverbände der ...",
+  "options_de": {
+   "A": "Jugendlichen.",
+   "B": "Arbeitnehmerinnen und Arbeitnehmer.",
+   "C": "Rentnerinnen und Rentner.",
+   "D": "Arbeitgeberinnen und Arbeitgeber."
+  }
+ },
+ {
+  "id": "G-102",
+  "question_de": "Womit kann man in der Bundesrepublik Deutschland geehrt werden, wenn man auf politischem, wirtschaftlichem, kulturellem, geistigem oder sozialem Gebiet eine besondere Leistung erbracht hat? Mit dem ...",
+  "options_de": {
+   "A": "Bundesverdienstkreuz",
+   "B": "Bundesadler",
+   "C": "Vaterländischen Verdienstorden",
+   "D": "Ehrentitel \"Held der Deutschen Demokratischen Republik\""
+  }
+ },
+ {
+  "id": "G-103",
+  "question_de": "Was wird in Deutschland als \"Ampelkoalition\" bezeichnet? Die Zusammenarbeit ...",
+  "options_de": {
+   "A": "der Bundestagsfraktionen von CDU und CSU",
+   "B": "von SPD, FDP und Bündnis 90/Die Grünen in einer Regierung",
+   "C": "von CSU, Die LINKE und Bündnis 90/Die Grünen in einer Regierung",
+   "D": "der Bundestagsfraktionen von CDU und SPD"
+  }
+ },
+ {
+  "id": "G-104",
+  "question_de": "Eine Frau in Deutschland verliert ihre Arbeit. Was darf nicht der Grund für diese Entlassung sein?",
+  "options_de": {
+   "A": "Die Frau ist lange krank und arbeitsunfähig.",
+   "B": "Die Frau kam oft zu spät zur Arbeit.",
+   "C": "Die Frau erledigt private Sachen während der Arbeitszeit.",
+   "D": "Die Frau bekommt ein Kind und ihr Chef weiß das."
+  }
+ },
+ {
+  "id": "G-105",
+  "question_de": "Was ist eine Aufgabe von Wahlhelferinnen/Wahlhelfern in Deutschland?",
+  "options_de": {
+   "A": "Sie helfen alten Menschen bei der Stimmabgabe in der Wahlkabine.",
+   "B": "Sie schreiben die Wahlbenachrichtigungen vor der Wahl.",
+   "C": "Sie geben Zwischenergebnisse an die Medien weiter.",
+   "D": "Sie zählen die Stimmen nach dem Ende der Wahl."
+  }
+ },
+ {
+  "id": "G-106",
+  "question_de": "In Deutschland helfen ehrenamtliche Wahlhelferinnen und Wahlhelfer bei den Wahlen. Was ist eine Aufgabe von Wahlhelferinnen/Wahlhelfern?",
+  "options_de": {
+   "A": "Sie helfen Kindern und alten Menschen beim Wählen.",
+   "B": "Sie schreiben Karten und Briefe mit der Angabe des Wahllokals.",
+   "C": "Sie geben Zwischenergebnisse an Journalisten weiter.",
+   "D": "Sie zählen die Stimmen nach dem Ende der Wahl."
+  }
+ },
+ {
+  "id": "G-107",
+  "question_de": "Für wie viele Jahre wird der Bundestag in Deutschland gewählt?",
+  "options_de": {
+   "A": "2 Jahre",
+   "B": "4 Jahre",
+   "C": "6 Jahre",
+   "D": "8 Jahre"
+  }
+ },
+ {
+  "id": "G-108",
+  "question_de": "Bei einer Bundestagswahl in Deutschland darf jede/jeder wählen, die/der ...",
+  "options_de": {
+   "A": "in der Bundesrepublik Deutschland wohnt und wählen möchte.",
+   "B": "Bürgerin/Bürger der Bundesrepublik Deutschland ist und mindestens 18 Jahre alt ist.",
+   "C": "seit mindestens 3 Jahren in der Bundesrepublik Deutschland lebt.",
+   "D": "Bürgerin/Bürger der Bundesrepublik Deutschland ist und mindestens 21 Jahre alt ist."
+  }
+ },
+ {
+  "id": "G-109",
+  "question_de": "Wie oft gibt es normalerweise Bundestagswahlen in Deutschland?",
+  "options_de": {
+   "A": "alle drei Jahre",
+   "B": "alle vier Jahre",
+   "C": "alle fünf Jahre",
+   "D": "alle sechs Jahre"
+  }
+ },
+ {
+  "id": "G-110",
+  "question_de": "Für wie viele Jahre wird der Bundestag in Deutschland gewählt?",
+  "options_de": {
+   "A": "2 Jahre",
+   "B": "3 Jahre",
+   "C": "4 Jahre",
+   "D": "5 Jahre"
+  }
+ },
+ {
+  "id": "G-111",
+  "question_de": "Welche Handlungen mit Bezug auf den Staat Israel sind in Deutschland verboten?",
+  "options_de": {
+   "A": "die Politik Israels öffentlich kritisieren",
+   "B": "das Aufhängen einer israelischen Flagge auf dem Privatgrundstück",
+   "C": "eine Diskussion über die Politik Israels",
+   "D": "der öffentliche Aufruf zur Vernichtung Israels"
+  }
+ },
+ {
+  "id": "G-112",
+  "question_de": "Die Wahlen in Deutschland sind ...",
+  "options_de": {
+   "A": "speziell.",
+   "B": "geheim.",
+   "C": "berufsbezogen.",
+   "D": "geschlechtsabhängig."
+  }
+ },
+ {
+  "id": "G-113",
+  "question_de": "Wahlen in Deutschland gewinnt die Partei, die ...",
+  "options_de": {
+   "A": "die meisten Stimmen bekommt.",
+   "B": "die meisten Männer mehrheitlich gewählt haben.",
+   "C": "die meisten Stimmen bei den Arbeiterinnen/Arbeitern bekommen hat.",
+   "D": "die meisten Erststimmen für ihre Kanzlerkandidatin/ihren Kanzlerkandidaten erhalten hat."
+  }
+ },
+ {
+  "id": "G-114",
+  "question_de": "An demokratischen Wahlen in Deutschland teilzunehmen ist ...",
+  "options_de": {
+   "A": "eine Pflicht.",
+   "B": "ein Recht.",
+   "C": "ein Zwang.",
+   "D": "eine Last."
+  }
+ },
+ {
+  "id": "G-115",
+  "question_de": "Was bedeutet \"aktives Wahlrecht\" in Deutschland?",
+  "options_de": {
+   "A": "Man kann gewählt werden.",
+   "B": "Man muss wählen gehen.",
+   "C": "Man kann wählen.",
+   "D": "Man muss zur Auszählung der Stimmen gehen."
+  }
+ },
+ {
+  "id": "G-116",
+  "question_de": "Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das ...",
+  "options_de": {
+   "A": "aktive Wahlkampagne.",
+   "B": "aktives Wahlverfahren.",
+   "C": "aktiver Wahlkampf.",
+   "D": "aktives Wahlrecht."
+  }
+ },
+ {
+  "id": "G-117",
+  "question_de": "Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?",
+  "options_de": {
+   "A": "3%",
+   "B": "4%",
+   "C": "5%",
+   "D": "6%"
+  }
+ },
+ {
+  "id": "G-118",
+  "question_de": "Wer darf bei den rund 40 jüdischen Makkabi-Sportvereinen Mitglied werden?",
+  "options_de": {
+   "A": "nur Deutsche",
+   "B": "nur Israelis",
+   "C": "nur religiöse Menschen",
+   "D": "alle Menschen"
+  }
+ },
+ {
+  "id": "G-119",
+  "question_de": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+  "options_de": {
+   "A": "Alle verurteilten Straftäterinnen/Straftäter dürfen nicht wählen.",
+   "B": "Wenn ich wählen gehen möchte, muss meine Arbeitgeberin/mein Arbeitgeber mir frei geben.",
+   "C": "Jede Person kann ohne Zwang entscheiden, ob sie wählen möchte und wen sie wählen möchte.",
+   "D": "Ich kann frei entscheiden, wo ich wählen gehen möchte."
+  }
+ },
+ {
+  "id": "G-120",
+  "question_de": "Das Wahlsystem in Deutschland ist ein ...",
+  "options_de": {
+   "A": "Zensuswahlrecht.",
+   "B": "Dreiklassenwahlrecht.",
+   "C": "Mehrheits- und Verhältniswahlrecht.",
+   "D": "allgemeines Männerwahlrecht."
+  }
+ },
+ {
+  "id": "G-121",
+  "question_de": "Eine Partei möchte in den Deutschen Bundestag. Sie muss aber einen Mindestanteil an Wählerstimmen haben. Das heißt ...",
+  "options_de": {
+   "A": "5%-Hürde.",
+   "B": "Zulassungsgrenze.",
+   "C": "Basiswert.",
+   "D": "Richtlinie."
+  }
+ },
+ {
+  "id": "G-122",
+  "question_de": "Welchem Grundsatz unterliegen Wahlen in Deutschland? Wahlen in Deutschland sind ...",
+  "options_de": {
+   "A": "frei, gleich, geheim.",
+   "B": "offen, sicher, frei.",
+   "C": "geschlossen, gleich, sicher.",
+   "D": "sicher, offen, freiwillig."
+  }
+ },
+ {
+  "id": "G-123",
+  "question_de": "Was ist in Deutschland die \"5%-Hürde\"?",
+  "options_de": {
+   "A": "Abstimmungsregelung im Bundestag für kleine Parteien",
+   "B": "Anwesenheitskontrolle im Bundestag für Abstimmungen",
+   "C": "Mindestanteil an Wählerstimmen, um ins Parlament zu kommen",
+   "D": "Anwesenheitskontrolle im Bundesrat für Abstimmungen"
+  }
+ },
+ {
+  "id": "G-124",
+  "question_de": "Die Bundestagswahl in Deutschland ist die Wahl ...",
+  "options_de": {
+   "A": "der Bundeskanzlerin/des Bundeskanzlers.",
+   "B": "der Parlamente der Länder.",
+   "C": "des Parlaments für Deutschland.",
+   "D": "der Bundespräsidentin/des Bundespräsidenten."
+  }
+ },
+ {
+  "id": "G-125",
+  "question_de": "In einer Demokratie ist eine Funktion von regelmäßigen Wahlen, ...",
+  "options_de": {
+   "A": "die Bürgerinnen und Bürger zu zwingen, ihre Stimme abzugeben.",
+   "B": "nach dem Willen der Wählermehrheit den Wechsel der Regierung zu ermöglichen.",
+   "C": "im Land bestehende Gesetze beizubehalten.",
+   "D": "den Armen mehr Macht zu geben."
+  }
+ },
+ {
+  "id": "G-126",
+  "question_de": "Was bekommen wahlberechtigte Bürgerinnen und Bürger in Deutschland vor einer Wahl?",
+  "options_de": {
+   "A": "eine Wahlbenachrichtigung von der Gemeinde",
+   "B": "eine Wahlerlaubnis von der Bundespräsidentin/von dem Bundespräsidenten",
+   "C": "eine Benachrichtigung von der Bundesversammlung",
+   "D": "eine Benachrichtigung vom Pfarramt"
+  }
+ },
+ {
+  "id": "G-127",
+  "question_de": "Warum gibt es die 5%-Hürde im Wahlgesetz der Bundesrepublik Deutschland? Es gibt sie, weil ...",
+  "options_de": {
+   "A": "die Programme von vielen kleinen Parteien viele Gemeinsamkeiten haben.",
+   "B": "die Bürgerinnen und Bürger bei vielen kleinen Parteien die Orientierung verlieren können.",
+   "C": "viele kleine Parteien die Regierungsbildung erschweren.",
+   "D": "die kleinen Parteien nicht so viel Geld haben, um die Politikerinnen und Politiker zu bezahlen."
+  }
+ },
+ {
+  "id": "G-128",
+  "question_de": "Parlamentsmitglieder, die von den Bürgerinnen und Bürgern gewählt werden, nennt man ...",
+  "options_de": {
+   "A": "Abgeordnete.",
+   "B": "Kanzlerinnen/Kanzler.",
+   "C": "Botschafterinnen/Botschafter.",
+   "D": "Ministerpräsidentinnen/Ministerpräsidenten."
+  }
+ },
+ {
+  "id": "G-129",
+  "question_de": "Vom Volk gewählt wird in Deutschland ...",
+  "options_de": {
+   "A": "die Bundeskanzlerin/der Bundeskanzler.",
+   "B": "die Ministerpräsidentin/der Ministerpräsident eines Bundeslandes.",
+   "C": "der Bundestag.",
+   "D": "die Bundespräsidentin/der Bundespräsident."
+  }
+ },
+ {
+  "id": "G-130",
+  "question_de": "Welcher Stimmzettel wäre bei einer Bundestagswahl gültig? In Anlehnung an Bundeswahlordnung (BWO), Anlage 26",
+  "options_de": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  }
+ },
+ {
+  "id": "G-131",
+  "question_de": "In Deutschland ist eine Bürgermeisterin/ein Bürgermeister ...",
+  "options_de": {
+   "A": "die Leiterin/der Leiter einer Schule.",
+   "B": "die Chefin/der Chef einer Bank.",
+   "C": "das Oberhaupt einer Gemeinde.",
+   "D": "die/der Vorsitzende einer Partei."
+  }
+ },
+ {
+  "id": "G-132",
+  "question_de": "Viele Menschen in Deutschland arbeiten in ihrer Freizeit ehrenamtlich. Was bedeutet das?",
+  "options_de": {
+   "A": "Sie arbeiten als Soldatinnen/Soldaten.",
+   "B": "Sie arbeiten freiwillig und unbezahlt in Vereinen und Verbänden.",
+   "C": "Sie arbeiten in der Bundesregierung.",
+   "D": "Sie arbeiten in einem Krankenhaus und verdienen dabei Geld."
+  }
+ },
+ {
+  "id": "G-133",
+  "question_de": "Was ist bei Bundestags- und Landtagswahlen in Deutschland erlaubt?",
+  "options_de": {
+   "A": "Der Ehemann wählt für seine Frau mit.",
+   "B": "Man kann durch Briefwahl seine Stimme abgeben.",
+   "C": "Man kann am Wahltag telefonisch seine Stimme abgeben.",
+   "D": "Kinder ab dem Alter von 14 Jahren dürfen wählen."
+  }
+ },
+ {
+  "id": "G-134",
+  "question_de": "Man will die Buslinie abschaffen, mit der Sie immer zur Arbeit fahren. Was können Sie machen, um die Buslinie zu erhalten?",
+  "options_de": {
+   "A": "Ich beteilige mich an einer Bürgerinitiative für die Erhaltung der Buslinie oder gründe selber eine Initiative.",
+   "B": "Ich werde Mitglied in einem Sportverein und trainiere Radfahren.",
+   "C": "Ich wende mich an das Finanzamt, weil ich als Steuerzahlerin/Steuerzahler ein Recht auf die Buslinie habe.",
+   "D": "Ich schreibe einen Brief an das Forstamt der Gemeinde."
+  }
+ },
+ {
+  "id": "G-135",
+  "question_de": "Wen vertreten die Gewerkschaften in Deutschland?",
+  "options_de": {
+   "A": "große Unternehmen",
+   "B": "kleine Unternehmen",
+   "C": "Selbstständige",
+   "D": "Arbeitnehmerinnen und Arbeitnehmer"
+  }
+ },
+ {
+  "id": "G-136",
+  "question_de": "Sie gehen in Deutschland zum Arbeitsgericht bei ...",
+  "options_de": {
+   "A": "falscher Nebenkostenabrechnung.",
+   "B": "ungerechtfertigter Kündigung durch Ihre Chefin/Ihren Chef.",
+   "C": "Problemen mit den Nachbarinnen/Nachbarn.",
+   "D": "Schwierigkeiten nach einem Verkehrsunfall."
+  }
+ },
+ {
+  "id": "G-137",
+  "question_de": "Welches Gericht ist in Deutschland bei Konflikten in der Arbeitswelt zuständig?",
+  "options_de": {
+   "A": "das Familiengericht",
+   "B": "das Strafgericht",
+   "C": "das Arbeitsgericht",
+   "D": "das Amtsgericht"
+  }
+ },
+ {
+  "id": "G-138",
+  "question_de": "Was kann ich in Deutschland machen, wenn mir meine Arbeitgeberin/mein Arbeitgeber zu Unrecht gekündigt hat?",
+  "options_de": {
+   "A": "weiterarbeiten und freundlich zur Chefin/zum Chef sein",
+   "B": "ein Mahnverfahren gegen die Arbeitgeberin/den Arbeitgeber führen",
+   "C": "Kündigungsschutzklage erheben",
+   "D": "die Arbeitgeberin/den Arbeitgeber bei der Polizei anzeigen"
+  }
+ },
+ {
+  "id": "G-139",
+  "question_de": "Wann kommt es in Deutschland zu einem Prozess vor Gericht? Wenn jemand ...",
+  "options_de": {
+   "A": "zu einer anderen Religion übertritt.",
+   "B": "eine Straftat begangen hat und angeklagt wird.",
+   "C": "eine andere Meinung als die der Regierung vertritt.",
+   "D": "sein Auto falsch geparkt hat und es abgeschleppt wird."
+  }
+ },
+ {
+  "id": "G-140",
+  "question_de": "Was macht eine Schöffin/ein Schöffe in Deutschland? Sie/Er ...",
+  "options_de": {
+   "A": "entscheidet mit Richterinnen/Richtern über Schuld und Strafe.",
+   "B": "gibt Bürgerinnen/Bürgern rechtlichen Rat.",
+   "C": "stellt Urkunden aus.",
+   "D": "verteidigt die Angeklagte/den Angeklagten."
+  }
+ },
+ {
+  "id": "G-141",
+  "question_de": "Wer berät in Deutschland Personen bei Rechtsfragen und vertritt sie vor Gericht?",
+  "options_de": {
+   "A": "eine Rechtsanwältin/ein Rechtsanwalt",
+   "B": "eine Richterin/ein Richter",
+   "C": "eine Schöffin/ein Schöffe",
+   "D": "eine Staatsanwältin/ein Staatsanwalt"
+  }
+ },
+ {
+  "id": "G-142",
+  "question_de": "Was ist die Hauptaufgabe einer Richterin/eines Richters in Deutschland? Eine Richterin/ein Richter ...",
+  "options_de": {
+   "A": "vertritt Bürgerinnen und Bürger vor einem Gericht.",
+   "B": "arbeitet an einem Gericht und spricht Urteile.",
+   "C": "ändert Gesetze.",
+   "D": "betreut Jugendliche vor Gericht."
+  }
+ },
+ {
+  "id": "G-143",
+  "question_de": "Eine Richterin/ein Richter in Deutschland gehört zur ...",
+  "options_de": {
+   "A": "Judikative.",
+   "B": "Exekutive.",
+   "C": "Operative.",
+   "D": "Legislative."
+  }
+ },
+ {
+  "id": "G-144",
+  "question_de": "Eine Richterin/ein Richter gehört in Deutschland zur ...",
+  "options_de": {
+   "A": "vollziehenden Gewalt.",
+   "B": "rechtsprechenden Gewalt.",
+   "C": "planenden Gewalt.",
+   "D": "gesetzgebenden Gewalt."
+  }
+ },
+ {
+  "id": "G-145",
+  "question_de": "In Deutschland wird die Staatsgewalt geteilt. Für welche Staatsgewalt arbeitet eine Richterin/ein Richter? Für die ...",
+  "options_de": {
+   "A": "Judikative",
+   "B": "Exekutive",
+   "C": "Presse",
+   "D": "Legislative"
+  }
+ },
+ {
+  "id": "G-146",
+  "question_de": "Wie nennt man in Deutschland ein Verfahren vor einem Gericht?",
+  "options_de": {
+   "A": "Programm",
+   "B": "Prozedur",
+   "C": "Protokoll",
+   "D": "Prozess"
+  }
+ },
+ {
+  "id": "G-147",
+  "question_de": "Was ist die Arbeit einer Richterin/eines Richters in Deutschland?",
+  "options_de": {
+   "A": "Deutschland regieren",
+   "B": "Recht sprechen",
+   "C": "Pläne erstellen",
+   "D": "Gesetze erlassen"
+  }
+ },
+ {
+  "id": "G-148",
+  "question_de": "Was ist eine Aufgabe der Polizei in Deutschland?",
+  "options_de": {
+   "A": "das Land zu verteidigen",
+   "B": "die Bürgerinnen und Bürger abzuhören",
+   "C": "die Gesetze zu beschließen",
+   "D": "die Einhaltung von Gesetzen zu überwachen"
+  }
+ },
+ {
+  "id": "G-149",
+  "question_de": "Was ist ein Beispiel für antisemitisches Verhalten?",
+  "options_de": {
+   "A": "ein jüdisches Fest besuchen",
+   "B": "die israelische Regierung kritisieren",
+   "C": "den Holocaust leugnen",
+   "D": "gegen Juden Fußball spielen."
+  }
+ },
+ {
+  "id": "G-150",
+  "question_de": "Eine Gerichtsschöffin/ein Gerichtsschöffe in Deutschland ist ...",
+  "options_de": {
+   "A": "die Stellvertreterin/der Stellvertreter des Stadtoberhaupts.",
+   "B": "eine ehrenamtliche Richterin/ein ehrenamtlicher Richter.",
+   "C": "ein Mitglied eines Gemeinderats.",
+   "D": "eine Person, die Jura studiert hat."
+  }
+ },
+ {
+  "id": "G-151",
+  "question_de": "Wer baute die Mauer in Berlin?",
+  "options_de": {
+   "A": "Großbritannien",
+   "B": "die DDR",
+   "C": "die Bundesrepublik Deutschland",
+   "D": "die USA"
+  }
+ },
+ {
+  "id": "G-152",
+  "question_de": "Wann waren die Nationalsozialisten mit Adolf Hitler in Deutschland an der Macht?",
+  "options_de": {
+   "A": "1918 bis 1923",
+   "B": "1932 bis 1950",
+   "C": "1933 bis 1945",
+   "D": "1945 bis 1989"
+  }
+ },
+ {
+  "id": "G-153",
+  "question_de": "Was war am 8. Mai 1945?",
+  "options_de": {
+   "A": "Tod Adolf Hitlers",
+   "B": "Beginn des Berliner Mauerbaus",
+   "C": "Wahl von Konrad Adenauer zum Bundeskanzler",
+   "D": "Ende des Zweiten Weltkriegs in Europa"
+  }
+ },
+ {
+  "id": "G-154",
+  "question_de": "Wann war der Zweite Weltkrieg zu Ende?",
+  "options_de": {
+   "A": "1933",
+   "B": "1945",
+   "C": "1949",
+   "D": "1961"
+  }
+ },
+ {
+  "id": "G-155",
+  "question_de": "Wann waren die Nationalsozialisten in Deutschland an der Macht?",
+  "options_de": {
+   "A": "1888 bis 1918",
+   "B": "1921 bis 1934",
+   "C": "1933 bis 1945",
+   "D": "1949 bis 1963"
+  }
+ },
+ {
+  "id": "G-156",
+  "question_de": "In welchem Jahr wurde Hitler Reichskanzler?",
+  "options_de": {
+   "A": "1923",
+   "B": "1927",
+   "C": "1933",
+   "D": "1936"
+  }
+ },
+ {
+  "id": "G-157",
+  "question_de": "Die Nationalsozialisten mit Adolf Hitler errichteten 1933 in Deutschland ...",
+  "options_de": {
+   "A": "eine Diktatur.",
+   "B": "einen demokratischen Staat.",
+   "C": "eine Monarchie.",
+   "D": "ein Fürstentum."
+  }
+ },
+ {
+  "id": "G-158",
+  "question_de": "Das \"Dritte Reich\" war eine ...",
+  "options_de": {
+   "A": "Diktatur.",
+   "B": "Demokratie.",
+   "C": "Monarchie.",
+   "D": "Räterepublik."
+  }
+ },
+ {
+  "id": "G-159",
+  "question_de": "Was gab es in Deutschland nicht während der Zeit des Nationalsozialismus?",
+  "options_de": {
+   "A": "freie Wahlen",
+   "B": "Pressezensur",
+   "C": "willkürliche Verhaftungen",
+   "D": "Verfolgung von Juden"
+  }
+ },
+ {
+  "id": "G-160",
+  "question_de": "Welcher Krieg dauerte von 1939 bis 1945?",
+  "options_de": {
+   "A": "der Erste Weltkrieg",
+   "B": "der Zweite Weltkrieg",
+   "C": "der Vietnamkrieg",
+   "D": "der Golfkrieg"
+  }
+ },
+ {
+  "id": "G-161",
+  "question_de": "Was kennzeichnete den NS-Staat? Eine Politik ...",
+  "options_de": {
+   "A": "des staatlichen Rassismus",
+   "B": "der Meinungsfreiheit",
+   "C": "der allgemeinen Religionsfreiheit",
+   "D": "der Entwicklung der Demokratie"
+  }
+ },
+ {
+  "id": "G-162",
+  "question_de": "Claus Schenk Graf von Stauffenberg wurde bekannt durch ...",
+  "options_de": {
+   "A": "eine Goldmedaille bei den Olympischen Spielen 1936.",
+   "B": "den Bau des Reichstagsgebäudes.",
+   "C": "den Aufbau der Wehrmacht.",
+   "D": "das Attentat auf Hitler am 20. Juli 1944."
+  }
+ },
+ {
+  "id": "G-163",
+  "question_de": "In welchem Jahr zerstörten die Nationalsozialisten Synagogen und jüdische Geschäfte in Deutschland?",
+  "options_de": {
+   "A": "1925",
+   "B": "1930",
+   "C": "1938",
+   "D": "1945"
+  }
+ },
+ {
+  "id": "G-164",
+  "question_de": "Was passierte am 9. November 1938 in Deutschland?",
+  "options_de": {
+   "A": "Mit dem Angriff auf Polen beginnt der Zweite Weltkrieg.",
+   "B": "Die Nationalsozialisten verlieren eine Wahl und lösen den Reichstag auf.",
+   "C": "Jüdische Geschäfte und Synagogen werden durch Nationalsozialisten und ihre Anhänger zerstört.",
+   "D": "Hitler wird Reichspräsident und lässt alle Parteien verbieten."
+  }
+ },
+ {
+  "id": "G-165",
+  "question_de": "Wie hieß der erste Bundeskanzler der Bundesrepublik Deutschland?",
+  "options_de": {
+   "A": "Konrad Adenauer",
+   "B": "Kurt Georg Kiesinger",
+   "C": "Helmut Schmidt",
+   "D": "Willy Brandt"
+  }
+ },
+ {
+  "id": "G-166",
+  "question_de": "Bei welchen Demonstrationen in Deutschland riefen die Menschen \"Wir sind das Volk\"?",
+  "options_de": {
+   "A": "beim Arbeiteraufstand 1953 in der DDR",
+   "B": "bei den Demonstrationen 1968 in der Bundesrepublik Deutschland",
+   "C": "bei den Anti-Atomkraft-Demonstrationen 1985 in der Bundesrepublik Deutschland",
+   "D": "bei den Montagsdemonstrationen 1989 in der DDR"
+  }
+ },
+ {
+  "id": "G-167",
+  "question_de": "Welche Länder wurden nach dem Zweiten Weltkrieg in Deutschland als \"Alliierte Besatzungsmächte\" bezeichnet?",
+  "options_de": {
+   "A": "Sowjetunion, Großbritannien, Polen, Schweden",
+   "B": "Frankreich, Sowjetunion, Italien, Japan",
+   "C": "USA, Sowjetunion, Spanien, Portugal",
+   "D": "USA, Sowjetunion, Großbritannien, Frankreich"
+  }
+ },
+ {
+  "id": "G-168",
+  "question_de": "Welches Land war keine \"Alliierte Besatzungsmacht\" in Deutschland?",
+  "options_de": {
+   "A": "USA",
+   "B": "Sowjetunion",
+   "C": "Frankreich",
+   "D": "Japan"
+  }
+ },
+ {
+  "id": "G-169",
+  "question_de": "Wann wurde die Bundesrepublik Deutschland gegründet?",
+  "options_de": {
+   "A": "1939",
+   "B": "1945",
+   "C": "1949",
+   "D": "1951"
+  }
+ },
+ {
+  "id": "G-170",
+  "question_de": "Was gab es während der Zeit des Nationalsozialismus in Deutschland?",
+  "options_de": {
+   "A": "das Verbot von Parteien",
+   "B": "das Recht zur freien Entfaltung der Persönlichkeit",
+   "C": "Pressefreiheit",
+   "D": "den Schutz der Menschenwürde"
+  }
+ },
+ {
+  "id": "G-171",
+  "question_de": "Soziale Marktwirtschaft bedeutet, die Wirtschaft ...",
+  "options_de": {
+   "A": "steuert sich allein nach Angebot und Nachfrage.",
+   "B": "wird vom Staat geplant und gesteuert, Angebot und Nachfrage werden nicht berücksichtigt.",
+   "C": "richtet sich nach der Nachfrage im Ausland.",
+   "D": "richtet sich nach Angebot und Nachfrage, aber der Staat sorgt für einen sozialen Ausgleich."
+  }
+ },
+ {
+  "id": "G-172",
+  "question_de": "In welcher Besatzungszone wurde die DDR gegründet? In der ...",
+  "options_de": {
+   "A": "amerikanischen Besatzungszone",
+   "B": "französischen Besatzungszone",
+   "C": "britischen Besatzungszone",
+   "D": "sowjetischen Besatzungszone"
+  }
+ },
+ {
+  "id": "G-173",
+  "question_de": "Die Bundesrepublik Deutschland ist ein Gründungsmitglied ...",
+  "options_de": {
+   "A": "des Nordatlantikpakts (NATO).",
+   "B": "der Vereinten Nationen (VN).",
+   "C": "der Europäischen Union (EU).",
+   "D": "des Warschauer Pakts."
+  }
+ },
+ {
+  "id": "G-174",
+  "question_de": "Wann wurde die DDR gegründet?",
+  "options_de": {
+   "A": "1947",
+   "B": "1949",
+   "C": "1953",
+   "D": "1956"
+  }
+ },
+ {
+  "id": "G-175",
+  "question_de": "Wie viele Besatzungszonen gab es in Deutschland nach dem Zweiten Weltkrieg?",
+  "options_de": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  }
+ },
+ {
+  "id": "G-176",
+  "question_de": "Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?",
+  "options_de": {
+   "A": "1=Großbritannien, 2=Sowjetunion, 3=Frankreich, 4=USA",
+   "B": "1=Sowjetunion, 2=Großbritannien, 3=USA, 4=Frankreich",
+   "C": "1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich",
+   "D": "1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich"
+  }
+ },
+ {
+  "id": "G-177",
+  "question_de": "Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt?",
+  "options_de": {
+   "A": "München",
+   "B": "Berlin",
+   "C": "Dresden",
+   "D": "Frankfurt/Oder"
+  }
+ },
+ {
+  "id": "G-178",
+  "question_de": "Vom Juni 1948 bis zum Mai 1949 wurden die Bürgerinnen und Bürger von West-Berlin durch eine Luftbrücke versorgt. Welcher Umstand war dafür verantwortlich?",
+  "options_de": {
+   "A": "Für Frankreich war eine Versorgung der West-Berliner Bevölkerung mit dem Flugzeug kostengünstiger.",
+   "B": "Die amerikanischen Soldatinnen und Soldaten hatten beim Landtransport Angst vor Überfällen.",
+   "C": "Für Großbritannien war die Versorgung über die Luftbrücke schneller.",
+   "D": "Die Sowjetunion unterbrach den gesamten Verkehr auf dem Landwege."
+  }
+ },
+ {
+  "id": "G-179",
+  "question_de": "Wie endete der Zweite Weltkrieg in Europa offiziell?",
+  "options_de": {
+   "A": "mit dem Tod Adolf Hitlers",
+   "B": "durch die bedingungslose Kapitulation Deutschlands",
+   "C": "mit dem Rückzug der Deutschen aus den besetzten Gebieten",
+   "D": "durch eine Revolution in Deutschland"
+  }
+ },
+ {
+  "id": "G-180",
+  "question_de": "Der erste Bundeskanzler der Bundesrepublik Deutschland war ...",
+  "options_de": {
+   "A": "Ludwig Erhard.",
+   "B": "Willy Brandt.",
+   "C": "Konrad Adenauer.",
+   "D": "Gerhard Schröder."
+  }
+ },
+ {
+  "id": "G-181",
+  "question_de": "Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken? © Bundesregierung/Engelbert Reineke",
+  "options_de": {
+   "A": "Er hat sich den ehemaligen Alliierten unterworfen.",
+   "B": "Er bat Polen und die polnischen Juden um Vergebung.",
+   "C": "Er zeigte seine Demut vor dem Warschauer Pakt.",
+   "D": "Er sprach ein Gebet am Grab des Unbekannten Soldaten."
+  }
+ },
+ {
+  "id": "G-182",
+  "question_de": "Wie heißt das jüdische Gebetshaus?",
+  "options_de": {
+   "A": "Basilika",
+   "B": "Moschee",
+   "C": "Synagoge",
+   "D": "Kirche"
+  }
+ },
+ {
+  "id": "G-183",
+  "question_de": "Wann war in der Bundesrepublik Deutschland das \"Wirtschaftswunder\"?",
+  "options_de": {
+   "A": "40er Jahre",
+   "B": "50er Jahre",
+   "C": "70er Jahre",
+   "D": "80er Jahre"
+  }
+ },
+ {
+  "id": "G-184",
+  "question_de": "Auf welcher rechtlichen Grundlage wurde der Staat Israel gegründet?",
+  "options_de": {
+   "A": "eine Resolution der Vereinten Nationen",
+   "B": "ein Beschluss des Zionistenkongresses",
+   "C": "ein Vorschlag der Bundesregierung",
+   "D": "ein Vorschlag der UdSSR"
+  }
+ }
+]

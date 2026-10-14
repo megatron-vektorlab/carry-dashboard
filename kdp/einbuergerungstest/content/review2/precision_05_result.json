@@ -1,0 +1,34 @@
+[
+  {
+    "id": "NW-10",
+    "field": "expl_bks",
+    "old": "Ministre pravosuđa, financija i unutarnjih poslova ima svaka pokrajina jer upravlja npr. sudovima, policijom i svojim proračunom.",
+    "new": "Ova pokrajina ipak ima ministre pravosuđa, financija i unutarnjih poslova jer upravlja npr. sudovima, policijom i svojim proračunom.",
+    "reason": "\"svaka pokrajina\" je preširoko: u gradovima-pokrajinama Berlinu, Hamburgu i Bremenu članovi vlade (Senat) zovu se senatori, a ne ministri (npr. Senatorin für Inneres u Berlinu).",
+    "severity": "medium"
+  },
+  {
+    "id": "RP-04",
+    "field": "expl_bks",
+    "old": "U Porajnju-Falačkoj na lokalnim izborima smije se glasati tek s navršenih 18 godina.",
+    "new": "U Porajnju-Falačkoj na lokalnim izborima smije se glasati tek s navršenih 18 godina (stanje: 2026.; o snižavanju na 16 raspravlja se).",
+    "reason": "Točno za 2026., ali pravilo nije trajno: granica od 18 godina stoji u ustavu Porajnja-Falačke, a pokušaj snižavanja na 16 propao je 2023. samo zbog nedostatka dvotrećinske većine; potrebna je datirana formulacija.",
+    "severity": "medium"
+  },
+  {
+    "id": "SL-04",
+    "field": "expl_bks",
+    "old": "U Saarlandu se na lokalnim izborima smije glasati s navršenih 18 godina.",
+    "new": "U Saarlandu se na lokalnim izborima smije glasati s navršenih 18 godina (stanje: 2026.).",
+    "reason": "Točno prema Kommunalwahlgesetz Saarland (stanje 2026.), ali Saarland je jedna od rijetkih pokrajina s granicom 18 i o snižavanju na 16 raspravlja se; pravilo se razlikuje po pokrajinama i može se promijeniti, pa treba datirati.",
+    "severity": "medium"
+  },
+  {
+    "id": "SN-04",
+    "field": "expl_bks",
+    "old": "U Saskoj se na lokalnim izborima (Kommunalwahlen) smije glasati od 18. godine.",
+    "new": "U Saskoj se na lokalnim izborima (Kommunalwahlen) smije glasati od 18. godine (stanje: 2026.).",
+    "reason": "Točno za 2026. (Sächsisches Kommunalwahlgesetz), ali to je pokrajinsko pravilo koje se razlikuje po pokrajinama i u većini ih je već spušteno na 16; treba ga datirati, ne predstaviti kao trajno.",
+    "severity": "medium"
+  }
+]

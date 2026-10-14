@@ -1,0 +1,554 @@
+[
+ {
+  "id": "G-185",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-186",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-187",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-188",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-189",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-190",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-191",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-192",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-193",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-194",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-195",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-196",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-197",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-198",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-199",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-200",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-201",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-202",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-203",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-204",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-205",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-206",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-207",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-208",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-209",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": "Objašnjenje opisuje grb DDR-a, ali nigdje ne kaže koja je slika točna (Slika 1–4); dodati npr. „… – to je Slika N.” da čitatelj može povezati objašnjenje s odgovorom."
+ },
+ {
+  "id": "G-210",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-211",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-212",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-213",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-214",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-215",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-216",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-217",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-218",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-219",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-220",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-221",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-222",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-223",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-224",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-225",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-226",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": "Objašnjenje opisuje zastavu EU-a, ali ne navodi broj slike (Slika 1–4); dodati npr. „… – to je Slika N.”"
+ },
+ {
+  "id": "G-227",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-228",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-229",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-230",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-231",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-232",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-233",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": "Nedosljedno i nespretno („zemlja … susjedna zemlja”) za isto njemačko pitanje kao G-222/223/227/229; uskladiti: „Koja je zemlja susjed Njemačke?”"
+ },
+ {
+  "id": "G-234",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-235",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-236",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-237",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-238",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-239",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-240",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-241",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-242",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-243",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": "U objašnjenju „najkasnije 48 sati prije najave” je nejasno odmah iza „prijaviti” (zvuči kao prije same prijave); predlažem: „najkasnije 48 sati prije nego što se javno najavi”."
+ },
+ {
+  "id": "G-244",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-245",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-246",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-247",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-248",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-249",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-250",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-251",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-252",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-253",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-254",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-255",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-256",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-257",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-258",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-259",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-260",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-261",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-262",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-263",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-264",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-265",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-266",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-267",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": "Opcija D je dvosmislena: „Potražit će kćeri drugog muškarca” čita se kao „tražit će kćeri (množina) drugog muškarca”; njem. „Sie suchen einen anderen Mann für die Tochter” → „Potražit će drugog muškarca za svoju kćer.”"
+ },
+ {
+  "id": "G-268",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-269",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-270",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-271",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Opcija B „okititi božićno drvce (jelu)” ponavlja riječ „Božić” iz pitanja i time otkriva odgovor; njem. samo „einen Tannenbaum schmücken” → „okititi jelku (Tannenbaum)”."
+ },
+ {
+  "id": "G-272",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-273",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-274",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-275",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-276",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ }
+]

@@ -1,0 +1,554 @@
+[
+  {
+    "id": "G-001",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-002",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-003",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-004",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-005",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-006",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": "Objašnjenje: „Tada je zamišljen kao privremeno rješenje…” gramatički se odnosi na 1990. (netočno; privremenost je iz 1949.) → „Pri donošenju 1949. zamišljen je kao privremeno rješenje do ujedinjenja, pa se namjerno nije zvao „ustav”.”; usto samo D ima veliko slovo i odaje odgovor → „Narodni zakon (Volksgesetz)”, „Savezni zakon (Bundesgesetz)”, „Njemački zakon (Deutsches Gesetz)”."
+  },
+  {
+    "id": "G-007",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-008",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-009",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-010",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-011",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": "Samo točna opcija A („Temeljni zakon”) ima veliko slovo i time odaje odgovor → ujednačiti: „Savezni ustav (Bundesverfassung)”, „Zakonik (Gesetzbuch)”, „Ustavni ugovor (Verfassungsvertrag)”."
+  },
+  {
+    "id": "G-012",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-013",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-014",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-015",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": "Objašnjenje netočno: „iznimka je samo rad u zatvoru” – čl. 12. dopušta i opće javne obveze jednake za sve → „Prisilni rad dopušten je samo pri lišenju slobode koje je naložio sud; iznimka su i opće javne obveze jednake za sve.”"
+  },
+  {
+    "id": "G-016",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-017",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-018",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-019",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-020",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-021",
+    "answer_from_translation": "?",
+    "explanation_supports": "?",
+    "issues": ""
+  },
+  {
+    "id": "G-022",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-023",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-024",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-025",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-026",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-027",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-028",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-029",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-030",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-031",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-032",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-033",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-034",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-035",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-036",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-037",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-038",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-039",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-040",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-041",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-042",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-043",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-044",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-045",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-046",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-047",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-048",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-049",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-050",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-051",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-052",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-053",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-054",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-055",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-056",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-057",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-058",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-059",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-060",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-061",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-062",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-063",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-064",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-065",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-066",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-067",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-068",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-069",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-070",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-071",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-072",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": "Objašnjenje izostavlja neposrednog prethodnika pa sugerira da je Merkel bila prije Merza → dodati: „Neposredno prije njega kancelar je bio Olaf Scholz (SPD, 2021.–2025.).”"
+  },
+  {
+    "id": "G-073",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-074",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": "Opcija D: „Savezni sud” je netočan naziv za Bundesgerichtshof → „Savezni vrhovni sud (Bundesgerichtshof)”."
+  },
+  {
+    "id": "G-075",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-076",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-077",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-078",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-079",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-080",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-081",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-082",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  },
+  {
+    "id": "G-083",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-084",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-085",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-086",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-087",
+    "answer_from_translation": "B",
+    "explanation_supports": "B",
+    "issues": ""
+  },
+  {
+    "id": "G-088",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-089",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-090",
+    "answer_from_translation": "A",
+    "explanation_supports": "A",
+    "issues": ""
+  },
+  {
+    "id": "G-091",
+    "answer_from_translation": "C",
+    "explanation_supports": "C",
+    "issues": ""
+  },
+  {
+    "id": "G-092",
+    "answer_from_translation": "D",
+    "explanation_supports": "D",
+    "issues": ""
+  }
+]

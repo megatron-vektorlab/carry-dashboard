@@ -1,0 +1,1106 @@
+[
+ {
+  "id": "G-185",
+  "q_bks": "Što je označavao izraz „željezna zavjesa”? Odvajanje …",
+  "options": {
+   "A": "Varšavskog pakta od Zapada",
+   "B": "sjeverne Njemačke od južne Njemačke",
+   "C": "nacističke Njemačke od saveznika",
+   "D": "Europe od SAD-a"
+  },
+  "expl_bks": "„Željezna zavjesa” bila je slika za strogo zatvorenu granicu između komunističkih zemalja istočne Europe, predvođenih Sovjetskim Savezom (Varšavski pakt), i država Zapada. Izraz je 1946. proslavio britanski političar Winston Churchill. Ta granica s bodljikavom žicom i minama prolazila je i kroz sredinu Njemačke.",
+  "merksatz_de": "Der Eiserne Vorhang trennte den Ostblock vom Westen."
+ },
+ {
+  "id": "G-186",
+  "q_bks": "Godine 1953. u DDR-u je izbio ustanak, na koji je u Saveznoj Republici Njemačkoj dugo podsjećao jedan praznik. Kada je to bilo?",
+  "options": {
+   "A": "1. svibnja (1. 5.)",
+   "B": "17. lipnja (17. 6.)",
+   "C": "20. srpnja (20. 7.)",
+   "D": "9. studenoga (9. 11.)"
+  },
+  "expl_bks": "Dana 17. lipnja 1953. radnici u DDR-u (Njemačka Demokratska Republika, Istočna Njemačka) stupili su u štrajk protiv viših radnih normi, a prosvjedi su prerasli u narodni ustanak. Sovjetski tenkovi ugušili su ga. U Zapadnoj Njemačkoj 17. lipnja bio je praznik sve do 1990., a danas se jedinstvo slavi 3. listopada.",
+  "merksatz_de": "Am 17. Juni 1953 gab es einen Aufstand in der DDR."
+ },
+ {
+  "id": "G-187",
+  "q_bks": "Koja je njemačka država imala crno-crveno-zlatnu zastavu s čekićem, šestarom i vijencem od klasja?",
+  "options": {
+   "A": "Pruska",
+   "B": "Savezna Republika Njemačka",
+   "C": "„Treći Reich”",
+   "D": "DDR"
+  },
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) od 1959. imao je crno-crveno-zlatnu zastavu s grbom u sredini. Čekić je bio znak radnika, šestar znak inteligencije, a klasje znak seljaka. Savezna Republika Njemačka ima iste tri boje, ali bez tog znaka.",
+  "merksatz_de": "Die DDR-Flagge hatte Hammer, Zirkel und Ährenkranz."
+ },
+ {
+  "id": "G-188",
+  "q_bks": "Koje je godine izgrađen zid u Berlinu?",
+  "options": {
+   "A": "1953.",
+   "B": "1956.",
+   "C": "1959.",
+   "D": "1961."
+  },
+  "expl_bks": "Izgradnja Berlinskog zida počela je u noći 13. kolovoza 1961. Vlast DDR-a htjela je tako zaustaviti bijeg stanovnika na Zapad, jer je do tada iz DDR-a otišlo više od dva milijuna ljudi. Zid je dijelio grad 28 godina, sve do 9. studenoga 1989.",
+  "merksatz_de": "Die Berliner Mauer wurde 1961 gebaut."
+ },
+ {
+  "id": "G-189",
+  "q_bks": "Kada je DDR izgradio zid u Berlinu?",
+  "options": {
+   "A": "1919.",
+   "B": "1933.",
+   "C": "1961.",
+   "D": "1990."
+  },
+  "expl_bks": "DDR je Berlinski zid izgradio 1961., točnije 13. kolovoza. Zid je okružio Zapadni Berlin i spriječio ljude da bježe iz DDR-a na Zapad. Ostale godine pripadaju drugim događajima: 1933. nacisti su došli na vlast, a 1990. Njemačka je ponovno ujedinjena.",
+  "merksatz_de": "1961 baute die DDR die Mauer in Berlin."
+ },
+ {
+  "id": "G-190",
+  "q_bks": "Što znači kratica DDR?",
+  "options": {
+   "A": "Dritter Deutscher Rundfunk (Treći njemački radio)",
+   "B": "Die Deutsche Republik (Njemačka Republika)",
+   "C": "Dritte Deutsche Republik (Treća Njemačka Republika)",
+   "D": "Deutsche Demokratische Republik (Njemačka Demokratska Republika)"
+  },
+  "expl_bks": "DDR je kratica za Deutsche Demokratische Republik, u prijevodu Njemačka Demokratska Republika ili Istočna Njemačka. Ta je država postojala od 1949. do 1990. Iako u imenu ima riječ „demokratska”, DDR je bio diktatura: vladala je SED (vladajuća stranka u DDR-u), a slobodnih izbora nije bilo.",
+  "merksatz_de": "DDR heißt Deutsche Demokratische Republik."
+ },
+ {
+  "id": "G-191",
+  "q_bks": "Kada je zid u Berlinu otvoren za sve?",
+  "options": {
+   "A": "1987.",
+   "B": "1989.",
+   "C": "1992.",
+   "D": "1995."
+  },
+  "expl_bks": "Navečer 9. studenoga 1989. otvoreni su granični prijelazi u Berlinu i ljudi iz Istočnog Berlina mogli su slobodno prijeći na Zapad. Taj se događaj naziva pad Berlinskog zida. Prethodili su mu veliki mirni prosvjedi građana DDR-a. Godinu dana kasnije, 1990., Njemačka je ponovno ujedinjena.",
+  "merksatz_de": "Im November 1989 wurde die Mauer in Berlin geöffnet."
+ },
+ {
+  "id": "G-192",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options": {
+   "A": "Brandenburg",
+   "B": "Bavarska",
+   "C": "Saarland",
+   "D": "Hessen"
+  },
+  "expl_bks": "Brandenburg okružuje Berlin, a glavni grad mu je Potsdam. Nakon 1945. bio je u sovjetskoj okupacijskoj zoni, a od 1949. na području DDR-a. Bavarska, Saarland i Hessen pripadali su Zapadnoj Njemačkoj. Pet novih saveznih pokrajina su Brandenburg, Mecklenburg-Zapadno Pomorje, Saska, Saska-Anhalt i Tiringija.",
+  "merksatz_de": "Brandenburg gehörte früher zur DDR."
+ },
+ {
+  "id": "G-193",
+  "q_bks": "Od 1961. do 1989. Berlin je bio …",
+  "options": {
+   "A": "bez gradonačelnika.",
+   "B": "zasebna država.",
+   "C": "podijeljen zidom.",
+   "D": "dostupan samo zrakoplovom."
+  },
+  "expl_bks": "Od 13. kolovoza 1961. do 9. studenoga 1989. Berlinski zid dijelio je grad na Istočni i Zapadni Berlin. Mnoge obitelji bile su razdvojene, a više od stotinu ljudi poginulo je pri pokušaju bijega. Zapadni Berlin bio je dostupan i cestom i vlakom, ne samo zrakoplovom.",
+  "merksatz_de": "Von 1961 bis 1989 teilte eine Mauer Berlin."
+ },
+ {
+  "id": "G-194",
+  "q_bks": "Dana 3. listopada u Njemačkoj se slavi Dan …",
+  "options": {
+   "A": "njemačkog jedinstva.",
+   "B": "njemačke nacije.",
+   "C": "njemačkih saveznih pokrajina.",
+   "D": "njemačkih gradova."
+  },
+  "expl_bks": "Dan njemačkog jedinstva (Tag der Deutschen Einheit) slavi se 3. listopada. Na taj je dan 1990. DDR pristupio Saveznoj Republici Njemačkoj i zemlja je nakon 41 godine podjele ponovno ujedinjena. To je državni praznik i neradni dan u cijeloj Njemačkoj.",
+  "merksatz_de": "Am 3. Oktober feiert man den Tag der Deutschen Einheit."
+ },
+ {
+  "id": "G-195",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options": {
+   "A": "Hessen",
+   "B": "Saska-Anhalt",
+   "C": "Sjeverna Rajna-Vestfalija",
+   "D": "Saarland"
+  },
+  "expl_bks": "Saska-Anhalt (Sachsen-Anhalt) leži na istoku Njemačke, a glavni grad joj je Magdeburg. Od 1949. do 1990. njezino je područje bilo dio DDR-a. Hessen, Sjeverna Rajna-Vestfalija i Saarland pripadali su Zapadnoj Njemačkoj. Pet novih pokrajina: Brandenburg, Mecklenburg-Zapadno Pomorje, Saska, Saska-Anhalt i Tiringija.",
+  "merksatz_de": "Sachsen-Anhalt lag früher auf dem Gebiet der DDR."
+ },
+ {
+  "id": "G-196",
+  "q_bks": "Zašto se razdoblje u jesen 1989. u DDR-u naziva „Die Wende” (preokret)? U to se vrijeme DDR politički promijenio …",
+  "options": {
+   "A": "iz diktature u demokraciju.",
+   "B": "iz liberalnog tržišnog gospodarstva u socijalizam.",
+   "C": "iz monarhije u socijaldemokraciju.",
+   "D": "iz vjerske države u komunističku državu."
+  },
+  "expl_bks": "„Die Wende” znači preokret. U jesen 1989. mnogo je ljudi u DDR-u mirno prosvjedovalo, npr. na ponedjeljnim demonstracijama u Leipzigu. Vlast stranke SED (vladajuća stranka u DDR-u) se srušila, a u ožujku 1990. održani su prvi slobodni izbori. Tako je DDR iz diktature postao demokracija.",
+  "merksatz_de": "Die Wende 1989 führte die DDR von der Diktatur zur Demokratie."
+ },
+ {
+  "id": "G-197",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options": {
+   "A": "Tiringija",
+   "B": "Hessen",
+   "C": "Bavarska",
+   "D": "Bremen"
+  },
+  "expl_bks": "Tiringija (Thüringen) nalazi se u sredini Njemačke, a glavni grad joj je Erfurt. Poznati gradovi su i Weimar i Jena. Od 1949. do 1990. to je područje pripadalo DDR-u. Hessen, Bavarska i Bremen bili su u Zapadnoj Njemačkoj. Tiringija je jedna od pet novih saveznih pokrajina.",
+  "merksatz_de": "Thüringen war früher ein Teil der DDR."
+ },
+ {
+  "id": "G-198",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options": {
+   "A": "Bavarska",
+   "B": "Donja Saska",
+   "C": "Saska",
+   "D": "Baden-Württemberg"
+  },
+  "expl_bks": "Saska (Sachsen) leži na istoku Njemačke, a glavni grad joj je Dresden. U Leipzigu u Saskoj 1989. počele su velike ponedjeljne demonstracije protiv vlasti DDR-a. Pazite na sličan naziv: Donja Saska (Niedersachsen) nalazi se na sjeverozapadu i pripadala je Zapadnoj Njemačkoj.",
+  "merksatz_de": "Auch Sachsen lag früher auf dem Gebiet der DDR."
+ },
+ {
+  "id": "G-199",
+  "q_bks": "Kraticom „Stasi” u DDR-u se označavalo …",
+  "options": {
+   "A": "parlament.",
+   "B": "Ministarstvo državne sigurnosti.",
+   "C": "jednu vladajuću stranku.",
+   "D": "Ministarstvo narodnog obrazovanja."
+  },
+  "expl_bks": "„Stasi” je skraćenica od „Staatssicherheit” (državna sigurnost). Tako se zvalo Ministarstvo državne sigurnosti DDR-a. Stasi je bila tajna policija koja je nadzirala, prisluškivala i progonila vlastite građane. Parlament DDR-a zvao se Volkskammer, a vladajuća stranka bila je SED.",
+  "merksatz_de": "Die Stasi war das Ministerium für Staatssicherheit der DDR."
+ },
+ {
+  "id": "G-200",
+  "q_bks": "Koja je današnja njemačka savezna pokrajina prije pripadala području DDR-a?",
+  "options": {
+   "A": "Hessen",
+   "B": "Schleswig-Holstein",
+   "C": "Mecklenburg-Zapadno Pomorje",
+   "D": "Saarland"
+  },
+  "expl_bks": "Mecklenburg-Zapadno Pomorje (Mecklenburg-Vorpommern) leži na sjeveroistoku, uz Baltičko more, a glavni grad mu je Schwerin. To je područje od 1949. do 1990. pripadalo DDR-u. Schleswig-Holstein također leži na moru, ali je bio dio Zapadne Njemačke, kao i Hessen i Saarland.",
+  "merksatz_de": "Mecklenburg-Vorpommern gehörte früher zur DDR."
+ },
+ {
+  "id": "G-201",
+  "q_bks": "Koji popis sadrži samo savezne pokrajine koje su pripadale području bivšeg DDR-a?",
+  "options": {
+   "A": "Donja Saska, Sjeverna Rajna-Vestfalija, Hessen, Schleswig-Holstein, Brandenburg",
+   "B": "Mecklenburg-Zapadno Pomorje, Brandenburg, Saska, Saska-Anhalt, Tiringija",
+   "C": "Bavarska, Baden-Württemberg, Porajnje-Falačka, Tiringija, Saska",
+   "D": "Saska, Tiringija, Hessen, Donja Saska, Brandenburg"
+  },
+  "expl_bks": "Na području bivšeg DDR-a danas je pet saveznih pokrajina: Mecklenburg-Zapadno Pomorje, Brandenburg, Saska, Saska-Anhalt i Tiringija. Zovu se i „nove savezne pokrajine”. Svi ostali popisi sadrže barem jednu zapadnu pokrajinu, npr. Hessen, Bavarsku ili Donju Sasku.",
+  "merksatz_de": "Neue Bundesländer: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen."
+ },
+ {
+  "id": "G-202",
+  "q_bks": "Kome je DDR pripadao u „hladnom ratu”?",
+  "options": {
+   "A": "zapadnim silama",
+   "B": "Varšavskom paktu",
+   "C": "NATO-u",
+   "D": "nesvrstanim državama"
+  },
+  "expl_bks": "U hladnom ratu svijet je bio podijeljen u dva bloka. DDR je pripadao istočnom bloku predvođenom Sovjetskim Savezom i bio je član Varšavskog pakta. Savezna Republika Njemačka bila je u NATO-u, sa zapadnim silama. Nesvrstane države, među njima i Jugoslavija, nisu pripadale nijednom bloku.",
+  "merksatz_de": "Im Kalten Krieg gehörte die DDR zum Warschauer Pakt."
+ },
+ {
+  "id": "G-203",
+  "q_bks": "Kako se zvao gospodarski sustav DDR-a?",
+  "options": {
+   "A": "tržišno gospodarstvo",
+   "B": "plansko gospodarstvo",
+   "C": "ponuda i potražnja",
+   "D": "kapitalizam"
+  },
+  "expl_bks": "U DDR-u je država planirala gotovo cijelo gospodarstvo: što će tvornice proizvoditi, koliko i po kojoj cijeni. Planovi su se donosili najčešće za pet godina (petoljetka). Posljedica su bile česte nestašice robe. Savezna Republika Njemačka ima socijalno tržišno gospodarstvo.",
+  "merksatz_de": "Die DDR hatte eine Planwirtschaft."
+ },
+ {
+  "id": "G-204",
+  "q_bks": "Kako su Savezna Republika Njemačka i DDR postali jedna država?",
+  "options": {
+   "A": "Savezna Republika okupirala je DDR.",
+   "B": "Današnjih pet istočnih saveznih pokrajina pristupilo je Saveznoj Republici Njemačkoj.",
+   "C": "Zapadne savezne pokrajine pristupile su DDR-u.",
+   "D": "DDR je okupirao Saveznu Republiku Njemačku."
+  },
+  "expl_bks": "Nakon prvih slobodnih izbora 1990. parlament DDR-a odlučio je pristupiti Saveznoj Republici Njemačkoj prema članku 23. Temeljnog zakona (njemački ustav). Dana 3. listopada 1990. pet istočnih pokrajina postalo je dio Savezne Republike. Nije bilo okupacije: ujedinjenje je bilo mirno i dobrovoljno.",
+  "merksatz_de": "1990 traten die östlichen Bundesländer der Bundesrepublik bei."
+ },
+ {
+  "id": "G-205",
+  "q_bks": "Pristupanjem DDR-a Saveznoj Republici Njemačkoj nove savezne pokrajine sada pripadaju i …",
+  "options": {
+   "A": "Europskoj uniji.",
+   "B": "Varšavskom paktu.",
+   "C": "OPEC-u.",
+   "D": "Europskoj obrambenoj zajednici."
+  },
+  "expl_bks": "Savezna Republika Njemačka potpisala je 1957. Rimske ugovore i od početka je bila članica Europske ekonomske zajednice (EEZ), iz koje je nastala Europska unija. Kad su istočne pokrajine 1990. pristupile Saveznoj Republici, postale su i dio te zajednice. Varšavski pakt raspušten je 1991.",
+  "merksatz_de": "Durch die Einheit gehören die neuen Bundesländer auch zur EU."
+ },
+ {
+  "id": "G-206",
+  "q_bks": "Na što podsjećaju takozvani „Stolpersteine” (kamenčići spoticanja) u Njemačkoj?",
+  "options": {
+   "A": "na poznate njemačke političare",
+   "B": "na žrtve nacionalsocijalizma",
+   "C": "na poginule u prometu",
+   "D": "na poznate židovske glazbenike"
+  },
+  "expl_bks": "„Stolpersteine” su male mjedene pločice u pločniku ispred kuća u kojima su živjeli ljudi koje su nacisti progonili, deportirali ili ubili. Na pločici su ime, godina rođenja i sudbina te osobe. Umjetnik Gunter Demnig postavlja ih od 1990-ih godina, a danas ih ima u mnogim gradovima Europe.",
+  "merksatz_de": "Stolpersteine erinnern an die Opfer des Nationalsozialismus."
+ },
+ {
+  "id": "G-207",
+  "q_bks": "U kojem je vojnom savezu DDR bio član?",
+  "options": {
+   "A": "u NATO-u",
+   "B": "u Rajnskom savezu",
+   "C": "u Varšavskom paktu",
+   "D": "u Europskom savezu"
+  },
+  "expl_bks": "Varšavski pakt bio je vojni savez Sovjetskog Saveza i socijalističkih zemalja istočne Europe. Osnovan je 1955., a DDR je bio član od početka. Zapadna Njemačka iste je godine ušla u NATO. Rajnski savez (Rheinbund) postojao je mnogo ranije, u Napoleonovo doba.",
+  "merksatz_de": "Die DDR war Mitglied im Warschauer Pakt."
+ },
+ {
+  "id": "G-208",
+  "q_bks": "Što je bila „Stasi”?",
+  "options": {
+   "A": "tajna služba u „Trećem Reichu”",
+   "B": "poznato njemačko spomen-mjesto",
+   "C": "tajna služba DDR-a",
+   "D": "njemački sportski klub tijekom Drugog svjetskog rata"
+  },
+  "expl_bks": "Stasi (Ministarstvo državne sigurnosti) bila je tajna služba i tajna policija DDR-a. Imala je desetke tisuća zaposlenih i mnogo tajnih doušnika koji su uhodili susjede, kolege, pa čak i članove obitelji. Pazite na zamku: tajna policija u „Trećem Reichu” zvala se Gestapo, a ne Stasi.",
+  "merksatz_de": "Die Stasi war der Geheimdienst der DDR."
+ },
+ {
+  "id": "G-209",
+  "q_bks": "Koji je bio grb Njemačke Demokratske Republike?",
+  "options": {
+   "A": "Slika 1",
+   "B": "Slika 2",
+   "C": "Slika 3",
+   "D": "Slika 4"
+  },
+  "expl_bks": "Grb DDR-a: čekić i šestar na crvenoj podlozi, okruženi vijencem od klasja s crno-crveno-zlatnom trakom. Čekić je simbol radnika, šestar inteligencije, a klasje seljaka. Isti se znak od 1959. nalazio i na zastavi DDR-a. Grb Savezne Republike Njemačke je crni orao.",
+  "merksatz_de": "Das DDR-Wappen zeigte Hammer, Zirkel und Ährenkranz."
+ },
+ {
+  "id": "G-210",
+  "q_bks": "Što se dogodilo 17. lipnja 1953. u DDR-u?",
+  "options": {
+   "A": "svečano pristupanje Varšavskom paktu",
+   "B": "štrajkovi u cijeloj zemlji i narodni ustanak",
+   "C": "1. kongres stranke SED",
+   "D": "prvi posjet Fidela Castra"
+  },
+  "expl_bks": "Dana 17. lipnja 1953. radnici su štrajkali u cijelom DDR-u, a iz štrajkova se razvio narodni ustanak. Ljudi su tražili niže radne norme, slobodne izbore i ostavku vlade. Sovjetska vojska ugušila je ustanak tenkovima, a mnogi su ljudi ubijeni ili uhićeni.",
+  "merksatz_de": "Am 17. Juni 1953 streikten viele Menschen in der DDR."
+ },
+ {
+  "id": "G-211",
+  "q_bks": "Koji se političar povezuje s „istočnim ugovorima” (Ostverträge)?",
+  "options": {
+   "A": "Helmut Kohl",
+   "B": "Willy Brandt",
+   "C": "Mihail Gorbačov",
+   "D": "Ludwig Erhard"
+  },
+  "expl_bks": "Willy Brandt bio je savezni kancelar od 1969. do 1974. Njegova nova istočna politika donijela je od 1970. ugovore sa Sovjetskim Savezom, Poljskom, DDR-om i Čehoslovačkom. Poznato je njegovo klečanje pred spomenikom žrtvama Varšavskoga geta 1970. Za politiku pomirenja dobio je 1971. Nobelovu nagradu za mir.",
+  "merksatz_de": "Willy Brandt steht für die Ostverträge."
+ },
+ {
+  "id": "G-212",
+  "q_bks": "Kako glasi puni naziv Njemačke?",
+  "options": {
+   "A": "Savezna Država Njemačka",
+   "B": "Savezne Pokrajine Njemačka",
+   "C": "Savezna Republika Njemačka",
+   "D": "Savezni Okrug Njemačka"
+  },
+  "expl_bks": "Puni naziv države glasi Savezna Republika Njemačka (Bundesrepublik Deutschland). Taj naziv postoji od 1949., kad je stupio na snagu Temeljni zakon (njemački ustav). „Savezna” znači da se država sastoji od saveznih pokrajina, a „republika” da na čelu države nije kralj, nego savezni predsjednik.",
+  "merksatz_de": "Der volle Name ist Bundesrepublik Deutschland."
+ },
+ {
+  "id": "G-213",
+  "q_bks": "Koliko stanovnika ima Njemačka?",
+  "options": {
+   "A": "70 milijuna",
+   "B": "78 milijuna",
+   "C": "84 milijuna",
+   "D": "90 milijuna"
+  },
+  "expl_bks": "Njemačka ima oko 84 milijuna stanovnika i država je s najviše stanovnika u Europskoj uniji. Taj se broj s vremenom malo mijenja, a u katalogu pitanja naveden je iznos od 84 milijuna. Najviše ljudi živi u saveznoj pokrajini Sjeverna Rajna-Vestfalija.",
+  "merksatz_de": "In Deutschland leben etwa 84 Millionen Menschen."
+ },
+ {
+  "id": "G-214",
+  "q_bks": "Koje boje ima njemačka zastava?",
+  "options": {
+   "A": "crno-crveno-zlatne",
+   "B": "crveno-bijelo-crne",
+   "C": "crno-crveno-zelene",
+   "D": "crno-žuto-crvene"
+  },
+  "expl_bks": "Njemačka zastava ima tri vodoravne pruge: odozgo crnu, crvenu i zlatnu. To određuje članak 22. Temeljnog zakona (njemački ustav). Boje potječu iz borbe za jedinstvo i slobodu u 19. stoljeću, npr. s Hambaškog festivala 1832. Pazite na redoslijed: crna je gore, zlatna dolje.",
+  "merksatz_de": "Die deutsche Flagge ist schwarz-rot-gold."
+ },
+ {
+  "id": "G-215",
+  "q_bks": "Tko se naziva „kancelarom njemačkog jedinstva”?",
+  "options": {
+   "A": "Gerhard Schröder",
+   "B": "Helmut Kohl",
+   "C": "Konrad Adenauer",
+   "D": "Helmut Schmidt"
+  },
+  "expl_bks": "Helmut Kohl bio je savezni kancelar od 1982. do 1998. Nakon pada Berlinskog zida zalagao se za brzo ponovno ujedinjenje Njemačke, koje je ostvareno 3. listopada 1990. Zato ga nazivaju „kancelarom njemačkog jedinstva”. Konrad Adenauer bio je prvi savezni kancelar, od 1949.",
+  "merksatz_de": "Helmut Kohl gilt als Kanzler der Deutschen Einheit."
+ },
+ {
+  "id": "G-216",
+  "q_bks": "Koji se simbol vidi u plenarnoj dvorani njemačkog Bundestaga?",
+  "options": {
+   "A": "savezni orao (Bundesadler)",
+   "B": "zastava grada Berlina",
+   "C": "carski orao (Reichsadler)",
+   "D": "carska kruna (Reichskrone)"
+  },
+  "expl_bks": "Na zidu plenarne dvorane Bundestaga (savezni parlament) visi veliki savezni orao (Bundesadler). Orao je simbol Savezne Republike Njemačke i nalazi se na državnom grbu, kao i na nekim njemačkim kovanicama eura. Zbog njegova oblika ga u šali zovu „debela kokoš” (fette Henne).",
+  "merksatz_de": "Im Plenarsaal des Bundestages hängt der Bundesadler."
+ },
+ {
+  "id": "G-217",
+  "q_bks": "U kojem je razdoblju postojala Njemačka Demokratska Republika (DDR)?",
+  "options": {
+   "A": "od 1919. do 1927.",
+   "B": "od 1933. do 1945.",
+   "C": "od 1945. do 1961.",
+   "D": "od 1949. do 1990."
+  },
+  "expl_bks": "DDR je osnovan 7. listopada 1949. na području sovjetske okupacijske zone, nekoliko mjeseci nakon Savezne Republike Njemačke. Prestao je postojati 3. listopada 1990., kad je pristupio Saveznoj Republici. Zamka: razdoblje od 1933. do 1945. vrijeme je nacionalsocijalizma.",
+  "merksatz_de": "Die DDR gab es von 1949 bis 1990."
+ },
+ {
+  "id": "G-218",
+  "q_bks": "Koliko je saveznih pokrajina pri ponovnom ujedinjenju 1990. pristupilo Saveznoj Republici Njemačkoj?",
+  "options": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  },
+  "expl_bks": "Godine 1990. Saveznoj Republici pridružilo se pet novih saveznih pokrajina: Brandenburg, Mecklenburg-Zapadno Pomorje, Saska, Saska-Anhalt i Tiringija. Istočni Berlin spojen je sa Zapadnim Berlinom u jednu pokrajinu. Od tada Njemačka ima 16 saveznih pokrajina.",
+  "merksatz_de": "1990 kamen fünf neue Bundesländer dazu."
+ },
+ {
+  "id": "G-219",
+  "q_bks": "Savezna Republika Njemačka ima današnje granice od …",
+  "options": {
+   "A": "1933.",
+   "B": "1949.",
+   "C": "1971.",
+   "D": "1990."
+  },
+  "expl_bks": "Današnje granice Njemačka ima od ponovnog ujedinjenja 3. listopada 1990. Iste je godine Ugovor „dva plus četiri” s četiri pobjedničke sile konačno potvrdio granice, uključujući granicu s Poljskom na rijekama Odri i Nisi. Savezna Republika osnovana je 1949., ali tada samo na zapadu.",
+  "merksatz_de": "Seit 1990 hat Deutschland seine heutigen Grenzen."
+ },
+ {
+  "id": "G-220",
+  "q_bks": "27. siječnja u Njemačkoj je državni dan sjećanja. Na što podsjeća taj dan?",
+  "options": {
+   "A": "na kraj Drugog svjetskog rata",
+   "B": "na donošenje Temeljnog zakona",
+   "C": "na ponovno ujedinjenje Njemačke",
+   "D": "na žrtve nacionalsocijalizma (dan oslobođenja logora smrti Auschwitz)"
+  },
+  "expl_bks": "Sovjetska vojska oslobodila je 27. siječnja 1945. logor smrti Auschwitz, u kojem je ubijeno više od milijun ljudi, većinom Židova. Od 1996. taj je dan u Njemačkoj Dan sjećanja na žrtve nacionalsocijalizma. Rat u Europi završio je tek 8. svibnja 1945.",
+  "merksatz_de": "Am 27. Januar denkt man an die Opfer des Nationalsozialismus."
+ },
+ {
+  "id": "G-221",
+  "q_bks": "Njemačka je članica Schengenskog sporazuma. Što to znači?",
+  "options": {
+   "A": "Nijemci mogu putovati u mnoge zemlje Europe bez kontrole putovnica.",
+   "B": "Svi ljudi mogu ući u Njemačku bez kontrole osoba.",
+   "C": "Nijemci mogu putovati u svaku zemlju bez kontrole putovnica.",
+   "D": "Nijemci mogu u svakoj zemlji plaćati eurom."
+  },
+  "expl_bks": "Schengenski sporazum potpisan je 1985. u mjestu Schengen u Luksemburgu. Među državama članicama u pravilu nema stalnih graničnih kontrola, pa se putuje bez pokazivanja putovnice. To vrijedi za mnoge, ali ne za sve europske zemlje, a osobnu iskaznicu ili putovnicu ipak treba imati uza sebe.",
+  "merksatz_de": "Schengen bedeutet: ohne Passkontrolle in viele Länder Europas reisen."
+ },
+ {
+  "id": "G-222",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options": {
+   "A": "Mađarska",
+   "B": "Portugal",
+   "C": "Španjolska",
+   "D": "Švicarska"
+  },
+  "expl_bks": "Švicarska graniči s Njemačkom na jugu, uz Bodensko jezero i rijeku Rajnu. Njemačka ima devet susjednih zemalja: Dansku, Poljsku, Češku, Austriju, Švicarsku, Francusku, Luksemburg, Belgiju i Nizozemsku. Mađarska, Portugal i Španjolska nemaju zajedničku granicu s Njemačkom.",
+  "merksatz_de": "Die Schweiz ist ein Nachbarland von Deutschland."
+ },
+ {
+  "id": "G-223",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options": {
+   "A": "Rumunjska",
+   "B": "Bugarska",
+   "C": "Poljska",
+   "D": "Grčka"
+  },
+  "expl_bks": "Poljska je istočni susjed Njemačke. Granica ide većim dijelom rijekama Odrom i Nisom, pa se zove granica Odra–Nisa (Oder-Neiße-Grenze). Rumunjska, Bugarska i Grčka nalaze se u jugoistočnoj Europi i ne graniče s Njemačkom. Za pamćenje: Njemačka ima ukupno devet susjeda.",
+  "merksatz_de": "Polen grenzt im Osten an Deutschland."
+ },
+ {
+  "id": "G-224",
+  "q_bks": "Što znači kratica EU?",
+  "options": {
+   "A": "Europäische Unternehmen (europska poduzeća)",
+   "B": "Europäische Union (Europska unija)",
+   "C": "Einheitliche Union (jedinstvena unija)",
+   "D": "Euro Union (euro-unija)"
+  },
+  "expl_bks": "EU je kratica za Europäische Union, odnosno Europsku uniju. To je zajednica europskih država koje usko surađuju u gospodarstvu i politici. Njemačka je jedna od država osnivačica: 1957. potpisala je Rimske ugovore, iz kojih se kasnije razvila Europska unija.",
+  "merksatz_de": "EU ist die Abkürzung für Europäische Union."
+ },
+ {
+  "id": "G-225",
+  "q_bks": "U kojoj drugoj zemlji velik dio stanovništva govori njemački?",
+  "options": {
+   "A": "Češka",
+   "B": "Norveška",
+   "C": "Španjolska",
+   "D": "Austrija"
+  },
+  "expl_bks": "U Austriji velika većina ljudi govori njemački kao materinski jezik. Njemački se govori i u dijelovima Švicarske, u Lihtenštajnu, Luksemburgu, istočnoj Belgiji i u Južnom Tirolu u Italiji. Češka je doduše susjedna zemlja Njemačke, ali ondje se govori češki.",
+  "merksatz_de": "Auch in Österreich spricht man Deutsch."
+ },
+ {
+  "id": "G-226",
+  "q_bks": "Koja je zastava Europske unije?",
+  "options": {
+   "A": "Slika 1",
+   "B": "Slika 2",
+   "C": "Slika 3",
+   "D": "Slika 4"
+  },
+  "expl_bks": "Zastava Europske unije: dvanaest zlatnih zvjezdica u krugu na plavoj podlozi. Krug zvijezda simbolizira jedinstvo, solidarnost i sklad među narodima Europe. Broj zvijezda ne ovisi o broju država članica i uvijek ostaje dvanaest.",
+  "merksatz_de": "Die EU-Flagge zeigt zwölf goldene Sterne auf Blau."
+ },
+ {
+  "id": "G-227",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options": {
+   "A": "Finska",
+   "B": "Danska",
+   "C": "Norveška",
+   "D": "Švedska"
+  },
+  "expl_bks": "Danska je jedini susjed Njemačke na sjeveru. Granica prolazi na sjeveru savezne pokrajine Schleswig-Holstein. Švedska, Norveška i Finska također su na sjeveru Europe, ali nemaju kopnenu granicu s Njemačkom; do Švedske se putuje, na primjer, trajektom preko Baltičkog mora.",
+  "merksatz_de": "Dänemark ist der nördliche Nachbar Deutschlands."
+ },
+ {
+  "id": "G-228",
+  "q_bks": "Kako se općenito naziva pristupanje DDR-a Saveznoj Republici Njemačkoj 1990. godine?",
+  "options": {
+   "A": "proširenje NATO-a na istok",
+   "B": "proširenje EU-a na istok",
+   "C": "ponovno ujedinjenje Njemačke",
+   "D": "Europska zajednica"
+  },
+  "expl_bks": "Ponovno ujedinjenje Njemačke (Wiedervereinigung) dogodilo se 3. listopada 1990., kada je DDR pristupio Saveznoj Republici Njemačkoj. Nakon 41 godine podjele Njemačka je opet postala jedna država. Zato je 3. listopada Dan njemačkog jedinstva i državni praznik.",
+  "merksatz_de": "Der Beitritt der DDR 1990 heißt Wiedervereinigung."
+ },
+ {
+  "id": "G-229",
+  "q_bks": "Koja je zemlja susjed Njemačke?",
+  "options": {
+   "A": "Španjolska",
+   "B": "Bugarska",
+   "C": "Norveška",
+   "D": "Luksemburg"
+  },
+  "expl_bks": "Luksemburg je mala država na zapadu Njemačke i graniči sa saveznim pokrajinama Porajnje-Falačka i Saarland. U Luksemburgu se uz luksemburški i francuski govori i njemački. Španjolska, Bugarska i Norveška nemaju zajedničku granicu s Njemačkom.",
+  "merksatz_de": "Luxemburg grenzt im Westen an Deutschland."
+ },
+ {
+  "id": "G-230",
+  "q_bks": "Europski parlament bira se redovito, i to svakih …",
+  "options": {
+   "A": "5 godina.",
+   "B": "6 godina.",
+   "C": "7 godina.",
+   "D": "8 godina."
+  },
+  "expl_bks": "Građani Europske unije biraju Europski parlament svakih pet godina. Prvi neposredni izbori održani su 1979. U Njemačkoj mogu glasati i građani drugih država EU-a koji ovdje žive. Nemojte to pomiješati s Bundestagom (savezni parlament), koji se bira svake četiri godine.",
+  "merksatz_de": "Das Europäische Parlament wird alle fünf Jahre gewählt."
+ },
+ {
+  "id": "G-231",
+  "q_bks": "Što znači pojam „europska integracija”?",
+  "options": {
+   "A": "Time se misli na američke useljenike u Europi.",
+   "B": "Pojam označava zaustavljanje useljavanja u Europu.",
+   "C": "Time se misli na europske iseljenike u SAD-u.",
+   "D": "Pojam označava udruživanje europskih država u EU."
+  },
+  "expl_bks": "Europska integracija znači da se europske države sve tješnje povezuju i surađuju. Počelo je 1951. zajednicom za ugljen i čelik, 1957. slijedila je Europska ekonomska zajednica (EEZ), a 1993. nastala je Europska unija. Njemačka je od početka jedna od država osnivačica.",
+  "merksatz_de": "Europäische Integration: Europäische Staaten schließen sich zur EU zusammen."
+ },
+ {
+  "id": "G-232",
+  "q_bks": "Tko se bira na europskim izborima (Europawahl)?",
+  "options": {
+   "A": "Europska komisija",
+   "B": "zemlje koje smiju pristupiti EU-u",
+   "C": "zastupnici u Europskom parlamentu",
+   "D": "europski ustav"
+  },
+  "expl_bks": "Na europskim izborima građani država članica biraju zastupnike u Europskom parlamentu. Izbori se održavaju svakih pet godina, a prvi neposredni izbori bili su 1979. Europsku komisiju građani ne biraju izravno: članove predlažu države članice, a Europski parlament ih potvrđuje.",
+  "merksatz_de": "Bei der Europawahl wählt man die Abgeordneten des Europäischen Parlaments."
+ },
+ {
+  "id": "G-233",
+  "q_bks": "Koja je zemlja susjedna zemlja Njemačke?",
+  "options": {
+   "A": "Češka",
+   "B": "Bugarska",
+   "C": "Grčka",
+   "D": "Portugal"
+  },
+  "expl_bks": "Češka graniči s Njemačkom na jugoistoku, uz Bavarsku i Sasku. Njemačka ima ukupno devet susjednih zemalja: Dansku, Poljsku, Češku, Austriju, Švicarsku, Francusku, Luksemburg, Belgiju i Nizozemsku. Bugarska, Grčka i Portugal članice su EU-a, ali ne graniče s Njemačkom.",
+  "merksatz_de": "Deutschland hat neun Nachbarländer, zum Beispiel Tschechien."
+ },
+ {
+  "id": "G-234",
+  "q_bks": "Gdje je jedno od sjedišta Europskog parlamenta?",
+  "options": {
+   "A": "London",
+   "B": "Pariz",
+   "C": "Berlin",
+   "D": "Strasbourg"
+  },
+  "expl_bks": "Strasbourg (njem. Straßburg) nalazi se u Francuskoj, na Rajni, odmah uz njemačku granicu. Tamo se održava većina plenarnih sjednica Europskog parlamenta, na kojima zastupnici glasaju o europskim zakonima. Parlament radi i u Bruxellesu i Luksemburgu, ali ne u Londonu, Parizu ili Berlinu.",
+  "merksatz_de": "Das Europäische Parlament tagt in Straßburg."
+ },
+ {
+  "id": "G-235",
+  "q_bks": "Tadašnji francuski predsjednik François Mitterrand i tadašnji njemački savezni kancelar Helmut Kohl zajedno u Verdunu odaju počast poginulima iz oba svjetska rata. Koji cilj Europske unije postaje jasan na tom susretu?",
+  "options": {
+   "A": "prijateljstvo između Engleske i Njemačke",
+   "B": "sloboda putovanja u sve zemlje EU-a",
+   "C": "mir i sigurnost u zemljama EU-a",
+   "D": "jednaki blagdani u svim zemljama EU-a"
+  },
+  "expl_bks": "U bitci kod Verduna 1916., u Prvom svjetskom ratu, poginulo je ili ranjeno više stotina tisuća francuskih i njemačkih vojnika. Godine 1984. Mitterrand i Kohl ondje su se, držeći se za ruke, zajedno poklonili žrtvama. Ta slika pokazuje glavni cilj Europske unije: nekadašnji neprijatelji žive u miru i sigurnosti.",
+  "merksatz_de": "Ein wichtiges Ziel der EU ist Frieden und Sicherheit."
+ },
+ {
+  "id": "G-236",
+  "q_bks": "Koliko država članica danas ima EU?",
+  "options": {
+   "A": "21",
+   "B": "23",
+   "C": "25",
+   "D": "27"
+  },
+  "expl_bks": "Europska unija danas ima 27 država članica. Hrvatska je 2013. postala 28. članica, a Ujedinjeno Kraljevstvo izašlo je iz EU-a 2020. (Brexit), pa je broj ponovno pao na 27. Njemačka je jedna od šest država osnivačica Europske ekonomske zajednice iz 1957.",
+  "merksatz_de": "Die EU hat heute 27 Mitgliedstaaten."
+ },
+ {
+  "id": "G-237",
+  "q_bks": "Godine 2007. proslavljena je 50. obljetnica „Rimskih ugovora”. Što je bio sadržaj tih ugovora?",
+  "options": {
+   "A": "pristupanje Njemačke NATO-u",
+   "B": "osnivanje Europske ekonomske zajednice (EEZ)",
+   "C": "obveza Njemačke da plaća ratnu odštetu (reparacije)",
+   "D": "utvrđivanje crte Odra–Nisa kao istočne granice"
+  },
+  "expl_bks": "Rimski ugovori potpisani su 25. ožujka 1957. u Rimu. Njima je šest država – Savezna Republika Njemačka, Francuska, Italija, Belgija, Nizozemska i Luksemburg – osnovalo Europsku ekonomsku zajednicu (EEZ), iz koje je kasnije nastala Europska unija. U NATO je Njemačka ušla već 1955., na temelju drugih ugovora.",
+  "merksatz_de": "Die Römischen Verträge gründeten 1957 die EWG."
+ },
+ {
+  "id": "G-238",
+  "q_bks": "U kojim mjestima radi Europski parlament?",
+  "options": {
+   "A": "Pariz, London i Haag",
+   "B": "Strasbourg, Luksemburg i Bruxelles",
+   "C": "Rim, Bern i Beč",
+   "D": "Bonn, Zürich i Milano"
+  },
+  "expl_bks": "Europski parlament radi u tri grada. U Strasbourgu (Francuska) održava većinu plenarnih sjednica, u Bruxellesu (Brisel) sastaju se odbori i klubovi zastupnika, a u Luksemburgu je glavno tajništvo, odnosno uprava Parlamenta. Za pamćenje: sva tri grada nalaze se na zapadu, blizu Njemačke.",
+  "merksatz_de": "Das EU-Parlament arbeitet in Straßburg, Luxemburg und Brüssel."
+ },
+ {
+  "id": "G-239",
+  "q_bks": "Kojim se ugovorima Savezna Republika Njemačka s drugim državama udružila u Europsku ekonomsku zajednicu?",
+  "options": {
+   "A": "„Hamburškim ugovorima”",
+   "B": "„Rimskim ugovorima”",
+   "C": "„Pariškim ugovorima”",
+   "D": "„Londonskim ugovorima”"
+  },
+  "expl_bks": "Savezna Republika Njemačka potpisala je 1957. Rimske ugovore s Francuskom, Italijom, Belgijom, Nizozemskom i Luksemburgom. Tako je nastala Europska ekonomska zajednica (EEZ), preteča današnje Europske unije. Česta zamka su „Pariški ugovori”: Pariški ugovor iz 1951. osnovao je zajednicu za ugljen i čelik, a ne EEZ.",
+  "merksatz_de": "Mit den Römischen Verträgen entstand die EWG."
+ },
+ {
+  "id": "G-240",
+  "q_bks": "Otkad se u Njemačkoj gotovinom plaća eurima?",
+  "options": {
+   "A": "1995.",
+   "B": "1998.",
+   "C": "2002.",
+   "D": "2005."
+  },
+  "expl_bks": "Euro je u Njemačkoj bezgotovinski uveden 1999., a novčanice i kovanice u opticaju su od 1. siječnja 2002. Tada je euro zamijenio njemačku marku (D-Mark). Tečaj je bio fiksan: jedan euro vrijedio je 1,95583 marke, dakle otprilike dvije marke.",
+  "merksatz_de": "Seit 2002 bezahlt man in Deutschland mit Euro-Bargeld."
+ },
+ {
+  "id": "G-241",
+  "q_bks": "Gospođa Seger dobit će dijete. Što mora učiniti da bi dobila roditeljsku naknadu (Elterngeld)?",
+  "options": {
+   "A": "Mora pisati svojoj zdravstvenoj blagajni (Krankenkasse).",
+   "B": "Mora podnijeti zahtjev uredu za roditeljsku naknadu (Elterngeldstelle).",
+   "C": "Ne mora ništa učiniti jer roditeljsku naknadu dobiva automatski.",
+   "D": "Mora zamoliti ured za rad (Arbeitsamt) za dopuštenje."
+  },
+  "expl_bks": "Roditeljska naknada (Elterngeld) ne dobiva se automatski. Roditelji moraju podnijeti pisani zahtjev uredu za roditeljsku naknadu (Elterngeldstelle); koji je ured nadležan, ovisi o pokrajini i mjestu stanovanja. Zahtjev treba predati ubrzo nakon rođenja, jer se naknada unatrag isplaćuje samo za posljednja tri mjeseca.",
+  "merksatz_de": "Elterngeld muss man bei der Elterngeldstelle beantragen."
+ },
+ {
+  "id": "G-242",
+  "q_bks": "Tko odlučuje hoće li dijete u Njemačkoj ići u vrtić?",
+  "options": {
+   "A": "država",
+   "B": "savezne pokrajine",
+   "C": "roditelji/skrbnici",
+   "D": "škole"
+  },
+  "expl_bks": "U Njemačkoj u pravilu ne postoji obveza pohađanja vrtića. Roditelji ili skrbnici sami odlučuju hoće li dijete ići u vrtić. Dijete ima pravo na mjesto u vrtiću, ali to je pravo, a ne obveza. Obvezno školovanje počinje tek polaskom u školu.",
+  "merksatz_de": "Die Eltern entscheiden, ob ihr Kind in den Kindergarten geht."
+ },
+ {
+  "id": "G-243",
+  "q_bks": "Maik i Sybille žele s prijateljima u svom mjestu stanovanja u Njemačkoj održati demonstraciju na ulici. Što moraju učiniti prije toga?",
+  "options": {
+   "A": "Moraju prijaviti demonstraciju.",
+   "B": "Ne moraju ništa učiniti. U Njemačkoj se smije demonstrirati uvijek i svugdje.",
+   "C": "Ne mogu ništa učiniti jer su demonstracije u Njemačkoj načelno zabranjene.",
+   "D": "Maik i Sybille moraju osnovati novu udrugu jer samo udruge smiju demonstrirati."
+  },
+  "expl_bks": "Sloboda okupljanja zaštićena je Temeljnim zakonom (članak 8.). Tko želi održati demonstraciju na otvorenom, mora je unaprijed prijaviti nadležnom uredu, u pravilu najkasnije 48 sati prije najave. To je samo prijava, a ne molba za dozvolu. Demonstracija mora biti mirna i bez oružja.",
+  "merksatz_de": "Eine Demonstration im Freien muss man vorher anmelden."
+ },
+ {
+  "id": "G-244",
+  "q_bks": "Koju završnu školsku svjedodžbu obično treba imati da bi se u Njemačkoj počelo studirati na sveučilištu?",
+  "options": {
+   "A": "maturu (Abitur)",
+   "B": "diplomu (Diplom)",
+   "C": "prokuru (Prokura)",
+   "D": "pomoćnički ispit u obrtu (Gesellenprüfung)"
+  },
+  "expl_bks": "Abitur je matura koja se u pravilu polaže na kraju gimnazije, nakon 12 ili 13 godina škole. Ona daje opće pravo na studij na sveučilištu. Diploma je završetak studija, prokura je poslovna punomoć u tvrtki, a pomoćnički ispit (Gesellenprüfung) završava strukovno obrazovanje u obrtu.",
+  "merksatz_de": "Für ein Studium an der Universität braucht man meistens das Abitur."
+ },
+ {
+  "id": "G-245",
+  "q_bks": "Tko u Njemačkoj ne smije živjeti zajedno kao par?",
+  "options": {
+   "A": "Hans (20 godina) i Marie (19 godina)",
+   "B": "Tom (20 godina) i Klaus (45 godina)",
+   "C": "Sofie (35 godina) i Lisa (40 godina)",
+   "D": "Anne (13 godina) i Tim (25 godina)"
+  },
+  "expl_bks": "Anne ima tek 13 godina, dakle još je dijete. U Njemačkoj su djeca mlađa od 14 godina posebno zaštićena: seksualne radnje odrasle osobe s djetetom teško su kazneno djelo. Svi ostali parovi su punoljetni i smiju živjeti zajedno, bez obzira na razliku u godinama ili na spol.",
+  "merksatz_de": "Kinder unter 14 Jahren sind vom Gesetz besonders geschützt."
+ },
+ {
+  "id": "G-246",
+  "q_bks": "S koliko se godina u Njemačkoj postaje punoljetan?",
+  "options": {
+   "A": "16",
+   "B": "18",
+   "C": "19",
+   "D": "21"
+  },
+  "expl_bks": "U Njemačkoj se punoljetnost stječe s navršenih 18 godina. Od tada čovjek smije sam sklapati ugovore, na primjer ugovor o najmu, glasati na izborima za Bundestag i sklopiti brak. Roditelji više ne odlučuju umjesto njega.",
+  "merksatz_de": "In Deutschland ist man mit 18 Jahren volljährig."
+ },
+ {
+  "id": "G-247",
+  "q_bks": "Jedna je žena trudna. Kratko prije i nakon rođenja djeteta zakon je posebno štiti. Kako se zove ta zaštita?",
+  "options": {
+   "A": "roditeljski dopust (Elternzeit)",
+   "B": "zaštita majčinstva (Mutterschutz)",
+   "C": "priprema za porod (Geburtsvorbereitung)",
+   "D": "babinje (Wochenbett)"
+  },
+  "expl_bks": "Zaštita majčinstva (Mutterschutz) štiti trudnice i majke koje rade. Šest tjedana prije poroda žena ne mora raditi, a osam tjedana nakon poroda ne smije raditi; za to vrijeme prima naknadu. Od početka trudnoće do četiri mjeseca nakon poroda u pravilu joj se ne smije dati otkaz. Roditeljski dopust (Elternzeit) dolazi tek poslije.",
+  "merksatz_de": "Mutterschutz schützt Frauen kurz vor und nach der Geburt."
+ },
+ {
+  "id": "G-248",
+  "q_bks": "Odgoj djece u Njemačkoj prije svega je zadaća …",
+  "options": {
+   "A": "države.",
+   "B": "roditelja.",
+   "C": "baka i djedova.",
+   "D": "škola."
+  },
+  "expl_bks": "Prema Temeljnom zakonu (članak 6.) njega i odgoj djece prirodno su pravo roditelja i prije svega njihova dužnost. Država samo pazi da je dijete dobro zbrinuto i pomaže kad postoje problemi. Škole također odgajaju, ali glavnu odgovornost imaju roditelji.",
+  "merksatz_de": "Die Erziehung der Kinder ist vor allem Aufgabe der Eltern."
+ },
+ {
+  "id": "G-249",
+  "q_bks": "Tko je u Njemačkoj uglavnom odgovoran za odgoj djece?",
+  "options": {
+   "A": "država",
+   "B": "roditelji",
+   "C": "rodbina",
+   "D": "škole"
+  },
+  "expl_bks": "Za odgoj djece u Njemačkoj prvenstveno su odgovorni roditelji. Temeljni zakon (članak 6.) kaže da je to njihovo pravo i njihova dužnost. Škola, vrtić i rodbina mogu pomoći, a država se uključuje tek kad je dobrobit djeteta ugrožena, na primjer preko ureda za djecu i mlade (Jugendamt).",
+  "merksatz_de": "Hauptsächlich verantwortlich für die Kindererziehung sind die Eltern."
+ },
+ {
+  "id": "G-250",
+  "q_bks": "U Njemačkoj čovjek ima najbolje izglede za dobro plaćeno radno mjesto ako …",
+  "options": {
+   "A": "je katolik.",
+   "B": "je dobro obrazovan.",
+   "C": "je žena.",
+   "D": "je član neke stranke."
+  },
+  "expl_bks": "Na njemačkom tržištu rada najvažnije su kvalifikacije: završena škola, strukovno obrazovanje (Ausbildung) ili studij. Tko je dobro obrazovan, ima najbolje izglede za dobro plaćen posao. Vjera, spol ili članstvo u stranci ne smiju biti razlog za prednost ili zapostavljanje pri zapošljavanju (Temeljni zakon, članak 3.).",
+  "merksatz_de": "Eine gute Ausbildung bringt die besten Chancen auf gute Arbeit."
+ },
+ {
+  "id": "G-251",
+  "q_bks": "Ako netko u Njemačkoj udari dijete, …",
+  "options": {
+   "A": "to se nikoga ne tiče.",
+   "B": "to se tiče samo obitelji.",
+   "C": "za to ne može biti kažnjen.",
+   "D": "za to može biti kažnjen."
+  },
+  "expl_bks": "Od 2000. godine djeca u Njemačkoj imaju zakonsko pravo na odgoj bez nasilja (Građanski zakonik, § 1631). Tjelesno kažnjavanje, psihičko zlostavljanje i druge ponižavajuće mjere zabranjeni su, i u obitelji. Tko udari dijete, može biti kažnjen, na primjer zbog tjelesne ozljede.",
+  "merksatz_de": "Kinder haben ein Recht auf Erziehung ohne Gewalt."
+ },
+ {
+  "id": "G-252",
+  "q_bks": "U Njemačkoj …",
+  "options": {
+   "A": "čovjek smije u isto vrijeme biti u braku samo s jednim partnerom.",
+   "B": "čovjek može istodobno imati više bračnih partnera.",
+   "C": "čovjek se ne smije ponovno vjenčati ako je već jednom bio u braku.",
+   "D": "žena se ne smije ponovno udati ako joj je muž umro."
+  },
+  "expl_bks": "U Njemačkoj se može biti u braku samo s jednom osobom u isto vrijeme. Tko sklopi drugi brak dok prvi još traje, čini kazneno djelo bigamije. Nakon razvoda ili smrti bračnog partnera ponovno vjenčanje je dopušteno, i ženama i muškarcima.",
+  "merksatz_de": "Man darf nur mit einer Person gleichzeitig verheiratet sein."
+ },
+ {
+  "id": "G-253",
+  "q_bks": "Gdje se morate prijaviti kad se u Njemačkoj preselite?",
+  "options": {
+   "A": "u uredu za prijavu prebivališta (Einwohnermeldeamt)",
+   "B": "u matičnom uredu (Standesamt)",
+   "C": "u komunalnom redarstvenom uredu (Ordnungsamt)",
+   "D": "u obrtnom uredu (Gewerbeamt)"
+  },
+  "expl_bks": "Nakon preseljenja novu adresu treba prijaviti u uredu za prijavu prebivališta (Einwohnermeldeamt); u mnogim gradovima to je građanski ured (Bürgeramt). Rok je u pravilu dva tjedna. Za prijavu trebate osobnu iskaznicu ili putovnicu i potvrdu stanodavca (Wohnungsgeberbestätigung).",
+  "merksatz_de": "Nach einem Umzug meldet man sich beim Einwohnermeldeamt an."
+ },
+ {
+  "id": "G-254",
+  "q_bks": "U Njemačkoj se bračni parovi smiju razvesti. Za to većinom moraju poštovati „godinu razdvojenosti” (Trennungsjahr). Što to znači?",
+  "options": {
+   "A": "Postupak razvoda traje godinu dana.",
+   "B": "Supružnici su godinu dana u braku, a onda je razvod moguć.",
+   "C": "Pravo na viđanje djece vrijedi godinu dana.",
+   "D": "Supružnici najmanje godinu dana žive odvojeno, svatko svoj život. Nakon toga je razvod moguć."
+  },
+  "expl_bks": "Godina razdvojenosti (Trennungsjahr) znači da supružnici najmanje godinu dana žive odvojeno i vode svaki svoj život. To je moguće čak i u istom stanu, ako više ne žive kao par i nemaju zajedničko kućanstvo. Tek nakon toga obiteljski sud u pravilu može izreći razvod.",
+  "merksatz_de": "Vor der Scheidung lebt das Ehepaar meistens ein Jahr getrennt."
+ },
+ {
+  "id": "G-255",
+  "q_bks": "Kod problema s odgojem roditelji u Njemačkoj mogu dobiti pomoć od …",
+  "options": {
+   "A": "komunalnog redarstvenog ureda (Ordnungsamt).",
+   "B": "školskog ureda (Schulamt).",
+   "C": "ureda za djecu i mlade (Jugendamt).",
+   "D": "zdravstvenog ureda (Gesundheitsamt)."
+  },
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) postoji u svakom okrugu (Landkreis) i u većim gradovima. On savjetuje roditelje kod problema s odgojem, na primjer kad dijete ne ide u školu ili je agresivno, i upućuje ih na obiteljska savjetovališta. Savjetovanje je besplatno i povjerljivo.",
+  "merksatz_de": "Bei Erziehungsproblemen hilft das Jugendamt."
+ },
+ {
+  "id": "G-256",
+  "q_bks": "Bračni par želi u Njemačkoj otvoriti restoran. Što mu je za to nužno potrebno?",
+  "options": {
+   "A": "dozvola policije",
+   "B": "odobrenje neke stranke",
+   "C": "odobrenje ureda za prijavu prebivališta (Einwohnermeldeamt)",
+   "D": "dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis) od nadležnog ureda"
+  },
+  "expl_bks": "Za otvaranje restorana, posebno ako se toči alkohol, potrebna je dozvola za ugostiteljsku djelatnost (Gaststättenerlaubnis). Izdaje je nadležni ured općine, najčešće obrtni ured (Gewerbeamt) ili komunalni redarstveni ured (Ordnungsamt). Ured provjerava, na primjer, prostorije i pouzdanost vlasnika. Pojedinosti ovise o pokrajini.",
+  "merksatz_de": "Für ein Restaurant braucht man eine Gaststättenerlaubnis."
+ },
+ {
+  "id": "G-257",
+  "q_bks": "Odrasla žena želi u Njemačkoj naknadno položiti maturu (Abitur). To može učiniti …",
+  "options": {
+   "A": "na visokom učilištu (Hochschule).",
+   "B": "u večernjoj gimnaziji (Abendgymnasium).",
+   "C": "u Hauptschuli (niža srednja škola).",
+   "D": "na privatnom sveučilištu."
+  },
+  "expl_bks": "Večernja gimnazija (Abendgymnasium) namijenjena je odraslima koji rade. Nastava se održava navečer, pa se škola može uskladiti s poslom i obitelji. Na kraju se polaže matura (Abitur), s kojom se može studirati. Visoko učilište i privatno sveučilište traže Abitur već pri upisu.",
+  "merksatz_de": "Erwachsene können das Abitur am Abendgymnasium nachholen."
+ },
+ {
+  "id": "G-258",
+  "q_bks": "Što smije ured za djecu i mlade (Jugendamt) u Njemačkoj?",
+  "options": {
+   "A": "Odlučuje koju će školu dijete pohađati.",
+   "B": "Može izdvojiti iz obitelji dijete koje tuku ili koje mora gladovati.",
+   "C": "Isplaćuje roditeljima dječji doplatak (Kindergeld).",
+   "D": "Kontrolira pohađa li dijete vrtić."
+  },
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) štiti djecu. Ako je dijete u opasnosti, na primjer ako ga tuku ili gladuje, ured ga smije izdvojiti iz obitelji i privremeno smjestiti na sigurno mjesto. O dugoročnim mjerama odlučuje obiteljski sud. Dječji doplatak (Kindergeld) ne isplaćuje Jugendamt, nego obiteljska blagajna (Familienkasse).",
+  "merksatz_de": "Das Jugendamt kann gefährdete Kinder aus der Familie nehmen."
+ },
+ {
+  "id": "G-259",
+  "q_bks": "Centar za informiranje o zanimanjima BIZ pri Saveznoj agenciji za rad (Bundesagentur für Arbeit) u Njemačkoj pomaže pri …",
+  "options": {
+   "A": "izračunu mirovine.",
+   "B": "traženju mjesta za stručno osposobljavanje (Lehrstelle).",
+   "C": "poreznoj prijavi.",
+   "D": "zdravstvenom osiguranju."
+  },
+  "expl_bks": "Centar za informiranje o zanimanjima (Berufsinformationszentrum, BIZ) nalazi se pri Agenciji za rad (Agentur für Arbeit). Ondje mladi i odrasli besplatno dobivaju informacije o zanimanjima, strukovnom obrazovanju (Ausbildung) i studiju te pomoć pri traženju mjesta za stručno osposobljavanje. Za mirovinu, porez i zdravstveno osiguranje nadležni su drugi uredi.",
+  "merksatz_de": "Das BIZ hilft bei der Suche nach einer Lehrstelle."
+ },
+ {
+  "id": "G-260",
+  "q_bks": "U Njemačkoj dijete u školi ima …",
+  "options": {
+   "A": "pravo na neograničeno slobodno vrijeme.",
+   "B": "slobodu izbora svih predmeta.",
+   "C": "pravo na novac za školu (Schulgeld).",
+   "D": "obvezu prisustvovanja nastavi."
+  },
+  "expl_bks": "U Njemačkoj postoji obvezno školovanje (Schulpflicht). Djeca moraju redovito dolaziti na nastavu, a izostati smiju samo s opravdanim razlogom, na primjer zbog bolesti. Za to su odgovorni roditelji: za neopravdane izostanke mogu dobiti novčanu kaznu. Javne škole su besplatne.",
+  "merksatz_de": "Kinder müssen regelmäßig in die Schule gehen."
+ },
+ {
+  "id": "G-261",
+  "q_bks": "Muškarac od 30 godina želi u Njemačkoj naknadno položiti maturu (Abitur). Gdje to može učiniti? …",
+  "options": {
+   "A": "na visokom učilištu (Hochschule).",
+   "B": "u večernjoj gimnaziji (Abendgymnasium).",
+   "C": "u Hauptschuli (niža srednja škola).",
+   "D": "na privatnom sveučilištu."
+  },
+  "expl_bks": "Tko je već odrastao i radi, maturu (Abitur) može naknadno položiti u večernjoj gimnaziji (Abendgymnasium). Nastava je navečer, obično traje oko tri godine i u javnim školama je besplatna. Hauptschule je škola za djecu, a na visoko učilište ili sveučilište upisuje se tek s Abiturom.",
+  "merksatz_de": "Auch mit 30 kann man am Abendgymnasium Abitur machen."
+ },
+ {
+  "id": "G-262",
+  "q_bks": "Što u Njemačkoj znači načelo jednakog postupanja?",
+  "options": {
+   "A": "Nitko ne smije biti zapostavljen, npr. zbog invaliditeta.",
+   "B": "Druge osobe smiju se zapostavljati ako za to postoje dovoljni osobni razlozi.",
+   "C": "Nitko ne smije podnijeti tužbu protiv drugih ako je bio zapostavljen.",
+   "D": "Za sve je zakonska obveza svake godine darivati novac zapostavljenim skupinama."
+  },
+  "expl_bks": "Načelo jednakog postupanja proizlazi iz Temeljnog zakona (članak 3.): nitko ne smije biti zapostavljen zbog spola, podrijetla, vjere ili invaliditeta. Zaštitu osoba s invaliditetom Temeljni zakon izričito spominje od 1994. Opći zakon o jednakom postupanju (AGG) iz 2006. štiti od diskriminacije, na primjer na poslu ili pri traženju stana.",
+  "merksatz_de": "Niemand darf wegen einer Behinderung benachteiligt werden."
+ },
+ {
+  "id": "G-263",
+  "q_bks": "U Njemačkoj su mladi od 14 godina kazneno odgovorni. To znači: mladi koji imaju 14 ili više godina i prekrše kazneni zakon …",
+  "options": {
+   "A": "bit će kažnjeni.",
+   "B": "tretiraju se kao odrasli.",
+   "C": "dijele kaznu sa svojim roditeljima.",
+   "D": "neće biti kažnjeni."
+  },
+  "expl_bks": "Kazneno odgovoran znači da netko za kazneno djelo može odgovarati pred sudom. Mladi od 14 do 17 godina kažnjavaju se prema posebnom zakonu o sudovima za mladež (Jugendgerichtsgesetz), a ne kao odrasli. Kazne su prije svega odgojne, na primjer rad za opće dobro ili maloljetnički zatvor.",
+  "merksatz_de": "Ab 14 Jahren kann man in Deutschland bestraft werden."
+ },
+ {
+  "id": "G-264",
+  "q_bks": "Kojom prigodom ljudi u Njemačkoj nose šarene kostime i maske?",
+  "options": {
+   "A": "na Rosenmontag",
+   "B": "na Praznik rada (1. svibnja)",
+   "C": "na Oktoberfestu",
+   "D": "na Duhove (Pfingsten)"
+  },
+  "expl_bks": "Rosenmontag je vrhunac karnevala (Karneval, Fasching ili Fastnacht), neposredno prije korizme. Posebno u Kölnu, Düsseldorfu i Mainzu gradom prolaze velike povorke, a ljudi nose šarene kostime i maske. Datum ovisi o Uskrsu, pa je Rosenmontag svake godine drugačiji, uvijek u veljači ili početkom ožujka.",
+  "merksatz_de": "Am Rosenmontag tragen viele Menschen Kostüme und Masken."
+ },
+ {
+  "id": "G-265",
+  "q_bks": "Kamo u Njemačkoj najprije treba otići ako se netko želi vjenčati?",
+  "options": {
+   "A": "u ured za prijavu prebivališta (Einwohnermeldeamt)",
+   "B": "u komunalni redarstveni ured (Ordnungsamt)",
+   "C": "u Agenciju za rad (Agentur für Arbeit)",
+   "D": "u matični ured (Standesamt)"
+  },
+  "expl_bks": "U Njemačkoj je pravno valjan samo građanski brak, sklopljen pred matičarom. Zato par najprije u matičnom uredu (Standesamt) prijavljuje namjeru vjenčanja i predaje dokumente, na primjer rodni list i osobnu iskaznicu ili putovnicu. Vjersko vjenčanje moguće je dodatno, ali nema pravni učinak.",
+  "merksatz_de": "Wer heiraten möchte, geht zuerst zum Standesamt."
+ },
+ {
+  "id": "G-266",
+  "q_bks": "Kada u Njemačkoj počinje zakonski noćni mir?",
+  "options": {
+   "A": "kada sunce zađe",
+   "B": "kada susjedi odu spavati",
+   "C": "u 0 sati, u ponoć",
+   "D": "u 22 sata"
+  },
+  "expl_bks": "Noćni mir (Nachtruhe) u pravilu traje od 22 do 6 sati. U to vrijeme treba izbjegavati buku, na primjer glasnu glazbu, bušenje ili zabave. Pravila određuju propisi pokrajina i općina, a često i kućni red (Hausordnung) u zgradi, koji može propisati i podnevni mir.",
+  "merksatz_de": "Die Nachtruhe beginnt um 22 Uhr."
+ },
+ {
+  "id": "G-267",
+  "q_bks": "Mlada žena u Njemačkoj, stara 22 godine, živi sa svojim dečkom. Njezinim roditeljima to nije drago jer im se dečko ne sviđa. Što roditelji mogu učiniti?",
+  "options": {
+   "A": "Moraju poštovati odluku svoje punoljetne kćeri.",
+   "B": "Imaju pravo vratiti kćer u roditeljski stan.",
+   "C": "Mogu otići na policiju i prijaviti kćer.",
+   "D": "Potražit će kćeri drugog muškarca."
+  },
+  "expl_bks": "Kći ima 22 godine i punoljetna je, pa sama odlučuje s kim i gdje živi. Temeljni zakon (članak 2.) jamči svakome pravo na slobodan razvoj osobnosti. Roditelji mogu reći svoje mišljenje, ali je ne smiju prisiliti na povratak kući ni prijaviti policiji, jer nije učinila ništa zabranjeno.",
+  "merksatz_de": "Erwachsene Kinder entscheiden selbst, mit wem sie zusammenleben."
+ },
+ {
+  "id": "G-268",
+  "q_bks": "Mlada žena želi položiti vozački ispit. Boji se ispita jer njemački nije njezin materinski jezik. Što je točno?",
+  "options": {
+   "A": "Mora živjeti u Njemačkoj najmanje deset godina prije nego što može polagati vozački ispit.",
+   "B": "Ako ne zna njemački, ne smije imati vozačku dozvolu.",
+   "C": "Mora polagati vozački ispit u zemlji u kojoj se govori njezin jezik.",
+   "D": "Teorijski ispit možda može polagati na svom materinskom jeziku. Na izbor je više od deset jezika."
+  },
+  "expl_bks": "U Njemačkoj se teorijski dio vozačkog ispita može polagati na njemačkom ili na više od deset stranih jezika. Za to nije potrebno dugo živjeti u Njemačkoj. Koji su jezici trenutno ponuđeni, može se pitati u autoškoli ili kod ispitne organizacije, npr. TÜV-a ili DEKRA-e.",
+  "merksatz_de": "Die Theorieprüfung kann man in vielen Sprachen machen."
+ },
+ {
+  "id": "G-269",
+  "q_bks": "U Njemačkoj djeca od treće godine do polaska u školu imaju pravo na …",
+  "options": {
+   "A": "mjesečni džeparac.",
+   "B": "mjesto u sportskom klubu.",
+   "C": "mjesto u vrtiću.",
+   "D": "propusnicu za praznične aktivnosti (Ferienpass)."
+  },
+  "expl_bks": "Od 1996. svako dijete od navršene treće godine do polaska u školu ima zakonsko pravo na mjesto u vrtiću (Kindergarten). Od 2013. to pravo vrijedi već od prve godine, u jaslicama ili kod dnevne dadilje. Pohađanje je dobrovoljno, a koliko roditelji plaćaju, ovisi o pokrajini i općini.",
+  "merksatz_de": "Ab drei Jahren hat ein Kind Anspruch auf einen Kindergartenplatz."
+ },
+ {
+  "id": "G-270",
+  "q_bks": "Pučko otvoreno učilište (Volkshochschule) u Njemačkoj ustanova je …",
+  "options": {
+   "A": "za vjeronauk.",
+   "B": "samo za mlade.",
+   "C": "za daljnje obrazovanje.",
+   "D": "samo za umirovljenike."
+  },
+  "expl_bks": "Pučko otvoreno učilište (Volkshochschule, VHS) nudi tečajeve za odrasle svih dobi: jezike, rad na računalu, kuhanje, zdravlje, a često i integracijske tečajeve. Tečajevi su najčešće povoljni, a VHS postoji gotovo u svakom gradu. Ondje se mogu naknadno steći i školske svjedodžbe.",
+  "merksatz_de": "Die Volkshochschule bietet Kurse zur Weiterbildung für Erwachsene."
+ },
+ {
+  "id": "G-271",
+  "q_bks": "Koji je u Njemačkoj običaj za Božić?",
+  "options": {
+   "A": "skrivati obojena jaja",
+   "B": "okititi božićno drvce (jelu)",
+   "C": "prerušiti se maskama i kostimima",
+   "D": "stavljati bundeve pred vrata"
+  },
+  "expl_bks": "Za Božić se u Njemačkoj u stanu kiti božićno drvce (jela), obično lampicama i kuglicama. Pokloni se najčešće daju na Badnju večer (Heiligabend), 24. prosinca. Skrivanje obojenih jaja običaj je za Uskrs, kostimi i maske za karneval, a bundeve za Noć vještica (Halloween).",
+  "merksatz_de": "Zu Weihnachten schmückt man einen Tannenbaum."
+ },
+ {
+  "id": "G-272",
+  "q_bks": "Koji oblik zajedničkog života u Njemačkoj nije dopušten?",
+  "options": {
+   "A": "Muškarac i žena su razvedeni i žive s novim partnerima.",
+   "B": "Dvije žene žive zajedno.",
+   "C": "Samohrani otac živi sa svoje dvoje djece.",
+   "D": "Muškarac je u isto vrijeme u braku s dvije žene."
+  },
+  "expl_bks": "U Njemačkoj je brak moguć samo između dvije osobe. Tko je istodobno u braku s dvije osobe, čini kazneno djelo bigamije. Ostali oblici života su dopušteni: razvedeni smiju živjeti s novim partnerima, istospolni parovi od 2017. smiju i sklopiti brak, a samohrani roditelj može sam živjeti s djecom.",
+  "merksatz_de": "Mehrere Ehepartner zur gleichen Zeit sind in Deutschland verboten."
+ },
+ {
+  "id": "G-273",
+  "q_bks": "Kod problema s odgojem u Njemačkoj idete …",
+  "options": {
+   "A": "liječniku.",
+   "B": "u zdravstveni ured (Gesundheitsamt).",
+   "C": "u ured za prijavu prebivališta (Einwohnermeldeamt).",
+   "D": "u ured za djecu i mlade (Jugendamt)."
+  },
+  "expl_bks": "Ured za djecu i mlade (Jugendamt) pravo je mjesto kad roditelji imaju problema s odgojem. Ondje stručnjaci savjetuju obitelji, besplatno i povjerljivo, i mogu organizirati dodatnu pomoć, na primjer obiteljskog pomagača. Liječnik i zdravstveni ured nadležni su za zdravlje, a ne za odgoj.",
+  "merksatz_de": "Bei Problemen mit der Erziehung geht man zum Jugendamt."
+ },
+ {
+  "id": "G-274",
+  "q_bks": "U Njemačkoj ste namjerno otvorili pismo koje je naslovljeno na drugu osobu. Što niste poštovali?",
+  "options": {
+   "A": "pravo na šutnju (Schweigerecht)",
+   "B": "tajnost pisama (Briefgeheimnis)",
+   "C": "obvezu čuvanja tajne (Schweigepflicht)",
+   "D": "slobodu mišljenja"
+  },
+  "expl_bks": "Tajnost pisama (Briefgeheimnis) zaštićena je Temeljnim zakonom (članak 10.). Pismo naslovljeno na drugu osobu smije otvoriti samo ta osoba ili netko koga je ona za to ovlastila. Tko namjerno otvori tuđe zatvoreno pismo, može biti kažnjen. Obveza čuvanja tajne (Schweigepflicht) odnosi se, na primjer, na liječnike i odvjetnike.",
+  "merksatz_de": "Fremde Briefe darf man nicht öffnen: Das Briefgeheimnis gilt."
+ },
+ {
+  "id": "G-275",
+  "q_bks": "Što je u Njemačkoj potrebno za razvod braka?",
+  "options": {
+   "A": "pristanak roditelja",
+   "B": "liječnička potvrda",
+   "C": "pristanak djece",
+   "D": "pomoć odvjetnika"
+  },
+  "expl_bks": "O razvodu braka u Njemačkoj odlučuje obiteljski sud (Familiengericht). Zahtjev za razvod može podnijeti samo odvjetnik, pa barem onaj supružnik koji traži razvod mora imati odvjetnika. Pristanak roditelja ili djece nije potreban, kao ni liječnička potvrda.",
+  "merksatz_de": "Für eine Scheidung braucht man eine Anwältin oder einen Anwalt."
+ },
+ {
+  "id": "G-276",
+  "q_bks": "Što biste trebali učiniti ako se vaša kontaktna osoba u nekom njemačkom uredu loše odnosi prema vama?",
+  "options": {
+   "A": "Ne mogu ništa učiniti.",
+   "B": "Moram trpjeti takvo postupanje.",
+   "C": "Prijetim toj osobi.",
+   "D": "Mogu se požaliti voditelju ureda."
+  },
+  "expl_bks": "U uredima se prema svima mora postupati korektno i s poštovanjem. Ako vas netko loše tretira, možete se usmeno ili pisano požaliti voditelju ureda ili nadređenoj osobi; takva se pritužba zove Dienstaufsichtsbeschwerde. Ostanite mirni: prijetnje nisu dopuštene i mogu biti kažnjive.",
+  "merksatz_de": "Bei schlechter Behandlung im Amt kann man sich beschweren."
+ }
+]

@@ -1,0 +1,554 @@
+[
+ {
+  "id": "HE-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "HE-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "MV-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "MV-02",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "MV-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "MV-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "MV-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Spelling (HR standard): compound colour adjectives need -o in non-final parts ('crna-crvena-zlatna' is nonstandard); use -o forms as in SL/SN/ST/SH/TH items: A 'crno-crveno-zlatno', B 'plavo-bijelo-žuto-crveno', C 'zeleno-bijelo-crveno', D 'crno-žuto'."
+ },
+ {
+  "id": "MV-06",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "MV-07",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "MV-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "MV-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "MV-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "NI-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "NI-02",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "NI-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "NI-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "NI-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Spelling (HR standard): compound colour adjectives need -o in non-final parts ('crna-crvena-zlatna' is nonstandard); use -o forms as in SL/SN/ST/SH/TH items: A 'bijelo-plavo', B 'crno-crveno-zlatno', C 'crno-žuto', D 'plavo-bijelo-crveno'."
+ },
+ {
+  "id": "NI-06",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "NI-07",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "NI-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": "Explanation: '(oko Bremena)' is misplaced and reads as if the North Sea/Netherlands lie around Bremen; use 'na sjeverozapadu, uz Sjeverno more i granicu s Nizozemskom, a okružuje grad Bremen.'"
+ },
+ {
+  "id": "NI-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "NI-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "NW-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "NW-02",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "NW-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "NW-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "NW-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Spelling (HR standard): compound colour adjectives need -o in non-final parts ('crna-crvena-zlatna' is nonstandard); use -o forms as in SL/SN/ST/SH/TH items: A 'crveno-bijelo', B 'zeleno-bijelo-crveno', C 'crno-zlatno', D 'plavo-bijelo-crveno'."
+ },
+ {
+  "id": "NW-06",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "NW-07",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "NW-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "NW-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "NW-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "RP-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "RP-02",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "RP-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "RP-04",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "RP-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Spelling (HR standard): compound colour adjectives need -o in non-final parts ('crna-crvena-zlatna' is nonstandard); use -o forms as in SL/SN/ST/SH/TH items: A 'bijelo-crveno', B 'crno-crveno-zlatno', C 'crno-žuto', D 'zeleno-bijelo-crveno'."
+ },
+ {
+  "id": "RP-06",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "RP-07",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "RP-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "RP-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "RP-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "SL-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "SL-02",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SL-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SL-04",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SL-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Factual error in explanation: 'Saarland je jedina savezna pokrajina s tim bojama na zastavi' is false (Donja Saska and Porajnje-Falačka also have black-red-gold flags, see NI-05/RP-05); replace with 'Crno-crveno-zlatnu zastavu s grbom imaju i Donja Saska i Porajnje-Falačka, pa pazite na grb.'"
+ },
+ {
+  "id": "SL-06",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "SL-07",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SL-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "SL-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "SL-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Grammar: options in nominative ('ministar …') do not agree with 'Kojeg ministra … nema?' (genitive), unlike other *-10 items; use 'ministra pravosuđa / ministra vanjskih poslova / ministra financija / ministra unutarnjih poslova (…)'."
+ },
+ {
+  "id": "SN-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "SN-02",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "SN-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SN-04",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SN-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "SN-06",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "SN-07",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "SN-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "SN-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "SN-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Grammar: options in nominative ('ministar …') do not agree with 'Kojeg ministra … nema?' (genitive), unlike other *-10 items; use 'ministra pravosuđa / ministra vanjskih poslova / ministra financija / ministra unutarnjih poslova (…)'."
+ },
+ {
+  "id": "ST-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "ST-02",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "ST-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "ST-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "ST-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "ST-06",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "ST-07",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "ST-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "ST-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "ST-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Grammar: options in nominative ('ministar …') do not agree with 'Kojeg ministra … nema?' (genitive), unlike other *-10 items; use 'ministra pravosuđa / ministra vanjskih poslova / ministra financija / ministra unutarnjih poslova (…)'."
+ },
+ {
+  "id": "SH-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "SH-02",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SH-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SH-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "SH-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "SH-06",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "SH-07",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "SH-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "SH-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "SH-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Grammar: options in nominative ('ministar …') do not agree with 'Kojeg ministra … nema?' (genitive), unlike other *-10 items; use 'ministra pravosuđa / ministra vanjskih poslova / ministra financija / ministra unutarnjih poslova (…)'."
+ },
+ {
+  "id": "TH-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": "Grammar: possessive 'Hessenov grb' is nonstandard for a toponym; use 'ali grb Hessena nema zvjezdice.'"
+ },
+ {
+  "id": "TH-02",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "TH-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "TH-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "TH-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "TH-06",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "TH-07",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "TH-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "TH-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "TH-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Grammar: options in nominative ('ministar …') do not agree with 'Kojeg ministra … nema?' (genitive), unlike other *-10 items; use 'ministra pravosuđa / ministra vanjskih poslova / ministra financija / ministra unutarnjih poslova (…)'."
+ }
+]

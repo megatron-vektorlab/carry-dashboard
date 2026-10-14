@@ -1,0 +1,90 @@
+[
+ {
+  "id": "G-001",
+  "field": "expl_bks",
+  "old": "Granice postoje samo kod kaznenih djela, na primjer uvrede ili poticanja na mržnju.",
+  "new": "Granice postavljaju opći zakoni te zaštita mladeži i osobne časti (članak 5. stavak 2.), na primjer kod uvrede ili poticanja na mržnju.",
+  "reason": "Limits are not only criminal law: Art. 5(2) GG names general laws, youth protection and personal honour (also civil injunctions/damages).",
+  "severity": "medium"
+ },
+ {
+  "id": "G-002",
+  "field": "expl_bks",
+  "old": "Od 14. godine dijete o tome odlučuje samo.",
+  "new": "Od 14. godine dijete o tome u pravilu odlučuje samo (u Bavarskoj i Saarlandu tek od 18. godine).",
+  "reason": "§ 5 KErzG sets 14, but Bavaria (Art. 46 Abs. 4 BayEUG) and Saarland (SchoG) allow a pupil's own deregistration from Religionsunterricht only at 18.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-004",
+  "field": "expl_bks",
+  "old": "Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom i traži dozvolu.",
+  "new": "Posjedovanje oružja nije temeljno pravo, nego je strogo ograničeno zakonom; za vatreno oružje u pravilu je potrebna dozvola.",
+  "reason": "WaffG: a permit (Waffenbesitzkarte) is needed for firearms, but some weapons (e.g. weak air guns, many knives) are permit-free for adults.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-013",
+  "field": "merksatz_de",
+  "old": "Opposition sind alle Abgeordneten, die nicht zur Regierung gehören.",
+  "new": "Opposition sind alle Abgeordneten, die nicht zu den Regierungsparteien gehören.",
+  "reason": "Most MPs of the governing parties are not members of the Regierung either; the correct option refers to the Regierungsparteien.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-015",
+  "field": "expl_bks",
+  "old": "iznimke su samo rad pri lišenju slobode po odluci suda i opće javne obveze koje vrijede jednako za sve.",
+  "new": "iznimke su rad pri lišenju slobode po odluci suda, opće javne obveze koje vrijede jednako za sve te vojna ili zamjenska služba (članak 12.a).",
+  "reason": "'samo' omits Art. 12a GG (compulsory military/alternative service, defence-case service duties) - topical with the new military service law.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-019",
+  "field": "expl_bks",
+  "old": "Čovjek smije sam odlučiti u kojem će gradu ili mjestu u Njemačkoj živjeti i preseliti se bez posebne dozvole.",
+  "new": "Svaki njemački državljanin smije sam odlučiti u kojem će mjestu u Njemačkoj živjeti i preseliti se bez dozvole. Za neke strance, na primjer izbjeglice, mogu vrijediti ograničenja.",
+  "reason": "Art. 11 GG protects 'alle Deutschen' only; foreigners can be bound by residence rules (Wohnsitzauflage § 12a AufenthG, § 56 AsylG) - false for part of the readership.",
+  "severity": "high"
+ },
+ {
+  "id": "G-020",
+  "field": "expl_bks",
+  "old": "U Saveznoj Republici Njemačkoj to se dogodilo dva puta, 1952. i 1956. godine.",
+  "new": "Do 2026. to se u Saveznoj Republici Njemačkoj dogodilo dva puta, 1952. i 1956. godine.",
+  "reason": "Number of party bans is time-sensitive (ongoing ban debate); give it a date.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-028",
+  "field": "expl_bks",
+  "old": "Izbori se održavaju svake četiri godine.",
+  "new": "Izbori se u pravilu održavaju svake četiri godine.",
+  "reason": "Art. 39 GG: 4-year term, but the Bundestag can be dissolved early (Art. 68 GG), e.g. early election in February 2025.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-074",
+  "field": "expl_bks",
+  "old": "Građani ga biraju svake četiri godine",
+  "new": "Građani ga u pravilu biraju svake četiri godine",
+  "reason": "Art. 39 GG: 4-year term, but early elections are possible (Art. 68 GG), e.g. February 2025.",
+  "severity": "medium"
+ },
+ {
+  "id": "G-075",
+  "field": "expl_bks",
+  "old": "Frank-Walter Steinmeier izabran je na tu dužnost 2017., a ponovno 2022. godine.",
+  "new": "Frank-Walter Steinmeier izabran je 2017., a ponovno 2022. Njegov drugi mandat završava u ožujku 2027., a ponovni izbor nije moguć.",
+  "reason": "Office holder is time-sensitive: second term ends 18 March 2027 and Art. 54(2) GG allows only one consecutive re-election, so the answer will change soon.",
+  "severity": "high"
+ },
+ {
+  "id": "G-080",
+  "field": "expl_bks",
+  "old": "Svaki građanin može podnijeti ustavnu tužbu (Verfassungsbeschwerde) ako smatra da su mu povrijeđena temeljna prava.",
+  "new": "Svatko može podnijeti ustavnu tužbu (Verfassungsbeschwerde) ako smatra da mu je državna vlast povrijedila temeljna prava, u pravilu tek nakon postupka pred drugim sudovima.",
+  "reason": "Art. 93(1) Nr. 4a GG, § 90(2) BVerfGG: open to 'jedermann', only against public authority, normally after exhausting other legal remedies.",
+  "severity": "medium"
+ }
+]

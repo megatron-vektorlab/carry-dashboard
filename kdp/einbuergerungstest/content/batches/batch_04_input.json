@@ -1,0 +1,646 @@
+[
+ {
+  "id": "G-139",
+  "state": null,
+  "question_de": "Wann kommt es in Deutschland zu einem Prozess vor Gericht? Wenn jemand ...",
+  "options_de": [
+   "zu einer anderen Religion übertritt.",
+   "eine Straftat begangen hat und angeklagt wird.",
+   "eine andere Meinung als die der Regierung vertritt.",
+   "sein Auto falsch geparkt hat und es abgeschleppt wird."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "eine Straftat begangen hat und angeklagt wird.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-140",
+  "state": null,
+  "question_de": "Was macht eine Schöffin/ein Schöffe in Deutschland? Sie/Er ...",
+  "options_de": [
+   "entscheidet mit Richterinnen/Richtern über Schuld und Strafe.",
+   "gibt Bürgerinnen/Bürgern rechtlichen Rat.",
+   "stellt Urkunden aus.",
+   "verteidigt die Angeklagte/den Angeklagten."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "entscheidet mit Richterinnen/Richtern über Schuld und Strafe.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-141",
+  "state": null,
+  "question_de": "Wer berät in Deutschland Personen bei Rechtsfragen und vertritt sie vor Gericht?",
+  "options_de": [
+   "eine Rechtsanwältin/ein Rechtsanwalt",
+   "eine Richterin/ein Richter",
+   "eine Schöffin/ein Schöffe",
+   "eine Staatsanwältin/ein Staatsanwalt"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "eine Rechtsanwältin/ein Rechtsanwalt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-142",
+  "state": null,
+  "question_de": "Was ist die Hauptaufgabe einer Richterin/eines Richters in Deutschland? Eine Richterin/ein Richter ...",
+  "options_de": [
+   "vertritt Bürgerinnen und Bürger vor einem Gericht.",
+   "arbeitet an einem Gericht und spricht Urteile.",
+   "ändert Gesetze.",
+   "betreut Jugendliche vor Gericht."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "arbeitet an einem Gericht und spricht Urteile.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-143",
+  "state": null,
+  "question_de": "Eine Richterin/ein Richter in Deutschland gehört zur ...",
+  "options_de": [
+   "Judikative.",
+   "Exekutive.",
+   "Operative.",
+   "Legislative."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Judikative.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-144",
+  "state": null,
+  "question_de": "Eine Richterin/ein Richter gehört in Deutschland zur ...",
+  "options_de": [
+   "vollziehenden Gewalt.",
+   "rechtsprechenden Gewalt.",
+   "planenden Gewalt.",
+   "gesetzgebenden Gewalt."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "rechtsprechenden Gewalt.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-145",
+  "state": null,
+  "question_de": "In Deutschland wird die Staatsgewalt geteilt. Für welche Staatsgewalt arbeitet eine Richterin/ein Richter? Für die ...",
+  "options_de": [
+   "Judikative",
+   "Exekutive",
+   "Presse",
+   "Legislative"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Judikative",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-146",
+  "state": null,
+  "question_de": "Wie nennt man in Deutschland ein Verfahren vor einem Gericht?",
+  "options_de": [
+   "Programm",
+   "Prozedur",
+   "Protokoll",
+   "Prozess"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Prozess",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-147",
+  "state": null,
+  "question_de": "Was ist die Arbeit einer Richterin/eines Richters in Deutschland?",
+  "options_de": [
+   "Deutschland regieren",
+   "Recht sprechen",
+   "Pläne erstellen",
+   "Gesetze erlassen"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Recht sprechen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-148",
+  "state": null,
+  "question_de": "Was ist eine Aufgabe der Polizei in Deutschland?",
+  "options_de": [
+   "das Land zu verteidigen",
+   "die Bürgerinnen und Bürger abzuhören",
+   "die Gesetze zu beschließen",
+   "die Einhaltung von Gesetzen zu überwachen"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "die Einhaltung von Gesetzen zu überwachen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-149",
+  "state": null,
+  "question_de": "Was ist ein Beispiel für antisemitisches Verhalten?",
+  "options_de": [
+   "ein jüdisches Fest besuchen",
+   "die israelische Regierung kritisieren",
+   "den Holocaust leugnen",
+   "gegen Juden Fußball spielen."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "den Holocaust leugnen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-150",
+  "state": null,
+  "question_de": "Eine Gerichtsschöffin/ein Gerichtsschöffe in Deutschland ist ...",
+  "options_de": [
+   "die Stellvertreterin/der Stellvertreter des Stadtoberhaupts.",
+   "eine ehrenamtliche Richterin/ein ehrenamtlicher Richter.",
+   "ein Mitglied eines Gemeinderats.",
+   "eine Person, die Jura studiert hat."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "eine ehrenamtliche Richterin/ein ehrenamtlicher Richter.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-151",
+  "state": null,
+  "question_de": "Wer baute die Mauer in Berlin?",
+  "options_de": [
+   "Großbritannien",
+   "die DDR",
+   "die Bundesrepublik Deutschland",
+   "die USA"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "die DDR",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-152",
+  "state": null,
+  "question_de": "Wann waren die Nationalsozialisten mit Adolf Hitler in Deutschland an der Macht?",
+  "options_de": [
+   "1918 bis 1923",
+   "1932 bis 1950",
+   "1933 bis 1945",
+   "1945 bis 1989"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "1933 bis 1945",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-153",
+  "state": null,
+  "question_de": "Was war am 8. Mai 1945?",
+  "options_de": [
+   "Tod Adolf Hitlers",
+   "Beginn des Berliner Mauerbaus",
+   "Wahl von Konrad Adenauer zum Bundeskanzler",
+   "Ende des Zweiten Weltkriegs in Europa"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ende des Zweiten Weltkriegs in Europa",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-154",
+  "state": null,
+  "question_de": "Wann war der Zweite Weltkrieg zu Ende?",
+  "options_de": [
+   "1933",
+   "1945",
+   "1949",
+   "1961"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "1945",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-155",
+  "state": null,
+  "question_de": "Wann waren die Nationalsozialisten in Deutschland an der Macht?",
+  "options_de": [
+   "1888 bis 1918",
+   "1921 bis 1934",
+   "1933 bis 1945",
+   "1949 bis 1963"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "1933 bis 1945",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-156",
+  "state": null,
+  "question_de": "In welchem Jahr wurde Hitler Reichskanzler?",
+  "options_de": [
+   "1923",
+   "1927",
+   "1933",
+   "1936"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "1933",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-157",
+  "state": null,
+  "question_de": "Die Nationalsozialisten mit Adolf Hitler errichteten 1933 in Deutschland ...",
+  "options_de": [
+   "eine Diktatur.",
+   "einen demokratischen Staat.",
+   "eine Monarchie.",
+   "ein Fürstentum."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "eine Diktatur.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-158",
+  "state": null,
+  "question_de": "Das \"Dritte Reich\" war eine ...",
+  "options_de": [
+   "Diktatur.",
+   "Demokratie.",
+   "Monarchie.",
+   "Räterepublik."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Diktatur.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-159",
+  "state": null,
+  "question_de": "Was gab es in Deutschland nicht während der Zeit des Nationalsozialismus?",
+  "options_de": [
+   "freie Wahlen",
+   "Pressezensur",
+   "willkürliche Verhaftungen",
+   "Verfolgung von Juden"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "freie Wahlen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-160",
+  "state": null,
+  "question_de": "Welcher Krieg dauerte von 1939 bis 1945?",
+  "options_de": [
+   "der Erste Weltkrieg",
+   "der Zweite Weltkrieg",
+   "der Vietnamkrieg",
+   "der Golfkrieg"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "der Zweite Weltkrieg",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-161",
+  "state": null,
+  "question_de": "Was kennzeichnete den NS-Staat? Eine Politik ...",
+  "options_de": [
+   "des staatlichen Rassismus",
+   "der Meinungsfreiheit",
+   "der allgemeinen Religionsfreiheit",
+   "der Entwicklung der Demokratie"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "des staatlichen Rassismus",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-162",
+  "state": null,
+  "question_de": "Claus Schenk Graf von Stauffenberg wurde bekannt durch ...",
+  "options_de": [
+   "eine Goldmedaille bei den Olympischen Spielen 1936.",
+   "den Bau des Reichstagsgebäudes.",
+   "den Aufbau der Wehrmacht.",
+   "das Attentat auf Hitler am 20. Juli 1944."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "das Attentat auf Hitler am 20. Juli 1944.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-163",
+  "state": null,
+  "question_de": "In welchem Jahr zerstörten die Nationalsozialisten Synagogen und jüdische Geschäfte in Deutschland?",
+  "options_de": [
+   "1925",
+   "1930",
+   "1938",
+   "1945"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "1938",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-164",
+  "state": null,
+  "question_de": "Was passierte am 9. November 1938 in Deutschland?",
+  "options_de": [
+   "Mit dem Angriff auf Polen beginnt der Zweite Weltkrieg.",
+   "Die Nationalsozialisten verlieren eine Wahl und lösen den Reichstag auf.",
+   "Jüdische Geschäfte und Synagogen werden durch Nationalsozialisten und ihre Anhänger zerstört.",
+   "Hitler wird Reichspräsident und lässt alle Parteien verbieten."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Jüdische Geschäfte und Synagogen werden durch Nationalsozialisten und ihre Anhänger zerstört.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-165",
+  "state": null,
+  "question_de": "Wie hieß der erste Bundeskanzler der Bundesrepublik Deutschland?",
+  "options_de": [
+   "Konrad Adenauer",
+   "Kurt Georg Kiesinger",
+   "Helmut Schmidt",
+   "Willy Brandt"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Konrad Adenauer",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-166",
+  "state": null,
+  "question_de": "Bei welchen Demonstrationen in Deutschland riefen die Menschen \"Wir sind das Volk\"?",
+  "options_de": [
+   "beim Arbeiteraufstand 1953 in der DDR",
+   "bei den Demonstrationen 1968 in der Bundesrepublik Deutschland",
+   "bei den Anti-Atomkraft-Demonstrationen 1985 in der Bundesrepublik Deutschland",
+   "bei den Montagsdemonstrationen 1989 in der DDR"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "bei den Montagsdemonstrationen 1989 in der DDR",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-167",
+  "state": null,
+  "question_de": "Welche Länder wurden nach dem Zweiten Weltkrieg in Deutschland als \"Alliierte Besatzungsmächte\" bezeichnet?",
+  "options_de": [
+   "Sowjetunion, Großbritannien, Polen, Schweden",
+   "Frankreich, Sowjetunion, Italien, Japan",
+   "USA, Sowjetunion, Spanien, Portugal",
+   "USA, Sowjetunion, Großbritannien, Frankreich"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "USA, Sowjetunion, Großbritannien, Frankreich",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-168",
+  "state": null,
+  "question_de": "Welches Land war keine \"Alliierte Besatzungsmacht\" in Deutschland?",
+  "options_de": [
+   "USA",
+   "Sowjetunion",
+   "Frankreich",
+   "Japan"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Japan",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-169",
+  "state": null,
+  "question_de": "Wann wurde die Bundesrepublik Deutschland gegründet?",
+  "options_de": [
+   "1939",
+   "1945",
+   "1949",
+   "1951"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "1949",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-170",
+  "state": null,
+  "question_de": "Was gab es während der Zeit des Nationalsozialismus in Deutschland?",
+  "options_de": [
+   "das Verbot von Parteien",
+   "das Recht zur freien Entfaltung der Persönlichkeit",
+   "Pressefreiheit",
+   "den Schutz der Menschenwürde"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "das Verbot von Parteien",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-171",
+  "state": null,
+  "question_de": "Soziale Marktwirtschaft bedeutet, die Wirtschaft ...",
+  "options_de": [
+   "steuert sich allein nach Angebot und Nachfrage.",
+   "wird vom Staat geplant und gesteuert, Angebot und Nachfrage werden nicht berücksichtigt.",
+   "richtet sich nach der Nachfrage im Ausland.",
+   "richtet sich nach Angebot und Nachfrage, aber der Staat sorgt für einen sozialen Ausgleich."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "richtet sich nach Angebot und Nachfrage, aber der Staat sorgt für einen sozialen Ausgleich.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-172",
+  "state": null,
+  "question_de": "In welcher Besatzungszone wurde die DDR gegründet? In der ...",
+  "options_de": [
+   "amerikanischen Besatzungszone",
+   "französischen Besatzungszone",
+   "britischen Besatzungszone",
+   "sowjetischen Besatzungszone"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "sowjetischen Besatzungszone",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-173",
+  "state": null,
+  "question_de": "Die Bundesrepublik Deutschland ist ein Gründungsmitglied ...",
+  "options_de": [
+   "des Nordatlantikpakts (NATO).",
+   "der Vereinten Nationen (VN).",
+   "der Europäischen Union (EU).",
+   "des Warschauer Pakts."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "der Europäischen Union (EU).",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-174",
+  "state": null,
+  "question_de": "Wann wurde die DDR gegründet?",
+  "options_de": [
+   "1947",
+   "1949",
+   "1953",
+   "1956"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "1949",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-175",
+  "state": null,
+  "question_de": "Wie viele Besatzungszonen gab es in Deutschland nach dem Zweiten Weltkrieg?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "4",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-176",
+  "state": null,
+  "question_de": "Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?",
+  "options_de": [
+   "1=Großbritannien, 2=Sowjetunion, 3=Frankreich, 4=USA",
+   "1=Sowjetunion, 2=Großbritannien, 3=USA, 4=Frankreich",
+   "1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich",
+   "1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich",
+  "image_note_bks": "Na karti: 1 = sjeverozapad, 2 = istok (s Berlinom), 3 = jug (Bavarska i Hessen), 4 = jugozapad uz Francusku."
+ },
+ {
+  "id": "G-177",
+  "state": null,
+  "question_de": "Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt?",
+  "options_de": [
+   "München",
+   "Berlin",
+   "Dresden",
+   "Frankfurt/Oder"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Berlin",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-178",
+  "state": null,
+  "question_de": "Vom Juni 1948 bis zum Mai 1949 wurden die Bürgerinnen und Bürger von West-Berlin durch eine Luftbrücke versorgt. Welcher Umstand war dafür verantwortlich?",
+  "options_de": [
+   "Für Frankreich war eine Versorgung der West-Berliner Bevölkerung mit dem Flugzeug kostengünstiger.",
+   "Die amerikanischen Soldatinnen und Soldaten hatten beim Landtransport Angst vor Überfällen.",
+   "Für Großbritannien war die Versorgung über die Luftbrücke schneller.",
+   "Die Sowjetunion unterbrach den gesamten Verkehr auf dem Landwege."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Die Sowjetunion unterbrach den gesamten Verkehr auf dem Landwege.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-179",
+  "state": null,
+  "question_de": "Wie endete der Zweite Weltkrieg in Europa offiziell?",
+  "options_de": [
+   "mit dem Tod Adolf Hitlers",
+   "durch die bedingungslose Kapitulation Deutschlands",
+   "mit dem Rückzug der Deutschen aus den besetzten Gebieten",
+   "durch eine Revolution in Deutschland"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "durch die bedingungslose Kapitulation Deutschlands",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-180",
+  "state": null,
+  "question_de": "Der erste Bundeskanzler der Bundesrepublik Deutschland war ...",
+  "options_de": [
+   "Ludwig Erhard.",
+   "Willy Brandt.",
+   "Konrad Adenauer.",
+   "Gerhard Schröder."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Konrad Adenauer.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-181",
+  "state": null,
+  "question_de": "Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken? © Bundesregierung/Engelbert Reineke",
+  "options_de": [
+   "Er hat sich den ehemaligen Alliierten unterworfen.",
+   "Er bat Polen und die polnischen Juden um Vergebung.",
+   "Er zeigte seine Demut vor dem Warschauer Pakt.",
+   "Er sprach ein Gebet am Grab des Unbekannten Soldaten."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Er bat Polen und die polnischen Juden um Vergebung.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-182",
+  "state": null,
+  "question_de": "Wie heißt das jüdische Gebetshaus?",
+  "options_de": [
+   "Basilika",
+   "Moschee",
+   "Synagoge",
+   "Kirche"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Synagoge",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-183",
+  "state": null,
+  "question_de": "Wann war in der Bundesrepublik Deutschland das \"Wirtschaftswunder\"?",
+  "options_de": [
+   "40er Jahre",
+   "50er Jahre",
+   "70er Jahre",
+   "80er Jahre"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "50er Jahre",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-184",
+  "state": null,
+  "question_de": "Auf welcher rechtlichen Grundlage wurde der Staat Israel gegründet?",
+  "options_de": [
+   "eine Resolution der Vereinten Nationen",
+   "ein Beschluss des Zionistenkongresses",
+   "ein Vorschlag der Bundesregierung",
+   "ein Vorschlag der UdSSR"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "eine Resolution der Vereinten Nationen",
+  "image_note_bks": null
+ }
+]

@@ -1,0 +1,646 @@
+[
+ {
+  "id": "SL-05",
+  "state": "Saarland",
+  "question_de": "Welche Farben hat die Landesflagge des Saarlandes?",
+  "options_de": [
+   "weiß-blau",
+   "schwarz-rot-gold",
+   "schwarz-gelb",
+   "grün-weiß-rot"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "schwarz-rot-gold",
+  "image_note_bks": null
+ },
+ {
+  "id": "SL-06",
+  "state": "Saarland",
+  "question_de": "Wo können Sie sich im Saarland über politische Themen informieren?",
+  "options_de": [
+   "bei den Kirchen",
+   "bei der Landeszentrale für politische Bildung",
+   "bei der Verbraucherzentrale",
+   "beim Ordnungsamt der Gemeinde"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "SL-07",
+  "state": "Saarland",
+  "question_de": "Die Landeshauptstadt des Saarlandes heißt ...",
+  "options_de": [
+   "Neunkirchen.",
+   "Homburg.",
+   "Saarbrücken.",
+   "Völklingen."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Saarbrücken.",
+  "image_note_bks": null
+ },
+ {
+  "id": "SL-08",
+  "state": "Saarland",
+  "question_de": "Welches Bundesland ist das Saarland?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "2",
+  "image_note_bks": "Na karti je Saarland vrlo mala pokrajina na jugozapadu, uz granicu s Francuskom i Luksemburgom."
+ },
+ {
+  "id": "SL-09",
+  "state": "Saarland",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef des Saarlandes?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "SL-10",
+  "state": "Saarland",
+  "question_de": "Welche Ministerin/welchen Minister hat das Saarland nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-01",
+  "state": "Sachsen",
+  "question_de": "Welches Wappen gehört zum Freistaat Sachsen?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Bild 4",
+  "image_note_bks": "Grb Saske: vodoravne crne i žute pruge preko kojih koso ide zeleni vijenac (Rautenkranz)."
+ },
+ {
+  "id": "SN-02",
+  "state": "Sachsen",
+  "question_de": "Welches ist ein Landkreis in Sachsen?",
+  "options_de": [
+   "Vogtlandkreis",
+   "Altötting",
+   "Uckermark",
+   "Nordfriesland"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Vogtlandkreis",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-03",
+  "state": "Sachsen",
+  "question_de": "Für wie viele Jahre wird der Landtag in Sachsen gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-04",
+  "state": "Sachsen",
+  "question_de": "Ab welchem Alter darf man in Sachsen bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "18",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-05",
+  "state": "Sachsen",
+  "question_de": "Welche Farben hat die Landesflagge von Sachsen?",
+  "options_de": [
+   "blau-weiß-rot",
+   "weiß-grün",
+   "grün-weiß-rot",
+   "schwarz-gelb"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "weiß-grün",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-06",
+  "state": "Sachsen",
+  "question_de": "Wo können Sie sich in Sachsen über politische Themen informieren?",
+  "options_de": [
+   "bei der Landeszentrale für politische Bildung",
+   "beim Ordnungsamt der Gemeinde",
+   "bei den Kirchen",
+   "bei der Verbraucherzentrale"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-07",
+  "state": "Sachsen",
+  "question_de": "Die Landeshauptstadt von Sachsen heißt ...",
+  "options_de": [
+   "Leipzig.",
+   "Dresden.",
+   "Chemnitz.",
+   "Zwickau."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Dresden.",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-08",
+  "state": "Sachsen",
+  "question_de": "Welches Bundesland ist Sachsen?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "4",
+  "image_note_bks": "Na karti je Saska na jugoistoku istočnog dijela Njemačke, uz granicu s Poljskom i Češkom."
+ },
+ {
+  "id": "SN-09",
+  "state": "Sachsen",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Sachsen?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "SN-10",
+  "state": "Sachsen",
+  "question_de": "Welche Ministerin/welchen Minister hat Sachsen nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-01",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Welches Wappen gehört zum Bundesland Sachsen-Anhalt?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Bild 4",
+  "image_note_bks": "Grb Saske-Anhalt: gore crno-žute pruge sa zelenim vijencem i mali crni orao, dolje crni medvjed na crvenom zidu."
+ },
+ {
+  "id": "ST-02",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Welches ist ein Landkreis in Sachsen-Anhalt?",
+  "options_de": [
+   "Ammerland",
+   "Altötting",
+   "Uckermark",
+   "Börde"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Börde",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-03",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Für wie viele Jahre wird der Landtag in Sachsen-Anhalt gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-04",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Ab welchem Alter darf man in Sachsen-Anhalt bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "16",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-05",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Welche Farben hat die Landesflagge von Sachsen-Anhalt?",
+  "options_de": [
+   "blau-weiß-rot",
+   "gelb-schwarz",
+   "grün-weiß-rot",
+   "weiß-rot"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "gelb-schwarz",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-06",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Wo können Sie sich in Sachsen-Anhalt über politische Themen informieren?",
+  "options_de": [
+   "bei den Kirchen",
+   "bei der Landeszentrale für politische Bildung",
+   "beim Ordnungsamt der Gemeinde",
+   "bei der Verbraucherzentrale"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-07",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Die Landeshauptstadt von Sachsen-Anhalt heißt ...",
+  "options_de": [
+   "Halle.",
+   "Dessau.",
+   "Magdeburg.",
+   "Wittenberg."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Magdeburg.",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-08",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Welches Bundesland ist Sachsen-Anhalt?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "3",
+  "image_note_bks": "Na karti je Saska-Anhalt u sredini istočnog dijela Njemačke, između Donje Saske, Brandenburga, Saske i Tiringije."
+ },
+ {
+  "id": "ST-09",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Sachsen-Anhalt?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "ST-10",
+  "state": "Sachsen-Anhalt",
+  "question_de": "Welche Ministerin/welchen Minister hat Sachsen-Anhalt nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-01",
+  "state": "Schleswig-Holstein",
+  "question_de": "Welches Wappen gehört zum Bundesland Schleswig-Holstein?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Bild 3",
+  "image_note_bks": "Grb Schleswig-Holsteina: lijevo dva plava lava na zlatnoj podlozi, desno bijeli list koprive na crvenoj podlozi."
+ },
+ {
+  "id": "SH-02",
+  "state": "Schleswig-Holstein",
+  "question_de": "Welches ist ein Landkreis in Schleswig-Holstein?",
+  "options_de": [
+   "Ammerland",
+   "Mecklenburgische Seenplatte",
+   "Nordfriesland",
+   "Rhein-Sieg-Kreis"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Nordfriesland",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-03",
+  "state": "Schleswig-Holstein",
+  "question_de": "Für wie viele Jahre wird der Landtag in Schleswig-Holstein gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-04",
+  "state": "Schleswig-Holstein",
+  "question_de": "Ab welchem Alter darf man in Schleswig-Holstein bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "16",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-05",
+  "state": "Schleswig-Holstein",
+  "question_de": "Welche Farben hat die Landesflagge von Schleswig-Holstein?",
+  "options_de": [
+   "weiß-blau",
+   "blau-weiß-rot",
+   "weiß-rot",
+   "grün-weiß-rot"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "blau-weiß-rot",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-06",
+  "state": "Schleswig-Holstein",
+  "question_de": "Wo können Sie sich in Schleswig-Holstein über politische Themen informieren?",
+  "options_de": [
+   "bei der Verbraucherzentrale",
+   "beim Ordnungsamt der Gemeinde",
+   "beim / bei der Landesbeauftragten für politische Bildung",
+   "bei den Kirchen"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "beim / bei der Landesbeauftragten für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-07",
+  "state": "Schleswig-Holstein",
+  "question_de": "Die Landeshauptstadt von Schleswig-Holstein heißt ...",
+  "options_de": [
+   "Husum.",
+   "Flensburg.",
+   "Lübeck.",
+   "Kiel."
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Kiel.",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-08",
+  "state": "Schleswig-Holstein",
+  "question_de": "Welches Bundesland ist Schleswig-Holstein?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "1",
+  "image_note_bks": "Na karti je Schleswig-Holstein najsjevernija pokrajina, između Sjevernog i Baltičkog mora, uz granicu s Danskom."
+ },
+ {
+  "id": "SH-09",
+  "state": "Schleswig-Holstein",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Schleswig-Holstein?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "SH-10",
+  "state": "Schleswig-Holstein",
+  "question_de": "Welche Ministerin/welchen Minister hat Schleswig-Holstein nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-01",
+  "state": "Thüringen",
+  "question_de": "Welches Wappen gehört zum Freistaat Thüringen?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Bild 4",
+  "image_note_bks": "Grb Tiringije: lav s crveno-bijelim prugama na plavom štitu, oko njega osam bijelih zvjezdica."
+ },
+ {
+  "id": "TH-02",
+  "state": "Thüringen",
+  "question_de": "Welches ist ein Landkreis in Thüringen?",
+  "options_de": [
+   "Ammerland",
+   "Altötting",
+   "Nordfriesland",
+   "Wartburgkreis"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Wartburgkreis",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-03",
+  "state": "Thüringen",
+  "question_de": "Für wie viele Jahre wird der Landtag in Thüringen gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-04",
+  "state": "Thüringen",
+  "question_de": "Ab welchem Alter darf man in Thüringen bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "16",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-05",
+  "state": "Thüringen",
+  "question_de": "Welche Farben hat die Landesflagge von Thüringen?",
+  "options_de": [
+   "blau-weiß-rot",
+   "weiß-rot",
+   "grün-weiß-rot",
+   "schwarz-gold"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "weiß-rot",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-06",
+  "state": "Thüringen",
+  "question_de": "Wo können Sie sich in Thüringen über politische Themen informieren?",
+  "options_de": [
+   "bei den Kirchen",
+   "bei der Verbraucherzentrale",
+   "bei der Landeszentrale für politische Bildung",
+   "beim Ordnungsamt der Gemeinde"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-07",
+  "state": "Thüringen",
+  "question_de": "Die Landeshauptstadt von Thüringen heißt ...",
+  "options_de": [
+   "Eisenach.",
+   "Erfurt.",
+   "Gera.",
+   "Jena."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Erfurt.",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-08",
+  "state": "Thüringen",
+  "question_de": "Welches Bundesland ist Thüringen?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "2",
+  "image_note_bks": "Na karti je Tiringija u sredini Njemačke, južno od Saske-Anhalt, između Hessena, Bavarske i Saske."
+ },
+ {
+  "id": "TH-09",
+  "state": "Thüringen",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Thüringen?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "TH-10",
+  "state": "Thüringen",
+  "question_de": "Welche Ministerin/welchen Minister hat Thüringen nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ }
+]

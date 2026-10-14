@@ -1,0 +1,1290 @@
+[
+ {
+  "id": "G-093",
+  "question_de": "Je mehr \"Zweitstimmen\" eine Partei bei einer Bundestagswahl bekommt, desto ...",
+  "options_de": {
+   "A": "weniger Erststimmen kann sie haben.",
+   "B": "mehr Direktkandidaten der Partei ziehen ins Parlament ein.",
+   "C": "größer ist das Risiko, eine Koalition bilden zu müssen.",
+   "D": "mehr Sitze erhält die Partei im Parlament."
+  },
+  "key": "D",
+  "q_bks": "Što više „drugih glasova” (Zweitstimmen) stranka dobije na izborima za Bundestag, to …",
+  "expl_bks": "Drugi glas (Zweitstimme) daje se stranci, odnosno njezinoj listi. Prema udjelu drugih glasova određuje se koliko mjesta svaka stranka dobiva u Bundestagu (savezni parlament). Zato vrijedi: što više drugih glasova, to više mjesta. Prvim glasom bira se kandidat u izbornom okrugu.",
+  "merksatz_de": "Mehr Zweitstimmen bedeuten mehr Sitze im Bundestag."
+ },
+ {
+  "id": "G-094",
+  "question_de": "Ab welchem Alter darf man in Deutschland an der Wahl zum Deutschen Bundestag teilnehmen?",
+  "options_de": {
+   "A": "16",
+   "B": "18",
+   "C": "21",
+   "D": "23"
+  },
+  "key": "B",
+  "q_bks": "Od koje se dobi u Njemačkoj smije sudjelovati na izborima za njemački Bundestag?",
+  "expl_bks": "Na izborima za Bundestag (savezni parlament) smiju glasati njemački državljani koji na dan izbora imaju najmanje 18 godina. To određuje članak 38. Temeljnog zakona. U nekim saveznim pokrajinama na lokalnim izborima glasa se već sa 16 godina, ali za Bundestag granica je 18.",
+  "merksatz_de": "Für die Bundestagswahl muss man mindestens 18 Jahre alt sein."
+ },
+ {
+  "id": "G-095",
+  "question_de": "Was gilt für die meisten Kinder in Deutschland?",
+  "options_de": {
+   "A": "Wahlpflicht",
+   "B": "Schulpflicht",
+   "C": "Schweigepflicht",
+   "D": "Religionspflicht"
+  },
+  "key": "B",
+  "q_bks": "Što vrijedi za većinu djece u Njemačkoj?",
+  "expl_bks": "U Njemačkoj postoji obvezno školovanje (Schulpflicht): djeca moraju ići u školu, obično od šeste godine, devet ili deset godina, ovisno o saveznoj pokrajini. Roditelji moraju paziti da dijete redovito ide na nastavu. Obveza glasanja u Njemačkoj ne postoji, a vjera je slobodan izbor.",
+  "merksatz_de": "In Deutschland gilt für Kinder die Schulpflicht."
+ },
+ {
+  "id": "G-096",
+  "question_de": "Wie kann jemand, der den Holocaust leugnet, bestraft werden?",
+  "options_de": {
+   "A": "Kürzung sozialer Leistungen",
+   "B": "bis zu 100 Sozialstunden",
+   "C": "gar nicht, Holocaustleugnung ist erlaubt",
+   "D": "mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe"
+  },
+  "key": "D",
+  "q_bks": "Kako može biti kažnjen netko tko poriče holokaust?",
+  "expl_bks": "Poricanje holokausta, odnosno ubojstva oko šest milijuna europskih Židova u vrijeme nacionalsocijalizma, u Njemačkoj je kazneno djelo. Kazneni zakon (§ 130, poticanje na mržnju – Volksverhetzung) za to predviđa kaznu zatvora do pet godina ili novčanu kaznu. Tako se štiti sjećanje na žrtve i javni mir.",
+  "merksatz_de": "Holocaustleugnung ist in Deutschland eine Straftat."
+ },
+ {
+  "id": "G-097",
+  "question_de": "Was bezahlt man in Deutschland automatisch, wenn man fest angestellt ist?",
+  "options_de": {
+   "A": "Sozialversicherung",
+   "B": "Sozialhilfe",
+   "C": "Kindergeld",
+   "D": "Wohngeld"
+  },
+  "key": "A",
+  "q_bks": "Što se u Njemačkoj automatski plaća kad je netko stalno zaposlen?",
+  "expl_bks": "Tko je stalno zaposlen, automatski plaća doprinose za socijalno osiguranje: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti i osiguranje za njegu (Pflegeversicherung). Poslodavac taj iznos odbija izravno od bruto plaće i uplaćuje ga. Socijalna pomoć, dječji doplatak i doplatak za stanovanje davanja su koja se primaju, a ne plaćaju.",
+  "merksatz_de": "Mit fester Arbeit zahlt man automatisch in die Sozialversicherung."
+ },
+ {
+  "id": "G-098",
+  "question_de": "Wenn Abgeordnete im Deutschen Bundestag ihre Fraktion wechseln, ...",
+  "options_de": {
+   "A": "dürfen sie nicht mehr an den Sitzungen des Parlaments teilnehmen.",
+   "B": "kann die Regierung ihre Mehrheit verlieren.",
+   "C": "muss die Bundespräsidentin/der Bundespräsident zuvor ihr/sein Einverständnis geben.",
+   "D": "dürfen die Wählerinnen/Wähler dieser Abgeordneten noch einmal wählen."
+  },
+  "key": "B",
+  "q_bks": "Kad zastupnici u njemačkom Bundestagu promijene klub zastupnika (Fraktion), …",
+  "expl_bks": "Savezna vlada treba većinu u Bundestagu (savezni parlament) da bi mogla donositi zakone. Ako zastupnici vladajućih stranaka prijeđu u drugi klub zastupnika (Fraktion), npr. u opoziciju, vlada može ostati bez većine. Promjena kluba je dopuštena, jer su zastupnici prema članku 38. Temeljnog zakona vezani samo svojom savješću.",
+  "merksatz_de": "Durch Fraktionswechsel kann die Regierung ihre Mehrheit verlieren."
+ },
+ {
+  "id": "G-099",
+  "question_de": "Wer bezahlt in Deutschland die Sozialversicherungen?",
+  "options_de": {
+   "A": "Arbeitgeberinnen/Arbeitgeber und Arbeitnehmerinnen/Arbeitnehmer",
+   "B": "nur Arbeitnehmerinnen/Arbeitnehmer",
+   "C": "alle Staatsangehörigen",
+   "D": "nur Arbeitgeberinnen/Arbeitgeber"
+  },
+  "key": "A",
+  "q_bks": "Tko u Njemačkoj plaća socijalna osiguranja?",
+  "expl_bks": "Socijalna osiguranja financiraju se doprinosima koje zajedno plaćaju poslodavci i zaposlenici, većinom otprilike pola-pola. Zaposlenikov dio doprinosa odbija se automatski od bruto plaće, a poslodavac dodaje svoj dio. Zaposlenikov dio vidi se na obračunu plaće (Lohnabrechnung).",
+  "merksatz_de": "Arbeitgeber und Arbeitnehmer zahlen zusammen die Sozialversicherung."
+ },
+ {
+  "id": "G-100",
+  "question_de": "Was gehört nicht zur gesetzlichen Sozialversicherung?",
+  "options_de": {
+   "A": "die Lebensversicherung",
+   "B": "die gesetzliche Rentenversicherung",
+   "C": "die Arbeitslosenversicherung",
+   "D": "die Pflegeversicherung"
+  },
+  "key": "A",
+  "q_bks": "Što ne spada u zakonsko socijalno osiguranje?",
+  "expl_bks": "Zakonsko socijalno osiguranje ima pet grana: zdravstveno, mirovinsko, osiguranje za slučaj nezaposlenosti, osiguranje za njegu i osiguranje od nezgode. Životno osiguranje nije među njima. To je privatno osiguranje koje svatko može dobrovoljno sklopiti kod osiguravajuće kuće.",
+  "merksatz_de": "Die Lebensversicherung ist eine private, freiwillige Versicherung."
+ },
+ {
+  "id": "G-101",
+  "question_de": "Gewerkschaften sind Interessenverbände der ...",
+  "options_de": {
+   "A": "Jugendlichen.",
+   "B": "Arbeitnehmerinnen und Arbeitnehmer.",
+   "C": "Rentnerinnen und Rentner.",
+   "D": "Arbeitgeberinnen und Arbeitgeber."
+  },
+  "key": "B",
+  "q_bks": "Sindikati su udruženja koja zastupaju interese …",
+  "expl_bks": "Sindikati (Gewerkschaften) udruženja su zaposlenika. Pregovaraju s poslodavcima o plaćama, radnom vremenu i godišnjem odmoru te sklapaju kolektivne ugovore (Tarifverträge). Članstvo je dobrovoljno i plaća se članarina. Poslodavci imaju svoja posebna udruženja (Arbeitgeberverbände).",
+  "merksatz_de": "Gewerkschaften vertreten die Interessen der Arbeitnehmer."
+ },
+ {
+  "id": "G-102",
+  "question_de": "Womit kann man in der Bundesrepublik Deutschland geehrt werden, wenn man auf politischem, wirtschaftlichem, kulturellem, geistigem oder sozialem Gebiet eine besondere Leistung erbracht hat? Mit dem ...",
+  "options_de": {
+   "A": "Bundesverdienstkreuz",
+   "B": "Bundesadler",
+   "C": "Vaterländischen Verdienstorden",
+   "D": "Ehrentitel \"Held der Deutschen Demokratischen Republik\""
+  },
+  "key": "A",
+  "q_bks": "Čime netko u Saveznoj Republici Njemačkoj može biti odlikovan ako je postigao posebna dostignuća na političkom, gospodarskom, kulturnom, duhovnom ili socijalnom području? …",
+  "expl_bks": "Savezni križ za zasluge (Bundesverdienstkreuz) najpoznatije je odlikovanje Savezne Republike Njemačke, uvedeno 1951. godine. Dodjeljuje ga savezni predsjednik ljudima s posebnim zaslugama, često i za volonterski rad. Domovinski orden za zasluge i titula „Heroj DDR-a” bila su odlikovanja DDR-a (Njemačka Demokratska Republika, Istočna Njemačka), a savezni orao je državni simbol na grbu.",
+  "merksatz_de": "Für besondere Verdienste gibt es das Bundesverdienstkreuz."
+ },
+ {
+  "id": "G-103",
+  "question_de": "Was wird in Deutschland als \"Ampelkoalition\" bezeichnet? Die Zusammenarbeit ...",
+  "options_de": {
+   "A": "der Bundestagsfraktionen von CDU und CSU",
+   "B": "von SPD, FDP und Bündnis 90/Die Grünen in einer Regierung",
+   "C": "von CSU, Die LINKE und Bündnis 90/Die Grünen in einer Regierung",
+   "D": "der Bundestagsfraktionen von CDU und SPD"
+  },
+  "key": "B",
+  "q_bks": "Što se u Njemačkoj naziva „semaforskom koalicijom” (Ampelkoalition)? Suradnja …",
+  "expl_bks": "Koalicije se često nazivaju prema bojama stranaka. Boja SPD-a je crvena, FDP-a žuta, a stranke Bündnis 90/Die Grünen zelena – kao tri svjetla na semaforu (Ampel). Zato se vlada tih triju stranaka zove „semaforska koalicija”. Koalicija CDU/CSU-a i SPD-a naziva se „velika koalicija”.",
+  "merksatz_de": "Eine Ampelkoalition bilden SPD, FDP und Grüne."
+ },
+ {
+  "id": "G-104",
+  "question_de": "Eine Frau in Deutschland verliert ihre Arbeit. Was darf nicht der Grund für diese Entlassung sein?",
+  "options_de": {
+   "A": "Die Frau ist lange krank und arbeitsunfähig.",
+   "B": "Die Frau kam oft zu spät zur Arbeit.",
+   "C": "Die Frau erledigt private Sachen während der Arbeitszeit.",
+   "D": "Die Frau bekommt ein Kind und ihr Chef weiß das."
+  },
+  "key": "D",
+  "q_bks": "Žena u Njemačkoj izgubi posao. Što ne smije biti razlog za taj otkaz?",
+  "expl_bks": "Trudnice i majke nakon poroda posebno su zaštićene Zakonom o zaštiti majčinstva (Mutterschutzgesetz). Od početka trudnoće do najmanje četiri mjeseca nakon poroda poslodavac ženi u pravilu ne smije dati otkaz. Duga bolest, česta kašnjenja ili privatni poslovi za vrijeme rada, naprotiv, pod određenim uvjetima mogu biti razlog za otkaz.",
+  "merksatz_de": "Schwangeren darf man in der Regel nicht kündigen."
+ },
+ {
+  "id": "G-105",
+  "question_de": "Was ist eine Aufgabe von Wahlhelferinnen/Wahlhelfern in Deutschland?",
+  "options_de": {
+   "A": "Sie helfen alten Menschen bei der Stimmabgabe in der Wahlkabine.",
+   "B": "Sie schreiben die Wahlbenachrichtigungen vor der Wahl.",
+   "C": "Sie geben Zwischenergebnisse an die Medien weiter.",
+   "D": "Sie zählen die Stimmen nach dem Ende der Wahl."
+  },
+  "key": "D",
+  "q_bks": "Koji je jedan od zadataka izbornih pomagača (Wahlhelfer) u Njemačkoj?",
+  "expl_bks": "Izborni pomagači (Wahlhelfer) rade volonterski na biralištu. Paze da glasanje teče pravilno, a nakon zatvaranja birališta u 18 sati javno broje glasove. Glasanje je tajno, pa svaki birač u kabini u pravilu glasa sam. Obavijesti o izborima šalje općina, a rezultate objavljuju izborna tijela.",
+  "merksatz_de": "Wahlhelfer zählen nach der Wahl die Stimmen."
+ },
+ {
+  "id": "G-106",
+  "question_de": "In Deutschland helfen ehrenamtliche Wahlhelferinnen und Wahlhelfer bei den Wahlen. Was ist eine Aufgabe von Wahlhelferinnen/Wahlhelfern?",
+  "options_de": {
+   "A": "Sie helfen Kindern und alten Menschen beim Wählen.",
+   "B": "Sie schreiben Karten und Briefe mit der Angabe des Wahllokals.",
+   "C": "Sie geben Zwischenergebnisse an Journalisten weiter.",
+   "D": "Sie zählen die Stimmen nach dem Ende der Wahl."
+  },
+  "key": "D",
+  "q_bks": "U Njemačkoj na izborima pomažu izborni pomagači (Wahlhelfer) koji rade volonterski. Koji je jedan od zadataka izbornih pomagača?",
+  "expl_bks": "Na svakom biralištu radi birački odbor (Wahlvorstand) od nekoliko volontera. Oni izdaju glasačke listiće i paze na red, a nakon zatvaranja birališta u 18 sati broje glasove. Brojenje je javno, svatko može gledati. Obavijesti o izborima ne pišu pomagači, nego ih šalje općina.",
+  "merksatz_de": "Nach Schließung der Wahllokale zählen Wahlhelfer die Stimmen."
+ },
+ {
+  "id": "G-107",
+  "question_de": "Für wie viele Jahre wird der Bundestag in Deutschland gewählt?",
+  "options_de": {
+   "A": "2 Jahre",
+   "B": "4 Jahre",
+   "C": "6 Jahre",
+   "D": "8 Jahre"
+  },
+  "key": "B",
+  "q_bks": "Na koliko se godina u Njemačkoj bira Bundestag?",
+  "expl_bks": "Bundestag (savezni parlament) bira se na četiri godine. To razdoblje zove se izborni period (Wahlperiode), a određeno je u članku 39. Temeljnog zakona. Raniji izbori mogući su samo u posebnim slučajevima, kad savezni predsjednik raspusti Bundestag.",
+  "merksatz_de": "Der Bundestag wird für vier Jahre gewählt."
+ },
+ {
+  "id": "G-108",
+  "question_de": "Bei einer Bundestagswahl in Deutschland darf jede/jeder wählen, die/der ...",
+  "options_de": {
+   "A": "in der Bundesrepublik Deutschland wohnt und wählen möchte.",
+   "B": "Bürgerin/Bürger der Bundesrepublik Deutschland ist und mindestens 18 Jahre alt ist.",
+   "C": "seit mindestens 3 Jahren in der Bundesrepublik Deutschland lebt.",
+   "D": "Bürgerin/Bürger der Bundesrepublik Deutschland ist und mindestens 21 Jahre alt ist."
+  },
+  "key": "B",
+  "q_bks": "Na izborima za Bundestag u Njemačkoj smije glasati svatko tko …",
+  "expl_bks": "Za izbore za Bundestag (savezni parlament) vrijede dva uvjeta: njemačko državljanstvo i najmanje 18 godina (članak 38. Temeljnog zakona). Sam boravak u Njemačkoj nije dovoljan, bez obzira na to koliko dugo netko ovdje živi. Nakon naturalizacije (stjecanja državljanstva) dobiva se i to pravo.",
+  "merksatz_de": "Wählen dürfen deutsche Staatsbürger ab 18 Jahren."
+ },
+ {
+  "id": "G-109",
+  "question_de": "Wie oft gibt es normalerweise Bundestagswahlen in Deutschland?",
+  "options_de": {
+   "A": "alle drei Jahre",
+   "B": "alle vier Jahre",
+   "C": "alle fünf Jahre",
+   "D": "alle sechs Jahre"
+  },
+  "key": "B",
+  "q_bks": "Koliko se često u Njemačkoj obično održavaju izbori za Bundestag?",
+  "expl_bks": "Izbori za Bundestag (savezni parlament) redovito se održavaju svake četiri godine, jer toliko traje izborni period prema članku 39. Temeljnog zakona. Iznimka su prijevremeni izbori: ako savezni predsjednik raspusti Bundestag, novi izbori održavaju se ranije, u roku od 60 dana.",
+  "merksatz_de": "Bundestagswahlen finden normalerweise alle vier Jahre statt."
+ },
+ {
+  "id": "G-110",
+  "question_de": "Für wie viele Jahre wird der Bundestag in Deutschland gewählt?",
+  "options_de": {
+   "A": "2 Jahre",
+   "B": "3 Jahre",
+   "C": "4 Jahre",
+   "D": "5 Jahre"
+  },
+  "key": "C",
+  "q_bks": "Na koliko se godina u Njemačkoj bira Bundestag?",
+  "expl_bks": "Mandat Bundestaga (savezni parlament) traje četiri godine, prema članku 39. Temeljnog zakona. U tom razdoblju zastupnici donose zakone i biraju saveznog kancelara. Pažnja, zamka: Europski parlament i većina pokrajinskih parlamenata (Landtag) biraju se na pet godina, a Bundestag na četiri.",
+  "merksatz_de": "Eine Wahlperiode des Bundestages dauert vier Jahre."
+ },
+ {
+  "id": "G-111",
+  "question_de": "Welche Handlungen mit Bezug auf den Staat Israel sind in Deutschland verboten?",
+  "options_de": {
+   "A": "die Politik Israels öffentlich kritisieren",
+   "B": "das Aufhängen einer israelischen Flagge auf dem Privatgrundstück",
+   "C": "eine Diskussion über die Politik Israels",
+   "D": "der öffentliche Aufruf zur Vernichtung Israels"
+  },
+  "key": "D",
+  "q_bks": "Koji su postupci u vezi s državom Izrael zabranjeni u Njemačkoj?",
+  "expl_bks": "Javni poziv na uništenje Izraela u Njemačkoj je zabranjen i može se kazniti, jer potiče na mržnju i nasilje. Kritizirati politiku izraelske vlade i raspravljati o njoj dopušteno je; to je dio slobode mišljenja. Zbog svoje povijesti Njemačka posebno odlučno postupa protiv antisemitizma.",
+  "merksatz_de": "Zur Vernichtung Israels aufzurufen ist in Deutschland verboten."
+ },
+ {
+  "id": "G-112",
+  "question_de": "Die Wahlen in Deutschland sind ...",
+  "options_de": {
+   "A": "speziell.",
+   "B": "geheim.",
+   "C": "berufsbezogen.",
+   "D": "geschlechtsabhängig."
+  },
+  "key": "B",
+  "q_bks": "Izbori u Njemačkoj su …",
+  "expl_bks": "Izbori u Njemačkoj su tajni: svatko glasa sam u glasačkoj kabini i nitko ne smije vidjeti ni provjeravati za koga je netko glasao. To je jedno od pet izbornih načela iz članka 38. Temeljnog zakona: izbori su opći, neposredni, slobodni, jednaki i tajni.",
+  "merksatz_de": "Wahlen in Deutschland sind geheim."
+ },
+ {
+  "id": "G-113",
+  "question_de": "Wahlen in Deutschland gewinnt die Partei, die ...",
+  "options_de": {
+   "A": "die meisten Stimmen bekommt.",
+   "B": "die meisten Männer mehrheitlich gewählt haben.",
+   "C": "die meisten Stimmen bei den Arbeiterinnen/Arbeitern bekommen hat.",
+   "D": "die meisten Erststimmen für ihre Kanzlerkandidatin/ihren Kanzlerkandidaten erhalten hat."
+  },
+  "key": "A",
+  "q_bks": "Izbore u Njemačkoj pobjeđuje stranka koja …",
+  "expl_bks": "Izbore pobjeđuje stranka koja dobije najviše glasova. Svaki glas vrijedi jednako, bez obzira na to glasa li muškarac ili žena, radnik ili poslodavac. Na izborima za Bundestag za raspodjelu mjesta presudan je drugi glas. Kancelara ne bira narod izravno, nego ga bira Bundestag.",
+  "merksatz_de": "Die Partei mit den meisten Stimmen gewinnt die Wahl."
+ },
+ {
+  "id": "G-114",
+  "question_de": "An demokratischen Wahlen in Deutschland teilzunehmen ist ...",
+  "options_de": {
+   "A": "eine Pflicht.",
+   "B": "ein Recht.",
+   "C": "ein Zwang.",
+   "D": "eine Last."
+  },
+  "key": "B",
+  "q_bks": "Sudjelovati na demokratskim izborima u Njemačkoj je …",
+  "expl_bks": "Glasanje je u Njemačkoj pravo, a ne obveza. Svaki birač sam odlučuje hoće li glasati; tko ne glasa, ne plaća kaznu. Ipak je sudjelovanje na izborima važno, jer tako građani utječu na to tko će ih predstavljati u parlamentu.",
+  "merksatz_de": "Wählen ist in Deutschland ein Recht, keine Pflicht."
+ },
+ {
+  "id": "G-115",
+  "question_de": "Was bedeutet \"aktives Wahlrecht\" in Deutschland?",
+  "options_de": {
+   "A": "Man kann gewählt werden.",
+   "B": "Man muss wählen gehen.",
+   "C": "Man kann wählen.",
+   "D": "Man muss zur Auszählung der Stimmen gehen."
+  },
+  "key": "C",
+  "q_bks": "Što u Njemačkoj znači „aktivno biračko pravo”?",
+  "expl_bks": "Aktivno biračko pravo znači da osoba smije birati, tj. glasati na izborima. Pasivno biračko pravo znači da osoba može biti birana, na primjer kao zastupnik u parlamentu. Za izbore za Bundestag oba prava imaju njemački državljani od 18 godina. Obveza glasanja ne postoji.",
+  "merksatz_de": "Aktives Wahlrecht heißt: Ich darf wählen."
+ },
+ {
+  "id": "G-116",
+  "question_de": "Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das ...",
+  "options_de": {
+   "A": "aktive Wahlkampagne.",
+   "B": "aktives Wahlverfahren.",
+   "C": "aktiver Wahlkampf.",
+   "D": "aktives Wahlrecht."
+  },
+  "key": "D",
+  "q_bks": "Ako smijete glasati na izborima za Bundestag u Njemačkoj, to se zove …",
+  "expl_bks": "Pravo da glasate zove se aktivno biračko pravo (aktives Wahlrecht). Na izborima za Bundestag (savezni parlament) imaju ga svi njemački državljani s najmanje 18 godina. Pravo da budete izabrani zove se pasivno biračko pravo. Kampanja i predizborna borba odnose se na stranke, a ne na birače.",
+  "merksatz_de": "Wer wählen darf, hat das aktive Wahlrecht."
+ },
+ {
+  "id": "G-117",
+  "question_de": "Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?",
+  "options_de": {
+   "A": "3%",
+   "B": "4%",
+   "C": "5%",
+   "D": "6%"
+  },
+  "key": "C",
+  "q_bks": "Koliko najmanje posto drugih glasova stranke moraju dobiti da bi bile izabrane u njemački Bundestag?",
+  "expl_bks": "Za Bundestag (savezni parlament) vrijedi izborni prag od 5 %: stranka mora dobiti najmanje 5 % svih drugih glasova u Njemačkoj da bi dobila mjesta prema svom udjelu. Tako parlament ne postaje rascjepkan na previše malih stranaka. Prag ne vrijedi za stranke nacionalnih manjina, npr. danske manjine.",
+  "merksatz_de": "Parteien brauchen mindestens fünf Prozent der Zweitstimmen."
+ },
+ {
+  "id": "G-118",
+  "question_de": "Wer darf bei den rund 40 jüdischen Makkabi-Sportvereinen Mitglied werden?",
+  "options_de": {
+   "A": "nur Deutsche",
+   "B": "nur Israelis",
+   "C": "nur religiöse Menschen",
+   "D": "alle Menschen"
+  },
+  "key": "D",
+  "q_bks": "Tko smije postati član jedne od otprilike 40 židovskih sportskih udruga Makkabi?",
+  "expl_bks": "Udruge Makkabi imaju židovske korijene, ali su otvorene za sve ljude. Članom može postati svatko, bez obzira na vjeru, podrijetlo ili državljanstvo, a mnogi članovi nisu Židovi. Ime dolazi od Makabejaca, židovskih boraca iz antičkog vremena. U udrugama se treniraju nogomet, košarka, tenis i mnogi drugi sportovi.",
+  "merksatz_de": "Bei Makkabi-Sportvereinen dürfen alle Menschen Mitglied werden."
+ },
+ {
+  "id": "G-119",
+  "question_de": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+  "options_de": {
+   "A": "Alle verurteilten Straftäterinnen/Straftäter dürfen nicht wählen.",
+   "B": "Wenn ich wählen gehen möchte, muss meine Arbeitgeberin/mein Arbeitgeber mir frei geben.",
+   "C": "Jede Person kann ohne Zwang entscheiden, ob sie wählen möchte und wen sie wählen möchte.",
+   "D": "Ich kann frei entscheiden, wo ich wählen gehen möchte."
+  },
+  "key": "C",
+  "q_bks": "Izbori u Njemačkoj su slobodni. Što to znači?",
+  "expl_bks": "Slobodni izbori znače da nitko ne smije vršiti pritisak na birače: ni država, ni poslodavac, ni obitelj. Svatko sam i bez straha odlučuje hoće li uopće glasati i za koga. Zato u Njemačkoj nema obveze glasanja, a glasanje je tajno.",
+  "merksatz_de": "Freie Wahl: Niemand darf mich zum Wählen zwingen."
+ },
+ {
+  "id": "G-120",
+  "question_de": "Das Wahlsystem in Deutschland ist ein ...",
+  "options_de": {
+   "A": "Zensuswahlrecht.",
+   "B": "Dreiklassenwahlrecht.",
+   "C": "Mehrheits- und Verhältniswahlrecht.",
+   "D": "allgemeines Männerwahlrecht."
+  },
+  "key": "C",
+  "q_bks": "Izborni sustav u Njemačkoj je …",
+  "expl_bks": "Njemački sustav spaja dva načela. Prvim glasom bira se kandidat u izbornom okrugu po većinskom načelu (najviše glasova). Drugim glasom bira se stranka, a mjesta u Bundestagu (savezni parlament) dijele se razmjerno udjelu glasova. Cenzusno i troklasno biračko pravo davali su bogatijima veći utjecaj i danas ne postoje.",
+  "merksatz_de": "Das Wahlsystem verbindet Mehrheitswahl und Verhältniswahl."
+ },
+ {
+  "id": "G-121",
+  "question_de": "Eine Partei möchte in den Deutschen Bundestag. Sie muss aber einen Mindestanteil an Wählerstimmen haben. Das heißt ...",
+  "options_de": {
+   "A": "5%-Hürde.",
+   "B": "Zulassungsgrenze.",
+   "C": "Basiswert.",
+   "D": "Richtlinie."
+  },
+  "key": "A",
+  "q_bks": "Stranka želi ući u njemački Bundestag. Ali za to mora dobiti minimalni udio glasova birača. To se zove …",
+  "expl_bks": "Taj minimalni udio zove se izborni prag od 5 % (5%-Hürde). Stranka mora osvojiti najmanje 5 % drugih glasova u cijeloj Njemačkoj da bi dobila mjesta u Bundestagu (savezni parlament) prema svom udjelu. Stranka s, na primjer, 4,8 % drugih glasova u pravilu ne ulazi u Bundestag.",
+  "merksatz_de": "Den nötigen Mindestanteil an Stimmen nennt man 5%-Hürde."
+ },
+ {
+  "id": "G-122",
+  "question_de": "Welchem Grundsatz unterliegen Wahlen in Deutschland? Wahlen in Deutschland sind ...",
+  "options_de": {
+   "A": "frei, gleich, geheim.",
+   "B": "offen, sicher, frei.",
+   "C": "geschlossen, gleich, sicher.",
+   "D": "sicher, offen, freiwillig."
+  },
+  "key": "A",
+  "q_bks": "Kojem načelu podliježu izbori u Njemačkoj? Izbori u Njemačkoj su …",
+  "expl_bks": "Članak 38. Temeljnog zakona određuje pet izbornih načela: izbori su opći, neposredni, slobodni, jednaki i tajni. Slobodni znači bez pritiska, jednaki znači da svaki glas vrijedi jednako, a tajni da nitko ne smije vidjeti za koga glasate. „Otvoreni” izbori bili bi suprotnost tajnosti.",
+  "merksatz_de": "Wahlen sind allgemein, unmittelbar, frei, gleich und geheim."
+ },
+ {
+  "id": "G-123",
+  "question_de": "Was ist in Deutschland die \"5%-Hürde\"?",
+  "options_de": {
+   "A": "Abstimmungsregelung im Bundestag für kleine Parteien",
+   "B": "Anwesenheitskontrolle im Bundestag für Abstimmungen",
+   "C": "Mindestanteil an Wählerstimmen, um ins Parlament zu kommen",
+   "D": "Anwesenheitskontrolle im Bundesrat für Abstimmungen"
+  },
+  "key": "C",
+  "q_bks": "Što je u Njemačkoj „izborni prag od 5 %” (5%-Hürde)?",
+  "expl_bks": "Izborni prag od 5 % odnosi se na izbore, a ne na glasanja unutar parlamenta. Stranka mora dobiti najmanje 5 % drugih glasova da bi ušla u Bundestag (savezni parlament) s mjestima prema svom udjelu. Slično pravilo vrijedi i na izborima za pokrajinske parlamente (Landtag).",
+  "merksatz_de": "Die 5%-Hürde ist ein Mindestanteil an Wählerstimmen."
+ },
+ {
+  "id": "G-124",
+  "question_de": "Die Bundestagswahl in Deutschland ist die Wahl ...",
+  "options_de": {
+   "A": "der Bundeskanzlerin/des Bundeskanzlers.",
+   "B": "der Parlamente der Länder.",
+   "C": "des Parlaments für Deutschland.",
+   "D": "der Bundespräsidentin/des Bundespräsidenten."
+  },
+  "key": "C",
+  "q_bks": "Izbori za Bundestag u Njemačkoj su izbori …",
+  "expl_bks": "Na izborima za Bundestag (savezni parlament) građani biraju parlament za cijelu Njemačku. Saveznog kancelara zatim bira Bundestag, a saveznog predsjednika Savezna skupština (Bundesversammlung). Pokrajinski parlamenti (Landtag) biraju se na posebnim pokrajinskim izborima.",
+  "merksatz_de": "Bei der Bundestagswahl wählt man das Parlament für Deutschland."
+ },
+ {
+  "id": "G-125",
+  "question_de": "In einer Demokratie ist eine Funktion von regelmäßigen Wahlen, ...",
+  "options_de": {
+   "A": "die Bürgerinnen und Bürger zu zwingen, ihre Stimme abzugeben.",
+   "B": "nach dem Willen der Wählermehrheit den Wechsel der Regierung zu ermöglichen.",
+   "C": "im Land bestehende Gesetze beizubehalten.",
+   "D": "den Armen mehr Macht zu geben."
+  },
+  "key": "B",
+  "q_bks": "U demokraciji je jedna od funkcija redovitih izbora …",
+  "expl_bks": "Redoviti izbori omogućuju građanima da vladu potvrde ili je zamijene. Ako većina birača želi promjenu, nova većina u parlamentu može izabrati novu vladu, i to mirnim putem, bez nasilja. Zato se izbori održavaju u stalnim razmacima, za Bundestag svake četiri godine.",
+  "merksatz_de": "Durch Wahlen kann die Mehrheit die Regierung wechseln."
+ },
+ {
+  "id": "G-126",
+  "question_de": "Was bekommen wahlberechtigte Bürgerinnen und Bürger in Deutschland vor einer Wahl?",
+  "options_de": {
+   "A": "eine Wahlbenachrichtigung von der Gemeinde",
+   "B": "eine Wahlerlaubnis von der Bundespräsidentin/von dem Bundespräsidenten",
+   "C": "eine Benachrichtigung von der Bundesversammlung",
+   "D": "eine Benachrichtigung vom Pfarramt"
+  },
+  "key": "A",
+  "q_bks": "Što građani s biračkim pravom u Njemačkoj dobivaju prije izbora?",
+  "expl_bks": "Prije izbora svaki birač dobiva poštom obavijest o izborima (Wahlbenachrichtigung) od svoje općine; za Bundestag najkasnije tri tjedna prije izbora. U njoj piše datum izbora, adresa birališta i kako se može zatražiti glasanje poštom. Na biralište je dobro ponijeti tu obavijest i osobnu iskaznicu ili putovnicu.",
+  "merksatz_de": "Vor der Wahl schickt die Gemeinde eine Wahlbenachrichtigung."
+ },
+ {
+  "id": "G-127",
+  "question_de": "Warum gibt es die 5%-Hürde im Wahlgesetz der Bundesrepublik Deutschland? Es gibt sie, weil ...",
+  "options_de": {
+   "A": "die Programme von vielen kleinen Parteien viele Gemeinsamkeiten haben.",
+   "B": "die Bürgerinnen und Bürger bei vielen kleinen Parteien die Orientierung verlieren können.",
+   "C": "viele kleine Parteien die Regierungsbildung erschweren.",
+   "D": "die kleinen Parteien nicht so viel Geld haben, um die Politikerinnen und Politiker zu bezahlen."
+  },
+  "key": "C",
+  "q_bks": "Zašto u izbornom zakonu Savezne Republike Njemačke postoji izborni prag od 5 %? Postoji zato što …",
+  "expl_bks": "Izborni prag od 5 % posljedica je iskustva iz Weimarske Republike (1919. – 1933.). Tada je u parlamentu bilo mnogo malih stranaka, pa je bilo teško stvoriti stabilnu većinu i vladu. Prag sprječava takvo rascjepkanje parlamenta i olakšava stvaranje stabilne koalicije.",
+  "merksatz_de": "Viele kleine Parteien erschweren die Regierungsbildung."
+ },
+ {
+  "id": "G-128",
+  "question_de": "Parlamentsmitglieder, die von den Bürgerinnen und Bürgern gewählt werden, nennt man ...",
+  "options_de": {
+   "A": "Abgeordnete.",
+   "B": "Kanzlerinnen/Kanzler.",
+   "C": "Botschafterinnen/Botschafter.",
+   "D": "Ministerpräsidentinnen/Ministerpräsidenten."
+  },
+  "key": "A",
+  "q_bks": "Članovi parlamenta koje biraju građani nazivaju se …",
+  "expl_bks": "Zastupnici (Abgeordnete) su predstavnici naroda koje građani biraju u parlament, na primjer u Bundestag (savezni parlament) ili u Landtag (pokrajinski parlament). Prema članku 38. Temeljnog zakona predstavljaju cijeli narod i vezani su samo svojom savješću. Kancelare i ministre predsjednike ne biraju građani izravno.",
+  "merksatz_de": "Gewählte Parlamentsmitglieder heißen Abgeordnete."
+ },
+ {
+  "id": "G-129",
+  "question_de": "Vom Volk gewählt wird in Deutschland ...",
+  "options_de": {
+   "A": "die Bundeskanzlerin/der Bundeskanzler.",
+   "B": "die Ministerpräsidentin/der Ministerpräsident eines Bundeslandes.",
+   "C": "der Bundestag.",
+   "D": "die Bundespräsidentin/der Bundespräsident."
+  },
+  "key": "C",
+  "q_bks": "U Njemačkoj narod bira …",
+  "expl_bks": "Narod izravno bira parlament, na saveznoj razini Bundestag (savezni parlament). Saveznog kancelara bira Bundestag, ministra predsjednika pokrajinski parlament (Landtag), a saveznog predsjednika Savezna skupština (Bundesversammlung). To je parlamentarna demokracija: narod bira zastupnike, a oni biraju vladu.",
+  "merksatz_de": "Das Volk wählt den Bundestag direkt."
+ },
+ {
+  "id": "G-130",
+  "question_de": "Welcher Stimmzettel wäre bei einer Bundestagswahl gültig? In Anlehnung an Bundeswahlordnung (BWO), Anlage 26",
+  "options_de": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "key": "A",
+  "q_bks": "Koji bi glasački listić bio valjan na izborima za Bundestag?",
+  "expl_bks": "Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati. U katalogu je to listić broj 1.",
+  "merksatz_de": "Pro Spalte darf man nur ein Kreuz machen."
+ },
+ {
+  "id": "G-131",
+  "question_de": "In Deutschland ist eine Bürgermeisterin/ein Bürgermeister ...",
+  "options_de": {
+   "A": "die Leiterin/der Leiter einer Schule.",
+   "B": "die Chefin/der Chef einer Bank.",
+   "C": "das Oberhaupt einer Gemeinde.",
+   "D": "die/der Vorsitzende einer Partei."
+  },
+  "key": "C",
+  "q_bks": "U Njemačkoj je gradonačelnik (načelnik) …",
+  "expl_bks": "Gradonačelnik (Bürgermeister) je na čelu općine ili grada: vodi upravu i predstavlja općinu prema van. U većini saveznih pokrajina građani ga biraju izravno. U većim gradovima često se zove glavni gradonačelnik (Oberbürgermeister).",
+  "merksatz_de": "Der Bürgermeister leitet eine Gemeinde."
+ },
+ {
+  "id": "G-132",
+  "question_de": "Viele Menschen in Deutschland arbeiten in ihrer Freizeit ehrenamtlich. Was bedeutet das?",
+  "options_de": {
+   "A": "Sie arbeiten als Soldatinnen/Soldaten.",
+   "B": "Sie arbeiten freiwillig und unbezahlt in Vereinen und Verbänden.",
+   "C": "Sie arbeiten in der Bundesregierung.",
+   "D": "Sie arbeiten in einem Krankenhaus und verdienen dabei Geld."
+  },
+  "key": "B",
+  "q_bks": "Mnogi ljudi u Njemačkoj u slobodno vrijeme preuzimaju „Ehrenamt” (doslovno: počasnu dužnost). Što to znači?",
+  "expl_bks": "„Ehrenamt” znači volonterski rad: ljudi rade dobrovoljno i bez plaće, na primjer kao treneri u sportskoj udruzi, u dobrovoljnom vatrogasnom društvu ili u pomoći starijima. Ponekad se dobiva mala naknada troškova, ali ne plaća. Takav rad vrlo je važan za društvo.",
+  "merksatz_de": "Ein Ehrenamt macht man freiwillig und ohne Bezahlung."
+ },
+ {
+  "id": "G-133",
+  "question_de": "Was ist bei Bundestags- und Landtagswahlen in Deutschland erlaubt?",
+  "options_de": {
+   "A": "Der Ehemann wählt für seine Frau mit.",
+   "B": "Man kann durch Briefwahl seine Stimme abgeben.",
+   "C": "Man kann am Wahltag telefonisch seine Stimme abgeben.",
+   "D": "Kinder ab dem Alter von 14 Jahren dürfen wählen."
+  },
+  "key": "B",
+  "q_bks": "Što je dopušteno na izborima za Bundestag i za pokrajinske parlamente (Landtag) u Njemačkoj?",
+  "expl_bks": "Svaki birač može glasati poštom (Briefwahl), bez navođenja razloga. Kod općine se zatraže potvrda o pravu glasa (Wahlschein) i glasački listići, glasa se kod kuće i omotnica se pošalje poštom. Glas je osoban: nitko ne smije glasati umjesto drugoga, pa ni muž umjesto žene.",
+  "merksatz_de": "Man darf per Briefwahl wählen."
+ },
+ {
+  "id": "G-134",
+  "question_de": "Man will die Buslinie abschaffen, mit der Sie immer zur Arbeit fahren. Was können Sie machen, um die Buslinie zu erhalten?",
+  "options_de": {
+   "A": "Ich beteilige mich an einer Bürgerinitiative für die Erhaltung der Buslinie oder gründe selber eine Initiative.",
+   "B": "Ich werde Mitglied in einem Sportverein und trainiere Radfahren.",
+   "C": "Ich wende mich an das Finanzamt, weil ich als Steuerzahlerin/Steuerzahler ein Recht auf die Buslinie habe.",
+   "D": "Ich schreibe einen Brief an das Forstamt der Gemeinde."
+  },
+  "key": "A",
+  "q_bks": "Želi se ukinuti autobusna linija kojom se uvijek vozite na posao. Što možete učiniti da se ta linija zadrži?",
+  "expl_bks": "Građanska inicijativa (Bürgerinitiative) skupina je ljudi koji se zajedno zalažu za konkretan cilj u svom mjestu, na primjer za autobusnu liniju, igralište ili semafor. Mogu skupljati potpise, predati peticiju općini i organizirati prosvjede. To je zakonit i demokratski način da građani utječu na odluke.",
+  "merksatz_de": "In einer Bürgerinitiative kann man sich für lokale Ziele einsetzen."
+ },
+ {
+  "id": "G-135",
+  "question_de": "Wen vertreten die Gewerkschaften in Deutschland?",
+  "options_de": {
+   "A": "große Unternehmen",
+   "B": "kleine Unternehmen",
+   "C": "Selbstständige",
+   "D": "Arbeitnehmerinnen und Arbeitnehmer"
+  },
+  "key": "D",
+  "q_bks": "Koga u Njemačkoj zastupaju sindikati?",
+  "expl_bks": "Sindikati (Gewerkschaften) zastupaju zaposlenike, dakle ljude koji rade za poslodavca. Pregovaraju o plaćama i uvjetima rada i pomažu članovima kod problema na poslu. Najveći krovni savez je Njemački savez sindikata (DGB). Poduzeća i poslodavci imaju svoja vlastita udruženja.",
+  "merksatz_de": "Gewerkschaften vertreten Arbeitnehmerinnen und Arbeitnehmer."
+ },
+ {
+  "id": "G-136",
+  "question_de": "Sie gehen in Deutschland zum Arbeitsgericht bei ...",
+  "options_de": {
+   "A": "falscher Nebenkostenabrechnung.",
+   "B": "ungerechtfertigter Kündigung durch Ihre Chefin/Ihren Chef.",
+   "C": "Problemen mit den Nachbarinnen/Nachbarn.",
+   "D": "Schwierigkeiten nach einem Verkehrsunfall."
+  },
+  "key": "B",
+  "q_bks": "U Njemačkoj idete na radni sud (Arbeitsgericht) u slučaju …",
+  "expl_bks": "Radni sud (Arbeitsgericht) odlučuje o sporovima između zaposlenika i poslodavca, na primjer o otkazu, neisplaćenoj plaći ili svjedodžbi o radu. Tužba protiv otkaza mora se podnijeti u roku od tri tjedna. Za sporove oko režija ili sa susjedima obično je nadležan općinski sud (Amtsgericht).",
+  "merksatz_de": "Bei einer ungerechten Kündigung hilft das Arbeitsgericht."
+ },
+ {
+  "id": "G-137",
+  "question_de": "Welches Gericht ist in Deutschland bei Konflikten in der Arbeitswelt zuständig?",
+  "options_de": {
+   "A": "das Familiengericht",
+   "B": "das Strafgericht",
+   "C": "das Arbeitsgericht",
+   "D": "das Amtsgericht"
+  },
+  "key": "C",
+  "q_bks": "Koji je sud u Njemačkoj nadležan za sukobe u svijetu rada?",
+  "expl_bks": "Za sukobe na poslu nadležan je radni sud (Arbeitsgericht), na primjer kod otkaza, neisplaćene plaće ili godišnjeg odmora. Tužiti mogu i zaposlenici i poslodavci. U vijeću uz profesionalnog suca sjede i dva suca laika: jedan iz redova zaposlenika i jedan iz redova poslodavaca.",
+  "merksatz_de": "Bei Streit am Arbeitsplatz ist das Arbeitsgericht zuständig."
+ },
+ {
+  "id": "G-138",
+  "question_de": "Was kann ich in Deutschland machen, wenn mir meine Arbeitgeberin/mein Arbeitgeber zu Unrecht gekündigt hat?",
+  "options_de": {
+   "A": "weiterarbeiten und freundlich zur Chefin/zum Chef sein",
+   "B": "ein Mahnverfahren gegen die Arbeitgeberin/den Arbeitgeber führen",
+   "C": "Kündigungsschutzklage erheben",
+   "D": "die Arbeitgeberin/den Arbeitgeber bei der Polizei anzeigen"
+  },
+  "key": "C",
+  "q_bks": "Što mogu učiniti u Njemačkoj ako mi je poslodavac neopravdano dao otkaz?",
+  "expl_bks": "Protiv neopravdanog otkaza može se podnijeti tužba za zaštitu od otkaza (Kündigungsschutzklage) pred radnim sudom (Arbeitsgericht). Važan je rok: tužba se mora podnijeti u roku od tri tjedna nakon primitka pisanog otkaza. Postupak opomene služi za naplatu novčanih dugova, a ne za otkaz.",
+  "merksatz_de": "Gegen eine unfaire Kündigung kann man Kündigungsschutzklage erheben."
+ },
+ {
+  "id": "G-139",
+  "question_de": "Wann kommt es in Deutschland zu einem Prozess vor Gericht? Wenn jemand ...",
+  "options_de": {
+   "A": "zu einer anderen Religion übertritt.",
+   "B": "eine Straftat begangen hat und angeklagt wird.",
+   "C": "eine andere Meinung als die der Regierung vertritt.",
+   "D": "sein Auto falsch geparkt hat und es abgeschleppt wird."
+  },
+  "key": "B",
+  "q_bks": "Kada u Njemačkoj dolazi do sudskog procesa? Kada netko …",
+  "expl_bks": "Kazneni proces pred sudom počinje kad državni tužitelj optuži neku osobu za kazneno djelo, na primjer za krađu ili tjelesnu ozljedu. Promjena vjere i drugačije mišljenje od vlade zaštićeni su temeljnim pravima i nisu kažnjivi. Pogrešno parkiranje samo je prekršaj koji se plaća novčanom kaznom, bez suđenja.",
+  "merksatz_de": "Ein Strafprozess beginnt, wenn jemand wegen einer Straftat angeklagt wird."
+ },
+ {
+  "id": "G-140",
+  "question_de": "Was macht eine Schöffin/ein Schöffe in Deutschland? Sie/Er ...",
+  "options_de": {
+   "A": "entscheidet mit Richterinnen/Richtern über Schuld und Strafe.",
+   "B": "gibt Bürgerinnen/Bürgern rechtlichen Rat.",
+   "C": "stellt Urkunden aus.",
+   "D": "verteidigt die Angeklagte/den Angeklagten."
+  },
+  "key": "A",
+  "q_bks": "Što u Njemačkoj radi sudac porotnik (Schöffe)? On …",
+  "expl_bks": "Sudac porotnik (Schöffe) je građanin bez pravnog obrazovanja koji tu dužnost obavlja volonterski. Sjedi uz profesionalne suce i s njima odlučuje je li optuženik kriv i kakva će biti kazna. Pritom ima isto pravo glasa kao profesionalni sudac. Optuženika brani odvjetnik, a ne sudac porotnik.",
+  "merksatz_de": "Schöffen entscheiden zusammen mit Richtern über Schuld und Strafe."
+ },
+ {
+  "id": "G-141",
+  "question_de": "Wer berät in Deutschland Personen bei Rechtsfragen und vertritt sie vor Gericht?",
+  "options_de": {
+   "A": "eine Rechtsanwältin/ein Rechtsanwalt",
+   "B": "eine Richterin/ein Richter",
+   "C": "eine Schöffin/ein Schöffe",
+   "D": "eine Staatsanwältin/ein Staatsanwalt"
+  },
+  "key": "A",
+  "q_bks": "Tko u Njemačkoj savjetuje osobe o pravnim pitanjima i zastupa ih pred sudom?",
+  "expl_bks": "Odvjetnik (advokat, na njemačkom Rechtsanwalt) savjetuje ljude o pravnim pitanjima i zastupa ih pred sudom, na primjer kod razvoda ili spora s poslodavcem. Sudac vodi postupak i donosi presudu, a državni tužitelj optužuje osobe za kaznena djela. Sudac porotnik sudi zajedno s profesionalnim sucima.",
+  "merksatz_de": "Ein Rechtsanwalt berät Menschen und vertritt sie vor Gericht."
+ },
+ {
+  "id": "G-142",
+  "question_de": "Was ist die Hauptaufgabe einer Richterin/eines Richters in Deutschland? Eine Richterin/ein Richter ...",
+  "options_de": {
+   "A": "vertritt Bürgerinnen und Bürger vor einem Gericht.",
+   "B": "arbeitet an einem Gericht und spricht Urteile.",
+   "C": "ändert Gesetze.",
+   "D": "betreut Jugendliche vor Gericht."
+  },
+  "key": "B",
+  "q_bks": "Koji je glavni zadatak suca u Njemačkoj? Sudac …",
+  "expl_bks": "Sudac radi na sudu: vodi postupak, sasluša obje strane i na kraju donosi presudu. Pritom je neovisan i podliježe samo zakonu, pa mu nitko, ni vlada, ne smije govoriti kako treba presuditi. Zakone ne mijenja sudac nego parlament, a građane pred sudom zastupa odvjetnik.",
+  "merksatz_de": "Richterinnen und Richter sprechen am Gericht Urteile."
+ },
+ {
+  "id": "G-143",
+  "question_de": "Eine Richterin/ein Richter in Deutschland gehört zur ...",
+  "options_de": {
+   "A": "Judikative.",
+   "B": "Exekutive.",
+   "C": "Operative.",
+   "D": "Legislative."
+  },
+  "key": "A",
+  "q_bks": "Sudac u Njemačkoj pripada …",
+  "expl_bks": "Državna vlast u Njemačkoj podijeljena je na tri dijela: legislativu (zakonodavna vlast, parlamenti), egzekutivu (izvršna vlast, vlada i uprava) i judikativu (sudska vlast). Suci i sudovi pripadaju judikativi. „Operativa” nije grana državne vlasti. Ta se podjela vlasti na njemačkom zove Gewaltenteilung.",
+  "merksatz_de": "Richter gehören zur Judikative, also zur rechtsprechenden Gewalt."
+ },
+ {
+  "id": "G-144",
+  "question_de": "Eine Richterin/ein Richter gehört in Deutschland zur ...",
+  "options_de": {
+   "A": "vollziehenden Gewalt.",
+   "B": "rechtsprechenden Gewalt.",
+   "C": "planenden Gewalt.",
+   "D": "gesetzgebenden Gewalt."
+  },
+  "key": "B",
+  "q_bks": "U Njemačkoj sudac pripada …",
+  "expl_bks": "Prema članku 20. Temeljnog zakona (njemački ustav) državnu vlast vrše zakonodavna, izvršna i sudska vlast. Suci pripadaju sudskoj vlasti (rechtsprechende Gewalt): odlučuju u sporovima i kaznenim postupcima. Zakonodavna vlast donosi zakone, a izvršna ih provodi. „Planska vlast” ne postoji.",
+  "merksatz_de": "Zur rechtsprechenden Gewalt gehören Richterinnen und Richter."
+ },
+ {
+  "id": "G-145",
+  "question_de": "In Deutschland wird die Staatsgewalt geteilt. Für welche Staatsgewalt arbeitet eine Richterin/ein Richter? Für die ...",
+  "options_de": {
+   "A": "Judikative",
+   "B": "Exekutive",
+   "C": "Presse",
+   "D": "Legislative"
+  },
+  "key": "A",
+  "q_bks": "U Njemačkoj je državna vlast podijeljena. Za koju granu državne vlasti radi sudac? Za …",
+  "expl_bks": "Podjela vlasti znači da nijedna institucija nema svu moć. Sudac radi za judikativu, to jest sudsku vlast, i neovisan je o vladi i parlamentu (članak 97. Temeljnog zakona). Tisak se često naziva „četvrtom vlašću” jer kontrolira politiku, ali nije dio državne vlasti.",
+  "merksatz_de": "Bei der Gewaltenteilung arbeiten Richter für die Judikative."
+ },
+ {
+  "id": "G-146",
+  "question_de": "Wie nennt man in Deutschland ein Verfahren vor einem Gericht?",
+  "options_de": {
+   "A": "Programm",
+   "B": "Prozedur",
+   "C": "Protokoll",
+   "D": "Prozess"
+  },
+  "key": "D",
+  "q_bks": "Kako se u Njemačkoj naziva postupak pred sudom?",
+  "expl_bks": "Postupak pred sudom na njemačkom se zove „Prozess” (sudski proces, suđenje). Na primjer, kazneni proces počinje kad je netko optužen za kazneno djelo. „Protokoll” je zapisnik, „Prozedur” je općenito tijek neke radnje, a „Programm” je plan ili raspored.",
+  "merksatz_de": "Ein Verfahren vor Gericht heißt Prozess."
+ },
+ {
+  "id": "G-147",
+  "question_de": "Was ist die Arbeit einer Richterin/eines Richters in Deutschland?",
+  "options_de": {
+   "A": "Deutschland regieren",
+   "B": "Recht sprechen",
+   "C": "Pläne erstellen",
+   "D": "Gesetze erlassen"
+  },
+  "key": "B",
+  "q_bks": "Koji je posao suca u Njemačkoj?",
+  "expl_bks": "Sudac izriče presude (Recht sprechen): vodi postupak, primjenjuje zakone na konkretan slučaj i odlučuje tko je u pravu ili je li netko kriv. Suci su neovisni. Zemljom upravlja vlada (izvršna vlast), a zakone donosi parlament (zakonodavna vlast).",
+  "merksatz_de": "Die Aufgabe von Richtern ist es, Recht zu sprechen."
+ },
+ {
+  "id": "G-148",
+  "question_de": "Was ist eine Aufgabe der Polizei in Deutschland?",
+  "options_de": {
+   "A": "das Land zu verteidigen",
+   "B": "die Bürgerinnen und Bürger abzuhören",
+   "C": "die Gesetze zu beschließen",
+   "D": "die Einhaltung von Gesetzen zu überwachen"
+  },
+  "key": "D",
+  "q_bks": "Što je jedan od zadataka policije u Njemačkoj?",
+  "expl_bks": "Policija pazi da se ljudi pridržavaju zakona, štiti građane od opasnosti i istražuje kaznena djela. Primjer iz svakodnevice je kontrola brzine u prometu. Zemlju od napada izvana brani vojska (Bundeswehr), a zakone donose parlamenti, ne policija.",
+  "merksatz_de": "Die Polizei überwacht, dass alle die Gesetze einhalten."
+ },
+ {
+  "id": "G-149",
+  "question_de": "Was ist ein Beispiel für antisemitisches Verhalten?",
+  "options_de": {
+   "A": "ein jüdisches Fest besuchen",
+   "B": "die israelische Regierung kritisieren",
+   "C": "den Holocaust leugnen",
+   "D": "gegen Juden Fußball spielen."
+  },
+  "key": "C",
+  "q_bks": "Što je primjer antisemitskog ponašanja?",
+  "expl_bks": "Antisemitizam je mržnja ili neprijateljstvo prema Židovima. Poricanje holokausta, odnosno tvrdnja da nacisti nisu ubili oko šest milijuna Židova, jasan je primjer antisemitizma i u Njemačkoj je kazneno djelo. Posjet židovskoj proslavi ili nogometna utakmica sa Židovima normalan su dio zajedničkog života.",
+  "merksatz_de": "Den Holocaust zu leugnen ist antisemitisch und strafbar."
+ },
+ {
+  "id": "G-150",
+  "question_de": "Eine Gerichtsschöffin/ein Gerichtsschöffe in Deutschland ist ...",
+  "options_de": {
+   "A": "die Stellvertreterin/der Stellvertreter des Stadtoberhaupts.",
+   "B": "eine ehrenamtliche Richterin/ein ehrenamtlicher Richter.",
+   "C": "ein Mitglied eines Gemeinderats.",
+   "D": "eine Person, die Jura studiert hat."
+  },
+  "key": "B",
+  "q_bks": "Porotnik (Gerichtsschöffe) u Njemačkoj je …",
+  "expl_bks": "Porotnik (Gerichtsschöffe) je građanin koji kao sudac porotnik zajedno s profesionalnim sucima sudi u kaznenim postupcima. Taj posao obavlja volonterski: ne dobiva plaću, nego samo naknadu za troškove i izgubljeno vrijeme. Za to ne treba studij prava. Tako i obični građani sudjeluju u pravosuđu.",
+  "merksatz_de": "Ein Schöffe ist ein Richter im Ehrenamt."
+ },
+ {
+  "id": "G-151",
+  "question_de": "Wer baute die Mauer in Berlin?",
+  "options_de": {
+   "A": "Großbritannien",
+   "B": "die DDR",
+   "C": "die Bundesrepublik Deutschland",
+   "D": "die USA"
+  },
+  "key": "B",
+  "q_bks": "Tko je izgradio zid u Berlinu?",
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) izgradila je Berlinski zid 13. kolovoza 1961. Vodstvo DDR-a htjelo je spriječiti da njezini građani bježe na Zapad. Zid je dijelio grad 28 godina, sve do pada Berlinskog zida 9. studenoga 1989.",
+  "merksatz_de": "Die DDR baute 1961 die Mauer in Berlin."
+ },
+ {
+  "id": "G-152",
+  "question_de": "Wann waren die Nationalsozialisten mit Adolf Hitler in Deutschland an der Macht?",
+  "options_de": {
+   "A": "1918 bis 1923",
+   "B": "1932 bis 1950",
+   "C": "1933 bis 1945",
+   "D": "1945 bis 1989"
+  },
+  "key": "C",
+  "q_bks": "Kada su nacionalsocijalisti s Adolfom Hitlerom bili na vlasti u Njemačkoj?",
+  "expl_bks": "Adolf Hitler postao je kancelar Reicha (Reichskanzler) 30. siječnja 1933. Nacionalsocijalisti su zatim brzo ukinuli demokraciju i uspostavili diktaturu. Njihova vlast završila je u svibnju 1945. bezuvjetnom kapitulacijom Njemačke na kraju Drugog svjetskog rata. To je razdoblje trajalo dvanaest godina.",
+  "merksatz_de": "Hitler und die Nationalsozialisten regierten von 1933 bis 1945."
+ },
+ {
+  "id": "G-153",
+  "question_de": "Was war am 8. Mai 1945?",
+  "options_de": {
+   "A": "Tod Adolf Hitlers",
+   "B": "Beginn des Berliner Mauerbaus",
+   "C": "Wahl von Konrad Adenauer zum Bundeskanzler",
+   "D": "Ende des Zweiten Weltkriegs in Europa"
+  },
+  "key": "D",
+  "q_bks": "Što se dogodilo 8. svibnja 1945.?",
+  "expl_bks": "Dana 8. svibnja 1945. stupila je na snagu bezuvjetna kapitulacija njemačke vojske. Time je Drugi svjetski rat u Europi završio. Hitler je umro nekoliko dana ranije, 30. travnja 1945. Adenauer je izabran za kancelara tek 1949., a Berlinski zid izgrađen je 1961.",
+  "merksatz_de": "Am 8. Mai 1945 endete der Zweite Weltkrieg in Europa."
+ },
+ {
+  "id": "G-154",
+  "question_de": "Wann war der Zweite Weltkrieg zu Ende?",
+  "options_de": {
+   "A": "1933",
+   "B": "1945",
+   "C": "1949",
+   "D": "1961"
+  },
+  "key": "B",
+  "q_bks": "Kada je završio Drugi svjetski rat?",
+  "expl_bks": "Drugi svjetski rat počeo je 1939. njemačkim napadom na Poljsku. U Europi je završio 8. svibnja 1945. bezuvjetnom kapitulacijom Njemačke, a u Aziji u rujnu 1945. kapitulacijom Japana. Godina 1949. je godina osnivanja Savezne Republike Njemačke, a 1961. izgrađen je Berlinski zid.",
+  "merksatz_de": "Der Zweite Weltkrieg war 1945 zu Ende."
+ },
+ {
+  "id": "G-155",
+  "question_de": "Wann waren die Nationalsozialisten in Deutschland an der Macht?",
+  "options_de": {
+   "A": "1888 bis 1918",
+   "B": "1921 bis 1934",
+   "C": "1933 bis 1945",
+   "D": "1949 bis 1963"
+  },
+  "key": "C",
+  "q_bks": "Kada su nacionalsocijalisti bili na vlasti u Njemačkoj?",
+  "expl_bks": "Razdoblje nacionalsocijalizma trajalo je dvanaest godina: od 1933., kad je Hitler postao kancelar Reicha, do 1945., kad je Njemačka izgubila Drugi svjetski rat. Nacionalsocijalisti su svoju državu zvali „Treći Reich”. Od 1949. do 1963. savezni kancelar bio je Konrad Adenauer.",
+  "merksatz_de": "Die NS-Zeit dauerte zwölf Jahre: von 1933 bis 1945."
+ },
+ {
+  "id": "G-156",
+  "question_de": "In welchem Jahr wurde Hitler Reichskanzler?",
+  "options_de": {
+   "A": "1923",
+   "B": "1927",
+   "C": "1933",
+   "D": "1936"
+  },
+  "key": "C",
+  "q_bks": "Koje je godine Hitler postao kancelar Reicha (Reichskanzler)?",
+  "expl_bks": "Predsjednik Reicha Paul von Hindenburg imenovao je Adolfa Hitlera kancelarom Reicha 30. siječnja 1933. Taj se dan smatra početkom nacionalsocijalističke diktature. Godine 1923. Hitler je u Münchenu pokušao izvesti puč, ali tada nije uspio i završio je u zatvoru.",
+  "merksatz_de": "Hitler wurde im Januar 1933 Reichskanzler."
+ },
+ {
+  "id": "G-157",
+  "question_de": "Die Nationalsozialisten mit Adolf Hitler errichteten 1933 in Deutschland ...",
+  "options_de": {
+   "A": "eine Diktatur.",
+   "B": "einen demokratischen Staat.",
+   "C": "eine Monarchie.",
+   "D": "ein Fürstentum."
+  },
+  "key": "A",
+  "q_bks": "Nacionalsocijalisti s Adolfom Hitlerom uspostavili su 1933. u Njemačkoj …",
+  "expl_bks": "Nakon dolaska na vlast 1933. nacionalsocijalisti su vrlo brzo uspostavili diktaturu. Zabranili su druge stranke i sindikate, ukinuli slobodu tiska i progonili svoje protivnike. Sva je vlast bila u rukama Hitlera i njegove stranke NSDAP, a slobodnih izbora više nije bilo.",
+  "merksatz_de": "1933 errichteten die Nationalsozialisten eine Diktatur."
+ },
+ {
+  "id": "G-158",
+  "question_de": "Das \"Dritte Reich\" war eine ...",
+  "options_de": {
+   "A": "Diktatur.",
+   "B": "Demokratie.",
+   "C": "Monarchie.",
+   "D": "Räterepublik."
+  },
+  "key": "A",
+  "q_bks": "„Treći Reich” bio je …",
+  "expl_bks": "„Treći Reich” je naziv koji su nacionalsocijalisti dali svojoj državi od 1933. do 1945. Bila je to diktatura: Hitler i njegova stranka imali su svu vlast, bez slobodnih izbora i bez podjele vlasti. Kritičari režima bili su zatvarani u logore ili ubijani.",
+  "merksatz_de": "Das „Dritte Reich“ war eine Diktatur."
+ },
+ {
+  "id": "G-159",
+  "question_de": "Was gab es in Deutschland nicht während der Zeit des Nationalsozialismus?",
+  "options_de": {
+   "A": "freie Wahlen",
+   "B": "Pressezensur",
+   "C": "willkürliche Verhaftungen",
+   "D": "Verfolgung von Juden"
+  },
+  "key": "A",
+  "q_bks": "Čega u Njemačkoj nije bilo u vrijeme nacionalsocijalizma?",
+  "expl_bks": "U nacionalsocijalističkoj diktaturi nije bilo slobodnih izbora. Od 1933. postojala je samo jedna dopuštena stranka, NSDAP, a glasanja su služila samo za prikaz podrške režimu. Cenzura tiska, proizvoljna uhićenja i progon Židova, naprotiv, bili su dio svakodnevice.",
+  "merksatz_de": "In der NS-Zeit gab es keine freien Wahlen."
+ },
+ {
+  "id": "G-160",
+  "question_de": "Welcher Krieg dauerte von 1939 bis 1945?",
+  "options_de": {
+   "A": "der Erste Weltkrieg",
+   "B": "der Zweite Weltkrieg",
+   "C": "der Vietnamkrieg",
+   "D": "der Golfkrieg"
+  },
+  "key": "B",
+  "q_bks": "Koji je rat trajao od 1939. do 1945.?",
+  "expl_bks": "Drugi svjetski rat počeo je 1. rujna 1939. njemačkim napadom na Poljsku. U Europi je završio 8. svibnja 1945. kapitulacijom Njemačke. Bio je to najveći rat u povijesti, s više od 60 milijuna mrtvih. Prvi svjetski rat trajao je od 1914. do 1918.",
+  "merksatz_de": "Der Zweite Weltkrieg dauerte von 1939 bis 1945."
+ },
+ {
+  "id": "G-161",
+  "question_de": "Was kennzeichnete den NS-Staat? Eine Politik ...",
+  "options_de": {
+   "A": "des staatlichen Rassismus",
+   "B": "der Meinungsfreiheit",
+   "C": "der allgemeinen Religionsfreiheit",
+   "D": "der Entwicklung der Demokratie"
+  },
+  "key": "A",
+  "q_bks": "Što je obilježavalo nacionalsocijalističku državu (NS-Staat)? Politika …",
+  "expl_bks": "U nacionalsocijalističkoj državi rasizam je bio dio zakona i državne politike. Nürnberškim zakonima iz 1935. Židovima su oduzeta građanska prava. Progon je završio holokaustom, u kojem je ubijeno oko šest milijuna europskih Židova. Progonjeni su bili i Sinti i Romi.",
+  "merksatz_de": "Der NS-Staat betrieb eine Politik des staatlichen Rassismus."
+ },
+ {
+  "id": "G-162",
+  "question_de": "Claus Schenk Graf von Stauffenberg wurde bekannt durch ...",
+  "options_de": {
+   "A": "eine Goldmedaille bei den Olympischen Spielen 1936.",
+   "B": "den Bau des Reichstagsgebäudes.",
+   "C": "den Aufbau der Wehrmacht.",
+   "D": "das Attentat auf Hitler am 20. Juli 1944."
+  },
+  "key": "D",
+  "q_bks": "Claus Schenk Graf von Stauffenberg postao je poznat po …",
+  "expl_bks": "Časnik Claus Schenk Graf von Stauffenberg podmetnuo je 20. srpnja 1944. bombu u aktovci na sastanku s Hitlerom. Hitler je preživio, a Stauffenberg je iste noći strijeljan u Berlinu. Danas je 20. srpnja u Njemačkoj dan sjećanja na otpor protiv nacionalsocijalizma.",
+  "merksatz_de": "Stauffenberg versuchte am 20. Juli 1944, Hitler zu töten."
+ },
+ {
+  "id": "G-163",
+  "question_de": "In welchem Jahr zerstörten die Nationalsozialisten Synagogen und jüdische Geschäfte in Deutschland?",
+  "options_de": {
+   "A": "1925",
+   "B": "1930",
+   "C": "1938",
+   "D": "1945"
+  },
+  "key": "C",
+  "q_bks": "Koje su godine nacionalsocijalisti u Njemačkoj uništavali sinagoge i židovske trgovine?",
+  "expl_bks": "U noći s 9. na 10. studenoga 1938. nacionalsocijalisti i njihove pristaše palili su sinagoge i razbijali izloge židovskih trgovina diljem Njemačke. Mnogi Židovi su ubijeni ili odvedeni u koncentracijske logore. Na njemačkom se ti događaji nazivaju „Novemberpogrome” (pogromi u studenom 1938.).",
+  "merksatz_de": "1938 zerstörten Nationalsozialisten Synagogen und jüdische Geschäfte."
+ },
+ {
+  "id": "G-164",
+  "question_de": "Was passierte am 9. November 1938 in Deutschland?",
+  "options_de": {
+   "A": "Mit dem Angriff auf Polen beginnt der Zweite Weltkrieg.",
+   "B": "Die Nationalsozialisten verlieren eine Wahl und lösen den Reichstag auf.",
+   "C": "Jüdische Geschäfte und Synagogen werden durch Nationalsozialisten und ihre Anhänger zerstört.",
+   "D": "Hitler wird Reichspräsident und lässt alle Parteien verbieten."
+  },
+  "key": "C",
+  "q_bks": "Što se dogodilo u Njemačkoj 9. studenoga 1938.?",
+  "expl_bks": "Dana 9. studenoga 1938. i sljedećih dana nacionalsocijalisti i njihove pristaše napadali su Židove u cijeloj Njemačkoj. Uništeno je više od 1.000 sinagoga i mnogo židovskih trgovina, a oko 30.000 židovskih muškaraca odvedeno je u koncentracijske logore. Rat je počeo tek 1. rujna 1939.",
+  "merksatz_de": "Am 9. November 1938 brannten in Deutschland Synagogen."
+ },
+ {
+  "id": "G-165",
+  "question_de": "Wie hieß der erste Bundeskanzler der Bundesrepublik Deutschland?",
+  "options_de": {
+   "A": "Konrad Adenauer",
+   "B": "Kurt Georg Kiesinger",
+   "C": "Helmut Schmidt",
+   "D": "Willy Brandt"
+  },
+  "key": "A",
+  "q_bks": "Kako se zvao prvi savezni kancelar Savezne Republike Njemačke?",
+  "expl_bks": "Konrad Adenauer (CDU) izabran je 1949. za prvog saveznog kancelara i na toj je dužnosti ostao do 1963. Povezao je Saveznu Republiku sa Zapadom i započeo pomirenje s Francuskom. Kurt Georg Kiesinger, Willy Brandt i Helmut Schmidt bili su kancelari kasnije.",
+  "merksatz_de": "Konrad Adenauer war der erste Bundeskanzler."
+ },
+ {
+  "id": "G-166",
+  "question_de": "Bei welchen Demonstrationen in Deutschland riefen die Menschen \"Wir sind das Volk\"?",
+  "options_de": {
+   "A": "beim Arbeiteraufstand 1953 in der DDR",
+   "B": "bei den Demonstrationen 1968 in der Bundesrepublik Deutschland",
+   "C": "bei den Anti-Atomkraft-Demonstrationen 1985 in der Bundesrepublik Deutschland",
+   "D": "bei den Montagsdemonstrationen 1989 in der DDR"
+  },
+  "key": "D",
+  "q_bks": "Na kojim su demonstracijama u Njemačkoj ljudi uzvikivali „Mi smo narod” (Wir sind das Volk)?",
+  "expl_bks": "U jesen 1989. ljudi u Leipzigu i drugim gradovima DDR-a svakog su ponedjeljka mirno demonstrirali. Uzvikivali su „Wir sind das Volk” („Mi smo narod”) i tražili slobodu i demokraciju. Te ponedjeljne demonstracije (Montagsdemonstrationen) doprinijele su padu Berlinskog zida 9. studenoga 1989.",
+  "merksatz_de": "Bei den Montagsdemonstrationen 1989 rief man: „Wir sind das Volk!“"
+ },
+ {
+  "id": "G-167",
+  "question_de": "Welche Länder wurden nach dem Zweiten Weltkrieg in Deutschland als \"Alliierte Besatzungsmächte\" bezeichnet?",
+  "options_de": {
+   "A": "Sowjetunion, Großbritannien, Polen, Schweden",
+   "B": "Frankreich, Sowjetunion, Italien, Japan",
+   "C": "USA, Sowjetunion, Spanien, Portugal",
+   "D": "USA, Sowjetunion, Großbritannien, Frankreich"
+  },
+  "key": "D",
+  "q_bks": "Koje su se zemlje nakon Drugog svjetskog rata u Njemačkoj nazivale „savezničke okupacijske sile”?",
+  "expl_bks": "Nakon pobjede nad Njemačkom 1945. četiri saveznika podijelila su zemlju na četiri okupacijske zone: SAD, Sovjetski Savez, Velika Britanija i Francuska. Svaka je sila upravljala jednom zonom. Italija i Japan borili su se u ratu na strani Njemačke, a Švedska, Španjolska i Portugal ostale su neutralne.",
+  "merksatz_de": "Die vier Besatzungsmächte waren USA, Sowjetunion, Großbritannien und Frankreich."
+ },
+ {
+  "id": "G-168",
+  "question_de": "Welches Land war keine \"Alliierte Besatzungsmacht\" in Deutschland?",
+  "options_de": {
+   "A": "USA",
+   "B": "Sowjetunion",
+   "C": "Frankreich",
+   "D": "Japan"
+  },
+  "key": "D",
+  "q_bks": "Koja zemlja nije bila „saveznička okupacijska sila” u Njemačkoj?",
+  "expl_bks": "Japan se u Drugom svjetskom ratu borio na strani Njemačke, dakle protiv saveznika. Zato nije mogao biti okupacijska sila u Njemačkoj. Nakon 1945. Njemačku su okupirale i podijelile na zone četiri savezničke sile: SAD, Sovjetski Savez, Velika Britanija i Francuska.",
+  "merksatz_de": "Japan war keine Besatzungsmacht in Deutschland."
+ },
+ {
+  "id": "G-169",
+  "question_de": "Wann wurde die Bundesrepublik Deutschland gegründet?",
+  "options_de": {
+   "A": "1939",
+   "B": "1945",
+   "C": "1949",
+   "D": "1951"
+  },
+  "key": "C",
+  "q_bks": "Kada je osnovana Savezna Republika Njemačka?",
+  "expl_bks": "Savezna Republika Njemačka osnovana je 23. svibnja 1949., kada je stupio na snagu Temeljni zakon (njemački ustav). Iste godine, 7. listopada 1949., u sovjetskoj zoni osnovana je i DDR. Godina 1945. označava kraj rata, a ne osnivanje nove države.",
+  "merksatz_de": "Die Bundesrepublik Deutschland wurde 1949 gegründet."
+ },
+ {
+  "id": "G-170",
+  "question_de": "Was gab es während der Zeit des Nationalsozialismus in Deutschland?",
+  "options_de": {
+   "A": "das Verbot von Parteien",
+   "B": "das Recht zur freien Entfaltung der Persönlichkeit",
+   "C": "Pressefreiheit",
+   "D": "den Schutz der Menschenwürde"
+  },
+  "key": "A",
+  "q_bks": "Što je postojalo u Njemačkoj u vrijeme nacionalsocijalizma?",
+  "expl_bks": "Nacionalsocijalisti su 1933. zabranili ili raspustili sve druge stranke. Od srpnja 1933. NSDAP je bila jedina dopuštena stranka. Sloboda tiska, zaštita ljudskog dostojanstva i slobodan razvoj osobnosti temeljna su prava koja danas jamči Temeljni zakon, ali u diktaturi nisu postojala.",
+  "merksatz_de": "In der NS-Zeit waren andere Parteien verboten."
+ },
+ {
+  "id": "G-171",
+  "question_de": "Soziale Marktwirtschaft bedeutet, die Wirtschaft ...",
+  "options_de": {
+   "A": "steuert sich allein nach Angebot und Nachfrage.",
+   "B": "wird vom Staat geplant und gesteuert, Angebot und Nachfrage werden nicht berücksichtigt.",
+   "C": "richtet sich nach der Nachfrage im Ausland.",
+   "D": "richtet sich nach Angebot und Nachfrage, aber der Staat sorgt für einen sozialen Ausgleich."
+  },
+  "key": "D",
+  "q_bks": "Socijalna tržišna ekonomija (Soziale Marktwirtschaft) znači da se ekonomija …",
+  "expl_bks": "U socijalnoj tržišnoj ekonomiji cijene i proizvodnju uglavnom određuju ponuda i potražnja, kao na slobodnom tržištu. Država ipak pomaže slabijima, na primjer socijalnim osiguranjem, dječjim doplatkom (Kindergeld) i minimalnom plaćom. Ovaj model uveo je u Zapadnoj Njemačkoj Ludwig Erhard, počevši od 1948.",
+  "merksatz_de": "Soziale Marktwirtschaft: freier Markt mit sozialem Ausgleich durch den Staat."
+ },
+ {
+  "id": "G-172",
+  "question_de": "In welcher Besatzungszone wurde die DDR gegründet? In der ...",
+  "options_de": {
+   "A": "amerikanischen Besatzungszone",
+   "B": "französischen Besatzungszone",
+   "C": "britischen Besatzungszone",
+   "D": "sowjetischen Besatzungszone"
+  },
+  "key": "D",
+  "q_bks": "U kojoj je okupacijskoj zoni osnovana DDR? U …",
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) osnovana je 7. listopada 1949. na području sovjetske okupacijske zone. Tri zapadne zone, američka, britanska i francuska, iste su godine postale Savezna Republika Njemačka. Njemačka je tako do 1990. bila podijeljena na dvije države.",
+  "merksatz_de": "Die DDR entstand in der sowjetischen Besatzungszone."
+ },
+ {
+  "id": "G-173",
+  "question_de": "Die Bundesrepublik Deutschland ist ein Gründungsmitglied ...",
+  "options_de": {
+   "A": "des Nordatlantikpakts (NATO).",
+   "B": "der Vereinten Nationen (VN).",
+   "C": "der Europäischen Union (EU).",
+   "D": "des Warschauer Pakts."
+  },
+  "key": "C",
+  "q_bks": "Savezna Republika Njemačka je članica osnivačica …",
+  "expl_bks": "Savezna Republika Njemačka bila je 1957. jedna od šest država koje su potpisale Rimske ugovore i osnovale Europsku ekonomsku zajednicu (EEZ), iz koje je nastala današnja Europska unija. U NATO je ušla tek 1955., a u UN 1973. Varšavskom paktu pripadala je DDR.",
+  "merksatz_de": "Deutschland gehört zu den Gründungsmitgliedern der Europäischen Union."
+ },
+ {
+  "id": "G-174",
+  "question_de": "Wann wurde die DDR gegründet?",
+  "options_de": {
+   "A": "1947",
+   "B": "1949",
+   "C": "1953",
+   "D": "1956"
+  },
+  "key": "B",
+  "q_bks": "Kada je osnovana DDR?",
+  "expl_bks": "DDR (Njemačka Demokratska Republika, Istočna Njemačka) osnovana je 7. listopada 1949. u sovjetskoj okupacijskoj zoni, nekoliko mjeseci nakon Savezne Republike Njemačke. Tako su iste godine nastale dvije njemačke države. Godina 1953. poznata je po radničkom ustanku u DDR-u.",
+  "merksatz_de": "Die DDR wurde am 7. Oktober 1949 gegründet."
+ },
+ {
+  "id": "G-175",
+  "question_de": "Wie viele Besatzungszonen gab es in Deutschland nach dem Zweiten Weltkrieg?",
+  "options_de": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "key": "B",
+  "q_bks": "Koliko je okupacijskih zona bilo u Njemačkoj nakon Drugog svjetskog rata?",
+  "expl_bks": "Nakon 1945. četiri pobjedničke sile podijelile su Njemačku na četiri okupacijske zone: američku, britansku, francusku i sovjetsku. I Berlin je bio podijeljen na četiri sektora. Iz tri zapadne zone nastala je 1949. Savezna Republika Njemačka, a iz sovjetske zone DDR.",
+  "merksatz_de": "Nach 1945 gab es vier Besatzungszonen in Deutschland."
+ },
+ {
+  "id": "G-176",
+  "question_de": "Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?",
+  "options_de": {
+   "A": "1=Großbritannien, 2=Sowjetunion, 3=Frankreich, 4=USA",
+   "B": "1=Sowjetunion, 2=Großbritannien, 3=USA, 4=Frankreich",
+   "C": "1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich",
+   "D": "1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich"
+  },
+  "key": "C",
+  "q_bks": "Kako su nakon 1945. bile raspoređene okupacijske zone u Njemačkoj?",
+  "expl_bks": "Na karti: 1 = sjeverozapad, 2 = istok (s Berlinom), 3 = jug (Bavarska i Hessen), 4 = jugozapad uz Francusku. Britanci su dobili sjeverozapad, Sovjetski Savez istok, SAD jug, a Francuska jugozapad uz svoju granicu. Dakle: 1 = Velika Britanija, 2 = Sovjetski Savez, 3 = SAD, 4 = Francuska.",
+  "merksatz_de": "Briten im Nordwesten, Sowjets im Osten, Amerikaner im Süden, Franzosen im Südwesten."
+ },
+ {
+  "id": "G-177",
+  "question_de": "Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt?",
+  "options_de": {
+   "A": "München",
+   "B": "Berlin",
+   "C": "Dresden",
+   "D": "Frankfurt/Oder"
+  },
+  "key": "B",
+  "q_bks": "Koji je njemački grad nakon Drugog svjetskog rata bio podijeljen na četiri sektora?",
+  "expl_bks": "Berlin je ležao usred sovjetske zone, ali je kao glavni grad podijeljen na četiri sektora: američki, britanski, francuski i sovjetski. Tri zapadna sektora kasnije su činila Zapadni Berlin, a sovjetski sektor Istočni Berlin, glavni grad DDR-a.",
+  "merksatz_de": "Berlin wurde nach dem Krieg in vier Sektoren geteilt."
+ },
+ {
+  "id": "G-178",
+  "question_de": "Vom Juni 1948 bis zum Mai 1949 wurden die Bürgerinnen und Bürger von West-Berlin durch eine Luftbrücke versorgt. Welcher Umstand war dafür verantwortlich?",
+  "options_de": {
+   "A": "Für Frankreich war eine Versorgung der West-Berliner Bevölkerung mit dem Flugzeug kostengünstiger.",
+   "B": "Die amerikanischen Soldatinnen und Soldaten hatten beim Landtransport Angst vor Überfällen.",
+   "C": "Für Großbritannien war die Versorgung über die Luftbrücke schneller.",
+   "D": "Die Sowjetunion unterbrach den gesamten Verkehr auf dem Landwege."
+  },
+  "key": "D",
+  "q_bks": "Od lipnja 1948. do svibnja 1949. građani Zapadnog Berlina opskrbljivani su zračnim mostom. Koja je okolnost bila razlog tome?",
+  "expl_bks": "Sovjetski Savez je u lipnju 1948. zatvorio sve ceste, željezničke pruge i vodene putove prema Zapadnom Berlinu (Berlinska blokada). Zato su SAD i Velika Britanija gotovo godinu dana dovozili hranu, ugljen i drugu robu avionima. Berlinčani su te avione zvali „bombarderi s grožđicama” (Rosinenbomber).",
+  "merksatz_de": "Die Sowjetunion blockierte 1948 alle Landwege nach West-Berlin."
+ },
+ {
+  "id": "G-179",
+  "question_de": "Wie endete der Zweite Weltkrieg in Europa offiziell?",
+  "options_de": {
+   "A": "mit dem Tod Adolf Hitlers",
+   "B": "durch die bedingungslose Kapitulation Deutschlands",
+   "C": "mit dem Rückzug der Deutschen aus den besetzten Gebieten",
+   "D": "durch eine Revolution in Deutschland"
+  },
+  "key": "B",
+  "q_bks": "Kako je formalno završio Drugi svjetski rat u Europi?",
+  "expl_bks": "Njemačka vojska potpisala je bezuvjetnu kapitulaciju, koja je stupila na snagu 8. svibnja 1945. Time je rat u Europi završio. Hitler je umro već 30. travnja 1945., ali su se borbe nastavile još nekoliko dana. Revolucije u Njemačkoj 1945. nije bilo.",
+  "merksatz_de": "Der Krieg in Europa endete mit Deutschlands bedingungsloser Kapitulation."
+ },
+ {
+  "id": "G-180",
+  "question_de": "Der erste Bundeskanzler der Bundesrepublik Deutschland war ...",
+  "options_de": {
+   "A": "Ludwig Erhard.",
+   "B": "Willy Brandt.",
+   "C": "Konrad Adenauer.",
+   "D": "Gerhard Schröder."
+  },
+  "key": "C",
+  "q_bks": "Prvi savezni kancelar Savezne Republike Njemačke bio je …",
+  "expl_bks": "Prvi savezni kancelar bio je Konrad Adenauer, od 1949. do 1963. Poznat je po povezivanju Savezne Republike sa zapadnim saveznicima i po početku europske integracije. Ludwig Erhard bio je u njegovoj vladi zadužen za ekonomiju, a 1963. postao je drugi savezni kancelar.",
+  "merksatz_de": "Erster Bundeskanzler war Konrad Adenauer, von 1949 bis 1963."
+ },
+ {
+  "id": "G-181",
+  "question_de": "Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken? © Bundesregierung/Engelbert Reineke",
+  "options_de": {
+   "A": "Er hat sich den ehemaligen Alliierten unterworfen.",
+   "B": "Er bat Polen und die polnischen Juden um Vergebung.",
+   "C": "Er zeigte seine Demut vor dem Warschauer Pakt.",
+   "D": "Er sprach ein Gebet am Grab des Unbekannten Soldaten."
+  },
+  "key": "B",
+  "q_bks": "Što je Willy Brandt želio izraziti klečanjem (Kniefall) 1970. u bivšem židovskom getu u Varšavi?",
+  "expl_bks": "Savezni kancelar Willy Brandt kleknuo je 7. prosinca 1970. u Varšavi pred spomenikom žrtvama ustanka u židovskom getu. Tom gestom bez riječi zamolio je za oprost za zločine koje su Nijemci počinili nad Poljacima i Židovima. Ta je slika postala simbol pomirenja.",
+  "merksatz_de": "Brandts Kniefall 1970 war eine Bitte um Vergebung."
+ },
+ {
+  "id": "G-182",
+  "question_de": "Wie heißt das jüdische Gebetshaus?",
+  "options_de": {
+   "A": "Basilika",
+   "B": "Moschee",
+   "C": "Synagoge",
+   "D": "Kirche"
+  },
+  "key": "C",
+  "q_bks": "Kako se zove židovska bogomolja?",
+  "expl_bks": "Židovska bogomolja zove se sinagoga. U njoj se vjernici okupljaju na molitvu i čitaju Toru. Glavni židovski dan molitve i odmora je subota (šabat). Muslimani se mole u džamiji, a kršćani u crkvi; bazilika je posebna vrsta velike crkve.",
+  "merksatz_de": "Juden beten in der Synagoge."
+ },
+ {
+  "id": "G-183",
+  "question_de": "Wann war in der Bundesrepublik Deutschland das \"Wirtschaftswunder\"?",
+  "options_de": {
+   "A": "40er Jahre",
+   "B": "50er Jahre",
+   "C": "70er Jahre",
+   "D": "80er Jahre"
+  },
+  "key": "B",
+  "q_bks": "Kada je u Saveznoj Republici Njemačkoj bilo „ekonomsko čudo” (Wirtschaftswunder)?",
+  "expl_bks": "U pedesetim godinama Zapadna Njemačka brzo se oporavila od rata: ekonomija je snažno rasla, nezaposlenost je pala, a mnogi su si mogli priuštiti automobil. To se razdoblje naziva „ekonomsko čudo” (Wirtschaftswunder). Zbog manjka radnika Njemačka je 1955. potpisala prvi sporazum o zapošljavanju stranih radnika, s Italijom.",
+  "merksatz_de": "Das Wirtschaftswunder war in den 50er Jahren."
+ },
+ {
+  "id": "G-184",
+  "question_de": "Auf welcher rechtlichen Grundlage wurde der Staat Israel gegründet?",
+  "options_de": {
+   "A": "eine Resolution der Vereinten Nationen",
+   "B": "ein Beschluss des Zionistenkongresses",
+   "C": "ein Vorschlag der Bundesregierung",
+   "D": "ein Vorschlag der UdSSR"
+  },
+  "key": "A",
+  "q_bks": "Na kojoj je pravnoj osnovi osnovana država Izrael?",
+  "expl_bks": "Opća skupština Ujedinjenih naroda (UN) donijela je 29. studenoga 1947. rezoluciju 181 o podjeli Palestine na židovsku i arapsku državu. Na toj je osnovi David Ben-Gurion 14. svibnja 1948. proglasio državu Izrael. Savezna Republika Njemačka tada još nije postojala.",
+  "merksatz_de": "Israel wurde auf Grundlage einer UN-Resolution gegründet."
+ }
+]

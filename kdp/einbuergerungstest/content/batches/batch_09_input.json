@@ -1,0 +1,646 @@
+[
+ {
+  "id": "HE-09",
+  "state": "Hessen",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Hessen?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "HE-10",
+  "state": "Hessen",
+  "question_de": "Welche Ministerin/welchen Minister hat Hessen nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-01",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Welches Wappen gehört zum Bundesland Mecklenburg-Vorpommern?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Bild 3",
+  "image_note_bks": "Grb Mecklenburga-Zapadnog Pomeranije: lijevo crna glava bika s krunom na žutoj podlozi, desno crveni grifon na bijeloj podlozi."
+ },
+ {
+  "id": "MV-02",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Welches ist ein Landkreis in Mecklenburg-Vorpommern?",
+  "options_de": [
+   "Prignitz",
+   "Mecklenburgische Seenplatte",
+   "Vogtlandkreis",
+   "Rhein-Sieg-Kreis"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Mecklenburgische Seenplatte",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-03",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Für wie viele Jahre wird der Landtag in Mecklenburg-Vorpommern gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-04",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Ab welchem Alter darf man in Mecklenburg-Vorpommern bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "16",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-05",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Welche Farben hat die Landesflagge von Mecklenburg-Vorpommern?",
+  "options_de": [
+   "schwarz-rot-gold",
+   "blau-weiß-gelb-rot",
+   "grün-weiß-rot",
+   "schwarz-gelb"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "blau-weiß-gelb-rot",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-06",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Wo können Sie sich in Mecklenburg-Vorpommern über politische Themen informieren?",
+  "options_de": [
+   "bei der Landeszentrale für politische Bildung",
+   "bei den Kirchen",
+   "beim Ordnungsamt der Gemeinde",
+   "bei der Verbraucherzentrale"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-07",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Die Landeshauptstadt von Mecklenburg-Vorpommern heißt ...",
+  "options_de": [
+   "Greifswald.",
+   "Schwerin.",
+   "Rostock.",
+   "Wismar."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Schwerin.",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-08",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Welches Bundesland ist Mecklenburg-Vorpommern?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "3",
+  "image_note_bks": "Na karti je Mecklenburg-Zapadna Pomeranija na sjeveroistoku, uz Baltičko more i granicu s Poljskom."
+ },
+ {
+  "id": "MV-09",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Mecklenburg-Vorpommern?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "MV-10",
+  "state": "Mecklenburg-Vorpommern",
+  "question_de": "Welche Ministerin/welchen Minister hat Mecklenburg-Vorpommern nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-01",
+  "state": "Niedersachsen",
+  "question_de": "Welches Wappen gehört zum Bundesland Niedersachsen?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Bild 3",
+  "image_note_bks": "Grb Donje Saske: bijeli konj u skoku na crvenom štitu."
+ },
+ {
+  "id": "NI-02",
+  "state": "Niedersachsen",
+  "question_de": "Welches ist ein Landkreis in Niedersachsen?",
+  "options_de": [
+   "Ammerland",
+   "Rhein-Sieg-Kreis",
+   "Nordfriesland",
+   "Vogtlandkreis"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Ammerland",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-03",
+  "state": "Niedersachsen",
+  "question_de": "Für wie viele Jahre wird der Landtag in Niedersachsen gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-04",
+  "state": "Niedersachsen",
+  "question_de": "Ab welchem Alter darf man in Niedersachsen bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "16",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-05",
+  "state": "Niedersachsen",
+  "question_de": "Welche Farben hat die Landesflagge von Niedersachsen?",
+  "options_de": [
+   "weiß-blau",
+   "schwarz-rot-gold",
+   "schwarz-gelb",
+   "blau-weiß-rot"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "schwarz-rot-gold",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-06",
+  "state": "Niedersachsen",
+  "question_de": "Wo können Sie sich in Niedersachsen über politische Themen informieren?",
+  "options_de": [
+   "bei der Landeszentrale für politische Bildung",
+   "beim Ordnungsamt der Gemeinde",
+   "bei der Verbraucherzentrale",
+   "bei den Kirchen"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-07",
+  "state": "Niedersachsen",
+  "question_de": "Die Landeshauptstadt von Niedersachsen heißt ...",
+  "options_de": [
+   "Hannover.",
+   "Braunschweig.",
+   "Wolfsburg.",
+   "Osnabrück."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Hannover.",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-08",
+  "state": "Niedersachsen",
+  "question_de": "Welches Bundesland ist Niedersachsen?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "1",
+  "image_note_bks": "Na karti je Donja Saska velika pokrajina na sjeverozapadu, uz Sjeverno more i Nizozemsku (oko Bremena)."
+ },
+ {
+  "id": "NI-09",
+  "state": "Niedersachsen",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Niedersachsen?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "NI-10",
+  "state": "Niedersachsen",
+  "question_de": "Welche Ministerin/welchen Minister hat Niedersachsen nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-01",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Welches Wappen gehört zum Bundesland Nordrhein-Westfalen?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Bild 2",
+  "image_note_bks": "Grb Sjeverne Rajne-Vestfalije: lijevo bijela valovita linija na zelenom (Rajna), desno bijeli konj na crvenom, dolje crvena ruža."
+ },
+ {
+  "id": "NW-02",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Welches ist ein Landkreis in Nordrhein-Westfalen?",
+  "options_de": [
+   "Ammerland",
+   "Rhein-Sieg-Kreis",
+   "Nordfriesland",
+   "Vogtlandkreis"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Rhein-Sieg-Kreis",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-03",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Für wie viele Jahre wird der Landtag in Nordrhein-Westfalen gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-04",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Ab welchem Alter darf man in Nordrhein-Westfalen bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "16",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-05",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Welche Farben hat die Landesflagge von Nordrhein-Westfalen?",
+  "options_de": [
+   "rot-weiß",
+   "grün-weiß-rot",
+   "schwarz-gold",
+   "blau-weiß-rot"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "grün-weiß-rot",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-06",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Wo können Sie sich in Nordrhein-Westfalen über politische Themen informieren?",
+  "options_de": [
+   "bei den Kirchen",
+   "beim Ordnungsamt der Gemeinde",
+   "bei der Verbraucherzentrale",
+   "bei der Landeszentrale für politische Bildung"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-07",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Die Landeshauptstadt von Nordrhein-Westfalen heißt ...",
+  "options_de": [
+   "Köln.",
+   "Bonn.",
+   "Düsseldorf.",
+   "Dortmund."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Düsseldorf.",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-08",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Welches Bundesland ist Nordrhein-Westfalen?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "3",
+  "image_note_bks": "Na karti je Sjeverna Rajna-Vestfalija na zapadu, uz granicu s Nizozemskom i Belgijom."
+ },
+ {
+  "id": "NW-09",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Nordrhein-Westfalen?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "NW-10",
+  "state": "Nordrhein-Westfalen",
+  "question_de": "Welche Ministerin/welchen Minister hat Nordrhein-Westfalen nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-01",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Welches Wappen gehört zum Bundesland Rheinland-Pfalz?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Bild 1",
+  "image_note_bks": "Grb Porajnja-Falačke: crveni križ na bijelom, bijeli kotač na crvenom i zlatni lav na crnom, iznad štita kruna."
+ },
+ {
+  "id": "RP-02",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Welches ist ein Landkreis in Rheinland-Pfalz?",
+  "options_de": [
+   "Westerwaldkreis",
+   "Altötting",
+   "Emsland",
+   "Prignitz"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Westerwaldkreis",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-03",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Für wie viele Jahre wird der Landtag in Rheinland-Pfalz gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-04",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Ab welchem Alter darf man in Rheinland-Pfalz bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "18",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-05",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Welche Farben hat die Landesflagge von Rheinland-Pfalz?",
+  "options_de": [
+   "weiß-rot",
+   "schwarz-rot-gold",
+   "schwarz-gelb",
+   "grün-weiß-rot"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "schwarz-rot-gold",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-06",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Wo können Sie sich in Rheinland-Pfalz über politische Themen informieren?",
+  "options_de": [
+   "bei den Kirchen",
+   "bei der Verbraucherzentrale",
+   "beim Ordnungsamt der Gemeinde",
+   "bei der Landeszentrale für politische Bildung"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "bei der Landeszentrale für politische Bildung",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-07",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Die Landeshauptstadt von Rheinland-Pfalz heißt ...",
+  "options_de": [
+   "Mainz.",
+   "Kaiserslautern.",
+   "Ludwigshafen.",
+   "Koblenz."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Mainz.",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-08",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Welches Bundesland ist Rheinland-Pfalz?",
+  "options_de": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "1",
+  "image_note_bks": "Na karti je Porajnje-Falačka na zapadu, uz granicu s Belgijom, Luksemburgom i Francuskom."
+ },
+ {
+  "id": "RP-09",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Wie nennt man die Regierungschefin/den Regierungschef in Rheinland-Pfalz?",
+  "options_de": [
+   "Erste Ministerin/Erster Minister",
+   "Premierministerin/Premierminister",
+   "Bürgermeisterin/Bürgermeister",
+   "Ministerpräsidentin/Ministerpräsident"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Ministerpräsidentin/Ministerpräsident",
+  "image_note_bks": null
+ },
+ {
+  "id": "RP-10",
+  "state": "Rheinland-Pfalz",
+  "question_de": "Welche Ministerin/welchen Minister hat Rheinland-Pfalz nicht?",
+  "options_de": [
+   "Justizministerin/Justizminister",
+   "Außenministerin/Außenminister",
+   "Finanzministerin/Finanzminister",
+   "Innenministerin/Innenminister"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Außenministerin/Außenminister",
+  "image_note_bks": null
+ },
+ {
+  "id": "SL-01",
+  "state": "Saarland",
+  "question_de": "Welches Wappen gehört zum Bundesland Saarland?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Bild 4",
+  "image_note_bks": "Grb Saarlanda: štit u četiri polja – srebrni lav na plavom, crveni križ na bijelom, crvena kosa greda s tri mala bijela orla na zlatnom i zlatni lav na crnom."
+ },
+ {
+  "id": "SL-02",
+  "state": "Saarland",
+  "question_de": "Welches ist ein Landkreis im Saarland?",
+  "options_de": [
+   "Mecklenburgische Seenplatte",
+   "Altötting",
+   "Neunkirchen",
+   "Rhein-Sieg-Kreis"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Neunkirchen",
+  "image_note_bks": null
+ },
+ {
+  "id": "SL-03",
+  "state": "Saarland",
+  "question_de": "Für wie viele Jahre wird der Landtag des Saarlandes gewählt?",
+  "options_de": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "SL-04",
+  "state": "Saarland",
+  "question_de": "Ab welchem Alter darf man im Saarland bei Kommunalwahlen wählen?",
+  "options_de": [
+   "14",
+   "16",
+   "18",
+   "20"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "18",
+  "image_note_bks": null
+ }
+]

@@ -1,0 +1,554 @@
+[
+ {
+  "id": "G-277",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-278",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-279",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-280",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-281",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-282",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Only the correct option B carries a German gloss (Wahlhelfer) – visual cue giving away the answer; also 'volonterski rad' contradicts 'moraju'. Fix: Q 'Koju počasnu dužnost (Ehrenamt) moraju preuzeti njemački državljani ako ih se na to pozove?'; options 'trener u udruzi (Vereinstrainer)', 'nadzor u knjižnici (Bibliotheksaufsicht)', 'učitelj (Lehrer)'."
+ },
+ {
+  "id": "G-283",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-284",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-285",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-286",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-287",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-288",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-289",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-290",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-291",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-292",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-293",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": "'kititi jelku' is not Croatian standard. Fix: option B 'kititi bor (božićno drvce)'; in expl 'jelka za Božić' → 'bor za Božić'."
+ },
+ {
+  "id": "G-294",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-295",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-296",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "G-297",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "G-298",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "G-299",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "G-300",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "BW-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BW-02",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BW-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BW-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BW-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BW-06",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BW-07",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BW-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BW-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BW-10",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BY-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BY-02",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BY-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BY-04",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BY-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BY-06",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BY-07",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BY-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BY-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BY-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BE-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BE-02",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BE-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BE-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": "Bezirk rendered 'gradski okrug' here but 'gradski kotar' in BE-02 ('okrug' elsewhere = Landkreis, confusing). Fix: '…izborima za skupštinu gradskog kotara (Bezirksverordnetenversammlung)' and expl '12 gradskih kotara (Bezirke)… Svaki kotar…'; same in HH-02/HH-04 and HB-02 expl."
+ },
+ {
+  "id": "BE-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BE-06",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BE-07",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "BE-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BE-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BE-10",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BB-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BB-02",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "BB-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BB-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BB-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "BB-06",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "BB-07",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "BB-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "BB-09",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "BB-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HB-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "HB-02",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HB-03",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HB-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HB-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HB-06",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HB-07",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": "'Što je njemačka grad-pokrajina?' reads as a definition question, options are cities. Fix: 'Koji je grad njemačka grad-pokrajina (Stadtstaat)?'"
+ },
+ {
+  "id": "HB-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "HB-09",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "HB-10",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "HH-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "HH-02",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "HH-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "HH-04",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HH-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HH-06",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "HH-07",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "HH-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "HH-09",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HH-10",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HE-01",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ },
+ {
+  "id": "HE-02",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "HE-03",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "HE-04",
+  "answer_from_translation": "C",
+  "explanation_supports": "C",
+  "issues": ""
+ },
+ {
+  "id": "HE-05",
+  "answer_from_translation": "B",
+  "explanation_supports": "B",
+  "issues": ""
+ },
+ {
+  "id": "HE-06",
+  "answer_from_translation": "A",
+  "explanation_supports": "A",
+  "issues": ""
+ },
+ {
+  "id": "HE-07",
+  "answer_from_translation": "D",
+  "explanation_supports": "D",
+  "issues": ""
+ },
+ {
+  "id": "HE-08",
+  "answer_from_translation": "?",
+  "explanation_supports": "?",
+  "issues": ""
+ }
+]

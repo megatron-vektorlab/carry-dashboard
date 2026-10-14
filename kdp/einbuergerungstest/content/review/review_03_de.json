@@ -1,0 +1,922 @@
+[
+ {
+  "id": "G-185",
+  "question_de": "Wofür stand der Ausdruck \"Eiserner Vorhang\"? Für die Abschottung ...",
+  "options_de": {
+   "A": "des Warschauer Pakts gegen den Westen",
+   "B": "Norddeutschlands gegen Süddeutschland",
+   "C": "Nazi-Deutschlands gegen die Alliierten",
+   "D": "Europas gegen die USA"
+  }
+ },
+ {
+  "id": "G-186",
+  "question_de": "Im Jahr 1953 gab es in der DDR einen Aufstand, an den lange Zeit in der Bundesrepublik Deutschland ein Feiertag erinnerte. Wann war das?",
+  "options_de": {
+   "A": "1. Mai",
+   "B": "17. Juni",
+   "C": "20. Juli",
+   "D": "9. November"
+  }
+ },
+ {
+  "id": "G-187",
+  "question_de": "Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?",
+  "options_de": {
+   "A": "Preußen",
+   "B": "Bundesrepublik Deutschland",
+   "C": "\"Drittes Reich\"",
+   "D": "DDR"
+  }
+ },
+ {
+  "id": "G-188",
+  "question_de": "In welchem Jahr wurde die Mauer in Berlin gebaut?",
+  "options_de": {
+   "A": "1953",
+   "B": "1956",
+   "C": "1959",
+   "D": "1961"
+  }
+ },
+ {
+  "id": "G-189",
+  "question_de": "Wann baute die DDR die Mauer in Berlin?",
+  "options_de": {
+   "A": "1919",
+   "B": "1933",
+   "C": "1961",
+   "D": "1990"
+  }
+ },
+ {
+  "id": "G-190",
+  "question_de": "Was bedeutet die Abkürzung DDR?",
+  "options_de": {
+   "A": "Dritter Deutscher Rundfunk",
+   "B": "Die Deutsche Republik",
+   "C": "Dritte Deutsche Republik",
+   "D": "Deutsche Demokratische Republik"
+  }
+ },
+ {
+  "id": "G-191",
+  "question_de": "Wann wurde die Mauer in Berlin für alle geöffnet?",
+  "options_de": {
+   "A": "1987",
+   "B": "1989",
+   "C": "1992",
+   "D": "1995"
+  }
+ },
+ {
+  "id": "G-192",
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": {
+   "A": "Brandenburg",
+   "B": "Bayern",
+   "C": "Saarland",
+   "D": "Hessen"
+  }
+ },
+ {
+  "id": "G-193",
+  "question_de": "Von 1961 bis 1989 war Berlin ...",
+  "options_de": {
+   "A": "ohne Bürgermeister.",
+   "B": "ein eigener Staat.",
+   "C": "durch eine Mauer geteilt.",
+   "D": "nur mit dem Flugzeug erreichbar."
+  }
+ },
+ {
+  "id": "G-194",
+  "question_de": "Am 3. Oktober feiert man in Deutschland den Tag der Deutschen ...",
+  "options_de": {
+   "A": "Einheit.",
+   "B": "Nation.",
+   "C": "Bundesländer.",
+   "D": "Städte."
+  }
+ },
+ {
+  "id": "G-195",
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": {
+   "A": "Hessen",
+   "B": "Sachsen-Anhalt",
+   "C": "Nordrhein-Westfalen",
+   "D": "Saarland"
+  }
+ },
+ {
+  "id": "G-196",
+  "question_de": "Warum nennt man die Zeit im Herbst 1989 in der DDR \"Die Wende\"? In dieser Zeit veränderte sich die DDR politisch ...",
+  "options_de": {
+   "A": "von einer Diktatur zur Demokratie.",
+   "B": "von einer liberalen Marktwirtschaft zum Sozialismus.",
+   "C": "von einer Monarchie zur Sozialdemokratie.",
+   "D": "von einem religiösen Staat zu einem kommunistischen Staat."
+  }
+ },
+ {
+  "id": "G-197",
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": {
+   "A": "Thüringen",
+   "B": "Hessen",
+   "C": "Bayern",
+   "D": "Bremen"
+  }
+ },
+ {
+  "id": "G-198",
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": {
+   "A": "Bayern",
+   "B": "Niedersachsen",
+   "C": "Sachsen",
+   "D": "Baden-Württemberg"
+  }
+ },
+ {
+  "id": "G-199",
+  "question_de": "Mit der Abkürzung \"Stasi\" meinte man in der DDR ...",
+  "options_de": {
+   "A": "das Parlament.",
+   "B": "das Ministerium für Staatssicherheit.",
+   "C": "eine regierende Partei.",
+   "D": "das Ministerium für Volksbildung."
+  }
+ },
+ {
+  "id": "G-200",
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": {
+   "A": "Hessen",
+   "B": "Schleswig-Holstein",
+   "C": "Mecklenburg-Vorpommern",
+   "D": "Saarland"
+  }
+ },
+ {
+  "id": "G-201",
+  "question_de": "Welche der folgenden Auflistungen enthält nur Bundesländer, die zum Gebiet der früheren DDR gehörten?",
+  "options_de": {
+   "A": "Niedersachsen, Nordrhein-Westfalen, Hessen, Schleswig-Holstein, Brandenburg",
+   "B": "Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen",
+   "C": "Bayern, Baden-Württemberg, Rheinland-Pfalz, Thüringen, Sachsen",
+   "D": "Sachsen, Thüringen, Hessen, Niedersachen, Brandenburg"
+  }
+ },
+ {
+  "id": "G-202",
+  "question_de": "Zu wem gehörte die DDR im \"Kalten Krieg\"?",
+  "options_de": {
+   "A": "zu den Westmächten",
+   "B": "zum Warschauer Pakt",
+   "C": "zur NATO",
+   "D": "zu den blockfreien Staaten"
+  }
+ },
+ {
+  "id": "G-203",
+  "question_de": "Wie hieß das Wirtschaftssystem der DDR?",
+  "options_de": {
+   "A": "Marktwirtschaft",
+   "B": "Planwirtschaft",
+   "C": "Angebot und Nachfrage",
+   "D": "Kapitalismus"
+  }
+ },
+ {
+  "id": "G-204",
+  "question_de": "Wie wurden die Bundesrepublik Deutschland und die DDR zu einem Staat?",
+  "options_de": {
+   "A": "Die Bundesrepublik hat die DDR besetzt.",
+   "B": "Die heutigen fünf östlichen Bundesländer sind der Bundesrepublik Deutschland beigetreten.",
+   "C": "Die westlichen Bundesländer sind der DDR beigetreten.",
+   "D": "Die DDR hat die Bundesrepublik Deutschland besetzt."
+  }
+ },
+ {
+  "id": "G-205",
+  "question_de": "Mit dem Beitritt der DDR zur Bundesrepublik Deutschland gehören die neuen Bundesländer nun auch ...",
+  "options_de": {
+   "A": "zur Europäischen Union.",
+   "B": "zum Warschauer Pakt.",
+   "C": "zur OPEC.",
+   "D": "zur Europäischen Verteidigungsgemeinschaft."
+  }
+ },
+ {
+  "id": "G-206",
+  "question_de": "Woran erinnern die sogenannten „Stolpersteine“ in Deutschland?",
+  "options_de": {
+   "A": "an berühmte deutsche Politikerinnen und Politiker",
+   "B": "an die Opfer des Nationalsozialismus",
+   "C": "an Verkehrstote",
+   "D": "an bekannte jüdische Musiker"
+  }
+ },
+ {
+  "id": "G-207",
+  "question_de": "In welchem Militärbündnis war die DDR Mitglied?",
+  "options_de": {
+   "A": "in der NATO",
+   "B": "im Rheinbund",
+   "C": "im Warschauer Pakt",
+   "D": "im Europabündnis"
+  }
+ },
+ {
+  "id": "G-208",
+  "question_de": "Was war die \"Stasi\"?",
+  "options_de": {
+   "A": "der Geheimdienst im \"Dritten Reich\"",
+   "B": "eine berühmte deutsche Gedenkstätte",
+   "C": "der Geheimdienst der DDR",
+   "D": "ein deutscher Sportverein während des Zweiten Weltkrieges"
+  }
+ },
+ {
+  "id": "G-209",
+  "question_de": "Welches war das Wappen der Deutschen Demokratischen Republik?",
+  "options_de": {
+   "A": "Bild 1",
+   "B": "Bild 2",
+   "C": "Bild 3",
+   "D": "Bild 4"
+  }
+ },
+ {
+  "id": "G-210",
+  "question_de": "Was ereignete sich am 17. Juni 1953 in der DDR?",
+  "options_de": {
+   "A": "der feierliche Beitritt zum Warschauer Pakt",
+   "B": "landesweite Streiks und ein Volksaufstand",
+   "C": "der 1. SED-Parteitag",
+   "D": "der erste Besuch Fidel Castros"
+  }
+ },
+ {
+  "id": "G-211",
+  "question_de": "Welcher Politiker steht für die \"Ostverträge\"?",
+  "options_de": {
+   "A": "Helmut Kohl",
+   "B": "Willy Brandt",
+   "C": "Michail Gorbatschow",
+   "D": "Ludwig Erhard"
+  }
+ },
+ {
+  "id": "G-212",
+  "question_de": "Wie heißt Deutschland mit vollem Namen?",
+  "options_de": {
+   "A": "Bundesstaat Deutschland",
+   "B": "Bundesländer Deutschland",
+   "C": "Bundesrepublik Deutschland",
+   "D": "Bundesbezirk Deutschland"
+  }
+ },
+ {
+  "id": "G-213",
+  "question_de": "Wie viele Einwohner hat Deutschland?",
+  "options_de": {
+   "A": "70 Millionen",
+   "B": "78 Millionen",
+   "C": "84 Millionen",
+   "D": "90 Millionen"
+  }
+ },
+ {
+  "id": "G-214",
+  "question_de": "Welche Farben hat die deutsche Flagge?",
+  "options_de": {
+   "A": "schwarz-rot-gold",
+   "B": "rot-weiß-schwarz",
+   "C": "schwarz-rot-grün",
+   "D": "schwarz-gelb-rot"
+  }
+ },
+ {
+  "id": "G-215",
+  "question_de": "Wer wird als \"Kanzler der Deutschen Einheit\" bezeichnet?",
+  "options_de": {
+   "A": "Gerhard Schröder",
+   "B": "Helmut Kohl",
+   "C": "Konrad Adenauer",
+   "D": "Helmut Schmidt"
+  }
+ },
+ {
+  "id": "G-216",
+  "question_de": "Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen? © Deutscher Bundestag/Janine Schmitz",
+  "options_de": {
+   "A": "der Bundesadler",
+   "B": "die Fahne der Stadt Berlin",
+   "C": "der Reichsadler",
+   "D": "die Reichskrone"
+  }
+ },
+ {
+  "id": "G-217",
+  "question_de": "In welchem Zeitraum gab es die Deutsche Demokratische Republik (DDR)?",
+  "options_de": {
+   "A": "1919 bis 1927",
+   "B": "1933 bis 1945",
+   "C": "1945 bis 1961",
+   "D": "1949 bis 1990"
+  }
+ },
+ {
+  "id": "G-218",
+  "question_de": "Wie viele Bundesländer kamen bei der Wiedervereinigung 1990 zur Bundesrepublik Deutschland hinzu?",
+  "options_de": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  }
+ },
+ {
+  "id": "G-219",
+  "question_de": "Die Bundesrepublik Deutschland hat die Grenzen von heute seit ...",
+  "options_de": {
+   "A": "1933",
+   "B": "1949",
+   "C": "1971",
+   "D": "1990"
+  }
+ },
+ {
+  "id": "G-220",
+  "question_de": "Der 27. Januar ist in Deutschland ein offizieller Gedenktag. Woran erinnert dieser Tag?",
+  "options_de": {
+   "A": "an das Ende des Zweiten Weltkrieges",
+   "B": "an die Verabschiedung des Grundgesetzes",
+   "C": "an die Wiedervereinigung Deutschlands",
+   "D": "an die Opfer des Nationalsozialismus (Tag der Befreiung des Vernichtungslagers Auschwitz)"
+  }
+ },
+ {
+  "id": "G-221",
+  "question_de": "Deutschland ist Mitglied des Schengener Abkommens. Was bedeutet das?",
+  "options_de": {
+   "A": "Deutsche können in viele Länder Europas ohne Passkontrolle reisen.",
+   "B": "Alle Menschen können ohne Personenkontrolle in Deutschland einreisen.",
+   "C": "Deutsche können ohne Passkontrolle in jedes Land reisen.",
+   "D": "Deutsche können in jedem Land mit dem Euro bezahlen."
+  }
+ },
+ {
+  "id": "G-222",
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": {
+   "A": "Ungarn",
+   "B": "Portugal",
+   "C": "Spanien",
+   "D": "Schweiz"
+  }
+ },
+ {
+  "id": "G-223",
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": {
+   "A": "Rumänien",
+   "B": "Bulgarien",
+   "C": "Polen",
+   "D": "Griechenland"
+  }
+ },
+ {
+  "id": "G-224",
+  "question_de": "Was bedeutet die Abkürzung EU?",
+  "options_de": {
+   "A": "Europäische Unternehmen",
+   "B": "Europäische Union",
+   "C": "Einheitliche Union",
+   "D": "Euro Union"
+  }
+ },
+ {
+  "id": "G-225",
+  "question_de": "In welchem anderen Land gibt es eine große deutschsprachige Bevölkerung?",
+  "options_de": {
+   "A": "Tschechien",
+   "B": "Norwegen",
+   "C": "Spanien",
+   "D": "Österreich"
+  }
+ },
+ {
+  "id": "G-226",
+  "question_de": "Welche ist die Flagge der Europäischen Union?",
+  "options_de": {
+   "A": "Bild 1",
+   "B": "Bild 2",
+   "C": "Bild 3",
+   "D": "Bild 4"
+  }
+ },
+ {
+  "id": "G-227",
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": {
+   "A": "Finnland",
+   "B": "Dänemark",
+   "C": "Norwegen",
+   "D": "Schweden"
+  }
+ },
+ {
+  "id": "G-228",
+  "question_de": "Wie wird der Beitritt der DDR zur Bundesrepublik Deutschland im Jahr 1990 allgemein genannt?",
+  "options_de": {
+   "A": "NATO-Osterweiterung",
+   "B": "EU-Osterweiterung",
+   "C": "Deutsche Wiedervereinigung",
+   "D": "Europäische Gemeinschaft"
+  }
+ },
+ {
+  "id": "G-229",
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": {
+   "A": "Spanien",
+   "B": "Bulgarien",
+   "C": "Norwegen",
+   "D": "Luxemburg"
+  }
+ },
+ {
+  "id": "G-230",
+  "question_de": "Das Europäische Parlament wird regelmäßig gewählt, nämlich alle ...",
+  "options_de": {
+   "A": "5 Jahre.",
+   "B": "6 Jahre.",
+   "C": "7 Jahre.",
+   "D": "8 Jahre."
+  }
+ },
+ {
+  "id": "G-231",
+  "question_de": "Was bedeutet der Begriff \"europäische Integration\"?",
+  "options_de": {
+   "A": "Damit sind amerikanische Einwanderinnen und Einwanderer in Europa gemeint.",
+   "B": "Der Begriff meint den Einwanderungsstopp nach Europa.",
+   "C": "Damit sind europäische Auswanderinnen und Auswanderer in den USA gemeint.",
+   "D": "Der Begriff meint den Zusammenschluss europäischer Staaten zur EU."
+  }
+ },
+ {
+  "id": "G-232",
+  "question_de": "Wer wird bei der Europawahl gewählt?",
+  "options_de": {
+   "A": "die Europäische Kommission",
+   "B": "die Länder, die in die EU eintreten dürfen",
+   "C": "die Abgeordneten des Europäischen Parlaments",
+   "D": "die europäische Verfassung"
+  }
+ },
+ {
+  "id": "G-233",
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": {
+   "A": "Tschechien",
+   "B": "Bulgarien",
+   "C": "Griechenland",
+   "D": "Portugal"
+  }
+ },
+ {
+  "id": "G-234",
+  "question_de": "Wo ist ein Sitz des Europäischen Parlaments?",
+  "options_de": {
+   "A": "London",
+   "B": "Paris",
+   "C": "Berlin",
+   "D": "Straßburg"
+  }
+ },
+ {
+  "id": "G-235",
+  "question_de": "Der damalige französische Staatspräsident François Mitterrand und der damalige deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich? © Bundesregierung/Richard Schulze-Vorberg",
+  "options_de": {
+   "A": "Freundschaft zwischen England und Deutschland",
+   "B": "Reisefreiheit in alle Länder der EU",
+   "C": "Frieden und Sicherheit in den Ländern der EU",
+   "D": "einheitliche Feiertage in den Ländern der EU"
+  }
+ },
+ {
+  "id": "G-236",
+  "question_de": "Wie viele Mitgliedstaaten hat die EU heute?",
+  "options_de": {
+   "A": "21",
+   "B": "23",
+   "C": "25",
+   "D": "27"
+  }
+ },
+ {
+  "id": "G-237",
+  "question_de": "2007 wurde das 50-jährige Jubiläum der \"Römischen Verträge\" gefeiert. Was war der Inhalt der Verträge?",
+  "options_de": {
+   "A": "Beitritt Deutschlands zur NATO",
+   "B": "Gründung der Europäischen Wirtschaftsgemeinschaft (EWG)",
+   "C": "Verpflichtung Deutschlands zu Reparationsleistungen",
+   "D": "Festlegung der Oder-Neiße-Linie als Ostgrenze"
+  }
+ },
+ {
+  "id": "G-238",
+  "question_de": "An welchen Orten arbeitet das Europäische Parlament?",
+  "options_de": {
+   "A": "Paris, London und Den Haag",
+   "B": "Straßburg, Luxemburg und Brüssel",
+   "C": "Rom, Bern und Wien",
+   "D": "Bonn, Zürich und Mailand"
+  }
+ },
+ {
+  "id": "G-239",
+  "question_de": "Durch welche Verträge schloss sich die Bundesrepublik Deutschland mit anderen Staaten zur Europäischen Wirtschaftsgemeinschaft zusammen?",
+  "options_de": {
+   "A": "durch die \"Hamburger Verträge\"",
+   "B": "durch die \"Römischen Verträge\"",
+   "C": "durch die \"Pariser Verträge\"",
+   "D": "durch die \"Londoner Verträge\""
+  }
+ },
+ {
+  "id": "G-240",
+  "question_de": "Seit wann bezahlt man in Deutschland mit dem Euro in bar?",
+  "options_de": {
+   "A": "1995",
+   "B": "1998",
+   "C": "2002",
+   "D": "2005"
+  }
+ },
+ {
+  "id": "G-241",
+  "question_de": "Frau Seger bekommt ein Kind. Was muss sie tun, um Elterngeld zu erhalten?",
+  "options_de": {
+   "A": "Sie muss an ihre Krankenkasse schreiben.",
+   "B": "Sie muss einen Antrag bei der Elterngeldstelle stellen.",
+   "C": "Sie muss nichts tun, denn sie bekommt automatisch Elterngeld.",
+   "D": "Sie muss das Arbeitsamt um Erlaubnis bitten."
+  }
+ },
+ {
+  "id": "G-242",
+  "question_de": "Wer entscheidet, ob ein Kind in Deutschland in den Kindergarten geht?",
+  "options_de": {
+   "A": "der Staat",
+   "B": "die Bundesländer",
+   "C": "die Eltern/die Erziehungsberechtigten",
+   "D": "die Schulen"
+  }
+ },
+ {
+  "id": "G-243",
+  "question_de": "Maik und Sybille wollen mit Freunden an ihrem deutschen Wohnort eine Demonstration auf der Straße abhalten. Was müssen sie vorher tun?",
+  "options_de": {
+   "A": "Sie müssen die Demonstration anmelden.",
+   "B": "Sie müssen nichts tun. Man darf in Deutschland jederzeit überall demonstrieren.",
+   "C": "Sie können gar nichts tun, denn Demonstrationen sind in Deutschland grundsätzlich verboten.",
+   "D": "Maik und Sybille müssen einen neuen Verein gründen, weil nur Vereine demonstrieren dürfen."
+  }
+ },
+ {
+  "id": "G-244",
+  "question_de": "Welchen Schulabschluss braucht man normalerweise, um an einer Universität in Deutschland ein Studium zu beginnen?",
+  "options_de": {
+   "A": "das Abitur",
+   "B": "ein Diplom",
+   "C": "die Prokura",
+   "D": "eine Gesellenprüfung"
+  }
+ },
+ {
+  "id": "G-245",
+  "question_de": "Wer darf in Deutschland nicht als Paar zusammenleben?",
+  "options_de": {
+   "A": "Hans (20 Jahre) und Marie (19 Jahre)",
+   "B": "Tom (20 Jahre) und Klaus (45 Jahre)",
+   "C": "Sofie (35 Jahre) und Lisa (40 Jahre)",
+   "D": "Anne (13 Jahre) und Tim (25 Jahre)"
+  }
+ },
+ {
+  "id": "G-246",
+  "question_de": "Ab welchem Alter ist man in Deutschland volljährig?",
+  "options_de": {
+   "A": "16",
+   "B": "18",
+   "C": "19",
+   "D": "21"
+  }
+ },
+ {
+  "id": "G-247",
+  "question_de": "Eine Frau ist schwanger. Sie ist kurz vor und nach der Geburt ihres Kindes vom Gesetz besonders beschützt. Wie heißt dieser Schutz?",
+  "options_de": {
+   "A": "Elternzeit",
+   "B": "Mutterschutz",
+   "C": "Geburtsvorbereitung",
+   "D": "Wochenbett"
+  }
+ },
+ {
+  "id": "G-248",
+  "question_de": "Die Erziehung der Kinder ist in Deutschland vor allem Aufgabe ...",
+  "options_de": {
+   "A": "des Staates.",
+   "B": "der Eltern.",
+   "C": "der Großeltern.",
+   "D": "der Schulen."
+  }
+ },
+ {
+  "id": "G-249",
+  "question_de": "Wer ist in Deutschland hauptsächlich verantwortlich für die Kindererziehung?",
+  "options_de": {
+   "A": "der Staat",
+   "B": "die Eltern",
+   "C": "die Verwandten",
+   "D": "die Schulen"
+  }
+ },
+ {
+  "id": "G-250",
+  "question_de": "In Deutschland hat man die besten Chancen auf einen gut bezahlten Arbeitsplatz, wenn man ...",
+  "options_de": {
+   "A": "katholisch ist.",
+   "B": "gut ausgebildet ist.",
+   "C": "eine Frau ist.",
+   "D": "Mitglied einer Partei ist."
+  }
+ },
+ {
+  "id": "G-251",
+  "question_de": "Wenn man in Deutschland ein Kind schlägt, ...",
+  "options_de": {
+   "A": "geht das niemanden etwas an.",
+   "B": "geht das nur die Familie etwas an.",
+   "C": "kann man dafür nicht bestraft werden.",
+   "D": "kann man dafür bestraft werden."
+  }
+ },
+ {
+  "id": "G-252",
+  "question_de": "In Deutschland ...",
+  "options_de": {
+   "A": "darf man zur gleichen Zeit nur mit einer Partnerin/einem Partner verheiratet sein.",
+   "B": "kann man mehrere Ehepartnerinnen/Ehepartner gleichzeitig haben.",
+   "C": "darf man nicht wieder heiraten, wenn man einmal verheiratet war.",
+   "D": "darf eine Frau nicht wieder heiraten, wenn ihr Mann gestorben ist."
+  }
+ },
+ {
+  "id": "G-253",
+  "question_de": "Wo müssen Sie sich anmelden, wenn Sie in Deutschland umziehen?",
+  "options_de": {
+   "A": "beim Einwohnermeldeamt",
+   "B": "beim Standesamt",
+   "C": "beim Ordnungsamt",
+   "D": "beim Gewerbeamt"
+  }
+ },
+ {
+  "id": "G-254",
+  "question_de": "In Deutschland dürfen Ehepaare sich scheiden lassen. Meistens müssen sie dazu das \"Trennungsjahr\" einhalten. Was bedeutet das?",
+  "options_de": {
+   "A": "Der Scheidungsprozess dauert ein Jahr.",
+   "B": "Die Ehegatten sind ein Jahr verheiratet, dann ist die Scheidung möglich.",
+   "C": "Das Besuchsrecht für die Kinder gilt ein Jahr.",
+   "D": "Die Ehegatten führen mindestens ein Jahr getrennt ihr eigenes Leben. Danach ist die Scheidung möglich."
+  }
+ },
+ {
+  "id": "G-255",
+  "question_de": "Bei Erziehungsproblemen können Eltern in Deutschland Hilfe erhalten vom ...",
+  "options_de": {
+   "A": "Ordnungsamt.",
+   "B": "Schulamt.",
+   "C": "Jugendamt.",
+   "D": "Gesundheitsamt."
+  }
+ },
+ {
+  "id": "G-256",
+  "question_de": "Ein Ehepaar möchte in Deutschland ein Restaurant eröffnen. Was braucht es dazu unbedingt?",
+  "options_de": {
+   "A": "eine Erlaubnis der Polizei",
+   "B": "eine Genehmigung einer Partei",
+   "C": "eine Genehmigung des Einwohnermeldeamts",
+   "D": "eine Gaststättenerlaubnis von der zuständigen Behörde"
+  }
+ },
+ {
+  "id": "G-257",
+  "question_de": "Eine erwachsene Frau möchte in Deutschland das Abitur nachholen. Das kann sie an ...",
+  "options_de": {
+   "A": "einer Hochschule.",
+   "B": "einem Abendgymnasium.",
+   "C": "einer Hauptschule.",
+   "D": "einer Privatuniversität."
+  }
+ },
+ {
+  "id": "G-258",
+  "question_de": "Was darf das Jugendamt in Deutschland?",
+  "options_de": {
+   "A": "Es entscheidet, welche Schule das Kind besucht.",
+   "B": "Es kann ein Kind, das geschlagen wird oder hungern muss, aus der Familie nehmen.",
+   "C": "Es bezahlt das Kindergeld an die Eltern.",
+   "D": "Es kontrolliert, ob das Kind einen Kindergarten besucht."
+  }
+ },
+ {
+  "id": "G-259",
+  "question_de": "Das Berufsinformationszentrum BIZ bei der Bundesagentur für Arbeit in Deutschland hilft bei der ...",
+  "options_de": {
+   "A": "Rentenberechnung.",
+   "B": "Lehrstellensuche.",
+   "C": "Steuererklärung.",
+   "D": "Krankenversicherung."
+  }
+ },
+ {
+  "id": "G-260",
+  "question_de": "In Deutschland hat ein Kind in der Schule ...",
+  "options_de": {
+   "A": "Recht auf unbegrenzte Freizeit.",
+   "B": "Wahlfreiheit für alle Fächer.",
+   "C": "Anspruch auf Schulgeld.",
+   "D": "Anwesenheitspflicht."
+  }
+ },
+ {
+  "id": "G-261",
+  "question_de": "Ein Mann möchte mit 30 Jahren in Deutschland sein Abitur nachholen. Wo kann er das tun? An ...",
+  "options_de": {
+   "A": "einer Hochschule.",
+   "B": "einem Abendgymnasium.",
+   "C": "einer Hauptschule.",
+   "D": "einer Privatuniversität."
+  }
+ },
+ {
+  "id": "G-262",
+  "question_de": "Was bedeutet in Deutschland der Grundsatz der Gleichbehandlung?",
+  "options_de": {
+   "A": "Niemand darf z.B. wegen einer Behinderung benachteiligt werden.",
+   "B": "Man darf andere Personen benachteiligen, wenn ausreichende persönliche Gründe hierfür vorliegen.",
+   "C": "Niemand darf gegen Personen klagen, wenn sie benachteiligt wurden.",
+   "D": "Es ist für alle Gesetz, benachteiligten Gruppen jährlich Geld zu spenden."
+  }
+ },
+ {
+  "id": "G-263",
+  "question_de": "In Deutschland sind Jugendliche ab 14 Jahren strafmündig. Das bedeutet: Jugendliche, die 14 Jahre und älter sind und gegen Strafgesetze verstoßen, ...",
+  "options_de": {
+   "A": "werden bestraft.",
+   "B": "werden wie Erwachsene behandelt.",
+   "C": "teilen die Strafe mit ihren Eltern.",
+   "D": "werden nicht bestraft."
+  }
+ },
+ {
+  "id": "G-264",
+  "question_de": "Zu welchem Fest tragen Menschen in Deutschland bunte Kostüme und Masken?",
+  "options_de": {
+   "A": "am Rosenmontag",
+   "B": "am Maifeiertag",
+   "C": "beim Oktoberfest",
+   "D": "an Pfingsten"
+  }
+ },
+ {
+  "id": "G-265",
+  "question_de": "Wohin muss man in Deutschland zuerst gehen, wenn man heiraten möchte?",
+  "options_de": {
+   "A": "zum Einwohnermeldeamt",
+   "B": "zum Ordnungsamt",
+   "C": "zur Agentur für Arbeit",
+   "D": "zum Standesamt"
+  }
+ },
+ {
+  "id": "G-266",
+  "question_de": "Wann beginnt die gesetzliche Nachtruhe in Deutschland?",
+  "options_de": {
+   "A": "wenn die Sonne untergeht",
+   "B": "wenn die Nachbarn schlafen gehen",
+   "C": "um 0 Uhr, Mitternacht",
+   "D": "um 22 Uhr"
+  }
+ },
+ {
+  "id": "G-267",
+  "question_de": "Eine junge Frau in Deutschland, 22 Jahre alt, lebt mit ihrem Freund zusammen. Die Eltern der Frau finden das nicht gut, weil ihnen der Freund nicht gefällt. Was können die Eltern tun?",
+  "options_de": {
+   "A": "Sie müssen die Entscheidung der volljährigen Tochter respektieren.",
+   "B": "Sie haben das Recht, die Tochter in die elterliche Wohnung zurückzuholen.",
+   "C": "Sie können zur Polizei gehen und die Tochter anzeigen.",
+   "D": "Sie suchen einen anderen Mann für die Tochter."
+  }
+ },
+ {
+  "id": "G-268",
+  "question_de": "Eine junge Frau will den Führerschein machen. Sie hat Angst vor der Prüfung, weil ihre Muttersprache nicht Deutsch ist. Was ist richtig?",
+  "options_de": {
+   "A": "Sie muss mindestens zehn Jahre in Deutschland leben, bevor sie den Führerschein machen kann.",
+   "B": "Wenn sie kein Deutsch kann, darf sie keinen Führerschein haben.",
+   "C": "Sie muss den Führerschein in dem Land machen, in dem man ihre Sprache spricht.",
+   "D": "Sie kann die Theorie-Prüfung vielleicht in ihrer Muttersprache machen. Es gibt mehr als zehn Sprachen zur Auswahl."
+  }
+ },
+ {
+  "id": "G-269",
+  "question_de": "In Deutschland haben Kinder ab dem Alter von drei Jahren bis zur Ersteinschulung einen Anspruch auf ...",
+  "options_de": {
+   "A": "monatliches Taschengeld.",
+   "B": "einen Platz in einem Sportverein.",
+   "C": "einen Kindergartenplatz.",
+   "D": "einen Ferienpass."
+  }
+ },
+ {
+  "id": "G-270",
+  "question_de": "Die Volkshochschule in Deutschland ist eine Einrichtung ...",
+  "options_de": {
+   "A": "für den Religionsunterricht.",
+   "B": "nur für Jugendliche.",
+   "C": "zur Weiterbildung.",
+   "D": "nur für Rentnerinnen und Rentner."
+  }
+ },
+ {
+  "id": "G-271",
+  "question_de": "Was ist in Deutschland ein Brauch zu Weihnachten?",
+  "options_de": {
+   "A": "bunte Eier verstecken",
+   "B": "einen Tannenbaum schmücken",
+   "C": "sich mit Masken und Kostümen verkleiden",
+   "D": "Kürbisse vor die Tür stellen"
+  }
+ },
+ {
+  "id": "G-272",
+  "question_de": "Welche Lebensform ist in Deutschland nicht erlaubt?",
+  "options_de": {
+   "A": "Mann und Frau sind geschieden und leben mit neuen Partnern zusammen.",
+   "B": "Zwei Frauen leben zusammen.",
+   "C": "Ein alleinerziehender Vater lebt mit seinen zwei Kindern zusammen.",
+   "D": "Ein Mann ist mit zwei Frauen zur selben Zeit verheiratet."
+  }
+ },
+ {
+  "id": "G-273",
+  "question_de": "Bei Erziehungsproblemen gehen Sie in Deutschland ...",
+  "options_de": {
+   "A": "zur Ärztin/zum Arzt.",
+   "B": "zum Gesundheitsamt.",
+   "C": "zum Einwohnermeldeamt.",
+   "D": "zum Jugendamt."
+  }
+ },
+ {
+  "id": "G-274",
+  "question_de": "Sie haben in Deutschland absichtlich einen Brief geöffnet, der an eine andere Person adressiert ist. Was haben Sie nicht beachtet?",
+  "options_de": {
+   "A": "das Schweigerecht",
+   "B": "das Briefgeheimnis",
+   "C": "die Schweigepflicht",
+   "D": "die Meinungsfreiheit"
+  }
+ },
+ {
+  "id": "G-275",
+  "question_de": "Was braucht man in Deutschland für eine Ehescheidung?",
+  "options_de": {
+   "A": "die Einwilligung der Eltern",
+   "B": "ein Attest einer Ärztin/eines Arztes",
+   "C": "die Einwilligung der Kinder",
+   "D": "die Unterstützung einer Anwältin/eines Anwalts"
+  }
+ },
+ {
+  "id": "G-276",
+  "question_de": "Was sollten Sie tun, wenn Sie von Ihrer Ansprechpartnerin/Ihrem Ansprechpartner in einer deutschen Behörde schlecht behandelt werden?",
+  "options_de": {
+   "A": "Ich kann nichts tun.",
+   "B": "Ich muss mir diese Behandlung gefallen lassen.",
+   "C": "Ich drohe der Person.",
+   "D": "Ich kann mich bei der Behördenleiterin/beim Behördenleiter beschweren."
+  }
+ }
+]

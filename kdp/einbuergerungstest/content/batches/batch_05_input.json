@@ -1,0 +1,646 @@
+[
+ {
+  "id": "G-185",
+  "state": null,
+  "question_de": "Wofür stand der Ausdruck \"Eiserner Vorhang\"? Für die Abschottung ...",
+  "options_de": [
+   "des Warschauer Pakts gegen den Westen",
+   "Norddeutschlands gegen Süddeutschland",
+   "Nazi-Deutschlands gegen die Alliierten",
+   "Europas gegen die USA"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "des Warschauer Pakts gegen den Westen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-186",
+  "state": null,
+  "question_de": "Im Jahr 1953 gab es in der DDR einen Aufstand, an den lange Zeit in der Bundesrepublik Deutschland ein Feiertag erinnerte. Wann war das?",
+  "options_de": [
+   "1. Mai",
+   "17. Juni",
+   "20. Juli",
+   "9. November"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "17. Juni",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-187",
+  "state": null,
+  "question_de": "Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?",
+  "options_de": [
+   "Preußen",
+   "Bundesrepublik Deutschland",
+   "\"Drittes Reich\"",
+   "DDR"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "DDR",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-188",
+  "state": null,
+  "question_de": "In welchem Jahr wurde die Mauer in Berlin gebaut?",
+  "options_de": [
+   "1953",
+   "1956",
+   "1959",
+   "1961"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "1961",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-189",
+  "state": null,
+  "question_de": "Wann baute die DDR die Mauer in Berlin?",
+  "options_de": [
+   "1919",
+   "1933",
+   "1961",
+   "1990"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "1961",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-190",
+  "state": null,
+  "question_de": "Was bedeutet die Abkürzung DDR?",
+  "options_de": [
+   "Dritter Deutscher Rundfunk",
+   "Die Deutsche Republik",
+   "Dritte Deutsche Republik",
+   "Deutsche Demokratische Republik"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Deutsche Demokratische Republik",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-191",
+  "state": null,
+  "question_de": "Wann wurde die Mauer in Berlin für alle geöffnet?",
+  "options_de": [
+   "1987",
+   "1989",
+   "1992",
+   "1995"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "1989",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-192",
+  "state": null,
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": [
+   "Brandenburg",
+   "Bayern",
+   "Saarland",
+   "Hessen"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Brandenburg",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-193",
+  "state": null,
+  "question_de": "Von 1961 bis 1989 war Berlin ...",
+  "options_de": [
+   "ohne Bürgermeister.",
+   "ein eigener Staat.",
+   "durch eine Mauer geteilt.",
+   "nur mit dem Flugzeug erreichbar."
+  ],
+  "correct_index": 2,
+  "correct_option_de": "durch eine Mauer geteilt.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-194",
+  "state": null,
+  "question_de": "Am 3. Oktober feiert man in Deutschland den Tag der Deutschen ...",
+  "options_de": [
+   "Einheit.",
+   "Nation.",
+   "Bundesländer.",
+   "Städte."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Einheit.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-195",
+  "state": null,
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": [
+   "Hessen",
+   "Sachsen-Anhalt",
+   "Nordrhein-Westfalen",
+   "Saarland"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Sachsen-Anhalt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-196",
+  "state": null,
+  "question_de": "Warum nennt man die Zeit im Herbst 1989 in der DDR \"Die Wende\"? In dieser Zeit veränderte sich die DDR politisch ...",
+  "options_de": [
+   "von einer Diktatur zur Demokratie.",
+   "von einer liberalen Marktwirtschaft zum Sozialismus.",
+   "von einer Monarchie zur Sozialdemokratie.",
+   "von einem religiösen Staat zu einem kommunistischen Staat."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "von einer Diktatur zur Demokratie.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-197",
+  "state": null,
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": [
+   "Thüringen",
+   "Hessen",
+   "Bayern",
+   "Bremen"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Thüringen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-198",
+  "state": null,
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": [
+   "Bayern",
+   "Niedersachsen",
+   "Sachsen",
+   "Baden-Württemberg"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Sachsen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-199",
+  "state": null,
+  "question_de": "Mit der Abkürzung \"Stasi\" meinte man in der DDR ...",
+  "options_de": [
+   "das Parlament.",
+   "das Ministerium für Staatssicherheit.",
+   "eine regierende Partei.",
+   "das Ministerium für Volksbildung."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "das Ministerium für Staatssicherheit.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-200",
+  "state": null,
+  "question_de": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+  "options_de": [
+   "Hessen",
+   "Schleswig-Holstein",
+   "Mecklenburg-Vorpommern",
+   "Saarland"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Mecklenburg-Vorpommern",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-201",
+  "state": null,
+  "question_de": "Welche der folgenden Auflistungen enthält nur Bundesländer, die zum Gebiet der früheren DDR gehörten?",
+  "options_de": [
+   "Niedersachsen, Nordrhein-Westfalen, Hessen, Schleswig-Holstein, Brandenburg",
+   "Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen",
+   "Bayern, Baden-Württemberg, Rheinland-Pfalz, Thüringen, Sachsen",
+   "Sachsen, Thüringen, Hessen, Niedersachen, Brandenburg"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-202",
+  "state": null,
+  "question_de": "Zu wem gehörte die DDR im \"Kalten Krieg\"?",
+  "options_de": [
+   "zu den Westmächten",
+   "zum Warschauer Pakt",
+   "zur NATO",
+   "zu den blockfreien Staaten"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "zum Warschauer Pakt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-203",
+  "state": null,
+  "question_de": "Wie hieß das Wirtschaftssystem der DDR?",
+  "options_de": [
+   "Marktwirtschaft",
+   "Planwirtschaft",
+   "Angebot und Nachfrage",
+   "Kapitalismus"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Planwirtschaft",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-204",
+  "state": null,
+  "question_de": "Wie wurden die Bundesrepublik Deutschland und die DDR zu einem Staat?",
+  "options_de": [
+   "Die Bundesrepublik hat die DDR besetzt.",
+   "Die heutigen fünf östlichen Bundesländer sind der Bundesrepublik Deutschland beigetreten.",
+   "Die westlichen Bundesländer sind der DDR beigetreten.",
+   "Die DDR hat die Bundesrepublik Deutschland besetzt."
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Die heutigen fünf östlichen Bundesländer sind der Bundesrepublik Deutschland beigetreten.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-205",
+  "state": null,
+  "question_de": "Mit dem Beitritt der DDR zur Bundesrepublik Deutschland gehören die neuen Bundesländer nun auch ...",
+  "options_de": [
+   "zur Europäischen Union.",
+   "zum Warschauer Pakt.",
+   "zur OPEC.",
+   "zur Europäischen Verteidigungsgemeinschaft."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "zur Europäischen Union.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-206",
+  "state": null,
+  "question_de": "Woran erinnern die sogenannten „Stolpersteine“ in Deutschland?",
+  "options_de": [
+   "an berühmte deutsche Politikerinnen und Politiker",
+   "an die Opfer des Nationalsozialismus",
+   "an Verkehrstote",
+   "an bekannte jüdische Musiker"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "an die Opfer des Nationalsozialismus",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-207",
+  "state": null,
+  "question_de": "In welchem Militärbündnis war die DDR Mitglied?",
+  "options_de": [
+   "in der NATO",
+   "im Rheinbund",
+   "im Warschauer Pakt",
+   "im Europabündnis"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "im Warschauer Pakt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-208",
+  "state": null,
+  "question_de": "Was war die \"Stasi\"?",
+  "options_de": [
+   "der Geheimdienst im \"Dritten Reich\"",
+   "eine berühmte deutsche Gedenkstätte",
+   "der Geheimdienst der DDR",
+   "ein deutscher Sportverein während des Zweiten Weltkrieges"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "der Geheimdienst der DDR",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-209",
+  "state": null,
+  "question_de": "Welches war das Wappen der Deutschen Demokratischen Republik?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Bild 4",
+  "image_note_bks": "Grb DDR-a: čekić i šestar na crvenoj podlozi, okruženi vijencem od klasja s crno-crveno-zlatnom trakom."
+ },
+ {
+  "id": "G-210",
+  "state": null,
+  "question_de": "Was ereignete sich am 17. Juni 1953 in der DDR?",
+  "options_de": [
+   "der feierliche Beitritt zum Warschauer Pakt",
+   "landesweite Streiks und ein Volksaufstand",
+   "der 1. SED-Parteitag",
+   "der erste Besuch Fidel Castros"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "landesweite Streiks und ein Volksaufstand",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-211",
+  "state": null,
+  "question_de": "Welcher Politiker steht für die \"Ostverträge\"?",
+  "options_de": [
+   "Helmut Kohl",
+   "Willy Brandt",
+   "Michail Gorbatschow",
+   "Ludwig Erhard"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Willy Brandt",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-212",
+  "state": null,
+  "question_de": "Wie heißt Deutschland mit vollem Namen?",
+  "options_de": [
+   "Bundesstaat Deutschland",
+   "Bundesländer Deutschland",
+   "Bundesrepublik Deutschland",
+   "Bundesbezirk Deutschland"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Bundesrepublik Deutschland",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-213",
+  "state": null,
+  "question_de": "Wie viele Einwohner hat Deutschland?",
+  "options_de": [
+   "70 Millionen",
+   "78 Millionen",
+   "84 Millionen",
+   "90 Millionen"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "84 Millionen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-214",
+  "state": null,
+  "question_de": "Welche Farben hat die deutsche Flagge?",
+  "options_de": [
+   "schwarz-rot-gold",
+   "rot-weiß-schwarz",
+   "schwarz-rot-grün",
+   "schwarz-gelb-rot"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "schwarz-rot-gold",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-215",
+  "state": null,
+  "question_de": "Wer wird als \"Kanzler der Deutschen Einheit\" bezeichnet?",
+  "options_de": [
+   "Gerhard Schröder",
+   "Helmut Kohl",
+   "Konrad Adenauer",
+   "Helmut Schmidt"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Helmut Kohl",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-216",
+  "state": null,
+  "question_de": "Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen? © Deutscher Bundestag/Janine Schmitz",
+  "options_de": [
+   "der Bundesadler",
+   "die Fahne der Stadt Berlin",
+   "der Reichsadler",
+   "die Reichskrone"
+  ],
+  "correct_index": 0,
+  "correct_option_de": "der Bundesadler",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-217",
+  "state": null,
+  "question_de": "In welchem Zeitraum gab es die Deutsche Demokratische Republik (DDR)?",
+  "options_de": [
+   "1919 bis 1927",
+   "1933 bis 1945",
+   "1945 bis 1961",
+   "1949 bis 1990"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "1949 bis 1990",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-218",
+  "state": null,
+  "question_de": "Wie viele Bundesländer kamen bei der Wiedervereinigung 1990 zur Bundesrepublik Deutschland hinzu?",
+  "options_de": [
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "5",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-219",
+  "state": null,
+  "question_de": "Die Bundesrepublik Deutschland hat die Grenzen von heute seit ...",
+  "options_de": [
+   "1933",
+   "1949",
+   "1971",
+   "1990"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "1990",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-220",
+  "state": null,
+  "question_de": "Der 27. Januar ist in Deutschland ein offizieller Gedenktag. Woran erinnert dieser Tag?",
+  "options_de": [
+   "an das Ende des Zweiten Weltkrieges",
+   "an die Verabschiedung des Grundgesetzes",
+   "an die Wiedervereinigung Deutschlands",
+   "an die Opfer des Nationalsozialismus (Tag der Befreiung des Vernichtungslagers Auschwitz)"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "an die Opfer des Nationalsozialismus (Tag der Befreiung des Vernichtungslagers Auschwitz)",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-221",
+  "state": null,
+  "question_de": "Deutschland ist Mitglied des Schengener Abkommens. Was bedeutet das?",
+  "options_de": [
+   "Deutsche können in viele Länder Europas ohne Passkontrolle reisen.",
+   "Alle Menschen können ohne Personenkontrolle in Deutschland einreisen.",
+   "Deutsche können ohne Passkontrolle in jedes Land reisen.",
+   "Deutsche können in jedem Land mit dem Euro bezahlen."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "Deutsche können in viele Länder Europas ohne Passkontrolle reisen.",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-222",
+  "state": null,
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": [
+   "Ungarn",
+   "Portugal",
+   "Spanien",
+   "Schweiz"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Schweiz",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-223",
+  "state": null,
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": [
+   "Rumänien",
+   "Bulgarien",
+   "Polen",
+   "Griechenland"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Polen",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-224",
+  "state": null,
+  "question_de": "Was bedeutet die Abkürzung EU?",
+  "options_de": [
+   "Europäische Unternehmen",
+   "Europäische Union",
+   "Einheitliche Union",
+   "Euro Union"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Europäische Union",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-225",
+  "state": null,
+  "question_de": "In welchem anderen Land gibt es eine große deutschsprachige Bevölkerung?",
+  "options_de": [
+   "Tschechien",
+   "Norwegen",
+   "Spanien",
+   "Österreich"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Österreich",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-226",
+  "state": null,
+  "question_de": "Welche ist die Flagge der Europäischen Union?",
+  "options_de": [
+   "Bild 1",
+   "Bild 2",
+   "Bild 3",
+   "Bild 4"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Bild 2",
+  "image_note_bks": "Zastava Europske unije: dvanaest zlatnih zvjezdica u krugu na plavoj podlozi."
+ },
+ {
+  "id": "G-227",
+  "state": null,
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": [
+   "Finnland",
+   "Dänemark",
+   "Norwegen",
+   "Schweden"
+  ],
+  "correct_index": 1,
+  "correct_option_de": "Dänemark",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-228",
+  "state": null,
+  "question_de": "Wie wird der Beitritt der DDR zur Bundesrepublik Deutschland im Jahr 1990 allgemein genannt?",
+  "options_de": [
+   "NATO-Osterweiterung",
+   "EU-Osterweiterung",
+   "Deutsche Wiedervereinigung",
+   "Europäische Gemeinschaft"
+  ],
+  "correct_index": 2,
+  "correct_option_de": "Deutsche Wiedervereinigung",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-229",
+  "state": null,
+  "question_de": "Welches Land ist ein Nachbarland von Deutschland?",
+  "options_de": [
+   "Spanien",
+   "Bulgarien",
+   "Norwegen",
+   "Luxemburg"
+  ],
+  "correct_index": 3,
+  "correct_option_de": "Luxemburg",
+  "image_note_bks": null
+ },
+ {
+  "id": "G-230",
+  "state": null,
+  "question_de": "Das Europäische Parlament wird regelmäßig gewählt, nämlich alle ...",
+  "options_de": [
+   "5 Jahre.",
+   "6 Jahre.",
+   "7 Jahre.",
+   "8 Jahre."
+  ],
+  "correct_index": 0,
+  "correct_option_de": "5 Jahre.",
+  "image_note_bks": null
+ }
+]

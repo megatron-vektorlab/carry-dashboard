@@ -1,0 +1,17 @@
+{
+ "pages": 311,
+ "missing_translations": 0,
+ "questions": 460,
+ "tests": 10,
+ "draft": false,
+ "missing_release": [],
+ "images": true,
+ "spine_in": 0.7004,
+ "cover_width_in": 14.3304,
+ "cover_height_in": 9.86,
+ "trim": "6.69 x 9.61 in",
+ "files": [
+  "interior_de-bks.pdf",
+  "cover_de-bks.pdf"
+ ]
+}

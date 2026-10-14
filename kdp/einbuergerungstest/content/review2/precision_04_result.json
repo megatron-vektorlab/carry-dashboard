@@ -1,0 +1,98 @@
+[
+  {
+    "id": "G-281",
+    "field": "expl_bks",
+    "old": "Pravo na jednako postupanje znači da se prema svim ljudima mora postupati jednako.",
+    "new": "Pravo na jednako postupanje znači da nitko ne smije biti lošije tretiran npr. zbog boje kože, spola ili vjere.",
+    "reason": "Gleichbehandlung verlangt nicht, alle gleich zu behandeln; verboten ist Benachteiligung ohne sachlichen Grund bzw. wegen geschützter Merkmale (Art. 3 GG, § 1 AGG); Privatpersonen gilt sonst Vertragsfreiheit.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-282",
+    "field": "merksatz_de",
+    "old": "Wahlhelfer ist ein Ehrenamt, das man übernehmen muss.",
+    "new": "Wahlhelfer ist ein Ehrenamt, das Wahlberechtigte auf Aufforderung übernehmen müssen.",
+    "reason": "Pflicht besteht nur bei Berufung und kann aus wichtigem Grund abgelehnt werden (§ 11 BWahlG, § 9 BWO); allein gelesen klingt es wie eine Pflicht für alle.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-283",
+    "field": "expl_bks",
+    "old": "Prigovor se šalje pisanim putem istom uredu, obično u roku od mjesec dana. Ured tada mora još jednom provjeriti svoju odluku.",
+    "new": "Prigovor se obično šalje pisanim putem istom uredu u roku od mjesec dana. U nekim pokrajinama za mnoge odluke prigovora nema, nego se odmah ide na sud; to piše na kraju odluke (Rechtsbehelfsbelehrung).",
+    "reason": "Widerspruchsverfahren ist in mehreren Ländern weitgehend abgeschafft (z. B. Bayern Art. 12 AGVwGO, NRW § 110 JustG NRW, Niedersachsen § 80 NJG) – dort direkt Klage; bei Steuern Einspruch (§ 347 AO). Allgemeine Aussage kann zum Fristversäumnis führen.",
+    "severity": "high"
+  },
+  {
+    "id": "G-283",
+    "field": "merksatz_de",
+    "old": "Gegen einen falschen Bescheid einer Behörde legt man Widerspruch ein.",
+    "new": "Gegen einen falschen Bescheid einer Behörde wehrt man sich meist mit einem Widerspruch.",
+    "reason": "Nicht immer gibt es einen Widerspruch (Abschaffung in mehreren Ländern, § 68 Abs. 1 S. 2 VwGO; Steuern: Einspruch).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-286",
+    "field": "expl_bks",
+    "old": "Prije svakog otkaza poslodavac mora saslušati radničko vijeće.",
+    "new": "Ako u poduzeću postoji radničko vijeće, poslodavac ga mora saslušati prije svakog otkaza.",
+    "reason": "Anhörungspflicht (§ 102 BetrVG) besteht nur, wo ein Betriebsrat gewählt ist; viele, v. a. kleine Betriebe haben keinen.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-287",
+    "field": "merksatz_de",
+    "old": "Wer kündigt, muss die Kündigungsfrist beachten.",
+    "new": "Wer kündigt, muss in der Regel die Kündigungsfrist beachten.",
+    "reason": "Bei außerordentlicher (fristloser) Kündigung aus wichtigem Grund gilt keine Kündigungsfrist (§ 626 BGB).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-291",
+    "field": "merksatz_de",
+    "old": "Kirchenmitglieder zahlen Kirchensteuer",
+    "new": "Mitglieder z. B. der katholischen oder evangelischen Kirche zahlen Kirchensteuer",
+    "reason": "Nicht jede Kirche erhebt Kirchensteuer (z. B. orthodoxe Kirchen, Freikirchen, muslimische Gemeinden nicht) – für BKS-Leser relevant; Kirchensteuer nur bei kirchensteuerberechtigten Religionsgemeinschaften.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-297",
+    "field": "expl_bks",
+    "old": "Najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske.",
+    "new": "Prema službenoj statistici (2024.) najveća skupina ljudi s migracijskim porijeklom u Njemačkoj potječe iz Turske (oko 12 %).",
+    "reason": "Zeitabhängige Statistik datieren; laut Destatis-Mikrozensus 2024 ca. 2,6 Mio. von 21,2 Mio. (12,2 %) mit Einwanderungsgeschichte türkischer Herkunft, starker Zuzug aus der Ukraine.",
+    "severity": "medium"
+  },
+  {
+    "id": "G-297",
+    "field": "merksatz_de",
+    "old": "Die meisten Migranten in Deutschland stammen aus der Türkei.",
+    "new": "Die größte Migrantengruppe in Deutschland stammt aus der Türkei.",
+    "reason": "„Die meisten Migranten stammen aus der Türkei“ liest sich als Mehrheit – falsch: nur ca. 12 % der Menschen mit Einwanderungsgeschichte (Destatis, Mikrozensus 2024).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-299",
+    "field": "expl_bks",
+    "old": "Od 1968. dolazili su i radnici iz Jugoslavije, pa je riječ „gastarbajter” ušla i u naš jezik.",
+    "new": "Godine 1968. sporazum je sklopljen i s Jugoslavijom, odakle je došlo mnogo radnika, pa je riječ „gastarbajter” ušla i u naš jezik.",
+    "reason": "Jugoslawische Arbeitskräfte kamen schon ab ca. 1961 (rund 100.000 bis 1968 über Einzelverträge); 1968 wurde nur das Anwerbeabkommen geschlossen (12.10.1968).",
+    "severity": "medium"
+  },
+  {
+    "id": "G-300",
+    "field": "merksatz_de",
+    "old": "Die ersten Gastarbeiter kamen 1955 aus Italien.",
+    "new": "Das erste Anwerbeabkommen schloss die Bundesrepublik 1955 mit Italien.",
+    "reason": "Abkommen am 20.12.1955 unterzeichnet; die ersten Vermittlungen italienischer Arbeitskräfte erfolgten erst 1956 (bpb, LpB BW).",
+    "severity": "medium"
+  },
+  {
+    "id": "HB-10",
+    "field": "expl_bks",
+    "old": "Svaki je zadužen za jedno područje, na primjer financije, pravosuđe ili unutarnje poslove.",
+    "new": "Svaki je zadužen za određena područja, na primjer financije, pravosuđe ili unutarnje poslove.",
+    "reason": "Bremer Senatsressorts sind oft zusammengelegt (z. B. Senator für Inneres und Sport), ein Senator hat also häufig mehrere Bereiche.",
+    "severity": "medium"
+  }
+]
