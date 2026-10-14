@@ -104,7 +104,26 @@ def main():
     chart = build / "staat.png"
     typst.compile(str(ROOT / "layout" / "ebook_diagram.typ"), output=str(chart), root=str(ROOT), format="png", ppi=220,
                   font_paths=[str(ROOT / "layout" / "fonts")])
-    images = {"images/staat.png": chart}
+    imgdir = build / "img"
+    imgdir.mkdir(exist_ok=True)
+
+    def small_png(src, longest=1400):
+        """16-grey PNG at most `longest` px: a smaller file lowers Amazon's per-MB delivery cost
+        (the pictures are greyscale line art, so 16 levels look the same on a Kindle screen)."""
+        dst = imgdir / src.name
+        im = Image.open(src)
+        if im.mode in ("RGBA", "LA", "P"):
+            im = im.convert("RGBA")
+            bg = Image.new("RGBA", im.size, "white")
+            im = Image.alpha_composite(bg, im)
+        im = im.convert("L")
+        if max(im.size) > longest:
+            k = longest / max(im.size)
+            im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+        im.quantize(16, dither=Image.Dither.NONE).save(dst, optimize=True, bits=4)
+        return dst
+
+    images = {"images/staat.png": small_png(chart)}
 
     # ---- where every question lives -------------------------------------------------------
     where = {}
@@ -126,13 +145,14 @@ def main():
             return ""
         files = [f.split("/")[-1] for f in q["images"]["files"]]
         for f in files:
-            images[f"images/{f}"] = ROOT / "layout" / "images" / f
+            images[f"images/{f}"] = small_png(ROOT / "layout" / "images" / f)
         if q["images"]["layout"] == "row":
             cells = "".join(f'<span class="pic4"><img src="images/{f}" alt="Bild {i + 1}"/><br/>Bild {i + 1}</span>'
                             for i, f in enumerate(files))
             return f'<p class="pics4">{cells}</p>'
         cls = "wide" if q["id"] == "G-130" else "narrow" if q["id"] == "G-176" or small else ""
-        return f'<p class="pic"><img class="{cls}" src="images/{files[0]}" alt="Bild zur Frage {esc(q["label"])}"/></p>'
+        cls = f' class="{cls}"' if cls else ""
+        return f'<p class="pic"><img{cls} src="images/{files[0]}" alt="Bild zur Frage {esc(q["label"])}"/></p>'
 
     def photo_note(q):
         if not q.get("photo_missing"):
@@ -343,7 +363,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
     for t in data["tests"]:
         sol.append(f'<h2 id="t{t["n"]}">Probetest {t["n"]}</h2>')
         sol.append('<p class="sol">' + " · ".join(
-            f'<a href="{qhref(q["id"])}">{i + 1}: {q["answer"]}</a> <span class="small">({esc(q["label"])})</span>'
+            f'<a href="{qhref(q["id"])}">{i + 1}:&#160;{q["answer"]}</a>&#160;<span class="small">({esc(q["label"])})</span>'
             for i, q in enumerate(t["questions"])) + "</p>")
         sol.append(f'<p class="small">Fragen 31–33: Landesfragen {", ".join(str(n) for n in t["state_nums"])} – '
                    f'<a href="#laender">Lösungen der Landesfragen</a></p>')
@@ -351,7 +371,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
     for s in data["state_key"]:
         code = s["code"]
         sol.append(f'<p class="sol"><b>{esc(s["name"])}:</b> ' + " · ".join(
-            f'<a href="{qhref(f"{code}-{i + 1:02d}") if f"{code}-{i + 1:02d}" in where else "#"}">{i + 1}: {a}</a>'
+            f'<a href="{qhref(f"{code}-{i + 1:02d}") if f"{code}-{i + 1:02d}" in where else "#"}">{i + 1}:&#160;{a}</a>'
             for i, a in enumerate(s["answers"])) + "</p>")
     docs.append(Doc("loesungen", "Lösungen", lang="de", toc=False, body="\n".join(sol)))
 

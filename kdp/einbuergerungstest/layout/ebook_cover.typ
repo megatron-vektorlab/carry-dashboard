@@ -30,20 +30,20 @@
   #v(0.12in)
   #text(size: 16pt, weight: "semibold", style: "italic", fill: accent)[Razumijte svako pitanje\ na svom jeziku]
 ])
-#place(top + left, dx: L, dy: 4.25in, block(width: W, stroke: 1.2pt + accent, radius: 6pt, inset: 11pt)[
+#place(top + left, dx: L, dy: 4.42in, block(width: W, stroke: 1.2pt + accent, radius: 6pt, inset: 11pt)[
   #text(size: 10.5pt, weight: "semibold", fill: accent)[DIE PRÜFUNG · ISPIT]
   #v(2pt)
   #text(size: 13pt)[33 Fragen · 60 Minuten \ Einbürgerung: 17 richtig · LiD: 15 richtig]
 ])
 #let badge(big, small) = box(width: 1.36in, height: 1.0in, radius: 6pt, fill: paper, inset: 6pt,
   align(center + horizon)[#text(fill: navy, size: 18pt, weight: "bold", big)\ #text(fill: navy, size: 8.6pt, small)])
-#place(top + left, dx: L, dy: 5.45in,
+#place(top + left, dx: L, dy: 5.58in,
   grid(columns: 3, column-gutter: 0.1in,
     badge("460", "alle Fragen ·\nalle 16 Bundesländer"),
     badge("Erklärt", "jede richtige Antwort ·\nsvaki odgovor objašnjen"),
     badge("10", "Probetests\nmit Lösungen"),
   ))
-#place(top + left, dx: L, dy: 6.85in, text(size: 15pt, weight: "semibold", P.author))
+#place(top + left, dx: L, dy: 6.9in, text(size: 15pt, weight: "semibold", P.author))
 #place(top + left, dx: L, dy: 7.25in, block(width: W)[
   #text(size: 10pt, fill: paper)[BAMF-Fragenkatalog · #P.stand]
   #linebreak()

@@ -62,3 +62,30 @@ Die Prüfung ist auf Deutsch. Dieses Buch hilft Ihnen, jede Frage wirklich zu ve
 1. Slika jedne stranice s pitanjem (izrezak iz `out/interior_de-bks.pdf`, npr. pitanje 1) s natpisom „So ist jede Frage aufgebaut”.
 2. Stranica probnog testa + stranica s rješenjima.
 3. Traka „33 Fragen · 60 Minuten · ab 17 richtig bestanden”.
+
+## E-knjiga (Kindle eBook)
+Datoteke: `out/ebook_de-bks.epub` (manuskript) i `out/ebook_cover_de-bks.jpg` (naslovnica 1600 × 2560 px).
+U KDP-u: **+ Create → Kindle eBook**, isti naslov, podnaslov, autor, serija i izdanje kao meki uvez – tada
+Amazon obje verzije spaja na jednoj stranici proizvoda (inače: KDP podrška → „Link print and Kindle”).
+
+| Polje | Vrijednost |
+|---|---|
+| Jezik | **Njemački** (kao meki uvez) |
+| ISBN | Nije potreban (Amazon dodjeljuje ASIN); ne upisujte ISBN mekog uveza |
+| Manuskript | EPUB (`out/ebook_de-bks.epub`); EPUBCheck: 0 grešaka. Nakon učitavanja otvorite **Launch Previewer** i pregledajte slikovna pitanja, tablice i poveznice |
+| Naslovnica | „Upload a cover you already have” → `out/ebook_cover_de-bks.jpg` |
+| DRM | Po izboru (ne može se kasnije promijeniti). Bez DRM-a kupci mogu čitati i na drugim uređajima |
+| Prijava AI-ja | Ista kao za meki uvez (tekst i prijevodi: AI-generated → Yes; slike: No) |
+| Ključne riječi, kategorije | Iste kao za meki uvez; kategorije birajte u stablu „Kindle-Shop” [provjeriti] |
+| KDP Select | Po izboru: 90 dana ekskluzivno na Amazonu, zauzvrat Kindle Unlimited (plaćanje po pročitanim stranicama) i promocije. Za priručnik koji se čita u dijelovima KU obično donosi manje od prodaje – prijedlog: **bez** Selecta u prvih 90 dana [vaša odluka] |
+| Cijena | Prijedlog **7,99 €** (Amazon.de) – opcija honorara **70 %** (dopuštena za 2,99–9,99 €) [provjeriti] |
+| Honorar (procjena) | 7,99 € s 7 % PDV-a = 7,47 € neto; trošak dostave ≈ 0,12 €/MB × ~3,3 MB ≈ 0,40 €; 70 % × (7,47 − 0,40) ≈ **4,95 €** po prodaji. KDP prikazuje stvarnu veličinu datoteke nakon pretvorbe [provjeriti] |
+| Pravilo cijene | Za 70 % e-knjiga mora biti barem 20 % jeftinija od mekog uveza (16,99 € → najviše 13,59 €); 7,99 € to ispunjava |
+
+### Opis e-knjige (zamjena za popis u opisu mekog uveza)
+```html
+<li>10 vollständige Prüfungssimulationen (30 + 3 Fragen) mit Lösungen – jede Lösung führt per Klick zur Frage mit Erklärung</li>
+<li>Wappen, Karten und Stimmzettel der Bildfragen enthalten</li>
+<li>Lernplan für 14 und 30 Tage, Themenregister und Zeitleiste mit anklickbaren Fragenummern, Glossar Deutsch – BKS</li>
+```
+Ostatak opisa (naslov, uvod, prve četiri točke, BKS dio, napomena o BAMF-u) isti je kao za meki uvez.

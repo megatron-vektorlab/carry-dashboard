@@ -15,6 +15,8 @@ vlasnik može sam lektorirati. Isti postupak zatim daje ukrajinsko, tursko i alb
 | Unutrašnjost (PDF), 311 str. | `out/interior_de-bks.pdf` | **konačno** (29. 9. 2026.) – bez ljudske lekture i bez usporedbe sa službenim PDF-om, što impresum navodi |
 | Naslovnica s hrbtom (PDF) | `out/cover_de-bks.pdf` | **konačno**: 14,3304 × 9,86 in, hrbat 0,7004 in (vidi `out/build_info.json`) |
 | KDP podaci | `kdp/metadata.md` | gotovo |
+| **E-knjiga (Kindle)**: EPUB 3, 44 dokumenta, 95 slika, ~3,3 MB | `out/ebook_de-bks.epub` | **konačno**: EPUBCheck 0 grešaka; brojevi pitanja su poveznice |
+| Naslovnica e-knjige, 1600 × 2560 px | `out/ebook_cover_de-bks.jpg` | konačno |
 
 ## Sadržaj knjige
 - Uvod: o testu (33 pitanja, 60 min; **17** točnih za naturalizaciju, **15** za test LiD na kraju
@@ -63,7 +65,24 @@ python3 scripts/consistency.py      # ujednačavanje + sve ispravke iz provjera
 python3 scripts/validate_content.py
 python3 scripts/build_book.py      # out/interior_de-bks.pdf
 python3 scripts/build_cover.py     # out/cover_de-bks.pdf (hrbat prema broju stranica)
+pip install epubcheck              # EPUBCheck (treba Javu)
+python3 scripts/build_ebook.py     # out/ebook_de-bks.epub + out/ebook_cover_de-bks.jpg
 ```
+
+## E-knjiga (Kindle)
+Isti sadržaj kao tiskana knjiga (`assemble()` u `build_book.py`), prilagođen čitaču:
+- **Prilagodljiv tekst** (reflowable EPUB 3 + NCX): čitatelj bira veličinu slova; slike su
+  sive PNG datoteke sa 16 tonova (manja datoteka = manji Amazonov trošak dostave).
+- **Brojevi su poveznice**: kazalo, vremenska crta, „Tko je tko”, rješenja testova → pitanje
+  s objašnjenjem; „natrag” u čitaču vraća na popis. Sadržaj (TOC) ima sva poglavlja i
+  Fragen 1–50 … 251–300, svih 16 pokrajina i 10 testova.
+- **Nema** listova za odgovore ni tablice pogrešaka (na Kindleu se ne može pisati); umjesto
+  toga uvod objašnjava Kindle bilješke/označavanje. QR kod zamijenjen je poveznicom na BAMF.
+- Testovi: pitanja bez označenog odgovora; pitanja 31–33 iz Dodatka A; rješenja vode na pitanja.
+- `scripts/build_ebook.py` prekida s greškom ako EPUBCheck nađe grešku ili ako neka
+  unutarnja poveznica ne vodi nikamo. Prije objave pregledajte datoteku u besplatnom
+  **Kindle Previeweru** (Amazon) – posebno slikovna pitanja i tablice plana učenja.
+- KDP podaci za e-knjigu (cijena, honorar, opis): `kdp/metadata.md`, odjeljak „E-knjiga”.
 
 ## Prije objave – ljudski popis (obavezno)
 - [ ] **Katalog:** preuzmite aktualni PDF s bamf.de, upišite njegov „Stand” i datum usporedbe
@@ -74,6 +93,7 @@ python3 scripts/build_cover.py     # out/cover_de-bks.pdf (hrbat prema broju str
 - [ ] **KDP jezik:** njemački; prijava AI-ja prema `kdp/metadata.md`.
 - [ ] **Probni tisak:** slike u sivim tonovima, margine, list za odgovore, hrbat (~0,70 in).
 - [ ] **Cijena:** KDP kalkulator s konačnim brojem stranica (prijedlog 16,99 €).
+- [ ] **E-knjiga:** pregled u Kindle Previeweru; cijena 7,99 € (70 %); poveznica s mekim uvezom.
 - [ ] **QR kod** vodi na BAMF-ovu stranicu kataloga; po mogućnosti zamijenite ga vlastitom
       kratkom poveznicom koju možete preusmjeriti ako BAMF promijeni adresu.
 
