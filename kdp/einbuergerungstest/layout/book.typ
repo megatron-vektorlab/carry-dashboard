@@ -291,7 +291,7 @@ Svako pogrešno pitanje upišite u *tablicu pogrešaka* na kraju knjige i ponovi
 #pagebreak(weak: true)
 == Pazi na riječ
 
-Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima se riječ pojavljuje.
+Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima ta riječ određuje što se pita.
 
 #set text(size: 9pt)
 #table(columns: (27mm, 1fr), stroke: 0.4pt + luma(170), inset: 1.6mm,

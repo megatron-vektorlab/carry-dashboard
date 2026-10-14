@@ -379,6 +379,11 @@
    "bks": "samo. Točan je odgovor koji vrijedi isključivo za to – često su zamka odgovori koji vrijede i za druge.",
    "kw": [
     "nur"
+   ],
+   "exclude": [
+    277,
+    278,
+    289
    ]
   },
   {

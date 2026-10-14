@@ -116,21 +116,25 @@ class Book:
         for d in docs:
             if d.landmark:
                 landmarks.append(f'<li><a epub:type="{d.landmark}" href="{d.href}">{esc(d.title)}</a></li>')
-        nav = (f'<nav epub:type="toc" id="toc"><h1>{esc(self.toc_title)}</h1><ol>' + "".join(nav_items) + '</ol></nav>'
+        nav = (f'<nav epub:type="toc" id="toc"><h1>{self.toc_heading or esc(self.toc_title)}</h1><ol>' + "".join(nav_items) + '</ol></nav>'
                + ('<nav epub:type="landmarks" hidden=""><ol>' + "".join(landmarks) + '</ol></nav>' if landmarks else ""))
         files["OEBPS/nav.xhtml"] = XHTML.format(lang=self.language, title=esc(self.toc_title), body=nav, body_attr="").encode()
         # NCX (EPUB 2 compatibility; Kindle uses it for the "Go to" menu on older devices)
+        def nl(lang):
+            return f' xml:lang="{lang}"' if lang and lang != self.language else ""
+
         points, order = [], 0
         for d in toc_docs:
             order += 1
             kids = ""
-            for t, h, *_ in d.children:
+            for t, h, *lang in d.children:
                 order += 1
-                kids += (f'<navPoint id="np{order}" playOrder="{order}"><navLabel><text>{esc(t)}</text></navLabel>'
+                kids += (f'<navPoint id="np{order}" playOrder="{order}"><navLabel{nl(lang[0] if lang else d.lang)}><text>{esc(t)}</text></navLabel>'
                          f'<content src="{h}"/></navPoint>')
-            points.append(f'<navPoint id="np{order}x" playOrder="{order - len(d.children)}"><navLabel><text>{esc(d.title)}</text></navLabel>'
+            points.append(f'<navPoint id="np{order}x" playOrder="{order - len(d.children)}"><navLabel{nl(d.title_lang or d.lang)}><text>{esc(d.title)}</text></navLabel>'
                           f'<content src="{d.href}"/>{kids}</navPoint>')
-        ncx = ('<?xml version="1.0" encoding="utf-8"?>\n<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">'
+        ncx = ('<?xml version="1.0" encoding="utf-8"?>\n<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" '
+               f'xml:lang="{self.language}">'
                f'<head><meta name="dtb:uid" content="{ident}"/><meta name="dtb:depth" content="2"/>'
                '<meta name="dtb:totalPageCount" content="0"/><meta name="dtb:maxPageNumber" content="0"/></head>'
                f'<docTitle><text>{esc(self.title)}</text></docTitle><navMap>' + "".join(points) + '</navMap></ncx>')
@@ -159,6 +163,7 @@ class Book:
         return out
 
     toc_title: str = "Contents"
+    toc_heading: str = ""        # optional XHTML for the nav heading (e.g. with lang spans)
 
 
 def check(epub: Path) -> list[str]:

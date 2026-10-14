@@ -28,7 +28,7 @@ from build_book import assemble, N_TESTS  # noqa: E402
 from epubkit import Book, Doc, esc, check  # noqa: E402
 
 CHUNK = 50          # general questions per file (Kindle prefers files well below 300 KB)
-OK_TAG = "richtig · točno"
+OK_TAG = 'richtig · <span lang="hr" xml:lang="hr">točno</span>'   # BKS word marked for text-to-speech
 # Wayback Machine copy of the catalogue page (KPG 7.2: give an archived link next to external links)
 ARCHIVE = ("https://web.archive.org/web/20260126074846/"
            "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html")
@@ -244,7 +244,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 <h2>Kako koristiti ovu e-knjigu</h2>
 <ul>
 <li><b>Masno:</b> pitanje na njemačkom, točno kako je u katalogu. Ispod njega, u <i>kurzivu</i>: prijevod.</li>
-<li>Četiri odgovora označena su s A–D. Točan odgovor je <b>masno otisnut</b> i označen s „{OK_TAG}”. Ispod svakog odgovora je prijevod.</li>
+<li>Četiri odgovora označena su s A–D. Točan odgovor je <b>masno otisnut</b> i označen s „<span lang="de" xml:lang="de">richtig</span> · točno”. Ispod svakog odgovora je prijevod.</li>
 <li><b>Objašnjenje</b> kaže zašto je odgovor točan – razumijevanje se pamti bolje od napamet naučenih slova.</li>
 <li><b>Merksatz</b> je kratka njemačka rečenica za pamćenje. Pročitajte je naglas.</li>
 <li><b>Brojevi pitanja su poveznice:</b> u kazalima, na vremenskoj crti i u rješenjima testova dodirnite broj i otvorit će se pitanje. Funkcijom „natrag” svog čitača vraćate se na mjesto s kojeg ste došli.</li>
@@ -310,7 +310,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 {table(plan30)}
 <p>Svako pogrešno pitanje označite u čitaču i ponovite ga nakon 1, 3 i 7 dana.</p>
 <h2 id="rijec">Pazi na riječ</h2>
-<p>Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima se riječ pojavljuje.</p>
+<p>Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima ta riječ određuje što se pita.</p>
 {words}
 <h2 id="tko">Tko je tko u njemačkoj državi</h2>
 <p class="pic"><img class="wide" src="images/staat.png" alt="Birači biraju Bundestag i Landtag; Bundestag bira kancelara; uz to Bundesrat, Bundesversammlung, Bundespräsident i Ustavni sud"/></p>
@@ -367,12 +367,12 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
         docs.append(Doc(f"test-{t['n']}", f"Probetest {t['n']}", lang="de", toc=False, body="\n".join(body)))
     app = ['<h1>Anhang A: Landesfragen ohne Lösungen</h1>',
            '<p class="sub" lang="hr">Dodatak A: pitanja o pokrajinama za probne testove (bez rješenja)</p>',
-           "<p>" + " · ".join(f'<a href="#a-{s["code"]}">{esc(s["name"])}</a>' for s in data["state_appendix"]) + "</p>"]
+           "<p>" + "&#160;· ".join(f'<a href="#a-{s["code"]}">{esc(s["name"])}</a>' for s in data["state_appendix"]) + "</p>"]
     for s in data["state_appendix"]:
         app.append(f'<h2 id="a-{s["code"]}">{esc(s["name"])}</h2>')
         app += [exam_question(q["num"], q) for q in s["questions"]]
     docs.append(Doc("anhang-a", "Anhang A", lang="de", toc=False, body="\n".join(app)))
-    sol = ['<h1>Lösungen · Rješenja</h1>',
+    sol = ['<h1>Lösungen · <span lang="hr" xml:lang="hr">Rješenja</span></h1>',
            '<p lang="hr">Dodirnite odgovor da biste otvorili pitanje s objašnjenjem. U zagradi je broj u katalogu.</p>']
     for t in data["tests"]:
         sol.append(f'<h2 id="t{t["n"]}">Probetest {t["n"]}</h2>')
@@ -381,7 +381,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
             for i, q in enumerate(t["questions"])) + "</p>")
         sol.append(f'<p class="small">Fragen 31–33: Landesfragen {", ".join(str(n) for n in t["state_nums"])} – '
                    f'<a href="#laender">Lösungen der Landesfragen</a></p>')
-    sol.append('<h2 id="laender">Landesfragen · Pitanja o pokrajinama</h2>')
+    sol.append('<h2 id="laender">Landesfragen · <span lang="hr" xml:lang="hr">Pitanja o pokrajinama</span></h2>')
     for s in data["state_key"]:
         code = s["code"]
         sol.append(f'<p class="sol"><b>{esc(s["name"])}:</b> ' + "&#160;· ".join(
@@ -413,7 +413,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
         toc_lines += [f'<p class="l2"{lang_attr(c[2] if len(c) > 2 else d.lang)}><a href="{c[1]}">{esc(c[0])}</a></p>'
                       for c in d.children]
     docs.insert(2, Doc("inhalt", "Sadržaj / Inhalt", lang="de", landmark="toc", toc=False, body_class="toc",
-                       body="<h1>Sadržaj / Inhalt</h1>\n" + "\n".join(toc_lines)))
+                       body='<h1><span lang="hr" xml:lang="hr">Sadržaj</span> / Inhalt</h1>\n' + "\n".join(toc_lines)))
 
     # check that every internal link has a target
     ids = {}
@@ -444,6 +444,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
                 identifier="urn:uuid:5f6c1d3e-9a63-4c1f-8f3b-ebk-de-bks".replace("ebk-de-bks", "0e1b2c3d4e5f"),
                 description="Alle 460 Fragen zum Test „Leben in Deutschland“ und zum Einbürgerungstest mit Übersetzung ins Bosnische/Kroatische/Serbische, Erklärungen und 10 Probetests.")
     book.toc_title = "Sadržaj / Inhalt"
+    book.toc_heading = '<span lang="hr" xml:lang="hr">Sadržaj</span> / Inhalt'
     epub = book.write(out / "ebook_de-bks.epub")
     errors = check(epub)
     info = dict(epub=epub.name, cover=cover.name, size_kb=round(epub.stat().st_size / 1024), files=len(docs),

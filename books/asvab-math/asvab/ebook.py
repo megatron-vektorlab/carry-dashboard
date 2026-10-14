@@ -167,7 +167,9 @@ def vis_len(t: str) -> float:
         if m:
             name = m.group(0)
             i += len(name)
-            if name not in ("\\left", "\\right", "\\,", "\\;", "\\!", "\\ "):
+            if name == "\\sqrt":
+                w += 1.5                # radical sign; the argument is counted on its own
+            elif name not in ("\\left", "\\right", "\\,", "\\;", "\\!", "\\ "):
                 w += 1.6 if name in ("\\times", "\\div", "\\cdot", "\\le", "\\ge", "\\approx", "\\Rightarrow", "\\to") else 1
             continue
         c = t[i]
@@ -197,6 +199,15 @@ def eq_rows(tex: str) -> list[str]:
     when 'lhs = a' would not fit a phone screen."""
     parts = eq_parts(tex)
     if len(parts) == 1:
+        arrows = top_level(tex, r"\\Rightarrow\b")
+        if arrows:                      # a <= b => c <= d: one implication per row
+            cuts = [0] + arrows + [len(tex)]
+            pieces = [tex[a:b].strip() for a, b in zip(cuts, cuts[1:])]
+            return [f"& {pieces[0]}"] + [f"&{x}" for x in pieces[1:]]
+        plus = top_level(tex, r"\+")
+        if plus and vis_len(tex) > ROW_MAX:     # one long sum: break at the '+' nearest the middle
+            mid = min(plus, key=lambda c: abs(vis_len(tex[:c]) - vis_len(tex[c:])))
+            return [f"& {tex[:mid].strip()}", f"&\\quad {tex[mid:].strip()}"]
         return [tex]
     if vis_len(parts[0]) + vis_len(parts[1]) + 2 <= ROW_MAX:
         rows = [f"{parts[0]} &= {parts[1]}"]
@@ -274,7 +285,7 @@ def text_quads(text: str) -> str:
     text = re.sub(r"([,;:.])\s*\\q?quad(?![a-zA-Z])\s*", r"\1 ", text)
     text = re.sub(r"\s*\\q?quad(?![a-zA-Z])\s*(?=\()", " ", text)
     text = re.sub(r"(?<!@\{)\s*\\q?quad(?![a-zA-Z])\s*", "; ", text)
-    return re.sub(r"\s+\\ (?=\S)", " ", text)
+    return re.sub(r"\s+\\ (?=\S|$)", " ", text)
 
 
 def prep_math(s: str) -> str:
@@ -284,7 +295,7 @@ def prep_math(s: str) -> str:
     # a word directly before a formula that starts with a relation stays with it: "1 yard~$= 3$ feet"
     s = re.sub(r"(\w) \$(\s*(?:=|<|>|\\le\b|\\ge\b|\\approx\b|\\ne\b))", r"\1~$\2", s)
     # 30°-60°-90°, 5-12-13: one formula, so the line cannot break at a hyphen ("-90°")
-    s = re.sub(r"\$([^$]+)\$-\$([^$]+)\$(?:-\$([^$]+)\$)?",
+    s = re.sub(r"\$(\d+(?:\^\\circ)?)\$-\$(\d+(?:\^\\circ)?)\$(?:-\$(\d+(?:\^\\circ)?)\$)?",
                lambda m: "$" + "\\text{-}".join(x for x in m.groups() if x) + "$", s)
     tables = [(t.start(), t.end()) for t in
               re.finditer(r"\\begin\{(tabular|tabularx|array)\}.*?\\end\{\1\}", s, flags=re.S)]
@@ -324,14 +335,16 @@ def two_column_tables(s: str) -> str:
     phone screen has no room for four columns."""
     def fix(m):
         rows = [r.strip() for r in re.split(r"\\\\", m.group(2)) if r.strip()]
-        out = []
+        left, right = [], []
         for r in rows:
             cells = [r[a:b].strip() for a, b in zip([0] + [c + 1 for c in top_level(r, "&")],
                                                      top_level(r, "&") + [len(r)])]
             if len(cells) == 4:
-                out += [f"{cells[0]} & {cells[1]}", f"{cells[2]} & {cells[3]}"]
+                left.append(cells[0:2])
+                right.append(cells[2:4])
             else:
-                out.append(r)
+                left.append([r])
+        out = [" & ".join(c) for c in left + right if any(x for x in c)]
         return "\\begin{tabular}{ll}\n" + " \\\\\n".join(out) + " \\\\\n\\end{tabular}"
     return re.sub(r"\\begin\{tabular\}\{(@\{\}ll@\{\\qquad\}ll@\{\})\}(.*?)\\end\{tabular\}", fix, s, flags=re.S)
 
@@ -573,6 +586,16 @@ def clean_html(h: str) -> str:
     # keep a formula together with an opening bracket/quote before it and punctuation after it
     h = re.sub(r'([(\[“‘]?)(<math (?:(?!display="block")[^>])*>(?:(?!</math>).)*</math>)([.,;:?!)\]”’]*)',
                lambda m: f'<span class="nw">{m.group(0)}</span>' if m.group(1) or m.group(3) else m.group(0), h, flags=re.S)
+    # "1 square foot = 12 × 12 = 144": the word before a short formula that starts with a relation
+    # (joined by a no-break space in prep_math) goes into the same no-wrap span
+    def keep_word(m):
+        alt = re.search(r'alttext="([^"]*)"', m.group(2))
+        if alt and len(alt.group(1)) > 30:
+            return m.group(0)
+        return f'<span class="nw">{m.group(1)}\u00a0{m.group(2)}</span>'
+    h = re.sub(r'([^\s<>\u00a0]+)(?:\u00a0|&#160;)<span class="nw">((?:(?!</span>).)*)</span>', keep_word, h, flags=re.S)
+    h = re.sub(r'([^\s<>\u00a0]+)(?:\u00a0|&#160;)(<math (?:(?!display="block")[^>])*>(?:(?!</math>).)*</math>)',
+               keep_word, h, flags=re.S)
     # aligned rows (broken equations): no gap between the left side and '='
     h = re.sub(r'(<math alttext="[^"]*\\begin\{aligned\}[^"]*"[^>]*>(?:<mrow>)?)<mtable>',
                r'\1<mtable columnspacing="0em" class="al">', h)
