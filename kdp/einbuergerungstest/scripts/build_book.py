@@ -144,13 +144,19 @@ def assemble(draft=False):
         e["nums"] = sorted({num for num, _ in e["refs"]})
     # match the question without its photo credit (e.g. "© Bundesregierung/…") plus the correct
     # answer ("Wer wählt …? – die Bundesversammlung"); wrong options are left out on purpose
+    # "exclude"/"include" in learning_bks.json correct the few keyword hits that mention an
+    # institution only in passing (or miss one that is tested under another name)
     for inst in learning["institutions"]:
-        inst["nums"] = [q["num"] for q in questions if q["state"] is None
-                        and any(k.lower() in (pretty(q["question"]) + " " + q["options"][q["answer"]]).lower()
-                                for k in inst["kw"])]
+        hits = {q["num"] for q in questions if q["state"] is None
+                and any(k.lower() in (pretty(q["question"]) + " " + q["options"][q["answer"]]).lower()
+                        for k in inst["kw"])}
+        inst["nums"] = sorted((hits - set(inst.get("exclude", []))) | set(inst.get("include", [])))
+    # "exclude": questions where the word only belongs to the scenario ("doch er funktioniert nicht")
+    # or has another sense ("für alle geöffnet"), so the warning in the entry does not apply
     for w in learning["words"]:
-        w["nums"] = [q["num"] for q in questions if q["state"] is None
-                     and any(has_word(pretty(q["question"]), k) for k in w["kw"])]
+        hits = {q["num"] for q in questions if q["state"] is None
+                and any(has_word(pretty(q["question"]), k) for k in w["kw"])}
+        w["nums"] = sorted(hits - set(w.get("exclude", [])))
     topic_rows = []
     for key, (hr, de) in learning["topics"].items():
         nums = [int(i[2:]) for i, ts in topics.items() if i.startswith("G-") and key in ts]

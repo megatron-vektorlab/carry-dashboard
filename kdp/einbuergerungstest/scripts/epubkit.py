@@ -40,9 +40,10 @@ class Doc:
     body: str                    # XHTML body content
     lang: str = "en"
     toc: bool = True             # list in the table of contents
-    children: list = field(default_factory=list)   # (title, "file.xhtml#anchor") sub-entries
+    children: list = field(default_factory=list)   # (title, "file.xhtml#anchor"[, lang]) sub-entries
     landmark: str | None = None  # e.g. "bodymatter", "toc"
     body_class: str = ""
+    title_lang: str | None = None  # language of the title if it differs from the content (lang)
 
     @property
     def href(self) -> str:
@@ -108,8 +109,9 @@ class Book:
         for d in toc_docs:
             sub = ""
             if d.children:
-                sub = "<ol>" + "".join(f'<li><a href="{h}">{label(t, d.lang)}</a></li>' for t, h in d.children) + "</ol>"
-            nav_items.append(f'<li><a href="{d.href}">{label(d.title, d.lang)}</a>{sub}</li>')
+                sub = "<ol>" + "".join(f'<li><a href="{c[1]}">{label(c[0], c[2] if len(c) > 2 else d.lang)}</a></li>'
+                                       for c in d.children) + "</ol>"
+            nav_items.append(f'<li><a href="{d.href}">{label(d.title, d.title_lang or d.lang)}</a>{sub}</li>')
         landmarks = []
         for d in docs:
             if d.landmark:
@@ -122,7 +124,7 @@ class Book:
         for d in toc_docs:
             order += 1
             kids = ""
-            for t, h in d.children:
+            for t, h, *_ in d.children:
                 order += 1
                 kids += (f'<navPoint id="np{order}" playOrder="{order}"><navLabel><text>{esc(t)}</text></navLabel>'
                          f'<content src="{h}"/></navPoint>')

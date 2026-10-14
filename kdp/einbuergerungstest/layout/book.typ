@@ -295,7 +295,7 @@ Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima 
 
 #set text(size: 9pt)
 #table(columns: (27mm, 1fr), stroke: 0.4pt + luma(170), inset: 1.6mm,
-  ..data.words.map(w => ([#text(lang: "de", weight: "bold", w.de)], [#w.bks #linebreak() #text(fill: soft, size: 7.8pt)[Pitanja: #w.nums.map(str).join(", ")]])).flatten()
+  ..data.words.map(w => ([#text(lang: "de", weight: "bold", w.de)], [#w.bks #linebreak() #text(fill: soft, size: 7.8pt)[#(if w.nums.len() == 1 {"Pitanje"} else {"Pitanja"}): #w.nums.map(str).join(", ")]])).flatten()
 )
 #set text(size: s-de)
 
@@ -320,10 +320,11 @@ Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima 
   org("Bundespräsident", "šef države: potpisuje zakone, imenuje kancelara i ministre"), [],
 )
 
-#v(3mm)
+// the table gets a page of its own: after the chart it would not fit and would split
+#pagebreak()
 #set text(size: 8.8pt)
 #table(columns: (30mm, 1fr, 34mm), stroke: 0.4pt + luma(170), inset: 1.5mm,
-  [*Institucija*], [*Što radi · tko je bira*], [*Pitanja*],
+  table.header([*Institucija*], [*Što radi · tko je bira*], [*Pitanja*]),
   ..data.institutions.map(i => ([#text(lang: "de", weight: "bold", i.name) \ #i.bks], [#i.does. #linebreak() _Bira:_ #i.who.], [#text(size: 7.8pt, i.nums.map(str).join(", "))])).flatten()
 )
 #set text(size: s-de)
@@ -335,7 +336,7 @@ Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima 
   block(breakable: false, above: 2.2mm, below: 0mm,
     grid(columns: (24mm, 1fr), column-gutter: 3mm,
       align(right, text(weight: "bold", e.year)),
-      [#e.text #text(fill: soft, size: 7.8pt)[(pitanja #e.nums.map(str).join(", "))]]))
+      [#e.text #text(fill: soft, size: 7.8pt)[(#(if e.nums.len() == 1 {"pitanje"} else {"pitanja"}) #e.nums.map(str).join(", "))]]))
 }
 
 // ---------- part 1: general questions ----------

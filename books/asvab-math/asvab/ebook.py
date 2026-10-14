@@ -10,8 +10,9 @@ for a reading device instead of paper:
   for mathematical content; Enhanced Typesetting renders it), converted from the
   book's LaTeX by pandoc;
 * TikZ figures are rendered by pdflatex to 300 ppi greyscale PNGs;
-* every problem number links to its solution and every solution back to its
-  problem; answer keys link to solutions, test keys to the teaching chapter;
+* every problem number links to its solution (one way only: a link back would make Kindle
+  show the pair as a footnote pop-up, KPG 7.1; readers return with Back); answer keys link to
+  solutions, test keys to the teaching chapter;
 * no answer sheets or progress tracker (nothing can be written on a Kindle).
 
 Needs pandoc (3.x), pdflatex with the paperback's packages, pdftoppm, and
@@ -84,6 +85,8 @@ td.r, th.r { text-align: right; }
 .keys { line-height: 1.7em; }
 .next { margin-top: 1.4em; font-weight: bold; }
 .nw { white-space: nowrap; }
+.dm { margin: 0.3em 0; }
+.al mtd { padding-left: 0; padding-right: 0; }
 """
 
 
@@ -174,57 +177,115 @@ def vis_len(t: str) -> float:
     return w
 
 
+ROW_MAX = 30            # widest row of a broken equation (same units as vis_len)
+CELL_MAX = 18           # widest formula piece inside a table cell
+
+
+def eq_parts(tex: str) -> list[str]:
+    """tex split at its top-level '=' signs (none inside braces or environments)."""
+    cuts = top_level(tex, r"=")
+    parts, last = [], 0
+    for c in cuts:
+        parts.append(tex[last:c].strip())
+        last = c + 1
+    parts.append(tex[last:].strip())
+    return parts
+
+
+def eq_rows(tex: str) -> list[str]:
+    """Rows for an aligned display: 'lhs &= a', '&= b', ... ; the left side gets a row of its own
+    when 'lhs = a' would not fit a phone screen."""
+    parts = eq_parts(tex)
+    if len(parts) == 1:
+        return [tex]
+    if vis_len(parts[0]) + vis_len(parts[1]) + 2 <= ROW_MAX:
+        rows = [f"{parts[0]} &= {parts[1]}"]
+    else:
+        rows = [f"& {parts[0]}", f"&= {parts[1]}"]
+    return rows + [f"&= {x}" for x in parts[2:]]
+
+
+def aligned(rows: list[str], tail: str = "") -> str:
+    rows = list(rows)
+    rows[-1] += tail
+    if len(rows) == 1 and "&" not in rows[0]:
+        return f"\\[ {rows[0]} \\]"
+    return "\\[ \\begin{aligned} " + " \\\\ ".join(rows) + " \\end{aligned} \\]"
+
+
 def split_display(tex: str) -> str:
-    """\\[ a \\quad b \\] -> one display per formula, so each fits a phone screen. An arrow
-    standing alone between two formulas starts the next one."""
-    inner = tex[2:-2]
-    cuts = top_level(inner, r"\\q?quad\b")
-    if not cuts:
+    """Make a display fit a phone: formulas joined by \\quad become rows of one aligned display
+    (or separate displays when they are not all equations), and a long chain a = b = c gets one
+    '=' per row. An arrow standing alone between two formulas starts the next one."""
+    inner = tex[2:-2].strip()
+    if "\\begin{" in inner and not top_level(inner, r"\\q?quad\b"):
         return tex
+    cuts = top_level(inner, r"\\q?quad\b")
     pieces, last = [], 0
     for c in cuts:
         pieces.append(inner[last:c])
         last = c + (6 if inner.startswith("\\qquad", c) else 5)
     pieces.append(inner[last:])
     pieces = [x.strip() for x in pieces if x.strip()]
-    out = []
+    merged = []
     for x in pieces:
-        if out and re.fullmatch(r"\\(Rightarrow|to|implies|Longrightarrow)", out[-1]):
-            out[-1] = out[-1] + " " + x
+        if merged and re.fullmatch(r"\\(Rightarrow|to|implies|Longrightarrow)", merged[-1]):
+            merged[-1] = merged[-1] + " " + x
         else:
-            out.append(x)
-    return "\n".join(f"\\[ {x} \\]" for x in out)
+            merged.append(x)
+    if len(merged) > 1 and all("\\begin{" not in x and len(eq_parts(x)) > 1 for x in merged):
+        rows = []
+        for x in merged:
+            parts = eq_parts(x)
+            first = f"{parts[0]} &= {parts[1]}"
+            rows.append(first if vis_len(x) <= ROW_MAX else first)
+            rows += [f"&= {y}" for y in parts[2:]]
+        return aligned(rows)
+    out = []
+    for x in merged:
+        out.append(aligned(eq_rows(x)) if "\\begin{" not in x and vis_len(x) > ROW_MAX else f"\\[ {x} \\]")
+    return "\n".join(out)
 
 
-def break_long(tex: str, punct: str) -> str:
-    """A long inline chain a = b = c becomes a display with one '=' per row."""
-    eqs = top_level(tex, r"=")
-    if not eqs:
-        return f"\\[ {tex}{punct} \\]"
-    parts, last = [], 0
-    for e in eqs:
-        parts.append(tex[last:e].strip())
-        last = e + 1
-    parts.append(tex[last:].strip())
-    if len(parts) == 2:
-        rows = [f"& {parts[0]}", f"&= {parts[1]}"]
-    else:
-        rows = [f"{parts[0]} &= {parts[1]}"] + [f"&= {x}" for x in parts[2:]]
-    rows[-1] += punct
-    return "\\[ \\begin{aligned} " + " \\\\ ".join(rows) + " \\end{aligned} \\]"
+def split_inline(body: str, limit: float) -> str:
+    """A long inline chain becomes several inline formulas, each continuing with '=', so the
+    line can wrap between them."""
+    parts = eq_parts(body)
+    if len(parts) == 1:
+        return f"${body}$"
+    chunks, cur = [], parts[0]
+    for x in parts[1:]:
+        if vis_len(cur) + vis_len(x) + 2 > limit:
+            chunks.append(cur)
+            cur = "= " + x
+        else:
+            cur += " = " + x
+    chunks.append(cur)
+    return " ".join(f"${c}$" for c in chunks)
+
+
+TAIL_RE = re.compile(r"[ ]?([^$\\%&_#^{}~\n]{0,40}?[.;:!?])(\s*✓)?(?=\s|$)")
 
 
 def text_quads(text: str) -> str:
     """Text-mode \\quad separates two items; HTML would collapse it to one space, so write "; "
-    (after a comma or semicolon only a space). Column specs like @{\\qquad} stay."""
+    (after a comma, semicolon or period, or before a parenthesis, only a space). Column specs like
+    @{\\qquad} stay. A control space "\\ " used as a separator becomes a normal space."""
     text = re.sub(r"([,;:.])\s*\\q?quad(?![a-zA-Z])\s*", r"\1 ", text)
-    return re.sub(r"(?<!@\{)\s*\\q?quad(?![a-zA-Z])\s*", "; ", text)
+    text = re.sub(r"\s*\\q?quad(?![a-zA-Z])\s*(?=\()", " ", text)
+    text = re.sub(r"(?<!@\{)\s*\\q?quad(?![a-zA-Z])\s*", "; ", text)
+    return re.sub(r"\s+\\ (?=\S)", " ", text)
 
 
 def prep_math(s: str) -> str:
-    """Math-aware rewrites: split wide displays, turn long inline chains into displays,
-    and make text-mode \\quad separators visible."""
-    # formulas inside tables stay inline: a display in a table cell breaks the table
+    """Math-aware rewrites so that formulas fit a phone screen: wide displays are split into
+    rows, long inline chains become a display (at the end of a sentence) or several inline pieces;
+    text-mode \\quad separators are made visible."""
+    # a word directly before a formula that starts with a relation stays with it: "1 yard~$= 3$ feet"
+    s = re.sub(r"(\w) \$(\s*(?:=|<|>|\\le\b|\\ge\b|\\approx\b|\\ne\b))", r"\1~$\2", s)
+    # 30°-60°-90°, 5-12-13: one formula, so the line cannot break at a hyphen ("-90°")
+    s = re.sub(r"\$([^$]+)\$-\$([^$]+)\$(?:-\$([^$]+)\$)?",
+               lambda m: "$" + "\\text{-}".join(x for x in m.groups() if x) + "$", s)
     tables = [(t.start(), t.end()) for t in
               re.finditer(r"\\begin\{(tabular|tabularx|array)\}.*?\\end\{\1\}", s, flags=re.S)]
     out, last = [], 0
@@ -232,28 +293,47 @@ def prep_math(s: str) -> str:
         if m.start() < last:
             continue
         in_table = any(a <= m.start() < b for a, b in tables)
-        text = s[last:m.start()]
-        # text mode: \quad between two items -> "; " (not inside a tabular @{...} spec)
-        out.append(text_quads(text))
+        out.append(text_quads(s[last:m.start()]))
         tok = m.group(0)
         end = m.end()
         if tok.startswith("\\["):
             tok = split_display(tok)
         else:
             body = tok[1:-1]
-            if vis_len(body) > PHONE_WIDTH and not in_table:
-                punct = ""
-                pm = re.match(r"[.,;:]", s[end:end + 1])
-                if pm:
-                    punct = f"\\text{{{pm.group(0)}}}"
-                    end += 1
-                tok = "\n" + break_long(body, punct) + "\n"
+            if in_table:
+                if vis_len(body) > CELL_MAX:
+                    tok = split_inline(body, CELL_MAX)
+            elif vis_len(body) > PHONE_WIDTH:
+                tail = TAIL_RE.match(s, end)
+                rest = s[tail.end():].strip() if tail else ""
+                if tail and len(tail.group(1).split()) <= 5:
+                    words = (" " if tail.group(1)[0].isalnum() else "") + tail.group(1) + (" ✓" if tail.group(2) else "")
+                    tok = "\n" + aligned(eq_rows(body), f"\\text{{{words}}}") + "\n"
+                    end = tail.end()
+                else:
+                    tok = split_inline(body, ROW_MAX)
         tok = tok.replace("\\underline{\\ \\ }", "\\square")
         out.append(tok)
         last = end
-    text = s[last:]
-    out.append(text_quads(text))
+    out.append(text_quads(s[last:]))
     return "".join(out)
+
+
+def two_column_tables(s: str) -> str:
+    """4-column 'rule | meaning | rule | meaning' tables become 2 columns (one pair per row): a
+    phone screen has no room for four columns."""
+    def fix(m):
+        rows = [r.strip() for r in re.split(r"\\\\", m.group(2)) if r.strip()]
+        out = []
+        for r in rows:
+            cells = [r[a:b].strip() for a, b in zip([0] + [c + 1 for c in top_level(r, "&")],
+                                                     top_level(r, "&") + [len(r)])]
+            if len(cells) == 4:
+                out += [f"{cells[0]} & {cells[1]}", f"{cells[2]} & {cells[3]}"]
+            else:
+                out.append(r)
+        return "\\begin{tabular}{ll}\n" + " \\\\\n".join(out) + " \\\\\n\\end{tabular}"
+    return re.sub(r"\\begin\{tabular\}\{(@\{\}ll@\{\\qquad\}ll@\{\})\}(.*?)\\end\{tabular\}", fix, s, flags=re.S)
 
 
 class Converter:
@@ -312,6 +392,7 @@ class Converter:
         s = re.sub(r"\\\\\[[^\]]*\]", r"\\\\", s)
         s = re.sub(r"\\(columnbreak|hfill|smallskip|medskip|bigskip|small|sans|clearpage|noindent)\b", "", s)
         s = s.replace("\\checkmark", "✓")
+        s = two_column_tables(s)
         s = prep_math(s)
         s = re.sub(r"\\begin\{array\}\{([rcl@{}\\;]+)\}",
                    lambda m: "\\begin{array}{" + re.sub(r"@\{[^}]*\}", "", m.group(1)) + "}", s)
@@ -489,9 +570,14 @@ def clean_html(h: str) -> str:
     h = mfrac_style(h)
     h = re.sub(r"<math .*?</math>", lead_op, h, flags=re.S)
     h = re.sub(r'<math alttext="[^"]*\\hline.*?</math>', hline_rule, h, flags=re.S)
-    # keep a formula and the punctuation right after it on one line
-    h = re.sub(r'(<math (?:(?!display="block")[^>])*>(?:(?!</math>).)*</math>)([.,;:?!)”]+)', r'<span class="nw">\1\2</span>',
-               h, flags=re.S)
+    # keep a formula together with an opening bracket/quote before it and punctuation after it
+    h = re.sub(r'([(\[“‘]?)(<math (?:(?!display="block")[^>])*>(?:(?!</math>).)*</math>)([.,;:?!)\]”’]*)',
+               lambda m: f'<span class="nw">{m.group(0)}</span>' if m.group(1) or m.group(3) else m.group(0), h, flags=re.S)
+    # aligned rows (broken equations): no gap between the left side and '='
+    h = re.sub(r'(<math alttext="[^"]*\\begin\{aligned\}[^"]*"[^>]*>(?:<mrow>)?)<mtable>',
+               r'\1<mtable columnspacing="0em" class="al">', h)
+    h = h.replace('<math display="block"', '<math class="dm" display="block"')
+    h = re.sub(r'(<math alttext="[^"]*") display="block"', r'\1 class="dm" display="block"', h)
     # unknown environments arrive as <div class="conceptx"> etc.
     h = re.sub(r'<div class="(concept|example|infobox|tip|trap)x">', r'<div class="\1">', h)
     h = h.replace('<div class="center">', '<div class="center">')
@@ -545,22 +631,22 @@ def render_figures(figs: list[str]) -> list[tuple[str, float]]:
     return out
 
 
-# alt text (KPG 11.4.1: describe the image and its meaning, < 140 characters)
+# alt text (KPG 11.4.1: describe the image and its meaning, < 140 characters). The shape is read from
+# the TikZ source, because one template draws several variants (radius or diameter, rug or pool, ...).
 FIG_KIND = {
     "vertical_adjacent": "Two intersecting lines", "parallel_lines": "Parallel lines cut by a transversal",
     "angle_algebra": "A ray meeting a straight line", "around_point": "Four angles around a point",
-    "polygon_missing": "Quadrilateral with its interior angles", "third_angle": "Triangle with two known angles",
-    "pyth_hyp": "Right triangle", "pyth_leg": "Right triangle", "isosceles_angles": "Isosceles triangle PQR, equal sides marked",
-    "exterior_angle": "Triangle with one side extended", "special_right": "Special right triangle (30-60-90 or 45-45-90)",
-    "similar_triangles": "Similar triangles ABC and PQR", "triangle_area": "Triangle with base and dashed height",
-    "parallelogram": "Parallelogram with base, height and slanted side", "trapezoid": "Trapezoid with two bases and height",
-    "composite": "L-shaped lawn, all corners right angles", "walkway": "Rug centered in a room with a bare strip around it",
-    "circle_area": "Circle with its radius", "circumference": "Circle with its radius",
-    "annulus": "Two circles with the same center and their radii", "shaded_region": "Square with a quarter circle drawn inside",
-    "arc_sector": "Circle with a sector between radii to A and B", "part_circle": "Quarter of a circle",
-    "box_volume": "Rectangular box", "box_surface": "Closed rectangular box", "cube": "Cube", "cylinder": "Cylinder",
-    "cone_sphere": "Cone", "read_grid": "Coordinate grid", "slope_two_points": "Coordinate grid with a line",
+    "third_angle": "Triangle", "exterior_angle": "Triangle with one side extended",
+    "pyth_hyp": "Right triangle", "pyth_leg": "Right triangle", "special_right": "Special right triangle",
+    "isosceles_angles": "Isosceles triangle, the two equal sides marked", "similar_triangles": "Two similar triangles",
+    "parallelogram": "Parallelogram with base, dashed height and slanted side", "trapezoid": "Trapezoid with two bases and dashed height",
+    "composite": "L-shaped figure, all corners right angles",
+    "walkway": "Rectangle centered inside a larger rectangle, the border between them shaded",
+    "annulus": "Two circles with the same center", "arc_sector": "Circle with a sector between two radii",
+    "part_circle": "Quarter of a circle", "box_volume": "Rectangular box", "box_surface": "Closed rectangular box",
+    "cube": "Cube", "cylinder": "Cylinder", "cone_sphere": "Cone",
 }
+POLYGONS = {3: "Triangle", 4: "Quadrilateral", 5: "Pentagon", 6: "Hexagon", 7: "Heptagon", 8: "Octagon"}
 INTRO_ALT = {
     12: "Number line from −5 to 5: open circle at −2, shaded to the right (x > −2)",
     16: "Parallel lines ℓ and m cut by transversal t, forming angles numbered 1 to 8",
@@ -583,25 +669,42 @@ def tikz_label(t: str) -> str:
 
 def fig_alt(src: str, template: str = "") -> str:
     base = re.sub(r"_(?:[a-z]|civ|mil|\d)$", "", template.split(".")[-1])
-    kind = FIG_KIND.get(base, "Figure")
+    labels = []
+    for m in re.finditer(r"node\s*(?:\[[^\]]*\])?\s*(?:at\s*\([^)]*\))?\s*\{", src):
+        lab = tikz_label(brace_group(src, m.end() - 1)[0])
+        if lab:
+            labels.append(lab)          # duplicates kept: a hexagon can have two 127° angles
     if "grid" in src:
-        labels = {}
-        for m in re.finditer(r"\\node\[[^\]]*\] at \((-?[\d.]+),(-?[\d.]+)\) \{\\scriptsize ([^}]*)\}", src):
-            labels[(m.group(1), m.group(2))] = tikz_label(m.group(3))
-        pts = []
-        for m in re.finditer(r"\\fill \((-?[\d.]+),(-?[\d.]+)\) circle", src):
-            xy = (m.group(1), m.group(2))
-            name = labels.get(xy, "")
-            pts.append(f"{name} at ({xy[0]}, {xy[1]})".replace("-", "−").strip())
-        alt = f"{kind}, points " + "; ".join(pts)
+        names = re.findall(r"\\node\[[^\]]*\] at \(-?[\d.]+,-?[\d.]+\) \{\\scriptsize \$?([A-Z])\$?\}", src)
+        if base == "read_grid":         # the question is to read the coordinates: do not give them away
+            alt = "Coordinate grid with " + (f"points {', '.join(names[:-1])} and {names[-1]}" if len(names) > 1
+                                             else f"point {names[0]}" if names else "a marked point")
+        else:
+            pts = [f"({x}, {y})".replace("-", "−") for x, y in re.findall(r"\\fill \((-?[\d.]+),(-?[\d.]+)\) circle", src)]
+            alt = "Coordinate grid with a line through " + " and ".join(pts) if pts else "Coordinate grid with a line"
+        return alt
+    full_circle = re.search(r"\\draw\[thick\] \([-\d.]+,[-\d.]+\) circle \(", src)
+    if base in ("circle_area", "circumference"):
+        diameter = re.search(r"\\draw \((-[\d.]+),0\) -- \(([\d.]+),0\)", src)
+        kind = "Circle with a diameter drawn" if diameter else "Circle with a radius drawn from the center"
+    elif base == "shaded_region":
+        if full_circle and "rectangle" in src:
+            kind = "Circle inscribed in a square; the corners outside the circle are shaded"
+        elif "arc (0:180" in src:
+            kind = "Shaded rectangle with a semicircle on top, dashed line where they meet"
+        elif "arc (0:90" in src:
+            kind = "Square with a quarter circle drawn from one corner; the part outside the quarter circle is shaded"
+        else:
+            kind = "Shaded figure"
+    elif base == "triangle_area":
+        kind = "Triangle with base and dashed height" if "dashed" in src else "Right triangle"
+    elif base == "polygon_missing":
+        m = re.search(r"\\draw\[thick\] ((?:\([^)]*\)\s*--\s*)+)cycle", src)
+        n = len(re.findall(r"\(", m.group(1))) if m else 4
+        kind = f"{POLYGONS.get(n, 'Polygon')} with its interior angles"
     else:
-        labs = []
-        for m in re.finditer(r"node\s*(?:\[[^\]]*\])?\s*(?:at\s*\([^)]*\))?\s*\{", src):
-            text, _ = brace_group(src, m.end() - 1)
-            lab = tikz_label(text)
-            if lab and lab not in labs:
-                labs.append(lab)
-        alt = kind + (". Labels: " + ", ".join(labs) if labs else "")
+        kind = FIG_KIND.get(base, "Figure")
+    alt = kind + (". Labels: " + ", ".join(labels) if labels else "")
     return alt if len(alt) < 140 else alt[:136].rsplit(" ", 1)[0] + " …"
 
 

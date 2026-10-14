@@ -276,6 +276,12 @@
    "who": "birači, svake 4 godine",
    "kw": [
     "Bundestag"
+   ],
+   "exclude": [
+    12
+   ],
+   "include": [
+    42
    ]
   },
   {
@@ -287,6 +293,9 @@
     "Bundesregierung",
     "Bundeskanzler",
     "Bundesminister"
+   ],
+   "exclude": [
+    235
    ]
   },
   {
@@ -337,6 +346,9 @@
     "Landesregierung",
     "Landesparlament",
     "Ministerpräsident"
+   ],
+   "include": [
+    39
    ]
   }
  ],
@@ -350,6 +362,16 @@
     "keine",
     "keinen",
     "keiner"
+   ],
+   "exclude": [
+    267,
+    268,
+    277,
+    278,
+    281,
+    289,
+    290,
+    291
    ]
   },
   {
@@ -391,6 +413,10 @@
     "jede",
     "jeder",
     "jedes"
+   ],
+   "exclude": [
+    191,
+    230
    ]
   },
   {
@@ -402,6 +428,10 @@
     "zurzeit",
     "jetzige",
     "heutiges"
+   ],
+   "exclude": [
+    64,
+    219
    ]
   },
   {

@@ -73,6 +73,10 @@ td, th { border: 1px solid #888888; padding: 0.15em 0.4em; vertical-align: top; 
 """
 
 
+def pitanja(nums):
+    return "Pitanje" if len(nums) == 1 else "Pitanja"
+
+
 def de_list(nums, last):
     """55, 70, 181 und 216 / i 216"""
     n = [str(x) for x in nums]
@@ -158,7 +162,11 @@ def main():
             return f'<p class="pics4">{cells}</p>'
         cls = "wide" if q["id"] == "G-130" else "narrow" if q["id"] == "G-176" or small else ""
         cls = f' class="{cls}"' if cls else ""
-        return f'<p class="pic"><img{cls} src="images/{files[0]}" alt="Bild zur Frage {esc(q["label"])}"/></p>'
+        alt = ("Vier nummerierte Stimmzettel" if q["id"] == "G-130" else
+               "Deutschlandkarte mit vier nummerierten Besatzungszonen" if q["id"] == "G-176" else
+               "Deutschlandkarte mit nummerierten Bundesländern" if q["id"].endswith("-08") else
+               f"Bild zur Frage {q['label']}")
+        return f'<p class="pic"><img{cls} src="images/{files[0]}" alt="{esc(alt)}"/></p>'
 
     def photo_note(q):
         if not q.get("photo_missing"):
@@ -263,7 +271,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 <p lang="de">Dieses Buch enthält alle 460 Fragen des Gesamtfragenkatalogs zum Test „Leben in Deutschland“ und zum Einbürgerungstest. Zu jeder Frage finden Sie die Übersetzung ins Bosnische/Kroatische/Serbische, die richtige Antwort, eine kurze Erklärung und einen Merksatz auf Deutsch. Am Ende stehen 10 vollständige Probetests (30 allgemeine + 3 Landesfragen) mit Lösungen. Viel Erfolg!</p>"""))
 
     # ---- before you start ------------------------------------------------------------------
-    states_list = "".join(f'<li><a href="land-{s["code"]}.xhtml">{esc(s["name"])}</a>' + (f' · <span lang="hr">{esc(s["bks_name"])}</span>' if s["bks_name"] != s["name"] else "") + '</li>'
+    states_list = "".join(f'<li><a href="land-{s["code"]}.xhtml" lang="de" xml:lang="de">{esc(s["name"])}</a>' + (f' · {esc(s["bks_name"])}' if s["bks_name"] != s["name"] else "") + '</li>'
                           for s in data["states"])
     pattern = "".join(f"<li>{esc(p)}</li>" for p in data["state_pattern"])
     plan14 = [(f"{i + 1}.", f'{30 * i + 1}–{30 * i + 30}', "pogreške od jučer") for i in range(10)] + [
@@ -278,12 +286,12 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
         return "<table>" + head + "".join(f"<tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>" for a, b, c in rows) + "</table>"
 
     words = "".join(f'<div class="entry"><p><b lang="de">{esc(w["de"])}</b> – {esc(w["bks"])}</p>'
-                    + (f'<p class="nums">Pitanja: {link_nums(w["nums"], gen)}</p>' if w["nums"] else '') + '</div>' for w in data["words"])
+                    + (f'<p class="nums">{pitanja(w["nums"])}: {link_nums(w["nums"], gen)}</p>' if w["nums"] else '') + '</div>' for w in data["words"])
     insts = "".join(f'<div class="entry"><p><b lang="de">{esc(i["name"])}</b> – {esc(i["bks"])}</p>'
                     f'<p>{esc(i["does"])}. <i>Bira:</i> {esc(i["who"])}.</p>'
-                    + (f'<p class="nums">Pitanja: {link_nums(i["nums"], gen)}</p>' if i["nums"] else '') + '</div>' for i in data["institutions"])
+                    + (f'<p class="nums">{pitanja(i["nums"])}: {link_nums(i["nums"], gen)}</p>' if i["nums"] else '') + '</div>' for i in data["institutions"])
     timeline = "".join(f'<div class="entry"><p><b>{esc(e["year"])}</b> {esc(e["text"])}</p>'
-                       + (f'<p class="nums">Pitanja: {link_nums(e["nums"], gen)}</p>' if e["nums"] else '') + '</div>' for e in data["timeline"])
+                       + (f'<p class="nums">{pitanja(e["nums"])}: {link_nums(e["nums"], gen)}</p>' if e["nums"] else '') + '</div>' for e in data["timeline"])
     docs.append(Doc("prije", "Prije početka", lang="hr", children=[
         ("Moja pokrajina", "prije.xhtml#pokrajina"), ("Plan učenja", "prije.xhtml#plan"),
         ("Pazi na riječ", "prije.xhtml#rijec"), ("Tko je tko u njemačkoj državi", "prije.xhtml#tko"),
@@ -335,9 +343,9 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
             + "\n".join(question(q) for q in s["questions"]))))
 
     # ---- part 3: practice tests -------------------------------------------------------------------
-    test_children = [(f"Probetest {t['n']}", f"test-{t['n']}.xhtml") for t in data["tests"]]
-    test_children += [("Anhang A: Landesfragen ohne Lösungen", "anhang-a.xhtml"), ("Lösungen", "loesungen.xhtml")]
-    docs.append(Doc("teil3", "Teil 3: 10 Probetests", lang="hr", children=test_children, body=f"""
+    test_children = [(f"Probetest {t['n']}", f"test-{t['n']}.xhtml", "de") for t in data["tests"]]
+    test_children += [("Anhang A: Landesfragen ohne Lösungen", "anhang-a.xhtml", "de"), ("Lösungen", "loesungen.xhtml", "de")]
+    docs.append(Doc("teil3", "Teil 3: 10 Probetests", lang="hr", title_lang="de", children=test_children, body=f"""
 <h1 lang="de">Teil 3: 10 Probetests</h1>
 <p class="sub">Dio 3: 10 potpunih probnih testova</p>
 <p>Svaki probni test izgleda kao pravi ispit: <b>33 pitanja, 60 minuta</b>, samo na njemačkom.</p>
@@ -348,7 +356,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 <li>Izmjerite vrijeme. Zatim provjerite <a href="loesungen.xhtml">rješenja</a>: svako rješenje vodi na pitanje s objašnjenjem.</li>
 </ol>
 <p class="note"><b>Rezultat:</b> <b>17 ili više točnih</b> – ispunjen je uvjet znanja za naturalizaciju. <b>15 ili više</b> – položen je test LiD na kraju orijentacijskog tečaja. <b>Pitanje 55</b> prikazuje fotografiju koja nije uvrštena – prije testa je pogledajte u <a href="{M['catalogue_url']}">BAMF-ovu katalogu</a> (<a href="{ARCHIVE}">arhivirana kopija</a>).</p>
-""" + "".join(f'<p><a href="{h}">{esc(t)}</a></p>' for t, h in test_children)))
+""" + "".join(f'<p lang="de" xml:lang="de"><a href="{h}">{esc(t)}</a></p>' for t, h, _ in test_children)))
     for t in data["tests"]:
         nums = ", ".join(str(n) for n in t["state_nums"])
         body = [f'<h1>Probetest {t["n"]}</h1>']
@@ -368,7 +376,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
            '<p lang="hr">Dodirnite odgovor da biste otvorili pitanje s objašnjenjem. U zagradi je broj u katalogu.</p>']
     for t in data["tests"]:
         sol.append(f'<h2 id="t{t["n"]}">Probetest {t["n"]}</h2>')
-        sol.append('<p class="sol">' + " · ".join(
+        sol.append('<p class="sol">' + "&#160;· ".join(
             f'<a href="{qhref(q["id"])}">{i + 1}:&#160;{q["answer"]}</a>&#160;<span class="small">({esc(q["label"])})</span>'
             for i, q in enumerate(t["questions"])) + "</p>")
         sol.append(f'<p class="small">Fragen 31–33: Landesfragen {", ".join(str(n) for n in t["state_nums"])} – '
@@ -376,7 +384,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
     sol.append('<h2 id="laender">Landesfragen · Pitanja o pokrajinama</h2>')
     for s in data["state_key"]:
         code = s["code"]
-        sol.append(f'<p class="sol"><b>{esc(s["name"])}:</b> ' + " · ".join(
+        sol.append(f'<p class="sol"><b>{esc(s["name"])}:</b> ' + "&#160;· ".join(
             f'<a href="{qhref(f"{code}-{i + 1:02d}") if f"{code}-{i + 1:02d}" in where else "#"}">{i + 1}:&#160;{a}</a>'
             for i, a in enumerate(s["answers"])) + "</p>")
     docs.append(Doc("loesungen", "Lösungen", lang="de", toc=False, body="\n".join(sol)))
@@ -391,7 +399,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
         '<p>Griješite li često u nekoj temi, ponovite sva njezina pitanja. Brojevi su brojevi općih pitanja; pitanja o pokrajinama su u <a href="teil2.xhtml">Dijelu 2</a>.</p>'
         + topics)))
     gloss = "".join(f'<p class="entry"><b lang="de">{esc(g["de"])}</b><br/>{esc(g["bks"])}</p>' for g in data["glossary"])
-    docs.append(Doc("glossar", "Glossar Deutsch – BKS", lang="hr", body=(
+    docs.append(Doc("glossar", "Glossar Deutsch – BKS", lang="hr", title_lang="de", body=(
         '<h1 lang="de">Glossar Deutsch – BKS</h1><p class="sub">Pojmovnik njemački – BKS</p>' + gloss)))
 
     # ---- inline table of contents (after the imprint) ---------------------------------------------
@@ -399,9 +407,11 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
     for d in docs:
         if not d.toc:
             continue
-        lang = f' lang="{d.lang}"' if d.lang != "de" else ""
-        toc_lines.append(f'<p{lang}><a href="{d.href}">{esc(d.title)}</a></p>')
-        toc_lines += [f'<p class="l2"{lang}><a href="{h}">{esc(t)}</a></p>' for t, h in d.children]
+        def lang_attr(lang):
+            return f' lang="{lang}" xml:lang="{lang}"' if lang != "de" else ""
+        toc_lines.append(f'<p{lang_attr(d.title_lang or d.lang)}><a href="{d.href}">{esc(d.title)}</a></p>')
+        toc_lines += [f'<p class="l2"{lang_attr(c[2] if len(c) > 2 else d.lang)}><a href="{c[1]}">{esc(c[0])}</a></p>'
+                      for c in d.children]
     docs.insert(2, Doc("inhalt", "Sadržaj / Inhalt", lang="de", landmark="toc", toc=False, body_class="toc",
                        body="<h1>Sadržaj / Inhalt</h1>\n" + "\n".join(toc_lines)))
 
@@ -418,6 +428,17 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
     if bad:
         sys.exit(f"broken links: {bad[:10]}")
 
+    # text nodes only (never attributes): an ellipsis that ends an unfinished question stays with the
+    # word before it, and long slash compounds ("Ministerpräsidentinnen/Ministerpräsidenten") may break
+    def text_nodes(body):
+        def fix(m):
+            t = m.group(1).replace(" …", "&#160;…")
+            t = re.sub(r"(\w{6,})/(\w)", r"\1/<wbr/>\2", t)
+            return ">" + t + "<"
+        return re.sub(r">([^<]+)<", fix, body)
+
+    for d in docs:
+        d.body = text_nodes(d.body)
     book = Book(title="Einbürgerungstest & Leben in Deutschland – Deutsch–Bosnisch/Kroatisch/Serbisch", language="de",
                 creator=R["author"], publisher=R["publisher"], css=CSS, cover=cover, images=images, docs=docs,
                 identifier="urn:uuid:5f6c1d3e-9a63-4c1f-8f3b-ebk-de-bks".replace("ebk-de-bks", "0e1b2c3d4e5f"),
