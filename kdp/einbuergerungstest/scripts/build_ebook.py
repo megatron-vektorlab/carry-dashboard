@@ -102,7 +102,7 @@ def main():
     cover = out / "ebook_cover_de-bks.jpg"
     Image.open(png).convert("RGB").save(cover, quality=92)
     chart = build / "staat.png"
-    typst.compile(str(ROOT / "layout" / "ebook_diagram.typ"), output=str(chart), root=str(ROOT), format="png", ppi=220,
+    typst.compile(str(ROOT / "layout" / "ebook_diagram.typ"), output=str(chart), root=str(ROOT), format="png", ppi=300,
                   font_paths=[str(ROOT / "layout" / "fonts")])
     imgdir = build / "img"
     imgdir.mkdir(exist_ok=True)
@@ -123,7 +123,7 @@ def main():
         im.quantize(16, dither=Image.Dither.NONE).save(dst, optimize=True, bits=4)
         return dst
 
-    images = {"images/staat.png": small_png(chart)}
+    images = {"images/staat.png": small_png(chart, longest=1600)}   # 300 ppi at full width
 
     # ---- where every question lives -------------------------------------------------------
     where = {}

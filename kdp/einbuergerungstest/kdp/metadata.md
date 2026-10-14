@@ -77,7 +77,7 @@ Amazon obje verzije spaja na jednoj stranici proizvoda (inače: KDP podrška →
 | DRM | Po izboru (ne može se kasnije promijeniti). Bez DRM-a kupci mogu čitati i na drugim uređajima |
 | Prijava AI-ja | Ista kao za meki uvez (tekst i prijevodi: AI-generated → Yes; slike: No) |
 | Ključne riječi, kategorije | Iste kao za meki uvez; kategorije birajte u stablu „Kindle-Shop” [provjeriti] |
-| KDP Select | Po izboru: 90 dana ekskluzivno na Amazonu, zauzvrat Kindle Unlimited (plaćanje po pročitanim stranicama) i promocije. Za priručnik koji se čita u dijelovima KU obično donosi manje od prodaje – prijedlog: **bez** Selecta u prvih 90 dana [vaša odluka] |
+| KDP Select | Po izboru: 90 dana ekskluzivno na Amazonu (vrijedi samo za e-knjigu, ne za meki uvez), zauzvrat Kindle Unlimited (plaćanje po pročitanim stranicama) i promocije. Ako e-knjigu prodajete **samo na Amazonu**, prijedlog je **uključiti** – ekskluzivnost tada ništa ne košta [vaša odluka] |
 | Cijena | Prijedlog **7,99 €** (Amazon.de) – opcija honorara **70 %** (dopuštena za 2,99–9,99 €) [provjeriti] |
 | Honorar (procjena) | 7,99 € s 7 % PDV-a = 7,47 € neto; trošak dostave ≈ 0,12 €/MB × ~3,3 MB ≈ 0,40 €; 70 % × (7,47 − 0,40) ≈ **4,95 €** po prodaji. KDP prikazuje stvarnu veličinu datoteke nakon pretvorbe [provjeriti] |
 | Pravilo cijene | Za 70 % e-knjiga mora biti barem 20 % jeftinija od mekog uveza (16,99 € → najviše 13,59 €); 7,99 € to ispunjava |

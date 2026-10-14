@@ -15,6 +15,8 @@ odgovor napisao je Claude u predlošcima.
 | `front-cover.png` | prednja korica za oglase, društvene mreže, A+ sadržaj |
 | `qa-report.txt` | statistika: 1.000 zadataka, raspored točnih slova A–D, razine, sekcije |
 | `answer-ledger.csv` | popis svih 1.000 zadataka s točnim odgovorom (za kontrolu) |
+| `ASVAB-Math-Workbook-ebook.epub` | **Kindle e-knjiga** (EPUB 3, formule kao MathML, 86 slika) — upload na KDP kao „Kindle eBook” |
+| `ASVAB-Math-Workbook-ebook-cover.jpg` | naslovnica e-knjige, 1600 × 2560 px |
 
 Tekstovi za KDP obrazac (naslov, opis, ključne riječi, kategorije, cijena,
 AI-izjava): **`KDP-LISTING.md`**.
@@ -54,6 +56,32 @@ Ukupno: 750 zadataka u poglavljima + 30 dijagnostičkih + 4 × 55 u testovima
 6. *Rights & Pricing*: 60 % royalty, cijena **$19.99** (prijedlog).
 7. Prije objave naručite **proof copy** (probni primjerak) i pregledajte ga
    u ruci.
+
+## Kindle e-knjiga
+
+Isti 1.000 zadataka (isti `SEED`), prilagođeno čitaču:
+- **Formule su MathML**, a ne slike: Amazonove smjernice (Kindle Publishing Guidelines 2026.3, §11.6)
+  kažu da Enhanced Typesetting podržava MathML i traže MathML umjesto slika formula. Formule se
+  povećavaju zajedno s tekstom i oštre su na svakom uređaju. Pretvara ih pandoc iz LaTeX-a knjige.
+- **Fiksni prijelom (Print Replica) namjerno nije korišten**: Amazon ga preporučuje samo kad
+  prilagodljiv format nije moguć; ne radi na svim Kindle uređajima, ne dopušta promjenu veličine
+  slova i nije dostupan čitačima zaslona.
+- **Slike** (86 TikZ crteža) su sive PNG datoteke od 300 ppi.
+- **Poveznice**: broj zadatka → rješenje → natrag na zadatak; ključevi odgovora vode na
+  objašnjenja; ključevi probnih testova i dijagnostike vode i na poglavlje.
+- Nema listova za odgovore ni „Progress Trackera” (na Kindleu se ne piše); uvod objašnjava rad
+  s bilježnicom i Kindle oznakama.
+- Datoteka ima samo ~1 MB → Amazonov trošak dostave ≈ $0,15 po prodaji.
+- KDP podaci, cijena ($9,99, 70 %) i opis: `KDP-LISTING.md`, odjeljak „Kindle eBook”.
+- Prije objave pregledajte datoteku u **Kindle Previeweru** (KDP „Launch Previewer” ili besplatna
+  aplikacija) – posebno razlomke, slike i jedan ključ odgovora.
+
+```bash
+apt install pandoc texlive-plain-generic   # pandoc 3.x; texlive-plain-generic za newtxmath
+pip install epubcheck pillow sympy          # EPUBCheck treba Javu
+python3 -m asvab.ebook                      # output/ASVAB-Math-Workbook-ebook.epub (+ naslovnica)
+```
+Skripta prekida s greškom ako EPUBCheck nađe grešku ili ako neka unutarnja poveznica ne vodi nikamo.
 
 ## Promjene i ponovna izrada
 

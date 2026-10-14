@@ -95,6 +95,57 @@ uploading — KDP rejects a cover whose spine doesn't match.
 * Expanded distribution: optional (lower royalty, requires a higher list
   price; leave off at launch).
 
+## Kindle eBook
+
+Create it from the paperback's Bookshelf entry (**+ Create Kindle eBook**) so both formats share one
+product page. Same title, subtitle, author, edition, keywords, categories and AI answers as the paperback.
+
+| Field | Value |
+|---|---|
+| Manuscript | `output/ASVAB-Math-Workbook-ebook.epub` (reflowable EPUB 3; EPUBCheck: 0 errors) |
+| Kindle eBook cover | `output/ASVAB-Math-Workbook-ebook-cover.jpg` (1600 × 2560 px) |
+| ISBN | none needed (Amazon assigns an ASIN) |
+| DRM | your choice (cannot be changed later) |
+| KDP Select | recommended if you sell the eBook only on Amazon: Kindle Unlimited page reads + promotions; exclusivity applies to the eBook only, not the paperback |
+| Royalty | **70 %** (list price must be $2.99–$9.99 and at least 20 % below the paperback's $19.99) |
+| List price | **$9.99** (UK £8.49, EU €9.99, CA $12.99, AU $14.99) |
+| Royalty estimate (US) | delivery cost $0.15/MB × ~1 MB ≈ $0.15 → 70 % × ($9.99 − $0.15) ≈ **$6.89 per sale**. KDP shows the real converted file size — confirm there |
+
+**Format.** Equations are MathML (Amazon's Kindle Publishing Guidelines, version 2026.3, §11.6: Enhanced
+Typesetting supports MathML, and the accessibility checklist asks for MathML instead of images of
+equations). The 86 TikZ figures are 300 ppi greyscale PNGs. A fixed-layout/Print Replica edition was not
+used: Amazon recommends it only when a reflowable book is impossible, and Print Replica cannot be read on
+every Kindle device, doesn't let readers change the font size, and doesn't work with screen readers.
+
+**Before publishing:** upload the EPUB and open **Launch Previewer**, or check the file in the free
+*Kindle Previewer 3* app on the "Kindle E-reader" and "Phone" profiles. Look at a few chapters with fractions
+(4, 13), the figure chapters (16–21), an answer key and the Formula Sheet. If some equation does not render,
+Previewer flags it — please report it so the converter can be fixed.
+
+### eBook description (differs from the paperback: no answer sheets/tracker, adds tap-to-solution)
+
+```html
+<b>Raise your AFQT with the math practice that actually moves scores: lots of realistic problems, every one solved step by step.</b>
+
+<p>Arithmetic Reasoning and Mathematics Knowledge make up about half of your AFQT score&mdash;the number that decides whether you can enlist and which jobs you qualify for. There is no calculator on the ASVAB, and no formula sheet. What you need is practice: seeing each type of question often enough that you know the first step the moment you read it.</p>
+
+<p>This workbook gives you <b>1,000 ASVAB-style math problems</b>, each with a complete, hand-worked solution&mdash;and in this Kindle edition, <b>every problem number is a link</b>: tap it to jump to the solution, tap again to go back.</p>
+
+<h4>What's inside</h4>
+<ul>
+<li><b>A 30-question diagnostic test</b> that maps every question to a chapter, so you know exactly where to start.</li>
+<li><b>27 focused chapters</b>: whole numbers, negatives, factors and primes, fractions, decimals, percents, ratios, exponents, roots, algebraic expressions, equations, inequalities, systems, polynomials, factoring and quadratics, angles, triangles, area, circles, volume, coordinate geometry, money and wages, interest and commission, distance-rate-time, work and mixtures, averages and probability, and measurement.</li>
+<li><b>Key Concepts</b> for every chapter with rules, formulas, a worked example, a no-calculator tip, and the common traps test writers use.</li>
+<li><b>750 topic drills</b> arranged from warm-up to test level to challenge.</li>
+<li><b>4 full-length math practice tests</b> (30 Arithmetic Reasoning + 25 Mathematics Knowledge questions each, timed like the paper ASVAB) with answer keys that link to each explanation and to the chapter that teaches the skill.</li>
+<li><b>Step-by-step solutions for all 1,000 problems</b>&mdash;plus <b>"Why not?" notes</b> that name the exact mistake behind each tempting wrong answer.</li>
+<li><b>Every answer verified</b>: computed exactly with computer algebra and confirmed by a second, independent calculation.</li>
+<li>A <b>formula sheet</b>, a <b>mental-math toolkit</b>, quick reference tables, and a <b>glossary</b> of math terms.</li>
+</ul>
+
+<p><i>ASVAB is a registered trademark of the U.S. Department of Defense, which was not involved in the production of, and does not endorse, this book.</i></p>
+```
+
 ## Marketing images
 
 `output/front-cover.png` (front cover, 1600 px wide) and three sample pages in

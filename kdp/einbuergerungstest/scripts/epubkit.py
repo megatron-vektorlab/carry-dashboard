@@ -91,12 +91,12 @@ class Book:
             mt = mimetypes.guess_type(href)[0] or "image/png"
             iid = "img-" + href.replace("/", "-").replace(".", "-")
             files[f"OEBPS/{href}"] = Path(src).read_bytes()
-            props = ' properties="svg"' if False else ""
-            manifest.append(f'<item id="{iid}" href="{href}" media-type="{mt}"{props}/>')
+            manifest.append(f'<item id="{iid}" href="{href}" media-type="{mt}"/>')
         for d in docs:
             body_attr = f' class="{d.body_class}"' if d.body_class else ""
             files[f"OEBPS/{d.href}"] = XHTML.format(lang=d.lang, title=esc(d.title), body=d.body, body_attr=body_attr).encode()
-            manifest.append(f'<item id="{d.id}" href="{d.href}" media-type="application/xhtml+xml"/>')
+            props = ' properties="mathml"' if "<math" in d.body else ""
+            manifest.append(f'<item id="{d.id}" href="{d.href}" media-type="application/xhtml+xml"{props}/>')
             spine.append(f'<itemref idref="{d.id}"{"" if d.id != "cover" else " linear=\"yes\""}/>')
         toc_docs = [d for d in docs if d.toc]
         # navigation document
