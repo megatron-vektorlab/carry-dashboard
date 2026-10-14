@@ -109,7 +109,7 @@ product page. Same title, subtitle, author, edition, keywords, categories and AI
 | KDP Select | recommended if you sell the eBook only on Amazon: Kindle Unlimited page reads + promotions; exclusivity applies to the eBook only, not the paperback |
 | Royalty | **70 %** (list price must be $2.99–$9.99 and at least 20 % below the paperback's $19.99) |
 | List price | **$9.99** (UK £8.49, EU €9.99, CA $12.99, AU $14.99) |
-| Royalty estimate (US) | delivery cost $0.15/MB × ~1 MB ≈ $0.15 → 70 % × ($9.99 − $0.15) ≈ **$6.89 per sale**. KDP shows the real converted file size — confirm there |
+| Royalty estimate (US) | delivery cost $0.15/MB × ~1.3 MB ≈ $0.20 → 70 % × ($9.99 − $0.20) ≈ **$6.85 per sale**. KDP shows the real converted file size — confirm there |
 
 **Format.** Equations are MathML (Amazon's Kindle Publishing Guidelines, version 2026.3, §11.6: Enhanced
 Typesetting supports MathML, and the accessibility checklist asks for MathML instead of images of
@@ -129,7 +129,7 @@ Previewer flags it — please report it so the converter can be fixed.
 
 <p>Arithmetic Reasoning and Mathematics Knowledge make up about half of your AFQT score&mdash;the number that decides whether you can enlist and which jobs you qualify for. There is no calculator on the ASVAB, and no formula sheet. What you need is practice: seeing each type of question often enough that you know the first step the moment you read it.</p>
 
-<p>This workbook gives you <b>1,000 ASVAB-style math problems</b>, each with a complete, hand-worked solution&mdash;and in this Kindle edition, <b>every problem number is a link</b>: tap it to jump to the solution, tap again to go back.</p>
+<p>This workbook gives you <b>1,000 ASVAB-style math problems</b>, each with a complete, hand-worked solution&mdash;and in this Kindle edition, <b>every problem number is a link</b>: tap it to jump to the solution, and Kindle's Back button takes you back to the problem.</p>
 
 <h4>What's inside</h4>
 <ul>

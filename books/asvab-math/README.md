@@ -67,11 +67,14 @@ Isti 1.000 zadataka (isti `SEED`), prilagođeno čitaču:
   prilagodljiv format nije moguć; ne radi na svim Kindle uređajima, ne dopušta promjenu veličine
   slova i nije dostupan čitačima zaslona.
 - **Slike** (86 TikZ crteža) su sive PNG datoteke od 300 ppi.
-- **Poveznice**: broj zadatka → rješenje → natrag na zadatak; ključevi odgovora vode na
+- **Poveznice**: broj zadatka → rješenje (natrag tipkom „Back” na Kindleu; povratne poveznice
+  namjerno nema, jer bi ih Kindle prikazao kao skočne fusnote); ključevi odgovora vode na
   objašnjenja; ključevi probnih testova i dijagnostike vode i na poglavlje.
 - Nema listova za odgovore ni „Progress Trackera” (na Kindleu se ne piše); uvod objašnjava rad
   s bilježnicom i Kindle oznakama.
-- Datoteka ima samo ~1 MB → Amazonov trošak dostave ≈ $0,15 po prodaji.
+- Datoteka ima samo ~1,3 MB → Amazonov trošak dostave ≈ $0,20 po prodaji.
+- Dugi nizovi jednakosti prelamaju se u više redaka (jedan „=” po retku), a široke formule
+  dijele se u više redaka, da stanu i na zaslon mobitela. Slike imaju opisni alt-tekst.
 - KDP podaci, cijena ($9,99, 70 %) i opis: `KDP-LISTING.md`, odjeljak „Kindle eBook”.
 - Prije objave pregledajte datoteku u **Kindle Previeweru** (KDP „Launch Previewer” ili besplatna
   aplikacija) – posebno razlomke, slike i jedan ključ odgovora.
