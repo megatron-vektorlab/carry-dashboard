@@ -25,11 +25,13 @@ import html
 import re
 import subprocess
 import sys
+import uuid
 
 from PIL import Image
 
 from . import config
-from .build import AR_TEST, MK_TEST, N_DIAG, N_TESTS, PART_BLURB, PARTS, TEX, generate_all, squares_table, fdp_table
+from .build import (AR_TEST, MK_TEST, N_TESTS, PART_BLURB, PARTS, TEX, diag_minutes, fdp_table, generate_all,
+                    squares_table)
 from .epubkit import Book, Doc, check
 from .generate import load_chapters
 from .glossary import GLOSSARY
@@ -39,50 +41,49 @@ OUT = ROOT / "output"
 EB = BUILD / "ebook"
 EPUB = OUT / "ASVAB-Math-Workbook-ebook.epub"
 COVER = OUT / "ASVAB-Math-Workbook-ebook-cover.jpg"
-FIG_PPI = 300
+FIG_PPI = 600           # >= 300 ppi even for the smallest figure at its displayed size
 TEXT_W_IN = 4.2         # figure width (in) that fills the text column on a Kindle
 
 CSS = """
-body { margin: 0 0.2em; }
-h1 { font-size: 1.45em; line-height: 1.2; margin: 0.6em 0 0.5em; page-break-before: always; }
-h2 { font-size: 1.2em; line-height: 1.25; margin: 1.3em 0 0.4em; page-break-after: avoid; }
-h3 { font-size: 1.05em; margin: 1em 0 0.3em; page-break-after: avoid; }
+body { margin: 0; }
+h1 { font-size: 1.45em; line-height: 1.2em; margin: 0.6em 0 0.5em; page-break-before: always; text-align: left; }
+h2 { font-size: 1.2em; line-height: 1.25em; margin: 1.3em 0 0.4em; page-break-after: avoid; text-align: left; }
+h3 { font-size: 1.05em; margin: 1em 0 0.3em; page-break-after: avoid; text-align: left; }
 p { margin: 0.35em 0; text-indent: 0; }
 .center { text-align: center; }
 .title-page h1 { page-break-before: avoid; font-size: 2.2em; margin: 1.6em 0 0.2em; text-align: center; }
 .title-page p { text-align: center; margin: 0.5em 0; }
 .title-page .sub { font-size: 1.2em; }
 .small { font-size: 0.85em; }
-.meta { font-size: 0.9em; color: #444444; }
+.meta { font-size: 0.9em; }
 .copyright p { font-size: 0.85em; margin: 0.6em 0; }
 .toc p { margin: 0.3em 0; }
-.toc .l2 { margin-left: 1.3em; }
-.concept, .example, .trap, .infobox { border: 1px solid #000000; padding: 0.3em 0.6em; margin: 0.9em 0; }
-.example { border-width: 0 0 0 3px; border-color: #444444; }
-.tip, .infobox { background-color: #eeeeee; border: none; padding: 0.4em 0.6em; margin: 0.9em 0; }
+.toc .l2 { margin-left: 4%; }
+.concept, .trap { border: 1px solid; padding: 0.3em 2%; margin: 0.9em 0; }
+.example, .tip, .infobox { border-left: 3px solid #888888; padding: 0.2em 0 0.2em 3%; margin: 0.9em 0; }
 .boxtitle { font-weight: bold; margin: 0.1em 0 0.3em; }
 .boxtitle p { margin: 0; }
 table { border-collapse: collapse; margin: 0.6em 0; }
 td, th { border: 1px solid #888888; padding: 0.15em 0.4em; vertical-align: top; }
+td.l, th.l { text-align: left; }
+td.c, th.c { text-align: center; }
+td.r, th.r { text-align: right; }
 .prob { margin: 1.2em 0 0.6em; }
 .prob .stem { margin-bottom: 0.35em; }
 .pn { font-weight: bold; }
-.opt { margin: 0.25em 0 0.25em 2.6em; text-indent: -1.4em; }
+.opt { margin: 0.25em 0 0.25em 5%; padding-left: 1.4em; text-indent: -1.4em; }
 .ol { font-weight: bold; }
 .fig { text-align: center; margin: 0.5em 0; }
 .sol { margin: 1.1em 0 0.5em; }
 .sh { margin-bottom: 0.25em; }
-.key { font-weight: bold; border: 1px solid #000000; padding: 0 0.3em; }
-.step { margin: 0.2em 0 0.2em 2.2em; text-indent: -1.2em; }
-.sn { font-weight: bold; color: #555555; }
-.tipl, .why { margin: 0.3em 0 0.3em 1em; font-size: 0.95em; }
+.key { font-weight: bold; border: 1px solid; padding: 0 0.3em; }
+.step { margin: 0.2em 0 0.2em 4%; padding-left: 1.2em; text-indent: -1.2em; }
+.sn { font-weight: bold; }
+.tipl, .why { margin: 0.3em 0 0.3em 3%; font-size: 0.95em; }
 .lbl { font-weight: bold; font-size: 0.85em; letter-spacing: 0.04em; }
-.keys { line-height: 1.7; }
-.back { font-size: 0.85em; margin-top: 0.5em; }
+.keys { line-height: 1.7em; }
 .next { margin-top: 1.4em; font-weight: bold; }
-img { max-width: 100%; }
-.cover { text-align: center; margin: 0; padding: 0; }
-.cover img { height: 100%; max-width: 100%; }
+.nw { white-space: nowrap; }
 """
 
 
@@ -101,6 +102,158 @@ def env_arg(s: str, i: int) -> tuple[str, int]:
             if depth == 0:
                 return s[i + 1:j], j + 1
     raise ValueError("unbalanced braces: " + s[i:i + 60])
+
+
+MATH_RE = re.compile(r"(\\\[.*?\\\]|(?<!\\)\$.+?(?<!\\)\$)", re.S)
+PHONE_WIDTH = 30        # inline math wider than this (in rough character widths) becomes a display
+
+
+def top_level(tex: str, pattern: str) -> list[int]:
+    """Start positions of `pattern` outside braces and LaTeX environments."""
+    out, depth, env, i = [], 0, 0, 0
+    rx = re.compile(pattern)
+    while i < len(tex):
+        if tex.startswith("\\begin{", i):
+            env += 1
+        elif tex.startswith("\\end{", i):
+            env -= 1
+        c = tex[i]
+        if c == "\\" and i + 1 < len(tex) and not tex[i + 1].isalpha():
+            i += 2          # \{ \} \, \$ ...
+            continue
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+        elif depth == 0 and env == 0:
+            m = rx.match(tex, i)
+            if m:
+                out.append(i)
+        i += 1
+    return out
+
+
+def brace_group(t: str, i: int) -> tuple[str, int]:
+    depth = 0
+    for j in range(i, len(t)):
+        if t[j] == "{" and t[j - 1] != "\\":
+            depth += 1
+        elif t[j] == "}" and t[j - 1] != "\\":
+            depth -= 1
+            if depth == 0:
+                return t[i + 1:j], j + 1
+    return t[i + 1:], len(t)
+
+
+def vis_len(t: str) -> float:
+    """Rough rendered width of a TeX formula in character widths (fractions stack)."""
+    w, i = 0.0, 0
+    while i < len(t):
+        m = re.match(r"\\[dt]?frac\s*", t[i:])
+        if m and i + m.end() < len(t) and t[i + m.end()] == "{":
+            a, i = brace_group(t, i + m.end())
+            b, i = brace_group(t, i) if i < len(t) and t[i] == "{" else ("", i)
+            w += max(vis_len(a), vis_len(b)) + 0.5
+            continue
+        m = re.match(r"\\(text|mathrm)\s*", t[i:])
+        if m and i + m.end() < len(t) and t[i + m.end()] == "{":
+            a, i = brace_group(t, i + m.end())
+            w += 0.9 * len(a)
+            continue
+        m = re.match(r"\\[a-zA-Z]+|\\.", t[i:])
+        if m:
+            name = m.group(0)
+            i += len(name)
+            if name not in ("\\left", "\\right", "\\,", "\\;", "\\!", "\\ "):
+                w += 1.6 if name in ("\\times", "\\div", "\\cdot", "\\le", "\\ge", "\\approx", "\\Rightarrow", "\\to") else 1
+            continue
+        c = t[i]
+        i += 1
+        if c not in "{}^_ ":
+            w += 1.8 if c in "=+-<>" else 1
+    return w
+
+
+def split_display(tex: str) -> str:
+    """\\[ a \\quad b \\] -> one display per formula, so each fits a phone screen. An arrow
+    standing alone between two formulas starts the next one."""
+    inner = tex[2:-2]
+    cuts = top_level(inner, r"\\q?quad\b")
+    if not cuts:
+        return tex
+    pieces, last = [], 0
+    for c in cuts:
+        pieces.append(inner[last:c])
+        last = c + (6 if inner.startswith("\\qquad", c) else 5)
+    pieces.append(inner[last:])
+    pieces = [x.strip() for x in pieces if x.strip()]
+    out = []
+    for x in pieces:
+        if out and re.fullmatch(r"\\(Rightarrow|to|implies|Longrightarrow)", out[-1]):
+            out[-1] = out[-1] + " " + x
+        else:
+            out.append(x)
+    return "\n".join(f"\\[ {x} \\]" for x in out)
+
+
+def break_long(tex: str, punct: str) -> str:
+    """A long inline chain a = b = c becomes a display with one '=' per row."""
+    eqs = top_level(tex, r"=")
+    if not eqs:
+        return f"\\[ {tex}{punct} \\]"
+    parts, last = [], 0
+    for e in eqs:
+        parts.append(tex[last:e].strip())
+        last = e + 1
+    parts.append(tex[last:].strip())
+    if len(parts) == 2:
+        rows = [f"& {parts[0]}", f"&= {parts[1]}"]
+    else:
+        rows = [f"{parts[0]} &= {parts[1]}"] + [f"&= {x}" for x in parts[2:]]
+    rows[-1] += punct
+    return "\\[ \\begin{aligned} " + " \\\\ ".join(rows) + " \\end{aligned} \\]"
+
+
+def text_quads(text: str) -> str:
+    """Text-mode \\quad separates two items; HTML would collapse it to one space, so write "; "
+    (after a comma or semicolon only a space). Column specs like @{\\qquad} stay."""
+    text = re.sub(r"([,;:.])\s*\\q?quad(?![a-zA-Z])\s*", r"\1 ", text)
+    return re.sub(r"(?<!@\{)\s*\\q?quad(?![a-zA-Z])\s*", "; ", text)
+
+
+def prep_math(s: str) -> str:
+    """Math-aware rewrites: split wide displays, turn long inline chains into displays,
+    and make text-mode \\quad separators visible."""
+    # formulas inside tables stay inline: a display in a table cell breaks the table
+    tables = [(t.start(), t.end()) for t in
+              re.finditer(r"\\begin\{(tabular|tabularx|array)\}.*?\\end\{\1\}", s, flags=re.S)]
+    out, last = [], 0
+    for m in MATH_RE.finditer(s):
+        if m.start() < last:
+            continue
+        in_table = any(a <= m.start() < b for a, b in tables)
+        text = s[last:m.start()]
+        # text mode: \quad between two items -> "; " (not inside a tabular @{...} spec)
+        out.append(text_quads(text))
+        tok = m.group(0)
+        end = m.end()
+        if tok.startswith("\\["):
+            tok = split_display(tok)
+        else:
+            body = tok[1:-1]
+            if vis_len(body) > PHONE_WIDTH and not in_table:
+                punct = ""
+                pm = re.match(r"[.,;:]", s[end:end + 1])
+                if pm:
+                    punct = f"\\text{{{pm.group(0)}}}"
+                    end += 1
+                tok = "\n" + break_long(body, punct) + "\n"
+        tok = tok.replace("\\underline{\\ \\ }", "\\square")
+        out.append(tok)
+        last = end
+    text = s[last:]
+    out.append(text_quads(text))
+    return "".join(out)
 
 
 class Converter:
@@ -143,8 +296,9 @@ class Converter:
         for env, title in self.BOX_TITLES.items():
             s = s.replace(f"\\begin{{{env}}}", f"\\begin{{{env}x}}\\begin{{boxtitle}}{title}\\end{{boxtitle}}\n")
             s = s.replace(f"\\end{{{env}}}", f"\\end{{{env}x}}")
-        s = re.sub(r"\\begin\{tabularx\}\{[^}]*\}\{@\{\}>\{\\bfseries\}p\{[^}]*\}X@\{\}\}", r"\\begin{tabular}{ll}", s)
-        s = s.replace("\\end{tabularx}", "\\end{tabular}")
+        s = re.sub(r"\\begin\{tabularx\}\{[^}]*\}\{@\{\}>\{\\bfseries\}p\{[^}]*\}X@\{\}\}",
+                   r"\\begin{boldfirst}\\begin{tabular}{ll}", s)
+        s = s.replace("\\end{tabularx}", "\\end{tabular}\\end{boldfirst}")
         s = re.sub(r"\\begin\{(itemize|enumerate)\}\[[^\]]*\]", r"\\begin{\1}", s)
         s = re.sub(r"\\(begin|end)\{multicols\}(\{\d\})?", "", s)
         s = re.sub(r"\\begin\{minipage\}(\[[^\]]*\])?\{[^}]*\}", "", s)
@@ -158,6 +312,7 @@ class Converter:
         s = re.sub(r"\\\\\[[^\]]*\]", r"\\\\", s)
         s = re.sub(r"\\(columnbreak|hfill|smallskip|medskip|bigskip|small|sans|clearpage|noindent)\b", "", s)
         s = s.replace("\\checkmark", "✓")
+        s = prep_math(s)
         s = re.sub(r"\\begin\{array\}\{([rcl@{}\\;]+)\}",
                    lambda m: "\\begin{array}{" + re.sub(r"@\{[^}]*\}", "", m.group(1)) + "}", s)
         return s
@@ -239,7 +394,7 @@ def fences(m: re.Match) -> str:
     return "".join(out)
 
 
-UNARY_AFTER = "([{,=+−×÷·<>≤≥≠≈→⇒:;±"
+UNARY_AFTER = set("([{,=+−×÷·<>≤≥≠≈→⇒:;±")
 UNARY = re.compile(r'(<mo( [^>]*)?>([^<]*)</mo>|<mrow>|<mtd[^>]*>|<math [^>]*>)<mo>([−+])</mo>')
 
 
@@ -248,6 +403,8 @@ def unary(h: str) -> str:
     a subtraction (LaTeX knows this; MathML renderers need form="prefix")."""
     def rep(m):
         op, attrs = m.group(3), m.group(2) or ""
+        if op is not None:
+            op = html.unescape(op)          # pandoc writes < and > as &lt; &gt;
         if op is not None and op not in UNARY_AFTER and 'form="prefix"' not in attrs:
             return m.group(0)
         return f'{m.group(1)}<mo form="prefix">{m.group(4)}</mo>'
@@ -258,13 +415,83 @@ def unary(h: str) -> str:
         h = new
 
 
+def digit_groups(m: re.Match) -> str:
+    """1{,}080 and 11{:}50 are one number in TeX; texmath splits them into <mn>1</mn><mo>,</mo>...,
+    and the comma (colon) then gets operator spacing: "1, 080", "11 : 50". Merge them back."""
+    s = m.group(0)
+    alt = html.unescape(re.search(r'alttext="([^"]*)"', s).group(1)) if "alttext=" in s else ""
+    if "{,}" in alt:
+        while True:
+            new = re.sub(r"<mn>([0-9][0-9,]*)</mn><mo>,</mo>(<msup>|<msub>|<msubsup>)?<mn>([0-9]{3}(?:,[0-9]{3})*(?:\.[0-9]+)?)</mn>",
+                         r"\2<mn>\1,\3</mn>", s)
+            if new == s:
+                break
+            s = new
+    if "{:}" in alt:
+        s = re.sub(r"<mn>([0-9]{1,2})</mn><mo>:</mo><mn>([0-9]{2})</mn>", r"<mn>\1:\2</mn>", s)
+    return s
+
+
+def mfrac_style(s: str) -> str:
+    """MathML 3 (the EPUB schema) has no displaystyle on <mfrac>: wrap the fraction in <mstyle>."""
+    while True:
+        m = re.search(r'<mfrac displaystyle="(true|false)">', s)
+        if not m:
+            return s
+        depth, i = 0, m.start()
+        for t in re.finditer(r"<mfrac\b[^>]*>|</mfrac>", s[m.start():]):
+            depth += 1 if t.group(0).startswith("<mfrac") else -1
+            if depth == 0:
+                end = m.start() + t.end()
+                break
+        inner = "<mfrac>" + s[m.end():end]
+        s = s[:i] + f'<mstyle displaystyle="{m.group(1)}">' + inner + "</mstyle>" + s[end:]
+
+
+LEAD_OPS = "=<>≤≥≈≠×÷·→⇒"
+
+
+def lead_op(m: re.Match) -> str:
+    """A formula that starts with an operator ("1 yard $= 3$ feet") already has a word space in
+    front of it: no extra space on the left. A formula that is only an operator gets none at all."""
+    s = m.group(0)
+    lone = re.fullmatch(r'(<math [^>]*>)(?:<mrow>)?<mo>([^<]*)</mo>(?:</mrow>)?</math>', s)
+    if lone and html.unescape(lone.group(2)) in LEAD_OPS:
+        return f'{lone.group(1)}<mo lspace="0em" rspace="0em">{lone.group(2)}</mo></math>'
+    first = re.match(r'(<math [^>]*>(?:<mrow>)?)<mo>([^<]*)</mo>', s)
+    if first and html.unescape(first.group(2)) in LEAD_OPS:
+        return f'{first.group(1)}<mo form="infix" lspace="0em">{first.group(2)}</mo>' + s[first.end():]
+    return s
+
+
+def hline_rule(m: re.Match) -> str:
+    """\\hline in an array (written-out elimination): rule above the last row. rowlines for
+    MathML engines that know it, a border on the cells for those that follow CSS."""
+    s = m.group(0)
+    s = s.replace("<mtable>", '<mtable rowlines="none solid">', 1)
+    k = s.rfind("<mtr>")
+    def cell(t):
+        attrs = t.group(1) or ""
+        if 'style="' in attrs:
+            attrs = attrs.replace('style="', 'style="border-top: 1px solid; ', 1)
+        else:
+            attrs += ' style="border-top: 1px solid"'
+        return f"<mtd{attrs}>"
+    tail = re.sub(r"<mtd( [^>]*)?>", cell, s[k:])
+    return s[:k] + tail
+
+
 def clean_html(h: str) -> str:
     h = re.sub(r"<math .*?</math>", math_clean, h, flags=re.S)
     h = re.sub(r"<math .*?</math>", fences, h, flags=re.S)
     h = unary(h)
-    # an array with \hline (written-out elimination): draw the rule under the last-but-one row
-    h = re.sub(r'(<math alttext="[^"]*\\hline[^"]*"[^>]*>(?:(?!</math>).)*?)<mtable>',
-               r'\1<mtable rowlines="none solid">', h, flags=re.S)
+    h = re.sub(r"<math .*?</math>", digit_groups, h, flags=re.S)
+    h = mfrac_style(h)
+    h = re.sub(r"<math .*?</math>", lead_op, h, flags=re.S)
+    h = re.sub(r'<math alttext="[^"]*\\hline.*?</math>', hline_rule, h, flags=re.S)
+    # keep a formula and the punctuation right after it on one line
+    h = re.sub(r'(<math (?:(?!display="block")[^>])*>(?:(?!</math>).)*</math>)([.,;:?!)”]+)', r'<span class="nw">\1\2</span>',
+               h, flags=re.S)
     # unknown environments arrive as <div class="conceptx"> etc.
     h = re.sub(r'<div class="(concept|example|infobox|tip|trap)x">', r'<div class="\1">', h)
     h = h.replace('<div class="center">', '<div class="center">')
@@ -273,6 +500,17 @@ def clean_html(h: str) -> str:
     h = re.sub(r'\s*style="text-align: (left|center|right);"', lambda m: f' class="{m.group(1)[0]}"', h)
     h = h.replace("<br />", "<br/>").replace("<hr />", "<hr/>")
     h = re.sub(r"<col (style=\"width: [0-9.]+%\") />", r"<col \1/>", h)
+    # Mental Math Toolkit: the trick names (first column) are bold, as in print
+    h = re.sub(r'<div class="boldfirst">.*?</div>', lambda m: re.sub(
+        r"(<tr>\s*<td[^>]*>)(.*?)(</td>)", r"\1<strong>\2</strong>\3", m.group(0), flags=re.S), h, flags=re.S)
+    # a first row of bold cells is a header row (KPG 11.5.2)
+    def header(m):
+        cells = re.findall(r"<td([^>]*)>\s*<strong>(.*?)</strong>\s*</td>", m.group(2), flags=re.S)
+        n = len(re.findall(r"<td", m.group(2)))
+        if n and len(cells) == n:
+            return m.group(1) + "".join(f'<th{a} scope="col">{c}</th>' for a, c in cells) + m.group(3)
+        return m.group(0)
+    h = re.sub(r"(<table>\s*(?:<colgroup>.*?</colgroup>\s*)?(?:<tbody>\s*)?<tr>)(.*?)(</tr>)", header, h, flags=re.S)
     return h
 
 
@@ -307,8 +545,68 @@ def render_figures(figs: list[str]) -> list[tuple[str, float]]:
     return out
 
 
+# alt text (KPG 11.4.1: describe the image and its meaning, < 140 characters)
+FIG_KIND = {
+    "vertical_adjacent": "Two intersecting lines", "parallel_lines": "Parallel lines cut by a transversal",
+    "angle_algebra": "A ray meeting a straight line", "around_point": "Four angles around a point",
+    "polygon_missing": "Quadrilateral with its interior angles", "third_angle": "Triangle with two known angles",
+    "pyth_hyp": "Right triangle", "pyth_leg": "Right triangle", "isosceles_angles": "Isosceles triangle PQR, equal sides marked",
+    "exterior_angle": "Triangle with one side extended", "special_right": "Special right triangle (30-60-90 or 45-45-90)",
+    "similar_triangles": "Similar triangles ABC and PQR", "triangle_area": "Triangle with base and dashed height",
+    "parallelogram": "Parallelogram with base, height and slanted side", "trapezoid": "Trapezoid with two bases and height",
+    "composite": "L-shaped lawn, all corners right angles", "walkway": "Rug centered in a room with a bare strip around it",
+    "circle_area": "Circle with its radius", "circumference": "Circle with its radius",
+    "annulus": "Two circles with the same center and their radii", "shaded_region": "Square with a quarter circle drawn inside",
+    "arc_sector": "Circle with a sector between radii to A and B", "part_circle": "Quarter of a circle",
+    "box_volume": "Rectangular box", "box_surface": "Closed rectangular box", "cube": "Cube", "cylinder": "Cylinder",
+    "cone_sphere": "Cone", "read_grid": "Coordinate grid", "slope_two_points": "Coordinate grid with a line",
+}
+INTRO_ALT = {
+    12: "Number line from −5 to 5: open circle at −2, shaded to the right (x > −2)",
+    16: "Parallel lines ℓ and m cut by transversal t, forming angles numbered 1 to 8",
+    17: "Right triangle with legs a and b and hypotenuse c",
+    18: "A triangle and a parallelogram, each with base b and dashed height h",
+    19: "Circle with center, radius r, diameter d and circumference C",
+    20: "Rectangular box with length l, width w and height h",
+    21: "Coordinate plane with x- and y-axes, quadrants I to IV and the point (3, 2)",
+}
+
+
+def tikz_label(t: str) -> str:
+    t = re.sub(r"\\(tiny|scriptsize|footnotesize|small|normalsize)\b", "", t)
+    t = re.sub(r"\^\{?\\circ\}?", "°", t)
+    t = re.sub(r"\\sqrt\s*\{?(\w+)\}?", r"√\1", t)
+    t = t.replace("\\ell", "ℓ").replace("$", "").replace("\\,", " ").replace("{", "").replace("}", "")
+    t = re.sub(r"(?<![\w)])-", "−", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def fig_alt(src: str, template: str = "") -> str:
+    base = re.sub(r"_(?:[a-z]|civ|mil|\d)$", "", template.split(".")[-1])
+    kind = FIG_KIND.get(base, "Figure")
+    if "grid" in src:
+        labels = {}
+        for m in re.finditer(r"\\node\[[^\]]*\] at \((-?[\d.]+),(-?[\d.]+)\) \{\\scriptsize ([^}]*)\}", src):
+            labels[(m.group(1), m.group(2))] = tikz_label(m.group(3))
+        pts = []
+        for m in re.finditer(r"\\fill \((-?[\d.]+),(-?[\d.]+)\) circle", src):
+            xy = (m.group(1), m.group(2))
+            name = labels.get(xy, "")
+            pts.append(f"{name} at ({xy[0]}, {xy[1]})".replace("-", "−").strip())
+        alt = f"{kind}, points " + "; ".join(pts)
+    else:
+        labs = []
+        for m in re.finditer(r"node\s*(?:\[[^\]]*\])?\s*(?:at\s*\([^)]*\))?\s*\{", src):
+            text, _ = brace_group(src, m.end() - 1)
+            lab = tikz_label(text)
+            if lab and lab not in labs:
+                labs.append(lab)
+        alt = kind + (". Labels: " + ", ".join(labs) if labs else "")
+    return alt if len(alt) < 140 else alt[:136].rsplit(" ", 1)[0] + " …"
+
+
 def fig_html(name: str, width_in: float, alt: str) -> str:
-    pct = max(25, min(100, round(width_in / TEXT_W_IN * 100)))
+    pct = max(40, min(100, round(width_in / TEXT_W_IN * 100)))     # KPG 11.4.2: not below 40 %
     return f'<div class="fig"><img src="images/{name}" alt="{html.escape(alt)}" style="width: {pct}%"/></div>'
 
 
@@ -429,7 +727,7 @@ def main():
     front = (TEX / "front.tex").read_text(encoding="utf-8")
     sections = re.split(r"%% -+ ([a-z ]+)\n", front)
     fr = dict(zip(sections[1::2], sections[2::2]))
-    howto = fr["how to use"].replace("{<<", "{").replace(">>}", "}")
+    howto = fr["how to use"].replace("<<DIAGMIN>>", str(diag_minutes(diag)))
     howto = howto.replace("\\textbf{Take the Diagnostic Test} (page~\\pageref{diag})",
                           "\\textbf{Take the \\href{diagnostic.xhtml}{Diagnostic Test}}")
     howto = howto.replace("\\textbf{Redo your misses a week later} and log them in the Progress\n  Tracker at the back of the book.",
@@ -437,8 +735,9 @@ def main():
     howto += r"""
 \section*{Using this eBook}
 \begin{itemize}
-\item \textbf{Tap a problem number} to jump to its full solution. Tap the number at the
-  start of the solution to jump back to the problem.
+\item \textbf{Tap a problem number} to jump to its full solution. To return to the problem,
+  use your Kindle's \emph{Back} command (the back arrow at the top of the screen, or
+  ``Go back'' in the menu).
 \item \textbf{Answer keys are links, too.} In every key, tap an answer to open its explanation;
   in the practice-test keys, the chapter number takes you to the chapter that teaches the skill.
 \item \textbf{Work on paper.} Write the problem number and your answer letter (A--D) in a
@@ -450,6 +749,7 @@ def main():
 """
     for name, txt in (("howto", howto), ("subtests", fr["the test"]), ("strategy", fr["strategy"])):
         txt = re.sub(r"\\chapter\*\{[^}]*\}\n\\addcontentsline\{[^\n]*\n\\markboth\{[^\n]*\n", "", txt)
+        txt = txt.replace("\\section*{", "\\subsection*{")     # h2 under the chapter's h1
         txt = txt.replace("memorize the ones on the Formula Sheet at the back of this book",
                           "memorize the ones on the \\href{formulas.xhtml}{Formula Sheet} at the end of this book")
         C.add(name, txt)
@@ -475,9 +775,9 @@ def main():
         name, w = figs[n]
         return fig_html(name, w, alt)
 
-    def expand_figs(h):
-        h = re.sub(r"<p>FIGPH(\d+)X</p>", lambda m: figure(int(m.group(1)), "Figure"), h)
-        return re.sub(r"FIGPH(\d+)X", lambda m: figure(int(m.group(1)), "Figure"), h)
+    def expand_figs(h, alt="Figure"):
+        h = re.sub(r"<p>FIGPH(\d+)X</p>", lambda m: figure(int(m.group(1)), alt), h)
+        return re.sub(r"FIGPH(\d+)X", lambda m: figure(int(m.group(1)), alt), h)
 
     # ---- problem and solution HTML
     def problem_html(sid, i, p, sol_file):
@@ -489,7 +789,7 @@ def main():
             head = f'<p class="stem">{num} {m.group(1)}</p>'
         else:
             head = f'<p class="stem">{num}</p>\n{stem}'
-        fig = figure(fig_of[pid], f"Figure for problem {i}") if pid in fig_of else ""
+        fig = figure(fig_of[pid], fig_alt(C.figs[fig_of[pid]], p.template)) if pid in fig_of else ""
         opts = "\n".join(f'<p class="opt"><span class="ol">{LETTERS[j]}</span>&#160;&#160;{C.inline(f"{pid}:c{j}")}</p>'
                          for j in range(len(p.choices)))
         return f'<div class="prob" id="{pid}">\n{head}\n{fig}{opts}\n</div>'
@@ -497,7 +797,7 @@ def main():
     def solution_html(sid, i, p, prob_file):
         pid = f"{sid}-{i}"
         out = [f'<div class="sol" id="{pid}s">',
-               f'<p class="sh"><a class="pn" href="{prob_file}#{pid}">{i}.</a> <span class="key">{LETTERS[p.key]}</span> '
+               f'<p class="sh"><span class="pn">{i}.</span> <span class="key">{LETTERS[p.key]}</span> '
                f'{C.inline(f"{pid}:c{p.key}")}</p>']
         for j in range(len(p.steps)):
             out.append(f'<p class="step"><span class="sn">{j + 1}</span>&#160; {C.inline(f"{pid}:s{j}")}</p>')
@@ -561,7 +861,7 @@ system; every answer was computed exactly and then confirmed by a second, indepe
                   section_doc("strategy", "Test-Day Strategies", "strategy")]
 
     # ---- diagnostic
-    minutes = round(sum(1.2 if p.section == "AR" else 1.0 for p in diag))
+    minutes = diag_minutes(diag)
     diag_doc = Doc("diagnostic", "Diagnostic Test", lang="en-US",
                    children=[("Answers and Your Study Plan", "diagnostic-answers.xhtml")], body="\n".join([
         '<h1 id="diag">Diagnostic Test</h1>',
@@ -615,7 +915,7 @@ system; every answer was computed exactly and then confirmed by a second, indepe
             f"<h1>Chapter {m.NUM}<br/>{html.escape(m.ETITLE)}</h1>",
             f'<p class="meta">Tested on: {" · ".join(SECTION_NAMES[s] for s in secs)}</p>',
             "<h2>Key Concepts</h2>",
-            expand_figs(C.block(f"intro{m.NUM}")),
+            expand_figs(C.block(f"intro{m.NUM}"), INTRO_ALT.get(m.NUM, "Figure")),
             f'<h2 id="{sid}-set">Practice Set {m.NUM}</h2>',
             f'<p class="meta">{n} problems · target time: {minutes} minutes. Problems 1–{lv[0]} are warm-ups, '
             f'{lv[0] + 1}–{lv[0] + lv[1]} are test level, and {lv[0] + lv[1] + 1}–{n} are challenge problems. '
@@ -634,7 +934,9 @@ system; every answer was computed exactly and then confirmed by a second, indepe
 
     # ---- practice tests
     test_docs = [Doc("practice-tests", "Practice Tests", lang="en-US",
-                     children=[(f"Practice Test {k}", f"test{k}.xhtml") for k in range(1, N_TESTS + 1)], body="\n".join([
+                     children=[x for k in range(1, N_TESTS + 1)
+                               for x in ((f"Practice Test {k}", f"test{k}.xhtml"),
+                                         (f"Answer Key: Practice Test {k}", f"test{k}-answers.xhtml"))], body="\n".join([
         "<h1>Practice Tests</h1>",
         f"<p>Four full-length math sections in the paper-and-pencil format: {AR_TEST} Arithmetic Reasoning questions "
         f"in 36 minutes and {MK_TEST} Mathematics Knowledge questions in 24 minutes.</p>",
@@ -716,7 +1018,7 @@ edition.</p>"""))
     leftovers = []
     for d in docs:
         plain = re.sub(r"<math.*?</math>", "", d.body, flags=re.S)
-        for m_ in re.finditer(r"\\[a-zA-Z]+|FIGPH|FRAGSEP|\$", plain):
+        for m_ in re.finditer(r"\\[a-zA-Z]+|FIGPH|FRAGSEP|<<|\$", plain):
             leftovers.append((d.href, plain[max(0, m_.start() - 40):m_.end() + 40]))
     # a literal $ in prose is a currency sign; report only LaTeX-looking leftovers
     leftovers = [x for x in leftovers if "\\" in x[1] or "FIGPH" in x[1] or "FRAGSEP" in x[1]]
@@ -729,7 +1031,7 @@ edition.</p>"""))
     book = Book(title=f"{T.TITLE}: {T.SUBTITLE}", language="en-US", creator=T.AUTHOR, publisher=T.AUTHOR,
                 description="1,000 ASVAB Arithmetic Reasoning and Mathematics Knowledge practice problems with "
                             "step-by-step solutions, a diagnostic test and four practice tests.",
-                identifier=f"urn:uuid:asvab-math-workbook-{T.YEAR}-ebook",
+                identifier=f"urn:uuid:{uuid.uuid5(uuid.NAMESPACE_URL, f'asvab-math-workbook-{T.YEAR}-ebook')}",
                 css=CSS, cover=COVER, images=images, docs=docs,
                 modified=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
     book.toc_title = "Contents"

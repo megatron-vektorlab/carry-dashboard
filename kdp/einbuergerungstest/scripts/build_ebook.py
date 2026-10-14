@@ -29,29 +29,32 @@ from epubkit import Book, Doc, esc, check  # noqa: E402
 
 CHUNK = 50          # general questions per file (Kindle prefers files well below 300 KB)
 OK_TAG = "richtig · točno"
+# Wayback Machine copy of the catalogue page (KPG 7.2: give an archived link next to external links)
+ARCHIVE = ("https://web.archive.org/web/20260126074846/"
+           "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html")
 
 CSS = """
-body { margin: 0 0.2em; }
-h1 { font-size: 1.45em; line-height: 1.2; margin: 0.8em 0 0.5em; page-break-before: always; }
-h2 { font-size: 1.2em; line-height: 1.25; margin: 1.3em 0 0.45em; page-break-after: avoid; }
-h3 { font-size: 1.05em; margin: 1em 0 0.35em; page-break-after: avoid; }
+body { margin: 0; }
+h1 { font-size: 1.45em; line-height: 1.2em; margin: 0.8em 0 0.5em; page-break-before: always; text-align: left; }
+h2 { font-size: 1.2em; line-height: 1.25em; margin: 1.3em 0 0.45em; page-break-after: avoid; text-align: left; }
+h3 { font-size: 1.05em; margin: 1em 0 0.35em; page-break-after: avoid; text-align: left; }
 p { margin: 0.3em 0; text-indent: 0; }
-.sub { font-style: italic; margin-top: -0.2em; }
+.sub { font-style: italic; margin-top: 0; }
 .center { text-align: center; }
 .title-page h1 { page-break-before: avoid; font-size: 1.7em; margin-top: 2em; text-align: center; }
 .title-page p { text-align: center; margin: 0.6em 0; }
 .small { font-size: 0.85em; }
 .imprint p { font-size: 0.85em; margin: 0.5em 0; }
 .toc p { margin: 0.35em 0; }
-.toc .l2 { margin-left: 1.2em; }
-.q { margin: 1.5em 0 0.4em; page-break-inside: avoid; }
+.toc .l2 { margin-left: 4%; }
+.q { margin: 1.5em 0 0.4em; }
 .qh { margin-bottom: 0.15em; }
-.qn { font-weight: bold; border: 1px solid #000; padding: 0 0.3em; }
-.tr { font-style: italic; color: #333333; }
-.opt { margin: 0.4em 0 0.4em 1.7em; text-indent: -1.7em; }
+.qn { font-weight: bold; border: 1px solid; padding: 0 0.3em; }
+.tr { font-style: italic; }
+.opt { margin: 0.4em 0; padding-left: 1.25em; text-indent: -1.25em; }
 .ok { font-weight: bold; }
-.ok-tag { font-size: 0.75em; font-weight: bold; border: 1px solid #000; padding: 0 0.25em; white-space: nowrap; }
-.ex { margin: 0.55em 0 0.2em 1.7em; padding: 0.35em 0.6em; border-left: 3px solid #666666; background-color: #eeeeee; }
+.ok-tag { font-size: 0.75em; font-weight: bold; border: 1px solid; padding: 0 0.25em; white-space: nowrap; }
+.ex { margin: 0.55em 0 0.2em 5%; padding: 0.1em 0 0.1em 3%; border-left: 3px solid #888888; }
 .ex p { font-size: 0.95em; }
 .pic { text-align: center; margin: 0.5em 0; }
 .pic img { width: 60%; }
@@ -59,18 +62,21 @@ p { margin: 0.3em 0; text-indent: 0; }
 .pic img.narrow { width: 40%; }
 .pics4 { text-align: center; margin: 0.5em 0; }
 .pic4 { display: inline-block; width: 44%; margin: 0.3em 2%; text-align: center; font-size: 0.85em; }
-.pic4 img { width: 85%; }
-.photo { font-size: 0.9em; border: 1px solid #888888; padding: 0.3em 0.5em; margin: 0.4em 0 0.4em 1.7em; }
-.note { border: 1px solid #000; padding: 0.4em 0.6em; margin: 0.8em 0; }
+.pic4 img { width: 90%; }
+.photo { font-size: 0.9em; border: 1px solid #888888; padding: 0.3em 2%; margin: 0.4em 0 0.4em 5%; }
+.note { border: 1px solid; padding: 0.4em 2%; margin: 0.8em 0; }
 .nums { font-size: 0.9em; }
 .entry { margin: 0.7em 0; }
 .sol { margin: 0.25em 0; }
 table { border-collapse: collapse; margin: 0.5em 0; }
 td, th { border: 1px solid #888888; padding: 0.15em 0.4em; vertical-align: top; text-align: left; }
-.cover { text-align: center; margin: 0; padding: 0; }
-.cover img { height: 100%; max-width: 100%; }
-img { max-width: 100%; }
 """
+
+
+def de_list(nums, last):
+    """55, 70, 181 und 216 / i 216"""
+    n = [str(x) for x in nums]
+    return n[0] if len(n) == 1 else ", ".join(n[:-1]) + f" {last} " + n[-1]
 
 
 def link_nums(nums, href_of, sep=", "):
@@ -147,7 +153,7 @@ def main():
         for f in files:
             images[f"images/{f}"] = small_png(ROOT / "layout" / "images" / f)
         if q["images"]["layout"] == "row":
-            cells = "".join(f'<span class="pic4"><img src="images/{f}" alt="Bild {i + 1}"/><br/>Bild {i + 1}</span>'
+            cells = "".join(f'<span class="pic4"><img src="images/{f}" alt=""/><br/>Bild {i + 1}</span>'
                             for i, f in enumerate(files))
             return f'<p class="pics4">{cells}</p>'
         cls = "wide" if q["id"] == "G-130" else "narrow" if q["id"] == "G-176" or small else ""
@@ -158,7 +164,7 @@ def main():
         if not q.get("photo_missing"):
             return ""
         return (f'<p class="photo" lang="hr"><b>Fotografija nije uvrštena</b> (autorska prava treće strane). '
-                f'Pogledajte je u <a href="{M["catalogue_url"]}">BAMF-ovu katalogu</a>, pitanje {q["num"]}.</p>')
+                f'Pogledajte je u <a href="{M["catalogue_url"]}">BAMF-ovu katalogu</a> (<a href="{ARCHIVE}">arhivirana kopija</a>), pitanje {q["num"]}.</p>')
 
     def question(q):
         h = [f'<div class="q" id="q-{q["id"]}">',
@@ -179,7 +185,7 @@ def main():
              pictures(q, small=True)]
         if q.get("photo_missing"):
             h.append(f'<p class="photo" lang="hr">Fotografija nije uvrštena: pogledajte je u '
-                     f'<a href="{M["catalogue_url"]}">BAMF-ovu katalogu</a>, pitanje {q["num"]}.</p>')
+                     f'<a href="{M["catalogue_url"]}">BAMF-ovu katalogu</a> (<a href="{ARCHIVE}">arhivirana kopija</a>), pitanje {q["num"]}.</p>')
         for o in q["options"]:
             h.append(f'<p class="opt"><b>{o["letter"]}</b>&#160;&#160;{esc(o["de"])}</p>')
         h.append("</div>")
@@ -206,7 +212,7 @@ Erklärungen, Merksätzen und 10 vollständigen Probetests</p>
 <p><b>Hinweis:</b> Dieses Buch ist keine Veröffentlichung des Bundesamts für Migration und Flüchtlinge (BAMF) und steht in keiner Verbindung zum BAMF.</p>
 <p><b>Ausgabe:</b> {esc(R['edition'])}, E-Book, {esc(R['edition_date'])}.</p>
 <p><b>Fragen und Antworten:</b> {esc(M['catalog_source'])}. Die Fragen, Antwortmöglichkeiten und richtigen Antworten sind unverändert wiedergegeben (§ 5 Abs. 2 UrhG); Schreibweise nur typografisch angepasst. {katalog} Maßgeblich ist allein der aktuelle Katalog des BAMF.</p>
-<p><b>Abbildungen:</b> Wappen, Karten, Stimmzettel und Flaggen stammen aus dem Fragenkatalog des BAMF (Graustufen). Sie werden nur als Gegenstand der Prüfungsfragen gezeigt. Ein Foto Dritter (Frage 55) ist nicht enthalten.</p>
+<p><b>Abbildungen:</b> Wappen, Karten, Stimmzettel und Flaggen stammen aus dem Fragenkatalog des BAMF (Graustufen). Sie werden nur als Gegenstand der Prüfungsfragen gezeigt. Fotos Dritter (Fragen {de_list(M['third_party_photos'], 'und')}) sind nicht enthalten; nur Frage 55 braucht das Foto zur Beantwortung.</p>
 <p><b>Übersetzungen, Erklärungen und Merksätze:</b> mit Unterstützung durch künstliche Intelligenz erstellt; automatisch und durch unabhängige KI-Gegenprüfungen kontrolliert. Menschliches Lektorat: {proof_de}.</p>
 <p>Alle Angaben ohne Gewähr. Das Buch ersetzt keine Beratung durch die Einbürgerungsbehörde.</p>
 <p>© 2026 {esc(R['author'])} (Übersetzungen, Erklärungen, Merksätze, Gestaltung). Alle Rechte vorbehalten.<br/>
@@ -247,7 +253,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 </table>
 <p>Katalog se povremeno mijenja (npr. pitanja o aktualnim dužnosnicima). Prije ispita usporedite pitanja na www.bamf.de.</p>
 <h2>Slikovna pitanja</h2>
-<p>Grbovi, karte, glasački listići i zastave preuzeti su iz službenog kataloga, u sivim tonovima. U ispitu su u boji – boje su opisane u objašnjenjima. <b>Jedna fotografija (pitanje 55)</b> zaštićena je autorskim pravom treće strane i nije uvrštena: pogledajte je u <a href="{M['catalogue_url']}">BAMF-ovu katalogu</a> pod brojem 55.</p>
+<p>Grbovi, karte, glasački listići i zastave preuzeti su iz službenog kataloga, u sivim tonovima. U ispitu su u boji – boje su opisane u objašnjenjima. Fotografije trećih strana (pitanja {de_list(M['third_party_photos'], 'i')}) zaštićene su autorskim pravom i nisu uvrštene. <b>Samo je za pitanje 55 fotografija potrebna za odgovor</b>: pogledajte je u <a href="{M['catalogue_url']}">BAMF-ovu katalogu</a> (<a href="{ARCHIVE}">arhivirana kopija</a>) pod brojem 55.</p>
 <h2>Napomene</h2>
 <ul>
 <li><b>Prijevod:</b> radi čitljivosti za osobe koristimo muški rod, koji se odnosi na oba spola. Nazivi njemačkih institucija ostaju na njemačkom, s objašnjenjem u zagradi. Tekst je pisan ijekavicom i latinicom.</li>
@@ -257,7 +263,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 <p lang="de">Dieses Buch enthält alle 460 Fragen des Gesamtfragenkatalogs zum Test „Leben in Deutschland“ und zum Einbürgerungstest. Zu jeder Frage finden Sie die Übersetzung ins Bosnische/Kroatische/Serbische, die richtige Antwort, eine kurze Erklärung und einen Merksatz auf Deutsch. Am Ende stehen 10 vollständige Probetests (30 allgemeine + 3 Landesfragen) mit Lösungen. Viel Erfolg!</p>"""))
 
     # ---- before you start ------------------------------------------------------------------
-    states_list = "".join(f'<li><a href="land-{s["code"]}.xhtml">{esc(s["name"])}</a> · {esc(s["bks_name"])}</li>'
+    states_list = "".join(f'<li><a href="land-{s["code"]}.xhtml">{esc(s["name"])}</a>' + (f' · <span lang="hr">{esc(s["bks_name"])}</span>' if s["bks_name"] != s["name"] else "") + '</li>'
                           for s in data["states"])
     pattern = "".join(f"<li>{esc(p)}</li>" for p in data["state_pattern"])
     plan14 = [(f"{i + 1}.", f'{30 * i + 1}–{30 * i + 30}', "pogreške od jučer") for i in range(10)] + [
@@ -272,12 +278,12 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
         return "<table>" + head + "".join(f"<tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>" for a, b, c in rows) + "</table>"
 
     words = "".join(f'<div class="entry"><p><b lang="de">{esc(w["de"])}</b> – {esc(w["bks"])}</p>'
-                    f'<p class="nums">Pitanja: {link_nums(w["nums"], gen)}</p></div>' for w in data["words"])
+                    + (f'<p class="nums">Pitanja: {link_nums(w["nums"], gen)}</p>' if w["nums"] else '') + '</div>' for w in data["words"])
     insts = "".join(f'<div class="entry"><p><b lang="de">{esc(i["name"])}</b> – {esc(i["bks"])}</p>'
                     f'<p>{esc(i["does"])}. <i>Bira:</i> {esc(i["who"])}.</p>'
-                    f'<p class="nums">Pitanja: {link_nums(i["nums"], gen)}</p></div>' for i in data["institutions"])
+                    + (f'<p class="nums">Pitanja: {link_nums(i["nums"], gen)}</p>' if i["nums"] else '') + '</div>' for i in data["institutions"])
     timeline = "".join(f'<div class="entry"><p><b>{esc(e["year"])}</b> {esc(e["text"])}</p>'
-                       f'<p class="nums">Pitanja: {link_nums(e["nums"], gen)}</p></div>' for e in data["timeline"])
+                       + (f'<p class="nums">Pitanja: {link_nums(e["nums"], gen)}</p>' if e["nums"] else '') + '</div>' for e in data["timeline"])
     docs.append(Doc("prije", "Prije početka", lang="hr", children=[
         ("Moja pokrajina", "prije.xhtml#pokrajina"), ("Plan učenja", "prije.xhtml#plan"),
         ("Pazi na riječ", "prije.xhtml#rijec"), ("Tko je tko u njemačkoj državi", "prije.xhtml#tko"),
@@ -299,7 +305,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 <p>Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima se riječ pojavljuje.</p>
 {words}
 <h2 id="tko">Tko je tko u njemačkoj državi</h2>
-<p class="pic"><img class="wide" src="images/staat.png" alt="Shema: birači biraju Bundestag i Landtag; Bundestag bira kancelara; Bundesrat, Bundesversammlung, Bundespräsident i Bundesverfassungsgericht"/></p>
+<p class="pic"><img class="wide" src="images/staat.png" alt="Birači biraju Bundestag i Landtag; Bundestag bira kancelara; uz to Bundesrat, Bundesversammlung, Bundespräsident i Ustavni sud"/></p>
 {insts}
 <h2 id="crta">Vremenska crta</h2>
 {timeline}"""))
@@ -309,7 +315,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
     for k in range(0, 300, CHUNK):
         qs = data["general"][k:k + CHUNK]
         n = k // CHUNK + 1
-        head = (f'<h1 lang="de">Teil 1: 300 allgemeine Fragen</h1><p class="sub" lang="hr">Dio 1: 300 općih pitanja</p>' if n == 1 else "")
+        head = ""   # the part page teil1.xhtml carries the part title
         title = f"Fragen {qs[0]['num']}–{qs[-1]['num']}"
         chunks.append((title, f"teil1-{n}.xhtml"))
         docs.append(Doc(f"teil1-{n}", title, lang="de", toc=False,
@@ -325,7 +331,7 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
         + "".join(f'<p><a href="{h}">{esc(t)}</a></p>' for t, h in states_children))))
     for s in data["states"]:
         docs.append(Doc(f"land-{s['code']}", s["name"], lang="de", toc=False, body=(
-            f'<h1>{esc(s["name"])}</h1><p class="sub" lang="hr">{esc(s["bks_name"])}</p>'
+            f'<h1>{esc(s["name"])}</h1>' + (f'<p class="sub" lang="hr">{esc(s["bks_name"])}</p>' if s["bks_name"] != s["name"] else "")
             + "\n".join(question(q) for q in s["questions"]))))
 
     # ---- part 3: practice tests -------------------------------------------------------------------
@@ -337,11 +343,11 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
 <p>Svaki probni test izgleda kao pravi ispit: <b>33 pitanja, 60 minuta</b>, samo na njemačkom.</p>
 <ol>
 <li>Pitanja <b>1–30</b> su opća pitanja (zajedno 10 testova pokrivaju svih 300 općih pitanja).</li>
-<li>Pitanja <b>31–33</b> uzmite iz <a href="anhang-a.xhtml">Dodatka A</a> (pitanja o pokrajinama bez označenih odgovora): za svaki test naveden je koja tri pitanja Vaše pokrajine rješavate.</li>
+<li>Pitanja <b>31–33</b> uzmite iz <a href="anhang-a.xhtml">Dodatka A</a> (pitanja o pokrajinama bez označenih odgovora): za svaki test navedeno je koja tri pitanja svoje pokrajine rješavate.</li>
 <li>Odgovore zapišite na papir (brojevi 1–33 i slova) – tako test možete ponoviti.</li>
 <li>Izmjerite vrijeme. Zatim provjerite <a href="loesungen.xhtml">rješenja</a>: svako rješenje vodi na pitanje s objašnjenjem.</li>
 </ol>
-<p class="note"><b>Rezultat:</b> <b>17 ili više točnih</b> – ispunjen je uvjet znanja za naturalizaciju. <b>15 ili više</b> – položen je test LiD na kraju orijentacijskog tečaja. <b>Pitanje 55</b> prikazuje fotografiju koja nije uvrštena – prije testa je pogledajte u <a href="{M['catalogue_url']}">BAMF-ovu katalogu</a>.</p>
+<p class="note"><b>Rezultat:</b> <b>17 ili više točnih</b> – ispunjen je uvjet znanja za naturalizaciju. <b>15 ili više</b> – položen je test LiD na kraju orijentacijskog tečaja. <b>Pitanje 55</b> prikazuje fotografiju koja nije uvrštena – prije testa je pogledajte u <a href="{M['catalogue_url']}">BAMF-ovu katalogu</a> (<a href="{ARCHIVE}">arhivirana kopija</a>).</p>
 """ + "".join(f'<p><a href="{h}">{esc(t)}</a></p>' for t, h in test_children)))
     for t in data["tests"]:
         nums = ", ".join(str(n) for n in t["state_nums"])
@@ -393,8 +399,9 @@ Herausgeber (Selbstverlag) und Verantwortlicher: {esc(R['publisher'])}, {esc(R['
     for d in docs:
         if not d.toc:
             continue
-        toc_lines.append(f'<p><a href="{d.href}">{esc(d.title)}</a></p>')
-        toc_lines += [f'<p class="l2"><a href="{h}">{esc(t)}</a></p>' for t, h in d.children]
+        lang = f' lang="{d.lang}"' if d.lang != "de" else ""
+        toc_lines.append(f'<p{lang}><a href="{d.href}">{esc(d.title)}</a></p>')
+        toc_lines += [f'<p class="l2"{lang}><a href="{h}">{esc(t)}</a></p>' for t, h in d.children]
     docs.insert(2, Doc("inhalt", "Sadržaj / Inhalt", lang="de", landmark="toc", toc=False, body_class="toc",
                        body="<h1>Sadržaj / Inhalt</h1>\n" + "\n".join(toc_lines)))
 

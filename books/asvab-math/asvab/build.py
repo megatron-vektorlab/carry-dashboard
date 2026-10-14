@@ -189,6 +189,11 @@ def chref(mods_by_num):
     return f
 
 
+def diag_minutes(probs) -> int:
+    """Target time: 1.2 min per word problem, 1 min per other question (same rule as the practice sets)."""
+    return round(sum(1.2 if p.section == "AR" else 1.0 for p in probs))
+
+
 def diagnostic_tex(probs, mods_by_num):
     rows = []
     for i, p in enumerate(probs, 1):
@@ -200,7 +205,7 @@ def diagnostic_tex(probs, mods_by_num):
              + "\n".join(rows[:half]) + r"\bottomrule\end{tabular}" + "\n"
              r"\begin{tabular}{rclp{2.0in}}\toprule \# & Ans. & Ch. & Topic\\ \midrule" + "\n"
              + "\n".join(rows[half:]) + r"\bottomrule\end{tabular}\end{center}" + "\n")
-    minutes = round(sum(1.2 if p.section == "AR" else 1.0 for p in probs))
+    minutes = diag_minutes(probs)
     return "\n".join([
         toc_chapter("Diagnostic Test", "diag"),
         ("This test samples every chapter of the book. Take it before you begin "
@@ -445,7 +450,7 @@ def book_tex(mods, chapters, diag, tests) -> str:
     front = fill((TEX / "front.tex").read_text(encoding="utf-8"), {
         "TITLE": config.TITLE, "SUBTITLE": config.SUBTITLE, "TAGLINE": config.TAGLINE,
         "AUTHOR": config.AUTHOR, "YEAR": config.YEAR, "EDITION": config.EDITION,
-        "NPRACTICE": f"{n_drill:,}", "NCHAPTERS": len(mods),
+        "NPRACTICE": f"{n_drill:,}", "NCHAPTERS": len(mods), "DIAGMIN": diag_minutes(diag),
     })
     back = fill((TEX / "back.tex").read_text(encoding="utf-8"), {
         "SQUARES": squares_table(), "FDP": fdp_table(), "GLOSSARY": glossary_tex(),

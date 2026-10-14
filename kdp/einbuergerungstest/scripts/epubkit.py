@@ -82,11 +82,9 @@ class Book:
             mt = "image/jpeg" if ext in (".jpg", ".jpeg") else "image/png"
             files[f"OEBPS/images/cover{ext}"] = self.cover.read_bytes()
             manifest.append(f'<item id="cover-image" href="images/cover{ext}" media-type="{mt}" properties="cover-image"/>')
-            cover_doc = Doc("cover", "Cover", f'<div class="cover"><img src="images/cover{ext}" alt="{esc(self.title)}"/></div>',
-                            lang=self.language, toc=False, landmark="cover", body_class="cover")
-            docs = [cover_doc] + self.docs
-        else:
-            docs = list(self.docs)
+        # no HTML cover page: Kindle shows the cover image from the metadata, and an extra cover
+        # page would make the cover appear twice (Kindle Publishing Guidelines 4.2 and 9.1)
+        docs = list(self.docs)
         for href, src in self.images.items():
             mt = mimetypes.guess_type(href)[0] or "image/png"
             iid = "img-" + href.replace("/", "-").replace(".", "-")
@@ -97,15 +95,21 @@ class Book:
             files[f"OEBPS/{d.href}"] = XHTML.format(lang=d.lang, title=esc(d.title), body=d.body, body_attr=body_attr).encode()
             props = ' properties="mathml"' if "<math" in d.body else ""
             manifest.append(f'<item id="{d.id}" href="{d.href}" media-type="application/xhtml+xml"{props}/>')
-            spine.append(f'<itemref idref="{d.id}"{"" if d.id != "cover" else " linear=\"yes\""}/>')
+            spine.append(f'<itemref idref="{d.id}"/>')
         toc_docs = [d for d in docs if d.toc]
         # navigation document
+        def label(text, lang):
+            # entries in another language than the book are marked, so text-to-speech reads them right
+            if lang and lang != self.language:
+                return f'<span lang="{lang}" xml:lang="{lang}">{esc(text)}</span>'
+            return esc(text)
+
         nav_items = []
         for d in toc_docs:
             sub = ""
             if d.children:
-                sub = "<ol>" + "".join(f'<li><a href="{h}">{esc(t)}</a></li>' for t, h in d.children) + "</ol>"
-            nav_items.append(f'<li><a href="{d.href}">{esc(d.title)}</a>{sub}</li>')
+                sub = "<ol>" + "".join(f'<li><a href="{h}">{label(t, d.lang)}</a></li>' for t, h in d.children) + "</ol>"
+            nav_items.append(f'<li><a href="{d.href}">{label(d.title, d.lang)}</a>{sub}</li>')
         landmarks = []
         for d in docs:
             if d.landmark:
@@ -156,14 +160,24 @@ class Book:
 
 
 def check(epub: Path) -> list[str]:
-    """Run EPUBCheck; returns the error/fatal messages (warnings are printed)."""
+    """Run EPUBCheck; returns the error/fatal messages (warnings are printed).
+
+    A missing jar, a Java failure or a non-zero exit without a parsable message is
+    reported as an error too, so a broken check can never pass silently."""
     import subprocess
     import epubcheck  # noqa: F401  (pip install epubcheck; needs Java)
-    jar = Path(epubcheck.__file__).parent / "lib" / "epubcheck.jar"
-    r = subprocess.run(["java", "-jar", str(jar), str(epub), "-q"], capture_output=True, text=True)
+    base = Path(epubcheck.__file__).parent
+    jar = next((p for p in (base / "epubcheck.jar", base / "lib" / "epubcheck.jar") if p.exists()), None)
+    if jar is None:
+        return [f"FATAL: epubcheck.jar not found in {base}"]
+    r = subprocess.run(["java", "-jar", str(jar), str(epub)], capture_output=True, text=True)
     lines = [l for l in (r.stdout + r.stderr).splitlines() if l.strip() and "JAVA_TOOL_OPTIONS" not in l]
     errors = [l for l in lines if l.startswith(("ERROR", "FATAL"))]
     for l in lines:
-        if l.startswith("WARNING"):
+        if l.startswith(("WARNING", "USAGE")):
             print("  epubcheck:", l)
+    if r.returncode != 0 and not errors:
+        errors = [f"FATAL: epubcheck exited with {r.returncode}: " + " | ".join(lines[-5:])]
+    if r.returncode == 0 and not any("No errors or warnings detected" in l or "Messages:" in l for l in lines):
+        errors.append("FATAL: epubcheck produced no result line: " + " | ".join(lines[-5:]))
     return errors

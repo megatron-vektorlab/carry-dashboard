@@ -176,7 +176,7 @@
 
   *Fragen und Antworten:* #M.catalog_source. Die Fragen, Antwortmöglichkeiten und richtigen Antworten sind unverändert wiedergegeben (§ 5 Abs. 2 UrhG); Schreibweise nur typografisch angepasst. #if verified [Stand des Katalogs: #R.catalog_stand; mit dem offiziellen BAMF-PDF abgeglichen am #R.catalog_compared_on.] else [Datenstand: öffentliche Kopie des Katalogs vom #R.public_copy_retrieved (aus dem offiziellen BAMF-PDF erstellt), abgeglichen mit zwei weiteren unabhängigen Kopien. Ein eigener Abgleich mit dem offiziellen BAMF-PDF ist nicht erfolgt.] Maßgeblich ist allein der aktuelle Katalog des BAMF.
 
-  *Abbildungen:* Wappen, Karten, Stimmzettel und Flaggen stammen aus dem Fragenkatalog des BAMF (Graustufen). Sie werden nur als Gegenstand der Prüfungsfragen gezeigt. Ein Foto Dritter (Frage 55) ist nicht abgedruckt.
+  *Abbildungen:* Wappen, Karten, Stimmzettel und Flaggen stammen aus dem Fragenkatalog des BAMF (Graustufen). Sie werden nur als Gegenstand der Prüfungsfragen gezeigt. Fotos Dritter (Fragen #M.third_party_photos.map(str).join(", ", last: " und ")) sind nicht abgedruckt; nur Frage 55 braucht das Foto zur Beantwortung.
 
   *Übersetzungen, Erklärungen und Merksätze:* mit Unterstützung durch künstliche Intelligenz erstellt; automatisch und durch unabhängige KI-Gegenprüfungen kontrolliert. Menschliches Lektorat: #proof-de.
 
@@ -230,7 +230,7 @@ Katalog se povremeno mijenja (npr. pitanja o aktualnim dužnosnicima). Prije isp
 == Slikovna pitanja <qr>
 
 #grid(columns: (1fr, 26mm), column-gutter: 4mm,
-  [Grbovi, karte, glasački listići i zastave preuzeti su iz službenog kataloga i otisnuti u sivim tonovima. U ispitu su u boji – boje su opisane u objašnjenjima. *Jedna fotografija (pitanje 55)* zaštićena je autorskim pravom treće strane i nije otisnuta: pogledajte je u BAMF-ovu katalogu (QR kod desno ili #M.catalogue_url), a zatim potražite pitanje broj 55.],
+  [Grbovi, karte, glasački listići i zastave preuzeti su iz službenog kataloga i otisnuti u sivim tonovima. U ispitu su u boji – boje su opisane u objašnjenjima. Fotografije trećih strana (pitanja #M.third_party_photos.map(str).join(", ", last: " i ")) zaštićene su autorskim pravom i nisu otisnute. *Samo je za pitanje 55 fotografija potrebna za odgovor*: pogledajte je u BAMF-ovu katalogu (QR kod desno ili #M.catalogue_url), pod brojem 55.],
   image("/layout/images/qr_catalogue.svg", width: 26mm),
 )
 
@@ -364,7 +364,7 @@ Neke male riječi potpuno mijenjaju smisao pitanja. Brojevi su pitanja u kojima 
 Svaki probni test izgleda kao pravi ispit: *33 pitanja, 60 minuta*, samo na njemačkom.
 
 + Pitanja *1–30* su opća pitanja (zajedno 10 testova pokrivaju svih 300 općih pitanja).
-+ Pitanja *31–33* uzmite iz *Dodatka A* (pitanja o pokrajinama bez označenih odgovora): za svaki test naveden je koja tri pitanja Vaše pokrajine rješavate.
++ Pitanja *31–33* uzmite iz *Dodatka A* (pitanja o pokrajinama bez označenih odgovora): za svaki test navedeno je koja tri pitanja svoje pokrajine rješavate.
 + Odgovore upisujte u *list za odgovore* iza svakog testa, a ne u knjigu – tako test možete ponoviti.
 + Izmjerite vrijeme. Zatim provjerite rješenja na kraju ovog dijela.
 

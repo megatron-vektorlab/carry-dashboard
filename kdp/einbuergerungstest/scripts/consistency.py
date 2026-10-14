@@ -69,6 +69,11 @@ MANUAL = [
     # External editorial review (2026-09-28): the ballot rule was overbroad.
     ("G-130", "expl_bks", 'Valjan je listić s točno jednim križićem u lijevom stupcu (prvi glas, kandidat) i točno jednim križićem u desnom stupcu (drugi glas, stranka). Listić s dva križića u istom stupcu ili tri križića nije valjan. Prvim glasom birate kandidata u svom izbornom okrugu, a drugim stranku. Na listić se ne smije ništa dopisivati. U katalogu je to listić broj 1.',
      'Među ponuđenim listićima potpuno je valjan samo listić broj 1: ima točno jedan križić za prvi glas (kandidat) i točno jedan za drugi glas (stranka). Na listiću 2 drugi glas ima dva križića, pa taj glas ne vrijedi; na listićima 3 i 4 previše je križića kod prvog glasa. Birač smije dati i samo jedan glas – tada ne vrijedi samo neiskorišteni glas (§ 39 BWahlG). U katalogu je to listić broj 1.'),
+    # the eBook and the print book leave these third-party photos out: no "picture" references
+    ("G-070", "expl_bks", "predsjednik ga imenuje – kao na slici iz 1974.",
+     "predsjednik ga imenuje – kao što je 1974. Gustav Heinemann imenovao Helmuta Schmidta."),
+    ("G-181", "expl_bks", "Ta je slika postala simbol pomirenja.", "Ta je gesta postala simbol pomirenja."),
+    ("G-235", "expl_bks", "Ta slika pokazuje glavni cilj", "Taj susret pokazuje glavni cilj"),
 ]
 
 # Bezirk = "gradski kotar" everywhere ("okrug" is reserved for Landkreis).

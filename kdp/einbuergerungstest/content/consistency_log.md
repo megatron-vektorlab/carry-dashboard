@@ -194,3 +194,8 @@ Unified naming across the ten translation batches: "Mecklenburg-Zapadna Pomerani
 
 ## Run: 0 changes
 
+
+## Run: 3 changes
+- `G-070` expl_bks: manual edit → „predsjednik ga imenuje – kao što je 1974. Gustav Heinemann imenovao Helmuta Schmidta.”
+- `G-181` expl_bks: manual edit → „Ta je gesta postala simbol pomirenja.”
+- `G-235` expl_bks: manual edit → „Taj susret pokazuje glavni cilj”

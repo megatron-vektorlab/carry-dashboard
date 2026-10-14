@@ -142,11 +142,15 @@ def assemble(draft=False):
             if kw.lower() not in (q["question"] + " " + " ".join(q["options"])).lower():
                 sys.exit(f"timeline: question {num} does not mention '{kw}'")
         e["nums"] = sorted({num for num, _ in e["refs"]})
+    # match the question without its photo credit (e.g. "© Bundesregierung/…") plus the correct
+    # answer ("Wer wählt …? – die Bundesversammlung"); wrong options are left out on purpose
     for inst in learning["institutions"]:
         inst["nums"] = [q["num"] for q in questions if q["state"] is None
-                        and any(k.lower() in q["question"].lower() for k in inst["kw"])]
+                        and any(k.lower() in (pretty(q["question"]) + " " + q["options"][q["answer"]]).lower()
+                                for k in inst["kw"])]
     for w in learning["words"]:
-        w["nums"] = [q["num"] for q in questions if q["state"] is None and any(has_word(q["question"], k) for k in w["kw"])]
+        w["nums"] = [q["num"] for q in questions if q["state"] is None
+                     and any(has_word(pretty(q["question"]), k) for k in w["kw"])]
     topic_rows = []
     for key, (hr, de) in learning["topics"].items():
         nums = [int(i[2:]) for i, ts in topics.items() if i.startswith("G-") and key in ts]
@@ -158,7 +162,9 @@ def assemble(draft=False):
         meta=dict(title="Einbürgerungstest & Leben in Deutschland", languages="Deutsch – Bosnisch/Kroatisch/Serbisch",
                   catalog_source=meta["publisher"] + " – " + meta["title"],
                   draft=bool(missing or missing_release), missing_release=missing_release, release=release,
-                  catalogue_url=prov["qr"], images=use_images),
+                  catalogue_url=prov["qr"], images=use_images,
+                  third_party_photos=sorted(int(k[2:]) for k, v in prov["excluded"].items()
+                                            if k.startswith("G-") and v.startswith("©"))),
         general=general, states=states, tests=tests, state_appendix=state_appendix, state_key=state_key,
         timeline=learning["timeline"], institutions=learning["institutions"], words=learning["words"],
         topics=topic_rows, state_pattern=learning["state_pattern"],
