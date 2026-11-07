@@ -1,8 +1,8 @@
 {
   "initial": 1000.0,
-  "equity": 1054.666475062176,
+  "equity": 1055.0444950333886,
   "start_ms": 1781560318142,
-  "last_update_ms": 1793944803732,
+  "last_update_ms": 1794031204928,
   "last_rebalance_ms": 1792216803480,
   "book": {
     "NEAR": "hyperliquid",
@@ -20,7 +20,7 @@
     "BCH": 0.11,
     "LINK": 0.1
   },
-  "cum_funding": 40.105122356567264,
-  "cum_coll": 18.129291491255948,
+  "cum_funding": 40.353082583364014,
+  "cum_coll": 18.259351235671804,
   "cum_cost": 3.567938785647452
 }
